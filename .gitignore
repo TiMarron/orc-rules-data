@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+tools/import/.cache/
+reserved/terms.local.txt
+*.pdf
+*.PDF
+.vitest/

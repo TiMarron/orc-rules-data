@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "item.schema.json",
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["category", "level"],
+      "properties": {
+        "type": { "const": "item" },
+        "category": {
+          "enum": ["weapon", "armor", "shield", "gear", "consumable", "alchemical", "scroll", "talisman", "wand", "staff", "rune", "worn", "held", "other"]
+        },
+        "level": { "type": "integer", "minimum": 0, "maximum": 20 },
+        "priceCp": { "type": "integer", "minimum": 0 },
+        "bulk": { "type": "string", "pattern": "^(-|L|[0-9]+)$" },
+        "usage": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "activation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actions"],
+          "properties": {
+            "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+            "traits": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true },
+            "text": { "$ref": "common.schema.json#/$defs/i18nKey" }
+          }
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name", "level"],
+            "properties": {
+              "id": { "$ref": "common.schema.json#/$defs/slug" },
+              "name": { "$ref": "common.schema.json#/$defs/i18nKey" },
+              "level": { "type": "integer", "minimum": 0, "maximum": 20 },
+              "priceCp": { "type": "integer", "minimum": 0 },
+              "text": { "$ref": "common.schema.json#/$defs/i18nKey" }
+            }
+          }
+        },
+        "weapon": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["category", "group", "damage", "hands"],
+          "properties": {
+            "category": { "enum": ["simple", "martial", "advanced", "unarmed"] },
+            "group": { "$ref": "common.schema.json#/$defs/slug" },
+            "damage": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["dice", "type"],
+              "properties": {
+                "dice": { "type": "string", "pattern": "^[1-9][0-9]*d(4|6|8|10|12)$" },
+                "type": {
+                  "enum": ["bludgeoning", "piercing", "slashing", "acid", "cold", "electricity", "fire", "sonic", "force", "vitality", "void", "mental", "poison", "spirit"]
+                }
+              }
+            },
+            "hands": { "enum": ["1", "2", "1+"] },
+            "range": { "type": "integer", "minimum": 5, "multipleOf": 5 },
+            "reload": { "type": "string", "pattern": "^(0|1|2|3|-)$" }
+          }
+        },
+        "armor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["category", "acBonus", "dexCap", "checkPenalty", "speedPenalty", "strength", "group"],
+          "properties": {
+            "category": { "enum": ["unarmored", "light", "medium", "heavy"] },
+            "acBonus": { "type": "integer", "minimum": 0 },
+            "dexCap": { "type": ["integer", "null"], "minimum": 0 },
+            "checkPenalty": { "type": "integer", "maximum": 0 },
+            "speedPenalty": { "type": "integer", "maximum": 0 },
+            "strength": { "type": "integer", "minimum": 0 },
+            "group": { "$ref": "common.schema.json#/$defs/slug" }
+          }
+        },
+        "shield": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["acBonus", "hardness", "hp", "bt"],
+          "properties": {
+            "acBonus": { "type": "integer", "minimum": 0 },
+            "hardness": { "type": "integer", "minimum": 0 },
+            "hp": { "type": "integer", "minimum": 1 },
+            "bt": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

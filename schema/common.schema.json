@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "id": { "type": "string", "pattern": "^[a-z]+\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "i18nKey": { "type": "string", "pattern": "^[a-z]+\\.[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+(-[a-z0-9]+)*)+$" },
+    "rarity": { "enum": ["common", "uncommon", "rare", "unique"] },
+    "attribute": { "enum": ["str", "dex", "con", "int", "wis", "cha"] },
+    "proficiencyRank": { "enum": ["untrained", "trained", "expert", "master", "legendary"] },
+    "actionCost": { "enum": ["free", "reaction", "1", "2", "3", "1-2", "1-3", "2-3"] },
+    "size": { "enum": ["tiny", "small", "medium", "large", "huge", "gargantuan"] },
+    "levelList": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 20 }, "uniqueItems": true },
+    "refClass": { "type": "string", "pattern": "^class\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refAncestry": { "type": "string", "pattern": "^ancestry\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refHeritage": { "type": "string", "pattern": "^heritage\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refFeat": { "type": "string", "pattern": "^feat\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refSkill": { "type": "string", "pattern": "^skill\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refFeature": { "type": "string", "pattern": "^feature\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "boost": {
+      "oneOf": [
+        { "enum": ["str", "dex", "con", "int", "wis", "cha", "free"] },
+        { "type": "array", "items": { "$ref": "#/$defs/attribute" }, "minItems": 2, "uniqueItems": true }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": ["book", "page", "revision"],
+      "additionalProperties": false,
+      "properties": {
+        "book": { "$ref": "#/$defs/slug" },
+        "page": { "type": "integer", "minimum": 1 },
+        "revision": { "$ref": "#/$defs/slug" }
+      }
+    },
+    "prerequisite": {
+      "oneOf": [
+        {
+          "type": "object", "required": ["kind", "target", "rank"], "additionalProperties": false,
+          "properties": { "kind": { "const": "proficiency" }, "target": { "$ref": "#/$defs/id" }, "rank": { "$ref": "#/$defs/proficiencyRank" } }
+        },
+        {
+          "type": "object", "required": ["kind", "id"], "additionalProperties": false,
+          "properties": { "kind": { "const": "feat" }, "id": { "$ref": "#/$defs/refFeat" } }
+        },
+        {
+          "type": "object", "required": ["kind", "attribute", "min"], "additionalProperties": false,
+          "properties": { "kind": { "const": "attribute" }, "attribute": { "$ref": "#/$defs/attribute" }, "min": { "type": "integer", "minimum": 1, "maximum": 7 } }
+        },
+        {
+          "type": "object", "required": ["kind", "key"], "additionalProperties": false,
+          "properties": { "kind": { "const": "text" }, "key": { "$ref": "#/$defs/i18nKey" } }
+        }
+      ]
+    },
+    "envelope": {
+      "type": "object",
+      "required": ["id", "type", "name", "text", "traits", "rarity", "source", "review", "edited"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "type": { "type": "string" },
+        "name": { "$ref": "#/$defs/i18nKey" },
+        "text": { "$ref": "#/$defs/i18nKey" },
+        "traits": { "type": "array", "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
+        "rarity": { "$ref": "#/$defs/rarity" },
+        "source": { "$ref": "#/$defs/source" },
+        "review": { "enum": ["auto", "human"] },
+        "edited": { "type": "boolean" },
+        "editNote": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

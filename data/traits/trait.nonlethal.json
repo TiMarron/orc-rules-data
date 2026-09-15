@@ -1,0 +1,11 @@
+{
+  "id": "trait.nonlethal",
+  "type": "trait",
+  "name": "trait.nonlethal.name",
+  "text": "trait.nonlethal.text",
+  "traits": [],
+  "rarity": "common",
+  "source": { "book": "gm-core", "page": 332, "revision": "2023-first" },
+  "review": "human",
+  "edited": false
+}

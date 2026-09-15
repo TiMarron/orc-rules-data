@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "class.schema.json",
+  "type": "object",
+  "$defs": {
+    "rank": { "$ref": "common.schema.json#/$defs/proficiencyRank" }
+  },
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["keyAttribute", "hp", "proficiencies", "features", "featLevels", "skillIncreaseLevels", "attributeBoostLevels"],
+      "properties": {
+        "type": { "const": "class" },
+        "keyAttribute": {
+          "oneOf": [
+            { "$ref": "common.schema.json#/$defs/attribute" },
+            {
+              "type": "array",
+              "items": { "$ref": "common.schema.json#/$defs/attribute" },
+              "minItems": 2,
+              "uniqueItems": true
+            }
+          ]
+        },
+        "hp": { "type": "integer", "minimum": 6, "maximum": 12 },
+        "proficiencies": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["perception", "fortitude", "reflex", "will", "skills", "attacks", "defenses", "classDc"],
+          "properties": {
+            "perception": { "$ref": "#/$defs/rank" },
+            "fortitude": { "$ref": "#/$defs/rank" },
+            "reflex": { "$ref": "#/$defs/rank" },
+            "will": { "$ref": "#/$defs/rank" },
+            "spellcasting": { "$ref": "#/$defs/rank" },
+            "skills": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["additional", "fixed"],
+              "properties": {
+                "additional": { "type": "integer", "minimum": 0 },
+                "fixed": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/refSkill" } }
+              }
+            },
+            "attacks": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["simple", "martial", "advanced", "unarmed"],
+              "properties": {
+                "simple": { "$ref": "#/$defs/rank" },
+                "martial": { "$ref": "#/$defs/rank" },
+                "advanced": { "$ref": "#/$defs/rank" },
+                "unarmed": { "$ref": "#/$defs/rank" }
+              }
+            },
+            "defenses": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["unarmored", "light", "medium", "heavy"],
+              "properties": {
+                "unarmored": { "$ref": "#/$defs/rank" },
+                "light": { "$ref": "#/$defs/rank" },
+                "medium": { "$ref": "#/$defs/rank" },
+                "heavy": { "$ref": "#/$defs/rank" }
+              }
+            },
+            "classDc": { "$ref": "#/$defs/rank" }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["level", "feature"],
+            "properties": {
+              "level": { "type": "integer", "minimum": 1, "maximum": 20 },
+              "feature": { "$ref": "common.schema.json#/$defs/refFeature" }
+            }
+          }
+        },
+        "featLevels": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["class", "skill", "general", "ancestry"],
+          "properties": {
+            "class": { "$ref": "common.schema.json#/$defs/levelList" },
+            "skill": { "$ref": "common.schema.json#/$defs/levelList" },
+            "general": { "$ref": "common.schema.json#/$defs/levelList" },
+            "ancestry": { "$ref": "common.schema.json#/$defs/levelList" }
+          }
+        },
+        "skillIncreaseLevels": { "$ref": "common.schema.json#/$defs/levelList" },
+        "attributeBoostLevels": { "$ref": "common.schema.json#/$defs/levelList" }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

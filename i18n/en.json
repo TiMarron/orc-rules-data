@@ -1,0 +1,12 @@
+{
+  "trait.flourish.name": "Flourish",
+  "trait.flourish.text": "Flourish actions are actions that require too much exertion to perform a large number in a row. You can use only 1 action with the flourish trait per turn.",
+  "trait.fortune.name": "Fortune",
+  "trait.fortune.text": "A fortune effect beneficially alters how you roll your dice. You can never have more than one fortune effect alter a single roll. If multiple fortune effects would apply, you have to pick which to use. If a fortune effect and a misfortune effect would apply to the same roll, the two cancel each other out, and you roll normally.",
+  "trait.healing.name": "Healing",
+  "trait.healing.text": "A healing effect restores a creature's body, typically by restoring Hit Points, but sometimes by removing diseases or other debilitating effects.",
+  "trait.misfortune.name": "Misfortune",
+  "trait.misfortune.text": "A misfortune effect detrimentally alters how you roll your dice. You can never have more than one misfortune effect alter a single roll. If multiple misfortune effects would apply, the GM decides which is worse and applies it. If a fortune effect and a misfortune effect would apply to the same roll, the two cancel each other out, and you roll normally.",
+  "trait.nonlethal.name": "Nonlethal",
+  "trait.nonlethal.text": "An effect or weapon with this trait is nonlethal. Damage from a nonlethal effect or weapon knocks a creature out rather than killing it. You can use a nonlethal weapon to make a lethal attack with a –2 circumstance penalty."
+}

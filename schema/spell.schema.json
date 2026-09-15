@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "spell.schema.json",
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["rank", "traditions", "cast"],
+      "properties": {
+        "type": { "const": "spell" },
+        "rank": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "traditions": {
+          "type": "array",
+          "items": { "enum": ["arcane", "divine", "occult", "primal"] },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "focus": { "type": "boolean" },
+        "cast": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "properties": {
+            "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+            "time": { "$ref": "common.schema.json#/$defs/i18nKey" }
+          }
+        },
+        "range": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "area": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "targets": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "duration": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "defense": {
+          "oneOf": [
+            { "type": "string", "const": "ac" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["save"],
+              "properties": {
+                "save": { "enum": ["fortitude", "reflex", "will"] },
+                "basic": { "type": "boolean" }
+              }
+            }
+          ]
+        },
+        "heightened": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["level", "text"],
+            "properties": {
+              "level": { "type": "string", "pattern": "^(\\+[1-9]|[1-9]|10)$" },
+              "text": { "$ref": "common.schema.json#/$defs/i18nKey" }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

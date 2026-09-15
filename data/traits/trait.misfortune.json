@@ -1,0 +1,11 @@
+{
+  "id": "trait.misfortune",
+  "type": "trait",
+  "name": "trait.misfortune.name",
+  "text": "trait.misfortune.text",
+  "traits": [],
+  "rarity": "common",
+  "source": { "book": "gm-core", "page": 331, "revision": "2023-first" },
+  "review": "human",
+  "edited": false
+}

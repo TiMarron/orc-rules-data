@@ -1,0 +1,11 @@
+{
+  "id": "trait.flourish",
+  "type": "trait",
+  "name": "trait.flourish.name",
+  "text": "trait.flourish.text",
+  "traits": [],
+  "rarity": "common",
+  "source": { "book": "gm-core", "page": 329, "revision": "2023-first" },
+  "review": "human",
+  "edited": false
+}

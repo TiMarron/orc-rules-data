@@ -1,0 +1,11 @@
+{
+  "id": "trait.healing",
+  "type": "trait",
+  "name": "trait.healing.name",
+  "text": "trait.healing.text",
+  "traits": [],
+  "rarity": "common",
+  "source": { "book": "gm-core", "page": 330, "revision": "2023-first" },
+  "review": "human",
+  "edited": false
+}

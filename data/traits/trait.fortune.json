@@ -1,0 +1,11 @@
+{
+  "id": "trait.fortune",
+  "type": "trait",
+  "name": "trait.fortune.name",
+  "text": "trait.fortune.text",
+  "traits": [],
+  "rarity": "common",
+  "source": { "book": "gm-core", "page": 329, "revision": "2023-first" },
+  "review": "human",
+  "edited": false
+}

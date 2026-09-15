@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "feat.schema.json",
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["category", "level"],
+      "properties": {
+        "type": { "const": "feat" },
+        "category": { "enum": ["ancestry", "class", "general", "skill", "archetype"] },
+        "level": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+        "trigger": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "requirements": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "frequency": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "prerequisites": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/prerequisite" } },
+        "class": { "$ref": "common.schema.json#/$defs/refClass" },
+        "ancestry": { "$ref": "common.schema.json#/$defs/refAncestry" }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}
