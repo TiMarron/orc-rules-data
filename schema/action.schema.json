@@ -6,10 +6,10 @@
     { "$ref": "common.schema.json#/$defs/envelope" },
     {
       "type": "object",
-      "required": ["actions"],
       "properties": {
         "type": { "const": "action" },
         "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+        "variable": { "type": "boolean" },
         "trigger": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "requirements": { "$ref": "common.schema.json#/$defs/i18nKey" }
       }
