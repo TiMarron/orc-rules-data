@@ -259,9 +259,9 @@ describe('type schemas', () => {
       },
     };
     const issues = issuesFor('class', bad);
-    // Both branches reject "bogus" as an additional property (worded from each
-    // branch's own allowed-properties list), the described branch also wants
-    // "text", and the oneOf combinator itself makes five.
+    // The enumerated branch rejects "bogus" as an additional property; the described
+    // branch rejects both "from" and "bogus" as additional properties and separately
+    // wants "text"; the oneOf combinator itself makes five.
     expect(issues).toHaveLength(5);
   });
 
