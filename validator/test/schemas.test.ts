@@ -195,4 +195,36 @@ describe('type schemas', () => {
     const issues = issuesFor('background', { ...VALID.background, skills: [] });
     expect(issues).toHaveLength(1);
   });
+
+  it('accepts an action with no "actions"', () => {
+    expect(issuesFor('action', record('action', 'no-cost'))).toEqual([]);
+  });
+
+  it('accepts an action with variable: true', () => {
+    expect(issuesFor('action', record('action', 'variable-cost', { variable: true }))).toEqual([]);
+  });
+
+  it('rejects an action with a non-boolean "variable" with exactly one issue', () => {
+    const issues = issuesFor('action', record('action', 'bad-variable', { variable: 'yes' }));
+    expect(issues).toHaveLength(1);
+  });
+
+  it('accepts a class feat whose "class" is an array of several classes', () => {
+    expect(
+      issuesFor('feat', record('feat', 'shared', { category: 'class', class: ['class.bard', 'class.cleric'], level: 1 })),
+    ).toEqual([]);
+  });
+
+  it('rejects a class feat whose "class" is an empty array', () => {
+    // Mirrors the empty-keyAttribute case above: ajv's oneOf reports the failed string
+    // branch, the failed array branch (minItems), and the oneOf combinator itself.
+    const issues = issuesFor('feat', record('feat', 'no-class', { category: 'class', class: [], level: 1 }));
+    expect(issues).toHaveLength(3);
+  });
+
+  it('accepts an ancestry feat whose "ancestry" is an array of several ancestries', () => {
+    expect(
+      issuesFor('feat', record('feat', 'shared-ancestry', { category: 'ancestry', ancestry: ['ancestry.elf', 'ancestry.human'], level: 1 })),
+    ).toEqual([]);
+  });
 });

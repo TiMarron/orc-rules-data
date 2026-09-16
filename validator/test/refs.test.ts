@@ -53,4 +53,13 @@ describe('refs check', () => {
       'activation.traits: unknown trait "no-such-trait" (no record trait.no-such-trait)',
     ]);
   });
+
+  it('flags an unresolved id-shaped string inside an array-valued field, with its indexed path', () => {
+    const root = writeFixture({
+      records: [{ folder: 'feats', file: 'feat.x.json', json: record('feat', 'x', { category: 'class', class: ['class.missing'], level: 1 }) }],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
+      'class[0]: reference "class.missing" does not resolve',
+    ]);
+  });
 });

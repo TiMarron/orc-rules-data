@@ -19,6 +19,14 @@ function ancestryIssuesFor(json: unknown, file = 'ancestry.x.json') {
   return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'ancestries', file, json }] })));
 }
 
+function actionIssuesFor(json: unknown, file = 'action.x.json') {
+  return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'actions', file, json }] })));
+}
+
+function heritageIssuesFor(json: unknown, file = 'heritage.x.json') {
+  return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'heritages', file, json }] })));
+}
+
 afterAll(cleanupFixtures);
 
 describe('flags check', () => {
@@ -58,6 +66,24 @@ describe('flags check', () => {
     expect(
       featIssuesFor(record('feat', 'x', { category: 'class', level: 1, class: 123 }), 'feat.x.json'),
     ).toEqual([{ level: 'error', file: 'data/feats/feat.x.json', message: 'class feat must set "class"' }]);
+  });
+
+  it('accepts a class feat whose "class" is a non-empty array', () => {
+    expect(
+      featIssuesFor(record('feat', 'x', { category: 'class', level: 1, class: ['class.bard', 'class.cleric'] }), 'feat.x.json'),
+    ).toEqual([]);
+  });
+
+  it('rejects a class feat whose "class" is an empty array', () => {
+    expect(
+      featIssuesFor(record('feat', 'x', { category: 'class', level: 1, class: [] }), 'feat.x.json'),
+    ).toEqual([{ level: 'error', file: 'data/feats/feat.x.json', message: 'class feat must set "class"' }]);
+  });
+
+  it('accepts an ancestry feat whose "ancestry" is a non-empty array', () => {
+    expect(
+      featIssuesFor(record('feat', 'x', { category: 'ancestry', level: 1, ancestry: ['ancestry.elf', 'ancestry.human'] }), 'feat.x.json'),
+    ).toEqual([]);
   });
 
   it('rejects a weapon item without a weapon block', () => {
@@ -105,5 +131,51 @@ describe('flags check', () => {
 
   it('accepts an ancestry record with review "human"', () => {
     expect(ancestryIssuesFor(record('ancestry', 'x', { review: 'human' }))).toEqual([]);
+  });
+
+  it('accepts an action that sets "actions"', () => {
+    expect(actionIssuesFor(record('action', 'x', { actions: '2' }))).toEqual([]);
+  });
+
+  it('accepts an action with no "actions" but the exploration trait', () => {
+    expect(actionIssuesFor(record('action', 'x', { traits: ['exploration'] }))).toEqual([]);
+  });
+
+  it('accepts an action with no "actions" but the downtime trait', () => {
+    expect(actionIssuesFor(record('action', 'x', { traits: ['downtime'] }))).toEqual([]);
+  });
+
+  it('accepts an action with no "actions" and variable: true', () => {
+    expect(actionIssuesFor(record('action', 'x', { variable: true }))).toEqual([]);
+  });
+
+  it('rejects an action with no "actions", no exploration/downtime trait, and no variable', () => {
+    expect(actionIssuesFor(record('action', 'x', {}))).toEqual([
+      {
+        level: 'error',
+        file: 'data/actions/action.x.json',
+        message: 'action must set "actions", carry the exploration or downtime trait, or set "variable": true',
+      },
+    ]);
+  });
+
+  it('accepts a versatile heritage without "ancestry"', () => {
+    expect(heritageIssuesFor(record('heritage', 'x', { versatile: true }))).toEqual([]);
+  });
+
+  it('accepts an ancestry-bound heritage', () => {
+    expect(heritageIssuesFor(record('heritage', 'x', { ancestry: 'ancestry.dwarf' }))).toEqual([]);
+  });
+
+  it('rejects a heritage with neither "ancestry" nor "versatile"', () => {
+    expect(heritageIssuesFor(record('heritage', 'x', {}))).toEqual([
+      { level: 'error', file: 'data/heritages/heritage.x.json', message: 'heritage must set either "ancestry" or "versatile": true' },
+    ]);
+  });
+
+  it('rejects a heritage with both "ancestry" and "versatile"', () => {
+    expect(heritageIssuesFor(record('heritage', 'x', { ancestry: 'ancestry.dwarf', versatile: true }))).toEqual([
+      { level: 'error', file: 'data/heritages/heritage.x.json', message: 'heritage must set either "ancestry" or "versatile": true' },
+    ]);
   });
 });

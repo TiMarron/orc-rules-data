@@ -6,10 +6,10 @@
     { "$ref": "common.schema.json#/$defs/envelope" },
     {
       "type": "object",
-      "required": ["ancestry"],
       "properties": {
         "type": { "const": "heritage" },
-        "ancestry": { "$ref": "common.schema.json#/$defs/refAncestry" }
+        "ancestry": { "$ref": "common.schema.json#/$defs/refAncestry" },
+        "versatile": { "type": "boolean" }
       }
     }
   ],

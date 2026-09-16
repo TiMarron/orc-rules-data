@@ -16,8 +16,28 @@
         "requirements": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "frequency": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "prerequisites": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/prerequisite" } },
-        "class": { "$ref": "common.schema.json#/$defs/refClass" },
-        "ancestry": { "$ref": "common.schema.json#/$defs/refAncestry" }
+        "class": {
+          "oneOf": [
+            { "$ref": "common.schema.json#/$defs/refClass" },
+            {
+              "type": "array",
+              "items": { "$ref": "common.schema.json#/$defs/refClass" },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          ]
+        },
+        "ancestry": {
+          "oneOf": [
+            { "$ref": "common.schema.json#/$defs/refAncestry" },
+            {
+              "type": "array",
+              "items": { "$ref": "common.schema.json#/$defs/refAncestry" },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          ]
+        }
       }
     }
   ],

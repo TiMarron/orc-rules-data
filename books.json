@@ -1,4 +1,6 @@
 [
   { "id": "player-core", "title": "Player Core", "pages": 464, "revisions": ["2023-first", "2026-spring"] },
-  { "id": "gm-core", "title": "GM Core", "pages": 336, "revisions": ["2023-first", "2026-spring"] }
+  { "id": "gm-core", "title": "GM Core", "pages": 336, "revisions": ["2023-first", "2026-spring"] },
+  { "id": "player-core-2", "title": "Player Core 2", "pages": 320, "revisions": ["2024-first", "2026-spring"] },
+  { "id": "monster-core", "title": "Monster Core", "pages": 376, "revisions": ["2024-first"] }
 ]

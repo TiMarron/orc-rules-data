@@ -1,5 +1,12 @@
 import type { Check, Issue } from '../types.js';
 
+/** True when value is a non-empty string, or a non-empty array (of anything). */
+function isSetIdOrIds(value: unknown): boolean {
+  if (typeof value === 'string') return value !== '';
+  if (Array.isArray(value)) return value.length > 0;
+  return false;
+}
+
 export const flagsCheck: Check = (ds) => {
   const issues: Issue[] = [];
   for (const f of ds.files) {
@@ -14,11 +21,29 @@ export const flagsCheck: Check = (ds) => {
     // "unevaluated properties" errors when if/then sits next to $ref-typed properties under
     // unevaluatedProperties: false, so these checks are done in TypeScript instead.
     if (f.record.type === 'feat') {
-      if (f.record.category === 'class' && typeof f.record.class !== 'string') {
+      if (f.record.category === 'class' && !isSetIdOrIds(f.record.class)) {
         issues.push({ level: 'error', file: f.path, message: 'class feat must set "class"' });
       }
-      if (f.record.category === 'ancestry' && typeof f.record.ancestry !== 'string') {
+      if (f.record.category === 'ancestry' && !isSetIdOrIds(f.record.ancestry)) {
         issues.push({ level: 'error', file: f.path, message: 'ancestry feat must set "ancestry"' });
+      }
+    }
+    if (f.record.type === 'action') {
+      const traits = Array.isArray(f.record.traits) ? f.record.traits : [];
+      const hasExplorationOrDowntime = traits.includes('exploration') || traits.includes('downtime');
+      if (f.record.actions === undefined && !hasExplorationOrDowntime && f.record.variable !== true) {
+        issues.push({
+          level: 'error',
+          file: f.path,
+          message: 'action must set "actions", carry the exploration or downtime trait, or set "variable": true',
+        });
+      }
+    }
+    if (f.record.type === 'heritage') {
+      const hasAncestry = typeof f.record.ancestry === 'string';
+      const isVersatile = f.record.versatile === true;
+      if (hasAncestry === isVersatile) {
+        issues.push({ level: 'error', file: f.path, message: 'heritage must set either "ancestry" or "versatile": true' });
       }
     }
     if (f.record.type === 'item') {

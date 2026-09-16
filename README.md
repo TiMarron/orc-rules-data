@@ -37,6 +37,12 @@ cost tokens.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens
   `{1a} {2a} {3a} {r} {f}`.
+- Versatile heritages (belonging to no single ancestry) set `versatile: true`
+  instead of `ancestry`.
+- An action without an action cost must carry the exploration or downtime
+  trait, or set `variable: true`.
+- A feat that appears on several classes' feat lists sets `class` to an array
+  instead of a single id.
 
 ## Versioning
 
