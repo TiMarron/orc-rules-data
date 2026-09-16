@@ -43,6 +43,10 @@ cost tokens.
   trait, or set `variable: true`.
 - A feat that appears on several classes' feat lists sets `class` to an array
   instead of a single id.
+- A class skill choice the book enumerates (e.g. "Trained in your choice of
+  Acrobatics or Athletics") is listed in `proficiencies.skills.choices[].from`;
+  one that depends on a deity or subclass the dataset cannot enumerate is
+  described in `proficiencies.skills.choices[].text`.
 
 ## Versioning
 

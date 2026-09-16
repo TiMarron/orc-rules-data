@@ -62,4 +62,24 @@ describe('refs check', () => {
       'class[0]: reference "class.missing" does not resolve',
     ]);
   });
+
+  it('resolves skill ids nested inside proficiencies.skills.choices[].from', () => {
+    const root = writeFixture({
+      records: [
+        { folder: 'skills', file: 'skill.acrobatics.json', json: record('skill', 'acrobatics') },
+        {
+          folder: 'classes',
+          file: 'class.x.json',
+          json: record('class', 'x', {
+            proficiencies: {
+              skills: { additional: 3, fixed: [], choices: [{ count: 1, from: ['skill.acrobatics', 'skill.athletics'] }] },
+            },
+          }),
+        },
+      ],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
+      'proficiencies.skills.choices[0].from[1]: reference "skill.athletics" does not resolve',
+    ]);
+  });
 });

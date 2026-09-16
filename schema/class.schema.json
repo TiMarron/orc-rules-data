@@ -40,7 +40,37 @@
               "required": ["additional", "fixed"],
               "properties": {
                 "additional": { "type": "integer", "minimum": 0 },
-                "fixed": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/refSkill" } }
+                "fixed": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/refSkill" } },
+                "choices": {
+                  "type": "array",
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["count", "from"],
+                        "properties": {
+                          "count": { "type": "integer", "minimum": 1 },
+                          "from": {
+                            "type": "array",
+                            "items": { "$ref": "common.schema.json#/$defs/refSkill" },
+                            "minItems": 2,
+                            "uniqueItems": true
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["text"],
+                        "properties": {
+                          "text": { "$ref": "common.schema.json#/$defs/i18nKey" },
+                          "count": { "type": "integer", "minimum": 1 }
+                        }
+                      }
+                    ]
+                  }
+                }
               }
             },
             "attacks": {
