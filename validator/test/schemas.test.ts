@@ -176,6 +176,95 @@ describe('type schemas', () => {
     expect(issues).toHaveLength(3);
   });
 
+  it('accepts a class skills.choices with an enumerated choice', () => {
+    const withChoice = {
+      ...VALID.class,
+      proficiencies: {
+        ...(VALID.class.proficiencies as object),
+        skills: { additional: 3, fixed: [], choices: [{ count: 1, from: ['skill.acrobatics', 'skill.athletics'] }] },
+      },
+    };
+    expect(issuesFor('class', withChoice)).toEqual([]);
+  });
+
+  it('accepts a class skills.choices with a described choice', () => {
+    const withChoice = {
+      ...VALID.class,
+      proficiencies: {
+        ...(VALID.class.proficiencies as object),
+        skills: { additional: 3, fixed: [], choices: [{ count: 1, text: 'class.cleric.skill-choice.0' }] },
+      },
+    };
+    expect(issuesFor('class', withChoice)).toEqual([]);
+  });
+
+  it('accepts a class skills.choices with both an enumerated and a described choice', () => {
+    const withBoth = {
+      ...VALID.class,
+      proficiencies: {
+        ...(VALID.class.proficiencies as object),
+        skills: {
+          additional: 3,
+          fixed: [],
+          choices: [
+            { count: 1, from: ['skill.acrobatics', 'skill.athletics'] },
+            { count: 1, text: 'class.rogue.skill-choice.0' },
+          ],
+        },
+      },
+    };
+    expect(issuesFor('class', withBoth)).toEqual([]);
+  });
+
+  it('rejects a skill choice with neither "from" nor "text"', () => {
+    const bad = {
+      ...VALID.class,
+      proficiencies: {
+        ...(VALID.class.proficiencies as object),
+        skills: { additional: 3, fixed: [], choices: [{ count: 1 }] },
+      },
+    };
+    const issues = issuesFor('class', bad);
+    // Mirrors the empty-keyAttribute case above: ajv's oneOf reports the failed
+    // enumerated branch, the failed described branch, and the oneOf combinator.
+    expect(issues).toHaveLength(3);
+  });
+
+  it('rejects a skill choice whose "from" has only one entry', () => {
+    const bad = {
+      ...VALID.class,
+      proficiencies: {
+        ...(VALID.class.proficiencies as object),
+        skills: { additional: 3, fixed: [], choices: [{ count: 1, from: ['skill.acrobatics'] }] },
+      },
+    };
+    const issues = issuesFor('class', bad);
+    // ajv reports: the enumerated branch's minItems failure, the described
+    // branch's missing "text" (since "from" isn't one of its properties), the
+    // described branch's "additional properties" complaint about "from", and
+    // the oneOf combinator itself.
+    expect(issues).toHaveLength(4);
+  });
+
+  it('rejects a skill choice with an unknown property', () => {
+    const bad = {
+      ...VALID.class,
+      proficiencies: {
+        ...(VALID.class.proficiencies as object),
+        skills: {
+          additional: 3,
+          fixed: [],
+          choices: [{ count: 1, from: ['skill.acrobatics', 'skill.athletics'], bogus: true }],
+        },
+      },
+    };
+    const issues = issuesFor('class', bad);
+    // Both branches reject "bogus" as an additional property (worded from each
+    // branch's own allowed-properties list), the described branch also wants
+    // "text", and the oneOf combinator itself makes five.
+    expect(issues).toHaveLength(5);
+  });
+
   it('rejects an empty spell traditions list with exactly one issue', () => {
     const issues = issuesFor('spell', { ...VALID.spell, traditions: [] });
     expect(issues).toHaveLength(1);
