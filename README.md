@@ -47,6 +47,10 @@ cost tokens.
   Acrobatics or Athletics") is listed in `proficiencies.skills.choices[].from`;
   one that depends on a deity or subclass the dataset cannot enumerate is
   described in `proficiencies.skills.choices[].text`.
+- A focus spell may omit `traditions`: its tradition is that of the class
+  that granted it, not a property of the spell itself.
+- A spell's `trigger`, `requirements` and `cost` are i18n keys, the same as
+  an action's.
 
 ## Versioning
 

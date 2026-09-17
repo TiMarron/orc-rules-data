@@ -39,6 +39,11 @@ export const flagsCheck: Check = (ds) => {
         });
       }
     }
+    if (f.record.type === 'spell') {
+      if (!isSetIdOrIds(f.record.traditions) && f.record.focus !== true) {
+        issues.push({ level: 'error', file: f.path, message: 'spell must set "traditions" unless it is a focus spell' });
+      }
+    }
     if (f.record.type === 'heritage') {
       const hasAncestry = typeof f.record.ancestry === 'string';
       const isVersatile = f.record.versatile === true;
