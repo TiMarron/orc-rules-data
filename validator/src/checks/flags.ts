@@ -24,7 +24,7 @@ export const flagsCheck: Check = (ds) => {
       if (f.record.category === 'class' && !isSetIdOrIds(f.record.class)) {
         issues.push({ level: 'error', file: f.path, message: 'class feat must set "class"' });
       }
-      if (f.record.category === 'ancestry' && !isSetIdOrIds(f.record.ancestry)) {
+      if (f.record.category === 'ancestry' && !isSetIdOrIds(f.record.ancestry) && f.record.versatile !== true) {
         issues.push({ level: 'error', file: f.path, message: 'ancestry feat must set "ancestry"' });
       }
     }
@@ -40,7 +40,7 @@ export const flagsCheck: Check = (ds) => {
       }
     }
     if (f.record.type === 'spell') {
-      if (!isSetIdOrIds(f.record.traditions) && f.record.focus !== true) {
+      if (!isSetIdOrIds(f.record.traditions) && f.record.focus !== true && f.record.traditionsVary !== true) {
         issues.push({ level: 'error', file: f.path, message: 'spell must set "traditions" unless it is a focus spell' });
       }
     }
