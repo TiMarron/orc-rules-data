@@ -51,6 +51,9 @@ cost tokens.
   that granted it, not a property of the spell itself.
 - A spell's `trigger`, `requirements` and `cost` are i18n keys, the same as
   an action's.
+- A weapon trait printed with a parameter (e.g. "deadly d8", "versatile P")
+  keeps the parameter in its slug (`deadly-d8`, `versatile-p`) and resolves
+  to its base trait record (`trait.deadly`, `trait.versatile`).
 
 ## Versioning
 

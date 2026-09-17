@@ -23,6 +23,42 @@ describe('refs check', () => {
     expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual(['unknown trait "flourish" (no record trait.flourish)']);
   });
 
+  it('resolves a parametrized weapon trait slug to its base trait record', () => {
+    const root = writeFixture({
+      records: [
+        { folder: 'traits', file: 'trait.deadly.json', json: trait('deadly') },
+        { folder: 'items', file: 'item.x.json', json: record('item', 'x', { traits: ['deadly-d8'] }) },
+      ],
+    });
+    expect(refsCheck(loadDataset(root))).toEqual([]);
+  });
+
+  it('resolves a single-letter parametrized weapon trait slug to its base trait record', () => {
+    const root = writeFixture({
+      records: [
+        { folder: 'traits', file: 'trait.versatile.json', json: trait('versatile') },
+        { folder: 'items', file: 'item.x.json', json: record('item', 'x', { traits: ['versatile-p'] }) },
+      ],
+    });
+    expect(refsCheck(loadDataset(root))).toEqual([]);
+  });
+
+  it('still flags a parametrized trait slug whose base record does not exist', () => {
+    const root = writeFixture({ records: [{ folder: 'items', file: 'item.x.json', json: record('item', 'x', { traits: ['deadly-d8'] }) }] });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual(['unknown trait "deadly-d8" (no record trait.deadly-d8)']);
+  });
+
+  it('prefers an exact match over prefix search for a trait slug', () => {
+    const root = writeFixture({
+      records: [
+        { folder: 'traits', file: 'trait.deadly.json', json: trait('deadly') },
+        { folder: 'traits', file: 'trait.deadly-d8.json', json: trait('deadly-d8') },
+        { folder: 'items', file: 'item.x.json', json: record('item', 'x', { traits: ['deadly-d8'] }) },
+      ],
+    });
+    expect(refsCheck(loadDataset(root))).toEqual([]);
+  });
+
   it('flags an id-shaped string that does not resolve, with its path', () => {
     const root = writeFixture({ records: [{ folder: 'feats', file: 'feat.x.json', json: record('feat', 'x', { prerequisites: [{ kind: 'feat', id: 'feat.missing' }] }) }] });
     expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual(['prerequisites[0].id: reference "feat.missing" does not resolve']);
