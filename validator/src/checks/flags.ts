@@ -67,6 +67,21 @@ export const flagsCheck: Check = (ds) => {
           });
         }
       }
+      // An activation a consumer cannot spend is unusable data. The book always states one of
+      // three things: an action cost, a duration ("1 minute"), or that you Cast a Spell. Across
+      // the 941 activations printed in the two remaining core books, 929 state one of them
+      // outright; the handful that appear not to are worth a reviewer's eyes, not a silent pass.
+      const activations = Array.isArray(f.record.activations) ? f.record.activations : [];
+      activations.forEach((a: Record<string, unknown>, i: number) => {
+        if (a === null || typeof a !== 'object') return;
+        if (a.actions === undefined && a.time === undefined && a.castASpell !== true) {
+          issues.push({
+            level: 'error',
+            file: f.path,
+            message: `activations[${i}] must set "actions", "time" or "castASpell": true`,
+          });
+        }
+      });
     }
     if (f.record.type === 'class' || f.record.type === 'ancestry') {
       if (f.record.review !== 'human') {

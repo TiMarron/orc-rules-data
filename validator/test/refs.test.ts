@@ -83,10 +83,10 @@ describe('refs check', () => {
 
   it('flags an unknown trait slug in a nested "traits" array, prefixed with its path', () => {
     const root = writeFixture({
-      records: [{ folder: 'items', file: 'item.x.json', json: record('item', 'x', { activation: { actions: '1', traits: ['no-such-trait'] } }) }],
+      records: [{ folder: 'items', file: 'item.x.json', json: record('item', 'x', { activations: [{ actions: '1', traits: ['no-such-trait'] }] }) }],
     });
     expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
-      'activation.traits: unknown trait "no-such-trait" (no record trait.no-such-trait)',
+      'activations[0].traits: unknown trait "no-such-trait" (no record trait.no-such-trait)',
     ]);
   });
 

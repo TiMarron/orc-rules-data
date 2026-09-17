@@ -42,7 +42,7 @@ const VALID: Record<string, Record<string, unknown>> = {
   }),
   item: record('item', 'healing-potion', {
     category: 'consumable', level: 1, bulk: 'L', usage: 'item.healing-potion.usage',
-    activation: { actions: '1', traits: ['manipulate'] },
+    activations: [{ actions: '1', traits: ['manipulate'], text: 'item.healing-potion.activations.0.text' }],
     variants: [{ id: 'minor', name: 'item.healing-potion.variant.minor.name', level: 1, priceCp: 400, text: 'item.healing-potion.variant.minor.text' }],
   }),
 };
