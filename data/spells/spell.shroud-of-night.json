@@ -1,0 +1,32 @@
+{
+  "id": "spell.shroud-of-night",
+  "type": "spell",
+  "name": "spell.shroud-of-night.name",
+  "traits": [
+    "cantrip",
+    "darkness",
+    "hex",
+    "manipulate",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 387,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shroud-of-night.text",
+  "rank": 1,
+  "traditionsVary": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.shroud-of-night.range",
+  "targets": "spell.shroud-of-night.targets",
+  "duration": "spell.shroud-of-night.duration",
+  "defense": {
+    "save": "will"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "action.jinx",
+  "type": "action",
+  "name": "action.jinx.name",
+  "traits": [
+    "curse",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 59,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.jinx.text",
+  "actions": "2"
+}

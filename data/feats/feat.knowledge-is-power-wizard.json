@@ -1,0 +1,21 @@
+{
+  "id": "feat.knowledge-is-power-wizard",
+  "type": "feat",
+  "name": "feat.knowledge-is-power-wizard.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.knowledge-is-power-wizard.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": []
+}

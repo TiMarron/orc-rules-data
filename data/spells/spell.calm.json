@@ -1,0 +1,35 @@
+{
+  "id": "spell.calm",
+  "type": "spell",
+  "name": "spell.calm.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.calm.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.calm.range",
+  "area": "spell.calm.area",
+  "duration": "spell.calm.duration",
+  "defense": {
+    "save": "will"
+  }
+}

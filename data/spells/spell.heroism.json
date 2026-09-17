@@ -1,0 +1,40 @@
+{
+  "id": "spell.heroism",
+  "type": "spell",
+  "name": "spell.heroism.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 335,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.heroism.text",
+  "rank": 3,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.heroism.range",
+  "targets": "spell.heroism.targets",
+  "duration": "spell.heroism.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.heroism.heightened.0"
+    },
+    {
+      "level": "9",
+      "text": "spell.heroism.heightened.1"
+    }
+  ]
+}

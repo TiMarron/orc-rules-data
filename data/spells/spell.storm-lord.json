@@ -1,0 +1,34 @@
+{
+  "id": "spell.storm-lord",
+  "type": "spell",
+  "name": "spell.storm-lord.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "druid",
+    "electricity",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 382,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.storm-lord.text",
+  "rank": 9,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.storm-lord.area",
+  "duration": "spell.storm-lord.duration",
+  "requirements": "spell.storm-lord.requirements",
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

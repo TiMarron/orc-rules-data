@@ -1,0 +1,29 @@
+{
+  "id": "spell.telekinetic-haul",
+  "type": "spell",
+  "name": "spell.telekinetic-haul.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 362,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.telekinetic-haul.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.telekinetic-haul.range",
+  "targets": "spell.telekinetic-haul.targets",
+  "duration": "spell.telekinetic-haul.duration"
+}

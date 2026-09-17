@@ -1,0 +1,30 @@
+{
+  "id": "spell.shape-wood",
+  "type": "spell",
+  "name": "spell.shape-wood.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 356,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shape-wood.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.shape-wood.range",
+  "targets": "spell.shape-wood.targets"
+}

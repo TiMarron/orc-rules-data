@@ -1,0 +1,21 @@
+{
+  "id": "feat.dwarven-doughtiness",
+  "type": "feat",
+  "name": "feat.dwarven-doughtiness.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 43,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dwarven-doughtiness.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "action.disable-a-device",
+  "type": "action",
+  "name": "action.disable-a-device.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 247,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.disable-a-device.text",
+  "actions": "2"
+}

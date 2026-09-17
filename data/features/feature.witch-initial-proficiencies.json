@@ -1,0 +1,17 @@
+{
+  "id": "feature.witch-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.witch-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 179,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.witch-initial-proficiencies.text",
+  "class": "class.witch",
+  "level": 1
+}

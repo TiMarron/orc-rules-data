@@ -1,0 +1,36 @@
+{
+  "id": "spell.life-boost",
+  "type": "spell",
+  "name": "spell.life-boost.name",
+  "traits": [
+    "focus",
+    "healing",
+    "hex",
+    "manipulate",
+    "vitality",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 385,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.life-boost.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.life-boost.range",
+  "targets": "spell.life-boost.targets",
+  "duration": "spell.life-boost.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.life-boost.heightened.0"
+    }
+  ]
+}

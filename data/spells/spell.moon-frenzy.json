@@ -1,0 +1,39 @@
+{
+  "id": "spell.moon-frenzy",
+  "type": "spell",
+  "name": "spell.moon-frenzy.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "morph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 345,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.moon-frenzy.text",
+  "rank": 5,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.moon-frenzy.range",
+  "targets": "spell.moon-frenzy.targets",
+  "duration": "spell.moon-frenzy.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.moon-frenzy.heightened.0"
+    },
+    {
+      "level": "10",
+      "text": "spell.moon-frenzy.heightened.1"
+    }
+  ]
+}

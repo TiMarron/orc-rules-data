@@ -1,0 +1,29 @@
+{
+  "id": "spell.one-with-plants",
+  "type": "spell",
+  "name": "spell.one-with-plants.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "polymorph",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 347,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.one-with-plants.text",
+  "rank": 2,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.one-with-plants.duration"
+}

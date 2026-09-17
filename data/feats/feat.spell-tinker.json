@@ -1,0 +1,23 @@
+{
+  "id": "feat.spell-tinker",
+  "type": "feat",
+  "name": "feat.spell-tinker.name",
+  "traits": [
+    "concentrate",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 205,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spell-tinker.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "2",
+  "prerequisites": []
+}

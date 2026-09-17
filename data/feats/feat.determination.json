@@ -1,0 +1,24 @@
+{
+  "id": "feat.determination",
+  "type": "feat",
+  "name": "feat.determination.name",
+  "traits": [
+    "concentrate",
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 149,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.determination.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "frequency": "feat.determination.frequency",
+  "prerequisites": []
+}

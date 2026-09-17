@@ -1,0 +1,33 @@
+{
+  "id": "item.spiked-chain",
+  "type": "item",
+  "name": "item.spiked-chain.name",
+  "traits": [
+    "disarm",
+    "finesse",
+    "trip"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.spiked-chain.text",
+  "level": 0,
+  "priceCp": 300,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "flail",
+    "damage": {
+      "dice": "1d8",
+      "type": "slashing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

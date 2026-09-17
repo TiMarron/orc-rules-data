@@ -1,0 +1,37 @@
+{
+  "id": "spell.malicious-shadow",
+  "type": "spell",
+  "name": "spell.malicious-shadow.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "hex",
+    "manipulate",
+    "shadow",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 385,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.malicious-shadow.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.malicious-shadow.range",
+  "targets": "spell.malicious-shadow.targets",
+  "duration": "spell.malicious-shadow.duration",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.malicious-shadow.heightened.0"
+    }
+  ]
+}

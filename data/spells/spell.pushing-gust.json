@@ -1,0 +1,34 @@
+{
+  "id": "spell.pushing-gust",
+  "type": "spell",
+  "name": "spell.pushing-gust.name",
+  "traits": [
+    "air",
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 372,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.pushing-gust.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.pushing-gust.range",
+  "targets": "spell.pushing-gust.targets",
+  "defense": {
+    "save": "fortitude"
+  }
+}

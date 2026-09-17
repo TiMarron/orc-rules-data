@@ -1,0 +1,45 @@
+{
+  "id": "ancestry.leshy",
+  "type": "ancestry",
+  "name": "ancestry.leshy.name",
+  "traits": [
+    "leshy",
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 66,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "ancestry.leshy.text",
+  "hp": 8,
+  "size": "small",
+  "speed": 25,
+  "boosts": [
+    "con",
+    "wis",
+    "free"
+  ],
+  "flaws": [
+    "int"
+  ],
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "heritages": [
+    "heritage.cactus-leshy",
+    "heritage.fruit-leshy",
+    "heritage.fungus-leshy",
+    "heritage.gourd-leshy",
+    "heritage.leaf-leshy",
+    "heritage.lotus-leshy",
+    "heritage.root-leshy",
+    "heritage.seaweed-leshy",
+    "heritage.vine-leshy"
+  ],
+  "editNote": "Reserved"
+}

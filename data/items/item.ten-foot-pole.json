@@ -1,0 +1,19 @@
+{
+  "id": "item.ten-foot-pole",
+  "type": "item",
+  "name": "item.ten-foot-pole.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 292,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.ten-foot-pole.text",
+  "level": 0,
+  "priceCp": 1,
+  "bulk": "1",
+  "category": "gear"
+}

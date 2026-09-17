@@ -1,0 +1,37 @@
+{
+  "id": "spell.grim-tendrils",
+  "type": "spell",
+  "name": "spell.grim-tendrils.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 334,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.grim-tendrils.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.grim-tendrils.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.grim-tendrils.heightened.0"
+    }
+  ]
+}

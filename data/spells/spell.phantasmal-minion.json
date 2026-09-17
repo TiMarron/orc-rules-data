@@ -1,0 +1,29 @@
+{
+  "id": "spell.phantasmal-minion",
+  "type": "spell",
+  "name": "spell.phantasmal-minion.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "summon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 349,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.phantasmal-minion.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.phantasmal-minion.range",
+  "duration": "spell.phantasmal-minion.duration"
+}

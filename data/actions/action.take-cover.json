@@ -1,0 +1,18 @@
+{
+  "id": "action.take-cover",
+  "type": "action",
+  "name": "action.take-cover.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 418,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.take-cover.text",
+  "actions": "1",
+  "requirements": "action.take-cover.requirements",
+  "editNote": "The reference points at a rules page the dataset does not model as a record; the link's label survives as plain text."
+}

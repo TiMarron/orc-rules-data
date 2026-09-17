@@ -1,0 +1,19 @@
+{
+  "id": "action.refocus",
+  "type": "action",
+  "name": "action.refocus.name",
+  "traits": [
+    "concentrate",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 298,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.refocus.text",
+  "requirements": "action.refocus.requirements"
+}

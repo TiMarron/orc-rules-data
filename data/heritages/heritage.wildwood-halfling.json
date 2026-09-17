@@ -1,0 +1,16 @@
+{
+  "id": "heritage.wildwood-halfling",
+  "type": "heritage",
+  "name": "heritage.wildwood-halfling.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 59,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.wildwood-halfling.text",
+  "ancestry": "ancestry.halfling"
+}

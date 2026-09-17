@@ -1,0 +1,27 @@
+{
+  "id": "feat.bargain-hunter",
+  "type": "feat",
+  "name": "feat.bargain-hunter.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bargain-hunter.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "trained"
+    }
+  ]
+}

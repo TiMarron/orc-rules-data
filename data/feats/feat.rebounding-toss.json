@@ -1,0 +1,24 @@
+{
+  "id": "feat.rebounding-toss",
+  "type": "feat",
+  "name": "feat.rebounding-toss.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 142,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rebounding-toss.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "requirements": "feat.rebounding-toss.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.hierophants-power",
+  "type": "feat",
+  "name": "feat.hierophants-power.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hierophants-power.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": []
+}

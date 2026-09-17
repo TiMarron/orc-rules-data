@@ -1,0 +1,27 @@
+{
+  "id": "spell.sure-strike",
+  "type": "spell",
+  "name": "spell.sure-strike.name",
+  "traits": [
+    "concentrate",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 361,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sure-strike.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.sure-strike.duration"
+}

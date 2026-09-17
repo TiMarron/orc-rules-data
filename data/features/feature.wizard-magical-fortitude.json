@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-magical-fortitude",
+  "type": "feature",
+  "name": "feature.wizard-magical-fortitude.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-magical-fortitude.text",
+  "class": "class.wizard",
+  "level": 9
+}

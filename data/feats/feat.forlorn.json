@@ -1,0 +1,21 @@
+{
+  "id": "feat.forlorn",
+  "type": "feat",
+  "name": "feat.forlorn.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 48,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.forlorn.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": []
+}

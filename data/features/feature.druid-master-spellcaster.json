@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-master-spellcaster",
+  "type": "feature",
+  "name": "feature.druid-master-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 122,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-master-spellcaster.text",
+  "class": "class.druid",
+  "level": 15
+}

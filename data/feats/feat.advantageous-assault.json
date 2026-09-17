@@ -1,0 +1,23 @@
+{
+  "id": "feat.advantageous-assault",
+  "type": "feat",
+  "name": "feat.advantageous-assault.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 144,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advantageous-assault.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "prerequisites": []
+}

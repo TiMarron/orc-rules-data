@@ -1,0 +1,25 @@
+{
+  "id": "feat.primal-breadth",
+  "type": "feat",
+  "name": "feat.primal-breadth.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 218,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.primal-breadth.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-druid-spellcasting"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "spell.zeal-for-battle",
+  "type": "spell",
+  "name": "spell.zeal-for-battle.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "emotion",
+    "focus",
+    "fortune",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 381,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.zeal-for-battle.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.zeal-for-battle.range",
+  "targets": "spell.zeal-for-battle.targets",
+  "trigger": "spell.zeal-for-battle.trigger"
+}

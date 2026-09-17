@@ -1,0 +1,16 @@
+{
+  "id": "heritage.cavern-elf",
+  "type": "heritage",
+  "name": "heritage.cavern-elf.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 47,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.cavern-elf.text",
+  "ancestry": "ancestry.elf"
+}

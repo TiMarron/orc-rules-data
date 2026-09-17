@@ -1,0 +1,17 @@
+{
+  "id": "feature.ranger-masterful-hunter",
+  "type": "feature",
+  "name": "feature.ranger-masterful-hunter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 152,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.ranger-masterful-hunter.text",
+  "class": "class.ranger",
+  "level": 17
+}

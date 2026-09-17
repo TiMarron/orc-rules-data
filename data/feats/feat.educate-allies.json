@@ -1,0 +1,29 @@
+{
+  "id": "feat.educate-allies",
+  "type": "feat",
+  "name": "feat.educate-allies.name",
+  "traits": [
+    "bard",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.educate-allies.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "reaction",
+  "trigger": "feat.educate-allies.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.well-versed"
+    }
+  ]
+}

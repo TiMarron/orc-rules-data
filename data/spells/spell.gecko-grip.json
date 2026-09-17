@@ -1,0 +1,35 @@
+{
+  "id": "spell.gecko-grip",
+  "type": "spell",
+  "name": "spell.gecko-grip.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 333,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gecko-grip.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.gecko-grip.range",
+  "targets": "spell.gecko-grip.targets",
+  "duration": "spell.gecko-grip.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.gecko-grip.heightened.0"
+    }
+  ]
+}

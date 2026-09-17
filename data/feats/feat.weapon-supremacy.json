@@ -1,0 +1,21 @@
+{
+  "id": "feat.weapon-supremacy",
+  "type": "feat",
+  "name": "feat.weapon-supremacy.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 151,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.weapon-supremacy.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": []
+}

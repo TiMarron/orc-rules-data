@@ -1,0 +1,23 @@
+{
+  "id": "feat.exacting-strike",
+  "type": "feat",
+  "name": "feat.exacting-strike.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 140,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.exacting-strike.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "prerequisites": []
+}

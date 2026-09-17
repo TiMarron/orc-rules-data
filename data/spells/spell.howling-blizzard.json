@@ -1,0 +1,39 @@
+{
+  "id": "spell.howling-blizzard",
+  "type": "spell",
+  "name": "spell.howling-blizzard.name",
+  "traits": [
+    "air",
+    "cold",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 335,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.howling-blizzard.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2-3"
+  },
+  "area": "spell.howling-blizzard.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.howling-blizzard.heightened.0"
+    }
+  ]
+}

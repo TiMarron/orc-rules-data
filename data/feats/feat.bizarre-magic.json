@@ -1,0 +1,27 @@
+{
+  "id": "feat.bizarre-magic",
+  "type": "feat",
+  "name": "feat.bizarre-magic.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bizarre-magic.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.occultism",
+      "rank": "master"
+    }
+  ]
+}

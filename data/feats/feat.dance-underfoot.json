@@ -1,0 +1,26 @@
+{
+  "id": "feat.dance-underfoot",
+  "type": "feat",
+  "name": "feat.dance-underfoot.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 61,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dance-underfoot.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.step-lively"
+    }
+  ]
+}

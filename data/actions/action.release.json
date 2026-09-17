@@ -1,0 +1,18 @@
+{
+  "id": "action.release",
+  "type": "action",
+  "name": "action.release.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 417,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.release.text",
+  "actions": "free"
+}

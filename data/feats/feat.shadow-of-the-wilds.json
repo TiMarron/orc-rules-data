@@ -1,0 +1,21 @@
+{
+  "id": "feat.shadow-of-the-wilds",
+  "type": "feat",
+  "name": "feat.shadow-of-the-wilds.name",
+  "traits": [
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 68,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shadow-of-the-wilds.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "prerequisites": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "background.martial-disciple",
+  "type": "background",
+  "name": "background.martial-disciple.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "background.martial-disciple.text",
+  "boosts": [
+    [
+      "str",
+      "dex"
+    ],
+    "free"
+  ],
+  "lore": "background.martial-disciple.lore",
+  "skills": [
+    "skill.acrobatics"
+  ],
+  "feat": "feat.cat-fall",
+  "editNote": "Accepted: the book (p.87) makes both the skill AND the granted feat conditional on the player's choice -- trained in Acrobatics or Athletics, gaining Cat Fall if Acrobatics or Quick Jump if Athletics. The schema has no way to make skills or feat conditional on each other, so the record fixes one legal branch (Acrobatics -> Cat Fall) rather than fabricating a structure the schema can't hold; the record's own text spells out both branches in full, so nothing is silently lost from what a player sees."
+}

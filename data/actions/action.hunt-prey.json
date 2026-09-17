@@ -1,0 +1,19 @@
+{
+  "id": "action.hunt-prey",
+  "type": "action",
+  "name": "action.hunt-prey.name",
+  "traits": [
+    "concentrate",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 154,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.hunt-prey.text",
+  "actions": "1"
+}

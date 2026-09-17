@@ -1,0 +1,17 @@
+{
+  "id": "feature.rogue-ancestry-and-background",
+  "type": "feature",
+  "name": "feature.rogue-ancestry-and-background.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 164,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.rogue-ancestry-and-background.text",
+  "class": "class.rogue",
+  "level": 1
+}

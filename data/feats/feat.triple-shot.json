@@ -1,0 +1,26 @@
+{
+  "id": "feat.triple-shot",
+  "type": "feat",
+  "name": "feat.triple-shot.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 145,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.triple-shot.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.double-shot"
+    }
+  ]
+}

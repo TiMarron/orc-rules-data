@@ -1,0 +1,31 @@
+{
+  "id": "spell.stabilize",
+  "type": "spell",
+  "name": "spell.stabilize.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 359,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.stabilize.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.stabilize.range",
+  "targets": "spell.stabilize.targets"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "spell.needle-of-vengeance",
+  "type": "spell",
+  "name": "spell.needle-of-vengeance.name",
+  "traits": [
+    "focus",
+    "hex",
+    "manipulate",
+    "mental",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 385,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.needle-of-vengeance.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.needle-of-vengeance.range",
+  "targets": "spell.needle-of-vengeance.targets",
+  "duration": "spell.needle-of-vengeance.duration",
+  "defense": {
+    "save": "will",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.needle-of-vengeance.heightened.0"
+    }
+  ]
+}

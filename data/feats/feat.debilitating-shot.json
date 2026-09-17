@@ -1,0 +1,23 @@
+{
+  "id": "feat.debilitating-shot",
+  "type": "feat",
+  "name": "feat.debilitating-shot.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 147,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.debilitating-shot.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "prerequisites": []
+}

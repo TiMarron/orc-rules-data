@@ -1,0 +1,15 @@
+{
+  "id": "trait.lineage",
+  "type": "trait",
+  "name": "trait.lineage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 458,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.lineage.text"
+}

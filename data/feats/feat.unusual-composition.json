@@ -1,0 +1,31 @@
+{
+  "id": "feat.unusual-composition",
+  "type": "feat",
+  "name": "feat.unusual-composition.name",
+  "traits": [
+    "bard",
+    "concentrate",
+    "manipulate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.unusual-composition.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.unusual-composition.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

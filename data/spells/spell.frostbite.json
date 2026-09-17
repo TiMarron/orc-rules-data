@@ -1,0 +1,40 @@
+{
+  "id": "spell.frostbite",
+  "type": "spell",
+  "name": "spell.frostbite.name",
+  "traits": [
+    "cantrip",
+    "cold",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.frostbite.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.frostbite.range",
+  "targets": "spell.frostbite.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.frostbite.heightened.0"
+    }
+  ]
+}

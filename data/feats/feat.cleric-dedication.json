@@ -1,0 +1,28 @@
+{
+  "id": "feat.cleric-dedication",
+  "type": "feat",
+  "name": "feat.cleric-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication",
+    "multiclass"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cleric-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "wis",
+      "min": 2
+    }
+  ]
+}

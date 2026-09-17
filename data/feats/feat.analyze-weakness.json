@@ -1,0 +1,29 @@
+{
+  "id": "feat.analyze-weakness",
+  "type": "feat",
+  "name": "feat.analyze-weakness.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.analyze-weakness.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "requirements": "feat.analyze-weakness.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.analyze-weakness.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.deadly-simplicity",
+  "type": "feat",
+  "name": "feat.deadly-simplicity.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 113,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.deadly-simplicity.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.deadly-simplicity.prereq.0"
+    }
+  ],
+  "editNote": "Reserved"
+}

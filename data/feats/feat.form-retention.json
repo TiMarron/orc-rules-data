@@ -1,0 +1,21 @@
+{
+  "id": "feat.form-retention",
+  "type": "feat",
+  "name": "feat.form-retention.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.form-retention.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": []
+}

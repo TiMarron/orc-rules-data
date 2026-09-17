@@ -1,0 +1,26 @@
+{
+  "id": "feat.monstrosity-shape",
+  "type": "feat",
+  "name": "feat.monstrosity-shape.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.monstrosity-shape.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.untamed-form"
+    }
+  ]
+}

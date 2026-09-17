@@ -1,0 +1,18 @@
+{
+  "id": "action.gather-information",
+  "type": "action",
+  "name": "action.gather-information.name",
+  "traits": [
+    "exploration",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.gather-information.text"
+}

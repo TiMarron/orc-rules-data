@@ -1,0 +1,23 @@
+{
+  "id": "feat.preparation",
+  "type": "feat",
+  "name": "feat.preparation.name",
+  "traits": [
+    "flourish",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 176,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.preparation.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "prerequisites": []
+}

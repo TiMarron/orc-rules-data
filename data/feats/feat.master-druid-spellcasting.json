@@ -1,0 +1,30 @@
+{
+  "id": "feat.master-druid-spellcasting",
+  "type": "feat",
+  "name": "feat.master-druid-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 218,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.master-druid-spellcasting.text",
+  "level": 18,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.expert-druid-spellcasting"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.nature",
+      "rank": "legendary"
+    }
+  ]
+}

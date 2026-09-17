@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-weapon-specialization",
+  "type": "feature",
+  "name": "feature.wizard-weapon-specialization.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-weapon-specialization.text",
+  "class": "class.wizard",
+  "level": 13
+}

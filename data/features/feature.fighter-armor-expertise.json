@@ -1,0 +1,17 @@
+{
+  "id": "feature.fighter-armor-expertise",
+  "type": "feature",
+  "name": "feature.fighter-armor-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 136,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.fighter-armor-expertise.text",
+  "class": "class.fighter",
+  "level": 11
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.surging-focus",
+  "type": "feat",
+  "name": "feat.surging-focus.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.surging-focus.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "free",
+  "trigger": "feat.surging-focus.trigger",
+  "frequency": "feat.surging-focus.frequency",
+  "prerequisites": []
+}

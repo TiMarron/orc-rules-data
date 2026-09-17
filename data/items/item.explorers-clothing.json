@@ -1,0 +1,31 @@
+{
+  "id": "item.explorers-clothing",
+  "type": "item",
+  "name": "item.explorers-clothing.name",
+  "traits": [
+    "comfort"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.explorers-clothing.text",
+  "level": 0,
+  "priceCp": 10,
+  "bulk": "L",
+  "category": "armor",
+  "armor": {
+    "category": "unarmored",
+    "acBonus": 0,
+    "dexCap": 5,
+    "checkPenalty": 0,
+    "speedPenalty": 0,
+    "strength": 0,
+    "group": "cloth"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

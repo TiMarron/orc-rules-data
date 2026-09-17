@@ -1,0 +1,42 @@
+{
+  "id": "spell.tempest-surge",
+  "type": "spell",
+  "name": "spell.tempest-surge.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "druid",
+    "electricity",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 382,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tempest-surge.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.tempest-surge.range",
+  "targets": "spell.tempest-surge.targets",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.tempest-surge.heightened.0"
+    }
+  ]
+}

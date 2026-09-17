@@ -1,0 +1,24 @@
+{
+  "id": "feat.ritual-reversion",
+  "type": "feat",
+  "name": "feat.ritual-reversion.name",
+  "traits": [
+    "leshy",
+    "polymorph",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 68,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ritual-reversion.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "actions": "2",
+  "prerequisites": []
+}

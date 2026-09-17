@@ -1,0 +1,30 @@
+{
+  "id": "spell.false-vision",
+  "type": "spell",
+  "name": "spell.false-vision.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 330,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.false-vision.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.false-vision.cast-time"
+  },
+  "range": "spell.false-vision.range",
+  "area": "spell.false-vision.area",
+  "duration": "spell.false-vision.duration"
+}

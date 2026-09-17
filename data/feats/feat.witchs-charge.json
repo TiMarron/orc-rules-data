@@ -1,0 +1,22 @@
+{
+  "id": "feat.witchs-charge",
+  "type": "feat",
+  "name": "feat.witchs-charge.name",
+  "traits": [
+    "detection",
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 188,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.witchs-charge.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

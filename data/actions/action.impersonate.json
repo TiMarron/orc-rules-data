@@ -1,0 +1,20 @@
+{
+  "id": "action.impersonate",
+  "type": "action",
+  "name": "action.impersonate.name",
+  "traits": [
+    "concentrate",
+    "exploration",
+    "manipulate",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.impersonate.text"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "spell.talking-corpse",
+  "type": "spell",
+  "name": "spell.talking-corpse.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 362,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.talking-corpse.text",
+  "rank": 4,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.talking-corpse.cast-time"
+  },
+  "range": "spell.talking-corpse.range",
+  "targets": "spell.talking-corpse.targets",
+  "duration": "spell.talking-corpse.duration",
+  "defense": {
+    "save": "will"
+  }
+}

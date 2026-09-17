@@ -1,0 +1,34 @@
+{
+  "id": "spell.creation",
+  "type": "spell",
+  "name": "spell.creation.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 322,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.creation.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.creation.cast-time"
+  },
+  "range": "spell.creation.range",
+  "duration": "spell.creation.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.creation.heightened.0"
+    }
+  ]
+}

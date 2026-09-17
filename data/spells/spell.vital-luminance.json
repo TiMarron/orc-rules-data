@@ -1,0 +1,37 @@
+{
+  "id": "spell.vital-luminance",
+  "type": "spell",
+  "name": "spell.vital-luminance.name",
+  "traits": [
+    "aura",
+    "cleric",
+    "focus",
+    "light",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 379,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vital-luminance.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.vital-luminance.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vital-luminance.heightened.0"
+    }
+  ]
+}

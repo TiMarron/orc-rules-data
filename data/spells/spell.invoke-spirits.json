@@ -1,0 +1,43 @@
+{
+  "id": "spell.invoke-spirits",
+  "type": "spell",
+  "name": "spell.invoke-spirits.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "fear",
+    "manipulate",
+    "mental",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 340,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.invoke-spirits.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.invoke-spirits.range",
+  "area": "spell.invoke-spirits.area",
+  "duration": "spell.invoke-spirits.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.invoke-spirits.heightened.0"
+    }
+  ]
+}

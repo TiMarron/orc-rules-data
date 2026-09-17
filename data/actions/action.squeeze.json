@@ -1,0 +1,18 @@
+{
+  "id": "action.squeeze",
+  "type": "action",
+  "name": "action.squeeze.name",
+  "traits": [
+    "exploration",
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 233,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.squeeze.text"
+}

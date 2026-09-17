@@ -1,0 +1,27 @@
+{
+  "id": "spell.augury",
+  "type": "spell",
+  "name": "spell.augury.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "prediction"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.augury.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.augury.cast-time"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "feat.halfling-luck",
+  "type": "feat",
+  "name": "feat.halfling-luck.name",
+  "traits": [
+    "fortune",
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 60,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.halfling-luck.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "actions": "free",
+  "trigger": "feat.halfling-luck.trigger",
+  "frequency": "feat.halfling-luck.frequency",
+  "prerequisites": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "feat.recognize-spell",
+  "type": "feat",
+  "name": "feat.recognize-spell.name",
+  "traits": [
+    "general",
+    "secret",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 261,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.recognize-spell.text",
+  "level": 1,
+  "category": "skill",
+  "actions": "reaction",
+  "trigger": "feat.recognize-spell.trigger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.recognize-spell.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

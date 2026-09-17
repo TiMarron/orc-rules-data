@@ -1,0 +1,27 @@
+{
+  "id": "feat.intimidating-glare",
+  "type": "feat",
+  "name": "feat.intimidating-glare.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.intimidating-glare.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "trained"
+    }
+  ]
+}

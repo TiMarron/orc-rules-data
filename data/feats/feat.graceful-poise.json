@@ -1,0 +1,28 @@
+{
+  "id": "feat.graceful-poise",
+  "type": "feat",
+  "name": "feat.graceful-poise.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.graceful-poise.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.double-slice"
+    }
+  ]
+}

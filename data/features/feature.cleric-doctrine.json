@@ -1,0 +1,17 @@
+{
+  "id": "feature.cleric-doctrine",
+  "type": "feature",
+  "name": "feature.cleric-doctrine.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 109,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.cleric-doctrine.text",
+  "class": "class.cleric",
+  "level": 1
+}

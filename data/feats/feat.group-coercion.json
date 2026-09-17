@@ -1,0 +1,27 @@
+{
+  "id": "feat.group-coercion",
+  "type": "feat",
+  "name": "feat.group-coercion.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.group-coercion.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "trained"
+    }
+  ]
+}

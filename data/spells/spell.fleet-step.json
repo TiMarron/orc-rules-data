@@ -1,0 +1,27 @@
+{
+  "id": "spell.fleet-step",
+  "type": "spell",
+  "name": "spell.fleet-step.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fleet-step.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.fleet-step.duration"
+}

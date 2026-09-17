@@ -1,0 +1,17 @@
+{
+  "id": "action.call-on-ancient-blood",
+  "type": "action",
+  "name": "action.call-on-ancient-blood.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 43,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.call-on-ancient-blood.text",
+  "actions": "reaction",
+  "trigger": "action.call-on-ancient-blood.trigger"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "spell.suggestion",
+  "type": "spell",
+  "name": "spell.suggestion.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "linguistic",
+    "manipulate",
+    "mental",
+    "subtle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 360,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.suggestion.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.suggestion.range",
+  "targets": "spell.suggestion.targets",
+  "duration": "spell.suggestion.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "8",
+      "text": "spell.suggestion.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.witch-attribute-boosts",
+  "type": "feature",
+  "name": "feature.witch-attribute-boosts.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 178,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.witch-attribute-boosts.text",
+  "class": "class.witch",
+  "level": 1
+}

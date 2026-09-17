@@ -1,0 +1,26 @@
+{
+  "id": "feat.improved-dueling-riposte",
+  "type": "feat",
+  "name": "feat.improved-dueling-riposte.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 149,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improved-dueling-riposte.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dueling-riposte"
+    }
+  ]
+}

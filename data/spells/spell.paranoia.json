@@ -1,0 +1,39 @@
+{
+  "id": "spell.paranoia",
+  "type": "spell",
+  "name": "spell.paranoia.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 348,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.paranoia.text",
+  "rank": 2,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.paranoia.range",
+  "targets": "spell.paranoia.targets",
+  "duration": "spell.paranoia.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.paranoia.heightened.0"
+    }
+  ]
+}

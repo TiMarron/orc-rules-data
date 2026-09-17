@@ -1,0 +1,19 @@
+{
+  "id": "action.track",
+  "type": "action",
+  "name": "action.track.name",
+  "traits": [
+    "concentrate",
+    "exploration",
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 246,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.track.text"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.primal-summons",
+  "type": "feat",
+  "name": "feat.primal-summons.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 134,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.primal-summons.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.call-of-the-wild"
+    }
+  ],
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feat.fantastic-leap",
+  "type": "feat",
+  "name": "feat.fantastic-leap.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 175,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fantastic-leap.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "2",
+  "prerequisites": []
+}

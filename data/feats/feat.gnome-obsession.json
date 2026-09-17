@@ -1,0 +1,21 @@
+{
+  "id": "feat.gnome-obsession",
+  "type": "feat",
+  "name": "feat.gnome-obsession.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 52,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.gnome-obsession.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "prerequisites": []
+}

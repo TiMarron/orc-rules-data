@@ -1,0 +1,17 @@
+{
+  "id": "feature.fighter-attribute-boosts",
+  "type": "feature",
+  "name": "feature.fighter-attribute-boosts.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 136,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.fighter-attribute-boosts.text",
+  "class": "class.fighter",
+  "level": 1
+}

@@ -1,0 +1,16 @@
+{
+  "id": "condition.helpful",
+  "type": "condition",
+  "name": "condition.helpful.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 444,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.helpful.text",
+  "valued": false
+}

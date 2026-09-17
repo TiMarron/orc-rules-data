@@ -1,0 +1,29 @@
+{
+  "id": "spell.clairaudience",
+  "type": "spell",
+  "name": "spell.clairaudience.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "scrying"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 320,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.clairaudience.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.clairaudience.cast-time"
+  },
+  "range": "spell.clairaudience.range",
+  "duration": "spell.clairaudience.duration"
+}

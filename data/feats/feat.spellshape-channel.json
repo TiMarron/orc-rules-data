@@ -1,0 +1,23 @@
+{
+  "id": "feat.spellshape-channel",
+  "type": "feat",
+  "name": "feat.spellshape-channel.name",
+  "traits": [
+    "cleric",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 121,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spellshape-channel.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "free",
+  "prerequisites": []
+}

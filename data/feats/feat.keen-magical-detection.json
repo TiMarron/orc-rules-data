@@ -1,0 +1,22 @@
+{
+  "id": "feat.keen-magical-detection",
+  "type": "feat",
+  "name": "feat.keen-magical-detection.name",
+  "traits": [
+    "fortune",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 204,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.keen-magical-detection.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": []
+}

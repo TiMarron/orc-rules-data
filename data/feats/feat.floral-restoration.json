@@ -1,0 +1,31 @@
+{
+  "id": "feat.floral-restoration",
+  "type": "feat",
+  "name": "feat.floral-restoration.name",
+  "traits": [
+    "druid",
+    "healing",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 132,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.floral-restoration.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "frequency": "feat.floral-restoration.frequency",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.floral-restoration.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

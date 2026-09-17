@@ -1,0 +1,34 @@
+{
+  "id": "item.halfling-sling-staff",
+  "type": "item",
+  "name": "item.halfling-sling-staff.name",
+  "traits": [
+    "halfling",
+    "propulsive"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 280,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.halfling-sling-staff.text",
+  "level": 0,
+  "priceCp": 500,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "sling",
+    "damage": {
+      "dice": "1d10",
+      "type": "bludgeoning"
+    },
+    "range": 80,
+    "reload": "1"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "spell.hunters-luck",
+  "type": "spell",
+  "name": "spell.hunters-luck.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "fortune",
+    "ranger"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 383,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hunters-luck.text",
+  "rank": 2,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "free"
+  },
+  "trigger": "spell.hunters-luck.trigger"
+}

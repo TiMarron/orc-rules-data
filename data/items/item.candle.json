@@ -1,0 +1,19 @@
+{
+  "id": "item.candle",
+  "type": "item",
+  "name": "item.candle.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 287,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.candle.text",
+  "level": 0,
+  "priceCp": 1,
+  "bulk": "0",
+  "category": "gear"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.spring-from-the-shadows",
+  "type": "feat",
+  "name": "feat.spring-from-the-shadows.name",
+  "traits": [
+    "flourish",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 176,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spring-from-the-shadows.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "prerequisites": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "background.hunter",
+  "type": "background",
+  "name": "background.hunter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.hunter.text",
+  "boosts": [
+    [
+      "dex",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.hunter.lore",
+  "skills": [
+    "skill.survival"
+  ],
+  "feat": "feat.survey-wildlife"
+}

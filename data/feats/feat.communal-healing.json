@@ -1,0 +1,23 @@
+{
+  "id": "feat.communal-healing",
+  "type": "feat",
+  "name": "feat.communal-healing.name",
+  "traits": [
+    "cleric",
+    "healing",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 115,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.communal-healing.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.avatars-protection",
+  "type": "feat",
+  "name": "feat.avatars-protection.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 121,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.avatars-protection.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "reaction",
+  "trigger": "feat.avatars-protection.trigger",
+  "requirements": "feat.avatars-protection.requirements",
+  "prerequisites": []
+}

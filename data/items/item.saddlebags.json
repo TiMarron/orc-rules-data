@@ -1,0 +1,19 @@
+{
+  "id": "item.saddlebags",
+  "type": "item",
+  "name": "item.saddlebags.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.saddlebags.text",
+  "level": 0,
+  "priceCp": 20,
+  "bulk": "L",
+  "category": "gear"
+}

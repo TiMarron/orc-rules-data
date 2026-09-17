@@ -1,0 +1,17 @@
+{
+  "id": "action.takedown",
+  "type": "action",
+  "name": "action.takedown.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 211,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.takedown.text",
+  "actions": "1",
+  "requirements": "action.takedown.requirements"
+}

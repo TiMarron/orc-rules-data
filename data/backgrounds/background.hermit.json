@@ -1,0 +1,28 @@
+{
+  "id": "background.hermit",
+  "type": "background",
+  "name": "background.hermit.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "background.hermit.text",
+  "boosts": [
+    [
+      "con",
+      "int"
+    ],
+    "free"
+  ],
+  "lore": "background.hermit.lore",
+  "skills": [
+    "skill.nature"
+  ],
+  "feat": "feat.dubious-knowledge",
+  "editNote": "Accepted: the book (p.87) offers a choice of the Nature or Occultism skill, with the Dubious Knowledge feat granted regardless of which is chosen; the schema's skills array holds exactly one skill, so it can't express the choice, and the converter's pick of Nature is a reasonable single representative, not a wrong answer -- the record's own text already spells out the full choice and the terrain-Lore example."
+}

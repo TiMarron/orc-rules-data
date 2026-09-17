@@ -1,0 +1,15 @@
+{
+  "id": "trait.undead",
+  "type": "trait",
+  "name": "trait.undead.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 462,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.undead.text"
+}

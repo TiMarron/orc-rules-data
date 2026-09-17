@@ -1,0 +1,19 @@
+{
+  "id": "item.basic-crafters-book",
+  "type": "item",
+  "name": "item.basic-crafters-book.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 287,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.basic-crafters-book.text",
+  "level": 0,
+  "priceCp": 10,
+  "bulk": "L",
+  "category": "gear"
+}

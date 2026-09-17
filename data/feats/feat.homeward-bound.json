@@ -1,0 +1,23 @@
+{
+  "id": "feat.homeward-bound",
+  "type": "feat",
+  "name": "feat.homeward-bound.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 53,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.homeward-bound.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "frequency": "feat.homeward-bound.frequency",
+  "prerequisites": [],
+  "editNote": "Reserved"
+}

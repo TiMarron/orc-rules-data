@@ -1,0 +1,27 @@
+{
+  "id": "feat.companions-cry",
+  "type": "feat",
+  "name": "feat.companions-cry.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 159,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.companions-cry.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.companions-cry.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.quick-identification",
+  "type": "feat",
+  "name": "feat.quick-identification.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.quick-identification.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.quick-identification.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

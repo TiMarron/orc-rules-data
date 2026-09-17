@@ -1,0 +1,26 @@
+{
+  "id": "spell.speak-with-animals",
+  "type": "spell",
+  "name": "spell.speak-with-animals.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 358,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.speak-with-animals.text",
+  "rank": 2,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.speak-with-animals.duration"
+}

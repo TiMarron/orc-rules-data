@@ -1,0 +1,37 @@
+{
+  "id": "spell.status",
+  "type": "spell",
+  "name": "spell.status.name",
+  "traits": [
+    "concentrate",
+    "detection",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 359,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.status.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.status.range",
+  "targets": "spell.status.targets",
+  "duration": "spell.status.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.status.heightened.0"
+    }
+  ]
+}

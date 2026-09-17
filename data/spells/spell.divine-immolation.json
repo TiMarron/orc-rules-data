@@ -1,0 +1,39 @@
+{
+  "id": "spell.divine-immolation",
+  "type": "spell",
+  "name": "spell.divine-immolation.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "manipulate",
+    "sanctified",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 325,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.divine-immolation.text",
+  "rank": 5,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.divine-immolation.range",
+  "area": "spell.divine-immolation.area",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.divine-immolation.heightened.0"
+    }
+  ]
+}

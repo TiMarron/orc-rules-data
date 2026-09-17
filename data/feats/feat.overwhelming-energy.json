@@ -1,0 +1,29 @@
+{
+  "id": "feat.overwhelming-energy",
+  "type": "feat",
+  "name": "feat.overwhelming-energy.name",
+  "traits": [
+    "druid",
+    "manipulate",
+    "spellshape",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 133,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.overwhelming-energy.text",
+  "level": 10,
+  "category": "class",
+  "class": [
+    "class.druid",
+    "class.wizard"
+  ],
+  "actions": "1",
+  "prerequisites": [],
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

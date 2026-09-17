@@ -1,0 +1,37 @@
+{
+  "id": "spell.water-walk",
+  "type": "spell",
+  "name": "spell.water-walk.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 369,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.water-walk.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.water-walk.range",
+  "targets": "spell.water-walk.targets",
+  "duration": "spell.water-walk.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.water-walk.heightened.0"
+    }
+  ]
+}

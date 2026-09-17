@@ -1,0 +1,24 @@
+{
+  "id": "feat.double-shot",
+  "type": "feat",
+  "name": "feat.double-shot.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 143,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.double-shot.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "requirements": "feat.double-shot.requirements",
+  "prerequisites": []
+}

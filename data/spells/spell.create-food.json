@@ -1,0 +1,42 @@
+{
+  "id": "spell.create-food",
+  "type": "spell",
+  "name": "spell.create-food.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 321,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.create-food.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.create-food.cast-time"
+  },
+  "range": "spell.create-food.range",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.create-food.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.create-food.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.create-food.heightened.2"
+    }
+  ]
+}

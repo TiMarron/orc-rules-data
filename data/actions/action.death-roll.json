@@ -1,0 +1,18 @@
+{
+  "id": "action.death-roll",
+  "type": "action",
+  "name": "action.death-roll.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 209,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.death-roll.text",
+  "actions": "1",
+  "requirements": "action.death-roll.requirements",
+  "editNote": "The reference points at a rules page the dataset does not model as a record; the link's label survives as plain text."
+}

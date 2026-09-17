@@ -1,0 +1,36 @@
+{
+  "id": "spell.natures-bounty",
+  "type": "spell",
+  "name": "spell.natures-bounty.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "plant",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.natures-bounty.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.natures-bounty.heightened.0"
+    }
+  ],
+  "requirements": "spell.natures-bounty.requirements"
+}

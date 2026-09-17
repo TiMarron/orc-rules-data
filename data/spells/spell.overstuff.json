@@ -1,0 +1,33 @@
+{
+  "id": "spell.overstuff",
+  "type": "spell",
+  "name": "spell.overstuff.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 376,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.overstuff.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.overstuff.range",
+  "targets": "spell.overstuff.targets",
+  "defense": {
+    "save": "fortitude"
+  }
+}

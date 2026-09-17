@@ -1,0 +1,18 @@
+{
+  "id": "action.stride",
+  "type": "action",
+  "name": "action.stride.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 418,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.stride.text",
+  "actions": "1"
+}

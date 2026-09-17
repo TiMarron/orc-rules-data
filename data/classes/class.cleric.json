@@ -1,0 +1,181 @@
+{
+  "id": "class.cleric",
+  "type": "class",
+  "name": "class.cleric.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 109,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "class.cleric.text",
+  "keyAttribute": "wis",
+  "hp": 8,
+  "proficiencies": {
+    "perception": "trained",
+    "fortitude": "trained",
+    "reflex": "trained",
+    "will": "expert",
+    "skills": {
+      "additional": 2,
+      "fixed": [
+        "skill.religion"
+      ],
+      "choices": [
+        {
+          "count": 1,
+          "text": "class.cleric.skill-choice.0"
+        }
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "untrained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "untrained",
+      "medium": "untrained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained",
+    "spellcasting": "trained"
+  },
+  "featLevels": {
+    "class": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.cleric-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.cleric-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.cleric-cleric-spellcasting"
+    },
+    {
+      "level": 1,
+      "feature": "feature.cleric-deity"
+    },
+    {
+      "level": 1,
+      "feature": "feature.cleric-divine-font"
+    },
+    {
+      "level": 1,
+      "feature": "feature.cleric-doctrine"
+    },
+    {
+      "level": 1,
+      "feature": "feature.cleric-initial-proficiencies"
+    },
+    {
+      "level": 2,
+      "feature": "feature.cleric-cleric-feats"
+    },
+    {
+      "level": 2,
+      "feature": "feature.cleric-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.cleric-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.cleric-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.cleric-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.cleric-perception-expertise"
+    },
+    {
+      "level": 9,
+      "feature": "feature.cleric-resolute-faith"
+    },
+    {
+      "level": 11,
+      "feature": "feature.cleric-reflex-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.cleric-divine-defense"
+    },
+    {
+      "level": 13,
+      "feature": "feature.cleric-weapon-specialization"
+    },
+    {
+      "level": 19,
+      "feature": "feature.cleric-miraculous-spell"
+    }
+  ],
+  "editNote": "Reserved Material removed: the product name dropped from the sentence about common deities; the example deity name replaced with a generic descriptor."
+}

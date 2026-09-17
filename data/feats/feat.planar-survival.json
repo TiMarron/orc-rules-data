@@ -1,0 +1,27 @@
+{
+  "id": "feat.planar-survival",
+  "type": "feat",
+  "name": "feat.planar-survival.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 259,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.planar-survival.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "master"
+    }
+  ]
+}

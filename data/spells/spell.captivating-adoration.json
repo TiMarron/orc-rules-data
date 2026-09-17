@@ -1,0 +1,43 @@
+{
+  "id": "spell.captivating-adoration",
+  "type": "spell",
+  "name": "spell.captivating-adoration.name",
+  "traits": [
+    "aura",
+    "cleric",
+    "concentrate",
+    "emotion",
+    "focus",
+    "manipulate",
+    "mental",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 378,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.captivating-adoration.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.captivating-adoration.area",
+  "duration": "spell.captivating-adoration.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.captivating-adoration.heightened.0"
+    }
+  ]
+}

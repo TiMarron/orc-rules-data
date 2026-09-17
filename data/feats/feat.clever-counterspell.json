@@ -1,0 +1,30 @@
+{
+  "id": "feat.clever-counterspell",
+  "type": "feat",
+  "name": "feat.clever-counterspell.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 204,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.clever-counterspell.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.counterspell"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.quick-recognition"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-perception-mastery",
+  "type": "feature",
+  "name": "feature.bard-perception-mastery.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-perception-mastery.text",
+  "class": "class.bard",
+  "level": 11
+}

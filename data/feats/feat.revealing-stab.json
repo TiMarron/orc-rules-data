@@ -1,0 +1,23 @@
+{
+  "id": "feat.revealing-stab",
+  "type": "feat",
+  "name": "feat.revealing-stab.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 145,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.revealing-stab.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "requirements": "feat.revealing-stab.requirements",
+  "prerequisites": []
+}

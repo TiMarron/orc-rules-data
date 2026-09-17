@@ -1,0 +1,21 @@
+{
+  "id": "feat.shielded-stride",
+  "type": "feat",
+  "name": "feat.shielded-stride.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 143,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shielded-stride.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.opportune-backstab",
+  "type": "feat",
+  "name": "feat.opportune-backstab.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 174,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.opportune-backstab.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.opportune-backstab.trigger",
+  "prerequisites": []
+}

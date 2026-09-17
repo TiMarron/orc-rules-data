@@ -1,0 +1,28 @@
+{
+  "id": "feat.rampaging-ferocity",
+  "type": "feat",
+  "name": "feat.rampaging-ferocity.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 73,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rampaging-ferocity.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "actions": "free",
+  "trigger": "feat.rampaging-ferocity.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.orc-ferocity"
+    }
+  ]
+}

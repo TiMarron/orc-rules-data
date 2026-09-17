@@ -1,0 +1,63 @@
+{
+  "id": "spell.summon-elemental",
+  "type": "spell",
+  "name": "spell.summon-elemental.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "summon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 360,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.summon-elemental.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.summon-elemental.range",
+  "duration": "spell.summon-elemental.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.summon-elemental.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.summon-elemental.heightened.1"
+    },
+    {
+      "level": "5",
+      "text": "spell.summon-elemental.heightened.2"
+    },
+    {
+      "level": "6",
+      "text": "spell.summon-elemental.heightened.3"
+    },
+    {
+      "level": "7",
+      "text": "spell.summon-elemental.heightened.4"
+    },
+    {
+      "level": "8",
+      "text": "spell.summon-elemental.heightened.5"
+    },
+    {
+      "level": "9",
+      "text": "spell.summon-elemental.heightened.6"
+    },
+    {
+      "level": "10",
+      "text": "spell.summon-elemental.heightened.7"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.wind-caller",
+  "type": "feat",
+  "name": "feat.wind-caller.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 132,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.wind-caller.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.wind-caller.prereq.0"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.incredible-investiture",
+  "type": "feat",
+  "name": "feat.incredible-investiture.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.incredible-investiture.text",
+  "level": 11,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "cha",
+      "min": 3
+    }
+  ],
+  "editNote": "Reserved Material removed: the page citation to another book replaced with a reference to the rule itself; the page citation to another book replaced with a reference to the rule itself."
+}

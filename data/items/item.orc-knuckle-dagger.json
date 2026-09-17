@@ -1,0 +1,33 @@
+{
+  "id": "item.orc-knuckle-dagger",
+  "type": "item",
+  "name": "item.orc-knuckle-dagger.name",
+  "traits": [
+    "agile",
+    "disarm",
+    "orc"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.orc-knuckle-dagger.text",
+  "level": 0,
+  "priceCp": 70,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "knife",
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

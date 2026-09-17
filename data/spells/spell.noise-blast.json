@@ -1,0 +1,39 @@
+{
+  "id": "spell.noise-blast",
+  "type": "spell",
+  "name": "spell.noise-blast.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "sonic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 347,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.noise-blast.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.noise-blast.range",
+  "area": "spell.noise-blast.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.noise-blast.heightened.0"
+    }
+  ]
+}

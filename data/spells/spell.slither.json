@@ -1,0 +1,39 @@
+{
+  "id": "spell.slither",
+  "type": "spell",
+  "name": "spell.slither.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "shadow"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 357,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.slither.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.slither.range",
+  "area": "spell.slither.area",
+  "duration": "spell.slither.duration",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.slither.heightened.0"
+    }
+  ]
+}

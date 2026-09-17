@@ -1,0 +1,44 @@
+{
+  "id": "spell.sure-footing",
+  "type": "spell",
+  "name": "spell.sure-footing.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 361,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sure-footing.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.sure-footing.range",
+  "targets": "spell.sure-footing.targets",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.sure-footing.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.sure-footing.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.sure-footing.heightened.2"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "spell.possession",
+  "type": "spell",
+  "name": "spell.possession.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental",
+    "possession"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 350,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.possession.text",
+  "rank": 7,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.possession.range",
+  "targets": "spell.possession.targets",
+  "duration": "spell.possession.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.possession.heightened.0"
+    }
+  ]
+}

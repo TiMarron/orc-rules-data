@@ -1,0 +1,23 @@
+{
+  "id": "feat.instant-opening",
+  "type": "feat",
+  "name": "feat.instant-opening.name",
+  "traits": [
+    "concentrate",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 176,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.instant-opening.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "prerequisites": []
+}

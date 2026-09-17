@@ -1,0 +1,15 @@
+{
+  "id": "trait.death",
+  "type": "trait",
+  "name": "trait.death.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 454,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.death.text"
+}

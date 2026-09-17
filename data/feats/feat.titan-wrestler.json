@@ -1,0 +1,27 @@
+{
+  "id": "feat.titan-wrestler",
+  "type": "feat",
+  "name": "feat.titan-wrestler.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.titan-wrestler.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}

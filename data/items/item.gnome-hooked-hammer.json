@@ -1,0 +1,34 @@
+{
+  "id": "item.gnome-hooked-hammer",
+  "type": "item",
+  "name": "item.gnome-hooked-hammer.name",
+  "traits": [
+    "gnome",
+    "trip",
+    "two-hand-1d10",
+    "versatile-p"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.gnome-hooked-hammer.text",
+  "level": 0,
+  "priceCp": 200,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "hammer",
+    "damage": {
+      "dice": "1d6",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

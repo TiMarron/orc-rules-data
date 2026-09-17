@@ -1,0 +1,28 @@
+{
+  "id": "spell.athletic-rush",
+  "type": "spell",
+  "name": "spell.athletic-rush.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.athletic-rush.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.athletic-rush.duration"
+}

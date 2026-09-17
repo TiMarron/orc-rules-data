@@ -1,0 +1,30 @@
+{
+  "id": "spell.bind-undead",
+  "type": "spell",
+  "name": "spell.bind-undead.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.bind-undead.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.bind-undead.range",
+  "targets": "spell.bind-undead.targets",
+  "duration": "spell.bind-undead.duration"
+}

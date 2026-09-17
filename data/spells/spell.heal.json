@@ -1,0 +1,35 @@
+{
+  "id": "spell.heal",
+  "type": "spell",
+  "name": "spell.heal.name",
+  "traits": [
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 335,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.heal.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "1-3"
+  },
+  "range": "spell.heal.range",
+  "targets": "spell.heal.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.heal.heightened.0"
+    }
+  ]
+}

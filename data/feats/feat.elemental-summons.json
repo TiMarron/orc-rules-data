@@ -1,0 +1,21 @@
+{
+  "id": "feat.elemental-summons",
+  "type": "feat",
+  "name": "feat.elemental-summons.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 129,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.elemental-summons.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "feat.watch-your-back",
+  "type": "feat",
+  "name": "feat.watch-your-back.name",
+  "traits": [
+    "emotion",
+    "fear",
+    "mental",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 173,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.watch-your-back.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "trained"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "spell.volcanic-eruption",
+  "type": "spell",
+  "name": "spell.volcanic-eruption.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 366,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.volcanic-eruption.text",
+  "rank": 7,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.volcanic-eruption.range",
+  "area": "spell.volcanic-eruption.area",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.volcanic-eruption.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "spell.regenerate",
+  "type": "spell",
+  "name": "spell.regenerate.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 352,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.regenerate.text",
+  "rank": 7,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.regenerate.range",
+  "targets": "spell.regenerate.targets",
+  "duration": "spell.regenerate.duration",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.regenerate.heightened.0"
+    }
+  ]
+}

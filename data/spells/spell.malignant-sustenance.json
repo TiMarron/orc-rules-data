@@ -1,0 +1,38 @@
+{
+  "id": "spell.malignant-sustenance",
+  "type": "spell",
+  "name": "spell.malignant-sustenance.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 380,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.malignant-sustenance.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.malignant-sustenance.range",
+  "targets": "spell.malignant-sustenance.targets",
+  "duration": "spell.malignant-sustenance.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.malignant-sustenance.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "action.repeat-a-spell",
+  "type": "action",
+  "name": "action.repeat-a-spell.name",
+  "traits": [
+    "concentrate",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 439,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.repeat-a-spell.text"
+}

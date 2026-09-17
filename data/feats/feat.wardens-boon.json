@@ -1,0 +1,22 @@
+{
+  "id": "feat.wardens-boon",
+  "type": "feat",
+  "name": "feat.wardens-boon.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 161,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wardens-boon.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "1",
+  "prerequisites": []
+}

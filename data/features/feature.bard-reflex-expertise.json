@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-reflex-expertise",
+  "type": "feature",
+  "name": "feature.bard-reflex-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-reflex-expertise.text",
+  "class": "class.bard",
+  "level": 3
+}

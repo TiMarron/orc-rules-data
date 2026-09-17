@@ -1,0 +1,32 @@
+{
+  "id": "spell.umbral-journey",
+  "type": "spell",
+  "name": "spell.umbral-journey.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "shadow",
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 364,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "spell.umbral-journey.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.umbral-journey.cast-time"
+  },
+  "range": "spell.umbral-journey.range",
+  "targets": "spell.umbral-journey.targets",
+  "duration": "spell.umbral-journey.duration",
+  "editNote": "Reserved"
+}

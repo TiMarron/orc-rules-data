@@ -1,0 +1,18 @@
+{
+  "id": "action.dismiss",
+  "type": "action",
+  "name": "action.dismiss.name",
+  "traits": [
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 419,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.dismiss.text",
+  "actions": "1"
+}

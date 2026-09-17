@@ -1,0 +1,17 @@
+{
+  "id": "feature.rogue-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.rogue-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 165,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.rogue-initial-proficiencies.text",
+  "class": "class.rogue",
+  "level": 1
+}

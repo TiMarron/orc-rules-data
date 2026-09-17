@@ -1,0 +1,17 @@
+{
+  "id": "action.cast-a-spell",
+  "type": "action",
+  "name": "action.cast-a-spell.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 299,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.cast-a-spell.text",
+  "variable": true,
+  "editNote": "The book gives no action cost: the cost varies with the spell cast or with how elaborate the lie is."
+}

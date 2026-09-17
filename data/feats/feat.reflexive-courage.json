@@ -1,0 +1,32 @@
+{
+  "id": "feat.reflexive-courage",
+  "type": "feat",
+  "name": "feat.reflexive-courage.name",
+  "traits": [
+    "auditory",
+    "bard",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.reflexive-courage.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "reaction",
+  "trigger": "feat.reflexive-courage.trigger",
+  "requirements": "feat.reflexive-courage.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.reflexive-courage.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.defy-death",
+  "type": "feat",
+  "name": "feat.defy-death.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 72,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.defy-death.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.orc-ferocity"
+    }
+  ]
+}

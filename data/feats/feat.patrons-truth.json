@@ -1,0 +1,27 @@
+{
+  "id": "feat.patrons-truth",
+  "type": "feat",
+  "name": "feat.patrons-truth.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 191,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.patrons-truth.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.patrons-truth.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

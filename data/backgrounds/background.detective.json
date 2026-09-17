@@ -1,0 +1,27 @@
+{
+  "id": "background.detective",
+  "type": "background",
+  "name": "background.detective.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.detective.text",
+  "boosts": [
+    [
+      "int",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.detective.lore",
+  "skills": [
+    "skill.society"
+  ],
+  "feat": "feat.streetwise"
+}

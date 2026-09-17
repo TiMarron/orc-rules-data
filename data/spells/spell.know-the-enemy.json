@@ -1,0 +1,29 @@
+{
+  "id": "spell.know-the-enemy",
+  "type": "spell",
+  "name": "spell.know-the-enemy.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "fortune",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 376,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.know-the-enemy.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.know-the-enemy.trigger"
+}

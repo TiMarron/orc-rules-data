@@ -1,0 +1,218 @@
+{
+  "id": "class.ranger",
+  "type": "class",
+  "name": "class.ranger.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 153,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "class.ranger.text",
+  "keyAttribute": [
+    "str",
+    "dex"
+  ],
+  "hp": 10,
+  "proficiencies": {
+    "perception": "expert",
+    "fortitude": "expert",
+    "reflex": "expert",
+    "will": "trained",
+    "skills": {
+      "additional": 4,
+      "fixed": [
+        "skill.nature",
+        "skill.survival"
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "trained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "trained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained"
+  },
+  "featLevels": {
+    "class": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.ranger-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.ranger-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.ranger-hunt-prey"
+    },
+    {
+      "level": 1,
+      "feature": "feature.ranger-hunters-edge"
+    },
+    {
+      "level": 1,
+      "feature": "feature.ranger-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.ranger-ranger-feats"
+    },
+    {
+      "level": 2,
+      "feature": "feature.ranger-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.ranger-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.ranger-skill-increases"
+    },
+    {
+      "level": 3,
+      "feature": "feature.ranger-will-expertise"
+    },
+    {
+      "level": 5,
+      "feature": "feature.ranger-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.ranger-ranger-weapon-expertise"
+    },
+    {
+      "level": 5,
+      "feature": "feature.ranger-trackless-journey"
+    },
+    {
+      "level": 7,
+      "feature": "feature.ranger-natural-reflexes"
+    },
+    {
+      "level": 7,
+      "feature": "feature.ranger-perception-mastery"
+    },
+    {
+      "level": 7,
+      "feature": "feature.ranger-weapon-specialization"
+    },
+    {
+      "level": 9,
+      "feature": "feature.ranger-natures-edge"
+    },
+    {
+      "level": 9,
+      "feature": "feature.ranger-ranger-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.ranger-medium-armor-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.ranger-unimpeded-journey"
+    },
+    {
+      "level": 11,
+      "feature": "feature.ranger-wardens-endurance"
+    },
+    {
+      "level": 13,
+      "feature": "feature.ranger-martial-weapon-mastery"
+    },
+    {
+      "level": 15,
+      "feature": "feature.ranger-greater-natural-reflexes"
+    },
+    {
+      "level": 15,
+      "feature": "feature.ranger-greater-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.ranger-perception-legend"
+    },
+    {
+      "level": 17,
+      "feature": "feature.ranger-masterful-hunter"
+    },
+    {
+      "level": 19,
+      "feature": "feature.ranger-medium-armor-mastery"
+    },
+    {
+      "level": 19,
+      "feature": "feature.ranger-swift-prey"
+    }
+  ],
+  "editNote": "the book p.153: verified hp 10, key attribute Strength or Dexterity, saves (expert/expert/trained), skills (Nature and Survival fixed, +4 Int, no choice list), attacks (simple/martial/unarmed trained, advanced untrained), defenses (unarmored/light/medium trained, heavy untrained), class DC trained (no spellcasting entry, matching the book, which lists no SPELLS row for ranger) all match the book's Initial Proficiencies block; dropped tables/images/document sections and unknown-tags are the expected by-design loss for a class record."
+}

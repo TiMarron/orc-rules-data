@@ -1,0 +1,21 @@
+{
+  "id": "feat.fearsome-brute",
+  "type": "feat",
+  "name": "feat.fearsome-brute.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 147,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fearsome-brute.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": []
+}

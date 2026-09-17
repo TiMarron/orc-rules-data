@@ -1,0 +1,17 @@
+{
+  "id": "action.shred",
+  "type": "action",
+  "name": "action.shred.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 210,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.shred.text",
+  "actions": "1",
+  "requirements": "action.shred.requirements"
+}

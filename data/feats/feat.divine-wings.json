@@ -1,0 +1,25 @@
+{
+  "id": "feat.divine-wings",
+  "type": "feat",
+  "name": "feat.divine-wings.name",
+  "traits": [
+    "divine",
+    "morph",
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 81,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-wings.text",
+  "level": 9,
+  "category": "ancestry",
+  "versatile": true,
+  "actions": "2",
+  "frequency": "feat.divine-wings.frequency",
+  "prerequisites": []
+}

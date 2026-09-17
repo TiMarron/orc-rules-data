@@ -1,0 +1,27 @@
+{
+  "id": "feat.robust-recovery",
+  "type": "feat",
+  "name": "feat.robust-recovery.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 261,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.robust-recovery.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.medicine",
+      "rank": "expert"
+    }
+  ]
+}

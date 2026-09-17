@@ -1,0 +1,21 @@
+{
+  "id": "feat.animal-empathy-ranger",
+  "type": "feat",
+  "name": "feat.animal-empathy-ranger.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 158,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.animal-empathy-ranger.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": []
+}

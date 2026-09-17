@@ -1,0 +1,17 @@
+{
+  "id": "feature.ranger-weapon-specialization",
+  "type": "feature",
+  "name": "feature.ranger-weapon-specialization.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 152,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.ranger-weapon-specialization.text",
+  "class": "class.ranger",
+  "level": 7
+}

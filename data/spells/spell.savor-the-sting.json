@@ -1,0 +1,40 @@
+{
+  "id": "spell.savor-the-sting",
+  "type": "spell",
+  "name": "spell.savor-the-sting.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "mental",
+    "nonlethal"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 378,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.savor-the-sting.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.savor-the-sting.range",
+  "targets": "spell.savor-the-sting.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.savor-the-sting.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.monster-crafting",
+  "type": "feat",
+  "name": "feat.monster-crafting.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 258,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.monster-crafting.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "master"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "spell.guidance",
+  "type": "spell",
+  "name": "spell.guidance.name",
+  "traits": [
+    "cantrip",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 334,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.guidance.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.guidance.range",
+  "targets": "spell.guidance.targets",
+  "duration": "spell.guidance.duration"
+}

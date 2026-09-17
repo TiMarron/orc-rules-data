@@ -1,0 +1,29 @@
+{
+  "id": "spell.indestructibility",
+  "type": "spell",
+  "name": "spell.indestructibility.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 338,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.indestructibility.text",
+  "rank": 10,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.indestructibility.duration"
+}

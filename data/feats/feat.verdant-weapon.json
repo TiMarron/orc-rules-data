@@ -1,0 +1,22 @@
+{
+  "id": "feat.verdant-weapon",
+  "type": "feat",
+  "name": "feat.verdant-weapon.name",
+  "traits": [
+    "druid",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 128,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.verdant-weapon.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": []
+}

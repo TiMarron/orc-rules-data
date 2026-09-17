@@ -1,0 +1,21 @@
+{
+  "id": "action.make-an-impression",
+  "type": "action",
+  "name": "action.make-an-impression.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "exploration",
+    "linguistic",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.make-an-impression.text"
+}

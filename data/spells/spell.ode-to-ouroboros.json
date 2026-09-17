@@ -1,0 +1,31 @@
+{
+  "id": "spell.ode-to-ouroboros",
+  "type": "spell",
+  "name": "spell.ode-to-ouroboros.name",
+  "traits": [
+    "bard",
+    "composition",
+    "concentrate",
+    "focus"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 371,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ode-to-ouroboros.text",
+  "rank": 5,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.ode-to-ouroboros.range",
+  "targets": "spell.ode-to-ouroboros.targets",
+  "trigger": "spell.ode-to-ouroboros.trigger"
+}

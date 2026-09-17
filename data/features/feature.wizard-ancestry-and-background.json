@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-ancestry-and-background",
+  "type": "feature",
+  "name": "feature.wizard-ancestry-and-background.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-ancestry-and-background.text",
+  "class": "class.wizard",
+  "level": 1
+}

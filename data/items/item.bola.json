@@ -1,0 +1,34 @@
+{
+  "id": "item.bola",
+  "type": "item",
+  "name": "item.bola.name",
+  "traits": [
+    "nonlethal",
+    "ranged-trip",
+    "thrown"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.bola.text",
+  "level": 0,
+  "priceCp": 50,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "sling",
+    "damage": {
+      "dice": "1d6",
+      "type": "bludgeoning"
+    },
+    "range": 20
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

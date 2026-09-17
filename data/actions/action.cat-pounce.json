@@ -1,0 +1,18 @@
+{
+  "id": "action.cat-pounce",
+  "type": "action",
+  "name": "action.cat-pounce.name",
+  "traits": [
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 208,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.cat-pounce.text",
+  "actions": "1"
+}

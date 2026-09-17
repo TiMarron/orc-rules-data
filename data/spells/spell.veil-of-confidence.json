@@ -1,0 +1,29 @@
+{
+  "id": "spell.veil-of-confidence",
+  "type": "spell",
+  "name": "spell.veil-of-confidence.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 373,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.veil-of-confidence.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.veil-of-confidence.duration"
+}

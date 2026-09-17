@@ -1,0 +1,39 @@
+{
+  "id": "spell.know-the-way",
+  "type": "spell",
+  "name": "spell.know-the-way.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "detection",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 340,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.know-the-way.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.know-the-way.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.know-the-way.heightened.1"
+    }
+  ]
+}

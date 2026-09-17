@@ -1,0 +1,38 @@
+{
+  "id": "spell.divine-lance",
+  "type": "spell",
+  "name": "spell.divine-lance.name",
+  "traits": [
+    "attack",
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "sanctified",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 325,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.divine-lance.text",
+  "rank": 1,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.divine-lance.range",
+  "targets": "spell.divine-lance.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.divine-lance.heightened.0"
+    }
+  ]
+}

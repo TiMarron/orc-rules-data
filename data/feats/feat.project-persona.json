@@ -1,0 +1,26 @@
+{
+  "id": "feat.project-persona",
+  "type": "feat",
+  "name": "feat.project-persona.name",
+  "traits": [
+    "concentrate",
+    "gnome",
+    "illusion",
+    "primal",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 52,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.project-persona.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "actions": "1",
+  "prerequisites": []
+}

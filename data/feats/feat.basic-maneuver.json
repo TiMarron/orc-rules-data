@@ -1,0 +1,26 @@
+{
+  "id": "feat.basic-maneuver",
+  "type": "feat",
+  "name": "feat.basic-maneuver.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 219,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.basic-maneuver.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.fighter-dedication"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

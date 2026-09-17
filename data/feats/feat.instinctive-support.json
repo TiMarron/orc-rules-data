@@ -1,0 +1,28 @@
+{
+  "id": "feat.instinctive-support",
+  "type": "feat",
+  "name": "feat.instinctive-support.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 131,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.instinctive-support.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "free",
+  "trigger": "feat.instinctive-support.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.animal-companion"
+    }
+  ]
+}

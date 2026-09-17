@@ -1,0 +1,27 @@
+{
+  "id": "feat.versatile-performance",
+  "type": "feat",
+  "name": "feat.versatile-performance.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.versatile-performance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.versatile-performance.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

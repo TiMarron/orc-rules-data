@@ -1,0 +1,21 @@
+{
+  "id": "feat.unfettered-halfling",
+  "type": "feat",
+  "name": "feat.unfettered-halfling.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 60,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unfettered-halfling.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": []
+}

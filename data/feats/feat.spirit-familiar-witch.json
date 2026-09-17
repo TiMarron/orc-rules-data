@@ -1,0 +1,27 @@
+{
+  "id": "feat.spirit-familiar-witch",
+  "type": "feat",
+  "name": "feat.spirit-familiar-witch.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 189,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.spirit-familiar-witch.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.spirit-familiar-witch.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

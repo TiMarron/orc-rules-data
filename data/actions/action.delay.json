@@ -1,0 +1,17 @@
+{
+  "id": "action.delay",
+  "type": "action",
+  "name": "action.delay.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 416,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.delay.text",
+  "actions": "free",
+  "trigger": "action.delay.trigger"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.dromaar",
+  "type": "trait",
+  "name": "trait.dromaar.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 455,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.dromaar.text"
+}

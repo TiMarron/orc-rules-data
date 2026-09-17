@@ -1,0 +1,33 @@
+{
+  "id": "spell.scrying",
+  "type": "spell",
+  "name": "spell.scrying.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "scrying"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 355,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.scrying.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.scrying.cast-time"
+  },
+  "range": "spell.scrying.range",
+  "targets": "spell.scrying.targets",
+  "duration": "spell.scrying.duration",
+  "defense": {
+    "save": "will"
+  }
+}

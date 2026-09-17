@@ -1,0 +1,26 @@
+{
+  "id": "feat.furious-focus",
+  "type": "feat",
+  "name": "feat.furious-focus.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 145,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.furious-focus.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.vicious-swing"
+    }
+  ]
+}

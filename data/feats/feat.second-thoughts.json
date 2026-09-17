@@ -1,0 +1,25 @@
+{
+  "id": "feat.second-thoughts",
+  "type": "feat",
+  "name": "feat.second-thoughts.name",
+  "traits": [
+    "concentrate",
+    "mental",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 205,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.second-thoughts.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "reaction",
+  "trigger": "feat.second-thoughts.trigger",
+  "prerequisites": []
+}

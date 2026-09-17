@@ -1,0 +1,35 @@
+{
+  "id": "spell.charming-push",
+  "type": "spell",
+  "name": "spell.charming-push.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "incapacitation",
+    "mental",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 388,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.charming-push.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.charming-push.range",
+  "targets": "spell.charming-push.targets",
+  "duration": "spell.charming-push.duration",
+  "defense": {
+    "save": "will"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "feat.deadly-aim",
+  "type": "feat",
+  "name": "feat.deadly-aim.name",
+  "traits": [
+    "flourish",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 161,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.deadly-aim.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.deadly-aim.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

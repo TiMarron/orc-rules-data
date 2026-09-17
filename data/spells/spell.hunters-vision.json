@@ -1,0 +1,30 @@
+{
+  "id": "spell.hunters-vision",
+  "type": "spell",
+  "name": "spell.hunters-vision.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "ranger"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 384,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hunters-vision.text",
+  "rank": 5,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.hunters-vision.range",
+  "targets": "spell.hunters-vision.targets",
+  "duration": "spell.hunters-vision.duration"
+}

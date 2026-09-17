@@ -1,0 +1,41 @@
+{
+  "id": "spell.weapon-surge",
+  "type": "spell",
+  "name": "spell.weapon-surge.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "sanctified"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 381,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.weapon-surge.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.weapon-surge.range",
+  "targets": "spell.weapon-surge.targets",
+  "duration": "spell.weapon-surge.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.weapon-surge.heightened.0"
+    },
+    {
+      "level": "9",
+      "text": "spell.weapon-surge.heightened.1"
+    }
+  ]
+}

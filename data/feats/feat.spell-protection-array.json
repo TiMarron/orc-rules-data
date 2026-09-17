@@ -1,0 +1,24 @@
+{
+  "id": "feat.spell-protection-array",
+  "type": "feat",
+  "name": "feat.spell-protection-array.name",
+  "traits": [
+    "arcane",
+    "manipulate",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 202,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spell-protection-array.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "1",
+  "prerequisites": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "background.scholar",
+  "type": "background",
+  "name": "background.scholar.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "background.scholar.text",
+  "boosts": [
+    [
+      "int",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.scholar.lore",
+  "skills": [],
+  "choices": [
+    {
+      "count": 1,
+      "from": [
+        "skill.arcana",
+        "skill.nature",
+        "skill.occultism",
+        "skill.religion"
+      ]
+    }
+  ],
+  "feat": "feat.assurance",
+  "editNote": "Accepted: the book (p.88) offers a 4-way skill choice (Arcana, Nature, Occultism, or Religion), with Assurance in whichever is chosen; the schema's skills array holds exactly one, so a specific pick can't be recorded without misrepresenting the other three legal options, and leaving it empty (rather than picking one arbitrarily, unlike the 2-way choices elsewhere) correctly signals that no single value is defensible here. The record's own text lists all four options and the Academia Lore skill."
+}

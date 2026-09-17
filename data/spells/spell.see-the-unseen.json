@@ -1,0 +1,35 @@
+{
+  "id": "spell.see-the-unseen",
+  "type": "spell",
+  "name": "spell.see-the-unseen.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "revelation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 355,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.see-the-unseen.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.see-the-unseen.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.see-the-unseen.heightened.0"
+    }
+  ]
+}

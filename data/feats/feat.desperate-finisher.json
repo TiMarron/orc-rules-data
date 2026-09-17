@@ -1,0 +1,24 @@
+{
+  "id": "feat.desperate-finisher",
+  "type": "feat",
+  "name": "feat.desperate-finisher.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 149,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.desperate-finisher.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "reaction",
+  "trigger": "feat.desperate-finisher.trigger",
+  "prerequisites": []
+}

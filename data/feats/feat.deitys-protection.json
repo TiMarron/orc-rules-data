@@ -1,0 +1,26 @@
+{
+  "id": "feat.deitys-protection",
+  "type": "feat",
+  "name": "feat.deitys-protection.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 119,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.deitys-protection.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.advanced-domain"
+    }
+  ]
+}

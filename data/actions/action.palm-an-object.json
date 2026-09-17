@@ -1,0 +1,18 @@
+{
+  "id": "action.palm-an-object",
+  "type": "action",
+  "name": "action.palm-an-object.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 246,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.palm-an-object.text",
+  "actions": "1"
+}

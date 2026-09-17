@@ -1,0 +1,27 @@
+{
+  "id": "feat.spellbook-prodigy",
+  "type": "feat",
+  "name": "feat.spellbook-prodigy.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 201,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spellbook-prodigy.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.arcana",
+      "rank": "trained"
+    }
+  ]
+}

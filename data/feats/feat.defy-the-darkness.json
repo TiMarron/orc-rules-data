@@ -1,0 +1,27 @@
+{
+  "id": "feat.defy-the-darkness",
+  "type": "feat",
+  "name": "feat.defy-the-darkness.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 44,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.defy-the-darkness.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.defy-the-darkness.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

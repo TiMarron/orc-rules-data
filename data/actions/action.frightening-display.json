@@ -1,0 +1,16 @@
+{
+  "id": "action.frightening-display",
+  "type": "action",
+  "name": "action.frightening-display.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 206,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.frightening-display.text",
+  "actions": "1"
+}

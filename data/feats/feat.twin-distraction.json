@@ -1,0 +1,27 @@
+{
+  "id": "feat.twin-distraction",
+  "type": "feat",
+  "name": "feat.twin-distraction.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.twin-distraction.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "requirements": "feat.twin-distraction.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.twin-feint"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.improved-swift-banishment",
+  "type": "feat",
+  "name": "feat.improved-swift-banishment.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 121,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improved-swift-banishment.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.swift-banishment"
+    }
+  ]
+}

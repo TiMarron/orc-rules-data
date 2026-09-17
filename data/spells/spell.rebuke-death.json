@@ -1,0 +1,38 @@
+{
+  "id": "spell.rebuke-death",
+  "type": "spell",
+  "name": "spell.rebuke-death.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 376,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.rebuke-death.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1-3"
+  },
+  "area": "spell.rebuke-death.area",
+  "targets": "spell.rebuke-death.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.rebuke-death.heightened.0"
+    }
+  ]
+}

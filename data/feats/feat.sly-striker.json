@@ -1,0 +1,27 @@
+{
+  "id": "feat.sly-striker",
+  "type": "feat",
+  "name": "feat.sly-striker.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 174,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.sly-striker.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.sly-striker.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

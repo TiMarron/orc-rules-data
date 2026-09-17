@@ -1,0 +1,26 @@
+{
+  "id": "feat.smash-from-the-air",
+  "type": "feat",
+  "name": "feat.smash-from-the-air.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 151,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.smash-from-the-air.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cut-from-the-air"
+    }
+  ]
+}

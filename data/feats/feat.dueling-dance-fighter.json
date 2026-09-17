@@ -1,0 +1,29 @@
+{
+  "id": "feat.dueling-dance-fighter",
+  "type": "feat",
+  "name": "feat.dueling-dance-fighter.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 149,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dueling-dance-fighter.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.dueling-dance-fighter.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dueling-parry-fighter"
+    }
+  ]
+}

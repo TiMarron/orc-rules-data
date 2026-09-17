@@ -1,0 +1,21 @@
+{
+  "id": "feat.group-aid",
+  "type": "feat",
+  "name": "feat.group-aid.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 64,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.group-aid.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.wandering-oasis",
+  "type": "feat",
+  "name": "feat.wandering-oasis.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 134,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wandering-oasis.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "master"
+    }
+  ]
+}

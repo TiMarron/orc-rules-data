@@ -1,0 +1,33 @@
+{
+  "id": "spell.energy-absorption",
+  "type": "spell",
+  "name": "spell.energy-absorption.name",
+  "traits": [
+    "focus",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 387,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.energy-absorption.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.energy-absorption.heightened.0"
+    }
+  ],
+  "trigger": "spell.energy-absorption.trigger"
+}

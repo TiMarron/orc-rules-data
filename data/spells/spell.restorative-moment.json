@@ -1,0 +1,28 @@
+{
+  "id": "spell.restorative-moment",
+  "type": "spell",
+  "name": "spell.restorative-moment.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "hex",
+    "manipulate",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 385,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.restorative-moment.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.restorative-moment.range",
+  "targets": "spell.restorative-moment.targets"
+}

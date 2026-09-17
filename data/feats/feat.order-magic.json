@@ -1,0 +1,26 @@
+{
+  "id": "feat.order-magic",
+  "type": "feat",
+  "name": "feat.order-magic.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 131,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.order-magic.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.order-explorer"
+    }
+  ]
+}

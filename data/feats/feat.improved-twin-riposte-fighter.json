@@ -1,0 +1,26 @@
+{
+  "id": "feat.improved-twin-riposte-fighter",
+  "type": "feat",
+  "name": "feat.improved-twin-riposte-fighter.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improved-twin-riposte-fighter.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.twin-riposte"
+    }
+  ]
+}

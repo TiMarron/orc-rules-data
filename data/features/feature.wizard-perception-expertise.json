@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-perception-expertise",
+  "type": "feature",
+  "name": "feature.wizard-perception-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-perception-expertise.text",
+  "class": "class.wizard",
+  "level": 11
+}

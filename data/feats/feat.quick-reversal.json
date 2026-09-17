@@ -1,0 +1,25 @@
+{
+  "id": "feat.quick-reversal",
+  "type": "feat",
+  "name": "feat.quick-reversal.name",
+  "traits": [
+    "fighter",
+    "flourish",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 143,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.quick-reversal.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.quick-reversal.requirements",
+  "prerequisites": []
+}

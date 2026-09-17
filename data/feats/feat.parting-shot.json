@@ -1,0 +1,23 @@
+{
+  "id": "feat.parting-shot",
+  "type": "feat",
+  "name": "feat.parting-shot.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 143,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.parting-shot.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "requirements": "feat.parting-shot.requirements",
+  "prerequisites": []
+}

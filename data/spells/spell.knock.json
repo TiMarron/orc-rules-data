@@ -1,0 +1,29 @@
+{
+  "id": "spell.knock",
+  "type": "spell",
+  "name": "spell.knock.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 340,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.knock.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.knock.range",
+  "targets": "spell.knock.targets",
+  "duration": "spell.knock.duration"
+}

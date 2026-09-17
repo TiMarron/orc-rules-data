@@ -1,0 +1,23 @@
+{
+  "id": "feat.channel-smite",
+  "type": "feat",
+  "name": "feat.channel-smite.name",
+  "traits": [
+    "cleric",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 116,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.channel-smite.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "2",
+  "prerequisites": []
+}

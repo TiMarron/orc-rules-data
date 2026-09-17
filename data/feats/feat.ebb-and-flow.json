@@ -1,0 +1,29 @@
+{
+  "id": "feat.ebb-and-flow",
+  "type": "feat",
+  "name": "feat.ebb-and-flow.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 119,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ebb-and-flow.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.versatile-font"
+    }
+  ]
+}

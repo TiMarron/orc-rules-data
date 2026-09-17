@@ -2,10 +2,15 @@
   "id": "trait.healing",
   "type": "trait",
   "name": "trait.healing.name",
-  "text": "trait.healing.text",
   "traits": [],
   "rarity": "common",
-  "source": { "book": "gm-core", "page": 330, "revision": "2023-first" },
+  "source": {
+    "book": "player-core",
+    "page": 457,
+    "revision": "2023-first"
+  },
   "review": "human",
-  "edited": false
+  "edited": true,
+  "text": "trait.healing.text",
+  "editNote": "the book's wording supersedes the the companion book glossary entry the dataset was seeded with."
 }

@@ -1,0 +1,26 @@
+{
+  "id": "feat.very-very-sneaky",
+  "type": "feat",
+  "name": "feat.very-very-sneaky.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 57,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.very-very-sneaky.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.very-sneaky"
+    }
+  ]
+}

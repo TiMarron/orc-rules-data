@@ -1,0 +1,29 @@
+{
+  "id": "spell.planar-palace",
+  "type": "spell",
+  "name": "spell.planar-palace.name",
+  "traits": [
+    "concentrate",
+    "extradimensional",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 350,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.planar-palace.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.planar-palace.cast-time"
+  },
+  "range": "spell.planar-palace.range",
+  "duration": "spell.planar-palace.duration"
+}

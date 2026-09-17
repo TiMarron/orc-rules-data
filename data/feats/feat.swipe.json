@@ -1,0 +1,24 @@
+{
+  "id": "feat.swipe",
+  "type": "feat",
+  "name": "feat.swipe.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 144,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.swipe.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "prerequisites": [],
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

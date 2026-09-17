@@ -1,0 +1,241 @@
+{
+  "id": "class.rogue",
+  "type": "class",
+  "name": "class.rogue.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 165,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "class.rogue.text",
+  "keyAttribute": "dex",
+  "hp": 8,
+  "proficiencies": {
+    "perception": "expert",
+    "fortitude": "trained",
+    "reflex": "expert",
+    "will": "expert",
+    "skills": {
+      "additional": 7,
+      "fixed": [
+        "skill.stealth"
+      ],
+      "choices": [
+        {
+          "count": 1,
+          "text": "class.rogue.skill-choice.0"
+        }
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "trained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "untrained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained"
+  },
+  "featLevels": {
+    "class": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.rogue-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.rogue-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.rogue-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.rogue-rogue-feats"
+    },
+    {
+      "level": 1,
+      "feature": "feature.rogue-rogues-racket"
+    },
+    {
+      "level": 1,
+      "feature": "feature.rogue-skill-feats"
+    },
+    {
+      "level": 1,
+      "feature": "feature.rogue-sneak-attack"
+    },
+    {
+      "level": 1,
+      "feature": "feature.rogue-surprise-attack"
+    },
+    {
+      "level": 2,
+      "feature": "feature.rogue-skill-increases"
+    },
+    {
+      "level": 3,
+      "feature": "feature.rogue-deny-advantage"
+    },
+    {
+      "level": 3,
+      "feature": "feature.rogue-general-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.rogue-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.rogue-weapon-tricks"
+    },
+    {
+      "level": 7,
+      "feature": "feature.rogue-evasive-reflexes"
+    },
+    {
+      "level": 7,
+      "feature": "feature.rogue-perception-mastery"
+    },
+    {
+      "level": 7,
+      "feature": "feature.rogue-weapon-specialization"
+    },
+    {
+      "level": 9,
+      "feature": "feature.rogue-debilitating-strike"
+    },
+    {
+      "level": 9,
+      "feature": "feature.rogue-rogue-resilience"
+    },
+    {
+      "level": 11,
+      "feature": "feature.rogue-rogue-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.rogue-greater-rogue-reflexes"
+    },
+    {
+      "level": 13,
+      "feature": "feature.rogue-light-armor-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.rogue-master-tricks"
+    },
+    {
+      "level": 13,
+      "feature": "feature.rogue-perception-legend"
+    },
+    {
+      "level": 15,
+      "feature": "feature.rogue-double-debilitation"
+    },
+    {
+      "level": 15,
+      "feature": "feature.rogue-greater-weapon-specialization"
+    },
+    {
+      "level": 17,
+      "feature": "feature.rogue-agile-mind"
+    },
+    {
+      "level": 19,
+      "feature": "feature.rogue-light-armor-mastery"
+    },
+    {
+      "level": 19,
+      "feature": "feature.rogue-master-strike"
+    }
+  ],
+  "editNote": "the book p.165: verified hp 8, key attribute Dexterity (the book's 'Dexterity or other' racket-dependent nuance is explained by the racket features themselves and is a documented, intentional simplification in transform/class.ts's keyAttributes()), saves (trained/expert/expert), skills (Stealth fixed + one-or-more from racket, +7 Int), attacks (simple/martial/unarmed trained, advanced untrained), defenses (unarmored/light trained, medium/heavy untrained), class DC trained all match the book's Initial Proficiencies block; dropped tables/images/document sections and unknown-tags are the expected by-design loss for a class record."
+}

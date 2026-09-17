@@ -1,0 +1,49 @@
+{
+  "id": "spell.marvelous-mount",
+  "type": "spell",
+  "name": "spell.marvelous-mount.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 342,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.marvelous-mount.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.marvelous-mount.cast-time"
+  },
+  "range": "spell.marvelous-mount.range",
+  "targets": "spell.marvelous-mount.targets",
+  "duration": "spell.marvelous-mount.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.marvelous-mount.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.marvelous-mount.heightened.1"
+    },
+    {
+      "level": "5",
+      "text": "spell.marvelous-mount.heightened.2"
+    },
+    {
+      "level": "6",
+      "text": "spell.marvelous-mount.heightened.3"
+    }
+  ]
+}

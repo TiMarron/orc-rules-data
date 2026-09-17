@@ -1,0 +1,31 @@
+{
+  "id": "feat.vicious-debilitations",
+  "type": "feat",
+  "name": "feat.vicious-debilitations.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 175,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.vicious-debilitations.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.vicious-debilitations.prereq.0"
+    },
+    {
+      "kind": "text",
+      "key": "feat.vicious-debilitations.prereq.1"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent. The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

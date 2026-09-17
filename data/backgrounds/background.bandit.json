@@ -1,0 +1,27 @@
+{
+  "id": "background.bandit",
+  "type": "background",
+  "name": "background.bandit.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 84,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.bandit.text",
+  "boosts": [
+    [
+      "dex",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.bandit.lore",
+  "skills": [
+    "skill.intimidation"
+  ],
+  "feat": "feat.group-coercion"
+}

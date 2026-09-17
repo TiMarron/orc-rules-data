@@ -1,0 +1,24 @@
+{
+  "id": "feat.echoes-in-stone",
+  "type": "feat",
+  "name": "feat.echoes-in-stone.name",
+  "traits": [
+    "concentrate",
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 45,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.echoes-in-stone.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "actions": "1",
+  "requirements": "feat.echoes-in-stone.requirements",
+  "prerequisites": []
+}

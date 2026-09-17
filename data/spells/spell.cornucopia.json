@@ -1,0 +1,38 @@
+{
+  "id": "spell.cornucopia",
+  "type": "spell",
+  "name": "spell.cornucopia.name",
+  "traits": [
+    "concentrate",
+    "druid",
+    "focus",
+    "healing",
+    "manipulate",
+    "plant",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 382,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.cornucopia.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.cornucopia.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.cornucopia.heightened.0"
+    }
+  ]
+}

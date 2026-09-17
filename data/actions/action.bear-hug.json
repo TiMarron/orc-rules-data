@@ -1,0 +1,17 @@
+{
+  "id": "action.bear-hug",
+  "type": "action",
+  "name": "action.bear-hug.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 207,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.bear-hug.text",
+  "actions": "1",
+  "requirements": "action.bear-hug.requirements"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.disorienting-opening",
+  "type": "feat",
+  "name": "feat.disorienting-opening.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 146,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.disorienting-opening.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.disorienting-opening.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

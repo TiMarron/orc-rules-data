@@ -1,0 +1,29 @@
+{
+  "id": "feat.advanced-first-aid",
+  "type": "feat",
+  "name": "feat.advanced-first-aid.name",
+  "traits": [
+    "general",
+    "healing",
+    "manipulate",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-first-aid.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.medicine",
+      "rank": "master"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "condition.fatigued",
+  "type": "condition",
+  "name": "condition.fatigued.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 444,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.fatigued.text",
+  "valued": false
+}

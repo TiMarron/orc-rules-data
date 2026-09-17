@@ -1,0 +1,39 @@
+{
+  "id": "spell.implosion",
+  "type": "spell",
+  "name": "spell.implosion.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 338,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.implosion.text",
+  "rank": 9,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.implosion.range",
+  "targets": "spell.implosion.targets",
+  "duration": "spell.implosion.duration",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.implosion.heightened.0"
+    }
+  ]
+}

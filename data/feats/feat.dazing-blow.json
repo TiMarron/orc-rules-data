@@ -1,0 +1,24 @@
+{
+  "id": "feat.dazing-blow",
+  "type": "feat",
+  "name": "feat.dazing-blow.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 144,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dazing-blow.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.dazing-blow.requirements",
+  "prerequisites": []
+}

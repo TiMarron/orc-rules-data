@@ -1,0 +1,28 @@
+{
+  "id": "spell.nudge-fate",
+  "type": "spell",
+  "name": "spell.nudge-fate.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "hex",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 387,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.nudge-fate.text",
+  "rank": 1,
+  "traditionsVary": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.nudge-fate.range",
+  "targets": "spell.nudge-fate.targets",
+  "duration": "spell.nudge-fate.duration"
+}

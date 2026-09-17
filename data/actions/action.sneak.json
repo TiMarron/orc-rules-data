@@ -1,0 +1,19 @@
+{
+  "id": "action.sneak",
+  "type": "action",
+  "name": "action.sneak.name",
+  "traits": [
+    "move",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 245,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.sneak.text",
+  "actions": "1"
+}

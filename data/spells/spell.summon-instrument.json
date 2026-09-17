@@ -1,0 +1,35 @@
+{
+  "id": "spell.summon-instrument",
+  "type": "spell",
+  "name": "spell.summon-instrument.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 361,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.summon-instrument.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "duration": "spell.summon-instrument.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.summon-instrument.heightened.0"
+    }
+  ]
+}

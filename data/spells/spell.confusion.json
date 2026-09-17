@@ -1,0 +1,40 @@
+{
+  "id": "spell.confusion",
+  "type": "spell",
+  "name": "spell.confusion.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 321,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.confusion.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.confusion.range",
+  "targets": "spell.confusion.targets",
+  "duration": "spell.confusion.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "8",
+      "text": "spell.confusion.heightened.0"
+    }
+  ]
+}

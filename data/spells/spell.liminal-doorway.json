@@ -1,0 +1,29 @@
+{
+  "id": "spell.liminal-doorway",
+  "type": "spell",
+  "name": "spell.liminal-doorway.name",
+  "traits": [
+    "concentrate",
+    "extradimensional",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 341,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.liminal-doorway.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.liminal-doorway.cast-time"
+  },
+  "range": "spell.liminal-doorway.range",
+  "duration": "spell.liminal-doorway.duration"
+}

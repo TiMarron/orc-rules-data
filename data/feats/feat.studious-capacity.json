@@ -1,0 +1,32 @@
+{
+  "id": "feat.studious-capacity",
+  "type": "feat",
+  "name": "feat.studious-capacity.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.studious-capacity.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.studious-capacity.prereq.0"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.occultism",
+      "rank": "legendary"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

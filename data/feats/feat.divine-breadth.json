@@ -1,0 +1,25 @@
+{
+  "id": "feat.divine-breadth",
+  "type": "feat",
+  "name": "feat.divine-breadth.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-breadth.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-cleric-spellcasting"
+    }
+  ]
+}

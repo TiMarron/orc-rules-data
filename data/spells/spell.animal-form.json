@@ -1,0 +1,42 @@
+{
+  "id": "spell.animal-form",
+  "type": "spell",
+  "name": "spell.animal-form.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.animal-form.text",
+  "rank": 2,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.animal-form.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.animal-form.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.animal-form.heightened.1"
+    },
+    {
+      "level": "5",
+      "text": "spell.animal-form.heightened.2"
+    }
+  ],
+  "editNote": "Reserved Material removed: the heading grouping the animal list under another book's title dropped; the list itself is unchanged; the dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "feat.true-shapeshifter",
+  "type": "feat",
+  "name": "feat.true-shapeshifter.name",
+  "traits": [
+    "concentrate",
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.true-shapeshifter.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dragon-shape"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.untamed-form"
+    }
+  ]
+}

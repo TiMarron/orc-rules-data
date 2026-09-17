@@ -1,0 +1,26 @@
+{
+  "id": "feat.specialized-companion-ranger",
+  "type": "feat",
+  "name": "feat.specialized-companion-ranger.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.specialized-companion-ranger.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.incredible-companion-ranger"
+    }
+  ]
+}

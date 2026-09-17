@@ -1,0 +1,28 @@
+{
+  "id": "feat.impossible-volley",
+  "type": "feat",
+  "name": "feat.impossible-volley.name",
+  "traits": [
+    "fighter",
+    "flourish",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impossible-volley.text",
+  "level": 18,
+  "category": "class",
+  "class": [
+    "class.fighter",
+    "class.ranger"
+  ],
+  "actions": "3",
+  "requirements": "feat.impossible-volley.requirements",
+  "prerequisites": []
+}

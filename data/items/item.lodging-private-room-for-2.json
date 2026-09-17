@@ -1,0 +1,19 @@
+{
+  "id": "item.lodging-private-room-for-2",
+  "type": "item",
+  "name": "item.lodging-private-room-for-2.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 294,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "level": 0,
+  "priceCp": 80,
+  "bulk": "0",
+  "category": "gear",
+  "editNote": "pdf-page fail: this variant's disambiguating name (a base item plus a bracketed size/quality/rank variant, e.g. 'Lock (Average)', 'Spellcasting (1st rank)') is never printed in the book as its own heading; the page is the table that lists the variant as a priced row, confirmed against the cached PDF text for its claimed page range."
+}

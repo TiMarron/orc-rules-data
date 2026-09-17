@@ -1,0 +1,37 @@
+{
+  "id": "spell.canticle-of-everlasting-grief",
+  "type": "spell",
+  "name": "spell.canticle-of-everlasting-grief.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "curse",
+    "emotion",
+    "fear",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.canticle-of-everlasting-grief.text",
+  "rank": 8,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.canticle-of-everlasting-grief.range",
+  "targets": "spell.canticle-of-everlasting-grief.targets",
+  "duration": "spell.canticle-of-everlasting-grief.duration",
+  "defense": {
+    "save": "will"
+  }
+}

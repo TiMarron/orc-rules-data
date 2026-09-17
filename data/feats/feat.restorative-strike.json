@@ -1,0 +1,23 @@
+{
+  "id": "feat.restorative-strike",
+  "type": "feat",
+  "name": "feat.restorative-strike.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 116,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.restorative-strike.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "2",
+  "requirements": "feat.restorative-strike.requirements",
+  "prerequisites": []
+}

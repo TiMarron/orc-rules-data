@@ -1,0 +1,34 @@
+{
+  "id": "spell.warp-mind",
+  "type": "spell",
+  "name": "spell.warp-mind.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 368,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.warp-mind.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.warp-mind.range",
+  "targets": "spell.warp-mind.targets",
+  "defense": {
+    "save": "will"
+  }
+}

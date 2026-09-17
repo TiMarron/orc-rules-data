@@ -1,0 +1,22 @@
+{
+  "id": "feat.head-stomp",
+  "type": "feat",
+  "name": "feat.head-stomp.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 171,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.head-stomp.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "prerequisites": []
+}

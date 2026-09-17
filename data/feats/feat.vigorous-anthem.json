@@ -1,0 +1,25 @@
+{
+  "id": "feat.vigorous-anthem",
+  "type": "feat",
+  "name": "feat.vigorous-anthem.name",
+  "traits": [
+    "auditory",
+    "bard",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vigorous-anthem.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": []
+}

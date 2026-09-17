@@ -1,0 +1,27 @@
+{
+  "id": "spell.read-omens",
+  "type": "spell",
+  "name": "spell.read-omens.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "prediction"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 352,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.read-omens.text",
+  "rank": 4,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.read-omens.cast-time"
+  }
+}

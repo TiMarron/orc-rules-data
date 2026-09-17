@@ -1,0 +1,40 @@
+{
+  "id": "spell.translate",
+  "type": "spell",
+  "name": "spell.translate.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 363,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.translate.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.translate.range",
+  "targets": "spell.translate.targets",
+  "duration": "spell.translate.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.translate.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.translate.heightened.1"
+    }
+  ]
+}

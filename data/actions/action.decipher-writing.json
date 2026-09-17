@@ -1,0 +1,19 @@
+{
+  "id": "action.decipher-writing",
+  "type": "action",
+  "name": "action.decipher-writing.name",
+  "traits": [
+    "concentrate",
+    "exploration",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 228,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.decipher-writing.text"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feat.march-the-mines",
+  "type": "feat",
+  "name": "feat.march-the-mines.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 45,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.march-the-mines.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "actions": "2",
+  "prerequisites": []
+}

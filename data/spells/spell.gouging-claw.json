@@ -1,0 +1,38 @@
+{
+  "id": "spell.gouging-claw",
+  "type": "spell",
+  "name": "spell.gouging-claw.name",
+  "traits": [
+    "attack",
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "morph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 333,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gouging-claw.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.gouging-claw.range",
+  "targets": "spell.gouging-claw.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.gouging-claw.heightened.0"
+    }
+  ]
+}

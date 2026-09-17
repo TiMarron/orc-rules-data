@@ -1,0 +1,27 @@
+{
+  "id": "feat.occult-resistance",
+  "type": "feat",
+  "name": "feat.occult-resistance.name",
+  "traits": [
+    "changeling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 77,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.occult-resistance.text",
+  "level": 9,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.occultism",
+      "rank": "expert"
+    }
+  ]
+}

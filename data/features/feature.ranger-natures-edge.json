@@ -1,0 +1,17 @@
+{
+  "id": "feature.ranger-natures-edge",
+  "type": "feature",
+  "name": "feature.ranger-natures-edge.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 152,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.ranger-natures-edge.text",
+  "class": "class.ranger",
+  "level": 9
+}

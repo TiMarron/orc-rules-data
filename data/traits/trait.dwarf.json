@@ -1,0 +1,15 @@
+{
+  "id": "trait.dwarf",
+  "type": "trait",
+  "name": "trait.dwarf.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 455,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.dwarf.text"
+}

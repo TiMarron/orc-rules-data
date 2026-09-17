@@ -1,0 +1,35 @@
+{
+  "id": "feat.defensive-coordination",
+  "type": "feat",
+  "name": "feat.defensive-coordination.name",
+  "traits": [
+    "auditory",
+    "bard",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.defensive-coordination.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.defensive-coordination.prereq.0"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.rallying-anthem"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feat.scroll-adept",
+  "type": "feat",
+  "name": "feat.scroll-adept.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.scroll-adept.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: the page citation to another book replaced with a reference to the rule itself; the page citation to another book replaced with a reference to the rule itself."
+}

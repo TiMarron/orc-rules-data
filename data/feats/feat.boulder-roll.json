@@ -1,0 +1,27 @@
+{
+  "id": "feat.boulder-roll",
+  "type": "feat",
+  "name": "feat.boulder-roll.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 44,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.boulder-roll.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.rock-runner"
+    }
+  ]
+}

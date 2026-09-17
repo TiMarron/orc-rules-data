@@ -1,0 +1,18 @@
+{
+  "id": "action.investigate",
+  "type": "action",
+  "name": "action.investigate.name",
+  "traits": [
+    "concentrate",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 439,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.investigate.text"
+}

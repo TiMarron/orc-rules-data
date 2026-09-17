@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.druid-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 123,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-initial-proficiencies.text",
+  "class": "class.druid",
+  "level": 1
+}

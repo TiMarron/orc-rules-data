@@ -1,0 +1,26 @@
+{
+  "id": "feat.witchs-bottle",
+  "type": "feat",
+  "name": "feat.witchs-bottle.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 189,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.witchs-bottle.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cauldron"
+    }
+  ]
+}

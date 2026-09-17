@@ -1,0 +1,36 @@
+{
+  "id": "spell.speak-with-plants",
+  "type": "spell",
+  "name": "spell.speak-with-plants.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 358,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.speak-with-plants.text",
+  "rank": 3,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.speak-with-plants.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.speak-with-plants.heightened.0"
+    }
+  ]
+}

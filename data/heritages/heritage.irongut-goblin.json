@@ -1,0 +1,16 @@
+{
+  "id": "heritage.irongut-goblin",
+  "type": "heritage",
+  "name": "heritage.irongut-goblin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 55,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.irongut-goblin.text",
+  "ancestry": "ancestry.goblin"
+}

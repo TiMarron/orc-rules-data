@@ -1,0 +1,33 @@
+{
+  "id": "spell.cloak-of-shadow",
+  "type": "spell",
+  "name": "spell.cloak-of-shadow.name",
+  "traits": [
+    "aura",
+    "cleric",
+    "darkness",
+    "focus",
+    "manipulate",
+    "shadow"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 373,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.cloak-of-shadow.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.cloak-of-shadow.range",
+  "targets": "spell.cloak-of-shadow.targets",
+  "duration": "spell.cloak-of-shadow.duration"
+}

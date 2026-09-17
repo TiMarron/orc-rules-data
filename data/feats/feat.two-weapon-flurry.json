@@ -1,0 +1,25 @@
+{
+  "id": "feat.two-weapon-flurry",
+  "type": "feat",
+  "name": "feat.two-weapon-flurry.name",
+  "traits": [
+    "fighter",
+    "flourish",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.two-weapon-flurry.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.two-weapon-flurry.requirements",
+  "prerequisites": []
+}

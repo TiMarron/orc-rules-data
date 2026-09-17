@@ -1,0 +1,28 @@
+{
+  "id": "feat.bonded-animal",
+  "type": "feat",
+  "name": "feat.bonded-animal.name",
+  "traits": [
+    "downtime",
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bonded-animal.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.nature",
+      "rank": "expert"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "action.create-a-diversion",
+  "type": "action",
+  "name": "action.create-a-diversion.name",
+  "traits": [
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 237,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.create-a-diversion.text",
+  "actions": "1"
+}

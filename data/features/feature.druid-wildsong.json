@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-wildsong",
+  "type": "feature",
+  "name": "feature.druid-wildsong.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 122,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-wildsong.text",
+  "class": "class.druid",
+  "level": 1
+}

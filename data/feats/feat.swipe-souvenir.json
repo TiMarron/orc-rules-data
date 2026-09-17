@@ -1,0 +1,23 @@
+{
+  "id": "feat.swipe-souvenir",
+  "type": "feat",
+  "name": "feat.swipe-souvenir.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 174,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.swipe-souvenir.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "2",
+  "requirements": "feat.swipe-souvenir.requirements",
+  "prerequisites": []
+}

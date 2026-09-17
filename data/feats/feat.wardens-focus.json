@@ -1,0 +1,27 @@
+{
+  "id": "feat.wardens-focus",
+  "type": "feat",
+  "name": "feat.wardens-focus.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.wardens-focus.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.wardens-focus.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

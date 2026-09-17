@@ -1,0 +1,34 @@
+{
+  "id": "spell.repulsion",
+  "type": "spell",
+  "name": "spell.repulsion.name",
+  "traits": [
+    "aura",
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 353,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.repulsion.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.repulsion.area",
+  "duration": "spell.repulsion.duration",
+  "defense": {
+    "save": "will"
+  }
+}

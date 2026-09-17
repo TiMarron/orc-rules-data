@@ -1,0 +1,28 @@
+{
+  "id": "feat.cloud-jump",
+  "type": "feat",
+  "name": "feat.cloud-jump.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.cloud-jump.text",
+  "level": 15,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "legendary"
+    }
+  ],
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

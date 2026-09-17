@@ -1,0 +1,24 @@
+{
+  "id": "feat.point-blank-stance",
+  "type": "feat",
+  "name": "feat.point-blank-stance.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 140,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.point-blank-stance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.point-blank-stance.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spell.runic-weapon",
+  "type": "spell",
+  "name": "spell.runic-weapon.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 354,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.runic-weapon.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.runic-weapon.range",
+  "targets": "spell.runic-weapon.targets",
+  "duration": "spell.runic-weapon.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.runic-weapon.heightened.0"
+    },
+    {
+      "level": "9",
+      "text": "spell.runic-weapon.heightened.1"
+    }
+  ]
+}

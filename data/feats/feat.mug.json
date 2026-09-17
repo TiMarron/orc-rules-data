@@ -1,0 +1,22 @@
+{
+  "id": "feat.mug",
+  "type": "feat",
+  "name": "feat.mug.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 171,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mug.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "2",
+  "prerequisites": []
+}

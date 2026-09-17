@@ -1,0 +1,36 @@
+{
+  "id": "spell.untamed-form",
+  "type": "spell",
+  "name": "spell.untamed-form.name",
+  "traits": [
+    "concentrate",
+    "druid",
+    "focus",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 382,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.untamed-form.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.untamed-form.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.untamed-form.heightened.0"
+    }
+  ]
+}

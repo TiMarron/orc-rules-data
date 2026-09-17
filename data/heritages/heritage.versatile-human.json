@@ -1,0 +1,16 @@
+{
+  "id": "heritage.versatile-human",
+  "type": "heritage",
+  "name": "heritage.versatile-human.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 63,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.versatile-human.text",
+  "ancestry": "ancestry.human"
+}

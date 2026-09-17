@@ -1,0 +1,21 @@
+{
+  "id": "feat.murksight",
+  "type": "feat",
+  "name": "feat.murksight.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 189,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.murksight.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

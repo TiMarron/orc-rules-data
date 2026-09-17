@@ -1,0 +1,40 @@
+{
+  "id": "spell.contingency",
+  "type": "spell",
+  "name": "spell.contingency.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 321,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.contingency.text",
+  "rank": 7,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "time": "spell.contingency.cast-time"
+  },
+  "duration": "spell.contingency.duration",
+  "heightened": [
+    {
+      "level": "8",
+      "text": "spell.contingency.heightened.0"
+    },
+    {
+      "level": "9",
+      "text": "spell.contingency.heightened.1"
+    },
+    {
+      "level": "10",
+      "text": "spell.contingency.heightened.2"
+    }
+  ]
+}

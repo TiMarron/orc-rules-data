@@ -1,0 +1,34 @@
+{
+  "id": "spell.cleanse-cuisine",
+  "type": "spell",
+  "name": "spell.cleanse-cuisine.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 320,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.cleanse-cuisine.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.cleanse-cuisine.range",
+  "area": "spell.cleanse-cuisine.area",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.cleanse-cuisine.heightened.0"
+    }
+  ]
+}

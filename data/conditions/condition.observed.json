@@ -1,0 +1,16 @@
+{
+  "id": "condition.observed",
+  "type": "condition",
+  "name": "condition.observed.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 444,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.observed.text",
+  "valued": false
+}

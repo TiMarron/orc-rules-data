@@ -1,0 +1,38 @@
+{
+  "id": "spell.spiritual-armament",
+  "type": "spell",
+  "name": "spell.spiritual-armament.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "sanctified",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 359,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spiritual-armament.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.spiritual-armament.range",
+  "targets": "spell.spiritual-armament.targets",
+  "duration": "spell.spiritual-armament.duration",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.spiritual-armament.heightened.0"
+    }
+  ]
+}

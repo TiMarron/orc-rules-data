@@ -1,0 +1,41 @@
+{
+  "id": "spell.cleanse-affliction",
+  "type": "spell",
+  "name": "spell.cleanse-affliction.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 320,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.cleanse-affliction.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.cleanse-affliction.range",
+  "targets": "spell.cleanse-affliction.targets",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.cleanse-affliction.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.cleanse-affliction.heightened.1"
+    }
+  ],
+  "editNote": "The reference points at a rules page the dataset does not model as a record; the link's label survives as plain text."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "item.javelin",
+  "type": "item",
+  "name": "item.javelin.name",
+  "traits": [
+    "thrown"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.javelin.text",
+  "level": 0,
+  "priceCp": 10,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "dart",
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "range": 30
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

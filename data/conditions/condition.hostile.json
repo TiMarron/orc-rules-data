@@ -1,0 +1,16 @@
+{
+  "id": "condition.hostile",
+  "type": "condition",
+  "name": "condition.hostile.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 444,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.hostile.text",
+  "valued": false
+}

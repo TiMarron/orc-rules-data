@@ -1,0 +1,27 @@
+{
+  "id": "feat.invoke-disaster",
+  "type": "feat",
+  "name": "feat.invoke-disaster.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.invoke-disaster.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wind-caller"
+    }
+  ],
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

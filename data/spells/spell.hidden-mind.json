@@ -1,0 +1,29 @@
+{
+  "id": "spell.hidden-mind",
+  "type": "spell",
+  "name": "spell.hidden-mind.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 335,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hidden-mind.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.hidden-mind.range",
+  "targets": "spell.hidden-mind.targets",
+  "duration": "spell.hidden-mind.duration"
+}

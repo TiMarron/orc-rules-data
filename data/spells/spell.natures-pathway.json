@@ -1,0 +1,42 @@
+{
+  "id": "spell.natures-pathway",
+  "type": "spell",
+  "name": "spell.natures-pathway.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental",
+    "plant",
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 346,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.natures-pathway.text",
+  "rank": 5,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.natures-pathway.cast-time"
+  },
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.natures-pathway.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.natures-pathway.heightened.1"
+    },
+    {
+      "level": "9",
+      "text": "spell.natures-pathway.heightened.2"
+    }
+  ]
+}

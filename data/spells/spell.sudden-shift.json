@@ -1,0 +1,29 @@
+{
+  "id": "spell.sudden-shift",
+  "type": "spell",
+  "name": "spell.sudden-shift.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 379,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sudden-shift.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "duration": "spell.sudden-shift.duration",
+  "trigger": "spell.sudden-shift.trigger"
+}

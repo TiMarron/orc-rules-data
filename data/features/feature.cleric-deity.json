@@ -1,0 +1,18 @@
+{
+  "id": "feature.cleric-deity",
+  "type": "feature",
+  "name": "feature.cleric-deity.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 109,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feature.cleric-deity.text",
+  "class": "class.cleric",
+  "level": 1,
+  "editNote": "Reserved Material removed: the product name dropped from the sentence about common deities; the example deity name replaced with a generic descriptor."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "spell.spiritual-guardian",
+  "type": "spell",
+  "name": "spell.spiritual-guardian.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "sanctified",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 359,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.spiritual-guardian.text",
+  "rank": 5,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.spiritual-guardian.range",
+  "duration": "spell.spiritual-guardian.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.spiritual-guardian.heightened.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

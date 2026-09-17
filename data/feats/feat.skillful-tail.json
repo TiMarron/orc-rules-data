@@ -1,0 +1,21 @@
+{
+  "id": "feat.skillful-tail",
+  "type": "feat",
+  "name": "feat.skillful-tail.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 80,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.skillful-tail.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

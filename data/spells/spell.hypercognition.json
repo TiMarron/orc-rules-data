@@ -1,0 +1,24 @@
+{
+  "id": "spell.hypercognition",
+  "type": "spell",
+  "name": "spell.hypercognition.name",
+  "traits": [
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 336,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hypercognition.text",
+  "rank": 3,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  }
+}

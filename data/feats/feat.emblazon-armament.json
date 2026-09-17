@@ -1,0 +1,23 @@
+{
+  "id": "feat.emblazon-armament",
+  "type": "feat",
+  "name": "feat.emblazon-armament.name",
+  "traits": [
+    "cleric",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 115,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.emblazon-armament.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

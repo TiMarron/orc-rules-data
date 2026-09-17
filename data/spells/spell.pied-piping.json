@@ -1,0 +1,36 @@
+{
+  "id": "spell.pied-piping",
+  "type": "spell",
+  "name": "spell.pied-piping.name",
+  "traits": [
+    "bard",
+    "composition",
+    "concentrate",
+    "focus",
+    "incapacitation",
+    "mental",
+    "sonic"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 371,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.pied-piping.text",
+  "rank": 10,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.pied-piping.area",
+  "duration": "spell.pied-piping.duration",
+  "defense": {
+    "save": "will"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "spell.shatter",
+  "type": "spell",
+  "name": "spell.shatter.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "sonic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 356,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shatter.text",
+  "rank": 2,
+  "traditions": [
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.shatter.range",
+  "targets": "spell.shatter.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.shatter.heightened.0"
+    }
+  ]
+}

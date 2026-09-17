@@ -1,0 +1,27 @@
+{
+  "id": "spell.primal-summons",
+  "type": "spell",
+  "name": "spell.primal-summons.name",
+  "traits": [
+    "concentrate",
+    "druid",
+    "focus"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 381,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.primal-summons.text",
+  "rank": 6,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "free"
+  }
+}

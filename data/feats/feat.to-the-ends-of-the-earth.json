@@ -1,0 +1,27 @@
+{
+  "id": "feat.to-the-ends-of-the-earth",
+  "type": "feat",
+  "name": "feat.to-the-ends-of-the-earth.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 163,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.to-the-ends-of-the-earth.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "legendary"
+    }
+  ]
+}

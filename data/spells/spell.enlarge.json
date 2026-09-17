@@ -1,0 +1,40 @@
+{
+  "id": "spell.enlarge",
+  "type": "spell",
+  "name": "spell.enlarge.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 329,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.enlarge.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.enlarge.range",
+  "targets": "spell.enlarge.targets",
+  "duration": "spell.enlarge.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.enlarge.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.enlarge.heightened.1"
+    }
+  ]
+}

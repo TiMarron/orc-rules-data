@@ -1,0 +1,19 @@
+{
+  "id": "item.detectives-kit",
+  "type": "item",
+  "name": "item.detectives-kit.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 288,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.detectives-kit.text",
+  "level": 3,
+  "priceCp": 2500,
+  "bulk": "1",
+  "category": "gear"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "action.support",
+  "type": "action",
+  "name": "action.support.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 206,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.support.text",
+  "actions": "1",
+  "requirements": "action.support.requirements"
+}

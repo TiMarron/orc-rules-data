@@ -1,0 +1,37 @@
+{
+  "id": "spell.ventriloquism",
+  "type": "spell",
+  "name": "spell.ventriloquism.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 366,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ventriloquism.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.ventriloquism.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.ventriloquism.heightened.0"
+    }
+  ]
+}

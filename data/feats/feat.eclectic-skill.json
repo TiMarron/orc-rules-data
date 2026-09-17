@@ -1,0 +1,32 @@
+{
+  "id": "feat.eclectic-skill",
+  "type": "feat",
+  "name": "feat.eclectic-skill.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 104,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.eclectic-skill.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.eclectic-skill.prereq.0"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.occultism",
+      "rank": "master"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

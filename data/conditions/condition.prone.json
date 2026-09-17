@@ -1,0 +1,16 @@
+{
+  "id": "condition.prone",
+  "type": "condition",
+  "name": "condition.prone.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 445,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.prone.text",
+  "valued": false
+}

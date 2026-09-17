@@ -1,0 +1,22 @@
+{
+  "id": "feat.initiate-warden",
+  "type": "feat",
+  "name": "feat.initiate-warden.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 157,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.initiate-warden.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

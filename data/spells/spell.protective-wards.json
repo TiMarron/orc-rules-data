@@ -1,0 +1,30 @@
+{
+  "id": "spell.protective-wards",
+  "type": "spell",
+  "name": "spell.protective-wards.name",
+  "traits": [
+    "aura",
+    "focus",
+    "manipulate",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 387,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.protective-wards.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.protective-wards.area",
+  "duration": "spell.protective-wards.duration"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "spell.seize-soul",
+  "type": "spell",
+  "name": "spell.seize-soul.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 355,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.seize-soul.text",
+  "rank": 9,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.seize-soul.range",
+  "targets": "spell.seize-soul.targets",
+  "duration": "spell.seize-soul.duration",
+  "requirements": "spell.seize-soul.requirements"
+}

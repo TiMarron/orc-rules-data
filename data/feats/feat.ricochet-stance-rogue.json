@@ -1,0 +1,23 @@
+{
+  "id": "feat.ricochet-stance-rogue",
+  "type": "feat",
+  "name": "feat.ricochet-stance-rogue.name",
+  "traits": [
+    "rogue",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 174,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ricochet-stance-rogue.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "prerequisites": []
+}

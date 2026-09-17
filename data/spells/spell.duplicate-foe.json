@@ -1,0 +1,38 @@
+{
+  "id": "spell.duplicate-foe",
+  "type": "spell",
+  "name": "spell.duplicate-foe.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 327,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.duplicate-foe.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.duplicate-foe.range",
+  "targets": "spell.duplicate-foe.targets",
+  "duration": "spell.duplicate-foe.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.duplicate-foe.heightened.0"
+    }
+  ]
+}

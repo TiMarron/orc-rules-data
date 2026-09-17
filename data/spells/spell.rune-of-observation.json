@@ -1,0 +1,28 @@
+{
+  "id": "spell.rune-of-observation",
+  "type": "spell",
+  "name": "spell.rune-of-observation.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 387,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.rune-of-observation.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.rune-of-observation.duration"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.witch-familiar",
+  "type": "feature",
+  "name": "feature.witch-familiar.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 179,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.witch-familiar.text",
+  "class": "class.witch",
+  "level": 1
+}

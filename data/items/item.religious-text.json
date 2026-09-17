@@ -1,0 +1,19 @@
+{
+  "id": "item.religious-text",
+  "type": "item",
+  "name": "item.religious-text.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.religious-text.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "L",
+  "category": "gear"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.witchs-communion",
+  "type": "feat",
+  "name": "feat.witchs-communion.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 189,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.witchs-communion.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.witchs-charge"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.lasting-coercion",
+  "type": "feat",
+  "name": "feat.lasting-coercion.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lasting-coercion.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "expert"
+    }
+  ]
+}

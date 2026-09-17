@@ -1,0 +1,39 @@
+{
+  "id": "spell.fireball",
+  "type": "spell",
+  "name": "spell.fireball.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 331,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fireball.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.fireball.range",
+  "area": "spell.fireball.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.fireball.heightened.0"
+    }
+  ]
+}

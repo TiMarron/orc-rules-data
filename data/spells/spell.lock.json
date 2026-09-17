@@ -1,0 +1,36 @@
+{
+  "id": "spell.lock",
+  "type": "spell",
+  "name": "spell.lock.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 341,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.lock.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.lock.range",
+  "targets": "spell.lock.targets",
+  "duration": "spell.lock.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.lock.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "spell.fatal-aria",
+  "type": "spell",
+  "name": "spell.fatal-aria.name",
+  "traits": [
+    "bard",
+    "composition",
+    "concentrate",
+    "death",
+    "emotion",
+    "focus",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 370,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fatal-aria.text",
+  "rank": 10,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.fatal-aria.range",
+  "targets": "spell.fatal-aria.targets"
+}

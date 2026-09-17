@@ -1,0 +1,41 @@
+{
+  "id": "spell.toxic-cloud",
+  "type": "spell",
+  "name": "spell.toxic-cloud.name",
+  "traits": [
+    "concentrate",
+    "death",
+    "manipulate",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 363,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.toxic-cloud.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.toxic-cloud.range",
+  "area": "spell.toxic-cloud.area",
+  "duration": "spell.toxic-cloud.duration",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.toxic-cloud.heightened.0"
+    }
+  ]
+}

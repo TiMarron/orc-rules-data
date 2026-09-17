@@ -1,0 +1,16 @@
+{
+  "id": "condition.blinded",
+  "type": "condition",
+  "name": "condition.blinded.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 442,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.blinded.text",
+  "valued": false
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.extraplanar-supplication",
+  "type": "feat",
+  "name": "feat.extraplanar-supplication.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 80,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.extraplanar-supplication.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

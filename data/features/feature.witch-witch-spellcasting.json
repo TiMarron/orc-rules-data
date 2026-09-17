@@ -1,0 +1,17 @@
+{
+  "id": "feature.witch-witch-spellcasting",
+  "type": "feature",
+  "name": "feature.witch-witch-spellcasting.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 178,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.witch-witch-spellcasting.text",
+  "class": "class.witch",
+  "level": 1
+}

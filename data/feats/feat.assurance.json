@@ -1,0 +1,28 @@
+{
+  "id": "feat.assurance",
+  "type": "feat",
+  "name": "feat.assurance.name",
+  "traits": [
+    "fortune",
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.assurance.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.assurance.prereq.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent. The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

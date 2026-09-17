@@ -1,0 +1,33 @@
+{
+  "id": "spell.enfeeble",
+  "type": "spell",
+  "name": "spell.enfeeble.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 329,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.enfeeble.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.enfeeble.range",
+  "targets": "spell.enfeeble.targets",
+  "duration": "spell.enfeeble.duration",
+  "defense": {
+    "save": "fortitude"
+  }
+}

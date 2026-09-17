@@ -1,0 +1,20 @@
+{
+  "id": "action.balance",
+  "type": "action",
+  "name": "action.balance.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 233,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.balance.text",
+  "actions": "1",
+  "requirements": "action.balance.requirements",
+  "editNote": "The reference points at a rules page the dataset does not model as a record; the link's label survives as plain text."
+}

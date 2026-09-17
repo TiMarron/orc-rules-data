@@ -1,0 +1,42 @@
+{
+  "id": "spell.daze",
+  "type": "spell",
+  "name": "spell.daze.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "mental",
+    "nonlethal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 322,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.daze.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.daze.range",
+  "targets": "spell.daze.targets",
+  "duration": "spell.daze.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.daze.heightened.0"
+    }
+  ]
+}

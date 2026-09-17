@@ -1,0 +1,34 @@
+{
+  "id": "spell.mind-reading",
+  "type": "spell",
+  "name": "spell.mind-reading.name",
+  "traits": [
+    "concentrate",
+    "detection",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 343,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mind-reading.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.mind-reading.range",
+  "targets": "spell.mind-reading.targets",
+  "duration": "spell.mind-reading.duration",
+  "defense": {
+    "save": "will"
+  }
+}

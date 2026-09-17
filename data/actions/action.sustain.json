@@ -1,0 +1,18 @@
+{
+  "id": "action.sustain",
+  "type": "action",
+  "name": "action.sustain.name",
+  "traits": [
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 419,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.sustain.text",
+  "actions": "1"
+}

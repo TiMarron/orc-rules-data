@@ -1,0 +1,47 @@
+{
+  "id": "spell.teleport",
+  "type": "spell",
+  "name": "spell.teleport.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 363,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.teleport.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.teleport.cast-time"
+  },
+  "range": "spell.teleport.range",
+  "targets": "spell.teleport.targets",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.teleport.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.teleport.heightened.1"
+    },
+    {
+      "level": "9",
+      "text": "spell.teleport.heightened.2"
+    },
+    {
+      "level": "10",
+      "text": "spell.teleport.heightened.3"
+    }
+  ]
+}

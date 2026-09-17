@@ -1,0 +1,40 @@
+{
+  "id": "spell.sleep",
+  "type": "spell",
+  "name": "spell.sleep.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental",
+    "sleep"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 357,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sleep.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.sleep.range",
+  "area": "spell.sleep.area",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.sleep.heightened.0"
+    }
+  ]
+}

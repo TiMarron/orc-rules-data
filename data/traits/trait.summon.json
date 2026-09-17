@@ -1,0 +1,16 @@
+{
+  "id": "trait.summon",
+  "type": "trait",
+  "name": "trait.summon.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 360,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "trait.summon.text",
+  "editNote": "Reserved Material removed: the cross-reference to another book by title replaced with a generic one to a bestiary; a table printed in the book is omitted; the dataset markup has no table support."
+}

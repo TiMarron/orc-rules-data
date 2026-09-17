@@ -1,0 +1,27 @@
+{
+  "id": "background.entertainer",
+  "type": "background",
+  "name": "background.entertainer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.entertainer.text",
+  "boosts": [
+    [
+      "dex",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.entertainer.lore",
+  "skills": [
+    "skill.performance"
+  ],
+  "feat": "feat.fascinating-performance"
+}

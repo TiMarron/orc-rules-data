@@ -1,0 +1,30 @@
+{
+  "id": "spell.truesight",
+  "type": "spell",
+  "name": "spell.truesight.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "revelation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 364,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.truesight.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.truesight.duration"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "spell.scholarly-recollection",
+  "type": "spell",
+  "name": "spell.scholarly-recollection.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "fortune"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 376,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.scholarly-recollection.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.scholarly-recollection.trigger"
+}

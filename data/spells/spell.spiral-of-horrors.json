@@ -1,0 +1,34 @@
+{
+  "id": "spell.spiral-of-horrors",
+  "type": "spell",
+  "name": "spell.spiral-of-horrors.name",
+  "traits": [
+    "aura",
+    "concentrate",
+    "emotion",
+    "fear",
+    "focus",
+    "manipulate",
+    "mental",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 388,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spiral-of-horrors.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.spiral-of-horrors.area",
+  "duration": "spell.spiral-of-horrors.duration"
+}

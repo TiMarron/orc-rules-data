@@ -1,0 +1,27 @@
+{
+  "id": "feat.quick-disguise",
+  "type": "feat",
+  "name": "feat.quick-disguise.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.quick-disguise.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    }
+  ]
+}

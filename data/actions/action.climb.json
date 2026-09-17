@@ -1,0 +1,19 @@
+{
+  "id": "action.climb",
+  "type": "action",
+  "name": "action.climb.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 234,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.climb.text",
+  "actions": "1",
+  "requirements": "action.climb.requirements"
+}

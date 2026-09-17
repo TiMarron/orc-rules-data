@@ -1,0 +1,37 @@
+{
+  "id": "spell.oaken-resilience",
+  "type": "spell",
+  "name": "spell.oaken-resilience.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 347,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.oaken-resilience.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.oaken-resilience.range",
+  "targets": "spell.oaken-resilience.targets",
+  "duration": "spell.oaken-resilience.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.oaken-resilience.heightened.0"
+    }
+  ]
+}

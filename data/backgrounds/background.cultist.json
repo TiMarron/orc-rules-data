@@ -1,0 +1,27 @@
+{
+  "id": "background.cultist",
+  "type": "background",
+  "name": "background.cultist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.cultist.text",
+  "boosts": [
+    [
+      "int",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.cultist.lore",
+  "skills": [
+    "skill.occultism"
+  ],
+  "feat": "feat.schooled-in-secrets"
+}

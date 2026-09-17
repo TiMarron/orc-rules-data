@@ -1,0 +1,27 @@
+{
+  "id": "feat.otherworldly-acumen",
+  "type": "feat",
+  "name": "feat.otherworldly-acumen.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 49,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.otherworldly-acumen.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.otherworldly-acumen.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

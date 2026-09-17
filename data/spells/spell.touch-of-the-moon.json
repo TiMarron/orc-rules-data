@@ -1,0 +1,32 @@
+{
+  "id": "spell.touch-of-the-moon",
+  "type": "spell",
+  "name": "spell.touch-of-the-moon.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "light",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.touch-of-the-moon.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.touch-of-the-moon.range",
+  "targets": "spell.touch-of-the-moon.targets",
+  "duration": "spell.touch-of-the-moon.duration",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

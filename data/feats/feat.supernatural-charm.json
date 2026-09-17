@@ -1,0 +1,21 @@
+{
+  "id": "feat.supernatural-charm",
+  "type": "feat",
+  "name": "feat.supernatural-charm.name",
+  "traits": [
+    "aiuvarin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 83,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.supernatural-charm.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

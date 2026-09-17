@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-magnum-opus",
+  "type": "feature",
+  "name": "feature.bard-magnum-opus.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-magnum-opus.text",
+  "class": "class.bard",
+  "level": 19
+}

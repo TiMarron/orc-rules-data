@@ -1,0 +1,21 @@
+{
+  "id": "feat.cultural-adaptability",
+  "type": "feat",
+  "name": "feat.cultural-adaptability.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 60,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cultural-adaptability.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": []
+}

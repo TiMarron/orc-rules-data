@@ -1,0 +1,42 @@
+{
+  "id": "ancestry.halfling",
+  "type": "ancestry",
+  "name": "ancestry.halfling.name",
+  "traits": [
+    "halfling",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 58,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "ancestry.halfling.text",
+  "hp": 6,
+  "size": "small",
+  "speed": 25,
+  "boosts": [
+    "dex",
+    "wis",
+    "free"
+  ],
+  "flaws": [
+    "str"
+  ],
+  "languages": [
+    "common",
+    "halfling"
+  ],
+  "heritages": [
+    "heritage.gutsy-halfling",
+    "heritage.hillock-halfling",
+    "heritage.jinxed-halfling",
+    "heritage.nomadic-halfling",
+    "heritage.twilight-halfling",
+    "heritage.wildwood-halfling"
+  ],
+  "editNote": "Reserved"
+}

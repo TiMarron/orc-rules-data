@@ -1,0 +1,27 @@
+{
+  "id": "feat.shameless-request",
+  "type": "feat",
+  "name": "feat.shameless-request.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 262,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shameless-request.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "master"
+    }
+  ]
+}

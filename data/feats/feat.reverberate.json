@@ -1,0 +1,23 @@
+{
+  "id": "feat.reverberate",
+  "type": "feat",
+  "name": "feat.reverberate.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reverberate.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "reaction",
+  "trigger": "feat.reverberate.trigger",
+  "prerequisites": []
+}

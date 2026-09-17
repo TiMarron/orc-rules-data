@@ -1,0 +1,15 @@
+{
+  "id": "trait.fear",
+  "type": "trait",
+  "name": "trait.fear.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 456,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.fear.text"
+}

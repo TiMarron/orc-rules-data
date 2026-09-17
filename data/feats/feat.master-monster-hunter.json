@@ -1,0 +1,31 @@
+{
+  "id": "feat.master-monster-hunter",
+  "type": "feat",
+  "name": "feat.master-monster-hunter.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 161,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.master-monster-hunter.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.nature",
+      "rank": "master"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.monster-hunter"
+    }
+  ]
+}

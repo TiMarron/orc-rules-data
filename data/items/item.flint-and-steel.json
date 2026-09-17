@@ -1,0 +1,19 @@
+{
+  "id": "item.flint-and-steel",
+  "type": "item",
+  "name": "item.flint-and-steel.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 288,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.flint-and-steel.text",
+  "level": 0,
+  "priceCp": 5,
+  "bulk": "0",
+  "category": "gear"
+}

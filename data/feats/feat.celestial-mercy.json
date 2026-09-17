@@ -1,0 +1,27 @@
+{
+  "id": "feat.celestial-mercy",
+  "type": "feat",
+  "name": "feat.celestial-mercy.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 81,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.celestial-mercy.text",
+  "level": 13,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.celestial-mercy.prereq.0"
+    }
+  ],
+  "editNote": "Accepted: compared the drafted paragraph word-for-word against the book p.81 ('Your celestial powers allow you to remove lesser afflictions with ease. You can cast cleanse affliction twice per day as a 4th-rank divine innate spell.') -- it matches exactly; the 0.896 containment score (just under the 0.9 gate) is the italic spell-name markup denting the n-gram match, not a real discrepancy. The prerequisite fallback (Angelkin, Lawbringer, Musetouched, or another lineage feat associated with celestials) also matches the book verbatim."
+}

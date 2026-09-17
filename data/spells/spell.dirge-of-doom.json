@@ -1,0 +1,32 @@
+{
+  "id": "spell.dirge-of-doom",
+  "type": "spell",
+  "name": "spell.dirge-of-doom.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "concentrate",
+    "emotion",
+    "fear",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 370,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dirge-of-doom.text",
+  "rank": 3,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.dirge-of-doom.area",
+  "duration": "spell.dirge-of-doom.duration"
+}

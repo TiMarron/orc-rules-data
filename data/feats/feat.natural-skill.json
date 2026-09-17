@@ -1,0 +1,21 @@
+{
+  "id": "feat.natural-skill",
+  "type": "feat",
+  "name": "feat.natural-skill.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 64,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.natural-skill.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": []
+}

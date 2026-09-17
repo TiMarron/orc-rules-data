@@ -1,0 +1,23 @@
+{
+  "id": "feat.disrupt-prey",
+  "type": "feat",
+  "name": "feat.disrupt-prey.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 159,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disrupt-prey.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "reaction",
+  "trigger": "feat.disrupt-prey.trigger",
+  "prerequisites": []
+}

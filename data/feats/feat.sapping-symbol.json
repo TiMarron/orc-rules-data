@@ -1,0 +1,29 @@
+{
+  "id": "feat.sapping-symbol",
+  "type": "feat",
+  "name": "feat.sapping-symbol.name",
+  "traits": [
+    "cleric",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 119,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sapping-symbol.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "reaction",
+  "trigger": "feat.sapping-symbol.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.raise-symbol"
+    }
+  ]
+}

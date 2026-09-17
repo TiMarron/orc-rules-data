@@ -1,0 +1,29 @@
+{
+  "id": "spell.ephemeral-tracking",
+  "type": "spell",
+  "name": "spell.ephemeral-tracking.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "ranger"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 384,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ephemeral-tracking.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.ephemeral-tracking.duration"
+}

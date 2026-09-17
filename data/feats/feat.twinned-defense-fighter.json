@@ -1,0 +1,29 @@
+{
+  "id": "feat.twinned-defense-fighter",
+  "type": "feat",
+  "name": "feat.twinned-defense-fighter.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.twinned-defense-fighter.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.twinned-defense-fighter.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.twin-parry"
+    }
+  ]
+}

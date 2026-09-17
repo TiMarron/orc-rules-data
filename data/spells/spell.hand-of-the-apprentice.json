@@ -1,0 +1,31 @@
+{
+  "id": "spell.hand-of-the-apprentice",
+  "type": "spell",
+  "name": "spell.hand-of-the-apprentice.name",
+  "traits": [
+    "attack",
+    "focus",
+    "manipulate",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 388,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hand-of-the-apprentice.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.hand-of-the-apprentice.range",
+  "targets": "spell.hand-of-the-apprentice.targets",
+  "defense": "ac"
+}

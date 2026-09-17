@@ -1,0 +1,16 @@
+{
+  "id": "condition.paralyzed",
+  "type": "condition",
+  "name": "condition.paralyzed.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 445,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.paralyzed.text",
+  "valued": false
+}

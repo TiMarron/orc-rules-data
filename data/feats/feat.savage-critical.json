@@ -1,0 +1,21 @@
+{
+  "id": "feat.savage-critical",
+  "type": "feat",
+  "name": "feat.savage-critical.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 151,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.savage-critical.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": []
+}

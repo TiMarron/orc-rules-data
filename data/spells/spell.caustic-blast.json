@@ -1,0 +1,40 @@
+{
+  "id": "spell.caustic-blast",
+  "type": "spell",
+  "name": "spell.caustic-blast.name",
+  "traits": [
+    "acid",
+    "cantrip",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.caustic-blast.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.caustic-blast.range",
+  "area": "spell.caustic-blast.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.caustic-blast.heightened.0"
+    }
+  ]
+}

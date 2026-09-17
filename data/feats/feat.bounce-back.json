@@ -1,0 +1,24 @@
+{
+  "id": "feat.bounce-back",
+  "type": "feat",
+  "name": "feat.bounce-back.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 65,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bounce-back.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "actions": "free",
+  "trigger": "feat.bounce-back.trigger",
+  "frequency": "feat.bounce-back.frequency",
+  "prerequisites": []
+}

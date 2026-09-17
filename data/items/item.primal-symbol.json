@@ -1,0 +1,18 @@
+{
+  "id": "item.primal-symbol",
+  "type": "item",
+  "name": "item.primal-symbol.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.primal-symbol.text",
+  "level": 0,
+  "bulk": "0",
+  "category": "gear"
+}

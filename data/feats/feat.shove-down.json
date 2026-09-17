@@ -1,0 +1,29 @@
+{
+  "id": "feat.shove-down",
+  "type": "feat",
+  "name": "feat.shove-down.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 173,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shove-down.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "free",
+  "requirements": "feat.shove-down.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-bard-spellcasting",
+  "type": "feature",
+  "name": "feature.bard-bard-spellcasting.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-bard-spellcasting.text",
+  "class": "class.bard",
+  "level": 1
+}

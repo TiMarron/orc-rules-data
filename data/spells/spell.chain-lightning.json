@@ -1,0 +1,39 @@
+{
+  "id": "spell.chain-lightning",
+  "type": "spell",
+  "name": "spell.chain-lightning.name",
+  "traits": [
+    "concentrate",
+    "electricity",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.chain-lightning.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.chain-lightning.range",
+  "targets": "spell.chain-lightning.targets",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.chain-lightning.heightened.0"
+    }
+  ]
+}

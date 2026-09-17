@@ -1,0 +1,27 @@
+{
+  "id": "spell.honeyed-words",
+  "type": "spell",
+  "name": "spell.honeyed-words.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 335,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.honeyed-words.text",
+  "rank": 4,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.honeyed-words.duration"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.cleric-general-feats",
+  "type": "feature",
+  "name": "feature.cleric-general-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 108,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.cleric-general-feats.text",
+  "class": "class.cleric",
+  "level": 3
+}

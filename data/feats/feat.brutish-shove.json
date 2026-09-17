@@ -1,0 +1,24 @@
+{
+  "id": "feat.brutish-shove",
+  "type": "feat",
+  "name": "feat.brutish-shove.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 141,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.brutish-shove.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.brutish-shove.requirements",
+  "prerequisites": []
+}

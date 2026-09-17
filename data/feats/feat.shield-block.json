@@ -1,0 +1,23 @@
+{
+  "id": "feat.shield-block",
+  "type": "feat",
+  "name": "feat.shield-block.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 262,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.shield-block.text",
+  "level": 1,
+  "category": "general",
+  "actions": "reaction",
+  "trigger": "feat.shield-block.trigger",
+  "prerequisites": [],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

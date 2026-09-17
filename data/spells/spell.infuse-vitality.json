@@ -1,0 +1,39 @@
+{
+  "id": "spell.infuse-vitality",
+  "type": "spell",
+  "name": "spell.infuse-vitality.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 338,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.infuse-vitality.text",
+  "rank": 1,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1-3"
+  },
+  "range": "spell.infuse-vitality.range",
+  "targets": "spell.infuse-vitality.targets",
+  "duration": "spell.infuse-vitality.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.infuse-vitality.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "spell.infuse-vitality.heightened.1"
+    }
+  ]
+}

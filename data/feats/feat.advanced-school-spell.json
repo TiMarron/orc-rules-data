@@ -1,0 +1,21 @@
+{
+  "id": "feat.advanced-school-spell",
+  "type": "feat",
+  "name": "feat.advanced-school-spell.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-school-spell.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "skill.arcana",
+  "type": "skill",
+  "name": "skill.arcana.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 234,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "skill.arcana.text",
+  "attribute": "int",
+  "editNote": "Reserved Material removed: the plane names in the Recall Knowledge example replaced with generic descriptors."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.improved-twin-riposte-ranger",
+  "type": "feat",
+  "name": "feat.improved-twin-riposte-ranger.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improved-twin-riposte-ranger.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.twin-riposte"
+    }
+  ]
+}

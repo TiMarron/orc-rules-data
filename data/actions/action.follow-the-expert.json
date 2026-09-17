@@ -1,0 +1,20 @@
+{
+  "id": "action.follow-the-expert",
+  "type": "action",
+  "name": "action.follow-the-expert.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "exploration",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 438,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.follow-the-expert.text"
+}

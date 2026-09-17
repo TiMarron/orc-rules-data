@@ -1,0 +1,25 @@
+{
+  "id": "feat.poison-weapon",
+  "type": "feat",
+  "name": "feat.poison-weapon.name",
+  "traits": [
+    "manipulate",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 171,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.poison-weapon.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "requirements": "feat.poison-weapon.requirements",
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: two citations of another book by title replaced with references to the rules themselves; two citations of another book by title replaced with references to the rules themselves."
+}

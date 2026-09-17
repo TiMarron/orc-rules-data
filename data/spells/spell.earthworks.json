@@ -1,0 +1,38 @@
+{
+  "id": "spell.earthworks",
+  "type": "spell",
+  "name": "spell.earthworks.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "focus",
+    "manipulate",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 388,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.earthworks.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "1-3"
+  },
+  "range": "spell.earthworks.range",
+  "area": "spell.earthworks.area",
+  "duration": "spell.earthworks.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.earthworks.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "spell.triple-time",
+  "type": "spell",
+  "name": "spell.triple-time.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "emotion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 372,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.triple-time.text",
+  "rank": 2,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.triple-time.area",
+  "duration": "spell.triple-time.duration"
+}

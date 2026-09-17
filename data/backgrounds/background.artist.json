@@ -1,0 +1,27 @@
+{
+  "id": "background.artist",
+  "type": "background",
+  "name": "background.artist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 84,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.artist.text",
+  "boosts": [
+    [
+      "dex",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.artist.lore",
+  "skills": [
+    "skill.crafting"
+  ],
+  "feat": "feat.specialty-crafting"
+}

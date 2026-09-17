@@ -1,0 +1,34 @@
+{
+  "id": "spell.deceivers-cloak",
+  "type": "spell",
+  "name": "spell.deceivers-cloak.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "hex",
+    "illusion",
+    "manipulate",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 384,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.deceivers-cloak.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.deceivers-cloak.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.deceivers-cloak.heightened.0"
+    }
+  ]
+}

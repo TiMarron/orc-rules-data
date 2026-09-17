@@ -1,0 +1,16 @@
+{
+  "id": "heritage.ancient-elf",
+  "type": "heritage",
+  "name": "heritage.ancient-elf.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 47,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.ancient-elf.text",
+  "ancestry": "ancestry.elf"
+}

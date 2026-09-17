@@ -1,0 +1,36 @@
+{
+  "id": "spell.disguise-magic",
+  "type": "spell",
+  "name": "spell.disguise-magic.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 324,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.disguise-magic.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.disguise-magic.cast-time"
+  },
+  "range": "spell.disguise-magic.range",
+  "targets": "spell.disguise-magic.targets",
+  "duration": "spell.disguise-magic.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.disguise-magic.heightened.0"
+    }
+  ]
+}

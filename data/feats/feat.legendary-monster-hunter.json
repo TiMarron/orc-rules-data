@@ -1,0 +1,31 @@
+{
+  "id": "feat.legendary-monster-hunter",
+  "type": "feat",
+  "name": "feat.legendary-monster-hunter.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.legendary-monster-hunter.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.nature",
+      "rank": "legendary"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.master-monster-hunter"
+    }
+  ]
+}

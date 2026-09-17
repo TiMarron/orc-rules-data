@@ -1,0 +1,29 @@
+{
+  "id": "feat.slam-down",
+  "type": "feat",
+  "name": "feat.slam-down.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 143,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.slam-down.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}

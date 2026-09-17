@@ -1,0 +1,28 @@
+{
+  "id": "feat.assured-knowledge",
+  "type": "feat",
+  "name": "feat.assured-knowledge.name",
+  "traits": [
+    "bard",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.assured-knowledge.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.assured-knowledge.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

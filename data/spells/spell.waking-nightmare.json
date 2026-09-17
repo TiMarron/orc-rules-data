@@ -1,0 +1,43 @@
+{
+  "id": "spell.waking-nightmare",
+  "type": "spell",
+  "name": "spell.waking-nightmare.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "emotion",
+    "fear",
+    "focus",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.waking-nightmare.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.waking-nightmare.range",
+  "targets": "spell.waking-nightmare.targets",
+  "duration": "spell.waking-nightmare.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.waking-nightmare.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.rapid-response",
+  "type": "feat",
+  "name": "feat.rapid-response.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 115,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rapid-response.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "reaction",
+  "trigger": "feat.rapid-response.trigger",
+  "prerequisites": []
+}

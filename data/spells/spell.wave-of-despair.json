@@ -1,0 +1,39 @@
+{
+  "id": "spell.wave-of-despair",
+  "type": "spell",
+  "name": "spell.wave-of-despair.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 369,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wave-of-despair.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.wave-of-despair.area",
+  "duration": "spell.wave-of-despair.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.wave-of-despair.heightened.0"
+    }
+  ]
+}

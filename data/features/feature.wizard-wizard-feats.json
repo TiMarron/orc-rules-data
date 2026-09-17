@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-wizard-feats",
+  "type": "feature",
+  "name": "feature.wizard-wizard-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-wizard-feats.text",
+  "class": "class.wizard",
+  "level": 2
+}

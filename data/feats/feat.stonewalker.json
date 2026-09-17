@@ -1,0 +1,21 @@
+{
+  "id": "feat.stonewalker",
+  "type": "feat",
+  "name": "feat.stonewalker.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 45,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stonewalker.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": []
+}

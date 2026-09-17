@@ -1,0 +1,36 @@
+{
+  "id": "spell.retributive-pain",
+  "type": "spell",
+  "name": "spell.retributive-pain.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "mental",
+    "nonlethal"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 378,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.retributive-pain.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.retributive-pain.range",
+  "targets": "spell.retributive-pain.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "trigger": "spell.retributive-pain.trigger"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "item.sickle",
+  "type": "item",
+  "name": "item.sickle.name",
+  "traits": [
+    "agile",
+    "finesse",
+    "trip"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 277,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.sickle.text",
+  "level": 0,
+  "priceCp": 20,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "knife",
+    "damage": {
+      "dice": "1d4",
+      "type": "slashing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

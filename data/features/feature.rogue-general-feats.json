@@ -1,0 +1,17 @@
+{
+  "id": "feature.rogue-general-feats",
+  "type": "feature",
+  "name": "feature.rogue-general-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 164,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.rogue-general-feats.text",
+  "class": "class.rogue",
+  "level": 3
+}

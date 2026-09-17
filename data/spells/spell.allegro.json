@@ -1,0 +1,32 @@
+{
+  "id": "spell.allegro",
+  "type": "spell",
+  "name": "spell.allegro.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 370,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.allegro.text",
+  "rank": 7,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.allegro.range",
+  "targets": "spell.allegro.targets",
+  "duration": "spell.allegro.duration"
+}

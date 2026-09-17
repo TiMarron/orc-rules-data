@@ -1,0 +1,16 @@
+{
+  "id": "trait.common",
+  "type": "trait",
+  "name": "trait.common.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 11,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "trait.common.text",
+  "editNote": "Dropped the trailing creature-specific sentence(s): that rule belongs to a different book's rules for identifying and summoning creatures by rarity, which the structured source merges into this trait's page, and the book never prints it."
+}

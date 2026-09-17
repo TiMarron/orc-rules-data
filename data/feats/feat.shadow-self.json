@@ -1,0 +1,29 @@
+{
+  "id": "feat.shadow-self",
+  "type": "feat",
+  "name": "feat.shadow-self.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 61,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shadow-self.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "trigger": "feat.shadow-self.trigger",
+  "frequency": "feat.shadow-self.frequency",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "legendary"
+    }
+  ]
+}

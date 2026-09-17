@@ -1,0 +1,15 @@
+{
+  "id": "trait.trip",
+  "type": "trait",
+  "name": "trait.trip.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 283,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.trip.text"
+}

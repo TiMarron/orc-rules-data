@@ -1,0 +1,17 @@
+{
+  "id": "heritage.chameleon-gnome",
+  "type": "heritage",
+  "name": "heritage.chameleon-gnome.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 51,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "heritage.chameleon-gnome.text",
+  "ancestry": "ancestry.gnome",
+  "editNote": "Reserved"
+}

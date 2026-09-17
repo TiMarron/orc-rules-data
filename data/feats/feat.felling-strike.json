@@ -1,0 +1,22 @@
+{
+  "id": "feat.felling-strike",
+  "type": "feat",
+  "name": "feat.felling-strike.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 146,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.felling-strike.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "prerequisites": []
+}

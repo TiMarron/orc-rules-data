@@ -1,0 +1,37 @@
+{
+  "id": "spell.creative-splash",
+  "type": "spell",
+  "name": "spell.creative-splash.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "illusion",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 373,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.creative-splash.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.creative-splash.range",
+  "area": "spell.creative-splash.area",
+  "duration": "spell.creative-splash.duration",
+  "defense": {
+    "save": "will"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

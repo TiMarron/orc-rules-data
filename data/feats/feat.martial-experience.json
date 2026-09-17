@@ -1,0 +1,21 @@
+{
+  "id": "feat.martial-experience",
+  "type": "feat",
+  "name": "feat.martial-experience.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 48,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.martial-experience.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": []
+}

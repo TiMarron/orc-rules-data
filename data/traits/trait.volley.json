@@ -1,0 +1,15 @@
+{
+  "id": "trait.volley",
+  "type": "trait",
+  "name": "trait.volley.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 283,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.volley.text"
+}

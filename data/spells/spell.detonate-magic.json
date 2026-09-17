@@ -1,0 +1,32 @@
+{
+  "id": "spell.detonate-magic",
+  "type": "spell",
+  "name": "spell.detonate-magic.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 324,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.detonate-magic.text",
+  "rank": 9,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.detonate-magic.range",
+  "targets": "spell.detonate-magic.targets",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  }
+}

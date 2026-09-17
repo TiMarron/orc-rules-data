@@ -1,0 +1,34 @@
+{
+  "id": "spell.hypnotize",
+  "type": "spell",
+  "name": "spell.hypnotize.name",
+  "traits": [
+    "illusion",
+    "manipulate",
+    "subtle",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 336,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hypnotize.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.hypnotize.range",
+  "area": "spell.hypnotize.area",
+  "duration": "spell.hypnotize.duration",
+  "defense": {
+    "save": "will"
+  }
+}

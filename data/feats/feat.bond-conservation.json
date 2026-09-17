@@ -1,0 +1,31 @@
+{
+  "id": "feat.bond-conservation",
+  "type": "feat",
+  "name": "feat.bond-conservation.name",
+  "traits": [
+    "manipulate",
+    "spellshape",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.bond-conservation.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "1",
+  "requirements": "feat.bond-conservation.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.bond-conservation.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

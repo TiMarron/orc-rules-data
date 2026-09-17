@@ -1,0 +1,15 @@
+{
+  "id": "trait.changeling",
+  "type": "trait",
+  "name": "trait.changeling.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 453,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.changeling.text"
+}

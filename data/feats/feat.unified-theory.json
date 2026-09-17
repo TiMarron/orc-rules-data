@@ -1,0 +1,27 @@
+{
+  "id": "feat.unified-theory",
+  "type": "feat",
+  "name": "feat.unified-theory.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unified-theory.text",
+  "level": 15,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.arcana",
+      "rank": "legendary"
+    }
+  ]
+}

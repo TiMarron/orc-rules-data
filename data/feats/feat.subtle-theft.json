@@ -1,0 +1,27 @@
+{
+  "id": "feat.subtle-theft",
+  "type": "feat",
+  "name": "feat.subtle-theft.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.subtle-theft.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.thievery",
+      "rank": "trained"
+    }
+  ]
+}

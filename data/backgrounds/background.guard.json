@@ -1,0 +1,27 @@
+{
+  "id": "background.guard",
+  "type": "background",
+  "name": "background.guard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.guard.text",
+  "boosts": [
+    [
+      "str",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.guard.lore",
+  "skills": [
+    "skill.intimidation"
+  ],
+  "feat": "feat.quick-coercion"
+}

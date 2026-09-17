@@ -1,0 +1,27 @@
+{
+  "id": "background.merchant",
+  "type": "background",
+  "name": "background.merchant.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.merchant.text",
+  "boosts": [
+    [
+      "int",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.merchant.lore",
+  "skills": [
+    "skill.diplomacy"
+  ],
+  "feat": "feat.bargain-hunter"
+}

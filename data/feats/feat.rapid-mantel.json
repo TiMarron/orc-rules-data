@@ -1,0 +1,27 @@
+{
+  "id": "feat.rapid-mantel",
+  "type": "feat",
+  "name": "feat.rapid-mantel.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 261,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rapid-mantel.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "expert"
+    }
+  ]
+}

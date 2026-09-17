@@ -1,0 +1,22 @@
+{
+  "id": "action.coerce",
+  "type": "action",
+  "name": "action.coerce.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "emotion",
+    "exploration",
+    "linguistic",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 240,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.coerce.text"
+}

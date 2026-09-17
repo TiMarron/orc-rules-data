@@ -1,0 +1,21 @@
+{
+  "id": "feat.gnome-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.gnome-weapon-familiarity.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 52,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.gnome-weapon-familiarity.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "prerequisites": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-composition-spells",
+  "type": "feature",
+  "name": "feature.bard-composition-spells.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-composition-spells.text",
+  "class": "class.bard",
+  "level": 1
+}

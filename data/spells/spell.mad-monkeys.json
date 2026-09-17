@@ -1,0 +1,28 @@
+{
+  "id": "spell.mad-monkeys",
+  "type": "spell",
+  "name": "spell.mad-monkeys.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 341,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mad-monkeys.text",
+  "rank": 3,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.mad-monkeys.range",
+  "area": "spell.mad-monkeys.area",
+  "duration": "spell.mad-monkeys.duration"
+}

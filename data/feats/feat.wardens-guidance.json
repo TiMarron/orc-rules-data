@@ -1,0 +1,21 @@
+{
+  "id": "feat.wardens-guidance",
+  "type": "feat",
+  "name": "feat.wardens-guidance.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wardens-guidance.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": []
+}

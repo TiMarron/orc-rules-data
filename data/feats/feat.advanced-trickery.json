@@ -1,0 +1,25 @@
+{
+  "id": "feat.advanced-trickery",
+  "type": "feat",
+  "name": "feat.advanced-trickery.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 221,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-trickery.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-trickery"
+    }
+  ]
+}

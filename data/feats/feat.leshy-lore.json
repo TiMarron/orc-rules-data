@@ -1,0 +1,21 @@
+{
+  "id": "feat.leshy-lore",
+  "type": "feat",
+  "name": "feat.leshy-lore.name",
+  "traits": [
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 68,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.leshy-lore.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "prerequisites": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.witch-reflex-expertise",
+  "type": "feature",
+  "name": "feature.witch-reflex-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 178,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.witch-reflex-expertise.text",
+  "class": "class.witch",
+  "level": 9
+}

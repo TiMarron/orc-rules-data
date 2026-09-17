@@ -1,0 +1,21 @@
+{
+  "id": "feat.scar-thick-skin",
+  "type": "feat",
+  "name": "feat.scar-thick-skin.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 73,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scar-thick-skin.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": []
+}

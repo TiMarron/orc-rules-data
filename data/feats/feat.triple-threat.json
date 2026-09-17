@@ -1,0 +1,26 @@
+{
+  "id": "feat.triple-threat",
+  "type": "feat",
+  "name": "feat.triple-threat.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 163,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.triple-threat.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.shared-prey"
+    }
+  ]
+}

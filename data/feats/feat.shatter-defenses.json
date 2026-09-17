@@ -1,0 +1,24 @@
+{
+  "id": "feat.shatter-defenses",
+  "type": "feat",
+  "name": "feat.shatter-defenses.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 145,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shatter-defenses.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.shatter-defenses.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.general",
+  "type": "trait",
+  "name": "trait.general.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 456,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.general.text"
+}

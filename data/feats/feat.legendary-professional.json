@@ -1,0 +1,27 @@
+{
+  "id": "feat.legendary-professional",
+  "type": "feat",
+  "name": "feat.legendary-professional.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 258,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.legendary-professional.text",
+  "level": 15,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.lore",
+      "rank": "legendary"
+    }
+  ]
+}

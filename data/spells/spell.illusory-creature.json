@@ -1,0 +1,38 @@
+{
+  "id": "spell.illusory-creature",
+  "type": "spell",
+  "name": "spell.illusory-creature.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "olfactory",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 336,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.illusory-creature.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.illusory-creature.range",
+  "duration": "spell.illusory-creature.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.illusory-creature.heightened.0"
+    }
+  ]
+}

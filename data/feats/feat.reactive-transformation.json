@@ -1,0 +1,33 @@
+{
+  "id": "feat.reactive-transformation",
+  "type": "feat",
+  "name": "feat.reactive-transformation.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 134,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.reactive-transformation.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "reaction",
+  "trigger": "feat.reactive-transformation.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.untamed-form"
+    },
+    {
+      "kind": "text",
+      "key": "feat.reactive-transformation.prereq.1"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent. The book states this prerequisite in prose; the text form is the schema's intended representation for it. The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

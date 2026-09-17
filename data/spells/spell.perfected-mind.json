@@ -1,0 +1,27 @@
+{
+  "id": "spell.perfected-mind",
+  "type": "spell",
+  "name": "spell.perfected-mind.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 378,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.perfected-mind.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  }
+}

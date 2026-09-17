@@ -1,0 +1,36 @@
+{
+  "id": "spell.delusional-pride",
+  "type": "spell",
+  "name": "spell.delusional-pride.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "emotion",
+    "focus",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 373,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.delusional-pride.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.delusional-pride.range",
+  "targets": "spell.delusional-pride.targets",
+  "duration": "spell.delusional-pride.duration",
+  "defense": {
+    "save": "will"
+  }
+}

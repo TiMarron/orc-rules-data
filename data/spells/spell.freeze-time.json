@@ -1,0 +1,26 @@
+{
+  "id": "spell.freeze-time",
+  "type": "spell",
+  "name": "spell.freeze-time.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.freeze-time.text",
+  "rank": 10,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-master-spellcaster",
+  "type": "feature",
+  "name": "feature.wizard-master-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-master-spellcaster.text",
+  "class": "class.wizard",
+  "level": 15
+}

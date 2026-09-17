@@ -1,0 +1,25 @@
+{
+  "id": "feat.basic-bard-spellcasting",
+  "type": "feat",
+  "name": "feat.basic-bard-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.basic-bard-spellcasting.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bard-dedication"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "spell.force-bolt",
+  "type": "spell",
+  "name": "spell.force-bolt.name",
+  "traits": [
+    "focus",
+    "force",
+    "manipulate",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 387,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.force-bolt.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.force-bolt.range",
+  "targets": "spell.force-bolt.targets",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.force-bolt.heightened.0"
+    }
+  ]
+}

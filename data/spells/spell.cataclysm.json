@@ -1,0 +1,40 @@
+{
+  "id": "spell.cataclysm",
+  "type": "spell",
+  "name": "spell.cataclysm.name",
+  "traits": [
+    "acid",
+    "air",
+    "cold",
+    "concentrate",
+    "earth",
+    "electricity",
+    "fire",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.cataclysm.text",
+  "rank": 10,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.cataclysm.range",
+  "area": "spell.cataclysm.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

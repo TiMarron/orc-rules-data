@@ -1,0 +1,25 @@
+{
+  "id": "feat.advanced-maneuver",
+  "type": "feat",
+  "name": "feat.advanced-maneuver.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 219,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-maneuver.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-maneuver"
+    }
+  ]
+}

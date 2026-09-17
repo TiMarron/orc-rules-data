@@ -1,0 +1,34 @@
+{
+  "id": "item.horsechopper",
+  "type": "item",
+  "name": "item.horsechopper.name",
+  "traits": [
+    "goblin",
+    "reach",
+    "trip",
+    "versatile-p"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.horsechopper.text",
+  "level": 0,
+  "priceCp": 90,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "polearm",
+    "damage": {
+      "dice": "1d8",
+      "type": "slashing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

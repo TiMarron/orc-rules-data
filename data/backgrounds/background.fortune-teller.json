@@ -1,0 +1,27 @@
+{
+  "id": "background.fortune-teller",
+  "type": "background",
+  "name": "background.fortune-teller.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.fortune-teller.text",
+  "boosts": [
+    [
+      "int",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.fortune-teller.lore",
+  "skills": [
+    "skill.occultism"
+  ],
+  "feat": "feat.oddity-identification"
+}

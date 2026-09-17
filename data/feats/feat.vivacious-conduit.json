@@ -1,0 +1,22 @@
+{
+  "id": "feat.vivacious-conduit",
+  "type": "feat",
+  "name": "feat.vivacious-conduit.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 53,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.vivacious-conduit.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "prerequisites": [],
+  "editNote": "Reserved"
+}

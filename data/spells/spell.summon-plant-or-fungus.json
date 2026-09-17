@@ -1,0 +1,66 @@
+{
+  "id": "spell.summon-plant-or-fungus",
+  "type": "spell",
+  "name": "spell.summon-plant-or-fungus.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "summon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 361,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.summon-plant-or-fungus.text",
+  "rank": 1,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.summon-plant-or-fungus.range",
+  "duration": "spell.summon-plant-or-fungus.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.summon-plant-or-fungus.heightened.0"
+    },
+    {
+      "level": "3",
+      "text": "spell.summon-plant-or-fungus.heightened.1"
+    },
+    {
+      "level": "4",
+      "text": "spell.summon-plant-or-fungus.heightened.2"
+    },
+    {
+      "level": "5",
+      "text": "spell.summon-plant-or-fungus.heightened.3"
+    },
+    {
+      "level": "6",
+      "text": "spell.summon-plant-or-fungus.heightened.4"
+    },
+    {
+      "level": "7",
+      "text": "spell.summon-plant-or-fungus.heightened.5"
+    },
+    {
+      "level": "8",
+      "text": "spell.summon-plant-or-fungus.heightened.6"
+    },
+    {
+      "level": "9",
+      "text": "spell.summon-plant-or-fungus.heightened.7"
+    },
+    {
+      "level": "10",
+      "text": "spell.summon-plant-or-fungus.heightened.8"
+    }
+  ]
+}

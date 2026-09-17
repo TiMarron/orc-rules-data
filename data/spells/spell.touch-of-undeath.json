@@ -1,0 +1,40 @@
+{
+  "id": "spell.touch-of-undeath",
+  "type": "spell",
+  "name": "spell.touch-of-undeath.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 380,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.touch-of-undeath.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.touch-of-undeath.range",
+  "targets": "spell.touch-of-undeath.targets",
+  "duration": "spell.touch-of-undeath.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.touch-of-undeath.heightened.0"
+    }
+  ]
+}

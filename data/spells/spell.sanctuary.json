@@ -1,0 +1,29 @@
+{
+  "id": "spell.sanctuary",
+  "type": "spell",
+  "name": "spell.sanctuary.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 355,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sanctuary.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.sanctuary.range",
+  "targets": "spell.sanctuary.targets",
+  "duration": "spell.sanctuary.duration"
+}

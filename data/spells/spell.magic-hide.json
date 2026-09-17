@@ -1,0 +1,30 @@
+{
+  "id": "spell.magic-hide",
+  "type": "spell",
+  "name": "spell.magic-hide.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "ranger"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 383,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.magic-hide.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.magic-hide.range",
+  "targets": "spell.magic-hide.targets",
+  "duration": "spell.magic-hide.duration"
+}

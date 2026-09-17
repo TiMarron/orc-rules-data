@@ -1,0 +1,24 @@
+{
+  "id": "feat.swift-banishment",
+  "type": "feat",
+  "name": "feat.swift-banishment.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 120,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.swift-banishment.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "reaction",
+  "trigger": "feat.swift-banishment.trigger",
+  "requirements": "feat.swift-banishment.requirements",
+  "prerequisites": []
+}

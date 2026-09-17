@@ -1,0 +1,21 @@
+{
+  "id": "feat.irresistible-magic",
+  "type": "feat",
+  "name": "feat.irresistible-magic.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.irresistible-magic.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": []
+}

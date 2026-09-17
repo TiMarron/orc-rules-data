@@ -1,0 +1,28 @@
+{
+  "id": "feat.leshy-glide",
+  "type": "feat",
+  "name": "feat.leshy-glide.name",
+  "traits": [
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 68,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.leshy-glide.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.leshy-glide.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "item.trident",
+  "type": "item",
+  "name": "item.trident.name",
+  "traits": [
+    "thrown-20-ft"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.trident.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "spear",
+    "damage": {
+      "dice": "1d8",
+      "type": "piercing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

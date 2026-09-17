@@ -1,0 +1,38 @@
+{
+  "id": "spell.soothing-mist",
+  "type": "spell",
+  "name": "spell.soothing-mist.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "healing",
+    "manipulate",
+    "ranger",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 383,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.soothing-mist.text",
+  "rank": 2,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.soothing-mist.range",
+  "targets": "spell.soothing-mist.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.soothing-mist.heightened.0"
+    }
+  ]
+}

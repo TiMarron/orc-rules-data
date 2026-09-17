@@ -1,0 +1,34 @@
+{
+  "id": "spell.laughing-fit",
+  "type": "spell",
+  "name": "spell.laughing-fit.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 340,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.laughing-fit.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.laughing-fit.range",
+  "targets": "spell.laughing-fit.targets",
+  "duration": "spell.laughing-fit.duration",
+  "defense": {
+    "save": "will"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "feat.linked-focus",
+  "type": "feat",
+  "name": "feat.linked-focus.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 202,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.linked-focus.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.linked-focus.prereq.0"
+    },
+    {
+      "kind": "text",
+      "key": "feat.linked-focus.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.wary-disarmament",
+  "type": "feat",
+  "name": "feat.wary-disarmament.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 265,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wary-disarmament.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.thievery",
+      "rank": "expert"
+    }
+  ]
+}

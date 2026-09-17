@@ -1,0 +1,24 @@
+{
+  "id": "feat.dashing-strike",
+  "type": "feat",
+  "name": "feat.dashing-strike.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 149,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dashing-strike.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.dashing-strike.requirements",
+  "prerequisites": []
+}

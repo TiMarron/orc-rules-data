@@ -1,0 +1,31 @@
+{
+  "id": "item.mace",
+  "type": "item",
+  "name": "item.mace.name",
+  "traits": [
+    "shove"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 277,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.mace.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "club",
+    "damage": {
+      "dice": "1d6",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

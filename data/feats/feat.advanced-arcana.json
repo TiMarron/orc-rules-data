@@ -1,0 +1,25 @@
+{
+  "id": "feat.advanced-arcana",
+  "type": "feat",
+  "name": "feat.advanced-arcana.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 223,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-arcana.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-arcana"
+    }
+  ]
+}

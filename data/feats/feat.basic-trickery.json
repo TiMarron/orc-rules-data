@@ -1,0 +1,26 @@
+{
+  "id": "feat.basic-trickery",
+  "type": "feat",
+  "name": "feat.basic-trickery.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 221,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.basic-trickery.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.rogue-dedication"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

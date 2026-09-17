@@ -1,0 +1,32 @@
+{
+  "id": "spell.aqueous-orb",
+  "type": "spell",
+  "name": "spell.aqueous-orb.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.aqueous-orb.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.aqueous-orb.range",
+  "duration": "spell.aqueous-orb.duration",
+  "defense": {
+    "save": "reflex"
+  }
+}

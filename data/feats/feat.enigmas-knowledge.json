@@ -1,0 +1,26 @@
+{
+  "id": "feat.enigmas-knowledge",
+  "type": "feat",
+  "name": "feat.enigmas-knowledge.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.enigmas-knowledge.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.assured-knowledge"
+    }
+  ]
+}

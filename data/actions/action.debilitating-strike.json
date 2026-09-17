@@ -1,0 +1,20 @@
+{
+  "id": "action.debilitating-strike",
+  "type": "action",
+  "name": "action.debilitating-strike.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 168,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.debilitating-strike.text",
+  "actions": "free",
+  "trigger": "action.debilitating-strike.trigger",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

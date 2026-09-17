@@ -1,0 +1,36 @@
+{
+  "id": "spell.weapon-storm",
+  "type": "spell",
+  "name": "spell.weapon-storm.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 369,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.weapon-storm.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.weapon-storm.area",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.weapon-storm.heightened.0"
+    }
+  ]
+}

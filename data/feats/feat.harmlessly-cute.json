@@ -1,0 +1,21 @@
+{
+  "id": "feat.harmlessly-cute",
+  "type": "feat",
+  "name": "feat.harmlessly-cute.name",
+  "traits": [
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 68,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.harmlessly-cute.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "prerequisites": []
+}

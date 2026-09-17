@@ -1,0 +1,24 @@
+{
+  "id": "feat.guardians-deflection-fighter",
+  "type": "feat",
+  "name": "feat.guardians-deflection-fighter.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 145,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.guardians-deflection-fighter.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "reaction",
+  "trigger": "feat.guardians-deflection-fighter.trigger",
+  "requirements": "feat.guardians-deflection-fighter.requirements",
+  "prerequisites": []
+}

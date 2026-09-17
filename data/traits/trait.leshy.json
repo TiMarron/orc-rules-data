@@ -1,0 +1,16 @@
+{
+  "id": "trait.leshy",
+  "type": "trait",
+  "name": "trait.leshy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 458,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "trait.leshy.text",
+  "editNote": "Sentences our copy carries and theirs does not were inspected and contain no Reserved Material."
+}

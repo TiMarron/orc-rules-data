@@ -1,0 +1,21 @@
+{
+  "id": "feat.hex-master",
+  "type": "feat",
+  "name": "feat.hex-master.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 191,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hex-master.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "spell.outcasts-curse",
+  "type": "spell",
+  "name": "spell.outcasts-curse.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "manipulate",
+    "mental",
+    "misfortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 347,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.outcasts-curse.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.outcasts-curse.range",
+  "targets": "spell.outcasts-curse.targets",
+  "defense": {
+    "save": "will"
+  }
+}

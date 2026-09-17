@@ -1,0 +1,28 @@
+{
+  "id": "feat.deimatic-display",
+  "type": "feat",
+  "name": "feat.deimatic-display.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 131,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.deimatic-display.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "trained"
+    }
+  ]
+}

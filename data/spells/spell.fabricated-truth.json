@@ -1,0 +1,33 @@
+{
+  "id": "spell.fabricated-truth",
+  "type": "spell",
+  "name": "spell.fabricated-truth.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 330,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fabricated-truth.text",
+  "rank": 10,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.fabricated-truth.range",
+  "targets": "spell.fabricated-truth.targets",
+  "duration": "spell.fabricated-truth.duration",
+  "defense": {
+    "save": "will"
+  }
+}

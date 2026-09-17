@@ -1,0 +1,26 @@
+{
+  "id": "feat.shared-avoidance",
+  "type": "feat",
+  "name": "feat.shared-avoidance.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 118,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shared-avoidance.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.premonition-of-avoidance"
+    }
+  ]
+}

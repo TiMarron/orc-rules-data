@@ -1,0 +1,20 @@
+{
+  "id": "item.sling-bullets",
+  "type": "item",
+  "name": "item.sling-bullets.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.sling-bullets.text",
+  "level": 0,
+  "priceCp": 1,
+  "bulk": "L",
+  "category": "gear",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

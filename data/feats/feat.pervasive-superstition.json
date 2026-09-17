@@ -1,0 +1,26 @@
+{
+  "id": "feat.pervasive-superstition",
+  "type": "feat",
+  "name": "feat.pervasive-superstition.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 73,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pervasive-superstition.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.orc-superstition"
+    }
+  ]
+}

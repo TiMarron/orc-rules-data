@@ -1,0 +1,17 @@
+{
+  "id": "feature.cleric-ancestry-and-background",
+  "type": "feature",
+  "name": "feature.cleric-ancestry-and-background.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 108,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.cleric-ancestry-and-background.text",
+  "class": "class.cleric",
+  "level": 1
+}

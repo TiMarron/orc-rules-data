@@ -1,0 +1,27 @@
+{
+  "id": "feat.skirmish-strike",
+  "type": "feat",
+  "name": "feat.skirmish-strike.name",
+  "traits": [
+    "flourish",
+    "ranger",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 160,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.skirmish-strike.text",
+  "level": 6,
+  "category": "class",
+  "class": [
+    "class.ranger",
+    "class.rogue"
+  ],
+  "actions": "1",
+  "prerequisites": []
+}

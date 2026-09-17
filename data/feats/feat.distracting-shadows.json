@@ -1,0 +1,21 @@
+{
+  "id": "feat.distracting-shadows",
+  "type": "feat",
+  "name": "feat.distracting-shadows.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 60,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.distracting-shadows.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-weapon-expertise",
+  "type": "feature",
+  "name": "feature.druid-weapon-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 122,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-weapon-expertise.text",
+  "class": "class.druid",
+  "level": 11
+}

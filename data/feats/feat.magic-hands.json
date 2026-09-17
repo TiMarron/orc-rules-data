@@ -1,0 +1,26 @@
+{
+  "id": "feat.magic-hands",
+  "type": "feat",
+  "name": "feat.magic-hands.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.magic-hands.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.healing-hands"
+    }
+  ]
+}

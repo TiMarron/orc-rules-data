@@ -1,0 +1,21 @@
+{
+  "id": "feat.called",
+  "type": "feat",
+  "name": "feat.called.name",
+  "traits": [
+    "changeling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 77,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.called.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

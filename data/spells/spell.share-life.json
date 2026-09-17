@@ -1,0 +1,28 @@
+{
+  "id": "spell.share-life",
+  "type": "spell",
+  "name": "spell.share-life.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 356,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.share-life.text",
+  "rank": 2,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.share-life.range",
+  "targets": "spell.share-life.targets",
+  "duration": "spell.share-life.duration"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.vicious-swing",
+  "type": "feat",
+  "name": "feat.vicious-swing.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 141,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vicious-swing.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "prerequisites": []
+}

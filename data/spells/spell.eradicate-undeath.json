@@ -1,0 +1,40 @@
+{
+  "id": "spell.eradicate-undeath",
+  "type": "spell",
+  "name": "spell.eradicate-undeath.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 374,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.eradicate-undeath.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.eradicate-undeath.area",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.eradicate-undeath.heightened.0"
+    }
+  ]
+}

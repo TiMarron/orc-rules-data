@@ -1,0 +1,24 @@
+{
+  "id": "feat.wardens-reload",
+  "type": "feat",
+  "name": "feat.wardens-reload.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 163,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wardens-reload.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "free",
+  "requirements": "feat.wardens-reload.requirements",
+  "frequency": "feat.wardens-reload.frequency",
+  "prerequisites": []
+}

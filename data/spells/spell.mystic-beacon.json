@@ -1,0 +1,30 @@
+{
+  "id": "spell.mystic-beacon",
+  "type": "spell",
+  "name": "spell.mystic-beacon.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mystic-beacon.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.mystic-beacon.range",
+  "targets": "spell.mystic-beacon.targets",
+  "duration": "spell.mystic-beacon.duration"
+}

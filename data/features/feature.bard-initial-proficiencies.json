@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.bard-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 95,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-initial-proficiencies.text",
+  "class": "class.bard",
+  "level": 1
+}

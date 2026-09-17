@@ -1,0 +1,34 @@
+{
+  "id": "spell.wall-of-stone",
+  "type": "spell",
+  "name": "spell.wall-of-stone.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 367,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wall-of-stone.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.wall-of-stone.range",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.wall-of-stone.heightened.0"
+    }
+  ]
+}

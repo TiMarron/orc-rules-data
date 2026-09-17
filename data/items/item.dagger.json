@@ -1,0 +1,34 @@
+{
+  "id": "item.dagger",
+  "type": "item",
+  "name": "item.dagger.name",
+  "traits": [
+    "agile",
+    "finesse",
+    "thrown-10-ft",
+    "versatile-s"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 277,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.dagger.text",
+  "level": 0,
+  "priceCp": 20,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "knife",
+    "damage": {
+      "dice": "1d4",
+      "type": "piercing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

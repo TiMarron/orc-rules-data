@@ -1,0 +1,25 @@
+{
+  "id": "feat.arcane-school-spell",
+  "type": "feat",
+  "name": "feat.arcane-school-spell.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 223,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.arcane-school-spell.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wizard-dedication"
+    }
+  ]
+}

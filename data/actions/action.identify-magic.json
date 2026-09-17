@@ -1,0 +1,19 @@
+{
+  "id": "action.identify-magic",
+  "type": "action",
+  "name": "action.identify-magic.name",
+  "traits": [
+    "concentrate",
+    "exploration",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 230,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.identify-magic.text"
+}

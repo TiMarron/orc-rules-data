@@ -1,0 +1,21 @@
+{
+  "id": "feat.unburdened-iron",
+  "type": "feat",
+  "name": "feat.unburdened-iron.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 44,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unburdened-iron.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": []
+}

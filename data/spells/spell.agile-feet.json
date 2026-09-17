@@ -1,0 +1,28 @@
+{
+  "id": "spell.agile-feet",
+  "type": "spell",
+  "name": "spell.agile-feet.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 379,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.agile-feet.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.agile-feet.duration"
+}

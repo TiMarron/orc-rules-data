@@ -1,0 +1,15 @@
+{
+  "id": "trait.hryngar",
+  "type": "trait",
+  "name": "trait.hryngar.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 457,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.hryngar.text"
+}

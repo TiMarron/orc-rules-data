@@ -1,0 +1,21 @@
+{
+  "id": "feat.elf-atavism",
+  "type": "feat",
+  "name": "feat.elf-atavism.name",
+  "traits": [
+    "aiuvarin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 82,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.elf-atavism.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

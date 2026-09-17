@@ -1,0 +1,34 @@
+{
+  "id": "ancestry.human",
+  "type": "ancestry",
+  "name": "ancestry.human.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 62,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "ancestry.human.text",
+  "hp": 8,
+  "size": "medium",
+  "speed": 25,
+  "boosts": [
+    "free",
+    "free"
+  ],
+  "flaws": [],
+  "languages": [
+    "common"
+  ],
+  "heritages": [
+    "heritage.skilled-human",
+    "heritage.versatile-human"
+  ],
+  "editNote": "Reserved Material removed: the Ethnicities section, a list of the setting's peoples, regions and a named empire carrying no rules at all, dropped whole; the language link flattened to plain text; the world-name, the region's name, and two continents' proper names replaced with generic descriptors, and one ethnicity's proper name (the ethnicity entry itself, not its description) replaced with a descriptive label; missed a second mention of the reserved region name in the first ethnicity bullet on the first pass, caught by re-running check. No appliesTo: this is a second pass over an already-edited string, so the generated hash at write time was the prior edit's output, not the book's raw text -- staleness here would be a false positive."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "feat.tactical-entry",
+  "type": "feat",
+  "name": "feat.tactical-entry.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 175,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tactical-entry.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "free",
+  "requirements": "feat.tactical-entry.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "master"
+    }
+  ]
+}

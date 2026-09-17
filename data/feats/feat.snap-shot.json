@@ -1,0 +1,21 @@
+{
+  "id": "feat.snap-shot",
+  "type": "feat",
+  "name": "feat.snap-shot.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 160,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.snap-shot.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": []
+}

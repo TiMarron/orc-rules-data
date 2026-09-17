@@ -1,0 +1,26 @@
+{
+  "id": "feat.eternal-wings",
+  "type": "feat",
+  "name": "feat.eternal-wings.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 81,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.eternal-wings.text",
+  "level": 17,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.divine-wings"
+    }
+  ]
+}

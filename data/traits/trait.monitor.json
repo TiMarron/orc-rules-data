@@ -1,0 +1,16 @@
+{
+  "id": "trait.monitor",
+  "type": "trait",
+  "name": "trait.monitor.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 458,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "trait.monitor.text",
+  "editNote": "Reserved Material removed: the planes' proper names replaced with generic descriptors."
+}

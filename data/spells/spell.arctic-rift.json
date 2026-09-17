@@ -1,0 +1,37 @@
+{
+  "id": "spell.arctic-rift",
+  "type": "spell",
+  "name": "spell.arctic-rift.name",
+  "traits": [
+    "cold",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.arctic-rift.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.arctic-rift.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.arctic-rift.heightened.0"
+    }
+  ]
+}

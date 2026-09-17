@@ -1,0 +1,26 @@
+{
+  "id": "item.steel-shield",
+  "type": "item",
+  "name": "item.steel-shield.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 274,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.steel-shield.text",
+  "level": 0,
+  "priceCp": 200,
+  "bulk": "1",
+  "category": "shield",
+  "shield": {
+    "acBonus": 2,
+    "hardness": 5,
+    "hp": 20,
+    "bt": 10
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

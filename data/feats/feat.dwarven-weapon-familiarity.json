@@ -1,0 +1,21 @@
+{
+  "id": "feat.dwarven-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.dwarven-weapon-familiarity.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 44,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dwarven-weapon-familiarity.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": []
+}

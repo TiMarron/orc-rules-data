@@ -1,0 +1,29 @@
+{
+  "id": "feat.trick-magic-item",
+  "type": "feat",
+  "name": "feat.trick-magic-item.name",
+  "traits": [
+    "general",
+    "manipulate",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.trick-magic-item.text",
+  "level": 1,
+  "category": "skill",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.trick-magic-item.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

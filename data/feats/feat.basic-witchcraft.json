@@ -1,0 +1,25 @@
+{
+  "id": "feat.basic-witchcraft",
+  "type": "feat",
+  "name": "feat.basic-witchcraft.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 222,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.basic-witchcraft.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.witch-dedication"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "feature.fighter-reactive-strike",
+  "type": "feature",
+  "name": "feature.fighter-reactive-strike.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 136,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feature.fighter-reactive-strike.text",
+  "class": "class.fighter",
+  "level": 1,
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

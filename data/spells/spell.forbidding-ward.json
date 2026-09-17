@@ -1,0 +1,36 @@
+{
+  "id": "spell.forbidding-ward",
+  "type": "spell",
+  "name": "spell.forbidding-ward.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.forbidding-ward.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.forbidding-ward.range",
+  "targets": "spell.forbidding-ward.targets",
+  "duration": "spell.forbidding-ward.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.forbidding-ward.heightened.0"
+    }
+  ]
+}

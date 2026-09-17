@@ -1,0 +1,27 @@
+{
+  "id": "feat.nephilim-eyes",
+  "type": "feat",
+  "name": "feat.nephilim-eyes.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 80,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.nephilim-eyes.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.nephilim-eyes.prereq.0"
+    }
+  ],
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

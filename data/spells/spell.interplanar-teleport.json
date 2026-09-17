@@ -1,0 +1,33 @@
+{
+  "id": "spell.interplanar-teleport",
+  "type": "spell",
+  "name": "spell.interplanar-teleport.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 339,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "spell.interplanar-teleport.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.interplanar-teleport.cast-time"
+  },
+  "range": "spell.interplanar-teleport.range",
+  "targets": "spell.interplanar-teleport.targets",
+  "requirements": "spell.interplanar-teleport.requirements",
+  "editNote": "Reserved"
+}

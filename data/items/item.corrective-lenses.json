@@ -1,0 +1,19 @@
+{
+  "id": "item.corrective-lenses",
+  "type": "item",
+  "name": "item.corrective-lenses.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 293,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.corrective-lenses.text",
+  "level": 0,
+  "priceCp": 50,
+  "bulk": "0",
+  "category": "gear"
+}

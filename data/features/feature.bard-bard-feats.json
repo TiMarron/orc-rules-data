@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-bard-feats",
+  "type": "feature",
+  "name": "feature.bard-bard-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-bard-feats.text",
+  "class": "class.bard",
+  "level": 2
+}

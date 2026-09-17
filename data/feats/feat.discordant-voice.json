@@ -1,0 +1,28 @@
+{
+  "id": "feat.discordant-voice",
+  "type": "feat",
+  "name": "feat.discordant-voice.name",
+  "traits": [
+    "bard",
+    "sonic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.discordant-voice.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.discordant-voice.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

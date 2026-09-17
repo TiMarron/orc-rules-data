@@ -1,0 +1,23 @@
+{
+  "id": "feat.raise-symbol",
+  "type": "feat",
+  "name": "feat.raise-symbol.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 116,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.raise-symbol.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "1",
+  "requirements": "feat.raise-symbol.requirements",
+  "prerequisites": []
+}

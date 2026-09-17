@@ -1,0 +1,26 @@
+{
+  "id": "item.tower-shield",
+  "type": "item",
+  "name": "item.tower-shield.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 274,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.tower-shield.text",
+  "level": 0,
+  "priceCp": 1000,
+  "bulk": "4",
+  "category": "shield",
+  "shield": {
+    "acBonus": 2,
+    "hardness": 5,
+    "hp": 20,
+    "bt": 10
+  },
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

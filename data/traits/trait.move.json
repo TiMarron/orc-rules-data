@@ -1,0 +1,15 @@
+{
+  "id": "trait.move",
+  "type": "trait",
+  "name": "trait.move.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 458,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.move.text"
+}

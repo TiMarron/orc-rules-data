@@ -1,0 +1,21 @@
+{
+  "id": "feat.multitalented",
+  "type": "feat",
+  "name": "feat.multitalented.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 65,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.multitalented.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": []
+}

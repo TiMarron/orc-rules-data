@@ -1,0 +1,28 @@
+{
+  "id": "feat.inventor",
+  "type": "feat",
+  "name": "feat.inventor.name",
+  "traits": [
+    "downtime",
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.inventor.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "expert"
+    }
+  ]
+}

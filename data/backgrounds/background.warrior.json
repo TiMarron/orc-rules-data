@@ -1,0 +1,27 @@
+{
+  "id": "background.warrior",
+  "type": "background",
+  "name": "background.warrior.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.warrior.text",
+  "boosts": [
+    [
+      "str",
+      "con"
+    ],
+    "free"
+  ],
+  "lore": "background.warrior.lore",
+  "skills": [
+    "skill.intimidation"
+  ],
+  "feat": "feat.intimidating-glare"
+}

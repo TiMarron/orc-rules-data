@@ -1,0 +1,29 @@
+{
+  "id": "item.studded-leather-armor",
+  "type": "item",
+  "name": "item.studded-leather-armor.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.studded-leather-armor.text",
+  "level": 0,
+  "priceCp": 300,
+  "bulk": "1",
+  "category": "armor",
+  "armor": {
+    "category": "light",
+    "acBonus": 2,
+    "dexCap": 3,
+    "checkPenalty": -1,
+    "speedPenalty": 0,
+    "strength": 1,
+    "group": "leather"
+  },
+  "editNote": "pdf-page fail: this variant's disambiguating name (a base item plus a bracketed size/quality/rank variant, e.g. 'Lock (Average)', 'Spellcasting (1st rank)') is never printed in the book as its own heading; the page is the table that lists the variant as a priced row, confirmed against the cached PDF text for its claimed page range."
+}

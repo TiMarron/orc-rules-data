@@ -1,0 +1,33 @@
+{
+  "id": "spell.false-vitality",
+  "type": "spell",
+  "name": "spell.false-vitality.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 331,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.false-vitality.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.false-vitality.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.false-vitality.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.twin-takedown",
+  "type": "feat",
+  "name": "feat.twin-takedown.name",
+  "traits": [
+    "flourish",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 157,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.twin-takedown.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "1",
+  "requirements": "feat.twin-takedown.requirements",
+  "prerequisites": []
+}

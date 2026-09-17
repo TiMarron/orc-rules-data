@@ -1,0 +1,29 @@
+{
+  "id": "spell.punishing-winds",
+  "type": "spell",
+  "name": "spell.punishing-winds.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 351,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.punishing-winds.text",
+  "rank": 8,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.punishing-winds.range",
+  "area": "spell.punishing-winds.area",
+  "duration": "spell.punishing-winds.duration"
+}

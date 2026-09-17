@@ -1,0 +1,23 @@
+{
+  "id": "action.lie",
+  "type": "action",
+  "name": "action.lie.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "linguistic",
+    "mental",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.lie.text",
+  "variable": true,
+  "editNote": "The book gives no action cost: the cost varies with the spell cast or with how elaborate the lie is."
+}

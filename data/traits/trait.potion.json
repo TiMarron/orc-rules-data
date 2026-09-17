@@ -1,0 +1,15 @@
+{
+  "id": "trait.potion",
+  "type": "trait",
+  "name": "trait.potion.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 459,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.potion.text"
+}

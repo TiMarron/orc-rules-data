@@ -1,0 +1,33 @@
+{
+  "id": "spell.deafness",
+  "type": "spell",
+  "name": "spell.deafness.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 322,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.deafness.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.deafness.range",
+  "targets": "spell.deafness.targets",
+  "defense": {
+    "save": "fortitude"
+  }
+}

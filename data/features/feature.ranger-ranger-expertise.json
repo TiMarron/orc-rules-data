@@ -1,0 +1,17 @@
+{
+  "id": "feature.ranger-ranger-expertise",
+  "type": "feature",
+  "name": "feature.ranger-ranger-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 152,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.ranger-ranger-expertise.text",
+  "class": "class.ranger",
+  "level": 9
+}

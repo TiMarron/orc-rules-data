@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-warden",
+  "type": "feat",
+  "name": "feat.advanced-warden.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 159,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-warden.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.initiate-warden"
+    }
+  ]
+}

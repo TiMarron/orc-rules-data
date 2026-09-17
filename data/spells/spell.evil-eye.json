@@ -1,0 +1,32 @@
+{
+  "id": "spell.evil-eye",
+  "type": "spell",
+  "name": "spell.evil-eye.name",
+  "traits": [
+    "cantrip",
+    "curse",
+    "hex",
+    "manipulate",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 386,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.evil-eye.text",
+  "rank": 1,
+  "traditionsVary": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.evil-eye.range",
+  "targets": "spell.evil-eye.targets",
+  "duration": "spell.evil-eye.duration",
+  "defense": {
+    "save": "will"
+  }
+}

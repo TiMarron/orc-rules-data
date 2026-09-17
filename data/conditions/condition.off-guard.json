@@ -1,0 +1,16 @@
+{
+  "id": "condition.off-guard",
+  "type": "condition",
+  "name": "condition.off-guard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 445,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.off-guard.text",
+  "valued": false
+}

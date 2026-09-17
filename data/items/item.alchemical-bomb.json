@@ -1,0 +1,19 @@
+{
+  "id": "item.alchemical-bomb",
+  "type": "item",
+  "name": "item.alchemical-bomb.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.alchemical-bomb.text",
+  "level": 0,
+  "bulk": "L",
+  "category": "other",
+  "editNote": "Accepted: the book's own Martial Weapons table (p.281) prints Alchemical Bomb's Price AND Damage both as 'Varies' with a footnote -- this table row is a generic category placeholder for the whole family of thrown alchemical bombs (Acid Flask, Alchemist's Fire, etc.), each with its own concrete stats detailed elsewhere; there is no single number to record here even in the book. Leaving damage/price unset matches the book's own placeholder rather than inventing values. Critical Specialization Effects (bomb group) is the same recorded per-group omission accepted for other weapons."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "spell.gentle-landing",
+  "type": "spell",
+  "name": "spell.gentle-landing.name",
+  "traits": [
+    "air",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 333,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gentle-landing.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.gentle-landing.range",
+  "targets": "spell.gentle-landing.targets",
+  "duration": "spell.gentle-landing.duration",
+  "trigger": "spell.gentle-landing.trigger"
+}

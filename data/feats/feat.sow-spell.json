@@ -1,0 +1,24 @@
+{
+  "id": "feat.sow-spell",
+  "type": "feat",
+  "name": "feat.sow-spell.name",
+  "traits": [
+    "concentrate",
+    "druid",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 134,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sow-spell.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "prerequisites": []
+}

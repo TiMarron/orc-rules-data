@@ -1,0 +1,27 @@
+{
+  "id": "feat.incredible-companion-ranger",
+  "type": "feat",
+  "name": "feat.incredible-companion-ranger.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 161,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.incredible-companion-ranger.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.mature-animal-companion-ranger"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

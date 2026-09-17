@@ -1,0 +1,37 @@
+{
+  "id": "spell.earthquake",
+  "type": "spell",
+  "name": "spell.earthquake.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 327,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.earthquake.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.earthquake.range",
+  "area": "spell.earthquake.area",
+  "duration": "spell.earthquake.duration",
+  "heightened": [
+    {
+      "level": "10",
+      "text": "spell.earthquake.heightened.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

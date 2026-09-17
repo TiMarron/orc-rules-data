@@ -1,0 +1,27 @@
+{
+  "id": "feat.emblazon-energy",
+  "type": "feat",
+  "name": "feat.emblazon-energy.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.emblazon-energy.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.emblazon-armament"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

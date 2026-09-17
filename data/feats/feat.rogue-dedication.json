@@ -1,0 +1,29 @@
+{
+  "id": "feat.rogue-dedication",
+  "type": "feat",
+  "name": "feat.rogue-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication",
+    "multiclass"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 221,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.rogue-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "dex",
+      "min": 2
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "spell.pulse-of-civilization",
+  "type": "spell",
+  "name": "spell.pulse-of-civilization.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "scrying"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 372,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "spell.pulse-of-civilization.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.pulse-of-civilization.range",
+  "duration": "spell.pulse-of-civilization.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.pulse-of-civilization.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.pulse-of-civilization.heightened.1"
+    }
+  ],
+  "editNote": "Reserved Material removed: the example Lore skill that named a city replaced with a generic description; the example Lore skill named a city; replaced with a generic description."
+}

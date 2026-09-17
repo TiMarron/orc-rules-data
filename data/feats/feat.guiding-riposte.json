@@ -1,0 +1,26 @@
+{
+  "id": "feat.guiding-riposte",
+  "type": "feat",
+  "name": "feat.guiding-riposte.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.guiding-riposte.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dueling-riposte"
+    }
+  ]
+}

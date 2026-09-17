@@ -1,0 +1,27 @@
+{
+  "id": "feat.cloud-step",
+  "type": "feat",
+  "name": "feat.cloud-step.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 176,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cloud-step.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "legendary"
+    }
+  ]
+}

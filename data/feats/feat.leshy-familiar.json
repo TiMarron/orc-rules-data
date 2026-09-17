@@ -1,0 +1,27 @@
+{
+  "id": "feat.leshy-familiar",
+  "type": "feat",
+  "name": "feat.leshy-familiar.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 127,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.leshy-familiar.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.leshy-familiar.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

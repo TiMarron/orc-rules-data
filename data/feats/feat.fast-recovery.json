@@ -1,0 +1,26 @@
+{
+  "id": "feat.fast-recovery",
+  "type": "feat",
+  "name": "feat.fast-recovery.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 255,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fast-recovery.text",
+  "level": 1,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "con",
+      "min": 2
+    }
+  ]
+}

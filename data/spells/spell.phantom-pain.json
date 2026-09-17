@@ -1,0 +1,40 @@
+{
+  "id": "spell.phantom-pain",
+  "type": "spell",
+  "name": "spell.phantom-pain.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "mental",
+    "nonlethal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 349,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.phantom-pain.text",
+  "rank": 1,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.phantom-pain.range",
+  "targets": "spell.phantom-pain.targets",
+  "duration": "spell.phantom-pain.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.phantom-pain.heightened.0"
+    }
+  ]
+}

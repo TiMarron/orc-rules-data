@@ -1,0 +1,22 @@
+{
+  "id": "feat.kneecap",
+  "type": "feat",
+  "name": "feat.kneecap.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 56,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.kneecap.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "actions": "1",
+  "prerequisites": []
+}

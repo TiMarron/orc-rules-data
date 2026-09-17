@@ -1,0 +1,24 @@
+{
+  "id": "feat.cast-down",
+  "type": "feat",
+  "name": "feat.cast-down.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 116,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cast-down.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "1",
+  "prerequisites": []
+}

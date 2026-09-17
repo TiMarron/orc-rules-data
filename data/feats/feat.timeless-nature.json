@@ -1,0 +1,21 @@
+{
+  "id": "feat.timeless-nature",
+  "type": "feat",
+  "name": "feat.timeless-nature.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.timeless-nature.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": []
+}

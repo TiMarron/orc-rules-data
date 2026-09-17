@@ -1,0 +1,39 @@
+{
+  "id": "spell.impaling-spike",
+  "type": "spell",
+  "name": "spell.impaling-spike.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "metal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 338,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.impaling-spike.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.impaling-spike.range",
+  "targets": "spell.impaling-spike.targets",
+  "duration": "spell.impaling-spike.duration",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.impaling-spike.heightened.0"
+    }
+  ]
+}

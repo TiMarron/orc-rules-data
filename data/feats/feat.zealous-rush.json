@@ -1,0 +1,23 @@
+{
+  "id": "feat.zealous-rush",
+  "type": "feat",
+  "name": "feat.zealous-rush.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 118,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.zealous-rush.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "reaction",
+  "trigger": "feat.zealous-rush.trigger",
+  "prerequisites": []
+}

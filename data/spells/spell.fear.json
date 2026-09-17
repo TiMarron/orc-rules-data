@@ -1,0 +1,43 @@
+{
+  "id": "spell.fear",
+  "type": "spell",
+  "name": "spell.fear.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "fear",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 331,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fear.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.fear.range",
+  "targets": "spell.fear.targets",
+  "duration": "spell.fear.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.fear.heightened.0"
+    }
+  ]
+}

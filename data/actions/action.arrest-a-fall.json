@@ -1,0 +1,18 @@
+{
+  "id": "action.arrest-a-fall",
+  "type": "action",
+  "name": "action.arrest-a-fall.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 418,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.arrest-a-fall.text",
+  "actions": "reaction",
+  "trigger": "action.arrest-a-fall.trigger",
+  "requirements": "action.arrest-a-fall.requirements"
+}

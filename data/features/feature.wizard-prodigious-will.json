@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-prodigious-will",
+  "type": "feature",
+  "name": "feature.wizard-prodigious-will.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-prodigious-will.text",
+  "class": "class.wizard",
+  "level": 17
+}

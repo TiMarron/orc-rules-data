@@ -1,0 +1,37 @@
+{
+  "id": "spell.locate",
+  "type": "spell",
+  "name": "spell.locate.name",
+  "traits": [
+    "concentrate",
+    "detection",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 341,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.locate.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.locate.cast-time"
+  },
+  "range": "spell.locate.range",
+  "targets": "spell.locate.targets",
+  "duration": "spell.locate.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.locate.heightened.0"
+    }
+  ]
+}

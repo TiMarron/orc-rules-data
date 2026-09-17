@@ -1,0 +1,21 @@
+{
+  "id": "feat.split-slot",
+  "type": "feat",
+  "name": "feat.split-slot.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.split-slot.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": []
+}

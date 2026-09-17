@@ -1,0 +1,29 @@
+{
+  "id": "spell.one-with-stone",
+  "type": "spell",
+  "name": "spell.one-with-stone.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 347,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.one-with-stone.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.one-with-stone.duration"
+}

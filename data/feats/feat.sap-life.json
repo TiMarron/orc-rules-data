@@ -1,0 +1,22 @@
+{
+  "id": "feat.sap-life",
+  "type": "feat",
+  "name": "feat.sap-life.name",
+  "traits": [
+    "cleric",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 115,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sap-life.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spell.water-breathing",
+  "type": "spell",
+  "name": "spell.water-breathing.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 369,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.water-breathing.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.water-breathing.cast-time"
+  },
+  "range": "spell.water-breathing.range",
+  "targets": "spell.water-breathing.targets",
+  "duration": "spell.water-breathing.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.water-breathing.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.water-breathing.heightened.1"
+    }
+  ]
+}

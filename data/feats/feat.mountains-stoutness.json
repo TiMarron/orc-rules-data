@@ -1,0 +1,21 @@
+{
+  "id": "feat.mountains-stoutness",
+  "type": "feat",
+  "name": "feat.mountains-stoutness.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 45,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mountains-stoutness.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "feat.all-in-my-head",
+  "type": "feat",
+  "name": "feat.all-in-my-head.name",
+  "traits": [
+    "bard",
+    "illusion",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.all-in-my-head.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "reaction",
+  "trigger": "feat.all-in-my-head.trigger",
+  "prerequisites": []
+}

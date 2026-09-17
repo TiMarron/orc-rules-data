@@ -1,0 +1,28 @@
+{
+  "id": "feat.critical-debilitation",
+  "type": "feat",
+  "name": "feat.critical-debilitation.name",
+  "traits": [
+    "incapacitation",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 175,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.critical-debilitation.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.critical-debilitation.prereq.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent. The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

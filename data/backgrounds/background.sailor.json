@@ -1,0 +1,27 @@
+{
+  "id": "background.sailor",
+  "type": "background",
+  "name": "background.sailor.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.sailor.text",
+  "boosts": [
+    [
+      "str",
+      "dex"
+    ],
+    "free"
+  ],
+  "lore": "background.sailor.lore",
+  "skills": [
+    "skill.athletics"
+  ],
+  "feat": "feat.underwater-marauder"
+}

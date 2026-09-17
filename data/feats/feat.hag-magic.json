@@ -1,0 +1,21 @@
+{
+  "id": "feat.hag-magic",
+  "type": "feat",
+  "name": "feat.hag-magic.name",
+  "traits": [
+    "changeling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 77,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hag-magic.text",
+  "level": 13,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

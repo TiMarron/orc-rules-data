@@ -1,0 +1,29 @@
+{
+  "id": "item.scale-mail",
+  "type": "item",
+  "name": "item.scale-mail.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.scale-mail.text",
+  "level": 0,
+  "priceCp": 400,
+  "bulk": "2",
+  "category": "armor",
+  "armor": {
+    "category": "medium",
+    "acBonus": 3,
+    "dexCap": 2,
+    "checkPenalty": -2,
+    "speedPenalty": -5,
+    "strength": 2,
+    "group": "composite"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

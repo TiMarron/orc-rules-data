@@ -1,0 +1,28 @@
+{
+  "id": "spell.nature-incarnate",
+  "type": "spell",
+  "name": "spell.nature-incarnate.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 346,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.nature-incarnate.text",
+  "rank": 10,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.nature-incarnate.duration",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

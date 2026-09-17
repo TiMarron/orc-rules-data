@@ -1,0 +1,16 @@
+{
+  "id": "heritage.vine-leshy",
+  "type": "heritage",
+  "name": "heritage.vine-leshy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 68,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.vine-leshy.text",
+  "ancestry": "ancestry.leshy"
+}

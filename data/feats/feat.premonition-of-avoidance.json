@@ -1,0 +1,26 @@
+{
+  "id": "feat.premonition-of-avoidance",
+  "type": "feat",
+  "name": "feat.premonition-of-avoidance.name",
+  "traits": [
+    "cleric",
+    "divine",
+    "prediction"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 114,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.premonition-of-avoidance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "reaction",
+  "trigger": "feat.premonition-of-avoidance.trigger",
+  "prerequisites": [],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

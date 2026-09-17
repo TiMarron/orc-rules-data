@@ -1,0 +1,34 @@
+{
+  "id": "spell.unfettered-pack",
+  "type": "spell",
+  "name": "spell.unfettered-pack.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 365,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.unfettered-pack.text",
+  "rank": 7,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.unfettered-pack.range",
+  "targets": "spell.unfettered-pack.targets",
+  "duration": "spell.unfettered-pack.duration",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.unfettered-pack.heightened.0"
+    }
+  ]
+}

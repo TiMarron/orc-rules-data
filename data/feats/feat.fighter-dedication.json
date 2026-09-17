@@ -1,0 +1,34 @@
+{
+  "id": "feat.fighter-dedication",
+  "type": "feat",
+  "name": "feat.fighter-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication",
+    "multiclass"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 219,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.fighter-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "str",
+      "min": 2
+    },
+    {
+      "kind": "attribute",
+      "attribute": "dex",
+      "min": 2
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

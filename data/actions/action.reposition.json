@@ -1,0 +1,19 @@
+{
+  "id": "action.reposition",
+  "type": "action",
+  "name": "action.reposition.name",
+  "traits": [
+    "attack"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 235,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.reposition.text",
+  "actions": "1",
+  "requirements": "action.reposition.requirements"
+}

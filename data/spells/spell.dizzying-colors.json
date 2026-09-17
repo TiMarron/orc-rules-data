@@ -1,0 +1,34 @@
+{
+  "id": "spell.dizzying-colors",
+  "type": "spell",
+  "name": "spell.dizzying-colors.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "incapacitation",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 326,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dizzying-colors.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.dizzying-colors.area",
+  "duration": "spell.dizzying-colors.duration",
+  "defense": {
+    "save": "will"
+  }
+}

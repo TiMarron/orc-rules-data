@@ -1,0 +1,24 @@
+{
+  "id": "feat.cut-from-the-air",
+  "type": "feat",
+  "name": "feat.cut-from-the-air.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 147,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cut-from-the-air.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "reaction",
+  "trigger": "feat.cut-from-the-air.trigger",
+  "requirements": "feat.cut-from-the-air.requirements",
+  "prerequisites": []
+}

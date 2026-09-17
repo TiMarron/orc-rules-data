@@ -1,0 +1,16 @@
+{
+  "id": "heritage.twilight-halfling",
+  "type": "heritage",
+  "name": "heritage.twilight-halfling.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 59,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.twilight-halfling.text",
+  "ancestry": "ancestry.halfling"
+}

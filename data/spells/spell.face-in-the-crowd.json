@@ -1,0 +1,35 @@
+{
+  "id": "spell.face-in-the-crowd",
+  "type": "spell",
+  "name": "spell.face-in-the-crowd.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 372,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.face-in-the-crowd.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.face-in-the-crowd.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.face-in-the-crowd.heightened.0"
+    }
+  ]
+}

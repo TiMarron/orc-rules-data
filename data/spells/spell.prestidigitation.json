@@ -1,0 +1,33 @@
+{
+  "id": "spell.prestidigitation",
+  "type": "spell",
+  "name": "spell.prestidigitation.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 351,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.prestidigitation.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.prestidigitation.range",
+  "targets": "spell.prestidigitation.targets",
+  "duration": "spell.prestidigitation.duration",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

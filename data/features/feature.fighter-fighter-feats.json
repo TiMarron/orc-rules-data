@@ -1,0 +1,17 @@
+{
+  "id": "feature.fighter-fighter-feats",
+  "type": "feature",
+  "name": "feature.fighter-fighter-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 136,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.fighter-fighter-feats.text",
+  "class": "class.fighter",
+  "level": 1
+}

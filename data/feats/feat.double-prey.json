@@ -1,0 +1,21 @@
+{
+  "id": "feat.double-prey",
+  "type": "feat",
+  "name": "feat.double-prey.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.double-prey.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": []
+}

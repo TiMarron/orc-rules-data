@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-skill-increases",
+  "type": "feature",
+  "name": "feature.druid-skill-increases.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 122,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-skill-increases.text",
+  "class": "class.druid",
+  "level": 3
+}

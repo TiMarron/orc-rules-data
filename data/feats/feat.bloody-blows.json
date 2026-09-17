@@ -1,0 +1,21 @@
+{
+  "id": "feat.bloody-blows",
+  "type": "feat",
+  "name": "feat.bloody-blows.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 72,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bloody-blows.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": []
+}

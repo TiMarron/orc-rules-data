@@ -1,0 +1,22 @@
+{
+  "id": "feat.witchs-hut",
+  "type": "feat",
+  "name": "feat.witchs-hut.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 191,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.witchs-hut.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": [],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

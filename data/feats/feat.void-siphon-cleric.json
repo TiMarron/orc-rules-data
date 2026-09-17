@@ -1,0 +1,21 @@
+{
+  "id": "feat.void-siphon-cleric",
+  "type": "feat",
+  "name": "feat.void-siphon-cleric.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.void-siphon-cleric.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

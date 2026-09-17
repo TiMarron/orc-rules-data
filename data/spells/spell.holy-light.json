@@ -1,0 +1,39 @@
+{
+  "id": "spell.holy-light",
+  "type": "spell",
+  "name": "spell.holy-light.name",
+  "traits": [
+    "attack",
+    "concentrate",
+    "fire",
+    "holy",
+    "light",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 335,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.holy-light.text",
+  "rank": 3,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.holy-light.range",
+  "targets": "spell.holy-light.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.holy-light.heightened.0"
+    }
+  ]
+}

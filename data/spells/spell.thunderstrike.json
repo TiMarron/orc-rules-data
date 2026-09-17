@@ -1,0 +1,40 @@
+{
+  "id": "spell.thunderstrike",
+  "type": "spell",
+  "name": "spell.thunderstrike.name",
+  "traits": [
+    "concentrate",
+    "electricity",
+    "manipulate",
+    "sonic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 363,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.thunderstrike.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.thunderstrike.range",
+  "targets": "spell.thunderstrike.targets",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.thunderstrike.heightened.0"
+    }
+  ]
+}

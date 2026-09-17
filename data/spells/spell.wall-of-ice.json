@@ -1,0 +1,36 @@
+{
+  "id": "spell.wall-of-ice",
+  "type": "spell",
+  "name": "spell.wall-of-ice.name",
+  "traits": [
+    "cold",
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 367,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wall-of-ice.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.wall-of-ice.range",
+  "duration": "spell.wall-of-ice.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.wall-of-ice.heightened.0"
+    }
+  ]
+}

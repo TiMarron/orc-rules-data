@@ -1,0 +1,17 @@
+{
+  "id": "skill.stealth",
+  "type": "skill",
+  "name": "skill.stealth.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 244,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "skill.stealth.text",
+  "attribute": "dex",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

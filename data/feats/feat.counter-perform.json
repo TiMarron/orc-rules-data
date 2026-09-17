@@ -1,0 +1,26 @@
+{
+  "id": "feat.counter-perform",
+  "type": "feat",
+  "name": "feat.counter-perform.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.counter-perform.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bard-dedication"
+    }
+  ],
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

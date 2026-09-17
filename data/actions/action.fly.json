@@ -1,0 +1,19 @@
+{
+  "id": "action.fly",
+  "type": "action",
+  "name": "action.fly.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 419,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.fly.text",
+  "actions": "1",
+  "requirements": "action.fly.requirements"
+}

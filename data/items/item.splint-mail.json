@@ -1,0 +1,29 @@
+{
+  "id": "item.splint-mail",
+  "type": "item",
+  "name": "item.splint-mail.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.splint-mail.text",
+  "level": 1,
+  "priceCp": 1300,
+  "bulk": "3",
+  "category": "armor",
+  "armor": {
+    "category": "heavy",
+    "acBonus": 5,
+    "dexCap": 1,
+    "checkPenalty": -3,
+    "speedPenalty": -10,
+    "strength": 3,
+    "group": "composite"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

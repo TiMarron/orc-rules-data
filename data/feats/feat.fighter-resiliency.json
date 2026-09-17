@@ -1,0 +1,30 @@
+{
+  "id": "feat.fighter-resiliency",
+  "type": "feat",
+  "name": "feat.fighter-resiliency.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 219,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.fighter-resiliency.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.fighter-dedication"
+    },
+    {
+      "kind": "text",
+      "key": "feat.fighter-resiliency.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

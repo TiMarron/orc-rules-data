@@ -1,0 +1,22 @@
+{
+  "id": "feat.earworm",
+  "type": "feat",
+  "name": "feat.earworm.name",
+  "traits": [
+    "bard",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.earworm.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": []
+}

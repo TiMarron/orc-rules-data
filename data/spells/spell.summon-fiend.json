@@ -1,0 +1,51 @@
+{
+  "id": "spell.summon-fiend",
+  "type": "spell",
+  "name": "spell.summon-fiend.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "summon",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 361,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.summon-fiend.text",
+  "rank": 5,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.summon-fiend.range",
+  "duration": "spell.summon-fiend.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.summon-fiend.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.summon-fiend.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.summon-fiend.heightened.2"
+    },
+    {
+      "level": "9",
+      "text": "spell.summon-fiend.heightened.3"
+    },
+    {
+      "level": "10",
+      "text": "spell.summon-fiend.heightened.4"
+    }
+  ]
+}

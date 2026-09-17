@@ -1,0 +1,21 @@
+{
+  "id": "feat.rites-of-convocation",
+  "type": "feat",
+  "name": "feat.rites-of-convocation.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 187,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rites-of-convocation.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

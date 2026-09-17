@@ -1,0 +1,21 @@
+{
+  "id": "feat.predictive-purchase-rogue",
+  "type": "feat",
+  "name": "feat.predictive-purchase-rogue.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 174,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.predictive-purchase-rogue.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

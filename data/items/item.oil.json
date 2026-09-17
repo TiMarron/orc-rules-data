@@ -1,0 +1,19 @@
+{
+  "id": "item.oil",
+  "type": "item",
+  "name": "item.oil.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.oil.text",
+  "level": 0,
+  "priceCp": 1,
+  "bulk": "0",
+  "category": "gear"
+}

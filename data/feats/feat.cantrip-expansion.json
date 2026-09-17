@@ -1,0 +1,30 @@
+{
+  "id": "feat.cantrip-expansion",
+  "type": "feat",
+  "name": "feat.cantrip-expansion.name",
+  "traits": [
+    "bard",
+    "cleric",
+    "witch",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.cantrip-expansion.text",
+  "level": 2,
+  "category": "class",
+  "class": [
+    "class.bard",
+    "class.cleric",
+    "class.witch",
+    "class.wizard"
+  ],
+  "prerequisites": [],
+  "editNote": "Dropped the magus, oracle, psychic and sorcerer traits and the class.oracle and class.sorcerer references: Magus, Oracle, Psychic and Sorcerer belong to books this pipeline hasn't imported yet, so the references can't resolve. The feat is printed as a Bard, Cleric, Witch and Wizard feat (p.101) and works fully as those four; the dropped traits and cross-class references should return once those books are imported. (Now handled automatically by the out-of-book-refs transform rule; this note documents the earlier hand review.)"
+}

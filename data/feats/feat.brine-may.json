@@ -1,0 +1,22 @@
+{
+  "id": "feat.brine-may",
+  "type": "feat",
+  "name": "feat.brine-may.name",
+  "traits": [
+    "changeling",
+    "lineage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 77,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.brine-may.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

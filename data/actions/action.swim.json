@@ -1,0 +1,19 @@
+{
+  "id": "action.swim",
+  "type": "action",
+  "name": "action.swim.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 235,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "action.swim.text",
+  "actions": "1",
+  "editNote": "Reserved Material removed: a proper name replaced with an ordinary English equivalent."
+}

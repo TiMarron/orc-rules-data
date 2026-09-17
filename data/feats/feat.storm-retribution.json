@@ -1,0 +1,34 @@
+{
+  "id": "feat.storm-retribution",
+  "type": "feat",
+  "name": "feat.storm-retribution.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 131,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.storm-retribution.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "reaction",
+  "trigger": "feat.storm-retribution.trigger",
+  "requirements": "feat.storm-retribution.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.storm-retribution.prereq.0"
+    },
+    {
+      "kind": "text",
+      "key": "feat.storm-retribution.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spell.soothing-ballad",
+  "type": "spell",
+  "name": "spell.soothing-ballad.name",
+  "traits": [
+    "bard",
+    "composition",
+    "concentrate",
+    "emotion",
+    "focus",
+    "healing",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 371,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.soothing-ballad.text",
+  "rank": 7,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.soothing-ballad.range",
+  "targets": "spell.soothing-ballad.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.soothing-ballad.heightened.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

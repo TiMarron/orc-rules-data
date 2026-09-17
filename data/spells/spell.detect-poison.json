@@ -1,0 +1,35 @@
+{
+  "id": "spell.detect-poison",
+  "type": "spell",
+  "name": "spell.detect-poison.name",
+  "traits": [
+    "concentrate",
+    "detection",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 323,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.detect-poison.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.detect-poison.range",
+  "targets": "spell.detect-poison.targets",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.detect-poison.heightened.0"
+    }
+  ]
+}

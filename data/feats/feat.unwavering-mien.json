@@ -1,0 +1,21 @@
+{
+  "id": "feat.unwavering-mien",
+  "type": "feat",
+  "name": "feat.unwavering-mien.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 48,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unwavering-mien.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": []
+}

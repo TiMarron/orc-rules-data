@@ -1,0 +1,41 @@
+{
+  "id": "spell.runic-body",
+  "type": "spell",
+  "name": "spell.runic-body.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 354,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.runic-body.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.runic-body.range",
+  "targets": "spell.runic-body.targets",
+  "duration": "spell.runic-body.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.runic-body.heightened.0"
+    },
+    {
+      "level": "9",
+      "text": "spell.runic-body.heightened.1"
+    }
+  ]
+}

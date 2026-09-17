@@ -1,0 +1,31 @@
+{
+  "id": "feat.automatic-knowledge",
+  "type": "feat",
+  "name": "feat.automatic-knowledge.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.automatic-knowledge.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.automatic-knowledge.prereq.0"
+    },
+    {
+      "kind": "text",
+      "key": "feat.automatic-knowledge.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

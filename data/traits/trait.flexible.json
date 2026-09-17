@@ -1,0 +1,15 @@
+{
+  "id": "trait.flexible",
+  "type": "trait",
+  "name": "trait.flexible.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 272,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.flexible.text"
+}

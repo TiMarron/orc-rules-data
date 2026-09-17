@@ -1,0 +1,36 @@
+{
+  "id": "spell.vanishing-tracks",
+  "type": "spell",
+  "name": "spell.vanishing-tracks.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 365,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vanishing-tracks.text",
+  "rank": 1,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.vanishing-tracks.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.vanishing-tracks.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.vanishing-tracks.heightened.1"
+    }
+  ]
+}

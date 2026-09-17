@@ -1,0 +1,42 @@
+{
+  "id": "spell.read-aura",
+  "type": "spell",
+  "name": "spell.read-aura.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "detection",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 352,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.read-aura.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.read-aura.cast-time"
+  },
+  "range": "spell.read-aura.range",
+  "targets": "spell.read-aura.targets",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.read-aura.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.read-aura.heightened.1"
+    }
+  ]
+}

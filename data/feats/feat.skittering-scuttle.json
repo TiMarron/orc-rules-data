@@ -1,0 +1,26 @@
+{
+  "id": "feat.skittering-scuttle",
+  "type": "feat",
+  "name": "feat.skittering-scuttle.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 57,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.skittering-scuttle.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.goblin-scuttle"
+    }
+  ]
+}

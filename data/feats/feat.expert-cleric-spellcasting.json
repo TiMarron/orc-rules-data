@@ -1,0 +1,31 @@
+{
+  "id": "feat.expert-cleric-spellcasting",
+  "type": "feat",
+  "name": "feat.expert-cleric-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.expert-cleric-spellcasting.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-cleric-spellcasting"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.religion",
+      "rank": "master"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

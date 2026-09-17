@@ -1,0 +1,25 @@
+{
+  "id": "feat.prescient-consumable",
+  "type": "feat",
+  "name": "feat.prescient-consumable.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.prescient-consumable.text",
+  "level": 7,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.prescient-planner"
+    }
+  ]
+}

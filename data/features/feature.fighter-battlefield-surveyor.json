@@ -1,0 +1,17 @@
+{
+  "id": "feature.fighter-battlefield-surveyor",
+  "type": "feature",
+  "name": "feature.fighter-battlefield-surveyor.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 136,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.fighter-battlefield-surveyor.text",
+  "class": "class.fighter",
+  "level": 7
+}

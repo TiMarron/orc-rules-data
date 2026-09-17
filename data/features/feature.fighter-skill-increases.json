@@ -1,0 +1,17 @@
+{
+  "id": "feature.fighter-skill-increases",
+  "type": "feature",
+  "name": "feature.fighter-skill-increases.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 136,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.fighter-skill-increases.text",
+  "class": "class.fighter",
+  "level": 3
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spell.void-warp",
+  "type": "spell",
+  "name": "spell.void-warp.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 366,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.void-warp.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.void-warp.range",
+  "targets": "spell.void-warp.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.void-warp.heightened.0"
+    }
+  ]
+}

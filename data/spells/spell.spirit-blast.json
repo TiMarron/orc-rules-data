@@ -1,0 +1,39 @@
+{
+  "id": "spell.spirit-blast",
+  "type": "spell",
+  "name": "spell.spirit-blast.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 358,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spirit-blast.text",
+  "rank": 6,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.spirit-blast.range",
+  "targets": "spell.spirit-blast.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.spirit-blast.heightened.0"
+    }
+  ]
+}

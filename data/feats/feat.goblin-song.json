@@ -1,0 +1,22 @@
+{
+  "id": "feat.goblin-song",
+  "type": "feat",
+  "name": "feat.goblin-song.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 56,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.goblin-song.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "actions": "1",
+  "prerequisites": []
+}

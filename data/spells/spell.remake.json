@@ -1,0 +1,30 @@
+{
+  "id": "spell.remake",
+  "type": "spell",
+  "name": "spell.remake.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 352,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.remake.text",
+  "rank": 10,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.remake.cast-time"
+  },
+  "range": "spell.remake.range",
+  "cost": "spell.remake.cost"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "spell.shape-stone",
+  "type": "spell",
+  "name": "spell.shape-stone.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 356,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shape-stone.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.shape-stone.range",
+  "targets": "spell.shape-stone.targets"
+}

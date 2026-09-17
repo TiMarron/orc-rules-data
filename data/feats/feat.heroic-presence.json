@@ -1,0 +1,25 @@
+{
+  "id": "feat.heroic-presence",
+  "type": "feat",
+  "name": "feat.heroic-presence.name",
+  "traits": [
+    "emotion",
+    "human",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 65,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.heroic-presence.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "actions": "1",
+  "frequency": "feat.heroic-presence.frequency",
+  "prerequisites": []
+}

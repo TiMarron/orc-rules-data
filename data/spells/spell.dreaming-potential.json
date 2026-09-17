@@ -1,0 +1,29 @@
+{
+  "id": "spell.dreaming-potential",
+  "type": "spell",
+  "name": "spell.dreaming-potential.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 327,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dreaming-potential.text",
+  "rank": 5,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.dreaming-potential.cast-time"
+  },
+  "range": "spell.dreaming-potential.range",
+  "targets": "spell.dreaming-potential.targets",
+  "duration": "spell.dreaming-potential.duration"
+}

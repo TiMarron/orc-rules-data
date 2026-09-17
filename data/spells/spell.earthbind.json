@@ -1,0 +1,33 @@
+{
+  "id": "spell.earthbind",
+  "type": "spell",
+  "name": "spell.earthbind.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 327,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.earthbind.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.earthbind.range",
+  "targets": "spell.earthbind.targets",
+  "duration": "spell.earthbind.duration",
+  "defense": {
+    "save": "fortitude"
+  }
+}

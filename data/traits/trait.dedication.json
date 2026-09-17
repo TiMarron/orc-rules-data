@@ -1,0 +1,15 @@
+{
+  "id": "trait.dedication",
+  "type": "trait",
+  "name": "trait.dedication.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 215,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.dedication.text"
+}

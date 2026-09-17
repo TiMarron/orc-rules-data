@@ -1,0 +1,25 @@
+{
+  "id": "feat.premonition-of-clarity",
+  "type": "feat",
+  "name": "feat.premonition-of-clarity.name",
+  "traits": [
+    "cleric",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 120,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.premonition-of-clarity.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "reaction",
+  "trigger": "feat.premonition-of-clarity.trigger",
+  "frequency": "feat.premonition-of-clarity.frequency",
+  "prerequisites": []
+}

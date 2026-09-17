@@ -1,0 +1,28 @@
+{
+  "id": "feat.underhanded-assault",
+  "type": "feat",
+  "name": "feat.underhanded-assault.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 171,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.underhanded-assault.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "trained"
+    }
+  ]
+}

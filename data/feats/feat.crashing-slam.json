@@ -1,0 +1,26 @@
+{
+  "id": "feat.crashing-slam",
+  "type": "feat",
+  "name": "feat.crashing-slam.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 147,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.crashing-slam.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.slam-down"
+    }
+  ]
+}

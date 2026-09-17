@@ -1,0 +1,27 @@
+{
+  "id": "feat.arcane-sense",
+  "type": "feat",
+  "name": "feat.arcane-sense.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.arcane-sense.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.arcana",
+      "rank": "trained"
+    }
+  ]
+}

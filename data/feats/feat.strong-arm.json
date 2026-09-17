@@ -1,0 +1,21 @@
+{
+  "id": "feat.strong-arm",
+  "type": "feat",
+  "name": "feat.strong-arm.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 171,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.strong-arm.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

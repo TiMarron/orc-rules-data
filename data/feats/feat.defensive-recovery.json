@@ -1,0 +1,24 @@
+{
+  "id": "feat.defensive-recovery",
+  "type": "feat",
+  "name": "feat.defensive-recovery.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 119,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.defensive-recovery.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "1",
+  "prerequisites": []
+}

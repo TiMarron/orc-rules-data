@@ -1,0 +1,22 @@
+{
+  "id": "feat.dispelling-slice",
+  "type": "feat",
+  "name": "feat.dispelling-slice.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 177,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dispelling-slice.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "2",
+  "prerequisites": []
+}

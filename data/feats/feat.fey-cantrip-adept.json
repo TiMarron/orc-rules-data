@@ -1,0 +1,27 @@
+{
+  "id": "feat.fey-cantrip-adept",
+  "type": "feat",
+  "name": "feat.fey-cantrip-adept.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 53,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.fey-cantrip-adept.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.fey-cantrip-adept.prereq.0"
+    }
+  ],
+  "editNote": "Reserved Material removed: the feat's own name carried the fey plane's proper name with no other wording to substitute it into, so it was renamed to match its prerequisite feat (Fey Cantrip); the mapped id was renamed the same way, since the slug itself carried the same reserved term."
+}

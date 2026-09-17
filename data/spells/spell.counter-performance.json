@@ -1,0 +1,32 @@
+{
+  "id": "spell.counter-performance",
+  "type": "spell",
+  "name": "spell.counter-performance.name",
+  "traits": [
+    "bard",
+    "composition",
+    "concentrate",
+    "focus",
+    "fortune",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 370,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.counter-performance.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "area": "spell.counter-performance.area",
+  "trigger": "spell.counter-performance.trigger"
+}

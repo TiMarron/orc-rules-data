@@ -1,0 +1,21 @@
+{
+  "id": "feat.animal-empathy-druid",
+  "type": "feat",
+  "name": "feat.animal-empathy-druid.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 127,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.animal-empathy-druid.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": []
+}

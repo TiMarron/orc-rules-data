@@ -1,0 +1,35 @@
+{
+  "id": "spell.telepathy",
+  "type": "spell",
+  "name": "spell.telepathy.name",
+  "traits": [
+    "concentrate",
+    "linguistic",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 363,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.telepathy.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.telepathy.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.telepathy.heightened.0"
+    }
+  ]
+}

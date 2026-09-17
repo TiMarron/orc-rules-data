@@ -1,0 +1,21 @@
+{
+  "id": "feat.additional-lore",
+  "type": "feat",
+  "name": "feat.additional-lore.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.additional-lore.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": []
+}

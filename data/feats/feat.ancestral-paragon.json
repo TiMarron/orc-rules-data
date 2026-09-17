@@ -1,0 +1,20 @@
+{
+  "id": "feat.ancestral-paragon",
+  "type": "feat",
+  "name": "feat.ancestral-paragon.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ancestral-paragon.text",
+  "level": 3,
+  "category": "general",
+  "prerequisites": []
+}

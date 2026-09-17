@@ -1,0 +1,27 @@
+{
+  "id": "feat.terrified-retreat",
+  "type": "feat",
+  "name": "feat.terrified-retreat.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.terrified-retreat.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "master"
+    }
+  ]
+}

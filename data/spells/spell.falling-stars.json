@@ -1,0 +1,38 @@
+{
+  "id": "spell.falling-stars",
+  "type": "spell",
+  "name": "spell.falling-stars.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 330,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.falling-stars.text",
+  "rank": 9,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.falling-stars.range",
+  "area": "spell.falling-stars.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.falling-stars.heightened.0"
+    }
+  ]
+}

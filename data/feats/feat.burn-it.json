@@ -1,0 +1,21 @@
+{
+  "id": "feat.burn-it",
+  "type": "feat",
+  "name": "feat.burn-it.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 56,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.burn-it.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "prerequisites": []
+}

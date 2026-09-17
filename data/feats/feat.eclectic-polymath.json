@@ -1,0 +1,26 @@
+{
+  "id": "feat.eclectic-polymath",
+  "type": "feat",
+  "name": "feat.eclectic-polymath.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.eclectic-polymath.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.esoteric-polymath"
+    }
+  ]
+}

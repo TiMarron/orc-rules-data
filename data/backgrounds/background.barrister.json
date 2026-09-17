@@ -1,0 +1,27 @@
+{
+  "id": "background.barrister",
+  "type": "background",
+  "name": "background.barrister.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 85,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.barrister.text",
+  "boosts": [
+    [
+      "int",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.barrister.lore",
+  "skills": [
+    "skill.diplomacy"
+  ],
+  "feat": "feat.group-impression"
+}

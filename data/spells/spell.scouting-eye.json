@@ -1,0 +1,30 @@
+{
+  "id": "spell.scouting-eye",
+  "type": "spell",
+  "name": "spell.scouting-eye.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "scrying"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 355,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.scouting-eye.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.scouting-eye.cast-time"
+  },
+  "range": "spell.scouting-eye.range",
+  "duration": "spell.scouting-eye.duration"
+}

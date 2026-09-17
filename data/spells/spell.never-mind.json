@@ -1,0 +1,35 @@
+{
+  "id": "spell.never-mind",
+  "type": "spell",
+  "name": "spell.never-mind.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 346,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.never-mind.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.never-mind.range",
+  "targets": "spell.never-mind.targets",
+  "duration": "spell.never-mind.duration",
+  "defense": {
+    "save": "will"
+  }
+}

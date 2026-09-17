@@ -1,0 +1,26 @@
+{
+  "id": "feat.specialized-companion-druid",
+  "type": "feat",
+  "name": "feat.specialized-companion-druid.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.specialized-companion-druid.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.incredible-companion-druid"
+    }
+  ]
+}

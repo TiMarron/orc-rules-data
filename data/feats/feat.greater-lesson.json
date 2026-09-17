@@ -1,0 +1,21 @@
+{
+  "id": "feat.greater-lesson",
+  "type": "feat",
+  "name": "feat.greater-lesson.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 188,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.greater-lesson.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

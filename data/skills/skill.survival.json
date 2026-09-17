@@ -1,0 +1,17 @@
+{
+  "id": "skill.survival",
+  "type": "skill",
+  "name": "skill.survival.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 246,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "skill.survival.text",
+  "attribute": "wis",
+  "editNote": "The converter now strips the structured source's trailing navigation stubs for every record (see dropSiteChrome), so the hand-stripped copy this edit used to carry is exactly what the transform produces; the override is gone and only the decision remains."
+}

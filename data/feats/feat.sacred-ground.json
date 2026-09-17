@@ -1,0 +1,31 @@
+{
+  "id": "feat.sacred-ground",
+  "type": "feat",
+  "name": "feat.sacred-ground.name",
+  "traits": [
+    "cleric",
+    "consecration",
+    "divine",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 116,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.sacred-ground.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.cleric",
+  "frequency": "feat.sacred-ground.frequency",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.sacred-ground.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "feat.clever-gambit",
+  "type": "feat",
+  "name": "feat.clever-gambit.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 171,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.clever-gambit.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.clever-gambit.trigger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.clever-gambit.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

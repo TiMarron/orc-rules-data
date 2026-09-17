@@ -1,0 +1,40 @@
+{
+  "id": "spell.execute",
+  "type": "spell",
+  "name": "spell.execute.name",
+  "traits": [
+    "concentrate",
+    "death",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 329,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.execute.text",
+  "rank": 7,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.execute.range",
+  "targets": "spell.execute.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.execute.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.current-spell",
+  "type": "feat",
+  "name": "feat.current-spell.name",
+  "traits": [
+    "concentrate",
+    "druid",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 131,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.current-spell.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "prerequisites": []
+}

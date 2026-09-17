@@ -1,0 +1,19 @@
+{
+  "id": "action.feint",
+  "type": "action",
+  "name": "action.feint.name",
+  "traits": [
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.feint.text",
+  "actions": "1",
+  "requirements": "action.feint.requirements"
+}

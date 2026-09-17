@@ -1,0 +1,36 @@
+{
+  "id": "spell.project-image",
+  "type": "spell",
+  "name": "spell.project-image.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 351,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.project-image.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.project-image.range",
+  "duration": "spell.project-image.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.project-image.heightened.0"
+    }
+  ]
+}

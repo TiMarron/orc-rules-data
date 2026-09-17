@@ -1,0 +1,17 @@
+{
+  "id": "feature.rogue-greater-rogue-reflexes",
+  "type": "feature",
+  "name": "feature.rogue-greater-rogue-reflexes.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 168,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.rogue-greater-rogue-reflexes.text",
+  "class": "class.rogue",
+  "level": 13
+}

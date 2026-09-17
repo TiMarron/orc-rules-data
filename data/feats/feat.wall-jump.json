@@ -1,0 +1,27 @@
+{
+  "id": "feat.wall-jump",
+  "type": "feat",
+  "name": "feat.wall-jump.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 265,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wall-jump.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "master"
+    }
+  ]
+}

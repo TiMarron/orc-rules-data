@@ -1,0 +1,31 @@
+{
+  "id": "feat.scare-to-death",
+  "type": "feat",
+  "name": "feat.scare-to-death.name",
+  "traits": [
+    "emotion",
+    "fear",
+    "general",
+    "incapacitation",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 261,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scare-to-death.text",
+  "level": 15,
+  "category": "skill",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "legendary"
+    }
+  ]
+}

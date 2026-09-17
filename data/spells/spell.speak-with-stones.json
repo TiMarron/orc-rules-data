@@ -1,0 +1,35 @@
+{
+  "id": "spell.speak-with-stones",
+  "type": "spell",
+  "name": "spell.speak-with-stones.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 358,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.speak-with-stones.text",
+  "rank": 5,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.speak-with-stones.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.speak-with-stones.heightened.0"
+    }
+  ]
+}

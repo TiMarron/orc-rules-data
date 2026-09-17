@@ -1,0 +1,19 @@
+{
+  "id": "action.burrow",
+  "type": "action",
+  "name": "action.burrow.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 419,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.burrow.text",
+  "actions": "1",
+  "requirements": "action.burrow.requirements"
+}

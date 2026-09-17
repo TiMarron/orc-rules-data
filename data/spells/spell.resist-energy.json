@@ -1,0 +1,41 @@
+{
+  "id": "spell.resist-energy",
+  "type": "spell",
+  "name": "spell.resist-energy.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 353,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.resist-energy.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.resist-energy.range",
+  "targets": "spell.resist-energy.targets",
+  "duration": "spell.resist-energy.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.resist-energy.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.resist-energy.heightened.1"
+    }
+  ]
+}

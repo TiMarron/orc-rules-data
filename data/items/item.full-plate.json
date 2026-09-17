@@ -1,0 +1,31 @@
+{
+  "id": "item.full-plate",
+  "type": "item",
+  "name": "item.full-plate.name",
+  "traits": [
+    "bulwark"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.full-plate.text",
+  "level": 2,
+  "priceCp": 3000,
+  "bulk": "4",
+  "category": "armor",
+  "armor": {
+    "category": "heavy",
+    "acBonus": 6,
+    "dexCap": 0,
+    "checkPenalty": -3,
+    "speedPenalty": -10,
+    "strength": 4,
+    "group": "plate"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

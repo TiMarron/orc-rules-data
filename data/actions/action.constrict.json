@@ -1,0 +1,17 @@
+{
+  "id": "action.constrict",
+  "type": "action",
+  "name": "action.constrict.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 210,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.constrict.text",
+  "actions": "1",
+  "requirements": "action.constrict.requirements"
+}

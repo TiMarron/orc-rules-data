@@ -1,0 +1,23 @@
+{
+  "id": "feat.grimspawn",
+  "type": "feat",
+  "name": "feat.grimspawn.name",
+  "traits": [
+    "lineage",
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 79,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.grimspawn.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [],
+  "editNote": "Reserved"
+}

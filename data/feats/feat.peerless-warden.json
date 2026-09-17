@@ -1,0 +1,26 @@
+{
+  "id": "feat.peerless-warden",
+  "type": "feat",
+  "name": "feat.peerless-warden.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 161,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.peerless-warden.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.initiate-warden"
+    }
+  ]
+}

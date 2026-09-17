@@ -1,0 +1,23 @@
+{
+  "id": "feat.flinging-charge",
+  "type": "feat",
+  "name": "feat.flinging-charge.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 148,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flinging-charge.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "prerequisites": []
+}

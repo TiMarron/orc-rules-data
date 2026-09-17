@@ -1,0 +1,39 @@
+{
+  "id": "spell.disintegrate",
+  "type": "spell",
+  "name": "spell.disintegrate.name",
+  "traits": [
+    "attack",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 325,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.disintegrate.text",
+  "rank": 6,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.disintegrate.range",
+  "targets": "spell.disintegrate.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.disintegrate.heightened.0"
+    }
+  ],
+  "editNote": "Accepted: the book prints Defense 'AC and basic Fortitude' (p.325) -- an initial spell attack roll against AC, then a basic Fortitude save on a hit. The schema's defense field is oneOf 'ac' or {save,basic}, not both, so it can't hold the attack-roll half; the converter keeps the save half ({save:fortitude,basic:true}), which is what a defender actually rolls, and the attack-roll step is fully preserved in the spell's own text ('Make a spell attack against the target... with a basic Fortitude save'). Nothing is lost from the rules as printed, only from the structured metadata."
+}

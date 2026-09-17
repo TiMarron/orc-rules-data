@@ -1,0 +1,38 @@
+{
+  "id": "spell.rewrite-memory",
+  "type": "spell",
+  "name": "spell.rewrite-memory.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 353,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.rewrite-memory.text",
+  "rank": 4,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.rewrite-memory.range",
+  "targets": "spell.rewrite-memory.targets",
+  "duration": "spell.rewrite-memory.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.rewrite-memory.heightened.0"
+    }
+  ]
+}

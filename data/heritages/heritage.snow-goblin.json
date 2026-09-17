@@ -1,0 +1,16 @@
+{
+  "id": "heritage.snow-goblin",
+  "type": "heritage",
+  "name": "heritage.snow-goblin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 55,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.snow-goblin.text",
+  "ancestry": "ancestry.goblin"
+}

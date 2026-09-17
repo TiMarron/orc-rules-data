@@ -1,0 +1,27 @@
+{
+  "id": "feat.experienced-tracker",
+  "type": "feat",
+  "name": "feat.experienced-tracker.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 255,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.experienced-tracker.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "trained"
+    }
+  ]
+}

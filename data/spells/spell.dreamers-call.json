@@ -1,0 +1,37 @@
+{
+  "id": "spell.dreamers-call",
+  "type": "spell",
+  "name": "spell.dreamers-call.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "illusion",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 374,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dreamers-call.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.dreamers-call.range",
+  "targets": "spell.dreamers-call.targets",
+  "duration": "spell.dreamers-call.duration",
+  "defense": {
+    "save": "will"
+  }
+}

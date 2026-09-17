@@ -1,0 +1,29 @@
+{
+  "id": "spell.moment-of-renewal",
+  "type": "spell",
+  "name": "spell.moment-of-renewal.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 344,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.moment-of-renewal.text",
+  "rank": 8,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.moment-of-renewal.range",
+  "targets": "spell.moment-of-renewal.targets"
+}

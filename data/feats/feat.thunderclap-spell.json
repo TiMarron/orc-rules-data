@@ -1,0 +1,30 @@
+{
+  "id": "feat.thunderclap-spell",
+  "type": "feat",
+  "name": "feat.thunderclap-spell.name",
+  "traits": [
+    "druid",
+    "sonic",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 133,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.thunderclap-spell.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.thunderclap-spell.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

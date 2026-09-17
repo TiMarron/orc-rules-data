@@ -1,0 +1,37 @@
+{
+  "id": "spell.charming-touch",
+  "type": "spell",
+  "name": "spell.charming-touch.name",
+  "traits": [
+    "cleric",
+    "emotion",
+    "focus",
+    "incapacitation",
+    "manipulate",
+    "mental",
+    "subtle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 378,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.charming-touch.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.charming-touch.range",
+  "targets": "spell.charming-touch.targets",
+  "duration": "spell.charming-touch.duration",
+  "defense": {
+    "save": "will"
+  }
+}

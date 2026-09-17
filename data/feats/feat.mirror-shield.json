@@ -1,0 +1,24 @@
+{
+  "id": "feat.mirror-shield",
+  "type": "feat",
+  "name": "feat.mirror-shield.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 148,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mirror-shield.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "reaction",
+  "trigger": "feat.mirror-shield.trigger",
+  "requirements": "feat.mirror-shield.requirements",
+  "prerequisites": []
+}

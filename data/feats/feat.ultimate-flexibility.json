@@ -1,0 +1,27 @@
+{
+  "id": "feat.ultimate-flexibility",
+  "type": "feat",
+  "name": "feat.ultimate-flexibility.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 151,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.ultimate-flexibility.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.ultimate-flexibility.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

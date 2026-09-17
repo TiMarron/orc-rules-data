@@ -1,0 +1,29 @@
+{
+  "id": "spell.ghostly-weapon",
+  "type": "spell",
+  "name": "spell.ghostly-weapon.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 333,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ghostly-weapon.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.ghostly-weapon.range",
+  "targets": "spell.ghostly-weapon.targets",
+  "duration": "spell.ghostly-weapon.duration"
+}

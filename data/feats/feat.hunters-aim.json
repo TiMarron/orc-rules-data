@@ -1,0 +1,23 @@
+{
+  "id": "feat.hunters-aim",
+  "type": "feat",
+  "name": "feat.hunters-aim.name",
+  "traits": [
+    "concentrate",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 158,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hunters-aim.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "2",
+  "prerequisites": []
+}

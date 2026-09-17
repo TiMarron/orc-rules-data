@@ -1,0 +1,31 @@
+{
+  "id": "feat.legendary-thief",
+  "type": "feat",
+  "name": "feat.legendary-thief.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 258,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.legendary-thief.text",
+  "level": 15,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.thievery",
+      "rank": "legendary"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.pickpocket"
+    }
+  ]
+}

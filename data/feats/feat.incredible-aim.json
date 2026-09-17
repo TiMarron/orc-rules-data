@@ -1,0 +1,23 @@
+{
+  "id": "feat.incredible-aim",
+  "type": "feat",
+  "name": "feat.incredible-aim.name",
+  "traits": [
+    "concentrate",
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 146,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.incredible-aim.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.shared-assault",
+  "type": "feat",
+  "name": "feat.shared-assault.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shared-assault.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.courageous-assault"
+    }
+  ]
+}

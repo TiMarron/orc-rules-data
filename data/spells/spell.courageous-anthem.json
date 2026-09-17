@@ -1,0 +1,31 @@
+{
+  "id": "spell.courageous-anthem",
+  "type": "spell",
+  "name": "spell.courageous-anthem.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 370,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.courageous-anthem.text",
+  "rank": 1,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.courageous-anthem.area",
+  "duration": "spell.courageous-anthem.duration"
+}

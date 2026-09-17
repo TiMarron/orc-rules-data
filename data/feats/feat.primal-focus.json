@@ -1,0 +1,21 @@
+{
+  "id": "feat.primal-focus",
+  "type": "feat",
+  "name": "feat.primal-focus.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 134,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.primal-focus.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": []
+}

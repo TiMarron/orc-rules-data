@@ -1,0 +1,32 @@
+{
+  "id": "spell.gust-of-wind",
+  "type": "spell",
+  "name": "spell.gust-of-wind.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 334,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gust-of-wind.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.gust-of-wind.area",
+  "duration": "spell.gust-of-wind.duration",
+  "defense": {
+    "save": "fortitude"
+  }
+}

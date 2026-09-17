@@ -1,0 +1,21 @@
+{
+  "id": "feat.magic-rider",
+  "type": "feat",
+  "name": "feat.magic-rider.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 49,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.magic-rider.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": []
+}
