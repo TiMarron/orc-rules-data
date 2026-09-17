@@ -72,6 +72,23 @@ describe('reserved check', () => {
       .toEqual(['data/traits/trait.flourish.json: editNote: reserved term "examplia"']);
   });
 
+  // The licence obliges us to name the book a record came from, and a book title is a product name,
+  // so the one Reserved term in the corpus that must survive is the attribution itself. Any other
+  // field carrying the same title -- including the rest of the source object -- is still reported.
+  it('allows a reserved book title in source.book but nowhere else', () => {
+    const root = writeFixture({
+      i18n: traitI18n('flourish', 'Flourish', 'Clean.'),
+      records: [{
+        folder: 'traits',
+        file: 'trait.flourish.json',
+        json: trait('flourish', { source: { book: 'Examplia', page: 1, revision: '2023-first' }, editNote: 'Examplia', edited: true }),
+      }],
+      extra: { 'reserved/terms.sha256': hashes },
+    });
+    expect(reservedCheck(loadDataset(root)).map((i) => i.message))
+      .toEqual(['editNote: reserved term "examplia"']);
+  });
+
   it('honours the allowlist', () => {
     const root = writeFixture({
       i18n: traitI18n('flourish', 'Flourish', 'Popular in Examplia.'),

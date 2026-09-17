@@ -57,6 +57,16 @@ export function scanText(text: string, blocked: Set<string>, cache?: Map<string,
   return [...hits];
 }
 
+/**
+ * The one place a Reserved name is not only allowed but required: the record's citation of the book
+ * it came from. The licence obliges us to attribute the source, and a book's title is a product
+ * name, so `source.book` naming one is the attribution notice working as intended -- unlike the
+ * same title appearing in rules text ("creatures can be found in <Book>"), which is the thing the
+ * scan exists to catch. Scoped to this exact path rather than to the whole `source` object, so a
+ * Reserved name smuggled into any other field is still reported.
+ */
+const ATTRIBUTION_PATHS = new Set(['source.book']);
+
 export const reservedCheck: Check = (ds) => {
   const blocked = loadReserved(ds.root);
   const cache = new Map<string, string>();
@@ -66,6 +76,7 @@ export const reservedCheck: Check = (ds) => {
   }
   for (const f of ds.files) {
     walkStrings(f.record, (s, path) => {
+      if (ATTRIBUTION_PATHS.has(path)) return;
       for (const hit of scanText(s, blocked, cache)) issues.push({ level: 'error', file: f.path, message: `${path}: reserved term "${hit}"` });
     });
     for (const hit of scanText(f.path, blocked, cache)) issues.push({ level: 'error', file: f.path, message: `path: reserved term "${hit}"` });
