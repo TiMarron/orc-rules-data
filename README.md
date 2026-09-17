@@ -29,6 +29,12 @@ cost tokens.
 - `source.page` is the printed page number of the book named in `source.book`.
 - Items with `variants` (for example potions by strength) carry the lowest
   variant's `level` and `priceCp` at the top level; each variant lists its own.
+- An item's `activations` list each way it can be activated; an item may print
+  several, and each may be named. An activation states how it is spent — an
+  action cost in `actions`, a duration in `time`, or `castASpell: true` — and
+  carries its own `traits`, which are what the rules key on: `manipulate`
+  provokes a reaction, `concentrate` can be disrupted. These are separate from
+  the item's own traits in the envelope.
 - `review` is `"auto"` for records accepted by automated cross-checks and
   `"human"` for records a person verified against the book. Class and ancestry
   records must be `"human"`.

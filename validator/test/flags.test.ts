@@ -237,6 +237,32 @@ describe('flags check', () => {
     expect(spellIssuesFor(record('spell', 'x', { traditions: ['occult'], traditionsVary: true }))).toEqual([]);
   });
 
+  // An activation a consumer cannot spend is unusable data. The book states one of three things
+  // for every activation: an action cost, a duration, or that you Cast a Spell.
+  it('accepts an activation that states an action cost', () => {
+    expect(itemIssuesFor(record('item', 'x', { category: 'gear', level: 1, activations: [{ actions: '1', traits: ['manipulate'] }] }))).toEqual([]);
+  });
+
+  it('accepts an activation that states a duration instead of an action cost', () => {
+    expect(itemIssuesFor(record('item', 'x', { category: 'gear', level: 1, activations: [{ time: 'item.x.activations.0.time' }] }))).toEqual([]);
+  });
+
+  it('accepts an activation whose component is casting a spell', () => {
+    expect(itemIssuesFor(record('item', 'x', { category: 'gear', level: 1, activations: [{ castASpell: true }] }))).toEqual([]);
+  });
+
+  it('rejects an activation that states none of the three, naming its index', () => {
+    expect(
+      itemIssuesFor(record('item', 'x', { category: 'gear', level: 1, activations: [{ actions: '1' }, { traits: ['manipulate'] }] })),
+    ).toEqual([
+      {
+        level: 'error',
+        file: 'data/items/item.x.json',
+        message: 'activations[1] must set "actions", "time" or "castASpell": true',
+      },
+    ]);
+  });
+
   it('accepts an ordinary background with a fixed skill and no choices', () => {
     expect(backgroundIssuesFor(record('background', 'x', { skills: ['skill.intimidation'] }))).toEqual([]);
   });
