@@ -66,6 +66,7 @@ const SPELL_FULL: Record<string, unknown> = record('spell', 'full-spell', {
   rank: 0, traditions: ['arcane'], focus: false, cast: { actions: '2' },
   range: 'spell.x.range', area: 'spell.x.area', targets: 'spell.x.targets', duration: 'spell.x.duration',
   defense: { save: 'reflex', basic: true },
+  trigger: 'spell.full-spell.trigger', requirements: 'spell.full-spell.requirements', cost: 'spell.full-spell.cost',
 });
 
 const FEAT_FULL: Record<string, unknown> = record('feat', 'full-feat', {
@@ -147,6 +148,12 @@ describe('type schemas', () => {
 
   it('accepts a spell cast by time instead of actions', () => {
     expect(issuesFor('spell', { ...SPELL_FULL, cast: { time: 'spell.x.cast-time' } })).toEqual([]);
+  });
+
+  it('rejects a spell whose "cost" is not an i18n key with exactly one issue', () => {
+    const issues = issuesFor('spell', { ...SPELL_FULL, cost: 'not an i18n key' });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('/cost must match pattern');
   });
 
   it('accepts a feat with trigger, requirements, and frequency', () => {

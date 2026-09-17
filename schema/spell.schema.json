@@ -6,7 +6,7 @@
     { "$ref": "common.schema.json#/$defs/envelope" },
     {
       "type": "object",
-      "required": ["rank", "traditions", "cast"],
+      "required": ["rank", "cast"],
       "properties": {
         "type": { "const": "spell" },
         "rank": { "type": "integer", "minimum": 0, "maximum": 10 },
@@ -17,6 +17,9 @@
           "uniqueItems": true
         },
         "focus": { "type": "boolean" },
+        "trigger": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "requirements": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "cost": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "cast": {
           "type": "object",
           "additionalProperties": false,

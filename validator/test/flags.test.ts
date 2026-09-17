@@ -27,6 +27,10 @@ function heritageIssuesFor(json: unknown, file = 'heritage.x.json') {
   return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'heritages', file, json }] })));
 }
 
+function spellIssuesFor(json: unknown, file = 'spell.x.json') {
+  return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'spells', file, json }] })));
+}
+
 afterAll(cleanupFixtures);
 
 describe('flags check', () => {
@@ -177,5 +181,23 @@ describe('flags check', () => {
     expect(heritageIssuesFor(record('heritage', 'x', { ancestry: 'ancestry.dwarf', versatile: true }))).toEqual([
       { level: 'error', file: 'data/heritages/heritage.x.json', message: 'heritage must set either "ancestry" or "versatile": true' },
     ]);
+  });
+
+  it('accepts a spell with traditions', () => {
+    expect(spellIssuesFor(record('spell', 'x', { traditions: ['arcane'] }))).toEqual([]);
+  });
+
+  it('accepts a focus spell without traditions', () => {
+    expect(spellIssuesFor(record('spell', 'x', { focus: true }))).toEqual([]);
+  });
+
+  it('rejects a non-focus spell without traditions', () => {
+    expect(spellIssuesFor(record('spell', 'x', {}))).toEqual([
+      { level: 'error', file: 'data/spells/spell.x.json', message: 'spell must set "traditions" unless it is a focus spell' },
+    ]);
+  });
+
+  it('accepts a focus spell that also has traditions', () => {
+    expect(spellIssuesFor(record('spell', 'x', { focus: true, traditions: ['primal'] }))).toEqual([]);
   });
 });
