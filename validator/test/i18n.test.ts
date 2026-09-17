@@ -49,6 +49,14 @@ describe('i18n check', () => {
     expect(i18nCheck(loadDataset(root))).toEqual([]);
   });
 
+  it('passes for a record with no "text" field at all', () => {
+    const root = writeFixture({
+      i18n: { 'trait.flourish.name': 'Flourish' },
+      records: [{ folder: 'traits', file: 'trait.flourish.json', json: trait('flourish', { text: undefined }) }],
+    });
+    expect(i18nCheck(loadDataset(root))).toEqual([]);
+  });
+
   it("flags a text key that points at another record's key", () => {
     const root = writeFixture({
       i18n: { 'trait.flourish.name': 'Flourish', 'trait.fortune.text': 'Fortune text.' },

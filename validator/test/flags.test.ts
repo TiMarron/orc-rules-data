@@ -31,6 +31,10 @@ function spellIssuesFor(json: unknown, file = 'spell.x.json') {
   return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'spells', file, json }] })));
 }
 
+function backgroundIssuesFor(json: unknown, file = 'background.x.json') {
+  return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'backgrounds', file, json }] })));
+}
+
 afterAll(cleanupFixtures);
 
 describe('flags check', () => {
@@ -231,5 +235,33 @@ describe('flags check', () => {
 
   it('accepts a spell that has both traditions and traditionsVary', () => {
     expect(spellIssuesFor(record('spell', 'x', { traditions: ['occult'], traditionsVary: true }))).toEqual([]);
+  });
+
+  it('accepts an ordinary background with a fixed skill and no choices', () => {
+    expect(backgroundIssuesFor(record('background', 'x', { skills: ['skill.intimidation'] }))).toEqual([]);
+  });
+
+  it('accepts a background with an empty skills list and an enumerated choice', () => {
+    expect(
+      backgroundIssuesFor(
+        record('background', 'x', { skills: [], choices: [{ count: 1, from: ['skill.arcana', 'skill.nature', 'skill.occultism', 'skill.religion'] }] }),
+      ),
+    ).toEqual([]);
+  });
+
+  it('accepts a background with an empty skills list and a described choice', () => {
+    expect(
+      backgroundIssuesFor(record('background', 'x', { skills: [], choices: [{ text: 'background.raised-by-belief.skill-choice.0' }] })),
+    ).toEqual([]);
+  });
+
+  it('rejects a background with an empty skills list and no choices', () => {
+    expect(backgroundIssuesFor(record('background', 'x', { skills: [] }))).toEqual([
+      {
+        level: 'error',
+        file: 'data/backgrounds/background.x.json',
+        message: 'background must grant at least one skill, through "skills" or through "choices"',
+      },
+    ]);
   });
 });

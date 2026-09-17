@@ -54,7 +54,7 @@
               "additionalProperties": false,
               "required": ["dice", "type"],
               "properties": {
-                "dice": { "type": "string", "pattern": "^[1-9][0-9]*d(4|6|8|10|12)$" },
+                "dice": { "type": "string", "pattern": "^([1-9][0-9]*d(4|6|8|10|12)|[1-9][0-9]*)$" },
                 "type": {
                   "enum": ["bludgeoning", "piercing", "slashing", "acid", "cold", "electricity", "fire", "sonic", "force", "vitality", "void", "mental", "poison", "spirit"]
                 }

@@ -55,7 +55,7 @@
     },
     "envelope": {
       "type": "object",
-      "required": ["id", "type", "name", "text", "traits", "rarity", "source", "review", "edited"],
+      "required": ["id", "type", "name", "traits", "rarity", "source", "review", "edited"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "type": { "type": "string" },
