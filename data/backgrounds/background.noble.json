@@ -1,0 +1,27 @@
+{
+  "id": "background.noble",
+  "type": "background",
+  "name": "background.noble.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.noble.text",
+  "boosts": [
+    [
+      "int",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.noble.lore",
+  "skills": [
+    "skill.society"
+  ],
+  "feat": "feat.courtly-graces"
+}

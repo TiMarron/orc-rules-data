@@ -1,0 +1,31 @@
+{
+  "id": "spell.entangling-flora",
+  "type": "spell",
+  "name": "spell.entangling-flora.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 329,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.entangling-flora.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.entangling-flora.range",
+  "area": "spell.entangling-flora.area",
+  "duration": "spell.entangling-flora.duration"
+}

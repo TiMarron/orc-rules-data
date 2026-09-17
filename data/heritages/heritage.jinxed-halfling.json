@@ -1,0 +1,17 @@
+{
+  "id": "heritage.jinxed-halfling",
+  "type": "heritage",
+  "name": "heritage.jinxed-halfling.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 59,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "heritage.jinxed-halfling.text",
+  "ancestry": "ancestry.halfling",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

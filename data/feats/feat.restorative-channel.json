@@ -1,0 +1,27 @@
+{
+  "id": "feat.restorative-channel",
+  "type": "feat",
+  "name": "feat.restorative-channel.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.restorative-channel.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.restorative-channel.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it. The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "feat.ferocious-beasts",
+  "type": "feat",
+  "name": "feat.ferocious-beasts.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 73,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.ferocious-beasts.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.ferocious-beasts.prereq.0"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.orc-ferocity"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

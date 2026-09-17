@@ -1,0 +1,15 @@
+{
+  "id": "trait.free-hand",
+  "type": "trait",
+  "name": "trait.free-hand.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 282,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.free-hand.text"
+}

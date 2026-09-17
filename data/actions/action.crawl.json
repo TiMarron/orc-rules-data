@@ -1,0 +1,19 @@
+{
+  "id": "action.crawl",
+  "type": "action",
+  "name": "action.crawl.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 416,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.crawl.text",
+  "actions": "1",
+  "requirements": "action.crawl.requirements"
+}

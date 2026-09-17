@@ -1,0 +1,40 @@
+{
+  "id": "spell.take-its-course",
+  "type": "spell",
+  "name": "spell.take-its-course.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "fortune"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 376,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.take-its-course.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.take-its-course.range",
+  "targets": "spell.take-its-course.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.take-its-course.heightened.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

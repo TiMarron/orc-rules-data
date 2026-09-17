@@ -1,0 +1,36 @@
+{
+  "id": "spell.competitive-edge",
+  "type": "spell",
+  "name": "spell.competitive-edge.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "emotion",
+    "focus",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 372,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.competitive-edge.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.competitive-edge.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.competitive-edge.heightened.0"
+    }
+  ]
+}

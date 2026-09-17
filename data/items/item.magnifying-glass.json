@@ -1,0 +1,19 @@
+{
+  "id": "item.magnifying-glass",
+  "type": "item",
+  "name": "item.magnifying-glass.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 288,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.magnifying-glass.text",
+  "level": 3,
+  "priceCp": 4000,
+  "bulk": "0",
+  "category": "gear"
+}

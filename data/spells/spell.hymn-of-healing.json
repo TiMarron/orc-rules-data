@@ -1,0 +1,39 @@
+{
+  "id": "spell.hymn-of-healing",
+  "type": "spell",
+  "name": "spell.hymn-of-healing.name",
+  "traits": [
+    "bard",
+    "composition",
+    "concentrate",
+    "focus",
+    "healing",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 370,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hymn-of-healing.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.hymn-of-healing.range",
+  "targets": "spell.hymn-of-healing.targets",
+  "duration": "spell.hymn-of-healing.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.hymn-of-healing.heightened.0"
+    }
+  ]
+}

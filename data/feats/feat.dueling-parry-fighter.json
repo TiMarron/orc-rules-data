@@ -1,0 +1,24 @@
+{
+  "id": "feat.dueling-parry-fighter",
+  "type": "feat",
+  "name": "feat.dueling-parry-fighter.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 141,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.dueling-parry-fighter.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.dueling-parry-fighter.requirements",
+  "prerequisites": [],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

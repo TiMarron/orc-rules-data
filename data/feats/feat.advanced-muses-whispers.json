@@ -1,0 +1,25 @@
+{
+  "id": "feat.advanced-muses-whispers",
+  "type": "feat",
+  "name": "feat.advanced-muses-whispers.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-muses-whispers.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-muses-whispers"
+    }
+  ]
+}

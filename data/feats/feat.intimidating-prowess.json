@@ -1,0 +1,32 @@
+{
+  "id": "feat.intimidating-prowess",
+  "type": "feat",
+  "name": "feat.intimidating-prowess.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.intimidating-prowess.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "str",
+      "min": 3
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "expert"
+    }
+  ]
+}

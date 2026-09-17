@@ -1,0 +1,30 @@
+{
+  "id": "spell.sending",
+  "type": "spell",
+  "name": "spell.sending.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 356,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sending.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.sending.range",
+  "targets": "spell.sending.targets"
+}

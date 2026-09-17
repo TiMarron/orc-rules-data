@@ -1,0 +1,32 @@
+{
+  "id": "item.chain-shirt",
+  "type": "item",
+  "name": "item.chain-shirt.name",
+  "traits": [
+    "flexible",
+    "noisy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.chain-shirt.text",
+  "level": 0,
+  "priceCp": 500,
+  "bulk": "1",
+  "category": "armor",
+  "armor": {
+    "category": "light",
+    "acBonus": 2,
+    "dexCap": 3,
+    "checkPenalty": -1,
+    "speedPenalty": 0,
+    "strength": 1,
+    "group": "chain"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

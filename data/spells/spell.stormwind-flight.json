@@ -1,0 +1,36 @@
+{
+  "id": "spell.stormwind-flight",
+  "type": "spell",
+  "name": "spell.stormwind-flight.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "druid",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 382,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.stormwind-flight.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.stormwind-flight.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.stormwind-flight.heightened.0"
+    }
+  ]
+}

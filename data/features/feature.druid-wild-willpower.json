@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-wild-willpower",
+  "type": "feature",
+  "name": "feature.druid-wild-willpower.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 122,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-wild-willpower.text",
+  "class": "class.druid",
+  "level": 11
+}

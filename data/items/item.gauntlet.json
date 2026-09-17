@@ -1,0 +1,32 @@
+{
+  "id": "item.gauntlet",
+  "type": "item",
+  "name": "item.gauntlet.name",
+  "traits": [
+    "agile",
+    "free-hand"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 277,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.gauntlet.text",
+  "level": 0,
+  "priceCp": 20,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "brawling",
+    "damage": {
+      "dice": "1d4",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

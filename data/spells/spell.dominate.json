@@ -1,0 +1,41 @@
+{
+  "id": "spell.dominate",
+  "type": "spell",
+  "name": "spell.dominate.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 326,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dominate.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.dominate.range",
+  "targets": "spell.dominate.targets",
+  "duration": "spell.dominate.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "10",
+      "text": "spell.dominate.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "feat.stealthy-companion",
+  "type": "feat",
+  "name": "feat.stealthy-companion.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stealthy-companion.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.animal-companion"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.camouflage"
+    }
+  ]
+}

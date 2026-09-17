@@ -1,0 +1,30 @@
+{
+  "id": "feat.call-wizardly-tools",
+  "type": "feat",
+  "name": "feat.call-wizardly-tools.name",
+  "traits": [
+    "concentrate",
+    "teleportation",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 202,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.call-wizardly-tools.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.call-wizardly-tools.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "spell.quandary",
+  "type": "spell",
+  "name": "spell.quandary.name",
+  "traits": [
+    "concentrate",
+    "extradimensional",
+    "manipulate",
+    "teleportation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 351,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.quandary.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.quandary.range",
+  "targets": "spell.quandary.targets",
+  "duration": "spell.quandary.duration"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "spell.uncontrollable-dance",
+  "type": "spell",
+  "name": "spell.uncontrollable-dance.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 364,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.uncontrollable-dance.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.uncontrollable-dance.range",
+  "targets": "spell.uncontrollable-dance.targets",
+  "duration": "spell.uncontrollable-dance.duration",
+  "defense": {
+    "save": "will"
+  }
+}

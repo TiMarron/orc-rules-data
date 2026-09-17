@@ -1,0 +1,19 @@
+{
+  "id": "action.treat-poison",
+  "type": "action",
+  "name": "action.treat-poison.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 242,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.treat-poison.text",
+  "actions": "1",
+  "requirements": "action.treat-poison.requirements"
+}

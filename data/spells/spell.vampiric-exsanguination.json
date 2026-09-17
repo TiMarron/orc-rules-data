@@ -1,0 +1,40 @@
+{
+  "id": "spell.vampiric-exsanguination",
+  "type": "spell",
+  "name": "spell.vampiric-exsanguination.name",
+  "traits": [
+    "concentrate",
+    "death",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 365,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vampiric-exsanguination.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.vampiric-exsanguination.area",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vampiric-exsanguination.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "spell.disperse-into-air",
+  "type": "spell",
+  "name": "spell.disperse-into-air.name",
+  "traits": [
+    "air",
+    "cleric",
+    "focus",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 372,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.disperse-into-air.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.disperse-into-air.trigger"
+}

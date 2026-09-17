@@ -1,0 +1,21 @@
+{
+  "id": "feat.rites-of-transfiguration",
+  "type": "feat",
+  "name": "feat.rites-of-transfiguration.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 190,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rites-of-transfiguration.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

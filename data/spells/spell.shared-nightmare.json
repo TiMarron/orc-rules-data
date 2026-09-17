@@ -1,0 +1,37 @@
+{
+  "id": "spell.shared-nightmare",
+  "type": "spell",
+  "name": "spell.shared-nightmare.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "emotion",
+    "focus",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shared-nightmare.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.shared-nightmare.range",
+  "targets": "spell.shared-nightmare.targets",
+  "duration": "spell.shared-nightmare.duration",
+  "defense": {
+    "save": "will"
+  }
+}

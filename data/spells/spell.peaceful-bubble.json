@@ -1,0 +1,29 @@
+{
+  "id": "spell.peaceful-bubble",
+  "type": "spell",
+  "name": "spell.peaceful-bubble.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 348,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.peaceful-bubble.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.peaceful-bubble.cast-time"
+  },
+  "range": "spell.peaceful-bubble.range",
+  "area": "spell.peaceful-bubble.area",
+  "duration": "spell.peaceful-bubble.duration"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "trait.shadow",
+  "type": "trait",
+  "name": "trait.shadow.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 460,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "trait.shadow.text",
+  "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor. A planar description the structured source merges in from another book was removed."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "spell.command",
+  "type": "spell",
+  "name": "spell.command.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "linguistic",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 321,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.command.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.command.range",
+  "targets": "spell.command.targets",
+  "duration": "spell.command.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.command.heightened.0"
+    }
+  ]
+}

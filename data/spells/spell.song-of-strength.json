@@ -1,0 +1,31 @@
+{
+  "id": "spell.song-of-strength",
+  "type": "spell",
+  "name": "spell.song-of-strength.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 371,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.song-of-strength.text",
+  "rank": 1,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.song-of-strength.area",
+  "duration": "spell.song-of-strength.duration"
+}

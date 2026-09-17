@@ -1,0 +1,24 @@
+{
+  "id": "feat.emotional-push",
+  "type": "feat",
+  "name": "feat.emotional-push.name",
+  "traits": [
+    "bard",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.emotional-push.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "reaction",
+  "trigger": "feat.emotional-push.trigger",
+  "prerequisites": []
+}

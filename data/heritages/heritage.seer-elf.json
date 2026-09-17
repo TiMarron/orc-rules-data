@@ -1,0 +1,16 @@
+{
+  "id": "heritage.seer-elf",
+  "type": "heritage",
+  "name": "heritage.seer-elf.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 47,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.seer-elf.text",
+  "ancestry": "ancestry.elf"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "background.cook",
+  "type": "background",
+  "name": "background.cook.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 85,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.cook.text",
+  "boosts": [
+    [
+      "con",
+      "int"
+    ],
+    "free"
+  ],
+  "lore": "background.cook.lore",
+  "skills": [
+    "skill.survival"
+  ],
+  "feat": "feat.seasoned"
+}

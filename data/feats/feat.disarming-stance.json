@@ -1,0 +1,30 @@
+{
+  "id": "feat.disarming-stance",
+  "type": "feat",
+  "name": "feat.disarming-stance.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 145,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disarming-stance.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.disarming-stance.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}

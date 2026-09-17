@@ -1,0 +1,22 @@
+{
+  "id": "feat.dirge-of-doom",
+  "type": "feat",
+  "name": "feat.dirge-of-doom.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.dirge-of-doom.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [],
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "spell.stoke-the-heart",
+  "type": "spell",
+  "name": "spell.stoke-the-heart.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "emotion",
+    "hex",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 387,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.stoke-the-heart.text",
+  "rank": 1,
+  "traditionsVary": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.stoke-the-heart.range",
+  "targets": "spell.stoke-the-heart.targets",
+  "duration": "spell.stoke-the-heart.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.stoke-the-heart.heightened.0"
+    }
+  ]
+}

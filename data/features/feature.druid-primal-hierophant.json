@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-primal-hierophant",
+  "type": "feature",
+  "name": "feature.druid-primal-hierophant.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 122,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-primal-hierophant.text",
+  "class": "class.druid",
+  "level": 19
+}

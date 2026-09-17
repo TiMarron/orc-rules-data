@@ -1,0 +1,25 @@
+{
+  "id": "spell.patrons-puppet",
+  "type": "spell",
+  "name": "spell.patrons-puppet.name",
+  "traits": [
+    "focus",
+    "hex",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 385,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.patrons-puppet.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "free"
+  },
+  "trigger": "spell.patrons-puppet.trigger"
+}

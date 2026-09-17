@@ -1,0 +1,21 @@
+{
+  "id": "feat.cremate-undead",
+  "type": "feat",
+  "name": "feat.cremate-undead.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cremate-undead.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

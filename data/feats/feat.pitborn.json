@@ -1,0 +1,23 @@
+{
+  "id": "feat.pitborn",
+  "type": "feat",
+  "name": "feat.pitborn.name",
+  "traits": [
+    "lineage",
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 79,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.pitborn.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [],
+  "editNote": "Reserved"
+}

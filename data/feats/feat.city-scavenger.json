@@ -1,0 +1,21 @@
+{
+  "id": "feat.city-scavenger",
+  "type": "feat",
+  "name": "feat.city-scavenger.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 56,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.city-scavenger.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "prerequisites": []
+}

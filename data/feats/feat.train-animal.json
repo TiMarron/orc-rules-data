@@ -1,0 +1,29 @@
+{
+  "id": "feat.train-animal",
+  "type": "feat",
+  "name": "feat.train-animal.name",
+  "traits": [
+    "downtime",
+    "general",
+    "manipulate",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.train-animal.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.nature",
+      "rank": "trained"
+    }
+  ]
+}

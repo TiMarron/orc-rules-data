@@ -1,0 +1,20 @@
+{
+  "id": "action.grab-an-edge",
+  "type": "action",
+  "name": "action.grab-an-edge.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 419,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.grab-an-edge.text",
+  "actions": "reaction",
+  "trigger": "action.grab-an-edge.trigger",
+  "requirements": "action.grab-an-edge.requirements"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "spell.slow",
+  "type": "spell",
+  "name": "spell.slow.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 357,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.slow.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.slow.range",
+  "targets": "spell.slow.targets",
+  "duration": "spell.slow.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.slow.heightened.0"
+    }
+  ]
+}

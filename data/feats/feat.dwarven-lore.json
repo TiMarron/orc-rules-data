@@ -1,0 +1,21 @@
+{
+  "id": "feat.dwarven-lore",
+  "type": "feat",
+  "name": "feat.dwarven-lore.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 43,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dwarven-lore.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": []
+}

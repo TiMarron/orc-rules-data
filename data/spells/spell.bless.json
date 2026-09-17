@@ -1,0 +1,30 @@
+{
+  "id": "spell.bless",
+  "type": "spell",
+  "name": "spell.bless.name",
+  "traits": [
+    "aura",
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.bless.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.bless.area",
+  "duration": "spell.bless.duration"
+}

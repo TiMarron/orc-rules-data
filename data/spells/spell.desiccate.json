@@ -1,0 +1,39 @@
+{
+  "id": "spell.desiccate",
+  "type": "spell",
+  "name": "spell.desiccate.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 323,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.desiccate.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.desiccate.range",
+  "targets": "spell.desiccate.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.desiccate.heightened.0"
+    }
+  ]
+}

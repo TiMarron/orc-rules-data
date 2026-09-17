@@ -1,0 +1,24 @@
+{
+  "id": "feat.dual-handed-assault",
+  "type": "feat",
+  "name": "feat.dual-handed-assault.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 143,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dual-handed-assault.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.dual-handed-assault.requirements",
+  "prerequisites": []
+}

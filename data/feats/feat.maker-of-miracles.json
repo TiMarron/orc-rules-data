@@ -1,0 +1,27 @@
+{
+  "id": "feat.maker-of-miracles",
+  "type": "feat",
+  "name": "feat.maker-of-miracles.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 121,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.maker-of-miracles.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.maker-of-miracles.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

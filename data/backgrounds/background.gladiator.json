@@ -1,0 +1,27 @@
+{
+  "id": "background.gladiator",
+  "type": "background",
+  "name": "background.gladiator.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.gladiator.text",
+  "boosts": [
+    [
+      "str",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.gladiator.lore",
+  "skills": [
+    "skill.performance"
+  ],
+  "feat": "feat.impressive-performance"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spell.illusory-object",
+  "type": "spell",
+  "name": "spell.illusory-object.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 337,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.illusory-object.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.illusory-object.range",
+  "area": "spell.illusory-object.area",
+  "duration": "spell.illusory-object.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.illusory-object.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "spell.illusory-object.heightened.1"
+    }
+  ]
+}

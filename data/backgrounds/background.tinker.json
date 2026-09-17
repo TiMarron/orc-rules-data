@@ -1,0 +1,27 @@
+{
+  "id": "background.tinker",
+  "type": "background",
+  "name": "background.tinker.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.tinker.text",
+  "boosts": [
+    [
+      "dex",
+      "int"
+    ],
+    "free"
+  ],
+  "lore": "background.tinker.lore",
+  "skills": [
+    "skill.crafting"
+  ],
+  "feat": "feat.specialty-crafting"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spell.item-facade",
+  "type": "spell",
+  "name": "spell.item-facade.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 340,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.item-facade.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.item-facade.range",
+  "targets": "spell.item-facade.targets",
+  "duration": "spell.item-facade.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.item-facade.heightened.0"
+    },
+    {
+      "level": "3",
+      "text": "spell.item-facade.heightened.1"
+    }
+  ]
+}

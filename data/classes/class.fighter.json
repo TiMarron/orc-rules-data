@@ -1,0 +1,209 @@
+{
+  "id": "class.fighter",
+  "type": "class",
+  "name": "class.fighter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 137,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "class.fighter.text",
+  "keyAttribute": [
+    "str",
+    "dex"
+  ],
+  "hp": 10,
+  "proficiencies": {
+    "perception": "expert",
+    "fortitude": "expert",
+    "reflex": "expert",
+    "will": "trained",
+    "skills": {
+      "additional": 3,
+      "fixed": [],
+      "choices": [
+        {
+          "count": 1,
+          "from": [
+            "skill.acrobatics",
+            "skill.athletics"
+          ]
+        }
+      ]
+    },
+    "attacks": {
+      "simple": "expert",
+      "martial": "expert",
+      "advanced": "trained",
+      "unarmed": "expert"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "trained",
+      "heavy": "trained"
+    },
+    "classDc": "trained"
+  },
+  "featLevels": {
+    "class": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.fighter-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.fighter-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.fighter-fighter-feats"
+    },
+    {
+      "level": 1,
+      "feature": "feature.fighter-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.fighter-reactive-strike"
+    },
+    {
+      "level": 1,
+      "feature": "feature.fighter-shield-block"
+    },
+    {
+      "level": 2,
+      "feature": "feature.fighter-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.fighter-bravery"
+    },
+    {
+      "level": 3,
+      "feature": "feature.fighter-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.fighter-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.fighter-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.fighter-fighter-weapon-mastery"
+    },
+    {
+      "level": 7,
+      "feature": "feature.fighter-battlefield-surveyor"
+    },
+    {
+      "level": 7,
+      "feature": "feature.fighter-weapon-specialization"
+    },
+    {
+      "level": 9,
+      "feature": "feature.fighter-battle-hardened"
+    },
+    {
+      "level": 9,
+      "feature": "feature.fighter-combat-flexibility"
+    },
+    {
+      "level": 11,
+      "feature": "feature.fighter-armor-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.fighter-fighter-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.fighter-weapon-legend"
+    },
+    {
+      "level": 15,
+      "feature": "feature.fighter-greater-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.fighter-improved-flexibility"
+    },
+    {
+      "level": 15,
+      "feature": "feature.fighter-tempered-reflexes"
+    },
+    {
+      "level": 17,
+      "feature": "feature.fighter-armor-mastery"
+    },
+    {
+      "level": 19,
+      "feature": "feature.fighter-versatile-legend"
+    }
+  ],
+  "editNote": "Verified against the book: hit points, key attribute, saving throws, weapon and armour proficiencies, trained skills and the Acrobatics-or-Athletics choice all match the class entry. The advancement table and art the book prints are omitted, as the dataset markup carries neither."
+}

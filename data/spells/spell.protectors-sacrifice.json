@@ -1,0 +1,35 @@
+{
+  "id": "spell.protectors-sacrifice",
+  "type": "spell",
+  "name": "spell.protectors-sacrifice.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 378,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.protectors-sacrifice.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.protectors-sacrifice.range",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.protectors-sacrifice.heightened.0"
+    }
+  ],
+  "trigger": "spell.protectors-sacrifice.trigger"
+}

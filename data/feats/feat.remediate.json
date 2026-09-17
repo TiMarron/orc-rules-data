@@ -1,0 +1,25 @@
+{
+  "id": "feat.remediate",
+  "type": "feat",
+  "name": "feat.remediate.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 120,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.remediate.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "free",
+  "frequency": "feat.remediate.frequency",
+  "prerequisites": []
+}

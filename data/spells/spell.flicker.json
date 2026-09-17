@@ -1,0 +1,34 @@
+{
+  "id": "spell.flicker",
+  "type": "spell",
+  "name": "spell.flicker.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "teleportation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.flicker.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.flicker.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.flicker.heightened.0"
+    }
+  ]
+}

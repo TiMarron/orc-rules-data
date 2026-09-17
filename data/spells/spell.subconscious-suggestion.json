@@ -1,0 +1,42 @@
+{
+  "id": "spell.subconscious-suggestion",
+  "type": "spell",
+  "name": "spell.subconscious-suggestion.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "linguistic",
+    "manipulate",
+    "mental",
+    "subtle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 359,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.subconscious-suggestion.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.subconscious-suggestion.range",
+  "targets": "spell.subconscious-suggestion.targets",
+  "duration": "spell.subconscious-suggestion.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.subconscious-suggestion.heightened.0"
+    }
+  ]
+}

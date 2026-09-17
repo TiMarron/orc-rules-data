@@ -1,0 +1,16 @@
+{
+  "id": "condition.unnoticed",
+  "type": "condition",
+  "name": "condition.unnoticed.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 447,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.unnoticed.text",
+  "valued": false
+}

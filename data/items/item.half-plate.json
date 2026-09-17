@@ -1,0 +1,29 @@
+{
+  "id": "item.half-plate",
+  "type": "item",
+  "name": "item.half-plate.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.half-plate.text",
+  "level": 1,
+  "priceCp": 1800,
+  "bulk": "3",
+  "category": "armor",
+  "armor": {
+    "category": "heavy",
+    "acBonus": 5,
+    "dexCap": 1,
+    "checkPenalty": -3,
+    "speedPenalty": -10,
+    "strength": 3,
+    "group": "plate"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

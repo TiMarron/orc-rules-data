@@ -1,0 +1,41 @@
+{
+  "id": "spell.vitality-lash",
+  "type": "spell",
+  "name": "spell.vitality-lash.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 366,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "spell.vitality-lash.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.vitality-lash.range",
+  "targets": "spell.vitality-lash.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vitality-lash.heightened.0"
+    }
+  ],
+  "editNote": "Reserved"
+}

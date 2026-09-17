@@ -1,0 +1,21 @@
+{
+  "id": "feat.folksy-patter",
+  "type": "feat",
+  "name": "feat.folksy-patter.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 60,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.folksy-patter.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "spell.petrify",
+  "type": "spell",
+  "name": "spell.petrify.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 349,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.petrify.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.petrify.range",
+  "targets": "spell.petrify.targets",
+  "duration": "spell.petrify.duration",
+  "defense": {
+    "save": "fortitude"
+  }
+}

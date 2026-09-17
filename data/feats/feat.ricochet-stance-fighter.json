@@ -1,0 +1,23 @@
+{
+  "id": "feat.ricochet-stance-fighter",
+  "type": "feat",
+  "name": "feat.ricochet-stance-fighter.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 145,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ricochet-stance-fighter.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "prerequisites": []
+}

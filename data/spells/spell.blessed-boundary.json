@@ -1,0 +1,39 @@
+{
+  "id": "spell.blessed-boundary",
+  "type": "spell",
+  "name": "spell.blessed-boundary.name",
+  "traits": [
+    "concentrate",
+    "force",
+    "manipulate",
+    "sanctified"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blessed-boundary.text",
+  "rank": 6,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.blessed-boundary.range",
+  "area": "spell.blessed-boundary.area",
+  "duration": "spell.blessed-boundary.duration",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.blessed-boundary.heightened.0"
+    }
+  ]
+}

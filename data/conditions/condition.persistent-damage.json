@@ -1,0 +1,17 @@
+{
+  "id": "condition.persistent-damage",
+  "type": "condition",
+  "name": "condition.persistent-damage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 445,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "condition.persistent-damage.text",
+  "valued": false,
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

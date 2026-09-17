@@ -1,0 +1,21 @@
+{
+  "id": "feat.multifarious-muse",
+  "type": "feat",
+  "name": "feat.multifarious-muse.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.multifarious-muse.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": []
+}

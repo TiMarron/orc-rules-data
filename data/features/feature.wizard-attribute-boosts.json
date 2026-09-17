@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-attribute-boosts",
+  "type": "feature",
+  "name": "feature.wizard-attribute-boosts.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-attribute-boosts.text",
+  "class": "class.wizard",
+  "level": 1
+}

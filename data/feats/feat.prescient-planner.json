@@ -1,0 +1,21 @@
+{
+  "id": "feat.prescient-planner",
+  "type": "feat",
+  "name": "feat.prescient-planner.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.prescient-planner.text",
+  "level": 3,
+  "category": "general",
+  "requirements": "feat.prescient-planner.requirements",
+  "prerequisites": []
+}

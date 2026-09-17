@@ -1,0 +1,31 @@
+{
+  "id": "feat.impeccable-crafting",
+  "type": "feat",
+  "name": "feat.impeccable-crafting.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impeccable-crafting.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "master"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.specialty-crafting"
+    }
+  ]
+}

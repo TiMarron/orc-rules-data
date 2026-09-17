@@ -1,0 +1,21 @@
+{
+  "id": "feat.sure-feet",
+  "type": "feat",
+  "name": "feat.sure-feet.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 60,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sure-feet.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": []
+}

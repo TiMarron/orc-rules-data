@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.wizard-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 193,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-initial-proficiencies.text",
+  "class": "class.wizard",
+  "level": 1
+}

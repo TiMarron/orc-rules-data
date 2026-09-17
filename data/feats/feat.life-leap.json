@@ -1,0 +1,25 @@
+{
+  "id": "feat.life-leap",
+  "type": "feat",
+  "name": "feat.life-leap.name",
+  "traits": [
+    "gnome",
+    "move",
+    "teleportation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 53,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.life-leap.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "actions": "1",
+  "requirements": "feat.life-leap.requirements",
+  "prerequisites": []
+}

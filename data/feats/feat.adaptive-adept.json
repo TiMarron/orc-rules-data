@@ -1,0 +1,31 @@
+{
+  "id": "feat.adaptive-adept",
+  "type": "feat",
+  "name": "feat.adaptive-adept.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 64,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.adaptive-adept.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.adapted-cantrip"
+    },
+    {
+      "kind": "text",
+      "key": "feat.adaptive-adept.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

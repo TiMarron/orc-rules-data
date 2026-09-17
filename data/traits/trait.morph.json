@@ -1,0 +1,15 @@
+{
+  "id": "trait.morph",
+  "type": "trait",
+  "name": "trait.morph.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 301,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.morph.text"
+}

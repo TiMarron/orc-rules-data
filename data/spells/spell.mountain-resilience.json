@@ -1,0 +1,44 @@
+{
+  "id": "spell.mountain-resilience",
+  "type": "spell",
+  "name": "spell.mountain-resilience.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 346,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mountain-resilience.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.mountain-resilience.range",
+  "targets": "spell.mountain-resilience.targets",
+  "duration": "spell.mountain-resilience.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.mountain-resilience.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.mountain-resilience.heightened.1"
+    },
+    {
+      "level": "10",
+      "text": "spell.mountain-resilience.heightened.2"
+    }
+  ]
+}

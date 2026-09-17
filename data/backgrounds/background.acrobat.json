@@ -1,0 +1,27 @@
+{
+  "id": "background.acrobat",
+  "type": "background",
+  "name": "background.acrobat.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 84,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.acrobat.text",
+  "boosts": [
+    [
+      "str",
+      "dex"
+    ],
+    "free"
+  ],
+  "lore": "background.acrobat.lore",
+  "skills": [
+    "skill.acrobatics"
+  ],
+  "feat": "feat.steady-balance"
+}

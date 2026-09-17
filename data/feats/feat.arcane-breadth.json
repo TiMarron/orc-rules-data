@@ -1,0 +1,25 @@
+{
+  "id": "feat.arcane-breadth",
+  "type": "feat",
+  "name": "feat.arcane-breadth.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 223,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.arcane-breadth.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-wizard-spellcasting"
+    }
+  ]
+}

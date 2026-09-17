@@ -1,0 +1,17 @@
+{
+  "id": "feature.rogue-rogue-expertise",
+  "type": "feature",
+  "name": "feature.rogue-rogue-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 164,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.rogue-rogue-expertise.text",
+  "class": "class.rogue",
+  "level": 11
+}

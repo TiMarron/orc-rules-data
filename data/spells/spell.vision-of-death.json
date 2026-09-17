@@ -1,0 +1,41 @@
+{
+  "id": "spell.vision-of-death",
+  "type": "spell",
+  "name": "spell.vision-of-death.name",
+  "traits": [
+    "concentrate",
+    "death",
+    "emotion",
+    "fear",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 366,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vision-of-death.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.vision-of-death.range",
+  "targets": "spell.vision-of-death.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vision-of-death.heightened.0"
+    }
+  ]
+}

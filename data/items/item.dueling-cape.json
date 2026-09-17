@@ -1,0 +1,19 @@
+{
+  "id": "item.dueling-cape",
+  "type": "item",
+  "name": "item.dueling-cape.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 288,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.dueling-cape.text",
+  "level": 0,
+  "priceCp": 50,
+  "bulk": "L",
+  "category": "gear"
+}

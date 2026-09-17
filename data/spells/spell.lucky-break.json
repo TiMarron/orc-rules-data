@@ -1,0 +1,29 @@
+{
+  "id": "spell.lucky-break",
+  "type": "spell",
+  "name": "spell.lucky-break.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "fortune"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 376,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.lucky-break.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.lucky-break.trigger"
+}

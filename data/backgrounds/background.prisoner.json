@@ -1,0 +1,28 @@
+{
+  "id": "background.prisoner",
+  "type": "background",
+  "name": "background.prisoner.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "background.prisoner.text",
+  "boosts": [
+    [
+      "str",
+      "con"
+    ],
+    "free"
+  ],
+  "lore": "background.prisoner.lore",
+  "skills": [
+    "skill.stealth"
+  ],
+  "feat": "feat.experienced-smuggler",
+  "editNote": "pdf-text near-miss: the book p.88 prints the Prisoner background with the same crimes/freedom concept in different wording (no mention of 'enslaved for some part of your upbringing'); this is the structured source's own paraphrase, not a paragraph merged in from another book."
+}

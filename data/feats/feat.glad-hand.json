@@ -1,0 +1,27 @@
+{
+  "id": "feat.glad-hand",
+  "type": "feat",
+  "name": "feat.glad-hand.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.glad-hand.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "expert"
+    }
+  ]
+}

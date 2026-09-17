@@ -1,0 +1,27 @@
+{
+  "id": "feat.unmistakable-lore",
+  "type": "feat",
+  "name": "feat.unmistakable-lore.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unmistakable-lore.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.lore",
+      "rank": "expert"
+    }
+  ]
+}

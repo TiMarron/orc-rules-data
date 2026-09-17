@@ -1,0 +1,21 @@
+{
+  "id": "feat.changeling-lore",
+  "type": "feat",
+  "name": "feat.changeling-lore.name",
+  "traits": [
+    "changeling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 77,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.changeling-lore.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

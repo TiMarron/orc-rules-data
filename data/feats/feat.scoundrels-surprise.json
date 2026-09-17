@@ -1,0 +1,23 @@
+{
+  "id": "feat.scoundrels-surprise",
+  "type": "feat",
+  "name": "feat.scoundrels-surprise.name",
+  "traits": [
+    "manipulate",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scoundrels-surprise.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "prerequisites": []
+}

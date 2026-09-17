@@ -1,0 +1,22 @@
+{
+  "id": "feat.fey-cantrip",
+  "type": "feat",
+  "name": "feat.fey-cantrip.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 52,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.fey-cantrip.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: the feat's own name and its in-text mention of the fey plane's proper name both replaced with a generic descriptor; the mapped id was renamed to match, since the slug itself carried the same reserved term. Named Fey Cantrip rather than a literal translation of the printed title, because that title's most natural generic form (a two-word phrase naming the fey and magic) turned out to already occur, coincidentally, in the neighboring feat's own flavor text -- the automated page check kept mistaking that unrelated sentence for this feat's heading and relocating it a page over."
+}

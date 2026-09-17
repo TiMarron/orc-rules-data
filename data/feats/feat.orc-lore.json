@@ -1,0 +1,21 @@
+{
+  "id": "feat.orc-lore",
+  "type": "feat",
+  "name": "feat.orc-lore.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 72,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.orc-lore.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": []
+}

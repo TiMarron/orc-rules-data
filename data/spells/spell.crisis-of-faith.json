@@ -1,0 +1,37 @@
+{
+  "id": "spell.crisis-of-faith",
+  "type": "spell",
+  "name": "spell.crisis-of-faith.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 322,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.crisis-of-faith.text",
+  "rank": 3,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.crisis-of-faith.range",
+  "targets": "spell.crisis-of-faith.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.crisis-of-faith.heightened.0"
+    }
+  ]
+}

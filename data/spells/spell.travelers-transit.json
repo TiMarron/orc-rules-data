@@ -1,0 +1,35 @@
+{
+  "id": "spell.travelers-transit",
+  "type": "spell",
+  "name": "spell.travelers-transit.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 379,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.travelers-transit.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.travelers-transit.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.travelers-transit.heightened.0"
+    }
+  ]
+}

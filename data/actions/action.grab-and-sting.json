@@ -1,0 +1,16 @@
+{
+  "id": "action.grab-and-sting",
+  "type": "action",
+  "name": "action.grab-and-sting.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 210,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.grab-and-sting.text",
+  "actions": "2"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "spell.ignite-ambition",
+  "type": "spell",
+  "name": "spell.ignite-ambition.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "emotion",
+    "focus",
+    "mental",
+    "subtle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 372,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ignite-ambition.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.ignite-ambition.range",
+  "targets": "spell.ignite-ambition.targets",
+  "defense": {
+    "save": "will"
+  },
+  "trigger": "spell.ignite-ambition.trigger"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.certain-strike",
+  "type": "feat",
+  "name": "feat.certain-strike.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 147,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.certain-strike.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "prerequisites": []
+}

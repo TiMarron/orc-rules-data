@@ -1,0 +1,20 @@
+{
+  "id": "item.barding-light-small-or-medium",
+  "type": "item",
+  "name": "item.barding-light-small-or-medium.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 295,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.barding-light-small-or-medium.text",
+  "level": 0,
+  "priceCp": 1000,
+  "bulk": "2",
+  "category": "gear",
+  "editNote": "Dropped the trailing \"## Barding\" line: a leftover raw markdown heading from the structured source, never printed as text in the book."
+}

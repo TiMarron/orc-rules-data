@@ -1,0 +1,23 @@
+{
+  "id": "feat.additional-recollection",
+  "type": "feat",
+  "name": "feat.additional-recollection.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 159,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.additional-recollection.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "free",
+  "trigger": "feat.additional-recollection.trigger",
+  "prerequisites": []
+}

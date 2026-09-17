@@ -1,0 +1,52 @@
+{
+  "id": "spell.summon-celestial",
+  "type": "spell",
+  "name": "spell.summon-celestial.name",
+  "traits": [
+    "concentrate",
+    "holy",
+    "manipulate",
+    "summon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 360,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "spell.summon-celestial.text",
+  "rank": 5,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.summon-celestial.range",
+  "duration": "spell.summon-celestial.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.summon-celestial.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.summon-celestial.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.summon-celestial.heightened.2"
+    },
+    {
+      "level": "9",
+      "text": "spell.summon-celestial.heightened.3"
+    },
+    {
+      "level": "10",
+      "text": "spell.summon-celestial.heightened.4"
+    }
+  ],
+  "editNote": "Reserved"
+}

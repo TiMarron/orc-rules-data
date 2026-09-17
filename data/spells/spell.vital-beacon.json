@@ -1,0 +1,35 @@
+{
+  "id": "spell.vital-beacon",
+  "type": "spell",
+  "name": "spell.vital-beacon.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 366,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vital-beacon.text",
+  "rank": 4,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.vital-beacon.cast-time"
+  },
+  "duration": "spell.vital-beacon.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vital-beacon.heightened.0"
+    }
+  ]
+}

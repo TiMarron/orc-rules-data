@@ -1,0 +1,21 @@
+{
+  "id": "feat.cave-climber",
+  "type": "feat",
+  "name": "feat.cave-climber.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 57,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cave-climber.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "prerequisites": []
+}

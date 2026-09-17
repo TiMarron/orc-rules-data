@@ -1,0 +1,37 @@
+{
+  "id": "spell.precious-metals",
+  "type": "spell",
+  "name": "spell.precious-metals.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "metal"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 381,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.precious-metals.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.precious-metals.range",
+  "targets": "spell.precious-metals.targets",
+  "duration": "spell.precious-metals.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.precious-metals.heightened.0"
+    }
+  ]
+}

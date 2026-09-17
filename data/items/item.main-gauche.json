@@ -1,0 +1,35 @@
+{
+  "id": "item.main-gauche",
+  "type": "item",
+  "name": "item.main-gauche.name",
+  "traits": [
+    "agile",
+    "disarm",
+    "finesse",
+    "parry",
+    "versatile-s"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.main-gauche.text",
+  "level": 0,
+  "priceCp": 50,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "knife",
+    "damage": {
+      "dice": "1d4",
+      "type": "piercing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

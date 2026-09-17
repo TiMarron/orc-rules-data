@@ -1,0 +1,47 @@
+{
+  "id": "spell.charm",
+  "type": "spell",
+  "name": "spell.charm.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "incapacitation",
+    "manipulate",
+    "mental",
+    "subtle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 320,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.charm.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.charm.range",
+  "targets": "spell.charm.targets",
+  "duration": "spell.charm.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.charm.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.charm.heightened.1"
+    }
+  ]
+}

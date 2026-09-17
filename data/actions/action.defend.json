@@ -1,0 +1,17 @@
+{
+  "id": "action.defend",
+  "type": "action",
+  "name": "action.defend.name",
+  "traits": [
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 438,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.defend.text"
+}

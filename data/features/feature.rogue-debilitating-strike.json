@@ -1,0 +1,18 @@
+{
+  "id": "feature.rogue-debilitating-strike",
+  "type": "feature",
+  "name": "feature.rogue-debilitating-strike.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 164,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feature.rogue-debilitating-strike.text",
+  "class": "class.rogue",
+  "level": 9,
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "spell.fly",
+  "type": "spell",
+  "name": "spell.fly.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fly.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.fly.range",
+  "targets": "spell.fly.targets",
+  "duration": "spell.fly.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.fly.heightened.0"
+    }
+  ]
+}

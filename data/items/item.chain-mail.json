@@ -1,0 +1,32 @@
+{
+  "id": "item.chain-mail",
+  "type": "item",
+  "name": "item.chain-mail.name",
+  "traits": [
+    "flexible",
+    "noisy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.chain-mail.text",
+  "level": 0,
+  "priceCp": 600,
+  "bulk": "2",
+  "category": "armor",
+  "armor": {
+    "category": "medium",
+    "acBonus": 4,
+    "dexCap": 1,
+    "checkPenalty": -2,
+    "speedPenalty": -5,
+    "strength": 3,
+    "group": "chain"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

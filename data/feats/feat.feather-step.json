@@ -1,0 +1,26 @@
+{
+  "id": "feat.feather-step",
+  "type": "feat",
+  "name": "feat.feather-step.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.feather-step.text",
+  "level": 1,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "dex",
+      "min": 2
+    }
+  ]
+}

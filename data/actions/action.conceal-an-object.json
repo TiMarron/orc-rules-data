@@ -1,0 +1,19 @@
+{
+  "id": "action.conceal-an-object",
+  "type": "action",
+  "name": "action.conceal-an-object.name",
+  "traits": [
+    "manipulate",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 244,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.conceal-an-object.text",
+  "actions": "1"
+}

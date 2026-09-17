@@ -1,0 +1,33 @@
+{
+  "id": "feat.master-of-many-styles",
+  "type": "feat",
+  "name": "feat.master-of-many-styles.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.master-of-many-styles.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "free",
+  "trigger": "feat.master-of-many-styles.trigger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.master-of-many-styles.prereq.0"
+    },
+    {
+      "kind": "text",
+      "key": "feat.master-of-many-styles.prereq.1"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

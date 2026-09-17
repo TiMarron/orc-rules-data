@@ -1,0 +1,16 @@
+{
+  "id": "action.wing-thrash",
+  "type": "action",
+  "name": "action.wing-thrash.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 207,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.wing-thrash.text",
+  "actions": "2"
+}

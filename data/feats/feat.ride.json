@@ -1,0 +1,20 @@
+{
+  "id": "feat.ride",
+  "type": "feat",
+  "name": "feat.ride.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 261,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ride.text",
+  "level": 1,
+  "category": "general",
+  "prerequisites": []
+}

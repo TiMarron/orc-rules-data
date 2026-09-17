@@ -1,0 +1,21 @@
+{
+  "id": "feat.blessed-blood-nephilim",
+  "type": "feat",
+  "name": "feat.blessed-blood-nephilim.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 80,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.blessed-blood-nephilim.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

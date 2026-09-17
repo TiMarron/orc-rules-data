@@ -1,0 +1,29 @@
+{
+  "id": "spell.mindlink",
+  "type": "spell",
+  "name": "spell.mindlink.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 344,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mindlink.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.mindlink.range",
+  "targets": "spell.mindlink.targets"
+}

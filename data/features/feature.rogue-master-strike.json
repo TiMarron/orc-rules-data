@@ -1,0 +1,18 @@
+{
+  "id": "feature.rogue-master-strike",
+  "type": "feature",
+  "name": "feature.rogue-master-strike.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 164,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feature.rogue-master-strike.text",
+  "class": "class.rogue",
+  "level": 19,
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

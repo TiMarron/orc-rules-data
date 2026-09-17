@@ -1,0 +1,21 @@
+{
+  "id": "feat.dread-striker",
+  "type": "feat",
+  "name": "feat.dread-striker.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 171,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dread-striker.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

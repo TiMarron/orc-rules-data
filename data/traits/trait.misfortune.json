@@ -2,10 +2,15 @@
   "id": "trait.misfortune",
   "type": "trait",
   "name": "trait.misfortune.name",
-  "text": "trait.misfortune.text",
   "traits": [],
   "rarity": "common",
-  "source": { "book": "gm-core", "page": 331, "revision": "2023-first" },
+  "source": {
+    "book": "player-core",
+    "page": 401,
+    "revision": "2023-first"
+  },
   "review": "human",
-  "edited": false
+  "edited": true,
+  "text": "trait.misfortune.text",
+  "editNote": "the book's wording supersedes the the companion book glossary entry the dataset was seeded with."
 }

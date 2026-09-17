@@ -1,0 +1,28 @@
+{
+  "id": "feat.rebounding-smite",
+  "type": "feat",
+  "name": "feat.rebounding-smite.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 120,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rebounding-smite.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "reaction",
+  "trigger": "feat.rebounding-smite.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.channel-smite"
+    }
+  ]
+}

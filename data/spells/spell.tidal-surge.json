@@ -1,0 +1,30 @@
+{
+  "id": "spell.tidal-surge",
+  "type": "spell",
+  "name": "spell.tidal-surge.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 381,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tidal-surge.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.tidal-surge.range",
+  "targets": "spell.tidal-surge.targets"
+}

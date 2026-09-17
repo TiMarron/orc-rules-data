@@ -1,0 +1,38 @@
+{
+  "id": "spell.dinosaur-form",
+  "type": "spell",
+  "name": "spell.dinosaur-form.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 324,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.dinosaur-form.text",
+  "rank": 4,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.dinosaur-form.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.dinosaur-form.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.dinosaur-form.heightened.1"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

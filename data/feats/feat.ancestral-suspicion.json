@@ -1,0 +1,21 @@
+{
+  "id": "feat.ancestral-suspicion",
+  "type": "feat",
+  "name": "feat.ancestral-suspicion.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 48,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ancestral-suspicion.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": []
+}

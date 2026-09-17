@@ -1,0 +1,40 @@
+{
+  "id": "spell.banishment",
+  "type": "spell",
+  "name": "spell.banishment.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.banishment.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.banishment.range",
+  "targets": "spell.banishment.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.banishment.heightened.0"
+    }
+  ]
+}

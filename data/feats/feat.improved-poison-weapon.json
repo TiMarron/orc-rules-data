@@ -1,0 +1,26 @@
+{
+  "id": "feat.improved-poison-weapon",
+  "type": "feat",
+  "name": "feat.improved-poison-weapon.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 173,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improved-poison-weapon.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.poison-weapon"
+    }
+  ]
+}

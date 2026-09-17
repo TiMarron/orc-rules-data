@@ -1,0 +1,39 @@
+{
+  "id": "spell.floating-flame",
+  "type": "spell",
+  "name": "spell.floating-flame.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.floating-flame.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.floating-flame.range",
+  "area": "spell.floating-flame.area",
+  "duration": "spell.floating-flame.duration",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.floating-flame.heightened.0"
+    }
+  ]
+}

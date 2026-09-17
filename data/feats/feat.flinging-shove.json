@@ -1,0 +1,27 @@
+{
+  "id": "feat.flinging-shove",
+  "type": "feat",
+  "name": "feat.flinging-shove.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 149,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.flinging-shove.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.flinging-shove.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

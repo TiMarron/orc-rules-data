@@ -1,0 +1,27 @@
+{
+  "id": "feat.soaring-shape",
+  "type": "feat",
+  "name": "feat.soaring-shape.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 132,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.soaring-shape.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.untamed-form"
+    }
+  ],
+  "editNote": "Reserved"
+}

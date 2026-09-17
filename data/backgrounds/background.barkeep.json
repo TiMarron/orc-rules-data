@@ -1,0 +1,27 @@
+{
+  "id": "background.barkeep",
+  "type": "background",
+  "name": "background.barkeep.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 84,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.barkeep.text",
+  "boosts": [
+    [
+      "con",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.barkeep.lore",
+  "skills": [
+    "skill.diplomacy"
+  ],
+  "feat": "feat.hobnobber"
+}

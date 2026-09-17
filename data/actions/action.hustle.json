@@ -1,0 +1,18 @@
+{
+  "id": "action.hustle",
+  "type": "action",
+  "name": "action.hustle.name",
+  "traits": [
+    "exploration",
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 438,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.hustle.text"
+}

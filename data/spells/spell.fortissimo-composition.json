@@ -1,0 +1,28 @@
+{
+  "id": "spell.fortissimo-composition",
+  "type": "spell",
+  "name": "spell.fortissimo-composition.name",
+  "traits": [
+    "bard",
+    "concentrate",
+    "focus",
+    "spellshape"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 370,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fortissimo-composition.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "free"
+  }
+}

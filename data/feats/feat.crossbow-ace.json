@@ -1,0 +1,23 @@
+{
+  "id": "feat.crossbow-ace",
+  "type": "feat",
+  "name": "feat.crossbow-ace.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 157,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.crossbow-ace.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "1",
+  "requirements": "feat.crossbow-ace.requirements",
+  "prerequisites": []
+}

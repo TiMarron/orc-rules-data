@@ -1,0 +1,19 @@
+{
+  "id": "item.piton",
+  "type": "item",
+  "name": "item.piton.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.piton.text",
+  "level": 0,
+  "priceCp": 1,
+  "bulk": "0",
+  "category": "gear"
+}

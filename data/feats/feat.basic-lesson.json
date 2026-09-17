@@ -1,0 +1,21 @@
+{
+  "id": "feat.basic-lesson",
+  "type": "feat",
+  "name": "feat.basic-lesson.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 186,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.basic-lesson.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

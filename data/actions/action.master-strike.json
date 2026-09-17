@@ -1,0 +1,20 @@
+{
+  "id": "action.master-strike",
+  "type": "action",
+  "name": "action.master-strike.name",
+  "traits": [
+    "incapacitation",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 169,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.master-strike.text",
+  "actions": "free",
+  "trigger": "action.master-strike.trigger"
+}

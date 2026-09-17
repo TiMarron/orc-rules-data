@@ -1,0 +1,27 @@
+{
+  "id": "feat.scouts-warning",
+  "type": "feat",
+  "name": "feat.scouts-warning.name",
+  "traits": [
+    "ranger",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 159,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scouts-warning.text",
+  "level": 4,
+  "category": "class",
+  "class": [
+    "class.ranger",
+    "class.rogue"
+  ],
+  "actions": "free",
+  "trigger": "feat.scouts-warning.trigger",
+  "prerequisites": []
+}

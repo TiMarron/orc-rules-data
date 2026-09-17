@@ -1,0 +1,27 @@
+{
+  "id": "background.laborer",
+  "type": "background",
+  "name": "background.laborer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.laborer.text",
+  "boosts": [
+    [
+      "str",
+      "con"
+    ],
+    "free"
+  ],
+  "lore": "background.laborer.lore",
+  "skills": [
+    "skill.athletics"
+  ],
+  "feat": "feat.hefty-hauler"
+}

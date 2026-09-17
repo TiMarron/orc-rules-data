@@ -1,0 +1,31 @@
+{
+  "id": "spell.revival",
+  "type": "spell",
+  "name": "spell.revival.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 353,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.revival.text",
+  "rank": 10,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.revival.range",
+  "targets": "spell.revival.targets",
+  "duration": "spell.revival.duration"
+}

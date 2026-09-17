@@ -1,0 +1,21 @@
+{
+  "id": "feat.call-of-the-wild",
+  "type": "feat",
+  "name": "feat.call-of-the-wild.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 129,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.call-of-the-wild.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": []
+}

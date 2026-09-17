@@ -1,0 +1,21 @@
+{
+  "id": "feat.infinite-possibilities",
+  "type": "feat",
+  "name": "feat.infinite-possibilities.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 205,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.infinite-possibilities.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": []
+}

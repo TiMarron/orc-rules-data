@@ -1,0 +1,30 @@
+{
+  "id": "feat.shared-prey",
+  "type": "feat",
+  "name": "feat.shared-prey.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shared-prey.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.double-prey"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.wardens-boon"
+    }
+  ]
+}

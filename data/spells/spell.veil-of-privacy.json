@@ -1,0 +1,30 @@
+{
+  "id": "spell.veil-of-privacy",
+  "type": "spell",
+  "name": "spell.veil-of-privacy.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 366,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.veil-of-privacy.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.veil-of-privacy.cast-time"
+  },
+  "range": "spell.veil-of-privacy.range",
+  "targets": "spell.veil-of-privacy.targets",
+  "duration": "spell.veil-of-privacy.duration"
+}

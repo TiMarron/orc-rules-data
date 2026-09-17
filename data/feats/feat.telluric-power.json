@@ -1,0 +1,21 @@
+{
+  "id": "feat.telluric-power",
+  "type": "feat",
+  "name": "feat.telluric-power.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 45,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.telluric-power.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": []
+}

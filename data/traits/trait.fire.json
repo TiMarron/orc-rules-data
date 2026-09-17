@@ -1,0 +1,16 @@
+{
+  "id": "trait.fire",
+  "type": "trait",
+  "name": "trait.fire.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 456,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "trait.fire.text",
+  "editNote": "A planar description the structured source merges in from another book was removed; the book prints only the trait definition."
+}

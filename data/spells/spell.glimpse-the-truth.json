@@ -1,0 +1,37 @@
+{
+  "id": "spell.glimpse-the-truth",
+  "type": "spell",
+  "name": "spell.glimpse-the-truth.name",
+  "traits": [
+    "aura",
+    "cleric",
+    "focus",
+    "manipulate",
+    "revelation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 380,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.glimpse-the-truth.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.glimpse-the-truth.area",
+  "duration": "spell.glimpse-the-truth.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.glimpse-the-truth.heightened.0"
+    }
+  ]
+}

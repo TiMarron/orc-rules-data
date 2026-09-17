@@ -1,0 +1,26 @@
+{
+  "id": "feat.stonewall",
+  "type": "feat",
+  "name": "feat.stonewall.name",
+  "traits": [
+    "dwarf",
+    "earth",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 45,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stonewall.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "actions": "reaction",
+  "trigger": "feat.stonewall.trigger",
+  "frequency": "feat.stonewall.frequency",
+  "prerequisites": []
+}

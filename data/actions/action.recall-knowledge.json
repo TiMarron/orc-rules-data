@@ -1,0 +1,19 @@
+{
+  "id": "action.recall-knowledge",
+  "type": "action",
+  "name": "action.recall-knowledge.name",
+  "traits": [
+    "concentrate",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 231,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.recall-knowledge.text",
+  "actions": "1"
+}

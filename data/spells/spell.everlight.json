@@ -1,0 +1,32 @@
+{
+  "id": "spell.everlight",
+  "type": "spell",
+  "name": "spell.everlight.name",
+  "traits": [
+    "concentrate",
+    "light",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 329,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.everlight.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.everlight.range",
+  "targets": "spell.everlight.targets",
+  "duration": "spell.everlight.duration"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "spell.planar-seal",
+  "type": "spell",
+  "name": "spell.planar-seal.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 350,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.planar-seal.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.planar-seal.range",
+  "area": "spell.planar-seal.area",
+  "duration": "spell.planar-seal.duration"
+}

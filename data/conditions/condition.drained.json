@@ -1,0 +1,16 @@
+{
+  "id": "condition.drained",
+  "type": "condition",
+  "name": "condition.drained.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 443,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.drained.text",
+  "valued": true
+}

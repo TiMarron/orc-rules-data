@@ -1,0 +1,21 @@
+{
+  "id": "feat.undaunted",
+  "type": "feat",
+  "name": "feat.undaunted.name",
+  "traits": [
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 68,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.undaunted.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "prerequisites": []
+}

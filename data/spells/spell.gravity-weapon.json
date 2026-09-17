@@ -1,0 +1,27 @@
+{
+  "id": "spell.gravity-weapon",
+  "type": "spell",
+  "name": "spell.gravity-weapon.name",
+  "traits": [
+    "focus",
+    "ranger"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 383,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gravity-weapon.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.gravity-weapon.duration"
+}

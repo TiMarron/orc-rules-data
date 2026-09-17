@@ -1,0 +1,21 @@
+{
+  "id": "feat.leave-an-opening",
+  "type": "feat",
+  "name": "feat.leave-an-opening.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 176,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.leave-an-opening.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

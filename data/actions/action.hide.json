@@ -1,0 +1,18 @@
+{
+  "id": "action.hide",
+  "type": "action",
+  "name": "action.hide.name",
+  "traits": [
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 244,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.hide.text",
+  "actions": "1"
+}

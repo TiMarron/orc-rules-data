@@ -1,0 +1,36 @@
+{
+  "id": "spell.feet-to-fins",
+  "type": "spell",
+  "name": "spell.feet-to-fins.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "morph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 331,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.feet-to-fins.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.feet-to-fins.range",
+  "targets": "spell.feet-to-fins.targets",
+  "duration": "spell.feet-to-fins.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.feet-to-fins.heightened.0"
+    }
+  ]
+}

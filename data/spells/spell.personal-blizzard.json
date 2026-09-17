@@ -1,0 +1,37 @@
+{
+  "id": "spell.personal-blizzard",
+  "type": "spell",
+  "name": "spell.personal-blizzard.name",
+  "traits": [
+    "cold",
+    "focus",
+    "hex",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 385,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.personal-blizzard.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.personal-blizzard.range",
+  "targets": "spell.personal-blizzard.targets",
+  "duration": "spell.personal-blizzard.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.personal-blizzard.heightened.0"
+    }
+  ]
+}

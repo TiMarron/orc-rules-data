@@ -1,0 +1,29 @@
+{
+  "id": "spell.ant-haul",
+  "type": "spell",
+  "name": "spell.ant-haul.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ant-haul.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.ant-haul.range",
+  "targets": "spell.ant-haul.targets",
+  "duration": "spell.ant-haul.duration"
+}

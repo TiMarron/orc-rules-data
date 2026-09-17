@@ -1,0 +1,37 @@
+{
+  "id": "spell.zealous-conviction",
+  "type": "spell",
+  "name": "spell.zealous-conviction.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 369,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.zealous-conviction.text",
+  "rank": 6,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.zealous-conviction.range",
+  "targets": "spell.zealous-conviction.targets",
+  "duration": "spell.zealous-conviction.duration",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.zealous-conviction.heightened.0"
+    }
+  ]
+}

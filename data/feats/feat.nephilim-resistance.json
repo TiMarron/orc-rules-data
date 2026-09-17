@@ -1,0 +1,21 @@
+{
+  "id": "feat.nephilim-resistance",
+  "type": "feat",
+  "name": "feat.nephilim-resistance.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 80,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.nephilim-resistance.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

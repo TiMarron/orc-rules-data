@@ -1,0 +1,35 @@
+{
+  "id": "feat.implausible-infiltration",
+  "type": "feat",
+  "name": "feat.implausible-infiltration.name",
+  "traits": [
+    "magical",
+    "move",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 177,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.implausible-infiltration.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "2",
+  "requirements": "feat.implausible-infiltration.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "legendary"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.quick-squeeze"
+    }
+  ]
+}

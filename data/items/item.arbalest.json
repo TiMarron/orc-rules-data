@@ -1,0 +1,33 @@
+{
+  "id": "item.arbalest",
+  "type": "item",
+  "name": "item.arbalest.name",
+  "traits": [
+    "backstabber"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.arbalest.text",
+  "level": 0,
+  "priceCp": 800,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "crossbow",
+    "damage": {
+      "dice": "1d10",
+      "type": "piercing"
+    },
+    "range": 110,
+    "reload": "1"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

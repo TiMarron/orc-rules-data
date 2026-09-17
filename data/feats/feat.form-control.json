@@ -1,0 +1,29 @@
+{
+  "id": "feat.form-control",
+  "type": "feat",
+  "name": "feat.form-control.name",
+  "traits": [
+    "druid",
+    "manipulate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 130,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.form-control.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.untamed-form"
+    }
+  ]
+}

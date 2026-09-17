@@ -1,0 +1,27 @@
+{
+  "id": "feat.song-of-strength",
+  "type": "feat",
+  "name": "feat.song-of-strength.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 102,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.song-of-strength.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.song-of-strength.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it. The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

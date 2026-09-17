@@ -1,0 +1,27 @@
+{
+  "id": "background.bounty-hunter",
+  "type": "background",
+  "name": "background.bounty-hunter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 85,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.bounty-hunter.text",
+  "boosts": [
+    [
+      "str",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.bounty-hunter.lore",
+  "skills": [
+    "skill.survival"
+  ],
+  "feat": "feat.experienced-tracker"
+}

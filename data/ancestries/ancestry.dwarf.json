@@ -1,0 +1,41 @@
+{
+  "id": "ancestry.dwarf",
+  "type": "ancestry",
+  "name": "ancestry.dwarf.name",
+  "traits": [
+    "dwarf",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 42,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "ancestry.dwarf.text",
+  "hp": 10,
+  "size": "medium",
+  "speed": 20,
+  "boosts": [
+    "con",
+    "wis",
+    "free"
+  ],
+  "flaws": [
+    "cha"
+  ],
+  "languages": [
+    "common",
+    "dwarven"
+  ],
+  "heritages": [
+    "heritage.ancient-blooded-dwarf",
+    "heritage.death-warden-dwarf",
+    "heritage.forge-dwarf",
+    "heritage.rock-dwarf",
+    "heritage.strong-blooded-dwarf"
+  ],
+  "editNote": "Reserved Material removed: the name of the dwarven citadels replaced with a generic description; reserved."
+}

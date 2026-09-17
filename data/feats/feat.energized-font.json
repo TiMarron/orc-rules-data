@@ -1,0 +1,29 @@
+{
+  "id": "feat.energized-font",
+  "type": "feat",
+  "name": "feat.energized-font.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 52,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.energized-font.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "actions": "1",
+  "frequency": "feat.energized-font.frequency",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.energized-font.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

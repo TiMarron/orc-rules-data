@@ -1,0 +1,24 @@
+{
+  "id": "feat.forcible-energy",
+  "type": "feat",
+  "name": "feat.forcible-energy.name",
+  "traits": [
+    "manipulate",
+    "spellshape",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 204,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.forcible-energy.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "1",
+  "prerequisites": []
+}

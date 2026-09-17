@@ -1,0 +1,30 @@
+{
+  "id": "spell.gate",
+  "type": "spell",
+  "name": "spell.gate.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 333,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gate.text",
+  "rank": 10,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.gate.range",
+  "duration": "spell.gate.duration"
+}

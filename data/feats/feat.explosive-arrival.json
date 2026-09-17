@@ -1,0 +1,25 @@
+{
+  "id": "feat.explosive-arrival",
+  "type": "feat",
+  "name": "feat.explosive-arrival.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "spellshape",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.explosive-arrival.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "free",
+  "prerequisites": []
+}

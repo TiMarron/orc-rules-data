@@ -1,0 +1,39 @@
+{
+  "id": "spell.darkness",
+  "type": "spell",
+  "name": "spell.darkness.name",
+  "traits": [
+    "concentrate",
+    "darkness",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 322,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.darkness.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.darkness.range",
+  "area": "spell.darkness.area",
+  "duration": "spell.darkness.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.darkness.heightened.0"
+    }
+  ],
+  "editNote": "The reference points at a rules page the dataset does not model as a record; the link's label survives as plain text."
+}

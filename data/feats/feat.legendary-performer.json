@@ -1,0 +1,31 @@
+{
+  "id": "feat.legendary-performer",
+  "type": "feat",
+  "name": "feat.legendary-performer.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.legendary-performer.text",
+  "level": 15,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.performance",
+      "rank": "legendary"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.virtuosic-performer"
+    }
+  ]
+}

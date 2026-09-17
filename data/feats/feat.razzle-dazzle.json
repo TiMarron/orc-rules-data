@@ -1,0 +1,24 @@
+{
+  "id": "feat.razzle-dazzle",
+  "type": "feat",
+  "name": "feat.razzle-dazzle.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 52,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.razzle-dazzle.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "actions": "free",
+  "trigger": "feat.razzle-dazzle.trigger",
+  "frequency": "feat.razzle-dazzle.frequency",
+  "prerequisites": []
+}

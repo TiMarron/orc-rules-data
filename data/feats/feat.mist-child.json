@@ -1,0 +1,21 @@
+{
+  "id": "feat.mist-child",
+  "type": "feat",
+  "name": "feat.mist-child.name",
+  "traits": [
+    "changeling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 77,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mist-child.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

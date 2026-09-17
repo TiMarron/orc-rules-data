@@ -1,0 +1,25 @@
+{
+  "id": "feat.orc-superstition",
+  "type": "feat",
+  "name": "feat.orc-superstition.name",
+  "traits": [
+    "concentrate",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 72,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.orc-superstition.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "actions": "reaction",
+  "trigger": "feat.orc-superstition.trigger",
+  "prerequisites": [],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

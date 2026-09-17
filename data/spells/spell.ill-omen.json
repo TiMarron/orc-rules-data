@@ -1,0 +1,33 @@
+{
+  "id": "spell.ill-omen",
+  "type": "spell",
+  "name": "spell.ill-omen.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "manipulate",
+    "misfortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 336,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ill-omen.text",
+  "rank": 1,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.ill-omen.range",
+  "targets": "spell.ill-omen.targets",
+  "duration": "spell.ill-omen.duration",
+  "defense": {
+    "save": "will"
+  }
+}

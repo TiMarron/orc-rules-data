@@ -1,0 +1,26 @@
+{
+  "id": "feat.expeditious-search",
+  "type": "feat",
+  "name": "feat.expeditious-search.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 254,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.expeditious-search.text",
+  "level": 7,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.expeditious-search.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.halfling-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.halfling-weapon-familiarity.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 60,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.halfling-weapon-familiarity.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": []
+}

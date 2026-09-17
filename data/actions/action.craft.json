@@ -1,0 +1,19 @@
+{
+  "id": "action.craft",
+  "type": "action",
+  "name": "action.craft.name",
+  "traits": [
+    "downtime",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 237,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.craft.text",
+  "editNote": "A table printed in the book is omitted; the dataset markup has no table support."
+}

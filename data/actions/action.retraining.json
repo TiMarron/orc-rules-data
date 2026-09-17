@@ -1,0 +1,17 @@
+{
+  "id": "action.retraining",
+  "type": "action",
+  "name": "action.retraining.name",
+  "traits": [
+    "downtime"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 440,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.retraining.text"
+}

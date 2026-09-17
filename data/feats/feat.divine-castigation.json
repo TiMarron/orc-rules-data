@@ -1,0 +1,27 @@
+{
+  "id": "feat.divine-castigation",
+  "type": "feat",
+  "name": "feat.divine-castigation.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 113,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.divine-castigation.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.divine-castigation.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "feat.sanctify-armament",
+  "type": "feat",
+  "name": "feat.sanctify-armament.name",
+  "traits": [
+    "cleric",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.sanctify-armament.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.sanctify-armament.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feat.fortunate-relief",
+  "type": "feat",
+  "name": "feat.fortunate-relief.name",
+  "traits": [
+    "cleric",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 119,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fortunate-relief.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

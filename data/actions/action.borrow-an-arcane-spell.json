@@ -1,0 +1,18 @@
+{
+  "id": "action.borrow-an-arcane-spell",
+  "type": "action",
+  "name": "action.borrow-an-arcane-spell.name",
+  "traits": [
+    "concentrate",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 234,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.borrow-an-arcane-spell.text"
+}

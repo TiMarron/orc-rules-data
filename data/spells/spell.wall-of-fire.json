@@ -1,0 +1,35 @@
+{
+  "id": "spell.wall-of-fire",
+  "type": "spell",
+  "name": "spell.wall-of-fire.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 367,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wall-of-fire.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.wall-of-fire.range",
+  "duration": "spell.wall-of-fire.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.wall-of-fire.heightened.0"
+    }
+  ]
+}

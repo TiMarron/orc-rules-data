@@ -1,0 +1,21 @@
+{
+  "id": "feat.divine-countermeasures",
+  "type": "feat",
+  "name": "feat.divine-countermeasures.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 80,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-countermeasures.text",
+  "level": 9,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

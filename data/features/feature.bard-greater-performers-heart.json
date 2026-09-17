@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-greater-performers-heart",
+  "type": "feature",
+  "name": "feature.bard-greater-performers-heart.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-greater-performers-heart.text",
+  "class": "class.bard",
+  "level": 17
+}

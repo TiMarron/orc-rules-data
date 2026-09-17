@@ -1,0 +1,17 @@
+{
+  "id": "feature.rogue-ancestry-feats",
+  "type": "feature",
+  "name": "feature.rogue-ancestry-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 164,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.rogue-ancestry-feats.text",
+  "class": "class.rogue",
+  "level": 5
+}

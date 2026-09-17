@@ -1,0 +1,33 @@
+{
+  "id": "spell.wails-of-the-damned",
+  "type": "spell",
+  "name": "spell.wails-of-the-damned.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "death",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 367,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wails-of-the-damned.text",
+  "rank": 9,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.wails-of-the-damned.area",
+  "defense": {
+    "save": "fortitude"
+  }
+}

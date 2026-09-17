@@ -1,0 +1,32 @@
+{
+  "id": "feat.ritual-researcher",
+  "type": "feat",
+  "name": "feat.ritual-researcher.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.ritual-researcher.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.ritual-researcher.prereq.0"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.occultism",
+      "rank": "expert"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

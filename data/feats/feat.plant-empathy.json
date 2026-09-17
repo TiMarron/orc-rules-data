@@ -1,0 +1,21 @@
+{
+  "id": "feat.plant-empathy",
+  "type": "feat",
+  "name": "feat.plant-empathy.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 127,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.plant-empathy.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.siphon-power",
+  "type": "feat",
+  "name": "feat.siphon-power.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 191,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.siphon-power.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.witch",
+  "actions": "free",
+  "trigger": "feat.siphon-power.trigger",
+  "requirements": "feat.siphon-power.requirements",
+  "prerequisites": []
+}

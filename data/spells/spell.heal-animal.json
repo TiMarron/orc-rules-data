@@ -1,0 +1,37 @@
+{
+  "id": "spell.heal-animal",
+  "type": "spell",
+  "name": "spell.heal-animal.name",
+  "traits": [
+    "druid",
+    "focus",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 382,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.heal-animal.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "1-2"
+  },
+  "range": "spell.heal-animal.range",
+  "targets": "spell.heal-animal.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.heal-animal.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "spell.clairvoyance",
+  "type": "spell",
+  "name": "spell.clairvoyance.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "scrying"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 320,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.clairvoyance.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.clairvoyance.cast-time"
+  },
+  "range": "spell.clairvoyance.range",
+  "duration": "spell.clairvoyance.duration"
+}

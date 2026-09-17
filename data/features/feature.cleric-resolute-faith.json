@@ -1,0 +1,17 @@
+{
+  "id": "feature.cleric-resolute-faith",
+  "type": "feature",
+  "name": "feature.cleric-resolute-faith.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 108,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.cleric-resolute-faith.text",
+  "class": "class.cleric",
+  "level": 9
+}

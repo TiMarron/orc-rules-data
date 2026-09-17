@@ -1,0 +1,31 @@
+{
+  "id": "feat.impossible-polymath",
+  "type": "feat",
+  "name": "feat.impossible-polymath.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.impossible-polymath.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.impossible-polymath.prereq.0"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.esoteric-polymath"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

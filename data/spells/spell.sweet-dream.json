@@ -1,0 +1,46 @@
+{
+  "id": "spell.sweet-dream",
+  "type": "spell",
+  "name": "spell.sweet-dream.name",
+  "traits": [
+    "auditory",
+    "cleric",
+    "concentrate",
+    "focus",
+    "linguistic",
+    "manipulate",
+    "mental",
+    "sleep"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 374,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.sweet-dream.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.sweet-dream.range",
+  "targets": "spell.sweet-dream.targets",
+  "duration": "spell.sweet-dream.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.sweet-dream.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.sweet-dream.heightened.1"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

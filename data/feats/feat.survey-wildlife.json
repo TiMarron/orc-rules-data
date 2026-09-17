@@ -1,0 +1,27 @@
+{
+  "id": "feat.survey-wildlife",
+  "type": "feat",
+  "name": "feat.survey-wildlife.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.survey-wildlife.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "trained"
+    }
+  ]
+}

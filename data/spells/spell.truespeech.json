@@ -1,0 +1,36 @@
+{
+  "id": "spell.truespeech",
+  "type": "spell",
+  "name": "spell.truespeech.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 364,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.truespeech.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.truespeech.range",
+  "targets": "spell.truespeech.targets",
+  "duration": "spell.truespeech.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.truespeech.heightened.0"
+    }
+  ]
+}

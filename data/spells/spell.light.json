@@ -1,0 +1,38 @@
+{
+  "id": "spell.light",
+  "type": "spell",
+  "name": "spell.light.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "light",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 340,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.light.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.light.range",
+  "duration": "spell.light.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.light.heightened.0"
+    }
+  ]
+}

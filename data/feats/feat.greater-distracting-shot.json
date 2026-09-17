@@ -1,0 +1,26 @@
+{
+  "id": "feat.greater-distracting-shot",
+  "type": "feat",
+  "name": "feat.greater-distracting-shot.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.greater-distracting-shot.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.distracting-shot"
+    }
+  ]
+}

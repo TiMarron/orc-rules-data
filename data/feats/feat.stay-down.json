@@ -1,0 +1,29 @@
+{
+  "id": "feat.stay-down",
+  "type": "feat",
+  "name": "feat.stay-down.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 176,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stay-down.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.stay-down.trigger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "master"
+    }
+  ]
+}

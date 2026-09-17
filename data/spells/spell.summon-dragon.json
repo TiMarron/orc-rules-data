@@ -1,0 +1,53 @@
+{
+  "id": "spell.summon-dragon",
+  "type": "spell",
+  "name": "spell.summon-dragon.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "summon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 360,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.summon-dragon.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.summon-dragon.range",
+  "duration": "spell.summon-dragon.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.summon-dragon.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.summon-dragon.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.summon-dragon.heightened.2"
+    },
+    {
+      "level": "9",
+      "text": "spell.summon-dragon.heightened.3"
+    },
+    {
+      "level": "10",
+      "text": "spell.summon-dragon.heightened.4"
+    }
+  ]
+}

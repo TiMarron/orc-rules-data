@@ -1,0 +1,28 @@
+{
+  "id": "spell.animal-messenger",
+  "type": "spell",
+  "name": "spell.animal-messenger.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.animal-messenger.text",
+  "rank": 2,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.animal-messenger.cast-time"
+  },
+  "range": "spell.animal-messenger.range",
+  "duration": "spell.animal-messenger.duration"
+}

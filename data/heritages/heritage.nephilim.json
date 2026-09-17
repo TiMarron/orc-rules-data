@@ -1,0 +1,19 @@
+{
+  "id": "heritage.nephilim",
+  "type": "heritage",
+  "name": "heritage.nephilim.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 78,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "heritage.nephilim.text",
+  "versatile": true,
+  "editNote": "Reserved"
+}

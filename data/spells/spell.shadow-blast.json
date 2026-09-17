@@ -1,0 +1,37 @@
+{
+  "id": "spell.shadow-blast",
+  "type": "spell",
+  "name": "spell.shadow-blast.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "shadow"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 356,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "spell.shadow-blast.text",
+  "rank": 5,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.shadow-blast.range",
+  "area": "spell.shadow-blast.area",
+  "targets": "spell.shadow-blast.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.shadow-blast.heightened.0"
+    }
+  ],
+  "editNote": "Reserved"
+}

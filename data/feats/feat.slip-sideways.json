@@ -1,0 +1,27 @@
+{
+  "id": "feat.slip-sideways",
+  "type": "feat",
+  "name": "feat.slip-sideways.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 81,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.slip-sideways.text",
+  "level": 13,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.slip-sideways.prereq.0"
+    }
+  ],
+  "editNote": "Reserved Material removed: the prerequisite fallback's plane name replaced with a generic descriptor, matching the existing Plane of Chaos precedent used elsewhere for the same plane."
+}

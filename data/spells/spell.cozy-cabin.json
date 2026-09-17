@@ -1,0 +1,29 @@
+{
+  "id": "spell.cozy-cabin",
+  "type": "spell",
+  "name": "spell.cozy-cabin.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 321,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.cozy-cabin.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.cozy-cabin.cast-time"
+  },
+  "range": "spell.cozy-cabin.range",
+  "duration": "spell.cozy-cabin.duration"
+}

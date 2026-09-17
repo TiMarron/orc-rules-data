@@ -1,0 +1,25 @@
+{
+  "id": "feat.call-and-response",
+  "type": "feat",
+  "name": "feat.call-and-response.name",
+  "traits": [
+    "auditory",
+    "bard",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 104,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.call-and-response.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": []
+}

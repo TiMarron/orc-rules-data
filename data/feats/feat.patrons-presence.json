@@ -1,0 +1,21 @@
+{
+  "id": "feat.patrons-presence",
+  "type": "feat",
+  "name": "feat.patrons-presence.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 190,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.patrons-presence.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

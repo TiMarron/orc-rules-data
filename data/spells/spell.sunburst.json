@@ -1,0 +1,40 @@
+{
+  "id": "spell.sunburst",
+  "type": "spell",
+  "name": "spell.sunburst.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "light",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 361,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sunburst.text",
+  "rank": 7,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.sunburst.range",
+  "area": "spell.sunburst.area",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.sunburst.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.the-harder-they-fall-rogue",
+  "type": "feat",
+  "name": "feat.the-harder-they-fall-rogue.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.the-harder-they-fall-rogue.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

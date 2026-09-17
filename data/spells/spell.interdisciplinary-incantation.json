@@ -1,0 +1,28 @@
+{
+  "id": "spell.interdisciplinary-incantation",
+  "type": "spell",
+  "name": "spell.interdisciplinary-incantation.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 388,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.interdisciplinary-incantation.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.interdisciplinary-incantation.trigger"
+}

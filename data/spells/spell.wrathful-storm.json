@@ -1,0 +1,37 @@
+{
+  "id": "spell.wrathful-storm",
+  "type": "spell",
+  "name": "spell.wrathful-storm.name",
+  "traits": [
+    "air",
+    "cold",
+    "electricity",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 369,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.wrathful-storm.text",
+  "rank": 9,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.wrathful-storm.range",
+  "area": "spell.wrathful-storm.area",
+  "duration": "spell.wrathful-storm.duration",
+  "heightened": [
+    {
+      "level": "10",
+      "text": "spell.wrathful-storm.heightened.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

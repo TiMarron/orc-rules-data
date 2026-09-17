@@ -1,0 +1,36 @@
+{
+  "id": "spell.haste",
+  "type": "spell",
+  "name": "spell.haste.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 335,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.haste.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.haste.range",
+  "targets": "spell.haste.targets",
+  "duration": "spell.haste.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.haste.heightened.0"
+    }
+  ]
+}

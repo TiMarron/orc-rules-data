@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-general-feats",
+  "type": "feature",
+  "name": "feature.bard-general-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-general-feats.text",
+  "class": "class.bard",
+  "level": 3
+}

@@ -1,0 +1,28 @@
+{
+  "id": "feat.true-hypercognition",
+  "type": "feat",
+  "name": "feat.true-hypercognition.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.true-hypercognition.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.true-hypercognition.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

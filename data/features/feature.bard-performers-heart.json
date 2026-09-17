@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-performers-heart",
+  "type": "feature",
+  "name": "feature.bard-performers-heart.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-performers-heart.text",
+  "class": "class.bard",
+  "level": 9
+}

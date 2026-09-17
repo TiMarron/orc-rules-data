@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-general-feats",
+  "type": "feature",
+  "name": "feature.druid-general-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 122,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-general-feats.text",
+  "class": "class.druid",
+  "level": 3
+}

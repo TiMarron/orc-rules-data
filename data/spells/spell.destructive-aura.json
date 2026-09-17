@@ -1,0 +1,37 @@
+{
+  "id": "spell.destructive-aura",
+  "type": "spell",
+  "name": "spell.destructive-aura.name",
+  "traits": [
+    "aura",
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 374,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.destructive-aura.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.destructive-aura.area",
+  "duration": "spell.destructive-aura.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.destructive-aura.heightened.0"
+    }
+  ]
+}

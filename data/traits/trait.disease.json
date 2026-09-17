@@ -1,0 +1,15 @@
+{
+  "id": "trait.disease",
+  "type": "trait",
+  "name": "trait.disease.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 455,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.disease.text"
+}

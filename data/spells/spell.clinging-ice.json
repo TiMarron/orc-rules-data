@@ -1,0 +1,38 @@
+{
+  "id": "spell.clinging-ice",
+  "type": "spell",
+  "name": "spell.clinging-ice.name",
+  "traits": [
+    "cantrip",
+    "cold",
+    "hex",
+    "manipulate",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 386,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.clinging-ice.text",
+  "rank": 1,
+  "traditionsVary": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.clinging-ice.range",
+  "targets": "spell.clinging-ice.targets",
+  "duration": "spell.clinging-ice.duration",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.clinging-ice.heightened.0"
+    }
+  ]
+}

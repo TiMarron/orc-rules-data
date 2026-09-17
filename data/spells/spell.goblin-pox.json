@@ -1,0 +1,32 @@
+{
+  "id": "spell.goblin-pox",
+  "type": "spell",
+  "name": "spell.goblin-pox.name",
+  "traits": [
+    "concentrate",
+    "disease",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 333,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.goblin-pox.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.goblin-pox.range",
+  "targets": "spell.goblin-pox.targets",
+  "defense": {
+    "save": "fortitude"
+  }
+}

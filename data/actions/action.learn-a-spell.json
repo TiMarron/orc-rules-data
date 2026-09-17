@@ -1,0 +1,20 @@
+{
+  "id": "action.learn-a-spell",
+  "type": "action",
+  "name": "action.learn-a-spell.name",
+  "traits": [
+    "concentrate",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 230,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.learn-a-spell.text",
+  "requirements": "action.learn-a-spell.requirements",
+  "editNote": "A table printed in the book is omitted; the dataset markup has no table support."
+}

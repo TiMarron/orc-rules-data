@@ -1,0 +1,24 @@
+{
+  "id": "feat.divine-weapon",
+  "type": "feat",
+  "name": "feat.divine-weapon.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-weapon.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "free",
+  "trigger": "feat.divine-weapon.trigger",
+  "frequency": "feat.divine-weapon.frequency",
+  "prerequisites": []
+}

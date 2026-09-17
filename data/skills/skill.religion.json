@@ -1,0 +1,17 @@
+{
+  "id": "skill.religion",
+  "type": "skill",
+  "name": "skill.religion.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 244,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "skill.religion.text",
+  "attribute": "wis",
+  "editNote": "Reserved Material removed: the plane names in the Recall Knowledge example replaced with generic descriptors."
+}

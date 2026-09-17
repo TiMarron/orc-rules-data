@@ -1,0 +1,16 @@
+{
+  "id": "condition.fleeing",
+  "type": "condition",
+  "name": "condition.fleeing.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 444,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.fleeing.text",
+  "valued": false
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.cleric-miraculous-spell",
+  "type": "feature",
+  "name": "feature.cleric-miraculous-spell.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 108,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.cleric-miraculous-spell.text",
+  "class": "class.cleric",
+  "level": 19
+}

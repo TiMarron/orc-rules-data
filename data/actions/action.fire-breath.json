@@ -1,0 +1,16 @@
+{
+  "id": "action.fire-breath",
+  "type": "action",
+  "name": "action.fire-breath.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 209,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.fire-breath.text",
+  "actions": "2"
+}

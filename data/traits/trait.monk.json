@@ -1,0 +1,16 @@
+{
+  "id": "trait.monk",
+  "type": "trait",
+  "name": "trait.monk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 282,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "trait.monk.text",
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

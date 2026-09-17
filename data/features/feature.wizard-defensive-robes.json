@@ -1,0 +1,17 @@
+{
+  "id": "feature.wizard-defensive-robes",
+  "type": "feature",
+  "name": "feature.wizard-defensive-robes.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.wizard-defensive-robes.text",
+  "class": "class.wizard",
+  "level": 13
+}

@@ -1,0 +1,16 @@
+{
+  "id": "action.throw-rock",
+  "type": "action",
+  "name": "action.throw-rock.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 207,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.throw-rock.text",
+  "actions": "1"
+}

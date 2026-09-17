@@ -1,0 +1,32 @@
+{
+  "id": "feat.deep-lore",
+  "type": "feat",
+  "name": "feat.deep-lore.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.deep-lore.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.deep-lore.prereq.0"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.occultism",
+      "rank": "legendary"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

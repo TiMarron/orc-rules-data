@@ -1,0 +1,18 @@
+{
+  "id": "feature.wizard-arcane-school",
+  "type": "feature",
+  "name": "feature.wizard-arcane-school.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 192,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feature.wizard-arcane-school.text",
+  "class": "class.wizard",
+  "level": 1,
+  "editNote": "Reserved Material removed: the named institutions replaced with a generic descriptor."
+}

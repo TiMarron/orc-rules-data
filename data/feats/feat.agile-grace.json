@@ -1,0 +1,21 @@
+{
+  "id": "feat.agile-grace",
+  "type": "feat",
+  "name": "feat.agile-grace.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 147,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.agile-grace.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": []
+}

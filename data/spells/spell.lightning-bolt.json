@@ -1,0 +1,38 @@
+{
+  "id": "spell.lightning-bolt",
+  "type": "spell",
+  "name": "spell.lightning-bolt.name",
+  "traits": [
+    "concentrate",
+    "electricity",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 341,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.lightning-bolt.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.lightning-bolt.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.lightning-bolt.heightened.0"
+    }
+  ]
+}

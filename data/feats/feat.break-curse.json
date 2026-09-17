@@ -1,0 +1,30 @@
+{
+  "id": "feat.break-curse",
+  "type": "feat",
+  "name": "feat.break-curse.name",
+  "traits": [
+    "concentrate",
+    "exploration",
+    "general",
+    "healing",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.break-curse.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.break-curse.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

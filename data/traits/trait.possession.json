@@ -1,0 +1,15 @@
+{
+  "id": "trait.possession",
+  "type": "trait",
+  "name": "trait.possession.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 459,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.possession.text"
+}

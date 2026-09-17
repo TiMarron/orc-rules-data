@@ -1,0 +1,31 @@
+{
+  "id": "feat.swift-tracker",
+  "type": "feat",
+  "name": "feat.swift-tracker.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 160,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.swift-tracker.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "expert"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.experienced-tracker"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "trait.illusion",
+  "type": "trait",
+  "name": "trait.illusion.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 457,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "trait.illusion.text",
+  "editNote": "Sentences our copy carries and theirs does not were inspected and contain no Reserved Material."
+}

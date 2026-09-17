@@ -1,0 +1,21 @@
+{
+  "id": "feat.flourish-and-ruin",
+  "type": "feat",
+  "name": "feat.flourish-and-ruin.name",
+  "traits": [
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 69,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flourish-and-ruin.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "prerequisites": []
+}

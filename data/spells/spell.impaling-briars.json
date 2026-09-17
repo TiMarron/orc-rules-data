@@ -1,0 +1,33 @@
+{
+  "id": "spell.impaling-briars",
+  "type": "spell",
+  "name": "spell.impaling-briars.name",
+  "traits": [
+    "concentrate",
+    "druid",
+    "focus",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 382,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.impaling-briars.text",
+  "rank": 8,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "area": "spell.impaling-briars.area",
+  "duration": "spell.impaling-briars.duration",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

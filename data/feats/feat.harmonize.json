@@ -1,0 +1,31 @@
+{
+  "id": "feat.harmonize",
+  "type": "feat",
+  "name": "feat.harmonize.name",
+  "traits": [
+    "bard",
+    "concentrate",
+    "manipulate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.harmonize.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.harmonize.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

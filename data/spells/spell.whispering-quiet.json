@@ -1,0 +1,31 @@
+{
+  "id": "spell.whispering-quiet",
+  "type": "spell",
+  "name": "spell.whispering-quiet.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "sonic"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 379,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.whispering-quiet.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.whispering-quiet.range",
+  "area": "spell.whispering-quiet.area",
+  "duration": "spell.whispering-quiet.duration"
+}

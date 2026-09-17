@@ -1,0 +1,21 @@
+{
+  "id": "feat.goblin-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.goblin-weapon-familiarity.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 56,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.goblin-weapon-familiarity.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "prerequisites": []
+}

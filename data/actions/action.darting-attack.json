@@ -1,0 +1,18 @@
+{
+  "id": "action.darting-attack",
+  "type": "action",
+  "name": "action.darting-attack.name",
+  "traits": [
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 209,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.darting-attack.text",
+  "actions": "1"
+}

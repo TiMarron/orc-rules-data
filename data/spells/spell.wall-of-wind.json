@@ -1,0 +1,30 @@
+{
+  "id": "spell.wall-of-wind",
+  "type": "spell",
+  "name": "spell.wall-of-wind.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 368,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.wall-of-wind.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.wall-of-wind.range",
+  "duration": "spell.wall-of-wind.duration",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

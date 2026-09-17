@@ -1,0 +1,204 @@
+{
+  "id": "class.bard",
+  "type": "class",
+  "name": "class.bard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 95,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "class.bard.text",
+  "keyAttribute": "cha",
+  "hp": 8,
+  "proficiencies": {
+    "perception": "expert",
+    "fortitude": "trained",
+    "reflex": "trained",
+    "will": "expert",
+    "skills": {
+      "additional": 4,
+      "fixed": [
+        "skill.occultism",
+        "skill.performance"
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "trained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "untrained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained",
+    "spellcasting": "trained"
+  },
+  "featLevels": {
+    "class": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.bard-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.bard-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.bard-bard-spellcasting"
+    },
+    {
+      "level": 1,
+      "feature": "feature.bard-composition-spells"
+    },
+    {
+      "level": 1,
+      "feature": "feature.bard-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.bard-muses"
+    },
+    {
+      "level": 1,
+      "feature": "feature.bard-spell-repertoire"
+    },
+    {
+      "level": 2,
+      "feature": "feature.bard-bard-feats"
+    },
+    {
+      "level": 2,
+      "feature": "feature.bard-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.bard-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.bard-reflex-expertise"
+    },
+    {
+      "level": 3,
+      "feature": "feature.bard-signature-spells"
+    },
+    {
+      "level": 3,
+      "feature": "feature.bard-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.bard-ancestry-feats"
+    },
+    {
+      "level": 7,
+      "feature": "feature.bard-expert-spellcaster"
+    },
+    {
+      "level": 9,
+      "feature": "feature.bard-fortitude-expertise"
+    },
+    {
+      "level": 9,
+      "feature": "feature.bard-performers-heart"
+    },
+    {
+      "level": 11,
+      "feature": "feature.bard-bard-weapon-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.bard-perception-mastery"
+    },
+    {
+      "level": 13,
+      "feature": "feature.bard-light-armor-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.bard-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.bard-master-spellcaster"
+    },
+    {
+      "level": 17,
+      "feature": "feature.bard-greater-performers-heart"
+    },
+    {
+      "level": 19,
+      "feature": "feature.bard-legendary-spellcaster"
+    },
+    {
+      "level": 19,
+      "feature": "feature.bard-magnum-opus"
+    }
+  ],
+  "editNote": "the book p.95: verified hp 8, key attribute Charisma, saves (trained/trained/expert), skills (Occultism, Performance fixed, +4 Int), attacks (simple/martial/unarmed trained, advanced untrained), defenses (unarmored/light trained, medium/heavy untrained), spellcasting trained, class DC trained all match the book's Initial Proficiencies block; dropped tables/images/unknown-tags are the expected by-design loss for a class record."
+}

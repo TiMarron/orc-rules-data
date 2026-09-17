@@ -1,0 +1,33 @@
+{
+  "id": "spell.mariners-curse",
+  "type": "spell",
+  "name": "spell.mariners-curse.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 342,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mariners-curse.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.mariners-curse.range",
+  "targets": "spell.mariners-curse.targets",
+  "defense": {
+    "save": "will"
+  }
+}

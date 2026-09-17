@@ -1,0 +1,31 @@
+{
+  "id": "spell.tangling-creepers",
+  "type": "spell",
+  "name": "spell.tangling-creepers.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 362,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tangling-creepers.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.tangling-creepers.range",
+  "area": "spell.tangling-creepers.area",
+  "duration": "spell.tangling-creepers.duration"
+}

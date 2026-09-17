@@ -1,0 +1,30 @@
+{
+  "id": "spell.terrain-transposition",
+  "type": "spell",
+  "name": "spell.terrain-transposition.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "ranger",
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 384,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.terrain-transposition.text",
+  "rank": 5,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.terrain-transposition.range"
+}

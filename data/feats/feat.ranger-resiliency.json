@@ -1,0 +1,30 @@
+{
+  "id": "feat.ranger-resiliency",
+  "type": "feat",
+  "name": "feat.ranger-resiliency.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 220,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.ranger-resiliency.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.ranger-dedication"
+    },
+    {
+      "kind": "text",
+      "key": "feat.ranger-resiliency.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

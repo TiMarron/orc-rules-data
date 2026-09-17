@@ -1,0 +1,30 @@
+{
+  "id": "feat.skill-mastery-rogue",
+  "type": "feat",
+  "name": "feat.skill-mastery-rogue.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 221,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.skill-mastery-rogue.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.rogue-dedication"
+    },
+    {
+      "kind": "text",
+      "key": "feat.skill-mastery-rogue.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

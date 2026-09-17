@@ -1,0 +1,30 @@
+{
+  "id": "feat.expert-witch-spellcasting",
+  "type": "feat",
+  "name": "feat.expert-witch-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 222,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.expert-witch-spellcasting.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-witch-spellcasting"
+    },
+    {
+      "kind": "text",
+      "key": "feat.expert-witch-spellcasting.prereq.1"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

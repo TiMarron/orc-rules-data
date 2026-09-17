@@ -1,0 +1,41 @@
+{
+  "id": "spell.untamed-shift",
+  "type": "spell",
+  "name": "spell.untamed-shift.name",
+  "traits": [
+    "concentrate",
+    "druid",
+    "focus",
+    "manipulate",
+    "morph"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 383,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.untamed-shift.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "1-2"
+  },
+  "duration": "spell.untamed-shift.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.untamed-shift.heightened.0"
+    },
+    {
+      "level": "10",
+      "text": "spell.untamed-shift.heightened.1"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

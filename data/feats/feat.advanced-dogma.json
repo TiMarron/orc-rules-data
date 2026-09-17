@@ -1,0 +1,25 @@
+{
+  "id": "feat.advanced-dogma",
+  "type": "feat",
+  "name": "feat.advanced-dogma.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-dogma.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-dogma"
+    }
+  ]
+}

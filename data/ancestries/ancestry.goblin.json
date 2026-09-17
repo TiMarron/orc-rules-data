@@ -1,0 +1,41 @@
+{
+  "id": "ancestry.goblin",
+  "type": "ancestry",
+  "name": "ancestry.goblin.name",
+  "traits": [
+    "goblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 54,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "ancestry.goblin.text",
+  "hp": 6,
+  "size": "small",
+  "speed": 25,
+  "boosts": [
+    "dex",
+    "cha",
+    "free"
+  ],
+  "flaws": [
+    "wis"
+  ],
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "heritages": [
+    "heritage.charhide-goblin",
+    "heritage.irongut-goblin",
+    "heritage.razortooth-goblin",
+    "heritage.snow-goblin",
+    "heritage.unbreakable-goblin"
+  ],
+  "editNote": "Reserved"
+}

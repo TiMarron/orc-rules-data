@@ -1,0 +1,28 @@
+{
+  "id": "spell.ghostly-carrier",
+  "type": "spell",
+  "name": "spell.ghostly-carrier.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 333,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ghostly-carrier.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.ghostly-carrier.range",
+  "duration": "spell.ghostly-carrier.duration"
+}

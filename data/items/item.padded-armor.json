@@ -1,0 +1,31 @@
+{
+  "id": "item.padded-armor",
+  "type": "item",
+  "name": "item.padded-armor.name",
+  "traits": [
+    "comfort"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.padded-armor.text",
+  "level": 0,
+  "priceCp": 20,
+  "bulk": "L",
+  "category": "armor",
+  "armor": {
+    "category": "light",
+    "acBonus": 1,
+    "dexCap": 3,
+    "checkPenalty": 0,
+    "speedPenalty": 0,
+    "strength": 0,
+    "group": "cloth"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

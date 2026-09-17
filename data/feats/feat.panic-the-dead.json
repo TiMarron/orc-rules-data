@@ -1,0 +1,24 @@
+{
+  "id": "feat.panic-the-dead",
+  "type": "feat",
+  "name": "feat.panic-the-dead.name",
+  "traits": [
+    "cleric",
+    "emotion",
+    "fear",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 115,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.panic-the-dead.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

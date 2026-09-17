@@ -1,0 +1,32 @@
+{
+  "id": "spell.foresight",
+  "type": "spell",
+  "name": "spell.foresight.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental",
+    "prediction"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.foresight.text",
+  "rank": 9,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.foresight.range",
+  "targets": "spell.foresight.targets",
+  "duration": "spell.foresight.duration"
+}

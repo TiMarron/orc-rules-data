@@ -1,0 +1,17 @@
+{
+  "id": "action.long-term-rest",
+  "type": "action",
+  "name": "action.long-term-rest.name",
+  "traits": [
+    "downtime"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 440,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.long-term-rest.text"
+}

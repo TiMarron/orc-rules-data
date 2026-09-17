@@ -1,0 +1,36 @@
+{
+  "id": "spell.magic-passage",
+  "type": "spell",
+  "name": "spell.magic-passage.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 342,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.magic-passage.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.magic-passage.range",
+  "area": "spell.magic-passage.area",
+  "duration": "spell.magic-passage.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.magic-passage.heightened.0"
+    }
+  ]
+}

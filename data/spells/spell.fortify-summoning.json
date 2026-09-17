@@ -1,0 +1,29 @@
+{
+  "id": "spell.fortify-summoning",
+  "type": "spell",
+  "name": "spell.fortify-summoning.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 387,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fortify-summoning.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.fortify-summoning.range",
+  "targets": "spell.fortify-summoning.targets"
+}

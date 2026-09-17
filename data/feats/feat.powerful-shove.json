@@ -1,0 +1,27 @@
+{
+  "id": "feat.powerful-shove",
+  "type": "feat",
+  "name": "feat.powerful-shove.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 143,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.powerful-shove.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.powerful-shove.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

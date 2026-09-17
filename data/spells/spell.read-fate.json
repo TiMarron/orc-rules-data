@@ -1,0 +1,31 @@
+{
+  "id": "spell.read-fate",
+  "type": "spell",
+  "name": "spell.read-fate.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "prediction"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 375,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.read-fate.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.read-fate.range",
+  "targets": "spell.read-fate.targets"
+}

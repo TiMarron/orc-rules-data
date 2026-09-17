@@ -1,0 +1,40 @@
+{
+  "id": "spell.fire-ray",
+  "type": "spell",
+  "name": "spell.fire-ray.name",
+  "traits": [
+    "attack",
+    "cleric",
+    "concentrate",
+    "fire",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 375,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fire-ray.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.fire-ray.range",
+  "targets": "spell.fire-ray.targets",
+  "duration": "spell.fire-ray.duration",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.fire-ray.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "heritage.seaweed-leshy",
+  "type": "heritage",
+  "name": "heritage.seaweed-leshy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 67,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.seaweed-leshy.text",
+  "ancestry": "ancestry.leshy"
+}

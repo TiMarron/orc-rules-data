@@ -1,0 +1,30 @@
+{
+  "id": "feat.in-tune",
+  "type": "feat",
+  "name": "feat.in-tune.name",
+  "traits": [
+    "bard",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 102,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.in-tune.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.in-tune.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

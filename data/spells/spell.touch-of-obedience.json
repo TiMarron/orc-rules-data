@@ -1,0 +1,34 @@
+{
+  "id": "spell.touch-of-obedience",
+  "type": "spell",
+  "name": "spell.touch-of-obedience.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 380,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.touch-of-obedience.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.touch-of-obedience.range",
+  "targets": "spell.touch-of-obedience.targets",
+  "duration": "spell.touch-of-obedience.duration",
+  "defense": {
+    "save": "will"
+  }
+}

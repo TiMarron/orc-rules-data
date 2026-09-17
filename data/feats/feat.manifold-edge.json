@@ -1,0 +1,27 @@
+{
+  "id": "feat.manifold-edge",
+  "type": "feat",
+  "name": "feat.manifold-edge.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 163,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.manifold-edge.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.manifold-edge.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "heritage.dromaar",
+  "type": "heritage",
+  "name": "heritage.dromaar.name",
+  "traits": [
+    "dromaar",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 83,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "heritage.dromaar.text",
+  "versatile": true,
+  "editNote": "Reserved Material removed: the sentence naming a region and a named villain rewritten to keep its point without them; reserved."
+}

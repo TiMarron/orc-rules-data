@@ -1,0 +1,209 @@
+{
+  "id": "class.druid",
+  "type": "class",
+  "name": "class.druid.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 123,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "class.druid.text",
+  "keyAttribute": "wis",
+  "hp": 8,
+  "proficiencies": {
+    "perception": "trained",
+    "fortitude": "trained",
+    "reflex": "trained",
+    "will": "expert",
+    "skills": {
+      "additional": 2,
+      "fixed": [
+        "skill.nature"
+      ],
+      "choices": [
+        {
+          "count": 1,
+          "text": "class.druid.skill-choice.0"
+        }
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "untrained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "trained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained",
+    "spellcasting": "trained"
+  },
+  "featLevels": {
+    "class": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.druid-anathema"
+    },
+    {
+      "level": 1,
+      "feature": "feature.druid-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.druid-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.druid-druid-spellcasting"
+    },
+    {
+      "level": 1,
+      "feature": "feature.druid-druidic-order"
+    },
+    {
+      "level": 1,
+      "feature": "feature.druid-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.druid-shield-block"
+    },
+    {
+      "level": 1,
+      "feature": "feature.druid-voice-of-nature"
+    },
+    {
+      "level": 1,
+      "feature": "feature.druid-wildsong"
+    },
+    {
+      "level": 2,
+      "feature": "feature.druid-druid-feats"
+    },
+    {
+      "level": 2,
+      "feature": "feature.druid-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.druid-fortitude-expertise"
+    },
+    {
+      "level": 3,
+      "feature": "feature.druid-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.druid-perception-expertise"
+    },
+    {
+      "level": 3,
+      "feature": "feature.druid-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.druid-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.druid-reflex-expertise"
+    },
+    {
+      "level": 7,
+      "feature": "feature.druid-expert-spellcaster"
+    },
+    {
+      "level": 11,
+      "feature": "feature.druid-weapon-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.druid-wild-willpower"
+    },
+    {
+      "level": 13,
+      "feature": "feature.druid-medium-armor-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.druid-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.druid-master-spellcaster"
+    },
+    {
+      "level": 19,
+      "feature": "feature.druid-legendary-spellcaster"
+    },
+    {
+      "level": 19,
+      "feature": "feature.druid-primal-hierophant"
+    }
+  ],
+  "editNote": "the book p.123: verified hp 8, key attribute Wisdom, saves (trained/trained/expert), skills (Nature fixed + one skill from druidic order, +2 Int), attacks (simple/unarmed trained, martial/advanced untrained), defenses (unarmored/light/medium trained, heavy untrained), spellcasting trained, class DC trained all match the book's Initial Proficiencies block; dropped tables/images/unknown-tags are the expected by-design loss for a class record."
+}

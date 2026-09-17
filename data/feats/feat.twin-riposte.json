@@ -1,0 +1,29 @@
+{
+  "id": "feat.twin-riposte",
+  "type": "feat",
+  "name": "feat.twin-riposte.name",
+  "traits": [
+    "fighter",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 148,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.twin-riposte.text",
+  "level": 10,
+  "category": "class",
+  "class": [
+    "class.fighter",
+    "class.ranger"
+  ],
+  "actions": "reaction",
+  "trigger": "feat.twin-riposte.trigger",
+  "requirements": "feat.twin-riposte.requirements",
+  "prerequisites": [],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

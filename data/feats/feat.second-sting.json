@@ -1,0 +1,24 @@
+{
+  "id": "feat.second-sting",
+  "type": "feat",
+  "name": "feat.second-sting.name",
+  "traits": [
+    "press",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 162,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.second-sting.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "1",
+  "requirements": "feat.second-sting.requirements",
+  "prerequisites": []
+}

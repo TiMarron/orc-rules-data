@@ -1,0 +1,40 @@
+{
+  "id": "spell.moonbeam",
+  "type": "spell",
+  "name": "spell.moonbeam.name",
+  "traits": [
+    "attack",
+    "cleric",
+    "concentrate",
+    "fire",
+    "focus",
+    "light",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.moonbeam.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.moonbeam.range",
+  "targets": "spell.moonbeam.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.moonbeam.heightened.0"
+    }
+  ]
+}

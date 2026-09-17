@@ -1,0 +1,36 @@
+{
+  "id": "spell.heal-companion",
+  "type": "spell",
+  "name": "spell.heal-companion.name",
+  "traits": [
+    "focus",
+    "healing",
+    "ranger",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 383,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.heal-companion.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "1-2"
+  },
+  "range": "spell.heal-companion.range",
+  "targets": "spell.heal-companion.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.heal-companion.heightened.0"
+    }
+  ]
+}

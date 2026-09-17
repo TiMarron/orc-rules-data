@@ -1,0 +1,18 @@
+{
+  "id": "action.stand",
+  "type": "action",
+  "name": "action.stand.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 418,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.stand.text",
+  "actions": "1"
+}

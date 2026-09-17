@@ -1,0 +1,21 @@
+{
+  "id": "feat.divine-declaration",
+  "type": "feat",
+  "name": "feat.divine-declaration.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 81,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-declaration.text",
+  "level": 17,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

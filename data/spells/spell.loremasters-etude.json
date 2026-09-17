@@ -1,0 +1,32 @@
+{
+  "id": "spell.loremasters-etude",
+  "type": "spell",
+  "name": "spell.loremasters-etude.name",
+  "traits": [
+    "bard",
+    "composition",
+    "focus",
+    "fortune",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 371,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.loremasters-etude.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "free"
+  },
+  "range": "spell.loremasters-etude.range",
+  "targets": "spell.loremasters-etude.targets",
+  "trigger": "spell.loremasters-etude.trigger"
+}

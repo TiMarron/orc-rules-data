@@ -1,0 +1,16 @@
+{
+  "id": "heritage.rainfall-orc",
+  "type": "heritage",
+  "name": "heritage.rainfall-orc.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 71,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.rainfall-orc.text",
+  "ancestry": "ancestry.orc"
+}

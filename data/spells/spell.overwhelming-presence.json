@@ -1,0 +1,36 @@
+{
+  "id": "spell.overwhelming-presence",
+  "type": "spell",
+  "name": "spell.overwhelming-presence.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 347,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.overwhelming-presence.text",
+  "rank": 9,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.overwhelming-presence.area",
+  "targets": "spell.overwhelming-presence.targets",
+  "duration": "spell.overwhelming-presence.duration",
+  "defense": {
+    "save": "will"
+  }
+}

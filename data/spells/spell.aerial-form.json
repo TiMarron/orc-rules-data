@@ -1,0 +1,39 @@
+{
+  "id": "spell.aerial-form",
+  "type": "spell",
+  "name": "spell.aerial-form.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.aerial-form.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.aerial-form.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.aerial-form.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.aerial-form.heightened.1"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

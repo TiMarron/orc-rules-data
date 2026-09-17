@@ -1,0 +1,27 @@
+{
+  "id": "feat.eternal-bane",
+  "type": "feat",
+  "name": "feat.eternal-bane.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 120,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.eternal-bane.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.eternal-bane.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

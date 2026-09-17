@@ -1,0 +1,22 @@
+{
+  "id": "feat.elf-step",
+  "type": "feat",
+  "name": "feat.elf-step.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 48,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.elf-step.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "actions": "1",
+  "prerequisites": []
+}

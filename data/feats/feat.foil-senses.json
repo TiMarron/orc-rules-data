@@ -1,0 +1,27 @@
+{
+  "id": "feat.foil-senses",
+  "type": "feat",
+  "name": "feat.foil-senses.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.foil-senses.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "master"
+    }
+  ]
+}

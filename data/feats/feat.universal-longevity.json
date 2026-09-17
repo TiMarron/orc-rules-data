@@ -1,0 +1,28 @@
+{
+  "id": "feat.universal-longevity",
+  "type": "feat",
+  "name": "feat.universal-longevity.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 49,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.universal-longevity.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "actions": "1",
+  "frequency": "feat.universal-longevity.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.expert-longevity"
+    }
+  ]
+}

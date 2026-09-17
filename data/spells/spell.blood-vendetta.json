@@ -1,0 +1,40 @@
+{
+  "id": "spell.blood-vendetta",
+  "type": "spell",
+  "name": "spell.blood-vendetta.name",
+  "traits": [
+    "curse"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blood-vendetta.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.blood-vendetta.range",
+  "targets": "spell.blood-vendetta.targets",
+  "duration": "spell.blood-vendetta.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.blood-vendetta.heightened.0"
+    }
+  ],
+  "trigger": "spell.blood-vendetta.trigger",
+  "requirements": "spell.blood-vendetta.requirements"
+}

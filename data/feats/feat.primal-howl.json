@@ -1,0 +1,26 @@
+{
+  "id": "feat.primal-howl",
+  "type": "feat",
+  "name": "feat.primal-howl.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 133,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.primal-howl.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.incredible-companion-druid"
+    }
+  ]
+}

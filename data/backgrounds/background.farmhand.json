@@ -1,0 +1,27 @@
+{
+  "id": "background.farmhand",
+  "type": "background",
+  "name": "background.farmhand.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.farmhand.text",
+  "boosts": [
+    [
+      "con",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.farmhand.lore",
+  "skills": [
+    "skill.athletics"
+  ],
+  "feat": "feat.assurance"
+}

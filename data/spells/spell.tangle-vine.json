@@ -1,0 +1,43 @@
+{
+  "id": "spell.tangle-vine",
+  "type": "spell",
+  "name": "spell.tangle-vine.name",
+  "traits": [
+    "attack",
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 362,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tangle-vine.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.tangle-vine.range",
+  "targets": "spell.tangle-vine.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.tangle-vine.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.tangle-vine.heightened.1"
+    }
+  ]
+}

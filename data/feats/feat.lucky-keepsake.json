@@ -1,0 +1,26 @@
+{
+  "id": "feat.lucky-keepsake",
+  "type": "feat",
+  "name": "feat.lucky-keepsake.name",
+  "traits": [
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 69,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lucky-keepsake.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.leshy-superstition"
+    }
+  ]
+}

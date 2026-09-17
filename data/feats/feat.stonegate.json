@@ -1,0 +1,26 @@
+{
+  "id": "feat.stonegate",
+  "type": "feat",
+  "name": "feat.stonegate.name",
+  "traits": [
+    "dwarf"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 45,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stonegate.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.dwarf",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.stonewalker"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "background.charlatan",
+  "type": "background",
+  "name": "background.charlatan.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 85,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.charlatan.text",
+  "boosts": [
+    [
+      "int",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.charlatan.lore",
+  "skills": [
+    "skill.deception"
+  ],
+  "feat": "feat.charming-liar"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "spell.force-barrage",
+  "type": "spell",
+  "name": "spell.force-barrage.name",
+  "traits": [
+    "concentrate",
+    "force",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.force-barrage.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "1-3"
+  },
+  "range": "spell.force-barrage.range",
+  "targets": "spell.force-barrage.targets",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.force-barrage.heightened.0"
+    }
+  ]
+}

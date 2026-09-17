@@ -1,0 +1,38 @@
+{
+  "id": "spell.soothing-words",
+  "type": "spell",
+  "name": "spell.soothing-words.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "emotion",
+    "focus",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 374,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.soothing-words.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.soothing-words.range",
+  "targets": "spell.soothing-words.targets",
+  "duration": "spell.soothing-words.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.soothing-words.heightened.0"
+    }
+  ]
+}

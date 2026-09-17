@@ -1,0 +1,15 @@
+{
+  "id": "trait.ranger",
+  "type": "trait",
+  "name": "trait.ranger.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 460,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.ranger.text"
+}

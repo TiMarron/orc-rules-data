@@ -1,0 +1,21 @@
+{
+  "id": "feat.favored-prey",
+  "type": "feat",
+  "name": "feat.favored-prey.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 159,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.favored-prey.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": []
+}

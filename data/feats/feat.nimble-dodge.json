@@ -1,0 +1,25 @@
+{
+  "id": "feat.nimble-dodge",
+  "type": "feat",
+  "name": "feat.nimble-dodge.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 169,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.nimble-dodge.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.nimble-dodge.trigger",
+  "requirements": "feat.nimble-dodge.requirements",
+  "prerequisites": [],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

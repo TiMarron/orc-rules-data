@@ -1,0 +1,21 @@
+{
+  "id": "feat.far-throw",
+  "type": "feat",
+  "name": "feat.far-throw.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.far-throw.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

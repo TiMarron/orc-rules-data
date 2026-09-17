@@ -1,0 +1,26 @@
+{
+  "id": "feat.masterful-warden",
+  "type": "feat",
+  "name": "feat.masterful-warden.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 159,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.masterful-warden.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.initiate-warden"
+    }
+  ]
+}

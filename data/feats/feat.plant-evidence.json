@@ -1,0 +1,27 @@
+{
+  "id": "feat.plant-evidence",
+  "type": "feat",
+  "name": "feat.plant-evidence.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 169,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.plant-evidence.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.pickpocket"
+    }
+  ]
+}

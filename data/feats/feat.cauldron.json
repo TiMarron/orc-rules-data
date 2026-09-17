@@ -1,0 +1,21 @@
+{
+  "id": "feat.cauldron",
+  "type": "feat",
+  "name": "feat.cauldron.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 186,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cauldron.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "feature.witch-hex-spells",
+  "type": "feature",
+  "name": "feature.witch-hex-spells.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 178,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feature.witch-hex-spells.text",
+  "class": "class.witch",
+  "level": 1,
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

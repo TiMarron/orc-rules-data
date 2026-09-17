@@ -1,0 +1,30 @@
+{
+  "id": "spell.telekinetic-maneuver",
+  "type": "spell",
+  "name": "spell.telekinetic-maneuver.name",
+  "traits": [
+    "attack",
+    "concentrate",
+    "force",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 363,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.telekinetic-maneuver.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.telekinetic-maneuver.range",
+  "targets": "spell.telekinetic-maneuver.targets"
+}

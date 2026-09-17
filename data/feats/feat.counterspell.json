@@ -1,0 +1,27 @@
+{
+  "id": "feat.counterspell",
+  "type": "feat",
+  "name": "feat.counterspell.name",
+  "traits": [
+    "witch",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 186,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.counterspell.text",
+  "level": 1,
+  "category": "class",
+  "class": [
+    "class.witch",
+    "class.wizard"
+  ],
+  "actions": "reaction",
+  "trigger": "feat.counterspell.trigger",
+  "prerequisites": []
+}

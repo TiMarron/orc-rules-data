@@ -1,0 +1,21 @@
+{
+  "id": "feat.stubborn-persistence",
+  "type": "feat",
+  "name": "feat.stubborn-persistence.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 65,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stubborn-persistence.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": []
+}

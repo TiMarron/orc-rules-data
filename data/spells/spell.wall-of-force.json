@@ -1,0 +1,35 @@
+{
+  "id": "spell.wall-of-force",
+  "type": "spell",
+  "name": "spell.wall-of-force.name",
+  "traits": [
+    "concentrate",
+    "force",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 367,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wall-of-force.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.wall-of-force.range",
+  "duration": "spell.wall-of-force.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.wall-of-force.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "spell.harm",
+  "type": "spell",
+  "name": "spell.harm.name",
+  "traits": [
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 334,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.harm.text",
+  "rank": 1,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1-3"
+  },
+  "range": "spell.harm.range",
+  "targets": "spell.harm.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.harm.heightened.0"
+    }
+  ]
+}

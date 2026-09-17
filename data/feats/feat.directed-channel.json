@@ -1,0 +1,21 @@
+{
+  "id": "feat.directed-channel",
+  "type": "feat",
+  "name": "feat.directed-channel.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 116,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.directed-channel.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

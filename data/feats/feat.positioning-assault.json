@@ -1,0 +1,24 @@
+{
+  "id": "feat.positioning-assault",
+  "type": "feat",
+  "name": "feat.positioning-assault.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 146,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.positioning-assault.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "2",
+  "requirements": "feat.positioning-assault.requirements",
+  "prerequisites": []
+}

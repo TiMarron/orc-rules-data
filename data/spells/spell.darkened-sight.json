@@ -1,0 +1,32 @@
+{
+  "id": "spell.darkened-sight",
+  "type": "spell",
+  "name": "spell.darkened-sight.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "darkness",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 373,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.darkened-sight.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.darkened-sight.range",
+  "targets": "spell.darkened-sight.targets",
+  "duration": "spell.darkened-sight.duration"
+}

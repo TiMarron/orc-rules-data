@@ -1,0 +1,19 @@
+{
+  "id": "item.parrying-scabbard",
+  "type": "item",
+  "name": "item.parrying-scabbard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.parrying-scabbard.text",
+  "level": 0,
+  "priceCp": 50,
+  "bulk": "L",
+  "category": "gear"
+}

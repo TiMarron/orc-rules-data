@@ -1,0 +1,40 @@
+{
+  "id": "ancestry.orc",
+  "type": "ancestry",
+  "name": "ancestry.orc.name",
+  "traits": [
+    "humanoid",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 70,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "ancestry.orc.text",
+  "hp": 10,
+  "size": "medium",
+  "speed": 25,
+  "boosts": [
+    "free",
+    "free"
+  ],
+  "flaws": [],
+  "languages": [
+    "common",
+    "orcish"
+  ],
+  "heritages": [
+    "heritage.badlands-orc",
+    "heritage.battle-ready-orc",
+    "heritage.deep-orc",
+    "heritage.grave-orc",
+    "heritage.hold-scarred-orc",
+    "heritage.rainfall-orc",
+    "heritage.winter-orc"
+  ],
+  "editNote": "Reserved"
+}

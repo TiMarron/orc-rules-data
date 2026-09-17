@@ -1,0 +1,19 @@
+{
+  "id": "action.repair",
+  "type": "action",
+  "name": "action.repair.name",
+  "traits": [
+    "exploration",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 236,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.repair.text",
+  "requirements": "action.repair.requirements"
+}

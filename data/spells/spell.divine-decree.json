@@ -1,0 +1,38 @@
+{
+  "id": "spell.divine-decree",
+  "type": "spell",
+  "name": "spell.divine-decree.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "sanctified",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 325,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.divine-decree.text",
+  "rank": 7,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.divine-decree.area",
+  "duration": "spell.divine-decree.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.divine-decree.heightened.0"
+    }
+  ]
+}

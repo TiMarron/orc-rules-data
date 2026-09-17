@@ -1,0 +1,28 @@
+{
+  "id": "background.teacher",
+  "type": "background",
+  "name": "background.teacher.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "background.teacher.text",
+  "boosts": [
+    [
+      "int",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.teacher.lore",
+  "skills": [
+    "skill.performance"
+  ],
+  "feat": "feat.experienced-professional",
+  "editNote": "Accepted: the book (p.88) offers a choice of the Performance or Society skill, with the Experienced Professional feat granted regardless of which is chosen; the schema's skills array holds exactly one skill, so it can't express the choice, and the converter's pick of Performance is a reasonable single representative -- the record's own text spells out the full choice and the fixed Academia Lore skill."
+}

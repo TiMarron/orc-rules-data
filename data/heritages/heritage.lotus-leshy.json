@@ -1,0 +1,16 @@
+{
+  "id": "heritage.lotus-leshy",
+  "type": "heritage",
+  "name": "heritage.lotus-leshy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 67,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.lotus-leshy.text",
+  "ancestry": "ancestry.leshy"
+}

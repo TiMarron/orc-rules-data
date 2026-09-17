@@ -1,0 +1,37 @@
+{
+  "id": "spell.soothe",
+  "type": "spell",
+  "name": "spell.soothe.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "healing",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 357,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.soothe.text",
+  "rank": 1,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.soothe.range",
+  "targets": "spell.soothe.targets",
+  "duration": "spell.soothe.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.soothe.heightened.0"
+    }
+  ]
+}

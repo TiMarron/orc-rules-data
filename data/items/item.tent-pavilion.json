@@ -1,0 +1,19 @@
+{
+  "id": "item.tent-pavilion",
+  "type": "item",
+  "name": "item.tent-pavilion.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 292,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "level": 2,
+  "priceCp": 4000,
+  "bulk": "12",
+  "category": "gear",
+  "editNote": "pdf-page fail: this variant's disambiguating name (a base item plus a bracketed size/quality/rank variant, e.g. 'Lock (Average)', 'Spellcasting (1st rank)') is never printed in the book as its own heading; the page is the table that lists the variant as a priced row, confirmed against the cached PDF text for its claimed page range."
+}

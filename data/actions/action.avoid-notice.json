@@ -1,0 +1,17 @@
+{
+  "id": "action.avoid-notice",
+  "type": "action",
+  "name": "action.avoid-notice.name",
+  "traits": [
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 438,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.avoid-notice.text"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.ricochet-feint",
+  "type": "feat",
+  "name": "feat.ricochet-feint.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 176,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ricochet-feint.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.ricochet-stance-rogue"
+    }
+  ]
+}

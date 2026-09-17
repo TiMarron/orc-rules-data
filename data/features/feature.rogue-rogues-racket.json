@@ -1,0 +1,17 @@
+{
+  "id": "feature.rogue-rogues-racket",
+  "type": "feature",
+  "name": "feature.rogue-rogues-racket.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 165,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.rogue-rogues-racket.text",
+  "class": "class.rogue",
+  "level": 1
+}

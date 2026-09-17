@@ -1,0 +1,27 @@
+{
+  "id": "feat.pickpocket",
+  "type": "feat",
+  "name": "feat.pickpocket.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 259,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pickpocket.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.thievery",
+      "rank": "trained"
+    }
+  ]
+}

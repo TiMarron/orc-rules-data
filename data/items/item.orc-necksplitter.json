@@ -1,0 +1,33 @@
+{
+  "id": "item.orc-necksplitter",
+  "type": "item",
+  "name": "item.orc-necksplitter.name",
+  "traits": [
+    "forceful",
+    "orc",
+    "sweep"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 280,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.orc-necksplitter.text",
+  "level": 0,
+  "priceCp": 200,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "advanced",
+    "hands": "1",
+    "group": "axe",
+    "damage": {
+      "dice": "1d8",
+      "type": "slashing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "action.administer-first-aid",
+  "type": "action",
+  "name": "action.administer-first-aid.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 241,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.administer-first-aid.text",
+  "actions": "2",
+  "requirements": "action.administer-first-aid.requirements",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

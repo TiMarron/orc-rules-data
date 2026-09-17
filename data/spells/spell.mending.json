@@ -1,0 +1,40 @@
+{
+  "id": "spell.mending",
+  "type": "spell",
+  "name": "spell.mending.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 343,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mending.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.mending.cast-time"
+  },
+  "range": "spell.mending.range",
+  "targets": "spell.mending.targets",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.mending.heightened.0"
+    },
+    {
+      "level": "3",
+      "text": "spell.mending.heightened.1"
+    }
+  ]
+}

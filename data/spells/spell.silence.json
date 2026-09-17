@@ -1,0 +1,36 @@
+{
+  "id": "spell.silence",
+  "type": "spell",
+  "name": "spell.silence.name",
+  "traits": [
+    "illusion",
+    "manipulate",
+    "subtle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 357,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.silence.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.silence.range",
+  "targets": "spell.silence.targets",
+  "duration": "spell.silence.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.silence.heightened.0"
+    }
+  ]
+}

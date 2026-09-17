@@ -1,0 +1,39 @@
+{
+  "id": "spell.phantasmal-calamity",
+  "type": "spell",
+  "name": "spell.phantasmal-calamity.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 349,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.phantasmal-calamity.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.phantasmal-calamity.range",
+  "area": "spell.phantasmal-calamity.area",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.phantasmal-calamity.heightened.0"
+    }
+  ]
+}

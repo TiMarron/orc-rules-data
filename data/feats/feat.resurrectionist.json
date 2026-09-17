@@ -1,0 +1,21 @@
+{
+  "id": "feat.resurrectionist",
+  "type": "feat",
+  "name": "feat.resurrectionist.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 121,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.resurrectionist.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

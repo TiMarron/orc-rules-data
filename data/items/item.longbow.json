@@ -1,0 +1,34 @@
+{
+  "id": "item.longbow",
+  "type": "item",
+  "name": "item.longbow.name",
+  "traits": [
+    "deadly-d10",
+    "volley-30-ft"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.longbow.text",
+  "level": 0,
+  "priceCp": 600,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1+",
+    "group": "bow",
+    "damage": {
+      "dice": "1d8",
+      "type": "piercing"
+    },
+    "range": 100,
+    "reload": "0"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

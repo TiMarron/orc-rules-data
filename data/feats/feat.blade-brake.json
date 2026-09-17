@@ -1,0 +1,25 @@
+{
+  "id": "feat.blade-brake",
+  "type": "feat",
+  "name": "feat.blade-brake.name",
+  "traits": [
+    "fighter",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 141,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.blade-brake.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "reaction",
+  "trigger": "feat.blade-brake.trigger",
+  "requirements": "feat.blade-brake.requirements",
+  "prerequisites": []
+}

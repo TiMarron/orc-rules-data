@@ -1,0 +1,31 @@
+{
+  "id": "spell.unrelenting-observation",
+  "type": "spell",
+  "name": "spell.unrelenting-observation.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "scrying"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 365,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.unrelenting-observation.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.unrelenting-observation.range",
+  "area": "spell.unrelenting-observation.area",
+  "targets": "spell.unrelenting-observation.targets",
+  "duration": "spell.unrelenting-observation.duration"
+}

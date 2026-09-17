@@ -1,0 +1,34 @@
+{
+  "id": "spell.enthrall",
+  "type": "spell",
+  "name": "spell.enthrall.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "emotion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 329,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.enthrall.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.enthrall.range",
+  "targets": "spell.enthrall.targets",
+  "duration": "spell.enthrall.duration",
+  "defense": {
+    "save": "will"
+  }
+}

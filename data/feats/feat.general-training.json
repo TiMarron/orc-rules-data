@@ -1,0 +1,21 @@
+{
+  "id": "feat.general-training",
+  "type": "feat",
+  "name": "feat.general-training.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 64,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.general-training.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": []
+}

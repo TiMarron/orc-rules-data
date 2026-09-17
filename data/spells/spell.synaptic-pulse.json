@@ -1,0 +1,32 @@
+{
+  "id": "spell.synaptic-pulse",
+  "type": "spell",
+  "name": "spell.synaptic-pulse.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 362,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.synaptic-pulse.text",
+  "rank": 5,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.synaptic-pulse.area",
+  "duration": "spell.synaptic-pulse.duration",
+  "defense": {
+    "save": "will"
+  }
+}

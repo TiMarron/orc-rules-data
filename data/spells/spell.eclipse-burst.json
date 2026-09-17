@@ -1,0 +1,41 @@
+{
+  "id": "spell.eclipse-burst",
+  "type": "spell",
+  "name": "spell.eclipse-burst.name",
+  "traits": [
+    "cold",
+    "concentrate",
+    "darkness",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 328,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.eclipse-burst.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.eclipse-burst.range",
+  "area": "spell.eclipse-burst.area",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.eclipse-burst.heightened.0"
+    }
+  ]
+}

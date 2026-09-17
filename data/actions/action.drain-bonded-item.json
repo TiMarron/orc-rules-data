@@ -1,0 +1,20 @@
+{
+  "id": "action.drain-bonded-item",
+  "type": "action",
+  "name": "action.drain-bonded-item.name",
+  "traits": [
+    "arcane",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 197,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.drain-bonded-item.text",
+  "actions": "free",
+  "requirements": "action.drain-bonded-item.requirements"
+}

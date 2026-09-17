@@ -1,0 +1,23 @@
+{
+  "id": "feat.raise-menhir",
+  "type": "feat",
+  "name": "feat.raise-menhir.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 132,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.raise-menhir.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "2",
+  "frequency": "feat.raise-menhir.frequency",
+  "prerequisites": []
+}

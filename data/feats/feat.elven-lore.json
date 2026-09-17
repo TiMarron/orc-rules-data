@@ -1,0 +1,21 @@
+{
+  "id": "feat.elven-lore",
+  "type": "feat",
+  "name": "feat.elven-lore.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 48,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.elven-lore.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": []
+}

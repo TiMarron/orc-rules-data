@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-bard-weapon-expertise",
+  "type": "feature",
+  "name": "feature.bard-bard-weapon-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-bard-weapon-expertise.text",
+  "class": "class.bard",
+  "level": 11
+}

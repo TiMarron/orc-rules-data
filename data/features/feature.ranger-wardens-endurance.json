@@ -1,0 +1,17 @@
+{
+  "id": "feature.ranger-wardens-endurance",
+  "type": "feature",
+  "name": "feature.ranger-wardens-endurance.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 152,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.ranger-wardens-endurance.text",
+  "class": "class.ranger",
+  "level": 11
+}

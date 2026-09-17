@@ -1,0 +1,27 @@
+{
+  "id": "feat.wardens-step",
+  "type": "feat",
+  "name": "feat.wardens-step.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 161,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wardens-step.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "master"
+    }
+  ]
+}

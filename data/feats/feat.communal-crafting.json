@@ -1,0 +1,27 @@
+{
+  "id": "feat.communal-crafting",
+  "type": "feat",
+  "name": "feat.communal-crafting.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.communal-crafting.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "expert"
+    }
+  ]
+}

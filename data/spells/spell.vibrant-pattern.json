@@ -1,0 +1,35 @@
+{
+  "id": "spell.vibrant-pattern",
+  "type": "spell",
+  "name": "spell.vibrant-pattern.name",
+  "traits": [
+    "illusion",
+    "incapacitation",
+    "manipulate",
+    "subtle",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 366,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vibrant-pattern.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.vibrant-pattern.range",
+  "area": "spell.vibrant-pattern.area",
+  "duration": "spell.vibrant-pattern.duration",
+  "defense": {
+    "save": "will"
+  }
+}

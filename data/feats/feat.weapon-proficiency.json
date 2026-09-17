@@ -1,0 +1,20 @@
+{
+  "id": "feat.weapon-proficiency",
+  "type": "feat",
+  "name": "feat.weapon-proficiency.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 265,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.weapon-proficiency.text",
+  "level": 1,
+  "category": "general",
+  "prerequisites": []
+}

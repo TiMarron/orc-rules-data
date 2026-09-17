@@ -1,0 +1,15 @@
+{
+  "id": "trait.halfling",
+  "type": "trait",
+  "name": "trait.halfling.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 457,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.halfling.text"
+}

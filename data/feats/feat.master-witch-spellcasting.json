@@ -1,0 +1,30 @@
+{
+  "id": "feat.master-witch-spellcasting",
+  "type": "feat",
+  "name": "feat.master-witch-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 222,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.master-witch-spellcasting.text",
+  "level": 18,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.expert-witch-spellcasting"
+    },
+    {
+      "kind": "text",
+      "key": "feat.master-witch-spellcasting.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

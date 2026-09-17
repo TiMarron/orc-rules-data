@@ -1,0 +1,30 @@
+{
+  "id": "feat.master-bard-spellcasting",
+  "type": "feat",
+  "name": "feat.master-bard-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.master-bard-spellcasting.text",
+  "level": 18,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.expert-bard-spellcasting"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.occultism",
+      "rank": "legendary"
+    }
+  ]
+}

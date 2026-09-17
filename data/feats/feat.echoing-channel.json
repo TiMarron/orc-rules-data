@@ -1,0 +1,30 @@
+{
+  "id": "feat.echoing-channel",
+  "type": "feat",
+  "name": "feat.echoing-channel.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 121,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.echoing-channel.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.echoing-channel.prereq.0"
+    }
+  ],
+  "editNote": "Dropped the animist trait: Animist belongs to a book this pipeline hasn't imported yet, so the reference can't resolve. The feat is printed as a Cleric feat (p.121) and works fully as one; the animist trait should return once that book is imported. (Now handled automatically by the out-of-book-refs transform rule; this note documents the earlier hand review.)"
+}

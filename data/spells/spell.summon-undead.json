@@ -1,0 +1,68 @@
+{
+  "id": "spell.summon-undead",
+  "type": "spell",
+  "name": "spell.summon-undead.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "summon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 361,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.summon-undead.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.summon-undead.range",
+  "duration": "spell.summon-undead.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.summon-undead.heightened.0"
+    },
+    {
+      "level": "3",
+      "text": "spell.summon-undead.heightened.1"
+    },
+    {
+      "level": "4",
+      "text": "spell.summon-undead.heightened.2"
+    },
+    {
+      "level": "5",
+      "text": "spell.summon-undead.heightened.3"
+    },
+    {
+      "level": "6",
+      "text": "spell.summon-undead.heightened.4"
+    },
+    {
+      "level": "7",
+      "text": "spell.summon-undead.heightened.5"
+    },
+    {
+      "level": "8",
+      "text": "spell.summon-undead.heightened.6"
+    },
+    {
+      "level": "9",
+      "text": "spell.summon-undead.heightened.7"
+    },
+    {
+      "level": "10",
+      "text": "spell.summon-undead.heightened.8"
+    }
+  ]
+}

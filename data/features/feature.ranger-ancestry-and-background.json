@@ -1,0 +1,17 @@
+{
+  "id": "feature.ranger-ancestry-and-background",
+  "type": "feature",
+  "name": "feature.ranger-ancestry-and-background.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 153,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.ranger-ancestry-and-background.text",
+  "class": "class.ranger",
+  "level": 1
+}

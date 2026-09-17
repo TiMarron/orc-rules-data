@@ -1,0 +1,34 @@
+{
+  "id": "item.blowgun",
+  "type": "item",
+  "name": "item.blowgun.name",
+  "traits": [
+    "agile",
+    "nonlethal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.blowgun.text",
+  "level": 0,
+  "priceCp": 10,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "dart",
+    "damage": {
+      "dice": "1",
+      "type": "piercing"
+    },
+    "range": 20,
+    "reload": "1"
+  },
+  "editNote": "Accepted: the book's Simple Weapons table (p.281) prints Blowgun's damage as a flat '1 P' with no die -- a genuinely non-dice damage value (the weapon's real role is a nonlethal, agile delivery method for injury poisons, not a damage dealer). The schema's damage.dice pattern only accepts NdX dice notation, so it cannot represent a flat value; recorded as a gap rather than fabricating a die that would change the weapon's actual damage output. Critical Specialization Effects (dart group) is the same recorded per-group omission accepted for other weapons."
+}

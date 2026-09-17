@@ -1,0 +1,40 @@
+{
+  "id": "spell.electric-arc",
+  "type": "spell",
+  "name": "spell.electric-arc.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "electricity",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 328,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.electric-arc.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.electric-arc.range",
+  "targets": "spell.electric-arc.targets",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.electric-arc.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "spell.blindness",
+  "type": "spell",
+  "name": "spell.blindness.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blindness.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.blindness.range",
+  "targets": "spell.blindness.targets",
+  "defense": {
+    "save": "fortitude"
+  }
+}

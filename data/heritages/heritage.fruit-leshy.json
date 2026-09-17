@@ -1,0 +1,16 @@
+{
+  "id": "heritage.fruit-leshy",
+  "type": "heritage",
+  "name": "heritage.fruit-leshy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 67,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.fruit-leshy.text",
+  "ancestry": "ancestry.leshy"
+}

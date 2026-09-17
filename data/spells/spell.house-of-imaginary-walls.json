@@ -1,0 +1,30 @@
+{
+  "id": "spell.house-of-imaginary-walls",
+  "type": "spell",
+  "name": "spell.house-of-imaginary-walls.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "illusion",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 370,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.house-of-imaginary-walls.text",
+  "rank": 5,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.house-of-imaginary-walls.duration"
+}

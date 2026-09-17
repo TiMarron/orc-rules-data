@@ -1,0 +1,22 @@
+{
+  "id": "feat.fey-fellowship",
+  "type": "feat",
+  "name": "feat.fey-fellowship.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 52,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.fey-fellowship.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "prerequisites": [],
+  "editNote": "Reserved"
+}

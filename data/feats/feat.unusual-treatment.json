@@ -1,0 +1,27 @@
+{
+  "id": "feat.unusual-treatment",
+  "type": "feat",
+  "name": "feat.unusual-treatment.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unusual-treatment.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.medicine",
+      "rank": "expert"
+    }
+  ]
+}

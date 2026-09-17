@@ -1,0 +1,25 @@
+{
+  "id": "feat.uncanny-dodge",
+  "type": "feat",
+  "name": "feat.uncanny-dodge.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 221,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.uncanny-dodge.text",
+  "level": 10,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.rogue-dedication"
+    }
+  ]
+}

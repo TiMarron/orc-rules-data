@@ -1,0 +1,29 @@
+{
+  "id": "feat.incredible-ricochet",
+  "type": "feat",
+  "name": "feat.incredible-ricochet.name",
+  "traits": [
+    "concentrate",
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 149,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.incredible-ricochet.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.incredible-aim"
+    }
+  ]
+}

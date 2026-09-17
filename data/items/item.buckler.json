@@ -1,0 +1,26 @@
+{
+  "id": "item.buckler",
+  "type": "item",
+  "name": "item.buckler.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 274,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.buckler.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "L",
+  "category": "shield",
+  "shield": {
+    "acBonus": 1,
+    "hardness": 3,
+    "hp": 6,
+    "bt": 3
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.mature-animal-companion-druid",
+  "type": "feat",
+  "name": "feat.mature-animal-companion-druid.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 130,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mature-animal-companion-druid.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.animal-companion"
+    }
+  ]
+}

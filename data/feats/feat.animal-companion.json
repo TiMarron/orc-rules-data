@@ -1,0 +1,31 @@
+{
+  "id": "feat.animal-companion",
+  "type": "feat",
+  "name": "feat.animal-companion.name",
+  "traits": [
+    "druid",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 127,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.animal-companion.text",
+  "level": 1,
+  "category": "class",
+  "class": [
+    "class.druid",
+    "class.ranger"
+  ],
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.animal-companion.prereq.0"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

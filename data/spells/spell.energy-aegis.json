@@ -1,0 +1,37 @@
+{
+  "id": "spell.energy-aegis",
+  "type": "spell",
+  "name": "spell.energy-aegis.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 328,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.energy-aegis.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.energy-aegis.cast-time"
+  },
+  "range": "spell.energy-aegis.range",
+  "targets": "spell.energy-aegis.targets",
+  "duration": "spell.energy-aegis.duration",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.energy-aegis.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.cooperative-soul",
+  "type": "feat",
+  "name": "feat.cooperative-soul.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 64,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cooperative-soul.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": []
+}

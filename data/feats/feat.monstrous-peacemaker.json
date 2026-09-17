@@ -1,0 +1,21 @@
+{
+  "id": "feat.monstrous-peacemaker",
+  "type": "feat",
+  "name": "feat.monstrous-peacemaker.name",
+  "traits": [
+    "dromaar"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 83,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.monstrous-peacemaker.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

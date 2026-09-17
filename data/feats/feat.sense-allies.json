@@ -1,0 +1,21 @@
+{
+  "id": "feat.sense-allies",
+  "type": "feat",
+  "name": "feat.sense-allies.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 64,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sense-allies.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": []
+}

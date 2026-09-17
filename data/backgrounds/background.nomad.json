@@ -1,0 +1,27 @@
+{
+  "id": "background.nomad",
+  "type": "background",
+  "name": "background.nomad.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.nomad.text",
+  "boosts": [
+    [
+      "con",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.nomad.lore",
+  "skills": [
+    "skill.survival"
+  ],
+  "feat": "feat.assurance"
+}

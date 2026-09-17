@@ -1,0 +1,27 @@
+{
+  "id": "feat.stitched-familiar",
+  "type": "feat",
+  "name": "feat.stitched-familiar.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 189,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.stitched-familiar.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.stitched-familiar.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

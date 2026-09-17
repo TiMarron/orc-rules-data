@@ -1,0 +1,31 @@
+{
+  "id": "feat.courageous-assault",
+  "type": "feat",
+  "name": "feat.courageous-assault.name",
+  "traits": [
+    "auditory",
+    "bard",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.courageous-assault.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.courageous-assault.prereq.0"
+    }
+  ],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

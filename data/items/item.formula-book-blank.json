@@ -1,0 +1,19 @@
+{
+  "id": "item.formula-book-blank",
+  "type": "item",
+  "name": "item.formula-book-blank.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 288,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.formula-book-blank.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "L",
+  "category": "gear"
+}

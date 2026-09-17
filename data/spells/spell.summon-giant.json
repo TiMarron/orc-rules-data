@@ -1,0 +1,50 @@
+{
+  "id": "spell.summon-giant",
+  "type": "spell",
+  "name": "spell.summon-giant.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "summon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 361,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.summon-giant.text",
+  "rank": 5,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.summon-giant.range",
+  "duration": "spell.summon-giant.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.summon-giant.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.summon-giant.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.summon-giant.heightened.2"
+    },
+    {
+      "level": "9",
+      "text": "spell.summon-giant.heightened.3"
+    },
+    {
+      "level": "10",
+      "text": "spell.summon-giant.heightened.4"
+    }
+  ]
+}

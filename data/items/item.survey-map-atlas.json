@@ -1,0 +1,20 @@
+{
+  "id": "item.survey-map-atlas",
+  "type": "item",
+  "name": "item.survey-map-atlas.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 292,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.survey-map-atlas.text",
+  "level": 3,
+  "priceCp": 5000,
+  "bulk": "L",
+  "category": "gear",
+  "editNote": "pdf-page fail: this variant's disambiguating name (a base item plus a bracketed size/quality/rank variant, e.g. 'Lock (Average)', 'Spellcasting (1st rank)') is never printed in the book as its own heading; the page is the table that lists the variant as a priced row, confirmed against the cached PDF text for its claimed page range."
+}

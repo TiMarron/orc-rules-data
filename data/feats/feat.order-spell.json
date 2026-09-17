@@ -1,0 +1,25 @@
+{
+  "id": "feat.order-spell",
+  "type": "feat",
+  "name": "feat.order-spell.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 218,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.order-spell.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.druid-dedication"
+    }
+  ]
+}

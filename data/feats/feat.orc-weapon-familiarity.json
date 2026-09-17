@@ -1,0 +1,21 @@
+{
+  "id": "feat.orc-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.orc-weapon-familiarity.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 72,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.orc-weapon-familiarity.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "trait.fungus",
+  "type": "trait",
+  "name": "trait.fungus.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 456,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "trait.fungus.text",
+  "editNote": "Sentences our copy carries and theirs does not were inspected and contain no Reserved Material."
+}

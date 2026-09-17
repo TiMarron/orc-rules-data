@@ -1,0 +1,40 @@
+{
+  "id": "spell.dazzling-flash",
+  "type": "spell",
+  "name": "spell.dazzling-flash.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "light",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 379,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dazzling-flash.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.dazzling-flash.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.dazzling-flash.heightened.0"
+    }
+  ]
+}

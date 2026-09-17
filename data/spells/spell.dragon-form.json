@@ -1,0 +1,37 @@
+{
+  "id": "spell.dragon-form",
+  "type": "spell",
+  "name": "spell.dragon-form.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 326,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.dragon-form.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.dragon-form.duration",
+  "heightened": [
+    {
+      "level": "8",
+      "text": "spell.dragon-form.heightened.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

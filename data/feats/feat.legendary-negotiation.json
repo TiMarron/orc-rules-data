@@ -1,0 +1,28 @@
+{
+  "id": "feat.legendary-negotiation",
+  "type": "feat",
+  "name": "feat.legendary-negotiation.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.legendary-negotiation.text",
+  "level": 15,
+  "category": "skill",
+  "actions": "3",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "legendary"
+    }
+  ]
+}

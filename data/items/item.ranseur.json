@@ -1,0 +1,32 @@
+{
+  "id": "item.ranseur",
+  "type": "item",
+  "name": "item.ranseur.name",
+  "traits": [
+    "disarm",
+    "reach"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.ranseur.text",
+  "level": 0,
+  "priceCp": 200,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "polearm",
+    "damage": {
+      "dice": "1d10",
+      "type": "piercing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

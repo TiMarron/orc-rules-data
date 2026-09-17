@@ -1,0 +1,41 @@
+{
+  "id": "spell.artistic-flourish",
+  "type": "spell",
+  "name": "spell.artistic-flourish.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 373,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.artistic-flourish.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.artistic-flourish.range",
+  "targets": "spell.artistic-flourish.targets",
+  "duration": "spell.artistic-flourish.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.artistic-flourish.heightened.0"
+    },
+    {
+      "level": "10",
+      "text": "spell.artistic-flourish.heightened.1"
+    }
+  ]
+}

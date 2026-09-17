@@ -1,0 +1,19 @@
+{
+  "id": "action.command-an-animal",
+  "type": "action",
+  "name": "action.command-an-animal.name",
+  "traits": [
+    "auditory",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 242,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.command-an-animal.text",
+  "actions": "1"
+}

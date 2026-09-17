@@ -2,10 +2,15 @@
   "id": "trait.nonlethal",
   "type": "trait",
   "name": "trait.nonlethal.name",
-  "text": "trait.nonlethal.text",
   "traits": [],
   "rarity": "common",
-  "source": { "book": "gm-core", "page": 332, "revision": "2023-first" },
+  "source": {
+    "book": "player-core",
+    "page": 282,
+    "revision": "2023-first"
+  },
   "review": "human",
-  "edited": false
+  "edited": true,
+  "text": "trait.nonlethal.text",
+  "editNote": "the book's wording supersedes the the companion book glossary entry the dataset was seeded with."
 }

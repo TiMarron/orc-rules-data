@@ -1,0 +1,36 @@
+{
+  "id": "spell.hydraulic-torrent",
+  "type": "spell",
+  "name": "spell.hydraulic-torrent.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 336,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hydraulic-torrent.text",
+  "rank": 4,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.hydraulic-torrent.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.hydraulic-torrent.heightened.0"
+    }
+  ]
+}

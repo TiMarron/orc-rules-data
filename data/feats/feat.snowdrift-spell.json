@@ -1,0 +1,31 @@
+{
+  "id": "feat.snowdrift-spell",
+  "type": "feat",
+  "name": "feat.snowdrift-spell.name",
+  "traits": [
+    "cold",
+    "druid",
+    "manipulate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 131,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.snowdrift-spell.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.snowdrift-spell.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

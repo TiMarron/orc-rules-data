@@ -1,0 +1,21 @@
+{
+  "id": "feat.directed-audience",
+  "type": "feat",
+  "name": "feat.directed-audience.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.directed-audience.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": []
+}

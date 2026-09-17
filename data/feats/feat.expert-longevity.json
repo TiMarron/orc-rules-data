@@ -1,0 +1,26 @@
+{
+  "id": "feat.expert-longevity",
+  "type": "feat",
+  "name": "feat.expert-longevity.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 49,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.expert-longevity.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.ancestral-longevity"
+    }
+  ]
+}

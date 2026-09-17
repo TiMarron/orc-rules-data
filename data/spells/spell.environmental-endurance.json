@@ -1,0 +1,40 @@
+{
+  "id": "spell.environmental-endurance",
+  "type": "spell",
+  "name": "spell.environmental-endurance.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 329,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.environmental-endurance.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.environmental-endurance.cast-time"
+  },
+  "range": "spell.environmental-endurance.range",
+  "targets": "spell.environmental-endurance.targets",
+  "duration": "spell.environmental-endurance.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.environmental-endurance.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "spell.environmental-endurance.heightened.1"
+    }
+  ]
+}

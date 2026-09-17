@@ -1,0 +1,24 @@
+{
+  "id": "feat.sidestep",
+  "type": "feat",
+  "name": "feat.sidestep.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 174,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.sidestep.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.sidestep.trigger",
+  "prerequisites": [],
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

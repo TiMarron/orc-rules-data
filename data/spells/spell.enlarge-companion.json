@@ -1,0 +1,38 @@
+{
+  "id": "spell.enlarge-companion",
+  "type": "spell",
+  "name": "spell.enlarge-companion.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "polymorph",
+    "ranger"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 383,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.enlarge-companion.text",
+  "rank": 2,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.enlarge-companion.range",
+  "targets": "spell.enlarge-companion.targets",
+  "duration": "spell.enlarge-companion.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.enlarge-companion.heightened.0"
+    }
+  ]
+}

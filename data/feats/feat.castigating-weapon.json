@@ -1,0 +1,26 @@
+{
+  "id": "feat.castigating-weapon",
+  "type": "feat",
+  "name": "feat.castigating-weapon.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 118,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.castigating-weapon.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.divine-castigation"
+    }
+  ]
+}

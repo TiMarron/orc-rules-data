@@ -1,0 +1,16 @@
+{
+  "id": "trait.celestial",
+  "type": "trait",
+  "name": "trait.celestial.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 453,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "trait.celestial.text",
+  "editNote": "Reserved Material removed: the planar region's proper name replaced with a generic descriptor."
+}

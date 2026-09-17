@@ -1,0 +1,19 @@
+{
+  "id": "action.treat-disease",
+  "type": "action",
+  "name": "action.treat-disease.name",
+  "traits": [
+    "downtime",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 242,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.treat-disease.text",
+  "requirements": "action.treat-disease.requirements"
+}

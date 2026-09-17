@@ -1,0 +1,30 @@
+{
+  "id": "spell.mist",
+  "type": "spell",
+  "name": "spell.mist.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 344,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mist.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.mist.range",
+  "area": "spell.mist.area",
+  "duration": "spell.mist.duration"
+}

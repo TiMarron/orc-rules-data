@@ -1,0 +1,40 @@
+{
+  "id": "spell.paralyze",
+  "type": "spell",
+  "name": "spell.paralyze.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 348,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.paralyze.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.paralyze.range",
+  "targets": "spell.paralyze.targets",
+  "duration": "spell.paralyze.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.paralyze.heightened.0"
+    }
+  ]
+}

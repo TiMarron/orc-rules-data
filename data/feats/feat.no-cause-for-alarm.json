@@ -1,0 +1,33 @@
+{
+  "id": "feat.no-cause-for-alarm",
+  "type": "feat",
+  "name": "feat.no-cause-for-alarm.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "emotion",
+    "general",
+    "linguistic",
+    "mental",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 259,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.no-cause-for-alarm.text",
+  "level": 1,
+  "category": "skill",
+  "actions": "3",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "trained"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "action.create-forgery",
+  "type": "action",
+  "name": "action.create-forgery.name",
+  "traits": [
+    "downtime",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 244,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.create-forgery.text",
+  "requirements": "action.create-forgery.requirements"
+}

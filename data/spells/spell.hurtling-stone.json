@@ -1,0 +1,38 @@
+{
+  "id": "spell.hurtling-stone",
+  "type": "spell",
+  "name": "spell.hurtling-stone.name",
+  "traits": [
+    "attack",
+    "cleric",
+    "earth",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 374,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hurtling-stone.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.hurtling-stone.range",
+  "targets": "spell.hurtling-stone.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.hurtling-stone.heightened.0"
+    }
+  ]
+}

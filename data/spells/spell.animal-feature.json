@@ -1,0 +1,37 @@
+{
+  "id": "spell.animal-feature",
+  "type": "spell",
+  "name": "spell.animal-feature.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "morph",
+    "ranger"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 383,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.animal-feature.text",
+  "rank": 2,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.animal-feature.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.animal-feature.heightened.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

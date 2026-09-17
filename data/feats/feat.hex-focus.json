@@ -1,0 +1,21 @@
+{
+  "id": "feat.hex-focus",
+  "type": "feat",
+  "name": "feat.hex-focus.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 190,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hex-focus.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

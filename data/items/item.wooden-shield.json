@@ -1,0 +1,26 @@
+{
+  "id": "item.wooden-shield",
+  "type": "item",
+  "name": "item.wooden-shield.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 274,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.wooden-shield.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "1",
+  "category": "shield",
+  "shield": {
+    "acBonus": 2,
+    "hardness": 3,
+    "hp": 12,
+    "bt": 6
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

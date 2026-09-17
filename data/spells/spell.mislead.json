@@ -1,0 +1,28 @@
+{
+  "id": "spell.mislead",
+  "type": "spell",
+  "name": "spell.mislead.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 344,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mislead.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.mislead.duration"
+}

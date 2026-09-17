@@ -1,0 +1,47 @@
+{
+  "id": "spell.mystic-armor",
+  "type": "spell",
+  "name": "spell.mystic-armor.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 346,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mystic-armor.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.mystic-armor.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.mystic-armor.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.mystic-armor.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.mystic-armor.heightened.2"
+    },
+    {
+      "level": "10",
+      "text": "spell.mystic-armor.heightened.3"
+    }
+  ]
+}

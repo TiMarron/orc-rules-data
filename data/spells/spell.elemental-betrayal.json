@@ -1,0 +1,34 @@
+{
+  "id": "spell.elemental-betrayal",
+  "type": "spell",
+  "name": "spell.elemental-betrayal.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "hex",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 385,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.elemental-betrayal.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.elemental-betrayal.range",
+  "targets": "spell.elemental-betrayal.targets",
+  "duration": "spell.elemental-betrayal.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.elemental-betrayal.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "spell.chilling-darkness",
+  "type": "spell",
+  "name": "spell.chilling-darkness.name",
+  "traits": [
+    "attack",
+    "cold",
+    "concentrate",
+    "darkness",
+    "manipulate",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 320,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.chilling-darkness.text",
+  "rank": 3,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.chilling-darkness.range",
+  "targets": "spell.chilling-darkness.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.chilling-darkness.heightened.0"
+    }
+  ]
+}

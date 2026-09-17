@@ -1,0 +1,25 @@
+{
+  "id": "feat.bespell-strikes",
+  "type": "feat",
+  "name": "feat.bespell-strikes.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 202,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.bespell-strikes.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "free",
+  "requirements": "feat.bespell-strikes.requirements",
+  "frequency": "feat.bespell-strikes.frequency",
+  "prerequisites": [],
+  "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
+}

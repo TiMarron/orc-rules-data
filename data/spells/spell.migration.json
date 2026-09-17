@@ -1,0 +1,29 @@
+{
+  "id": "spell.migration",
+  "type": "spell",
+  "name": "spell.migration.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 343,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.migration.text",
+  "rank": 8,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.migration.cast-time"
+  },
+  "range": "spell.migration.range",
+  "targets": "spell.migration.targets",
+  "duration": "spell.migration.duration"
+}

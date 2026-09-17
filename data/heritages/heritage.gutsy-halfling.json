@@ -1,0 +1,16 @@
+{
+  "id": "heritage.gutsy-halfling",
+  "type": "heritage",
+  "name": "heritage.gutsy-halfling.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 59,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.gutsy-halfling.text",
+  "ancestry": "ancestry.halfling"
+}

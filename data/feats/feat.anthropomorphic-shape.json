@@ -1,0 +1,26 @@
+{
+  "id": "feat.anthropomorphic-shape",
+  "type": "feat",
+  "name": "feat.anthropomorphic-shape.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 129,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.anthropomorphic-shape.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.untamed-form"
+    }
+  ]
+}

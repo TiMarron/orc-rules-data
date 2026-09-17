@@ -1,0 +1,30 @@
+{
+  "id": "spell.unfettered-movement",
+  "type": "spell",
+  "name": "spell.unfettered-movement.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 365,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.unfettered-movement.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.unfettered-movement.range",
+  "targets": "spell.unfettered-movement.targets",
+  "duration": "spell.unfettered-movement.duration"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.martyr",
+  "type": "feat",
+  "name": "feat.martyr.name",
+  "traits": [
+    "cleric",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.martyr.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "1",
+  "prerequisites": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "background.miner",
+  "type": "background",
+  "name": "background.miner.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.miner.text",
+  "boosts": [
+    [
+      "str",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.miner.lore",
+  "skills": [
+    "skill.survival"
+  ],
+  "feat": "feat.terrain-expertise"
+}

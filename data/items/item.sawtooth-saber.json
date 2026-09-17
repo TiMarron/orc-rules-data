@@ -1,0 +1,33 @@
+{
+  "id": "item.sawtooth-saber",
+  "type": "item",
+  "name": "item.sawtooth-saber.name",
+  "traits": [
+    "agile",
+    "finesse",
+    "twin"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 280,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.sawtooth-saber.text",
+  "level": 0,
+  "priceCp": 500,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "advanced",
+    "hands": "1",
+    "group": "sword",
+    "damage": {
+      "dice": "1d6",
+      "type": "slashing"
+    }
+  },
+  "editNote": "Reserved"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.whirlwind-strike",
+  "type": "feat",
+  "name": "feat.whirlwind-strike.name",
+  "traits": [
+    "fighter",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.whirlwind-strike.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "3",
+  "prerequisites": [],
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

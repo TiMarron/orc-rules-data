@@ -1,0 +1,29 @@
+{
+  "id": "spell.levitate",
+  "type": "spell",
+  "name": "spell.levitate.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 340,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.levitate.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.levitate.range",
+  "targets": "spell.levitate.targets",
+  "duration": "spell.levitate.duration"
+}

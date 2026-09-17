@@ -1,0 +1,26 @@
+{
+  "id": "feat.spell-devourer",
+  "type": "feat",
+  "name": "feat.spell-devourer.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 73,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spell-devourer.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.pervasive-superstition"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "item.torch",
+  "type": "item",
+  "name": "item.torch.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 292,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.torch.text",
+  "level": 0,
+  "priceCp": 1,
+  "bulk": "L",
+  "category": "gear"
+}

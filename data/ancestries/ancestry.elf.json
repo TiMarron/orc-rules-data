@@ -1,0 +1,42 @@
+{
+  "id": "ancestry.elf",
+  "type": "ancestry",
+  "name": "ancestry.elf.name",
+  "traits": [
+    "elf",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 46,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "ancestry.elf.text",
+  "hp": 6,
+  "size": "medium",
+  "speed": 30,
+  "boosts": [
+    "dex",
+    "int",
+    "free"
+  ],
+  "flaws": [
+    "con"
+  ],
+  "languages": [
+    "common",
+    "elven"
+  ],
+  "heritages": [
+    "heritage.ancient-elf",
+    "heritage.arctic-elf",
+    "heritage.cavern-elf",
+    "heritage.seer-elf",
+    "heritage.whisper-elf",
+    "heritage.woodland-elf"
+  ],
+  "editNote": "Reserved"
+}

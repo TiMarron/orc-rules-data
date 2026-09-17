@@ -1,0 +1,32 @@
+{
+  "id": "spell.veil-of-dreams",
+  "type": "spell",
+  "name": "spell.veil-of-dreams.name",
+  "traits": [
+    "focus",
+    "hex",
+    "manipulate",
+    "mental",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 386,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.veil-of-dreams.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.veil-of-dreams.range",
+  "targets": "spell.veil-of-dreams.targets",
+  "duration": "spell.veil-of-dreams.duration",
+  "defense": {
+    "save": "will"
+  }
+}

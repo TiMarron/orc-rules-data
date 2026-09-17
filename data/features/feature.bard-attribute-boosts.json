@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-attribute-boosts",
+  "type": "feature",
+  "name": "feature.bard-attribute-boosts.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-attribute-boosts.text",
+  "class": "class.bard",
+  "level": 1
+}

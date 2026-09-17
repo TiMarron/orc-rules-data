@@ -1,0 +1,32 @@
+{
+  "id": "spell.spider-sting",
+  "type": "spell",
+  "name": "spell.spider-sting.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 358,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spider-sting.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.spider-sting.range",
+  "targets": "spell.spider-sting.targets",
+  "defense": {
+    "save": "fortitude"
+  }
+}

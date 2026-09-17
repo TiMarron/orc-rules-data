@@ -1,0 +1,21 @@
+{
+  "id": "feat.cooperative-nature",
+  "type": "feat",
+  "name": "feat.cooperative-nature.name",
+  "traits": [
+    "human"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 64,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cooperative-nature.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.human",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.vandal",
+  "type": "feat",
+  "name": "feat.vandal.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 57,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vandal.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "prerequisites": []
+}

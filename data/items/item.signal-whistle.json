@@ -1,0 +1,19 @@
+{
+  "id": "item.signal-whistle",
+  "type": "item",
+  "name": "item.signal-whistle.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 292,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.signal-whistle.text",
+  "level": 0,
+  "priceCp": 8,
+  "bulk": "0",
+  "category": "gear"
+}

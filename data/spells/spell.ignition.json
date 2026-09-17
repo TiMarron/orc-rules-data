@@ -1,0 +1,38 @@
+{
+  "id": "spell.ignition",
+  "type": "spell",
+  "name": "spell.ignition.name",
+  "traits": [
+    "attack",
+    "cantrip",
+    "concentrate",
+    "fire",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 336,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ignition.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.ignition.range",
+  "targets": "spell.ignition.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.ignition.heightened.0"
+    }
+  ]
+}

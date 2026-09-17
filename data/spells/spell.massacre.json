@@ -1,0 +1,39 @@
+{
+  "id": "spell.massacre",
+  "type": "spell",
+  "name": "spell.massacre.name",
+  "traits": [
+    "concentrate",
+    "death",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 342,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.massacre.text",
+  "rank": 9,
+  "traditions": [
+    "arcane",
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.massacre.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "10",
+      "text": "spell.massacre.heightened.0"
+    }
+  ]
+}

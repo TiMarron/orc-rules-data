@@ -1,0 +1,27 @@
+{
+  "id": "feat.student-of-the-canon",
+  "type": "feat",
+  "name": "feat.student-of-the-canon.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.student-of-the-canon.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.religion",
+      "rank": "trained"
+    }
+  ]
+}

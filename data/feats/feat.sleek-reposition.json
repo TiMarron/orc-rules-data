@@ -1,0 +1,24 @@
+{
+  "id": "feat.sleek-reposition",
+  "type": "feat",
+  "name": "feat.sleek-reposition.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 143,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sleek-reposition.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.sleek-reposition.requirements",
+  "prerequisites": []
+}

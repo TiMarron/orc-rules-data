@@ -1,0 +1,26 @@
+{
+  "id": "feat.ley-line-conduit",
+  "type": "feat",
+  "name": "feat.ley-line-conduit.name",
+  "traits": [
+    "concentrate",
+    "druid",
+    "manipulate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ley-line-conduit.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "frequency": "feat.ley-line-conduit.frequency",
+  "prerequisites": []
+}

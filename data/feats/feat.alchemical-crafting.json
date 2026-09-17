@@ -1,0 +1,27 @@
+{
+  "id": "feat.alchemical-crafting",
+  "type": "feat",
+  "name": "feat.alchemical-crafting.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.alchemical-crafting.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "trained"
+    }
+  ]
+}

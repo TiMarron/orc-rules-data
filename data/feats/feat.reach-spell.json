@@ -1,0 +1,35 @@
+{
+  "id": "feat.reach-spell",
+  "type": "feat",
+  "name": "feat.reach-spell.name",
+  "traits": [
+    "bard",
+    "cleric",
+    "concentrate",
+    "druid",
+    "spellshape",
+    "witch",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.reach-spell.text",
+  "level": 1,
+  "category": "class",
+  "class": [
+    "class.bard",
+    "class.cleric",
+    "class.druid",
+    "class.witch",
+    "class.wizard"
+  ],
+  "actions": "1",
+  "prerequisites": [],
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

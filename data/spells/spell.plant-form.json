@@ -1,0 +1,36 @@
+{
+  "id": "spell.plant-form",
+  "type": "spell",
+  "name": "spell.plant-form.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "polymorph",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 350,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.plant-form.text",
+  "rank": 5,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.plant-form.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.plant-form.heightened.0"
+    }
+  ],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "feat.anticipate-ambush",
+  "type": "feat",
+  "name": "feat.anticipate-ambush.name",
+  "traits": [
+    "exploration",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.anticipate-ambush.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "expert"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "spell.humanoid-form",
+  "type": "spell",
+  "name": "spell.humanoid-form.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 335,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.humanoid-form.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.humanoid-form.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.humanoid-form.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "spell.humanoid-form.heightened.1"
+    }
+  ],
+  "editNote": "The reference points at a rules page the dataset does not model as a record; the link's label survives as plain text."
+}

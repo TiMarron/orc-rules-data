@@ -1,0 +1,28 @@
+{
+  "id": "spell.manifestation",
+  "type": "spell",
+  "name": "spell.manifestation.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 342,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.manifestation.text",
+  "rank": 10,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  }
+}

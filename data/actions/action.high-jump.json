@@ -1,0 +1,16 @@
+{
+  "id": "action.high-jump",
+  "type": "action",
+  "name": "action.high-jump.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 235,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.high-jump.text",
+  "actions": "2"
+}

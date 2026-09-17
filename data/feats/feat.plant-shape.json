@@ -1,0 +1,27 @@
+{
+  "id": "feat.plant-shape",
+  "type": "feat",
+  "name": "feat.plant-shape.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 133,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.plant-shape.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.plant-shape.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "action.pick-a-lock",
+  "type": "action",
+  "name": "action.pick-a-lock.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 247,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.pick-a-lock.text",
+  "actions": "2",
+  "requirements": "action.pick-a-lock.requirements"
+}

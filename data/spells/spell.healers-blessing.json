@@ -1,0 +1,36 @@
+{
+  "id": "spell.healers-blessing",
+  "type": "spell",
+  "name": "spell.healers-blessing.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 375,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.healers-blessing.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.healers-blessing.range",
+  "targets": "spell.healers-blessing.targets",
+  "duration": "spell.healers-blessing.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.healers-blessing.heightened.0"
+    }
+  ]
+}

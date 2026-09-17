@@ -1,0 +1,27 @@
+{
+  "id": "feat.charming-liar",
+  "type": "feat",
+  "name": "feat.charming-liar.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.charming-liar.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "trained"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "spell.fiery-body",
+  "type": "spell",
+  "name": "spell.fiery-body.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 331,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fiery-body.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.fiery-body.duration",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.fiery-body.heightened.0"
+    }
+  ]
+}

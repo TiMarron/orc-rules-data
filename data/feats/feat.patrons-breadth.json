@@ -1,0 +1,25 @@
+{
+  "id": "feat.patrons-breadth",
+  "type": "feat",
+  "name": "feat.patrons-breadth.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 222,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.patrons-breadth.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-witch-spellcasting"
+    }
+  ]
+}

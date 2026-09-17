@@ -1,0 +1,16 @@
+{
+  "id": "condition.stunned",
+  "type": "condition",
+  "name": "condition.stunned.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 446,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.stunned.text",
+  "valued": true
+}

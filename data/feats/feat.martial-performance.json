@@ -1,0 +1,27 @@
+{
+  "id": "feat.martial-performance",
+  "type": "feat",
+  "name": "feat.martial-performance.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.martial-performance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.martial-performance.prereq.0"
+    }
+  ],
+  "editNote": "pdf-text near-miss: the flagged closing sentence about rallying anthem/song of strength is genuine feat content, just a short paragraph whose italicized spell-name links reduce the n-gram match; not merged from elsewhere."
+}

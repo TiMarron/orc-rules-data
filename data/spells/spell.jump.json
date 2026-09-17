@@ -1,0 +1,32 @@
+{
+  "id": "spell.jump",
+  "type": "spell",
+  "name": "spell.jump.name",
+  "traits": [
+    "manipulate",
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 340,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.jump.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.jump.heightened.0"
+    }
+  ]
+}

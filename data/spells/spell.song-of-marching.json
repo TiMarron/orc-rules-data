@@ -1,0 +1,40 @@
+{
+  "id": "spell.song-of-marching",
+  "type": "spell",
+  "name": "spell.song-of-marching.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "concentrate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 371,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.song-of-marching.text",
+  "rank": 3,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.song-of-marching.area",
+  "duration": "spell.song-of-marching.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.song-of-marching.heightened.0"
+    },
+    {
+      "level": "9",
+      "text": "spell.song-of-marching.heightened.1"
+    }
+  ]
+}

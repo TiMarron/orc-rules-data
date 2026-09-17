@@ -1,0 +1,34 @@
+{
+  "id": "spell.blood-ward",
+  "type": "spell",
+  "name": "spell.blood-ward.name",
+  "traits": [
+    "focus",
+    "hex",
+    "manipulate",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 384,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blood-ward.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.blood-ward.range",
+  "targets": "spell.blood-ward.targets",
+  "duration": "spell.blood-ward.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.blood-ward.heightened.0"
+    }
+  ]
+}

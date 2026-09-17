@@ -1,0 +1,23 @@
+{
+  "id": "feat.snagging-strike",
+  "type": "feat",
+  "name": "feat.snagging-strike.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 141,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.snagging-strike.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.snagging-strike.requirements",
+  "prerequisites": []
+}

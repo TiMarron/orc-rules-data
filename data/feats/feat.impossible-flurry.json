@@ -1,0 +1,24 @@
+{
+  "id": "feat.impossible-flurry",
+  "type": "feat",
+  "name": "feat.impossible-flurry.name",
+  "traits": [
+    "flourish",
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 163,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impossible-flurry.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "3",
+  "requirements": "feat.impossible-flurry.requirements",
+  "prerequisites": []
+}

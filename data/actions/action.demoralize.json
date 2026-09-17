@@ -1,0 +1,22 @@
+{
+  "id": "action.demoralize",
+  "type": "action",
+  "name": "action.demoralize.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "emotion",
+    "fear",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 240,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.demoralize.text",
+  "actions": "1"
+}

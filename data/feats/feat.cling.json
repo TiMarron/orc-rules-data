@@ -1,0 +1,23 @@
+{
+  "id": "feat.cling",
+  "type": "feat",
+  "name": "feat.cling.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 57,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cling.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "actions": "1",
+  "requirements": "feat.cling.requirements",
+  "prerequisites": []
+}

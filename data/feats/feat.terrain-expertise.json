@@ -1,0 +1,27 @@
+{
+  "id": "feat.terrain-expertise",
+  "type": "feat",
+  "name": "feat.terrain-expertise.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.terrain-expertise.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "trained"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.accompany",
+  "type": "feat",
+  "name": "feat.accompany.name",
+  "traits": [
+    "bard",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 104,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "feat.accompany.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "reaction",
+  "trigger": "feat.accompany.trigger",
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: the page citation to another book replaced with a reference to the rule itself; the page citation to another book replaced with a reference to the rule itself."
+}

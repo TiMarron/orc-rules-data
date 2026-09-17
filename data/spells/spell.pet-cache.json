@@ -1,0 +1,31 @@
+{
+  "id": "spell.pet-cache",
+  "type": "spell",
+  "name": "spell.pet-cache.name",
+  "traits": [
+    "extradimensional",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 348,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.pet-cache.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.pet-cache.range",
+  "targets": "spell.pet-cache.targets",
+  "duration": "spell.pet-cache.duration"
+}

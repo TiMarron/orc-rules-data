@@ -1,0 +1,23 @@
+{
+  "id": "feat.opening-stance-fighter",
+  "type": "feat",
+  "name": "feat.opening-stance-fighter.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.opening-stance-fighter.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "free",
+  "trigger": "feat.opening-stance-fighter.trigger",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.symphony-of-the-muse",
+  "type": "feat",
+  "name": "feat.symphony-of-the-muse.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.symphony-of-the-muse.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.harmonize"
+    }
+  ]
+}

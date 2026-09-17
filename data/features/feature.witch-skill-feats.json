@@ -1,0 +1,17 @@
+{
+  "id": "feature.witch-skill-feats",
+  "type": "feature",
+  "name": "feature.witch-skill-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 178,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.witch-skill-feats.text",
+  "class": "class.witch",
+  "level": 2
+}

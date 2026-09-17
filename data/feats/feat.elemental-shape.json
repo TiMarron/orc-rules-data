@@ -1,0 +1,26 @@
+{
+  "id": "feat.elemental-shape",
+  "type": "feat",
+  "name": "feat.elemental-shape.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 133,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.elemental-shape.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.untamed-form"
+    }
+  ]
+}

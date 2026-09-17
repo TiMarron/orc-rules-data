@@ -1,0 +1,26 @@
+{
+  "id": "feat.toppling-dance",
+  "type": "feat",
+  "name": "feat.toppling-dance.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 61,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.toppling-dance.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dance-underfoot"
+    }
+  ]
+}

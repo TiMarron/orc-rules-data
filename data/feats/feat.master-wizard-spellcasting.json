@@ -1,0 +1,30 @@
+{
+  "id": "feat.master-wizard-spellcasting",
+  "type": "feat",
+  "name": "feat.master-wizard-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 223,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.master-wizard-spellcasting.text",
+  "level": 18,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.expert-wizard-spellcasting"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.arcana",
+      "rank": "legendary"
+    }
+  ]
+}

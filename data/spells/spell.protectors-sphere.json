@@ -1,0 +1,37 @@
+{
+  "id": "spell.protectors-sphere",
+  "type": "spell",
+  "name": "spell.protectors-sphere.name",
+  "traits": [
+    "aura",
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 379,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.protectors-sphere.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.protectors-sphere.area",
+  "duration": "spell.protectors-sphere.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.protectors-sphere.heightened.0"
+    }
+  ]
+}

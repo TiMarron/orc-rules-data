@@ -1,0 +1,40 @@
+{
+  "id": "spell.invisibility-cloak",
+  "type": "spell",
+  "name": "spell.invisibility-cloak.name",
+  "traits": [
+    "focus",
+    "illusion",
+    "manipulate",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 388,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.invisibility-cloak.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.invisibility-cloak.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.invisibility-cloak.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.invisibility-cloak.heightened.1"
+    }
+  ],
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

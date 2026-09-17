@@ -1,0 +1,41 @@
+{
+  "id": "spell.mask-of-terror",
+  "type": "spell",
+  "name": "spell.mask-of-terror.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "fear",
+    "illusion",
+    "manipulate",
+    "mental",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 342,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mask-of-terror.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.mask-of-terror.range",
+  "targets": "spell.mask-of-terror.targets",
+  "duration": "spell.mask-of-terror.duration",
+  "heightened": [
+    {
+      "level": "8",
+      "text": "spell.mask-of-terror.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.fighter-combat-flexibility",
+  "type": "feature",
+  "name": "feature.fighter-combat-flexibility.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 136,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.fighter-combat-flexibility.text",
+  "class": "class.fighter",
+  "level": 9
+}

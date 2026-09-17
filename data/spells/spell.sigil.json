@@ -1,0 +1,46 @@
+{
+  "id": "spell.sigil",
+  "type": "spell",
+  "name": "spell.sigil.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 357,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sigil.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.sigil.range",
+  "targets": "spell.sigil.targets",
+  "duration": "spell.sigil.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.sigil.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "spell.sigil.heightened.1"
+    },
+    {
+      "level": "7",
+      "text": "spell.sigil.heightened.2"
+    }
+  ]
+}

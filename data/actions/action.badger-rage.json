@@ -1,0 +1,22 @@
+{
+  "id": "action.badger-rage",
+  "type": "action",
+  "name": "action.badger-rage.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 207,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.badger-rage.text",
+  "actions": "1",
+  "requirements": "action.badger-rage.requirements",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

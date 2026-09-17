@@ -1,0 +1,27 @@
+{
+  "id": "feat.impaling-briars",
+  "type": "feat",
+  "name": "feat.impaling-briars.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.impaling-briars.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.impaling-briars.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it. The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+}

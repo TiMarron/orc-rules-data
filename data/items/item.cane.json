@@ -1,0 +1,19 @@
+{
+  "id": "item.cane",
+  "type": "item",
+  "name": "item.cane.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 293,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.cane.text",
+  "level": 0,
+  "priceCp": 50,
+  "bulk": "L",
+  "category": "gear"
+}

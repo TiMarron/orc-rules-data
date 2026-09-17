@@ -1,0 +1,23 @@
+{
+  "id": "feat.reactive-pursuit",
+  "type": "feat",
+  "name": "feat.reactive-pursuit.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reactive-pursuit.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.reactive-pursuit.trigger",
+  "prerequisites": []
+}

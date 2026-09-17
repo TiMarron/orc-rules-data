@@ -1,0 +1,30 @@
+{
+  "id": "feat.convincing-illusion",
+  "type": "feat",
+  "name": "feat.convincing-illusion.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 202,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.convincing-illusion.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "reaction",
+  "trigger": "feat.convincing-illusion.trigger",
+  "requirements": "feat.convincing-illusion.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    }
+  ]
+}

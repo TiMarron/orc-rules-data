@@ -1,0 +1,23 @@
+{
+  "id": "feat.mobile-shot-stance",
+  "type": "feat",
+  "name": "feat.mobile-shot-stance.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 146,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mobile-shot-stance.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "prerequisites": []
+}

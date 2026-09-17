@@ -1,0 +1,21 @@
+{
+  "id": "feat.advanced-weapon-training",
+  "type": "feat",
+  "name": "feat.advanced-weapon-training.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 144,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-weapon-training.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.fighter",
+  "prerequisites": []
+}

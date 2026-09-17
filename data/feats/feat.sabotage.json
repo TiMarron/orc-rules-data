@@ -1,0 +1,24 @@
+{
+  "id": "feat.sabotage",
+  "type": "feat",
+  "name": "feat.sabotage.name",
+  "traits": [
+    "incapacitation",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sabotage.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "requirements": "feat.sabotage.requirements",
+  "prerequisites": []
+}

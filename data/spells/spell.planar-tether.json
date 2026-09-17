@@ -1,0 +1,33 @@
+{
+  "id": "spell.planar-tether",
+  "type": "spell",
+  "name": "spell.planar-tether.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 350,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.planar-tether.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.planar-tether.range",
+  "targets": "spell.planar-tether.targets",
+  "duration": "spell.planar-tether.duration",
+  "defense": {
+    "save": "will"
+  }
+}

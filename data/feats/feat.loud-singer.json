@@ -1,0 +1,26 @@
+{
+  "id": "feat.loud-singer",
+  "type": "feat",
+  "name": "feat.loud-singer.name",
+  "traits": [
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 57,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.loud-singer.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.goblin-song"
+    }
+  ]
+}

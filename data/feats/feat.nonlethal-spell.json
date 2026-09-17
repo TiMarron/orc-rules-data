@@ -1,0 +1,24 @@
+{
+  "id": "feat.nonlethal-spell",
+  "type": "feat",
+  "name": "feat.nonlethal-spell.name",
+  "traits": [
+    "manipulate",
+    "spellshape",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 201,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.nonlethal-spell.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "1",
+  "prerequisites": []
+}

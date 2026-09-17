@@ -1,0 +1,23 @@
+{
+  "id": "feat.penetrating-shot",
+  "type": "feat",
+  "name": "feat.penetrating-shot.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 161,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.penetrating-shot.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.ranger",
+  "actions": "2",
+  "requirements": "feat.penetrating-shot.requirements",
+  "prerequisites": []
+}

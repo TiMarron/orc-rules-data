@@ -1,0 +1,21 @@
+{
+  "id": "feat.scion-of-many-planes",
+  "type": "feat",
+  "name": "feat.scion-of-many-planes.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 80,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scion-of-many-planes.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

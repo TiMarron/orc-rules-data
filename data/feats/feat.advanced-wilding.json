@@ -1,0 +1,25 @@
+{
+  "id": "feat.advanced-wilding",
+  "type": "feat",
+  "name": "feat.advanced-wilding.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 218,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-wilding.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-wilding"
+    }
+  ]
+}

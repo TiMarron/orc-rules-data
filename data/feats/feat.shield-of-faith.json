@@ -1,0 +1,26 @@
+{
+  "id": "feat.shield-of-faith",
+  "type": "feat",
+  "name": "feat.shield-of-faith.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 118,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shield-of-faith.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.domain-initiate"
+    }
+  ]
+}

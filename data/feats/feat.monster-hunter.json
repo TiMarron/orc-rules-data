@@ -1,0 +1,21 @@
+{
+  "id": "feat.monster-hunter",
+  "type": "feat",
+  "name": "feat.monster-hunter.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 157,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.monster-hunter.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": []
+}

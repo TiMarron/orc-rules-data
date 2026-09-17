@@ -1,0 +1,23 @@
+{
+  "id": "feat.combat-reading",
+  "type": "feat",
+  "name": "feat.combat-reading.name",
+  "traits": [
+    "bard",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 102,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.combat-reading.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": []
+}

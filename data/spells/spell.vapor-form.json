@@ -1,0 +1,32 @@
+{
+  "id": "spell.vapor-form",
+  "type": "spell",
+  "name": "spell.vapor-form.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 365,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vapor-form.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.vapor-form.range",
+  "targets": "spell.vapor-form.targets",
+  "duration": "spell.vapor-form.duration"
+}

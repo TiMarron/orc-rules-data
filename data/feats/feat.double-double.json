@@ -1,0 +1,26 @@
+{
+  "id": "feat.double-double",
+  "type": "feat",
+  "name": "feat.double-double.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 189,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.double-double.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cauldron"
+    }
+  ]
+}

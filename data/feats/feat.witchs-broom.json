@@ -1,0 +1,21 @@
+{
+  "id": "feat.witchs-broom",
+  "type": "feat",
+  "name": "feat.witchs-broom.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 190,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.witchs-broom.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": []
+}

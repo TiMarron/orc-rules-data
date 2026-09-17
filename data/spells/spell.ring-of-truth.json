@@ -1,0 +1,34 @@
+{
+  "id": "spell.ring-of-truth",
+  "type": "spell",
+  "name": "spell.ring-of-truth.name",
+  "traits": [
+    "concentrate",
+    "detection",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 354,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ring-of-truth.text",
+  "rank": 3,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.ring-of-truth.range",
+  "area": "spell.ring-of-truth.area",
+  "duration": "spell.ring-of-truth.duration",
+  "defense": {
+    "save": "will"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.familiars-language",
+  "type": "feat",
+  "name": "feat.familiars-language.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 187,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.familiars-language.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.witch",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.familiars-language.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

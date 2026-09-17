@@ -1,0 +1,17 @@
+{
+  "id": "skill.lore",
+  "type": "skill",
+  "name": "skill.lore.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 240,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "skill.lore.text",
+  "attribute": "int",
+  "editNote": "Reserved Material removed: the example Lore subcategories that named a deity and two cities replaced with generic descriptions; reserved."
+}

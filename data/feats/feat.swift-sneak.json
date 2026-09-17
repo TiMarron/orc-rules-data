@@ -1,0 +1,27 @@
+{
+  "id": "feat.swift-sneak",
+  "type": "feat",
+  "name": "feat.swift-sneak.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.swift-sneak.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "master"
+    }
+  ]
+}

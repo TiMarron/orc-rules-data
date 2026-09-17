@@ -1,0 +1,21 @@
+{
+  "id": "feat.athletic-might",
+  "type": "feat",
+  "name": "feat.athletic-might.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 72,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.athletic-might.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": []
+}

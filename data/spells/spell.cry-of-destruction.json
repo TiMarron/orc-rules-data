@@ -1,0 +1,40 @@
+{
+  "id": "spell.cry-of-destruction",
+  "type": "spell",
+  "name": "spell.cry-of-destruction.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "sonic"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 374,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.cry-of-destruction.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.cry-of-destruction.area",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.cry-of-destruction.heightened.0"
+    }
+  ]
+}

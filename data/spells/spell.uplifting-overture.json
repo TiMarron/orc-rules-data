@@ -1,0 +1,32 @@
+{
+  "id": "spell.uplifting-overture",
+  "type": "spell",
+  "name": "spell.uplifting-overture.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 372,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.uplifting-overture.text",
+  "rank": 1,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.uplifting-overture.range",
+  "targets": "spell.uplifting-overture.targets",
+  "duration": "spell.uplifting-overture.duration"
+}

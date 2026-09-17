@@ -1,0 +1,24 @@
+{
+  "id": "feat.split-hex",
+  "type": "feat",
+  "name": "feat.split-hex.name",
+  "traits": [
+    "concentrate",
+    "spellshape",
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 191,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.split-hex.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.witch",
+  "actions": "1",
+  "prerequisites": []
+}

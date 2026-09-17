@@ -1,0 +1,39 @@
+{
+  "id": "spell.darkvision",
+  "type": "spell",
+  "name": "spell.darkvision.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 322,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.darkvision.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.darkvision.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.darkvision.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "spell.darkvision.heightened.1"
+    }
+  ]
+}

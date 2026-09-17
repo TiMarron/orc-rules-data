@@ -1,0 +1,23 @@
+{
+  "id": "feat.energy-ablation",
+  "type": "feat",
+  "name": "feat.energy-ablation.name",
+  "traits": [
+    "spellshape",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 201,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.energy-ablation.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "1",
+  "prerequisites": []
+}

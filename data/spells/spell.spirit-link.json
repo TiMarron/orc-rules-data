@@ -1,0 +1,37 @@
+{
+  "id": "spell.spirit-link",
+  "type": "spell",
+  "name": "spell.spirit-link.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 358,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spirit-link.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.spirit-link.range",
+  "targets": "spell.spirit-link.targets",
+  "duration": "spell.spirit-link.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.spirit-link.heightened.0"
+    }
+  ]
+}

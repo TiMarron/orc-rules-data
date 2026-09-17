@@ -1,0 +1,25 @@
+{
+  "id": "spell.cackle",
+  "type": "spell",
+  "name": "spell.cackle.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "hex",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 384,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.cackle.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "free"
+  }
+}

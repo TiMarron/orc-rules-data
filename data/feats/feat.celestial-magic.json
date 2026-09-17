@@ -1,0 +1,27 @@
+{
+  "id": "feat.celestial-magic",
+  "type": "feat",
+  "name": "feat.celestial-magic.name",
+  "traits": [
+    "nephilim"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 80,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.celestial-magic.text",
+  "level": 9,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.celestial-magic.prereq.0"
+    }
+  ],
+  "editNote": "pdf-text near-miss: the whole text is genuine feat content; its low score comes from six italicized spell-name links in one short paragraph diluting the n-gram match, not from merged-in content."
+}

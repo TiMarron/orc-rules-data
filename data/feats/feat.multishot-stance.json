@@ -1,0 +1,29 @@
+{
+  "id": "feat.multishot-stance",
+  "type": "feat",
+  "name": "feat.multishot-stance.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.multishot-stance.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.multishot-stance.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.triple-shot"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "spell.nightmare",
+  "type": "spell",
+  "name": "spell.nightmare.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 346,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.nightmare.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.nightmare.cast-time"
+  },
+  "range": "spell.nightmare.range",
+  "targets": "spell.nightmare.targets",
+  "duration": "spell.nightmare.duration",
+  "defense": {
+    "save": "will"
+  }
+}

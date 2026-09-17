@@ -1,0 +1,19 @@
+{
+  "id": "item.waterskin",
+  "type": "item",
+  "name": "item.waterskin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 292,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.waterskin.text",
+  "level": 0,
+  "priceCp": 5,
+  "bulk": "L",
+  "category": "gear"
+}

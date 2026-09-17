@@ -1,0 +1,17 @@
+{
+  "id": "feature.cleric-cleric-feats",
+  "type": "feature",
+  "name": "feature.cleric-cleric-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 108,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.cleric-cleric-feats.text",
+  "class": "class.cleric",
+  "level": 2
+}

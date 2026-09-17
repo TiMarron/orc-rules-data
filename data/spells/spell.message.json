@@ -1,0 +1,41 @@
+{
+  "id": "spell.message",
+  "type": "spell",
+  "name": "spell.message.name",
+  "traits": [
+    "auditory",
+    "cantrip",
+    "concentrate",
+    "illusion",
+    "linguistic",
+    "mental",
+    "subtle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 343,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.message.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.message.range",
+  "targets": "spell.message.targets",
+  "duration": "spell.message.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.message.heightened.0"
+    }
+  ]
+}

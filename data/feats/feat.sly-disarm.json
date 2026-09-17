@@ -1,0 +1,21 @@
+{
+  "id": "feat.sly-disarm",
+  "type": "feat",
+  "name": "feat.sly-disarm.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 173,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sly-disarm.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.twist-the-knife",
+  "type": "feat",
+  "name": "feat.twist-the-knife.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 173,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.twist-the-knife.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "1",
+  "requirements": "feat.twist-the-knife.requirements",
+  "prerequisites": []
+}

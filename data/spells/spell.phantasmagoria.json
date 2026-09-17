@@ -1,0 +1,34 @@
+{
+  "id": "spell.phantasmagoria",
+  "type": "spell",
+  "name": "spell.phantasmagoria.name",
+  "traits": [
+    "concentrate",
+    "death",
+    "illusion",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 349,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.phantasmagoria.text",
+  "rank": 9,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.phantasmagoria.range",
+  "targets": "spell.phantasmagoria.targets",
+  "defense": {
+    "save": "will"
+  }
+}

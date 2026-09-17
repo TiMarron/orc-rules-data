@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-perception-expertise",
+  "type": "feature",
+  "name": "feature.druid-perception-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 122,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-perception-expertise.text",
+  "class": "class.druid",
+  "level": 3
+}

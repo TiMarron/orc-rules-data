@@ -1,0 +1,21 @@
+{
+  "id": "feat.inspired-stratagem",
+  "type": "feat",
+  "name": "feat.inspired-stratagem.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 173,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.inspired-stratagem.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.inviolable",
+  "type": "feat",
+  "name": "feat.inviolable.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 121,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.inviolable.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

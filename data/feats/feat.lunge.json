@@ -1,0 +1,23 @@
+{
+  "id": "feat.lunge",
+  "type": "feat",
+  "name": "feat.lunge.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 142,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lunge.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.lunge.requirements",
+  "prerequisites": []
+}

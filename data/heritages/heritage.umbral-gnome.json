@@ -1,0 +1,16 @@
+{
+  "id": "heritage.umbral-gnome",
+  "type": "heritage",
+  "name": "heritage.umbral-gnome.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 51,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.umbral-gnome.text",
+  "ancestry": "ancestry.gnome"
+}

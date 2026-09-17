@@ -1,0 +1,20 @@
+{
+  "id": "action.identify-alchemy",
+  "type": "action",
+  "name": "action.identify-alchemy.name",
+  "traits": [
+    "concentrate",
+    "exploration",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 237,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.identify-alchemy.text",
+  "requirements": "action.identify-alchemy.requirements"
+}

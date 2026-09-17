@@ -1,0 +1,30 @@
+{
+  "id": "spell.true-target",
+  "type": "spell",
+  "name": "spell.true-target.name",
+  "traits": [
+    "concentrate",
+    "fortune",
+    "prediction"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 364,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.true-target.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.true-target.range",
+  "targets": "spell.true-target.targets",
+  "duration": "spell.true-target.duration"
+}

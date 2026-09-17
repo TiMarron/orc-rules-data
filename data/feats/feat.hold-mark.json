@@ -1,0 +1,22 @@
+{
+  "id": "feat.hold-mark",
+  "type": "feat",
+  "name": "feat.hold-mark.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 72,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.hold-mark.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": [],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

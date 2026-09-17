@@ -1,0 +1,18 @@
+{
+  "id": "item.unarmored",
+  "type": "item",
+  "name": "item.unarmored.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "level": 0,
+  "bulk": "0",
+  "category": "other",
+  "editNote": "Accepted: the book's Unarmored Defense table (p.273) prints 'Unarmored' as a bare stat line (Price --, AC Bonus +0, no Dex cap/check penalty/speed penalty) with no prose description and no material group -- being armorless isn't a group of material like leather or plate, so there is nothing in the book to assign to 'group' either. Both findings match the book having genuinely nothing more to give, not a conversion defect."
+}

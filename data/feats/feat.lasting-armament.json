@@ -1,0 +1,26 @@
+{
+  "id": "feat.lasting-armament",
+  "type": "feat",
+  "name": "feat.lasting-armament.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 119,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lasting-armament.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.sanctify-armament"
+    }
+  ]
+}

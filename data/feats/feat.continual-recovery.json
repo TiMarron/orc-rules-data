@@ -1,0 +1,27 @@
+{
+  "id": "feat.continual-recovery",
+  "type": "feat",
+  "name": "feat.continual-recovery.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 254,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.continual-recovery.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.medicine",
+      "rank": "expert"
+    }
+  ]
+}

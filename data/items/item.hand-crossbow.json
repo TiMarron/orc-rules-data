@@ -1,0 +1,31 @@
+{
+  "id": "item.hand-crossbow",
+  "type": "item",
+  "name": "item.hand-crossbow.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 280,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.hand-crossbow.text",
+  "level": 0,
+  "priceCp": 300,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "crossbow",
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "range": 60,
+    "reload": "1"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

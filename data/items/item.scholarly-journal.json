@@ -1,0 +1,20 @@
+{
+  "id": "item.scholarly-journal",
+  "type": "item",
+  "name": "item.scholarly-journal.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.scholarly-journal.text",
+  "level": 3,
+  "priceCp": 600,
+  "bulk": "L",
+  "category": "gear",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent. The citation sat in a sibling variant's block that is not part of this record's text."
+}

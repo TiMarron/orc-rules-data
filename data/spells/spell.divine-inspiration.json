@@ -1,0 +1,28 @@
+{
+  "id": "spell.divine-inspiration",
+  "type": "spell",
+  "name": "spell.divine-inspiration.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 325,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.divine-inspiration.text",
+  "rank": 8,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.divine-inspiration.range",
+  "targets": "spell.divine-inspiration.targets"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spell.field-of-life",
+  "type": "spell",
+  "name": "spell.field-of-life.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 331,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.field-of-life.text",
+  "rank": 6,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.field-of-life.range",
+  "area": "spell.field-of-life.area",
+  "duration": "spell.field-of-life.duration",
+  "heightened": [
+    {
+      "level": "8",
+      "text": "spell.field-of-life.heightened.0"
+    },
+    {
+      "level": "9",
+      "text": "spell.field-of-life.heightened.1"
+    }
+  ]
+}

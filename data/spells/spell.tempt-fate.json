@@ -1,0 +1,37 @@
+{
+  "id": "spell.tempt-fate",
+  "type": "spell",
+  "name": "spell.tempt-fate.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "fortune",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 375,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tempt-fate.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.tempt-fate.range",
+  "targets": "spell.tempt-fate.targets",
+  "heightened": [
+    {
+      "level": "8",
+      "text": "spell.tempt-fate.heightened.0"
+    }
+  ],
+  "trigger": "spell.tempt-fate.trigger"
+}

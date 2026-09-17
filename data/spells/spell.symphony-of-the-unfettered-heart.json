@@ -1,0 +1,36 @@
+{
+  "id": "spell.symphony-of-the-unfettered-heart",
+  "type": "spell",
+  "name": "spell.symphony-of-the-unfettered-heart.name",
+  "traits": [
+    "bard",
+    "composition",
+    "concentrate",
+    "focus"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 371,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.symphony-of-the-unfettered-heart.text",
+  "rank": 5,
+  "focus": true,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.symphony-of-the-unfettered-heart.range",
+  "targets": "spell.symphony-of-the-unfettered-heart.targets",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.symphony-of-the-unfettered-heart.heightened.0"
+    }
+  ]
+}

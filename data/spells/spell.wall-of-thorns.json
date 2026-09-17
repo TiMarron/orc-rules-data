@@ -1,0 +1,36 @@
+{
+  "id": "spell.wall-of-thorns",
+  "type": "spell",
+  "name": "spell.wall-of-thorns.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 367,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wall-of-thorns.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.wall-of-thorns.range",
+  "duration": "spell.wall-of-thorns.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.wall-of-thorns.heightened.0"
+    }
+  ]
+}

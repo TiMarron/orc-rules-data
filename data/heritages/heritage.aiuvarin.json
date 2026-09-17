@@ -1,0 +1,20 @@
+{
+  "id": "heritage.aiuvarin",
+  "type": "heritage",
+  "name": "heritage.aiuvarin.name",
+  "traits": [
+    "aiuvarin",
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 82,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "heritage.aiuvarin.text",
+  "versatile": true,
+  "editNote": "Reserved Material removed: the world-name replaced with a generic descriptor (two separate mentions; missed the second on the first pass, caught by re-running check). No appliesTo: this is a second pass over an already-edited string, so the generated hash at write time was the prior edit's output, not the book's raw text -- staleness here would be a false positive."
+}

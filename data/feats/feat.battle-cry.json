@@ -1,0 +1,27 @@
+{
+  "id": "feat.battle-cry",
+  "type": "feat",
+  "name": "feat.battle-cry.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.battle-cry.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "master"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "item.chest",
+  "type": "item",
+  "name": "item.chest.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 287,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.chest.text",
+  "level": 0,
+  "priceCp": 60,
+  "bulk": "2",
+  "category": "gear"
+}

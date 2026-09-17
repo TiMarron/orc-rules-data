@@ -1,0 +1,35 @@
+{
+  "id": "spell.tree-of-seasons",
+  "type": "spell",
+  "name": "spell.tree-of-seasons.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 364,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tree-of-seasons.text",
+  "rank": 6,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.tree-of-seasons.range",
+  "duration": "spell.tree-of-seasons.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.tree-of-seasons.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "spell.bane",
+  "type": "spell",
+  "name": "spell.bane.name",
+  "traits": [
+    "aura",
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.bane.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.bane.area",
+  "duration": "spell.bane.duration",
+  "defense": {
+    "save": "will"
+  }
+}

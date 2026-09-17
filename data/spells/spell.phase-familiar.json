@@ -1,0 +1,34 @@
+{
+  "id": "spell.phase-familiar",
+  "type": "spell",
+  "name": "spell.phase-familiar.name",
+  "traits": [
+    "focus",
+    "hex",
+    "manipulate",
+    "witch"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 385,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.phase-familiar.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.phase-familiar.range",
+  "targets": "spell.phase-familiar.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.phase-familiar.heightened.0"
+    }
+  ],
+  "trigger": "spell.phase-familiar.trigger"
+}

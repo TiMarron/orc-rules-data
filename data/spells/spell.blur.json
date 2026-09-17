@@ -1,0 +1,31 @@
+{
+  "id": "spell.blur",
+  "type": "spell",
+  "name": "spell.blur.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blur.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.blur.range",
+  "targets": "spell.blur.targets",
+  "duration": "spell.blur.duration"
+}

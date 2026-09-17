@@ -1,0 +1,27 @@
+{
+  "id": "background.gambler",
+  "type": "background",
+  "name": "background.gambler.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.gambler.text",
+  "boosts": [
+    [
+      "dex",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.gambler.lore",
+  "skills": [
+    "skill.deception"
+  ],
+  "feat": "feat.lie-to-me"
+}

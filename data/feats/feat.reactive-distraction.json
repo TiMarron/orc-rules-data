@@ -1,0 +1,36 @@
+{
+  "id": "feat.reactive-distraction",
+  "type": "feat",
+  "name": "feat.reactive-distraction.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 177,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reactive-distraction.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.reactive-distraction.trigger",
+  "requirements": "feat.reactive-distraction.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "legendary"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.perfect-distraction"
+    }
+  ]
+}

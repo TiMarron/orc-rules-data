@@ -1,0 +1,23 @@
+{
+  "id": "feat.disruptive-stance",
+  "type": "feat",
+  "name": "feat.disruptive-stance.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 147,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disruptive-stance.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "prerequisites": []
+}

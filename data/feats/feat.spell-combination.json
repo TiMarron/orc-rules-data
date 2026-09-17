@@ -1,0 +1,21 @@
+{
+  "id": "feat.spell-combination",
+  "type": "feat",
+  "name": "feat.spell-combination.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 205,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spell-combination.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": []
+}

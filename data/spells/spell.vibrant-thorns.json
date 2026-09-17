@@ -1,0 +1,37 @@
+{
+  "id": "spell.vibrant-thorns",
+  "type": "spell",
+  "name": "spell.vibrant-thorns.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate",
+    "morph",
+    "plant",
+    "wood"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vibrant-thorns.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.vibrant-thorns.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vibrant-thorns.heightened.0"
+    }
+  ]
+}

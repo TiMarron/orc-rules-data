@@ -1,0 +1,20 @@
+{
+  "id": "feat.adopted-ancestry",
+  "type": "feat",
+  "name": "feat.adopted-ancestry.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.adopted-ancestry.text",
+  "level": 1,
+  "category": "general",
+  "prerequisites": []
+}

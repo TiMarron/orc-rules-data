@@ -1,0 +1,22 @@
+{
+  "id": "feat.overwhelming-blow",
+  "type": "feat",
+  "name": "feat.overwhelming-blow.name",
+  "traits": [
+    "fighter"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 150,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.overwhelming-blow.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "3",
+  "prerequisites": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "spell.alarm",
+  "type": "spell",
+  "name": "spell.alarm.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.alarm.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.alarm.cast-time"
+  },
+  "range": "spell.alarm.range",
+  "area": "spell.alarm.area",
+  "duration": "spell.alarm.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.alarm.heightened.0"
+    }
+  ]
+}

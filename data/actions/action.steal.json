@@ -1,0 +1,18 @@
+{
+  "id": "action.steal",
+  "type": "action",
+  "name": "action.steal.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 246,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.steal.text",
+  "actions": "1"
+}

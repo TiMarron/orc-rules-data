@@ -1,0 +1,19 @@
+{
+  "id": "action.maneuver-in-flight",
+  "type": "action",
+  "name": "action.maneuver-in-flight.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 233,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.maneuver-in-flight.text",
+  "actions": "1",
+  "requirements": "action.maneuver-in-flight.requirements"
+}

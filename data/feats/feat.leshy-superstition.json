@@ -1,0 +1,23 @@
+{
+  "id": "feat.leshy-superstition",
+  "type": "feat",
+  "name": "feat.leshy-superstition.name",
+  "traits": [
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 68,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.leshy-superstition.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "actions": "reaction",
+  "trigger": "feat.leshy-superstition.trigger",
+  "prerequisites": []
+}

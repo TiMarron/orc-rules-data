@@ -1,0 +1,16 @@
+{
+  "id": "trait.earth",
+  "type": "trait",
+  "name": "trait.earth.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 455,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "trait.earth.text",
+  "editNote": "A planar description the structured source merges in from another book was removed; the book prints only the trait definition."
+}

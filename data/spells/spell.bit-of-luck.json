@@ -1,0 +1,32 @@
+{
+  "id": "spell.bit-of-luck",
+  "type": "spell",
+  "name": "spell.bit-of-luck.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "fortune",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 376,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.bit-of-luck.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.bit-of-luck.range",
+  "targets": "spell.bit-of-luck.targets",
+  "duration": "spell.bit-of-luck.duration"
+}

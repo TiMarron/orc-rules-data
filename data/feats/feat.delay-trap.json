@@ -1,0 +1,23 @@
+{
+  "id": "feat.delay-trap",
+  "type": "feat",
+  "name": "feat.delay-trap.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 173,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.delay-trap.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.delay-trap.trigger",
+  "prerequisites": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "spell.divine-wrath",
+  "type": "spell",
+  "name": "spell.divine-wrath.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "sanctified",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 326,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.divine-wrath.text",
+  "rank": 4,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.divine-wrath.range",
+  "area": "spell.divine-wrath.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.divine-wrath.heightened.0"
+    }
+  ]
+}

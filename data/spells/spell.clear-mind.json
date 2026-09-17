@@ -1,0 +1,45 @@
+{
+  "id": "spell.clear-mind",
+  "type": "spell",
+  "name": "spell.clear-mind.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 320,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.clear-mind.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.clear-mind.range",
+  "targets": "spell.clear-mind.targets",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.clear-mind.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.clear-mind.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.clear-mind.heightened.2"
+    }
+  ]
+}

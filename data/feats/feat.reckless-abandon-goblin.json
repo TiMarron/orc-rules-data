@@ -1,0 +1,24 @@
+{
+  "id": "feat.reckless-abandon-goblin",
+  "type": "feat",
+  "name": "feat.reckless-abandon-goblin.name",
+  "traits": [
+    "fortune",
+    "goblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 57,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reckless-abandon-goblin.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.goblin",
+  "actions": "free",
+  "frequency": "feat.reckless-abandon-goblin.frequency",
+  "prerequisites": []
+}

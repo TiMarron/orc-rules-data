@@ -1,0 +1,27 @@
+{
+  "id": "feat.quiet-allies",
+  "type": "feat",
+  "name": "feat.quiet-allies.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.quiet-allies.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "expert"
+    }
+  ]
+}

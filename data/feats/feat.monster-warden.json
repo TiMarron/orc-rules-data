@@ -1,0 +1,26 @@
+{
+  "id": "feat.monster-warden",
+  "type": "feat",
+  "name": "feat.monster-warden.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 159,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.monster-warden.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.monster-hunter"
+    }
+  ]
+}

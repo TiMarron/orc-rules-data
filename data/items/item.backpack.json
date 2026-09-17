@@ -1,0 +1,19 @@
+{
+  "id": "item.backpack",
+  "type": "item",
+  "name": "item.backpack.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 287,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.backpack.text",
+  "level": 0,
+  "priceCp": 10,
+  "bulk": "0",
+  "category": "gear"
+}

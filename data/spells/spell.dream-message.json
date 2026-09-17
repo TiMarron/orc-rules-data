@@ -1,0 +1,37 @@
+{
+  "id": "spell.dream-message",
+  "type": "spell",
+  "name": "spell.dream-message.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 326,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dream-message.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.dream-message.cast-time"
+  },
+  "range": "spell.dream-message.range",
+  "targets": "spell.dream-message.targets",
+  "duration": "spell.dream-message.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.dream-message.heightened.0"
+    }
+  ]
+}

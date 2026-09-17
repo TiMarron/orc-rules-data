@@ -1,0 +1,21 @@
+{
+  "id": "feat.irrepressible",
+  "type": "feat",
+  "name": "feat.irrepressible.name",
+  "traits": [
+    "halfling"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 61,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.irrepressible.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.halfling",
+  "prerequisites": []
+}

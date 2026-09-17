@@ -1,0 +1,19 @@
+{
+  "id": "action.sense-motive",
+  "type": "action",
+  "name": "action.sense-motive.name",
+  "traits": [
+    "concentrate",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 417,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.sense-motive.text",
+  "actions": "1"
+}

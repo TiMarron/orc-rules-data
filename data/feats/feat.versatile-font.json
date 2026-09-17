@@ -1,0 +1,31 @@
+{
+  "id": "feat.versatile-font",
+  "type": "feat",
+  "name": "feat.versatile-font.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 115,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.versatile-font.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.versatile-font.prereq.0"
+    },
+    {
+      "kind": "text",
+      "key": "feat.versatile-font.prereq.1"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.secondary-detonation-array",
+  "type": "feat",
+  "name": "feat.secondary-detonation-array.name",
+  "traits": [
+    "manipulate",
+    "spellshape",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 204,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.secondary-detonation-array.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.wizard",
+  "actions": "1",
+  "prerequisites": []
+}

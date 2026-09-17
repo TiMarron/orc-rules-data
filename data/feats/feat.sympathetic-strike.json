@@ -1,0 +1,28 @@
+{
+  "id": "feat.sympathetic-strike",
+  "type": "feat",
+  "name": "feat.sympathetic-strike.name",
+  "traits": [
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 187,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sympathetic-strike.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.witch",
+  "actions": "1",
+  "frequency": "feat.sympathetic-strike.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.witchs-armaments"
+    }
+  ]
+}

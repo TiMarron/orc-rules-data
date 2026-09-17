@@ -1,0 +1,18 @@
+{
+  "id": "action.tumble-through",
+  "type": "action",
+  "name": "action.tumble-through.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 233,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.tumble-through.text",
+  "actions": "1"
+}

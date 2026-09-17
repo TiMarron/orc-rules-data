@@ -1,0 +1,24 @@
+{
+  "id": "feat.assisting-shot",
+  "type": "feat",
+  "name": "feat.assisting-shot.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 141,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.assisting-shot.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.assisting-shot.requirements",
+  "prerequisites": []
+}

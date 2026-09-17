@@ -1,0 +1,35 @@
+{
+  "id": "spell.appearance-of-wealth",
+  "type": "spell",
+  "name": "spell.appearance-of-wealth.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 381,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.appearance-of-wealth.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.appearance-of-wealth.range",
+  "area": "spell.appearance-of-wealth.area",
+  "duration": "spell.appearance-of-wealth.duration",
+  "defense": {
+    "save": "will"
+  }
+}

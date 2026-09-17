@@ -1,0 +1,28 @@
+{
+  "id": "item.shield-bash",
+  "type": "item",
+  "name": "item.shield-bash.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.shield-bash.text",
+  "level": 0,
+  "bulk": "0",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "shield",
+    "damage": {
+      "dice": "1d4",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

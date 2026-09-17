@@ -1,0 +1,19 @@
+{
+  "id": "action.disarm",
+  "type": "action",
+  "name": "action.disarm.name",
+  "traits": [
+    "attack"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 236,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.disarm.text",
+  "actions": "1",
+  "requirements": "action.disarm.requirements"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "item.gnome-flickmace",
+  "type": "item",
+  "name": "item.gnome-flickmace.name",
+  "traits": [
+    "gnome",
+    "reach",
+    "sweep"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 280,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.gnome-flickmace.text",
+  "level": 0,
+  "priceCp": 300,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "advanced",
+    "hands": "1",
+    "group": "flail",
+    "damage": {
+      "dice": "1d6",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

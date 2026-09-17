@@ -1,0 +1,15 @@
+{
+  "id": "trait.witch",
+  "type": "trait",
+  "name": "trait.witch.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 463,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.witch.text"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "item.grappling-hook",
+  "type": "item",
+  "name": "item.grappling-hook.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 288,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.grappling-hook.text",
+  "level": 0,
+  "priceCp": 10,
+  "bulk": "L",
+  "category": "gear"
+}

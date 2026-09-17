@@ -1,0 +1,19 @@
+{
+  "id": "item.caltrops",
+  "type": "item",
+  "name": "item.caltrops.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 287,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.caltrops.text",
+  "level": 0,
+  "priceCp": 30,
+  "bulk": "L",
+  "category": "gear"
+}

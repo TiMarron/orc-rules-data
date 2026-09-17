@@ -1,0 +1,21 @@
+{
+  "id": "action.request",
+  "type": "action",
+  "name": "action.request.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "linguistic",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.request.text",
+  "actions": "1"
+}

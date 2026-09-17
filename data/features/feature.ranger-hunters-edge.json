@@ -1,0 +1,17 @@
+{
+  "id": "feature.ranger-hunters-edge",
+  "type": "feature",
+  "name": "feature.ranger-hunters-edge.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 152,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.ranger-hunters-edge.text",
+  "class": "class.ranger",
+  "level": 1
+}

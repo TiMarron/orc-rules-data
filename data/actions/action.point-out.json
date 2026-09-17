@@ -1,0 +1,21 @@
+{
+  "id": "action.point-out",
+  "type": "action",
+  "name": "action.point-out.name",
+  "traits": [
+    "auditory",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 419,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.point-out.text",
+  "actions": "1",
+  "requirements": "action.point-out.requirements"
+}

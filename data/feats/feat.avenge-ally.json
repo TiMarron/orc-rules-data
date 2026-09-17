@@ -1,0 +1,25 @@
+{
+  "id": "feat.avenge-ally",
+  "type": "feat",
+  "name": "feat.avenge-ally.name",
+  "traits": [
+    "elf",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 49,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.avenge-ally.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "actions": "1",
+  "requirements": "feat.avenge-ally.requirements",
+  "frequency": "feat.avenge-ally.frequency",
+  "prerequisites": []
+}

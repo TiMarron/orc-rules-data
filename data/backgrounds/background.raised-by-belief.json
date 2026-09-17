@@ -1,0 +1,29 @@
+{
+  "id": "background.raised-by-belief",
+  "type": "background",
+  "name": "background.raised-by-belief.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "background.raised-by-belief.text",
+  "boosts": [
+    "free",
+    "free"
+  ],
+  "lore": "background.raised-by-belief.lore",
+  "skills": [],
+  "choices": [
+    {
+      "count": 1,
+      "text": "background.raised-by-belief.skill-choice.0"
+    }
+  ],
+  "feat": "feat.assurance",
+  "editNote": "Reserved Material removed: the example Lore subcategory that named a deity replaced with a generic description; accepted: the book (p.88) makes this background's attribute boost, trained skill, and Lore subcategory ALL depend on which deity the character reveres (their Divine Attribute and Divine Skill) -- there is no fixed value to fill in until that choice is made at character creation, which is exactly why boosts is free/free and skills is empty rather than a specific pick. The record's own text and lore field spell out the deity-dependent rule in full; the schema has no notion of a deity-conditional boost or skill, so this is the correct, complete representation of what the book actually specifies."
+}

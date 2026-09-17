@@ -1,0 +1,18 @@
+{
+  "id": "action.earn-income",
+  "type": "action",
+  "name": "action.earn-income.name",
+  "traits": [
+    "downtime"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 228,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.earn-income.text",
+  "editNote": "Reserved Material removed: a proper name in an example replaced with a generic descriptor. A table printed in the book is omitted; the dataset markup has no table support."
+}

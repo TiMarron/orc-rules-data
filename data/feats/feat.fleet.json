@@ -1,0 +1,20 @@
+{
+  "id": "feat.fleet",
+  "type": "feat",
+  "name": "feat.fleet.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fleet.text",
+  "level": 1,
+  "category": "general",
+  "prerequisites": []
+}

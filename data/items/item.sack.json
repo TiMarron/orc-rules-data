@@ -1,0 +1,19 @@
+{
+  "id": "item.sack",
+  "type": "item",
+  "name": "item.sack.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.sack.text",
+  "level": 0,
+  "priceCp": 1,
+  "bulk": "L",
+  "category": "gear"
+}

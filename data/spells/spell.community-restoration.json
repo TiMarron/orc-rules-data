@@ -1,0 +1,29 @@
+{
+  "id": "spell.community-restoration",
+  "type": "spell",
+  "name": "spell.community-restoration.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "healing",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 388,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.community-restoration.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.community-restoration.trigger"
+}

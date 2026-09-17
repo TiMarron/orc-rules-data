@@ -1,0 +1,37 @@
+{
+  "id": "spell.hydraulic-push",
+  "type": "spell",
+  "name": "spell.hydraulic-push.name",
+  "traits": [
+    "attack",
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 336,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hydraulic-push.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.hydraulic-push.range",
+  "targets": "spell.hydraulic-push.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.hydraulic-push.heightened.0"
+    }
+  ]
+}

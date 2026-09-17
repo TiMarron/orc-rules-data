@@ -1,0 +1,16 @@
+{
+  "id": "heritage.rock-dwarf",
+  "type": "heritage",
+  "name": "heritage.rock-dwarf.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 43,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.rock-dwarf.text",
+  "ancestry": "ancestry.dwarf"
+}

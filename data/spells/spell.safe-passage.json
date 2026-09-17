@@ -1,0 +1,40 @@
+{
+  "id": "spell.safe-passage",
+  "type": "spell",
+  "name": "spell.safe-passage.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 355,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.safe-passage.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.safe-passage.range",
+  "area": "spell.safe-passage.area",
+  "duration": "spell.safe-passage.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.safe-passage.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.safe-passage.heightened.1"
+    }
+  ]
+}

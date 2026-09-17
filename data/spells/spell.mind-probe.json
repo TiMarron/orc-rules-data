@@ -1,0 +1,34 @@
+{
+  "id": "spell.mind-probe",
+  "type": "spell",
+  "name": "spell.mind-probe.name",
+  "traits": [
+    "concentrate",
+    "linguistic",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 343,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mind-probe.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.mind-probe.cast-time"
+  },
+  "range": "spell.mind-probe.range",
+  "targets": "spell.mind-probe.targets",
+  "duration": "spell.mind-probe.duration",
+  "defense": {
+    "save": "will"
+  }
+}

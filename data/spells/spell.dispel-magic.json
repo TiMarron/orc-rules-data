@@ -1,0 +1,30 @@
+{
+  "id": "spell.dispel-magic",
+  "type": "spell",
+  "name": "spell.dispel-magic.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 325,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dispel-magic.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.dispel-magic.range",
+  "targets": "spell.dispel-magic.targets"
+}

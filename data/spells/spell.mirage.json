@@ -1,0 +1,37 @@
+{
+  "id": "spell.mirage",
+  "type": "spell",
+  "name": "spell.mirage.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 344,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mirage.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.mirage.cast-time"
+  },
+  "range": "spell.mirage.range",
+  "area": "spell.mirage.area",
+  "duration": "spell.mirage.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.mirage.heightened.0"
+    }
+  ]
+}

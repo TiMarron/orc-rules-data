@@ -1,0 +1,17 @@
+{
+  "id": "feature.druid-druidic-order",
+  "type": "feature",
+  "name": "feature.druid-druidic-order.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 123,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.druid-druidic-order.text",
+  "class": "class.druid",
+  "level": 1
+}

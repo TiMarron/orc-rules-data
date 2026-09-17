@@ -1,0 +1,17 @@
+{
+  "id": "feature.witch-will-of-the-pupil",
+  "type": "feature",
+  "name": "feature.witch-will-of-the-pupil.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 178,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.witch-will-of-the-pupil.text",
+  "class": "class.witch",
+  "level": 17
+}

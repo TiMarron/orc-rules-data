@@ -1,0 +1,27 @@
+{
+  "id": "feat.sneak-adept",
+  "type": "feat",
+  "name": "feat.sneak-adept.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 175,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sneak-adept.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "master"
+    }
+  ]
+}

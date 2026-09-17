@@ -1,0 +1,34 @@
+{
+  "id": "spell.spellwrack",
+  "type": "spell",
+  "name": "spell.spellwrack.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "force",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 358,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spellwrack.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.spellwrack.range",
+  "targets": "spell.spellwrack.targets",
+  "defense": {
+    "save": "will"
+  }
+}

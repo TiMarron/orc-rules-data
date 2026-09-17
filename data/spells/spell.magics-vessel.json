@@ -1,0 +1,30 @@
+{
+  "id": "spell.magics-vessel",
+  "type": "spell",
+  "name": "spell.magics-vessel.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 376,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.magics-vessel.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.magics-vessel.range",
+  "targets": "spell.magics-vessel.targets",
+  "duration": "spell.magics-vessel.duration"
+}

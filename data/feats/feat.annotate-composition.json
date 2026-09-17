@@ -1,0 +1,23 @@
+{
+  "id": "feat.annotate-composition",
+  "type": "feat",
+  "name": "feat.annotate-composition.name",
+  "traits": [
+    "bard",
+    "exploration",
+    "linguistic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.annotate-composition.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.archwizards-might",
+  "type": "feat",
+  "name": "feat.archwizards-might.name",
+  "traits": [
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 205,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.archwizards-might.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.wizard",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.archwizards-might.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

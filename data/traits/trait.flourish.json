@@ -2,10 +2,15 @@
   "id": "trait.flourish",
   "type": "trait",
   "name": "trait.flourish.name",
-  "text": "trait.flourish.text",
   "traits": [],
   "rarity": "common",
-  "source": { "book": "gm-core", "page": 329, "revision": "2023-first" },
+  "source": {
+    "book": "player-core",
+    "page": 139,
+    "revision": "2023-first"
+  },
   "review": "human",
-  "edited": false
+  "edited": true,
+  "text": "trait.flourish.text",
+  "editNote": "the book's wording supersedes the the companion book glossary entry the dataset was seeded with."
 }

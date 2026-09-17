@@ -1,0 +1,30 @@
+{
+  "id": "spell.pinpoint",
+  "type": "spell",
+  "name": "spell.pinpoint.name",
+  "traits": [
+    "concentrate",
+    "detection",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 349,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.pinpoint.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.pinpoint.cast-time"
+  },
+  "range": "spell.pinpoint.range",
+  "targets": "spell.pinpoint.targets"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.inspire-imitation",
+  "type": "feat",
+  "name": "feat.inspire-imitation.name",
+  "traits": [
+    "aiuvarin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 83,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.inspire-imitation.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

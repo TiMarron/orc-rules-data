@@ -1,0 +1,16 @@
+{
+  "id": "condition.wounded",
+  "type": "condition",
+  "name": "condition.wounded.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 447,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.wounded.text",
+  "valued": true
+}

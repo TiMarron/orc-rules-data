@@ -1,0 +1,34 @@
+{
+  "id": "feat.lunging-stance",
+  "type": "feat",
+  "name": "feat.lunging-stance.name",
+  "traits": [
+    "fighter",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 149,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.lunging-stance.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.lunging-stance.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.lunging-stance.prereq.0"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.lunge"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

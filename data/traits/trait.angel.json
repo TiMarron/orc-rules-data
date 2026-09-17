@@ -1,0 +1,16 @@
+{
+  "id": "trait.angel",
+  "type": "trait",
+  "name": "trait.angel.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 452,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "trait.angel.text",
+  "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor."
+}

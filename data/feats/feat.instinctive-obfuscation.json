@@ -1,0 +1,32 @@
+{
+  "id": "feat.instinctive-obfuscation",
+  "type": "feat",
+  "name": "feat.instinctive-obfuscation.name",
+  "traits": [
+    "gnome",
+    "illusion",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 53,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.instinctive-obfuscation.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "actions": "reaction",
+  "trigger": "feat.instinctive-obfuscation.trigger",
+  "frequency": "feat.instinctive-obfuscation.frequency",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.instinctive-obfuscation.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.distracting-shot",
+  "type": "feat",
+  "name": "feat.distracting-shot.name",
+  "traits": [
+    "ranger"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 161,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.distracting-shot.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.ranger",
+  "prerequisites": []
+}

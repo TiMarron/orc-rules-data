@@ -1,0 +1,34 @@
+{
+  "id": "spell.enduring-might",
+  "type": "spell",
+  "name": "spell.enduring-might.name",
+  "traits": [
+    "cleric",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 377,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.enduring-might.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.enduring-might.heightened.0"
+    }
+  ],
+  "trigger": "spell.enduring-might.trigger"
+}

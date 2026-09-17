@@ -1,0 +1,30 @@
+{
+  "id": "spell.shifting-form",
+  "type": "spell",
+  "name": "spell.shifting-form.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "morph",
+    "wizard"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 388,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.shifting-form.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "arcane"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.shifting-form.duration",
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

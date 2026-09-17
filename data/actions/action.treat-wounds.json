@@ -1,0 +1,21 @@
+{
+  "id": "action.treat-wounds",
+  "type": "action",
+  "name": "action.treat-wounds.name",
+  "traits": [
+    "exploration",
+    "healing",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 242,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "action.treat-wounds.text",
+  "requirements": "action.treat-wounds.requirements",
+  "editNote": "A table printed in the book is omitted; the dataset markup has no table support."
+}

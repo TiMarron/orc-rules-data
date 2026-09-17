@@ -1,0 +1,35 @@
+{
+  "id": "spell.breath-of-life",
+  "type": "spell",
+  "name": "spell.breath-of-life.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.breath-of-life.text",
+  "rank": 5,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.breath-of-life.range",
+  "targets": "spell.breath-of-life.targets",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.breath-of-life.heightened.0"
+    }
+  ],
+  "trigger": "spell.breath-of-life.trigger"
+}

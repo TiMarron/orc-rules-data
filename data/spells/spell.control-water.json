@@ -1,0 +1,33 @@
+{
+  "id": "spell.control-water",
+  "type": "spell",
+  "name": "spell.control-water.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 321,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.control-water.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.control-water.range",
+  "area": "spell.control-water.area",
+  "duration": "spell.control-water.duration",
+  "defense": {
+    "save": "fortitude"
+  }
+}

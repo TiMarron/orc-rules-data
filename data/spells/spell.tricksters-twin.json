@@ -1,0 +1,36 @@
+{
+  "id": "spell.tricksters-twin",
+  "type": "spell",
+  "name": "spell.tricksters-twin.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "illusion",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 380,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tricksters-twin.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.tricksters-twin.range",
+  "targets": "spell.tricksters-twin.targets",
+  "duration": "spell.tricksters-twin.duration",
+  "defense": {
+    "save": "will"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "spell.peaceful-rest",
+  "type": "spell",
+  "name": "spell.peaceful-rest.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 348,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.peaceful-rest.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.peaceful-rest.range",
+  "targets": "spell.peaceful-rest.targets",
+  "duration": "spell.peaceful-rest.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.peaceful-rest.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "item.mug",
+  "type": "item",
+  "name": "item.mug.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 291,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "level": 0,
+  "priceCp": 1,
+  "bulk": "0",
+  "category": "gear",
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

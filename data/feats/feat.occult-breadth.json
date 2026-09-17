@@ -1,0 +1,25 @@
+{
+  "id": "feat.occult-breadth",
+  "type": "feat",
+  "name": "feat.occult-breadth.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.occult-breadth.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-bard-spellcasting"
+    }
+  ]
+}

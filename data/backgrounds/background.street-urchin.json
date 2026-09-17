@@ -1,0 +1,28 @@
+{
+  "id": "background.street-urchin",
+  "type": "background",
+  "name": "background.street-urchin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "background.street-urchin.text",
+  "boosts": [
+    [
+      "dex",
+      "con"
+    ],
+    "free"
+  ],
+  "lore": "background.street-urchin.lore",
+  "skills": [
+    "skill.thievery"
+  ],
+  "feat": "feat.pickpocket",
+  "editNote": "Reserved Material removed: the two example city Lore skills replaced with a generic description; the two example city Lore skills replaced with a generic description."
+}

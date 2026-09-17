@@ -1,0 +1,35 @@
+{
+  "id": "spell.revealing-light",
+  "type": "spell",
+  "name": "spell.revealing-light.name",
+  "traits": [
+    "concentrate",
+    "light",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 353,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.revealing-light.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.revealing-light.range",
+  "area": "spell.revealing-light.area",
+  "duration": "spell.revealing-light.duration",
+  "defense": {
+    "save": "reflex"
+  }
+}

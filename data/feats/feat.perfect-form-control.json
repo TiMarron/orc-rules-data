@@ -1,0 +1,31 @@
+{
+  "id": "feat.perfect-form-control",
+  "type": "feat",
+  "name": "feat.perfect-form-control.name",
+  "traits": [
+    "druid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 135,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.perfect-form-control.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.druid",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.form-control"
+    },
+    {
+      "kind": "attribute",
+      "attribute": "str",
+      "min": 4
+    }
+  ]
+}

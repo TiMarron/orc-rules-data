@@ -1,0 +1,23 @@
+{
+  "id": "feat.healing-transformation",
+  "type": "feat",
+  "name": "feat.healing-transformation.name",
+  "traits": [
+    "druid",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 133,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.healing-transformation.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.druid",
+  "actions": "1",
+  "prerequisites": []
+}

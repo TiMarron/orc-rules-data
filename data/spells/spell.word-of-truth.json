@@ -1,0 +1,28 @@
+{
+  "id": "spell.word-of-truth",
+  "type": "spell",
+  "name": "spell.word-of-truth.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 380,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.word-of-truth.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.word-of-truth.duration"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.tumble-behind-rogue",
+  "type": "feat",
+  "name": "feat.tumble-behind-rogue.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 170,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tumble-behind-rogue.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": []
+}

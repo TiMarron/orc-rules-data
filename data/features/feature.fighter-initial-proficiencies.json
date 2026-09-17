@@ -1,0 +1,17 @@
+{
+  "id": "feature.fighter-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.fighter-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 137,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.fighter-initial-proficiencies.text",
+  "class": "class.fighter",
+  "level": 1
+}

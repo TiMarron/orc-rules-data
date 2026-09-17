@@ -1,0 +1,27 @@
+{
+  "id": "background.artisan",
+  "type": "background",
+  "name": "background.artisan.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 84,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.artisan.text",
+  "boosts": [
+    [
+      "str",
+      "int"
+    ],
+    "free"
+  ],
+  "lore": "background.artisan.lore",
+  "skills": [
+    "skill.crafting"
+  ],
+  "feat": "feat.specialty-crafting"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "trait.fey",
+  "type": "trait",
+  "name": "trait.fey.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 456,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "trait.fey.text",
+  "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor."
+}

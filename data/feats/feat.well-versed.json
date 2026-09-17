@@ -1,0 +1,21 @@
+{
+  "id": "feat.well-versed",
+  "type": "feat",
+  "name": "feat.well-versed.name",
+  "traits": [
+    "bard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.well-versed.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.bard",
+  "prerequisites": []
+}

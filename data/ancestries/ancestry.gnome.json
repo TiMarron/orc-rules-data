@@ -1,0 +1,42 @@
+{
+  "id": "ancestry.gnome",
+  "type": "ancestry",
+  "name": "ancestry.gnome.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 50,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "ancestry.gnome.text",
+  "hp": 8,
+  "size": "small",
+  "speed": 25,
+  "boosts": [
+    "con",
+    "cha",
+    "free"
+  ],
+  "flaws": [
+    "str"
+  ],
+  "languages": [
+    "common",
+    "fey",
+    "gnomish"
+  ],
+  "heritages": [
+    "heritage.chameleon-gnome",
+    "heritage.fey-touched-gnome",
+    "heritage.sensate-gnome",
+    "heritage.umbral-gnome",
+    "heritage.wellspring-gnome"
+  ],
+  "editNote": "Reserved"
+}

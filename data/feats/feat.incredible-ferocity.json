@@ -1,0 +1,26 @@
+{
+  "id": "feat.incredible-ferocity",
+  "type": "feat",
+  "name": "feat.incredible-ferocity.name",
+  "traits": [
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 73,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.incredible-ferocity.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.orc",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.orc-ferocity"
+    }
+  ]
+}

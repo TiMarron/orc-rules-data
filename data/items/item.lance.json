@@ -1,0 +1,33 @@
+{
+  "id": "item.lance",
+  "type": "item",
+  "name": "item.lance.name",
+  "traits": [
+    "deadly-d8",
+    "jousting-1d6",
+    "reach"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "item.lance.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "spear",
+    "damage": {
+      "dice": "1d8",
+      "type": "piercing"
+    }
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

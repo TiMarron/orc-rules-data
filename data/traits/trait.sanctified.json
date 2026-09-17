@@ -1,0 +1,15 @@
+{
+  "id": "trait.sanctified",
+  "type": "trait",
+  "name": "trait.sanctified.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 113,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.sanctified.text"
+}

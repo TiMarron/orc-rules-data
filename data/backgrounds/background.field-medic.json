@@ -1,0 +1,27 @@
+{
+  "id": "background.field-medic",
+  "type": "background",
+  "name": "background.field-medic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.field-medic.text",
+  "boosts": [
+    [
+      "con",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.field-medic.lore",
+  "skills": [
+    "skill.medicine"
+  ],
+  "feat": "feat.battle-medicine"
+}

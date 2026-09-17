@@ -1,0 +1,24 @@
+{
+  "id": "feat.divine-infusion",
+  "type": "feat",
+  "name": "feat.divine-infusion.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 116,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-infusion.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.cleric",
+  "actions": "1",
+  "prerequisites": []
+}

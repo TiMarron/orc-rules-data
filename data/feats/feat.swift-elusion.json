@@ -1,0 +1,29 @@
+{
+  "id": "feat.swift-elusion",
+  "type": "feat",
+  "name": "feat.swift-elusion.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 177,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.swift-elusion.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "reaction",
+  "trigger": "feat.swift-elusion.trigger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "legendary"
+    }
+  ]
+}

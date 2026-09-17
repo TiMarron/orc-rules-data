@@ -1,0 +1,21 @@
+{
+  "id": "feat.animal-accomplice",
+  "type": "feat",
+  "name": "feat.animal-accomplice.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 52,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.animal-accomplice.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "prerequisites": []
+}

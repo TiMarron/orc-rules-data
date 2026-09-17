@@ -1,0 +1,41 @@
+{
+  "id": "spell.vampiric-feast",
+  "type": "spell",
+  "name": "spell.vampiric-feast.name",
+  "traits": [
+    "concentrate",
+    "death",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 365,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vampiric-feast.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.vampiric-feast.range",
+  "targets": "spell.vampiric-feast.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vampiric-feast.heightened.0"
+    }
+  ]
+}

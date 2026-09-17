@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-domain",
+  "type": "feat",
+  "name": "feat.advanced-domain.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-domain.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.domain-initiate"
+    }
+  ]
+}

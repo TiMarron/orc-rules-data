@@ -1,0 +1,23 @@
+{
+  "id": "feat.twin-feint",
+  "type": "feat",
+  "name": "feat.twin-feint.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 170,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.twin-feint.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.rogue",
+  "actions": "2",
+  "requirements": "feat.twin-feint.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "spell.raise-dead",
+  "type": "spell",
+  "name": "spell.raise-dead.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 352,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": true,
+  "text": "spell.raise-dead.text",
+  "rank": 6,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "time": "spell.raise-dead.cast-time"
+  },
+  "range": "spell.raise-dead.range",
+  "targets": "spell.raise-dead.targets",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.raise-dead.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.raise-dead.heightened.1"
+    },
+    {
+      "level": "9",
+      "text": "spell.raise-dead.heightened.2"
+    },
+    {
+      "level": "10",
+      "text": "spell.raise-dead.heightened.3"
+    }
+  ],
+  "cost": "spell.raise-dead.cost",
+  "editNote": "Reserved"
+}

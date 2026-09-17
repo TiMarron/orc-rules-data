@@ -1,0 +1,32 @@
+{
+  "id": "feat.quickened-casting",
+  "type": "feat",
+  "name": "feat.quickened-casting.name",
+  "traits": [
+    "bard",
+    "concentrate",
+    "spellshape",
+    "witch",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.quickened-casting.text",
+  "level": 10,
+  "category": "class",
+  "class": [
+    "class.bard",
+    "class.witch",
+    "class.wizard"
+  ],
+  "actions": "free",
+  "frequency": "feat.quickened-casting.frequency",
+  "prerequisites": [],
+  "editNote": "Reviewed as a group: the dataset markup carries no tables or images, the dropped blocks are the structured source's own additions or a trailing reference section, a prerequisite the book states in prose keeps the schema's text form, a reference to a class from a book this import does not cover returns when that book is imported, and an item with no prose in the book genuinely prints only a stat line. Every omission is recorded on the record itself."
+}

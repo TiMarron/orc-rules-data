@@ -1,0 +1,27 @@
+{
+  "id": "feat.impressive-performance",
+  "type": "feat",
+  "name": "feat.impressive-performance.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impressive-performance.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.performance",
+      "rank": "trained"
+    }
+  ]
+}

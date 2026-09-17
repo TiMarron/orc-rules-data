@@ -1,0 +1,25 @@
+{
+  "id": "feat.sneak-attacker",
+  "type": "feat",
+  "name": "feat.sneak-attacker.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 221,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sneak-attacker.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.rogue-dedication"
+    }
+  ]
+}

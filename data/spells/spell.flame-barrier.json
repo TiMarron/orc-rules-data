@@ -1,0 +1,36 @@
+{
+  "id": "spell.flame-barrier",
+  "type": "spell",
+  "name": "spell.flame-barrier.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 375,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.flame-barrier.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.flame-barrier.range",
+  "targets": "spell.flame-barrier.targets",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.flame-barrier.heightened.0"
+    }
+  ],
+  "trigger": "spell.flame-barrier.trigger"
+}

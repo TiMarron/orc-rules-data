@@ -1,0 +1,17 @@
+{
+  "id": "feature.rogue-evasive-reflexes",
+  "type": "feature",
+  "name": "feature.rogue-evasive-reflexes.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 164,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.rogue-evasive-reflexes.text",
+  "class": "class.rogue",
+  "level": 7
+}

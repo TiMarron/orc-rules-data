@@ -1,0 +1,24 @@
+{
+  "id": "feat.combat-grab",
+  "type": "feat",
+  "name": "feat.combat-grab.name",
+  "traits": [
+    "fighter",
+    "press"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 141,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.combat-grab.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.fighter",
+  "actions": "1",
+  "requirements": "feat.combat-grab.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "feat.courageous-onslaught",
+  "type": "feat",
+  "name": "feat.courageous-onslaught.name",
+  "traits": [
+    "auditory",
+    "bard",
+    "concentrate",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.courageous-onslaught.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.bard",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.courageous-advance"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.courageous-assault"
+    }
+  ]
+}

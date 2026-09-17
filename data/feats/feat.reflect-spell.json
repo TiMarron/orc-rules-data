@@ -1,0 +1,30 @@
+{
+  "id": "feat.reflect-spell",
+  "type": "feat",
+  "name": "feat.reflect-spell.name",
+  "traits": [
+    "witch",
+    "wizard"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 190,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reflect-spell.text",
+  "level": 14,
+  "category": "class",
+  "class": [
+    "class.witch",
+    "class.wizard"
+  ],
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.counterspell"
+    }
+  ]
+}

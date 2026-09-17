@@ -1,0 +1,18 @@
+{
+  "id": "action.perform",
+  "type": "action",
+  "name": "action.perform.name",
+  "traits": [
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 243,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.perform.text",
+  "actions": "1"
+}

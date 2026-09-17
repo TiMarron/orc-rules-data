@@ -1,0 +1,38 @@
+{
+  "id": "spell.downpour",
+  "type": "spell",
+  "name": "spell.downpour.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 381,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.downpour.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.downpour.range",
+  "area": "spell.downpour.area",
+  "duration": "spell.downpour.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.downpour.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.selective-energy",
+  "type": "feat",
+  "name": "feat.selective-energy.name",
+  "traits": [
+    "cleric"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.selective-energy.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.cleric",
+  "prerequisites": []
+}

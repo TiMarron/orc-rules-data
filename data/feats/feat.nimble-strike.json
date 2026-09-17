@@ -1,0 +1,26 @@
+{
+  "id": "feat.nimble-strike",
+  "type": "feat",
+  "name": "feat.nimble-strike.name",
+  "traits": [
+    "rogue"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 175,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.nimble-strike.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.rogue",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.nimble-roll"
+    }
+  ]
+}

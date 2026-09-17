@@ -1,0 +1,19 @@
+{
+  "id": "action.grapple",
+  "type": "action",
+  "name": "action.grapple.name",
+  "traits": [
+    "attack"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 235,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.grapple.text",
+  "actions": "1",
+  "requirements": "action.grapple.requirements"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "spell.embed-message",
+  "type": "spell",
+  "name": "spell.embed-message.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 328,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.embed-message.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.embed-message.range",
+  "targets": "spell.embed-message.targets",
+  "duration": "spell.embed-message.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.embed-message.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.embed-message.heightened.1"
+    }
+  ]
+}

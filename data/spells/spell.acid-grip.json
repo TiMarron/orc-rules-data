@@ -1,0 +1,38 @@
+{
+  "id": "spell.acid-grip",
+  "type": "spell",
+  "name": "spell.acid-grip.name",
+  "traits": [
+    "acid",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.acid-grip.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.acid-grip.range",
+  "targets": "spell.acid-grip.targets",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.acid-grip.heightened.0"
+    }
+  ]
+}

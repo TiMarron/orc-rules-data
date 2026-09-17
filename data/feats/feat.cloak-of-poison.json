@@ -1,0 +1,24 @@
+{
+  "id": "feat.cloak-of-poison",
+  "type": "feat",
+  "name": "feat.cloak-of-poison.name",
+  "traits": [
+    "leshy",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 69,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cloak-of-poison.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.leshy",
+  "actions": "2",
+  "frequency": "feat.cloak-of-poison.frequency",
+  "prerequisites": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.hag",
+  "type": "trait",
+  "name": "trait.hag.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 457,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.hag.text"
+}

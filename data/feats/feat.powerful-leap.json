@@ -1,0 +1,27 @@
+{
+  "id": "feat.powerful-leap",
+  "type": "feat",
+  "name": "feat.powerful-leap.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.powerful-leap.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "expert"
+    }
+  ]
+}

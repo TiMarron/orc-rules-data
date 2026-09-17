@@ -1,0 +1,31 @@
+{
+  "id": "spell.rallying-anthem",
+  "type": "spell",
+  "name": "spell.rallying-anthem.name",
+  "traits": [
+    "bard",
+    "cantrip",
+    "composition",
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 371,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.rallying-anthem.text",
+  "rank": 2,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.rallying-anthem.area",
+  "duration": "spell.rallying-anthem.duration"
+}

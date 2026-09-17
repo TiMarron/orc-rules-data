@@ -1,0 +1,27 @@
+{
+  "id": "background.criminal",
+  "type": "background",
+  "name": "background.criminal.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 85,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.criminal.text",
+  "boosts": [
+    [
+      "dex",
+      "int"
+    ],
+    "free"
+  ],
+  "lore": "background.criminal.lore",
+  "skills": [
+    "skill.stealth"
+  ],
+  "feat": "feat.experienced-smuggler"
+}

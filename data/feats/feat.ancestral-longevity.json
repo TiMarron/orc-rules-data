@@ -1,0 +1,27 @@
+{
+  "id": "feat.ancestral-longevity",
+  "type": "feat",
+  "name": "feat.ancestral-longevity.name",
+  "traits": [
+    "elf"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 48,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.ancestral-longevity.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.elf",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.ancestral-longevity.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.cautious-curiosity",
+  "type": "feat",
+  "name": "feat.cautious-curiosity.name",
+  "traits": [
+    "gnome"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 53,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.cautious-curiosity.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.gnome",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.cautious-curiosity.prereq.0"
+    }
+  ],
+  "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
+}

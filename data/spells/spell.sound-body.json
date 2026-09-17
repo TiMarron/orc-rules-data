@@ -1,0 +1,45 @@
+{
+  "id": "spell.sound-body",
+  "type": "spell",
+  "name": "spell.sound-body.name",
+  "traits": [
+    "concentrate",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 357,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sound-body.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.sound-body.range",
+  "targets": "spell.sound-body.targets",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.sound-body.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.sound-body.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "spell.sound-body.heightened.2"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "spell.unfathomable-song",
+  "type": "spell",
+  "name": "spell.unfathomable-song.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "emotion",
+    "fear",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 364,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.unfathomable-song.text",
+  "rank": 9,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.unfathomable-song.range",
+  "targets": "spell.unfathomable-song.targets",
+  "duration": "spell.unfathomable-song.duration",
+  "defense": {
+    "save": "will"
+  },
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

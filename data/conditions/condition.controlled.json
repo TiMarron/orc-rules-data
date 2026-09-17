@@ -1,0 +1,16 @@
+{
+  "id": "condition.controlled",
+  "type": "condition",
+  "name": "condition.controlled.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 442,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "condition.controlled.text",
+  "valued": false
+}

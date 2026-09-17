@@ -1,0 +1,18 @@
+{
+  "id": "action.force-open",
+  "type": "action",
+  "name": "action.force-open.name",
+  "traits": [
+    "attack"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 234,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.force-open.text",
+  "actions": "1"
+}

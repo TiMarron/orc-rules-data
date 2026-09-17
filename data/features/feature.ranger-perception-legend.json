@@ -1,0 +1,17 @@
+{
+  "id": "feature.ranger-perception-legend",
+  "type": "feature",
+  "name": "feature.ranger-perception-legend.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 152,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.ranger-perception-legend.text",
+  "class": "class.ranger",
+  "level": 15
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.streetwise",
+  "type": "feat",
+  "name": "feat.streetwise.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.streetwise.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "trained"
+    }
+  ]
+}

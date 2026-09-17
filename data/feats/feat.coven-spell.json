@@ -1,0 +1,25 @@
+{
+  "id": "feat.coven-spell",
+  "type": "feat",
+  "name": "feat.coven-spell.name",
+  "traits": [
+    "spellshape",
+    "witch"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 189,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "feat.coven-spell.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.witch",
+  "actions": "reaction",
+  "trigger": "feat.coven-spell.trigger",
+  "prerequisites": [],
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+}

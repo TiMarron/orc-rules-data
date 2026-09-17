@@ -1,0 +1,16 @@
+{
+  "id": "action.boar-charge",
+  "type": "action",
+  "name": "action.boar-charge.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 208,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.boar-charge.text",
+  "actions": "2"
+}

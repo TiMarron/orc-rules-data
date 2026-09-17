@@ -1,0 +1,27 @@
+{
+  "id": "background.acolyte",
+  "type": "background",
+  "name": "background.acolyte.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 84,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.acolyte.text",
+  "boosts": [
+    [
+      "int",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.acolyte.lore",
+  "skills": [
+    "skill.religion"
+  ],
+  "feat": "feat.student-of-the-canon"
+}

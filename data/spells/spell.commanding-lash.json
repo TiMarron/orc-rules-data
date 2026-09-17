@@ -1,0 +1,37 @@
+{
+  "id": "spell.commanding-lash",
+  "type": "spell",
+  "name": "spell.commanding-lash.name",
+  "traits": [
+    "cleric",
+    "concentrate",
+    "focus",
+    "linguistic",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 380,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.commanding-lash.text",
+  "rank": 4,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.commanding-lash.range",
+  "targets": "spell.commanding-lash.targets",
+  "duration": "spell.commanding-lash.duration",
+  "defense": {
+    "save": "will"
+  },
+  "requirements": "spell.commanding-lash.requirements"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "spell.rangers-bramble",
+  "type": "spell",
+  "name": "spell.rangers-bramble.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "plant",
+    "ranger"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 384,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.rangers-bramble.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.rangers-bramble.range",
+  "area": "spell.rangers-bramble.area",
+  "duration": "spell.rangers-bramble.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.rangers-bramble.heightened.0"
+    }
+  ]
+}

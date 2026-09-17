@@ -1,0 +1,17 @@
+{
+  "id": "feature.bard-skill-increases",
+  "type": "feature",
+  "name": "feature.bard-skill-increases.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 94,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.bard-skill-increases.text",
+  "class": "class.bard",
+  "level": 3
+}

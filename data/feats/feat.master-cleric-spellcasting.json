@@ -1,0 +1,30 @@
+{
+  "id": "feat.master-cleric-spellcasting",
+  "type": "feat",
+  "name": "feat.master-cleric-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.master-cleric-spellcasting.text",
+  "level": 18,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.expert-cleric-spellcasting"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.religion",
+      "rank": "legendary"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.detection",
+  "type": "trait",
+  "name": "trait.detection.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 455,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.detection.text"
+}
