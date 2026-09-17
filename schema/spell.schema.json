@@ -17,6 +17,10 @@
           "uniqueItems": true
         },
         "focus": { "type": "boolean" },
+        "traditionsVary": {
+          "type": "boolean",
+          "$comment": "The printed entry has no tradition line because the caster's own choice - a patron, a subclass - fixes the tradition, not the spell itself."
+        },
         "trigger": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "requirements": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "cost": { "$ref": "common.schema.json#/$defs/i18nKey" },

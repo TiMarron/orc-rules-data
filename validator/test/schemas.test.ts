@@ -323,4 +323,24 @@ describe('type schemas', () => {
       issuesFor('feat', record('feat', 'shared-ancestry', { category: 'ancestry', ancestry: ['ancestry.elf', 'ancestry.human'], level: 1 })),
     ).toEqual([]);
   });
+
+  it('accepts an ancestry feat with versatile: true and no "ancestry"', () => {
+    expect(
+      issuesFor('feat', record('feat', 'versatile-feat', { category: 'ancestry', versatile: true, level: 1 })),
+    ).toEqual([]);
+  });
+
+  it('rejects a feat whose "versatile" is not a boolean with exactly one issue', () => {
+    const issues = issuesFor('feat', record('feat', 'bad-versatile', { category: 'ancestry', versatile: 'yes', level: 1 }));
+    expect(issues).toHaveLength(1);
+  });
+
+  it('accepts a spell with traditionsVary: true and no traditions', () => {
+    expect(issuesFor('spell', { ...SPELL_FULL, traditions: undefined, traditionsVary: true })).toEqual([]);
+  });
+
+  it('rejects a spell whose "traditionsVary" is not a boolean with exactly one issue', () => {
+    const issues = issuesFor('spell', { ...SPELL_FULL, traditionsVary: 'yes' });
+    expect(issues).toHaveLength(1);
+  });
 });

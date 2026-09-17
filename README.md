@@ -39,6 +39,8 @@ cost tokens.
   `{1a} {2a} {3a} {r} {f}`.
 - Versatile heritages (belonging to no single ancestry) set `versatile: true`
   instead of `ancestry`.
+- An ancestry feat for a versatile heritage sets `versatile: true` instead of
+  `ancestry`, the same way the heritage itself does.
 - An action without an action cost must carry the exploration or downtime
   trait, or set `variable: true`.
 - A feat that appears on several classes' feat lists sets `class` to an array
@@ -49,6 +51,9 @@ cost tokens.
   described in `proficiencies.skills.choices[].text`.
 - A focus spell may omit `traditions`: its tradition is that of the class
   that granted it, not a property of the spell itself.
+- A spell may set `traditionsVary: true` instead of `traditions` when the
+  book fixes no tradition because the caster's own choice (a patron, a
+  subclass) determines it, e.g. a witch's hexes printed as ordinary cantrips.
 - A spell's `trigger`, `requirements` and `cost` are i18n keys, the same as
   an action's.
 - A weapon trait printed with a parameter (e.g. "deadly d8", "versatile P")

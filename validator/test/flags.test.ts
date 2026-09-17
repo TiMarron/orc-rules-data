@@ -90,6 +90,24 @@ describe('flags check', () => {
     ).toEqual([]);
   });
 
+  it('accepts an ancestry feat with versatile: true and no "ancestry"', () => {
+    expect(
+      featIssuesFor(record('feat', 'x', { category: 'ancestry', level: 1, versatile: true }), 'feat.x.json'),
+    ).toEqual([]);
+  });
+
+  it('rejects an ancestry feat with neither "ancestry" nor versatile: true', () => {
+    expect(
+      featIssuesFor(record('feat', 'x', { category: 'ancestry', level: 1 }), 'feat.x.json'),
+    ).toEqual([{ level: 'error', file: 'data/feats/feat.x.json', message: 'ancestry feat must set "ancestry"' }]);
+  });
+
+  it('accepts an ancestry feat with both "ancestry" and versatile: true', () => {
+    expect(
+      featIssuesFor(record('feat', 'x', { category: 'ancestry', level: 1, ancestry: 'ancestry.elf', versatile: true }), 'feat.x.json'),
+    ).toEqual([]);
+  });
+
   it('rejects a weapon item without a weapon block', () => {
     expect(
       itemIssuesFor(record('item', 'x', { category: 'weapon', level: 0 })),
@@ -199,5 +217,19 @@ describe('flags check', () => {
 
   it('accepts a focus spell that also has traditions', () => {
     expect(spellIssuesFor(record('spell', 'x', { focus: true, traditions: ['primal'] }))).toEqual([]);
+  });
+
+  it('accepts a spell with traditionsVary: true and no traditions', () => {
+    expect(spellIssuesFor(record('spell', 'x', { traditionsVary: true }))).toEqual([]);
+  });
+
+  it('rejects a non-focus spell with neither traditions nor traditionsVary', () => {
+    expect(spellIssuesFor(record('spell', 'x', {}))).toEqual([
+      { level: 'error', file: 'data/spells/spell.x.json', message: 'spell must set "traditions" unless it is a focus spell' },
+    ]);
+  });
+
+  it('accepts a spell that has both traditions and traditionsVary', () => {
+    expect(spellIssuesFor(record('spell', 'x', { traditions: ['occult'], traditionsVary: true }))).toEqual([]);
   });
 });
