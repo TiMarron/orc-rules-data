@@ -114,6 +114,28 @@ describe('type schemas', () => {
     expect(issues[0]).toContain('/weapon/damage/dice must match pattern');
   });
 
+  it('accepts a flat integer weapon damage with no die', () => {
+    const flat = { ...WEAPON, weapon: { ...(WEAPON.weapon as object), damage: { dice: '1', type: 'piercing' } } };
+    expect(issuesFor('item', flat)).toEqual([]);
+  });
+
+  it('rejects a weapon damage dice value that is neither a die nor a flat integer with exactly one issue', () => {
+    const bad = { ...WEAPON, weapon: { ...(WEAPON.weapon as object), damage: { dice: '0', type: 'piercing' } } };
+    const issues = issuesFor('item', bad);
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('/weapon/damage/dice must match pattern');
+  });
+
+  it('accepts an envelope with no "text"', () => {
+    expect(issuesFor('trait', { ...VALID.trait, text: undefined })).toEqual([]);
+  });
+
+  it('rejects an envelope with an empty "text" value with exactly one issue', () => {
+    const issues = issuesFor('trait', { ...VALID.trait, text: '' });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toMatch(/\/text must match pattern/);
+  });
+
   it('rejects an unknown property on a class with exactly one issue naming it', () => {
     const issues = issuesFor('class', { ...VALID.class, bogus: 1 });
     expect(issues).toEqual(['schema: / must NOT have unevaluated properties (bogus)']);
@@ -287,9 +309,25 @@ describe('type schemas', () => {
     expect(issues[0]).toContain('/heightened/0/level must match pattern');
   });
 
-  it('rejects an empty background skills list with exactly one issue', () => {
-    const issues = issuesFor('background', { ...VALID.background, skills: [] });
+  it('rejects a background skills list with more than one entry with exactly one issue', () => {
+    const issues = issuesFor('background', { ...VALID.background, skills: ['skill.intimidation', 'skill.deception'] });
     expect(issues).toHaveLength(1);
+  });
+
+  it('accepts an empty background skills list when choices supply a skill', () => {
+    const withChoice = { ...VALID.background, skills: [], choices: [{ count: 1, from: ['skill.arcana', 'skill.nature', 'skill.occultism', 'skill.religion'] }] };
+    expect(issuesFor('background', withChoice)).toEqual([]);
+  });
+
+  it('accepts a background skills.choices with a described choice', () => {
+    const withChoice = { ...VALID.background, skills: [], choices: [{ text: 'background.raised-by-belief.skill-choice.0' }] };
+    expect(issuesFor('background', withChoice)).toEqual([]);
+  });
+
+  it('accepts a background with empty skills and no choices at the schema level', () => {
+    // The "must grant at least one skill" invariant is a cross-field rule enforced by
+    // flagsCheck (see flags.test.ts), not JSON Schema — mirrors the class/ancestry pattern.
+    expect(issuesFor('background', { ...VALID.background, skills: [] })).toEqual([]);
   });
 
   it('accepts an action with no "actions"', () => {

@@ -11,7 +11,7 @@ export const i18nCheck: Check = (ds) => {
     if (f.record.name !== `${id}.name`) {
       issues.push({ level: 'error', file: f.path, message: `name must be "${id}.name"` });
     }
-    if (f.record.text !== `${id}.text`) {
+    if (f.record.text !== undefined && f.record.text !== `${id}.text`) {
       issues.push({ level: 'error', file: f.path, message: `text must be "${id}.text"` });
     }
     walkStrings(f.record, (s, path) => {

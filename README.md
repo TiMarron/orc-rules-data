@@ -59,6 +59,13 @@ cost tokens.
 - A weapon trait printed with a parameter (e.g. "deadly d8", "versatile P")
   keeps the parameter in its slug (`deadly-d8`, `versatile-p`) and resolves
   to its base trait record (`trait.deadly`, `trait.versatile`).
+- `text` is optional: a record the book prints as a bare stat line (e.g. Bedroll,
+  Chalk) carries no `text` at all rather than an empty one.
+- `weapon.damage.dice` may be a plain positive integer (e.g. `"1"`) instead of
+  `NdM` for a weapon whose damage is a flat number, not a die roll.
+- A background's trained skill may instead be a choice, in the same shape as a
+  class's `proficiencies.skills.choices`; a background must grant at least one
+  skill through `skills` or through `choices`.
 
 ## Versioning
 
