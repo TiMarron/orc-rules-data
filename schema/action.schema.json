@@ -10,6 +10,7 @@
         "type": { "const": "action" },
         "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
         "variable": { "type": "boolean" },
+        "frequency": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "trigger": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "requirements": { "$ref": "common.schema.json#/$defs/i18nKey" }
       }

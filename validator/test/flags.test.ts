@@ -15,6 +15,10 @@ function itemIssuesFor(json: unknown, file = 'item.x.json') {
   return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'items', file, json }] })));
 }
 
+function classIssuesFor(json: unknown, file = 'class.x.json') {
+  return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'classes', file, json }] })));
+}
+
 function ancestryIssuesFor(json: unknown, file = 'ancestry.x.json') {
   return flagsCheck(loadDataset(writeFixture({ records: [{ folder: 'ancestries', file, json }] })));
 }
@@ -268,6 +272,28 @@ describe('flags check', () => {
         message: 'activations[1] must set "actions", "time" or "castASpell": true',
       },
     ]);
+  });
+
+  // "spellcasting" says only that spells happen; a character builder needs to know which list.
+  it('rejects a spellcasting class that does not say which tradition', () => {
+    const rec = record('class', 'x', { proficiencies: { spellcasting: 'trained' } });
+    expect(classIssuesFor(rec).map((i) => i.message)).toContain('a spellcasting class must set "proficiencies.traditions" or "traditionsVary"');
+  });
+
+  it('accepts a spellcasting class that names its tradition', () => {
+    const rec = record('class', 'x', { proficiencies: { spellcasting: 'trained', traditions: ['occult'] } });
+    expect(classIssuesFor(rec).map((i) => i.message)).not.toContain('a spellcasting class must set "proficiencies.traditions" or "traditionsVary"');
+  });
+
+  // The witch's patron settles it at character creation, so the class itself names no one tradition.
+  it('accepts a spellcasting class whose own choice fixes the tradition', () => {
+    const rec = record('class', 'x', { proficiencies: { spellcasting: 'trained', traditionsVary: true } });
+    expect(classIssuesFor(rec).map((i) => i.message)).not.toContain('a spellcasting class must set "proficiencies.traditions" or "traditionsVary"');
+  });
+
+  it('says nothing about traditions for a class that does not cast', () => {
+    const rec = record('class', 'x', { proficiencies: {} });
+    expect(classIssuesFor(rec).map((i) => i.message)).not.toContain('a spellcasting class must set "proficiencies.traditions" or "traditionsVary"');
   });
 
   it('accepts an ordinary background with a fixed skill and no choices', () => {

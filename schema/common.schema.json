@@ -17,6 +17,8 @@
     "refFeat": { "type": "string", "pattern": "^feat\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "refSkill": { "type": "string", "pattern": "^skill\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "refFeature": { "type": "string", "pattern": "^feature\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refItem": { "type": "string", "pattern": "^item\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "tradition": { "enum": ["arcane", "divine", "occult", "primal"] },
     "boost": {
       "oneOf": [
         { "enum": ["str", "dex", "con", "int", "wis", "cha", "free"] },
