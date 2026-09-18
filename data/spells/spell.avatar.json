@@ -1,0 +1,28 @@
+{
+  "id": "spell.avatar",
+  "type": "spell",
+  "name": "spell.avatar.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "human",
+  "edited": true,
+  "text": "spell.avatar.text",
+  "rank": 10,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.avatar.duration",
+  "editNote": "Reserved Material removed: the book prints this spell as a generic core followed by a per-deity stat block for each of the twenty core deities, and those names are Reserved, so the list is not carried. Everything the book states applies “regardless of which deity’s battle form you assume” is here verbatim, including the sentence that deity-specific abilities exist — dropping it would misstate the spell as complete. This reverses an earlier rejection that treated the whole entry as unrecoverable; it is not, and two of the book’s own cleric feats depend on the spell existing: feat.avatars-protection has the character cast it, and names it in its own requirements."
+}
