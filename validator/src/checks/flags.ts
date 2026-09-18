@@ -83,6 +83,16 @@ export const flagsCheck: Check = (ds) => {
         }
       });
     }
+    if (f.record.type === 'class') {
+      // A class that casts must say what it casts, or say that the choice fixes it. "spellcasting"
+      // alone tells a character builder that spells happen but not which list to offer.
+      const p = f.record.proficiencies as Record<string, unknown> | undefined;
+      const casts = p?.spellcasting !== undefined;
+      const traditions = Array.isArray(p?.traditions) ? (p!.traditions as unknown[]) : [];
+      if (casts && traditions.length === 0 && p?.traditionsVary !== true) {
+        issues.push({ level: 'error', file: f.path, message: 'a spellcasting class must set "proficiencies.traditions" or "traditionsVary"' });
+      }
+    }
     if (f.record.type === 'class' || f.record.type === 'ancestry') {
       // These two carry too much of a character to ship on automated cross-checks alone, so the
       // rule is that someone actually looked. It does not insist on a person: `assistant` is a

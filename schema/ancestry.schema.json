@@ -19,6 +19,27 @@
           "type": "array",
           "items": { "$ref": "common.schema.json#/$defs/refHeritage" },
           "uniqueItems": true
+        },
+        "senses": {
+          "type": "array",
+          "items": { "enum": ["darkvision", "low-light-vision"] },
+          "uniqueItems": true,
+          "$comment": "Printed in the ancestry's own entry alongside hit points and speed, so it belongs with them rather than in the prose."
+        },
+        "grants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "text"],
+            "properties": {
+              "name": { "$ref": "common.schema.json#/$defs/i18nKey" },
+              "text": { "$ref": "common.schema.json#/$defs/i18nKey" },
+              "item": { "$ref": "common.schema.json#/$defs/refItem" }
+            }
+          },
+          "$comment": "What the ancestry gives every member at 1st level beyond its statistics - a free item such as the dwarf's clan dagger, or an ability such as the halfling's keen eyes. A sense belongs in `senses` instead."
         }
       }
     }

@@ -45,6 +45,14 @@ cost tokens.
   `"assistant"`, so the field understates rather than overstates.
 - `ancestry.languages` holds language identifiers (lowercase slugs), not
   display names.
+- `ancestry.senses` carries what the book prints in the ancestry's own entry —
+  darkvision or low-light vision — beside its hit points and speed.
+- `ancestry.grants` is what the ancestry hands every member at 1st level beyond
+  its statistics: the dwarf's free clan dagger (with `item` pointing at the
+  record), the halfling's Keen Eyes. A sense is not repeated here.
+- A spellcasting class names its tradition in `proficiencies.traditions`, or
+  sets `traditionsVary` when the character's own choice fixes it.
+- A ranged weapon points at the ammunition it fires in `weapon.ammunition`.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens
   `{1a} {2a} {3a} {r} {f}`.

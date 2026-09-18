@@ -34,6 +34,17 @@
             "reflex": { "$ref": "#/$defs/rank" },
             "will": { "$ref": "#/$defs/rank" },
             "spellcasting": { "$ref": "#/$defs/rank" },
+        "traditions": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/tradition" },
+          "minItems": 1,
+          "uniqueItems": true,
+          "$comment": "Which tradition the class casts. `spellcasting` says only that it casts at all, which does not tell a character builder what spell list to offer."
+        },
+        "traditionsVary": {
+          "type": "boolean",
+          "$comment": "The class has no tradition of its own: the witch's is fixed by the patron chosen at character creation."
+        },
             "skills": {
               "type": "object",
               "additionalProperties": false,
