@@ -36,5 +36,8 @@
     "heritage.rainfall-orc",
     "heritage.winter-orc"
   ],
+  "senses": [
+    "darkvision"
+  ],
   "editNote": "Reserved"
 }

@@ -28,7 +28,8 @@
       "type": "piercing"
     },
     "range": 60,
-    "reload": "0"
+    "reload": "0",
+    "ammunition": "item.arrows"
   },
   "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
 }

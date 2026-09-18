@@ -41,5 +41,14 @@
     "heritage.seaweed-leshy",
     "heritage.vine-leshy"
   ],
+  "senses": [
+    "low-light-vision"
+  ],
+  "grants": [
+    {
+      "name": "ancestry.leshy.grants.0.name",
+      "text": "ancestry.leshy.grants.0.text"
+    }
+  ],
   "editNote": "Reserved"
 }

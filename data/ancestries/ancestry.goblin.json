@@ -37,5 +37,8 @@
     "heritage.snow-goblin",
     "heritage.unbreakable-goblin"
   ],
+  "senses": [
+    "darkvision"
+  ],
   "editNote": "Reserved"
 }

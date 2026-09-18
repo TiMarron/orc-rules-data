@@ -9,8 +9,9 @@
     "page": 209,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "action.fire-breath.text",
-  "actions": "2"
+  "actions": "2",
+  "frequency": "action.fire-breath.frequency"
 }

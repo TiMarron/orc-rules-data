@@ -12,9 +12,10 @@
     "page": 197,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "action.drain-bonded-item.text",
   "actions": "free",
+  "frequency": "action.drain-bonded-item.frequency",
   "requirements": "action.drain-bonded-item.requirements"
 }

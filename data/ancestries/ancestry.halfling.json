@@ -38,5 +38,11 @@
     "heritage.twilight-halfling",
     "heritage.wildwood-halfling"
   ],
+  "grants": [
+    {
+      "name": "ancestry.halfling.grants.0.name",
+      "text": "ancestry.halfling.grants.0.text"
+    }
+  ],
   "editNote": "Reserved"
 }

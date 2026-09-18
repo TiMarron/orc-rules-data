@@ -42,7 +42,14 @@
       "heavy": "untrained"
     },
     "classDc": "trained",
-    "spellcasting": "trained"
+    "spellcasting": "trained",
+    "traditions": [
+      "arcane",
+      "divine",
+      "occult",
+      "primal"
+    ],
+    "traditionsVary": true
   },
   "featLevels": {
     "class": [
