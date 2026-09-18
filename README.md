@@ -35,9 +35,14 @@ cost tokens.
   carries its own `traits`, which are what the rules key on: `manipulate`
   provokes a reaction, `concentrate` can be disrupted. These are separate from
   the item's own traits in the envelope.
-- `review` is `"auto"` for records accepted by automated cross-checks and
-  `"human"` for records a person verified against the book. Class and ancestry
-  records must be `"human"`.
+- `review` says who vouched for a record. `"auto"` means it passed the
+  automated cross-checks and nothing else; `"assistant"` means an AI
+  assistant checked it against the sources and left a note saying what it
+  found; `"human"` means a person verified it against the book. Class and
+  ancestry records may not be `"auto"`. Every record in the first import is
+  `"auto"` or `"assistant"` — no human sign-off has happened yet. An
+  assistant's edit made without a recorded reviewer is counted as
+  `"assistant"`, so the field understates rather than overstates.
 - `ancestry.languages` holds language identifiers (lowercase slugs), not
   display names.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
