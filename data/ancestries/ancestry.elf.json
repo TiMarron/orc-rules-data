@@ -38,5 +38,8 @@
     "heritage.whisper-elf",
     "heritage.woodland-elf"
   ],
+  "senses": [
+    "low-light-vision"
+  ],
   "editNote": "Reserved"
 }

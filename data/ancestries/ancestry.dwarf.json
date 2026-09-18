@@ -37,5 +37,15 @@
     "heritage.rock-dwarf",
     "heritage.strong-blooded-dwarf"
   ],
+  "senses": [
+    "darkvision"
+  ],
+  "grants": [
+    {
+      "name": "ancestry.dwarf.grants.0.name",
+      "text": "ancestry.dwarf.grants.0.text",
+      "item": "item.clan-dagger"
+    }
+  ],
   "editNote": "Reserved Material removed: the name of the dwarven citadels replaced with a generic description; reserved."
 }

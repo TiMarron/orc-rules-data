@@ -12,8 +12,9 @@
     "page": 59,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "action.jinx.text",
-  "actions": "2"
+  "actions": "2",
+  "frequency": "action.jinx.frequency"
 }
