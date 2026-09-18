@@ -9,7 +9,7 @@
     "page": 234,
     "revision": "2023-first"
   },
-  "review": "human",
+  "review": "assistant",
   "edited": true,
   "text": "skill.athletics.text",
   "attribute": "str",

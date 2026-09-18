@@ -9,7 +9,7 @@
     "page": 401,
     "revision": "2023-first"
   },
-  "review": "human",
+  "review": "assistant",
   "edited": true,
   "text": "trait.fortune.text",
   "editNote": "the book's wording supersedes the the companion book glossary entry the dataset was seeded with."

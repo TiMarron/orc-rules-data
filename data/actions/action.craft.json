@@ -12,7 +12,7 @@
     "page": 237,
     "revision": "2023-first"
   },
-  "review": "human",
+  "review": "assistant",
   "edited": true,
   "text": "action.craft.text",
   "editNote": "A table printed in the book is omitted; the dataset markup has no table support."
