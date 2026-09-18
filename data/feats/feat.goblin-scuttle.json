@@ -11,7 +11,7 @@
     "page": 56,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "feat.goblin-scuttle.text",
   "level": 1,

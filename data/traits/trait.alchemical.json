@@ -9,7 +9,7 @@
     "page": 452,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "trait.alchemical.text",
   "editNote": "Dropped the trailing \"Alchemical creatures are partially powered by alchemical reactions\" paragraph: creature-specific text the structured source merges in from a different book's bestiary rules, which the book never prints."

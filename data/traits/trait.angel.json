@@ -9,7 +9,7 @@
     "page": 452,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "trait.angel.text",
   "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor."

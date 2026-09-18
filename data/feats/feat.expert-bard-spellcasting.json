@@ -11,7 +11,7 @@
     "page": 216,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "feat.expert-bard-spellcasting.text",
   "level": 12,
