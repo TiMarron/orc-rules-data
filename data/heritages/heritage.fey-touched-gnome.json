@@ -9,7 +9,7 @@
     "page": 51,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "heritage.fey-touched-gnome.text",
   "ancestry": "ancestry.gnome",

@@ -11,7 +11,7 @@
     "page": 52,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "feat.fey-fellowship.text",
   "level": 1,

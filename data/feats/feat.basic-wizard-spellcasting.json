@@ -11,7 +11,7 @@
     "page": 223,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "feat.basic-wizard-spellcasting.text",
   "level": 4,

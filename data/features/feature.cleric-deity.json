@@ -9,7 +9,7 @@
     "page": 109,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "feature.cleric-deity.text",
   "class": "class.cleric",

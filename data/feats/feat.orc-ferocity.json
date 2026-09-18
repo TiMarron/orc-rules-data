@@ -11,7 +11,7 @@
     "page": 72,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "human",
   "edited": true,
   "text": "feat.orc-ferocity.text",
   "level": 1,
