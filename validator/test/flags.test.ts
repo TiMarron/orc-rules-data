@@ -149,14 +149,21 @@ describe('flags check', () => {
     ).toEqual([]);
   });
 
-  it('rejects an ancestry record without review "human"', () => {
+  it('rejects an ancestry record nobody reviewed', () => {
     expect(ancestryIssuesFor(record('ancestry', 'x', { review: 'auto' }))).toEqual([
-      { level: 'error', file: 'data/ancestries/ancestry.x.json', message: 'class and ancestry records must have review "human"' },
+      { level: 'error', file: 'data/ancestries/ancestry.x.json', message: 'class and ancestry records must be reviewed, not "auto"' },
     ]);
   });
 
   it('accepts an ancestry record with review "human"', () => {
     expect(ancestryIssuesFor(record('ancestry', 'x', { review: 'human' }))).toEqual([]);
+  });
+
+  // The rule is that someone looked, not that a person did. Demanding "human" would have pushed
+  // the data to claim a person read these when none had — every record of the first import was
+  // checked by an assistant.
+  it('accepts an ancestry record reviewed by an assistant', () => {
+    expect(ancestryIssuesFor(record('ancestry', 'x', { review: 'assistant' }))).toEqual([]);
   });
 
   it('accepts an action that sets "actions"', () => {

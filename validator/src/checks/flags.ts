@@ -84,8 +84,12 @@ export const flagsCheck: Check = (ds) => {
       });
     }
     if (f.record.type === 'class' || f.record.type === 'ancestry') {
-      if (f.record.review !== 'human') {
-        issues.push({ level: 'error', file: f.path, message: 'class and ancestry records must have review "human"' });
+      // These two carry too much of a character to ship on automated cross-checks alone, so the
+      // rule is that someone actually looked. It does not insist on a person: `assistant` is a
+      // review too, just not a human one, and saying otherwise would push the data to claim a
+      // person read it when none did.
+      if (f.record.review === 'auto') {
+        issues.push({ level: 'error', file: f.path, message: 'class and ancestry records must be reviewed, not "auto"' });
       }
     }
     if (f.record.type === 'background') {

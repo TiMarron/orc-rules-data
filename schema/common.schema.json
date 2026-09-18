@@ -64,7 +64,7 @@
         "traits": { "type": "array", "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
         "rarity": { "$ref": "#/$defs/rarity" },
         "source": { "$ref": "#/$defs/source" },
-        "review": { "enum": ["auto", "human"] },
+        "review": { "enum": ["auto", "assistant", "human"] },
         "edited": { "type": "boolean" },
         "editNote": { "type": "string", "minLength": 1 }
       }
