@@ -13,7 +13,7 @@
     "page": 242,
     "revision": "2023-first"
   },
-  "review": "human",
+  "review": "assistant",
   "edited": true,
   "text": "action.treat-wounds.text",
   "requirements": "action.treat-wounds.requirements",

@@ -12,7 +12,7 @@
     "page": 230,
     "revision": "2023-first"
   },
-  "review": "human",
+  "review": "assistant",
   "edited": true,
   "text": "action.learn-a-spell.text",
   "requirements": "action.learn-a-spell.requirements",
