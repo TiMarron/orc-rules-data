@@ -9,7 +9,7 @@ major for renamed or removed ids, new required fields and markup changes.
 ### Changed — breaking
 
 - A weapon trait printed with a parameter no longer keeps that parameter in
-  its slug. Twenty-seven records — weapons and shields — change: `traits`
+  its slug. Twenty-seven records — all of them weapons — change: `traits`
   now lists the base trait and the new `traitValues` field carries the
   parameter. The sixteen affected slugs:
 
@@ -41,8 +41,8 @@ major for renamed or removed ids, new required fields and markup changes.
 - `traitValues`, an optional object on every record's envelope: base trait
   slug → the parameter that trait was printed with, normalised to this
   dataset's notation (feet as a bare number, a damage type as its full name,
-  a die as `NdM` or a bare `dM`). A validator check requires every key to be
-  among the record's own `traits`.
+  a die as `NdM` or a bare `dM`, an item as its slug). A validator check
+  requires every key to be among the record's own `traits`.
 
 ### Migrating
 
