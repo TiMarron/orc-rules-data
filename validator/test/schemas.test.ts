@@ -130,6 +130,31 @@ describe('type schemas', () => {
     expect(issuesFor('trait', { ...VALID.trait, text: undefined })).toEqual([]);
   });
 
+  it('accepts an envelope carrying a trait parameter', () => {
+    expect(issuesFor('item', { ...WEAPON, traits: ['deadly'], traitValues: { deadly: 'd10' } })).toEqual([]);
+  });
+
+  it('rejects a traitValues key that is not a slug', () => {
+    const issues = issuesFor('item', { ...WEAPON, traits: ['deadly'], traitValues: { 'Deadly d10': 'd10' } });
+    // ajv reports the propertyNames subschema's own pattern failure, plus the
+    // "property name must be valid" error that wraps it — two issues for one cause.
+    expect(issues).toHaveLength(2);
+    expect(issues.some((m) => m.includes('/traitValues must match pattern'))).toBe(true);
+    expect(issues.some((m) => m.includes('property name must be valid'))).toBe(true);
+  });
+
+  it('rejects an empty traitValues value', () => {
+    const issues = issuesFor('item', { ...WEAPON, traits: ['deadly'], traitValues: { deadly: '' } });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toMatch(/must NOT have fewer than 1 characters/);
+  });
+
+  it('rejects an empty traitValues object', () => {
+    const issues = issuesFor('item', { ...WEAPON, traitValues: {} });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toMatch(/must NOT have fewer than 1 properties/);
+  });
+
   it('rejects an envelope with an empty "text" value with exactly one issue', () => {
     const issues = issuesFor('trait', { ...VALID.trait, text: '' });
     expect(issues).toHaveLength(1);
