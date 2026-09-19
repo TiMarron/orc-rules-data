@@ -3,9 +3,13 @@
   "type": "item",
   "name": "item.longbow.name",
   "traits": [
-    "deadly-d10",
-    "volley-30-ft"
+    "deadly",
+    "volley"
   ],
+  "traitValues": {
+    "deadly": "d10",
+    "volley": "30"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

@@ -5,8 +5,11 @@
   "traits": [
     "agile",
     "sweep",
-    "thrown-10-ft"
+    "thrown"
   ],
+  "traitValues": {
+    "thrown": "10"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

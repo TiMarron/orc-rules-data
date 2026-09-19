@@ -3,8 +3,11 @@
   "type": "item",
   "name": "item.pick.name",
   "traits": [
-    "fatal-1d10"
+    "fatal"
   ],
+  "traitValues": {
+    "fatal": "1d10"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

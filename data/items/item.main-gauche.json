@@ -7,8 +7,11 @@
     "disarm",
     "finesse",
     "parry",
-    "versatile-s"
+    "versatile"
   ],
+  "traitValues": {
+    "versatile": "slashing"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

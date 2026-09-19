@@ -3,8 +3,11 @@
   "type": "item",
   "name": "item.bastard-sword.name",
   "traits": [
-    "two-hand-1d12"
+    "two-hand"
   ],
+  "traitValues": {
+    "two-hand": "1d12"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

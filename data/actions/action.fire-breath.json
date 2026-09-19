@@ -10,8 +10,9 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "action.fire-breath.text",
   "actions": "2",
-  "frequency": "action.fire-breath.frequency"
+  "frequency": "action.fire-breath.frequency",
+  "editNote": "Changed by design: these records now carry stat-block facts the schema previously had nowhere to put. Each was read from the structured source or the entry the book prints, not inferred - the ancestries' senses and 1st-level grants, the casting classes' traditions, three actions' frequency, and eight ranged weapons' ammunition."
 }

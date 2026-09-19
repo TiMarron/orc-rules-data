@@ -4,8 +4,11 @@
   "name": "item.halberd.name",
   "traits": [
     "reach",
-    "versatile-s"
+    "versatile"
   ],
+  "traitValues": {
+    "versatile": "slashing"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

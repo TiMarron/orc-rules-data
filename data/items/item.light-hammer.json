@@ -4,8 +4,11 @@
   "name": "item.light-hammer.name",
   "traits": [
     "agile",
-    "thrown-20-ft"
+    "thrown"
   ],
+  "traitValues": {
+    "thrown": "20"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

@@ -3,9 +3,12 @@
   "type": "item",
   "name": "item.scythe.name",
   "traits": [
-    "deadly-d10",
+    "deadly",
     "trip"
   ],
+  "traitValues": {
+    "deadly": "d10"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

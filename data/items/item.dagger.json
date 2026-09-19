@@ -5,9 +5,13 @@
   "traits": [
     "agile",
     "finesse",
-    "thrown-10-ft",
-    "versatile-s"
+    "thrown",
+    "versatile"
   ],
+  "traitValues": {
+    "thrown": "10",
+    "versatile": "slashing"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

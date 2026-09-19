@@ -5,8 +5,11 @@
   "traits": [
     "dwarf",
     "sweep",
-    "two-hand-1d12"
+    "two-hand"
   ],
+  "traitValues": {
+    "two-hand": "1d12"
+  },
   "rarity": "uncommon",
   "source": {
     "book": "player-core",
