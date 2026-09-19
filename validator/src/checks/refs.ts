@@ -20,23 +20,6 @@ function walkTraitsArrays(value: unknown, visit: (slugs: string[], path: string)
   }
 }
 
-/**
- * A weapon trait printed with a parameter (e.g. "deadly d8", "versatile P") is
- * emitted as a slug like `deadly-d8` or `versatile-p`. There is no record for
- * that exact slug, only for the base trait (`trait.deadly`, `trait.versatile`).
- * Resolve such a slug against the longest hyphen-delimited prefix that has a
- * record: try the full slug first, then progressively shorter prefixes taken
- * at hyphen boundaries.
- */
-function traitResolves(slug: string, exists: (id: string) => boolean): boolean {
-  if (exists(`trait.${slug}`)) return true;
-  const segments = slug.split('-');
-  for (let n = segments.length - 1; n >= 1; n--) {
-    if (exists(`trait.${segments.slice(0, n).join('-')}`)) return true;
-  }
-  return false;
-}
-
 export const refsCheck: Check = (ds) => {
   const issues: Issue[] = [];
   const exists = (id: string) => ds.byId.has(id);
@@ -45,7 +28,7 @@ export const refsCheck: Check = (ds) => {
     walkTraitsArrays(f.record, (slugs, path) => {
       const prefix = path === 'traits' ? '' : `${path}: `;
       for (const slug of slugs) {
-        if (!traitResolves(slug, exists)) {
+        if (!exists(`trait.${slug}`)) {
           issues.push({ level: 'error', file: f.path, message: `${prefix}unknown trait "${slug}" (no record trait.${slug})` });
         }
       }
