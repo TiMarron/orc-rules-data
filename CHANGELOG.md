@@ -56,6 +56,13 @@ A parameter that names an item (`attached` → `"shield"`) is a slug describing
 what the weapon attaches to, not a reference to an item record — there is no
 `item.shield`. Nothing resolves it, and the validator does not try to.
 
+`traitValues` is a new property, so a reader that rejects unknown properties
+rather than ignoring them will fail on the twenty-seven records that carry it
+— and, if it loads the corpus eagerly, on the corpus. That is worth knowing
+before upgrading: the first consumer to take this release hit exactly that,
+and being told beats being skipped. Teach the reader the field, or configure
+it to ignore what it does not know.
+
 ### Also in this release
 
 Three action records — `action.drain-bonded-item`, `action.fire-breath` and
