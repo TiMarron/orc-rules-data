@@ -52,6 +52,17 @@ the base slug and the parameter separately. Rendering the trait line as the
 book sets it means composing it from the base trait's name and the value —
 `"10"` back to "10 ft.", `"piercing"` back to "P".
 
+A parameter that names an item (`attached` → `"shield"`) is a slug describing
+what the weapon attaches to, not a reference to an item record — there is no
+`item.shield`. Nothing resolves it, and the validator does not try to.
+
+### Also in this release
+
+Three action records — `action.drain-bonded-item`, `action.fire-breath` and
+`action.jinx` — gain `edited: true` and an `editNote` they have carried in the
+import pipeline since the previous release without the published copies
+catching up. Bookkeeping fields only: no rules text, stat or shape changes.
+
 ## 0.1.0+2023-first
 
 First import: Player Core, 2212 records and 6310 English strings.
