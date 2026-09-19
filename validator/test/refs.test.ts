@@ -58,6 +58,18 @@ describe('refs check', () => {
     ]);
   });
 
+  it('does not count a nested activation trait as the record carrying it', () => {
+    const root = writeFixture({
+      records: [
+        { folder: 'traits', file: 'trait.deadly.json', json: trait('deadly') },
+        { folder: 'items', file: 'item.x.json', json: record('item', 'x', { traits: [], traitValues: { deadly: 'd8' }, activations: [{ actions: '1', traits: ['deadly'] }] }) },
+      ],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
+      'traitValues: "deadly" is not among this record\'s traits',
+    ]);
+  });
+
   it('flags an id-shaped string that does not resolve, with its path', () => {
     const root = writeFixture({ records: [{ folder: 'feats', file: 'feat.x.json', json: record('feat', 'x', { prerequisites: [{ kind: 'feat', id: 'feat.missing' }] }) }] });
     expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual(['prerequisites[0].id: reference "feat.missing" does not resolve']);
