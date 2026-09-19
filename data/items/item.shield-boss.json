@@ -3,8 +3,11 @@
   "type": "item",
   "name": "item.shield-boss.name",
   "traits": [
-    "attached-to-shield"
+    "attached"
   ],
+  "traitValues": {
+    "attached": "shield"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

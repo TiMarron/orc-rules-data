@@ -5,9 +5,13 @@
   "traits": [
     "gnome",
     "trip",
-    "two-hand-1d10",
-    "versatile-p"
+    "two-hand",
+    "versatile"
   ],
+  "traitValues": {
+    "two-hand": "1d10",
+    "versatile": "piercing"
+  },
   "rarity": "uncommon",
   "source": {
     "book": "player-core",

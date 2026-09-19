@@ -4,8 +4,11 @@
   "name": "item.light-pick.name",
   "traits": [
     "agile",
-    "fatal-1d8"
+    "fatal"
   ],
+  "traitValues": {
+    "fatal": "1d8"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

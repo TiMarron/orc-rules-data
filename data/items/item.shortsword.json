@@ -5,8 +5,11 @@
   "traits": [
     "agile",
     "finesse",
-    "versatile-s"
+    "versatile"
   ],
+  "traitValues": {
+    "versatile": "slashing"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

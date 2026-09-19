@@ -3,8 +3,11 @@
   "type": "item",
   "name": "item.club.name",
   "traits": [
-    "thrown-10-ft"
+    "thrown"
   ],
+  "traitValues": {
+    "thrown": "10"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

@@ -6,8 +6,11 @@
     "goblin",
     "reach",
     "trip",
-    "versatile-p"
+    "versatile"
   ],
+  "traitValues": {
+    "versatile": "piercing"
+  },
   "rarity": "uncommon",
   "source": {
     "book": "player-core",

@@ -3,10 +3,13 @@
   "type": "item",
   "name": "item.rapier.name",
   "traits": [
-    "deadly-d8",
+    "deadly",
     "disarm",
     "finesse"
   ],
+  "traitValues": {
+    "deadly": "d8"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

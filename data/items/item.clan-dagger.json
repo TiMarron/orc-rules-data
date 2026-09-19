@@ -6,8 +6,11 @@
     "agile",
     "dwarf",
     "parry",
-    "versatile-b"
+    "versatile"
   ],
+  "traitValues": {
+    "versatile": "bludgeoning"
+  },
   "rarity": "uncommon",
   "source": {
     "book": "player-core",

@@ -3,9 +3,12 @@
   "type": "item",
   "name": "item.composite-shortbow.name",
   "traits": [
-    "deadly-d10",
+    "deadly",
     "propulsive"
   ],
+  "traitValues": {
+    "deadly": "d10"
+  },
   "rarity": "common",
   "source": {
     "book": "player-core",

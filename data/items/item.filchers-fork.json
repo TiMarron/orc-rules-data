@@ -5,11 +5,15 @@
   "traits": [
     "agile",
     "backstabber",
-    "deadly-d6",
+    "deadly",
     "finesse",
     "halfling",
-    "thrown-20-ft"
+    "thrown"
   ],
+  "traitValues": {
+    "deadly": "d6",
+    "thrown": "20"
+  },
   "rarity": "uncommon",
   "source": {
     "book": "player-core",
