@@ -76,8 +76,13 @@ cost tokens.
 - A spell's `trigger`, `requirements` and `cost` are i18n keys, the same as
   an action's.
 - A weapon trait printed with a parameter (e.g. "deadly d8", "versatile P")
-  keeps the parameter in its slug (`deadly-d8`, `versatile-p`) and resolves
-  to its base trait record (`trait.deadly`, `trait.versatile`).
+  lists the base trait in `traits` (`deadly`, `versatile`) and carries the
+  parameter in `traitValues`, keyed by that base slug. The parameter is
+  normalised to this dataset's own notation rather than the book's: a range
+  is a bare number of feet (`thrown` → `"10"`), a damage type is its full
+  name (`versatile` → `"piercing"`), a die is `NdM` or `dM` (`fatal` →
+  `"1d12"`, `deadly` → `"d10"`). Every trait slug resolves exactly; nothing
+  in this dataset may be derived from the structure of an id.
 - `text` is optional: a record the book prints as a bare stat line (e.g. Bedroll,
   Chalk) carries no `text` at all rather than an empty one.
 - `weapon.damage.dice` may be a plain positive integer (e.g. `"1"`) instead of
