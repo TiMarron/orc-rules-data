@@ -81,8 +81,9 @@ cost tokens.
   normalised to this dataset's own notation rather than the book's: a range
   is a bare number of feet (`thrown` → `"10"`), a damage type is its full
   name (`versatile` → `"piercing"`), a die is `NdM` or `dM` (`fatal` →
-  `"1d12"`, `deadly` → `"d10"`). Every trait slug resolves exactly; nothing
-  in this dataset may be derived from the structure of an id.
+  `"1d12"`, `deadly` → `"d10"`), and a parameter that names an item is that
+  item's slug (`attached` → `"shield"`). Every trait slug resolves exactly;
+  nothing in this dataset may be derived from the structure of an id.
 - `text` is optional: a record the book prints as a bare stat line (e.g. Bedroll,
   Chalk) carries no `text` at all rather than an empty one.
 - `weapon.damage.dice` may be a plain positive integer (e.g. `"1"`) instead of
