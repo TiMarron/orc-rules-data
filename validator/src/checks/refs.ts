@@ -33,6 +33,15 @@ export const refsCheck: Check = (ds) => {
         }
       }
     });
+    const traitValues = f.record.traitValues;
+    if (traitValues && typeof traitValues === 'object' && !Array.isArray(traitValues)) {
+      const own = new Set(Array.isArray(f.record.traits) ? (f.record.traits as unknown[]).filter((t): t is string => typeof t === 'string') : []);
+      for (const slug of Object.keys(traitValues)) {
+        if (!own.has(slug)) {
+          issues.push({ level: 'error', file: f.path, message: `traitValues: "${slug}" is not among this record's traits` });
+        }
+      }
+    }
     walkStrings(f.record, (s, path) => {
       if (path === 'id' || path === 'type' || /(^|\.)traits\[\d+\]$/.test(path)) return;
       if (ID_PATTERN.test(s) && TYPE_PREFIX.test(s) && !exists(s)) {
