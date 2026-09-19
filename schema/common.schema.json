@@ -69,7 +69,7 @@
           "minProperties": 1,
           "propertyNames": { "$ref": "#/$defs/slug" },
           "additionalProperties": { "type": "string", "minLength": 1 },
-          "$comment": "A trait printed with a parameter (deadly d10, versatile P) keeps the base trait in `traits` and its parameter here, keyed by that base slug. The value is normalised to the dataset's own notation: feet as a bare number, a damage type as its full name, a die as NdM."
+          "$comment": "A trait printed with a parameter (deadly d10, versatile P) keeps the base trait in `traits` and its parameter here, keyed by that base slug. The value is normalised to the dataset's own notation: feet as a bare number, a damage type as its full name, a die as NdM or a bare dM."
         },
         "rarity": { "$ref": "#/$defs/rarity" },
         "source": { "$ref": "#/$defs/source" },

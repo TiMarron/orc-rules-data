@@ -134,6 +134,10 @@ describe('type schemas', () => {
     expect(issuesFor('item', { ...WEAPON, traits: ['deadly'], traitValues: { deadly: 'd10' } })).toEqual([]);
   });
 
+  it('accepts two trait parameters on one record, as a lance carries deadly and jousting', () => {
+    expect(issuesFor('item', { ...WEAPON, traits: ['deadly', 'jousting'], traitValues: { deadly: 'd8', jousting: '1d6' } })).toEqual([]);
+  });
+
   it('rejects a traitValues key that is not a slug', () => {
     const issues = issuesFor('item', { ...WEAPON, traits: ['deadly'], traitValues: { 'Deadly d10': 'd10' } });
     // ajv reports the propertyNames subschema's own pattern failure, plus the
