@@ -410,4 +410,42 @@ describe('type schemas', () => {
     const issues = issuesFor('spell', { ...SPELL_FULL, traditionsVary: 'yes' });
     expect(issues).toHaveLength(1);
   });
+  it('accepts a proficiency prerequisite targeting Perception', () => {
+    const prereq = { kind: 'proficiency', target: 'perception', rank: 'master' };
+    expect(issuesFor('feat', record('feat', 'blind-fight', { category: 'general', level: 1, prerequisites: [prereq] }))).toEqual([]);
+  });
+
+  it('accepts a proficiency prerequisite targeting a saving throw', () => {
+    const prereq = { kind: 'proficiency', target: 'save.reflex', rank: 'expert' };
+    expect(issuesFor('feat', record('feat', 'evasiveness', { category: 'class', class: 'class.rogue', level: 1, prerequisites: [prereq] }))).toEqual([]);
+  });
+
+  it('rejects a saving-throw target written without its namespace', () => {
+    const prereq = { kind: 'proficiency', target: 'reflex', rank: 'expert' };
+    const issues = issuesFor('feat', record('feat', 'bare-save', { category: 'general', level: 1, prerequisites: [prereq] }));
+    expect(issues.join(' | ')).toContain('/prerequisites/0');
+  });
+
+  it('accepts an "any" prerequisite over two skill proficiencies', () => {
+    const prereq = {
+      kind: 'any',
+      of: [
+        { kind: 'proficiency', target: 'skill.occultism', rank: 'master' },
+        { kind: 'proficiency', target: 'skill.religion', rank: 'master' },
+      ],
+    };
+    expect(issuesFor('feat', record('feat', 'break-curse', { category: 'general', level: 1, prerequisites: [prereq] }))).toEqual([]);
+  });
+
+  it('rejects an "any" prerequisite with a single branch', () => {
+    const prereq = { kind: 'any', of: [{ kind: 'proficiency', target: 'skill.occultism', rank: 'master' }] };
+    const issues = issuesFor('feat', record('feat', 'lonely-any', { category: 'general', level: 1, prerequisites: [prereq] }));
+    expect(issues.join(' | ')).toContain('must NOT have fewer than 2 items');
+  });
+
+  it('rejects an "any" prerequisite repeating the same branch', () => {
+    const branch = { kind: 'proficiency', target: 'skill.occultism', rank: 'master' };
+    const issues = issuesFor('feat', record('feat', 'doubled-any', { category: 'general', level: 1, prerequisites: [{ kind: 'any', of: [branch, branch] }] }));
+    expect(issues.join(' | ')).toContain('must NOT have duplicate items');
+  });
 });

@@ -35,11 +35,28 @@
         "revision": { "$ref": "#/$defs/slug" }
       }
     },
+    "proficiencyTarget": {
+      "type": "string",
+      "anyOf": [
+        { "$ref": "#/$defs/refSkill" },
+        { "const": "perception" },
+        { "pattern": "^save\\.(fortitude|reflex|will)$" }
+      ],
+      "$comment": "What a proficiency prerequisite can be about. A skill is named by its record id; Perception and the saving throws have no record of their own (they are not skills), so they are named by the same flat keys a character sheet keys its proficiencies by. That namespace grows only when a record needs it: a weapon or armor category (attack.martial, defense.light) and the class DC belong to it too, but no imported prerequisite has asked for one yet, and an unlisted spelling must fail here rather than pass as an unresolvable reference."
+    },
     "prerequisite": {
       "oneOf": [
         {
           "type": "object", "required": ["kind", "target", "rank"], "additionalProperties": false,
-          "properties": { "kind": { "const": "proficiency" }, "target": { "$ref": "#/$defs/id" }, "rank": { "$ref": "#/$defs/proficiencyRank" } }
+          "properties": { "kind": { "const": "proficiency" }, "target": { "$ref": "#/$defs/proficiencyTarget" }, "rank": { "$ref": "#/$defs/proficiencyRank" } }
+        },
+        {
+          "type": "object", "required": ["kind", "of"], "additionalProperties": false,
+          "properties": {
+            "kind": { "const": "any" },
+            "of": { "type": "array", "items": { "$ref": "#/$defs/prerequisite" }, "minItems": 2, "uniqueItems": true }
+          },
+          "$comment": "A prerequisite the book prints as alternatives — \"Trained in Arcana, Trained in Nature, or Trained in Religion\" — satisfied when any one branch is. Two branches minimum: a one-branch alternative is just the branch."
         },
         {
           "type": "object", "required": ["kind", "id"], "additionalProperties": false,

@@ -18,6 +18,24 @@ describe('refs check', () => {
     expect(refsCheck(loadDataset(root))).toEqual([]);
   });
 
+  it('passes a proficiency prerequisite aimed at Perception or a save, which have no record', () => {
+    const root = writeFixture({
+      records: [
+        {
+          folder: 'feats',
+          file: 'feat.x.json',
+          json: record('feat', 'x', {
+            prerequisites: [
+              { kind: 'proficiency', target: 'perception', rank: 'master' },
+              { kind: 'proficiency', target: 'save.reflex', rank: 'expert' },
+            ],
+          }),
+        },
+      ],
+    });
+    expect(refsCheck(loadDataset(root))).toEqual([]);
+  });
+
   it('flags an unknown trait slug', () => {
     const root = writeFixture({ records: [{ folder: 'feats', file: 'feat.x.json', json: record('feat', 'x', { traits: ['flourish'] }) }] });
     expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual(['unknown trait "flourish" (no record trait.flourish)']);
