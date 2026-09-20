@@ -30,6 +30,53 @@ major for renamed or removed ids, new required fields and markup changes.
   rule itself: `trait.deadly` states that the weapon adds a damage die "of
   the listed size".
 
+- A feat prerequisite the book prints as a list of alternatives is no longer
+  prose. The new `any` kind holds the branches, and a reader that switches on
+  `kind` meets a value it has not seen before — the reference reader raises on
+  an unknown kind rather than ignoring it, so this is a breaking read.
+
+  ```json
+  { "kind": "any", "of": [
+    { "kind": "proficiency", "target": "skill.occultism", "rank": "master" },
+    { "kind": "proficiency", "target": "skill.religion",  "rank": "master" }
+  ] }
+  ```
+
+  A branch is itself a prerequisite of any kind, there are always at least two
+  of them, and no two are the same. Seven records take this form:
+  `feat.break-curse`, `feat.impossible-polymath`, `feat.magical-shorthand`,
+  `feat.quick-identification`, `feat.quick-recognition`, `feat.recognize-spell`
+  and `feat.trick-magic-item`.
+
+- A proficiency prerequisite's `target` is no longer always a skill id.
+  Perception and the saving throws are proficiencies with no record of their
+  own — they are not skills — and are now named by the flat keys a character
+  sheet keys its proficiencies by: `perception`, and `save.fortitude` /
+  `save.reflex` / `save.will`. Five entries use them, in `feat.blind-fight`,
+  `feat.expeditious-search`, `feat.legendary-shot` and
+  `feat.master-spotter-ranger` (Perception), and `feat.evasiveness-rogue`
+  (`save.reflex`). `perception` carries no dot and so is not id-shaped at all;
+  code that assumed `target` would always resolve against `data/` was reading
+  a coincidence of the corpus, not a rule. Nothing resolves them, and the
+  validator does not try to — it checks the spelling against a closed list
+  instead. The list grows only when a record needs it: a weapon or armour
+  category (`attack.martial`, `defense.light`) and the class DC belong to the
+  same namespace, but no prerequisite has asked for one yet.
+
+  Across both changes twelve feat records lose a prose prerequisite, and the
+  twelve `feat.<id>.prereq.N` strings behind them leave `i18n/en.json`. Feat
+  prerequisites now count 140 text (was 152), 146 proficiency (was 141), 7
+  `any` (was 0), and an unchanged 181 feat and 15 attribute.
+
+  What stayed prose, deliberately: `feat.seasoned` names Alcohol Lore and
+  Cooking Lore, which have no records of their own (only `skill.lore` does), and
+  structuring the two branches that do resolve would state a weaker condition
+  than the book prints. Conditions counted over a set ("trained in at least one
+  skill", "expert in a skill with the Recall Knowledge action") have no form
+  here yet, and conditions that only a built character can answer ("the skill
+  associated with your patron's tradition", "your deity's favored weapon") are
+  not facts about the record at all.
+
 - The validator no longer resolves a trait slug by shortening it at hyphen
   boundaries until something matches. That heuristic is what let the thirty-two
   dangling references pass. An id in this dataset carries no meaning in its
@@ -51,6 +98,15 @@ everywhere. Code that matched the literal slugs in the table above must read
 the base slug and the parameter separately. Rendering the trait line as the
 book sets it means composing it from the base trait's name and the value —
 `"10"` back to "10 ft.", `"piercing"` back to "P".
+
+Reading a prerequisite by its `kind` must now handle `any` — recursively, since
+a branch may itself be one. A reader that cannot evaluate alternatives should
+treat the whole entry as unverifiable rather than picking a branch: the record
+states that any one of them suffices, and no one of them is the condition.
+
+A `target` is a skill id, `perception`, or `save.fortitude`/`save.reflex`/`save.will`.
+Resolving it against `data/skills/` still works for every skill; the other four
+spellings have no record and must be matched literally.
 
 A parameter that names an item (`attached` → `"shield"`) is a slug describing
 what the weapon attaches to, not a reference to an item record — there is no
