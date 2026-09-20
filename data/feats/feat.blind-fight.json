@@ -25,8 +25,9 @@
   ],
   "prerequisites": [
     {
-      "kind": "text",
-      "key": "feat.blind-fight.prereq.0"
+      "kind": "proficiency",
+      "target": "perception",
+      "rank": "master"
     }
   ],
   "editNote": "Dropped the investigator trait and the class.investigator reference: Investigator belongs to a book this pipeline hasn't imported yet, so the reference can't resolve. The feat is printed as a Fighter, Ranger and Rogue feat (p.145) and works fully as those three; the investigator trait and cross-class reference should return once that book is imported. (Now handled automatically by the out-of-book-refs transform rule; this note documents the earlier hand review.)"

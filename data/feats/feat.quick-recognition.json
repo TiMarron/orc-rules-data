@@ -19,8 +19,29 @@
   "category": "skill",
   "prerequisites": [
     {
-      "kind": "text",
-      "key": "feat.quick-recognition.prereq.0"
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.arcana",
+          "rank": "master"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.nature",
+          "rank": "master"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.occultism",
+          "rank": "master"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.religion",
+          "rank": "master"
+        }
+      ]
     },
     {
       "kind": "feat",

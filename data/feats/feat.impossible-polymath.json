@@ -19,8 +19,24 @@
   "class": "class.bard",
   "prerequisites": [
     {
-      "kind": "text",
-      "key": "feat.impossible-polymath.prereq.0"
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.arcana",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.nature",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.religion",
+          "rank": "trained"
+        }
+      ]
     },
     {
       "kind": "feat",

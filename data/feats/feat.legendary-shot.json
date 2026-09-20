@@ -19,8 +19,9 @@
   "class": "class.ranger",
   "prerequisites": [
     {
-      "kind": "text",
-      "key": "feat.legendary-shot.prereq.0"
+      "kind": "proficiency",
+      "target": "perception",
+      "rank": "legendary"
     },
     {
       "kind": "feat",
