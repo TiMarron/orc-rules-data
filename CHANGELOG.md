@@ -63,12 +63,50 @@ before upgrading: the first consumer to take this release hit exactly that,
 and being told beats being skipped. Teach the reader the field, or configure
 it to ignore what it does not know.
 
+### Fixed
+
+- Markup the import's upstream source writes in its own notation, which this
+  dataset's grammar has no rule for and a reader can only render as literal
+  text. Thirty-eight records change.
+
+  - Five references written in that source's `{{type id "label"}}` enricher
+    syntax become ordinary `[[id|label]]` references, in `spell.sunburst`,
+    `spell.crisis-of-faith`, `spell.goblin-pox` and `spell.mad-monkeys`
+    (twice). Each points at the record its label names.
+  - Nine records drop a `## …` line left stranded when a table this dataset
+    does not carry was omitted: it was that table's caption.
+    `action.treat-wounds` and `feat.specialty-crafting` drop the table's `*`
+    footnote with it, which qualified a row that is no longer there.
+  - `ancestry.human` was publishing its body exactly as the source wrote it —
+    `<ul><li>` lists, stray blank lines and all — because one malformed
+    heading tag had stopped the conversion. Its lists are now `- ` items and
+    its paragraphs read like every other ancestry's.
+  - `item.tower-shield` drops a `<sup>2</sup>` marker footnoting an omitted
+    table, and gains the `[[action.take-cover|Take Cover]]` reference that the
+    same failure had been publishing as a raw link.
+  - `feat.initiate-warden`, `feat.advanced-warden`, `feat.masterful-warden`
+    and `feat.peerless-warden` drop an absolute link to a search page on the
+    source's website. The label stays as plain text: no record here stands for
+    "every spell with the warden trait".
+  - Seventeen items drop the bare `---` the source prints between an item and
+    its variants. This grammar has no horizontal rule, and the blank line
+    either side already separates the paragraphs.
+
+  No rules text is added or removed, other than the two table footnotes named
+  above. All 6310 strings were swept afterwards, and no markup outside the
+  grammar the README documents appears in any of them.
+
 ### Also in this release
 
 Three action records — `action.drain-bonded-item`, `action.fire-breath` and
 `action.jinx` — gain `edited: true` and an `editNote` they have carried in the
 import pipeline since the previous release without the published copies
 catching up. Bookkeeping fields only: no rules text, stat or shape changes.
+
+The four spells and three warden feats listed under Fixed move from
+`review: "auto"` to `review: "assistant"`, and the five `item.barding` records
+carry a reworded `editNote`. Both follow from the fix above being reviewed
+rather than automatic; neither touches rules text.
 
 ## 0.1.0+2023-first
 

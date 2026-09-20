@@ -11,8 +11,8 @@
     "page": 159,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.advanced-warden.text",
   "level": 4,
   "category": "class",
@@ -22,5 +22,6 @@
       "kind": "feat",
       "id": "feat.initiate-warden"
     }
-  ]
+  ],
+  "editNote": "Markup from the structured source that our grammar has no rule for, removed at the converter: an enricher reference resolved by the label NAME (its number is the other system numbering, not AoN own); a dropped table caption heading and its footnote dropped with it; the malformed h2/title heading read as the level-2 title it was meant to be, so Human body no longer falls back to raw unconverted AoN; the sup footnote marker dropped, which also lets Tower Shield Take Cover link resolve; an absolute link to the source own search page flattened to its label; and the bare rule AoN prints between an item variants dropped. Every text diff was checked one by one against the old output; nothing changed but these."
 }

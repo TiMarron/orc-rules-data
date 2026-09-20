@@ -16,5 +16,5 @@
   "priceCp": 1000,
   "bulk": "2",
   "category": "gear",
-  "editNote": "Dropped the trailing \"## Barding\" line: a leftover raw markdown heading from the structured source, never printed as text in the book."
+  "editNote": "The trailing \"## Barding\" line, a leftover raw markdown heading from the structured source and never printed as text in the book, is now dropped by the converter along with the table it captioned; this edit no longer overrides the text and keeps only the record of that decision."
 }
