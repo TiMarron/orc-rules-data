@@ -22,8 +22,9 @@
       "id": "feat.rogue-dedication"
     },
     {
-      "kind": "text",
-      "key": "feat.evasiveness-rogue.prereq.1"
+      "kind": "proficiency",
+      "target": "save.reflex",
+      "rank": "expert"
     }
   ],
   "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."

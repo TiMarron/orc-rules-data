@@ -22,8 +22,9 @@
       "id": "feat.ranger-dedication"
     },
     {
-      "kind": "text",
-      "key": "feat.master-spotter-ranger.prereq.1"
+      "kind": "proficiency",
+      "target": "perception",
+      "rank": "expert"
     }
   ],
   "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."

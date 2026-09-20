@@ -18,8 +18,9 @@
   "category": "general",
   "prerequisites": [
     {
-      "kind": "text",
-      "key": "feat.expeditious-search.prereq.0"
+      "kind": "proficiency",
+      "target": "perception",
+      "rank": "master"
     }
   ],
   "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."

@@ -22,8 +22,29 @@
   "trigger": "feat.recognize-spell.trigger",
   "prerequisites": [
     {
-      "kind": "text",
-      "key": "feat.recognize-spell.prereq.0"
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.arcana",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.nature",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.occultism",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.religion",
+          "rank": "trained"
+        }
+      ]
     }
   ],
   "editNote": "The book states this prerequisite in prose; the text form is the schema's intended representation for it."
