@@ -3,7 +3,20 @@
   "$id": "class.schema.json",
   "type": "object",
   "$defs": {
-    "rank": { "$ref": "common.schema.json#/$defs/proficiencyRank" }
+    "rank": { "$ref": "common.schema.json#/$defs/proficiencyRank" },
+    "slotRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cantrips", "ranks"],
+      "properties": {
+        "cantrips": { "type": "integer", "minimum": 0 },
+        "ranks": {
+          "type": "object",
+          "propertyNames": { "pattern": "^(10|[1-9])$" },
+          "additionalProperties": { "type": "integer", "minimum": 1 }
+        }
+      }
+    }
   },
   "allOf": [
     { "$ref": "common.schema.json#/$defs/envelope" },
@@ -133,7 +146,49 @@
           }
         },
         "skillIncreaseLevels": { "$ref": "common.schema.json#/$defs/levelList" },
-        "attributeBoostLevels": { "$ref": "common.schema.json#/$defs/levelList" }
+        "attributeBoostLevels": { "$ref": "common.schema.json#/$defs/levelList" },
+        "spellcasting": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "source", "tradition", "slots"],
+          "properties": {
+            "kind": { "enum": ["prepared", "spontaneous"] },
+            "source": { "enum": ["spellbook", "list", "repertoire"] },
+            "tradition": { "$ref": "common.schema.json#/$defs/tradition" },
+            "slots": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/slotRow" },
+              "minItems": 20,
+              "maxItems": 20,
+              "$comment": "Spells per day, one row per level (index = level - 1), as the class's own table prints it. A school's curriculum slots are not in it: `curriculum` adds them."
+            },
+            "spellbook": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["initialCantrips", "initialSpells", "perLevel"],
+              "properties": {
+                "initialCantrips": { "type": "integer", "minimum": 0 },
+                "initialSpells": { "type": "integer", "minimum": 0 },
+                "perLevel": { "type": "integer", "minimum": 0 }
+              },
+              "$comment": "What a spellbook holds at 1st level (cantrips, and spells of the lowest rank), and how many spells each later level adds, of any rank the class has slots for."
+            },
+            "curriculum": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["cantrips", "initialSpells", "perNewRank", "extraCantripSlot", "extraSlotPerRank"],
+              "properties": {
+                "cantrips": { "type": "integer", "minimum": 0 },
+                "initialSpells": { "type": "integer", "minimum": 0 },
+                "perNewRank": { "type": "integer", "minimum": 0 },
+                "extraCantripSlot": { "type": "integer", "minimum": 0 },
+                "extraSlotPerRank": { "type": "integer", "minimum": 0 }
+              },
+              "$comment": "The rule a school's curriculum follows, the same for every school: curriculum cantrips and spells written into the spellbook at 1st level, one more with each new slot rank, and the extra slots that only curriculum spells may fill. A school without a curriculum gets none of it."
+            }
+          },
+          "$comment": "How the class casts. `kind` is prepared or spontaneous; `source` is where its castable spells come from — a spellbook, the tradition's whole list, or a repertoire (whose table this schema will gain when the first spontaneous class is imported)."
+        }
       }
     }
   ],
