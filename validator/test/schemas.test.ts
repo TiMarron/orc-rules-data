@@ -248,6 +248,47 @@ describe('type schemas', () => {
     expect(issues[0]).toContain('curriculum');
   });
 
+  const SLOTS_20 = Array.from({ length: 20 }, (_, i) => ({
+    cantrips: 5,
+    ranks: i === 0 ? { 1: 2 } : { 1: 3 },
+  }));
+  const WIZARD_CASTING = {
+    kind: 'prepared',
+    source: 'spellbook',
+    tradition: 'arcane',
+    slots: SLOTS_20,
+    spellbook: { initialCantrips: 10, initialSpells: 5, perLevel: 2 },
+    curriculum: { cantrips: 1, initialSpells: 2, perNewRank: 1, extraCantripSlot: 1, extraSlotPerRank: 1 },
+  };
+
+  it('accepts a class with a spellcasting block', () => {
+    expect(issuesFor('class', { ...VALID.class, spellcasting: WIZARD_CASTING })).toEqual([]);
+  });
+
+  it('accepts a spellcasting block without spellbook and curriculum (a class that prepares from its list)', () => {
+    const { spellbook, curriculum, ...rest } = WIZARD_CASTING;
+    expect(issuesFor('class', { ...VALID.class, spellcasting: { ...rest, source: 'list' } })).toEqual([]);
+  });
+
+  it('rejects a slot table that is not exactly twenty rows', () => {
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: { ...WIZARD_CASTING, slots: SLOTS_20.slice(0, 19) } });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('slots');
+  });
+
+  it('rejects a slot rank key outside 1..10', () => {
+    const slots = SLOTS_20.map((row, i) => (i === 0 ? { cantrips: 5, ranks: { 11: 1 } } : row));
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: { ...WIZARD_CASTING, slots } });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('ranks');
+  });
+
+  it('rejects an unknown kind', () => {
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: { ...WIZARD_CASTING, kind: 'innate' } });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('kind');
+  });
+
   it('accepts a feat with trigger, requirements, and frequency', () => {
     expect(issuesFor('feat', FEAT_FULL)).toEqual([]);
   });
