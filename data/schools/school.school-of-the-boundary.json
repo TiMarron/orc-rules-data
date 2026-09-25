@@ -1,0 +1,66 @@
+{
+  "id": "school.school-of-the-boundary",
+  "type": "school",
+  "name": "school.school-of-the-boundary.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 199,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "school.school-of-the-boundary.text",
+  "class": "class.wizard",
+  "level": 1,
+  "curriculum": {
+    "cantrips": [
+      "spell.telekinetic-hand",
+      "spell.void-warp"
+    ],
+    "ranks": {
+      "1": [
+        "spell.grim-tendrils",
+        "spell.phantasmal-minion",
+        "spell.summon-undead"
+      ],
+      "2": [
+        "spell.darkness",
+        "spell.see-the-unseen"
+      ],
+      "3": [
+        "spell.bind-undead",
+        "spell.ghostly-weapon"
+      ],
+      "4": [
+        "spell.flicker",
+        "spell.translocate"
+      ],
+      "5": [
+        "spell.banishment",
+        "spell.invoke-spirits"
+      ],
+      "6": [
+        "spell.teleport",
+        "spell.vampiric-exsanguination"
+      ],
+      "7": [
+        "spell.eclipse-burst",
+        "spell.interplanar-teleport"
+      ],
+      "8": [
+        "spell.quandary",
+        "spell.unrelenting-observation"
+      ],
+      "9": [
+        "spell.massacre"
+      ]
+    }
+  },
+  "schoolSpells": {
+    "initial": "spell.fortify-summoning",
+    "advanced": "spell.spiral-of-horrors"
+  },
+  "editNote": "Reserved Material removed: the named institutions and nations, and the book-title trade dress, replaced with generic descriptors; the wording otherwise unchanged."
+}

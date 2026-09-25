@@ -1,0 +1,22 @@
+{
+  "id": "school.school-of-unified-magical-theory",
+  "type": "school",
+  "name": "school.school-of-unified-magical-theory.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 200,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "school.school-of-unified-magical-theory.text",
+  "class": "class.wizard",
+  "level": 1,
+  "schoolSpells": {
+    "initial": "spell.hand-of-the-apprentice",
+    "advanced": "spell.interdisciplinary-incantation"
+  },
+  "editNote": "Reserved Material removed: the named institutions and nations, and the book-title trade dress, replaced with generic descriptors; the wording otherwise unchanged."
+}

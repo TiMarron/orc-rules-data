@@ -1,0 +1,17 @@
+{
+  "id": "thesis.improved-familiar-attunement",
+  "type": "thesis",
+  "name": "thesis.improved-familiar-attunement.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 195,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "thesis.improved-familiar-attunement.text",
+  "class": "class.wizard",
+  "level": 1
+}

@@ -1,0 +1,67 @@
+{
+  "id": "school.school-of-ars-grammatica",
+  "type": "school",
+  "name": "school.school-of-ars-grammatica.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 198,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "school.school-of-ars-grammatica.text",
+  "class": "class.wizard",
+  "level": 1,
+  "curriculum": {
+    "cantrips": [
+      "spell.message",
+      "spell.sigil"
+    ],
+    "ranks": {
+      "1": [
+        "spell.command",
+        "spell.disguise-magic",
+        "spell.runic-body",
+        "spell.runic-weapon"
+      ],
+      "2": [
+        "spell.dispel-magic",
+        "spell.translate"
+      ],
+      "3": [
+        "spell.enthrall",
+        "spell.veil-of-privacy"
+      ],
+      "4": [
+        "spell.dispelling-globe",
+        "spell.suggestion"
+      ],
+      "5": [
+        "spell.sending",
+        "spell.truespeech"
+      ],
+      "6": [
+        "spell.repulsion",
+        "spell.spellwrack"
+      ],
+      "7": [
+        "spell.contingency",
+        "spell.planar-seal"
+      ],
+      "8": [
+        "spell.quandary",
+        "spell.unrelenting-observation"
+      ],
+      "9": [
+        "spell.detonate-magic"
+      ]
+    }
+  },
+  "schoolSpells": {
+    "initial": "spell.protective-wards",
+    "advanced": "spell.rune-of-observation"
+  },
+  "editNote": "Reserved Material removed: the named institutions and nations, and the book-title trade dress, replaced with generic descriptors; the wording otherwise unchanged."
+}

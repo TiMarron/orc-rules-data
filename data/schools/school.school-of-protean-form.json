@@ -1,0 +1,66 @@
+{
+  "id": "school.school-of-protean-form",
+  "type": "school",
+  "name": "school.school-of-protean-form.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 200,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "school.school-of-protean-form.text",
+  "class": "class.wizard",
+  "level": 1,
+  "curriculum": {
+    "cantrips": [
+      "spell.gouging-claw",
+      "spell.tangle-vine"
+    ],
+    "ranks": {
+      "1": [
+        "spell.jump",
+        "spell.pest-form",
+        "spell.spider-sting"
+      ],
+      "2": [
+        "spell.enlarge",
+        "spell.humanoid-form"
+      ],
+      "3": [
+        "spell.feet-to-fins",
+        "spell.vampiric-feast"
+      ],
+      "4": [
+        "spell.mountain-resilience",
+        "spell.vapor-form"
+      ],
+      "5": [
+        "spell.elemental-form",
+        "spell.toxic-cloud"
+      ],
+      "6": [
+        "spell.cursed-metamorphosis",
+        "spell.petrify"
+      ],
+      "7": [
+        "spell.duplicate-foe",
+        "spell.fiery-body"
+      ],
+      "8": [
+        "spell.desiccate",
+        "spell.monstrosity-form"
+      ],
+      "9": [
+        "spell.metamorphosis"
+      ]
+    }
+  },
+  "schoolSpells": {
+    "initial": "spell.scramble-body",
+    "advanced": "spell.shifting-form"
+  },
+  "editNote": "Reserved Material removed: the named institutions and nations, and the book-title trade dress, replaced with generic descriptors; the wording otherwise unchanged."
+}
