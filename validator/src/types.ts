@@ -10,6 +10,8 @@ export const TYPE_FOLDERS: Record<string, string> = {
   background: 'backgrounds',
   class: 'classes',
   spell: 'spells',
+  school: 'schools',
+  thesis: 'theses',
   item: 'items',
 };
 export const RECORD_TYPES = Object.keys(TYPE_FOLDERS);

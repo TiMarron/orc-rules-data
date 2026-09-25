@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "school.schema.json",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "common.schema.json#/$defs/envelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "class",
+        "level"
+      ],
+      "properties": {
+        "type": {
+          "const": "school"
+        },
+        "class": {
+          "$ref": "common.schema.json#/$defs/refClass"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "curriculum": {
+          "type": "object",
+          "required": [
+            "cantrips",
+            "ranks"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "cantrips": {
+              "type": "array",
+              "items": {
+                "$ref": "common.schema.json#/$defs/refSpell"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "ranks": {
+              "type": "object",
+              "propertyNames": {
+                "pattern": "^(10|[1-9])$"
+              },
+              "additionalProperties": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/refSpell"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "minProperties": 1
+            }
+          },
+          "$comment": "The spells the school's curriculum adds to your spellbook, as the book prints them: a cantrip list and one list per spell rank. The school of unified magical theory has no curriculum and sets none of this."
+        },
+        "schoolSpells": {
+          "type": "object",
+          "required": [
+            "initial"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "initial": {
+              "$ref": "common.schema.json#/$defs/refSpell"
+            },
+            "advanced": {
+              "$ref": "common.schema.json#/$defs/refSpell"
+            }
+          },
+          "$comment": "The focus spells the school grants: the initial school spell at 1st level, and the advanced one a later feat can unlock. Every printed school names both; advanced stays optional because the book prints nothing forcing a later school to."
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

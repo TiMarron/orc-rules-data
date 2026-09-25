@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "thesis.schema.json",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "common.schema.json#/$defs/envelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "class",
+        "level"
+      ],
+      "properties": {
+        "type": {
+          "const": "thesis"
+        },
+        "class": {
+          "$ref": "common.schema.json#/$defs/refClass"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}
