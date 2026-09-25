@@ -1,0 +1,17 @@
+{
+  "id": "thesis.spell-substitution",
+  "type": "thesis",
+  "name": "thesis.spell-substitution.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 196,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "thesis.spell-substitution.text",
+  "class": "class.wizard",
+  "level": 1
+}

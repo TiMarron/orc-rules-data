@@ -1,0 +1,66 @@
+{
+  "id": "school.school-of-mentalism",
+  "type": "school",
+  "name": "school.school-of-mentalism.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 200,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "school.school-of-mentalism.text",
+  "class": "class.wizard",
+  "level": 1,
+  "curriculum": {
+    "cantrips": [
+      "spell.daze",
+      "spell.figment"
+    ],
+    "ranks": {
+      "1": [
+        "spell.dizzying-colors",
+        "spell.sleep",
+        "spell.sure-strike"
+      ],
+      "2": [
+        "spell.illusory-creature",
+        "spell.stupefy"
+      ],
+      "3": [
+        "spell.dream-message",
+        "spell.mind-reading"
+      ],
+      "4": [
+        "spell.nightmare",
+        "spell.vision-of-death"
+      ],
+      "5": [
+        "spell.hallucination",
+        "spell.illusory-scene"
+      ],
+      "6": [
+        "spell.never-mind",
+        "spell.phantasmal-calamity"
+      ],
+      "7": [
+        "spell.project-image",
+        "spell.warp-mind"
+      ],
+      "8": [
+        "spell.disappearance",
+        "spell.uncontrollable-dance"
+      ],
+      "9": [
+        "spell.phantasmagoria"
+      ]
+    }
+  },
+  "schoolSpells": {
+    "initial": "spell.charming-push",
+    "advanced": "spell.invisibility-cloak"
+  },
+  "editNote": "Reserved Material removed: the named institutions and nations, and the book-title trade dress, replaced with generic descriptors; the wording otherwise unchanged."
+}

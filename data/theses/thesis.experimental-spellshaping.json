@@ -1,0 +1,17 @@
+{
+  "id": "thesis.experimental-spellshaping",
+  "type": "thesis",
+  "name": "thesis.experimental-spellshaping.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 195,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "thesis.experimental-spellshaping.text",
+  "class": "class.wizard",
+  "level": 1
+}

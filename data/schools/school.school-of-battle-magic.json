@@ -1,0 +1,66 @@
+{
+  "id": "school.school-of-battle-magic",
+  "type": "school",
+  "name": "school.school-of-battle-magic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 199,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "school.school-of-battle-magic.text",
+  "class": "class.wizard",
+  "level": 1,
+  "curriculum": {
+    "cantrips": [
+      "spell.shield",
+      "spell.telekinetic-projectile"
+    ],
+    "ranks": {
+      "1": [
+        "spell.breathe-fire",
+        "spell.force-barrage",
+        "spell.mystic-armor"
+      ],
+      "2": [
+        "spell.mist",
+        "spell.resist-energy"
+      ],
+      "3": [
+        "spell.earthbind",
+        "spell.fireball"
+      ],
+      "4": [
+        "spell.wall-of-fire",
+        "spell.weapon-storm"
+      ],
+      "5": [
+        "spell.howling-blizzard",
+        "spell.impaling-spike"
+      ],
+      "6": [
+        "spell.chain-lightning",
+        "spell.disintegrate"
+      ],
+      "7": [
+        "spell.energy-aegis",
+        "spell.true-target"
+      ],
+      "8": [
+        "spell.arctic-rift",
+        "spell.desiccate"
+      ],
+      "9": [
+        "spell.falling-stars"
+      ]
+    }
+  },
+  "schoolSpells": {
+    "initial": "spell.force-bolt",
+    "advanced": "spell.energy-absorption"
+  },
+  "editNote": "Reserved Material removed: the named institutions and nations, and the book-title trade dress, replaced with generic descriptors; the wording otherwise unchanged."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "thesis.staff-nexus",
+  "type": "thesis",
+  "name": "thesis.staff-nexus.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 196,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "thesis.staff-nexus.text",
+  "class": "class.wizard",
+  "level": 1,
+  "editNote": "Reserved Material removed: the cross-reference to another book by its title and page, replaced with a generic descriptor; the wording otherwise unchanged."
+}

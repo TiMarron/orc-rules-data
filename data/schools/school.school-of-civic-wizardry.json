@@ -1,0 +1,66 @@
+{
+  "id": "school.school-of-civic-wizardry",
+  "type": "school",
+  "name": "school.school-of-civic-wizardry.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 199,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "school.school-of-civic-wizardry.text",
+  "class": "class.wizard",
+  "level": 1,
+  "curriculum": {
+    "cantrips": [
+      "spell.prestidigitation",
+      "spell.read-aura"
+    ],
+    "ranks": {
+      "1": [
+        "spell.hydraulic-push",
+        "spell.pummeling-rubble",
+        "spell.summon-construct"
+      ],
+      "2": [
+        "spell.revealing-light",
+        "spell.water-walk"
+      ],
+      "3": [
+        "spell.cozy-cabin",
+        "spell.safe-passage"
+      ],
+      "4": [
+        "spell.creation",
+        "spell.unfettered-movement"
+      ],
+      "5": [
+        "spell.control-water",
+        "spell.wall-of-stone"
+      ],
+      "6": [
+        "spell.disintegrate",
+        "spell.wall-of-force"
+      ],
+      "7": [
+        "spell.planar-palace",
+        "spell.retrocognition"
+      ],
+      "8": [
+        "spell.earthquake",
+        "spell.pinpoint"
+      ],
+      "9": [
+        "spell.foresight"
+      ]
+    }
+  },
+  "schoolSpells": {
+    "initial": "spell.earthworks",
+    "advanced": "spell.community-restoration"
+  },
+  "editNote": "Reserved Material removed: the named institutions and nations, and the book-title trade dress, replaced with generic descriptors; the wording otherwise unchanged."
+}
