@@ -1,6 +1,6 @@
 {
   "name": "orc-rules-data",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Machine-readable Second Edition Remaster rules under the ORC License. Engine-neutral.",
   "type": "module",
