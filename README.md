@@ -53,6 +53,10 @@ cost tokens.
   record), the halfling's Keen Eyes. A sense is not repeated here.
 - A spellcasting class names its tradition in `proficiencies.traditions`, or
   sets `traditionsVary` when the character's own choice fixes it.
+- A spellcasting class may describe how it casts in `spellcasting`: prepared or
+  spontaneous, where its spells come from, and its spells-per-day table as twenty
+  rows (index = level − 1). A school's curriculum slots are not in that table —
+  `spellcasting.curriculum` states the rule that adds them.
 - A ranged weapon points at the ammunition it fires in `weapon.ammunition`.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens

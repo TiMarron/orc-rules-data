@@ -99,6 +99,15 @@ major for renamed or removed ids, new required fields and markup changes.
   magical theory has no curriculum and sets none. A reader that enumerates
   the type folders sees two new ones.
 - `refSpell` in `common.schema.json`, a reference to a spell record.
+- `spellcasting`, an optional block on a class record: `kind` (prepared or
+  spontaneous), `source` (spellbook, the tradition's list, or a repertoire),
+  `tradition`, and `slots` — the spells-per-day table as twenty rows, one
+  per level, each with its cantrips and a slot count per spell rank. A class
+  that keeps a spellbook adds `spellbook` (what it holds at 1st level and how
+  many spells each level adds); the wizard adds `curriculum`, the rule its
+  arcane school's curriculum follows. Only the wizard carries the block in
+  this release; the other casters keep `proficiencies.spellcasting` and
+  `traditions` alone until their tables are imported.
 
 ### Migrating
 
