@@ -6,7 +6,8 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 ## Layout
 
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
-  action, feat, feature, ancestry, heritage, background, class, spell, item.
+  action, feat, feature, ancestry, heritage, background, class, spell, item,
+  school, thesis.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -60,6 +61,11 @@ cost tokens.
   instead of `ancestry`.
 - An ancestry feat for a versatile heritage sets `versatile: true` instead of
   `ancestry`, the same way the heritage itself does.
+- A wizard's 1st-level choices are records of their own, not feats or features:
+  a `school` (arcane school) carries its `curriculum` — cantrips plus one spell list
+  per rank — and its `schoolSpells` focus spells; a `thesis` (arcane thesis) carries
+  its rules in `text`. Both name the class in `class` and the level they are chosen
+  at in `level`. The school of unified magical theory sets no `curriculum`.
 - An action without an action cost must carry the exploration or downtime
   trait, or set `variable: true`.
 - A feat that appears on several classes' feat lists sets `class` to an array

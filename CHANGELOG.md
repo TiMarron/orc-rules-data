@@ -90,6 +90,15 @@ major for renamed or removed ids, new required fields and markup changes.
   dataset's notation (feet as a bare number, a damage type as its full name,
   a die as `NdM` or a bare `dM`, an item as its slug). A validator check
   requires every key to be among the record's own `traits`.
+- Two record types for a wizard's 1st-level choices, with schemas of their
+  own: `school` (`data/schools/`, seven arcane schools) and `thesis`
+  (`data/theses/`, five arcane theses), all from Player Core. Both name the
+  class in `class` and the level they are chosen at in `level`. A school also
+  carries `curriculum` — its cantrips and one spell list per rank — and
+  `schoolSpells`, its initial and advanced focus spells; the school of unified
+  magical theory has no curriculum and sets none. A reader that enumerates
+  the type folders sees two new ones.
+- `refSpell` in `common.schema.json`, a reference to a spell record.
 
 ### Migrating
 

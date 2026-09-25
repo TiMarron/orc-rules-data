@@ -13,6 +13,12 @@ const VALID: Record<string, Record<string, unknown>> = {
   action: record('action', 'stride', { actions: '1' }),
   feat: record('feat', 'sudden-charge', { category: 'class', class: 'class.fighter', level: 1, actions: '2', prerequisites: [] }),
   feature: record('feature', 'reactive-strike', { class: 'class.fighter', level: 1 }),
+  school: record('school', 'school-of-mentalism', {
+    class: 'class.wizard', level: 1,
+    curriculum: { cantrips: ['spell.daze'], ranks: { 1: ['spell.sleep'] } },
+    schoolSpells: { initial: 'spell.charming-push', advanced: 'spell.invisibility-cloak' },
+  }),
+  thesis: record('thesis', 'spell-blending', { class: 'class.wizard', level: 1 }),
   ancestry: record('ancestry', 'dwarf', {
     hp: 10, size: 'medium', speed: 20, boosts: ['con', 'wis', 'free'], flaws: ['cha'],
     languages: ['common', 'dwarven'], heritages: ['heritage.ancient-blooded-dwarf'],
@@ -205,6 +211,41 @@ describe('type schemas', () => {
     const issues = issuesFor('spell', { ...SPELL_FULL, cost: 'not an i18n key' });
     expect(issues).toHaveLength(1);
     expect(issues[0]).toContain('/cost must match pattern');
+  });
+
+  it('accepts a school without a curriculum (unified magical theory)', () => {
+    const school = record('school', 'school-of-unified-magical-theory', {
+      class: 'class.wizard', level: 1,
+      schoolSpells: { initial: 'spell.hand-of-the-apprentice', advanced: 'spell.interdisciplinary-incantation' },
+    });
+    expect(issuesFor('school', school)).toEqual([]);
+  });
+
+  it('rejects a curriculum rank key outside 1..10', () => {
+    const school = record('school', 'school-of-mentalism', {
+      class: 'class.wizard', level: 1,
+      curriculum: { cantrips: ['spell.daze'], ranks: { 11: ['spell.sleep'] } },
+    });
+    const issues = issuesFor('school', school);
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('ranks');
+  });
+
+  it('rejects school spells without the initial one with exactly one issue', () => {
+    const school = record('school', 'school-of-mentalism', {
+      class: 'class.wizard', level: 1,
+      schoolSpells: { advanced: 'spell.invisibility-cloak' },
+    });
+    const issues = issuesFor('school', school);
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain("must have required property 'initial'");
+  });
+
+  it('rejects an unknown property on a thesis with exactly one issue naming it', () => {
+    const thesis = record('thesis', 'spell-blending', { class: 'class.wizard', level: 1, curriculum: {} });
+    const issues = issuesFor('thesis', thesis);
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('curriculum');
   });
 
   it('accepts a feat with trigger, requirements, and frequency', () => {
