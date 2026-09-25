@@ -187,7 +187,7 @@
               "$comment": "The rule a school's curriculum follows, the same for every school: curriculum cantrips and spells written into the spellbook at 1st level, `perNewRank` more with each new slot rank, and the extra slots that only curriculum spells may fill. A school without a curriculum gets none of it."
             }
           },
-          "if": { "properties": { "source": { "const": "spellbook" } } },
+          "if": { "required": ["source"], "properties": { "source": { "const": "spellbook" } } },
           "then": { "properties": { "spellbook": true }, "required": ["spellbook"] },
           "dependentRequired": { "curriculum": ["spellbook"] },
           "$comment": "How the class casts. `kind` is prepared or spontaneous; `source` is where its castable spells come from — a spellbook, the tradition's whole list, or a repertoire (whose table this schema will gain when the first spontaneous class is imported). A class whose tradition is fixed by a character's choice (the witch, `traditionsVary`) cannot carry this block yet: `tradition` is a single required value."

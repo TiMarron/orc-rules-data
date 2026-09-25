@@ -290,7 +290,7 @@ describe('type schemas', () => {
   });
 
   it('rejects source spellbook without a spellbook block', () => {
-    const { spellbook, ...rest } = WIZARD_CASTING;
+    const { spellbook, curriculum, ...rest } = WIZARD_CASTING;
     const issues = issuesFor('class', { ...VALID.class, spellcasting: rest });
     expect(issues.length).toBeGreaterThanOrEqual(1);
     expect(issues.join(String.fromCharCode(10))).toContain('spellbook');
