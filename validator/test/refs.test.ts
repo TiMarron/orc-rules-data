@@ -128,6 +128,40 @@ describe('refs check', () => {
     ]);
   });
 
+  it('flags a spellcasting tradition that is not among the class\'s own traditions', () => {
+    const root = writeFixture({
+      records: [
+        {
+          folder: 'classes',
+          file: 'class.x.json',
+          json: record('class', 'x', {
+            proficiencies: { traditions: ['divine', 'occult'] },
+            spellcasting: { tradition: 'arcane' },
+          }),
+        },
+      ],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
+      'spellcasting.tradition: "arcane" is not among class.x\'s proficiencies.traditions ("divine", "occult")',
+    ]);
+  });
+
+  it('passes a spellcasting tradition that is among the class\'s own traditions', () => {
+    const root = writeFixture({
+      records: [
+        {
+          folder: 'classes',
+          file: 'class.x.json',
+          json: record('class', 'x', {
+            proficiencies: { traditions: ['arcane', 'occult'] },
+            spellcasting: { tradition: 'arcane' },
+          }),
+        },
+      ],
+    });
+    expect(refsCheck(loadDataset(root))).toEqual([]);
+  });
+
   it('resolves skill ids nested inside proficiencies.skills.choices[].from', () => {
     const root = writeFixture({
       records: [
