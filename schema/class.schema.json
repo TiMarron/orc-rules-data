@@ -153,7 +153,7 @@
           "required": ["kind", "source", "tradition", "slots"],
           "properties": {
             "kind": { "enum": ["prepared", "spontaneous"] },
-            "source": { "enum": ["spellbook", "list", "repertoire"] },
+            "source": { "enum": ["spellbook", "list"] },
             "tradition": { "$ref": "common.schema.json#/$defs/tradition" },
             "slots": {
               "type": "array",
@@ -189,8 +189,9 @@
           },
           "if": { "required": ["source"], "properties": { "source": { "const": "spellbook" } } },
           "then": { "properties": { "spellbook": true }, "required": ["spellbook"] },
+          "else": { "properties": { "spellbook": false } },
           "dependentRequired": { "curriculum": ["spellbook"] },
-          "$comment": "How the class casts. `kind` is prepared or spontaneous; `source` is where its castable spells come from — a spellbook, the tradition's whole list, or a repertoire (whose table this schema will gain when the first spontaneous class is imported). A class whose tradition is fixed by a character's choice (the witch, `traditionsVary`) cannot carry this block yet: `tradition` is a single required value."
+          "$comment": "How the class casts. `kind` is prepared or spontaneous; `source` is where its castable spells come from — a spellbook or the tradition's whole list (a repertoire will be added together with its table, when the first spontaneous class is imported). A class whose tradition is fixed by a character's choice (the witch, `traditionsVary`) cannot carry this block yet: `tradition` is a single required value."
         }
       }
     }
