@@ -42,6 +42,23 @@ export const refsCheck: Check = (ds) => {
         }
       }
     }
+    const spellcasting = f.record.spellcasting;
+    const proficiencies = f.record.proficiencies;
+    if (
+      spellcasting && typeof spellcasting === 'object' && !Array.isArray(spellcasting) &&
+      proficiencies && typeof proficiencies === 'object' && !Array.isArray(proficiencies)
+    ) {
+      const tradition = (spellcasting as Record<string, unknown>).tradition;
+      const traditions = (proficiencies as Record<string, unknown>).traditions;
+      if (typeof tradition === 'string' && Array.isArray(traditions) && !traditions.includes(tradition)) {
+        const list = (traditions as unknown[]).map((t) => `"${t}"`).join(', ');
+        issues.push({
+          level: 'error',
+          file: f.path,
+          message: `spellcasting.tradition: "${tradition}" is not among ${f.record.id}'s proficiencies.traditions (${list})`,
+        });
+      }
+    }
     walkStrings(f.record, (s, path) => {
       if (path === 'id' || path === 'type' || /(^|\.)traits\[\d+\]$/.test(path)) return;
       if (ID_PATTERN.test(s) && TYPE_PREFIX.test(s) && !exists(s)) {

@@ -289,6 +289,34 @@ describe('type schemas', () => {
     expect(issues.join(String.fromCharCode(10))).toContain('kind');
   });
 
+  it('rejects source spellbook without a spellbook block', () => {
+    const { spellbook, ...rest } = WIZARD_CASTING;
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: rest });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('spellbook');
+  });
+
+  it('rejects a curriculum without a spellbook block (source list)', () => {
+    const { spellbook, ...rest } = WIZARD_CASTING;
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: { ...rest, source: 'list' } });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('spellbook');
+  });
+
+  it('rejects a slot table that is not exactly twenty rows (twenty-one)', () => {
+    const slots = [...SLOTS_20, { cantrips: 5, ranks: { 1: 3 } }];
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: { ...WIZARD_CASTING, slots } });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('slots');
+  });
+
+  it('rejects a rank value of 0', () => {
+    const slots = SLOTS_20.map((row, i) => (i === 0 ? { cantrips: 5, ranks: { 1: 0 } } : row));
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: { ...WIZARD_CASTING, slots } });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('ranks');
+  });
+
   it('accepts a feat with trigger, requirements, and frequency', () => {
     expect(issuesFor('feat', FEAT_FULL)).toEqual([]);
   });
