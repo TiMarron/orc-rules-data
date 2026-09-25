@@ -317,6 +317,19 @@ describe('type schemas', () => {
     expect(issues.join(String.fromCharCode(10))).toContain('ranks');
   });
 
+  it('rejects a spellbook block when source is not spellbook', () => {
+    const { curriculum, ...rest } = WIZARD_CASTING;
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: { ...rest, source: 'list' } });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('spellbook');
+  });
+
+  it('rejects source repertoire (its table does not exist yet)', () => {
+    const issues = issuesFor('class', { ...VALID.class, spellcasting: { ...WIZARD_CASTING, source: 'repertoire' } });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('source');
+  });
+
   it('accepts a feat with trigger, requirements, and frequency', () => {
     expect(issuesFor('feat', FEAT_FULL)).toEqual([]);
   });

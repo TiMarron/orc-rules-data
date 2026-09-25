@@ -50,7 +50,14 @@ export const refsCheck: Check = (ds) => {
     ) {
       const tradition = (spellcasting as Record<string, unknown>).tradition;
       const traditions = (proficiencies as Record<string, unknown>).traditions;
-      if (typeof tradition === 'string' && Array.isArray(traditions) && !traditions.includes(tradition)) {
+      const traditionsVary = (proficiencies as Record<string, unknown>).traditionsVary;
+      if (traditionsVary === true || !Array.isArray(traditions)) {
+        issues.push({
+          level: 'error',
+          file: f.path,
+          message: `spellcasting: ${f.record.id} needs a single tradition of the class's own (proficiencies.traditions)`,
+        });
+      } else if (typeof tradition === 'string' && !traditions.includes(tradition)) {
         const list = (traditions as unknown[]).map((t) => `"${t}"`).join(', ');
         issues.push({
           level: 'error',

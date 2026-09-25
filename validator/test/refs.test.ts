@@ -162,6 +162,42 @@ describe('refs check', () => {
     expect(refsCheck(loadDataset(root))).toEqual([]);
   });
 
+  it('flags a spellcasting block on a class whose tradition varies', () => {
+    const root = writeFixture({
+      records: [
+        {
+          folder: 'classes',
+          file: 'class.x.json',
+          json: record('class', 'x', {
+            proficiencies: { traditionsVary: true },
+            spellcasting: { tradition: 'arcane' },
+          }),
+        },
+      ],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
+      "spellcasting: class.x needs a single tradition of the class's own (proficiencies.traditions)",
+    ]);
+  });
+
+  it('flags a spellcasting block on a class with no traditions at all', () => {
+    const root = writeFixture({
+      records: [
+        {
+          folder: 'classes',
+          file: 'class.x.json',
+          json: record('class', 'x', {
+            proficiencies: {},
+            spellcasting: { tradition: 'arcane' },
+          }),
+        },
+      ],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
+      "spellcasting: class.x needs a single tradition of the class's own (proficiencies.traditions)",
+    ]);
+  });
+
   it('resolves skill ids nested inside proficiencies.skills.choices[].from', () => {
     const root = writeFixture({
       records: [

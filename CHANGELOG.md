@@ -100,8 +100,9 @@ major for renamed or removed ids, new required fields and markup changes.
   the type folders sees two new ones.
 - `refSpell` in `common.schema.json`, a reference to a spell record.
 - `spellcasting`, an optional block on a class record: `kind` (prepared or
-  spontaneous), `source` (spellbook, the tradition's list, or a repertoire),
-  `tradition`, and `slots` — the spells-per-day table as twenty rows, one
+  spontaneous), `source` (a spellbook or the tradition's list; a repertoire
+  is coming with the first spontaneous class), `tradition`, and `slots` —
+  the spells-per-day table as twenty rows, one
   per level, each with its cantrips and a slot count per spell rank. A class
   that keeps a spellbook adds `spellbook` (what it holds at 1st level and how
   many spells each level adds); the wizard adds `curriculum`, the rule its
