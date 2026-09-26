@@ -10,6 +10,9 @@ major for renamed or removed ids, new required fields and markup changes.
 
 - Record type `package`: the Quick Equipment Packages of Player Core, one per
   class.
+- Nineteen Player Core weapons the first import missed, among them the spear,
+  the staff, the shortbow and the glaive: the structured source filed their
+  Remaster printings under a later book.
 
 ## 0.2.0 — 2026-09-26
 
