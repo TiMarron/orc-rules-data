@@ -261,38 +261,45 @@ describe('type schemas', () => {
     expect(issues[0]).toContain('curriculum');
   });
 
-  const PACKAGE = VALID.package as Record<string, unknown> & { options: unknown[] };
+  const PACKAGE = VALID.package;
 
   it('rejects a one-of package option with a single set', () => {
     const options = [{ kind: 'oneOf', default: 0, sets: [[{ item: 'item.greatsword', count: 1 }]] }];
     const issues = issuesFor('package', { ...PACKAGE, options });
-    expect(issues.length).toBeGreaterThanOrEqual(1);
-    expect(issues.join(String.fromCharCode(10))).toContain('options');
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('must NOT have fewer than 2 items');
   });
 
   it('rejects an optional package purchase with two sets', () => {
     const options = [{ kind: 'optional', sets: [[{ item: 'item.dagger', count: 1 }], [{ item: 'item.sickle', count: 1 }]] }];
     const issues = issuesFor('package', { ...PACKAGE, options });
-    expect(issues.length).toBeGreaterThanOrEqual(1);
-    expect(issues.join(String.fromCharCode(10))).toContain('options');
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('must NOT have more than 1 items');
   });
 
   it('rejects a package item count of zero', () => {
     const issues = issuesFor('package', { ...PACKAGE, items: [{ item: 'item.dagger', count: 0 }] });
-    expect(issues.length).toBeGreaterThanOrEqual(1);
-    expect(issues.join(String.fromCharCode(10))).toContain('count');
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('must be >= 1');
   });
 
   it('rejects an unresolved package option without a note', () => {
     const issues = issuesFor('package', { ...PACKAGE, options: [{ kind: 'unresolved' }] });
-    expect(issues.length).toBeGreaterThanOrEqual(1);
-    expect(issues.join(String.fromCharCode(10))).toContain('options');
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain("must have required property 'note'");
   });
 
   it('rejects a package without items', () => {
     const issues = issuesFor('package', { ...PACKAGE, items: [] });
-    expect(issues.length).toBeGreaterThanOrEqual(1);
-    expect(issues.join(String.fromCharCode(10))).toContain('items');
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('must NOT have fewer than 1 items');
+  });
+
+  it('rejects a package option with an unknown kind, naming the discriminator problem', () => {
+    const options = [{ kind: 'oneof', default: 0, sets: [[{ item: 'item.dagger', count: 1 }]] }];
+    const issues = issuesFor('package', { ...PACKAGE, options });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('kind');
   });
 
   const SLOTS_20 = Array.from({ length: 20 }, (_, i) => ({

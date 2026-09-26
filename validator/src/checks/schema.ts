@@ -16,7 +16,7 @@ const FOLDER_TYPES: Record<string, string> = Object.fromEntries(
 );
 
 export function loadSchemas(schemaDir: string): AjvType {
-  const ajv = new AjvCtor({ allErrors: true, strict: true });
+  const ajv = new AjvCtor({ allErrors: true, strict: true, discriminator: true });
   addFormatsFn(ajv);
   const names: string[] = [];
   for (const name of readdirSync(schemaDir).sort()) {
