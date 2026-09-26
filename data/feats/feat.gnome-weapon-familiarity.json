@@ -11,11 +11,12 @@
     "page": 52,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.gnome-weapon-familiarity.text",
   "level": 1,
   "category": "ancestry",
   "ancestry": "ancestry.gnome",
-  "prerequisites": []
+  "prerequisites": [],
+  "editNote": "a link to the reprinted weapon now resolves"
 }

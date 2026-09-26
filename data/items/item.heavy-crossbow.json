@@ -1,0 +1,32 @@
+{
+  "id": "item.heavy-crossbow",
+  "type": "item",
+  "name": "item.heavy-crossbow.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.heavy-crossbow.text",
+  "level": 0,
+  "priceCp": 400,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "2",
+    "group": "crossbow",
+    "damage": {
+      "dice": "1d10",
+      "type": "piercing"
+    },
+    "range": 120,
+    "reload": "2",
+    "ammunition": "item.bolts"
+  },
+  "editNote": "Checked against the book, ranged table p. 281: price, damage, range, reload, Bulk, hands, group, category, rarity and traits with their values match the table, and the description matches the book's entry. The dropped block is the structured source's critical specialization section, which the book prints once per weapon group on p. 283, not in the weapon's entry."
+}

@@ -11,11 +11,12 @@
     "page": 48,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.elven-weapon-familiarity.text",
   "level": 1,
   "category": "ancestry",
   "ancestry": "ancestry.elf",
-  "prerequisites": []
+  "prerequisites": [],
+  "editNote": "a link to the reprinted weapon now resolves"
 }
