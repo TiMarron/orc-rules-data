@@ -1,0 +1,40 @@
+{
+  "id": "item.composite-longbow",
+  "type": "item",
+  "name": "item.composite-longbow.name",
+  "traits": [
+    "deadly",
+    "propulsive",
+    "volley"
+  ],
+  "traitValues": {
+    "deadly": "d10",
+    "volley": "30"
+  },
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 281,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.composite-longbow.text",
+  "level": 0,
+  "priceCp": 2000,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1+",
+    "group": "bow",
+    "damage": {
+      "dice": "1d8",
+      "type": "piercing"
+    },
+    "range": 100,
+    "reload": "0",
+    "ammunition": "item.arrows"
+  },
+  "editNote": "The book (p. 284) names a deity, which is Reserved Material, as its example of a longbow-restricted ability; the example clause is dropped and the rule it illustrates kept verbatim. Level set to 0: the book states on p. 276 that every weapon in the chapter has item level 0, where the structured source gives 1."
+}

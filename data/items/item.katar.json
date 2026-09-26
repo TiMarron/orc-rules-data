@@ -1,0 +1,36 @@
+{
+  "id": "item.katar",
+  "type": "item",
+  "name": "item.katar.name",
+  "traits": [
+    "agile",
+    "deadly",
+    "monk"
+  ],
+  "traitValues": {
+    "deadly": "d6"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 277,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.katar.text",
+  "level": 0,
+  "priceCp": 30,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "knife",
+    "damage": {
+      "dice": "1d4",
+      "type": "piercing"
+    }
+  },
+  "editNote": "Checked against the book, simple melee table p. 277: price, damage, Bulk, hands, group, category, rarity and traits with their values match the table, and the description matches the book's entry. The dropped block is the structured source's critical specialization section, which the book prints once per weapon group on p. 283, not in the weapon's entry."
+}

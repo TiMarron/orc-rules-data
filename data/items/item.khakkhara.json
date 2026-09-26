@@ -1,0 +1,38 @@
+{
+  "id": "item.khakkhara",
+  "type": "item",
+  "name": "item.khakkhara.name",
+  "traits": [
+    "monk",
+    "shove",
+    "two-hand",
+    "versatile"
+  ],
+  "traitValues": {
+    "two-hand": "1d10",
+    "versatile": "piercing"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 279,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.khakkhara.text",
+  "level": 0,
+  "priceCp": 200,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "club",
+    "damage": {
+      "dice": "1d6",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "The book's table (p. 278) prints the khakkhara (spelled Khakkara in the table and description) with two-hand d10; the structured source's two-hand parameter was not parsed, so traitValues carries it from the book."
+}

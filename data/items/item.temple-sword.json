@@ -1,0 +1,32 @@
+{
+  "id": "item.temple-sword",
+  "type": "item",
+  "name": "item.temple-sword.name",
+  "traits": [
+    "monk",
+    "trip"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.temple-sword.text",
+  "level": 0,
+  "priceCp": 200,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "sword",
+    "damage": {
+      "dice": "1d8",
+      "type": "slashing"
+    }
+  },
+  "editNote": "The book (p. 286) ends the description at 'affixed to the weapon.'; the structured source's later printing adds a closing phrase the book does not print, so it is dropped."
+}

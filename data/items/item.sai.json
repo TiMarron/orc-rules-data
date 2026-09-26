@@ -1,0 +1,38 @@
+{
+  "id": "item.sai",
+  "type": "item",
+  "name": "item.sai.name",
+  "traits": [
+    "agile",
+    "disarm",
+    "finesse",
+    "monk",
+    "versatile"
+  ],
+  "traitValues": {
+    "versatile": "bludgeoning"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 278,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.sai.text",
+  "level": 0,
+  "priceCp": 60,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "knife",
+    "damage": {
+      "dice": "1d4",
+      "type": "piercing"
+    }
+  },
+  "editNote": "Checked against the book, martial melee table p. 278: price, damage, Bulk, hands, group, category, rarity and traits with their values match the table, and the description matches the book's entry. The dropped block is the structured source's critical specialization section, which the book prints once per weapon group on p. 283, not in the weapon's entry."
+}

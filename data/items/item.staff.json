@@ -1,0 +1,34 @@
+{
+  "id": "item.staff",
+  "type": "item",
+  "name": "item.staff.name",
+  "traits": [
+    "monk",
+    "two-hand"
+  ],
+  "traitValues": {
+    "two-hand": "1d8"
+  },
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 277,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.staff.text",
+  "level": 0,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "club",
+    "damage": {
+      "dice": "1d4",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "Checked against the book, simple melee table p. 277: price, damage, Bulk, hands, group, category, rarity and traits with their values match the table, and the description matches the book's entry. The dropped block is the structured source's critical specialization section, which the book prints once per weapon group on p. 283, not in the weapon's entry."
+}
