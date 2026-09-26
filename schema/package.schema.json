@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "package.schema.json",
+  "$comment": "A Quick Equipment Package (Player Core): the gear a class starts with, bought from the starting coin. Price and money left over are not stored — they follow from the items' priceCp. `options` are what the book prints under Options: a oneOf is a choice between sets (the book says \"or\"), an optional is a single purchase, an unresolved is an option that points at data the dataset does not hold (a deity's favored weapon) and carries only its note.",
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item", "count"],
+      "properties": {
+        "item": { "$ref": "common.schema.json#/$defs/refItem" },
+        "count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "itemSet": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entry" },
+      "minItems": 1
+    },
+    "option": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "default", "sets"],
+          "properties": {
+            "kind": { "const": "oneOf" },
+            "default": { "type": "integer", "minimum": 0 },
+            "sets": { "type": "array", "items": { "$ref": "#/$defs/itemSet" }, "minItems": 2 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "sets"],
+          "properties": {
+            "kind": { "const": "optional" },
+            "sets": { "type": "array", "items": { "$ref": "#/$defs/itemSet" }, "minItems": 1, "maxItems": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "note"],
+          "properties": {
+            "kind": { "const": "unresolved" },
+            "note": { "$ref": "common.schema.json#/$defs/i18nKey" }
+          }
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["class", "items", "options"],
+      "properties": {
+        "type": { "const": "package" },
+        "class": { "$ref": "common.schema.json#/$defs/refClass" },
+        "items": { "$ref": "#/$defs/itemSet" },
+        "options": { "type": "array", "items": { "$ref": "#/$defs/option" } }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

@@ -19,6 +19,19 @@ const VALID: Record<string, Record<string, unknown>> = {
     schoolSpells: { initial: 'spell.charming-push', advanced: 'spell.invisibility-cloak' },
   }),
   thesis: record('thesis', 'spell-blending', { class: 'class.wizard', level: 1 }),
+  package: record('package', 'fighter', {
+    class: 'class.fighter',
+    items: [{ item: 'item.scale-mail', count: 1 }, { item: 'item.arrows', count: 2 }],
+    options: [
+      {
+        kind: 'oneOf',
+        default: 0,
+        sets: [[{ item: 'item.greatsword', count: 1 }], [{ item: 'item.longsword', count: 1 }, { item: 'item.steel-shield', count: 1 }]],
+      },
+      { kind: 'optional', sets: [[{ item: 'item.healers-toolkit', count: 1 }]] },
+      { kind: 'unresolved', note: 'package.fighter.options.2.note' },
+    ],
+  }),
   ancestry: record('ancestry', 'dwarf', {
     hp: 10, size: 'medium', speed: 20, boosts: ['con', 'wis', 'free'], flaws: ['cha'],
     languages: ['common', 'dwarven'], heritages: ['heritage.ancient-blooded-dwarf'],
@@ -246,6 +259,40 @@ describe('type schemas', () => {
     const issues = issuesFor('thesis', thesis);
     expect(issues).toHaveLength(1);
     expect(issues[0]).toContain('curriculum');
+  });
+
+  const PACKAGE = VALID.package as Record<string, unknown> & { options: unknown[] };
+
+  it('rejects a one-of package option with a single set', () => {
+    const options = [{ kind: 'oneOf', default: 0, sets: [[{ item: 'item.greatsword', count: 1 }]] }];
+    const issues = issuesFor('package', { ...PACKAGE, options });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('options');
+  });
+
+  it('rejects an optional package purchase with two sets', () => {
+    const options = [{ kind: 'optional', sets: [[{ item: 'item.dagger', count: 1 }], [{ item: 'item.sickle', count: 1 }]] }];
+    const issues = issuesFor('package', { ...PACKAGE, options });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('options');
+  });
+
+  it('rejects a package item count of zero', () => {
+    const issues = issuesFor('package', { ...PACKAGE, items: [{ item: 'item.dagger', count: 0 }] });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('count');
+  });
+
+  it('rejects an unresolved package option without a note', () => {
+    const issues = issuesFor('package', { ...PACKAGE, options: [{ kind: 'unresolved' }] });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('options');
+  });
+
+  it('rejects a package without items', () => {
+    const issues = issuesFor('package', { ...PACKAGE, items: [] });
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join(String.fromCharCode(10))).toContain('items');
   });
 
   const SLOTS_20 = Array.from({ length: 20 }, (_, i) => ({
