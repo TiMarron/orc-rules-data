@@ -9,7 +9,11 @@
       "required": ["item", "count"],
       "properties": {
         "item": { "$ref": "common.schema.json#/$defs/refItem" },
-        "count": { "type": "integer", "minimum": 1 }
+        "count": {
+          "type": "integer",
+          "minimum": 1,
+          "$comment": "Purchase units: an item's priceCp buys one unit; ammunition such as arrows, bolts and sling bullets is priced and sold in tens, so 20 arrows is count 2."
+        }
       }
     },
     "itemSet": {
@@ -17,37 +21,42 @@
       "items": { "$ref": "#/$defs/entry" },
       "minItems": 1
     },
+    "optionOneOf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "default", "sets"],
+      "properties": {
+        "kind": { "const": "oneOf" },
+        "default": { "type": "integer", "minimum": 0 },
+        "sets": { "type": "array", "items": { "$ref": "#/$defs/itemSet" }, "minItems": 2 }
+      }
+    },
+    "optionOptional": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "sets"],
+      "properties": {
+        "kind": { "const": "optional" },
+        "sets": { "type": "array", "items": { "$ref": "#/$defs/itemSet" }, "minItems": 1, "maxItems": 1 }
+      }
+    },
+    "optionUnresolved": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "note"],
+      "properties": {
+        "kind": { "const": "unresolved" },
+        "note": { "$ref": "common.schema.json#/$defs/i18nKey" }
+      }
+    },
     "option": {
+      "type": "object",
       "oneOf": [
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["kind", "default", "sets"],
-          "properties": {
-            "kind": { "const": "oneOf" },
-            "default": { "type": "integer", "minimum": 0 },
-            "sets": { "type": "array", "items": { "$ref": "#/$defs/itemSet" }, "minItems": 2 }
-          }
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["kind", "sets"],
-          "properties": {
-            "kind": { "const": "optional" },
-            "sets": { "type": "array", "items": { "$ref": "#/$defs/itemSet" }, "minItems": 1, "maxItems": 1 }
-          }
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["kind", "note"],
-          "properties": {
-            "kind": { "const": "unresolved" },
-            "note": { "$ref": "common.schema.json#/$defs/i18nKey" }
-          }
-        }
-      ]
+        { "$ref": "#/$defs/optionOneOf" },
+        { "$ref": "#/$defs/optionOptional" },
+        { "$ref": "#/$defs/optionUnresolved" }
+      ],
+      "discriminator": { "propertyName": "kind" }
     }
   },
   "type": "object",

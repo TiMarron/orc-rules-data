@@ -70,6 +70,7 @@ export const refsCheck: Check = (ds) => {
     // a consumer that preselects `sets[default]` must never index past the end.
     if (f.record.type === 'package' && Array.isArray(f.record.options)) {
       (f.record.options as unknown[]).forEach((o, i) => {
+        if (!o || typeof o !== 'object') return;
         const opt = o as { kind?: unknown; sets?: unknown; default?: unknown };
         if (opt.kind === 'oneOf' && Array.isArray(opt.sets) && typeof opt.default === 'number' && opt.default >= opt.sets.length) {
           issues.push({ level: 'error', file: f.path, message: `options[${i}].default: ${opt.default} is past the last of ${opt.sets.length} sets` });

@@ -248,4 +248,38 @@ describe('refs check', () => {
       'items[0].item: reference "item.dagger" does not resolve',
     ]);
   });
+
+  it('passes a one-of package option whose default is within range', () => {
+    const pkg = record('package', 'fighter', {
+      class: 'class.fighter',
+      items: [{ item: 'item.dagger', count: 1 }],
+      options: [{ kind: 'oneOf', default: 1, sets: [[{ item: 'item.dagger', count: 1 }], [{ item: 'item.dagger', count: 2 }]] }],
+    });
+    const root = writeFixture({
+      records: [
+        { folder: 'packages', file: 'package.fighter.json', json: pkg },
+        { folder: 'classes', file: 'class.fighter.json', json: record('class', 'fighter') },
+        { folder: 'items', file: 'item.dagger.json', json: record('item', 'dagger') },
+      ],
+    });
+    expect(refsCheck(loadDataset(root))).toEqual([]);
+  });
+
+  it('does not throw on a stray non-object package option, and reports no issue about options', () => {
+    const pkg = record('package', 'fighter', {
+      class: 'class.fighter',
+      items: [{ item: 'item.dagger', count: 1 }],
+      options: [null],
+    });
+    const root = writeFixture({
+      records: [
+        { folder: 'packages', file: 'package.fighter.json', json: pkg },
+        { folder: 'classes', file: 'class.fighter.json', json: record('class', 'fighter') },
+        { folder: 'items', file: 'item.dagger.json', json: record('item', 'dagger') },
+      ],
+    });
+    expect(() => refsCheck(loadDataset(root))).not.toThrow();
+    const messages = refsCheck(loadDataset(root)).map((i) => i.message);
+    expect(messages.some((m) => m.includes('options'))).toBe(false);
+  });
 });
