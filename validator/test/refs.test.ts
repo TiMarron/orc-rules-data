@@ -217,4 +217,35 @@ describe('refs check', () => {
       'proficiencies.skills.choices[0].from[1]: reference "skill.athletics" does not resolve',
     ]);
   });
+
+  it('flags a one-of package option whose default is past its last set', () => {
+    const pkg = record('package', 'fighter', {
+      class: 'class.fighter',
+      items: [{ item: 'item.dagger', count: 1 }],
+      options: [{ kind: 'oneOf', default: 2, sets: [[{ item: 'item.dagger', count: 1 }], [{ item: 'item.dagger', count: 2 }]] }],
+    });
+    const root = writeFixture({
+      records: [
+        { folder: 'packages', file: 'package.fighter.json', json: pkg },
+        { folder: 'classes', file: 'class.fighter.json', json: record('class', 'fighter') },
+        { folder: 'items', file: 'item.dagger.json', json: record('item', 'dagger') },
+      ],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
+      'options[0].default: 2 is past the last of 2 sets',
+    ]);
+  });
+
+  it('flags a package item that does not resolve', () => {
+    const pkg = record('package', 'fighter', { class: 'class.fighter', items: [{ item: 'item.dagger', count: 1 }], options: [] });
+    const root = writeFixture({
+      records: [
+        { folder: 'packages', file: 'package.fighter.json', json: pkg },
+        { folder: 'classes', file: 'class.fighter.json', json: record('class', 'fighter') },
+      ],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual([
+      'items[0].item: reference "item.dagger" does not resolve',
+    ]);
+  });
 });

@@ -7,7 +7,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
-  school, thesis.
+  school, thesis, package.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -71,6 +71,13 @@ cost tokens.
   per rank — and its `schoolSpells` focus spells; a `thesis` (arcane thesis) carries
   its rules in `text`. Both name the class in `class` and the level they are chosen
   at in `level`. The school of unified magical theory sets no `curriculum`.
+- A `package` is a Quick Equipment Package: the gear a class starts with. `items`
+  lists the base package as `{ item, count }` entries (ammunition is priced per
+  ten, so 20 arrows is `count: 2`); `options` lists what the book prints under
+  Options — `oneOf` is a choice between `sets` with a `default`, `optional` is one
+  purchase, `unresolved` is an option the dataset cannot express (it carries only
+  a `note`). Price and money left over are not stored: sum the items' `priceCp`,
+  an item without one is free.
 - An action without an action cost must carry the exploration or downtime
   trait, or set `variable: true`.
 - A feat that appears on several classes' feat lists sets `class` to an array

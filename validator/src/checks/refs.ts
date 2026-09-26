@@ -66,6 +66,16 @@ export const refsCheck: Check = (ds) => {
         });
       }
     }
+    // JSON Schema cannot compare two fields of one object, so a oneOf's default is bounded here:
+    // a consumer that preselects `sets[default]` must never index past the end.
+    if (f.record.type === 'package' && Array.isArray(f.record.options)) {
+      (f.record.options as unknown[]).forEach((o, i) => {
+        const opt = o as { kind?: unknown; sets?: unknown; default?: unknown };
+        if (opt.kind === 'oneOf' && Array.isArray(opt.sets) && typeof opt.default === 'number' && opt.default >= opt.sets.length) {
+          issues.push({ level: 'error', file: f.path, message: `options[${i}].default: ${opt.default} is past the last of ${opt.sets.length} sets` });
+        }
+      });
+    }
     walkStrings(f.record, (s, path) => {
       if (path === 'id' || path === 'type' || /(^|\.)traits\[\d+\]$/.test(path)) return;
       if (ID_PATTERN.test(s) && TYPE_PREFIX.test(s) && !exists(s)) {
