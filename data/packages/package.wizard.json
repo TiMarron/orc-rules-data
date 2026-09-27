@@ -1,0 +1,50 @@
+{
+  "id": "package.wizard",
+  "type": "package",
+  "name": "package.wizard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "class": "class.wizard",
+  "items": [
+    {
+      "item": "item.explorers-clothing",
+      "count": 1
+    },
+    {
+      "item": "item.staff",
+      "count": 1
+    },
+    {
+      "item": "item.adventurers-pack",
+      "count": 1
+    },
+    {
+      "item": "item.writing-set",
+      "count": 1
+    }
+  ],
+  "options": [
+    {
+      "kind": "optional",
+      "sets": [
+        [
+          {
+            "item": "item.crossbow",
+            "count": 1
+          },
+          {
+            "item": "item.bolts",
+            "count": 2
+          }
+        ]
+      ]
+    }
+  ]
+}

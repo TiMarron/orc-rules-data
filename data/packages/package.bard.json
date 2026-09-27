@@ -1,0 +1,46 @@
+{
+  "id": "package.bard",
+  "type": "package",
+  "name": "package.bard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "class": "class.bard",
+  "items": [
+    {
+      "item": "item.studded-leather-armor",
+      "count": 1
+    },
+    {
+      "item": "item.dagger",
+      "count": 1
+    },
+    {
+      "item": "item.rapier",
+      "count": 1
+    },
+    {
+      "item": "item.sling",
+      "count": 1
+    },
+    {
+      "item": "item.sling-bullets",
+      "count": 2
+    },
+    {
+      "item": "item.adventurers-pack",
+      "count": 1
+    },
+    {
+      "item": "item.musical-instrument-handheld",
+      "count": 1
+    }
+  ],
+  "options": []
+}

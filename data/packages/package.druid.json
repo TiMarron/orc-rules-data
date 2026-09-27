@@ -1,0 +1,50 @@
+{
+  "id": "package.druid",
+  "type": "package",
+  "name": "package.druid.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "class": "class.druid",
+  "items": [
+    {
+      "item": "item.hide-armor",
+      "count": 1
+    },
+    {
+      "item": "item.javelin",
+      "count": 4
+    },
+    {
+      "item": "item.spear",
+      "count": 1
+    },
+    {
+      "item": "item.adventurers-pack",
+      "count": 1
+    },
+    {
+      "item": "item.primal-symbol",
+      "count": 1
+    }
+  ],
+  "options": [
+    {
+      "kind": "optional",
+      "sets": [
+        [
+          {
+            "item": "item.healers-toolkit",
+            "count": 1
+          }
+        ]
+      ]
+    }
+  ]
+}
