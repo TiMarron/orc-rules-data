@@ -77,7 +77,9 @@ cost tokens.
   Options — `oneOf` is a choice between `sets` with a `default`, `optional` is one
   purchase, `unresolved` is an option the dataset cannot express (it carries only
   a `note`). Price and money left over are not stored: sum the items' `priceCp`,
-  an item without one is free.
+  an item without one is free. The printed package price covers `items` only;
+  every option costs extra. A `oneOf`'s `default` is the set a "take the
+  package" action preselects, and its items are bought on top of the base.
 - An action without an action cost must carry the exploration or downtime
   trait, or set `variable: true`.
 - A feat that appears on several classes' feat lists sets `class` to an array
