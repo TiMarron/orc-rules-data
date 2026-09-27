@@ -625,4 +625,14 @@ describe('type schemas', () => {
     const issues = issuesFor('feat', record('feat', 'doubled-any', { category: 'general', level: 1, prerequisites: [{ kind: 'any', of: [branch, branch] }] }));
     expect(issues.join(' | ')).toContain('must NOT have duplicate items');
   });
+
+  it('accepts a feat marked repeatable', () => {
+    expect(issuesFor('feat', { ...VALID.feat, repeatable: true })).toEqual([]);
+  });
+
+  it('rejects a repeatable flag that is not a boolean', () => {
+    const issues = issuesFor('feat', { ...VALID.feat, repeatable: 'yes' });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('repeatable');
+  });
 });

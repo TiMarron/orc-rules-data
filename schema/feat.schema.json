@@ -38,7 +38,11 @@
             }
           ]
         },
-        "versatile": { "type": "boolean" }
+        "versatile": { "type": "boolean" },
+        "repeatable": {
+          "type": "boolean",
+          "$comment": "The book's Special line lets this feat be selected more than once (usually with a different choice each time). Absent means once."
+        }
       }
     }
   ],

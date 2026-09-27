@@ -4,6 +4,12 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## 0.4.0 — unreleased
+
+### Added
+
+- Feats the book lets you select more than once carry `repeatable: true`.
+
 ## 0.3.0 — 2026-09-27
 
 ### Added
