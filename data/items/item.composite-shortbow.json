@@ -18,7 +18,7 @@
   "review": "assistant",
   "edited": true,
   "text": "item.composite-shortbow.text",
-  "level": 1,
+  "level": 0,
   "priceCp": 1400,
   "bulk": "1",
   "category": "weapon",
@@ -34,5 +34,5 @@
     "reload": "0",
     "ammunition": "item.arrows"
   },
-  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+  "editNote": "Level set to 0: the book states on p. 276 that every weapon in the chapter has item level 0, where the structured source gives 1."
 }

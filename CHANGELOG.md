@@ -17,7 +17,10 @@ major for renamed or removed ids, new required fields and markup changes.
 ### Changed
 
 - Elven Weapon Familiarity and Gnome Weapon Familiarity now link the weapons
-  they name that the first import had missed.
+  they name that the first import had missed; their `review` is now
+  `assistant`, since the reviewer checked the relinked text.
+- Composite Shortbow's level is corrected to 0: the book prints every weapon
+  at item level 0.
 
 ## 0.2.0 — 2026-09-26
 
