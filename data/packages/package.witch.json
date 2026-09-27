@@ -1,0 +1,65 @@
+{
+  "id": "package.witch",
+  "type": "package",
+  "name": "package.witch.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "class": "class.witch",
+  "items": [
+    {
+      "item": "item.explorers-clothing",
+      "count": 1
+    },
+    {
+      "item": "item.sickle",
+      "count": 1
+    },
+    {
+      "item": "item.sling",
+      "count": 1
+    },
+    {
+      "item": "item.sling-bullets",
+      "count": 2
+    },
+    {
+      "item": "item.staff",
+      "count": 1
+    },
+    {
+      "item": "item.adventurers-pack",
+      "count": 1
+    }
+  ],
+  "options": [
+    {
+      "kind": "optional",
+      "sets": [
+        [
+          {
+            "item": "item.cookware",
+            "count": 1
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "optional",
+      "sets": [
+        [
+          {
+            "item": "item.healers-toolkit",
+            "count": 1
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "package.cleric",
+  "type": "package",
+  "name": "package.cleric.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "class": "class.cleric",
+  "items": [
+    {
+      "item": "item.explorers-clothing",
+      "count": 1
+    },
+    {
+      "item": "item.adventurers-pack",
+      "count": 1
+    },
+    {
+      "item": "item.religious-symbol-wooden",
+      "count": 1
+    }
+  ],
+  "options": [
+    {
+      "kind": "unresolved",
+      "note": "package.cleric.options.0.note"
+    },
+    {
+      "kind": "optional",
+      "sets": [
+        [
+          {
+            "item": "item.chain-mail",
+            "count": 1
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "optional",
+      "sets": [
+        [
+          {
+            "item": "item.healers-toolkit",
+            "count": 1
+          }
+        ]
+      ]
+    }
+  ]
+}
