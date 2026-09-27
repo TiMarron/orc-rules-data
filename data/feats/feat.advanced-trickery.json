@@ -11,7 +11,7 @@
     "page": 221,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.advanced-trickery.text",
   "level": 6,
@@ -21,5 +21,6 @@
       "kind": "feat",
       "id": "feat.basic-trickery"
     }
-  ]
+  ],
+  "repeatable": true
 }

@@ -11,11 +11,12 @@
     "page": 113,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.domain-initiate.text",
   "level": 1,
   "category": "class",
   "class": "class.cleric",
-  "prerequisites": []
+  "prerequisites": [],
+  "repeatable": true
 }

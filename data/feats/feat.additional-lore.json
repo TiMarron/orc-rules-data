@@ -12,10 +12,11 @@
     "page": 252,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.additional-lore.text",
   "level": 1,
   "category": "skill",
-  "prerequisites": []
+  "prerequisites": [],
+  "repeatable": true
 }

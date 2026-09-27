@@ -18,5 +18,6 @@
   "category": "class",
   "class": "class.ranger",
   "prerequisites": [],
+  "repeatable": true,
   "editNote": "Dropped the trailing \"<Name> leads to...\" line and the feat-name list beneath it: the structured source's own cross-reference footer pointing to follow-up feats, never printed in the book."
 }

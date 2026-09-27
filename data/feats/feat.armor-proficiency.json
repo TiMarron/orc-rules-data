@@ -11,10 +11,11 @@
     "page": 252,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.armor-proficiency.text",
   "level": 1,
   "category": "general",
-  "prerequisites": []
+  "prerequisites": [],
+  "repeatable": true
 }

@@ -12,7 +12,7 @@
     "page": 262,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.skill-training.text",
   "level": 1,
@@ -23,5 +23,6 @@
       "attribute": "int",
       "min": 1
     }
-  ]
+  ],
+  "repeatable": true
 }

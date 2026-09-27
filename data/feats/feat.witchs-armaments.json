@@ -18,5 +18,6 @@
   "category": "class",
   "class": "class.witch",
   "prerequisites": [],
+  "repeatable": true,
   "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
 }
