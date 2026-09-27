@@ -4,7 +4,7 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
-## 0.3.0 — unreleased
+## 0.3.0 — 2026-09-27
 
 ### Added
 
@@ -13,6 +13,11 @@ major for renamed or removed ids, new required fields and markup changes.
 - Nineteen Player Core weapons the first import missed, among them the spear,
   the staff, the shortbow and the glaive: the structured source filed their
   Remaster printings under a later book.
+
+### Changed
+
+- Elven Weapon Familiarity and Gnome Weapon Familiarity now link the weapons
+  they name that the first import had missed.
 
 ## 0.2.0 — 2026-09-26
 
