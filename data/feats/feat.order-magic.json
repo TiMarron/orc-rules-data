@@ -11,7 +11,7 @@
     "page": 131,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.order-magic.text",
   "level": 4,
@@ -22,5 +22,6 @@
       "kind": "feat",
       "id": "feat.order-explorer"
     }
-  ]
+  ],
+  "repeatable": true
 }

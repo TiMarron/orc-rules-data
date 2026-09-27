@@ -11,7 +11,7 @@
     "page": 117,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.advanced-domain.text",
   "level": 8,
@@ -22,5 +22,6 @@
       "kind": "feat",
       "id": "feat.domain-initiate"
     }
-  ]
+  ],
+  "repeatable": true
 }

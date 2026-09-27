@@ -11,11 +11,12 @@
     "page": 64,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.general-training.text",
   "level": 1,
   "category": "ancestry",
   "ancestry": "ancestry.human",
-  "prerequisites": []
+  "prerequisites": [],
+  "repeatable": true
 }

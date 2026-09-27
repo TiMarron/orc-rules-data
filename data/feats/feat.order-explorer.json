@@ -11,11 +11,12 @@
     "page": 129,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.order-explorer.text",
   "level": 2,
   "category": "class",
   "class": "class.druid",
-  "prerequisites": []
+  "prerequisites": [],
+  "repeatable": true
 }

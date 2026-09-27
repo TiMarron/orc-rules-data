@@ -12,7 +12,7 @@
     "page": 258,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.multilingual.text",
   "level": 1,
@@ -23,5 +23,6 @@
       "target": "skill.society",
       "rank": "trained"
     }
-  ]
+  ],
+  "repeatable": true
 }
