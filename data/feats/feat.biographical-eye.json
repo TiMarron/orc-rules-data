@@ -1,0 +1,28 @@
+{
+  "id": "feat.biographical-eye",
+  "type": "feat",
+  "name": "feat.biographical-eye.name",
+  "traits": [
+    "general",
+    "secret",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 227,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.biographical-eye.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "master"
+    }
+  ]
+}

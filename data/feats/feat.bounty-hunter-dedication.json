@@ -1,0 +1,21 @@
+{
+  "id": "feat.bounty-hunter-dedication",
+  "type": "feat",
+  "name": "feat.bounty-hunter-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 191,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bounty-hunter-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": []
+}

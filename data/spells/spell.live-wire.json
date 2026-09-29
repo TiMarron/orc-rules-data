@@ -1,0 +1,39 @@
+{
+  "id": "spell.live-wire",
+  "type": "spell",
+  "name": "spell.live-wire.name",
+  "traits": [
+    "attack",
+    "cantrip",
+    "concentrate",
+    "electricity",
+    "manipulate",
+    "metal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 248,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.live-wire.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.live-wire.range",
+  "targets": "spell.live-wire.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.live-wire.heightened.0"
+    }
+  ]
+}

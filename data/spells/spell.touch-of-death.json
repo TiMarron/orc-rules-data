@@ -1,0 +1,36 @@
+{
+  "id": "spell.touch-of-death",
+  "type": "spell",
+  "name": "spell.touch-of-death.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "incapacitation",
+    "manipulate",
+    "monk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.touch-of-death.text",
+  "rank": 8,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.touch-of-death.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.touch-of-death.heightened.0"
+    }
+  ]
+}

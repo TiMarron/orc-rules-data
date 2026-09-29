@@ -1,0 +1,25 @@
+{
+  "id": "feat.tools-of-the-trade",
+  "type": "feat",
+  "name": "feat.tools-of-the-trade.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 191,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tools-of-the-trade.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bounty-hunter-dedication"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "feat.treat-condition",
+  "type": "feat",
+  "name": "feat.treat-condition.name",
+  "traits": [
+    "archetype",
+    "healing",
+    "manipulate",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 208,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.treat-condition.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "2",
+  "requirements": "feat.treat-condition.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.medic-dedication"
+    }
+  ]
+}

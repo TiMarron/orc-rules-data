@@ -1,0 +1,25 @@
+{
+  "id": "feat.pirate-combat-training",
+  "type": "feat",
+  "name": "feat.pirate-combat-training.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 209,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pirate-combat-training.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.pirate-dedication"
+    }
+  ]
+}

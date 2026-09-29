@@ -1,0 +1,36 @@
+{
+  "id": "spell.qi-blast",
+  "type": "spell",
+  "name": "spell.qi-blast.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "force",
+    "manipulate",
+    "monk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.qi-blast.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1-3"
+  },
+  "area": "spell.qi-blast.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.qi-blast.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "spell.lightning-storm",
+  "type": "spell",
+  "name": "spell.lightning-storm.name",
+  "traits": [
+    "concentrate",
+    "electricity",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 248,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.lightning-storm.text",
+  "rank": 5,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.lightning-storm.range",
+  "area": "spell.lightning-storm.area",
+  "duration": "spell.lightning-storm.duration",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.lightning-storm.heightened.0"
+    }
+  ]
+}

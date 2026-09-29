@@ -1,0 +1,28 @@
+{
+  "id": "feat.eye-for-numbers",
+  "type": "feat",
+  "name": "feat.eye-for-numbers.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 230,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.eye-for-numbers.text",
+  "level": 1,
+  "category": "skill",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "trained"
+    }
+  ]
+}

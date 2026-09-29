@@ -1,0 +1,15 @@
+{
+  "id": "trait.static",
+  "type": "trait",
+  "name": "trait.static.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 173,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.static.text"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "spell.spirit-song",
+  "type": "spell",
+  "name": "spell.spirit-song.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 252,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spirit-song.text",
+  "rank": 8,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.spirit-song.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.spirit-song.heightened.0"
+    }
+  ]
+}

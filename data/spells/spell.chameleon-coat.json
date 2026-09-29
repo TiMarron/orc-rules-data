@@ -1,0 +1,39 @@
+{
+  "id": "spell.chameleon-coat",
+  "type": "spell",
+  "name": "spell.chameleon-coat.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 242,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.chameleon-coat.text",
+  "rank": 5,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.chameleon-coat.range",
+  "targets": "spell.chameleon-coat.targets",
+  "duration": "spell.chameleon-coat.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.chameleon-coat.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.chameleon-coat.heightened.1"
+    }
+  ]
+}

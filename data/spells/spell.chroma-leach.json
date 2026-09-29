@@ -1,0 +1,30 @@
+{
+  "id": "spell.chroma-leach",
+  "type": "spell",
+  "name": "spell.chroma-leach.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 242,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.chroma-leach.text",
+  "rank": 4,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.chroma-leach.range",
+  "targets": "spell.chroma-leach.targets",
+  "defense": {
+    "save": "fortitude"
+  }
+}

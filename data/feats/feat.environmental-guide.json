@@ -1,0 +1,27 @@
+{
+  "id": "feat.environmental-guide",
+  "type": "feat",
+  "name": "feat.environmental-guide.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 230,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.environmental-guide.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "master"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.shade",
+  "type": "trait",
+  "name": "trait.shade.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 333,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.shade.text"
+}

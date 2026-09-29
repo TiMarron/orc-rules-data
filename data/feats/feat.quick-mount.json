@@ -1,0 +1,33 @@
+{
+  "id": "feat.quick-mount",
+  "type": "feat",
+  "name": "feat.quick-mount.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 193,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.quick-mount.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.quick-mount.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cavalier-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.nature",
+      "rank": "expert"
+    }
+  ]
+}

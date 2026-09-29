@@ -1,0 +1,31 @@
+{
+  "id": "feat.underground-network",
+  "type": "feat",
+  "name": "feat.underground-network.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 235,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.underground-network.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.streetwise"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "expert"
+    }
+  ]
+}

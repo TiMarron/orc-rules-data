@@ -1,0 +1,47 @@
+{
+  "id": "feat.ritualist-dedication",
+  "type": "feat",
+  "name": "feat.ritualist-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 211,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ritualist-dedication.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.occultism",
+          "rank": "expert"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.arcana",
+          "rank": "expert"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.nature",
+          "rank": "expert"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.religion",
+          "rank": "expert"
+        }
+      ]
+    }
+  ]
+}

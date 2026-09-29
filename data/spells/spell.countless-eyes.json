@@ -1,0 +1,30 @@
+{
+  "id": "spell.countless-eyes",
+  "type": "spell",
+  "name": "spell.countless-eyes.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 243,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.countless-eyes.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.countless-eyes.range",
+  "targets": "spell.countless-eyes.targets",
+  "duration": "spell.countless-eyes.duration"
+}

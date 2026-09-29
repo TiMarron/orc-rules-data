@@ -1,0 +1,41 @@
+{
+  "id": "spell.scatter-scree",
+  "type": "spell",
+  "name": "spell.scatter-scree.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "earth",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 250,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.scatter-scree.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.scatter-scree.range",
+  "area": "spell.scatter-scree.area",
+  "duration": "spell.scatter-scree.duration",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.scatter-scree.heightened.0"
+    }
+  ]
+}

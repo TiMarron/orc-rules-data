@@ -1,0 +1,40 @@
+{
+  "id": "spell.leaden-steps",
+  "type": "spell",
+  "name": "spell.leaden-steps.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "metal",
+    "morph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 247,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.leaden-steps.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.leaden-steps.range",
+  "targets": "spell.leaden-steps.targets",
+  "duration": "spell.leaden-steps.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.leaden-steps.heightened.0"
+    }
+  ]
+}

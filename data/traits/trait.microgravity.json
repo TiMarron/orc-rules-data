@@ -1,0 +1,15 @@
+{
+  "id": "trait.microgravity",
+  "type": "trait",
+  "name": "trait.microgravity.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.microgravity.text"
+}

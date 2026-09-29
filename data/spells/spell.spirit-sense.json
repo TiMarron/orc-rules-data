@@ -1,0 +1,36 @@
+{
+  "id": "spell.spirit-sense",
+  "type": "spell",
+  "name": "spell.spirit-sense.name",
+  "traits": [
+    "concentrate",
+    "detection",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 252,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spirit-sense.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.spirit-sense.area",
+  "duration": "spell.spirit-sense.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.spirit-sense.heightened.0"
+    }
+  ]
+}

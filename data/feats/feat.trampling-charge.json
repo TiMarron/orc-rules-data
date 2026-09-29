@@ -1,0 +1,28 @@
+{
+  "id": "feat.trampling-charge",
+  "type": "feat",
+  "name": "feat.trampling-charge.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 193,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.trampling-charge.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "3",
+  "requirements": "feat.trampling-charge.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cavalier-dedication"
+    }
+  ]
+}

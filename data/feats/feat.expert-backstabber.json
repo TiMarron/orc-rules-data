@@ -1,0 +1,25 @@
+{
+  "id": "feat.expert-backstabber",
+  "type": "feat",
+  "name": "feat.expert-backstabber.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 186,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.expert-backstabber.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.assassin-dedication"
+    }
+  ]
+}

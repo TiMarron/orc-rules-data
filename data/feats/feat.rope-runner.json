@@ -1,0 +1,36 @@
+{
+  "id": "feat.rope-runner",
+  "type": "feat",
+  "name": "feat.rope-runner.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 209,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rope-runner.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.pirate-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "trained"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}

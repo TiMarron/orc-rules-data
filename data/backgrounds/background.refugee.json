@@ -1,0 +1,27 @@
+{
+  "id": "background.refugee",
+  "type": "background",
+  "name": "background.refugee.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.refugee.text",
+  "boosts": [
+    [
+      "con",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.refugee.lore",
+  "skills": [
+    "skill.society"
+  ],
+  "feat": "feat.streetwise"
+}

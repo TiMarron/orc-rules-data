@@ -1,0 +1,27 @@
+{
+  "id": "feat.keep-pace",
+  "type": "feat",
+  "name": "feat.keep-pace.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 191,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.keep-pace.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.keep-pace.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bounty-hunter-dedication"
+    }
+  ]
+}

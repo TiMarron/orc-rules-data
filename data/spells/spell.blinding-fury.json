@@ -1,0 +1,37 @@
+{
+  "id": "spell.blinding-fury",
+  "type": "spell",
+  "name": "spell.blinding-fury.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "emotion",
+    "incapacitation",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 241,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blinding-fury.text",
+  "rank": 6,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.blinding-fury.range",
+  "targets": "spell.blinding-fury.targets",
+  "duration": "spell.blinding-fury.duration",
+  "defense": {
+    "save": "will"
+  },
+  "trigger": "spell.blinding-fury.trigger"
+}

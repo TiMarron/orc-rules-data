@@ -1,0 +1,20 @@
+{
+  "id": "feat.keen-follower",
+  "type": "feat",
+  "name": "feat.keen-follower.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.keen-follower.text",
+  "level": 3,
+  "category": "general",
+  "prerequisites": []
+}

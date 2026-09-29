@@ -1,0 +1,31 @@
+{
+  "id": "spell.blanket-of-stars",
+  "type": "spell",
+  "name": "spell.blanket-of-stars.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 241,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blanket-of-stars.text",
+  "rank": 6,
+  "traditions": [
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.blanket-of-stars.duration",
+  "defense": {
+    "save": "will"
+  }
+}

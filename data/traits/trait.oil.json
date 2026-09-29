@@ -1,0 +1,15 @@
+{
+  "id": "trait.oil",
+  "type": "trait",
+  "name": "trait.oil.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.oil.text"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "spell.cloak-of-colors",
+  "type": "spell",
+  "name": "spell.cloak-of-colors.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 242,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.cloak-of-colors.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.cloak-of-colors.range",
+  "targets": "spell.cloak-of-colors.targets",
+  "duration": "spell.cloak-of-colors.duration"
+}

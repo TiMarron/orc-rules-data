@@ -1,0 +1,27 @@
+{
+  "id": "feat.a-home-in-every-port",
+  "type": "feat",
+  "name": "feat.a-home-in-every-port.name",
+  "traits": [
+    "downtime",
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 223,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.a-home-in-every-port.text",
+  "level": 11,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "cha",
+      "min": 3
+    }
+  ]
+}

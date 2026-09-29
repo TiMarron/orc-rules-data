@@ -1,0 +1,31 @@
+{
+  "id": "spell.mud-pit",
+  "type": "spell",
+  "name": "spell.mud-pit.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 248,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.mud-pit.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.mud-pit.range",
+  "area": "spell.mud-pit.area",
+  "duration": "spell.mud-pit.duration"
+}

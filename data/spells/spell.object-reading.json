@@ -1,0 +1,49 @@
+{
+  "id": "spell.object-reading",
+  "type": "spell",
+  "name": "spell.object-reading.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 248,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.object-reading.text",
+  "rank": 1,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.object-reading.range",
+  "targets": "spell.object-reading.targets",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.object-reading.heightened.0"
+    },
+    {
+      "level": "4",
+      "text": "spell.object-reading.heightened.1"
+    },
+    {
+      "level": "6",
+      "text": "spell.object-reading.heightened.2"
+    },
+    {
+      "level": "8",
+      "text": "spell.object-reading.heightened.3"
+    },
+    {
+      "level": "9",
+      "text": "spell.object-reading.heightened.4"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "feat.tumbling-theft",
+  "type": "feat",
+  "name": "feat.tumbling-theft.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 235,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tumbling-theft.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "expert"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.thievery",
+      "rank": "expert"
+    }
+  ]
+}

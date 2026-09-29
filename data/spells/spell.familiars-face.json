@@ -1,0 +1,32 @@
+{
+  "id": "spell.familiars-face",
+  "type": "spell",
+  "name": "spell.familiars-face.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "scrying"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 245,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.familiars-face.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.familiars-face.range",
+  "targets": "spell.familiars-face.targets",
+  "duration": "spell.familiars-face.duration"
+}

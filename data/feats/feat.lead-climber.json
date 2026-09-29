@@ -1,0 +1,27 @@
+{
+  "id": "feat.lead-climber",
+  "type": "feat",
+  "name": "feat.lead-climber.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lead-climber.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "expert"
+    }
+  ]
+}

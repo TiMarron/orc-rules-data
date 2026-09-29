@@ -1,0 +1,27 @@
+{
+  "id": "feat.acrobatic-performer",
+  "type": "feat",
+  "name": "feat.acrobatic-performer.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 226,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.acrobatic-performer.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "trained"
+    }
+  ]
+}

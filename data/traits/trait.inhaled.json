@@ -1,0 +1,15 @@
+{
+  "id": "trait.inhaled",
+  "type": "trait",
+  "name": "trait.inhaled.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 248,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.inhaled.text"
+}

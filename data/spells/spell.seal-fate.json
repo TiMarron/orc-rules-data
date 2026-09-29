@@ -1,0 +1,41 @@
+{
+  "id": "spell.seal-fate",
+  "type": "spell",
+  "name": "spell.seal-fate.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "death",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 251,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.seal-fate.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.seal-fate.range",
+  "targets": "spell.seal-fate.targets",
+  "duration": "spell.seal-fate.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.seal-fate.heightened.0"
+    }
+  ]
+}

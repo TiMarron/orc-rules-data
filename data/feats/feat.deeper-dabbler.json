@@ -1,0 +1,25 @@
+{
+  "id": "feat.deeper-dabbler",
+  "type": "feat",
+  "name": "feat.deeper-dabbler.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 217,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.deeper-dabbler.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.talisman-dabbler-dedication"
+    }
+  ]
+}

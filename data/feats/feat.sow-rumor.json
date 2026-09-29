@@ -1,0 +1,28 @@
+{
+  "id": "feat.sow-rumor",
+  "type": "feat",
+  "name": "feat.sow-rumor.name",
+  "traits": [
+    "general",
+    "secret",
+    "skill"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 234,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sow-rumor.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    }
+  ]
+}

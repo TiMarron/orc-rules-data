@@ -1,0 +1,26 @@
+{
+  "id": "feat.rolling-landing",
+  "type": "feat",
+  "name": "feat.rolling-landing.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 233,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rolling-landing.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cat-fall"
+    }
+  ]
+}

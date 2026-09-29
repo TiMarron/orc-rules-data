@@ -1,0 +1,19 @@
+{
+  "id": "action.flurry-of-blows",
+  "type": "action",
+  "name": "action.flurry-of-blows.name",
+  "traits": [
+    "flourish",
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 116,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.flurry-of-blows.text",
+  "actions": "1"
+}

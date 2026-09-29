@@ -1,0 +1,39 @@
+{
+  "id": "spell.animated-assault",
+  "type": "spell",
+  "name": "spell.animated-assault.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 240,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.animated-assault.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.animated-assault.range",
+  "area": "spell.animated-assault.area",
+  "duration": "spell.animated-assault.duration",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.animated-assault.heightened.0"
+    }
+  ]
+}

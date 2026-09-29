@@ -1,0 +1,29 @@
+{
+  "id": "spell.anointed-ground",
+  "type": "spell",
+  "name": "spell.anointed-ground.name",
+  "traits": [
+    "concentrate",
+    "consecration",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 240,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.anointed-ground.text",
+  "rank": 3,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "time": "spell.anointed-ground.cast-time"
+  },
+  "area": "spell.anointed-ground.area",
+  "duration": "spell.anointed-ground.duration",
+  "cost": "spell.anointed-ground.cost"
+}

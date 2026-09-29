@@ -1,0 +1,40 @@
+{
+  "id": "spell.spout",
+  "type": "spell",
+  "name": "spell.spout.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 252,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spout.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.spout.range",
+  "area": "spell.spout.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.spout.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "spell.beastmaster-trance",
+  "type": "spell",
+  "name": "spell.beastmaster-trance.name",
+  "traits": [
+    "archetype",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 189,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.beastmaster-trance.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.beastmaster-trance.range",
+  "targets": "spell.beastmaster-trance.targets",
+  "duration": "spell.beastmaster-trance.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.beastmaster-trance.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.beastmaster-trance.heightened.1"
+    }
+  ]
+}

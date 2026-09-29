@@ -1,0 +1,27 @@
+{
+  "id": "feat.doublespeak",
+  "type": "feat",
+  "name": "feat.doublespeak.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 229,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.doublespeak.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "master"
+    }
+  ]
+}

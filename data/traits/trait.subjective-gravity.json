@@ -1,0 +1,15 @@
+{
+  "id": "trait.subjective-gravity",
+  "type": "trait",
+  "name": "trait.subjective-gravity.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.subjective-gravity.text"
+}

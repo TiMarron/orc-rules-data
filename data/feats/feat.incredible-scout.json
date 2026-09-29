@@ -1,0 +1,27 @@
+{
+  "id": "feat.incredible-scout",
+  "type": "feat",
+  "name": "feat.incredible-scout.name",
+  "traits": [
+    "exploration",
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 231,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.incredible-scout.text",
+  "level": 11,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "perception",
+      "rank": "master"
+    }
+  ]
+}

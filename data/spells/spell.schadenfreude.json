@@ -1,0 +1,34 @@
+{
+  "id": "spell.schadenfreude",
+  "type": "spell",
+  "name": "spell.schadenfreude.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 250,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.schadenfreude.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.schadenfreude.range",
+  "targets": "spell.schadenfreude.targets",
+  "defense": {
+    "save": "will"
+  },
+  "trigger": "spell.schadenfreude.trigger"
+}

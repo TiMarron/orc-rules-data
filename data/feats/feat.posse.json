@@ -1,0 +1,27 @@
+{
+  "id": "feat.posse",
+  "type": "feat",
+  "name": "feat.posse.name",
+  "traits": [
+    "archetype",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 191,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.posse.text",
+  "level": 4,
+  "category": "archetype",
+  "requirements": "feat.posse.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bounty-hunter-dedication"
+    }
+  ]
+}

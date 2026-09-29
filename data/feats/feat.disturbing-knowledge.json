@@ -1,0 +1,31 @@
+{
+  "id": "feat.disturbing-knowledge",
+  "type": "feat",
+  "name": "feat.disturbing-knowledge.name",
+  "traits": [
+    "emotion",
+    "fear",
+    "general",
+    "mental",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 229,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disturbing-knowledge.text",
+  "level": 7,
+  "category": "skill",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.occultism",
+      "rank": "master"
+    }
+  ]
+}

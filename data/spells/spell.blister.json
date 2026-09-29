@@ -1,0 +1,39 @@
+{
+  "id": "spell.blister",
+  "type": "spell",
+  "name": "spell.blister.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 241,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blister.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.blister.range",
+  "targets": "spell.blister.targets",
+  "duration": "spell.blister.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.blister.heightened.0"
+    }
+  ]
+}

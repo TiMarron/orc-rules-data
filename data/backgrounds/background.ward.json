@@ -1,0 +1,27 @@
+{
+  "id": "background.ward",
+  "type": "background",
+  "name": "background.ward.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.ward.text",
+  "boosts": [
+    [
+      "con",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.ward.lore",
+  "skills": [
+    "skill.performance"
+  ],
+  "feat": "feat.fascinating-performance"
+}

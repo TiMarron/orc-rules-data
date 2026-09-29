@@ -1,0 +1,38 @@
+{
+  "id": "spell.fungal-infestation",
+  "type": "spell",
+  "name": "spell.fungal-infestation.name",
+  "traits": [
+    "concentrate",
+    "fungus",
+    "manipulate",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 245,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fungal-infestation.text",
+  "rank": 2,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.fungal-infestation.range",
+  "area": "spell.fungal-infestation.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.fungal-infestation.heightened.0"
+    }
+  ]
+}

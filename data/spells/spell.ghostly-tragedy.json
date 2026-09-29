@@ -1,0 +1,29 @@
+{
+  "id": "spell.ghostly-tragedy",
+  "type": "spell",
+  "name": "spell.ghostly-tragedy.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "spirit"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 246,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ghostly-tragedy.text",
+  "rank": 4,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.ghostly-tragedy.cast-time"
+  },
+  "area": "spell.ghostly-tragedy.area",
+  "duration": "spell.ghostly-tragedy.duration"
+}

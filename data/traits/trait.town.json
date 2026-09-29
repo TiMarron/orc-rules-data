@@ -1,0 +1,15 @@
+{
+  "id": "trait.town",
+  "type": "trait",
+  "name": "trait.town.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 170,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "trait.town.text"
+}

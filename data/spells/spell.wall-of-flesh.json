@@ -1,0 +1,35 @@
+{
+  "id": "spell.wall-of-flesh",
+  "type": "spell",
+  "name": "spell.wall-of-flesh.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 254,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wall-of-flesh.text",
+  "rank": 5,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.wall-of-flesh.range",
+  "duration": "spell.wall-of-flesh.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.wall-of-flesh.heightened.0"
+    }
+  ]
+}

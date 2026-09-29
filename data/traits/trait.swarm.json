@@ -1,0 +1,15 @@
+{
+  "id": "trait.swarm",
+  "type": "trait",
+  "name": "trait.swarm.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 334,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.swarm.text"
+}

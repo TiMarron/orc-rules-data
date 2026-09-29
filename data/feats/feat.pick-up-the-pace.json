@@ -1,0 +1,26 @@
+{
+  "id": "feat.pick-up-the-pace",
+  "type": "feat",
+  "name": "feat.pick-up-the-pace.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pick-up-the-pace.text",
+  "level": 3,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "con",
+      "min": 2
+    }
+  ]
+}

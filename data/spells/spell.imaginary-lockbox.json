@@ -1,0 +1,30 @@
+{
+  "id": "spell.imaginary-lockbox",
+  "type": "spell",
+  "name": "spell.imaginary-lockbox.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 247,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.imaginary-lockbox.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.imaginary-lockbox.cast-time"
+  },
+  "range": "spell.imaginary-lockbox.range",
+  "targets": "spell.imaginary-lockbox.targets",
+  "duration": "spell.imaginary-lockbox.duration"
+}

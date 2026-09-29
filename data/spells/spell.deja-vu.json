@@ -1,0 +1,34 @@
+{
+  "id": "spell.deja-vu",
+  "type": "spell",
+  "name": "spell.deja-vu.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.deja-vu.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.deja-vu.range",
+  "targets": "spell.deja-vu.targets",
+  "duration": "spell.deja-vu.duration",
+  "defense": {
+    "save": "will"
+  }
+}

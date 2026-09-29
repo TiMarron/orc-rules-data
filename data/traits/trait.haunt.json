@@ -1,0 +1,15 @@
+{
+  "id": "trait.haunt",
+  "type": "trait",
+  "name": "trait.haunt.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 330,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.haunt.text"
+}

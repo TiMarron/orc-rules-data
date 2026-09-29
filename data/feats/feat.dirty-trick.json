@@ -1,0 +1,31 @@
+{
+  "id": "feat.dirty-trick",
+  "type": "feat",
+  "name": "feat.dirty-trick.name",
+  "traits": [
+    "attack",
+    "general",
+    "manipulate",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 229,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dirty-trick.text",
+  "level": 1,
+  "category": "skill",
+  "actions": "1",
+  "requirements": "feat.dirty-trick.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.thievery",
+      "rank": "trained"
+    }
+  ]
+}

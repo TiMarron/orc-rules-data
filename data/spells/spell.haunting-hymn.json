@@ -1,0 +1,40 @@
+{
+  "id": "spell.haunting-hymn",
+  "type": "spell",
+  "name": "spell.haunting-hymn.name",
+  "traits": [
+    "auditory",
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "sonic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 246,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.haunting-hymn.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.haunting-hymn.area",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.haunting-hymn.heightened.0"
+    }
+  ]
+}

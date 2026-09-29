@@ -1,0 +1,35 @@
+{
+  "id": "spell.web",
+  "type": "spell",
+  "name": "spell.web.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 255,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.web.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.web.range",
+  "area": "spell.web.area",
+  "duration": "spell.web.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.web.heightened.0"
+    }
+  ]
+}

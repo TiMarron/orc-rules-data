@@ -1,0 +1,25 @@
+{
+  "id": "feat.efficient-rituals",
+  "type": "feat",
+  "name": "feat.efficient-rituals.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 211,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.efficient-rituals.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.ritualist-dedication"
+    }
+  ]
+}

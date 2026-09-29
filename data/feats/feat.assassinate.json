@@ -1,0 +1,27 @@
+{
+  "id": "feat.assassinate",
+  "type": "feat",
+  "name": "feat.assassinate.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 186,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.assassinate.text",
+  "level": 12,
+  "category": "archetype",
+  "actions": "2",
+  "requirements": "feat.assassinate.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.assassin-dedication"
+    }
+  ]
+}

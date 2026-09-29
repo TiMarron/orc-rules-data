@@ -1,0 +1,39 @@
+{
+  "id": "spell.vampiric-maiden",
+  "type": "spell",
+  "name": "spell.vampiric-maiden.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 254,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vampiric-maiden.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.vampiric-maiden.range",
+  "targets": "spell.vampiric-maiden.targets",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vampiric-maiden.heightened.0"
+    }
+  ]
+}

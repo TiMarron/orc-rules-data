@@ -1,0 +1,29 @@
+{
+  "id": "spell.animal-vision",
+  "type": "spell",
+  "name": "spell.animal-vision.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 240,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.animal-vision.text",
+  "rank": 3,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.animal-vision.cast-time"
+  },
+  "range": "spell.animal-vision.range",
+  "targets": "spell.animal-vision.targets",
+  "duration": "spell.animal-vision.duration"
+}

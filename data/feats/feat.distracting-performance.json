@@ -1,0 +1,28 @@
+{
+  "id": "feat.distracting-performance",
+  "type": "feat",
+  "name": "feat.distracting-performance.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 229,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.distracting-performance.text",
+  "level": 2,
+  "category": "skill",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.performance",
+      "rank": "expert"
+    }
+  ]
+}

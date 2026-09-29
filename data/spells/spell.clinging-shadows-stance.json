@@ -1,0 +1,27 @@
+{
+  "id": "spell.clinging-shadows-stance",
+  "type": "spell",
+  "name": "spell.clinging-shadows-stance.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "monk",
+    "shadow",
+    "stance"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.clinging-shadows-stance.text",
+  "rank": 4,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.clinging-shadows-stance.duration"
+}

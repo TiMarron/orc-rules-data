@@ -1,0 +1,17 @@
+{
+  "id": "action.upstage",
+  "type": "action",
+  "name": "action.upstage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 194,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.upstage.text",
+  "actions": "reaction",
+  "trigger": "action.upstage.trigger"
+}

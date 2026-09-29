@@ -1,0 +1,27 @@
+{
+  "id": "background.servant",
+  "type": "background",
+  "name": "background.servant.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.servant.text",
+  "boosts": [
+    [
+      "dex",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.servant.lore",
+  "skills": [
+    "skill.society"
+  ],
+  "feat": "feat.read-lips"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.cursed",
+  "type": "trait",
+  "name": "trait.cursed.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 306,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "trait.cursed.text"
+}

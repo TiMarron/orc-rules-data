@@ -1,0 +1,21 @@
+{
+  "id": "feat.talisman-dabbler-dedication",
+  "type": "feat",
+  "name": "feat.talisman-dabbler-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 217,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.talisman-dabbler-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": []
+}

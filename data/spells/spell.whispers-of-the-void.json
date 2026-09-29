@@ -1,0 +1,39 @@
+{
+  "id": "spell.whispers-of-the-void",
+  "type": "spell",
+  "name": "spell.whispers-of-the-void.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 255,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.whispers-of-the-void.text",
+  "rank": 4,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.whispers-of-the-void.range",
+  "area": "spell.whispers-of-the-void.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.whispers-of-the-void.heightened.0"
+    }
+  ]
+}

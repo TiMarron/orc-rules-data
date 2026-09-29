@@ -1,0 +1,25 @@
+{
+  "id": "feat.impressive-mount",
+  "type": "feat",
+  "name": "feat.impressive-mount.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 192,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impressive-mount.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cavalier-dedication"
+    }
+  ]
+}

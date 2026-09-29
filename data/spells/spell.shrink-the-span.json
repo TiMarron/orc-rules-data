@@ -1,0 +1,26 @@
+{
+  "id": "spell.shrink-the-span",
+  "type": "spell",
+  "name": "spell.shrink-the-span.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "monk",
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shrink-the-span.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.shrink-the-span.range"
+}

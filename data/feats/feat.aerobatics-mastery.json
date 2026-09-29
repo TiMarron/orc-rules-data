@@ -1,0 +1,27 @@
+{
+  "id": "feat.aerobatics-mastery",
+  "type": "feat",
+  "name": "feat.aerobatics-mastery.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 226,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.aerobatics-mastery.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "master"
+    }
+  ]
+}

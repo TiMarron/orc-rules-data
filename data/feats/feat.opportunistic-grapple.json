@@ -1,0 +1,28 @@
+{
+  "id": "feat.opportunistic-grapple",
+  "type": "feat",
+  "name": "feat.opportunistic-grapple.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 191,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.opportunistic-grapple.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.opportunistic-grapple.trigger",
+  "requirements": "feat.opportunistic-grapple.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bounty-hunter-dedication"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "spell.reapers-lantern",
+  "type": "spell",
+  "name": "spell.reapers-lantern.name",
+  "traits": [
+    "aura",
+    "concentrate",
+    "death",
+    "light",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 249,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.reapers-lantern.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.reapers-lantern.area",
+  "duration": "spell.reapers-lantern.duration",
+  "defense": {
+    "save": "fortitude"
+  }
+}

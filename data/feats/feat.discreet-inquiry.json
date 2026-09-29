@@ -1,0 +1,37 @@
+{
+  "id": "feat.discreet-inquiry",
+  "type": "feat",
+  "name": "feat.discreet-inquiry.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 229,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.discreet-inquiry.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.deception",
+          "rank": "expert"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.diplomacy",
+          "rank": "expert"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "spell.final-sacrifice",
+  "type": "spell",
+  "name": "spell.final-sacrifice.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 245,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.final-sacrifice.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.final-sacrifice.range",
+  "targets": "spell.final-sacrifice.targets",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.final-sacrifice.heightened.0"
+    }
+  ]
+}

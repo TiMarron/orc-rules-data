@@ -1,0 +1,38 @@
+{
+  "id": "spell.concordant-choir",
+  "type": "spell",
+  "name": "spell.concordant-choir.name",
+  "traits": [
+    "concentrate",
+    "sonic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 243,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.concordant-choir.text",
+  "rank": 1,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "1-3"
+  },
+  "range": "spell.concordant-choir.range",
+  "targets": "spell.concordant-choir.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.concordant-choir.heightened.0"
+    }
+  ]
+}

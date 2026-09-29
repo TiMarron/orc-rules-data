@@ -1,0 +1,25 @@
+{
+  "id": "feat.enterprising-ritualist",
+  "type": "feat",
+  "name": "feat.enterprising-ritualist.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 211,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.enterprising-ritualist.text",
+  "level": 14,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.ritualist-dedication"
+    }
+  ]
+}

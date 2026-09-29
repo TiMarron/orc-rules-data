@@ -1,0 +1,44 @@
+{
+  "id": "feat.consult-the-spirits",
+  "type": "feat",
+  "name": "feat.consult-the-spirits.name",
+  "traits": [
+    "general",
+    "secret",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 228,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.consult-the-spirits.text",
+  "level": 7,
+  "category": "skill",
+  "frequency": "feat.consult-the-spirits.frequency",
+  "prerequisites": [
+    {
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.occultism",
+          "rank": "master"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.nature",
+          "rank": "master"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.religion",
+          "rank": "master"
+        }
+      ]
+    }
+  ]
+}

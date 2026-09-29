@@ -1,0 +1,27 @@
+{
+  "id": "feat.rapid-affixture",
+  "type": "feat",
+  "name": "feat.rapid-affixture.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 233,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rapid-affixture.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "master"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "feat.resuscitate",
+  "type": "feat",
+  "name": "feat.resuscitate.name",
+  "traits": [
+    "archetype",
+    "healing",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 208,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.resuscitate.text",
+  "level": 16,
+  "category": "archetype",
+  "actions": "3",
+  "requirements": "feat.resuscitate.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.medic-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.medicine",
+      "rank": "legendary"
+    }
+  ]
+}

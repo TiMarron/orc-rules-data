@@ -1,0 +1,28 @@
+{
+  "id": "feat.pirate-dedication",
+  "type": "feat",
+  "name": "feat.pirate-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 209,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.pirate-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "trained"
+    }
+  ],
+  "editNote": "Reserved Material removed: one entry of the 'leads to' list carried a region's proper name and no record exists for it, so that single name is dropped from the list. The rest of the list and the rules text are the book's."
+}

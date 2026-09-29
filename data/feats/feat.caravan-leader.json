@@ -1,0 +1,25 @@
+{
+  "id": "feat.caravan-leader",
+  "type": "feat",
+  "name": "feat.caravan-leader.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 228,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.caravan-leader.text",
+  "level": 11,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.pick-up-the-pace"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.assured-ritualist",
+  "type": "feat",
+  "name": "feat.assured-ritualist.name",
+  "traits": [
+    "archetype",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 211,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.assured-ritualist.text",
+  "level": 10,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.flexible-ritualist"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "spell.dull-ambition",
+  "type": "spell",
+  "name": "spell.dull-ambition.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "manipulate",
+    "mental",
+    "misfortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dull-ambition.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.dull-ambition.range",
+  "targets": "spell.dull-ambition.targets",
+  "duration": "spell.dull-ambition.duration",
+  "defense": {
+    "save": "will"
+  }
+}

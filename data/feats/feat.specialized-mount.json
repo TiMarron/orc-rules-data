@@ -1,0 +1,25 @@
+{
+  "id": "feat.specialized-mount",
+  "type": "feat",
+  "name": "feat.specialized-mount.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 193,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.specialized-mount.text",
+  "level": 14,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.incredible-mount"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "feat.flexible-ritualist",
+  "type": "feat",
+  "name": "feat.flexible-ritualist.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 211,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flexible-ritualist.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.ritualist-dedication"
+    }
+  ]
+}

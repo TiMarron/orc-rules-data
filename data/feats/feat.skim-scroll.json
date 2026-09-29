@@ -1,0 +1,26 @@
+{
+  "id": "feat.skim-scroll",
+  "type": "feat",
+  "name": "feat.skim-scroll.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 213,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.skim-scroll.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.scroll-trickster-dedication"
+    }
+  ]
+}

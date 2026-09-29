@@ -1,0 +1,25 @@
+{
+  "id": "feat.incredible-mount",
+  "type": "feat",
+  "name": "feat.incredible-mount.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 193,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.incredible-mount.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.impressive-mount"
+    }
+  ]
+}

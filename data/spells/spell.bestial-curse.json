@@ -1,0 +1,35 @@
+{
+  "id": "spell.bestial-curse",
+  "type": "spell",
+  "name": "spell.bestial-curse.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 240,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.bestial-curse.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.bestial-curse.range",
+  "targets": "spell.bestial-curse.targets",
+  "duration": "spell.bestial-curse.duration",
+  "defense": {
+    "save": "fortitude"
+  }
+}

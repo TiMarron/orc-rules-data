@@ -1,0 +1,30 @@
+{
+  "id": "spell.inner-upheaval",
+  "type": "spell",
+  "name": "spell.inner-upheaval.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "monk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.inner-upheaval.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "heightened": [
+    {
+      "level": "+4",
+      "text": "spell.inner-upheaval.heightened.0"
+    }
+  ]
+}

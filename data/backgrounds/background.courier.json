@@ -1,0 +1,27 @@
+{
+  "id": "background.courier",
+  "type": "background",
+  "name": "background.courier.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.courier.text",
+  "boosts": [
+    [
+      "dex",
+      "int"
+    ],
+    "free"
+  ],
+  "lore": "background.courier.lore",
+  "skills": [
+    "skill.society"
+  ],
+  "feat": "feat.glean-contents"
+}

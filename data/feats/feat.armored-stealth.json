@@ -1,0 +1,27 @@
+{
+  "id": "feat.armored-stealth",
+  "type": "feat",
+  "name": "feat.armored-stealth.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 227,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.armored-stealth.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "expert"
+    }
+  ]
+}

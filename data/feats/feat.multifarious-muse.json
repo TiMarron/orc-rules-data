@@ -12,11 +12,12 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "feat.multifarious-muse.text",
   "level": 2,
   "category": "class",
   "class": "class.bard",
   "prerequisites": [],
-  "repeatable": true
+  "repeatable": true,
+  "editNote": "repeatable: the Special line lets the feat be selected more than once"
 }

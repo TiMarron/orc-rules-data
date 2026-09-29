@@ -1,0 +1,39 @@
+{
+  "id": "spell.noxious-vapors",
+  "type": "spell",
+  "name": "spell.noxious-vapors.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 248,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.noxious-vapors.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.noxious-vapors.area",
+  "duration": "spell.noxious-vapors.duration",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.noxious-vapors.heightened.0"
+    }
+  ]
+}

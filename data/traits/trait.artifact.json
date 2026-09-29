@@ -1,0 +1,15 @@
+{
+  "id": "trait.artifact",
+  "type": "trait",
+  "name": "trait.artifact.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 300,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.artifact.text"
+}

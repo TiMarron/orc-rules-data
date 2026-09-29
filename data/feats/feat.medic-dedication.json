@@ -1,0 +1,31 @@
+{
+  "id": "feat.medic-dedication",
+  "type": "feat",
+  "name": "feat.medic-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 208,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.medic-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.battle-medicine"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.medicine",
+      "rank": "trained"
+    }
+  ]
+}

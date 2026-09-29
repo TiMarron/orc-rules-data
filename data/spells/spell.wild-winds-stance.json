@@ -1,0 +1,27 @@
+{
+  "id": "spell.wild-winds-stance",
+  "type": "spell",
+  "name": "spell.wild-winds-stance.name",
+  "traits": [
+    "air",
+    "focus",
+    "manipulate",
+    "monk",
+    "stance"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wild-winds-stance.text",
+  "rank": 4,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.wild-winds-stance.duration"
+}

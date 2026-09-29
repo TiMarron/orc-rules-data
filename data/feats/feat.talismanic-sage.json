@@ -1,0 +1,25 @@
+{
+  "id": "feat.talismanic-sage",
+  "type": "feat",
+  "name": "feat.talismanic-sage.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 217,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.talismanic-sage.text",
+  "level": 14,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.talisman-dabbler-dedication"
+    }
+  ]
+}

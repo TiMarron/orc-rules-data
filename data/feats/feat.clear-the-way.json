@@ -1,0 +1,27 @@
+{
+  "id": "feat.clear-the-way",
+  "type": "feat",
+  "name": "feat.clear-the-way.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 207,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.clear-the-way.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "2",
+  "requirements": "feat.clear-the-way.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.mauler-dedication"
+    }
+  ]
+}
