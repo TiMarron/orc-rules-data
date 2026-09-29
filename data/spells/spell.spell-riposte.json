@@ -1,0 +1,27 @@
+{
+  "id": "spell.spell-riposte",
+  "type": "spell",
+  "name": "spell.spell-riposte.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 252,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spell-riposte.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.spell-riposte.trigger"
+}

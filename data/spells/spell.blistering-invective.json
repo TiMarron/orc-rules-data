@@ -1,0 +1,40 @@
+{
+  "id": "spell.blistering-invective",
+  "type": "spell",
+  "name": "spell.blistering-invective.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "emotion",
+    "fear",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 241,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.blistering-invective.text",
+  "rank": 2,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.blistering-invective.range",
+  "targets": "spell.blistering-invective.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.blistering-invective.heightened.0"
+    }
+  ]
+}

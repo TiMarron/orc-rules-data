@@ -1,0 +1,39 @@
+{
+  "id": "spell.sudden-blight",
+  "type": "spell",
+  "name": "spell.sudden-blight.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 253,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.sudden-blight.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.sudden-blight.range",
+  "area": "spell.sudden-blight.area",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.sudden-blight.heightened.0"
+    }
+  ]
+}

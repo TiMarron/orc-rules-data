@@ -1,0 +1,28 @@
+{
+  "id": "feat.cavaliers-charge",
+  "type": "feat",
+  "name": "feat.cavaliers-charge.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 192,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cavaliers-charge.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "2",
+  "requirements": "feat.cavaliers-charge.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cavalier-dedication"
+    }
+  ]
+}

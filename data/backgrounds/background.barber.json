@@ -1,0 +1,27 @@
+{
+  "id": "background.barber",
+  "type": "background",
+  "name": "background.barber.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.barber.text",
+  "boosts": [
+    [
+      "dex",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.barber.lore",
+  "skills": [
+    "skill.medicine"
+  ],
+  "feat": "feat.risky-surgery"
+}

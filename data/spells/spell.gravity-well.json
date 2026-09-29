@@ -1,0 +1,31 @@
+{
+  "id": "spell.gravity-well",
+  "type": "spell",
+  "name": "spell.gravity-well.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 246,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gravity-well.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.gravity-well.range",
+  "area": "spell.gravity-well.area",
+  "defense": {
+    "save": "reflex"
+  }
+}

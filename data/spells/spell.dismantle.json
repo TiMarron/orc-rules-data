@@ -1,0 +1,39 @@
+{
+  "id": "spell.dismantle",
+  "type": "spell",
+  "name": "spell.dismantle.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dismantle.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.dismantle.range",
+  "targets": "spell.dismantle.targets",
+  "duration": "spell.dismantle.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.dismantle.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.dismantle.heightened.1"
+    }
+  ]
+}

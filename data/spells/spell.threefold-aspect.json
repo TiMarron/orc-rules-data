@@ -1,0 +1,28 @@
+{
+  "id": "spell.threefold-aspect",
+  "type": "spell",
+  "name": "spell.threefold-aspect.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 254,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.threefold-aspect.text",
+  "rank": 3,
+  "traditions": [
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "time": "spell.threefold-aspect.cast-time"
+  },
+  "duration": "spell.threefold-aspect.duration"
+}

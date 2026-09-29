@@ -1,0 +1,26 @@
+{
+  "id": "feat.walk-the-plank",
+  "type": "feat",
+  "name": "feat.walk-the-plank.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 209,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.walk-the-plank.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.pirate-dedication"
+    }
+  ]
+}

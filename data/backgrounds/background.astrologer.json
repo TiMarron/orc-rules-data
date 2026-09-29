@@ -1,0 +1,28 @@
+{
+  "id": "background.astrologer",
+  "type": "background",
+  "name": "background.astrologer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.astrologer.text",
+  "boosts": [
+    [
+      "int",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.astrologer.lore",
+  "skills": [
+    "skill.occultism"
+  ],
+  "feat": "feat.oddity-identification",
+  "editNote": "Flagged only because the ordinary word for the sky is a plural of a reserved term; the sky is what the book means, so the word is used."
+}

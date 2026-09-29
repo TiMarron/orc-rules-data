@@ -1,0 +1,31 @@
+{
+  "id": "feat.holistic-care",
+  "type": "feat",
+  "name": "feat.holistic-care.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 208,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.holistic-care.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.treat-condition"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "trained"
+    }
+  ]
+}

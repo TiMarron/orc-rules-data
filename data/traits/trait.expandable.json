@@ -1,0 +1,15 @@
+{
+  "id": "trait.expandable",
+  "type": "trait",
+  "name": "trait.expandable.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 269,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.expandable.text"
+}

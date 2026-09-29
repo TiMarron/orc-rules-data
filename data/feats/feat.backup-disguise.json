@@ -1,0 +1,27 @@
+{
+  "id": "feat.backup-disguise",
+  "type": "feat",
+  "name": "feat.backup-disguise.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 227,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.backup-disguise.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    }
+  ]
+}

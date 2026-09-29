@@ -1,0 +1,39 @@
+{
+  "id": "spell.rouse-skeletons",
+  "type": "spell",
+  "name": "spell.rouse-skeletons.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 250,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.rouse-skeletons.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.rouse-skeletons.range",
+  "area": "spell.rouse-skeletons.area",
+  "duration": "spell.rouse-skeletons.duration",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.rouse-skeletons.heightened.0"
+    }
+  ]
+}

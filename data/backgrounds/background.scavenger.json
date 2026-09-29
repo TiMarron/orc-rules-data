@@ -1,0 +1,27 @@
+{
+  "id": "background.scavenger",
+  "type": "background",
+  "name": "background.scavenger.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.scavenger.text",
+  "boosts": [
+    [
+      "int",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.scavenger.lore",
+  "skills": [
+    "skill.survival"
+  ],
+  "feat": "feat.forager"
+}

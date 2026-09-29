@@ -1,0 +1,24 @@
+{
+  "id": "spell.qi-rush",
+  "type": "spell",
+  "name": "spell.qi-rush.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "monk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.qi-rush.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  }
+}

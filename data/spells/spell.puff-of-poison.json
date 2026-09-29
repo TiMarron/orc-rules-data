@@ -1,0 +1,39 @@
+{
+  "id": "spell.puff-of-poison",
+  "type": "spell",
+  "name": "spell.puff-of-poison.name",
+  "traits": [
+    "cantrip",
+    "concentrate",
+    "manipulate",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 249,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.puff-of-poison.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.puff-of-poison.range",
+  "targets": "spell.puff-of-poison.targets",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.puff-of-poison.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "spell.medusas-wrath",
+  "type": "spell",
+  "name": "spell.medusas-wrath.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "monk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.medusas-wrath.text",
+  "rank": 8,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.bravado",
+  "type": "trait",
+  "name": "trait.bravado.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 163,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.bravado.text"
+}

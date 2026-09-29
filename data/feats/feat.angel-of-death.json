@@ -1,0 +1,25 @@
+{
+  "id": "feat.angel-of-death",
+  "type": "feat",
+  "name": "feat.angel-of-death.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 186,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.angel-of-death.text",
+  "level": 10,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.assassin-dedication"
+    }
+  ]
+}

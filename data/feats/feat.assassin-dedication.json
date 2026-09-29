@@ -1,0 +1,32 @@
+{
+  "id": "feat.assassin-dedication",
+  "type": "feat",
+  "name": "feat.assassin-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 186,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.assassin-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "trained"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "trained"
+    }
+  ]
+}

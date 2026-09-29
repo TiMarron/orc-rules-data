@@ -1,0 +1,26 @@
+{
+  "id": "feat.supertaster",
+  "type": "feat",
+  "name": "feat.supertaster.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 234,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.supertaster.text",
+  "level": 7,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "perception",
+      "rank": "master"
+    }
+  ]
+}

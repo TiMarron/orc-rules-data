@@ -1,0 +1,37 @@
+{
+  "id": "spell.chilling-spray",
+  "type": "spell",
+  "name": "spell.chilling-spray.name",
+  "traits": [
+    "cold",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 242,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.chilling-spray.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.chilling-spray.area",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.chilling-spray.heightened.0"
+    }
+  ]
+}

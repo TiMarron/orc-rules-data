@@ -1,0 +1,39 @@
+{
+  "id": "spell.thoughtful-gift",
+  "type": "spell",
+  "name": "spell.thoughtful-gift.name",
+  "traits": [
+    "manipulate",
+    "teleportation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 253,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.thoughtful-gift.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.thoughtful-gift.range",
+  "targets": "spell.thoughtful-gift.targets",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.thoughtful-gift.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "spell.thoughtful-gift.heightened.1"
+    }
+  ]
+}

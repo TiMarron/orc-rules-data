@@ -1,0 +1,33 @@
+{
+  "id": "feat.bon-mot",
+  "type": "feat",
+  "name": "feat.bon-mot.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "emotion",
+    "general",
+    "linguistic",
+    "mental",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 228,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bon-mot.text",
+  "level": 1,
+  "category": "skill",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "trained"
+    }
+  ]
+}

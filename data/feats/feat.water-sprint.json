@@ -1,0 +1,27 @@
+{
+  "id": "feat.water-sprint",
+  "type": "feat",
+  "name": "feat.water-sprint.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 235,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.water-sprint.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "master"
+    }
+  ]
+}

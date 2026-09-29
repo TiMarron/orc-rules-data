@@ -1,0 +1,38 @@
+{
+  "id": "spell.grisly-growths",
+  "type": "spell",
+  "name": "spell.grisly-growths.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 246,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.grisly-growths.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.grisly-growths.range",
+  "targets": "spell.grisly-growths.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.grisly-growths.heightened.0"
+    }
+  ]
+}

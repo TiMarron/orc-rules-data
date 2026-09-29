@@ -1,0 +1,40 @@
+{
+  "id": "spell.ice-storm",
+  "type": "spell",
+  "name": "spell.ice-storm.name",
+  "traits": [
+    "cold",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 247,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ice-storm.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.ice-storm.range",
+  "area": "spell.ice-storm.area",
+  "duration": "spell.ice-storm.duration",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.ice-storm.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "spell.crashing-wave",
+  "type": "spell",
+  "name": "spell.crashing-wave.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 243,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.crashing-wave.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.crashing-wave.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.crashing-wave.heightened.0"
+    }
+  ]
+}

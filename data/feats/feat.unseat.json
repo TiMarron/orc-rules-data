@@ -1,0 +1,27 @@
+{
+  "id": "feat.unseat",
+  "type": "feat",
+  "name": "feat.unseat.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 193,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unseat.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.unseat.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cavalier-dedication"
+    }
+  ]
+}

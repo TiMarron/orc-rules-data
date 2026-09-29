@@ -1,0 +1,27 @@
+{
+  "id": "feat.defend-mount",
+  "type": "feat",
+  "name": "feat.defend-mount.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 193,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.defend-mount.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.defend-mount.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cavalier-dedication"
+    }
+  ]
+}

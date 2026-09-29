@@ -1,0 +1,37 @@
+{
+  "id": "feat.eyes-of-the-city",
+  "type": "feat",
+  "name": "feat.eyes-of-the-city.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 230,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.eyes-of-the-city.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.diplomacy",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.society",
+          "rank": "trained"
+        }
+      ]
+    }
+  ]
+}

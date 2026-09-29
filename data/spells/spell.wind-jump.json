@@ -1,0 +1,32 @@
+{
+  "id": "spell.wind-jump",
+  "type": "spell",
+  "name": "spell.wind-jump.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "focus",
+    "monk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wind-jump.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.wind-jump.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.wind-jump.heightened.0"
+    }
+  ]
+}

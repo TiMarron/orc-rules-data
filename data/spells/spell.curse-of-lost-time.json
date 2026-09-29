@@ -1,0 +1,41 @@
+{
+  "id": "spell.curse-of-lost-time",
+  "type": "spell",
+  "name": "spell.curse-of-lost-time.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 243,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.curse-of-lost-time.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.curse-of-lost-time.range",
+  "targets": "spell.curse-of-lost-time.targets",
+  "duration": "spell.curse-of-lost-time.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.curse-of-lost-time.heightened.0"
+    }
+  ]
+}

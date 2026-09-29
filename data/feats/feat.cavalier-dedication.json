@@ -1,0 +1,38 @@
+{
+  "id": "feat.cavalier-dedication",
+  "type": "feat",
+  "name": "feat.cavalier-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 192,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.cavalier-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.nature",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.society",
+          "rank": "trained"
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the named deity in the example is replaced with a generic one. The rules text is the book's."
+}

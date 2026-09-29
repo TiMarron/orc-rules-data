@@ -1,0 +1,32 @@
+{
+  "id": "spell.dream-council",
+  "type": "spell",
+  "name": "spell.dream-council.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "mental",
+    "sleep"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dream-council.text",
+  "rank": 8,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.dream-council.cast-time"
+  },
+  "range": "spell.dream-council.range",
+  "targets": "spell.dream-council.targets",
+  "duration": "spell.dream-council.duration"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "background.root-worker",
+  "type": "background",
+  "name": "background.root-worker.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.root-worker.text",
+  "boosts": [
+    [
+      "int",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.root-worker.lore",
+  "skills": [
+    "skill.occultism"
+  ],
+  "feat": "feat.root-magic"
+}

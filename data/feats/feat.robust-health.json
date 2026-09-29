@@ -1,0 +1,20 @@
+{
+  "id": "feat.robust-health",
+  "type": "feat",
+  "name": "feat.robust-health.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 233,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.robust-health.text",
+  "level": 3,
+  "category": "general",
+  "prerequisites": []
+}

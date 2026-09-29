@@ -1,0 +1,35 @@
+{
+  "id": "spell.charitable-urge",
+  "type": "spell",
+  "name": "spell.charitable-urge.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 242,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.charitable-urge.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.charitable-urge.range",
+  "targets": "spell.charitable-urge.targets",
+  "duration": "spell.charitable-urge.duration",
+  "defense": {
+    "save": "will"
+  }
+}

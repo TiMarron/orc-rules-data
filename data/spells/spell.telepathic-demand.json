@@ -1,0 +1,36 @@
+{
+  "id": "spell.telepathic-demand",
+  "type": "spell",
+  "name": "spell.telepathic-demand.name",
+  "traits": [
+    "concentrate",
+    "incapacitation",
+    "linguistic",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 253,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.telepathic-demand.text",
+  "rank": 9,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.telepathic-demand.range",
+  "targets": "spell.telepathic-demand.targets",
+  "duration": "spell.telepathic-demand.duration",
+  "defense": {
+    "save": "will"
+  }
+}

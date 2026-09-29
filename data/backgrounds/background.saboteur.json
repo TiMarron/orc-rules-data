@@ -1,0 +1,27 @@
+{
+  "id": "background.saboteur",
+  "type": "background",
+  "name": "background.saboteur.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.saboteur.text",
+  "boosts": [
+    [
+      "str",
+      "dex"
+    ],
+    "free"
+  ],
+  "lore": "background.saboteur.lore",
+  "skills": [
+    "skill.thievery"
+  ],
+  "feat": "feat.concealing-legerdemain"
+}

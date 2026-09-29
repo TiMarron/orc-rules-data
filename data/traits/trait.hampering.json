@@ -1,0 +1,15 @@
+{
+  "id": "trait.hampering",
+  "type": "trait",
+  "name": "trait.hampering.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 274,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.hampering.text"
+}

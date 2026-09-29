@@ -1,0 +1,31 @@
+{
+  "id": "feat.expert-disassembly",
+  "type": "feat",
+  "name": "feat.expert-disassembly.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 214,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.expert-disassembly.text",
+  "level": 7,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.scrounger-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "master"
+    }
+  ]
+}

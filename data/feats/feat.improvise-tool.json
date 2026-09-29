@@ -1,0 +1,27 @@
+{
+  "id": "feat.improvise-tool",
+  "type": "feat",
+  "name": "feat.improvise-tool.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 231,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improvise-tool.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "trained"
+    }
+  ]
+}

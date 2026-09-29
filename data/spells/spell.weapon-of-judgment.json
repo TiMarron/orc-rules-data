@@ -1,0 +1,37 @@
+{
+  "id": "spell.weapon-of-judgment",
+  "type": "spell",
+  "name": "spell.weapon-of-judgment.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "sanctified",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 255,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.weapon-of-judgment.text",
+  "rank": 9,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.weapon-of-judgment.range",
+  "targets": "spell.weapon-of-judgment.targets",
+  "duration": "spell.weapon-of-judgment.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.weapon-of-judgment.heightened.0"
+    }
+  ],
+  "requirements": "spell.weapon-of-judgment.requirements"
+}

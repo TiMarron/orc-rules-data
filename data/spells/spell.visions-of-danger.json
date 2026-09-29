@@ -1,0 +1,41 @@
+{
+  "id": "spell.visions-of-danger",
+  "type": "spell",
+  "name": "spell.visions-of-danger.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "illusion",
+    "manipulate",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 254,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.visions-of-danger.text",
+  "rank": 7,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.visions-of-danger.range",
+  "area": "spell.visions-of-danger.area",
+  "duration": "spell.visions-of-danger.duration",
+  "defense": {
+    "save": "will",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.visions-of-danger.heightened.0"
+    }
+  ]
+}

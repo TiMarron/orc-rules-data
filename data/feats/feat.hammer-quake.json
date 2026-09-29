@@ -1,0 +1,28 @@
+{
+  "id": "feat.hammer-quake",
+  "type": "feat",
+  "name": "feat.hammer-quake.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 207,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hammer-quake.text",
+  "level": 14,
+  "category": "archetype",
+  "actions": "3",
+  "requirements": "feat.hammer-quake.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.mauler-dedication"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "spell.qi-form",
+  "type": "spell",
+  "name": "spell.qi-form.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "monk",
+    "polymorph"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.qi-form.text",
+  "rank": 9,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.qi-form.duration"
+}

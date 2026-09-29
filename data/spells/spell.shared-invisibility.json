@@ -1,0 +1,37 @@
+{
+  "id": "spell.shared-invisibility",
+  "type": "spell",
+  "name": "spell.shared-invisibility.name",
+  "traits": [
+    "aura",
+    "illusion",
+    "manipulate",
+    "subtle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 251,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shared-invisibility.text",
+  "rank": 3,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.shared-invisibility.area",
+  "targets": "spell.shared-invisibility.targets",
+  "duration": "spell.shared-invisibility.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.shared-invisibility.heightened.0"
+    }
+  ]
+}

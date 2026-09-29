@@ -1,0 +1,39 @@
+{
+  "id": "spell.drop-dead",
+  "type": "spell",
+  "name": "spell.drop-dead.name",
+  "traits": [
+    "illusion",
+    "manipulate",
+    "subtle",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.drop-dead.text",
+  "rank": 5,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.drop-dead.range",
+  "targets": "spell.drop-dead.targets",
+  "duration": "spell.drop-dead.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.drop-dead.heightened.0"
+    }
+  ],
+  "trigger": "spell.drop-dead.trigger"
+}

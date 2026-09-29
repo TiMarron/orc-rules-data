@@ -1,0 +1,27 @@
+{
+  "id": "background.insurgent",
+  "type": "background",
+  "name": "background.insurgent.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.insurgent.text",
+  "boosts": [
+    [
+      "str",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.insurgent.lore",
+  "skills": [
+    "skill.deception"
+  ],
+  "feat": "feat.lengthy-diversion"
+}

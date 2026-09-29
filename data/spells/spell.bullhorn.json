@@ -1,0 +1,41 @@
+{
+  "id": "spell.bullhorn",
+  "type": "spell",
+  "name": "spell.bullhorn.name",
+  "traits": [
+    "auditory",
+    "cantrip",
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 241,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.bullhorn.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.bullhorn.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.bullhorn.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.bullhorn.heightened.1"
+    }
+  ]
+}

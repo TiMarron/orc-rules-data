@@ -1,0 +1,35 @@
+{
+  "id": "spell.protector-tree",
+  "type": "spell",
+  "name": "spell.protector-tree.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 249,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.protector-tree.text",
+  "rank": 1,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.protector-tree.range",
+  "duration": "spell.protector-tree.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.protector-tree.heightened.0"
+    }
+  ]
+}

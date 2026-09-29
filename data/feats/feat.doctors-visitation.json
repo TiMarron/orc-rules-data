@@ -1,0 +1,27 @@
+{
+  "id": "feat.doctors-visitation",
+  "type": "feat",
+  "name": "feat.doctors-visitation.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 208,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.doctors-visitation.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1-2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.medic-dedication"
+    }
+  ]
+}

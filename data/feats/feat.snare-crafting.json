@@ -1,0 +1,28 @@
+{
+  "id": "feat.snare-crafting",
+  "type": "feat",
+  "name": "feat.snare-crafting.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 234,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.snare-crafting.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "trained"
+    }
+  ],
+  "editNote": "Reserved Material removed: the 'leads to' list held a single entry that carried a settlement's proper name and no record exists for it, so the whole one-line list is dropped. The rules text is the book's."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.shadow-mark",
+  "type": "feat",
+  "name": "feat.shadow-mark.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 233,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shadow-mark.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "expert"
+    }
+  ]
+}

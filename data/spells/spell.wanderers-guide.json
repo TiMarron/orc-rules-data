@@ -1,0 +1,27 @@
+{
+  "id": "spell.wanderers-guide",
+  "type": "spell",
+  "name": "spell.wanderers-guide.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 255,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.wanderers-guide.text",
+  "rank": 3,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.wanderers-guide.cast-time"
+  },
+  "duration": "spell.wanderers-guide.duration"
+}

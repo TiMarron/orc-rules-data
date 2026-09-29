@@ -1,0 +1,17 @@
+{
+  "id": "action.call-companion",
+  "type": "action",
+  "name": "action.call-companion.name",
+  "traits": [
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 189,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.call-companion.text"
+}

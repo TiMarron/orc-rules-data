@@ -1,0 +1,15 @@
+{
+  "id": "trait.finite",
+  "type": "trait",
+  "name": "trait.finite.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 172,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.finite.text"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "spell.imprint-message",
+  "type": "spell",
+  "name": "spell.imprint-message.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 247,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.imprint-message.text",
+  "rank": 1,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.imprint-message.range",
+  "targets": "spell.imprint-message.targets"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.apex",
+  "type": "trait",
+  "name": "trait.apex.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 270,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.apex.text"
+}

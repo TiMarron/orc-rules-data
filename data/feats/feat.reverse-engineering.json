@@ -1,0 +1,31 @@
+{
+  "id": "feat.reverse-engineering",
+  "type": "feat",
+  "name": "feat.reverse-engineering.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 214,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reverse-engineering.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.scrounger-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "expert"
+    }
+  ]
+}

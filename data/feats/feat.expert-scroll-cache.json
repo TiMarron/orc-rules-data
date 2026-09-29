@@ -1,0 +1,25 @@
+{
+  "id": "feat.expert-scroll-cache",
+  "type": "feat",
+  "name": "feat.expert-scroll-cache.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 213,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.expert-scroll-cache.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-scroll-cache"
+    }
+  ]
+}

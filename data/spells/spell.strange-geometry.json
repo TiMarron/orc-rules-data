@@ -1,0 +1,32 @@
+{
+  "id": "spell.strange-geometry",
+  "type": "spell",
+  "name": "spell.strange-geometry.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 252,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.strange-geometry.text",
+  "rank": 5,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.strange-geometry.range",
+  "area": "spell.strange-geometry.area",
+  "duration": "spell.strange-geometry.duration",
+  "defense": {
+    "save": "will"
+  }
+}

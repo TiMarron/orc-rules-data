@@ -1,0 +1,27 @@
+{
+  "id": "background.bookkeeper",
+  "type": "background",
+  "name": "background.bookkeeper.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.bookkeeper.text",
+  "boosts": [
+    [
+      "int",
+      "wis"
+    ],
+    "free"
+  ],
+  "lore": "background.bookkeeper.lore",
+  "skills": [
+    "skill.society"
+  ],
+  "feat": "feat.eye-for-numbers"
+}

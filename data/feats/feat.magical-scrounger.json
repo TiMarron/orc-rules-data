@@ -1,0 +1,29 @@
+{
+  "id": "feat.magical-scrounger",
+  "type": "feat",
+  "name": "feat.magical-scrounger.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 214,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.magical-scrounger.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.magical-crafting"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.scrounger-dedication"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.venomous",
+  "type": "trait",
+  "name": "trait.venomous.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 119,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.venomous.text"
+}

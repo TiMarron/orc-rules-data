@@ -1,0 +1,35 @@
+{
+  "id": "spell.scintillating-safeguard",
+  "type": "spell",
+  "name": "spell.scintillating-safeguard.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 251,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.scintillating-safeguard.text",
+  "rank": 6,
+  "traditions": [
+    "divine",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.scintillating-safeguard.range",
+  "targets": "spell.scintillating-safeguard.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.scintillating-safeguard.heightened.0"
+    }
+  ],
+  "trigger": "spell.scintillating-safeguard.trigger"
+}

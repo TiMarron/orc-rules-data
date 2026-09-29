@@ -1,0 +1,25 @@
+{
+  "id": "feat.legendary-rider",
+  "type": "feat",
+  "name": "feat.legendary-rider.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 193,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.legendary-rider.text",
+  "level": 20,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cavalier-dedication"
+    }
+  ]
+}

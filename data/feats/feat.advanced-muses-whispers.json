@@ -12,7 +12,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "feat.advanced-muses-whispers.text",
   "level": 6,
   "category": "archetype",
@@ -22,5 +22,6 @@
       "id": "feat.basic-muses-whispers"
     }
   ],
-  "repeatable": true
+  "repeatable": true,
+  "editNote": "repeatable: the Special line lets the feat be selected more than once"
 }

@@ -1,0 +1,33 @@
+{
+  "id": "feat.shoving-sweep",
+  "type": "feat",
+  "name": "feat.shoving-sweep.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 207,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shoving-sweep.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.shoving-sweep.trigger",
+  "requirements": "feat.shoving-sweep.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.mauler-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "expert"
+    }
+  ]
+}

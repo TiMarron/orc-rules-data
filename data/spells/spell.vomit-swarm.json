@@ -1,0 +1,38 @@
+{
+  "id": "spell.vomit-swarm",
+  "type": "spell",
+  "name": "spell.vomit-swarm.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 254,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.vomit-swarm.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "occult",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.vomit-swarm.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.vomit-swarm.heightened.0"
+    }
+  ]
+}

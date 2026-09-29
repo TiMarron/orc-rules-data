@@ -1,0 +1,29 @@
+{
+  "id": "spell.resplendent-mansion",
+  "type": "spell",
+  "name": "spell.resplendent-mansion.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "structure"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 250,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.resplendent-mansion.text",
+  "rank": 9,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "time": "spell.resplendent-mansion.cast-time"
+  },
+  "range": "spell.resplendent-mansion.range",
+  "duration": "spell.resplendent-mansion.duration"
+}

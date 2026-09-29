@@ -1,0 +1,30 @@
+{
+  "id": "feat.cavaliers-banner",
+  "type": "feat",
+  "name": "feat.cavaliers-banner.name",
+  "traits": [
+    "archetype",
+    "aura",
+    "emotion",
+    "mental",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 192,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cavaliers-banner.text",
+  "level": 4,
+  "category": "archetype",
+  "requirements": "feat.cavaliers-banner.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cavalier-dedication"
+    }
+  ]
+}

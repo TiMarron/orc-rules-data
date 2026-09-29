@@ -1,0 +1,26 @@
+{
+  "id": "spell.embrace-nothingness",
+  "type": "spell",
+  "name": "spell.embrace-nothingness.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "monk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.embrace-nothingness.text",
+  "rank": 9,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.embrace-nothingness.duration"
+}

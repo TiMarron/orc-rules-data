@@ -1,0 +1,27 @@
+{
+  "id": "feat.terrifying-resistance",
+  "type": "feat",
+  "name": "feat.terrifying-resistance.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 234,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.terrifying-resistance.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "expert"
+    }
+  ]
+}

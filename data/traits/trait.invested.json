@@ -1,0 +1,15 @@
+{
+  "id": "trait.invested",
+  "type": "trait",
+  "name": "trait.invested.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 219,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.invested.text"
+}

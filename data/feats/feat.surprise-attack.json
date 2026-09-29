@@ -1,0 +1,25 @@
+{
+  "id": "feat.surprise-attack",
+  "type": "feat",
+  "name": "feat.surprise-attack.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 186,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.surprise-attack.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.assassin-dedication"
+    }
+  ]
+}

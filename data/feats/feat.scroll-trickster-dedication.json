@@ -1,0 +1,47 @@
+{
+  "id": "feat.scroll-trickster-dedication",
+  "type": "feat",
+  "name": "feat.scroll-trickster-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 213,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scroll-trickster-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.nature",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.arcana",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.occultism",
+          "rank": "trained"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.religion",
+          "rank": "trained"
+        }
+      ]
+    }
+  ]
+}

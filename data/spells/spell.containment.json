@@ -1,0 +1,39 @@
+{
+  "id": "spell.containment",
+  "type": "spell",
+  "name": "spell.containment.name",
+  "traits": [
+    "concentrate",
+    "force",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 243,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.containment.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.containment.range",
+  "targets": "spell.containment.targets",
+  "duration": "spell.containment.duration",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.containment.heightened.0"
+    }
+  ]
+}

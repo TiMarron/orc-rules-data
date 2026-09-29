@@ -12,10 +12,11 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "feat.armor-proficiency.text",
   "level": 1,
   "category": "general",
   "prerequisites": [],
-  "repeatable": true
+  "repeatable": true,
+  "editNote": "repeatable: the Special line lets the feat be selected more than once"
 }

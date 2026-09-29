@@ -1,0 +1,38 @@
+{
+  "id": "spell.collective-transposition",
+  "type": "spell",
+  "name": "spell.collective-transposition.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "teleportation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 243,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.collective-transposition.text",
+  "rank": 6,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.collective-transposition.area",
+  "targets": "spell.collective-transposition.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.collective-transposition.heightened.0"
+    }
+  ]
+}

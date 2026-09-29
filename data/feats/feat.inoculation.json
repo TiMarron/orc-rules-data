@@ -1,0 +1,28 @@
+{
+  "id": "feat.inoculation",
+  "type": "feat",
+  "name": "feat.inoculation.name",
+  "traits": [
+    "general",
+    "healing",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.inoculation.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.medicine",
+      "rank": "trained"
+    }
+  ]
+}

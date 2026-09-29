@@ -1,0 +1,43 @@
+{
+  "id": "spell.summon-lesser-servitor",
+  "type": "spell",
+  "name": "spell.summon-lesser-servitor.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "summon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 253,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.summon-lesser-servitor.text",
+  "rank": 1,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.summon-lesser-servitor.range",
+  "duration": "spell.summon-lesser-servitor.duration",
+  "heightened": [
+    {
+      "level": "2",
+      "text": "spell.summon-lesser-servitor.heightened.0"
+    },
+    {
+      "level": "3",
+      "text": "spell.summon-lesser-servitor.heightened.1"
+    },
+    {
+      "level": "4",
+      "text": "spell.summon-lesser-servitor.heightened.2"
+    }
+  ],
+  "editNote": "Reserved Material removed: two named deities used as examples are replaced with the general case they illustrate, and the name of a cosmological region is replaced with a generic descriptor. The rules are the book's."
+}

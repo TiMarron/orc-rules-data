@@ -1,0 +1,27 @@
+{
+  "id": "feat.legendary-guide",
+  "type": "feat",
+  "name": "feat.legendary-guide.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.legendary-guide.text",
+  "level": 15,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "legendary"
+    }
+  ]
+}

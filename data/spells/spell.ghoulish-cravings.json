@@ -1,0 +1,34 @@
+{
+  "id": "spell.ghoulish-cravings",
+  "type": "spell",
+  "name": "spell.ghoulish-cravings.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 246,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ghoulish-cravings.text",
+  "rank": 2,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.ghoulish-cravings.range",
+  "targets": "spell.ghoulish-cravings.targets",
+  "duration": "spell.ghoulish-cravings.duration",
+  "defense": {
+    "save": "will"
+  }
+}

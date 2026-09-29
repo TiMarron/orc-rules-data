@@ -1,0 +1,34 @@
+{
+  "id": "spell.carryall",
+  "type": "spell",
+  "name": "spell.carryall.name",
+  "traits": [
+    "concentrate",
+    "force",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 242,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.carryall.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.carryall.duration",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "spell.carryall.heightened.0"
+    }
+  ]
+}

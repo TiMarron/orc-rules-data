@@ -1,0 +1,27 @@
+{
+  "id": "background.tax-collector",
+  "type": "background",
+  "name": "background.tax-collector.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.tax-collector.text",
+  "boosts": [
+    [
+      "str",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.tax-collector.lore",
+  "skills": [
+    "skill.intimidation"
+  ],
+  "feat": "feat.quick-coercion"
+}

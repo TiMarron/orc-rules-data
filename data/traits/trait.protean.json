@@ -1,0 +1,16 @@
+{
+  "id": "trait.protean",
+  "type": "trait",
+  "name": "trait.protean.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 332,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "trait.protean.text",
+  "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "spell.gale-blast",
+  "type": "spell",
+  "name": "spell.gale-blast.name",
+  "traits": [
+    "air",
+    "cantrip",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 246,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gale-blast.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.gale-blast.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.gale-blast.heightened.0"
+    }
+  ]
+}

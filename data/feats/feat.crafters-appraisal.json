@@ -1,0 +1,27 @@
+{
+  "id": "feat.crafters-appraisal",
+  "type": "feat",
+  "name": "feat.crafters-appraisal.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 229,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.crafters-appraisal.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "trained"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "spell.spiritual-epidemic",
+  "type": "spell",
+  "name": "spell.spiritual-epidemic.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "manipulate",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 252,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.spiritual-epidemic.text",
+  "rank": 8,
+  "traditions": [
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.spiritual-epidemic.range",
+  "targets": "spell.spiritual-epidemic.targets",
+  "duration": "spell.spiritual-epidemic.duration",
+  "defense": {
+    "save": "will"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.glean-contents",
+  "type": "feat",
+  "name": "feat.glean-contents.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 231,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.glean-contents.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "trained"
+    }
+  ]
+}

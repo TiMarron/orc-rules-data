@@ -1,0 +1,15 @@
+{
+  "id": "trait.infused",
+  "type": "trait",
+  "name": "trait.infused.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 61,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.infused.text"
+}

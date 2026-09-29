@@ -1,0 +1,40 @@
+{
+  "id": "spell.invisible-item",
+  "type": "spell",
+  "name": "spell.invisible-item.name",
+  "traits": [
+    "concentrate",
+    "illusion",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 247,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.invisible-item.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.invisible-item.range",
+  "targets": "spell.invisible-item.targets",
+  "duration": "spell.invisible-item.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.invisible-item.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "spell.invisible-item.heightened.1"
+    }
+  ]
+}

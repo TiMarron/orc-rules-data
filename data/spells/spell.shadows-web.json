@@ -1,0 +1,36 @@
+{
+  "id": "spell.shadows-web",
+  "type": "spell",
+  "name": "spell.shadows-web.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "monk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shadows-web.text",
+  "rank": 7,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.shadows-web.range",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.shadows-web.heightened.0"
+    }
+  ],
+  "requirements": "spell.shadows-web.requirements"
+}

@@ -12,7 +12,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "feat.advanced-domain.text",
   "level": 8,
   "category": "class",
@@ -23,5 +23,6 @@
       "id": "feat.domain-initiate"
     }
   ],
-  "repeatable": true
+  "repeatable": true,
+  "editNote": "repeatable: the Special line lets the feat be selected more than once"
 }

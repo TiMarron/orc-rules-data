@@ -1,0 +1,21 @@
+{
+  "id": "feat.improvised-repair",
+  "type": "feat",
+  "name": "feat.improvised-repair.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 231,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improvised-repair.text",
+  "level": 3,
+  "category": "general",
+  "actions": "3",
+  "prerequisites": []
+}
