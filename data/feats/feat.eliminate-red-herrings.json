@@ -1,0 +1,21 @@
+{
+  "id": "feat.eliminate-red-herrings",
+  "type": "feat",
+  "name": "feat.eliminate-red-herrings.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 106,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.eliminate-red-herrings.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

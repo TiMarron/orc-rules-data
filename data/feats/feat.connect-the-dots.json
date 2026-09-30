@@ -1,0 +1,25 @@
+{
+  "id": "feat.connect-the-dots",
+  "type": "feat",
+  "name": "feat.connect-the-dots.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "investigator",
+    "linguistic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 109,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.connect-the-dots.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.investigator",
+  "actions": "2",
+  "prerequisites": []
+}

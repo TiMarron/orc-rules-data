@@ -1,0 +1,24 @@
+{
+  "id": "feat.crane-stance",
+  "type": "feat",
+  "name": "feat.crane-stance.name",
+  "traits": [
+    "monk",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 118,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.crane-stance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "requirements": "feat.crane-stance.requirements",
+  "prerequisites": []
+}

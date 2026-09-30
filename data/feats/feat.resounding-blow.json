@@ -1,0 +1,23 @@
+{
+  "id": "feat.resounding-blow",
+  "type": "feat",
+  "name": "feat.resounding-blow.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.resounding-blow.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "requirements": "feat.resounding-blow.requirements",
+  "prerequisites": []
+}

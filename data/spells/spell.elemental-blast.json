@@ -1,0 +1,37 @@
+{
+  "id": "spell.elemental-blast",
+  "type": "spell",
+  "name": "spell.elemental-blast.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 264,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.elemental-blast.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.elemental-blast.range",
+  "area": "spell.elemental-blast.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.elemental-blast.heightened.0"
+    }
+  ]
+}

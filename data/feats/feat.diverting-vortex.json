@@ -1,0 +1,23 @@
+{
+  "id": "feat.diverting-vortex",
+  "type": "feat",
+  "name": "feat.diverting-vortex.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 154,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.diverting-vortex.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "requirements": "feat.diverting-vortex.requirements",
+  "prerequisites": []
+}

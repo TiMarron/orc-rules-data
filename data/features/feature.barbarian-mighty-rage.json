@@ -1,0 +1,17 @@
+{
+  "id": "feature.barbarian-mighty-rage",
+  "type": "feature",
+  "name": "feature.barbarian-mighty-rage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 70,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.barbarian-mighty-rage.text",
+  "class": "class.barbarian",
+  "level": 11
+}

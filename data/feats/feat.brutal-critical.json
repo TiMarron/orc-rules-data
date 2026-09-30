@@ -1,0 +1,21 @@
+{
+  "id": "feat.brutal-critical",
+  "type": "feat",
+  "name": "feat.brutal-critical.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.brutal-critical.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": []
+}

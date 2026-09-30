@@ -1,0 +1,22 @@
+{
+  "id": "feat.reason-rapidly",
+  "type": "feat",
+  "name": "feat.reason-rapidly.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 111,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reason-rapidly.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.investigator",
+  "actions": "1",
+  "prerequisites": []
+}

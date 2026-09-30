@@ -1,0 +1,21 @@
+{
+  "id": "feat.divine-effusion",
+  "type": "feat",
+  "name": "feat.divine-effusion.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-effusion.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": []
+}

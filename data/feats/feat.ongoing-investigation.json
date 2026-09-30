@@ -1,0 +1,21 @@
+{
+  "id": "feat.ongoing-investigation",
+  "type": "feat",
+  "name": "feat.ongoing-investigation.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 108,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ongoing-investigation.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

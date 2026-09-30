@@ -1,0 +1,22 @@
+{
+  "id": "feat.wall-run",
+  "type": "feat",
+  "name": "feat.wall-run.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wall-run.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "prerequisites": []
+}

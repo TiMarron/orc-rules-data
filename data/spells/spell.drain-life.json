@@ -1,0 +1,37 @@
+{
+  "id": "spell.drain-life",
+  "type": "spell",
+  "name": "spell.drain-life.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "sorcerer",
+    "void"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 265,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.drain-life.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.drain-life.range",
+  "targets": "spell.drain-life.targets",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.drain-life.heightened.0"
+    }
+  ]
+}

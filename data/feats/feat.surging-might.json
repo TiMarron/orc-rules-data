@@ -1,0 +1,24 @@
+{
+  "id": "feat.surging-might",
+  "type": "feat",
+  "name": "feat.surging-might.name",
+  "traits": [
+    "manipulate",
+    "oracle",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 141,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.surging-might.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "1",
+  "prerequisites": []
+}

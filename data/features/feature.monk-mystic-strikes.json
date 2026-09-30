@@ -1,0 +1,17 @@
+{
+  "id": "feature.monk-mystic-strikes",
+  "type": "feature",
+  "name": "feature.monk-mystic-strikes.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 116,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.monk-mystic-strikes.text",
+  "class": "class.monk",
+  "level": 3
+}

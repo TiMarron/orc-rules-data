@@ -13,8 +13,8 @@
     "page": 355,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.see-the-unseen.text",
   "rank": 2,
   "traditions": [
@@ -31,5 +31,6 @@
       "level": "5",
       "text": "spell.see-the-unseen.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
 }

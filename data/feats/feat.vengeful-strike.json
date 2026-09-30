@@ -1,0 +1,30 @@
+{
+  "id": "feat.vengeful-strike",
+  "type": "feat",
+  "name": "feat.vengeful-strike.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 83,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vengeful-strike.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.vengeful-strike.trigger",
+  "requirements": "feat.vengeful-strike.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.come-and-get-me"
+    }
+  ]
+}

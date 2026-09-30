@@ -1,0 +1,24 @@
+{
+  "id": "feat.furious-grab",
+  "type": "feat",
+  "name": "feat.furious-grab.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.furious-grab.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "requirements": "feat.furious-grab.requirements",
+  "prerequisites": []
+}

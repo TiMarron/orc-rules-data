@@ -1,0 +1,23 @@
+{
+  "id": "feat.furious-sprint",
+  "type": "feat",
+  "name": "feat.furious-sprint.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.furious-sprint.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2-3",
+  "prerequisites": []
+}

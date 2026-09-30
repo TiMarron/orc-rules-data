@@ -1,0 +1,17 @@
+{
+  "id": "feature.monk-skill-increases",
+  "type": "feature",
+  "name": "feature.monk-skill-increases.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.monk-skill-increases.text",
+  "class": "class.monk",
+  "level": 3
+}

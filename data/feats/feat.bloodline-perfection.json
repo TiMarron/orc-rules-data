@@ -1,0 +1,21 @@
+{
+  "id": "feat.bloodline-perfection",
+  "type": "feat",
+  "name": "feat.bloodline-perfection.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 157,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bloodline-perfection.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": []
+}

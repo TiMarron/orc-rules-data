@@ -1,0 +1,22 @@
+{
+  "id": "feat.shattering-strike-monk",
+  "type": "feat",
+  "name": "feat.shattering-strike-monk.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shattering-strike-monk.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "2",
+  "prerequisites": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "spell.tentacular-limbs",
+  "type": "spell",
+  "name": "spell.tentacular-limbs.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "morph",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tentacular-limbs.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.tentacular-limbs.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.tentacular-limbs.heightened.0"
+    }
+  ]
+}

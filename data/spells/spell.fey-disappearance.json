@@ -1,0 +1,31 @@
+{
+  "id": "spell.fey-disappearance",
+  "type": "spell",
+  "name": "spell.fey-disappearance.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 264,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.fey-disappearance.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.fey-disappearance.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.fey-disappearance.heightened.0"
+    }
+  ]
+}

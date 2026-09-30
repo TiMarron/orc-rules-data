@@ -1,0 +1,36 @@
+{
+  "id": "spell.dragon-breath",
+  "type": "spell",
+  "name": "spell.dragon-breath.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 263,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.dragon-breath.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.dragon-breath.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.dragon-breath.heightened.0"
+    }
+  ]
+}

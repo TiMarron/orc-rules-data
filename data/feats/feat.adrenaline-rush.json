@@ -1,0 +1,22 @@
+{
+  "id": "feat.adrenaline-rush",
+  "type": "feat",
+  "name": "feat.adrenaline-rush.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.adrenaline-rush.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": []
+}

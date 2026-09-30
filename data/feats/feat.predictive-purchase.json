@@ -1,0 +1,21 @@
+{
+  "id": "feat.predictive-purchase",
+  "type": "feat",
+  "name": "feat.predictive-purchase.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 109,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.predictive-purchase.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

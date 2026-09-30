@@ -1,0 +1,24 @@
+{
+  "id": "feat.mystery-conduit",
+  "type": "feat",
+  "name": "feat.mystery-conduit.name",
+  "traits": [
+    "cursebound",
+    "oracle",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mystery-conduit.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "free",
+  "prerequisites": []
+}

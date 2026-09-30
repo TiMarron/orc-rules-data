@@ -1,0 +1,24 @@
+{
+  "id": "feat.wolf-stance",
+  "type": "feat",
+  "name": "feat.wolf-stance.name",
+  "traits": [
+    "monk",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 119,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wolf-stance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "requirements": "feat.wolf-stance.requirements",
+  "prerequisites": []
+}

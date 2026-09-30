@@ -1,0 +1,23 @@
+{
+  "id": "feat.read-disaster",
+  "type": "feat",
+  "name": "feat.read-disaster.name",
+  "traits": [
+    "exploration",
+    "oracle",
+    "prediction"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 141,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.read-disaster.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": []
+}

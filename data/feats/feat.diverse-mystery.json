@@ -1,0 +1,21 @@
+{
+  "id": "feat.diverse-mystery",
+  "type": "feat",
+  "name": "feat.diverse-mystery.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.diverse-mystery.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "feature.barbarian-rage",
+  "type": "feature",
+  "name": "feature.barbarian-rage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 71,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feature.barbarian-rage.text",
+  "class": "class.barbarian",
+  "level": 1,
+  "editNote": "Accepted: the feature's own text matches the class entry in the book. The one dropped block is the embedded copy of the action the feature grants; that action is its own record in the dataset, exactly as for the fighter's Reactive Strike and the rogue's Debilitating Strike, and is reviewed under its own id."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.clue-them-all-in",
+  "type": "feat",
+  "name": "feat.clue-them-all-in.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 109,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.clue-them-all-in.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

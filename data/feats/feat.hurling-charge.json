@@ -1,0 +1,27 @@
+{
+  "id": "feat.hurling-charge",
+  "type": "feat",
+  "name": "feat.hurling-charge.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 220,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hurling-charge.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "2",
+  "requirements": "feat.hurling-charge.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.viking-dedication"
+    }
+  ]
+}

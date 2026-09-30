@@ -1,0 +1,38 @@
+{
+  "id": "spell.aberrant-whispers",
+  "type": "spell",
+  "name": "spell.aberrant-whispers.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "focus",
+    "mental",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.aberrant-whispers.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1-3"
+  },
+  "area": "spell.aberrant-whispers.area",
+  "targets": "spell.aberrant-whispers.targets",
+  "duration": "spell.aberrant-whispers.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+3",
+      "text": "spell.aberrant-whispers.heightened.0"
+    }
+  ]
+}

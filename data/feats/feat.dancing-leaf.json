@@ -1,0 +1,21 @@
+{
+  "id": "feat.dancing-leaf",
+  "type": "feat",
+  "name": "feat.dancing-leaf.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 120,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dancing-leaf.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": []
+}

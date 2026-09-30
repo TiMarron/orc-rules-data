@@ -1,0 +1,27 @@
+{
+  "id": "feat.second-shield",
+  "type": "feat",
+  "name": "feat.second-shield.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 220,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.second-shield.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "free",
+  "trigger": "feat.second-shield.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.viking-dedication"
+    }
+  ]
+}

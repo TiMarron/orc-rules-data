@@ -1,0 +1,17 @@
+{
+  "id": "feature.barbarian-skill-feats",
+  "type": "feature",
+  "name": "feature.barbarian-skill-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 70,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.barbarian-skill-feats.text",
+  "class": "class.barbarian",
+  "level": 2
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.water-walker",
+  "type": "feat",
+  "name": "feat.water-walker.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 141,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.water-walker.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": []
+}

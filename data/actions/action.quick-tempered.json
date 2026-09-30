@@ -1,0 +1,20 @@
+{
+  "id": "action.quick-tempered",
+  "type": "action",
+  "name": "action.quick-tempered.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 72,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.quick-tempered.text",
+  "actions": "free",
+  "trigger": "action.quick-tempered.trigger",
+  "requirements": "action.quick-tempered.requirements"
+}

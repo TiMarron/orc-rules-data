@@ -1,0 +1,24 @@
+{
+  "id": "feat.bloodline-conduit",
+  "type": "feat",
+  "name": "feat.bloodline-conduit.name",
+  "traits": [
+    "sorcerer",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 157,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bloodline-conduit.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "frequency": "feat.bloodline-conduit.frequency",
+  "prerequisites": []
+}

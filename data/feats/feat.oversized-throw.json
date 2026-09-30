@@ -1,0 +1,24 @@
+{
+  "id": "feat.oversized-throw",
+  "type": "feat",
+  "name": "feat.oversized-throw.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 78,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.oversized-throw.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "requirements": "feat.oversized-throw.requirements",
+  "prerequisites": []
+}

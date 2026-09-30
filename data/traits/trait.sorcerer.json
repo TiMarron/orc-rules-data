@@ -1,0 +1,15 @@
+{
+  "id": "trait.sorcerer",
+  "type": "trait",
+  "name": "trait.sorcerer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 318,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.sorcerer.text"
+}

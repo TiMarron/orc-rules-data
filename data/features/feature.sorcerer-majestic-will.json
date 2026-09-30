@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-majestic-will",
+  "type": "feature",
+  "name": "feature.sorcerer-majestic-will.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-majestic-will.text",
+  "class": "class.sorcerer",
+  "level": 17
+}

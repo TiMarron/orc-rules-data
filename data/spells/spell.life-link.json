@@ -1,0 +1,46 @@
+{
+  "id": "spell.life-link",
+  "type": "spell",
+  "name": "spell.life-link.name",
+  "traits": [
+    "focus",
+    "healing",
+    "manipulate",
+    "oracle",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 260,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.life-link.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.life-link.range",
+  "targets": "spell.life-link.targets",
+  "duration": "spell.life-link.duration",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.life-link.heightened.0"
+    },
+    {
+      "level": "6",
+      "text": "spell.life-link.heightened.1"
+    },
+    {
+      "level": "9",
+      "text": "spell.life-link.heightened.2"
+    }
+  ]
+}

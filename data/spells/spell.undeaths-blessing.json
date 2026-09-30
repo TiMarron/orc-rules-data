@@ -1,0 +1,37 @@
+{
+  "id": "spell.undeaths-blessing",
+  "type": "spell",
+  "name": "spell.undeaths-blessing.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "sorcerer",
+    "void"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 265,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.undeaths-blessing.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.undeaths-blessing.range",
+  "targets": "spell.undeaths-blessing.targets",
+  "duration": "spell.undeaths-blessing.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.undeaths-blessing.heightened.0"
+    }
+  ]
+}

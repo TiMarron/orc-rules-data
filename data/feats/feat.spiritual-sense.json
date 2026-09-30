@@ -1,0 +1,23 @@
+{
+  "id": "feat.spiritual-sense",
+  "type": "feat",
+  "name": "feat.spiritual-sense.name",
+  "traits": [
+    "divine",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 140,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.spiritual-sense.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with the generic 'ethereal realm' the dataset already uses. The rules text is the book's."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "action.expeditious-inspection",
+  "type": "action",
+  "name": "action.expeditious-inspection.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 104,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.expeditious-inspection.text",
+  "actions": "free",
+  "frequency": "action.expeditious-inspection.frequency"
+}

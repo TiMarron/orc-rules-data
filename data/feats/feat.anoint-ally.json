@@ -1,0 +1,23 @@
+{
+  "id": "feat.anoint-ally",
+  "type": "feat",
+  "name": "feat.anoint-ally.name",
+  "traits": [
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 153,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.anoint-ally.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "prerequisites": []
+}

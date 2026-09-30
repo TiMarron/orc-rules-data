@@ -1,0 +1,28 @@
+{
+  "id": "feat.oracular-warning",
+  "type": "feat",
+  "name": "feat.oracular-warning.name",
+  "traits": [
+    "auditory",
+    "cursebound",
+    "divine",
+    "emotion",
+    "mental",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.oracular-warning.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "free",
+  "trigger": "feat.oracular-warning.trigger",
+  "prerequisites": []
+}

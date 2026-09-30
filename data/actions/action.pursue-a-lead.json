@@ -1,0 +1,20 @@
+{
+  "id": "action.pursue-a-lead",
+  "type": "action",
+  "name": "action.pursue-a-lead.name",
+  "traits": [
+    "concentrate",
+    "exploration",
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 102,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "action.pursue-a-lead.text",
+  "editNote": "Reserved Material removed: the second of two example investigation titles is the title of a published adventure and is dropped. The rules text is the book's."
+}

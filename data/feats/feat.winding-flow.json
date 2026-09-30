@@ -1,0 +1,23 @@
+{
+  "id": "feat.winding-flow",
+  "type": "feat",
+  "name": "feat.winding-flow.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.winding-flow.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "frequency": "feat.winding-flow.frequency",
+  "prerequisites": []
+}

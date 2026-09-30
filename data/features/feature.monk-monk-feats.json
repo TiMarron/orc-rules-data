@@ -1,0 +1,17 @@
+{
+  "id": "feature.monk-monk-feats",
+  "type": "feature",
+  "name": "feature.monk-monk-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.monk-monk-feats.text",
+  "class": "class.monk",
+  "level": 1
+}

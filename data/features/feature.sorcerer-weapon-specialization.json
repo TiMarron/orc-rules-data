@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-weapon-specialization",
+  "type": "feature",
+  "name": "feature.sorcerer-weapon-specialization.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-weapon-specialization.text",
+  "class": "class.sorcerer",
+  "level": 13
+}

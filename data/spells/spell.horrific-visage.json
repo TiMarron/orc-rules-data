@@ -1,0 +1,40 @@
+{
+  "id": "spell.horrific-visage",
+  "type": "spell",
+  "name": "spell.horrific-visage.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "fear",
+    "focus",
+    "illusion",
+    "manipulate",
+    "mental",
+    "sorcerer",
+    "visual"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 264,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.horrific-visage.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.horrific-visage.area",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.horrific-visage.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "spell.tempest-form",
+  "type": "spell",
+  "name": "spell.tempest-form.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "oracle",
+    "polymorph"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tempest-form.text",
+  "rank": 6,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.tempest-form.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.tempest-form.heightened.0"
+    }
+  ]
+}

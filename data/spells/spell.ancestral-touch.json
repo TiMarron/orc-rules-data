@@ -1,0 +1,41 @@
+{
+  "id": "spell.ancestral-touch",
+  "type": "spell",
+  "name": "spell.ancestral-touch.name",
+  "traits": [
+    "emotion",
+    "fear",
+    "focus",
+    "manipulate",
+    "mental",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ancestral-touch.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.ancestral-touch.range",
+  "targets": "spell.ancestral-touch.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.ancestral-touch.heightened.0"
+    }
+  ]
+}

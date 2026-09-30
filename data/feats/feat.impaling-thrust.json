@@ -1,0 +1,24 @@
+{
+  "id": "feat.impaling-thrust",
+  "type": "feat",
+  "name": "feat.impaling-thrust.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 83,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impaling-thrust.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "requirements": "feat.impaling-thrust.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.oracle-light-armor-expertise",
+  "type": "feature",
+  "name": "feature.oracle-light-armor-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 128,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.oracle-light-armor-expertise.text",
+  "class": "class.oracle",
+  "level": 13
+}

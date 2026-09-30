@@ -1,0 +1,22 @@
+{
+  "id": "feat.annihilating-swing",
+  "type": "feat",
+  "name": "feat.annihilating-swing.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.annihilating-swing.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "prerequisites": []
+}

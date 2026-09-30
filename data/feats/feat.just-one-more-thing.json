@@ -1,0 +1,24 @@
+{
+  "id": "feat.just-one-more-thing",
+  "type": "feat",
+  "name": "feat.just-one-more-thing.name",
+  "traits": [
+    "fortune",
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 110,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.just-one-more-thing.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.investigator",
+  "actions": "1",
+  "requirements": "feat.just-one-more-thing.requirements",
+  "prerequisites": []
+}

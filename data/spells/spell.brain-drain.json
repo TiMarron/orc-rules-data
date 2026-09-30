@@ -1,0 +1,40 @@
+{
+  "id": "spell.brain-drain",
+  "type": "spell",
+  "name": "spell.brain-drain.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "mental",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 261,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.brain-drain.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.brain-drain.range",
+  "targets": "spell.brain-drain.targets",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.brain-drain.heightened.0"
+    }
+  ]
+}

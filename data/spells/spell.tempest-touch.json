@@ -1,0 +1,40 @@
+{
+  "id": "spell.tempest-touch",
+  "type": "spell",
+  "name": "spell.tempest-touch.name",
+  "traits": [
+    "cold",
+    "focus",
+    "manipulate",
+    "oracle",
+    "water"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 261,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.tempest-touch.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.tempest-touch.range",
+  "targets": "spell.tempest-touch.targets",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.tempest-touch.heightened.0"
+    }
+  ]
+}

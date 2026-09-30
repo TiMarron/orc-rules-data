@@ -1,0 +1,33 @@
+{
+  "id": "spell.angelic-wings",
+  "type": "spell",
+  "name": "spell.angelic-wings.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "light",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.angelic-wings.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.angelic-wings.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.angelic-wings.heightened.0"
+    }
+  ]
+}

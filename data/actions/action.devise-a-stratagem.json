@@ -1,0 +1,22 @@
+{
+  "id": "action.devise-a-stratagem",
+  "type": "action",
+  "name": "action.devise-a-stratagem.name",
+  "traits": [
+    "concentrate",
+    "fortune",
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 103,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "action.devise-a-stratagem.text",
+  "frequency": "action.devise-a-stratagem.frequency",
+  "variable": true,
+  "editNote": "The structured source carries a later wording than the printing in two places: it adds a sentence giving the Strike the fortune trait and rewrites the list of weapons the Intelligence modifier applies to. The text is the printed one, and the action's traits are the printed ones (concentrate, fortune, investigator). The book gives the cost as one action or a free action, so the record sets `variable`."
+}

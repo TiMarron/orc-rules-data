@@ -1,0 +1,26 @@
+{
+  "id": "feat.immortal-techniques",
+  "type": "feat",
+  "name": "feat.immortal-techniques.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.immortal-techniques.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.master-of-many-styles"
+    }
+  ]
+}

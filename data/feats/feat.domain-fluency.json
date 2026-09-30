@@ -1,0 +1,26 @@
+{
+  "id": "feat.domain-fluency",
+  "type": "feat",
+  "name": "feat.domain-fluency.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 141,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.domain-fluency.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.domain-acumen"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "spell.embrace-the-pit",
+  "type": "spell",
+  "name": "spell.embrace-the-pit.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "morph",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 263,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.embrace-the-pit.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.embrace-the-pit.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.embrace-the-pit.heightened.0"
+    }
+  ]
+}

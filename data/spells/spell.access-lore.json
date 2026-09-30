@@ -1,0 +1,29 @@
+{
+  "id": "spell.access-lore",
+  "type": "spell",
+  "name": "spell.access-lore.name",
+  "traits": [
+    "focus",
+    "fortune",
+    "manipulate",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 261,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.access-lore.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.access-lore.duration"
+}

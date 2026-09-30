@@ -1,0 +1,35 @@
+{
+  "id": "spell.claim-undead",
+  "type": "spell",
+  "name": "spell.claim-undead.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "incapacitation",
+    "manipulate",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.claim-undead.text",
+  "rank": 6,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.claim-undead.range",
+  "targets": "spell.claim-undead.targets",
+  "duration": "spell.claim-undead.duration",
+  "defense": {
+    "save": "will"
+  }
+}

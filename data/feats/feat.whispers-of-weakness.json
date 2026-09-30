@@ -1,0 +1,24 @@
+{
+  "id": "feat.whispers-of-weakness",
+  "type": "feat",
+  "name": "feat.whispers-of-weakness.name",
+  "traits": [
+    "cursebound",
+    "divine",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.whispers-of-weakness.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "1",
+  "prerequisites": []
+}

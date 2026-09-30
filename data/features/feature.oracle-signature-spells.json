@@ -1,0 +1,17 @@
+{
+  "id": "feature.oracle-signature-spells",
+  "type": "feature",
+  "name": "feature.oracle-signature-spells.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 128,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.oracle-signature-spells.text",
+  "class": "class.oracle",
+  "level": 3
+}

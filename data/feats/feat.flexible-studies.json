@@ -1,0 +1,21 @@
+{
+  "id": "feat.flexible-studies",
+  "type": "feat",
+  "name": "feat.flexible-studies.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 106,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flexible-studies.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

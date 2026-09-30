@@ -1,0 +1,17 @@
+{
+  "id": "feature.monk-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.monk-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 115,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.monk-initial-proficiencies.text",
+  "class": "class.monk",
+  "level": 1
+}

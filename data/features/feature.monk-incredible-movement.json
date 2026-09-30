@@ -1,0 +1,17 @@
+{
+  "id": "feature.monk-incredible-movement",
+  "type": "feature",
+  "name": "feature.monk-incredible-movement.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 116,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.monk-incredible-movement.text",
+  "class": "class.monk",
+  "level": 3
+}

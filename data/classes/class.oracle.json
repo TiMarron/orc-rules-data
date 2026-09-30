@@ -1,0 +1,219 @@
+{
+  "id": "class.oracle",
+  "type": "class",
+  "name": "class.oracle.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 129,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "class.oracle.text",
+  "keyAttribute": "cha",
+  "hp": 8,
+  "proficiencies": {
+    "perception": "trained",
+    "fortitude": "trained",
+    "reflex": "trained",
+    "will": "expert",
+    "skills": {
+      "additional": 3,
+      "fixed": [
+        "skill.religion"
+      ],
+      "choices": [
+        {
+          "count": 1,
+          "text": "class.oracle.skill-choice.0"
+        }
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "untrained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "untrained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained",
+    "spellcasting": "trained",
+    "traditions": [
+      "divine"
+    ]
+  },
+  "featLevels": {
+    "class": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.oracle-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.oracle-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.oracle-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.oracle-mystery"
+    },
+    {
+      "level": 1,
+      "feature": "feature.oracle-oracle-spellcasting"
+    },
+    {
+      "level": 1,
+      "feature": "feature.oracle-spell-repertoire"
+    },
+    {
+      "level": 2,
+      "feature": "feature.oracle-oracle-feats"
+    },
+    {
+      "level": 2,
+      "feature": "feature.oracle-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.oracle-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.oracle-signature-spells"
+    },
+    {
+      "level": 3,
+      "feature": "feature.oracle-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.oracle-ancestry-feats"
+    },
+    {
+      "level": 7,
+      "feature": "feature.oracle-expert-spellcaster"
+    },
+    {
+      "level": 7,
+      "feature": "feature.oracle-mysterious-resolve"
+    },
+    {
+      "level": 9,
+      "feature": "feature.oracle-magical-fortitude"
+    },
+    {
+      "level": 11,
+      "feature": "feature.oracle-divine-access"
+    },
+    {
+      "level": 11,
+      "feature": "feature.oracle-major-curse"
+    },
+    {
+      "level": 11,
+      "feature": "feature.oracle-oracular-senses"
+    },
+    {
+      "level": 11,
+      "feature": "feature.oracle-weapon-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.oracle-light-armor-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.oracle-premonitions-reflexes"
+    },
+    {
+      "level": 13,
+      "feature": "feature.oracle-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.oracle-master-spellcaster"
+    },
+    {
+      "level": 17,
+      "feature": "feature.oracle-extreme-curse"
+    },
+    {
+      "level": 17,
+      "feature": "feature.oracle-greater-mysterious-resolve"
+    },
+    {
+      "level": 19,
+      "feature": "feature.oracle-legendary-spellcaster"
+    },
+    {
+      "level": 19,
+      "feature": "feature.oracle-oracular-clarity"
+    }
+  ]
+}

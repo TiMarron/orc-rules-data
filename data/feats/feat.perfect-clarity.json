@@ -1,0 +1,26 @@
+{
+  "id": "feat.perfect-clarity",
+  "type": "feat",
+  "name": "feat.perfect-clarity.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "fortune",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.perfect-clarity.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.perfect-clarity.trigger",
+  "prerequisites": []
+}

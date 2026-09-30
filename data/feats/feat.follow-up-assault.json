@@ -1,0 +1,24 @@
+{
+  "id": "feat.follow-up-assault",
+  "type": "feat",
+  "name": "feat.follow-up-assault.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.follow-up-assault.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "requirements": "feat.follow-up-assault.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.renewed-vigor",
+  "type": "feat",
+  "name": "feat.renewed-vigor.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.renewed-vigor.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": []
+}

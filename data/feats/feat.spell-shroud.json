@@ -1,0 +1,24 @@
+{
+  "id": "feat.spell-shroud",
+  "type": "feat",
+  "name": "feat.spell-shroud.name",
+  "traits": [
+    "concentrate",
+    "sorcerer",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 157,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spell-shroud.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "prerequisites": []
+}

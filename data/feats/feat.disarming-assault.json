@@ -1,0 +1,30 @@
+{
+  "id": "feat.disarming-assault",
+  "type": "feat",
+  "name": "feat.disarming-assault.name",
+  "traits": [
+    "barbarian",
+    "flourish",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disarming-assault.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}

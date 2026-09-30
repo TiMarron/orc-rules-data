@@ -1,0 +1,24 @@
+{
+  "id": "feat.spell-relay",
+  "type": "feat",
+  "name": "feat.spell-relay.name",
+  "traits": [
+    "concentrate",
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 154,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spell-relay.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "reaction",
+  "trigger": "feat.spell-relay.trigger",
+  "prerequisites": []
+}

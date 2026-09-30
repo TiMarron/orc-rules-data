@@ -1,0 +1,36 @@
+{
+  "id": "spell.flaming-fusillade",
+  "type": "spell",
+  "name": "spell.flaming-fusillade.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "focus",
+    "manipulate",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 260,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.flaming-fusillade.text",
+  "rank": 6,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.flaming-fusillade.duration",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.flaming-fusillade.heightened.0"
+    }
+  ]
+}

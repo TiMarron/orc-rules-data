@@ -1,0 +1,29 @@
+{
+  "id": "feat.crane-flutter",
+  "type": "feat",
+  "name": "feat.crane-flutter.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.crane-flutter.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "reaction",
+  "trigger": "feat.crane-flutter.trigger",
+  "requirements": "feat.crane-flutter.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.crane-stance"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.blood-ascendancy",
+  "type": "feat",
+  "name": "feat.blood-ascendancy.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 156,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.blood-ascendancy.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.blood-rising"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "feat.impossible-technique",
+  "type": "feat",
+  "name": "feat.impossible-technique.name",
+  "traits": [
+    "fortune",
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impossible-technique.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "reaction",
+  "trigger": "feat.impossible-technique.trigger",
+  "requirements": "feat.impossible-technique.requirements",
+  "prerequisites": []
+}

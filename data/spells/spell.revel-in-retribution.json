@@ -1,0 +1,36 @@
+{
+  "id": "spell.revel-in-retribution",
+  "type": "spell",
+  "name": "spell.revel-in-retribution.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "mental",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.revel-in-retribution.text",
+  "rank": 6,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.revel-in-retribution.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.revel-in-retribution.heightened.0"
+    }
+  ]
+}

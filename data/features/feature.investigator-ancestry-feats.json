@@ -1,0 +1,17 @@
+{
+  "id": "feature.investigator-ancestry-feats",
+  "type": "feature",
+  "name": "feature.investigator-ancestry-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 100,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.investigator-ancestry-feats.text",
+  "class": "class.investigator",
+  "level": 5
+}

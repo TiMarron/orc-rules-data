@@ -1,0 +1,28 @@
+{
+  "id": "feat.tiger-slash",
+  "type": "feat",
+  "name": "feat.tiger-slash.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 123,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tiger-slash.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "2",
+  "requirements": "feat.tiger-slash.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.tiger-stance"
+    }
+  ]
+}

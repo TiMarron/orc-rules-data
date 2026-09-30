@@ -1,0 +1,32 @@
+{
+  "id": "feat.stumbling-feint",
+  "type": "feat",
+  "name": "feat.stumbling-feint.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 122,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stumbling-feint.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "requirements": "feat.stumbling-feint.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.stumbling-stance"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    }
+  ]
+}

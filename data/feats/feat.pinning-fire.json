@@ -1,0 +1,23 @@
+{
+  "id": "feat.pinning-fire",
+  "type": "feat",
+  "name": "feat.pinning-fire.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 123,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pinning-fire.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "reaction",
+  "trigger": "feat.pinning-fire.trigger",
+  "prerequisites": []
+}

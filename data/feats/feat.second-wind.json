@@ -1,0 +1,21 @@
+{
+  "id": "feat.second-wind",
+  "type": "feat",
+  "name": "feat.second-wind.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.second-wind.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": []
+}

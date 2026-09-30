@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-sorcerous-potency",
+  "type": "feature",
+  "name": "feature.sorcerer-sorcerous-potency.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-sorcerous-potency.text",
+  "class": "class.sorcerer",
+  "level": 1
+}

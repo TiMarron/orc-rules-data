@@ -1,0 +1,21 @@
+{
+  "id": "feat.everyones-a-suspect",
+  "type": "feat",
+  "name": "feat.everyones-a-suspect.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 113,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.everyones-a-suspect.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

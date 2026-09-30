@@ -1,0 +1,25 @@
+{
+  "id": "feat.viking-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.viking-weapon-familiarity.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 220,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.viking-weapon-familiarity.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.viking-dedication"
+    }
+  ]
+}

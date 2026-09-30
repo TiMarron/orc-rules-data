@@ -1,0 +1,26 @@
+{
+  "id": "feat.greater-crossblooded-evolution",
+  "type": "feat",
+  "name": "feat.greater-crossblooded-evolution.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 157,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.greater-crossblooded-evolution.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.crossblooded-evolution"
+    }
+  ]
+}

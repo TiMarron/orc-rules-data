@@ -1,0 +1,17 @@
+{
+  "id": "feature.barbarian-weapon-specialization",
+  "type": "feature",
+  "name": "feature.barbarian-weapon-specialization.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 70,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.barbarian-weapon-specialization.text",
+  "class": "class.barbarian",
+  "level": 7
+}

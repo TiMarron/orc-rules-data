@@ -1,0 +1,35 @@
+{
+  "id": "spell.gluttons-jaws",
+  "type": "spell",
+  "name": "spell.gluttons-jaws.name",
+  "traits": [
+    "attack",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 263,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.gluttons-jaws.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.gluttons-jaws.range",
+  "targets": "spell.gluttons-jaws.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.gluttons-jaws.heightened.0"
+    }
+  ]
+}

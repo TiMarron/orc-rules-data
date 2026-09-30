@@ -1,0 +1,22 @@
+{
+  "id": "feat.flying-kick",
+  "type": "feat",
+  "name": "feat.flying-kick.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flying-kick.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "2",
+  "prerequisites": []
+}

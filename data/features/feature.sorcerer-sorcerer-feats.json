@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-sorcerer-feats",
+  "type": "feature",
+  "name": "feature.sorcerer-sorcerer-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-sorcerer-feats.text",
+  "class": "class.sorcerer",
+  "level": 2
+}

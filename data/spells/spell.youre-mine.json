@@ -1,0 +1,40 @@
+{
+  "id": "spell.youre-mine",
+  "type": "spell",
+  "name": "spell.youre-mine.name",
+  "traits": [
+    "concentrate",
+    "emotion",
+    "focus",
+    "incapacitation",
+    "manipulate",
+    "mental",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 265,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.youre-mine.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.youre-mine.range",
+  "targets": "spell.youre-mine.targets",
+  "duration": "spell.youre-mine.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "7",
+      "text": "spell.youre-mine.heightened.0"
+    }
+  ]
+}

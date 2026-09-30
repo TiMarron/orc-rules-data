@@ -1,0 +1,21 @@
+{
+  "id": "feat.mysterious-repertoire",
+  "type": "feat",
+  "name": "feat.mysterious-repertoire.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 142,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mysterious-repertoire.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": []
+}

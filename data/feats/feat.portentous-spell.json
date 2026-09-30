@@ -1,0 +1,26 @@
+{
+  "id": "feat.portentous-spell",
+  "type": "feat",
+  "name": "feat.portentous-spell.name",
+  "traits": [
+    "manipulate",
+    "mental",
+    "oracle",
+    "spellshape",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.portentous-spell.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "1",
+  "prerequisites": []
+}

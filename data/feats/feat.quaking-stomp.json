@@ -1,0 +1,25 @@
+{
+  "id": "feat.quaking-stomp",
+  "type": "feat",
+  "name": "feat.quaking-stomp.name",
+  "traits": [
+    "barbarian",
+    "manipulate",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.quaking-stomp.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "frequency": "feat.quaking-stomp.frequency",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.reflect-harm",
+  "type": "feat",
+  "name": "feat.reflect-harm.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 156,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reflect-harm.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": []
+}

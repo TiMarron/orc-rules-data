@@ -1,0 +1,39 @@
+{
+  "id": "spell.hellfire-plume",
+  "type": "spell",
+  "name": "spell.hellfire-plume.name",
+  "traits": [
+    "concentrate",
+    "fire",
+    "focus",
+    "manipulate",
+    "sorcerer",
+    "spirit"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 263,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.hellfire-plume.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.hellfire-plume.range",
+  "area": "spell.hellfire-plume.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.hellfire-plume.heightened.0"
+    }
+  ]
+}

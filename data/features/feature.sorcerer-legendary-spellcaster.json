@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-legendary-spellcaster",
+  "type": "feature",
+  "name": "feature.sorcerer-legendary-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-legendary-spellcaster.text",
+  "class": "class.sorcerer",
+  "level": 19
+}

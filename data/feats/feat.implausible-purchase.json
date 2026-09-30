@@ -1,0 +1,26 @@
+{
+  "id": "feat.implausible-purchase",
+  "type": "feat",
+  "name": "feat.implausible-purchase.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 113,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.implausible-purchase.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.predictive-purchase"
+    }
+  ]
+}

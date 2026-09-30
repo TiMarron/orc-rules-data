@@ -1,0 +1,17 @@
+{
+  "id": "feature.investigator-light-armor-expertise",
+  "type": "feature",
+  "name": "feature.investigator-light-armor-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 100,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.investigator-light-armor-expertise.text",
+  "class": "class.investigator",
+  "level": 13
+}

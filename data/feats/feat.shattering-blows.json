@@ -1,0 +1,22 @@
+{
+  "id": "feat.shattering-blows",
+  "type": "feat",
+  "name": "feat.shattering-blows.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shattering-blows.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": []
+}

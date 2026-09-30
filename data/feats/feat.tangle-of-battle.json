@@ -1,0 +1,24 @@
+{
+  "id": "feat.tangle-of-battle",
+  "type": "feat",
+  "name": "feat.tangle-of-battle.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tangle-of-battle.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.tangle-of-battle.trigger",
+  "prerequisites": []
+}
