@@ -1,0 +1,28 @@
+{
+  "id": "feat.incorporeal-shot",
+  "type": "feat",
+  "name": "feat.incorporeal-shot.name",
+  "traits": [
+    "archetype",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 199,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.incorporeal-shot.text",
+  "level": 16,
+  "category": "archetype",
+  "actions": "1",
+  "frequency": "feat.incorporeal-shot.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.eldritch-archer-dedication"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "feat.eldritch-archer-dedication",
+  "type": "feat",
+  "name": "feat.eldritch-archer-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 198,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.eldritch-archer-dedication.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.eldritch-archer-dedication.prereq.0"
+    }
+  ],
+  "editNote": "The structured source's prerequisite lost a word when it dropped the weapon-group links (\"from the or bow or crossbow weapon group\"); the book prints \"from the bow or crossbow weapon group\", and the string is the book's."
+}

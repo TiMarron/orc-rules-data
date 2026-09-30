@@ -1,0 +1,28 @@
+{
+  "id": "feat.dodge-away",
+  "type": "feat",
+  "name": "feat.dodge-away.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 183,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dodge-away.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.dodge-away.trigger",
+  "requirements": "feat.dodge-away.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.acrobat-dedication"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.fleeting-shadow",
+  "type": "feat",
+  "name": "feat.fleeting-shadow.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 212,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fleeting-shadow.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.scout-dedication"
+    }
+  ]
+}

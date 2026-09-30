@@ -1,0 +1,27 @@
+{
+  "id": "feat.greater-spiritual-evolution",
+  "type": "feat",
+  "name": "feat.greater-spiritual-evolution.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 155,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.greater-spiritual-evolution.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.greater-spiritual-evolution.prereq.0"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with the generic 'ethereal realm' the dataset already uses. The rules text is the book's."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feat.acute-scent",
+  "type": "feat",
+  "name": "feat.acute-scent.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.acute-scent.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [],
+  "editNote": "Accepted: the only report is that the converter dropped the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\"), a reverse index of the prerequisites that the book does not print. The record's own text is unchanged."
+}

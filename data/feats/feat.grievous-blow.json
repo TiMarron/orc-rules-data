@@ -1,0 +1,27 @@
+{
+  "id": "feat.grievous-blow",
+  "type": "feat",
+  "name": "feat.grievous-blow.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 206,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.grievous-blow.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.martial-artist-dedication"
+    }
+  ]
+}

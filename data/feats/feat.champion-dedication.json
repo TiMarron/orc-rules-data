@@ -1,0 +1,34 @@
+{
+  "id": "feat.champion-dedication",
+  "type": "feat",
+  "name": "feat.champion-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication",
+    "multiclass"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 177,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.champion-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "cha",
+      "min": 2
+    },
+    {
+      "kind": "attribute",
+      "attribute": "str",
+      "min": 2
+    }
+  ],
+  "editNote": "Accepted: the only report is that the converter dropped the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\"), a reverse index of the prerequisites that the book does not print. The record's own text is unchanged."
+}

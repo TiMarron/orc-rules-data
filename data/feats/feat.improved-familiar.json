@@ -1,0 +1,25 @@
+{
+  "id": "feat.improved-familiar",
+  "type": "feat",
+  "name": "feat.improved-familiar.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 200,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improved-familiar.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.familiar-master-dedication"
+    }
+  ]
+}

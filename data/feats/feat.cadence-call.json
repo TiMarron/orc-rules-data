@@ -1,0 +1,30 @@
+{
+  "id": "feat.cadence-call",
+  "type": "feat",
+  "name": "feat.cadence-call.name",
+  "traits": [
+    "archetype",
+    "auditory",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 205,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.cadence-call.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "1",
+  "frequency": "feat.cadence-call.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.marshal-dedication"
+    }
+  ],
+  "editNote": "Accepted: the only report is that the converter dropped the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\"), a reverse index of the prerequisites that the book does not print. The record's own text is unchanged."
+}

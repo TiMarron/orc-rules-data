@@ -1,0 +1,29 @@
+{
+  "id": "feat.tactical-cadence",
+  "type": "feat",
+  "name": "feat.tactical-cadence.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 205,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tactical-cadence.text",
+  "level": 14,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cadence-call"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.marshal-dedication"
+    }
+  ]
+}

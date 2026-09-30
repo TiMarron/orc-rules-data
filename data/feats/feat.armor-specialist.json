@@ -1,0 +1,25 @@
+{
+  "id": "feat.armor-specialist",
+  "type": "feat",
+  "name": "feat.armor-specialist.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 215,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.armor-specialist.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.sentinel-dedication"
+    }
+  ]
+}

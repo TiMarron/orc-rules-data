@@ -1,0 +1,26 @@
+{
+  "id": "feat.specialized-beastmaster-companion",
+  "type": "feat",
+  "name": "feat.specialized-beastmaster-companion.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 189,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.specialized-beastmaster-companion.text",
+  "level": 14,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.incredible-beastmaster-companion"
+    }
+  ],
+  "repeatable": true
+}

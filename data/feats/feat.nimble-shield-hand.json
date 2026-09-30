@@ -1,0 +1,25 @@
+{
+  "id": "feat.nimble-shield-hand",
+  "type": "feat",
+  "name": "feat.nimble-shield-hand.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 187,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.nimble-shield-hand.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bastion-dedication"
+    }
+  ]
+}

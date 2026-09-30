@@ -1,0 +1,32 @@
+{
+  "id": "feat.read-shibboleths",
+  "type": "feat",
+  "name": "feat.read-shibboleths.name",
+  "traits": [
+    "archetype",
+    "linguistic",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 203,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.read-shibboleths.text",
+  "level": 7,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.linguist-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "master"
+    }
+  ]
+}

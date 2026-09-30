@@ -1,0 +1,27 @@
+{
+  "id": "feat.elbow-breaker",
+  "type": "feat",
+  "name": "feat.elbow-breaker.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 222,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.elbow-breaker.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.elbow-breaker.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wrestler-dedication"
+    }
+  ]
+}

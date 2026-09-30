@@ -1,0 +1,25 @@
+{
+  "id": "feat.tap-into-blood",
+  "type": "feat",
+  "name": "feat.tap-into-blood.name",
+  "traits": [
+    "concentrate",
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 152,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.tap-into-blood.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "requirements": "feat.tap-into-blood.requirements",
+  "prerequisites": [],
+  "editNote": "The structured source glues the link to the next word (\"Arcana\" + \"instead\" with no space); the book prints them as two words, so the space is restored. Nothing else changes."
+}

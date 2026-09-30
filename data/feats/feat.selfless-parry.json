@@ -1,0 +1,29 @@
+{
+  "id": "feat.selfless-parry",
+  "type": "feat",
+  "name": "feat.selfless-parry.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 197,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.selfless-parry.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dueling-parry-fighter"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.duelist-dedication"
+    }
+  ]
+}

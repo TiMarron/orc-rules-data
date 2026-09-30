@@ -1,0 +1,28 @@
+{
+  "id": "feat.to-battle",
+  "type": "feat",
+  "name": "feat.to-battle.name",
+  "traits": [
+    "archetype",
+    "auditory",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 205,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.to-battle.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "1-2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.marshal-dedication"
+    }
+  ]
+}

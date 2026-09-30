@@ -1,0 +1,32 @@
+{
+  "id": "feat.qi-center",
+  "type": "feat",
+  "name": "feat.qi-center.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.qi-center.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "free",
+  "frequency": "feat.qi-center.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.master-of-many-styles"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ]
+}

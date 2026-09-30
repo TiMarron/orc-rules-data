@@ -1,0 +1,32 @@
+{
+  "id": "feat.signature-crafting",
+  "type": "feat",
+  "name": "feat.signature-crafting.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 233,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.signature-crafting.text",
+  "level": 7,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.magical-crafting"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "master"
+    }
+  ],
+  "editNote": "Accepted: the feat's text matches the book. Not represented: the d10 table of ten item quirks (name and effect of each) that the critical success and success results point at, which the dataset markup cannot carry; the omission is recorded rather than left silent."
+}

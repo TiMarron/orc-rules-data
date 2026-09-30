@@ -3,6 +3,7 @@
   "type": "feat",
   "name": "feat.overpowering-charge.name",
   "traits": [
+    "barbarian",
     "fighter"
   ],
   "rarity": "common",
@@ -16,7 +17,10 @@
   "text": "feat.overpowering-charge.text",
   "level": 10,
   "category": "class",
-  "class": "class.fighter",
+  "class": [
+    "class.barbarian",
+    "class.fighter"
+  ],
   "prerequisites": [
     {
       "kind": "feat",

@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-mysteries",
+  "type": "feat",
+  "name": "feat.advanced-mysteries.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 180,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-mysteries.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-mysteries"
+    }
+  ],
+  "repeatable": true
+}

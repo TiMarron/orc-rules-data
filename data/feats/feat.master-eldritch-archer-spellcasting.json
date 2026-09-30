@@ -1,0 +1,25 @@
+{
+  "id": "feat.master-eldritch-archer-spellcasting",
+  "type": "feat",
+  "name": "feat.master-eldritch-archer-spellcasting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 199,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.master-eldritch-archer-spellcasting.text",
+  "level": 18,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.expert-eldritch-archer-spellcasting"
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   "name": "feat.enhanced-familiar.name",
   "traits": [
     "druid",
+    "sorcerer",
     "witch",
     "wizard"
   ],
@@ -20,6 +21,7 @@
   "category": "class",
   "class": [
     "class.druid",
+    "class.sorcerer",
     "class.witch",
     "class.wizard"
   ],

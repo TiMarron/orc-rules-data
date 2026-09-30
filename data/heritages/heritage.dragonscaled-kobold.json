@@ -10,7 +10,8 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "heritage.dragonscaled-kobold.text",
-  "ancestry": "ancestry.kobold"
+  "ancestry": "ancestry.kobold",
+  "editNote": "Accepted: the heritage's own text (ten Hit Points, the saving-throw bonuses) matches the book. The containment shortfall is the closing 'Feats that require ...' list, which the structured source adds as a cross-reference and the book does not print; the same section is already published for other heritages."
 }

@@ -1,0 +1,25 @@
+{
+  "id": "feat.bloodline-breadth",
+  "type": "feat",
+  "name": "feat.bloodline-breadth.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 181,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bloodline-breadth.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-sorcerer-spellcasting"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "feat.steel-skin",
+  "type": "feat",
+  "name": "feat.steel-skin.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 215,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.steel-skin.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.sentinel-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "trained"
+    }
+  ]
+}

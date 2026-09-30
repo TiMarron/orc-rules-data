@@ -1,0 +1,30 @@
+{
+  "id": "feat.spectral-advance",
+  "type": "feat",
+  "name": "feat.spectral-advance.name",
+  "traits": [
+    "champion",
+    "concentrate",
+    "divine",
+    "teleportation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 97,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.spectral-advance.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.spectral-advance.prereq.0"
+    }
+  ],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found; the whole-text score sits under the threshold only because these texts are short and full of italicised spell names. Prerequisites kept as prose and the dropped closing list are the informational reports already described for the other archetype and heritage feats."
+}

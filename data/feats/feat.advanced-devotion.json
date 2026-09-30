@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-devotion",
+  "type": "feat",
+  "name": "feat.advanced-devotion.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 177,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-devotion.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-devotion"
+    }
+  ],
+  "repeatable": true
+}

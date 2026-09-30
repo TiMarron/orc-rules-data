@@ -1,0 +1,27 @@
+{
+  "id": "feat.paradoxical-mystery",
+  "type": "feat",
+  "name": "feat.paradoxical-mystery.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.paradoxical-mystery.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.greater-revelation"
+    }
+  ],
+  "editNote": "Reserved Material removed: the title of a product book is replaced with a generic reference. The rules text is the book's."
+}

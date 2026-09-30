@@ -1,0 +1,31 @@
+{
+  "id": "feat.scholastic-identification",
+  "type": "feat",
+  "name": "feat.scholastic-identification.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 184,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scholastic-identification.text",
+  "level": 7,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.archaeologist-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "master"
+    }
+  ]
+}

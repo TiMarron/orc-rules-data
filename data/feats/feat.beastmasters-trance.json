@@ -1,0 +1,25 @@
+{
+  "id": "feat.beastmasters-trance",
+  "type": "feat",
+  "name": "feat.beastmasters-trance.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 188,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.beastmasters-trance.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.beastmaster-dedication"
+    }
+  ]
+}

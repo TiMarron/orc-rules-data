@@ -1,0 +1,18 @@
+{
+  "id": "action.influence-rumor",
+  "type": "action",
+  "name": "action.influence-rumor.name",
+  "traits": [
+    "downtime"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "action.influence-rumor.text",
+  "editNote": "The book prints this action as a downtime activity (\"Influence Rumor (downtime)\"), but the structured source lists no traits for it, so the record had neither a cost nor the downtime trait the schema asks for. The trait is added; the text is unchanged."
+}

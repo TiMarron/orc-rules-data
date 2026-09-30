@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-deduction",
+  "type": "feat",
+  "name": "feat.advanced-deduction.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 178,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-deduction.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-deduction"
+    }
+  ],
+  "repeatable": true
+}

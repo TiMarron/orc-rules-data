@@ -1,0 +1,25 @@
+{
+  "id": "feat.devout-magic",
+  "type": "feat",
+  "name": "feat.devout-magic.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 177,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.devout-magic.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.champion-dedication"
+    }
+  ]
+}

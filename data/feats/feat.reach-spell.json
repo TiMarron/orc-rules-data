@@ -7,6 +7,8 @@
     "cleric",
     "concentrate",
     "druid",
+    "oracle",
+    "sorcerer",
     "spellshape",
     "witch",
     "wizard"
@@ -26,6 +28,8 @@
     "class.bard",
     "class.cleric",
     "class.druid",
+    "class.oracle",
+    "class.sorcerer",
     "class.witch",
     "class.wizard"
   ],

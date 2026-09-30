@@ -1,0 +1,28 @@
+{
+  "id": "feat.scouts-pounce",
+  "type": "feat",
+  "name": "feat.scouts-pounce.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 212,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scouts-pounce.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "2",
+  "requirements": "feat.scouts-pounce.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.scout-dedication"
+    }
+  ]
+}

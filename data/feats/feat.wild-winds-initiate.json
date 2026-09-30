@@ -1,0 +1,27 @@
+{
+  "id": "feat.wild-winds-initiate",
+  "type": "feat",
+  "name": "feat.wild-winds-initiate.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.wild-winds-initiate.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ],
+  "editNote": "Accepted: the only report is that the converter dropped the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\"), a reverse index of the prerequisites that the book does not print. The record's own text is unchanged."
+}

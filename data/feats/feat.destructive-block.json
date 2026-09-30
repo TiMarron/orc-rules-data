@@ -1,0 +1,25 @@
+{
+  "id": "feat.destructive-block",
+  "type": "feat",
+  "name": "feat.destructive-block.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 187,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.destructive-block.text",
+  "level": 10,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bastion-dedication"
+    }
+  ]
+}

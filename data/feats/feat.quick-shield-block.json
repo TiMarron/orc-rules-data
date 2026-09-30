@@ -3,6 +3,7 @@
   "type": "feat",
   "name": "feat.quick-shield-block.name",
   "traits": [
+    "champion",
     "fighter"
   ],
   "rarity": "common",
@@ -16,7 +17,10 @@
   "text": "feat.quick-shield-block.text",
   "level": 8,
   "category": "class",
-  "class": "class.fighter",
+  "class": [
+    "class.champion",
+    "class.fighter"
+  ],
   "prerequisites": [
     {
       "kind": "feat",

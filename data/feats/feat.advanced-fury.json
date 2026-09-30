@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-fury",
+  "type": "feat",
+  "name": "feat.advanced-fury.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 176,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-fury.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-fury"
+    }
+  ],
+  "repeatable": true
+}

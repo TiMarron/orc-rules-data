@@ -1,0 +1,25 @@
+{
+  "id": "feat.familiar-mascot",
+  "type": "feat",
+  "name": "feat.familiar-mascot.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 200,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.familiar-mascot.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.familiar-master-dedication"
+    }
+  ]
+}

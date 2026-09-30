@@ -1,0 +1,26 @@
+{
+  "id": "feat.additional-companion",
+  "type": "feat",
+  "name": "feat.additional-companion.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 188,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.additional-companion.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.beastmaster-dedication"
+    }
+  ],
+  "repeatable": true
+}

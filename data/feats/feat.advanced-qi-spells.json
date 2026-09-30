@@ -1,0 +1,28 @@
+{
+  "id": "feat.advanced-qi-spells",
+  "type": "feat",
+  "name": "feat.advanced-qi-spells.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.advanced-qi-spells.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ],
+  "repeatable": true,
+  "editNote": "Accepted: the record's sentences are the book's, except the Special line 'You can select this feat more than once, choosing a different spell each time', which the printing I compared with does not carry and the structured source does (the record is marked repeatable from it). It is a later wording in the source, the same kind of difference noted elsewhere; the feat's own rules text is the book's."
+}

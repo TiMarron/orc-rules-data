@@ -4,6 +4,7 @@
   "name": "feat.blind-fight.name",
   "traits": [
     "fighter",
+    "investigator",
     "ranger",
     "rogue"
   ],
@@ -20,6 +21,7 @@
   "category": "class",
   "class": [
     "class.fighter",
+    "class.investigator",
     "class.ranger",
     "class.rogue"
   ],

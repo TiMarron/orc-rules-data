@@ -1,0 +1,33 @@
+{
+  "id": "feat.distracting-flattery",
+  "type": "feat",
+  "name": "feat.distracting-flattery.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.distracting-flattery.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.distracting-flattery.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dandy-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    }
+  ]
+}

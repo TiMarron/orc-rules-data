@@ -1,0 +1,25 @@
+{
+  "id": "feat.dual-thrower",
+  "type": "feat",
+  "name": "feat.dual-thrower.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 196,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dual-thrower.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dual-weapon-warrior-dedication"
+    }
+  ]
+}

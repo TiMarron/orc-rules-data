@@ -1,0 +1,27 @@
+{
+  "id": "feat.eldritch-reload",
+  "type": "feat",
+  "name": "feat.eldritch-reload.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 199,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.eldritch-reload.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "free",
+  "requirements": "feat.eldritch-reload.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.eldritch-archer-dedication"
+    }
+  ]
+}

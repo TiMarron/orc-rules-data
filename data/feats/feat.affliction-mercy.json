@@ -1,0 +1,26 @@
+{
+  "id": "feat.affliction-mercy",
+  "type": "feat",
+  "name": "feat.affliction-mercy.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 97,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.affliction-mercy.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.mercy"
+    }
+  ]
+}

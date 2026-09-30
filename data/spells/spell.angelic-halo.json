@@ -1,0 +1,29 @@
+{
+  "id": "spell.angelic-halo",
+  "type": "spell",
+  "name": "spell.angelic-halo.name",
+  "traits": [
+    "aura",
+    "concentrate",
+    "focus",
+    "holy",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.angelic-halo.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "area": "spell.angelic-halo.area",
+  "duration": "spell.angelic-halo.duration",
+  "editNote": "Accepted: the text matches the book except one word: the structured source says 'the heal spell's rank' where the printing I compared with says 'level' (the later wording, as noted elsewhere). The dropped block is a clarification note the source adds; the book does not print it."
+}

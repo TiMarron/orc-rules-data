@@ -1,0 +1,22 @@
+{
+  "id": "feat.ghost-hunter",
+  "type": "feat",
+  "name": "feat.ghost-hunter.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.ghost-hunter.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with a generic descriptor. The rules text is the book's."
+}

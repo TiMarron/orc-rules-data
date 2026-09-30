@@ -1,0 +1,28 @@
+{
+  "id": "feat.envenom-fangs",
+  "type": "feat",
+  "name": "feat.envenom-fangs.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.envenom-fangs.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "actions": "1",
+  "frequency": "feat.envenom-fangs.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.iruxi-armaments"
+    }
+  ]
+}

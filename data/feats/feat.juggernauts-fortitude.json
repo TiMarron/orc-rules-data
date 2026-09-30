@@ -1,0 +1,30 @@
+{
+  "id": "feat.juggernauts-fortitude",
+  "type": "feat",
+  "name": "feat.juggernauts-fortitude.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 176,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.juggernauts-fortitude.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.barbarian-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "save.fortitude",
+      "rank": "expert"
+    }
+  ]
+}

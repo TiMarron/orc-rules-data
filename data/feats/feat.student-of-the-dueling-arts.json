@@ -1,0 +1,25 @@
+{
+  "id": "feat.student-of-the-dueling-arts",
+  "type": "feat",
+  "name": "feat.student-of-the-dueling-arts.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 197,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.student-of-the-dueling-arts.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.duelist-dedication"
+    }
+  ]
+}

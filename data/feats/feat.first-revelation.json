@@ -1,0 +1,25 @@
+{
+  "id": "feat.first-revelation",
+  "type": "feat",
+  "name": "feat.first-revelation.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 180,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.first-revelation.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.oracle-dedication"
+    }
+  ]
+}

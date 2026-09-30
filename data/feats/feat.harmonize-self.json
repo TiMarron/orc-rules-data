@@ -1,0 +1,27 @@
+{
+  "id": "feat.harmonize-self",
+  "type": "feat",
+  "name": "feat.harmonize-self.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.harmonize-self.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found; the whole-text score sits under the threshold only because these texts are short and full of italicised spell names. Prerequisites kept as prose and the dropped closing list are the informational reports already described for the other archetype and heritage feats."
+}

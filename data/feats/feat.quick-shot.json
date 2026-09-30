@@ -1,0 +1,26 @@
+{
+  "id": "feat.quick-shot",
+  "type": "feat",
+  "name": "feat.quick-shot.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 185,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.quick-shot.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.archer-dedication"
+    }
+  ]
+}

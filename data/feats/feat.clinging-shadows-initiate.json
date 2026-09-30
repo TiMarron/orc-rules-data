@@ -1,0 +1,27 @@
+{
+  "id": "feat.clinging-shadows-initiate",
+  "type": "feat",
+  "name": "feat.clinging-shadows-initiate.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 123,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.clinging-shadows-initiate.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ],
+  "editNote": "Accepted: the only report is that the converter dropped the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\"), a reverse index of the prerequisites that the book does not print. The record's own text is unchanged."
+}

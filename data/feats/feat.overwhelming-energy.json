@@ -5,6 +5,7 @@
   "traits": [
     "druid",
     "manipulate",
+    "sorcerer",
     "spellshape",
     "wizard"
   ],
@@ -21,6 +22,7 @@
   "category": "class",
   "class": [
     "class.druid",
+    "class.sorcerer",
     "class.wizard"
   ],
   "actions": "1",

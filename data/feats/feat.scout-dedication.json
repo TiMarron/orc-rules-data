@@ -1,0 +1,33 @@
+{
+  "id": "feat.scout-dedication",
+  "type": "feat",
+  "name": "feat.scout-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 212,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.scout-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "trained"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.survival",
+      "rank": "trained"
+    }
+  ],
+  "editNote": "Accepted: the only report is that the converter dropped the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\"), a reverse index of the prerequisites that the book does not print. The record's own text is unchanged."
+}

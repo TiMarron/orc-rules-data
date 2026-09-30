@@ -1,0 +1,27 @@
+{
+  "id": "feat.flensing-slice",
+  "type": "feat",
+  "name": "feat.flensing-slice.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 196,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flensing-slice.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.flensing-slice.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dual-weapon-warrior-dedication"
+    }
+  ]
+}

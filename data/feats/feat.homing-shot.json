@@ -1,0 +1,27 @@
+{
+  "id": "feat.homing-shot",
+  "type": "feat",
+  "name": "feat.homing-shot.name",
+  "traits": [
+    "archetype",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 199,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.homing-shot.text",
+  "level": 14,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.eldritch-archer-dedication"
+    }
+  ]
+}

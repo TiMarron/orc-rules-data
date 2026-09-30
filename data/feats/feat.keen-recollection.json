@@ -1,0 +1,25 @@
+{
+  "id": "feat.keen-recollection",
+  "type": "feat",
+  "name": "feat.keen-recollection.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 178,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.keen-recollection.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.investigator-dedication"
+    }
+  ]
+}

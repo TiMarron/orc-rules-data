@@ -1,0 +1,41 @@
+{
+  "id": "spell.holy-cascade",
+  "type": "spell",
+  "name": "spell.holy-cascade.name",
+  "traits": [
+    "concentrate",
+    "holy",
+    "manipulate",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 246,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.holy-cascade.text",
+  "rank": 4,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.holy-cascade.range",
+  "area": "spell.holy-cascade.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.holy-cascade.heightened.0"
+    }
+  ],
+  "cost": "spell.holy-cascade.cost",
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+}

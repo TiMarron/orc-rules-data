@@ -1,0 +1,29 @@
+{
+  "id": "feat.enchanting-shot",
+  "type": "feat",
+  "name": "feat.enchanting-shot.name",
+  "traits": [
+    "archetype",
+    "emotion",
+    "magical",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 199,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.enchanting-shot.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.eldritch-archer-dedication"
+    }
+  ]
+}

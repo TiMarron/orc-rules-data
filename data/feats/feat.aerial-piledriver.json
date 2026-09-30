@@ -1,0 +1,28 @@
+{
+  "id": "feat.aerial-piledriver",
+  "type": "feat",
+  "name": "feat.aerial-piledriver.name",
+  "traits": [
+    "archetype",
+    "attack"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 223,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.aerial-piledriver.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "2",
+  "requirements": "feat.aerial-piledriver.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wrestler-dedication"
+    }
+  ]
+}

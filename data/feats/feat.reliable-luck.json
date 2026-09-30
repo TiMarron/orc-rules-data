@@ -1,0 +1,26 @@
+{
+  "id": "feat.reliable-luck",
+  "type": "feat",
+  "name": "feat.reliable-luck.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.reliable-luck.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cats-luck"
+    }
+  ]
+}

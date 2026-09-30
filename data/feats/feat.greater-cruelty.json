@@ -1,0 +1,26 @@
+{
+  "id": "feat.greater-cruelty",
+  "type": "feat",
+  "name": "feat.greater-cruelty.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 96,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.greater-cruelty.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cruelty"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "feat.inspiring-marshal-stance",
+  "type": "feat",
+  "name": "feat.inspiring-marshal-stance.name",
+  "traits": [
+    "archetype",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 204,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.inspiring-marshal-stance.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.marshal-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "trained"
+    }
+  ]
+}

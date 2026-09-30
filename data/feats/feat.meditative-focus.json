@@ -1,0 +1,26 @@
+{
+  "id": "feat.meditative-focus",
+  "type": "feat",
+  "name": "feat.meditative-focus.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 125,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.meditative-focus.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
   "type": "feat",
   "name": "feat.barreling-charge.name",
   "traits": [
+    "barbarian",
     "fighter",
     "flourish"
   ],
@@ -17,7 +18,10 @@
   "text": "feat.barreling-charge.text",
   "level": 4,
   "category": "class",
-  "class": "class.fighter",
+  "class": [
+    "class.barbarian",
+    "class.fighter"
+  ],
   "actions": "2",
   "prerequisites": [
     {

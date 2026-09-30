@@ -1,0 +1,29 @@
+{
+  "id": "feat.archaeologists-luck",
+  "type": "feat",
+  "name": "feat.archaeologists-luck.name",
+  "traits": [
+    "archetype",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 184,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.archaeologists-luck.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "free",
+  "trigger": "feat.archaeologists-luck.trigger",
+  "frequency": "feat.archaeologists-luck.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.archaeologist-dedication"
+    }
+  ]
+}

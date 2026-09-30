@@ -1,0 +1,32 @@
+{
+  "id": "feat.poisoners-twist",
+  "type": "feat",
+  "name": "feat.poisoners-twist.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 210,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.poisoners-twist.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.poisoners-twist.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.poisoner-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.medicine",
+      "rank": "trained"
+    }
+  ]
+}

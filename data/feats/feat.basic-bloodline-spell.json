@@ -1,0 +1,25 @@
+{
+  "id": "feat.basic-bloodline-spell",
+  "type": "feat",
+  "name": "feat.basic-bloodline-spell.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 181,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.basic-bloodline-spell.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.sorcerer-dedication"
+    }
+  ]
+}

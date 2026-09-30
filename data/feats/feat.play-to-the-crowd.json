@@ -1,0 +1,29 @@
+{
+  "id": "feat.play-to-the-crowd",
+  "type": "feat",
+  "name": "feat.play-to-the-crowd.name",
+  "traits": [
+    "archetype",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 201,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.play-to-the-crowd.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.play-to-the-crowd.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.gladiator-dedication"
+    }
+  ],
+  "editNote": "Accepted: every sentence and every prerequisite of the record was compared with the book and found (the few the comparison could not match were a page break or a page reference in the middle of a sentence, or 'three' written as '3'). The reports are informational: bullet lists kept as dash lines; the structured source's closing 'leads to' list dropped as a reverse index the book does not print; a prerequisite that is a heritage, subclass or class feature kept as prose; a class of a book that is not imported left out of the class trait; a link to a rules page the dataset does not model kept as its label. For the archetype feats that embed an action, that action is its own record."
+}

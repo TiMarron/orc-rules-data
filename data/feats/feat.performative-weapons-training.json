@@ -1,0 +1,25 @@
+{
+  "id": "feat.performative-weapons-training",
+  "type": "feat",
+  "name": "feat.performative-weapons-training.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 201,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.performative-weapons-training.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.gladiator-dedication"
+    }
+  ]
+}

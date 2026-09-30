@@ -1,0 +1,32 @@
+{
+  "id": "feat.command-attention",
+  "type": "feat",
+  "name": "feat.command-attention.name",
+  "traits": [
+    "archetype",
+    "auditory",
+    "aura",
+    "concentrate",
+    "emotion",
+    "mental",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 194,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.command-attention.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.celebrity-dedication"
+    }
+  ]
+}

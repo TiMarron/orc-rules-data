@@ -1,0 +1,31 @@
+{
+  "id": "feat.fancy-moves",
+  "type": "feat",
+  "name": "feat.fancy-moves.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 201,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fancy-moves.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.gladiator-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.performance",
+      "rank": "expert"
+    }
+  ]
+}

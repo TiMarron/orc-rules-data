@@ -1,0 +1,33 @@
+{
+  "id": "spell.harmonize-self",
+  "type": "spell",
+  "name": "spell.harmonize-self.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "healing",
+    "monk",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.harmonize-self.text",
+  "rank": 2,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.harmonize-self.heightened.0"
+    }
+  ],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+}

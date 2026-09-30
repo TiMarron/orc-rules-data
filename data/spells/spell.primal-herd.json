@@ -1,0 +1,30 @@
+{
+  "id": "spell.primal-herd",
+  "type": "spell",
+  "name": "spell.primal-herd.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 249,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.primal-herd.text",
+  "rank": 10,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.primal-herd.range",
+  "targets": "spell.primal-herd.targets",
+  "duration": "spell.primal-herd.duration",
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+}

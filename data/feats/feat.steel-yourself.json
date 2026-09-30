@@ -1,0 +1,29 @@
+{
+  "id": "feat.steel-yourself",
+  "type": "feat",
+  "name": "feat.steel-yourself.name",
+  "traits": [
+    "archetype",
+    "auditory",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 205,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.steel-yourself.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.marshal-dedication"
+    }
+  ]
+}

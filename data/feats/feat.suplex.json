@@ -1,0 +1,27 @@
+{
+  "id": "feat.suplex",
+  "type": "feat",
+  "name": "feat.suplex.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 223,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.suplex.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.suplex.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wrestler-dedication"
+    }
+  ]
+}

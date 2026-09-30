@@ -1,0 +1,37 @@
+{
+  "id": "spell.elemental-motion",
+  "type": "spell",
+  "name": "spell.elemental-motion.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 264,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.elemental-motion.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.elemental-motion.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.elemental-motion.heightened.0"
+    },
+    {
+      "level": "9",
+      "text": "spell.elemental-motion.heightened.1"
+    }
+  ],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+}

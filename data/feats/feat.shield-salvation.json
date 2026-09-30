@@ -1,0 +1,26 @@
+{
+  "id": "feat.shield-salvation",
+  "type": "feat",
+  "name": "feat.shield-salvation.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 187,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.shield-salvation.text",
+  "level": 10,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bastion-dedication"
+    }
+  ],
+  "editNote": "Accepted: text, level and prerequisite match the book. The book prints only the archetype trait; the structured source adds the trait of a class from a book that is not imported, which has no record to point at and is left out."
+}

@@ -5,6 +5,8 @@
   "traits": [
     "bard",
     "cleric",
+    "oracle",
+    "sorcerer",
     "witch",
     "wizard"
   ],
@@ -22,6 +24,8 @@
   "class": [
     "class.bard",
     "class.cleric",
+    "class.oracle",
+    "class.sorcerer",
     "class.witch",
     "class.wizard"
   ],

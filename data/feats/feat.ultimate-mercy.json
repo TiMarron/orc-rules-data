@@ -1,0 +1,26 @@
+{
+  "id": "feat.ultimate-mercy",
+  "type": "feat",
+  "name": "feat.ultimate-mercy.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ultimate-mercy.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.mercy"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.strangle",
+  "type": "feat",
+  "name": "feat.strangle.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 223,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.strangle.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.strangle.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wrestler-dedication"
+    }
+  ]
+}

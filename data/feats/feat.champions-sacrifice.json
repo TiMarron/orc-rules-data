@@ -1,0 +1,27 @@
+{
+  "id": "feat.champions-sacrifice",
+  "type": "feat",
+  "name": "feat.champions-sacrifice.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.champions-sacrifice.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.champions-sacrifice.prereq.0"
+    }
+  ],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found; the whole-text score sits under the threshold only because these texts are short and full of italicised spell names. Prerequisites kept as prose and the dropped closing list are the informational reports already described for the other archetype and heritage feats."
+}

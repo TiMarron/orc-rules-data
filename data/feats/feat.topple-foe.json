@@ -1,0 +1,32 @@
+{
+  "id": "feat.topple-foe",
+  "type": "feat",
+  "name": "feat.topple-foe.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 205,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.topple-foe.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.topple-foe.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.marshal-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}
