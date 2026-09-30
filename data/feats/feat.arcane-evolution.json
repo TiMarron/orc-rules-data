@@ -1,0 +1,27 @@
+{
+  "id": "feat.arcane-evolution",
+  "type": "feat",
+  "name": "feat.arcane-evolution.name",
+  "traits": [
+    "arcane",
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 153,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.arcane-evolution.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.arcane-evolution.prereq.0"
+    }
+  ]
+}

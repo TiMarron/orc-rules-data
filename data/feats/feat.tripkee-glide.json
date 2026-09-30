@@ -1,0 +1,28 @@
+{
+  "id": "feat.tripkee-glide",
+  "type": "feat",
+  "name": "feat.tripkee-glide.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 38,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.tripkee-glide.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "actions": "1",
+  "requirements": "feat.tripkee-glide.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.tripkee-glide.prereq.0"
+    }
+  ]
+}

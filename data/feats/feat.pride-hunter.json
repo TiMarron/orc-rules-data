@@ -1,0 +1,21 @@
+{
+  "id": "feat.pride-hunter",
+  "type": "feat",
+  "name": "feat.pride-hunter.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pride-hunter.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": []
+}

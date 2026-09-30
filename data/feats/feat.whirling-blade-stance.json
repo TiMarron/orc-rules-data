@@ -1,0 +1,28 @@
+{
+  "id": "feat.whirling-blade-stance",
+  "type": "feat",
+  "name": "feat.whirling-blade-stance.name",
+  "traits": [
+    "monk",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 126,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.whirling-blade-stance.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.monastic-weaponry"
+    }
+  ]
+}

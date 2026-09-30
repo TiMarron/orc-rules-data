@@ -1,0 +1,26 @@
+{
+  "id": "feat.reflexive-riposte",
+  "type": "feat",
+  "name": "feat.reflexive-riposte.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.reflexive-riposte.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.reflexive-riposte.prereq.0"
+    }
+  ]
+}

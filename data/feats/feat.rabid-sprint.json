@@ -1,0 +1,29 @@
+{
+  "id": "feat.rabid-sprint",
+  "type": "feat",
+  "name": "feat.rabid-sprint.name",
+  "traits": [
+    "flourish",
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.rabid-sprint.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "actions": "2",
+  "requirements": "feat.rabid-sprint.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.rabid-sprint.prereq.0"
+    }
+  ]
+}

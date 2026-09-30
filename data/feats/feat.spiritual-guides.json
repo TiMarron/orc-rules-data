@@ -1,0 +1,30 @@
+{
+  "id": "feat.spiritual-guides",
+  "type": "feat",
+  "name": "feat.spiritual-guides.name",
+  "traits": [
+    "barbarian",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 78,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.spiritual-guides.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.spiritual-guides.trigger",
+  "frequency": "feat.spiritual-guides.frequency",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.spiritual-guides.prereq.0"
+    }
+  ]
+}

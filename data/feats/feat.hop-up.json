@@ -1,0 +1,23 @@
+{
+  "id": "feat.hop-up",
+  "type": "feat",
+  "name": "feat.hop-up.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 39,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hop-up.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "actions": "free",
+  "trigger": "feat.hop-up.trigger",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.alchemical-discoveries",
+  "type": "feat",
+  "name": "feat.alchemical-discoveries.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 108,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.alchemical-discoveries.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.alchemical-discoveries.prereq.0"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "feat.giants-stature",
+  "type": "feat",
+  "name": "feat.giants-stature.name",
+  "traits": [
+    "barbarian",
+    "polymorph",
+    "primal",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 79,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.giants-stature.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "requirements": "feat.giants-stature.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.giants-stature.prereq.0"
+    }
+  ]
+}

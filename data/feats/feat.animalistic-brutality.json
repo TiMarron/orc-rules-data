@@ -1,0 +1,31 @@
+{
+  "id": "feat.animalistic-brutality",
+  "type": "feat",
+  "name": "feat.animalistic-brutality.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "morph",
+    "primal",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 80,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.animalistic-brutality.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.animalistic-brutality.prereq.0"
+    }
+  ]
+}

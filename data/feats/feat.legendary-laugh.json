@@ -1,0 +1,26 @@
+{
+  "id": "feat.legendary-laugh",
+  "type": "feat",
+  "name": "feat.legendary-laugh.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 19,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.legendary-laugh.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.laughing-kholo"
+    }
+  ]
+}

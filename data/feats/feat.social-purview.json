@@ -1,0 +1,26 @@
+{
+  "id": "feat.social-purview",
+  "type": "feat",
+  "name": "feat.social-purview.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.social-purview.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.vigilante-dedication"
+    }
+  ]
+}

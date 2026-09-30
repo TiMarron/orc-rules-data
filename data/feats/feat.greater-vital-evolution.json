@@ -1,0 +1,26 @@
+{
+  "id": "feat.greater-vital-evolution",
+  "type": "feat",
+  "name": "feat.greater-vital-evolution.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 157,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.greater-vital-evolution.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.greater-vital-evolution.prereq.0"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.tengu-feather-fan",
+  "type": "feat",
+  "name": "feat.tengu-feather-fan.name",
+  "traits": [
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 35,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tengu-feather-fan.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "prerequisites": []
+}

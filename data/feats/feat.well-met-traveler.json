@@ -1,0 +1,21 @@
+{
+  "id": "feat.well-met-traveler",
+  "type": "feat",
+  "name": "feat.well-met-traveler.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.well-met-traveler.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": []
+}

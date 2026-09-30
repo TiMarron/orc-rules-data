@@ -1,0 +1,26 @@
+{
+  "id": "feat.stunning-blows",
+  "type": "feat",
+  "name": "feat.stunning-blows.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.stunning-blows.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.stunning-blows.prereq.0"
+    }
+  ]
+}

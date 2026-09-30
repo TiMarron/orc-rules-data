@@ -1,0 +1,26 @@
+{
+  "id": "feat.second-blessing",
+  "type": "feat",
+  "name": "feat.second-blessing.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 97,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.second-blessing.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.second-blessing.prereq.0"
+    }
+  ]
+}

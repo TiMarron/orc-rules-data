@@ -1,0 +1,26 @@
+{
+  "id": "feat.swift-paragon",
+  "type": "feat",
+  "name": "feat.swift-paragon.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.swift-paragon.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.swift-paragon.prereq.0"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "feat.many-guises",
+  "type": "feat",
+  "name": "feat.many-guises.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.many-guises.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.vigilante-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "master"
+    }
+  ]
+}

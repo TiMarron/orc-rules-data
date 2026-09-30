@@ -1,0 +1,16 @@
+{
+  "id": "heritage.jinxed-tengu",
+  "type": "heritage",
+  "name": "heritage.jinxed-tengu.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 33,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.jinxed-tengu.text",
+  "ancestry": "ancestry.tengu"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "feat.blessed-counterstrike",
+  "type": "feat",
+  "name": "feat.blessed-counterstrike.name",
+  "traits": [
+    "champion",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.blessed-counterstrike.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.champion",
+  "actions": "1",
+  "requirements": "feat.blessed-counterstrike.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.blessed-counterstrike.prereq.0"
+    }
+  ]
+}

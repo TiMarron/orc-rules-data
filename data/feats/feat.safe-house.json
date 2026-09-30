@@ -1,0 +1,25 @@
+{
+  "id": "feat.safe-house",
+  "type": "feat",
+  "name": "feat.safe-house.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.safe-house.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.vigilante-dedication"
+    }
+  ]
+}

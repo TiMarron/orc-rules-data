@@ -1,0 +1,26 @@
+{
+  "id": "feat.black-cat-curse",
+  "type": "feat",
+  "name": "feat.black-cat-curse.name",
+  "traits": [
+    "catfolk",
+    "misfortune",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.black-cat-curse.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "actions": "reaction",
+  "trigger": "feat.black-cat-curse.trigger",
+  "frequency": "feat.black-cat-curse.frequency",
+  "prerequisites": []
+}

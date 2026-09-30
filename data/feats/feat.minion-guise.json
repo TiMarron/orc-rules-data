@@ -1,0 +1,35 @@
+{
+  "id": "feat.minion-guise",
+  "type": "feat",
+  "name": "feat.minion-guise.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.minion-guise.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.vigilante-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    },
+    {
+      "kind": "text",
+      "key": "feat.minion-guise.prereq.2"
+    }
+  ]
+}

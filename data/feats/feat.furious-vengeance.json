@@ -1,0 +1,29 @@
+{
+  "id": "feat.furious-vengeance",
+  "type": "feat",
+  "name": "feat.furious-vengeance.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 84,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.furious-vengeance.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.furious-vengeance.trigger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.furious-vengeance.prereq.0"
+    }
+  ]
+}

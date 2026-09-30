@@ -1,0 +1,17 @@
+{
+  "id": "heritage.mountainkeeper-tengu",
+  "type": "heritage",
+  "name": "heritage.mountainkeeper-tengu.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 33,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "heritage.mountainkeeper-tengu.text",
+  "ancestry": "ancestry.tengu",
+  "editNote": "Reserved Material removed: the book's proper name for the realm of the dead is replaced with a generic descriptor. The rest of the entry is the book's own text."
+}

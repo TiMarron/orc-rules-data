@@ -1,0 +1,16 @@
+{
+  "id": "heritage.sweetbreath-kholo",
+  "type": "heritage",
+  "name": "heritage.sweetbreath-kholo.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 17,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.sweetbreath-kholo.text",
+  "ancestry": "ancestry.kholo"
+}

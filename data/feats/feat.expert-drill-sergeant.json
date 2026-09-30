@@ -1,0 +1,21 @@
+{
+  "id": "feat.expert-drill-sergeant",
+  "type": "feat",
+  "name": "feat.expert-drill-sergeant.name",
+  "traits": [
+    "hobgoblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 14,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.expert-drill-sergeant.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.long-tongue",
+  "type": "feat",
+  "name": "feat.long-tongue.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 38,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.long-tongue.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.long-tongue.prereq.0"
+    }
+  ]
+}

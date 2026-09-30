@@ -1,0 +1,21 @@
+{
+  "id": "feat.cornered-fury",
+  "type": "feat",
+  "name": "feat.cornered-fury.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 30,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cornered-fury.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": []
+}

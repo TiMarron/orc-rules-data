@@ -1,0 +1,26 @@
+{
+  "id": "feat.radiant-armament",
+  "type": "feat",
+  "name": "feat.radiant-armament.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 97,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.radiant-armament.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.radiant-armament.prereq.0"
+    }
+  ]
+}

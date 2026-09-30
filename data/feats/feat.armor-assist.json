@@ -1,0 +1,26 @@
+{
+  "id": "feat.armor-assist",
+  "type": "feat",
+  "name": "feat.armor-assist.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 227,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.armor-assist.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.armor-assist.prereq.0"
+    }
+  ]
+}

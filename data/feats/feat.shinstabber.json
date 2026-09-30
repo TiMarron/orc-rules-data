@@ -1,0 +1,26 @@
+{
+  "id": "feat.shinstabber",
+  "type": "feat",
+  "name": "feat.shinstabber.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 31,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shinstabber.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.overcrowd"
+    }
+  ]
+}

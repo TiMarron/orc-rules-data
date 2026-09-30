@@ -1,0 +1,21 @@
+{
+  "id": "feat.lizardfolk-lore",
+  "type": "feat",
+  "name": "feat.lizardfolk-lore.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lizardfolk-lore.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "prerequisites": []
+}

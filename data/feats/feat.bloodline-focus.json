@@ -1,0 +1,26 @@
+{
+  "id": "feat.bloodline-focus",
+  "type": "feat",
+  "name": "feat.bloodline-focus.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 155,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.bloodline-focus.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.bloodline-focus.prereq.0"
+    }
+  ]
+}

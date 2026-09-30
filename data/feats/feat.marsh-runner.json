@@ -1,0 +1,26 @@
+{
+  "id": "feat.marsh-runner",
+  "type": "feat",
+  "name": "feat.marsh-runner.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.marsh-runner.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.marsh-runner.prereq.0"
+    }
+  ]
+}

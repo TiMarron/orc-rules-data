@@ -1,0 +1,35 @@
+{
+  "id": "feat.evangelize",
+  "type": "feat",
+  "name": "feat.evangelize.name",
+  "traits": [
+    "auditory",
+    "general",
+    "linguistic",
+    "mental",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 230,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.evangelize.text",
+  "level": 7,
+  "category": "skill",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "master"
+    },
+    {
+      "kind": "text",
+      "key": "feat.evangelize.prereq.1"
+    }
+  ]
+}

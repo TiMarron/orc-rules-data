@@ -1,0 +1,27 @@
+{
+  "id": "feat.supernatural-senses",
+  "type": "feat",
+  "name": "feat.supernatural-senses.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 78,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.supernatural-senses.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.supernatural-senses.prereq.0"
+    }
+  ]
+}

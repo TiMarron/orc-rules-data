@@ -1,0 +1,29 @@
+{
+  "id": "feat.lethal-finisher",
+  "type": "feat",
+  "name": "feat.lethal-finisher.name",
+  "traits": [
+    "death",
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.lethal-finisher.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.lethal-finisher.prereq.0"
+    }
+  ]
+}

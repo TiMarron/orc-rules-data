@@ -1,0 +1,26 @@
+{
+  "id": "feat.projectile-snatching",
+  "type": "feat",
+  "name": "feat.projectile-snatching.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 123,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.projectile-snatching.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.deflect-projectile"
+    }
+  ]
+}

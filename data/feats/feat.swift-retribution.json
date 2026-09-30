@@ -1,0 +1,26 @@
+{
+  "id": "feat.swift-retribution",
+  "type": "feat",
+  "name": "feat.swift-retribution.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.swift-retribution.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.swift-retribution.prereq.0"
+    }
+  ]
+}

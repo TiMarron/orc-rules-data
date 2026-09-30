@@ -1,0 +1,21 @@
+{
+  "id": "feat.greater-than-the-sum",
+  "type": "feat",
+  "name": "feat.greater-than-the-sum.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 31,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.greater-than-the-sum.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": []
+}

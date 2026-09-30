@@ -1,0 +1,29 @@
+{
+  "id": "feat.dragons-rage-wings",
+  "type": "feat",
+  "name": "feat.dragons-rage-wings.name",
+  "traits": [
+    "barbarian",
+    "morph",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.dragons-rage-wings.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.dragons-rage-wings.prereq.0"
+    }
+  ]
+}

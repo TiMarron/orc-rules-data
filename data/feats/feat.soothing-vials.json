@@ -1,0 +1,26 @@
+{
+  "id": "feat.soothing-vials",
+  "type": "feat",
+  "name": "feat.soothing-vials.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 63,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.soothing-vials.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.soothing-vials.prereq.0"
+    }
+  ]
+}

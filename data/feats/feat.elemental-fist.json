@@ -1,0 +1,26 @@
+{
+  "id": "feat.elemental-fist",
+  "type": "feat",
+  "name": "feat.elemental-fist.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 120,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.elemental-fist.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.elemental-fist.prereq.0"
+    }
+  ]
+}

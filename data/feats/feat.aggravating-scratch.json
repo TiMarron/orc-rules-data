@@ -1,0 +1,27 @@
+{
+  "id": "feat.aggravating-scratch",
+  "type": "feat",
+  "name": "feat.aggravating-scratch.name",
+  "traits": [
+    "catfolk",
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.aggravating-scratch.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.aggravating-scratch.prereq.0"
+    }
+  ]
+}

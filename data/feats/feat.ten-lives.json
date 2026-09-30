@@ -1,0 +1,26 @@
+{
+  "id": "feat.ten-lives",
+  "type": "feat",
+  "name": "feat.ten-lives.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ten-lives.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.evade-doom"
+    }
+  ]
+}

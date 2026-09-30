@@ -1,0 +1,28 @@
+{
+  "id": "feat.absorb-toxin",
+  "type": "feat",
+  "name": "feat.absorb-toxin.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 39,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.absorb-toxin.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "actions": "reaction",
+  "trigger": "feat.absorb-toxin.trigger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.absorb-toxin.prereq.0"
+    }
+  ]
+}

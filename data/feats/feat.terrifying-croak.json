@@ -1,0 +1,28 @@
+{
+  "id": "feat.terrifying-croak",
+  "type": "feat",
+  "name": "feat.terrifying-croak.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 38,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.terrifying-croak.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "trained"
+    }
+  ]
+}

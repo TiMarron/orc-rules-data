@@ -1,0 +1,29 @@
+{
+  "id": "feat.knowledge-of-shapes",
+  "type": "feat",
+  "name": "feat.knowledge-of-shapes.name",
+  "traits": [
+    "cursebound",
+    "oracle",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 139,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.knowledge-of-shapes.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "free",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.knowledge-of-shapes.prereq.0"
+    }
+  ]
+}

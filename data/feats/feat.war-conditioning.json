@@ -1,0 +1,21 @@
+{
+  "id": "feat.war-conditioning",
+  "type": "feat",
+  "name": "feat.war-conditioning.name",
+  "traits": [
+    "hobgoblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 15,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.war-conditioning.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "prerequisites": []
+}

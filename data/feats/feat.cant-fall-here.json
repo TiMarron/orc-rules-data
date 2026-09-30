@@ -1,0 +1,26 @@
+{
+  "id": "feat.cant-fall-here",
+  "type": "feat",
+  "name": "feat.cant-fall-here.name",
+  "traits": [
+    "auditory",
+    "hobgoblin",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 15,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cant-fall-here.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "actions": "reaction",
+  "trigger": "feat.cant-fall-here.trigger",
+  "frequency": "feat.cant-fall-here.frequency",
+  "prerequisites": []
+}

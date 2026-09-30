@@ -1,0 +1,26 @@
+{
+  "id": "feat.instinctive-strike",
+  "type": "feat",
+  "name": "feat.instinctive-strike.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.instinctive-strike.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.instinctive-strike.prereq.0"
+    }
+  ]
+}

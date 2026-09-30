@@ -1,0 +1,24 @@
+{
+  "id": "feat.cat-nap",
+  "type": "feat",
+  "name": "feat.cat-nap.name",
+  "traits": [
+    "catfolk",
+    "concentrate",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cat-nap.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "frequency": "feat.cat-nap.frequency",
+  "prerequisites": []
+}

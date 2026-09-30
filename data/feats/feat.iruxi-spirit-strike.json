@@ -1,0 +1,21 @@
+{
+  "id": "feat.iruxi-spirit-strike",
+  "type": "feat",
+  "name": "feat.iruxi-spirit-strike.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 27,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.iruxi-spirit-strike.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "prerequisites": []
+}

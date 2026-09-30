@@ -1,0 +1,23 @@
+{
+  "id": "feat.silent-step",
+  "type": "feat",
+  "name": "feat.silent-step.name",
+  "traits": [
+    "catfolk",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.silent-step.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "actions": "1",
+  "prerequisites": []
+}

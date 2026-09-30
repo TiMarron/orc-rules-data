@@ -1,0 +1,34 @@
+{
+  "id": "feat.cobra-envenom",
+  "type": "feat",
+  "name": "feat.cobra-envenom.name",
+  "traits": [
+    "monk",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.cobra-envenom.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "requirements": "feat.cobra-envenom.requirements",
+  "frequency": "feat.cobra-envenom.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cobra-stance"
+    },
+    {
+      "kind": "text",
+      "key": "feat.cobra-envenom.prereq.1"
+    }
+  ]
+}

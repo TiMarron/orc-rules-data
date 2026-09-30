@@ -1,0 +1,21 @@
+{
+  "id": "feat.monastic-weaponry",
+  "type": "feat",
+  "name": "feat.monastic-weaponry.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 118,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.monastic-weaponry.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.distant-cackle",
+  "type": "feat",
+  "name": "feat.distant-cackle.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.distant-cackle.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.distant-cackle.prereq.0"
+    }
+  ]
+}

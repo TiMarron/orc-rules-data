@@ -1,0 +1,27 @@
+{
+  "id": "feat.nocturnal-senses",
+  "type": "feat",
+  "name": "feat.nocturnal-senses.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 80,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.nocturnal-senses.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.nocturnal-senses.prereq.0"
+    }
+  ]
+}

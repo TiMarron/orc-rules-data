@@ -1,0 +1,21 @@
+{
+  "id": "feat.climbing-claws",
+  "type": "feat",
+  "name": "feat.climbing-claws.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.climbing-claws.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": []
+}

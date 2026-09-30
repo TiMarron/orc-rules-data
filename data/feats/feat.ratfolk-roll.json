@@ -1,0 +1,23 @@
+{
+  "id": "feat.ratfolk-roll",
+  "type": "feat",
+  "name": "feat.ratfolk-roll.name",
+  "traits": [
+    "move",
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 30,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ratfolk-roll.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "actions": "2",
+  "prerequisites": []
+}

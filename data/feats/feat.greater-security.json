@@ -1,0 +1,26 @@
+{
+  "id": "feat.greater-security",
+  "type": "feat",
+  "name": "feat.greater-security.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 97,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.greater-security.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.security"
+    }
+  ]
+}

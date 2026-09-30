@@ -1,0 +1,31 @@
+{
+  "id": "feat.pilgrims-token",
+  "type": "feat",
+  "name": "feat.pilgrims-token.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.pilgrims-token.text",
+  "level": 1,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.religion",
+      "rank": "trained"
+    },
+    {
+      "kind": "text",
+      "key": "feat.pilgrims-token.prereq.1"
+    }
+  ]
+}

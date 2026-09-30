@@ -1,0 +1,29 @@
+{
+  "id": "feat.the-dead-walk",
+  "type": "feat",
+  "name": "feat.the-dead-walk.name",
+  "traits": [
+    "cursebound",
+    "divine",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 141,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.the-dead-walk.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.the-dead-walk.prereq.0"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "feat.expand-aura",
+  "type": "feat",
+  "name": "feat.expand-aura.name",
+  "traits": [
+    "champion",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 95,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.expand-aura.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.champion",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.expand-aura.prereq.0"
+    }
+  ]
+}

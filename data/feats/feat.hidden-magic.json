@@ -1,0 +1,51 @@
+{
+  "id": "feat.hidden-magic",
+  "type": "feat",
+  "name": "feat.hidden-magic.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hidden-magic.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.vigilante-dedication"
+    },
+    {
+      "kind": "any",
+      "of": [
+        {
+          "kind": "proficiency",
+          "target": "skill.arcana",
+          "rank": "expert"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.nature",
+          "rank": "expert"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.occultism",
+          "rank": "expert"
+        },
+        {
+          "kind": "proficiency",
+          "target": "skill.religion",
+          "rank": "expert"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.aura-of-righteousness",
+  "type": "feat",
+  "name": "feat.aura-of-righteousness.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.aura-of-righteousness.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.aura-of-righteousness.prereq.0"
+    }
+  ]
+}

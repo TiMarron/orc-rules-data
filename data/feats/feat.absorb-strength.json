@@ -1,0 +1,24 @@
+{
+  "id": "feat.absorb-strength",
+  "type": "feat",
+  "name": "feat.absorb-strength.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.absorb-strength.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "actions": "1",
+  "trigger": "feat.absorb-strength.trigger",
+  "frequency": "feat.absorb-strength.frequency",
+  "prerequisites": []
+}

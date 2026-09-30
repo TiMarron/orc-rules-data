@@ -1,0 +1,31 @@
+{
+  "id": "feat.exhort-the-faithful",
+  "type": "feat",
+  "name": "feat.exhort-the-faithful.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 230,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.exhort-the-faithful.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.religion",
+      "rank": "expert"
+    },
+    {
+      "kind": "text",
+      "key": "feat.exhort-the-faithful.prereq.1"
+    }
+  ]
+}

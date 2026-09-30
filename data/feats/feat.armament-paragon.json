@@ -1,0 +1,26 @@
+{
+  "id": "feat.armament-paragon",
+  "type": "feat",
+  "name": "feat.armament-paragon.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.armament-paragon.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.armament-paragon.prereq.0"
+    }
+  ]
+}

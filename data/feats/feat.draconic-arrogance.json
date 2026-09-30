@@ -1,0 +1,27 @@
+{
+  "id": "feat.draconic-arrogance",
+  "type": "feat",
+  "name": "feat.draconic-arrogance.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.draconic-arrogance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.draconic-arrogance.prereq.0"
+    }
+  ]
+}

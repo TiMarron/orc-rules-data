@@ -1,0 +1,26 @@
+{
+  "id": "feat.aura-of-courage",
+  "type": "feat",
+  "name": "feat.aura-of-courage.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 94,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.aura-of-courage.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.aura-of-courage.prereq.0"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "feat.spirits-interference",
+  "type": "feat",
+  "name": "feat.spirits-interference.name",
+  "traits": [
+    "barbarian",
+    "divine",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 80,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.spirits-interference.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.spirits-interference.prereq.0"
+    }
+  ]
+}

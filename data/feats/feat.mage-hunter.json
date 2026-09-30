@@ -1,0 +1,29 @@
+{
+  "id": "feat.mage-hunter",
+  "type": "feat",
+  "name": "feat.mage-hunter.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 79,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.mage-hunter.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "requirements": "feat.mage-hunter.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.mage-hunter.prereq.0"
+    }
+  ]
+}

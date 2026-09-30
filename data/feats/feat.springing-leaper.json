@@ -1,0 +1,27 @@
+{
+  "id": "feat.springing-leaper",
+  "type": "feat",
+  "name": "feat.springing-leaper.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.springing-leaper.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "expert"
+    }
+  ]
+}

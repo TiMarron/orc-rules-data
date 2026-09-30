@@ -1,0 +1,27 @@
+{
+  "id": "feat.laughing-kholo",
+  "type": "feat",
+  "name": "feat.laughing-kholo.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 19,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.laughing-kholo.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "master"
+    }
+  ]
+}

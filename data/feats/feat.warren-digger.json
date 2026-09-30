@@ -1,0 +1,21 @@
+{
+  "id": "feat.warren-digger",
+  "type": "feat",
+  "name": "feat.warren-digger.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 31,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.warren-digger.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": []
+}

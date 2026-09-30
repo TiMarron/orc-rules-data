@@ -1,0 +1,28 @@
+{
+  "id": "feat.scouring-rage",
+  "type": "feat",
+  "name": "feat.scouring-rage.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 80,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.scouring-rage.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "free",
+  "trigger": "feat.scouring-rage.trigger",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.scouring-rage.prereq.0"
+    }
+  ]
+}

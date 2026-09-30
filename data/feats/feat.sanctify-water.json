@@ -1,0 +1,32 @@
+{
+  "id": "feat.sanctify-water",
+  "type": "feat",
+  "name": "feat.sanctify-water.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 233,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.sanctify-water.text",
+  "level": 2,
+  "category": "skill",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.religion",
+      "rank": "expert"
+    },
+    {
+      "kind": "text",
+      "key": "feat.sanctify-water.prereq.1"
+    }
+  ]
+}

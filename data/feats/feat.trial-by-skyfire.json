@@ -1,0 +1,31 @@
+{
+  "id": "feat.trial-by-skyfire",
+  "type": "feat",
+  "name": "feat.trial-by-skyfire.name",
+  "traits": [
+    "cursebound",
+    "divine",
+    "fire",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 141,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.trial-by-skyfire.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.trial-by-skyfire.prereq.0"
+    }
+  ],
+  "editNote": "Flagged only because the ordinary word for the sky is a plural of a reserved term; the sky is what the book means, so the word is used."
+}

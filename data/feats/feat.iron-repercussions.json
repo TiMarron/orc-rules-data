@@ -1,0 +1,26 @@
+{
+  "id": "feat.iron-repercussions",
+  "type": "feat",
+  "name": "feat.iron-repercussions.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 94,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.iron-repercussions.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.iron-repercussions.prereq.0"
+    }
+  ]
+}
