@@ -1,0 +1,24 @@
+{
+  "id": "item.caltrop-snare",
+  "type": "item",
+  "name": "item.caltrop-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.caltrop-snare.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "0",
+  "category": "consumable"
+}

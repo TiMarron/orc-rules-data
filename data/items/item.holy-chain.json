@@ -1,0 +1,35 @@
+{
+  "id": "item.holy-chain",
+  "type": "item",
+  "name": "item.holy-chain.name",
+  "traits": [
+    "divine",
+    "holy",
+    "invested"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 278,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.holy-chain.text",
+  "level": 13,
+  "priceCp": 250000,
+  "bulk": "1",
+  "usage": "item.holy-chain.usage",
+  "activations": [
+    {
+      "name": "item.holy-chain.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.holy-chain.activations.0.frequency",
+      "text": "item.holy-chain.activations.0.text"
+    }
+  ],
+  "category": "other"
+}

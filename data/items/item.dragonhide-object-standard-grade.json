@@ -1,0 +1,21 @@
+{
+  "id": "item.dragonhide-object-standard-grade",
+  "type": "item",
+  "name": "item.dragonhide-object-standard-grade.name",
+  "traits": [
+    "precious"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 276,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dragonhide-object-standard-grade.text",
+  "level": 8,
+  "priceCp": 35000,
+  "bulk": "L",
+  "category": "other"
+}

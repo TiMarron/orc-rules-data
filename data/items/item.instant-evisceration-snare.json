@@ -1,0 +1,24 @@
+{
+  "id": "item.instant-evisceration-snare",
+  "type": "item",
+  "name": "item.instant-evisceration-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 299,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.instant-evisceration-snare.text",
+  "level": 20,
+  "priceCp": 1000000,
+  "bulk": "0",
+  "category": "consumable"
+}

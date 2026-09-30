@@ -1,0 +1,24 @@
+{
+  "id": "item.elixir-of-rejuvenation",
+  "type": "item",
+  "name": "item.elixir-of-rejuvenation.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.elixir-of-rejuvenation.text",
+  "level": 20,
+  "bulk": "L",
+  "usage": "item.elixir-of-rejuvenation.usage",
+  "category": "alchemical"
+}

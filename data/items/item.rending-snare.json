@@ -1,0 +1,25 @@
+{
+  "id": "item.rending-snare",
+  "type": "item",
+  "name": "item.rending-snare.name",
+  "traits": [
+    "consumable",
+    "kobold",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 299,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.rending-snare.text",
+  "level": 14,
+  "priceCp": 70000,
+  "bulk": "0",
+  "category": "consumable"
+}

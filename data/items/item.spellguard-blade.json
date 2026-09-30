@@ -1,0 +1,22 @@
+{
+  "id": "item.spellguard-blade",
+  "type": "item",
+  "name": "item.spellguard-blade.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 280,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.spellguard-blade.text",
+  "level": 7,
+  "priceCp": 32000,
+  "bulk": "L",
+  "usage": "item.spellguard-blade.usage",
+  "category": "other"
+}

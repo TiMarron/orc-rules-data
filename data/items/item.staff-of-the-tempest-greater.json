@@ -1,0 +1,29 @@
+{
+  "id": "item.staff-of-the-tempest-greater",
+  "type": "item",
+  "name": "item.staff-of-the-tempest-greater.name",
+  "traits": [
+    "magical",
+    "staff"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 308,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.staff-of-the-tempest-greater.text",
+  "level": 10,
+  "priceCp": 90000,
+  "bulk": "1",
+  "usage": "item.staff-of-the-tempest-greater.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "text": "item.staff-of-the-tempest-greater.activations.0.text"
+    }
+  ],
+  "category": "staff"
+}

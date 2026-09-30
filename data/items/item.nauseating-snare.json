@@ -1,0 +1,25 @@
+{
+  "id": "item.nauseating-snare",
+  "type": "item",
+  "name": "item.nauseating-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "poison",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 299,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.nauseating-snare.text",
+  "level": 6,
+  "priceCp": 4000,
+  "bulk": "0",
+  "category": "consumable"
+}

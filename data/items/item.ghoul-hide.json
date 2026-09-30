@@ -1,0 +1,23 @@
+{
+  "id": "item.ghoul-hide",
+  "type": "item",
+  "name": "item.ghoul-hide.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 278,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.ghoul-hide.text",
+  "level": 6,
+  "priceCp": 22000,
+  "bulk": "2",
+  "usage": "item.ghoul-hide.usage",
+  "category": "other"
+}

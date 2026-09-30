@@ -1,0 +1,35 @@
+{
+  "id": "item.warleaders-bulwark",
+  "type": "item",
+  "name": "item.warleaders-bulwark.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 279,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.warleaders-bulwark.text",
+  "level": 10,
+  "priceCp": 100000,
+  "bulk": "2",
+  "usage": "item.warleaders-bulwark.usage",
+  "activations": [
+    {
+      "name": "item.warleaders-bulwark.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.warleaders-bulwark.activations.0.frequency",
+      "text": "item.warleaders-bulwark.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "The structured source leaves italic markers around the armor's description and glues the next word to them (\"_+1 resilient breastplate_is\"); the markers are removed and the space restored. The wording is unchanged."
+}

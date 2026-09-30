@@ -1,0 +1,29 @@
+{
+  "id": "item.staff-of-providence-true",
+  "type": "item",
+  "name": "item.staff-of-providence-true.name",
+  "traits": [
+    "magical",
+    "staff"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 308,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.staff-of-providence-true.text",
+  "level": 20,
+  "priceCp": 6400000,
+  "bulk": "1",
+  "usage": "item.staff-of-providence-true.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "text": "item.staff-of-providence-true.activations.0.text"
+    }
+  ],
+  "category": "staff"
+}

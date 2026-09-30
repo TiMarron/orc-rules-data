@@ -1,0 +1,34 @@
+{
+  "id": "item.ring-of-maniacal-devices-greater",
+  "type": "item",
+  "name": "item.ring-of-maniacal-devices-greater.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 311,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.ring-of-maniacal-devices-greater.text",
+  "level": 18,
+  "priceCp": 2100000,
+  "bulk": "0",
+  "usage": "item.ring-of-maniacal-devices-greater.usage",
+  "activations": [
+    {
+      "name": "item.ring-of-maniacal-devices-greater.activations.0.name",
+      "time": "item.ring-of-maniacal-devices-greater.activations.0.time",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.ring-of-maniacal-devices-greater.activations.0.frequency",
+      "text": "item.ring-of-maniacal-devices-greater.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

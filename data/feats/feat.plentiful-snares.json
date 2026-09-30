@@ -1,0 +1,25 @@
+{
+  "id": "feat.plentiful-snares",
+  "type": "feat",
+  "name": "feat.plentiful-snares.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 216,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.plentiful-snares.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.snarecrafter-dedication"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "trait.snare",
+  "type": "trait",
+  "name": "trait.snare.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 297,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "trait.snare.text",
+  "editNote": "Accepted: the line is the trait's standard glossary sentence carried by the structured source, so the whole-text score against the book is low. The book's own description (the Snares section of the Treasure Trove) states the same rules: snares are simple traps made quickly with the Snare Crafting feat, built in a single 5-foot square, and usually last until triggered."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "item.dragonhide-shield-standard-grade",
+  "type": "item",
+  "name": "item.dragonhide-shield-standard-grade.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 277,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.dragonhide-shield-standard-grade.text",
+  "level": 8,
+  "priceCp": 44000,
+  "bulk": "1",
+  "usage": "item.dragonhide-shield-standard-grade.usage",
+  "category": "other",
+  "editNote": "The structured source repeats the craft requirement twice, glued together (\"...55 gpdragonhide worth at least 55 gp\"); the requirement is stated once, as the book prints it."
+}

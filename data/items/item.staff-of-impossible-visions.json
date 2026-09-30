@@ -1,0 +1,29 @@
+{
+  "id": "item.staff-of-impossible-visions",
+  "type": "item",
+  "name": "item.staff-of-impossible-visions.name",
+  "traits": [
+    "magical",
+    "staff"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 308,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.staff-of-impossible-visions.text",
+  "level": 6,
+  "priceCp": 23000,
+  "bulk": "1",
+  "usage": "item.staff-of-impossible-visions.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "text": "item.staff-of-impossible-visions.activations.0.text"
+    }
+  ],
+  "category": "staff"
+}

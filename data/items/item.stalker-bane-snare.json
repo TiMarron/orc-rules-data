@@ -1,0 +1,24 @@
+{
+  "id": "item.stalker-bane-snare",
+  "type": "item",
+  "name": "item.stalker-bane-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 300,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.stalker-bane-snare.text",
+  "level": 4,
+  "priceCp": 1500,
+  "bulk": "0",
+  "category": "consumable"
+}

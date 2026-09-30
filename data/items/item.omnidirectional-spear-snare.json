@@ -1,0 +1,24 @@
+{
+  "id": "item.omnidirectional-spear-snare",
+  "type": "item",
+  "name": "item.omnidirectional-spear-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 299,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.omnidirectional-spear-snare.text",
+  "level": 16,
+  "priceCp": 150000,
+  "bulk": "0",
+  "category": "consumable"
+}

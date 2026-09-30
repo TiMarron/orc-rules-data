@@ -1,0 +1,23 @@
+{
+  "id": "item.mariners-splint",
+  "type": "item",
+  "name": "item.mariners-splint.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 278,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.mariners-splint.text",
+  "level": 5,
+  "priceCp": 18000,
+  "bulk": "3",
+  "usage": "item.mariners-splint.usage",
+  "category": "other"
+}

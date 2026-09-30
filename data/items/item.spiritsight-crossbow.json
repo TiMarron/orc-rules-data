@@ -1,0 +1,40 @@
+{
+  "id": "item.spiritsight-crossbow",
+  "type": "item",
+  "name": "item.spiritsight-crossbow.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 280,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.spiritsight-crossbow.text",
+  "level": 8,
+  "priceCp": 45000,
+  "bulk": "2",
+  "usage": "item.spiritsight-crossbow.usage",
+  "activations": [
+    {
+      "name": "item.spiritsight-crossbow.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.spiritsight-crossbow.activations.0.frequency",
+      "text": "item.spiritsight-crossbow.activations.0.text"
+    },
+    {
+      "name": "item.spiritsight-crossbow.activations.1.name",
+      "actions": "1",
+      "requirements": "item.spiritsight-crossbow.activations.1.requirements",
+      "text": "item.spiritsight-crossbow.activations.1.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with the generic 'ethereal realm' the dataset already uses, in the item text and in both activations. The rules text is the book's."
+}

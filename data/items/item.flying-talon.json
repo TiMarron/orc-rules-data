@@ -1,0 +1,40 @@
+{
+  "id": "item.flying-talon",
+  "type": "item",
+  "name": "item.flying-talon.name",
+  "traits": [
+    "agile",
+    "finesse",
+    "kobold",
+    "ranged-trip",
+    "tethered",
+    "thrown",
+    "trip"
+  ],
+  "traitValues": {
+    "thrown": "10"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 274,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.flying-talon.text",
+  "level": 0,
+  "priceCp": 600,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "advanced",
+    "hands": "1",
+    "group": "flail",
+    "damage": {
+      "dice": "1d4",
+      "type": "piercing"
+    }
+  },
+  "editNote": "Accepted: checked against the book's weapon tables (price, damage and type, range and reload where printed, Bulk, hands, group, category, rarity and traits with their values); all match, and the description paragraph is the book's. The only report is the structured source's shared Critical Specialization Effects section for the weapon's group, which is printed once under the weapon groups rules rather than repeated per weapon; the omission is recorded."
+}

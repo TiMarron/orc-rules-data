@@ -1,0 +1,24 @@
+{
+  "id": "item.bomb-snare",
+  "type": "item",
+  "name": "item.bomb-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 297,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.bomb-snare.text",
+  "level": 6,
+  "priceCp": 4000,
+  "bulk": "0",
+  "category": "consumable"
+}

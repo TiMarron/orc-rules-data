@@ -1,0 +1,32 @@
+{
+  "id": "item.cloth-of-nullification",
+  "type": "item",
+  "name": "item.cloth-of-nullification.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 307,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.cloth-of-nullification.text",
+  "level": 20,
+  "priceCp": 7500000,
+  "bulk": "1",
+  "usage": "item.cloth-of-nullification.usage",
+  "activations": [
+    {
+      "name": "item.cloth-of-nullification.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.cloth-of-nullification.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.spike-snare",
+  "type": "item",
+  "name": "item.spike-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 300,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.spike-snare.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "0",
+  "category": "consumable"
+}

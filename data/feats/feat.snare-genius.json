@@ -1,0 +1,31 @@
+{
+  "id": "feat.snare-genius",
+  "type": "feat",
+  "name": "feat.snare-genius.name",
+  "traits": [
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 22,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.snare-genius.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.snare-crafting"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "expert"
+    }
+  ]
+}

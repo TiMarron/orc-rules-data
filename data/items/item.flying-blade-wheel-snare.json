@@ -1,0 +1,24 @@
+{
+  "id": "item.flying-blade-wheel-snare",
+  "type": "item",
+  "name": "item.flying-blade-wheel-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.flying-blade-wheel-snare.text",
+  "level": 20,
+  "priceCp": 1000000,
+  "bulk": "0",
+  "category": "consumable"
+}

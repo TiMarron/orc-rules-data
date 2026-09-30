@@ -1,0 +1,29 @@
+{
+  "id": "item.staff-of-impossible-visions-greater",
+  "type": "item",
+  "name": "item.staff-of-impossible-visions-greater.name",
+  "traits": [
+    "magical",
+    "staff"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 308,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.staff-of-impossible-visions-greater.text",
+  "level": 12,
+  "priceCp": 180000,
+  "bulk": "1",
+  "usage": "item.staff-of-impossible-visions-greater.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "text": "item.staff-of-impossible-visions-greater.activations.0.text"
+    }
+  ],
+  "category": "staff"
+}

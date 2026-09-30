@@ -1,0 +1,35 @@
+{
+  "id": "item.four-ways-dogslicer",
+  "type": "item",
+  "name": "item.four-ways-dogslicer.name",
+  "traits": [
+    "cold",
+    "electricity",
+    "fire",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 280,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.four-ways-dogslicer.text",
+  "level": 12,
+  "priceCp": 170000,
+  "bulk": "L",
+  "usage": "item.four-ways-dogslicer.usage",
+  "activations": [
+    {
+      "name": "item.four-ways-dogslicer.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.four-ways-dogslicer.activations.0.text"
+    }
+  ],
+  "category": "other"
+}

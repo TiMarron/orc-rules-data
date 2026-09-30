@@ -1,0 +1,20 @@
+{
+  "id": "item.dragonhide-buckler-standard-grade",
+  "type": "item",
+  "name": "item.dragonhide-buckler-standard-grade.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 277,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dragonhide-buckler-standard-grade.text",
+  "level": 8,
+  "priceCp": 40000,
+  "bulk": "L",
+  "usage": "item.dragonhide-buckler-standard-grade.usage",
+  "category": "other"
+}
