@@ -4,7 +4,6 @@
   "name": "action.devise-a-stratagem.name",
   "traits": [
     "concentrate",
-    "fortune",
     "investigator"
   ],
   "rarity": "common",
@@ -18,5 +17,5 @@
   "text": "action.devise-a-stratagem.text",
   "frequency": "action.devise-a-stratagem.frequency",
   "variable": true,
-  "editNote": "The structured source carries a later wording than the printing in two places: it adds a sentence giving the Strike the fortune trait and rewrites the list of weapons the Intelligence modifier applies to. The text is the printed one, and the action's traits are the printed ones (concentrate, fortune, investigator). The book gives the cost as one action or a free action, so the record sets `variable`."
+  "editNote": "The book prints the action's cost as one action or a free action, which the structured source labels 'Free Action or One Action'; the record sets `variable`. The text and the traits are the structured source's, which carry the spring 2026 errata to the book (fortune removed from the action's traits and given to the Strike; the Intelligence-modifier sentence rewritten to cover ranged unarmed attacks)."
 }
