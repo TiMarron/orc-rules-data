@@ -1,0 +1,45 @@
+{
+  "id": "ancestry.hobgoblin",
+  "type": "ancestry",
+  "name": "ancestry.hobgoblin.name",
+  "traits": [
+    "hobgoblin",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 12,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ancestry.hobgoblin.text",
+  "hp": 8,
+  "size": "medium",
+  "speed": 25,
+  "boosts": [
+    "con",
+    "int",
+    "free"
+  ],
+  "flaws": [
+    "wis"
+  ],
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "heritages": [
+    "heritage.elfbane-hobgoblin",
+    "heritage.runtboss-hobgoblin",
+    "heritage.shortshanks-hobgoblin",
+    "heritage.smokeworker-hobgoblin",
+    "heritage.warmarch-hobgoblin",
+    "heritage.warrenbred-hobgoblin"
+  ],
+  "senses": [
+    "darkvision"
+  ],
+  "editNote": "Reserved Material removed: a regional adjective and the names of the nation and the two states bordering it are replaced with generic wording. Meaning and rules text are the book's."
+}

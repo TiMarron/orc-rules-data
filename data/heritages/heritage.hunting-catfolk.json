@@ -1,0 +1,16 @@
+{
+  "id": "heritage.hunting-catfolk",
+  "type": "heritage",
+  "name": "heritage.hunting-catfolk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 9,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.hunting-catfolk.text",
+  "ancestry": "ancestry.catfolk"
+}

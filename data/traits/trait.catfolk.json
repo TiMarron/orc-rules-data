@@ -1,0 +1,15 @@
+{
+  "id": "trait.catfolk",
+  "type": "trait",
+  "name": "trait.catfolk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 315,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.catfolk.text"
+}

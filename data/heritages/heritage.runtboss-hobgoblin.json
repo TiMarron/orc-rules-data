@@ -1,0 +1,16 @@
+{
+  "id": "heritage.runtboss-hobgoblin",
+  "type": "heritage",
+  "name": "heritage.runtboss-hobgoblin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 13,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.runtboss-hobgoblin.text",
+  "ancestry": "ancestry.hobgoblin"
+}

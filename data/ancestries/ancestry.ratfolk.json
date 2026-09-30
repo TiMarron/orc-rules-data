@@ -1,0 +1,52 @@
+{
+  "id": "ancestry.ratfolk",
+  "type": "ancestry",
+  "name": "ancestry.ratfolk.name",
+  "traits": [
+    "humanoid",
+    "ratfolk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 28,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ancestry.ratfolk.text",
+  "hp": 6,
+  "size": "small",
+  "speed": 25,
+  "boosts": [
+    "dex",
+    "int",
+    "free"
+  ],
+  "flaws": [
+    "str"
+  ],
+  "languages": [
+    "common",
+    "ysoki"
+  ],
+  "heritages": [
+    "heritage.deep-rat",
+    "heritage.desert-rat",
+    "heritage.longsnout-rat",
+    "heritage.sewer-rat",
+    "heritage.shadow-rat",
+    "heritage.snow-rat",
+    "heritage.tunnel-rat"
+  ],
+  "senses": [
+    "low-light-vision"
+  ],
+  "grants": [
+    {
+      "name": "ancestry.ratfolk.grants.0.name",
+      "text": "ancestry.ratfolk.grants.0.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the named deity and its epithet in the Religion section are replaced with a generic description and a pronoun. The rules text is the book's."
+}

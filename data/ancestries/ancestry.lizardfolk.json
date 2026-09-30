@@ -1,0 +1,53 @@
+{
+  "id": "ancestry.lizardfolk",
+  "type": "ancestry",
+  "name": "ancestry.lizardfolk.name",
+  "traits": [
+    "humanoid",
+    "lizardfolk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 24,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ancestry.lizardfolk.text",
+  "hp": 8,
+  "size": "medium",
+  "speed": 25,
+  "boosts": [
+    "str",
+    "wis",
+    "free"
+  ],
+  "flaws": [
+    "int"
+  ],
+  "languages": [
+    "common",
+    "iruxi"
+  ],
+  "heritages": [
+    "heritage.cliffscale-lizardfolk",
+    "heritage.cloudleaper-lizardfolk",
+    "heritage.frilled-lizardfolk",
+    "heritage.sandstrider-lizardfolk",
+    "heritage.unseen-lizardfolk",
+    "heritage.wetlander-lizardfolk",
+    "heritage.woodstalker-lizardfolk"
+  ],
+  "grants": [
+    {
+      "name": "ancestry.lizardfolk.grants.0.name",
+      "text": "ancestry.lizardfolk.grants.0.text"
+    },
+    {
+      "name": "ancestry.lizardfolk.grants.1.name",
+      "text": "ancestry.lizardfolk.grants.1.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the one named deity is replaced with a generic description. Rules text is the book's."
+}
