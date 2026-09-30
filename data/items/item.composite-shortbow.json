@@ -16,9 +16,9 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": true,
+  "edited": false,
   "text": "item.composite-shortbow.text",
-  "level": 0,
+  "level": 1,
   "priceCp": 1400,
   "bulk": "1",
   "category": "weapon",
@@ -33,6 +33,5 @@
     "range": 60,
     "reload": "0",
     "ammunition": "item.arrows"
-  },
-  "editNote": "Level set to 0: the book states on p. 276 that every weapon in the chapter has item level 0, where the structured source gives 1."
+  }
 }

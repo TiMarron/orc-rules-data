@@ -20,7 +20,7 @@
   "review": "assistant",
   "edited": true,
   "text": "item.composite-longbow.text",
-  "level": 0,
+  "level": 1,
   "priceCp": 2000,
   "bulk": "2",
   "category": "weapon",
@@ -36,5 +36,5 @@
     "reload": "0",
     "ammunition": "item.arrows"
   },
-  "editNote": "The book (p. 284) names a deity, which is Reserved Material, as its example of a longbow-restricted ability; the example clause is dropped and the rule it illustrates kept verbatim. Level set to 0: the book states on p. 276 that every weapon in the chapter has item level 0, where the structured source gives 1."
+  "editNote": "The book (p. 284) names a deity, which is Reserved Material, as its example of a longbow-restricted ability; the example clause is dropped and the rule it illustrates kept verbatim."
 }

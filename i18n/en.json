@@ -11169,7 +11169,7 @@
   "trait.additive.name": "Additive",
   "trait.additive.text": "Feats with the additive trait allow you to add special substances to alchemical consumables you create when you use [[action.quick-alchemy|Quick Alchemy]] to create a consumable (you can't use additives with quick vials). You can add only one additive to a single alchemical item, you can add an additive only once per round, and most additive abilities specify a subset of alchemical consumables you can add them to.",
   "trait.aeon.name": "Aeon",
-  "trait.aeon.text": "These monitors are the self-styled defenders of reality. Traditional aeons have dualistic natures and forms, and they hold a dichotomy of interests, though axiomites and inevitables don’t. Aeons other than axiomites and inevitables communicate via a strange telepathic hodgepodge of sensory sending called envisioning.",
+  "trait.aeon.text": "These monitors are the self-styled defenders of reality. Traditional aeons have dualistic natures and forms, hold a dichotomy of interests, and communicate via a strange telepathic hodgepodge of sensory sending called envisioning. Axiomites and their creations are aeons, but don’t share all the characteristics of traditional aeons.",
   "trait.agile.name": "Agile",
   "trait.agile.text": "The multiple attack penalty you take with this weapon on the second attack on your turn is –4 instead of –5, and –8 instead of –10 on the third and subsequent attacks in the turn.",
   "trait.air.name": "Air",
