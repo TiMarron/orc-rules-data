@@ -1,0 +1,35 @@
+{
+  "id": "item.sanguine-pendant-greater",
+  "type": "item",
+  "name": "item.sanguine-pendant-greater.name",
+  "traits": [
+    "focused",
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 311,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.sanguine-pendant-greater.text",
+  "level": 17,
+  "priceCp": 1300000,
+  "bulk": "0",
+  "usage": "item.sanguine-pendant-greater.usage",
+  "activations": [
+    {
+      "name": "item.sanguine-pendant-greater.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.sanguine-pendant-greater.activations.0.frequency",
+      "text": "item.sanguine-pendant-greater.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

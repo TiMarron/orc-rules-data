@@ -1,0 +1,24 @@
+{
+  "id": "item.glue-bomb-greater",
+  "type": "item",
+  "name": "item.glue-bomb-greater.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.glue-bomb-greater.text",
+  "level": 11,
+  "priceCp": 25000,
+  "bulk": "L",
+  "usage": "item.glue-bomb-greater.usage",
+  "category": "alchemical"
+}

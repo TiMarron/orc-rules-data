@@ -1,0 +1,25 @@
+{
+  "id": "item.bottled-catharsis-minor",
+  "type": "item",
+  "name": "item.bottled-catharsis-minor.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.bottled-catharsis-minor.text",
+  "level": 2,
+  "priceCp": 500,
+  "bulk": "L",
+  "usage": "item.bottled-catharsis-minor.usage",
+  "category": "alchemical"
+}

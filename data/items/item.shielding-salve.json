@@ -1,0 +1,24 @@
+{
+  "id": "item.shielding-salve",
+  "type": "item",
+  "name": "item.shielding-salve.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 303,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.shielding-salve.text",
+  "level": 1,
+  "priceCp": 400,
+  "bulk": "L",
+  "usage": "item.shielding-salve.usage",
+  "category": "consumable"
+}

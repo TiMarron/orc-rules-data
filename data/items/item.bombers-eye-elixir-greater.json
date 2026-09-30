@@ -1,0 +1,24 @@
+{
+  "id": "item.bombers-eye-elixir-greater",
+  "type": "item",
+  "name": "item.bombers-eye-elixir-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.bombers-eye-elixir-greater.text",
+  "level": 14,
+  "priceCp": 70000,
+  "bulk": "L",
+  "usage": "item.bombers-eye-elixir-greater.usage",
+  "category": "alchemical"
+}

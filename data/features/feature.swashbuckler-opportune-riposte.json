@@ -1,0 +1,18 @@
+{
+  "id": "feature.swashbuckler-opportune-riposte",
+  "type": "feature",
+  "name": "feature.swashbuckler-opportune-riposte.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feature.swashbuckler-opportune-riposte.text",
+  "class": "class.swashbuckler",
+  "level": 3,
+  "editNote": "Accepted: the feature's own text matches the class entry in the book. The one dropped block is the embedded copy of the action the feature grants; that action is its own record in the dataset, exactly as for the fighter's Reactive Strike and the rogue's Debilitating Strike, and is reviewed under its own id."
+}

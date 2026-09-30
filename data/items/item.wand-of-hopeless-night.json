@@ -1,0 +1,30 @@
+{
+  "id": "item.wand-of-hopeless-night",
+  "type": "item",
+  "name": "item.wand-of-hopeless-night.name",
+  "traits": [
+    "darkness",
+    "magical",
+    "wand"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 309,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.wand-of-hopeless-night.text",
+  "level": 6,
+  "bulk": "L",
+  "usage": "item.wand-of-hopeless-night.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "frequency": "item.wand-of-hopeless-night.activations.0.frequency",
+      "text": "item.wand-of-hopeless-night.activations.0.text"
+    }
+  ],
+  "category": "wand"
+}

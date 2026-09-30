@@ -1,0 +1,25 @@
+{
+  "id": "item.spider-root",
+  "type": "item",
+  "name": "item.spider-root.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "contact",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.spider-root.text",
+  "level": 9,
+  "priceCp": 11000,
+  "bulk": "L",
+  "usage": "item.spider-root.usage",
+  "category": "alchemical"
+}

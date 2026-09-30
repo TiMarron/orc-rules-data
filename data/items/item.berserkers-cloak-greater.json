@@ -1,0 +1,23 @@
+{
+  "id": "item.berserkers-cloak-greater",
+  "type": "item",
+  "name": "item.berserkers-cloak-greater.name",
+  "traits": [
+    "invested",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.berserkers-cloak-greater.text",
+  "level": 19,
+  "priceCp": 4000000,
+  "bulk": "1",
+  "usage": "item.berserkers-cloak-greater.usage",
+  "category": "worn"
+}

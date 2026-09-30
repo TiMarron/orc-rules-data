@@ -1,0 +1,26 @@
+{
+  "id": "item.cognitive-mutagen-greater",
+  "type": "item",
+  "name": "item.cognitive-mutagen-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mutagen",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 289,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.cognitive-mutagen-greater.text",
+  "level": 11,
+  "priceCp": 30000,
+  "bulk": "L",
+  "usage": "item.cognitive-mutagen-greater.usage",
+  "category": "alchemical"
+}

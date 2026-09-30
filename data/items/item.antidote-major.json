@@ -1,0 +1,25 @@
+{
+  "id": "item.antidote-major",
+  "type": "item",
+  "name": "item.antidote-major.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.antidote-major.text",
+  "level": 14,
+  "priceCp": 67500,
+  "bulk": "L",
+  "usage": "item.antidote-major.usage",
+  "category": "alchemical"
+}

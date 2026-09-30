@@ -1,0 +1,23 @@
+{
+  "id": "feat.stumbling-finisher",
+  "type": "feat",
+  "name": "feat.stumbling-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stumbling-finisher.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

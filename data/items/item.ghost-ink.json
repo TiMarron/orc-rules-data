@@ -1,0 +1,23 @@
+{
+  "id": "item.ghost-ink",
+  "type": "item",
+  "name": "item.ghost-ink.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.ghost-ink.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.ghost-ink.usage",
+  "category": "alchemical"
+}

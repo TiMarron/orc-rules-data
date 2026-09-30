@@ -1,0 +1,24 @@
+{
+  "id": "item.eagle-eye-elixir-lesser",
+  "type": "item",
+  "name": "item.eagle-eye-elixir-lesser.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.eagle-eye-elixir-lesser.text",
+  "level": 1,
+  "priceCp": 400,
+  "bulk": "L",
+  "usage": "item.eagle-eye-elixir-lesser.usage",
+  "category": "alchemical"
+}

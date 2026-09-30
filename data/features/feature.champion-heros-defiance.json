@@ -1,0 +1,18 @@
+{
+  "id": "feature.champion-heros-defiance",
+  "type": "feature",
+  "name": "feature.champion-heros-defiance.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feature.champion-heros-defiance.text",
+  "class": "class.champion",
+  "level": 19,
+  "editNote": "Accepted: checked against the book, the text is the class-feature line as printed minus the page reference the dataset does not carry; a two-sentence text scores under the containment threshold for that reason alone."
+}

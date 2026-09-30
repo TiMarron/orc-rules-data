@@ -1,0 +1,23 @@
+{
+  "id": "item.glow-rod",
+  "type": "item",
+  "name": "item.glow-rod.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.glow-rod.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.glow-rod.usage",
+  "category": "alchemical"
+}

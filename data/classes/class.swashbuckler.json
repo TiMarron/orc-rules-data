@@ -1,0 +1,237 @@
+{
+  "id": "class.swashbuckler",
+  "type": "class",
+  "name": "class.swashbuckler.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 159,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "class.swashbuckler.text",
+  "keyAttribute": "dex",
+  "hp": 10,
+  "proficiencies": {
+    "perception": "expert",
+    "fortitude": "trained",
+    "reflex": "expert",
+    "will": "expert",
+    "skills": {
+      "additional": 4,
+      "fixed": [
+        "skill.acrobatics"
+      ],
+      "choices": [
+        {
+          "count": 1,
+          "text": "class.swashbuckler.skill-choice.0"
+        }
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "trained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "untrained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained"
+  },
+  "featLevels": {
+    "class": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-confident-finisher"
+    },
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-panache"
+    },
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-precise-strike"
+    },
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-stylish-combatant"
+    },
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-swashbuckler-feats"
+    },
+    {
+      "level": 1,
+      "feature": "feature.swashbuckler-swashbucklers-style"
+    },
+    {
+      "level": 2,
+      "feature": "feature.swashbuckler-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.swashbuckler-fortitude-expertise"
+    },
+    {
+      "level": 3,
+      "feature": "feature.swashbuckler-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.swashbuckler-opportune-riposte"
+    },
+    {
+      "level": 3,
+      "feature": "feature.swashbuckler-skill-increases"
+    },
+    {
+      "level": 3,
+      "feature": "feature.swashbuckler-stylish-tricks"
+    },
+    {
+      "level": 3,
+      "feature": "feature.swashbuckler-vivacious-speed"
+    },
+    {
+      "level": 5,
+      "feature": "feature.swashbuckler-ancestry-feat"
+    },
+    {
+      "level": 5,
+      "feature": "feature.swashbuckler-weapon-expertise"
+    },
+    {
+      "level": 7,
+      "feature": "feature.swashbuckler-confident-evasion"
+    },
+    {
+      "level": 7,
+      "feature": "feature.swashbuckler-weapon-specialization"
+    },
+    {
+      "level": 9,
+      "feature": "feature.swashbuckler-exemplary-finisher"
+    },
+    {
+      "level": 9,
+      "feature": "feature.swashbuckler-swashbuckler-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.swashbuckler-continuous-flair"
+    },
+    {
+      "level": 11,
+      "feature": "feature.swashbuckler-perception-mastery"
+    },
+    {
+      "level": 13,
+      "feature": "feature.swashbuckler-assured-evasion"
+    },
+    {
+      "level": 13,
+      "feature": "feature.swashbuckler-light-armor-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.swashbuckler-weapon-mastery"
+    },
+    {
+      "level": 15,
+      "feature": "feature.swashbuckler-greater-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.swashbuckler-keen-flair"
+    },
+    {
+      "level": 17,
+      "feature": "feature.swashbuckler-reinforced-ego"
+    },
+    {
+      "level": 19,
+      "feature": "feature.swashbuckler-eternal-confidence"
+    },
+    {
+      "level": 19,
+      "feature": "feature.swashbuckler-light-armor-mastery"
+    }
+  ],
+  "editNote": "Verified against the class entry in the book: key attribute, hit points, perception and saving throw ranks, weapon and armour proficiencies, trained skills and the advancement table (feat, skill increase, attribute boost and feature levels) all match. The table and art the book prints are omitted, as the dataset markup carries neither. The class feat at 1st level is now in the feat levels. A few sentences carry the structured source's later wording rather than the printing (the finisher and Confident Finisher wording)."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.dual-finisher",
+  "type": "feat",
+  "name": "feat.dual-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dual-finisher.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "requirements": "feat.dual-finisher.requirements",
+  "prerequisites": []
+}

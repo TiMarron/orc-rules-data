@@ -1,0 +1,24 @@
+{
+  "id": "item.flame-navette",
+  "type": "item",
+  "name": "item.flame-navette.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 305,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.flame-navette.text",
+  "level": 16,
+  "priceCp": 180000,
+  "bulk": "0",
+  "usage": "item.flame-navette.usage",
+  "category": "talisman"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.elixir-of-life",
+  "type": "item",
+  "name": "item.elixir-of-life.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.elixir-of-life.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.elixir-of-life.usage",
+  "category": "alchemical"
+}

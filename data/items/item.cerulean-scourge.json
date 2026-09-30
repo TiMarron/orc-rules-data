@@ -1,0 +1,25 @@
+{
+  "id": "item.cerulean-scourge",
+  "type": "item",
+  "name": "item.cerulean-scourge.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.cerulean-scourge.text",
+  "level": 16,
+  "priceCp": 145000,
+  "bulk": "L",
+  "usage": "item.cerulean-scourge.usage",
+  "category": "alchemical"
+}

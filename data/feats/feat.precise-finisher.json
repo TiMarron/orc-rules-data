@@ -1,0 +1,26 @@
+{
+  "id": "feat.precise-finisher",
+  "type": "feat",
+  "name": "feat.precise-finisher.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 166,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.precise-finisher.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.precise-finisher.prereq.0"
+    }
+  ]
+}

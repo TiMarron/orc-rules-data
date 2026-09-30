@@ -1,0 +1,24 @@
+{
+  "id": "item.elixir-of-gender-transformation-moderate",
+  "type": "item",
+  "name": "item.elixir-of-gender-transformation-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.elixir-of-gender-transformation-moderate.text",
+  "level": 3,
+  "priceCp": 800,
+  "bulk": "L",
+  "usage": "item.elixir-of-gender-transformation-moderate.usage",
+  "category": "alchemical"
+}

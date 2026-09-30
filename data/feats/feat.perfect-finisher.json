@@ -1,0 +1,24 @@
+{
+  "id": "feat.perfect-finisher",
+  "type": "feat",
+  "name": "feat.perfect-finisher.name",
+  "traits": [
+    "finisher",
+    "fortune",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.perfect-finisher.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

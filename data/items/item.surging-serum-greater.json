@@ -1,0 +1,25 @@
+{
+  "id": "item.surging-serum-greater",
+  "type": "item",
+  "name": "item.surging-serum-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.surging-serum-greater.text",
+  "level": 12,
+  "priceCp": 32500,
+  "bulk": "L",
+  "usage": "item.surging-serum-greater.usage",
+  "category": "alchemical"
+}

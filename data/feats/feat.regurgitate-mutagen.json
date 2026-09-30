@@ -1,0 +1,24 @@
+{
+  "id": "feat.regurgitate-mutagen",
+  "type": "feat",
+  "name": "feat.regurgitate-mutagen.name",
+  "traits": [
+    "alchemist",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 65,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.regurgitate-mutagen.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.alchemist",
+  "actions": "1",
+  "requirements": "feat.regurgitate-mutagen.requirements",
+  "prerequisites": []
+}

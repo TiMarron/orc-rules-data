@@ -1,0 +1,24 @@
+{
+  "id": "item.iron-equalizer",
+  "type": "item",
+  "name": "item.iron-equalizer.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 305,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.iron-equalizer.text",
+  "level": 12,
+  "priceCp": 40000,
+  "bulk": "0",
+  "usage": "item.iron-equalizer.usage",
+  "category": "talisman"
+}

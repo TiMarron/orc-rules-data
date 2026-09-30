@@ -1,0 +1,23 @@
+{
+  "id": "item.snake-oil",
+  "type": "item",
+  "name": "item.snake-oil.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 296,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.snake-oil.text",
+  "level": 1,
+  "priceCp": 200,
+  "bulk": "L",
+  "usage": "item.snake-oil.usage",
+  "category": "alchemical"
+}

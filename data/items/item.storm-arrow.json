@@ -1,0 +1,24 @@
+{
+  "id": "item.storm-arrow",
+  "type": "item",
+  "name": "item.storm-arrow.name",
+  "traits": [
+    "air",
+    "consumable",
+    "electricity",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 301,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.storm-arrow.text",
+  "level": 9,
+  "priceCp": 13000,
+  "bulk": "0",
+  "category": "consumable"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.alchemist-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 57,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-initial-proficiencies.text",
+  "class": "class.alchemist",
+  "level": 1
+}

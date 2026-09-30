@@ -1,0 +1,21 @@
+{
+  "id": "feat.disarming-flair",
+  "type": "feat",
+  "name": "feat.disarming-flair.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 157,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disarming-flair.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "item.absolute-solvent",
+  "type": "item",
+  "name": "item.absolute-solvent.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.absolute-solvent.text",
+  "level": 5,
+  "bulk": "L",
+  "usage": "item.absolute-solvent.usage",
+  "category": "alchemical"
+}

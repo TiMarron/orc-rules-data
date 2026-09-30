@@ -1,0 +1,24 @@
+{
+  "id": "item.elixir-of-gender-transformation-greater",
+  "type": "item",
+  "name": "item.elixir-of-gender-transformation-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.elixir-of-gender-transformation-greater.text",
+  "level": 6,
+  "priceCp": 3500,
+  "bulk": "L",
+  "usage": "item.elixir-of-gender-transformation-greater.usage",
+  "category": "alchemical"
+}

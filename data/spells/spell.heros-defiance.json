@@ -1,0 +1,27 @@
+{
+  "id": "spell.heros-defiance",
+  "type": "spell",
+  "name": "spell.heros-defiance.name",
+  "traits": [
+    "champion",
+    "concentrate",
+    "focus",
+    "healing",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.heros-defiance.text",
+  "rank": 10,
+  "focus": true,
+  "cast": {
+    "actions": "free"
+  },
+  "trigger": "spell.heros-defiance.trigger"
+}

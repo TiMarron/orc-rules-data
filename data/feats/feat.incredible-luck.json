@@ -1,0 +1,27 @@
+{
+  "id": "feat.incredible-luck",
+  "type": "feat",
+  "name": "feat.incredible-luck.name",
+  "traits": [
+    "fortune",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.incredible-luck.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.charmed-life"
+    }
+  ]
+}

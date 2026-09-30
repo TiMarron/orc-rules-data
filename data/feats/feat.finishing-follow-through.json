@@ -1,0 +1,21 @@
+{
+  "id": "feat.finishing-follow-through",
+  "type": "feat",
+  "name": "feat.finishing-follow-through.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 165,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.finishing-follow-through.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": []
+}

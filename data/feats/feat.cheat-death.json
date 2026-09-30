@@ -1,0 +1,23 @@
+{
+  "id": "feat.cheat-death",
+  "type": "feat",
+  "name": "feat.cheat-death.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 168,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cheat-death.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "reaction",
+  "trigger": "feat.cheat-death.trigger",
+  "prerequisites": []
+}

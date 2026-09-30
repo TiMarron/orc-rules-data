@@ -1,0 +1,46 @@
+{
+  "id": "item.urn-of-ashes",
+  "type": "item",
+  "name": "item.urn-of-ashes.name",
+  "traits": [
+    "magical",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 307,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.urn-of-ashes.text",
+  "level": 9,
+  "priceCp": 70000,
+  "bulk": "0",
+  "usage": "item.urn-of-ashes.usage",
+  "activations": [
+    {
+      "name": "item.urn-of-ashes.activations.0.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "trigger": "item.urn-of-ashes.activations.0.trigger",
+      "requirements": "item.urn-of-ashes.activations.0.requirements",
+      "text": "item.urn-of-ashes.activations.0.text"
+    },
+    {
+      "name": "item.urn-of-ashes.activations.1.name",
+      "actions": "1",
+      "traits": [
+        "attack",
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.urn-of-ashes.activations.1.frequency",
+      "text": "item.urn-of-ashes.activations.1.text"
+    }
+  ],
+  "category": "held"
+}

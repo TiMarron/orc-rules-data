@@ -1,0 +1,26 @@
+{
+  "id": "feat.uncanny-bombs",
+  "type": "feat",
+  "name": "feat.uncanny-bombs.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 68,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.uncanny-bombs.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.far-lobber"
+    }
+  ]
+}

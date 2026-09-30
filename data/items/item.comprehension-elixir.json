@@ -1,0 +1,24 @@
+{
+  "id": "item.comprehension-elixir",
+  "type": "item",
+  "name": "item.comprehension-elixir.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.comprehension-elixir.text",
+  "level": 2,
+  "bulk": "L",
+  "usage": "item.comprehension-elixir.usage",
+  "category": "alchemical"
+}

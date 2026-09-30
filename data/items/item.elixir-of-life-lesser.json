@@ -1,0 +1,25 @@
+{
+  "id": "item.elixir-of-life-lesser",
+  "type": "item",
+  "name": "item.elixir-of-life-lesser.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.elixir-of-life-lesser.text",
+  "level": 5,
+  "priceCp": 3000,
+  "bulk": "L",
+  "usage": "item.elixir-of-life-lesser.usage",
+  "category": "alchemical"
+}

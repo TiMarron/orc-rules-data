@@ -1,0 +1,23 @@
+{
+  "id": "feat.after-you",
+  "type": "feat",
+  "name": "feat.after-you.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 164,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.after-you.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "free",
+  "trigger": "feat.after-you.trigger",
+  "prerequisites": []
+}

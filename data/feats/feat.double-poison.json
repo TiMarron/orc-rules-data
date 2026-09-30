@@ -1,0 +1,21 @@
+{
+  "id": "feat.double-poison",
+  "type": "feat",
+  "name": "feat.double-poison.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 68,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.double-poison.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

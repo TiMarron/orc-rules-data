@@ -1,0 +1,24 @@
+{
+  "id": "item.cats-eye-elixir",
+  "type": "item",
+  "name": "item.cats-eye-elixir.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.cats-eye-elixir.text",
+  "level": 2,
+  "priceCp": 700,
+  "bulk": "L",
+  "usage": "item.cats-eye-elixir.usage",
+  "category": "alchemical"
+}

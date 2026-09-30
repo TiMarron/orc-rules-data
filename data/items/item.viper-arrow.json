@@ -1,0 +1,22 @@
+{
+  "id": "item.viper-arrow",
+  "type": "item",
+  "name": "item.viper-arrow.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 302,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.viper-arrow.text",
+  "level": 4,
+  "priceCp": 1700,
+  "bulk": "0",
+  "category": "consumable"
+}

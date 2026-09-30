@@ -1,0 +1,26 @@
+{
+  "id": "item.blasting-stone-moderate",
+  "type": "item",
+  "name": "item.blasting-stone-moderate.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "sonic",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.blasting-stone-moderate.text",
+  "level": 3,
+  "priceCp": 1000,
+  "bulk": "L",
+  "usage": "item.blasting-stone-moderate.usage",
+  "category": "alchemical"
+}

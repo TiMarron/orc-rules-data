@@ -1,0 +1,23 @@
+{
+  "id": "item.smoke-ball-greater",
+  "type": "item",
+  "name": "item.smoke-ball-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 296,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.smoke-ball-greater.text",
+  "level": 7,
+  "priceCp": 5300,
+  "bulk": "L",
+  "usage": "item.smoke-ball-greater.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "item.wyvern-poison",
+  "type": "item",
+  "name": "item.wyvern-poison.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.wyvern-poison.text",
+  "level": 8,
+  "priceCp": 8000,
+  "bulk": "L",
+  "usage": "item.wyvern-poison.usage",
+  "category": "alchemical"
+}

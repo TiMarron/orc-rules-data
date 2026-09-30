@@ -1,0 +1,23 @@
+{
+  "id": "feat.dastardly-dash",
+  "type": "feat",
+  "name": "feat.dastardly-dash.name",
+  "traits": [
+    "flourish",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 165,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dastardly-dash.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

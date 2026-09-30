@@ -1,0 +1,25 @@
+{
+  "id": "item.elixir-of-life-greater",
+  "type": "item",
+  "name": "item.elixir-of-life-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.elixir-of-life-greater.text",
+  "level": 13,
+  "priceCp": 60000,
+  "bulk": "L",
+  "usage": "item.elixir-of-life-greater.usage",
+  "category": "alchemical"
+}

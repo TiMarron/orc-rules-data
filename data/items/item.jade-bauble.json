@@ -1,0 +1,25 @@
+{
+  "id": "item.jade-bauble",
+  "type": "item",
+  "name": "item.jade-bauble.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "mental",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 305,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.jade-bauble.text",
+  "level": 8,
+  "priceCp": 10000,
+  "bulk": "0",
+  "usage": "item.jade-bauble.usage",
+  "category": "talisman"
+}

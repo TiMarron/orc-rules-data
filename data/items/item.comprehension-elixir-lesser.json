@@ -1,0 +1,25 @@
+{
+  "id": "item.comprehension-elixir-lesser",
+  "type": "item",
+  "name": "item.comprehension-elixir-lesser.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.comprehension-elixir-lesser.text",
+  "level": 2,
+  "priceCp": 700,
+  "bulk": "L",
+  "usage": "item.comprehension-elixir-lesser.usage",
+  "category": "alchemical"
+}

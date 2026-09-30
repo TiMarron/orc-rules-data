@@ -1,0 +1,25 @@
+{
+  "id": "item.potion-of-disguise-lesser",
+  "type": "item",
+  "name": "item.potion-of-disguise-lesser.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "polymorph",
+    "potion"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.potion-of-disguise-lesser.text",
+  "level": 5,
+  "priceCp": 3000,
+  "bulk": "L",
+  "usage": "item.potion-of-disguise-lesser.usage",
+  "category": "consumable"
+}

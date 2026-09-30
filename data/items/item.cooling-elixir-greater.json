@@ -1,0 +1,24 @@
+{
+  "id": "item.cooling-elixir-greater",
+  "type": "item",
+  "name": "item.cooling-elixir-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.cooling-elixir-greater.text",
+  "level": 16,
+  "priceCp": 140000,
+  "bulk": "L",
+  "usage": "item.cooling-elixir-greater.usage",
+  "category": "alchemical"
+}

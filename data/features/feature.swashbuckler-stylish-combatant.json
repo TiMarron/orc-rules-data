@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-stylish-combatant",
+  "type": "feature",
+  "name": "feature.swashbuckler-stylish-combatant.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-stylish-combatant.text",
+  "class": "class.swashbuckler",
+  "level": 1
+}

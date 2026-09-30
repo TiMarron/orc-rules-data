@@ -1,0 +1,23 @@
+{
+  "id": "feat.vivacious-bravado",
+  "type": "feat",
+  "name": "feat.vivacious-bravado.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vivacious-bravado.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "requirements": "feat.vivacious-bravado.requirements",
+  "prerequisites": []
+}

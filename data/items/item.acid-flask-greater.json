@@ -1,0 +1,26 @@
+{
+  "id": "item.acid-flask-greater",
+  "type": "item",
+  "name": "item.acid-flask-greater.name",
+  "traits": [
+    "acid",
+    "alchemical",
+    "bomb",
+    "consumable",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.acid-flask-greater.text",
+  "level": 11,
+  "priceCp": 25000,
+  "bulk": "L",
+  "usage": "item.acid-flask-greater.usage",
+  "category": "alchemical"
+}

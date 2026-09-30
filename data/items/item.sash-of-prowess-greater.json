@@ -1,0 +1,46 @@
+{
+  "id": "item.sash-of-prowess-greater",
+  "type": "item",
+  "name": "item.sash-of-prowess-greater.name",
+  "traits": [
+    "focused",
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 311,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.sash-of-prowess-greater.text",
+  "level": 17,
+  "priceCp": 1300000,
+  "bulk": "0",
+  "usage": "item.sash-of-prowess-greater.usage",
+  "activations": [
+    {
+      "name": "item.sash-of-prowess-greater.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.sash-of-prowess-greater.activations.0.frequency",
+      "requirements": "item.sash-of-prowess-greater.activations.0.requirements",
+      "text": "item.sash-of-prowess-greater.activations.0.text"
+    },
+    {
+      "name": "item.sash-of-prowess-greater.activations.1.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.sash-of-prowess-greater.activations.1.frequency",
+      "text": "item.sash-of-prowess-greater.activations.1.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Reserved Material removed: the named deity in the example of religious symbology is dropped, leaving the symbol itself. The rules text is the book's."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-alchemical-expertise",
+  "type": "feature",
+  "name": "feature.alchemist-alchemical-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-alchemical-expertise.text",
+  "class": "class.alchemist",
+  "level": 9
+}

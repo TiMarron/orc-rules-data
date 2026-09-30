@@ -1,0 +1,21 @@
+{
+  "id": "feat.panache-paragon",
+  "type": "feat",
+  "name": "feat.panache-paragon.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.panache-paragon.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": []
+}

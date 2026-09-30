@@ -1,0 +1,25 @@
+{
+  "id": "item.terrifying-ammunition",
+  "type": "item",
+  "name": "item.terrifying-ammunition.name",
+  "traits": [
+    "consumable",
+    "emotion",
+    "fear",
+    "magical",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 302,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.terrifying-ammunition.text",
+  "level": 6,
+  "priceCp": 5000,
+  "bulk": "0",
+  "category": "consumable"
+}

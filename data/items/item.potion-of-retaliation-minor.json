@@ -1,0 +1,24 @@
+{
+  "id": "item.potion-of-retaliation-minor",
+  "type": "item",
+  "name": "item.potion-of-retaliation-minor.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.potion-of-retaliation-minor.text",
+  "level": 1,
+  "priceCp": 400,
+  "bulk": "L",
+  "usage": "item.potion-of-retaliation-minor.usage",
+  "category": "consumable"
+}

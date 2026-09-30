@@ -1,0 +1,24 @@
+{
+  "id": "item.sea-touch-elixir",
+  "type": "item",
+  "name": "item.sea-touch-elixir.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.sea-touch-elixir.text",
+  "level": 5,
+  "bulk": "L",
+  "usage": "item.sea-touch-elixir.usage",
+  "category": "alchemical"
+}

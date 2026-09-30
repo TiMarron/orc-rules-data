@@ -1,0 +1,25 @@
+{
+  "id": "item.arsenic",
+  "type": "item",
+  "name": "item.arsenic.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "ingested",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 291,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.arsenic.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.arsenic.usage",
+  "category": "alchemical"
+}

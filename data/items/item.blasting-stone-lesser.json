@@ -1,0 +1,26 @@
+{
+  "id": "item.blasting-stone-lesser",
+  "type": "item",
+  "name": "item.blasting-stone-lesser.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "sonic",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.blasting-stone-lesser.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.blasting-stone-lesser.usage",
+  "category": "alchemical"
+}

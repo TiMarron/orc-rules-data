@@ -1,0 +1,26 @@
+{
+  "id": "item.brimstone-fumes",
+  "type": "item",
+  "name": "item.brimstone-fumes.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "inhaled",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.brimstone-fumes.text",
+  "level": 16,
+  "priceCp": 150000,
+  "bulk": "L",
+  "usage": "item.brimstone-fumes.usage",
+  "category": "alchemical",
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with a generic descriptor. The rules text is the book's."
+}

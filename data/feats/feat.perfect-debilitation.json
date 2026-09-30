@@ -1,0 +1,21 @@
+{
+  "id": "feat.perfect-debilitation",
+  "type": "feat",
+  "name": "feat.perfect-debilitation.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.perfect-debilitation.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

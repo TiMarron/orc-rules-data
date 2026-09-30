@@ -1,0 +1,24 @@
+{
+  "id": "item.tricky-liniment",
+  "type": "item",
+  "name": "item.tricky-liniment.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 303,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.tricky-liniment.text",
+  "level": 5,
+  "priceCp": 2500,
+  "bulk": "L",
+  "usage": "item.tricky-liniment.usage",
+  "category": "consumable"
+}

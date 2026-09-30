@@ -1,0 +1,26 @@
+{
+  "id": "item.frost-vial-major",
+  "type": "item",
+  "name": "item.frost-vial-major.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "cold",
+    "consumable",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.frost-vial-major.text",
+  "level": 17,
+  "priceCp": 250000,
+  "bulk": "L",
+  "usage": "item.frost-vial-major.usage",
+  "category": "alchemical"
+}

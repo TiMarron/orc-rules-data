@@ -1,0 +1,25 @@
+{
+  "id": "item.balisse-feather-greater",
+  "type": "item",
+  "name": "item.balisse-feather-greater.name",
+  "traits": [
+    "consumable",
+    "holy",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 305,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.balisse-feather-greater.text",
+  "level": 16,
+  "priceCp": 200000,
+  "bulk": "0",
+  "usage": "item.balisse-feather-greater.usage",
+  "category": "talisman"
+}

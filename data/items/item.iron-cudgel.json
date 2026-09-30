@@ -1,0 +1,24 @@
+{
+  "id": "item.iron-cudgel",
+  "type": "item",
+  "name": "item.iron-cudgel.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 305,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.iron-cudgel.text",
+  "level": 14,
+  "priceCp": 90000,
+  "bulk": "0",
+  "usage": "item.iron-cudgel.usage",
+  "category": "talisman"
+}

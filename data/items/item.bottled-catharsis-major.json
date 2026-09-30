@@ -1,0 +1,25 @@
+{
+  "id": "item.bottled-catharsis-major",
+  "type": "item",
+  "name": "item.bottled-catharsis-major.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.bottled-catharsis-major.text",
+  "level": 18,
+  "priceCp": 325000,
+  "bulk": "L",
+  "usage": "item.bottled-catharsis-major.usage",
+  "category": "alchemical"
+}

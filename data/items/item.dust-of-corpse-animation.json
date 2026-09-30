@@ -1,0 +1,23 @@
+{
+  "id": "item.dust-of-corpse-animation",
+  "type": "item",
+  "name": "item.dust-of-corpse-animation.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 306,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dust-of-corpse-animation.text",
+  "level": 8,
+  "priceCp": 10000,
+  "bulk": "0",
+  "usage": "item.dust-of-corpse-animation.usage",
+  "category": "consumable"
+}

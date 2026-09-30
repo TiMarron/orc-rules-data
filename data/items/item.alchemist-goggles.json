@@ -1,0 +1,23 @@
+{
+  "id": "item.alchemist-goggles",
+  "type": "item",
+  "name": "item.alchemist-goggles.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.alchemist-goggles.text",
+  "level": 4,
+  "priceCp": 10000,
+  "bulk": "0",
+  "usage": "item.alchemist-goggles.usage",
+  "category": "worn"
+}

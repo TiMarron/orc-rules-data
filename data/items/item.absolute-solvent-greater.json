@@ -1,0 +1,23 @@
+{
+  "id": "item.absolute-solvent-greater",
+  "type": "item",
+  "name": "item.absolute-solvent-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.absolute-solvent-greater.text",
+  "level": 18,
+  "priceCp": 325000,
+  "bulk": "L",
+  "usage": "item.absolute-solvent-greater.usage",
+  "category": "alchemical"
+}

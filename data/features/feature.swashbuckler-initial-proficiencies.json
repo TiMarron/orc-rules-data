@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.swashbuckler-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 159,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-initial-proficiencies.text",
+  "class": "class.swashbuckler",
+  "level": 1
+}

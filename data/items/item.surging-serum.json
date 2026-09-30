@@ -1,0 +1,24 @@
+{
+  "id": "item.surging-serum",
+  "type": "item",
+  "name": "item.surging-serum.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.surging-serum.text",
+  "level": 2,
+  "bulk": "L",
+  "usage": "item.surging-serum.usage",
+  "category": "alchemical"
+}

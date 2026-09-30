@@ -1,0 +1,25 @@
+{
+  "id": "item.spider-venom",
+  "type": "item",
+  "name": "item.spider-venom.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.spider-venom.text",
+  "level": 5,
+  "priceCp": 2500,
+  "bulk": "L",
+  "usage": "item.spider-venom.usage",
+  "category": "alchemical"
+}

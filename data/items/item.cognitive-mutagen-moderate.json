@@ -1,0 +1,26 @@
+{
+  "id": "item.cognitive-mutagen-moderate",
+  "type": "item",
+  "name": "item.cognitive-mutagen-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mutagen",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 289,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.cognitive-mutagen-moderate.text",
+  "level": 3,
+  "priceCp": 1200,
+  "bulk": "L",
+  "usage": "item.cognitive-mutagen-moderate.usage",
+  "category": "alchemical"
+}

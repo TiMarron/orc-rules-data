@@ -1,0 +1,25 @@
+{
+  "id": "item.black-adder-venom",
+  "type": "item",
+  "name": "item.black-adder-venom.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 291,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.black-adder-venom.text",
+  "level": 2,
+  "priceCp": 600,
+  "bulk": "L",
+  "usage": "item.black-adder-venom.usage",
+  "category": "alchemical"
+}

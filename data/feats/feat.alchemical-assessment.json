@@ -1,0 +1,27 @@
+{
+  "id": "feat.alchemical-assessment",
+  "type": "feat",
+  "name": "feat.alchemical-assessment.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 63,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.alchemical-assessment.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "trained"
+    }
+  ]
+}

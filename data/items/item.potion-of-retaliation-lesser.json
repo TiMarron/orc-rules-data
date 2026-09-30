@@ -1,0 +1,24 @@
+{
+  "id": "item.potion-of-retaliation-lesser",
+  "type": "item",
+  "name": "item.potion-of-retaliation-lesser.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.potion-of-retaliation-lesser.text",
+  "level": 3,
+  "priceCp": 1200,
+  "bulk": "L",
+  "usage": "item.potion-of-retaliation-lesser.usage",
+  "category": "consumable"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "item.drakeheart-mutagen-greater",
+  "type": "item",
+  "name": "item.drakeheart-mutagen-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mutagen",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 289,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.drakeheart-mutagen-greater.text",
+  "level": 11,
+  "priceCp": 30000,
+  "bulk": "L",
+  "usage": "item.drakeheart-mutagen-greater.usage",
+  "activations": [
+    {
+      "name": "item.drakeheart-mutagen-greater.activations.0.name",
+      "actions": "1",
+      "text": "item.drakeheart-mutagen-greater.activations.0.text"
+    }
+  ],
+  "category": "alchemical"
+}

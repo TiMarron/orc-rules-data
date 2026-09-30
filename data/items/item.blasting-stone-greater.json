@@ -1,0 +1,26 @@
+{
+  "id": "item.blasting-stone-greater",
+  "type": "item",
+  "name": "item.blasting-stone-greater.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "sonic",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.blasting-stone-greater.text",
+  "level": 11,
+  "priceCp": 25000,
+  "bulk": "L",
+  "usage": "item.blasting-stone-greater.usage",
+  "category": "alchemical"
+}

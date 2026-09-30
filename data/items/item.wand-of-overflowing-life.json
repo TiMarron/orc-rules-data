@@ -1,0 +1,31 @@
+{
+  "id": "item.wand-of-overflowing-life",
+  "type": "item",
+  "name": "item.wand-of-overflowing-life.name",
+  "traits": [
+    "healing",
+    "magical",
+    "vitality",
+    "wand"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 309,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.wand-of-overflowing-life.text",
+  "level": 9,
+  "bulk": "L",
+  "usage": "item.wand-of-overflowing-life.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "frequency": "item.wand-of-overflowing-life.activations.0.frequency",
+      "text": "item.wand-of-overflowing-life.activations.0.text"
+    }
+  ],
+  "category": "wand"
+}

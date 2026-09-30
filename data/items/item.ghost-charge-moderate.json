@@ -1,0 +1,26 @@
+{
+  "id": "item.ghost-charge-moderate",
+  "type": "item",
+  "name": "item.ghost-charge-moderate.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "splash",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.ghost-charge-moderate.text",
+  "level": 3,
+  "priceCp": 1000,
+  "bulk": "L",
+  "usage": "item.ghost-charge-moderate.usage",
+  "category": "alchemical"
+}

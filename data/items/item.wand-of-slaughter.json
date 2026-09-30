@@ -1,0 +1,30 @@
+{
+  "id": "item.wand-of-slaughter",
+  "type": "item",
+  "name": "item.wand-of-slaughter.name",
+  "traits": [
+    "magical",
+    "void",
+    "wand"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 309,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.wand-of-slaughter.text",
+  "level": 16,
+  "bulk": "L",
+  "usage": "item.wand-of-slaughter.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "frequency": "item.wand-of-slaughter.activations.0.frequency",
+      "text": "item.wand-of-slaughter.activations.0.text"
+    }
+  ],
+  "category": "wand"
+}

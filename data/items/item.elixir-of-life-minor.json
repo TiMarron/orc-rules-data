@@ -1,0 +1,25 @@
+{
+  "id": "item.elixir-of-life-minor",
+  "type": "item",
+  "name": "item.elixir-of-life-minor.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.elixir-of-life-minor.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.elixir-of-life-minor.usage",
+  "category": "alchemical"
+}

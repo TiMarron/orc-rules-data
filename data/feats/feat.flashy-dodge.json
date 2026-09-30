@@ -1,0 +1,24 @@
+{
+  "id": "feat.flashy-dodge",
+  "type": "feat",
+  "name": "feat.flashy-dodge.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 163,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flashy-dodge.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "reaction",
+  "trigger": "feat.flashy-dodge.trigger",
+  "requirements": "feat.flashy-dodge.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item.crystal-shards-greater",
+  "type": "item",
+  "name": "item.crystal-shards-greater.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "earth",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 284,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.crystal-shards-greater.text",
+  "level": 12,
+  "priceCp": 35000,
+  "bulk": "L",
+  "usage": "item.crystal-shards-greater.usage",
+  "category": "alchemical"
+}

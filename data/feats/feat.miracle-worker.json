@@ -1,0 +1,22 @@
+{
+  "id": "feat.miracle-worker",
+  "type": "feat",
+  "name": "feat.miracle-worker.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.miracle-worker.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.alchemist",
+  "frequency": "feat.miracle-worker.frequency",
+  "prerequisites": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "item.potion-of-retaliation",
+  "type": "item",
+  "name": "item.potion-of-retaliation.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.potion-of-retaliation.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.potion-of-retaliation.usage",
+  "category": "consumable"
+}

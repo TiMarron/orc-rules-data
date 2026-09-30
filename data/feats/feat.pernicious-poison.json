@@ -1,0 +1,22 @@
+{
+  "id": "feat.pernicious-poison",
+  "type": "feat",
+  "name": "feat.pernicious-poison.name",
+  "traits": [
+    "additive",
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 63,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pernicious-poison.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

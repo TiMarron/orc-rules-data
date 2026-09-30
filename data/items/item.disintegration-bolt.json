@@ -1,0 +1,22 @@
+{
+  "id": "item.disintegration-bolt",
+  "type": "item",
+  "name": "item.disintegration-bolt.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 301,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.disintegration-bolt.text",
+  "level": 15,
+  "priceCp": 130000,
+  "bulk": "0",
+  "category": "consumable"
+}

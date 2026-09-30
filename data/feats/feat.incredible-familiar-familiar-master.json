@@ -1,0 +1,25 @@
+{
+  "id": "feat.incredible-familiar-familiar-master",
+  "type": "feat",
+  "name": "feat.incredible-familiar-familiar-master.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 200,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.incredible-familiar-familiar-master.text",
+  "level": 10,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.enhanced-familiar"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.potion-of-retaliation-major",
+  "type": "item",
+  "name": "item.potion-of-retaliation-major.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.potion-of-retaliation-major.text",
+  "level": 18,
+  "priceCp": 500000,
+  "bulk": "L",
+  "usage": "item.potion-of-retaliation-major.usage",
+  "category": "consumable"
+}

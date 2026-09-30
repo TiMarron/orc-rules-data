@@ -1,0 +1,22 @@
+{
+  "id": "feat.brandishing-draw",
+  "type": "feat",
+  "name": "feat.brandishing-draw.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 165,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.brandishing-draw.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

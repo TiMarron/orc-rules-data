@@ -1,0 +1,25 @@
+{
+  "id": "item.frost-vial",
+  "type": "item",
+  "name": "item.frost-vial.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "cold",
+    "consumable",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.frost-vial.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.frost-vial.usage",
+  "category": "alchemical"
+}

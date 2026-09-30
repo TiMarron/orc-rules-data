@@ -1,0 +1,26 @@
+{
+  "id": "feat.supreme-invigorating-elixir",
+  "type": "feat",
+  "name": "feat.supreme-invigorating-elixir.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 68,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.supreme-invigorating-elixir.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.invigorating-elixir"
+    }
+  ]
+}

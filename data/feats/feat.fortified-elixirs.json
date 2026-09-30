@@ -1,0 +1,21 @@
+{
+  "id": "feat.fortified-elixirs",
+  "type": "feat",
+  "name": "feat.fortified-elixirs.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 66,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fortified-elixirs.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

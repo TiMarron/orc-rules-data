@@ -1,0 +1,25 @@
+{
+  "id": "item.hunters-bane",
+  "type": "item",
+  "name": "item.hunters-bane.name",
+  "traits": [
+    "consumable",
+    "detection",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 305,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.hunters-bane.text",
+  "level": 2,
+  "priceCp": 600,
+  "bulk": "0",
+  "usage": "item.hunters-bane.usage",
+  "category": "talisman"
+}

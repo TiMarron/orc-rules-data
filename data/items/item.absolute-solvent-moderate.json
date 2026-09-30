@@ -1,0 +1,23 @@
+{
+  "id": "item.absolute-solvent-moderate",
+  "type": "item",
+  "name": "item.absolute-solvent-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.absolute-solvent-moderate.text",
+  "level": 12,
+  "priceCp": 32500,
+  "bulk": "L",
+  "usage": "item.absolute-solvent-moderate.usage",
+  "category": "alchemical"
+}

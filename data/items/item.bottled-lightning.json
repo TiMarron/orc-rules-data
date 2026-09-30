@@ -1,0 +1,25 @@
+{
+  "id": "item.bottled-lightning",
+  "type": "item",
+  "name": "item.bottled-lightning.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "electricity",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 284,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.bottled-lightning.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.bottled-lightning.usage",
+  "category": "alchemical"
+}

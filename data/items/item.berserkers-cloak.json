@@ -1,0 +1,23 @@
+{
+  "id": "item.berserkers-cloak",
+  "type": "item",
+  "name": "item.berserkers-cloak.name",
+  "traits": [
+    "invested",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.berserkers-cloak.text",
+  "level": 12,
+  "priceCp": 200000,
+  "bulk": "1",
+  "usage": "item.berserkers-cloak.usage",
+  "category": "worn"
+}

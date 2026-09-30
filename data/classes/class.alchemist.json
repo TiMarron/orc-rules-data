@@ -1,0 +1,211 @@
+{
+  "id": "class.alchemist",
+  "type": "class",
+  "name": "class.alchemist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 57,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "class.alchemist.text",
+  "keyAttribute": "int",
+  "hp": 8,
+  "proficiencies": {
+    "perception": "trained",
+    "fortitude": "expert",
+    "reflex": "expert",
+    "will": "trained",
+    "skills": {
+      "additional": 3,
+      "fixed": [
+        "skill.crafting"
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "untrained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "trained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained"
+  },
+  "featLevels": {
+    "class": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.alchemist-alchemist-feats"
+    },
+    {
+      "level": 1,
+      "feature": "feature.alchemist-alchemy"
+    },
+    {
+      "level": 1,
+      "feature": "feature.alchemist-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.alchemist-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.alchemist-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.alchemist-research-field"
+    },
+    {
+      "level": 2,
+      "feature": "feature.alchemist-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.alchemist-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.alchemist-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.alchemist-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.alchemist-field-discovery"
+    },
+    {
+      "level": 5,
+      "feature": "feature.alchemist-powerful-alchemy"
+    },
+    {
+      "level": 7,
+      "feature": "feature.alchemist-alchemical-weapon-expertise"
+    },
+    {
+      "level": 7,
+      "feature": "feature.alchemist-will-expertise"
+    },
+    {
+      "level": 9,
+      "feature": "feature.alchemist-alchemical-expertise"
+    },
+    {
+      "level": 9,
+      "feature": "feature.alchemist-double-brew"
+    },
+    {
+      "level": 9,
+      "feature": "feature.alchemist-perception-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.alchemist-advanced-vials"
+    },
+    {
+      "level": 11,
+      "feature": "feature.alchemist-chemical-hardiness"
+    },
+    {
+      "level": 13,
+      "feature": "feature.alchemist-greater-field-discovery"
+    },
+    {
+      "level": 13,
+      "feature": "feature.alchemist-medium-armor-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.alchemist-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.alchemist-alchemical-weapon-mastery"
+    },
+    {
+      "level": 15,
+      "feature": "feature.alchemist-explosion-dodger"
+    },
+    {
+      "level": 17,
+      "feature": "feature.alchemist-abundant-vials"
+    },
+    {
+      "level": 17,
+      "feature": "feature.alchemist-alchemical-mastery"
+    },
+    {
+      "level": 19,
+      "feature": "feature.alchemist-medium-armor-mastery"
+    }
+  ],
+  "editNote": "Verified against the class entry in the book: key attribute, hit points, perception and saving throw ranks, weapon and armour proficiencies, trained skills and the advancement table (feat, skill increase, attribute boost and feature levels) all match. The table and art the book prints are omitted, as the dataset markup carries neither. The book also trains alchemical bombs; the record has no field for a proficiency outside the four weapon categories, so it is reported and stated in the class text only. The class feat at 1st level was missing from the feat levels and is now in the map. A few sentences carry the structured source's later wording rather than the printing (the light and medium armour expertise line)."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.champion-shield-block",
+  "type": "feature",
+  "name": "feature.champion-shield-block.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.champion-shield-block.text",
+  "class": "class.champion",
+  "level": 1
+}

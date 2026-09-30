@@ -1,0 +1,22 @@
+{
+  "id": "item.smoke-ball",
+  "type": "item",
+  "name": "item.smoke-ball.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 296,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.smoke-ball.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.smoke-ball.usage",
+  "category": "alchemical"
+}

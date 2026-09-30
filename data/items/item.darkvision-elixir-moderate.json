@@ -1,0 +1,24 @@
+{
+  "id": "item.darkvision-elixir-moderate",
+  "type": "item",
+  "name": "item.darkvision-elixir-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.darkvision-elixir-moderate.text",
+  "level": 4,
+  "priceCp": 1100,
+  "bulk": "L",
+  "usage": "item.darkvision-elixir-moderate.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.divine-reflexes",
+  "type": "feat",
+  "name": "feat.divine-reflexes.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-reflexes.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": []
+}

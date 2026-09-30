@@ -1,0 +1,23 @@
+{
+  "id": "feat.extravagant-parry",
+  "type": "feat",
+  "name": "feat.extravagant-parry.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 163,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.extravagant-parry.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "requirements": "feat.extravagant-parry.requirements",
+  "prerequisites": []
+}

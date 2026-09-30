@@ -1,0 +1,26 @@
+{
+  "id": "item.ghost-charge-lesser",
+  "type": "item",
+  "name": "item.ghost-charge-lesser.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "splash",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.ghost-charge-lesser.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.ghost-charge-lesser.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "item.absolute-solvent-lesser",
+  "type": "item",
+  "name": "item.absolute-solvent-lesser.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.absolute-solvent-lesser.text",
+  "level": 5,
+  "priceCp": 2100,
+  "bulk": "L",
+  "usage": "item.absolute-solvent-lesser.usage",
+  "category": "alchemical"
+}

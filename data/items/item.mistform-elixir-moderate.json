@@ -1,0 +1,26 @@
+{
+  "id": "item.mistform-elixir-moderate",
+  "type": "item",
+  "name": "item.mistform-elixir-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "illusion",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.mistform-elixir-moderate.text",
+  "level": 6,
+  "priceCp": 5600,
+  "bulk": "L",
+  "usage": "item.mistform-elixir-moderate.usage",
+  "category": "alchemical"
+}

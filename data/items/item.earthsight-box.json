@@ -1,0 +1,35 @@
+{
+  "id": "item.earthsight-box",
+  "type": "item",
+  "name": "item.earthsight-box.name",
+  "traits": [
+    "magical",
+    "scrying"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 307,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.earthsight-box.text",
+  "level": 9,
+  "priceCp": 57500,
+  "bulk": "L",
+  "usage": "item.earthsight-box.usage",
+  "activations": [
+    {
+      "name": "item.earthsight-box.activations.0.name",
+      "time": "item.earthsight-box.activations.0.time",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.earthsight-box.activations.0.frequency",
+      "text": "item.earthsight-box.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

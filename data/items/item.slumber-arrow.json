@@ -1,0 +1,24 @@
+{
+  "id": "item.slumber-arrow",
+  "type": "item",
+  "name": "item.slumber-arrow.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "mental",
+    "sleep"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 301,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.slumber-arrow.text",
+  "level": 3,
+  "priceCp": 1000,
+  "bulk": "0",
+  "category": "consumable"
+}

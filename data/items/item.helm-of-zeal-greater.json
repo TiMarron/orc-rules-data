@@ -1,0 +1,45 @@
+{
+  "id": "item.helm-of-zeal-greater",
+  "type": "item",
+  "name": "item.helm-of-zeal-greater.name",
+  "traits": [
+    "divine",
+    "focused",
+    "invested"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.helm-of-zeal-greater.text",
+  "level": 18,
+  "priceCp": 2100000,
+  "bulk": "L",
+  "usage": "item.helm-of-zeal-greater.usage",
+  "activations": [
+    {
+      "name": "item.helm-of-zeal-greater.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.helm-of-zeal-greater.activations.0.frequency",
+      "text": "item.helm-of-zeal-greater.activations.0.text"
+    },
+    {
+      "name": "item.helm-of-zeal-greater.activations.1.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.helm-of-zeal-greater.activations.1.frequency",
+      "trigger": "item.helm-of-zeal-greater.activations.1.trigger",
+      "text": "item.helm-of-zeal-greater.activations.1.text"
+    }
+  ],
+  "category": "worn"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "item.deathcap-powder",
+  "type": "item",
+  "name": "item.deathcap-powder.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "ingested",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.deathcap-powder.text",
+  "level": 13,
+  "priceCp": 45000,
+  "bulk": "L",
+  "usage": "item.deathcap-powder.usage",
+  "category": "alchemical"
+}

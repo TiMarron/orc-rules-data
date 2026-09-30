@@ -1,0 +1,25 @@
+{
+  "id": "item.blightburn-resin",
+  "type": "item",
+  "name": "item.blightburn-resin.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "contact",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 291,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.blightburn-resin.text",
+  "level": 11,
+  "priceCp": 22500,
+  "bulk": "L",
+  "usage": "item.blightburn-resin.usage",
+  "category": "alchemical"
+}

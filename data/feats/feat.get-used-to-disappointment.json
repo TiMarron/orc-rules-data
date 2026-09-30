@@ -1,0 +1,30 @@
+{
+  "id": "feat.get-used-to-disappointment",
+  "type": "feat",
+  "name": "feat.get-used-to-disappointment.name",
+  "traits": [
+    "bravado",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 168,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.get-used-to-disappointment.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "free",
+  "requirements": "feat.get-used-to-disappointment.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "expert"
+    }
+  ]
+}

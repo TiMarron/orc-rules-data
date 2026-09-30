@@ -1,0 +1,26 @@
+{
+  "id": "feat.improvise-admixture",
+  "type": "feat",
+  "name": "feat.improvise-admixture.name",
+  "traits": [
+    "alchemist",
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 63,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improvise-admixture.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.alchemist",
+  "actions": "1",
+  "requirements": "feat.improvise-admixture.requirements",
+  "frequency": "feat.improvise-admixture.frequency",
+  "prerequisites": []
+}

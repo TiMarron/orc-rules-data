@@ -1,0 +1,24 @@
+{
+  "id": "item.ration-tonic",
+  "type": "item",
+  "name": "item.ration-tonic.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.ration-tonic.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.ration-tonic.usage",
+  "category": "consumable"
+}

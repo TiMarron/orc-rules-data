@@ -1,0 +1,34 @@
+{
+  "id": "spell.lay-on-hands",
+  "type": "spell",
+  "name": "spell.lay-on-hands.name",
+  "traits": [
+    "champion",
+    "focus",
+    "healing",
+    "manipulate",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 256,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "spell.lay-on-hands.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.lay-on-hands.range",
+  "targets": "spell.lay-on-hands.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.lay-on-hands.heightened.0"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.elegant-buckler",
+  "type": "feat",
+  "name": "feat.elegant-buckler.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 163,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.elegant-buckler.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": []
+}

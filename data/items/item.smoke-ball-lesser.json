@@ -1,0 +1,23 @@
+{
+  "id": "item.smoke-ball-lesser",
+  "type": "item",
+  "name": "item.smoke-ball-lesser.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 296,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.smoke-ball-lesser.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.smoke-ball-lesser.usage",
+  "category": "alchemical"
+}

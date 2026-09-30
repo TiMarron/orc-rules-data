@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-weapon-specialization",
+  "type": "feature",
+  "name": "feature.alchemist-weapon-specialization.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-weapon-specialization.text",
+  "class": "class.alchemist",
+  "level": 13
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.eagle-eye-elixir-moderate",
+  "type": "item",
+  "name": "item.eagle-eye-elixir-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.eagle-eye-elixir-moderate.text",
+  "level": 5,
+  "priceCp": 2700,
+  "bulk": "L",
+  "usage": "item.eagle-eye-elixir-moderate.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.revitalizing-finisher",
+  "type": "feat",
+  "name": "feat.revitalizing-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.revitalizing-finisher.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

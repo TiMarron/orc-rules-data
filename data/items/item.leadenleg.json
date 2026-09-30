@@ -1,0 +1,25 @@
+{
+  "id": "item.leadenleg",
+  "type": "item",
+  "name": "item.leadenleg.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 293,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.leadenleg.text",
+  "level": 4,
+  "priceCp": 1500,
+  "bulk": "L",
+  "usage": "item.leadenleg.usage",
+  "category": "alchemical"
+}

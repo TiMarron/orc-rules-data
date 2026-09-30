@@ -1,0 +1,23 @@
+{
+  "id": "feat.retreating-finisher",
+  "type": "feat",
+  "name": "feat.retreating-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 165,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.retreating-finisher.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

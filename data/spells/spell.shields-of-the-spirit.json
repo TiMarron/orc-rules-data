@@ -1,0 +1,33 @@
+{
+  "id": "spell.shields-of-the-spirit",
+  "type": "spell",
+  "name": "spell.shields-of-the-spirit.name",
+  "traits": [
+    "champion",
+    "concentrate",
+    "focus",
+    "sanctified",
+    "spirit"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 256,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.shields-of-the-spirit.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.shields-of-the-spirit.heightened.0"
+    }
+  ],
+  "requirements": "spell.shields-of-the-spirit.requirements"
+}

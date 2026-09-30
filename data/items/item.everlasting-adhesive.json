@@ -1,0 +1,23 @@
+{
+  "id": "item.everlasting-adhesive",
+  "type": "item",
+  "name": "item.everlasting-adhesive.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.everlasting-adhesive.text",
+  "level": 7,
+  "priceCp": 5500,
+  "bulk": "L",
+  "usage": "item.everlasting-adhesive.usage",
+  "category": "alchemical"
+}

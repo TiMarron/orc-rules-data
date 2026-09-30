@@ -1,0 +1,23 @@
+{
+  "id": "feat.bleeding-finisher",
+  "type": "feat",
+  "name": "feat.bleeding-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 166,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bleeding-finisher.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}
