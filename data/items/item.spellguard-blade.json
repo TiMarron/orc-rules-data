@@ -12,11 +12,12 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.spellguard-blade.text",
   "level": 7,
   "priceCp": 32000,
   "bulk": "L",
   "usage": "item.spellguard-blade.usage",
-  "category": "other"
+  "category": "other",
+  "editNote": "Accepted: the item's description and activations were compared with the book. It is kept as category 'other' because a specific magic weapon has no statistics of its own in the record; they are those of the base weapon the text links to. The reports about links are to rules pages the dataset does not model, kept as their labels; the Spiritsight Crossbow's plane name is replaced by generic wording (see the edit)."
 }

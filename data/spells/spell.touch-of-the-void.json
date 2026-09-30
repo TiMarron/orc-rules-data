@@ -15,7 +15,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.touch-of-the-void.text",
   "rank": 1,
   "focus": true,
@@ -29,5 +29,6 @@
       "level": "+1",
       "text": "spell.touch-of-the-void.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Accepted: rank, rarity, traits, cost, focus, range, targets, both bulleted options and the heightening line all match the printing word for word. The converter's flag is only the two bullet lists, kept as dash lines."
 }

@@ -16,10 +16,11 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.frost-vial.text",
   "level": 1,
   "bulk": "L",
   "usage": "item.frost-vial.usage",
-  "category": "alchemical"
+  "category": "alchemical",
+  "editNote": "Accepted: the only reports are informational. The structured source repeats an item family's variants (Lesser, Moderate, Greater, Major and the like) as headings under the family; every one of them is its own record in the dataset with its own level and price, so nothing is lost by dropping the headings here. The 'other book' citations sit in the variants' source lines (the earlier printing), not in the record's text, which names no other book. For 141 of the 193 variant records the level and price were read off the book's 'type ...; level N; price ...' line and match with no exception; the remaining variants print in a different layout (a table or a staff's own type line) and were not machine-checked."
 }

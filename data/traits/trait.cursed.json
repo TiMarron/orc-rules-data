@@ -10,6 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
-  "text": "trait.cursed.text"
+  "edited": true,
+  "text": "trait.cursed.text",
+  "editNote": "Accepted: the structured source's summary is worded differently from the item-chapter prose it condenses (p.306 and p.304), but every statement in it is printed there: a curse is only revealed by a critical success on identifying, a cursed item that fuses cannot be discarded, and intelligent items cannot be crafted by normal means and are always rare or unique."
 }

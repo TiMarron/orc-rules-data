@@ -12,10 +12,11 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.dragonhide-object-high-grade.text",
   "level": 16,
   "priceCp": 600000,
   "bulk": "L",
-  "category": "other"
+  "category": "other",
+  "editNote": "Accepted: the description and craft requirements were compared with the book (the one glitch, a craft requirement repeated and glued together on a shield, was corrected by edit; the source also drops the unit in '+ 20 per Bulk', which the book prints as '+ 20 gp per Bulk'). Each is kept as an item of category 'other': a precious-material item has no fixed statistics of its own, they come from the armor or shield it is made into. Not represented: the two tables the material prints (the damage type each dragon tradition is immune to, and Hardness, HP and BT by grade and thickness), which the dataset markup cannot carry; the omission is recorded."
 }

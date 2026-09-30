@@ -12,7 +12,8 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "heritage.dhampir.text",
-  "versatile": true
+  "versatile": true,
+  "editNote": "Accepted: the reports are informational. A versatile heritage belongs to no single ancestry, so the record carries no ancestry link by design, and the 'You Might' and 'Others Probably' bullets are kept as dash lines. The text was read against the entry in the book; Reserved Material in it was removed by edit where it occurred."
 }

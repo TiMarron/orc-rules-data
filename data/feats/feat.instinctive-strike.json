@@ -12,7 +12,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "feat.instinctive-strike.text",
   "level": 8,
   "category": "class",
@@ -22,5 +22,6 @@
       "kind": "text",
       "key": "feat.instinctive-strike.prereq.0"
     }
-  ]
+  ],
+  "editNote": "Accepted: the only report is that the prerequisite is kept as a sentence rather than a structure, which the record holds as prose when the condition is a heritage, a subclass or a class feature (a list task for later, not an error). Each prerequisite was read against the book: 110 match word for word; the others differ only in phrasing (the structured source writes 'X mystery or Y mystery' where the book has 'X or Y mystery', adds the word 'heritage', or reorders two alternatives), and the one with a lost word was corrected by an edit."
 }

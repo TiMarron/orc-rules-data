@@ -9,14 +9,13 @@
     "page": 200,
     "revision": "2023-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "text": "school.school-of-unified-magical-theory.text",
   "class": "class.wizard",
   "level": 1,
   "schoolSpells": {
     "initial": "spell.hand-of-the-apprentice",
     "advanced": "spell.interdisciplinary-incantation"
-  },
-  "editNote": "Reserved Material removed: the named institutions and nations, and the book-title trade dress, replaced with generic descriptors; the wording otherwise unchanged."
+  }
 }

@@ -10,6 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
-  "text": "trait.staff.text"
+  "edited": true,
+  "text": "trait.staff.text",
+  "editNote": "Accepted: the structured source's one-line summary is not printed verbatim (p.278). The book's staff entry confirms a staff is tied to its preparer and yields the spells listed for it; only 'a particular theme' is the source's own gloss and states nothing the rules contradict."
 }

@@ -14,7 +14,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.wand-of-the-snowfields.text",
   "level": 14,
   "bulk": "L",
@@ -26,5 +26,6 @@
       "text": "item.wand-of-the-snowfields.activations.0.text"
     }
   ],
-  "category": "wand"
+  "category": "wand",
+  "editNote": "Accepted: the description, the activation and every spell list by rank were compared with the book and match (the book adds page references after some spell names; a staff repeats one spell across ranks where the book does, as in the Staff of Providence). The bullet lists are kept as dash lines; the 'other book' citations sit in the variants' source lines, not in the text; the variants are their own records."
 }

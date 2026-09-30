@@ -12,7 +12,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.cloth-of-nullification.text",
   "level": 20,
   "priceCp": 7500000,
@@ -28,5 +28,6 @@
       "text": "item.cloth-of-nullification.activations.0.text"
     }
   ],
-  "category": "held"
+  "category": "held",
+  "editNote": "Accepted: the description and activation were compared with the book and match. The flags are informational: bullet lists kept as dash lines, links to rules pages the dataset does not model kept as their labels, and the 'other book' citations that sit in the variants' source lines rather than in the text."
 }

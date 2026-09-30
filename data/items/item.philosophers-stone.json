@@ -13,10 +13,11 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.philosophers-stone.text",
   "level": 20,
   "bulk": "2",
   "usage": "item.philosophers-stone.usage",
-  "category": "alchemical"
+  "category": "alchemical",
+  "editNote": "Accepted: the description and activation were compared with the book and match. The flags are informational: bullet lists kept as dash lines, links to rules pages the dataset does not model kept as their labels, and the 'other book' citations that sit in the variants' source lines rather than in the text."
 }
