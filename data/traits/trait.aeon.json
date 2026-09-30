@@ -10,7 +10,6 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": true,
-  "text": "trait.aeon.text",
-  "editNote": "The structured source's paraphrase misstates the rule: it gives every aeon the dichotomy and the envisioning, and adds an unprinted sentence about axiomites. The book (creature traits glossary, p.326) exempts axiomites and inevitables from the dichotomy and from envisioning, so the text is the book's own wording."
+  "edited": false,
+  "text": "trait.aeon.text"
 }

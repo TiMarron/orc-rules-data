@@ -4,6 +4,33 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Added
+
+- Pathfinder Player Core 2: its eight classes, eight ancestries with their
+  heritages, feats (archetype feats included), spells, actions, backgrounds
+  and items, and the Reserved-Material review that goes with them.
+- The fifty GM Core traits that Player Core 2's items point at (splash,
+  invested, staff, talisman and the like).
+
+### Changed
+
+- Composite Longbow and Composite Shortbow are level 1, as the book's Fall 2024
+  errata (Player Core, page 281) says; the 0.3.0 entry that set the shortbow to
+  0 went by the first printing.
+- Records now follow Paizo's errata where the source text carries it: Devise a
+  Stratagem (no fortune trait on the action; the Strike gains it), Medusa's
+  Scream (Hardness 13, HP 52, BT 26), the definition of the aeon trait, and the
+  Player Core 2 corrections to Impressive Mount, Quaking Stomp and Spellhorn
+  Kobold.
+- The closing "<Name> leads to..." and "Feats that require <Heritage>..." lists
+  the source appends to a feat or a heritage are no longer part of the text:
+  they are a reverse index of prerequisites, not text of the book.
+- Text glitches corrected: italic markers left around words, a word glued to
+  the next, a craft requirement printed twice, and one misspelled name and id
+  (Certain Stratagem).
+
 ## 0.4.0 — 2026-09-27
 
 ### Added
