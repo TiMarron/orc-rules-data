@@ -1,0 +1,234 @@
+{
+  "id": "class.investigator",
+  "type": "class",
+  "name": "class.investigator.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 101,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "class.investigator.text",
+  "keyAttribute": "int",
+  "hp": 8,
+  "proficiencies": {
+    "perception": "expert",
+    "fortitude": "trained",
+    "reflex": "expert",
+    "will": "expert",
+    "skills": {
+      "additional": 4,
+      "fixed": [
+        "skill.society"
+      ],
+      "choices": [
+        {
+          "count": 1,
+          "text": "class.investigator.skill-choice.0"
+        }
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "trained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "untrained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained"
+  },
+  "featLevels": {
+    "class": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.investigator-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.investigator-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.investigator-devise-a-stratagem"
+    },
+    {
+      "level": 1,
+      "feature": "feature.investigator-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.investigator-investigator-feats"
+    },
+    {
+      "level": 1,
+      "feature": "feature.investigator-methodology"
+    },
+    {
+      "level": 1,
+      "feature": "feature.investigator-on-the-case"
+    },
+    {
+      "level": 1,
+      "feature": "feature.investigator-strategic-strike"
+    },
+    {
+      "level": 2,
+      "feature": "feature.investigator-skill-feats"
+    },
+    {
+      "level": 2,
+      "feature": "feature.investigator-skill-increases"
+    },
+    {
+      "level": 3,
+      "feature": "feature.investigator-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.investigator-keen-recollection"
+    },
+    {
+      "level": 3,
+      "feature": "feature.investigator-skillful-lessons"
+    },
+    {
+      "level": 5,
+      "feature": "feature.investigator-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.investigator-weapon-expertise"
+    },
+    {
+      "level": 7,
+      "feature": "feature.investigator-vigilant-senses"
+    },
+    {
+      "level": 7,
+      "feature": "feature.investigator-weapon-specialization"
+    },
+    {
+      "level": 9,
+      "feature": "feature.investigator-fortitude-expertise"
+    },
+    {
+      "level": 9,
+      "feature": "feature.investigator-investigator-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.investigator-deductive-improvisation"
+    },
+    {
+      "level": 11,
+      "feature": "feature.investigator-dogged-will"
+    },
+    {
+      "level": 13,
+      "feature": "feature.investigator-incredible-senses"
+    },
+    {
+      "level": 13,
+      "feature": "feature.investigator-light-armor-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.investigator-weapon-mastery"
+    },
+    {
+      "level": 15,
+      "feature": "feature.investigator-greater-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.investigator-savvy-reflexes"
+    },
+    {
+      "level": 17,
+      "feature": "feature.investigator-greater-dogged-will"
+    },
+    {
+      "level": 19,
+      "feature": "feature.investigator-light-armor-mastery"
+    },
+    {
+      "level": 19,
+      "feature": "feature.investigator-master-detective"
+    }
+  ]
+}

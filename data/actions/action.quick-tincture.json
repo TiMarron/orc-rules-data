@@ -1,0 +1,20 @@
+{
+  "id": "action.quick-tincture",
+  "type": "action",
+  "name": "action.quick-tincture.name",
+  "traits": [
+    "investigator",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 103,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.quick-tincture.text",
+  "actions": "1",
+  "requirements": "action.quick-tincture.requirements"
+}

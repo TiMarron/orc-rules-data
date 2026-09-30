@@ -1,0 +1,24 @@
+{
+  "id": "feat.form-lock",
+  "type": "feat",
+  "name": "feat.form-lock.name",
+  "traits": [
+    "attack",
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 125,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.form-lock.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "requirements": "feat.form-lock.requirements",
+  "prerequisites": []
+}

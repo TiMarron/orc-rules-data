@@ -1,0 +1,24 @@
+{
+  "id": "feat.no-escape",
+  "type": "feat",
+  "name": "feat.no-escape.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.no-escape.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.no-escape.trigger",
+  "prerequisites": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "feat.dragon-roar",
+  "type": "feat",
+  "name": "feat.dragon-roar.name",
+  "traits": [
+    "auditory",
+    "emotion",
+    "fear",
+    "mental",
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dragon-roar.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "requirements": "feat.dragon-roar.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dragon-stance"
+    }
+  ]
+}

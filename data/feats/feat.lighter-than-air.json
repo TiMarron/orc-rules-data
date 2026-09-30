@@ -1,0 +1,27 @@
+{
+  "id": "feat.lighter-than-air",
+  "type": "feat",
+  "name": "feat.lighter-than-air.name",
+  "traits": [
+    "divine",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 142,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lighter-than-air.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.water-walker"
+    }
+  ]
+}

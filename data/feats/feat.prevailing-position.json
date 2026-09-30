@@ -1,0 +1,23 @@
+{
+  "id": "feat.prevailing-position",
+  "type": "feat",
+  "name": "feat.prevailing-position.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.prevailing-position.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "reaction",
+  "trigger": "feat.prevailing-position.trigger",
+  "prerequisites": []
+}

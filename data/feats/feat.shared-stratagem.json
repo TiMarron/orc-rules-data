@@ -1,0 +1,21 @@
+{
+  "id": "feat.shared-stratagem",
+  "type": "feat",
+  "name": "feat.shared-stratagem.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 107,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shared-stratagem.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

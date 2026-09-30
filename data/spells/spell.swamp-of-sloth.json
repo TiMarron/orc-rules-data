@@ -1,0 +1,39 @@
+{
+  "id": "spell.swamp-of-sloth",
+  "type": "spell",
+  "name": "spell.swamp-of-sloth.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "olfactory",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 263,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.swamp-of-sloth.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1-3"
+  },
+  "range": "spell.swamp-of-sloth.range",
+  "area": "spell.swamp-of-sloth.area",
+  "duration": "spell.swamp-of-sloth.duration",
+  "defense": {
+    "save": "fortitude",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.swamp-of-sloth.heightened.0"
+    }
+  ]
+}

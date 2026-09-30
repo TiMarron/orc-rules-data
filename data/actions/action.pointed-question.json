@@ -1,0 +1,22 @@
+{
+  "id": "action.pointed-question",
+  "type": "action",
+  "name": "action.pointed-question.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "investigator",
+    "linguistic",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 104,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.pointed-question.text",
+  "actions": "1"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "spell.elemental-toss",
+  "type": "spell",
+  "name": "spell.elemental-toss.name",
+  "traits": [
+    "attack",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 264,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.elemental-toss.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.elemental-toss.range",
+  "targets": "spell.elemental-toss.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.elemental-toss.heightened.0"
+    }
+  ]
+}

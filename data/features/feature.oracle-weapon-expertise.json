@@ -1,0 +1,17 @@
+{
+  "id": "feature.oracle-weapon-expertise",
+  "type": "feature",
+  "name": "feature.oracle-weapon-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 128,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.oracle-weapon-expertise.text",
+  "class": "class.oracle",
+  "level": 11
+}

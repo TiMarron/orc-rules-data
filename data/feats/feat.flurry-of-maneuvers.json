@@ -1,0 +1,27 @@
+{
+  "id": "feat.flurry-of-maneuvers",
+  "type": "feat",
+  "name": "feat.flurry-of-maneuvers.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flurry-of-maneuvers.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "expert"
+    }
+  ]
+}

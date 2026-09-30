@@ -1,0 +1,29 @@
+{
+  "id": "feat.dodging-roll",
+  "type": "feat",
+  "name": "feat.dodging-roll.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dodging-roll.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "reaction",
+  "trigger": "feat.dodging-roll.trigger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "master"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.terrifying-howl",
+  "type": "feat",
+  "name": "feat.terrifying-howl.name",
+  "traits": [
+    "auditory",
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.terrifying-howl.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.detectives-readiness",
+  "type": "feat",
+  "name": "feat.detectives-readiness.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 108,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.detectives-readiness.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

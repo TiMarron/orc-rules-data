@@ -1,0 +1,17 @@
+{
+  "id": "feature.monk-perfected-form",
+  "type": "feature",
+  "name": "feature.monk-perfected-form.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.monk-perfected-form.text",
+  "class": "class.monk",
+  "level": 19
+}

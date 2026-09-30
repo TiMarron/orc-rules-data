@@ -1,0 +1,23 @@
+{
+  "id": "feat.disrupt-qi",
+  "type": "feat",
+  "name": "feat.disrupt-qi.name",
+  "traits": [
+    "monk",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disrupt-qi.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "2",
+  "prerequisites": []
+}

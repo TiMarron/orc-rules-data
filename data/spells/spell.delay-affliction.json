@@ -1,0 +1,38 @@
+{
+  "id": "spell.delay-affliction",
+  "type": "spell",
+  "name": "spell.delay-affliction.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "healing",
+    "manipulate",
+    "oracle",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 261,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.delay-affliction.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.delay-affliction.range",
+  "targets": "spell.delay-affliction.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.delay-affliction.heightened.0"
+    }
+  ]
+}

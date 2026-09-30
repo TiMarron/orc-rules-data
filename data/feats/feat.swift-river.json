@@ -1,0 +1,23 @@
+{
+  "id": "feat.swift-river",
+  "type": "feat",
+  "name": "feat.swift-river.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.swift-river.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "free",
+  "trigger": "feat.swift-river.trigger",
+  "prerequisites": []
+}

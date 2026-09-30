@@ -1,0 +1,35 @@
+{
+  "id": "spell.flurry-of-claws",
+  "type": "spell",
+  "name": "spell.flurry-of-claws.name",
+  "traits": [
+    "attack",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 263,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.flurry-of-claws.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.flurry-of-claws.range",
+  "targets": "spell.flurry-of-claws.targets",
+  "defense": "ac",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.flurry-of-claws.heightened.0"
+    }
+  ]
+}

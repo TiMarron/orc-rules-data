@@ -1,0 +1,24 @@
+{
+  "id": "feat.sleeper-hold",
+  "type": "feat",
+  "name": "feat.sleeper-hold.name",
+  "traits": [
+    "incapacitation",
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sleeper-hold.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "requirements": "feat.sleeper-hold.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "spell.arcane-countermeasure",
+  "type": "spell",
+  "name": "spell.arcane-countermeasure.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 265,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.arcane-countermeasure.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.arcane-countermeasure.range",
+  "targets": "spell.arcane-countermeasure.targets",
+  "trigger": "spell.arcane-countermeasure.trigger"
+}

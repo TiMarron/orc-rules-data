@@ -1,0 +1,28 @@
+{
+  "id": "spell.weapon-trance",
+  "type": "spell",
+  "name": "spell.weapon-trance.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.weapon-trance.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.weapon-trance.duration"
+}

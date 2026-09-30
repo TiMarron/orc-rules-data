@@ -1,0 +1,27 @@
+{
+  "id": "feat.furious-bully",
+  "type": "feat",
+  "name": "feat.furious-bully.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.furious-bully.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "master"
+    }
+  ]
+}

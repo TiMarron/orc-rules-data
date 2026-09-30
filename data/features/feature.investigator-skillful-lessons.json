@@ -1,0 +1,17 @@
+{
+  "id": "feature.investigator-skillful-lessons",
+  "type": "feature",
+  "name": "feature.investigator-skillful-lessons.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 105,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.investigator-skillful-lessons.text",
+  "class": "class.investigator",
+  "level": 3
+}

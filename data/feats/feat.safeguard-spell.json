@@ -1,0 +1,24 @@
+{
+  "id": "feat.safeguard-spell",
+  "type": "feat",
+  "name": "feat.safeguard-spell.name",
+  "traits": [
+    "concentrate",
+    "sorcerer",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 154,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.safeguard-spell.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "prerequisites": []
+}

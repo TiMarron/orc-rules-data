@@ -1,0 +1,205 @@
+{
+  "id": "class.sorcerer",
+  "type": "class",
+  "name": "class.sorcerer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 145,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "class.sorcerer.text",
+  "keyAttribute": "cha",
+  "hp": 6,
+  "proficiencies": {
+    "perception": "trained",
+    "fortitude": "trained",
+    "reflex": "trained",
+    "will": "expert",
+    "skills": {
+      "additional": 2,
+      "fixed": [],
+      "choices": [
+        {
+          "count": 2,
+          "text": "class.sorcerer.skill-choice.0"
+        }
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "untrained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "untrained",
+      "medium": "untrained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained",
+    "spellcasting": "trained",
+    "traditions": [
+      "arcane",
+      "divine",
+      "occult",
+      "primal"
+    ],
+    "traditionsVary": true
+  },
+  "featLevels": {
+    "class": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.sorcerer-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.sorcerer-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.sorcerer-bloodline"
+    },
+    {
+      "level": 1,
+      "feature": "feature.sorcerer-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.sorcerer-sorcerer-spellcasting"
+    },
+    {
+      "level": 1,
+      "feature": "feature.sorcerer-sorcerous-potency"
+    },
+    {
+      "level": 1,
+      "feature": "feature.sorcerer-spell-repertoire"
+    },
+    {
+      "level": 2,
+      "feature": "feature.sorcerer-skill-feats"
+    },
+    {
+      "level": 2,
+      "feature": "feature.sorcerer-sorcerer-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.sorcerer-signature-spells"
+    },
+    {
+      "level": 3,
+      "feature": "feature.sorcerer-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.sorcerer-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.sorcerer-magical-fortitude"
+    },
+    {
+      "level": 7,
+      "feature": "feature.sorcerer-expert-spellcaster"
+    },
+    {
+      "level": 9,
+      "feature": "feature.sorcerer-reflex-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.sorcerer-perception-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.sorcerer-weapon-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.sorcerer-defensive-robes"
+    },
+    {
+      "level": 13,
+      "feature": "feature.sorcerer-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.sorcerer-master-spellcaster"
+    },
+    {
+      "level": 17,
+      "feature": "feature.sorcerer-majestic-will"
+    },
+    {
+      "level": 19,
+      "feature": "feature.sorcerer-bloodline-paragon"
+    },
+    {
+      "level": 19,
+      "feature": "feature.sorcerer-legendary-spellcaster"
+    }
+  ]
+}

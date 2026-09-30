@@ -12,8 +12,8 @@
     "page": 333,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.ghostly-weapon.text",
   "rank": 3,
   "traditions": [
@@ -25,5 +25,6 @@
   },
   "range": "spell.ghostly-weapon.range",
   "targets": "spell.ghostly-weapon.targets",
-  "duration": "spell.ghostly-weapon.duration"
+  "duration": "spell.ghostly-weapon.duration",
+  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
 }

@@ -1,0 +1,24 @@
+{
+  "id": "feat.embrace-the-pain",
+  "type": "feat",
+  "name": "feat.embrace-the-pain.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.embrace-the-pain.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.embrace-the-pain.trigger",
+  "prerequisites": []
+}

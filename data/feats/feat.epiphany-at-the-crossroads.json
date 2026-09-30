@@ -1,0 +1,26 @@
+{
+  "id": "feat.epiphany-at-the-crossroads",
+  "type": "feat",
+  "name": "feat.epiphany-at-the-crossroads.name",
+  "traits": [
+    "divine",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 142,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.epiphany-at-the-crossroads.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "free",
+  "trigger": "feat.epiphany-at-the-crossroads.trigger",
+  "requirements": "feat.epiphany-at-the-crossroads.requirements",
+  "frequency": "feat.epiphany-at-the-crossroads.frequency",
+  "prerequisites": []
+}

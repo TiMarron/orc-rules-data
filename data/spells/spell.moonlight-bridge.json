@@ -1,0 +1,37 @@
+{
+  "id": "spell.moonlight-bridge",
+  "type": "spell",
+  "name": "spell.moonlight-bridge.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "light",
+    "manipulate",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 260,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.moonlight-bridge.text",
+  "rank": 6,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.moonlight-bridge.range",
+  "duration": "spell.moonlight-bridge.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.moonlight-bridge.heightened.0"
+    }
+  ]
+}

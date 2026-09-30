@@ -1,0 +1,40 @@
+{
+  "id": "spell.whirling-flames",
+  "type": "spell",
+  "name": "spell.whirling-flames.name",
+  "traits": [
+    "fire",
+    "focus",
+    "manipulate",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 260,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.whirling-flames.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.whirling-flames.range",
+  "area": "spell.whirling-flames.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.whirling-flames.heightened.0"
+    }
+  ]
+}

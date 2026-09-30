@@ -1,0 +1,29 @@
+{
+  "id": "feat.bashing-charge",
+  "type": "feat",
+  "name": "feat.bashing-charge.name",
+  "traits": [
+    "barbarian",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bashing-charge.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}

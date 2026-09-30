@@ -1,0 +1,210 @@
+{
+  "id": "class.barbarian",
+  "type": "class",
+  "name": "class.barbarian.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 71,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "class.barbarian.text",
+  "keyAttribute": "str",
+  "hp": 12,
+  "proficiencies": {
+    "perception": "expert",
+    "fortitude": "expert",
+    "reflex": "trained",
+    "will": "expert",
+    "skills": {
+      "additional": 3,
+      "fixed": [
+        "skill.athletics"
+      ]
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "trained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "trained",
+      "light": "trained",
+      "medium": "trained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained"
+  },
+  "featLevels": {
+    "class": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.barbarian-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.barbarian-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.barbarian-barbarian-feats"
+    },
+    {
+      "level": 1,
+      "feature": "feature.barbarian-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.barbarian-instinct"
+    },
+    {
+      "level": 1,
+      "feature": "feature.barbarian-quick-tempered"
+    },
+    {
+      "level": 1,
+      "feature": "feature.barbarian-rage"
+    },
+    {
+      "level": 2,
+      "feature": "feature.barbarian-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.barbarian-furious-footfalls"
+    },
+    {
+      "level": 3,
+      "feature": "feature.barbarian-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.barbarian-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.barbarian-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.barbarian-brutality"
+    },
+    {
+      "level": 7,
+      "feature": "feature.barbarian-juggernaut"
+    },
+    {
+      "level": 7,
+      "feature": "feature.barbarian-weapon-specialization"
+    },
+    {
+      "level": 9,
+      "feature": "feature.barbarian-raging-resistance"
+    },
+    {
+      "level": 9,
+      "feature": "feature.barbarian-reflex-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.barbarian-mighty-rage"
+    },
+    {
+      "level": 13,
+      "feature": "feature.barbarian-greater-juggernaut"
+    },
+    {
+      "level": 13,
+      "feature": "feature.barbarian-medium-armor-expertise"
+    },
+    {
+      "level": 13,
+      "feature": "feature.barbarian-weapon-mastery"
+    },
+    {
+      "level": 15,
+      "feature": "feature.barbarian-greater-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.barbarian-indomitable-will"
+    },
+    {
+      "level": 17,
+      "feature": "feature.barbarian-perception-mastery"
+    },
+    {
+      "level": 17,
+      "feature": "feature.barbarian-revitalizing-rage"
+    },
+    {
+      "level": 19,
+      "feature": "feature.barbarian-armor-mastery"
+    },
+    {
+      "level": 19,
+      "feature": "feature.barbarian-devastator"
+    }
+  ]
+}

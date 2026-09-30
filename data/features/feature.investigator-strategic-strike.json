@@ -1,0 +1,17 @@
+{
+  "id": "feature.investigator-strategic-strike",
+  "type": "feature",
+  "name": "feature.investigator-strategic-strike.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 100,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.investigator-strategic-strike.text",
+  "class": "class.investigator",
+  "level": 1
+}

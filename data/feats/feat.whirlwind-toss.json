@@ -1,0 +1,28 @@
+{
+  "id": "feat.whirlwind-toss",
+  "type": "feat",
+  "name": "feat.whirlwind-toss.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.whirlwind-toss.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.collateral-thrash"
+    }
+  ]
+}

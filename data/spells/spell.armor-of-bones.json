@@ -1,0 +1,34 @@
+{
+  "id": "spell.armor-of-bones",
+  "type": "spell",
+  "name": "spell.armor-of-bones.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.armor-of-bones.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.armor-of-bones.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.armor-of-bones.heightened.0"
+    }
+  ]
+}

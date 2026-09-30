@@ -1,0 +1,24 @@
+{
+  "id": "feat.come-and-get-me",
+  "type": "feat",
+  "name": "feat.come-and-get-me.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.come-and-get-me.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": []
+}

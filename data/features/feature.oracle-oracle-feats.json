@@ -1,0 +1,17 @@
+{
+  "id": "feature.oracle-oracle-feats",
+  "type": "feature",
+  "name": "feature.oracle-oracle-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 128,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.oracle-oracle-feats.text",
+  "class": "class.oracle",
+  "level": 2
+}

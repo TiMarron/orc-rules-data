@@ -1,0 +1,30 @@
+{
+  "id": "spell.ancestral-defense",
+  "type": "spell",
+  "name": "spell.ancestral-defense.name",
+  "traits": [
+    "focus",
+    "fortune",
+    "manipulate",
+    "mental",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ancestral-defense.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.ancestral-defense.trigger"
+}

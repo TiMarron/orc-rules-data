@@ -1,0 +1,24 @@
+{
+  "id": "feat.whirling-throw",
+  "type": "feat",
+  "name": "feat.whirling-throw.name",
+  "traits": [
+    "attack",
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 123,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.whirling-throw.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "requirements": "feat.whirling-throw.requirements",
+  "prerequisites": []
+}

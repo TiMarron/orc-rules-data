@@ -1,0 +1,17 @@
+{
+  "id": "feature.oracle-initial-proficiencies",
+  "type": "feature",
+  "name": "feature.oracle-initial-proficiencies.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 129,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.oracle-initial-proficiencies.text",
+  "class": "class.oracle",
+  "level": 1
+}

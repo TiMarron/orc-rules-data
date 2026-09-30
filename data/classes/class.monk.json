@@ -1,0 +1,207 @@
+{
+  "id": "class.monk",
+  "type": "class",
+  "name": "class.monk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 115,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "class.monk.text",
+  "keyAttribute": [
+    "str",
+    "dex"
+  ],
+  "hp": 10,
+  "proficiencies": {
+    "perception": "trained",
+    "fortitude": "expert",
+    "reflex": "expert",
+    "will": "expert",
+    "skills": {
+      "additional": 4,
+      "fixed": []
+    },
+    "attacks": {
+      "simple": "trained",
+      "martial": "untrained",
+      "advanced": "untrained",
+      "unarmed": "trained"
+    },
+    "defenses": {
+      "unarmored": "expert",
+      "light": "untrained",
+      "medium": "untrained",
+      "heavy": "untrained"
+    },
+    "classDc": "trained"
+  },
+  "featLevels": {
+    "class": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "skill": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "general": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "ancestry": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ]
+  },
+  "skillIncreaseLevels": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19
+  ],
+  "attributeBoostLevels": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "features": [
+    {
+      "level": 1,
+      "feature": "feature.monk-ancestry-and-background"
+    },
+    {
+      "level": 1,
+      "feature": "feature.monk-attribute-boosts"
+    },
+    {
+      "level": 1,
+      "feature": "feature.monk-flurry-of-blows"
+    },
+    {
+      "level": 1,
+      "feature": "feature.monk-initial-proficiencies"
+    },
+    {
+      "level": 1,
+      "feature": "feature.monk-monk-feats"
+    },
+    {
+      "level": 1,
+      "feature": "feature.monk-powerful-fist"
+    },
+    {
+      "level": 2,
+      "feature": "feature.monk-skill-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.monk-general-feats"
+    },
+    {
+      "level": 3,
+      "feature": "feature.monk-incredible-movement"
+    },
+    {
+      "level": 3,
+      "feature": "feature.monk-mystic-strikes"
+    },
+    {
+      "level": 3,
+      "feature": "feature.monk-skill-increases"
+    },
+    {
+      "level": 5,
+      "feature": "feature.monk-ancestry-feats"
+    },
+    {
+      "level": 5,
+      "feature": "feature.monk-expert-strikes"
+    },
+    {
+      "level": 5,
+      "feature": "feature.monk-perception-expertise"
+    },
+    {
+      "level": 7,
+      "feature": "feature.monk-path-to-perfection"
+    },
+    {
+      "level": 7,
+      "feature": "feature.monk-weapon-specialization"
+    },
+    {
+      "level": 9,
+      "feature": "feature.monk-metal-strikes"
+    },
+    {
+      "level": 9,
+      "feature": "feature.monk-monk-expertise"
+    },
+    {
+      "level": 11,
+      "feature": "feature.monk-second-path-to-perfection"
+    },
+    {
+      "level": 13,
+      "feature": "feature.monk-graceful-mastery"
+    },
+    {
+      "level": 13,
+      "feature": "feature.monk-master-strikes"
+    },
+    {
+      "level": 15,
+      "feature": "feature.monk-greater-weapon-specialization"
+    },
+    {
+      "level": 15,
+      "feature": "feature.monk-third-path-to-perfection"
+    },
+    {
+      "level": 17,
+      "feature": "feature.monk-adamantine-strikes"
+    },
+    {
+      "level": 17,
+      "feature": "feature.monk-graceful-legend"
+    },
+    {
+      "level": 19,
+      "feature": "feature.monk-perfected-form"
+    }
+  ]
+}

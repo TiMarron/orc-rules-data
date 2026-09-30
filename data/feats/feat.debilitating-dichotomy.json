@@ -1,0 +1,26 @@
+{
+  "id": "feat.debilitating-dichotomy",
+  "type": "feat",
+  "name": "feat.debilitating-dichotomy.name",
+  "traits": [
+    "concentrate",
+    "cursebound",
+    "divine",
+    "mental",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 140,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.debilitating-dichotomy.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "2",
+  "prerequisites": []
+}

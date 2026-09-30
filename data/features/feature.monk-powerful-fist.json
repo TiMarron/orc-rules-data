@@ -1,0 +1,17 @@
+{
+  "id": "feature.monk-powerful-fist",
+  "type": "feature",
+  "name": "feature.monk-powerful-fist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.monk-powerful-fist.text",
+  "class": "class.monk",
+  "level": 1
+}

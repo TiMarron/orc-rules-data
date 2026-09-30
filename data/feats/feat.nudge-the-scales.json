@@ -1,0 +1,26 @@
+{
+  "id": "feat.nudge-the-scales",
+  "type": "feat",
+  "name": "feat.nudge-the-scales.name",
+  "traits": [
+    "cursebound",
+    "divine",
+    "healing",
+    "oracle",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.nudge-the-scales.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "1",
+  "prerequisites": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.thousand-visions",
+  "type": "feat",
+  "name": "feat.thousand-visions.name",
+  "traits": [
+    "cursebound",
+    "oracle",
+    "prediction"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 139,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.thousand-visions.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "free",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.thats-odd",
+  "type": "feat",
+  "name": "feat.thats-odd.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 107,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.thats-odd.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

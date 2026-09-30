@@ -1,0 +1,24 @@
+{
+  "id": "feat.divine-aegis",
+  "type": "feat",
+  "name": "feat.divine-aegis.name",
+  "traits": [
+    "divine",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-aegis.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "reaction",
+  "trigger": "feat.divine-aegis.trigger",
+  "prerequisites": []
+}

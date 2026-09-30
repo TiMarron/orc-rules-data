@@ -1,0 +1,17 @@
+{
+  "id": "feature.barbarian-brutality",
+  "type": "feature",
+  "name": "feature.barbarian-brutality.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 70,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.barbarian-brutality.text",
+  "class": "class.barbarian",
+  "level": 5
+}

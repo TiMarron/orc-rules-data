@@ -1,0 +1,24 @@
+{
+  "id": "feat.desperate-wrath",
+  "type": "feat",
+  "name": "feat.desperate-wrath.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 84,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.desperate-wrath.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "free",
+  "trigger": "feat.desperate-wrath.trigger",
+  "prerequisites": []
+}

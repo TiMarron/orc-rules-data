@@ -1,0 +1,25 @@
+{
+  "id": "spell.extend-blood-magic",
+  "type": "spell",
+  "name": "spell.extend-blood-magic.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "sorcerer",
+    "spellshape"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 265,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.extend-blood-magic.text",
+  "rank": 3,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  }
+}

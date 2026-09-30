@@ -1,0 +1,26 @@
+{
+  "id": "feat.improved-knockback",
+  "type": "feat",
+  "name": "feat.improved-knockback.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 125,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.improved-knockback.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.knockback-strike"
+    }
+  ]
+}

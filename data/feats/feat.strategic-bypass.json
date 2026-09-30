@@ -1,0 +1,21 @@
+{
+  "id": "feat.strategic-bypass",
+  "type": "feat",
+  "name": "feat.strategic-bypass.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 112,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.strategic-bypass.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

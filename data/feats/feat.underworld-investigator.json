@@ -1,0 +1,21 @@
+{
+  "id": "feat.underworld-investigator",
+  "type": "feat",
+  "name": "feat.underworld-investigator.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 107,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.underworld-investigator.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

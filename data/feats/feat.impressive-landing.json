@@ -1,0 +1,23 @@
+{
+  "id": "feat.impressive-landing",
+  "type": "feat",
+  "name": "feat.impressive-landing.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impressive-landing.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.impressive-landing.trigger",
+  "prerequisites": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "spell.life-giving-form",
+  "type": "spell",
+  "name": "spell.life-giving-form.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "healing",
+    "light",
+    "manipulate",
+    "oracle",
+    "vitality"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 261,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.life-giving-form.text",
+  "rank": 6,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "duration": "spell.life-giving-form.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.life-giving-form.heightened.0"
+    }
+  ]
+}

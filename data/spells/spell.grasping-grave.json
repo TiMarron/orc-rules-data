@@ -1,0 +1,36 @@
+{
+  "id": "spell.grasping-grave",
+  "type": "spell",
+  "name": "spell.grasping-grave.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 265,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.grasping-grave.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.grasping-grave.range",
+  "area": "spell.grasping-grave.area",
+  "defense": {
+    "save": "reflex"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.grasping-grave.heightened.0"
+    }
+  ]
+}

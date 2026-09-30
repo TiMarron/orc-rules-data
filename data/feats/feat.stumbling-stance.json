@@ -1,0 +1,29 @@
+{
+  "id": "feat.stumbling-stance",
+  "type": "feat",
+  "name": "feat.stumbling-stance.name",
+  "traits": [
+    "monk",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 119,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stumbling-stance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "trained"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.enduring-quickness",
+  "type": "feat",
+  "name": "feat.enduring-quickness.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.enduring-quickness.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": []
+}

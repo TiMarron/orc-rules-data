@@ -1,0 +1,17 @@
+{
+  "id": "feature.monk-expert-strikes",
+  "type": "feature",
+  "name": "feature.monk-expert-strikes.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.monk-expert-strikes.text",
+  "class": "class.monk",
+  "level": 5
+}

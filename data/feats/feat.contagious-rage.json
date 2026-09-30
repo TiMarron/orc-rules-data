@@ -1,0 +1,29 @@
+{
+  "id": "feat.contagious-rage",
+  "type": "feat",
+  "name": "feat.contagious-rage.name",
+  "traits": [
+    "auditory",
+    "barbarian",
+    "rage",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.contagious-rage.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.share-rage"
+    }
+  ]
+}

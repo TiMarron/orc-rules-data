@@ -1,0 +1,24 @@
+{
+  "id": "feat.foresee-danger",
+  "type": "feat",
+  "name": "feat.foresee-danger.name",
+  "traits": [
+    "concentrate",
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 111,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.foresee-danger.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.investigator",
+  "actions": "reaction",
+  "trigger": "feat.foresee-danger.trigger",
+  "prerequisites": []
+}

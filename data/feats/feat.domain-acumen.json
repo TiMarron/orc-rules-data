@@ -1,0 +1,22 @@
+{
+  "id": "feat.domain-acumen",
+  "type": "feat",
+  "name": "feat.domain-acumen.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.domain-acumen.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": [],
+  "repeatable": true
+}

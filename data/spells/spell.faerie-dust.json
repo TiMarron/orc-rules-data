@@ -1,0 +1,38 @@
+{
+  "id": "spell.faerie-dust",
+  "type": "spell",
+  "name": "spell.faerie-dust.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "mental",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 264,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.faerie-dust.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1-3"
+  },
+  "range": "spell.faerie-dust.range",
+  "area": "spell.faerie-dust.area",
+  "duration": "spell.faerie-dust.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "+3",
+      "text": "spell.faerie-dust.heightened.0"
+    }
+  ]
+}

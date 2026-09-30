@@ -1,0 +1,26 @@
+{
+  "id": "feat.share-rage",
+  "type": "feat",
+  "name": "feat.share-rage.name",
+  "traits": [
+    "auditory",
+    "barbarian",
+    "rage",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.share-rage.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "requirements": "feat.share-rage.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "action.rage",
+  "type": "action",
+  "name": "action.rage.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 72,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "action.rage.text",
+  "actions": "1",
+  "requirements": "action.rage.requirements"
+}

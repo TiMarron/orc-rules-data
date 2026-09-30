@@ -1,0 +1,24 @@
+{
+  "id": "feat.energy-fusion",
+  "type": "feat",
+  "name": "feat.energy-fusion.name",
+  "traits": [
+    "concentrate",
+    "sorcerer",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 154,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.energy-fusion.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "prerequisites": []
+}

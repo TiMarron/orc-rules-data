@@ -1,0 +1,39 @@
+{
+  "id": "spell.soul-siphon",
+  "type": "spell",
+  "name": "spell.soul-siphon.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "oracle",
+    "void"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.soul-siphon.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.soul-siphon.range",
+  "targets": "spell.soul-siphon.targets",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.soul-siphon.heightened.0"
+    }
+  ]
+}

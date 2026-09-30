@@ -1,0 +1,17 @@
+{
+  "id": "feature.barbarian-skill-increases",
+  "type": "feature",
+  "name": "feature.barbarian-skill-increases.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 70,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.barbarian-skill-increases.text",
+  "class": "class.barbarian",
+  "level": 3
+}

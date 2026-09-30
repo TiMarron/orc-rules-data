@@ -1,0 +1,27 @@
+{
+  "id": "feat.collateral-thrash",
+  "type": "feat",
+  "name": "feat.collateral-thrash.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 84,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.collateral-thrash.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.thrash"
+    }
+  ]
+}

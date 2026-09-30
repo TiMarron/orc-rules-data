@@ -12,8 +12,8 @@
     "page": 325,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.dispel-magic.text",
   "rank": 2,
   "traditions": [
@@ -26,5 +26,6 @@
     "actions": "2"
   },
   "range": "spell.dispel-magic.range",
-  "targets": "spell.dispel-magic.targets"
+  "targets": "spell.dispel-magic.targets",
+  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
 }

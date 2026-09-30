@@ -1,0 +1,34 @@
+{
+  "id": "spell.celestial-brand",
+  "type": "spell",
+  "name": "spell.celestial-brand.name",
+  "traits": [
+    "curse",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.celestial-brand.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.celestial-brand.range",
+  "targets": "spell.celestial-brand.targets",
+  "duration": "spell.celestial-brand.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.celestial-brand.heightened.0"
+    }
+  ]
+}

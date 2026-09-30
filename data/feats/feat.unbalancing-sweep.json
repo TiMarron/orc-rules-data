@@ -1,0 +1,23 @@
+{
+  "id": "feat.unbalancing-sweep",
+  "type": "feat",
+  "name": "feat.unbalancing-sweep.name",
+  "traits": [
+    "barbarian",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 83,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unbalancing-sweep.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "3",
+  "prerequisites": []
+}

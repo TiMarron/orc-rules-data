@@ -1,0 +1,31 @@
+{
+  "id": "spell.jealous-hex",
+  "type": "spell",
+  "name": "spell.jealous-hex.name",
+  "traits": [
+    "concentrate",
+    "curse",
+    "focus",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 264,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.jealous-hex.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.jealous-hex.range",
+  "targets": "spell.jealous-hex.targets",
+  "duration": "spell.jealous-hex.duration",
+  "defense": {
+    "save": "will"
+  }
+}

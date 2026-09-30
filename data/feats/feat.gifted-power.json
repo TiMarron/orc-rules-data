@@ -1,0 +1,21 @@
+{
+  "id": "feat.gifted-power",
+  "type": "feat",
+  "name": "feat.gifted-power.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 140,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.gifted-power.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": []
+}

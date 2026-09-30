@@ -1,0 +1,21 @@
+{
+  "id": "feat.acute-vision",
+  "type": "feat",
+  "name": "feat.acute-vision.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.acute-vision.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trait.investigator",
+  "type": "trait",
+  "name": "trait.investigator.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 317,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.investigator.text"
+}

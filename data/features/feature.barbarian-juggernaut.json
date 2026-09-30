@@ -1,0 +1,17 @@
+{
+  "id": "feature.barbarian-juggernaut",
+  "type": "feature",
+  "name": "feature.barbarian-juggernaut.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.barbarian-juggernaut.text",
+  "class": "class.barbarian",
+  "level": 7
+}

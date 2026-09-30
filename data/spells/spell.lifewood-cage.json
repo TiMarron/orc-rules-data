@@ -1,0 +1,34 @@
+{
+  "id": "spell.lifewood-cage",
+  "type": "spell",
+  "name": "spell.lifewood-cage.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "vitality",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 247,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.lifewood-cage.text",
+  "rank": 7,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "3"
+  },
+  "range": "spell.lifewood-cage.range",
+  "area": "spell.lifewood-cage.area",
+  "duration": "spell.lifewood-cage.duration",
+  "defense": {
+    "save": "reflex"
+  }
+}

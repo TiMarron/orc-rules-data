@@ -1,0 +1,24 @@
+{
+  "id": "feat.terraforming-trickery",
+  "type": "feat",
+  "name": "feat.terraforming-trickery.name",
+  "traits": [
+    "concentrate",
+    "earth",
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 156,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.terraforming-trickery.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "prerequisites": []
+}

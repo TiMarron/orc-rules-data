@@ -1,0 +1,32 @@
+{
+  "id": "feat.godbreaker",
+  "type": "feat",
+  "name": "feat.godbreaker.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.godbreaker.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "3",
+  "requirements": "feat.godbreaker.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.crushing-grab"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.whirling-throw"
+    }
+  ]
+}

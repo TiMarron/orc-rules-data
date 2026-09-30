@@ -1,0 +1,17 @@
+{
+  "id": "feature.investigator-investigator-feats",
+  "type": "feature",
+  "name": "feature.investigator-investigator-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 100,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.investigator-investigator-feats.text",
+  "class": "class.investigator",
+  "level": 1
+}

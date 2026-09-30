@@ -1,0 +1,17 @@
+{
+  "id": "feature.barbarian-reflex-expertise",
+  "type": "feature",
+  "name": "feature.barbarian-reflex-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 70,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.barbarian-reflex-expertise.text",
+  "class": "class.barbarian",
+  "level": 9
+}

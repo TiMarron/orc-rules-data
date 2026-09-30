@@ -1,0 +1,21 @@
+{
+  "id": "feat.blood-sovereignty",
+  "type": "feat",
+  "name": "feat.blood-sovereignty.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 155,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.blood-sovereignty.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": []
+}

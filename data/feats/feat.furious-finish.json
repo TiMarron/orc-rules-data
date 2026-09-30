@@ -1,0 +1,23 @@
+{
+  "id": "feat.furious-finish",
+  "type": "feat",
+  "name": "feat.furious-finish.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.furious-finish.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": []
+}

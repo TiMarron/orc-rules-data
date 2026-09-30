@@ -1,0 +1,27 @@
+{
+  "id": "feat.into-the-fray",
+  "type": "feat",
+  "name": "feat.into-the-fray.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 220,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.into-the-fray.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "2",
+  "requirements": "feat.into-the-fray.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.viking-dedication"
+    }
+  ]
+}

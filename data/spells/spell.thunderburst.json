@@ -1,0 +1,41 @@
+{
+  "id": "spell.thunderburst",
+  "type": "spell",
+  "name": "spell.thunderburst.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "oracle",
+    "sonic"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 261,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.thunderburst.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.thunderburst.range",
+  "area": "spell.thunderburst.area",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.thunderburst.heightened.0"
+    }
+  ]
+}

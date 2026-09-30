@@ -1,0 +1,24 @@
+{
+  "id": "feat.forestall-curse",
+  "type": "feat",
+  "name": "feat.forestall-curse.name",
+  "traits": [
+    "concentrate",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 142,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.forestall-curse.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "free",
+  "frequency": "feat.forestall-curse.frequency",
+  "prerequisites": []
+}

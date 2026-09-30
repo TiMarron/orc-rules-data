@@ -1,0 +1,21 @@
+{
+  "id": "feat.takedown-expert",
+  "type": "feat",
+  "name": "feat.takedown-expert.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 107,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.takedown-expert.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

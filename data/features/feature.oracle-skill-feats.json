@@ -1,0 +1,17 @@
+{
+  "id": "feature.oracle-skill-feats",
+  "type": "feature",
+  "name": "feature.oracle-skill-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 128,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.oracle-skill-feats.text",
+  "class": "class.oracle",
+  "level": 2
+}

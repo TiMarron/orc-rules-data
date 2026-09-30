@@ -1,0 +1,34 @@
+{
+  "id": "spell.ancestral-memories",
+  "type": "spell",
+  "name": "spell.ancestral-memories.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 265,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.ancestral-memories.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.ancestral-memories.heightened.0"
+    },
+    {
+      "level": "8",
+      "text": "spell.ancestral-memories.heightened.1"
+    }
+  ]
+}

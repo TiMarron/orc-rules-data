@@ -1,0 +1,23 @@
+{
+  "id": "feat.person-of-interest",
+  "type": "feat",
+  "name": "feat.person-of-interest.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 107,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.person-of-interest.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.investigator",
+  "actions": "1",
+  "frequency": "feat.person-of-interest.frequency",
+  "prerequisites": []
+}

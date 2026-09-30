@@ -1,0 +1,41 @@
+{
+  "id": "spell.interstellar-void",
+  "type": "spell",
+  "name": "spell.interstellar-void.name",
+  "traits": [
+    "cold",
+    "concentrate",
+    "focus",
+    "manipulate",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 260,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.interstellar-void.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.interstellar-void.range",
+  "targets": "spell.interstellar-void.targets",
+  "duration": "spell.interstellar-void.duration",
+  "defense": {
+    "save": "fortitude"
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.interstellar-void.heightened.0"
+    }
+  ]
+}

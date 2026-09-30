@@ -1,0 +1,25 @@
+{
+  "id": "feat.tricksters-ace",
+  "type": "feat",
+  "name": "feat.tricksters-ace.name",
+  "traits": [
+    "concentrate",
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 113,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tricksters-ace.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.investigator",
+  "actions": "reaction",
+  "trigger": "feat.tricksters-ace.trigger",
+  "requirements": "feat.tricksters-ace.requirements",
+  "prerequisites": []
+}

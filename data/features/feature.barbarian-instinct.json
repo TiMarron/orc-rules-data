@@ -1,0 +1,17 @@
+{
+  "id": "feature.barbarian-instinct",
+  "type": "feature",
+  "name": "feature.barbarian-instinct.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 71,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.barbarian-instinct.text",
+  "class": "class.barbarian",
+  "level": 1
+}

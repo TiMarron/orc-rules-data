@@ -1,0 +1,17 @@
+{
+  "id": "feature.investigator-weapon-expertise",
+  "type": "feature",
+  "name": "feature.investigator-weapon-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 100,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.investigator-weapon-expertise.text",
+  "class": "class.investigator",
+  "level": 5
+}

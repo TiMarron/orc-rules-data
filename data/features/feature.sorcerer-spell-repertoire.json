@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-spell-repertoire",
+  "type": "feature",
+  "name": "feature.sorcerer-spell-repertoire.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-spell-repertoire.text",
+  "class": "class.sorcerer",
+  "level": 1
+}

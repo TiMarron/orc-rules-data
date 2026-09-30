@@ -1,0 +1,24 @@
+{
+  "id": "feat.bleed-out",
+  "type": "feat",
+  "name": "feat.bleed-out.name",
+  "traits": [
+    "attack",
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 153,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bleed-out.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "requirements": "feat.bleed-out.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.didactic-strike",
+  "type": "feat",
+  "name": "feat.didactic-strike.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 113,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.didactic-strike.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.shared-stratagem"
+    }
+  ]
+}

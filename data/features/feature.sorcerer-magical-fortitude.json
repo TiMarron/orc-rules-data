@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-magical-fortitude",
+  "type": "feature",
+  "name": "feature.sorcerer-magical-fortitude.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-magical-fortitude.text",
+  "class": "class.sorcerer",
+  "level": 5
+}

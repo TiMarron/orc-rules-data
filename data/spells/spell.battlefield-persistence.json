@@ -1,0 +1,28 @@
+{
+  "id": "spell.battlefield-persistence",
+  "type": "spell",
+  "name": "spell.battlefield-persistence.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.battlefield-persistence.text",
+  "rank": 3,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "reaction"
+  },
+  "trigger": "spell.battlefield-persistence.trigger"
+}

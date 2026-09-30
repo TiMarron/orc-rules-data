@@ -1,0 +1,23 @@
+{
+  "id": "feat.vicious-evisceration",
+  "type": "feat",
+  "name": "feat.vicious-evisceration.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vicious-evisceration.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "prerequisites": []
+}

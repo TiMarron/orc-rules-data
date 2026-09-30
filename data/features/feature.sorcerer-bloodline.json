@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-bloodline",
+  "type": "feature",
+  "name": "feature.sorcerer-bloodline.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 145,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-bloodline.text",
+  "class": "class.sorcerer",
+  "level": 1
+}

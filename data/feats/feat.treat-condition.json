@@ -14,8 +14,8 @@
     "page": 208,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.treat-condition.text",
   "level": 4,
   "category": "archetype",
@@ -26,5 +26,6 @@
       "kind": "feat",
       "id": "feat.medic-dedication"
     }
-  ]
+  ],
+  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
 }

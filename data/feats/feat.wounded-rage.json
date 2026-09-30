@@ -1,0 +1,23 @@
+{
+  "id": "feat.wounded-rage",
+  "type": "feat",
+  "name": "feat.wounded-rage.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 78,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wounded-rage.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.wounded-rage.trigger",
+  "prerequisites": []
+}

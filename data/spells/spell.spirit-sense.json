@@ -14,8 +14,8 @@
     "page": 252,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.spirit-sense.text",
   "rank": 2,
   "traditions": [
@@ -32,5 +32,6 @@
       "level": "6",
       "text": "spell.spirit-sense.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
 }

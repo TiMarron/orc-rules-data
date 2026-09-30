@@ -1,0 +1,17 @@
+{
+  "id": "feature.sorcerer-weapon-expertise",
+  "type": "feature",
+  "name": "feature.sorcerer-weapon-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.sorcerer-weapon-expertise.text",
+  "class": "class.sorcerer",
+  "level": 11
+}

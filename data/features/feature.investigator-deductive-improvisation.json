@@ -1,0 +1,17 @@
+{
+  "id": "feature.investigator-deductive-improvisation",
+  "type": "feature",
+  "name": "feature.investigator-deductive-improvisation.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 100,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.investigator-deductive-improvisation.text",
+  "class": "class.investigator",
+  "level": 11
+}

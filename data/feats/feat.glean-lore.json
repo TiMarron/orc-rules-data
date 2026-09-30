@@ -1,0 +1,24 @@
+{
+  "id": "feat.glean-lore",
+  "type": "feat",
+  "name": "feat.glean-lore.name",
+  "traits": [
+    "divine",
+    "oracle",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.glean-lore.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "1",
+  "prerequisites": []
+}

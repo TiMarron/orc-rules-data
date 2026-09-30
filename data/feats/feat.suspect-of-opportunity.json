@@ -1,0 +1,28 @@
+{
+  "id": "feat.suspect-of-opportunity",
+  "type": "feat",
+  "name": "feat.suspect-of-opportunity.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 110,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.suspect-of-opportunity.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.investigator",
+  "actions": "reaction",
+  "trigger": "feat.suspect-of-opportunity.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.person-of-interest"
+    }
+  ]
+}

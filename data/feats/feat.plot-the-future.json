@@ -1,0 +1,23 @@
+{
+  "id": "feat.plot-the-future",
+  "type": "feat",
+  "name": "feat.plot-the-future.name",
+  "traits": [
+    "concentrate",
+    "investigator",
+    "prediction"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 112,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.plot-the-future.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": []
+}

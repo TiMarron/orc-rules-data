@@ -1,0 +1,38 @@
+{
+  "id": "spell.incendiary-aura",
+  "type": "spell",
+  "name": "spell.incendiary-aura.name",
+  "traits": [
+    "aura",
+    "concentrate",
+    "fire",
+    "focus",
+    "manipulate",
+    "oracle"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 260,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.incendiary-aura.text",
+  "rank": 1,
+  "focus": true,
+  "traditions": [
+    "divine"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.incendiary-aura.area",
+  "duration": "spell.incendiary-aura.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.incendiary-aura.heightened.0"
+    }
+  ]
+}

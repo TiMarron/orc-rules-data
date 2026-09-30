@@ -1,0 +1,25 @@
+{
+  "id": "feat.friendly-toss",
+  "type": "feat",
+  "name": "feat.friendly-toss.name",
+  "traits": [
+    "barbarian",
+    "manipulate",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.friendly-toss.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "requirements": "feat.friendly-toss.requirements",
+  "prerequisites": []
+}

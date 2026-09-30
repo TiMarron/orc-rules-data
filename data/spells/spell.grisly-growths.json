@@ -12,8 +12,8 @@
     "page": 246,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.grisly-growths.text",
   "rank": 5,
   "traditions": [
@@ -34,5 +34,6 @@
       "level": "+1",
       "text": "spell.grisly-growths.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
 }

@@ -1,0 +1,28 @@
+{
+  "id": "feat.awesome-blow",
+  "type": "feat",
+  "name": "feat.awesome-blow.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 83,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.awesome-blow.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.knockback"
+    }
+  ]
+}
