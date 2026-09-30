@@ -1,0 +1,25 @@
+{
+  "id": "feat.chance-death",
+  "type": "feat",
+  "name": "feat.chance-death.name",
+  "traits": [
+    "duskwalker",
+    "fortune"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 48,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.chance-death.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "actions": "reaction",
+  "trigger": "feat.chance-death.trigger",
+  "frequency": "feat.chance-death.frequency",
+  "prerequisites": []
+}

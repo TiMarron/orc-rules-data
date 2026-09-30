@@ -1,0 +1,22 @@
+{
+  "id": "feat.quietus-strikes",
+  "type": "feat",
+  "name": "feat.quietus-strikes.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.quietus-strikes.text",
+  "level": 9,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with a generic descriptor. The rules text is the book's."
+}

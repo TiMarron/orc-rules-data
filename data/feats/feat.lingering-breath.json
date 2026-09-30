@@ -1,0 +1,26 @@
+{
+  "id": "feat.lingering-breath",
+  "type": "feat",
+  "name": "feat.lingering-breath.name",
+  "traits": [
+    "dragonblood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 47,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lingering-breath.text",
+  "level": 17,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.breath-of-the-dragon"
+    }
+  ]
+}

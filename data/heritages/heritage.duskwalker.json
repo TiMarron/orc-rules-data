@@ -1,0 +1,19 @@
+{
+  "id": "heritage.duskwalker",
+  "type": "heritage",
+  "name": "heritage.duskwalker.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 48,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "heritage.duskwalker.text",
+  "versatile": true,
+  "editNote": "Reserved Material removed: the proper name of the plane the duskwalkers are tied to is replaced with a generic descriptor. The Duskwalker Heritage Mechanics block is otherwise the book's."
+}

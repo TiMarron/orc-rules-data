@@ -1,0 +1,23 @@
+{
+  "id": "feat.breath-of-the-dragon",
+  "type": "feat",
+  "name": "feat.breath-of-the-dragon.name",
+  "traits": [
+    "dragonblood",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 45,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.breath-of-the-dragon.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "actions": "2",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.spirit-soother",
+  "type": "feat",
+  "name": "feat.spirit-soother.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spirit-soother.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

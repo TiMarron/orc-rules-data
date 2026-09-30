@@ -1,0 +1,18 @@
+{
+  "id": "heritage.dhampir",
+  "type": "heritage",
+  "name": "heritage.dhampir.name",
+  "traits": [
+    "dhampir"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 42,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "heritage.dhampir.text",
+  "versatile": true
+}

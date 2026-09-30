@@ -1,0 +1,31 @@
+{
+  "id": "feat.vicious-snares",
+  "type": "feat",
+  "name": "feat.vicious-snares.name",
+  "traits": [
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vicious-snares.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.snare-crafting"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "expert"
+    }
+  ]
+}

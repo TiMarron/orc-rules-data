@@ -1,0 +1,16 @@
+{
+  "id": "heritage.spellhorn-kobold",
+  "type": "heritage",
+  "name": "heritage.spellhorn-kobold.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 21,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.spellhorn-kobold.text",
+  "ancestry": "ancestry.kobold"
+}

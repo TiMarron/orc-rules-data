@@ -1,0 +1,26 @@
+{
+  "id": "feat.traditional-resistances",
+  "type": "feat",
+  "name": "feat.traditional-resistances.name",
+  "traits": [
+    "dragonblood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 46,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.traditional-resistances.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.traditional-resistances.prereq.0"
+    }
+  ]
+}

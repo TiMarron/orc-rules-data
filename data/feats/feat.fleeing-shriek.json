@@ -1,0 +1,25 @@
+{
+  "id": "feat.fleeing-shriek",
+  "type": "feat",
+  "name": "feat.fleeing-shriek.name",
+  "traits": [
+    "auditory",
+    "kobold",
+    "sonic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fleeing-shriek.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "actions": "2",
+  "frequency": "feat.fleeing-shriek.frequency",
+  "prerequisites": []
+}

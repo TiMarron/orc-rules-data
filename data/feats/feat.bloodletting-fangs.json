@@ -1,0 +1,26 @@
+{
+  "id": "feat.bloodletting-fangs",
+  "type": "feat",
+  "name": "feat.bloodletting-fangs.name",
+  "traits": [
+    "dhampir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.bloodletting-fangs.text",
+  "level": 9,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.bloodletting-fangs.prereq.0"
+    }
+  ]
+}

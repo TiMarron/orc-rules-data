@@ -1,0 +1,26 @@
+{
+  "id": "feat.majestic-presence",
+  "type": "feat",
+  "name": "feat.majestic-presence.name",
+  "traits": [
+    "dragonblood",
+    "emotion",
+    "fear",
+    "mental",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 47,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.majestic-presence.text",
+  "level": 13,
+  "category": "ancestry",
+  "versatile": true,
+  "actions": "1",
+  "prerequisites": []
+}

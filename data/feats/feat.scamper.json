@@ -1,0 +1,23 @@
+{
+  "id": "feat.scamper",
+  "type": "feat",
+  "name": "feat.scamper.name",
+  "traits": [
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 22,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scamper.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "actions": "1",
+  "requirements": "feat.scamper.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feat.lifesense",
+  "type": "feat",
+  "name": "feat.lifesense.name",
+  "traits": [
+    "divine",
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lifesense.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

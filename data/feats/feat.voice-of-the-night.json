@@ -1,0 +1,21 @@
+{
+  "id": "feat.voice-of-the-night",
+  "type": "feat",
+  "name": "feat.voice-of-the-night.name",
+  "traits": [
+    "dhampir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.voice-of-the-night.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

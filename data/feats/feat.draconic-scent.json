@@ -1,0 +1,21 @@
+{
+  "id": "feat.draconic-scent",
+  "type": "feat",
+  "name": "feat.draconic-scent.name",
+  "traits": [
+    "dragonblood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 46,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.draconic-scent.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

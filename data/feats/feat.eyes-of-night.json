@@ -1,0 +1,21 @@
+{
+  "id": "feat.eyes-of-night",
+  "type": "feat",
+  "name": "feat.eyes-of-night.name",
+  "traits": [
+    "dhampir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.eyes-of-night.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

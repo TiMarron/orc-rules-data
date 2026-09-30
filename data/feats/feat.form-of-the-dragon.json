@@ -1,0 +1,21 @@
+{
+  "id": "feat.form-of-the-dragon",
+  "type": "feat",
+  "name": "feat.form-of-the-dragon.name",
+  "traits": [
+    "dragonblood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 47,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.form-of-the-dragon.text",
+  "level": 17,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

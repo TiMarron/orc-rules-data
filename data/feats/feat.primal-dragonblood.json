@@ -1,0 +1,22 @@
+{
+  "id": "feat.primal-dragonblood",
+  "type": "feat",
+  "name": "feat.primal-dragonblood.name",
+  "traits": [
+    "dragonblood",
+    "lineage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 45,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.primal-dragonblood.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

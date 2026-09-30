@@ -1,0 +1,15 @@
+{
+  "id": "trait.duskwalker",
+  "type": "trait",
+  "name": "trait.duskwalker.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 316,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.duskwalker.text"
+}

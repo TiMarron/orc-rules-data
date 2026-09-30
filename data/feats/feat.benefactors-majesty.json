@@ -1,0 +1,23 @@
+{
+  "id": "feat.benefactors-majesty",
+  "type": "feat",
+  "name": "feat.benefactors-majesty.name",
+  "traits": [
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.benefactors-majesty.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "actions": "1",
+  "frequency": "feat.benefactors-majesty.frequency",
+  "prerequisites": []
+}

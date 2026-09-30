@@ -1,0 +1,21 @@
+{
+  "id": "feat.resist-ruin",
+  "type": "feat",
+  "name": "feat.resist-ruin.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.resist-ruin.text",
+  "level": 13,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

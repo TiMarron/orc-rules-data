@@ -1,0 +1,15 @@
+{
+  "id": "trait.kobold",
+  "type": "trait",
+  "name": "trait.kobold.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 317,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.kobold.text"
+}

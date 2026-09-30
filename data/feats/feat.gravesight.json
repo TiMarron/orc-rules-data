@@ -1,0 +1,21 @@
+{
+  "id": "feat.gravesight",
+  "type": "feat",
+  "name": "feat.gravesight.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.gravesight.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}
