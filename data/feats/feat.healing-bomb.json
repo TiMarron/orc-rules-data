@@ -1,0 +1,22 @@
+{
+  "id": "feat.healing-bomb",
+  "type": "feat",
+  "name": "feat.healing-bomb.name",
+  "traits": [
+    "additive",
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 64,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.healing-bomb.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

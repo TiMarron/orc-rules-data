@@ -1,0 +1,26 @@
+{
+  "id": "item.blight-bomb-major",
+  "type": "item",
+  "name": "item.blight-bomb-major.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "poison",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.blight-bomb-major.text",
+  "level": 17,
+  "priceCp": 250000,
+  "bulk": "L",
+  "usage": "item.blight-bomb-major.usage",
+  "category": "alchemical"
+}

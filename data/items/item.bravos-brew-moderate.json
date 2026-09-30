@@ -1,0 +1,25 @@
+{
+  "id": "item.bravos-brew-moderate",
+  "type": "item",
+  "name": "item.bravos-brew-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.bravos-brew-moderate.text",
+  "level": 10,
+  "priceCp": 15000,
+  "bulk": "L",
+  "usage": "item.bravos-brew-moderate.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.alter-admixture",
+  "type": "feat",
+  "name": "feat.alter-admixture.name",
+  "traits": [
+    "alchemist",
+    "exploration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 66,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.alter-admixture.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.alchemist",
+  "requirements": "feat.alter-admixture.requirements",
+  "prerequisites": []
+}

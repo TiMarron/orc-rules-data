@@ -1,0 +1,23 @@
+{
+  "id": "item.eagle-eye-elixir",
+  "type": "item",
+  "name": "item.eagle-eye-elixir.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.eagle-eye-elixir.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.eagle-eye-elixir.usage",
+  "category": "alchemical"
+}

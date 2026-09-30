@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-chemical-hardiness",
+  "type": "feature",
+  "name": "feature.alchemist-chemical-hardiness.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-chemical-hardiness.text",
+  "class": "class.alchemist",
+  "level": 11
+}

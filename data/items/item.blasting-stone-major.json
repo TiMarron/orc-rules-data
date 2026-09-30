@@ -1,0 +1,26 @@
+{
+  "id": "item.blasting-stone-major",
+  "type": "item",
+  "name": "item.blasting-stone-major.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "sonic",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.blasting-stone-major.text",
+  "level": 17,
+  "priceCp": 250000,
+  "bulk": "L",
+  "usage": "item.blasting-stone-major.usage",
+  "category": "alchemical"
+}

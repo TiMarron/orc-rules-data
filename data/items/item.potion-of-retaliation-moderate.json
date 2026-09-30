@@ -1,0 +1,24 @@
+{
+  "id": "item.potion-of-retaliation-moderate",
+  "type": "item",
+  "name": "item.potion-of-retaliation-moderate.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.potion-of-retaliation-moderate.text",
+  "level": 6,
+  "priceCp": 5000,
+  "bulk": "L",
+  "usage": "item.potion-of-retaliation-moderate.usage",
+  "category": "consumable"
+}

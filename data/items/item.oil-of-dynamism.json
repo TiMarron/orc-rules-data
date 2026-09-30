@@ -1,0 +1,24 @@
+{
+  "id": "item.oil-of-dynamism",
+  "type": "item",
+  "name": "item.oil-of-dynamism.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 303,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.oil-of-dynamism.text",
+  "level": 8,
+  "priceCp": 8500,
+  "bulk": "0",
+  "usage": "item.oil-of-dynamism.usage",
+  "category": "consumable"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.glue-bomb-lesser",
+  "type": "item",
+  "name": "item.glue-bomb-lesser.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.glue-bomb-lesser.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.glue-bomb-lesser.usage",
+  "category": "alchemical"
+}

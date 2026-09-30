@@ -1,0 +1,20 @@
+{
+  "id": "action.destructive-vengeance",
+  "type": "action",
+  "name": "action.destructive-vengeance.name",
+  "traits": [
+    "champion",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 92,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.destructive-vengeance.text",
+  "actions": "reaction",
+  "trigger": "action.destructive-vengeance.trigger"
+}

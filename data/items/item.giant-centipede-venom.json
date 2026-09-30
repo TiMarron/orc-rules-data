@@ -1,0 +1,25 @@
+{
+  "id": "item.giant-centipede-venom",
+  "type": "item",
+  "name": "item.giant-centipede-venom.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.giant-centipede-venom.text",
+  "level": 1,
+  "priceCp": 400,
+  "bulk": "L",
+  "usage": "item.giant-centipede-venom.usage",
+  "category": "alchemical"
+}

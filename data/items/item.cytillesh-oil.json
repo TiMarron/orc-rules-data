@@ -1,0 +1,25 @@
+{
+  "id": "item.cytillesh-oil",
+  "type": "item",
+  "name": "item.cytillesh-oil.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.cytillesh-oil.text",
+  "level": 3,
+  "priceCp": 1000,
+  "bulk": "L",
+  "usage": "item.cytillesh-oil.usage",
+  "category": "alchemical"
+}

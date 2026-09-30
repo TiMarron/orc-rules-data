@@ -1,0 +1,26 @@
+{
+  "id": "feat.persistent-mutagen",
+  "type": "feat",
+  "name": "feat.persistent-mutagen.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.persistent-mutagen.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.extend-elixir"
+    }
+  ]
+}

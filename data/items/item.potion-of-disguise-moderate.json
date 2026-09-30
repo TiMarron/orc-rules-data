@@ -1,0 +1,25 @@
+{
+  "id": "item.potion-of-disguise-moderate",
+  "type": "item",
+  "name": "item.potion-of-disguise-moderate.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "polymorph",
+    "potion"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.potion-of-disguise-moderate.text",
+  "level": 8,
+  "priceCp": 10000,
+  "bulk": "L",
+  "usage": "item.potion-of-disguise-moderate.usage",
+  "category": "consumable"
+}

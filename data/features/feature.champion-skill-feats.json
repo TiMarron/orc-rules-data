@@ -1,0 +1,17 @@
+{
+  "id": "feature.champion-skill-feats",
+  "type": "feature",
+  "name": "feature.champion-skill-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.champion-skill-feats.text",
+  "class": "class.champion",
+  "level": 2
+}

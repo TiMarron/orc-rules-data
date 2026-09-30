@@ -1,0 +1,24 @@
+{
+  "id": "feat.revivifying-mutagen",
+  "type": "feat",
+  "name": "feat.revivifying-mutagen.name",
+  "traits": [
+    "alchemist",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 64,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.revivifying-mutagen.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.alchemist",
+  "actions": "1",
+  "requirements": "feat.revivifying-mutagen.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-continuous-flair",
+  "type": "feature",
+  "name": "feature.swashbuckler-continuous-flair.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-continuous-flair.text",
+  "class": "class.swashbuckler",
+  "level": 11
+}

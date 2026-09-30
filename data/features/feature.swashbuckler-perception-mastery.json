@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-perception-mastery",
+  "type": "feature",
+  "name": "feature.swashbuckler-perception-mastery.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-perception-mastery.text",
+  "class": "class.swashbuckler",
+  "level": 11
+}

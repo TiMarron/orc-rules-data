@@ -1,0 +1,26 @@
+{
+  "id": "item.bottled-lightning-major",
+  "type": "item",
+  "name": "item.bottled-lightning-major.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "electricity",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 284,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.bottled-lightning-major.text",
+  "level": 17,
+  "priceCp": 250000,
+  "bulk": "L",
+  "usage": "item.bottled-lightning-major.usage",
+  "category": "alchemical"
+}

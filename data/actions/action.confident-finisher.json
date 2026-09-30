@@ -1,0 +1,19 @@
+{
+  "id": "action.confident-finisher",
+  "type": "action",
+  "name": "action.confident-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 161,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.confident-finisher.text",
+  "actions": "1"
+}

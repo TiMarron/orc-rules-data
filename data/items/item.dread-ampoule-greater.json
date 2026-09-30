@@ -1,0 +1,29 @@
+{
+  "id": "item.dread-ampoule-greater",
+  "type": "item",
+  "name": "item.dread-ampoule-greater.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "emotion",
+    "fear",
+    "mental",
+    "poison",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dread-ampoule-greater.text",
+  "level": 11,
+  "priceCp": 30000,
+  "bulk": "L",
+  "usage": "item.dread-ampoule-greater.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item.mistform-elixir-greater",
+  "type": "item",
+  "name": "item.mistform-elixir-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "illusion",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.mistform-elixir-greater.text",
+  "level": 10,
+  "priceCp": 18000,
+  "bulk": "L",
+  "usage": "item.mistform-elixir-greater.usage",
+  "category": "alchemical"
+}

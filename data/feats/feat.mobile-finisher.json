@@ -1,0 +1,23 @@
+{
+  "id": "feat.mobile-finisher",
+  "type": "feat",
+  "name": "feat.mobile-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 168,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mobile-finisher.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

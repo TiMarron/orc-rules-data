@@ -9,11 +9,12 @@
     "page": 288,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.formula-book-blank.text",
   "level": 0,
   "priceCp": 100,
   "bulk": "L",
-  "category": "gear"
+  "category": "gear",
+  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
 }

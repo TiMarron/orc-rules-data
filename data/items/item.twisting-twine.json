@@ -1,0 +1,32 @@
+{
+  "id": "item.twisting-twine",
+  "type": "item",
+  "name": "item.twisting-twine.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 307,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.twisting-twine.text",
+  "level": 3,
+  "bulk": "L",
+  "usage": "item.twisting-twine.usage",
+  "activations": [
+    {
+      "name": "item.twisting-twine.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.twisting-twine.activations.0.frequency",
+      "text": "item.twisting-twine.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

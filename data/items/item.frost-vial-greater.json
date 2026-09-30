@@ -1,0 +1,26 @@
+{
+  "id": "item.frost-vial-greater",
+  "type": "item",
+  "name": "item.frost-vial-greater.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "cold",
+    "consumable",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.frost-vial-greater.text",
+  "level": 11,
+  "priceCp": 25000,
+  "bulk": "L",
+  "usage": "item.frost-vial-greater.usage",
+  "category": "alchemical"
+}

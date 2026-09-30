@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-alchemical-mastery",
+  "type": "feature",
+  "name": "feature.alchemist-alchemical-mastery.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-alchemical-mastery.text",
+  "class": "class.alchemist",
+  "level": 17
+}

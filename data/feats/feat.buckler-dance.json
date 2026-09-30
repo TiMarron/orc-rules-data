@@ -1,0 +1,24 @@
+{
+  "id": "feat.buckler-dance",
+  "type": "feat",
+  "name": "feat.buckler-dance.name",
+  "traits": [
+    "stance",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.buckler-dance.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "requirements": "feat.buckler-dance.requirements",
+  "prerequisites": []
+}

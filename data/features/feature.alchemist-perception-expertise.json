@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-perception-expertise",
+  "type": "feature",
+  "name": "feature.alchemist-perception-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-perception-expertise.text",
+  "class": "class.alchemist",
+  "level": 9
+}

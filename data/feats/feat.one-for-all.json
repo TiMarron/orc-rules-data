@@ -1,0 +1,33 @@
+{
+  "id": "feat.one-for-all",
+  "type": "feat",
+  "name": "feat.one-for-all.name",
+  "traits": [
+    "auditory",
+    "concentrate",
+    "emotion",
+    "linguistic",
+    "mental",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 164,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.one-for-all.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.diplomacy",
+      "rank": "trained"
+    }
+  ]
+}

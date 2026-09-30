@@ -1,0 +1,24 @@
+{
+  "id": "item.darkvision-elixir-greater",
+  "type": "item",
+  "name": "item.darkvision-elixir-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.darkvision-elixir-greater.text",
+  "level": 8,
+  "priceCp": 9000,
+  "bulk": "L",
+  "usage": "item.darkvision-elixir-greater.usage",
+  "category": "alchemical"
+}

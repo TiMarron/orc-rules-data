@@ -1,0 +1,22 @@
+{
+  "id": "feat.combine-elixirs",
+  "type": "feat",
+  "name": "feat.combine-elixirs.name",
+  "traits": [
+    "additive",
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 65,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.combine-elixirs.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item.crystal-shards-moderate",
+  "type": "item",
+  "name": "item.crystal-shards-moderate.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "earth",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 284,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.crystal-shards-moderate.text",
+  "level": 4,
+  "priceCp": 1600,
+  "bulk": "L",
+  "usage": "item.crystal-shards-moderate.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-greater-field-discovery",
+  "type": "feature",
+  "name": "feature.alchemist-greater-field-discovery.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-greater-field-discovery.text",
+  "class": "class.alchemist",
+  "level": 13
+}

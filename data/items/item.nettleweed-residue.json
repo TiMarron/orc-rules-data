@@ -1,0 +1,25 @@
+{
+  "id": "item.nettleweed-residue",
+  "type": "item",
+  "name": "item.nettleweed-residue.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "contact",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.nettleweed-residue.text",
+  "level": 8,
+  "priceCp": 7500,
+  "bulk": "L",
+  "usage": "item.nettleweed-residue.usage",
+  "category": "alchemical"
+}

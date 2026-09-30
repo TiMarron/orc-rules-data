@@ -1,0 +1,23 @@
+{
+  "id": "item.taper-of-sanctification",
+  "type": "item",
+  "name": "item.taper-of-sanctification.name",
+  "traits": [
+    "consumable",
+    "divine"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 306,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.taper-of-sanctification.text",
+  "level": 13,
+  "priceCp": 60000,
+  "bulk": "0",
+  "usage": "item.taper-of-sanctification.usage",
+  "category": "consumable"
+}

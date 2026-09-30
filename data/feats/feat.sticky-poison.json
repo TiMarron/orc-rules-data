@@ -1,0 +1,21 @@
+{
+  "id": "feat.sticky-poison",
+  "type": "feat",
+  "name": "feat.sticky-poison.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 66,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sticky-poison.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

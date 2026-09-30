@@ -1,0 +1,20 @@
+{
+  "id": "action.retributive-strike",
+  "type": "action",
+  "name": "action.retributive-strike.name",
+  "traits": [
+    "champion",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 92,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.retributive-strike.text",
+  "actions": "reaction",
+  "trigger": "action.retributive-strike.trigger"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "item.bottled-catharsis-moderate",
+  "type": "item",
+  "name": "item.bottled-catharsis-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.bottled-catharsis-moderate.text",
+  "level": 8,
+  "priceCp": 7500,
+  "bulk": "L",
+  "usage": "item.bottled-catharsis-moderate.usage",
+  "category": "alchemical"
+}

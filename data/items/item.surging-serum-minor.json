@@ -1,0 +1,25 @@
+{
+  "id": "item.surging-serum-minor",
+  "type": "item",
+  "name": "item.surging-serum-minor.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.surging-serum-minor.text",
+  "level": 2,
+  "priceCp": 500,
+  "bulk": "L",
+  "usage": "item.surging-serum-minor.usage",
+  "category": "alchemical"
+}

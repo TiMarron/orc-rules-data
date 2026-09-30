@@ -1,0 +1,37 @@
+{
+  "id": "item.guise-of-the-smirking-devil-greater",
+  "type": "item",
+  "name": "item.guise-of-the-smirking-devil-greater.name",
+  "traits": [
+    "auditory",
+    "invested",
+    "magical",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.guise-of-the-smirking-devil-greater.text",
+  "level": 19,
+  "priceCp": 3500000,
+  "bulk": "0",
+  "usage": "item.guise-of-the-smirking-devil-greater.usage",
+  "activations": [
+    {
+      "name": "item.guise-of-the-smirking-devil-greater.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.guise-of-the-smirking-devil-greater.activations.0.frequency",
+      "text": "item.guise-of-the-smirking-devil-greater.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

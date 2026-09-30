@@ -1,0 +1,32 @@
+{
+  "id": "item.drakeheart-mutagen",
+  "type": "item",
+  "name": "item.drakeheart-mutagen.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mutagen",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 289,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.drakeheart-mutagen.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.drakeheart-mutagen.usage",
+  "activations": [
+    {
+      "name": "item.drakeheart-mutagen.activations.0.name",
+      "actions": "1",
+      "text": "item.drakeheart-mutagen.activations.0.text"
+    }
+  ],
+  "category": "alchemical"
+}

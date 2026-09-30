@@ -1,0 +1,18 @@
+{
+  "id": "feature.champion-blessing-of-the-devoted",
+  "type": "feature",
+  "name": "feature.champion-blessing-of-the-devoted.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feature.champion-blessing-of-the-devoted.text",
+  "class": "class.champion",
+  "level": 3,
+  "editNote": "The structured source separates the three blessings with a line break in one place and a paragraph break in the other; the book prints each as its own paragraph, and the dataset markup takes a blank line between paragraphs, so the missing one is added. The wording is unchanged."
+}

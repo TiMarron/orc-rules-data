@@ -1,0 +1,27 @@
+{
+  "id": "item.nethershade",
+  "type": "item",
+  "name": "item.nethershade.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.nethershade.text",
+  "level": 10,
+  "priceCp": 16000,
+  "bulk": "L",
+  "usage": "item.nethershade.usage",
+  "category": "alchemical",
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with a generic descriptor. The rules text is the book's."
+}

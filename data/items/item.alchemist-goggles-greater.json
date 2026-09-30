@@ -1,0 +1,23 @@
+{
+  "id": "item.alchemist-goggles-greater",
+  "type": "item",
+  "name": "item.alchemist-goggles-greater.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.alchemist-goggles-greater.text",
+  "level": 11,
+  "priceCp": 140000,
+  "bulk": "0",
+  "usage": "item.alchemist-goggles-greater.usage",
+  "category": "worn"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.antiplague",
+  "type": "item",
+  "name": "item.antiplague.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.antiplague.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.antiplague.usage",
+  "category": "alchemical"
+}

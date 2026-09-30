@@ -1,0 +1,25 @@
+{
+  "id": "item.comprehension-elixir-greater",
+  "type": "item",
+  "name": "item.comprehension-elixir-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.comprehension-elixir-greater.text",
+  "level": 7,
+  "priceCp": 5400,
+  "bulk": "L",
+  "usage": "item.comprehension-elixir-greater.usage",
+  "category": "alchemical"
+}

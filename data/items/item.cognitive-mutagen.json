@@ -1,0 +1,25 @@
+{
+  "id": "item.cognitive-mutagen",
+  "type": "item",
+  "name": "item.cognitive-mutagen.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mutagen",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 289,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.cognitive-mutagen.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.cognitive-mutagen.usage",
+  "category": "alchemical"
+}

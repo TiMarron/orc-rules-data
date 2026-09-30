@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-exemplary-finisher",
+  "type": "feature",
+  "name": "feature.swashbuckler-exemplary-finisher.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-exemplary-finisher.text",
+  "class": "class.swashbuckler",
+  "level": 9
+}

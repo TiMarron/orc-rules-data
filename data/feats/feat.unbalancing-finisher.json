@@ -1,0 +1,23 @@
+{
+  "id": "feat.unbalancing-finisher",
+  "type": "feat",
+  "name": "feat.unbalancing-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 165,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unbalancing-finisher.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

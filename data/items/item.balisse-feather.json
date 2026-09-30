@@ -1,0 +1,25 @@
+{
+  "id": "item.balisse-feather",
+  "type": "item",
+  "name": "item.balisse-feather.name",
+  "traits": [
+    "consumable",
+    "holy",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 305,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.balisse-feather.text",
+  "level": 12,
+  "priceCp": 40000,
+  "bulk": "0",
+  "usage": "item.balisse-feather.usage",
+  "category": "talisman"
+}

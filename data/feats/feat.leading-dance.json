@@ -1,0 +1,31 @@
+{
+  "id": "feat.leading-dance",
+  "type": "feat",
+  "name": "feat.leading-dance.name",
+  "traits": [
+    "bravado",
+    "move",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 166,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.leading-dance.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "requirements": "feat.leading-dance.requirements",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.performance",
+      "rank": "trained"
+    }
+  ]
+}

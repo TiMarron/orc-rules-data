@@ -1,0 +1,32 @@
+{
+  "id": "item.predictable-silver-piece",
+  "type": "item",
+  "name": "item.predictable-silver-piece.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 307,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.predictable-silver-piece.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "0",
+  "usage": "item.predictable-silver-piece.usage",
+  "activations": [
+    {
+      "name": "item.predictable-silver-piece.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.predictable-silver-piece.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

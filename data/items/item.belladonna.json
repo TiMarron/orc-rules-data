@@ -1,0 +1,25 @@
+{
+  "id": "item.belladonna",
+  "type": "item",
+  "name": "item.belladonna.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "ingested",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 291,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.belladonna.text",
+  "level": 2,
+  "priceCp": 500,
+  "bulk": "L",
+  "usage": "item.belladonna.usage",
+  "category": "alchemical"
+}

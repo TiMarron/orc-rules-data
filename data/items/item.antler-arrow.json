@@ -1,0 +1,22 @@
+{
+  "id": "item.antler-arrow",
+  "type": "item",
+  "name": "item.antler-arrow.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 301,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.antler-arrow.text",
+  "level": 2,
+  "priceCp": 700,
+  "bulk": "0",
+  "category": "consumable"
+}

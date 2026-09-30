@@ -1,0 +1,23 @@
+{
+  "id": "feat.swaggering-initiative",
+  "type": "feat",
+  "name": "feat.swaggering-initiative.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 166,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.swaggering-initiative.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "free",
+  "trigger": "feat.swaggering-initiative.trigger",
+  "prerequisites": []
+}

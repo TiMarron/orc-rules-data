@@ -1,0 +1,25 @@
+{
+  "id": "item.fearflower-nectar",
+  "type": "item",
+  "name": "item.fearflower-nectar.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.fearflower-nectar.text",
+  "level": 4,
+  "priceCp": 1600,
+  "bulk": "L",
+  "usage": "item.fearflower-nectar.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feat.switcheroo",
+  "type": "feat",
+  "name": "feat.switcheroo.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.switcheroo.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "reaction",
+  "trigger": "feat.switcheroo.trigger",
+  "requirements": "feat.switcheroo.requirements",
+  "prerequisites": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-panache",
+  "type": "feature",
+  "name": "feature.swashbuckler-panache.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 159,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-panache.text",
+  "class": "class.swashbuckler",
+  "level": 1
+}

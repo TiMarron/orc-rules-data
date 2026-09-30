@@ -1,0 +1,24 @@
+{
+  "id": "item.incense-of-distilled-death",
+  "type": "item",
+  "name": "item.incense-of-distilled-death.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 306,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.incense-of-distilled-death.text",
+  "level": 12,
+  "priceCp": 35000,
+  "bulk": "0",
+  "usage": "item.incense-of-distilled-death.usage",
+  "category": "consumable"
+}

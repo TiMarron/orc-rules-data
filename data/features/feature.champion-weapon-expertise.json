@@ -1,0 +1,17 @@
+{
+  "id": "feature.champion-weapon-expertise",
+  "type": "feature",
+  "name": "feature.champion-weapon-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.champion-weapon-expertise.text",
+  "class": "class.champion",
+  "level": 5
+}

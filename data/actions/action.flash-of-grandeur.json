@@ -1,0 +1,20 @@
+{
+  "id": "action.flash-of-grandeur",
+  "type": "action",
+  "name": "action.flash-of-grandeur.name",
+  "traits": [
+    "champion",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 91,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.flash-of-grandeur.text",
+  "actions": "reaction",
+  "trigger": "action.flash-of-grandeur.trigger"
+}

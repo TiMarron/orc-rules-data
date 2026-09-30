@@ -1,0 +1,25 @@
+{
+  "id": "item.stone-fist-elixir",
+  "type": "item",
+  "name": "item.stone-fist-elixir.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "morph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.stone-fist-elixir.text",
+  "level": 4,
+  "priceCp": 1300,
+  "bulk": "L",
+  "usage": "item.stone-fist-elixir.usage",
+  "category": "alchemical"
+}

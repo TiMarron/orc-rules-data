@@ -1,0 +1,26 @@
+{
+  "id": "item.frost-vial-lesser",
+  "type": "item",
+  "name": "item.frost-vial-lesser.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "cold",
+    "consumable",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.frost-vial-lesser.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.frost-vial-lesser.usage",
+  "category": "alchemical"
+}

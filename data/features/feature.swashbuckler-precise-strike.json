@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-precise-strike",
+  "type": "feature",
+  "name": "feature.swashbuckler-precise-strike.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-precise-strike.text",
+  "class": "class.swashbuckler",
+  "level": 1
+}

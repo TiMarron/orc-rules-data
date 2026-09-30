@@ -1,0 +1,22 @@
+{
+  "id": "feat.debilitating-bomb",
+  "type": "feat",
+  "name": "feat.debilitating-bomb.name",
+  "traits": [
+    "additive",
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 66,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.debilitating-bomb.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

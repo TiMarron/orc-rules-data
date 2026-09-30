@@ -1,0 +1,20 @@
+{
+  "id": "action.opportune-riposte",
+  "type": "action",
+  "name": "action.opportune-riposte.name",
+  "traits": [
+    "bravado",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 161,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.opportune-riposte.text",
+  "actions": "reaction",
+  "trigger": "action.opportune-riposte.trigger"
+}

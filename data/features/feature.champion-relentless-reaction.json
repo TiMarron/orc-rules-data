@@ -1,0 +1,17 @@
+{
+  "id": "feature.champion-relentless-reaction",
+  "type": "feature",
+  "name": "feature.champion-relentless-reaction.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.champion-relentless-reaction.text",
+  "class": "class.champion",
+  "level": 9
+}

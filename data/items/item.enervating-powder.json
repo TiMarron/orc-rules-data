@@ -1,0 +1,25 @@
+{
+  "id": "item.enervating-powder",
+  "type": "item",
+  "name": "item.enervating-powder.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "ingested",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.enervating-powder.text",
+  "level": 9,
+  "priceCp": 11000,
+  "bulk": "L",
+  "usage": "item.enervating-powder.usage",
+  "category": "alchemical"
+}

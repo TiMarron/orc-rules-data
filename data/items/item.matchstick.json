@@ -1,0 +1,23 @@
+{
+  "id": "item.matchstick",
+  "type": "item",
+  "name": "item.matchstick.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.matchstick.text",
+  "level": 1,
+  "priceCp": 20,
+  "bulk": "0",
+  "usage": "item.matchstick.usage",
+  "category": "alchemical"
+}

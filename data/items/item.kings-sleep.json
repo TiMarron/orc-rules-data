@@ -1,0 +1,26 @@
+{
+  "id": "item.kings-sleep",
+  "type": "item",
+  "name": "item.kings-sleep.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "ingested",
+    "poison",
+    "virulent"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 293,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.kings-sleep.text",
+  "level": 18,
+  "priceCp": 400000,
+  "bulk": "L",
+  "usage": "item.kings-sleep.usage",
+  "category": "alchemical"
+}

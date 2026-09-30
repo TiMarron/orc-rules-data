@@ -1,0 +1,25 @@
+{
+  "id": "item.blasting-stone",
+  "type": "item",
+  "name": "item.blasting-stone.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "sonic",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.blasting-stone.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.blasting-stone.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item.silvertongue-mutagen-major",
+  "type": "item",
+  "name": "item.silvertongue-mutagen-major.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mutagen",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 290,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.silvertongue-mutagen-major.text",
+  "level": 17,
+  "priceCp": 300000,
+  "bulk": "L",
+  "usage": "item.silvertongue-mutagen-major.usage",
+  "category": "alchemical"
+}

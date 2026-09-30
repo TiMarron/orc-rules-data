@@ -1,0 +1,26 @@
+{
+  "id": "item.blight-bomb-lesser",
+  "type": "item",
+  "name": "item.blight-bomb-lesser.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "poison",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.blight-bomb-lesser.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.blight-bomb-lesser.usage",
+  "category": "alchemical"
+}

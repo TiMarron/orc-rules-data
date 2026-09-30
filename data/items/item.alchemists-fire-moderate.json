@@ -1,0 +1,26 @@
+{
+  "id": "item.alchemists-fire-moderate",
+  "type": "item",
+  "name": "item.alchemists-fire-moderate.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "fire",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.alchemists-fire-moderate.text",
+  "level": 3,
+  "priceCp": 1000,
+  "bulk": "L",
+  "usage": "item.alchemists-fire-moderate.usage",
+  "category": "alchemical"
+}

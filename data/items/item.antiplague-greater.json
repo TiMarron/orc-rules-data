@@ -1,0 +1,25 @@
+{
+  "id": "item.antiplague-greater",
+  "type": "item",
+  "name": "item.antiplague-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.antiplague-greater.text",
+  "level": 10,
+  "priceCp": 16000,
+  "bulk": "L",
+  "usage": "item.antiplague-greater.usage",
+  "category": "alchemical"
+}

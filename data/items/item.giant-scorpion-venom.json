@@ -1,0 +1,25 @@
+{
+  "id": "item.giant-scorpion-venom",
+  "type": "item",
+  "name": "item.giant-scorpion-venom.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "injury",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.giant-scorpion-venom.text",
+  "level": 6,
+  "priceCp": 4000,
+  "bulk": "L",
+  "usage": "item.giant-scorpion-venom.usage",
+  "category": "alchemical"
+}

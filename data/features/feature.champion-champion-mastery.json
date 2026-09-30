@@ -1,0 +1,17 @@
+{
+  "id": "feature.champion-champion-mastery",
+  "type": "feature",
+  "name": "feature.champion-champion-mastery.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.champion-champion-mastery.text",
+  "class": "class.champion",
+  "level": 17
+}

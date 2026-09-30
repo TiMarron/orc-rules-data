@@ -1,0 +1,26 @@
+{
+  "id": "item.tears-of-death",
+  "type": "item",
+  "name": "item.tears-of-death.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "contact",
+    "poison",
+    "virulent"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.tears-of-death.text",
+  "level": 20,
+  "priceCp": 1200000,
+  "bulk": "L",
+  "usage": "item.tears-of-death.usage",
+  "category": "alchemical"
+}

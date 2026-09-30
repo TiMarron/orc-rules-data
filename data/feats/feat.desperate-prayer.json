@@ -1,0 +1,24 @@
+{
+  "id": "feat.desperate-prayer",
+  "type": "feat",
+  "name": "feat.desperate-prayer.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 93,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.desperate-prayer.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.champion",
+  "actions": "free",
+  "trigger": "feat.desperate-prayer.trigger",
+  "frequency": "feat.desperate-prayer.frequency",
+  "prerequisites": []
+}

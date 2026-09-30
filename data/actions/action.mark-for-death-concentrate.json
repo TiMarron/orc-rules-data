@@ -1,0 +1,17 @@
+{
+  "id": "action.mark-for-death-concentrate",
+  "type": "action",
+  "name": "action.mark-for-death-concentrate.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 186,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.mark-for-death-concentrate.text",
+  "actions": "3",
+  "requirements": "action.mark-for-death-concentrate.requirements"
+}

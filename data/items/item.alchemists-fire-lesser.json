@@ -1,0 +1,26 @@
+{
+  "id": "item.alchemists-fire-lesser",
+  "type": "item",
+  "name": "item.alchemists-fire-lesser.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "fire",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.alchemists-fire-lesser.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.alchemists-fire-lesser.usage",
+  "category": "alchemical"
+}

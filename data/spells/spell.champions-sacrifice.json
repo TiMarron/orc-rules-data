@@ -1,0 +1,27 @@
+{
+  "id": "spell.champions-sacrifice",
+  "type": "spell",
+  "name": "spell.champions-sacrifice.name",
+  "traits": [
+    "champion",
+    "focus",
+    "manipulate"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.champions-sacrifice.text",
+  "rank": 6,
+  "focus": true,
+  "cast": {
+    "actions": "reaction"
+  },
+  "range": "spell.champions-sacrifice.range",
+  "targets": "spell.champions-sacrifice.targets",
+  "trigger": "spell.champions-sacrifice.trigger"
+}

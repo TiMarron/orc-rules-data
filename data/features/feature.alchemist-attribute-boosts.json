@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-attribute-boosts",
+  "type": "feature",
+  "name": "feature.alchemist-attribute-boosts.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-attribute-boosts.text",
+  "class": "class.alchemist",
+  "level": 1
+}

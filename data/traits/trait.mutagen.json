@@ -1,0 +1,15 @@
+{
+  "id": "trait.mutagen",
+  "type": "trait",
+  "name": "trait.mutagen.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 289,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.mutagen.text"
+}

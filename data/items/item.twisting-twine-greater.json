@@ -1,0 +1,33 @@
+{
+  "id": "item.twisting-twine-greater",
+  "type": "item",
+  "name": "item.twisting-twine-greater.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 307,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.twisting-twine-greater.text",
+  "level": 7,
+  "priceCp": 30000,
+  "bulk": "L",
+  "usage": "item.twisting-twine-greater.usage",
+  "activations": [
+    {
+      "name": "item.twisting-twine-greater.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.twisting-twine-greater.activations.0.frequency",
+      "text": "item.twisting-twine-greater.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

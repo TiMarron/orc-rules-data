@@ -1,0 +1,18 @@
+{
+  "id": "feature.champion-deity",
+  "type": "feature",
+  "name": "feature.champion-deity.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 87,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feature.champion-deity.text",
+  "class": "class.champion",
+  "level": 1,
+  "editNote": "Reserved Material removed: the name of the game line and a named deity used as an example are replaced with generic wording. The rules text is the book's."
+}

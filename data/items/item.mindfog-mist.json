@@ -1,0 +1,25 @@
+{
+  "id": "item.mindfog-mist",
+  "type": "item",
+  "name": "item.mindfog-mist.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "inhaled",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 293,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.mindfog-mist.text",
+  "level": 15,
+  "priceCp": 100000,
+  "bulk": "L",
+  "usage": "item.mindfog-mist.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item.ghost-charge-greater",
+  "type": "item",
+  "name": "item.ghost-charge-greater.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "splash",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.ghost-charge-greater.text",
+  "level": 11,
+  "priceCp": 25000,
+  "bulk": "L",
+  "usage": "item.ghost-charge-greater.usage",
+  "category": "alchemical"
+}

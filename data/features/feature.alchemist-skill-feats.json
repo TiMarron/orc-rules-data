@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-skill-feats",
+  "type": "feature",
+  "name": "feature.alchemist-skill-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-skill-feats.text",
+  "class": "class.alchemist",
+  "level": 2
+}

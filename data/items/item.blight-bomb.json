@@ -1,0 +1,25 @@
+{
+  "id": "item.blight-bomb",
+  "type": "item",
+  "name": "item.blight-bomb.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "poison",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.blight-bomb.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.blight-bomb.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "item.lethargy-poison",
+  "type": "item",
+  "name": "item.lethargy-poison.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "incapacitation",
+    "injury",
+    "poison",
+    "sleep"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 293,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.lethargy-poison.text",
+  "level": 2,
+  "priceCp": 700,
+  "bulk": "L",
+  "usage": "item.lethargy-poison.usage",
+  "category": "alchemical"
+}

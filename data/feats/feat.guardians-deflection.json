@@ -1,0 +1,24 @@
+{
+  "id": "feat.guardians-deflection",
+  "type": "feat",
+  "name": "feat.guardians-deflection.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 165,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.guardians-deflection.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "reaction",
+  "trigger": "feat.guardians-deflection.trigger",
+  "requirements": "feat.guardians-deflection.requirements",
+  "prerequisites": []
+}

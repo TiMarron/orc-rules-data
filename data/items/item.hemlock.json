@@ -1,0 +1,25 @@
+{
+  "id": "item.hemlock",
+  "type": "item",
+  "name": "item.hemlock.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "ingested",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 293,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.hemlock.text",
+  "level": 17,
+  "priceCp": 225000,
+  "bulk": "L",
+  "usage": "item.hemlock.usage",
+  "category": "alchemical"
+}

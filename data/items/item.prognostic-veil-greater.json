@@ -1,0 +1,46 @@
+{
+  "id": "item.prognostic-veil-greater",
+  "type": "item",
+  "name": "item.prognostic-veil-greater.name",
+  "traits": [
+    "divine",
+    "focused",
+    "invested"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.prognostic-veil-greater.text",
+  "level": 18,
+  "priceCp": 2100000,
+  "bulk": "0",
+  "usage": "item.prognostic-veil-greater.usage",
+  "activations": [
+    {
+      "name": "item.prognostic-veil-greater.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.prognostic-veil-greater.activations.0.frequency",
+      "text": "item.prognostic-veil-greater.activations.0.text"
+    },
+    {
+      "name": "item.prognostic-veil-greater.activations.1.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.prognostic-veil-greater.activations.1.frequency",
+      "trigger": "item.prognostic-veil-greater.activations.1.trigger",
+      "requirements": "item.prognostic-veil-greater.activations.1.requirements",
+      "text": "item.prognostic-veil-greater.activations.1.text"
+    }
+  ],
+  "category": "worn"
+}

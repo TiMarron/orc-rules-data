@@ -1,0 +1,17 @@
+{
+  "id": "feature.alchemist-advanced-vials",
+  "type": "feature",
+  "name": "feature.alchemist-advanced-vials.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.alchemist-advanced-vials.text",
+  "class": "class.alchemist",
+  "level": 11
+}

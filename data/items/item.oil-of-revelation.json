@@ -1,0 +1,24 @@
+{
+  "id": "item.oil-of-revelation",
+  "type": "item",
+  "name": "item.oil-of-revelation.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 303,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.oil-of-revelation.text",
+  "level": 5,
+  "priceCp": 2500,
+  "bulk": "L",
+  "usage": "item.oil-of-revelation.usage",
+  "category": "consumable"
+}

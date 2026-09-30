@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-vivacious-speed",
+  "type": "feature",
+  "name": "feature.swashbuckler-vivacious-speed.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-vivacious-speed.text",
+  "class": "class.swashbuckler",
+  "level": 3
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.alchemical-familiar",
+  "type": "feat",
+  "name": "feat.alchemical-familiar.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 63,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.alchemical-familiar.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.divine-health",
+  "type": "feat",
+  "name": "feat.divine-health.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 94,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-health.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": []
+}

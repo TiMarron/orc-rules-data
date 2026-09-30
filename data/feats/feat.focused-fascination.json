@@ -1,0 +1,26 @@
+{
+  "id": "feat.focused-fascination",
+  "type": "feat",
+  "name": "feat.focused-fascination.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 163,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.focused-fascination.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.fascinating-performance"
+    }
+  ]
+}

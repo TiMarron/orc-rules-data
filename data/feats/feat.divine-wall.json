@@ -1,0 +1,22 @@
+{
+  "id": "feat.divine-wall",
+  "type": "feat",
+  "name": "feat.divine-wall.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.divine-wall.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.champion",
+  "requirements": "feat.divine-wall.requirements",
+  "prerequisites": []
+}

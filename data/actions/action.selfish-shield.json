@@ -1,0 +1,20 @@
+{
+  "id": "action.selfish-shield",
+  "type": "action",
+  "name": "action.selfish-shield.name",
+  "traits": [
+    "champion",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 91,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.selfish-shield.text",
+  "actions": "reaction",
+  "trigger": "action.selfish-shield.trigger"
+}

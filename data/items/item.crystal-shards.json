@@ -1,0 +1,25 @@
+{
+  "id": "item.crystal-shards",
+  "type": "item",
+  "name": "item.crystal-shards.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "earth",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 284,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.crystal-shards.text",
+  "level": 4,
+  "bulk": "L",
+  "usage": "item.crystal-shards.usage",
+  "category": "alchemical"
+}

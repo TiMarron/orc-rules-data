@@ -1,0 +1,26 @@
+{
+  "id": "item.slumber-wine",
+  "type": "item",
+  "name": "item.slumber-wine.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "ingested",
+    "poison",
+    "sleep"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.slumber-wine.text",
+  "level": 12,
+  "priceCp": 32500,
+  "bulk": "L",
+  "usage": "item.slumber-wine.usage",
+  "category": "alchemical"
+}

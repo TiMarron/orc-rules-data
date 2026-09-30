@@ -1,0 +1,24 @@
+{
+  "id": "item.eagle-eye-elixir-greater",
+  "type": "item",
+  "name": "item.eagle-eye-elixir-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.eagle-eye-elixir-greater.text",
+  "level": 10,
+  "priceCp": 20000,
+  "bulk": "L",
+  "usage": "item.eagle-eye-elixir-greater.usage",
+  "category": "alchemical"
+}

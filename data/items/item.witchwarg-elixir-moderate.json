@@ -1,0 +1,24 @@
+{
+  "id": "item.witchwarg-elixir-moderate",
+  "type": "item",
+  "name": "item.witchwarg-elixir-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.witchwarg-elixir-moderate.text",
+  "level": 12,
+  "priceCp": 32000,
+  "bulk": "L",
+  "usage": "item.witchwarg-elixir-moderate.usage",
+  "category": "alchemical"
+}

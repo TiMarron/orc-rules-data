@@ -1,0 +1,21 @@
+{
+  "id": "action.quick-alchemy",
+  "type": "action",
+  "name": "action.quick-alchemy.name",
+  "traits": [
+    "alchemist",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 59,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "action.quick-alchemy.text",
+  "actions": "1",
+  "requirements": "action.quick-alchemy.requirements",
+  "editNote": "Accepted: cost, traits and requirement match the printing, and both options (Create Consumable, Quick Vial) are kept as bullets. The dropped block is a clarification note the structured source adds; the book does not print it."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.smite",
+  "type": "feat",
+  "name": "feat.smite.name",
+  "traits": [
+    "champion",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 96,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.smite.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.champion",
+  "actions": "1",
+  "prerequisites": []
+}

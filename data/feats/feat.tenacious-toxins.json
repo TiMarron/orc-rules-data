@@ -1,0 +1,21 @@
+{
+  "id": "feat.tenacious-toxins",
+  "type": "feat",
+  "name": "feat.tenacious-toxins.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 65,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tenacious-toxins.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

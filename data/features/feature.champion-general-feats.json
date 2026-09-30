@@ -1,0 +1,17 @@
+{
+  "id": "feature.champion-general-feats",
+  "type": "feature",
+  "name": "feature.champion-general-feats.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.champion-general-feats.text",
+  "class": "class.champion",
+  "level": 3
+}

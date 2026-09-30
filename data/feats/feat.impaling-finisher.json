@@ -1,0 +1,23 @@
+{
+  "id": "feat.impaling-finisher",
+  "type": "feat",
+  "name": "feat.impaling-finisher.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 166,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.impaling-finisher.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

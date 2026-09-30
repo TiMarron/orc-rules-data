@@ -1,0 +1,25 @@
+{
+  "id": "item.bravos-brew-greater",
+  "type": "item",
+  "name": "item.bravos-brew-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.bravos-brew-greater.text",
+  "level": 15,
+  "priceCp": 70000,
+  "bulk": "L",
+  "usage": "item.bravos-brew-greater.usage",
+  "category": "alchemical"
+}

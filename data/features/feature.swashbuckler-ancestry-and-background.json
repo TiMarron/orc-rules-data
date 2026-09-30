@@ -1,0 +1,17 @@
+{
+  "id": "feature.swashbuckler-ancestry-and-background",
+  "type": "feature",
+  "name": "feature.swashbuckler-ancestry-and-background.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.swashbuckler-ancestry-and-background.text",
+  "class": "class.swashbuckler",
+  "level": 1
+}

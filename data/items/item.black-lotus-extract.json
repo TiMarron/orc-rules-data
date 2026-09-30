@@ -1,0 +1,26 @@
+{
+  "id": "item.black-lotus-extract",
+  "type": "item",
+  "name": "item.black-lotus-extract.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "contact",
+    "poison",
+    "virulent"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 291,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.black-lotus-extract.text",
+  "level": 19,
+  "priceCp": 650000,
+  "bulk": "L",
+  "usage": "item.black-lotus-extract.usage",
+  "category": "alchemical"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item.serene-mutagen-major",
+  "type": "item",
+  "name": "item.serene-mutagen-major.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mutagen",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 290,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.serene-mutagen-major.text",
+  "level": 17,
+  "priceCp": 300000,
+  "bulk": "L",
+  "usage": "item.serene-mutagen-major.usage",
+  "category": "alchemical"
+}

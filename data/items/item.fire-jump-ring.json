@@ -1,0 +1,37 @@
+{
+  "id": "item.fire-jump-ring",
+  "type": "item",
+  "name": "item.fire-jump-ring.name",
+  "traits": [
+    "fire",
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.fire-jump-ring.text",
+  "level": 10,
+  "priceCp": 94000,
+  "bulk": "0",
+  "usage": "item.fire-jump-ring.usage",
+  "activations": [
+    {
+      "name": "item.fire-jump-ring.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate",
+        "teleportation"
+      ],
+      "frequency": "item.fire-jump-ring.activations.0.frequency",
+      "text": "item.fire-jump-ring.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

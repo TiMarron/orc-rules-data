@@ -1,0 +1,24 @@
+{
+  "id": "feat.illimitable-finisher",
+  "type": "feat",
+  "name": "feat.illimitable-finisher.name",
+  "traits": [
+    "finisher",
+    "flourish",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.illimitable-finisher.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

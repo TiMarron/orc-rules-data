@@ -1,0 +1,17 @@
+{
+  "id": "feature.champion-champion-expertise",
+  "type": "feature",
+  "name": "feature.champion-champion-expertise.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.champion-champion-expertise.text",
+  "class": "class.champion",
+  "level": 9
+}

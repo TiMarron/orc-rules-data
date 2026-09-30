@@ -1,0 +1,26 @@
+{
+  "id": "feat.shield-of-grace",
+  "type": "feat",
+  "name": "feat.shield-of-grace.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shield-of-grace.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.shield-warden"
+    }
+  ]
+}

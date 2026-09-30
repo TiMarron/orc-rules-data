@@ -1,0 +1,24 @@
+{
+  "id": "feat.distracting-toss",
+  "type": "feat",
+  "name": "feat.distracting-toss.name",
+  "traits": [
+    "bravado",
+    "flourish",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.distracting-toss.text",
+  "level": 8,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "2",
+  "prerequisites": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.cheetahs-elixir-greater",
+  "type": "item",
+  "name": "item.cheetahs-elixir-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.cheetahs-elixir-greater.text",
+  "level": 9,
+  "priceCp": 11000,
+  "bulk": "L",
+  "usage": "item.cheetahs-elixir-greater.usage",
+  "category": "alchemical"
+}

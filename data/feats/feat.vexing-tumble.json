@@ -1,0 +1,23 @@
+{
+  "id": "feat.vexing-tumble",
+  "type": "feat",
+  "name": "feat.vexing-tumble.name",
+  "traits": [
+    "bravado",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 166,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vexing-tumble.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": []
+}

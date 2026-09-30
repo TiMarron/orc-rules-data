@@ -1,0 +1,43 @@
+{
+  "id": "item.skinstitch-salve",
+  "type": "item",
+  "name": "item.skinstitch-salve.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 296,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.skinstitch-salve.text",
+  "level": 7,
+  "priceCp": 5500,
+  "bulk": "L",
+  "usage": "item.skinstitch-salve.usage",
+  "activations": [
+    {
+      "name": "item.skinstitch-salve.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.skinstitch-salve.activations.0.text"
+    },
+    {
+      "name": "item.skinstitch-salve.activations.1.name",
+      "actions": "free",
+      "traits": [
+        "manipulate"
+      ],
+      "trigger": "item.skinstitch-salve.activations.1.trigger",
+      "text": "item.skinstitch-salve.activations.1.text"
+    }
+  ],
+  "category": "alchemical"
+}

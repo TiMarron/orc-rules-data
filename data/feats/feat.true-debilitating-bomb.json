@@ -1,0 +1,26 @@
+{
+  "id": "feat.true-debilitating-bomb",
+  "type": "feat",
+  "name": "feat.true-debilitating-bomb.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.true-debilitating-bomb.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.greater-debilitating-bomb"
+    }
+  ]
+}

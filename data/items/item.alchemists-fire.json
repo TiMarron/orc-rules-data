@@ -1,0 +1,25 @@
+{
+  "id": "item.alchemists-fire",
+  "type": "item",
+  "name": "item.alchemists-fire.name",
+  "traits": [
+    "alchemical",
+    "bomb",
+    "consumable",
+    "fire",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.alchemists-fire.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.alchemists-fire.usage",
+  "category": "alchemical"
+}

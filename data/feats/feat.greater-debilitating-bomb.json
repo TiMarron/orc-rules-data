@@ -1,0 +1,26 @@
+{
+  "id": "feat.greater-debilitating-bomb",
+  "type": "feat",
+  "name": "feat.greater-debilitating-bomb.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 67,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.greater-debilitating-bomb.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.debilitating-bomb"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "spell.touch-of-the-void",
+  "type": "spell",
+  "name": "spell.touch-of-the-void.name",
+  "traits": [
+    "champion",
+    "focus",
+    "manipulate",
+    "void"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 256,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "spell.touch-of-the-void.text",
+  "rank": 1,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.touch-of-the-void.range",
+  "targets": "spell.touch-of-the-void.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.touch-of-the-void.heightened.0"
+    }
+  ]
+}

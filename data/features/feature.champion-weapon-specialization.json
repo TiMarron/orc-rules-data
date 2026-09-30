@@ -1,0 +1,17 @@
+{
+  "id": "feature.champion-weapon-specialization",
+  "type": "feature",
+  "name": "feature.champion-weapon-specialization.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feature.champion-weapon-specialization.text",
+  "class": "class.champion",
+  "level": 7
+}

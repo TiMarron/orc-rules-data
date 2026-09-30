@@ -1,0 +1,23 @@
+{
+  "id": "item.darkvision-elixir",
+  "type": "item",
+  "name": "item.darkvision-elixir.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.darkvision-elixir.text",
+  "level": 2,
+  "bulk": "L",
+  "usage": "item.darkvision-elixir.usage",
+  "category": "alchemical"
+}

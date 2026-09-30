@@ -1,0 +1,21 @@
+{
+  "id": "feat.sacred-defender",
+  "type": "feat",
+  "name": "feat.sacred-defender.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sacred-defender.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": []
+}

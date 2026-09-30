@@ -1,0 +1,23 @@
+{
+  "id": "item.witchwarg-elixir",
+  "type": "item",
+  "name": "item.witchwarg-elixir.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.witchwarg-elixir.text",
+  "level": 4,
+  "bulk": "L",
+  "usage": "item.witchwarg-elixir.usage",
+  "category": "alchemical"
+}

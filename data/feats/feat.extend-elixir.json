@@ -1,0 +1,21 @@
+{
+  "id": "feat.extend-elixir",
+  "type": "feat",
+  "name": "feat.extend-elixir.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 67,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.extend-elixir.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

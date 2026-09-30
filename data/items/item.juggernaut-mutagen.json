@@ -1,0 +1,25 @@
+{
+  "id": "item.juggernaut-mutagen",
+  "type": "item",
+  "name": "item.juggernaut-mutagen.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "mutagen",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 289,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.juggernaut-mutagen.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.juggernaut-mutagen.usage",
+  "category": "alchemical"
+}

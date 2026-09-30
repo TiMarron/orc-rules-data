@@ -1,0 +1,25 @@
+{
+  "id": "item.wolfsbane",
+  "type": "item",
+  "name": "item.wolfsbane.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "ingested",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.wolfsbane.text",
+  "level": 10,
+  "priceCp": 15500,
+  "bulk": "L",
+  "usage": "item.wolfsbane.usage",
+  "category": "alchemical"
+}

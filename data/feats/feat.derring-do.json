@@ -1,0 +1,22 @@
+{
+  "id": "feat.derring-do",
+  "type": "feat",
+  "name": "feat.derring-do.name",
+  "traits": [
+    "fortune",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.derring-do.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": []
+}

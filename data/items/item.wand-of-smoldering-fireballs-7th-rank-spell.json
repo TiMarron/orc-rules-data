@@ -1,0 +1,31 @@
+{
+  "id": "item.wand-of-smoldering-fireballs-7th-rank-spell",
+  "type": "item",
+  "name": "item.wand-of-smoldering-fireballs-7th-rank-spell.name",
+  "traits": [
+    "fire",
+    "magical",
+    "wand"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 309,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.wand-of-smoldering-fireballs-7th-rank-spell.text",
+  "level": 16,
+  "priceCp": 1000000,
+  "bulk": "L",
+  "usage": "item.wand-of-smoldering-fireballs-7th-rank-spell.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "frequency": "item.wand-of-smoldering-fireballs-7th-rank-spell.activations.0.frequency",
+      "text": "item.wand-of-smoldering-fireballs-7th-rank-spell.activations.0.text"
+    }
+  ],
+  "category": "wand"
+}

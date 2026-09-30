@@ -1,0 +1,23 @@
+{
+  "id": "item.silver-salve",
+  "type": "item",
+  "name": "item.silver-salve.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 296,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.silver-salve.text",
+  "level": 2,
+  "priceCp": 600,
+  "bulk": "L",
+  "usage": "item.silver-salve.usage",
+  "category": "alchemical"
+}

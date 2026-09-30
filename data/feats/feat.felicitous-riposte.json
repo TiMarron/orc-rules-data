@@ -1,0 +1,22 @@
+{
+  "id": "feat.felicitous-riposte",
+  "type": "feat",
+  "name": "feat.felicitous-riposte.name",
+  "traits": [
+    "fortune",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.felicitous-riposte.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": []
+}

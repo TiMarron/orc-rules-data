@@ -1,0 +1,25 @@
+{
+  "id": "item.antiplague-moderate",
+  "type": "item",
+  "name": "item.antiplague-moderate.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "healing"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.antiplague-moderate.text",
+  "level": 6,
+  "priceCp": 3500,
+  "bulk": "L",
+  "usage": "item.antiplague-moderate.usage",
+  "category": "alchemical"
+}

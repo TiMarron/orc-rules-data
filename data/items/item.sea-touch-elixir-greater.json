@@ -1,0 +1,25 @@
+{
+  "id": "item.sea-touch-elixir-greater",
+  "type": "item",
+  "name": "item.sea-touch-elixir-greater.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "elixir",
+    "polymorph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.sea-touch-elixir-greater.text",
+  "level": 15,
+  "priceCp": 92000,
+  "bulk": "L",
+  "usage": "item.sea-touch-elixir-greater.usage",
+  "category": "alchemical"
+}

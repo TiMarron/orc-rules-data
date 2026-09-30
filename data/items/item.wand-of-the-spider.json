@@ -1,0 +1,30 @@
+{
+  "id": "item.wand-of-the-spider",
+  "type": "item",
+  "name": "item.wand-of-the-spider.name",
+  "traits": [
+    "magical",
+    "poison",
+    "wand"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 309,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.wand-of-the-spider.text",
+  "level": 7,
+  "bulk": "L",
+  "usage": "item.wand-of-the-spider.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "frequency": "item.wand-of-the-spider.activations.0.frequency",
+      "text": "item.wand-of-the-spider.activations.0.text"
+    }
+  ],
+  "category": "wand"
+}

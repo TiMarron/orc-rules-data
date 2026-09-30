@@ -1,0 +1,22 @@
+{
+  "id": "feat.unstable-concoction",
+  "type": "feat",
+  "name": "feat.unstable-concoction.name",
+  "traits": [
+    "additive",
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 67,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unstable-concoction.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "item.tangle-root-toxin",
+  "type": "item",
+  "name": "item.tangle-root-toxin.name",
+  "traits": [
+    "alchemical",
+    "consumable",
+    "contact",
+    "poison"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.tangle-root-toxin.text",
+  "level": 7,
+  "priceCp": 5500,
+  "bulk": "L",
+  "usage": "item.tangle-root-toxin.usage",
+  "category": "alchemical"
+}
