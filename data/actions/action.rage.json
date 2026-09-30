@@ -15,8 +15,9 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "action.rage.text",
   "actions": "1",
-  "requirements": "action.rage.requirements"
+  "requirements": "action.rage.requirements",
+  "editNote": "Accepted: compared with the printed action sentence by sentence: cost, traits, requirement, temporary Hit Points, the additional damage and its agile halving, the concentrate restriction, duration and the end-of-rage rule all match. The list flagged by the converter is the two bullet items, kept as dash lines; the closing paragraph now starts on its own line."
 }

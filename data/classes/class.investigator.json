@@ -10,7 +10,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "class.investigator.text",
   "keyAttribute": "int",
   "hp": 8,
@@ -230,5 +230,6 @@
       "level": 19,
       "feature": "feature.investigator-master-detective"
     }
-  ]
+  ],
+  "editNote": "Verified against the class entry in the book: key attribute, hit points, perception and saving throw ranks, weapon and armour proficiencies, trained skills and the advancement table (feat, skill increase, attribute boost and feature levels) all match. The table and art the book prints are omitted, as the dataset markup carries neither. Simple and martial weapons and unarmed attacks are read correctly (they were read as untrained), skill increases come every level from 2nd, and the methodology skills are a described choice. The class feat at 1st level is now in the feat levels."
 }
