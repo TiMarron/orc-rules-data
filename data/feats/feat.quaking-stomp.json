@@ -13,13 +13,14 @@
     "page": 85,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.quaking-stomp.text",
   "level": 20,
   "category": "class",
   "class": "class.barbarian",
   "actions": "1",
   "frequency": "feat.quaking-stomp.frequency",
-  "prerequisites": []
+  "prerequisites": [],
+  "editNote": "The structured source has not yet taken in the book's spring 2026 errata (page 85), which adds the missing DC: the earthquake spell is used with the champion's class DC. The added words are the errata's; their place at the end of the sentence is the only choice made."
 }

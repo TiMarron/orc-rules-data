@@ -13,5 +13,5 @@
   "edited": true,
   "text": "heritage.spellhorn-kobold.text",
   "ancestry": "ancestry.kobold",
-  "editNote": "Accepted: the only difference from the published record is that the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\", a reverse index the book does not print) is no longer part of the text; every field and every other word is unchanged. Any other report on the record was already present, and reviewed, when it was published."
+  "editNote": "The structured source has not yet taken in the book's spring 2026 errata (page 21), which replaces the incorrect term in the last sentence with 'spellcasting attribute'. The wording is the errata's."
 }

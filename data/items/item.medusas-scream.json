@@ -12,7 +12,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": true,
+  "edited": false,
   "text": "item.medusas-scream.text",
   "level": 13,
   "priceCp": 300000,
@@ -30,6 +30,5 @@
       "text": "item.medusas-scream.activations.0.text"
     }
   ],
-  "category": "other",
-  "editNote": "The structured source gives the steel shield's statistics as Hardness 13, HP 52, BT 26, which matches neither entry of the item; the book prints Hardness 5, HP 20, BT 10 for the shield (the standard steel shield) and Hardness 15, HP 60, BT 30 for the greater one, the latter already in the record's text. The first figures are the book's."
+  "category": "other"
 }
