@@ -1,0 +1,27 @@
+{
+  "id": "feat.rallying-charge",
+  "type": "feat",
+  "name": "feat.rallying-charge.name",
+  "traits": [
+    "archetype",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 205,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rallying-charge.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.marshal-dedication"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "feat.lightning-qi",
+  "type": "feat",
+  "name": "feat.lightning-qi.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lightning-qi.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "free",
+  "frequency": "feat.lightning-qi.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ]
+}

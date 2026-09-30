@@ -1,0 +1,29 @@
+{
+  "id": "feat.alchemist-dedication",
+  "type": "feat",
+  "name": "feat.alchemist-dedication.name",
+  "traits": [
+    "archetype",
+    "dedication",
+    "multiclass"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 175,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.alchemist-dedication.text",
+  "level": 2,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "attribute",
+      "attribute": "int",
+      "min": 2
+    }
+  ],
+  "editNote": "Accepted: the only report is that the converter dropped the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\"), a reverse index of the prerequisites that the book does not print. The record's own text is unchanged."
+}

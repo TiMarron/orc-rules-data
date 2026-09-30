@@ -1,0 +1,39 @@
+{
+  "id": "spell.synesthesia",
+  "type": "spell",
+  "name": "spell.synesthesia.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 253,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.synesthesia.text",
+  "rank": 5,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.synesthesia.range",
+  "targets": "spell.synesthesia.targets",
+  "duration": "spell.synesthesia.duration",
+  "defense": {
+    "save": "will"
+  },
+  "heightened": [
+    {
+      "level": "9",
+      "text": "spell.synesthesia.heightened.0"
+    }
+  ],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+}

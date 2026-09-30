@@ -1,0 +1,33 @@
+{
+  "id": "feat.swift-guardian",
+  "type": "feat",
+  "name": "feat.swift-guardian.name",
+  "traits": [
+    "archetype",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 188,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.swift-guardian.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "free",
+  "trigger": "feat.swift-guardian.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.beastmaster-dedication"
+    },
+    {
+      "kind": "text",
+      "key": "feat.swift-guardian.prereq.1"
+    }
+  ],
+  "editNote": "Accepted: the only report is that the prerequisite is kept as a sentence rather than a structure, which the record holds as prose when the condition is a heritage, a subclass or a class feature (a list task for later, not an error). Each prerequisite was read against the book: 110 match word for word; the others differ only in phrasing (the structured source writes 'X mystery or Y mystery' where the book has 'X or Y mystery', adds the word 'heritage', or reorders two alternatives), and the one with a lost word was corrected by an edit."
+}

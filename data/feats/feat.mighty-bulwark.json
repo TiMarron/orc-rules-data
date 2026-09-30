@@ -1,0 +1,26 @@
+{
+  "id": "feat.mighty-bulwark",
+  "type": "feat",
+  "name": "feat.mighty-bulwark.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 215,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.mighty-bulwark.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.sentinel-dedication"
+    }
+  ],
+  "editNote": "Accepted: text, level and prerequisite match the book. The book prints only the archetype trait; the structured source adds the trait of a class from a book that is not imported, which has no record to point at and is left out."
+}

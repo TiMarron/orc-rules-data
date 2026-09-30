@@ -1,0 +1,31 @@
+{
+  "id": "feat.party-crasher",
+  "type": "feat",
+  "name": "feat.party-crasher.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.party-crasher.text",
+  "level": 7,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dandy-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "master"
+    }
+  ]
+}

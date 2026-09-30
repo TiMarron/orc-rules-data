@@ -1,0 +1,33 @@
+{
+  "id": "spell.unusual-anatomy",
+  "type": "spell",
+  "name": "spell.unusual-anatomy.name",
+  "traits": [
+    "focus",
+    "manipulate",
+    "polymorph",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.unusual-anatomy.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "1"
+  },
+  "duration": "spell.unusual-anatomy.duration",
+  "heightened": [
+    {
+      "level": "+2",
+      "text": "spell.unusual-anatomy.heightened.0"
+    }
+  ],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+}

@@ -3,6 +3,8 @@
   "type": "feat",
   "name": "feat.bespell-strikes.name",
   "traits": [
+    "oracle",
+    "sorcerer",
     "wizard"
   ],
   "rarity": "common",
@@ -16,7 +18,11 @@
   "text": "feat.bespell-strikes.text",
   "level": 4,
   "category": "class",
-  "class": "class.wizard",
+  "class": [
+    "class.oracle",
+    "class.sorcerer",
+    "class.wizard"
+  ],
   "actions": "free",
   "requirements": "feat.bespell-strikes.requirements",
   "frequency": "feat.bespell-strikes.frequency",

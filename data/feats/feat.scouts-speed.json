@@ -1,0 +1,25 @@
+{
+  "id": "feat.scouts-speed",
+  "type": "feat",
+  "name": "feat.scouts-speed.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 212,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scouts-speed.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.scout-dedication"
+    }
+  ]
+}

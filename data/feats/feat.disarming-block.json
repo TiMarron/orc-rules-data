@@ -1,0 +1,32 @@
+{
+  "id": "feat.disarming-block",
+  "type": "feat",
+  "name": "feat.disarming-block.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 187,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disarming-block.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "free",
+  "trigger": "feat.disarming-block.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bastion-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "trained"
+    }
+  ]
+}

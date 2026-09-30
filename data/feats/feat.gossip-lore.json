@@ -1,0 +1,25 @@
+{
+  "id": "feat.gossip-lore",
+  "type": "feat",
+  "name": "feat.gossip-lore.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.gossip-lore.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dandy-dedication"
+    }
+  ]
+}

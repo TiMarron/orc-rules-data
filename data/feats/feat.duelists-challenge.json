@@ -1,0 +1,26 @@
+{
+  "id": "feat.duelists-challenge",
+  "type": "feat",
+  "name": "feat.duelists-challenge.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 197,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.duelists-challenge.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.duelist-dedication"
+    }
+  ]
+}

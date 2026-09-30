@@ -1,0 +1,30 @@
+{
+  "id": "feat.mesmerizing-gaze",
+  "type": "feat",
+  "name": "feat.mesmerizing-gaze.name",
+  "traits": [
+    "archetype",
+    "concentrate",
+    "emotion",
+    "mental",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 194,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mesmerizing-gaze.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.celebrity-dedication"
+    }
+  ]
+}

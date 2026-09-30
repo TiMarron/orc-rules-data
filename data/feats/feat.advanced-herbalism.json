@@ -1,0 +1,30 @@
+{
+  "id": "feat.advanced-herbalism",
+  "type": "feat",
+  "name": "feat.advanced-herbalism.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 202,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-herbalism.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.herbalist-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.nature",
+      "rank": "expert"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "feat.tumbling-strike",
+  "type": "feat",
+  "name": "feat.tumbling-strike.name",
+  "traits": [
+    "archetype",
+    "flourish",
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 183,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tumbling-strike.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.tumbling-strike.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.acrobat-dedication"
+    }
+  ]
+}

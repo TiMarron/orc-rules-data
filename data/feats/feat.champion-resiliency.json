@@ -1,0 +1,30 @@
+{
+  "id": "feat.champion-resiliency",
+  "type": "feat",
+  "name": "feat.champion-resiliency.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 177,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.champion-resiliency.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.champion-dedication"
+    },
+    {
+      "kind": "text",
+      "key": "feat.champion-resiliency.prereq.1"
+    }
+  ],
+  "editNote": "Accepted: the only report is that the prerequisite is kept as a sentence rather than a structure, which the record holds as prose when the condition is a heritage, a subclass or a class feature (a list task for later, not an error). Each prerequisite was read against the book: 110 match word for word; the others differ only in phrasing (the structured source writes 'X mystery or Y mystery' where the book has 'X or Y mystery', adds the word 'heritage', or reorders two alternatives), and the one with a lost word was corrected by an edit."
+}

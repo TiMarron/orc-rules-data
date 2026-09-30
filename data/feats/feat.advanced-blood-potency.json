@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-blood-potency",
+  "type": "feat",
+  "name": "feat.advanced-blood-potency.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 181,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-blood-potency.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-blood-potency"
+    }
+  ],
+  "repeatable": true
+}

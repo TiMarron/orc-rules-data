@@ -1,0 +1,27 @@
+{
+  "id": "feat.spinebreaker",
+  "type": "feat",
+  "name": "feat.spinebreaker.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 223,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spinebreaker.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.spinebreaker.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wrestler-dedication"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.luck-of-the-clowder",
+  "type": "feat",
+  "name": "feat.luck-of-the-clowder.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.luck-of-the-clowder.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cats-luck"
+    }
+  ]
+}

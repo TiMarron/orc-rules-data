@@ -3,7 +3,8 @@
   "type": "feat",
   "name": "feat.master-of-many-styles.name",
   "traits": [
-    "fighter"
+    "fighter",
+    "monk"
   ],
   "rarity": "common",
   "source": {
@@ -16,7 +17,10 @@
   "text": "feat.master-of-many-styles.text",
   "level": 16,
   "category": "class",
-  "class": "class.fighter",
+  "class": [
+    "class.fighter",
+    "class.monk"
+  ],
   "actions": "free",
   "trigger": "feat.master-of-many-styles.trigger",
   "prerequisites": [

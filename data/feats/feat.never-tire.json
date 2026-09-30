@@ -1,0 +1,28 @@
+{
+  "id": "feat.never-tire",
+  "type": "feat",
+  "name": "feat.never-tire.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 194,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.never-tire.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.never-tire.trigger",
+  "requirements": "feat.never-tire.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.celebrity-dedication"
+    }
+  ]
+}

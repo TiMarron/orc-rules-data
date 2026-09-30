@@ -1,0 +1,30 @@
+{
+  "id": "feat.master-spotter",
+  "type": "feat",
+  "name": "feat.master-spotter.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 178,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.master-spotter.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.investigator-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "perception",
+      "rank": "expert"
+    }
+  ]
+}

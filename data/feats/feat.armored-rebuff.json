@@ -1,0 +1,28 @@
+{
+  "id": "feat.armored-rebuff",
+  "type": "feat",
+  "name": "feat.armored-rebuff.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 215,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.armored-rebuff.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.armored-rebuff.trigger",
+  "requirements": "feat.armored-rebuff.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.sentinel-dedication"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.great-cleave",
+  "type": "feat",
+  "name": "feat.great-cleave.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.great-cleave.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cleave"
+    }
+  ]
+}

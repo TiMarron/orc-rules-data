@@ -3,6 +3,7 @@
   "type": "feat",
   "name": "feat.shield-warden.name",
   "traits": [
+    "champion",
     "fighter"
   ],
   "rarity": "common",
@@ -16,7 +17,10 @@
   "text": "feat.shield-warden.text",
   "level": 6,
   "category": "class",
-  "class": "class.fighter",
+  "class": [
+    "class.champion",
+    "class.fighter"
+  ],
   "prerequisites": [
     {
       "kind": "feat",

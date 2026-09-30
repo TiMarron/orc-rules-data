@@ -1,0 +1,27 @@
+{
+  "id": "feat.blessed-denial",
+  "type": "feat",
+  "name": "feat.blessed-denial.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 190,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.blessed-denial.text",
+  "level": 12,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.blessed-denial.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.blessed-one-dedication"
+    }
+  ]
+}

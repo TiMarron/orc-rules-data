@@ -1,0 +1,26 @@
+{
+  "id": "feat.makeshift-strike",
+  "type": "feat",
+  "name": "feat.makeshift-strike.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 221,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.makeshift-strike.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.weapon-improviser-dedication"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "action.glimpse-of-redemption",
+  "type": "action",
+  "name": "action.glimpse-of-redemption.name",
+  "traits": [
+    "champion",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 93,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "action.glimpse-of-redemption.text",
+  "actions": "reaction",
+  "trigger": "action.glimpse-of-redemption.trigger",
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feat.call-of-the-dead-realm",
+  "type": "feat",
+  "name": "feat.call-of-the-dead-realm.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.call-of-the-dead-realm.text",
+  "level": 17,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: the feat and the plane it names carried a plane's proper name, so the feat is renamed and every mention is replaced with a generic descriptor. The rules text is the book's."
+}

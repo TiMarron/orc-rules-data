@@ -1,0 +1,29 @@
+{
+  "id": "feat.shed-tail",
+  "type": "feat",
+  "name": "feat.shed-tail.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shed-tail.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "actions": "reaction",
+  "trigger": "feat.shed-tail.trigger",
+  "requirements": "feat.shed-tail.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.iruxi-armaments"
+    }
+  ]
+}

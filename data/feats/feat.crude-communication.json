@@ -1,0 +1,25 @@
+{
+  "id": "feat.crude-communication",
+  "type": "feat",
+  "name": "feat.crude-communication.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 203,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.crude-communication.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.linguist-dedication"
+    }
+  ]
+}

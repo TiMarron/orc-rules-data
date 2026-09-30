@@ -1,0 +1,31 @@
+{
+  "id": "feat.wild-winds-gust",
+  "type": "feat",
+  "name": "feat.wild-winds-gust.name",
+  "traits": [
+    "air",
+    "concentrate",
+    "manipulate",
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 126,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.wild-winds-gust.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "2",
+  "requirements": "feat.wild-winds-gust.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wild-winds-initiate"
+    }
+  ]
+}

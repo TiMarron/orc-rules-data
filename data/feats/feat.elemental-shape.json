@@ -11,8 +11,8 @@
     "page": 133,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.elemental-shape.text",
   "level": 10,
   "category": "class",
@@ -22,5 +22,6 @@
       "kind": "feat",
       "id": "feat.untamed-form"
     }
-  ]
+  ],
+  "editNote": "Accepted: the only difference from the published record is that the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\", a reverse index the book does not print) is no longer part of the text; every field and every other word is unchanged. Any other report on the record was already present, and reviewed, when it was published."
 }

@@ -1,0 +1,37 @@
+{
+  "id": "spell.chthonian-wrath",
+  "type": "spell",
+  "name": "spell.chthonian-wrath.name",
+  "traits": [
+    "concentrate",
+    "focus",
+    "manipulate",
+    "sorcerer"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 263,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.chthonian-wrath.text",
+  "rank": 5,
+  "focus": true,
+  "cast": {
+    "actions": "2"
+  },
+  "area": "spell.chthonian-wrath.area",
+  "defense": {
+    "save": "reflex",
+    "basic": true
+  },
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "spell.chthonian-wrath.heightened.0"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a cosmological region is replaced with a generic descriptor. The rules text is the book's."
+}

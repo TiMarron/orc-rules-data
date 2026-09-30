@@ -1,0 +1,27 @@
+{
+  "id": "feat.wind-jump",
+  "type": "feat",
+  "name": "feat.wind-jump.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.wind-jump.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found; the whole-text score sits under the threshold only because these texts are short and full of italicised spell names. Prerequisites kept as prose and the dropped closing list are the informational reports already described for the other archetype and heritage feats."
+}

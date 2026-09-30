@@ -1,0 +1,22 @@
+{
+  "id": "feat.certain-stratagem",
+  "type": "feat",
+  "name": "feat.certain-stratagem.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 107,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.certain-stratagem.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": [],
+  "editNote": "The structured source misspells the name (\"Strategem\"), and the misspelling is in its identifier; the book prints \"Certain Stratagem\", so the record and its id carry the book's spelling."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "feat.path-of-iron",
+  "type": "feat",
+  "name": "feat.path-of-iron.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 206,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.path-of-iron.text",
+  "level": 14,
+  "category": "archetype",
+  "actions": "3",
+  "frequency": "feat.path-of-iron.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.martial-artist-dedication"
+    }
+  ]
+}

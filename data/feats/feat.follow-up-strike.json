@@ -1,0 +1,28 @@
+{
+  "id": "feat.follow-up-strike",
+  "type": "feat",
+  "name": "feat.follow-up-strike.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 206,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.follow-up-strike.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.follow-up-strike.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.martial-artist-dedication"
+    }
+  ]
+}

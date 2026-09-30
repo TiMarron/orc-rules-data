@@ -7,6 +7,7 @@
     "fear",
     "mental",
     "rogue",
+    "swashbuckler",
     "visual"
   ],
   "rarity": "common",
@@ -20,7 +21,10 @@
   "text": "feat.youre-next.text",
   "level": 1,
   "category": "class",
-  "class": "class.rogue",
+  "class": [
+    "class.rogue",
+    "class.swashbuckler"
+  ],
   "actions": "reaction",
   "trigger": "feat.youre-next.trigger",
   "prerequisites": [

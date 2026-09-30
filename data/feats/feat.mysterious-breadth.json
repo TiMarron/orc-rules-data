@@ -1,0 +1,25 @@
+{
+  "id": "feat.mysterious-breadth",
+  "type": "feat",
+  "name": "feat.mysterious-breadth.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 180,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.mysterious-breadth.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.basic-oracle-spellcasting"
+    }
+  ]
+}

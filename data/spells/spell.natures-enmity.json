@@ -1,0 +1,32 @@
+{
+  "id": "spell.natures-enmity",
+  "type": "spell",
+  "name": "spell.natures-enmity.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 248,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "spell.natures-enmity.text",
+  "rank": 9,
+  "traditions": [
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.natures-enmity.range",
+  "area": "spell.natures-enmity.area",
+  "targets": "spell.natures-enmity.targets",
+  "duration": "spell.natures-enmity.duration",
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+}

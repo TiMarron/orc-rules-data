@@ -1,0 +1,29 @@
+{
+  "id": "feat.align-qi",
+  "type": "feat",
+  "name": "feat.align-qi.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.align-qi.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "reaction",
+  "trigger": "feat.align-qi.trigger",
+  "frequency": "feat.align-qi.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ]
+}

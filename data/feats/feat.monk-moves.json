@@ -1,0 +1,25 @@
+{
+  "id": "feat.monk-moves",
+  "type": "feat",
+  "name": "feat.monk-moves.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 179,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.monk-moves.text",
+  "level": 8,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.monk-dedication"
+    }
+  ]
+}

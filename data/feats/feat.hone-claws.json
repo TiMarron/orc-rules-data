@@ -1,0 +1,28 @@
+{
+  "id": "feat.hone-claws",
+  "type": "feat",
+  "name": "feat.hone-claws.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 27,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hone-claws.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "actions": "1",
+  "frequency": "feat.hone-claws.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.iruxi-armaments"
+    }
+  ]
+}

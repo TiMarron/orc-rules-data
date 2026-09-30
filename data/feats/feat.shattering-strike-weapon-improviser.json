@@ -1,0 +1,27 @@
+{
+  "id": "feat.shattering-strike-weapon-improviser",
+  "type": "feat",
+  "name": "feat.shattering-strike-weapon-improviser.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 221,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shattering-strike-weapon-improviser.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.shattering-strike-weapon-improviser.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.improvised-pummel"
+    }
+  ]
+}

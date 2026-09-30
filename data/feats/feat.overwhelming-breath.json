@@ -1,0 +1,29 @@
+{
+  "id": "feat.overwhelming-breath",
+  "type": "feat",
+  "name": "feat.overwhelming-breath.name",
+  "traits": [
+    "concentrate",
+    "monk",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 125,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.overwhelming-breath.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.qi-spells"
+    }
+  ]
+}

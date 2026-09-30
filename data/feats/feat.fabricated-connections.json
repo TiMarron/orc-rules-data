@@ -1,0 +1,31 @@
+{
+  "id": "feat.fabricated-connections",
+  "type": "feat",
+  "name": "feat.fabricated-connections.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fabricated-connections.text",
+  "level": 7,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dandy-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "master"
+    }
+  ]
+}

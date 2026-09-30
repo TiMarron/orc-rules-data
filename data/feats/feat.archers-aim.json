@@ -1,0 +1,27 @@
+{
+  "id": "feat.archers-aim",
+  "type": "feat",
+  "name": "feat.archers-aim.name",
+  "traits": [
+    "archetype",
+    "concentrate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 185,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.archers-aim.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.archer-dedication"
+    }
+  ]
+}

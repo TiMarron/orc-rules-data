@@ -1,0 +1,25 @@
+{
+  "id": "feat.advanced-poisoncraft",
+  "type": "feat",
+  "name": "feat.advanced-poisoncraft.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 210,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-poisoncraft.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.poisoner-dedication"
+    }
+  ]
+}

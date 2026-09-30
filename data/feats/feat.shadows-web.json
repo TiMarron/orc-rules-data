@@ -1,0 +1,26 @@
+{
+  "id": "feat.shadows-web",
+  "type": "feat",
+  "name": "feat.shadows-web.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 126,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shadows-web.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.clinging-shadows-initiate"
+    }
+  ]
+}

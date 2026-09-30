@@ -1,0 +1,25 @@
+{
+  "id": "feat.finishing-precision",
+  "type": "feat",
+  "name": "feat.finishing-precision.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 182,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.finishing-precision.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.swashbuckler-dedication"
+    }
+  ]
+}

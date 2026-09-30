@@ -1,0 +1,28 @@
+{
+  "id": "feat.flamboyant-leap",
+  "type": "feat",
+  "name": "feat.flamboyant-leap.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 168,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.flamboyant-leap.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "2",
+  "requirements": "feat.flamboyant-leap.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.flamboyant-athlete"
+    }
+  ]
+}

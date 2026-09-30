@@ -1,0 +1,25 @@
+{
+  "id": "feat.stage-fighting",
+  "type": "feat",
+  "name": "feat.stage-fighting.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 201,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.stage-fighting.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.gladiator-dedication"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.beastmaster-bond",
+  "type": "feat",
+  "name": "feat.beastmaster-bond.name",
+  "traits": [
+    "archetype",
+    "mental",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 189,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.beastmaster-bond.text",
+  "level": 10,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.beastmaster-dedication"
+    }
+  ]
+}

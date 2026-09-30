@@ -11,8 +11,8 @@
     "page": 216,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.basic-bard-spellcasting.text",
   "level": 4,
   "category": "archetype",
@@ -21,5 +21,6 @@
       "kind": "feat",
       "id": "feat.bard-dedication"
     }
-  ]
+  ],
+  "editNote": "Accepted: the only difference from the published record is that the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\", a reverse index the book does not print) is no longer part of the text; every field and every other word is unchanged. Any other report on the record was already present, and reviewed, when it was published."
 }

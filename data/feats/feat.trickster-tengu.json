@@ -1,0 +1,22 @@
+{
+  "id": "feat.trickster-tengu",
+  "type": "feat",
+  "name": "feat.trickster-tengu.name",
+  "traits": [
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 35,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.trickster-tengu.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "prerequisites": [],
+  "editNote": "Accepted: every sentence of the record was compared with the book and found; the whole-text score sits under the threshold only because these texts are short and full of italicised spell names. Prerequisites kept as prose and the dropped closing list are the informational reports already described for the other archetype and heritage feats."
+}

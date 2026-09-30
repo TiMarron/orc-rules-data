@@ -1,0 +1,26 @@
+{
+  "id": "feat.lucky-break",
+  "type": "feat",
+  "name": "feat.lucky-break.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lucky-break.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cats-luck"
+    }
+  ]
+}

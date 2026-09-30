@@ -1,0 +1,27 @@
+{
+  "id": "feat.disengaging-twist",
+  "type": "feat",
+  "name": "feat.disengaging-twist.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 222,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.disengaging-twist.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.disengaging-twist.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wrestler-dedication"
+    }
+  ]
+}

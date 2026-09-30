@@ -5,6 +5,8 @@
   "traits": [
     "druid",
     "manipulate",
+    "oracle",
+    "sorcerer",
     "spellshape",
     "witch",
     "wizard"
@@ -22,6 +24,8 @@
   "category": "class",
   "class": [
     "class.druid",
+    "class.oracle",
+    "class.sorcerer",
     "class.witch",
     "class.wizard"
   ],

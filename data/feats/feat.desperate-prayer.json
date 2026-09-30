@@ -11,8 +11,8 @@
     "page": 93,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.desperate-prayer.text",
   "level": 1,
   "category": "class",
@@ -20,5 +20,6 @@
   "actions": "free",
   "trigger": "feat.desperate-prayer.trigger",
   "frequency": "feat.desperate-prayer.frequency",
-  "prerequisites": []
+  "prerequisites": [],
+  "editNote": "Accepted: the only difference from the published record is that the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\", a reverse index the book does not print) is no longer part of the text; every field and every other word is unchanged. Any other report on the record was already present, and reviewed, when it was published."
 }

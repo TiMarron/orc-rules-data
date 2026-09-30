@@ -6,6 +6,8 @@
     "bard",
     "cleric",
     "druid",
+    "oracle",
+    "sorcerer",
     "witch",
     "wizard"
   ],
@@ -24,6 +26,8 @@
     "class.bard",
     "class.cleric",
     "class.druid",
+    "class.oracle",
+    "class.sorcerer",
     "class.witch",
     "class.wizard"
   ],

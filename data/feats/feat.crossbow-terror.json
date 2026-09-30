@@ -1,0 +1,26 @@
+{
+  "id": "feat.crossbow-terror",
+  "type": "feat",
+  "name": "feat.crossbow-terror.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 185,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.crossbow-terror.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.archer-dedication"
+    }
+  ]
+}

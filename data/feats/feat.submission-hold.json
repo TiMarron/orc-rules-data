@@ -1,0 +1,27 @@
+{
+  "id": "feat.submission-hold",
+  "type": "feat",
+  "name": "feat.submission-hold.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 223,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.submission-hold.text",
+  "level": 8,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.submission-hold.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wrestler-dedication"
+    }
+  ]
+}

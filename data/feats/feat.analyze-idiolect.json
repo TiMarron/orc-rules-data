@@ -1,0 +1,36 @@
+{
+  "id": "feat.analyze-idiolect",
+  "type": "feat",
+  "name": "feat.analyze-idiolect.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 203,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.analyze-idiolect.text",
+  "level": 6,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.linguist-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "expert"
+    }
+  ]
+}

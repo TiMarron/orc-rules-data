@@ -1,0 +1,27 @@
+{
+  "id": "feat.settlement-scholastics",
+  "type": "feat",
+  "name": "feat.settlement-scholastics.name",
+  "traits": [
+    "archetype",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 184,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.settlement-scholastics.text",
+  "level": 4,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.archaeologist-dedication"
+    }
+  ],
+  "repeatable": true
+}

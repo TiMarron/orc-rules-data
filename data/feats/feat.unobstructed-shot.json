@@ -1,0 +1,32 @@
+{
+  "id": "feat.unobstructed-shot",
+  "type": "feat",
+  "name": "feat.unobstructed-shot.name",
+  "traits": [
+    "archetype",
+    "flourish"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 185,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.unobstructed-shot.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.archer-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.athletics",
+      "rank": "expert"
+    }
+  ]
+}

@@ -24,5 +24,5 @@
       "rank": "trained"
     }
   ],
-  "editNote": "Reserved Material removed: one entry of the 'leads to' list carried a region's proper name and no record exists for it, so that single name is dropped from the list. The rest of the list and the rules text are the book's."
+  "editNote": "Accepted: the only difference from the published record is that the structured source's own closing list (\"<Name> leads to...\" or \"Feats that require <Heritage>...\", a reverse index the book does not print) is no longer part of the text; every field and every other word is unchanged. Any other report on the record was already present, and reviewed, when it was published."
 }

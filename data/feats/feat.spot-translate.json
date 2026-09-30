@@ -1,0 +1,29 @@
+{
+  "id": "feat.spot-translate",
+  "type": "feat",
+  "name": "feat.spot-translate.name",
+  "traits": [
+    "archetype",
+    "auditory",
+    "linguistic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 203,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.spot-translate.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "reaction",
+  "trigger": "feat.spot-translate.trigger",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.linguist-dedication"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "feat.tumbling-opportunist",
+  "type": "feat",
+  "name": "feat.tumbling-opportunist.name",
+  "traits": [
+    "archetype",
+    "attack"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 183,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tumbling-opportunist.text",
+  "level": 10,
+  "category": "archetype",
+  "actions": "free",
+  "requirements": "feat.tumbling-opportunist.requirements",
+  "frequency": "feat.tumbling-opportunist.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.acrobat-dedication"
+    }
+  ]
+}
