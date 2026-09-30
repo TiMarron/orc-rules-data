@@ -12,7 +12,7 @@
     "page": 70,
     "revision": "2023-first"
   },
-  "review": "assistant",
+  "review": "human",
   "edited": true,
   "text": "ancestry.orc.text",
   "hp": 10,
@@ -39,5 +39,5 @@
   "senses": [
     "darkvision"
   ],
-  "editNote": "Reserved"
+  "editNote": "Reserved Material removed: the generated text named Reserved terms; they are replaced with generic wording, and the edited text carries none. (The original note was cut short to a single word when it was recorded, so this states what the edit does rather than what it replaced.)"
 }
