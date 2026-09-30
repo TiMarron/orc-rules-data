@@ -1,0 +1,21 @@
+{
+  "id": "feat.briar-battler",
+  "type": "feat",
+  "name": "feat.briar-battler.name",
+  "traits": [
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.briar-battler.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "prerequisites": []
+}

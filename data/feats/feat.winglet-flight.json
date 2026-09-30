@@ -1,0 +1,28 @@
+{
+  "id": "feat.winglet-flight",
+  "type": "feat",
+  "name": "feat.winglet-flight.name",
+  "traits": [
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.winglet-flight.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "actions": "1",
+  "frequency": "feat.winglet-flight.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.winglets"
+    }
+  ]
+}

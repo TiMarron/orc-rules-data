@@ -1,0 +1,26 @@
+{
+  "id": "feat.evolved-spellhorn",
+  "type": "feat",
+  "name": "feat.evolved-spellhorn.name",
+  "traits": [
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.evolved-spellhorn.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.evolved-spellhorn.prereq.0"
+    }
+  ]
+}

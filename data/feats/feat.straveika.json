@@ -1,0 +1,22 @@
+{
+  "id": "feat.straveika",
+  "type": "feat",
+  "name": "feat.straveika.name",
+  "traits": [
+    "dhampir",
+    "lineage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.straveika.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

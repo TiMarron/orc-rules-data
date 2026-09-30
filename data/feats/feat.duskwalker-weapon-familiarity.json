@@ -1,0 +1,21 @@
+{
+  "id": "feat.duskwalker-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.duskwalker-weapon-familiarity.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.duskwalker-weapon-familiarity.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

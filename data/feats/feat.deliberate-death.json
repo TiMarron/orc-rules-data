@@ -1,0 +1,24 @@
+{
+  "id": "feat.deliberate-death",
+  "type": "feat",
+  "name": "feat.deliberate-death.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 48,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.deliberate-death.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "actions": "reaction",
+  "trigger": "feat.deliberate-death.trigger",
+  "frequency": "feat.deliberate-death.frequency",
+  "prerequisites": []
+}

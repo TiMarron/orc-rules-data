@@ -1,0 +1,21 @@
+{
+  "id": "feat.undead-slayer",
+  "type": "feat",
+  "name": "feat.undead-slayer.name",
+  "traits": [
+    "dhampir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.undead-slayer.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

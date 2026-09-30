@@ -1,0 +1,33 @@
+{
+  "id": "feat.tumbling-diversion",
+  "type": "feat",
+  "name": "feat.tumbling-diversion.name",
+  "traits": [
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tumbling-diversion.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.acrobatics",
+      "rank": "expert"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.deception",
+      "rank": "expert"
+    }
+  ]
+}

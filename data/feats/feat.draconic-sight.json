@@ -1,0 +1,21 @@
+{
+  "id": "feat.draconic-sight",
+  "type": "feat",
+  "name": "feat.draconic-sight.name",
+  "traits": [
+    "dragonblood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 46,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.draconic-sight.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

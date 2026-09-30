@@ -1,0 +1,25 @@
+{
+  "id": "feat.allys-shelter",
+  "type": "feat",
+  "name": "feat.allys-shelter.name",
+  "traits": [
+    "fortune",
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 22,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.allys-shelter.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "actions": "reaction",
+  "trigger": "feat.allys-shelter.trigger",
+  "frequency": "feat.allys-shelter.frequency",
+  "prerequisites": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "heritage.dragonblood",
+  "type": "heritage",
+  "name": "heritage.dragonblood.name",
+  "traits": [
+    "dragonblood"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 44,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "heritage.dragonblood.text",
+  "versatile": true,
+  "editNote": "Reserved Material removed: the world's name, a region and its nickname, another region named for a monster-slaying culture and two named dragon gods are replaced with generic wording. Rules text (the Dragonblood Heritage Mechanics block) is untouched."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.necromantic-physiology",
+  "type": "feat",
+  "name": "feat.necromantic-physiology.name",
+  "traits": [
+    "dhampir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.necromantic-physiology.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

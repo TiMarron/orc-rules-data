@@ -1,0 +1,26 @@
+{
+  "id": "feat.cringe",
+  "type": "feat",
+  "name": "feat.cringe.name",
+  "traits": [
+    "emotion",
+    "kobold",
+    "mental",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 22,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cringe.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.kobold",
+  "actions": "reaction",
+  "trigger": "feat.cringe.trigger",
+  "prerequisites": []
+}

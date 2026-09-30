@@ -1,0 +1,21 @@
+{
+  "id": "feat.enthralling-allure",
+  "type": "feat",
+  "name": "feat.enthralling-allure.name",
+  "traits": [
+    "dhampir"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.enthralling-allure.text",
+  "level": 5,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

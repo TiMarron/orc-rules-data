@@ -1,0 +1,22 @@
+{
+  "id": "feat.svetocher",
+  "type": "feat",
+  "name": "feat.svetocher.name",
+  "traits": [
+    "dhampir",
+    "lineage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.svetocher.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": []
+}

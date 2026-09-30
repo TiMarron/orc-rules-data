@@ -1,0 +1,46 @@
+{
+  "id": "ancestry.kobold",
+  "type": "ancestry",
+  "name": "ancestry.kobold.name",
+  "traits": [
+    "humanoid",
+    "kobold"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 20,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ancestry.kobold.text",
+  "hp": 6,
+  "size": "small",
+  "speed": 25,
+  "boosts": [
+    "dex",
+    "cha",
+    "free"
+  ],
+  "flaws": [
+    "con"
+  ],
+  "languages": [
+    "common",
+    "sakvroth"
+  ],
+  "heritages": [
+    "heritage.cavernstalker-kobold",
+    "heritage.dragonscaled-kobold",
+    "heritage.elementheart-kobold",
+    "heritage.spellhorn-kobold",
+    "heritage.strongjaw-kobold",
+    "heritage.tunnelflood-kobold",
+    "heritage.venomtail-kobold"
+  ],
+  "senses": [
+    "darkvision"
+  ],
+  "editNote": "Reserved Material removed: the three named deities are replaced with the kind of deity the sentence is about (a devil-linked one and a dragon one). Rules text is the book's."
+}

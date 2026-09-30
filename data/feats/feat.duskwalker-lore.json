@@ -1,0 +1,22 @@
+{
+  "id": "feat.duskwalker-lore",
+  "type": "feat",
+  "name": "feat.duskwalker-lore.name",
+  "traits": [
+    "duskwalker"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "feat.duskwalker-lore.text",
+  "level": 1,
+  "category": "ancestry",
+  "versatile": true,
+  "prerequisites": [],
+  "editNote": "Reserved Material removed: the proper name of a plane in a Lore skill's name is replaced with a generic descriptor. The rules text is the book's."
+}
