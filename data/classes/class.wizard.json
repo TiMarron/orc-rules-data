@@ -9,7 +9,7 @@
     "page": 193,
     "revision": "2023-first"
   },
-  "review": "assistant",
+  "review": "human",
   "edited": true,
   "text": "class.wizard.text",
   "keyAttribute": "int",
