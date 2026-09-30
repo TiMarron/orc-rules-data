@@ -1,0 +1,16 @@
+{
+  "id": "heritage.unseen-lizardfolk",
+  "type": "heritage",
+  "name": "heritage.unseen-lizardfolk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 25,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.unseen-lizardfolk.text",
+  "ancestry": "ancestry.lizardfolk"
+}

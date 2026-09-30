@@ -1,0 +1,16 @@
+{
+  "id": "heritage.smokeworker-hobgoblin",
+  "type": "heritage",
+  "name": "heritage.smokeworker-hobgoblin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 13,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.smokeworker-hobgoblin.text",
+  "ancestry": "ancestry.hobgoblin"
+}

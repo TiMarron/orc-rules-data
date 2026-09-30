@@ -1,0 +1,51 @@
+{
+  "id": "ancestry.catfolk",
+  "type": "ancestry",
+  "name": "ancestry.catfolk.name",
+  "traits": [
+    "catfolk",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 8,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "ancestry.catfolk.text",
+  "hp": 8,
+  "size": "medium",
+  "speed": 25,
+  "boosts": [
+    "dex",
+    "cha",
+    "free"
+  ],
+  "flaws": [
+    "wis"
+  ],
+  "languages": [
+    "amurrun",
+    "common"
+  ],
+  "heritages": [
+    "heritage.clawed-catfolk",
+    "heritage.hunting-catfolk",
+    "heritage.jungle-catfolk",
+    "heritage.liminal-catfolk",
+    "heritage.nine-lives-catfolk",
+    "heritage.sharp-eared-catfolk",
+    "heritage.winter-catfolk"
+  ],
+  "senses": [
+    "low-light-vision"
+  ],
+  "grants": [
+    {
+      "name": "ancestry.catfolk.grants.0.name",
+      "text": "ancestry.catfolk.grants.0.text"
+    }
+  ]
+}

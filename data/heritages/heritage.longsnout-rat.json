@@ -1,0 +1,16 @@
+{
+  "id": "heritage.longsnout-rat",
+  "type": "heritage",
+  "name": "heritage.longsnout-rat.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 29,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.longsnout-rat.text",
+  "ancestry": "ancestry.ratfolk"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "heritage.deep-rat",
+  "type": "heritage",
+  "name": "heritage.deep-rat.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 29,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.deep-rat.text",
+  "ancestry": "ancestry.ratfolk"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "heritage.warrenbred-hobgoblin",
+  "type": "heritage",
+  "name": "heritage.warrenbred-hobgoblin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 13,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.warrenbred-hobgoblin.text",
+  "ancestry": "ancestry.hobgoblin"
+}
