@@ -14,7 +14,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.unholy-plate.text",
   "level": 13,
   "priceCp": 250000,
@@ -31,5 +31,6 @@
       "text": "item.unholy-plate.activations.0.text"
     }
   ],
-  "category": "other"
+  "category": "other",
+  "editNote": "Accepted: the item's description and activation were compared with the book. It is kept as category 'other' because a specific magic armor or shield has no statistics of its own in the record; they are those of the base armor or shield the text links to, and where the book prints a shield's Hardness, HP and BT inline they are in the text (restored by edit for the Exploding Shield and Glamorous Buckler, and corrected to the book's figures for Medusa's Scream, where the structured source's differ). The 'other book' citations sit in the variants' source lines, not in the text."
 }

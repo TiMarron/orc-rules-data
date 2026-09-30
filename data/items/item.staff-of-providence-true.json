@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.staff-of-providence-true.text",
   "level": 20,
   "priceCp": 6400000,
@@ -25,5 +25,6 @@
       "text": "item.staff-of-providence-true.activations.0.text"
     }
   ],
-  "category": "staff"
+  "category": "staff",
+  "editNote": "Accepted: the description, the activation and every spell list by rank were compared with the book and match (the book adds page references after some spell names; a staff repeats one spell across ranks where the book does, as in the Staff of Providence). The bullet lists are kept as dash lines; the 'other book' citations sit in the variants' source lines, not in the text; the variants are their own records."
 }

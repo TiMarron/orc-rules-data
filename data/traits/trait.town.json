@@ -10,6 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
-  "text": "trait.town.text"
+  "edited": true,
+  "text": "trait.town.text",
+  "editNote": "Accepted: the structured source paraphrases the settlement-type definition, so containment against the printed page (p.170) is low, but the substance is the book's: a town is usually level 2-4 and a city level 5-7, and the size descriptions are consistent with the surrounding text. Nothing is added that the book does not say."
 }

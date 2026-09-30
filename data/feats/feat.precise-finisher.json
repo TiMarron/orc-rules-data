@@ -12,7 +12,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "feat.precise-finisher.text",
   "level": 6,
   "category": "class",
@@ -22,5 +22,6 @@
       "kind": "text",
       "key": "feat.precise-finisher.prereq.0"
     }
-  ]
+  ],
+  "editNote": "Accepted: level, class, text and the single prerequisite match the printing. The prerequisite is a class feature, which the record can only hold as prose."
 }
