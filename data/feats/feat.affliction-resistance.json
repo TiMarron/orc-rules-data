@@ -1,0 +1,21 @@
+{
+  "id": "feat.affliction-resistance",
+  "type": "feat",
+  "name": "feat.affliction-resistance.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.affliction-resistance.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": []
+}

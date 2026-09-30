@@ -1,0 +1,26 @@
+{
+  "id": "feat.greater-bloodline",
+  "type": "feat",
+  "name": "feat.greater-bloodline.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 154,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.greater-bloodline.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.greater-bloodline.prereq.0"
+    }
+  ]
+}

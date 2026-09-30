@@ -1,0 +1,28 @@
+{
+  "id": "feat.interweave-dispel",
+  "type": "feat",
+  "name": "feat.interweave-dispel.name",
+  "traits": [
+    "sorcerer",
+    "spellshape"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 156,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.interweave-dispel.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.sorcerer",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.interweave-dispel.prereq.0"
+    }
+  ]
+}

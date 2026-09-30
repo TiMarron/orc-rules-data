@@ -1,0 +1,21 @@
+{
+  "id": "feat.nocturnal-tripkee",
+  "type": "feat",
+  "name": "feat.nocturnal-tripkee.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 38,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.nocturnal-tripkee.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "prerequisites": []
+}

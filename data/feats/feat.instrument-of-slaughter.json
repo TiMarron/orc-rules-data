@@ -1,0 +1,26 @@
+{
+  "id": "feat.instrument-of-slaughter",
+  "type": "feat",
+  "name": "feat.instrument-of-slaughter.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.instrument-of-slaughter.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.instrument-of-slaughter.prereq.0"
+    }
+  ]
+}

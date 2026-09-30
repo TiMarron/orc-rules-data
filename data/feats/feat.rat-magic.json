@@ -1,0 +1,21 @@
+{
+  "id": "feat.rat-magic",
+  "type": "feat",
+  "name": "feat.rat-magic.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 30,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.rat-magic.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": []
+}

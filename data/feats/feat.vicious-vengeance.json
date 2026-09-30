@@ -1,0 +1,26 @@
+{
+  "id": "feat.vicious-vengeance",
+  "type": "feat",
+  "name": "feat.vicious-vengeance.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 94,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.vicious-vengeance.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.vicious-vengeance.prereq.0"
+    }
+  ]
+}

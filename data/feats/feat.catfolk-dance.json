@@ -1,0 +1,22 @@
+{
+  "id": "feat.catfolk-dance",
+  "type": "feat",
+  "name": "feat.catfolk-dance.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.catfolk-dance.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "actions": "1",
+  "prerequisites": []
+}

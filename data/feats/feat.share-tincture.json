@@ -1,0 +1,27 @@
+{
+  "id": "feat.share-tincture",
+  "type": "feat",
+  "name": "feat.share-tincture.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 112,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.share-tincture.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.investigator",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.share-tincture.prereq.0"
+    }
+  ]
+}

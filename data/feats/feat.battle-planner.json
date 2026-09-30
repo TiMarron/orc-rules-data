@@ -1,0 +1,26 @@
+{
+  "id": "feat.battle-planner",
+  "type": "feat",
+  "name": "feat.battle-planner.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 227,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.battle-planner.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.battle-planner.prereq.0"
+    }
+  ]
+}

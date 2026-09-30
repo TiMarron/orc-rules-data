@@ -1,0 +1,21 @@
+{
+  "id": "feat.overcrowd",
+  "type": "feat",
+  "name": "feat.overcrowd.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 31,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.overcrowd.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": []
+}

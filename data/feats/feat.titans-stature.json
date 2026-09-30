@@ -1,0 +1,26 @@
+{
+  "id": "feat.titans-stature",
+  "type": "feat",
+  "name": "feat.titans-stature.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 83,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.titans-stature.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.giants-stature"
+    }
+  ]
+}

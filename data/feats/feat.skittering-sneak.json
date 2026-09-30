@@ -1,0 +1,21 @@
+{
+  "id": "feat.skittering-sneak",
+  "type": "feat",
+  "name": "feat.skittering-sneak.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 31,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.skittering-sneak.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": []
+}

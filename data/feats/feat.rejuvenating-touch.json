@@ -1,0 +1,26 @@
+{
+  "id": "feat.rejuvenating-touch",
+  "type": "feat",
+  "name": "feat.rejuvenating-touch.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.rejuvenating-touch.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.rejuvenating-touch.prereq.0"
+    }
+  ]
+}

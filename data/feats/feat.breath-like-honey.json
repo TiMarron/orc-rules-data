@@ -1,0 +1,26 @@
+{
+  "id": "feat.breath-like-honey",
+  "type": "feat",
+  "name": "feat.breath-like-honey.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 19,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.breath-like-honey.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.breath-like-honey.prereq.0"
+    }
+  ]
+}

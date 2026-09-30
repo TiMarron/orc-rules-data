@@ -1,0 +1,26 @@
+{
+  "id": "feat.devoted-focus",
+  "type": "feat",
+  "name": "feat.devoted-focus.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.devoted-focus.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.devoted-focus.prereq.0"
+    }
+  ]
+}

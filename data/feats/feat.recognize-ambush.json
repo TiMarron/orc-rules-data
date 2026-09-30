@@ -1,0 +1,23 @@
+{
+  "id": "feat.recognize-ambush",
+  "type": "feat",
+  "name": "feat.recognize-ambush.name",
+  "traits": [
+    "hobgoblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 14,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.recognize-ambush.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "actions": "free",
+  "trigger": "feat.recognize-ambush.trigger",
+  "prerequisites": []
+}

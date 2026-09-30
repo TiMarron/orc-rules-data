@@ -1,0 +1,30 @@
+{
+  "id": "feat.scars-of-steel",
+  "type": "feat",
+  "name": "feat.scars-of-steel.name",
+  "traits": [
+    "barbarian",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 78,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.scars-of-steel.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "reaction",
+  "trigger": "feat.scars-of-steel.trigger",
+  "frequency": "feat.scars-of-steel.frequency",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.scars-of-steel.prereq.0"
+    }
+  ]
+}

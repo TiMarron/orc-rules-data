@@ -1,0 +1,29 @@
+{
+  "id": "feat.predators-growl",
+  "type": "feat",
+  "name": "feat.predators-growl.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.predators-growl.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "actions": "reaction",
+  "trigger": "feat.predators-growl.trigger",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "expert"
+    }
+  ]
+}

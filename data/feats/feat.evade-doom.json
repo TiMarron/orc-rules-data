@@ -1,0 +1,21 @@
+{
+  "id": "feat.evade-doom",
+  "type": "feat",
+  "name": "feat.evade-doom.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.evade-doom.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "feat.aura-of-determination",
+  "type": "feat",
+  "name": "feat.aura-of-determination.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.aura-of-determination.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.champion",
+  "requirements": "feat.aura-of-determination.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.aura-of-determination.prereq.0"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.nimble-reprisal",
+  "type": "feat",
+  "name": "feat.nimble-reprisal.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 94,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.nimble-reprisal.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.nimble-reprisal.prereq.0"
+    }
+  ]
+}

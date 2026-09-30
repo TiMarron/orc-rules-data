@@ -1,0 +1,21 @@
+{
+  "id": "feat.grandmothers-wisdom",
+  "type": "feat",
+  "name": "feat.grandmothers-wisdom.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 19,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.grandmothers-wisdom.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": []
+}

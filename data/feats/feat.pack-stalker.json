@@ -1,0 +1,27 @@
+{
+  "id": "feat.pack-stalker",
+  "type": "feat",
+  "name": "feat.pack-stalker.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pack-stalker.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": [
+    {
+      "kind": "proficiency",
+      "target": "skill.stealth",
+      "rank": "expert"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "feat.waters-of-creation",
+  "type": "feat",
+  "name": "feat.waters-of-creation.name",
+  "traits": [
+    "cursebound",
+    "divine",
+    "healing",
+    "oracle",
+    "vitality",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 141,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.waters-of-creation.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.waters-of-creation.prereq.0"
+    }
+  ]
+}

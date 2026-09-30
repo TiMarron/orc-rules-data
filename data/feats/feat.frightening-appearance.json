@@ -1,0 +1,31 @@
+{
+  "id": "feat.frightening-appearance",
+  "type": "feat",
+  "name": "feat.frightening-appearance.name",
+  "traits": [
+    "archetype",
+    "vigilante"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.frightening-appearance.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.startling-appearance"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.intimidation",
+      "rank": "expert"
+    }
+  ]
+}

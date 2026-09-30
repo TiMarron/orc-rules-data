@@ -1,0 +1,26 @@
+{
+  "id": "feat.sunder-enchantment",
+  "type": "feat",
+  "name": "feat.sunder-enchantment.name",
+  "traits": [
+    "barbarian"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 83,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sunder-enchantment.text",
+  "level": 14,
+  "category": "class",
+  "class": "class.barbarian",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.sunder-spell"
+    }
+  ]
+}

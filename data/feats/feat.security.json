@@ -1,0 +1,26 @@
+{
+  "id": "feat.security",
+  "type": "feat",
+  "name": "feat.security.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 95,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.security.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.security.prereq.0"
+    }
+  ]
+}

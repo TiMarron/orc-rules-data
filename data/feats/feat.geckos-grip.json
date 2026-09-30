@@ -1,0 +1,21 @@
+{
+  "id": "feat.geckos-grip",
+  "type": "feat",
+  "name": "feat.geckos-grip.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.geckos-grip.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "prerequisites": []
+}

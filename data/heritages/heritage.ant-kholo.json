@@ -1,0 +1,16 @@
+{
+  "id": "heritage.ant-kholo",
+  "type": "heritage",
+  "name": "heritage.ant-kholo.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 17,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.ant-kholo.text",
+  "ancestry": "ancestry.kholo"
+}

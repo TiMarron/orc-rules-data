@@ -1,0 +1,21 @@
+{
+  "id": "feat.squad-tactics",
+  "type": "feat",
+  "name": "feat.squad-tactics.name",
+  "traits": [
+    "hobgoblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 15,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.squad-tactics.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "prerequisites": []
+}

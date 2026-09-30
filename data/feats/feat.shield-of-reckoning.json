@@ -1,0 +1,33 @@
+{
+  "id": "feat.shield-of-reckoning",
+  "type": "feat",
+  "name": "feat.shield-of-reckoning.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 97,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.shield-of-reckoning.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.champion",
+  "actions": "reaction",
+  "trigger": "feat.shield-of-reckoning.trigger",
+  "frequency": "feat.shield-of-reckoning.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.shield-warden"
+    },
+    {
+      "kind": "text",
+      "key": "feat.shield-of-reckoning.prereq.1"
+    }
+  ]
+}

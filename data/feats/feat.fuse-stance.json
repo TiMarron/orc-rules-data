@@ -1,0 +1,26 @@
+{
+  "id": "feat.fuse-stance",
+  "type": "feat",
+  "name": "feat.fuse-stance.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 126,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.fuse-stance.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.fuse-stance.prereq.0"
+    }
+  ]
+}

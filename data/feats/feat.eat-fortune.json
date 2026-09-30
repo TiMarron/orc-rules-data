@@ -1,0 +1,26 @@
+{
+  "id": "feat.eat-fortune",
+  "type": "feat",
+  "name": "feat.eat-fortune.name",
+  "traits": [
+    "concentrate",
+    "divine",
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 34,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.eat-fortune.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "actions": "reaction",
+  "trigger": "feat.eat-fortune.trigger",
+  "frequency": "feat.eat-fortune.frequency",
+  "prerequisites": []
+}

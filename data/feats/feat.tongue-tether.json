@@ -1,0 +1,26 @@
+{
+  "id": "feat.tongue-tether",
+  "type": "feat",
+  "name": "feat.tongue-tether.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 39,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.tongue-tether.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.tongue-tether.prereq.0"
+    }
+  ]
+}

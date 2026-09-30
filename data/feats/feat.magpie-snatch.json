@@ -1,0 +1,22 @@
+{
+  "id": "feat.magpie-snatch",
+  "type": "feat",
+  "name": "feat.magpie-snatch.name",
+  "traits": [
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 34,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.magpie-snatch.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "actions": "2",
+  "prerequisites": []
+}

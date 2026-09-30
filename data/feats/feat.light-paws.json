@@ -1,0 +1,22 @@
+{
+  "id": "feat.light-paws",
+  "type": "feat",
+  "name": "feat.light-paws.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.light-paws.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "actions": "2",
+  "prerequisites": []
+}

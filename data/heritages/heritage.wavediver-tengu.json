@@ -1,0 +1,16 @@
+{
+  "id": "heritage.wavediver-tengu",
+  "type": "heritage",
+  "name": "heritage.wavediver-tengu.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 33,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.wavediver-tengu.text",
+  "ancestry": "ancestry.tengu"
+}

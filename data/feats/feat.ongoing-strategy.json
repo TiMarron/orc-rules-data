@@ -1,0 +1,26 @@
+{
+  "id": "feat.ongoing-strategy",
+  "type": "feat",
+  "name": "feat.ongoing-strategy.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 110,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.ongoing-strategy.text",
+  "level": 10,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.ongoing-strategy.prereq.0"
+    }
+  ]
+}

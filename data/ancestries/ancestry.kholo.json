@@ -1,0 +1,52 @@
+{
+  "id": "ancestry.kholo",
+  "type": "ancestry",
+  "name": "ancestry.kholo.name",
+  "traits": [
+    "humanoid",
+    "kholo"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 16,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ancestry.kholo.text",
+  "hp": 8,
+  "size": "medium",
+  "speed": 25,
+  "boosts": [
+    "str",
+    "int",
+    "free"
+  ],
+  "flaws": [
+    "wis"
+  ],
+  "languages": [
+    "common",
+    "kholo"
+  ],
+  "heritages": [
+    "heritage.ant-kholo",
+    "heritage.cave-kholo",
+    "heritage.dog-kholo",
+    "heritage.great-kholo",
+    "heritage.sweetbreath-kholo",
+    "heritage.winter-kholo",
+    "heritage.witch-kholo"
+  ],
+  "senses": [
+    "low-light-vision"
+  ],
+  "grants": [
+    {
+      "name": "ancestry.kholo.grants.0.name",
+      "text": "ancestry.kholo.grants.0.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the four named deities in the Religion section are replaced with generic descriptions of who they are to the kholo. Rules text is the book's."
+}

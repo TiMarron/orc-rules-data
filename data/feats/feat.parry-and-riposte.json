@@ -1,0 +1,26 @@
+{
+  "id": "feat.parry-and-riposte",
+  "type": "feat",
+  "name": "feat.parry-and-riposte.name",
+  "traits": [
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.parry-and-riposte.text",
+  "level": 18,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.parry-and-riposte.prereq.0"
+    }
+  ]
+}

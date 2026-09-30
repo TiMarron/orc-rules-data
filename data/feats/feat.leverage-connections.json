@@ -1,0 +1,31 @@
+{
+  "id": "feat.leverage-connections",
+  "type": "feat",
+  "name": "feat.leverage-connections.name",
+  "traits": [
+    "general",
+    "skill"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.leverage-connections.text",
+  "level": 2,
+  "category": "skill",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.leverage-connections.prereq.0"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.society",
+      "rank": "expert"
+    }
+  ]
+}

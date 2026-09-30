@@ -1,0 +1,21 @@
+{
+  "id": "feat.hobgoblin-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.hobgoblin-weapon-familiarity.name",
+  "traits": [
+    "hobgoblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 14,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.hobgoblin-weapon-familiarity.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "prerequisites": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.tinkering-fingers",
+  "type": "feat",
+  "name": "feat.tinkering-fingers.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 30,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tinkering-fingers.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": []
+}

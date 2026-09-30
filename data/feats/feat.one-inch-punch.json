@@ -1,0 +1,27 @@
+{
+  "id": "feat.one-inch-punch",
+  "type": "feat",
+  "name": "feat.one-inch-punch.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 122,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.one-inch-punch.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "2-3",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.one-inch-punch.prereq.0"
+    }
+  ]
+}

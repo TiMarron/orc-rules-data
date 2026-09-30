@@ -1,0 +1,26 @@
+{
+  "id": "feat.pride-in-arms",
+  "type": "feat",
+  "name": "feat.pride-in-arms.name",
+  "traits": [
+    "auditory",
+    "emotion",
+    "hobgoblin",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 15,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.pride-in-arms.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "actions": "reaction",
+  "trigger": "feat.pride-in-arms.trigger",
+  "prerequisites": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-monastic-weaponry",
+  "type": "feat",
+  "name": "feat.advanced-monastic-weaponry.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.advanced-monastic-weaponry.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.monastic-weaponry"
+    }
+  ]
+}

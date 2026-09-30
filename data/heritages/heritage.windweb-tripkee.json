@@ -1,0 +1,16 @@
+{
+  "id": "heritage.windweb-tripkee",
+  "type": "heritage",
+  "name": "heritage.windweb-tripkee.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 37,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.windweb-tripkee.text",
+  "ancestry": "ancestry.tripkee"
+}

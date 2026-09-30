@@ -1,0 +1,28 @@
+{
+  "id": "feat.twirling-throw",
+  "type": "feat",
+  "name": "feat.twirling-throw.name",
+  "traits": [
+    "finisher",
+    "swashbuckler"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 166,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.twirling-throw.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.swashbuckler",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.flying-blade"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "feat.long-nosed-form",
+  "type": "feat",
+  "name": "feat.long-nosed-form.name",
+  "traits": [
+    "concentrate",
+    "polymorph",
+    "primal",
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 34,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.long-nosed-form.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "actions": "1",
+  "prerequisites": []
+}

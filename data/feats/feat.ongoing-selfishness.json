@@ -1,0 +1,26 @@
+{
+  "id": "feat.ongoing-selfishness",
+  "type": "feat",
+  "name": "feat.ongoing-selfishness.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 94,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.ongoing-selfishness.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.ongoing-selfishness.prereq.0"
+    }
+  ]
+}

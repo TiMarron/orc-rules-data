@@ -1,0 +1,21 @@
+{
+  "id": "feat.sensitive-nose",
+  "type": "feat",
+  "name": "feat.sensitive-nose.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.sensitive-nose.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": []
+}

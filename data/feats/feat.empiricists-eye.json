@@ -1,0 +1,26 @@
+{
+  "id": "feat.empiricists-eye",
+  "type": "feat",
+  "name": "feat.empiricists-eye.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 111,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.empiricists-eye.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.empiricists-eye.prereq.0"
+    }
+  ]
+}

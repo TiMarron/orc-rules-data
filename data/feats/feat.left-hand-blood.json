@@ -1,0 +1,23 @@
+{
+  "id": "feat.left-hand-blood",
+  "type": "feat",
+  "name": "feat.left-hand-blood.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.left-hand-blood.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "actions": "1",
+  "frequency": "feat.left-hand-blood.frequency",
+  "prerequisites": []
+}

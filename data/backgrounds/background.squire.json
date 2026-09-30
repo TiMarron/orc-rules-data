@@ -1,0 +1,27 @@
+{
+  "id": "background.squire",
+  "type": "background",
+  "name": "background.squire.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "background.squire.text",
+  "boosts": [
+    [
+      "str",
+      "con"
+    ],
+    "free"
+  ],
+  "lore": "background.squire.lore",
+  "skills": [
+    "skill.athletics"
+  ],
+  "feat": "feat.armor-assist"
+}

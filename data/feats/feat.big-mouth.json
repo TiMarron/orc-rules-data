@@ -1,0 +1,26 @@
+{
+  "id": "feat.big-mouth",
+  "type": "feat",
+  "name": "feat.big-mouth.name",
+  "traits": [
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 31,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.big-mouth.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.ratfolk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.cheek-pouches"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "feat.bone-magic",
+  "type": "feat",
+  "name": "feat.bone-magic.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bone-magic.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "prerequisites": []
+}

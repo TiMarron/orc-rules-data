@@ -1,0 +1,24 @@
+{
+  "id": "feat.vomit-stomach",
+  "type": "feat",
+  "name": "feat.vomit-stomach.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 38,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.vomit-stomach.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "actions": "reaction",
+  "trigger": "feat.vomit-stomach.trigger",
+  "frequency": "feat.vomit-stomach.frequency",
+  "prerequisites": []
+}

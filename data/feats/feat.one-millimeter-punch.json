@@ -1,0 +1,26 @@
+{
+  "id": "feat.one-millimeter-punch",
+  "type": "feat",
+  "name": "feat.one-millimeter-punch.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 126,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.one-millimeter-punch.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.monk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.one-inch-punch"
+    }
+  ]
+}

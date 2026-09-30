@@ -1,0 +1,26 @@
+{
+  "id": "feat.shield-paragon",
+  "type": "feat",
+  "name": "feat.shield-paragon.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.shield-paragon.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.shield-paragon.prereq.0"
+    }
+  ]
+}

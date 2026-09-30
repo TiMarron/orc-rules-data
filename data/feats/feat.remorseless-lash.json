@@ -1,0 +1,21 @@
+{
+  "id": "feat.remorseless-lash",
+  "type": "feat",
+  "name": "feat.remorseless-lash.name",
+  "traits": [
+    "hobgoblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 14,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.remorseless-lash.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "prerequisites": []
+}

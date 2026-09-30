@@ -1,0 +1,21 @@
+{
+  "id": "feat.first-to-strike-first-to-fall",
+  "type": "feat",
+  "name": "feat.first-to-strike-first-to-fall.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 19,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.first-to-strike-first-to-fall.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feat.one-toed-hop",
+  "type": "feat",
+  "name": "feat.one-toed-hop.name",
+  "traits": [
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 34,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.one-toed-hop.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "actions": "1",
+  "prerequisites": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "feat.squawk",
+  "type": "feat",
+  "name": "feat.squawk.name",
+  "traits": [
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 34,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.squawk.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "actions": "reaction",
+  "trigger": "feat.squawk.trigger",
+  "prerequisites": []
+}

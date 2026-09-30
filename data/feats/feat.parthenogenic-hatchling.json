@@ -1,0 +1,21 @@
+{
+  "id": "feat.parthenogenic-hatchling",
+  "type": "feat",
+  "name": "feat.parthenogenic-hatchling.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.parthenogenic-hatchling.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "prerequisites": []
+}

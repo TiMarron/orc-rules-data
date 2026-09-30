@@ -1,0 +1,26 @@
+{
+  "id": "feat.cantorian-restoration",
+  "type": "feat",
+  "name": "feat.cantorian-restoration.name",
+  "traits": [
+    "healing",
+    "hobgoblin",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 15,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.cantorian-restoration.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "actions": "reaction",
+  "trigger": "feat.cantorian-restoration.trigger",
+  "frequency": "feat.cantorian-restoration.frequency",
+  "prerequisites": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "feat.sunder-spell",
+  "type": "feat",
+  "name": "feat.sunder-spell.name",
+  "traits": [
+    "attack",
+    "barbarian",
+    "concentrate",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 83,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.sunder-spell.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.sunder-spell.prereq.0"
+    }
+  ]
+}

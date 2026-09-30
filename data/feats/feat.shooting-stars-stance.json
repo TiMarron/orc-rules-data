@@ -1,0 +1,28 @@
+{
+  "id": "feat.shooting-stars-stance",
+  "type": "feat",
+  "name": "feat.shooting-stars-stance.name",
+  "traits": [
+    "monk",
+    "stance"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 120,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.shooting-stars-stance.text",
+  "level": 2,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.monastic-weaponry"
+    }
+  ]
+}

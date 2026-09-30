@@ -1,0 +1,21 @@
+{
+  "id": "feat.prodigious-climber",
+  "type": "feat",
+  "name": "feat.prodigious-climber.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 38,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.prodigious-climber.text",
+  "level": 5,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "prerequisites": []
+}

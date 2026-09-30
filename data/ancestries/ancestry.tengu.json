@@ -1,0 +1,49 @@
+{
+  "id": "ancestry.tengu",
+  "type": "ancestry",
+  "name": "ancestry.tengu.name",
+  "traits": [
+    "humanoid",
+    "tengu"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 32,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ancestry.tengu.text",
+  "hp": 6,
+  "size": "medium",
+  "speed": 25,
+  "boosts": [
+    "dex",
+    "free"
+  ],
+  "flaws": [],
+  "languages": [
+    "common",
+    "tengu"
+  ],
+  "heritages": [
+    "heritage.dogtooth-tengu",
+    "heritage.jinxed-tengu",
+    "heritage.mountainkeeper-tengu",
+    "heritage.skyborn-tengu",
+    "heritage.stormtossed-tengu",
+    "heritage.taloned-tengu",
+    "heritage.wavediver-tengu"
+  ],
+  "senses": [
+    "low-light-vision"
+  ],
+  "grants": [
+    {
+      "name": "ancestry.tengu.grants.0.name",
+      "text": "ancestry.tengu.grants.0.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the game world's name (twice) and the ancestral deity's name are replaced with generic wording. Rules text is the book's."
+}

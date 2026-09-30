@@ -1,0 +1,26 @@
+{
+  "id": "feat.greater-physical-evolution",
+  "type": "feat",
+  "name": "feat.greater-physical-evolution.name",
+  "traits": [
+    "sorcerer"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 155,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.greater-physical-evolution.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.sorcerer",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.greater-physical-evolution.prereq.0"
+    }
+  ]
+}

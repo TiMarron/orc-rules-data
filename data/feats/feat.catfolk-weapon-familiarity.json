@@ -1,0 +1,21 @@
+{
+  "id": "feat.catfolk-weapon-familiarity",
+  "type": "feat",
+  "name": "feat.catfolk-weapon-familiarity.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.catfolk-weapon-familiarity.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": []
+}

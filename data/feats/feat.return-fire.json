@@ -1,0 +1,31 @@
+{
+  "id": "feat.return-fire",
+  "type": "feat",
+  "name": "feat.return-fire.name",
+  "traits": [
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 122,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.return-fire.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.monk",
+  "requirements": "feat.return-fire.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.deflect-projectile"
+    },
+    {
+      "kind": "feat",
+      "id": "feat.monastic-archer-stance"
+    }
+  ]
+}

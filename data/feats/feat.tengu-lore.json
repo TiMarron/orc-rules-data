@@ -1,0 +1,21 @@
+{
+  "id": "feat.tengu-lore",
+  "type": "feat",
+  "name": "feat.tengu-lore.name",
+  "traits": [
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 34,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.tengu-lore.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "prerequisites": []
+}

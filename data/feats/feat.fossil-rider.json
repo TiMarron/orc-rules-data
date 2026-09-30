@@ -1,0 +1,26 @@
+{
+  "id": "feat.fossil-rider",
+  "type": "feat",
+  "name": "feat.fossil-rider.name",
+  "traits": [
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 27,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.fossil-rider.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.bone-magic"
+    }
+  ]
+}

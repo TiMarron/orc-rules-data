@@ -1,0 +1,30 @@
+{
+  "id": "feat.dragons-rage-breath",
+  "type": "feat",
+  "name": "feat.dragons-rage-breath.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 79,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.dragons-rage-breath.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "2",
+  "frequency": "feat.dragons-rage-breath.frequency",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.dragons-rage-breath.prereq.0"
+    }
+  ]
+}

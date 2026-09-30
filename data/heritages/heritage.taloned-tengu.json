@@ -1,0 +1,16 @@
+{
+  "id": "heritage.taloned-tengu",
+  "type": "heritage",
+  "name": "heritage.taloned-tengu.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 33,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "heritage.taloned-tengu.text",
+  "ancestry": "ancestry.tengu"
+}

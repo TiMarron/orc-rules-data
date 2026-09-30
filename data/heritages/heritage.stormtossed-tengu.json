@@ -1,0 +1,17 @@
+{
+  "id": "heritage.stormtossed-tengu",
+  "type": "heritage",
+  "name": "heritage.stormtossed-tengu.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 33,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "heritage.stormtossed-tengu.text",
+  "ancestry": "ancestry.tengu",
+  "editNote": "Reserved Material removed: the storm deity's name is replaced with a generic description. The mechanics sentences are the book's."
+}

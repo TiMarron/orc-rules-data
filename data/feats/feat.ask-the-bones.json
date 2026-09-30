@@ -1,0 +1,23 @@
+{
+  "id": "feat.ask-the-bones",
+  "type": "feat",
+  "name": "feat.ask-the-bones.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ask-the-bones.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "actions": "free",
+  "frequency": "feat.ask-the-bones.frequency",
+  "prerequisites": []
+}

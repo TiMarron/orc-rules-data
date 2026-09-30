@@ -1,0 +1,21 @@
+{
+  "id": "feat.croak-talker",
+  "type": "feat",
+  "name": "feat.croak-talker.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 37,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.croak-talker.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "prerequisites": []
+}

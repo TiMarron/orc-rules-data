@@ -1,0 +1,31 @@
+{
+  "id": "feat.startling-appearance",
+  "type": "feat",
+  "name": "feat.startling-appearance.name",
+  "traits": [
+    "archetype",
+    "emotion",
+    "fear",
+    "mental",
+    "vigilante"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.startling-appearance.text",
+  "level": 6,
+  "category": "archetype",
+  "actions": "1",
+  "requirements": "feat.startling-appearance.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.vigilante-dedication"
+    }
+  ]
+}

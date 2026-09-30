@@ -1,0 +1,29 @@
+{
+  "id": "feat.numb-to-death",
+  "type": "feat",
+  "name": "feat.numb-to-death.name",
+  "traits": [
+    "general"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.numb-to-death.text",
+  "level": 7,
+  "category": "general",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.diehard"
+    },
+    {
+      "kind": "text",
+      "key": "feat.numb-to-death.prereq.1"
+    }
+  ]
+}

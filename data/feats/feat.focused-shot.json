@@ -1,0 +1,29 @@
+{
+  "id": "feat.focused-shot",
+  "type": "feat",
+  "name": "feat.focused-shot.name",
+  "traits": [
+    "concentrate",
+    "monk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.focused-shot.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.monk",
+  "actions": "1",
+  "requirements": "feat.focused-shot.requirements",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.monastic-archer-stance"
+    }
+  ]
+}

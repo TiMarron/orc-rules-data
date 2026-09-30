@@ -1,0 +1,26 @@
+{
+  "id": "feat.advanced-revelation",
+  "type": "feat",
+  "name": "feat.advanced-revelation.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 140,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.advanced-revelation.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.advanced-revelation.prereq.0"
+    }
+  ]
+}

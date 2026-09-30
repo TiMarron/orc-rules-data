@@ -1,0 +1,22 @@
+{
+  "id": "feat.scion-transformation",
+  "type": "feat",
+  "name": "feat.scion-transformation.name",
+  "traits": [
+    "lizardfolk",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 27,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scion-transformation.text",
+  "level": 17,
+  "category": "ancestry",
+  "ancestry": "ancestry.lizardfolk",
+  "prerequisites": []
+}

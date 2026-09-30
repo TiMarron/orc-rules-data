@@ -1,0 +1,22 @@
+{
+  "id": "feat.leech-clip",
+  "type": "feat",
+  "name": "feat.leech-clip.name",
+  "traits": [
+    "hobgoblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 14,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.leech-clip.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "actions": "2",
+  "prerequisites": []
+}

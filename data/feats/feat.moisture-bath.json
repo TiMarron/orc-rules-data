@@ -1,0 +1,24 @@
+{
+  "id": "feat.moisture-bath",
+  "type": "feat",
+  "name": "feat.moisture-bath.name",
+  "traits": [
+    "manipulate",
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 39,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.moisture-bath.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "actions": "1",
+  "frequency": "feat.moisture-bath.frequency",
+  "prerequisites": []
+}

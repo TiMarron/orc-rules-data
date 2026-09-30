@@ -1,0 +1,26 @@
+{
+  "id": "feat.ricocheting-leap",
+  "type": "feat",
+  "name": "feat.ricocheting-leap.name",
+  "traits": [
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 39,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.ricocheting-leap.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.tripkee",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.wall-jump"
+    }
+  ]
+}

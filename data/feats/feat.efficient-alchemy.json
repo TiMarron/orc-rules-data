@@ -1,0 +1,26 @@
+{
+  "id": "feat.efficient-alchemy",
+  "type": "feat",
+  "name": "feat.efficient-alchemy.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 64,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.efficient-alchemy.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.efficient-alchemy.prereq.0"
+    }
+  ]
+}

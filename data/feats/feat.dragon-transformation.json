@@ -1,0 +1,32 @@
+{
+  "id": "feat.dragon-transformation",
+  "type": "feat",
+  "name": "feat.dragon-transformation.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "polymorph",
+    "primal",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 84,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.dragon-transformation.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "frequency": "feat.dragon-transformation.frequency",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.dragons-rage-wings"
+    }
+  ]
+}

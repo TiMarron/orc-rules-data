@@ -1,0 +1,28 @@
+{
+  "id": "feat.caterwaul",
+  "type": "feat",
+  "name": "feat.caterwaul.name",
+  "traits": [
+    "auditory",
+    "catfolk",
+    "concentrate",
+    "emotion",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 11,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.caterwaul.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "actions": "reaction",
+  "trigger": "feat.caterwaul.trigger",
+  "frequency": "feat.caterwaul.frequency",
+  "prerequisites": []
+}

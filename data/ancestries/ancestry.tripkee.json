@@ -1,0 +1,51 @@
+{
+  "id": "ancestry.tripkee",
+  "type": "ancestry",
+  "name": "ancestry.tripkee.name",
+  "traits": [
+    "humanoid",
+    "tripkee"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 36,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ancestry.tripkee.text",
+  "hp": 6,
+  "size": "small",
+  "speed": 25,
+  "boosts": [
+    "dex",
+    "wis",
+    "free"
+  ],
+  "flaws": [
+    "str"
+  ],
+  "languages": [
+    "common",
+    "tripkee"
+  ],
+  "heritages": [
+    "heritage.poisonhide-tripkee",
+    "heritage.riverside-tripkee",
+    "heritage.snaptongue-tripkee",
+    "heritage.stickytoe-tripkee",
+    "heritage.thickskin-tripkee",
+    "heritage.windweb-tripkee"
+  ],
+  "senses": [
+    "low-light-vision"
+  ],
+  "grants": [
+    {
+      "name": "ancestry.tripkee.grants.0.name",
+      "text": "ancestry.tripkee.grants.0.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: two named nature deities and a named group of fey are replaced with generic wording. Rules text is the book's."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feat.brilliant-flash",
+  "type": "feat",
+  "name": "feat.brilliant-flash.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 93,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.brilliant-flash.text",
+  "level": 1,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.brilliant-flash.prereq.0"
+    }
+  ]
+}

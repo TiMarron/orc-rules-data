@@ -1,0 +1,30 @@
+{
+  "id": "feat.instrument-of-zeal",
+  "type": "feat",
+  "name": "feat.instrument-of-zeal.name",
+  "traits": [
+    "champion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.instrument-of-zeal.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.champion",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.instrument-of-zeal.prereq.0"
+    },
+    {
+      "kind": "text",
+      "key": "feat.instrument-of-zeal.prereq.1"
+    }
+  ]
+}

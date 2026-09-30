@@ -1,0 +1,26 @@
+{
+  "id": "feat.lie-detector",
+  "type": "feat",
+  "name": "feat.lie-detector.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 108,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.lie-detector.text",
+  "level": 4,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.lie-detector.prereq.0"
+    }
+  ]
+}

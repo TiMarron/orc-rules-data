@@ -1,0 +1,15 @@
+{
+  "id": "trait.vigilante",
+  "type": "trait",
+  "name": "trait.vigilante.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 218,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.vigilante.text"
+}

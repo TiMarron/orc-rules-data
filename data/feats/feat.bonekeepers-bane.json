@@ -1,0 +1,21 @@
+{
+  "id": "feat.bonekeepers-bane",
+  "type": "feat",
+  "name": "feat.bonekeepers-bane.name",
+  "traits": [
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 19,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.bonekeepers-bane.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.kholo",
+  "prerequisites": []
+}

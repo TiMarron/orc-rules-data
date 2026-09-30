@@ -1,0 +1,30 @@
+{
+  "id": "feat.conduit-of-void-and-vitality",
+  "type": "feat",
+  "name": "feat.conduit-of-void-and-vitality.name",
+  "traits": [
+    "cursebound",
+    "divine",
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.conduit-of-void-and-vitality.text",
+  "level": 16,
+  "category": "class",
+  "class": "class.oracle",
+  "actions": "2",
+  "requirements": "feat.conduit-of-void-and-vitality.requirements",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.conduit-of-void-and-vitality.prereq.0"
+    }
+  ]
+}

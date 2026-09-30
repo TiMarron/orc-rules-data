@@ -1,0 +1,26 @@
+{
+  "id": "feat.fell-rider",
+  "type": "feat",
+  "name": "feat.fell-rider.name",
+  "traits": [
+    "hobgoblin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 15,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.fell-rider.text",
+  "level": 9,
+  "category": "ancestry",
+  "ancestry": "ancestry.hobgoblin",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.fell-rider.prereq.0"
+    }
+  ]
+}

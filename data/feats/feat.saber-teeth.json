@@ -1,0 +1,21 @@
+{
+  "id": "feat.saber-teeth",
+  "type": "feat",
+  "name": "feat.saber-teeth.name",
+  "traits": [
+    "catfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.saber-teeth.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.catfolk",
+  "prerequisites": []
+}

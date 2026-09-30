@@ -1,0 +1,26 @@
+{
+  "id": "feat.oracular-providence",
+  "type": "feat",
+  "name": "feat.oracular-providence.name",
+  "traits": [
+    "oracle"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.oracular-providence.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.oracle",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.oracular-providence.prereq.0"
+    }
+  ]
+}

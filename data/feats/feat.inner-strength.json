@@ -1,0 +1,29 @@
+{
+  "id": "feat.inner-strength",
+  "type": "feat",
+  "name": "feat.inner-strength.name",
+  "traits": [
+    "barbarian",
+    "concentrate",
+    "rage"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 79,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.inner-strength.text",
+  "level": 6,
+  "category": "class",
+  "class": "class.barbarian",
+  "actions": "1",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.inner-strength.prereq.0"
+    }
+  ]
+}

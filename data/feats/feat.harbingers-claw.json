@@ -1,0 +1,27 @@
+{
+  "id": "feat.harbingers-claw",
+  "type": "feat",
+  "name": "feat.harbingers-claw.name",
+  "traits": [
+    "auditory",
+    "divine",
+    "misfortune",
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 35,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.harbingers-claw.text",
+  "level": 13,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "actions": "reaction",
+  "trigger": "feat.harbingers-claw.trigger",
+  "frequency": "feat.harbingers-claw.frequency",
+  "prerequisites": []
+}

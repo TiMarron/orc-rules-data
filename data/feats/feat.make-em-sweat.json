@@ -1,0 +1,26 @@
+{
+  "id": "feat.make-em-sweat",
+  "type": "feat",
+  "name": "feat.make-em-sweat.name",
+  "traits": [
+    "investigator"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 111,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "feat.make-em-sweat.text",
+  "level": 12,
+  "category": "class",
+  "class": "class.investigator",
+  "prerequisites": [
+    {
+      "kind": "text",
+      "key": "feat.make-em-sweat.prereq.0"
+    }
+  ]
+}

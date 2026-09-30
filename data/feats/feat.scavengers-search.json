@@ -1,0 +1,21 @@
+{
+  "id": "feat.scavengers-search",
+  "type": "feat",
+  "name": "feat.scavengers-search.name",
+  "traits": [
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 34,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.scavengers-search.text",
+  "level": 1,
+  "category": "ancestry",
+  "ancestry": "ancestry.tengu",
+  "prerequisites": []
+}
