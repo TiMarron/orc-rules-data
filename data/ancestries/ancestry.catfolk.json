@@ -12,8 +12,8 @@
     "page": 8,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": false,
+  "review": "human",
+  "edited": true,
   "text": "ancestry.catfolk.text",
   "hp": 8,
   "size": "medium",
@@ -47,5 +47,6 @@
       "name": "ancestry.catfolk.grants.0.name",
       "text": "ancestry.catfolk.grants.0.text"
     }
-  ]
+  ],
+  "editNote": "Verified against the ancestry entry in the book: hit points, size, speed, attribute boosts and flaw, languages, senses, traits and the special abilities all match, and the heritage list is complete (7 heritages). Falling damage in the Land on Your Feet text points at a rules page the dataset does not model; the link's label survives as plain text. The advancement text and art the book prints beside the entry are omitted, as the dataset markup carries neither; the sample names are the book's own."
 }
