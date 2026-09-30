@@ -1,0 +1,25 @@
+{
+  "id": "feat.giant-snare",
+  "type": "feat",
+  "name": "feat.giant-snare.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 216,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.giant-snare.text",
+  "level": 10,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.snarecrafter-dedication"
+    }
+  ]
+}

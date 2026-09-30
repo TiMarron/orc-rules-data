@@ -1,0 +1,33 @@
+{
+  "id": "item.infiltrators-accessory",
+  "type": "item",
+  "name": "item.infiltrators-accessory.name",
+  "traits": [
+    "illusion",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 280,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.infiltrators-accessory.text",
+  "level": 5,
+  "priceCp": 15000,
+  "bulk": "1",
+  "usage": "item.infiltrators-accessory.usage",
+  "activations": [
+    {
+      "name": "item.infiltrators-accessory.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.infiltrators-accessory.activations.0.text"
+    }
+  ],
+  "category": "other"
+}

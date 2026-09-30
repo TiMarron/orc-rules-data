@@ -1,0 +1,24 @@
+{
+  "id": "item.biting-snare",
+  "type": "item",
+  "name": "item.biting-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 297,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.biting-snare.text",
+  "level": 4,
+  "priceCp": 1500,
+  "bulk": "0",
+  "category": "consumable"
+}

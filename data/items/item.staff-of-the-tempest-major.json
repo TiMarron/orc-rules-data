@@ -1,0 +1,29 @@
+{
+  "id": "item.staff-of-the-tempest-major",
+  "type": "item",
+  "name": "item.staff-of-the-tempest-major.name",
+  "traits": [
+    "magical",
+    "staff"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 308,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.staff-of-the-tempest-major.text",
+  "level": 14,
+  "priceCp": 400000,
+  "bulk": "1",
+  "usage": "item.staff-of-the-tempest-major.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "text": "item.staff-of-the-tempest-major.activations.0.text"
+    }
+  ],
+  "category": "staff"
+}

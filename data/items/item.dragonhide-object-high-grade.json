@@ -1,0 +1,21 @@
+{
+  "id": "item.dragonhide-object-high-grade",
+  "type": "item",
+  "name": "item.dragonhide-object-high-grade.name",
+  "traits": [
+    "precious"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 276,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dragonhide-object-high-grade.text",
+  "level": 16,
+  "priceCp": 600000,
+  "bulk": "L",
+  "category": "other"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.grasping-snare",
+  "type": "item",
+  "name": "item.grasping-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.grasping-snare.text",
+  "level": 8,
+  "priceCp": 7500,
+  "bulk": "0",
+  "category": "consumable"
+}

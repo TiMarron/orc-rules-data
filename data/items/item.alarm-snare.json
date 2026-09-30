@@ -1,0 +1,25 @@
+{
+  "id": "item.alarm-snare",
+  "type": "item",
+  "name": "item.alarm-snare.name",
+  "traits": [
+    "auditory",
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 297,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.alarm-snare.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "0",
+  "category": "consumable"
+}

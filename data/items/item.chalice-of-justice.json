@@ -1,0 +1,34 @@
+{
+  "id": "item.chalice-of-justice",
+  "type": "item",
+  "name": "item.chalice-of-justice.name",
+  "traits": [
+    "divine",
+    "holy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 280,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.chalice-of-justice.text",
+  "level": 14,
+  "priceCp": 450000,
+  "bulk": "1",
+  "usage": "item.chalice-of-justice.usage",
+  "activations": [
+    {
+      "name": "item.chalice-of-justice.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.chalice-of-justice.activations.0.frequency",
+      "text": "item.chalice-of-justice.activations.0.text"
+    }
+  ],
+  "category": "other"
+}

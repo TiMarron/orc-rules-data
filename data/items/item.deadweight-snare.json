@@ -1,0 +1,25 @@
+{
+  "id": "item.deadweight-snare",
+  "type": "item",
+  "name": "item.deadweight-snare.name",
+  "traits": [
+    "consumable",
+    "kobold",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.deadweight-snare.text",
+  "level": 2,
+  "priceCp": 600,
+  "bulk": "0",
+  "category": "consumable"
+}

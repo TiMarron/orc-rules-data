@@ -1,0 +1,24 @@
+{
+  "id": "item.hail-of-arrows-snare",
+  "type": "item",
+  "name": "item.hail-of-arrows-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.hail-of-arrows-snare.text",
+  "level": 16,
+  "priceCp": 150000,
+  "bulk": "0",
+  "category": "consumable"
+}

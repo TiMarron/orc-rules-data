@@ -1,0 +1,24 @@
+{
+  "id": "item.stunning-snare",
+  "type": "item",
+  "name": "item.stunning-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 300,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.stunning-snare.text",
+  "level": 12,
+  "priceCp": 32000,
+  "bulk": "0",
+  "category": "consumable"
+}

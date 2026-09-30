@@ -1,0 +1,20 @@
+{
+  "id": "item.dragonhide-armor-high-grade",
+  "type": "item",
+  "name": "item.dragonhide-armor-high-grade.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 276,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dragonhide-armor-high-grade.text",
+  "level": 19,
+  "priceCp": 3520000,
+  "bulk": "L",
+  "usage": "item.dragonhide-armor-high-grade.usage",
+  "category": "other"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.snagging-hook-snare",
+  "type": "item",
+  "name": "item.snagging-hook-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 300,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.snagging-hook-snare.text",
+  "level": 10,
+  "priceCp": 18000,
+  "bulk": "0",
+  "category": "consumable"
+}

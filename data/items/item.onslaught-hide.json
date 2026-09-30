@@ -1,0 +1,23 @@
+{
+  "id": "item.onslaught-hide",
+  "type": "item",
+  "name": "item.onslaught-hide.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 278,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.onslaught-hide.text",
+  "level": 9,
+  "priceCp": 70000,
+  "bulk": "2",
+  "usage": "item.onslaught-hide.usage",
+  "category": "other"
+}

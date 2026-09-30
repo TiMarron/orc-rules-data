@@ -15,8 +15,8 @@
     "page": 382,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.untamed-form.text",
   "rank": 1,
   "focus": true,
@@ -32,5 +32,6 @@
       "level": "2",
       "text": "spell.untamed-form.heightened.0"
     }
-  ]
+  ],
+  "editNote": "The structured source leaves italic markers around the spell's own name where it is made possessive (\"_untamed form'_s rank\"); the markers are removed. The wording is unchanged."
 }

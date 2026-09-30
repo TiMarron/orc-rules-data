@@ -1,0 +1,33 @@
+{
+  "id": "item.adze",
+  "type": "item",
+  "name": "item.adze.name",
+  "traits": [
+    "forceful",
+    "sweep",
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 274,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.adze.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "axe",
+    "damage": {
+      "dice": "1d10",
+      "type": "slashing"
+    }
+  },
+  "editNote": "Accepted: checked against the book's weapon tables (price, damage and type, range and reload where printed, Bulk, hands, group, category, rarity and traits with their values); all match, and the description paragraph is the book's. The only report is the structured source's shared Critical Specialization Effects section for the weapon's group, which is printed once under the weapon groups rules rather than repeated per weapon; the omission is recorded."
+}

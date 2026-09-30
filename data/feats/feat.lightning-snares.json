@@ -1,0 +1,30 @@
+{
+  "id": "feat.lightning-snares",
+  "type": "feat",
+  "name": "feat.lightning-snares.name",
+  "traits": [
+    "archetype"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 216,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.lightning-snares.text",
+  "level": 12,
+  "category": "archetype",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.snarecrafter-dedication"
+    },
+    {
+      "kind": "proficiency",
+      "target": "skill.crafting",
+      "rank": "master"
+    }
+  ]
+}

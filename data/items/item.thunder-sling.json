@@ -1,0 +1,35 @@
+{
+  "id": "item.thunder-sling",
+  "type": "item",
+  "name": "item.thunder-sling.name",
+  "traits": [
+    "agile",
+    "propulsive",
+    "tengu"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 274,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.thunder-sling.text",
+  "level": 0,
+  "priceCp": 500,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "sling",
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "range": 50,
+    "reload": "1"
+  },
+  "editNote": "Accepted: checked against the book's weapon tables (price, damage and type, range and reload where printed, Bulk, hands, group, category, rarity and traits with their values); all match, and the description paragraph is the book's. The only report is the structured source's shared Critical Specialization Effects section for the weapon's group, which is printed once under the weapon groups rules rather than repeated per weapon; the omission is recorded."
+}

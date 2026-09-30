@@ -1,0 +1,24 @@
+{
+  "id": "item.bleeding-spines-snare",
+  "type": "item",
+  "name": "item.bleeding-spines-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 297,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.bleeding-spines-snare.text",
+  "level": 12,
+  "priceCp": 32000,
+  "bulk": "0",
+  "category": "consumable"
+}

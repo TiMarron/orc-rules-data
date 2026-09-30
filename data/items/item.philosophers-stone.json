@@ -1,0 +1,22 @@
+{
+  "id": "item.philosophers-stone",
+  "type": "item",
+  "name": "item.philosophers-stone.name",
+  "traits": [
+    "alchemical",
+    "consumable"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.philosophers-stone.text",
+  "level": 20,
+  "bulk": "2",
+  "usage": "item.philosophers-stone.usage",
+  "category": "alchemical"
+}

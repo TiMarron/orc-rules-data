@@ -1,0 +1,24 @@
+{
+  "id": "item.engulfing-snare",
+  "type": "item",
+  "name": "item.engulfing-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.engulfing-snare.text",
+  "level": 14,
+  "priceCp": 90000,
+  "bulk": "0",
+  "category": "consumable"
+}

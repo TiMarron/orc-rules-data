@@ -1,0 +1,25 @@
+{
+  "id": "item.flare-snare",
+  "type": "item",
+  "name": "item.flare-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.flare-snare.text",
+  "level": 2,
+  "priceCp": 500,
+  "bulk": "0",
+  "category": "consumable"
+}

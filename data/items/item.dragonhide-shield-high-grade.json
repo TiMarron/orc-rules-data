@@ -1,0 +1,20 @@
+{
+  "id": "item.dragonhide-shield-high-grade",
+  "type": "item",
+  "name": "item.dragonhide-shield-high-grade.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 277,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dragonhide-shield-high-grade.text",
+  "level": 16,
+  "priceCp": 880000,
+  "bulk": "1",
+  "usage": "item.dragonhide-shield-high-grade.usage",
+  "category": "other"
+}

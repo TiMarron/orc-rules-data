@@ -1,0 +1,27 @@
+{
+  "id": "feat.surprise-snare",
+  "type": "feat",
+  "name": "feat.surprise-snare.name",
+  "traits": [
+    "archetype",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 216,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.surprise-snare.text",
+  "level": 4,
+  "category": "archetype",
+  "actions": "3",
+  "prerequisites": [
+    {
+      "kind": "feat",
+      "id": "feat.snarecrafter-dedication"
+    }
+  ]
+}

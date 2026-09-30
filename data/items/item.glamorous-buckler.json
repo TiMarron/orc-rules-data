@@ -1,0 +1,37 @@
+{
+  "id": "item.glamorous-buckler",
+  "type": "item",
+  "name": "item.glamorous-buckler.name",
+  "traits": [
+    "illusion",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 279,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.glamorous-buckler.text",
+  "level": 2,
+  "priceCp": 3500,
+  "bulk": "L",
+  "usage": "item.glamorous-buckler.usage",
+  "activations": [
+    {
+      "name": "item.glamorous-buckler.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.glamorous-buckler.activations.0.frequency",
+      "trigger": "item.glamorous-buckler.activations.0.trigger",
+      "requirements": "item.glamorous-buckler.activations.0.requirements",
+      "text": "item.glamorous-buckler.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "The structured source drops the shield's own statistics that the book prints in parentheses in the first sentence (Hardness, HP and BT), and the record has no field for them on a magic item; they are restored in the text, as the book has them. Nothing else changes."
+}

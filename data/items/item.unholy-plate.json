@@ -1,0 +1,35 @@
+{
+  "id": "item.unholy-plate",
+  "type": "item",
+  "name": "item.unholy-plate.name",
+  "traits": [
+    "divine",
+    "invested",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 278,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.unholy-plate.text",
+  "level": 13,
+  "priceCp": 250000,
+  "bulk": "4",
+  "usage": "item.unholy-plate.usage",
+  "activations": [
+    {
+      "name": "item.unholy-plate.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.unholy-plate.activations.0.frequency",
+      "text": "item.unholy-plate.activations.0.text"
+    }
+  ],
+  "category": "other"
+}

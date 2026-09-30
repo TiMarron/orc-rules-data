@@ -1,0 +1,25 @@
+{
+  "id": "item.mudrock-snare",
+  "type": "item",
+  "name": "item.mudrock-snare.name",
+  "traits": [
+    "consumable",
+    "kobold",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 299,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.mudrock-snare.text",
+  "level": 10,
+  "priceCp": 17000,
+  "bulk": "0",
+  "category": "consumable"
+}

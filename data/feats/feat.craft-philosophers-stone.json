@@ -1,0 +1,21 @@
+{
+  "id": "feat.craft-philosophers-stone",
+  "type": "feat",
+  "name": "feat.craft-philosophers-stone.name",
+  "traits": [
+    "alchemist"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "feat.craft-philosophers-stone.text",
+  "level": 20,
+  "category": "class",
+  "class": "class.alchemist",
+  "prerequisites": []
+}

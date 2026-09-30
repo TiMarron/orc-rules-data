@@ -1,0 +1,24 @@
+{
+  "id": "item.hobbling-snare",
+  "type": "item",
+  "name": "item.hobbling-snare.name",
+  "traits": [
+    "consumable",
+    "mechanical",
+    "snare",
+    "trap"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 299,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.hobbling-snare.text",
+  "level": 4,
+  "priceCp": 1500,
+  "bulk": "0",
+  "category": "consumable"
+}

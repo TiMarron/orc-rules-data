@@ -1,0 +1,19 @@
+{
+  "id": "item.dragonhide-armor",
+  "type": "item",
+  "name": "item.dragonhide-armor.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 276,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dragonhide-armor.text",
+  "level": 12,
+  "bulk": "L",
+  "usage": "item.dragonhide-armor.usage",
+  "category": "other"
+}
