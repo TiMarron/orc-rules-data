@@ -1,0 +1,37 @@
+{
+  "id": "archetype.herbalist",
+  "type": "archetype",
+  "name": "archetype.herbalist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 202,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.herbalist.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.herbalist-dedication"
+    },
+    {
+      "level": 2,
+      "feat": "feat.fresh-ingredients"
+    },
+    {
+      "level": 4,
+      "feat": "feat.poultice-preparation"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-herbalism"
+    },
+    {
+      "level": 6,
+      "feat": "feat.endemic-herbs"
+    }
+  ]
+}

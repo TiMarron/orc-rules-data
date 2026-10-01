@@ -1,0 +1,50 @@
+{
+  "id": "archetype.sorcerer",
+  "type": "archetype",
+  "name": "archetype.sorcerer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 181,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.sorcerer.text",
+  "class": "class.sorcerer",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.sorcerer-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-blood-potency"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-bloodline-spell"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-sorcerer-spellcasting"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-blood-potency"
+    },
+    {
+      "level": 8,
+      "feat": "feat.bloodline-breadth"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-sorcerer-spellcasting"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-sorcerer-spellcasting"
+    }
+  ]
+}

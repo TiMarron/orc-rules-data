@@ -1,0 +1,61 @@
+{
+  "id": "archetype.duelist",
+  "type": "archetype",
+  "name": "archetype.duelist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 197,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.duelist.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.duelist-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.dueling-parry-fighter"
+    },
+    {
+      "level": 4,
+      "feat": "feat.duelists-challenge"
+    },
+    {
+      "level": 8,
+      "feat": "feat.disarming-stance"
+    },
+    {
+      "level": 8,
+      "feat": "feat.selfless-parry"
+    },
+    {
+      "level": 10,
+      "feat": "feat.dueling-riposte"
+    },
+    {
+      "level": 12,
+      "feat": "feat.disarming-twist"
+    },
+    {
+      "level": 12,
+      "feat": "feat.student-of-the-dueling-arts"
+    },
+    {
+      "level": 14,
+      "feat": "feat.dueling-dance-fighter"
+    },
+    {
+      "level": 14,
+      "feat": "feat.improved-dueling-riposte"
+    },
+    {
+      "level": 16,
+      "feat": "feat.guiding-riposte"
+    }
+  ]
+}

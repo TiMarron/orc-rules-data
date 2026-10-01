@@ -1,0 +1,42 @@
+{
+  "id": "archetype.fighter",
+  "type": "archetype",
+  "name": "archetype.fighter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 219,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "archetype.fighter.text",
+  "class": "class.fighter",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.fighter-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-maneuver"
+    },
+    {
+      "level": 4,
+      "feat": "feat.fighter-resiliency"
+    },
+    {
+      "level": 4,
+      "feat": "feat.reactive-striker"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-maneuver"
+    },
+    {
+      "level": 12,
+      "feat": "feat.diverse-weapon-expert"
+    }
+  ]
+}

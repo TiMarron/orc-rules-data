@@ -1,0 +1,41 @@
+{
+  "id": "archetype.pirate",
+  "type": "archetype",
+  "name": "archetype.pirate.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 209,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.pirate.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.pirate-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.antagonize"
+    },
+    {
+      "level": 4,
+      "feat": "feat.pirate-combat-training"
+    },
+    {
+      "level": 4,
+      "feat": "feat.rope-runner"
+    },
+    {
+      "level": 4,
+      "feat": "feat.youre-next"
+    },
+    {
+      "level": 8,
+      "feat": "feat.walk-the-plank"
+    }
+  ]
+}

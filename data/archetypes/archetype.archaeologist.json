@@ -1,0 +1,49 @@
+{
+  "id": "archetype.archaeologist",
+  "type": "archetype",
+  "name": "archetype.archaeologist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 184,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.archaeologist.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.archaeologist-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.magical-scholastics"
+    },
+    {
+      "level": 4,
+      "feat": "feat.settlement-scholastics"
+    },
+    {
+      "level": 4,
+      "feat": "feat.trap-finder"
+    },
+    {
+      "level": 7,
+      "feat": "feat.scholastic-identification"
+    },
+    {
+      "level": 8,
+      "feat": "feat.archaeologists-luck"
+    },
+    {
+      "level": 10,
+      "feat": "feat.delay-trap"
+    },
+    {
+      "level": 10,
+      "feat": "feat.greater-magical-scholastics"
+    }
+  ]
+}

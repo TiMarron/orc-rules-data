@@ -1,0 +1,69 @@
+{
+  "id": "archetype.eldritch-archer",
+  "type": "archetype",
+  "name": "archetype.eldritch-archer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 198,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.eldritch-archer.text",
+  "feats": [
+    {
+      "level": 6,
+      "feat": "feat.eldritch-archer-dedication"
+    },
+    {
+      "level": 8,
+      "feat": "feat.basic-eldritch-archer-spellcasting"
+    },
+    {
+      "level": 8,
+      "feat": "feat.enchanting-shot"
+    },
+    {
+      "level": 8,
+      "feat": "feat.magic-ammunition"
+    },
+    {
+      "level": 8,
+      "feat": "feat.precious-ammunition"
+    },
+    {
+      "level": 8,
+      "feat": "feat.running-reload"
+    },
+    {
+      "level": 10,
+      "feat": "feat.eldritch-reload"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-eldritch-archer-spellcasting"
+    },
+    {
+      "level": 14,
+      "feat": "feat.homing-shot"
+    },
+    {
+      "level": 16,
+      "feat": "feat.incorporeal-shot"
+    },
+    {
+      "level": 18,
+      "feat": "feat.fatal-shot"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-eldritch-archer-spellcasting"
+    },
+    {
+      "level": 20,
+      "feat": "feat.impossible-volley"
+    }
+  ]
+}

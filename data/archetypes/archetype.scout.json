@@ -1,0 +1,45 @@
+{
+  "id": "archetype.scout",
+  "type": "archetype",
+  "name": "archetype.scout.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 212,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.scout.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.scout-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.scouts-charge"
+    },
+    {
+      "level": 4,
+      "feat": "feat.terrain-scout"
+    },
+    {
+      "level": 6,
+      "feat": "feat.fleeting-shadow"
+    },
+    {
+      "level": 6,
+      "feat": "feat.scouts-speed"
+    },
+    {
+      "level": 10,
+      "feat": "feat.scouts-pounce"
+    },
+    {
+      "level": 12,
+      "feat": "feat.camouflage"
+    }
+  ]
+}

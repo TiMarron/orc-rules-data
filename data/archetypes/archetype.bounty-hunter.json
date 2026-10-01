@@ -1,0 +1,46 @@
+{
+  "id": "archetype.bounty-hunter",
+  "type": "archetype",
+  "name": "archetype.bounty-hunter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 191,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.bounty-hunter.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.bounty-hunter-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.monster-hunter"
+    },
+    {
+      "level": 4,
+      "feat": "feat.posse"
+    },
+    {
+      "level": 4,
+      "feat": "feat.tools-of-the-trade"
+    },
+    {
+      "level": 6,
+      "feat": "feat.keep-pace"
+    },
+    {
+      "level": 8,
+      "feat": "feat.opportunistic-grapple"
+    },
+    {
+      "level": 14,
+      "feat": "feat.double-prey"
+    }
+  ],
+  "editNote": "Reserved Material removed: an idiom naming a Reserved plane is rephrased as 'to the ends of the world and back', with the same meaning."
+}

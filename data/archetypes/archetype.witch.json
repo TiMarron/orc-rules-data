@@ -1,0 +1,46 @@
+{
+  "id": "archetype.witch",
+  "type": "archetype",
+  "name": "archetype.witch.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 222,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.witch.text",
+  "class": "class.witch",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.witch-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-witch-spellcasting"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-witchcraft"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-witchcraft"
+    },
+    {
+      "level": 8,
+      "feat": "feat.patrons-breadth"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-witch-spellcasting"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-witch-spellcasting"
+    }
+  ]
+}

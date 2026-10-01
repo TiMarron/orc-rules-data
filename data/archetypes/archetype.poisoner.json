@@ -1,0 +1,69 @@
+{
+  "id": "archetype.poisoner",
+  "type": "archetype",
+  "name": "archetype.poisoner.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 210,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.poisoner.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.poisoner-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.blowgun-poisoner"
+    },
+    {
+      "level": 4,
+      "feat": "feat.poison-resistance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.poisoners-twist"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-poisoncraft"
+    },
+    {
+      "level": 6,
+      "feat": "feat.poison-coat"
+    },
+    {
+      "level": 6,
+      "feat": "feat.poison-weapon"
+    },
+    {
+      "level": 6,
+      "feat": "feat.tenacious-toxins"
+    },
+    {
+      "level": 8,
+      "feat": "feat.acquired-tolerance"
+    },
+    {
+      "level": 8,
+      "feat": "feat.sticky-poison"
+    },
+    {
+      "level": 10,
+      "feat": "feat.improved-poison-weapon"
+    },
+    {
+      "level": 10,
+      "feat": "feat.pinpoint-poisoner"
+    },
+    {
+      "level": 18,
+      "feat": "feat.chemical-contagion"
+    }
+  ]
+}

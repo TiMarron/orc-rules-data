@@ -1,0 +1,86 @@
+{
+  "id": "archetype.wrestler",
+  "type": "archetype",
+  "name": "archetype.wrestler.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 222,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.wrestler.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.wrestler-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.combat-grab"
+    },
+    {
+      "level": 4,
+      "feat": "feat.crushing-grab"
+    },
+    {
+      "level": 4,
+      "feat": "feat.disengaging-twist"
+    },
+    {
+      "level": 4,
+      "feat": "feat.elbow-breaker"
+    },
+    {
+      "level": 4,
+      "feat": "feat.snagging-strike"
+    },
+    {
+      "level": 4,
+      "feat": "feat.suplex"
+    },
+    {
+      "level": 6,
+      "feat": "feat.clinch-strike"
+    },
+    {
+      "level": 8,
+      "feat": "feat.running-tackle"
+    },
+    {
+      "level": 8,
+      "feat": "feat.strangle"
+    },
+    {
+      "level": 8,
+      "feat": "feat.submission-hold"
+    },
+    {
+      "level": 8,
+      "feat": "feat.whirling-throw"
+    },
+    {
+      "level": 10,
+      "feat": "feat.aerial-piledriver"
+    },
+    {
+      "level": 10,
+      "feat": "feat.spinebreaker"
+    },
+    {
+      "level": 12,
+      "feat": "feat.inescapable-grasp"
+    },
+    {
+      "level": 14,
+      "feat": "feat.form-lock"
+    },
+    {
+      "level": 20,
+      "feat": "feat.godbreaker"
+    }
+  ],
+  "editNote": "Reserved Material removed: the world, region and nation names in the flavor paragraphs are replaced with generic descriptions (all over the world, among orc holds, distant lands); a garbled apostrophe in 'they're' from the source is corrected to the book's spelling. No rule is affected."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "archetype.sentinel",
+  "type": "archetype",
+  "name": "archetype.sentinel.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 215,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.sentinel.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.sentinel-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.steel-skin"
+    },
+    {
+      "level": 6,
+      "feat": "feat.armor-specialist"
+    },
+    {
+      "level": 8,
+      "feat": "feat.armored-rebuff"
+    },
+    {
+      "level": 10,
+      "feat": "feat.mighty-bulwark"
+    }
+  ]
+}

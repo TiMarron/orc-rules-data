@@ -1,0 +1,33 @@
+{
+  "id": "archetype.scrounger",
+  "type": "archetype",
+  "name": "archetype.scrounger.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 214,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.scrounger.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.scrounger-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.reverse-engineering"
+    },
+    {
+      "level": 6,
+      "feat": "feat.magical-scrounger"
+    },
+    {
+      "level": 7,
+      "feat": "feat.expert-disassembly"
+    }
+  ]
+}

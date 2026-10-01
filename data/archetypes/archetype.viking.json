@@ -1,0 +1,49 @@
+{
+  "id": "archetype.viking",
+  "type": "archetype",
+  "name": "archetype.viking.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 220,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.viking.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.viking-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.hurling-charge"
+    },
+    {
+      "level": 4,
+      "feat": "feat.reactive-shield"
+    },
+    {
+      "level": 4,
+      "feat": "feat.viking-weapon-familiarity"
+    },
+    {
+      "level": 6,
+      "feat": "feat.second-shield"
+    },
+    {
+      "level": 6,
+      "feat": "feat.shielded-stride"
+    },
+    {
+      "level": 8,
+      "feat": "feat.into-the-fray"
+    },
+    {
+      "level": 10,
+      "feat": "feat.quick-shield-block"
+    }
+  ]
+}

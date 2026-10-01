@@ -1,0 +1,54 @@
+{
+  "id": "archetype.blessed-one",
+  "type": "archetype",
+  "name": "archetype.blessed-one.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 190,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.blessed-one.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.blessed-one-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.blessed-sacrifice"
+    },
+    {
+      "level": 6,
+      "feat": "feat.mercy"
+    },
+    {
+      "level": 8,
+      "feat": "feat.blessed-spell"
+    },
+    {
+      "level": 10,
+      "feat": "feat.greater-mercy"
+    },
+    {
+      "level": 12,
+      "feat": "feat.blessed-denial"
+    },
+    {
+      "level": 14,
+      "feat": "feat.affliction-mercy"
+    },
+    {
+      "level": 20,
+      "feat": "feat.rejuvenating-touch"
+    },
+    {
+      "level": 20,
+      "feat": "feat.ultimate-mercy"
+    }
+  ],
+  "editNote": "Reserved Material removed: the example of a deity of monsters who might grant the blessing, named in the book, is replaced with a generic malevolent deity; the rule that any deity with a healing font can grant it is unchanged."
+}

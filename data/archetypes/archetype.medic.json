@@ -1,0 +1,37 @@
+{
+  "id": "archetype.medic",
+  "type": "archetype",
+  "name": "archetype.medic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 208,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.medic.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.medic-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.doctors-visitation"
+    },
+    {
+      "level": 4,
+      "feat": "feat.treat-condition"
+    },
+    {
+      "level": 6,
+      "feat": "feat.holistic-care"
+    },
+    {
+      "level": 16,
+      "feat": "feat.resuscitate"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "archetype.familiar-master",
+  "type": "archetype",
+  "name": "archetype.familiar-master.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 200,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.familiar-master.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.familiar-master-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.enhanced-familiar"
+    },
+    {
+      "level": 4,
+      "feat": "feat.familiar-conduit"
+    },
+    {
+      "level": 4,
+      "feat": "feat.familiar-mascot"
+    },
+    {
+      "level": 6,
+      "feat": "feat.improved-familiar"
+    },
+    {
+      "level": 8,
+      "feat": "feat.mutable-familiar"
+    },
+    {
+      "level": 10,
+      "feat": "feat.incredible-familiar-familiar-master"
+    }
+  ]
+}

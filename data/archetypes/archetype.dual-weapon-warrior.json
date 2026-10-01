@@ -1,0 +1,65 @@
+{
+  "id": "archetype.dual-weapon-warrior",
+  "type": "archetype",
+  "name": "archetype.dual-weapon-warrior.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 196,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.dual-weapon-warrior.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.dual-weapon-warrior-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.dual-thrower"
+    },
+    {
+      "level": 4,
+      "feat": "feat.dual-weapon-reload"
+    },
+    {
+      "level": 4,
+      "feat": "feat.quick-draw"
+    },
+    {
+      "level": 6,
+      "feat": "feat.twin-parry"
+    },
+    {
+      "level": 8,
+      "feat": "feat.flensing-slice"
+    },
+    {
+      "level": 10,
+      "feat": "feat.dual-weapon-blitz"
+    },
+    {
+      "level": 12,
+      "feat": "feat.twin-riposte"
+    },
+    {
+      "level": 14,
+      "feat": "feat.dual-onslaught"
+    },
+    {
+      "level": 16,
+      "feat": "feat.improved-twin-riposte-fighter"
+    },
+    {
+      "level": 16,
+      "feat": "feat.two-weapon-flurry"
+    },
+    {
+      "level": 18,
+      "feat": "feat.twinned-defense-fighter"
+    }
+  ]
+}

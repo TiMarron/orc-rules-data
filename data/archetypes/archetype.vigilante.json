@@ -1,0 +1,66 @@
+{
+  "id": "archetype.vigilante",
+  "type": "archetype",
+  "name": "archetype.vigilante.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 218,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.vigilante.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.vigilante-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.hidden-magic"
+    },
+    {
+      "level": 4,
+      "feat": "feat.minion-guise"
+    },
+    {
+      "level": 4,
+      "feat": "feat.quick-draw"
+    },
+    {
+      "level": 4,
+      "feat": "feat.safe-house"
+    },
+    {
+      "level": 4,
+      "feat": "feat.social-purview"
+    },
+    {
+      "level": 6,
+      "feat": "feat.startling-appearance"
+    },
+    {
+      "level": 7,
+      "feat": "feat.quick-change"
+    },
+    {
+      "level": 7,
+      "feat": "feat.subjective-truth"
+    },
+    {
+      "level": 8,
+      "feat": "feat.many-guises"
+    },
+    {
+      "level": 12,
+      "feat": "feat.frightening-appearance"
+    },
+    {
+      "level": 16,
+      "feat": "feat.stunning-appearance"
+    }
+  ],
+  "editNote": "Not in the book: the closing block is the source's pointer to another archetype, from an adventure, that the vigilante dedication also unlocks; it is not text of the book's vigilante page, and it names Reserved Material. Removed."
+}

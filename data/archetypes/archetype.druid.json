@@ -1,0 +1,50 @@
+{
+  "id": "archetype.druid",
+  "type": "archetype",
+  "name": "archetype.druid.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 218,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "archetype.druid.text",
+  "class": "class.druid",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.druid-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-druid-spellcasting"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-wilding"
+    },
+    {
+      "level": 4,
+      "feat": "feat.order-spell"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-wilding"
+    },
+    {
+      "level": 8,
+      "feat": "feat.primal-breadth"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-druid-spellcasting"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-druid-spellcasting"
+    }
+  ]
+}

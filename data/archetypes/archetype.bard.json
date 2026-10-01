@@ -1,0 +1,54 @@
+{
+  "id": "archetype.bard",
+  "type": "archetype",
+  "name": "archetype.bard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.bard.text",
+  "class": "class.bard",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.bard-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-bard-spellcasting"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-muses-whispers"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-muses-whispers"
+    },
+    {
+      "level": 6,
+      "feat": "feat.counter-perform"
+    },
+    {
+      "level": 8,
+      "feat": "feat.anthemic-performance"
+    },
+    {
+      "level": 8,
+      "feat": "feat.occult-breadth"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-bard-spellcasting"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-bard-spellcasting"
+    }
+  ]
+}

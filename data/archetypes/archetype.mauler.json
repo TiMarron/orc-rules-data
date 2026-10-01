@@ -1,0 +1,57 @@
+{
+  "id": "archetype.mauler",
+  "type": "archetype",
+  "name": "archetype.mauler.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 207,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.mauler.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.mauler-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.slam-down"
+    },
+    {
+      "level": 4,
+      "feat": "feat.vicious-swing"
+    },
+    {
+      "level": 6,
+      "feat": "feat.clear-the-way"
+    },
+    {
+      "level": 8,
+      "feat": "feat.shoving-sweep"
+    },
+    {
+      "level": 12,
+      "feat": "feat.crashing-slam"
+    },
+    {
+      "level": 14,
+      "feat": "feat.brutal-finish"
+    },
+    {
+      "level": 14,
+      "feat": "feat.hammer-quake"
+    },
+    {
+      "level": 14,
+      "feat": "feat.unbalancing-sweep"
+    },
+    {
+      "level": 16,
+      "feat": "feat.avalanche-strike"
+    }
+  ]
+}

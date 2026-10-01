@@ -1,0 +1,49 @@
+{
+  "id": "archetype.assassin",
+  "type": "archetype",
+  "name": "archetype.assassin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 186,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.assassin.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.assassin-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.expert-backstabber"
+    },
+    {
+      "level": 4,
+      "feat": "feat.poison-resistance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.surprise-attack"
+    },
+    {
+      "level": 6,
+      "feat": "feat.poison-weapon"
+    },
+    {
+      "level": 10,
+      "feat": "feat.angel-of-death"
+    },
+    {
+      "level": 10,
+      "feat": "feat.improved-poison-weapon"
+    },
+    {
+      "level": 12,
+      "feat": "feat.assassinate"
+    }
+  ]
+}

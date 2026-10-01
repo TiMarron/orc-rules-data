@@ -1,0 +1,33 @@
+{
+  "id": "archetype.celebrity",
+  "type": "archetype",
+  "name": "archetype.celebrity.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 194,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.celebrity.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.celebrity-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.never-tire"
+    },
+    {
+      "level": 6,
+      "feat": "feat.mesmerizing-gaze"
+    },
+    {
+      "level": 10,
+      "feat": "feat.command-attention"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "archetype.weapon-improviser",
+  "type": "archetype",
+  "name": "archetype.weapon-improviser.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 221,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.weapon-improviser.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.weapon-improviser-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.improvised-pummel"
+    },
+    {
+      "level": 6,
+      "feat": "feat.surprise-strike"
+    },
+    {
+      "level": 8,
+      "feat": "feat.improvised-critical"
+    },
+    {
+      "level": 8,
+      "feat": "feat.makeshift-strike"
+    },
+    {
+      "level": 10,
+      "feat": "feat.shattering-strike-weapon-improviser"
+    }
+  ]
+}

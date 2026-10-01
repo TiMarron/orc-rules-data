@@ -1,0 +1,77 @@
+{
+  "id": "archetype.archer",
+  "type": "archetype",
+  "name": "archetype.archer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 185,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.archer.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.archer-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.assisting-shot"
+    },
+    {
+      "level": 4,
+      "feat": "feat.crossbow-ace"
+    },
+    {
+      "level": 4,
+      "feat": "feat.point-blank-stance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.quick-shot"
+    },
+    {
+      "level": 6,
+      "feat": "feat.crossbow-terror"
+    },
+    {
+      "level": 6,
+      "feat": "feat.double-shot"
+    },
+    {
+      "level": 6,
+      "feat": "feat.parting-shot"
+    },
+    {
+      "level": 6,
+      "feat": "feat.running-reload"
+    },
+    {
+      "level": 8,
+      "feat": "feat.archers-aim"
+    },
+    {
+      "level": 8,
+      "feat": "feat.triple-shot"
+    },
+    {
+      "level": 10,
+      "feat": "feat.mobile-shot-stance"
+    },
+    {
+      "level": 10,
+      "feat": "feat.unobstructed-shot"
+    },
+    {
+      "level": 18,
+      "feat": "feat.multishot-stance"
+    },
+    {
+      "level": 20,
+      "feat": "feat.impossible-volley"
+    }
+  ]
+}

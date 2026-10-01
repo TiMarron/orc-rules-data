@@ -1,0 +1,46 @@
+{
+  "id": "archetype.swashbuckler",
+  "type": "archetype",
+  "name": "archetype.swashbuckler.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 182,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "archetype.swashbuckler.text",
+  "class": "class.swashbuckler",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.swashbuckler-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-flair"
+    },
+    {
+      "level": 4,
+      "feat": "feat.finishing-precision"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-flair"
+    },
+    {
+      "level": 6,
+      "feat": "feat.swashbucklers-riposte"
+    },
+    {
+      "level": 8,
+      "feat": "feat.swashbucklers-speed"
+    },
+    {
+      "level": 12,
+      "feat": "feat.evasiveness"
+    }
+  ]
+}

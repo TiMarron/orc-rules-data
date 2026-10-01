@@ -1,0 +1,45 @@
+{
+  "id": "archetype.linguist",
+  "type": "archetype",
+  "name": "archetype.linguist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 203,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.linguist.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.linguist-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.multilingual-cipher"
+    },
+    {
+      "level": 4,
+      "feat": "feat.phonetic-training"
+    },
+    {
+      "level": 4,
+      "feat": "feat.spot-translate"
+    },
+    {
+      "level": 6,
+      "feat": "feat.analyze-idiolect"
+    },
+    {
+      "level": 7,
+      "feat": "feat.read-shibboleths"
+    },
+    {
+      "level": 8,
+      "feat": "feat.crude-communication"
+    }
+  ]
+}
