@@ -7,9 +7,10 @@ import { refsCheck } from './checks/refs.js';
 import { i18nCheck } from './checks/i18n.js';
 import { sourceCheck } from './checks/source.js';
 import { reservedCheck } from './checks/reserved.js';
+import { archetypesCheck } from './checks/archetypes.js';
 
 export function defaultChecks(schemaDir: string): Check[] {
-  return [makeSchemaCheck(schemaDir), flagsCheck, idsCheck, refsCheck, i18nCheck, sourceCheck, reservedCheck];
+  return [makeSchemaCheck(schemaDir), flagsCheck, idsCheck, refsCheck, i18nCheck, sourceCheck, reservedCheck, archetypesCheck];
 }
 
 export function runChecks(ds: Dataset, schemaDir = join(ds.root, 'schema'), checks = defaultChecks(schemaDir)): Issue[] {

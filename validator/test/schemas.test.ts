@@ -19,6 +19,10 @@ const VALID: Record<string, Record<string, unknown>> = {
     schoolSpells: { initial: 'spell.charming-push', advanced: 'spell.invisibility-cloak' },
   }),
   thesis: record('thesis', 'spell-blending', { class: 'class.wizard', level: 1 }),
+  archetype: record('archetype', 'fighter', {
+    class: 'class.fighter',
+    feats: [{ level: 2, feat: 'feat.fighter-dedication' }, { level: 4, feat: 'feat.basic-maneuver' }],
+  }),
   package: record('package', 'fighter', {
     class: 'class.fighter',
     items: [{ item: 'item.scale-mail', count: 1 }, { item: 'item.arrows', count: 2 }],
@@ -252,6 +256,18 @@ describe('type schemas', () => {
     const issues = issuesFor('school', school);
     expect(issues).toHaveLength(1);
     expect(issues[0]).toContain("must have required property 'initial'");
+  });
+
+  it('rejects an archetype with no feats', () => {
+    const issues = issuesFor('archetype', { ...VALID.archetype, feats: [] });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('/feats must NOT have fewer than 1 items');
+  });
+
+  it('rejects an archetype feat entry without a level', () => {
+    const issues = issuesFor('archetype', { ...VALID.archetype, feats: [{ feat: 'feat.fighter-dedication' }] });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain("must have required property 'level'");
   });
 
   it('rejects an unknown property on a thesis with exactly one issue naming it', () => {

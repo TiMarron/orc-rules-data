@@ -13,6 +13,12 @@ major for renamed or removed ids, new required fields and markup changes.
   and items, and the Reserved-Material review that goes with them.
 - The fifty GM Core traits that Player Core 2's items point at (splash,
   invested, staff, talisman and the like).
+- Archetypes, a new record type: the eight of Player Core and the forty-three
+  of Player Core 2. Each lists its feats with the level it offers them at, and
+  a multiclass archetype names its class, so the rule that a class cannot take
+  its own multiclass dedication can be read from the data. The validator checks
+  that every archetype has one dedication and that every archetype feat belongs
+  to an archetype.
 
 ### Changed
 
