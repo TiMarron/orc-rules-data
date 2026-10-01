@@ -1,0 +1,50 @@
+{
+  "id": "archetype.oracle",
+  "type": "archetype",
+  "name": "archetype.oracle.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 180,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "archetype.oracle.text",
+  "class": "class.oracle",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.oracle-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-mysteries"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-oracle-spellcasting"
+    },
+    {
+      "level": 4,
+      "feat": "feat.first-revelation"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-mysteries"
+    },
+    {
+      "level": 8,
+      "feat": "feat.mysterious-breadth"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-oracle-spellcasting"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-oracle-spellcasting"
+    }
+  ]
+}

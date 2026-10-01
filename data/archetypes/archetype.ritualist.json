@@ -1,0 +1,41 @@
+{
+  "id": "archetype.ritualist",
+  "type": "archetype",
+  "name": "archetype.ritualist.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 211,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.ritualist.text",
+  "feats": [
+    {
+      "level": 4,
+      "feat": "feat.ritualist-dedication"
+    },
+    {
+      "level": 6,
+      "feat": "feat.flexible-ritualist"
+    },
+    {
+      "level": 6,
+      "feat": "feat.resourceful-ritualist"
+    },
+    {
+      "level": 8,
+      "feat": "feat.efficient-rituals"
+    },
+    {
+      "level": 10,
+      "feat": "feat.assured-ritualist"
+    },
+    {
+      "level": 14,
+      "feat": "feat.enterprising-ritualist"
+    }
+  ]
+}

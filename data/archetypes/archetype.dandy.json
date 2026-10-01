@@ -1,0 +1,37 @@
+{
+  "id": "archetype.dandy",
+  "type": "archetype",
+  "name": "archetype.dandy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.dandy.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.dandy-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.distracting-flattery"
+    },
+    {
+      "level": 4,
+      "feat": "feat.gossip-lore"
+    },
+    {
+      "level": 7,
+      "feat": "feat.fabricated-connections"
+    },
+    {
+      "level": 7,
+      "feat": "feat.party-crasher"
+    }
+  ]
+}

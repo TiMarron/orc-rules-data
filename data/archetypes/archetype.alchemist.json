@@ -1,0 +1,42 @@
+{
+  "id": "archetype.alchemist",
+  "type": "archetype",
+  "name": "archetype.alchemist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 175,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "archetype.alchemist.text",
+  "class": "class.alchemist",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.alchemist-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.advanced-alchemy"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-concoction"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-concoction"
+    },
+    {
+      "level": 6,
+      "feat": "feat.voluminous-vials"
+    },
+    {
+      "level": 12,
+      "feat": "feat.alchemical-power"
+    }
+  ]
+}

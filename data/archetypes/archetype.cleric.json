@@ -1,0 +1,46 @@
+{
+  "id": "archetype.cleric",
+  "type": "archetype",
+  "name": "archetype.cleric.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "archetype.cleric.text",
+  "class": "class.cleric",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.cleric-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-cleric-spellcasting"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-dogma"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-dogma"
+    },
+    {
+      "level": 8,
+      "feat": "feat.divine-breadth"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-cleric-spellcasting"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-cleric-spellcasting"
+    }
+  ]
+}

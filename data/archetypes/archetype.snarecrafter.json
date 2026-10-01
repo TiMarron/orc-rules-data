@@ -1,0 +1,42 @@
+{
+  "id": "archetype.snarecrafter",
+  "type": "archetype",
+  "name": "archetype.snarecrafter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 216,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.snarecrafter.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.snarecrafter-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.surprise-snare"
+    },
+    {
+      "level": 6,
+      "feat": "feat.remote-trigger"
+    },
+    {
+      "level": 10,
+      "feat": "feat.giant-snare"
+    },
+    {
+      "level": 12,
+      "feat": "feat.lightning-snares"
+    },
+    {
+      "level": 12,
+      "feat": "feat.plentiful-snares"
+    }
+  ],
+  "editNote": "Two apostrophes the source garbled into a control character ('You\\u0081're', 'you\\u0081ve') are restored to the book's 'You’re' and 'you’ve'. No other change."
+}

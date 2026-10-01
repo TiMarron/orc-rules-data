@@ -1,0 +1,39 @@
+{
+  "id": "archetype.ranger",
+  "type": "archetype",
+  "name": "archetype.ranger.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 220,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.ranger.text",
+  "class": "class.ranger",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.ranger-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-hunters-trick"
+    },
+    {
+      "level": 4,
+      "feat": "feat.ranger-resiliency"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-hunters-trick"
+    },
+    {
+      "level": 12,
+      "feat": "feat.master-spotter-ranger"
+    }
+  ],
+  "editNote": "Reserved Material removed: the aside naming a god of the hunt is replaced with 'Some deities are both!'; the advice is unchanged."
+}

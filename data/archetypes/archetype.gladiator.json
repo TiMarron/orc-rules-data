@@ -1,0 +1,41 @@
+{
+  "id": "archetype.gladiator",
+  "type": "archetype",
+  "name": "archetype.gladiator.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 201,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.gladiator.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.gladiator-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.fancy-moves"
+    },
+    {
+      "level": 4,
+      "feat": "feat.play-to-the-crowd"
+    },
+    {
+      "level": 4,
+      "feat": "feat.stage-fighting"
+    },
+    {
+      "level": 6,
+      "feat": "feat.performative-weapons-training"
+    },
+    {
+      "level": 8,
+      "feat": "feat.call-your-shot"
+    }
+  ]
+}

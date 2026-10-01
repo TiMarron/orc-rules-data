@@ -1,0 +1,77 @@
+{
+  "id": "archetype.beastmaster",
+  "type": "archetype",
+  "name": "archetype.beastmaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 188,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.beastmaster.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.beastmaster-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.additional-companion"
+    },
+    {
+      "level": 4,
+      "feat": "feat.animal-empathy-ranger"
+    },
+    {
+      "level": 4,
+      "feat": "feat.initiate-warden"
+    },
+    {
+      "level": 4,
+      "feat": "feat.mature-beastmaster-companion"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-warden"
+    },
+    {
+      "level": 6,
+      "feat": "feat.beastmasters-trance"
+    },
+    {
+      "level": 6,
+      "feat": "feat.companions-cry"
+    },
+    {
+      "level": 6,
+      "feat": "feat.swift-guardian"
+    },
+    {
+      "level": 8,
+      "feat": "feat.incredible-beastmaster-companion"
+    },
+    {
+      "level": 10,
+      "feat": "feat.beastmaster-bond"
+    },
+    {
+      "level": 12,
+      "feat": "feat.beastmasters-call"
+    },
+    {
+      "level": 14,
+      "feat": "feat.side-by-side-druid"
+    },
+    {
+      "level": 14,
+      "feat": "feat.specialized-beastmaster-companion"
+    },
+    {
+      "level": 16,
+      "feat": "feat.lead-the-pack"
+    }
+  ]
+}

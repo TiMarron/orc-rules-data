@@ -1,0 +1,61 @@
+{
+  "id": "archetype.bastion",
+  "type": "archetype",
+  "name": "archetype.bastion.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 187,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.bastion.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.bastion-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.disarming-block"
+    },
+    {
+      "level": 6,
+      "feat": "feat.nimble-shield-hand"
+    },
+    {
+      "level": 6,
+      "feat": "feat.shielded-stride"
+    },
+    {
+      "level": 8,
+      "feat": "feat.reflexive-shield"
+    },
+    {
+      "level": 8,
+      "feat": "feat.shield-warden"
+    },
+    {
+      "level": 10,
+      "feat": "feat.destructive-block"
+    },
+    {
+      "level": 10,
+      "feat": "feat.quick-shield-block"
+    },
+    {
+      "level": 12,
+      "feat": "feat.mirror-shield"
+    },
+    {
+      "level": 12,
+      "feat": "feat.shield-salvation"
+    },
+    {
+      "level": 18,
+      "feat": "feat.improved-reflexive-shield"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "archetype.marshal",
+  "type": "archetype",
+  "name": "archetype.marshal.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 204,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.marshal.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.marshal-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.dread-marshal-stance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.inspiring-marshal-stance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.snap-out-of-it"
+    },
+    {
+      "level": 4,
+      "feat": "feat.steel-yourself"
+    },
+    {
+      "level": 6,
+      "feat": "feat.cadence-call"
+    },
+    {
+      "level": 6,
+      "feat": "feat.rallying-charge"
+    },
+    {
+      "level": 8,
+      "feat": "feat.back-to-back"
+    },
+    {
+      "level": 8,
+      "feat": "feat.reactive-strike"
+    },
+    {
+      "level": 8,
+      "feat": "feat.to-battle"
+    },
+    {
+      "level": 10,
+      "feat": "feat.topple-foe"
+    },
+    {
+      "level": 12,
+      "feat": "feat.coordinated-charge"
+    },
+    {
+      "level": 14,
+      "feat": "feat.tactical-cadence"
+    },
+    {
+      "level": 14,
+      "feat": "feat.target-of-opportunity"
+    }
+  ]
+}

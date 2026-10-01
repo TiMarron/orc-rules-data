@@ -1,0 +1,66 @@
+{
+  "id": "archetype.cavalier",
+  "type": "archetype",
+  "name": "archetype.cavalier.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 192,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.cavalier.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.cavalier-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.cavaliers-banner"
+    },
+    {
+      "level": 4,
+      "feat": "feat.cavaliers-charge"
+    },
+    {
+      "level": 4,
+      "feat": "feat.impressive-mount"
+    },
+    {
+      "level": 4,
+      "feat": "feat.quick-mount"
+    },
+    {
+      "level": 6,
+      "feat": "feat.defend-mount"
+    },
+    {
+      "level": 6,
+      "feat": "feat.mounted-shield"
+    },
+    {
+      "level": 8,
+      "feat": "feat.incredible-mount"
+    },
+    {
+      "level": 10,
+      "feat": "feat.trampling-charge"
+    },
+    {
+      "level": 10,
+      "feat": "feat.unseat"
+    },
+    {
+      "level": 14,
+      "feat": "feat.specialized-mount"
+    },
+    {
+      "level": 20,
+      "feat": "feat.legendary-rider"
+    }
+  ],
+  "editNote": "Reserved Material removed: the example church of a named god in the Cavalier Pledges sidebar is replaced with 'a deity's church', the same wording the Cavalier Dedication record uses for this sidebar; the pledge rules are unchanged."
+}

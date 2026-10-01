@@ -1,0 +1,47 @@
+{
+  "id": "archetype.rogue",
+  "type": "archetype",
+  "name": "archetype.rogue.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 221,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.rogue.text",
+  "class": "class.rogue",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.rogue-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-trickery"
+    },
+    {
+      "level": 4,
+      "feat": "feat.sneak-attacker"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-trickery"
+    },
+    {
+      "level": 8,
+      "feat": "feat.skill-mastery-rogue"
+    },
+    {
+      "level": 10,
+      "feat": "feat.uncanny-dodge"
+    },
+    {
+      "level": 12,
+      "feat": "feat.evasiveness-rogue"
+    }
+  ],
+  "editNote": "Reserved Material removed: the named goddess given as an example of a god of trickery is dropped; the sentence keeps its meaning."
+}

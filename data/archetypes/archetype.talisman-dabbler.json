@@ -1,0 +1,33 @@
+{
+  "id": "archetype.talisman-dabbler",
+  "type": "archetype",
+  "name": "archetype.talisman-dabbler.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 217,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.talisman-dabbler.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.talisman-dabbler-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.quick-fix"
+    },
+    {
+      "level": 8,
+      "feat": "feat.deeper-dabbler"
+    },
+    {
+      "level": 14,
+      "feat": "feat.talismanic-sage"
+    }
+  ]
+}

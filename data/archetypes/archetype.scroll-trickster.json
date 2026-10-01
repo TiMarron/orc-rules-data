@@ -1,0 +1,37 @@
+{
+  "id": "archetype.scroll-trickster",
+  "type": "archetype",
+  "name": "archetype.scroll-trickster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 213,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.scroll-trickster.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.scroll-trickster-dedication"
+    },
+    {
+      "level": 6,
+      "feat": "feat.basic-scroll-cache"
+    },
+    {
+      "level": 8,
+      "feat": "feat.skim-scroll"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-scroll-cache"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-scroll-cache"
+    }
+  ]
+}

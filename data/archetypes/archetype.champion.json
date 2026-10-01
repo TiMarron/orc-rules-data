@@ -1,0 +1,47 @@
+{
+  "id": "archetype.champion",
+  "type": "archetype",
+  "name": "archetype.champion.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 177,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.champion.text",
+  "class": "class.champion",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.champion-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-devotion"
+    },
+    {
+      "level": 4,
+      "feat": "feat.champion-resiliency"
+    },
+    {
+      "level": 4,
+      "feat": "feat.devout-magic"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-devotion"
+    },
+    {
+      "level": 6,
+      "feat": "feat.champions-reaction"
+    },
+    {
+      "level": 6,
+      "feat": "feat.devout-blessing"
+    }
+  ],
+  "editNote": "Reserved Material removed: the named god of magic in the example is replaced with 'a god of magic'; the advice is unchanged."
+}

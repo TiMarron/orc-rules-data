@@ -1,0 +1,42 @@
+{
+  "id": "archetype.barbarian",
+  "type": "archetype",
+  "name": "archetype.barbarian.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 176,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "archetype.barbarian.text",
+  "class": "class.barbarian",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.barbarian-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.barbarian-resiliency"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-fury"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-fury"
+    },
+    {
+      "level": 6,
+      "feat": "feat.instinct-ability"
+    },
+    {
+      "level": 12,
+      "feat": "feat.juggernauts-fortitude"
+    }
+  ]
+}

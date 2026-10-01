@@ -1,0 +1,41 @@
+{
+  "id": "archetype.acrobat",
+  "type": "archetype",
+  "name": "archetype.acrobat.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 183,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.acrobat.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.acrobat-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.contortionist"
+    },
+    {
+      "level": 6,
+      "feat": "feat.dodge-away"
+    },
+    {
+      "level": 7,
+      "feat": "feat.graceful-leaper"
+    },
+    {
+      "level": 8,
+      "feat": "feat.tumbling-strike"
+    },
+    {
+      "level": 10,
+      "feat": "feat.tumbling-opportunist"
+    }
+  ]
+}

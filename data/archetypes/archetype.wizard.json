@@ -1,0 +1,50 @@
+{
+  "id": "archetype.wizard",
+  "type": "archetype",
+  "name": "archetype.wizard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 223,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.wizard.text",
+  "class": "class.wizard",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.wizard-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.arcane-school-spell"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-arcana"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-wizard-spellcasting"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-arcana"
+    },
+    {
+      "level": 8,
+      "feat": "feat.arcane-breadth"
+    },
+    {
+      "level": 12,
+      "feat": "feat.expert-wizard-spellcasting"
+    },
+    {
+      "level": 18,
+      "feat": "feat.master-wizard-spellcasting"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "archetype.monk",
+  "type": "archetype",
+  "name": "archetype.monk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 179,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "archetype.monk.text",
+  "class": "class.monk",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.monk-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-kata"
+    },
+    {
+      "level": 4,
+      "feat": "feat.monk-resiliency"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-kata"
+    },
+    {
+      "level": 8,
+      "feat": "feat.monk-moves"
+    },
+    {
+      "level": 10,
+      "feat": "feat.monks-flurry"
+    },
+    {
+      "level": 12,
+      "feat": "feat.perfections-path"
+    }
+  ],
+  "editNote": "Reserved Material removed: the named god in the champion bullet is dropped, leaving 'champions of deities who favor unarmed attacks'; the advice is unchanged."
+}

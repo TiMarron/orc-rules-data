@@ -1,0 +1,46 @@
+{
+  "id": "archetype.investigator",
+  "type": "archetype",
+  "name": "archetype.investigator.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 178,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "archetype.investigator.text",
+  "class": "class.investigator",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.investigator-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.basic-deduction"
+    },
+    {
+      "level": 4,
+      "feat": "feat.investigators-stratagem"
+    },
+    {
+      "level": 6,
+      "feat": "feat.advanced-deduction"
+    },
+    {
+      "level": 6,
+      "feat": "feat.keen-recollection"
+    },
+    {
+      "level": 8,
+      "feat": "feat.skill-mastery"
+    },
+    {
+      "level": 12,
+      "feat": "feat.master-spotter"
+    }
+  ]
+}

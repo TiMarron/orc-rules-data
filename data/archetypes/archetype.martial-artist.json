@@ -1,0 +1,85 @@
+{
+  "id": "archetype.martial-artist",
+  "type": "archetype",
+  "name": "archetype.martial-artist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 206,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "archetype.martial-artist.text",
+  "feats": [
+    {
+      "level": 2,
+      "feat": "feat.martial-artist-dedication"
+    },
+    {
+      "level": 4,
+      "feat": "feat.crane-stance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.dragon-stance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.mountain-stance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.stumbling-stance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.tiger-stance"
+    },
+    {
+      "level": 4,
+      "feat": "feat.wolf-stance"
+    },
+    {
+      "level": 6,
+      "feat": "feat.follow-up-strike"
+    },
+    {
+      "level": 8,
+      "feat": "feat.advanced-monastic-weaponry"
+    },
+    {
+      "level": 8,
+      "feat": "feat.crane-flutter"
+    },
+    {
+      "level": 8,
+      "feat": "feat.dragon-roar"
+    },
+    {
+      "level": 8,
+      "feat": "feat.grievous-blow"
+    },
+    {
+      "level": 8,
+      "feat": "feat.mountain-stronghold"
+    },
+    {
+      "level": 8,
+      "feat": "feat.tiger-slash"
+    },
+    {
+      "level": 8,
+      "feat": "feat.wolf-drag"
+    },
+    {
+      "level": 14,
+      "feat": "feat.path-of-iron"
+    },
+    {
+      "level": 16,
+      "feat": "feat.mountain-quake"
+    }
+  ]
+}
