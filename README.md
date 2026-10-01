@@ -7,7 +7,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
-  school, thesis, package.
+  school, thesis, package, archetype.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -71,6 +71,15 @@ cost tokens.
   per rank — and its `schoolSpells` focus spells; a `thesis` (arcane thesis) carries
   its rules in `text`. Both name the class in `class` and the level they are chosen
   at in `level`. The school of unified magical theory sets no `curriculum`.
+- An `archetype` lists its feats in `feats` as `{ level, feat }` entries, the
+  way a class lists its features: every feat the book prints for it, the
+  dedication included, at the level the archetype offers it — the feat's own,
+  or the one the book's Additional Feats list gives (Poison Resistance is a
+  2nd-level feat the assassin takes at 4th). A feat can belong to several
+  archetypes; its own record does not name them. A multiclass archetype names
+  its class in `class`, and a member of that class cannot take its dedication
+  feat. Every archetype lists exactly one feat with the `dedication` trait, and
+  every feat with the `archetype` trait is listed by some archetype.
 - A `package` is a Quick Equipment Package: the gear a class starts with. `items`
   lists the base package as `{ item, count }` entries (ammunition is priced per
   ten, so 20 arrows is `count: 2`); `options` lists what the book prints under
