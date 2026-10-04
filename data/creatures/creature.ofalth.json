@@ -1,0 +1,147 @@
+{
+  "id": "creature.ofalth",
+  "type": "creature",
+  "name": "creature.ofalth.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 249,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "large",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 19,
+      "note": "creature.ofalth.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 3,
+    "con": 6,
+    "int": -2,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 22,
+    "reflex": 17,
+    "will": 18
+  },
+  "hp": {
+    "value": 170,
+    "note": "creature.ofalth.hp.note"
+  },
+  "immunities": [
+    "disease",
+    "poison"
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ofalth.strikes.fist.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "wretched-weeps"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.ofalth.strikes.offal.name",
+      "actions": "1",
+      "bonus": 19,
+      "rangeIncrement": 30,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "wretched-weeps"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "refuse-pile",
+      "section": "top",
+      "name": "creature.ofalth.abilities.refuse-pile.name",
+      "text": "creature.ofalth.abilities.refuse-pile.text"
+    },
+    {
+      "id": "filth-wallow",
+      "section": "defense",
+      "name": "creature.ofalth.abilities.filth-wallow.name",
+      "text": "creature.ofalth.abilities.filth-wallow.text"
+    },
+    {
+      "id": "stench",
+      "section": "defense",
+      "name": "creature.ofalth.abilities.stench.name",
+      "ability": "ability.stench",
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "aura": 30,
+      "text": "creature.ofalth.abilities.stench.text"
+    },
+    {
+      "id": "wretched-weeps",
+      "section": "offense",
+      "name": "creature.ofalth.abilities.wretched-weeps.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.ofalth.abilities.wretched-weeps.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 249 prints \"Stealth +19 (+23 in trash)\"; the source omits the parenthesis and the errata does not touch it."
+}

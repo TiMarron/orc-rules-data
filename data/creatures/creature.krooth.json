@@ -1,0 +1,168 @@
+{
+  "id": "creature.krooth",
+  "type": "creature",
+  "name": "creature.krooth.name",
+  "traits": [
+    "amphibious",
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 213,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18,
+      "note": "creature.krooth.skills.1.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17,
+      "note": "creature.krooth.skills.2.note"
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 6,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 17,
+    "will": 14
+  },
+  "hp": {
+    "value": 150
+  },
+  "speeds": {
+    "land": 40,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.krooth.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "deadly",
+        "poison",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "poison-tooth"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.krooth.strikes.claw.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.krooth.strikes.tail.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pain-frenzy",
+      "section": "defense",
+      "name": "creature.krooth.abilities.pain-frenzy.name",
+      "text": "creature.krooth.abilities.pain-frenzy.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.krooth.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.krooth.abilities.reactive-strike.text"
+    },
+    {
+      "id": "aquatic-ambush",
+      "section": "offense",
+      "name": "creature.krooth.abilities.aquatic-ambush.name",
+      "ability": "ability.aquatic-ambush",
+      "actions": "1"
+    },
+    {
+      "id": "poison-tooth",
+      "section": "offense",
+      "name": "creature.krooth.abilities.poison-tooth.name",
+      "actions": "1",
+      "traits": [
+        "poison"
+      ],
+      "requirements": "creature.krooth.abilities.poison-tooth.requirements",
+      "text": "creature.krooth.abilities.poison-tooth.text"
+    }
+  ],
+  "editNote": "Skill qualifiers added from the book: page 213 prints \"Stealth +18 (+20 in water)\" and \"Survival +17 (+20 to Track a bleeding creature)\"; the source omits the parentheses and the errata does not touch them."
+}

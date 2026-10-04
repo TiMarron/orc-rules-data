@@ -1,0 +1,131 @@
+{
+  "id": "creature.leopard",
+  "type": "creature",
+  "name": "creature.leopard.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8,
+      "note": "creature.leopard.skills.2.note"
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": -4,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 10,
+    "will": 5
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.leopard.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+3",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.leopard.strikes.claw.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "maul",
+      "section": "offense",
+      "name": "creature.leopard.abilities.maul.name",
+      "actions": "1",
+      "text": "creature.leopard.abilities.maul.text"
+    },
+    {
+      "id": "pounce",
+      "section": "offense",
+      "name": "creature.leopard.abilities.pounce.name",
+      "actions": "1",
+      "text": "creature.leopard.abilities.pounce.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.leopard.abilities.sneak-attack.name",
+      "text": "creature.leopard.abilities.sneak-attack.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 50 prints \"Stealth +8 (+11 in undergrowth)\"; the source omits the parenthesis and the errata does not touch it."
+}

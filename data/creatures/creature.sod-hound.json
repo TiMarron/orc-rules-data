@@ -1,0 +1,109 @@
+{
+  "id": "creature.sod-hound",
+  "type": "creature",
+  "name": "creature.sod-hound.name",
+  "traits": [
+    "earth",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 142,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "small",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "own": "crystal-sense",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 9,
+      "note": "creature.sod-hound.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": -1,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 6,
+    "will": 7
+  },
+  "hp": {
+    "value": 44
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 30,
+    "burrow": 20,
+    "note": "creature.sod-hound.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sod-hound.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "crystal-sense",
+      "section": "top",
+      "name": "creature.sod-hound.abilities.crystal-sense.name",
+      "text": "creature.sod-hound.abilities.crystal-sense.text"
+    },
+    {
+      "id": "earth-glide",
+      "section": "offense",
+      "name": "creature.sod-hound.abilities.earth-glide.name",
+      "text": "creature.sod-hound.abilities.earth-glide.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 142 prints \"Survival +9 (+11 to Track)\"; the source omits the parenthesis and the errata does not touch it."
+}

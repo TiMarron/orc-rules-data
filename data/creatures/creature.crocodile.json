@@ -1,0 +1,124 @@
+{
+  "id": "creature.crocodile",
+  "type": "creature",
+  "name": "creature.crocodile.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "large",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7,
+      "note": "creature.crocodile.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": -5,
+    "wis": 1,
+    "cha": -4
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 7,
+    "will": 5
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 20,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.crocodile.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.crocodile.strikes.tail.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.crocodile.abilities.deep-breath.name",
+      "text": "creature.crocodile.abilities.deep-breath.text"
+    },
+    {
+      "id": "aquatic-ambush",
+      "section": "offense",
+      "name": "creature.crocodile.abilities.aquatic-ambush.name",
+      "ability": "ability.aquatic-ambush",
+      "actions": "1",
+      "text": "creature.crocodile.abilities.aquatic-ambush.text"
+    },
+    {
+      "id": "death-roll",
+      "section": "offense",
+      "name": "creature.crocodile.abilities.death-roll.name",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "requirements": "creature.crocodile.abilities.death-roll.requirements",
+      "text": "creature.crocodile.abilities.death-roll.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 69 prints \"Stealth +7 (+11 in water)\"; the source omits the parenthesis and the errata does not touch it."
+}

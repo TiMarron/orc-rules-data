@@ -1,0 +1,133 @@
+{
+  "id": "creature.deinosuchus",
+  "type": "creature",
+  "name": "creature.deinosuchus.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "huge",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 16,
+      "note": "creature.deinosuchus.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 3,
+    "con": 5,
+    "int": -5,
+    "wis": 2,
+    "cha": -4
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 16,
+    "will": 15
+  },
+  "hp": {
+    "value": 175
+  },
+  "speeds": {
+    "land": 30,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.deinosuchus.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d10+13",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.deinosuchus.strikes.tail.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "1d10+11",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.deinosuchus.abilities.deep-breath.name",
+      "text": "creature.deinosuchus.abilities.deep-breath.text"
+    },
+    {
+      "id": "aquatic-ambush",
+      "section": "offense",
+      "name": "creature.deinosuchus.abilities.aquatic-ambush.name",
+      "ability": "ability.aquatic-ambush",
+      "actions": "1",
+      "text": "creature.deinosuchus.abilities.aquatic-ambush.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.deinosuchus.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.deinosuchus.abilities.swallow-whole.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 69 prints \"Stealth +16 (+20 in water)\"; the source omits the parenthesis and the errata does not touch it."
+}

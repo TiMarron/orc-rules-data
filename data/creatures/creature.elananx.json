@@ -1,0 +1,142 @@
+{
+  "id": "creature.elananx",
+  "type": "creature",
+  "name": "creature.elananx.name",
+  "traits": [
+    "fey",
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 139,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "fey"
+  ],
+  "languageNote": "creature.elananx.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 14,
+      "note": "creature.elananx.skills.2.note"
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 2,
+    "int": -3,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 16,
+    "will": 12
+  },
+  "hp": {
+    "value": 95
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.elananx.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.elananx.strikes.claw.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cinder-dispersal",
+      "section": "defense",
+      "name": "creature.elananx.abilities.cinder-dispersal.name",
+      "actions": "reaction",
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "frequency": "creature.elananx.abilities.cinder-dispersal.frequency",
+      "trigger": "creature.elananx.abilities.cinder-dispersal.trigger",
+      "text": "creature.elananx.abilities.cinder-dispersal.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.elananx.abilities.pack-attack.name",
+      "text": "creature.elananx.abilities.pack-attack.text"
+    },
+    {
+      "id": "pounce",
+      "section": "offense",
+      "name": "creature.elananx.abilities.pounce.name",
+      "actions": "1",
+      "text": "creature.elananx.abilities.pounce.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 139 prints \"Survival +14 (+17 to Track)\"; the source omits the parenthesis and the errata does not touch it."
+}

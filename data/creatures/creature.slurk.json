@@ -1,0 +1,116 @@
+{
+  "id": "creature.slurk",
+  "type": "creature",
+  "name": "creature.slurk.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 315,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6,
+      "note": "creature.slurk.skills.0.note"
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 4,
+    "int": -4,
+    "wis": 0,
+    "cha": 0
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 6,
+    "will": 4,
+    "note": "creature.slurk.saves.note"
+  },
+  "hp": {
+    "value": 35
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.slurk.strikes.tusks.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.slurk.strikes.slime-squirt.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 30,
+      "traits": [],
+      "damage": [],
+      "effects": [
+        {
+          "own": "entangling-slime"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "belly-grease",
+      "section": "offense",
+      "name": "creature.slurk.abilities.belly-grease.name",
+      "actions": "3",
+      "text": "creature.slurk.abilities.belly-grease.text"
+    },
+    {
+      "id": "entangling-slime",
+      "section": "offense",
+      "name": "creature.slurk.abilities.entangling-slime.name",
+      "text": "creature.slurk.abilities.entangling-slime.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 315 prints \"Acrobatics +6 (+8 to Escape)\"; the source omits the parenthesis and the errata does not touch it."
+}

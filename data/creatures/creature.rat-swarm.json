@@ -1,0 +1,115 @@
+{
+  "id": "creature.rat-swarm",
+  "type": "creature",
+  "name": "creature.rat-swarm.name",
+  "traits": [
+    "animal",
+    "swarm"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "large",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 4,
+      "note": "creature.rat-swarm.skills.1.note"
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": -2,
+    "dex": 3,
+    "con": 1,
+    "int": -4,
+    "wis": 1,
+    "cha": -3
+  },
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 7,
+    "will": 4
+  },
+  "hp": {
+    "value": 14
+  },
+  "immunities": [
+    "grabbed",
+    "precision",
+    "prone",
+    "restrained",
+    "swarm-mind"
+  ],
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 3
+    },
+    {
+      "type": "splash-damage",
+      "value": 3
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 6,
+      "note": "creature.rat-swarm.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "climb": 10
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "putrid-plague",
+      "section": "offense",
+      "name": "creature.rat-swarm.abilities.putrid-plague.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.rat-swarm.abilities.putrid-plague.text"
+    },
+    {
+      "id": "swarming-bites",
+      "section": "offense",
+      "name": "creature.rat-swarm.abilities.swarming-bites.name",
+      "actions": "1",
+      "text": "creature.rat-swarm.abilities.swarming-bites.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 288 prints \"Athletics +4 (+6 to Climb or Swim)\"; the source omits the parenthesis and the errata does not touch it."
+}

@@ -1,0 +1,163 @@
+{
+  "id": "creature.dezullon",
+  "type": "creature",
+  "name": "creature.dezullon.name",
+  "traits": [
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 94,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 21,
+      "note": "creature.dezullon.skills.2.note"
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 7,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 21,
+    "will": 16
+  },
+  "hp": {
+    "value": 130,
+    "note": "creature.dezullon.hp.note"
+  },
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dezullon.strikes.vine.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "acid",
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "3d6+8",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "3d6",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dezullon.strikes.acid-glob.name",
+      "actions": "1",
+      "bonus": 23,
+      "range": 30,
+      "traits": [
+        "acid"
+      ],
+      "damage": [
+        {
+          "dice": "4d8",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        {
+          "own": "amnesia-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "stench",
+      "section": "defense",
+      "name": "creature.dezullon.abilities.stench.name",
+      "ability": "ability.stench",
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "aura": 30,
+      "text": "creature.dezullon.abilities.stench.text"
+    },
+    {
+      "id": "amnesia-venom",
+      "section": "offense",
+      "name": "creature.dezullon.abilities.amnesia-venom.name",
+      "traits": [
+        "mental",
+        "poison"
+      ],
+      "text": "creature.dezullon.abilities.amnesia-venom.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.dezullon.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.dezullon.abilities.constrict.text"
+    },
+    {
+      "id": "root",
+      "section": "offense",
+      "name": "creature.dezullon.abilities.root.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.dezullon.abilities.root.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 94 prints \"Stealth +21 (+24 in forests or swamps)\"; the source omits the parenthesis and the errata does not touch it."
+}

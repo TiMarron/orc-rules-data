@@ -1,0 +1,199 @@
+{
+  "id": "creature.benthic-worm",
+  "type": "creature",
+  "name": "creature.benthic-worm.name",
+  "traits": [
+    "amphibious",
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 56,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 15,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 100
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20,
+      "note": "creature.benthic-worm.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": -1,
+    "con": 8,
+    "int": -5,
+    "wis": -1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 35
+  },
+  "saves": {
+    "fortitude": 32,
+    "reflex": 20,
+    "will": 23
+  },
+  "hp": {
+    "value": 320
+  },
+  "speeds": {
+    "land": 40,
+    "burrow": 40,
+    "swim": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.benthic-worm.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 31,
+      "traits": [
+        "deadly",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "2d10",
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d12+16",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.benthic-worm.strikes.jaws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.benthic-worm.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 31,
+      "traits": [
+        "agile",
+        "poison",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "4d6+16",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "benthic-worm-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.benthic-worm.strikes.body.name",
+      "actions": "1",
+      "bonus": 29,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+14",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "inexorable",
+      "section": "defense",
+      "name": "creature.benthic-worm.abilities.inexorable.name",
+      "text": "creature.benthic-worm.abilities.inexorable.text"
+    },
+    {
+      "id": "slough-skin",
+      "section": "defense",
+      "name": "creature.benthic-worm.abilities.slough-skin.name",
+      "actions": "reaction",
+      "frequency": "creature.benthic-worm.abilities.slough-skin.frequency",
+      "trigger": "creature.benthic-worm.abilities.slough-skin.trigger",
+      "text": "creature.benthic-worm.abilities.slough-skin.text"
+    },
+    {
+      "id": "benthic-worm-venom",
+      "section": "offense",
+      "name": "creature.benthic-worm.abilities.benthic-worm-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.benthic-worm.abilities.benthic-worm-venom.text"
+    },
+    {
+      "id": "breach",
+      "section": "offense",
+      "name": "creature.benthic-worm.abilities.breach.name",
+      "actions": "2",
+      "text": "creature.benthic-worm.abilities.breach.text"
+    },
+    {
+      "id": "fast-swallow",
+      "section": "offense",
+      "name": "creature.benthic-worm.abilities.fast-swallow.name",
+      "actions": "reaction",
+      "trigger": "creature.benthic-worm.abilities.fast-swallow.trigger",
+      "text": "creature.benthic-worm.abilities.fast-swallow.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.benthic-worm.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.benthic-worm.abilities.swallow-whole.text"
+    },
+    {
+      "id": "thrash",
+      "section": "offense",
+      "name": "creature.benthic-worm.abilities.thrash.name",
+      "actions": "2",
+      "text": "creature.benthic-worm.abilities.thrash.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 56 prints \"Stealth +20 (+25 in water)\"; the source omits the parenthesis and the errata does not touch it."
+}

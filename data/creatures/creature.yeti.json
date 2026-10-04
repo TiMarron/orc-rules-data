@@ -1,0 +1,148 @@
+{
+  "id": "creature.yeti",
+  "type": "creature",
+  "name": "creature.yeti.name",
+  "traits": [
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 354,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "aklo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12,
+      "note": "creature.yeti.skills.1.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 4,
+    "int": -1,
+    "wis": 4,
+    "cha": -1
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 11,
+    "will": 13,
+    "note": "creature.yeti.saves.note"
+  },
+  "hp": {
+    "value": 115
+  },
+  "immunities": [
+    "cold"
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "climb": 20,
+    "note": "creature.yeti.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.yeti.strikes.claw.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+5",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "snowblind",
+      "section": "top",
+      "name": "creature.yeti.abilities.snowblind.name",
+      "text": "creature.yeti.abilities.snowblind.text"
+    },
+    {
+      "id": "nightmare-guardian",
+      "section": "defense",
+      "name": "creature.yeti.abilities.nightmare-guardian.name",
+      "text": "creature.yeti.abilities.nightmare-guardian.text"
+    },
+    {
+      "id": "vanish",
+      "section": "defense",
+      "name": "creature.yeti.abilities.vanish.name",
+      "actions": "reaction",
+      "trigger": "creature.yeti.abilities.vanish.trigger",
+      "text": "creature.yeti.abilities.vanish.text"
+    },
+    {
+      "id": "arctic-passage",
+      "section": "offense",
+      "name": "creature.yeti.abilities.arctic-passage.name",
+      "text": "creature.yeti.abilities.arctic-passage.text"
+    },
+    {
+      "id": "grisly-arrival",
+      "section": "offense",
+      "name": "creature.yeti.abilities.grisly-arrival.name",
+      "actions": "free",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "trigger": "creature.yeti.abilities.grisly-arrival.trigger",
+      "text": "creature.yeti.abilities.grisly-arrival.text"
+    },
+    {
+      "id": "rend",
+      "section": "offense",
+      "name": "creature.yeti.abilities.rend.name",
+      "ability": "ability.rend",
+      "actions": "1",
+      "text": "creature.yeti.abilities.rend.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 354 prints \"Stealth +12 (+15 in snow)\"; the source omits the parenthesis and the errata does not touch it."
+}

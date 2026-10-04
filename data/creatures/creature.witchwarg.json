@@ -1,0 +1,156 @@
+{
+  "id": "creature.witchwarg",
+  "type": "creature",
+  "name": "creature.witchwarg.name",
+  "traits": [
+    "beast",
+    "cold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 341,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13,
+      "note": "creature.witchwarg.skills.4.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 4,
+    "con": 4,
+    "int": 2,
+    "wis": 3,
+    "cha": 2
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 15,
+    "will": 10
+  },
+  "hp": {
+    "value": 70
+  },
+  "immunities": [
+    "cold"
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.witchwarg.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "cold"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "cold"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "buck",
+      "section": "defense",
+      "name": "creature.witchwarg.abilities.buck.name",
+      "ability": "ability.buck",
+      "actions": "reaction",
+      "text": "creature.witchwarg.abilities.buck.text"
+    },
+    {
+      "id": "avenging-bite",
+      "section": "defense",
+      "name": "creature.witchwarg.abilities.avenging-bite.name",
+      "actions": "reaction",
+      "trigger": "creature.witchwarg.abilities.avenging-bite.trigger",
+      "text": "creature.witchwarg.abilities.avenging-bite.text"
+    },
+    {
+      "id": "winter-breath",
+      "section": "offense",
+      "name": "creature.witchwarg.abilities.winter-breath.name",
+      "actions": "2",
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "text": "creature.witchwarg.abilities.winter-breath.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.witchwarg.abilities.pack-attack.name",
+      "text": "creature.witchwarg.abilities.pack-attack.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 341 prints \"Stealth +13 (+16 in snow)\"; the source omits the parenthesis and the errata does not touch it."
+}

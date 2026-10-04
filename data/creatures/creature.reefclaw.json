@@ -1,0 +1,118 @@
+{
+  "id": "creature.reefclaw",
+  "type": "creature",
+  "name": "creature.reefclaw.name",
+  "traits": [
+    "aberration",
+    "aquatic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 291,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.reefclaw.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 4,
+      "note": "creature.reefclaw.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 2,
+    "int": -3,
+    "wis": 1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 9,
+    "will": 4
+  },
+  "hp": {
+    "value": 17
+  },
+  "speeds": {
+    "land": 5,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.reefclaw.strikes.claw.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "reefclaw-venom"
+        },
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "death-frenzy",
+      "section": "defense",
+      "name": "creature.reefclaw.abilities.death-frenzy.name",
+      "actions": "reaction",
+      "trigger": "creature.reefclaw.abilities.death-frenzy.trigger",
+      "text": "creature.reefclaw.abilities.death-frenzy.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.reefclaw.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.reefclaw.abilities.constrict.text"
+    },
+    {
+      "id": "reefclaw-venom",
+      "section": "offense",
+      "name": "creature.reefclaw.abilities.reefclaw-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.reefclaw.abilities.reefclaw-venom.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 291 prints \"Athletics +4 (+8 to Swim)\"; the source omits the parenthesis and the errata does not touch it."
+}

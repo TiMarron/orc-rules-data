@@ -1,0 +1,154 @@
+{
+  "id": "creature.gogiteth",
+  "type": "creature",
+  "name": "creature.gogiteth.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 177,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 12,
+  "size": "large",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "sakvroth"
+  ],
+  "languageNote": "creature.gogiteth.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 21
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17,
+      "note": "creature.gogiteth.skills.3.note"
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": -2,
+    "wis": 1,
+    "cha": 0
+  },
+  "ac": {
+    "value": 31,
+    "note": "creature.gogiteth.ac.note"
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 22,
+    "will": 20
+  },
+  "hp": {
+    "value": 250
+  },
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gogiteth.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "3d10+12",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.gogiteth.strikes.jaws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gogiteth.strikes.leg.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d6+12",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "skittering-reposition",
+      "section": "defense",
+      "name": "creature.gogiteth.abilities.skittering-reposition.name",
+      "actions": "reaction",
+      "traits": [
+        "move"
+      ],
+      "trigger": "creature.gogiteth.abilities.skittering-reposition.trigger",
+      "text": "creature.gogiteth.abilities.skittering-reposition.text"
+    },
+    {
+      "id": "carry-off-prey",
+      "section": "offense",
+      "name": "creature.gogiteth.abilities.carry-off-prey.name",
+      "text": "creature.gogiteth.abilities.carry-off-prey.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.gogiteth.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.gogiteth.abilities.constrict.text"
+    },
+    {
+      "id": "skittering-assault",
+      "section": "offense",
+      "name": "creature.gogiteth.abilities.skittering-assault.name",
+      "actions": "2",
+      "text": "creature.gogiteth.abilities.skittering-assault.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 177 prints \"Survival +17 (+24 to Track)\"; the source omits the parenthesis and the errata does not touch it."
+}
