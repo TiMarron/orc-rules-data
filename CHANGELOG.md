@@ -20,6 +20,12 @@ major for renamed or removed ids, new required fields and markup changes.
   printed). A DC is at least 1. A creature's sense may now be `{ spell }`, a sense a spell gives. Both are
   optional additions to the creature schema; the schema itself says which
   fields each kind of block takes.
+- A creature's `items`, what its Items line says it carries (item or name,
+  potency, runes with their variant, material, count, ammunition, a shield's
+  statistics, a note), and a Strike's `item`, the carried item it is made with.
+  The validator checks that a Strike's item is among the creature's items and
+  that a rune's variant exists on the rune item. Optional additions to the
+  creature schema.
 
 ### Changed
 

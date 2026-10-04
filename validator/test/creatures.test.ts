@@ -14,8 +14,16 @@ const creature = (over: Record<string, unknown>) => ({
   }),
 });
 
-const messages = (over: Record<string, unknown>): string[] =>
-  creaturesCheck(loadDataset(writeFixture({ records: [creature(over)] }))).map((i) => i.message);
+const messages = (over: Record<string, unknown>, extra: { folder: string; file: string; json: unknown }[] = []): string[] =>
+  creaturesCheck(loadDataset(writeFixture({ records: [creature(over), ...extra] }))).map((i) => i.message);
+
+const rune = (slug: string, variants?: string[]) => ({
+  folder: 'items', file: `item.${slug}.json`,
+  json: record('item', slug, {
+    category: 'rune', level: 4,
+    ...(variants ? { variants: variants.map((id) => ({ id, name: `item.${slug}.variant.${id}.name`, level: 4 })) } : {}),
+  }),
+});
 
 describe('creatures check', () => {
   it('accepts a Strike effect and a sense that name one of the creature\'s own abilities', () => {
@@ -95,5 +103,44 @@ describe('creatures check', () => {
       { id: 'hiss', section: 'offense', name: 'creature.viper.abilities.hiss.name', traits: ['auditory'], traitValues: { aura: '20' } },
     ];
     expect(messages({ abilities })).toEqual(['abilities[1].traitValues: "aura" is not among this ability\'s traits']);
+  });
+
+  it('accepts a Strike made with one of the creature\'s items', () => {
+    expect(messages({
+      items: [{ item: 'item.dagger' }, { item: 'item.longsword', potency: 1 }],
+      strikes: [{ item: 'item.longsword' }, { item: 'item.dagger' }, {}],
+    })).toEqual([]);
+  });
+
+  it('rejects a Strike made with an item the creature does not carry, also when it carries nothing', () => {
+    expect(messages({ items: [{ item: 'item.dagger' }], strikes: [{ item: 'item.longsword' }] })).toEqual([
+      'strikes[0].item: "item.longsword" is not among this creature\'s items',
+    ]);
+    expect(messages({ strikes: [{}, { item: 'item.longsword' }] })).toEqual([
+      'strikes[1].item: "item.longsword" is not among this creature\'s items',
+    ]);
+    expect(messages({ items: [{ name: 'creature.viper.items.0.name' }], strikes: [{ item: 'item.longsword' }] })).toEqual([
+      'strikes[0].item: "item.longsword" is not among this creature\'s items',
+    ]);
+  });
+
+  it('accepts a rune variant the rune item has, and a rune whose record is not in the dataset (the refs check reports that)', () => {
+    const items = [{ item: 'item.longsword', potency: 2, runes: [{ item: 'item.striking', variant: 'greater' }, { item: 'item.wounding' }] }];
+    expect(messages({ items }, [rune('striking', ['striking', 'greater', 'major'])])).toEqual([]);
+    expect(messages({ items })).toEqual([]);
+  });
+
+  it('rejects a rune variant the rune item does not have, naming the ones it has', () => {
+    const items = [{ item: 'item.longsword' }, { item: 'item.full-plate', runes: [{ item: 'item.resilient', variant: 'superior' }] }];
+    expect(messages({ items }, [rune('resilient', ['resilient', 'greater', 'major'])])).toEqual([
+      'items[1].runes[0].variant: "superior" is not a variant of item.resilient (resilient, greater, major)',
+    ]);
+  });
+
+  it('rejects a rune variant on a rune item that has no variants', () => {
+    const items = [{ item: 'item.longsword', runes: [{ item: 'item.wounding', variant: 'greater' }] }];
+    expect(messages({ items }, [rune('wounding')])).toEqual([
+      'items[0].runes[0].variant: "greater" is not a variant of item.wounding (it has none)',
+    ]);
   });
 });

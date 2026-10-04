@@ -186,9 +186,24 @@ cost tokens.
 - A creature's `perception.senses` entry may also be `{ spell }`: a sense that
   a spell gives the creature (truesight, see the unseen), with the `acuity` and
   `range` the stat block prints.
-- Creatures in this release are those without carried items or rituals; the
-  rest follow once those are modelled. A creature record has no `text` yet:
-  descriptive lore is not imported.
+- A creature's `items` is the stat block's Items line, one entry per carried
+  thing in print order. An entry is `{ item }`, a reference to an `item`
+  record, or `{ name }` when the dataset has no record for it or the book's
+  name for it is not the item's ("baton" for a club); at least one of the two.
+  What the line prints around the name is structure: `potency` ("+1"), `runes`
+  (`[{ item, variant? }]`, the runes in print order; `variant` is the id of one
+  of the rune item's `variants`, "greater" in "greater striking"), `material`
+  (the slug a Strike's `material` also uses), `count` ("(4)", "(2 doses)"; two
+  or more, absent means one), `ammunition` ("(20 arrows)": `{ item | name,
+  count }`), a shield's `hardness`, `hp` and `bt` (all three or none) and
+  `note` for any other parenthesis, as printed ("see sidebar"). `potency` and
+  `runes` belong to an entry that has `item`.
+- A Strike's `item` is the item of the creature's `items` it is made with. The
+  validator checks that it is there, and that a rune's `variant` exists on the
+  rune item.
+- Creatures in this release are those without rituals; those follow once they
+  are modelled. A creature record has no `text` yet: descriptive lore is not
+  imported.
 
 ## Versioning
 

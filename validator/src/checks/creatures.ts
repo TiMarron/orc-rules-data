@@ -13,6 +13,11 @@ const list = (value: unknown): Record<string, unknown>[] =>
  * - Ability ids are unique within the creature, or `own` would be ambiguous.
  * - A size is never a trait: the book prints it in the trait line, but it has no glossary entry,
  *   and the rules compare sizes as a scale. It lives in `size` alone, so the two cannot disagree.
+ * - A Strike's `item` is one of the same creature's `items[].item`: a Strike made with something the
+ *   creature does not carry is a promise the record does not keep.
+ * - A rune's `variant` is one of the variants of the rune item (`variants[].id`) when that record is in
+ *   the dataset; when it is not, the refs check reports the missing record. (Schema covers the rest:
+ *   `potency` and `runes` only beside an `item`.)
  *
  * A reference to an `ability.*` record is the refs check's to report, not this one's.
  */
@@ -34,6 +39,22 @@ export const creaturesCheck: Check = (ds) => {
       resolve(e.own, `strikes[${i}].effects[${j}].own`);
       list(e.choice).forEach((c, k) => resolve(c.own, `strikes[${i}].effects[${j}].choice[${k}].own`));
     }));
+    const carried = new Set<string>();
+    list(f.record.items).forEach((entry, i) => {
+      if (typeof entry.item === 'string') carried.add(entry.item);
+      list(entry.runes).forEach((r, j) => {
+        if (typeof r.item !== 'string' || typeof r.variant !== 'string') return;
+        const rec = ds.byId.get(r.item);
+        if (!rec) return;
+        const variants = list(rec.record.variants).flatMap((v) => (typeof v.id === 'string' ? [v.id] : []));
+        if (!variants.includes(r.variant)) {
+          error(`items[${i}].runes[${j}].variant: "${r.variant}" is not a variant of ${r.item} (${variants.length > 0 ? variants.join(', ') : 'it has none'})`);
+        }
+      });
+    });
+    list(f.record.strikes).forEach((s, i) => {
+      if (typeof s.item === 'string' && !carried.has(s.item)) error(`strikes[${i}].item: "${s.item}" is not among this creature's items`);
+    });
     const perception = f.record.perception as Record<string, unknown> | undefined;
     list(perception?.senses).forEach((s, i) => resolve(s.own, `perception.senses[${i}].own`));
     for (const key of ['weaknesses', 'resistances']) {
