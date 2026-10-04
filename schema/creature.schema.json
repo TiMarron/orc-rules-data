@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "creature.schema.json",
+  "$defs": {
+    "key": { "$ref": "common.schema.json#/$defs/i18nKey" },
+    "slug": { "$ref": "common.schema.json#/$defs/slug" },
+    "feet": { "type": "integer", "minimum": 0, "multipleOf": 5 },
+    "acuity": { "enum": ["precise", "imprecise", "vague"] },
+    "section": { "enum": ["top", "defense", "offense"], "$comment": "The three zones of a printed stat block: above the first rule, the defences, the offence." },
+    "traits": { "type": "array", "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
+    "traitValues": { "type": "object", "minProperties": 1, "propertyNames": { "$ref": "#/$defs/slug" }, "additionalProperties": { "type": "string", "minLength": 1 } },
+    "valued": {
+      "type": "object", "additionalProperties": false, "required": ["value"],
+      "properties": { "value": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } }
+    },
+    "typed": {
+      "type": "object", "additionalProperties": false, "required": ["type", "value"],
+      "properties": { "type": { "$ref": "#/$defs/slug" }, "value": { "type": "integer", "minimum": 1 }, "note": { "$ref": "#/$defs/key" } }
+    },
+    "sense": {
+      "oneOf": [
+        { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } },
+        { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } },
+        { "type": "object", "additionalProperties": false, "required": ["text"], "properties": { "text": { "$ref": "#/$defs/key" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } }
+      ]
+    },
+    "skill": {
+      "oneOf": [
+        { "type": "object", "additionalProperties": false, "required": ["skill", "mod"], "properties": { "skill": { "$ref": "common.schema.json#/$defs/refSkill" }, "mod": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } } },
+        { "type": "object", "additionalProperties": false, "required": ["lore", "mod"], "properties": { "lore": { "$ref": "#/$defs/key" }, "mod": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } } }
+      ]
+    },
+    "effect": {
+      "oneOf": [
+        { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" } } },
+        { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" } } },
+        { "type": "object", "additionalProperties": false, "required": ["text"], "properties": { "text": { "$ref": "#/$defs/key" } } }
+      ],
+      "$comment": "What a Strike does besides damage: a universal ability, one of this creature's own abilities (by its id), or text the import could not place."
+    },
+    "strike": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "name", "actions", "bonus", "traits", "damage"],
+      "properties": {
+        "kind": { "enum": ["melee", "ranged"] },
+        "name": { "$ref": "#/$defs/key" },
+        "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+        "bonus": { "type": "integer" },
+        "traits": { "$ref": "#/$defs/traits" },
+        "traitValues": { "$ref": "#/$defs/traitValues" },
+        "range": { "$ref": "#/$defs/feet", "$comment": "A ranged Strike with a flat maximum range." },
+        "rangeIncrement": { "$ref": "#/$defs/feet" },
+        "damage": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["dice", "type"],
+            "properties": {
+              "dice": { "type": "string", "pattern": "^[1-9][0-9]*(d(4|6|8|10|12|20)([+-][1-9][0-9]*)?)?$" },
+              "type": { "anyOf": [{ "$ref": "common.schema.json#/$defs/damageType" }, { "const": "bleed" }] },
+              "persistent": { "const": true }
+            }
+          },
+          "$comment": "May be empty: some Strikes deal no damage and only apply an effect."
+        },
+        "effects": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/effect" } }
+      }
+    },
+    "ability": {
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false, "required": ["id", "section", "name"],
+          "properties": {
+            "id": { "$ref": "#/$defs/slug", "$comment": "Unique within the creature; what a Strike effect or a sense points at with `own`." },
+            "section": { "$ref": "#/$defs/section" },
+            "name": { "$ref": "#/$defs/key" },
+            "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+            "traits": { "$ref": "#/$defs/traits" },
+            "traitValues": { "$ref": "#/$defs/traitValues" },
+            "aura": { "$ref": "#/$defs/feet", "$comment": "Emanation radius of an ability with the aura trait." },
+            "trigger": { "$ref": "#/$defs/key" },
+            "frequency": { "$ref": "#/$defs/key" },
+            "requirements": { "$ref": "#/$defs/key" },
+            "text": { "$ref": "#/$defs/key" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["ability", "section"],
+          "properties": {
+            "ability": { "$ref": "common.schema.json#/$defs/refAbility" },
+            "section": { "$ref": "#/$defs/section" },
+            "text": { "$ref": "#/$defs/key", "$comment": "The creature's own parameters for the universal ability, as printed: a DC, a size, a damage entry." }
+          }
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["level", "size", "perception", "languages", "skills", "attributes", "ac", "saves", "hp", "speeds", "strikes", "abilities"],
+      "properties": {
+        "type": { "const": "creature" },
+        "level": { "type": "integer", "minimum": -1, "maximum": 25 },
+        "size": { "$ref": "common.schema.json#/$defs/size", "$comment": "Never repeated in `traits`: size is a scale the rules compare, not a trait with a glossary entry." },
+        "perception": {
+          "type": "object", "additionalProperties": false, "required": ["mod"],
+          "properties": { "mod": { "type": "integer" }, "senses": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sense" } }, "note": { "$ref": "#/$defs/key" } }
+        },
+        "languages": { "type": "array", "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
+        "languageNote": { "$ref": "#/$defs/key" },
+        "skills": { "type": "array", "items": { "$ref": "#/$defs/skill" } },
+        "attributes": {
+          "type": "object", "additionalProperties": false, "required": ["str", "dex", "con", "int", "wis", "cha"],
+          "properties": { "str": { "type": "integer" }, "dex": { "type": "integer" }, "con": { "type": "integer" }, "int": { "type": "integer" }, "wis": { "type": "integer" }, "cha": { "type": "integer" } }
+        },
+        "ac": { "$ref": "#/$defs/valued" },
+        "saves": {
+          "type": "object", "additionalProperties": false, "required": ["fortitude", "reflex", "will"],
+          "properties": { "fortitude": { "type": "integer" }, "reflex": { "type": "integer" }, "will": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } }
+        },
+        "hp": { "$ref": "#/$defs/valued" },
+        "hardness": { "type": "integer", "minimum": 1 },
+        "immunities": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
+        "weaknesses": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/typed" } },
+        "resistances": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/typed" } },
+        "speeds": {
+          "type": "object", "additionalProperties": false, "minProperties": 1,
+          "properties": { "land": { "$ref": "#/$defs/feet" }, "fly": { "$ref": "#/$defs/feet" }, "swim": { "$ref": "#/$defs/feet" }, "climb": { "$ref": "#/$defs/feet" }, "burrow": { "$ref": "#/$defs/feet" }, "note": { "$ref": "#/$defs/key" } }
+        },
+        "strikes": { "type": "array", "items": { "$ref": "#/$defs/strike" } },
+        "abilities": { "type": "array", "items": { "$ref": "#/$defs/ability" } }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

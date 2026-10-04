@@ -23,6 +23,27 @@ const VALID: Record<string, Record<string, unknown>> = {
     class: 'class.fighter',
     feats: [{ level: 2, feat: 'feat.fighter-dedication' }, { level: 4, feat: 'feat.basic-maneuver' }],
   }),
+  ability: record('ability', 'grab', { actions: '1', requirements: 'ability.grab.requirements' }),
+  creature: record('creature', 'cave-bear', {
+    traits: ['animal'], level: 6, size: 'large',
+    perception: { mod: 13, senses: [{ ability: 'ability.low-light-vision' }, { ability: 'ability.scent', acuity: 'imprecise', range: 30 }] },
+    languages: [],
+    skills: [{ skill: 'skill.athletics', mod: 16 }, { lore: 'creature.cave-bear.lore.1', mod: 11 }],
+    attributes: { str: 6, dex: 1, con: 6, int: -4, wis: 1, cha: -1 },
+    ac: { value: 24 }, saves: { fortitude: 16, reflex: 11, will: 13 }, hp: { value: 95, note: 'creature.cave-bear.hp.note' },
+    weaknesses: [{ type: 'fire', value: 5 }],
+    speeds: { land: 35 },
+    strikes: [{
+      kind: 'melee', name: 'creature.cave-bear.strikes.claw.name', actions: '1', bonus: 16, traits: ['agile', 'reach'], traitValues: { reach: '10' },
+      damage: [{ dice: '2d8+6', type: 'slashing' }, { dice: '1d6', type: 'bleed', persistent: true }],
+      effects: [{ ability: 'ability.grab' }, { own: 'mauler' }],
+    }],
+    abilities: [
+      { id: 'mauler', section: 'offense', name: 'creature.cave-bear.abilities.mauler.name', text: 'creature.cave-bear.abilities.mauler.text' },
+      { id: 'rush', section: 'offense', name: 'creature.cave-bear.abilities.rush.name', actions: '2', traits: ['aura'], aura: 20, text: 'creature.cave-bear.abilities.rush.text' },
+      { ability: 'ability.trample', section: 'offense', text: 'creature.cave-bear.abilities.trample.text' },
+    ],
+  }),
   package: record('package', 'fighter', {
     class: 'class.fighter',
     items: [{ item: 'item.scale-mail', count: 1 }, { item: 'item.arrows', count: 2 }],
@@ -650,5 +671,30 @@ describe('type schemas', () => {
     const issues = issuesFor('feat', { ...VALID.feat, repeatable: 'yes' });
     expect(issues).toHaveLength(1);
     expect(issues[0]).toContain('repeatable');
+  });
+
+  it('rejects a strike effect that names two things at once', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].effects = [{ ability: 'ability.grab', own: 'mauler' }];
+    const issues = issuesFor('creature', c);
+    expect(issues.length).toBeGreaterThanOrEqual(1);
+    expect(issues.join('\n')).toContain('/strikes/0/effects/0');
+  });
+
+  it('rejects damage dice that are not NdM, NdM±K or a flat number', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].damage = [{ dice: 'lots', type: 'slashing' }];
+    expect(issuesFor('creature', c).join('\n')).toContain('/strikes/0/damage/0/dice');
+  });
+
+  it('rejects a creature missing one of the six attributes', () => {
+    const c = structuredClone(VALID.creature) as any;
+    delete c.attributes.cha;
+    expect(issuesFor('creature', c).join('\n')).toContain("must have required property 'cha'");
+  });
+
+  it('rejects an ability record without text', () => {
+    const { text: _, ...rest } = VALID.ability as Record<string, unknown>;
+    expect(issuesFor('ability', rest).join('\n')).toContain("must have required property 'text'");
   });
 });

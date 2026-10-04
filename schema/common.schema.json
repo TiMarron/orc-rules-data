@@ -19,6 +19,8 @@
     "refFeature": { "type": "string", "pattern": "^feature\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "refItem": { "type": "string", "pattern": "^item\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "refSpell": { "type": "string", "pattern": "^spell\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refAbility": { "type": "string", "pattern": "^ability\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "damageType": { "enum": ["bludgeoning", "piercing", "slashing", "acid", "cold", "electricity", "fire", "sonic", "force", "vitality", "void", "mental", "poison", "spirit"] },
     "tradition": { "enum": ["arcane", "divine", "occult", "primal"] },
     "boost": {
       "oneOf": [
