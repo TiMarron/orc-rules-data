@@ -15,11 +15,9 @@ const list = (value: unknown): Record<string, unknown>[] =>
  *   and the rules compare sizes as a scale. It lives in `size` alone, so the two cannot disagree.
  * - A Strike's `item` is one of the same creature's `items[].item`: a Strike made with something the
  *   creature does not carry is a promise the record does not keep.
- * - A rune's `variant` is one of the variants of the rune item (`variants[].id`) when that record is in
- *   the dataset; when it is not, the refs check reports the missing record. (Schema covers the rest:
- *   `potency` and `runes` only beside an `item`.)
  *
- * A reference to an `ability.*` record is the refs check's to report, not this one's.
+ * A rune names a record of its own (`item.striking-greater`: a grade is a record, not a `variants`
+ * entry), so there is nothing to resolve beyond what the refs check does. A reference to an `ability.*` record is the refs check's to report, not this one's.
  */
 export const creaturesCheck: Check = (ds) => {
   const issues: Issue[] = [];
@@ -40,18 +38,9 @@ export const creaturesCheck: Check = (ds) => {
       list(e.choice).forEach((c, k) => resolve(c.own, `strikes[${i}].effects[${j}].choice[${k}].own`));
     }));
     const carried = new Set<string>();
-    list(f.record.items).forEach((entry, i) => {
+    for (const entry of list(f.record.items)) {
       if (typeof entry.item === 'string') carried.add(entry.item);
-      list(entry.runes).forEach((r, j) => {
-        if (typeof r.item !== 'string' || typeof r.variant !== 'string') return;
-        const rec = ds.byId.get(r.item);
-        if (!rec) return;
-        const variants = list(rec.record.variants).flatMap((v) => (typeof v.id === 'string' ? [v.id] : []));
-        if (!variants.includes(r.variant)) {
-          error(`items[${i}].runes[${j}].variant: "${r.variant}" is not a variant of ${r.item} (${variants.length > 0 ? variants.join(', ') : 'it has none'})`);
-        }
-      });
-    });
+    }
     list(f.record.strikes).forEach((s, i) => {
       if (typeof s.item === 'string' && !carried.has(s.item)) error(`strikes[${i}].item: "${s.item}" is not among this creature's items`);
     });

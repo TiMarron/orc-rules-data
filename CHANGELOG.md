@@ -21,10 +21,10 @@ major for renamed or removed ids, new required fields and markup changes.
   optional additions to the creature schema; the schema itself says which
   fields each kind of block takes.
 - A creature's `items`, what its Items line says it carries (item or name,
-  potency, runes with their variant, material, count, ammunition, a shield's
-  statistics, a note), and a Strike's `item`, the carried item it is made with.
-  The validator checks that a Strike's item is among the creature's items and
-  that a rune's variant exists on the rune item. Optional additions to the
+  potency, runes, material, count, ammunition, a shield's statistics, a note),
+  and a Strike's `item`, the carried item it is made with. A rune is the
+  record of its own grade (`item.striking-greater`). The validator checks that
+  a Strike's item is among the creature's items. Optional additions to the
   creature schema.
 
 ### Changed
