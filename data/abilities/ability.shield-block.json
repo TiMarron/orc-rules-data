@@ -1,0 +1,17 @@
+{
+  "id": "ability.shield-block",
+  "type": "ability",
+  "name": "ability.shield-block.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 360,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.shield-block.text",
+  "actions": "reaction",
+  "trigger": "ability.shield-block.trigger"
+}

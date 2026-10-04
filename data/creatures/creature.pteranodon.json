@@ -1,0 +1,89 @@
+{
+  "id": "creature.pteranodon",
+  "type": "creature",
+  "name": "creature.pteranodon.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 278,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "large",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 6
+  },
+  "hp": {
+    "value": 25
+  },
+  "speeds": {
+    "land": 10,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pteranodon.strikes.beak.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+3",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "swoop",
+      "section": "offense",
+      "name": "creature.pteranodon.abilities.swoop.name",
+      "actions": "2",
+      "text": "creature.pteranodon.abilities.swoop.text"
+    }
+  ]
+}

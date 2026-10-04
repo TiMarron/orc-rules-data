@@ -1,0 +1,125 @@
+{
+  "id": "creature.animated-armor",
+  "type": "creature",
+  "name": "creature.animated-armor.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": -3,
+    "con": 4,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 17,
+    "note": "creature.animated-armor.ac.note"
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 3,
+    "will": 4
+  },
+  "hp": {
+    "value": 20
+  },
+  "hardness": 9,
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.animated-armor.strikes.glaive.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "deadly",
+        "forceful",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.animated-armor.strikes.gauntlet.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "free-hand",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "construct-armor",
+      "section": "defense",
+      "name": "creature.animated-armor.abilities.construct-armor.name",
+      "text": "creature.animated-armor.abilities.construct-armor.text"
+    }
+  ]
+}

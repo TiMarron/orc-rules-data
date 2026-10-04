@@ -1,0 +1,123 @@
+{
+  "id": "creature.gorilla",
+  "type": "creature",
+  "name": "creature.gorilla.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": -4,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 9,
+    "will": 6
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gorilla.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gorilla.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "5"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frightening-display",
+      "section": "offense",
+      "name": "creature.gorilla.abilities.frightening-display.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.gorilla.abilities.frightening-display.text"
+    }
+  ]
+}

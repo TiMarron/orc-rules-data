@@ -1,0 +1,131 @@
+{
+  "id": "creature.skeletal-hulk",
+  "type": "creature",
+  "name": "creature.skeletal-hulk.name",
+  "traits": [
+    "mindless",
+    "skeleton",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 313,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "huge",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 2,
+    "con": 4,
+    "int": -5,
+    "wis": 2,
+    "cha": 2
+  },
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 15,
+    "will": 13
+  },
+  "hp": {
+    "value": 105,
+    "note": "creature.skeletal-hulk.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 5
+    },
+    {
+      "type": "electricity",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.skeletal-hulk.strikes.claw.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+11",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "broad-swipe",
+      "section": "offense",
+      "name": "creature.skeletal-hulk.abilities.broad-swipe.name",
+      "actions": "2",
+      "text": "creature.skeletal-hulk.abilities.broad-swipe.text"
+    },
+    {
+      "id": "massive-rush",
+      "section": "offense",
+      "name": "creature.skeletal-hulk.abilities.massive-rush.name",
+      "actions": "2",
+      "text": "creature.skeletal-hulk.abilities.massive-rush.text"
+    }
+  ]
+}

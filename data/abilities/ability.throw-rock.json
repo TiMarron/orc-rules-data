@@ -1,0 +1,16 @@
+{
+  "id": "ability.throw-rock",
+  "type": "ability",
+  "name": "ability.throw-rock.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 360,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.throw-rock.text",
+  "actions": "1"
+}

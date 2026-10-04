@@ -1,0 +1,143 @@
+{
+  "id": "creature.giant-animated-statue",
+  "type": "creature",
+  "name": "creature.giant-animated-statue.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 19,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "huge",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": -1,
+    "con": 6,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 26,
+    "note": "creature.giant-animated-statue.ac.note"
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 10,
+    "will": 9
+  },
+  "hp": {
+    "value": 100
+  },
+  "hardness": 10,
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-animated-statue.strikes.stone-fist.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d12+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.giant-animated-statue.strikes.flaming-coal.name",
+      "actions": "1",
+      "bonus": 12,
+      "rangeIncrement": 80,
+      "traits": [
+        "fire",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+6",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d8",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "construct-armor",
+      "section": "defense",
+      "name": "creature.giant-animated-statue.abilities.construct-armor.name",
+      "text": "creature.giant-animated-statue.abilities.construct-armor.text"
+    },
+    {
+      "id": "brazier",
+      "section": "offense",
+      "name": "creature.giant-animated-statue.abilities.brazier.name",
+      "text": "creature.giant-animated-statue.abilities.brazier.text"
+    },
+    {
+      "id": "burn-alive",
+      "section": "offense",
+      "name": "creature.giant-animated-statue.abilities.burn-alive.name",
+      "actions": "1",
+      "traits": [
+        "fire"
+      ],
+      "text": "creature.giant-animated-statue.abilities.burn-alive.text"
+    }
+  ]
+}

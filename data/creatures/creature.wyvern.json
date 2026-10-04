@@ -1,0 +1,176 @@
+{
+  "id": "creature.wyvern",
+  "type": "creature",
+  "name": "creature.wyvern.name",
+  "traits": [
+    "dragon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 131,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 4,
+    "int": -2,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 12,
+    "will": 13
+  },
+  "hp": {
+    "value": 95
+  },
+  "immunities": [
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.wyvern.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d12+5",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.wyvern.strikes.claw.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+5",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.wyvern.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "wyvern-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.wyvern.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "savage",
+      "section": "defense",
+      "name": "creature.wyvern.abilities.savage.name",
+      "actions": "reaction",
+      "trigger": "creature.wyvern.abilities.savage.trigger",
+      "text": "creature.wyvern.abilities.savage.text"
+    },
+    {
+      "id": "powerful-dive",
+      "section": "offense",
+      "name": "creature.wyvern.abilities.powerful-dive.name",
+      "actions": "2",
+      "traits": [
+        "move"
+      ],
+      "text": "creature.wyvern.abilities.powerful-dive.text"
+    },
+    {
+      "id": "punishing-momentum",
+      "section": "offense",
+      "name": "creature.wyvern.abilities.punishing-momentum.name",
+      "actions": "1",
+      "requirements": "creature.wyvern.abilities.punishing-momentum.requirements",
+      "text": "creature.wyvern.abilities.punishing-momentum.text"
+    },
+    {
+      "id": "wyvern-venom",
+      "section": "offense",
+      "name": "creature.wyvern.abilities.wyvern-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.wyvern.abilities.wyvern-venom.text"
+    }
+  ]
+}

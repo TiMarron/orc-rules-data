@@ -1,0 +1,112 @@
+{
+  "id": "creature.hyaenodon",
+  "type": "creature",
+  "name": "creature.hyaenodon.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 205,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 8,
+    "will": 7
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hyaenodon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        },
+        {
+          "own": "bonecrunching-bite"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bonecrunching-bite",
+      "section": "offense",
+      "name": "creature.hyaenodon.abilities.bonecrunching-bite.name",
+      "text": "creature.hyaenodon.abilities.bonecrunching-bite.text"
+    },
+    {
+      "id": "drag",
+      "section": "offense",
+      "name": "creature.hyaenodon.abilities.drag.name",
+      "actions": "1",
+      "text": "creature.hyaenodon.abilities.drag.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.hyaenodon.abilities.pack-attack.name",
+      "text": "creature.hyaenodon.abilities.pack-attack.text"
+    }
+  ]
+}

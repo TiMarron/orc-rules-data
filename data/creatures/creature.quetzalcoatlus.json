@@ -1,0 +1,125 @@
+{
+  "id": "creature.quetzalcoatlus",
+  "type": "creature",
+  "name": "creature.quetzalcoatlus.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 278,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "huge",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 4,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 17,
+    "will": 12
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 15,
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.quetzalcoatlus.strikes.beak.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "deadly",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+10",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d8",
+          "type": "bleed",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.quetzalcoatlus.strikes.talon.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "carry",
+      "section": "offense",
+      "name": "creature.quetzalcoatlus.abilities.carry.name",
+      "text": "creature.quetzalcoatlus.abilities.carry.text"
+    },
+    {
+      "id": "swoop",
+      "section": "offense",
+      "name": "creature.quetzalcoatlus.abilities.swoop.name",
+      "actions": "2",
+      "text": "creature.quetzalcoatlus.abilities.swoop.text"
+    }
+  ]
+}

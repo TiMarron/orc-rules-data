@@ -1,0 +1,158 @@
+{
+  "id": "creature.firewyrm",
+  "type": "creature",
+  "name": "creature.firewyrm.name",
+  "traits": [
+    "elemental",
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "huge",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 5,
+    "con": 4,
+    "int": -1,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 20,
+    "will": 15
+  },
+  "hp": {
+    "value": 165,
+    "note": "creature.firewyrm.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "water",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.firewyrm.strikes.tail.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+11",
+          "type": "fire"
+        },
+        {
+          "dice": "2d8",
+          "type": "fire",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.firewyrm.strikes.fire-mote.name",
+      "actions": "1",
+      "bonus": 20,
+      "rangeIncrement": 60,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.firewyrm.abilities.smoke-vision.name",
+      "text": "creature.firewyrm.abilities.smoke-vision.text"
+    },
+    {
+      "id": "explosion",
+      "section": "defense",
+      "name": "creature.firewyrm.abilities.explosion.name",
+      "traits": [
+        "fire"
+      ],
+      "text": "creature.firewyrm.abilities.explosion.text"
+    },
+    {
+      "id": "intense-heat",
+      "section": "defense",
+      "name": "creature.firewyrm.abilities.intense-heat.name",
+      "ability": "ability.aura",
+      "traits": [
+        "aura",
+        "fire"
+      ],
+      "aura": 10,
+      "text": "creature.firewyrm.abilities.intense-heat.text"
+    },
+    {
+      "id": "breathe-fire",
+      "section": "offense",
+      "name": "creature.firewyrm.abilities.breathe-fire.name",
+      "actions": "2",
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "text": "creature.firewyrm.abilities.breathe-fire.text"
+    }
+  ]
+}

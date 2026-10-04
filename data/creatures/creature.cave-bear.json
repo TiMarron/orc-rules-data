@@ -1,0 +1,114 @@
+{
+  "id": "creature.cave-bear",
+  "type": "creature",
+  "name": "creature.cave-bear.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 41,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 1,
+    "con": 6,
+    "int": -4,
+    "wis": 1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 11,
+    "will": 13
+  },
+  "hp": {
+    "value": 95
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cave-bear.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+6",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.cave-bear.strikes.claw.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mauler",
+      "section": "offense",
+      "name": "creature.cave-bear.abilities.mauler.name",
+      "text": "creature.cave-bear.abilities.mauler.text"
+    },
+    {
+      "id": "rush",
+      "section": "offense",
+      "name": "creature.cave-bear.abilities.rush.name",
+      "actions": "2",
+      "text": "creature.cave-bear.abilities.rush.text"
+    }
+  ]
+}

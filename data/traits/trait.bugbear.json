@@ -1,0 +1,15 @@
+{
+  "id": "trait.bugbear",
+  "type": "trait",
+  "name": "trait.bugbear.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 361,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.bugbear.text"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "creature.giant-viper",
+  "type": "creature",
+  "name": "creature.giant-viper.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 317,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 3,
+    "int": -4,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 11,
+    "will": 6
+  },
+  "hp": {
+    "value": 26
+  },
+  "speeds": {
+    "land": 20,
+    "climb": 20,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-viper.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "giant-viper-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "coiled-strike",
+      "section": "defense",
+      "name": "creature.giant-viper.abilities.coiled-strike.name",
+      "actions": "reaction",
+      "text": "creature.giant-viper.abilities.coiled-strike.text"
+    },
+    {
+      "id": "coil",
+      "section": "offense",
+      "name": "creature.giant-viper.abilities.coil.name",
+      "actions": "1",
+      "text": "creature.giant-viper.abilities.coil.text"
+    },
+    {
+      "id": "giant-viper-venom",
+      "section": "offense",
+      "name": "creature.giant-viper.abilities.giant-viper-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.giant-viper.abilities.giant-viper-venom.text"
+    }
+  ]
+}

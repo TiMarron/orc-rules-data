@@ -1,0 +1,106 @@
+{
+  "id": "creature.rhinoceros",
+  "type": "creature",
+  "name": "creature.rhinoceros.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 293,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "large",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 0,
+    "con": 4,
+    "int": -4,
+    "wis": 3,
+    "cha": -1
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 8,
+    "will": 11
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.rhinoceros.strikes.horn.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.rhinoceros.strikes.foot.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d6+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "rhinoceros-charge",
+      "section": "offense",
+      "name": "creature.rhinoceros.abilities.rhinoceros-charge.name",
+      "actions": "2",
+      "text": "creature.rhinoceros.abilities.rhinoceros-charge.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.rhinoceros.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "2",
+      "text": "creature.rhinoceros.abilities.trample.text"
+    }
+  ]
+}

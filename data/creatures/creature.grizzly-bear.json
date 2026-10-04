@@ -1,0 +1,114 @@
+{
+  "id": "creature.grizzly-bear",
+  "type": "creature",
+  "name": "creature.grizzly-bear.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 41,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 5,
+    "int": -4,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 6,
+    "will": 8
+  },
+  "hp": {
+    "value": 59
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.grizzly-bear.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+4",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.grizzly-bear.strikes.claw.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mauler",
+      "section": "offense",
+      "name": "creature.grizzly-bear.abilities.mauler.name",
+      "text": "creature.grizzly-bear.abilities.mauler.text"
+    },
+    {
+      "id": "rush",
+      "section": "offense",
+      "name": "creature.grizzly-bear.abilities.rush.name",
+      "actions": "2",
+      "text": "creature.grizzly-bear.abilities.rush.text"
+    }
+  ]
+}

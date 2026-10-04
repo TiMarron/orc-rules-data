@@ -1,0 +1,154 @@
+{
+  "id": "creature.megalodon",
+  "type": "creature",
+  "name": "creature.megalodon.name",
+  "traits": [
+    "animal",
+    "aquatic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 307,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "own": "blood-scent"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 100
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 19
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 2,
+    "con": 5,
+    "int": -4,
+    "wis": 3,
+    "cha": -2
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 16,
+    "will": 17
+  },
+  "hp": {
+    "value": 180
+  },
+  "speeds": {
+    "swim": 80
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.megalodon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.megalodon.strikes.jaws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.megalodon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.push",
+          "text": "creature.megalodon.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blood-scent",
+      "section": "top",
+      "name": "creature.megalodon.abilities.blood-scent.name",
+      "text": "creature.megalodon.abilities.blood-scent.text"
+    },
+    {
+      "id": "breach",
+      "section": "offense",
+      "name": "creature.megalodon.abilities.breach.name",
+      "actions": "2",
+      "text": "creature.megalodon.abilities.breach.text"
+    },
+    {
+      "id": "savage",
+      "section": "offense",
+      "name": "creature.megalodon.abilities.savage.name",
+      "actions": "1",
+      "requirements": "creature.megalodon.abilities.savage.requirements",
+      "text": "creature.megalodon.abilities.savage.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.megalodon.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.megalodon.abilities.swallow-whole.text"
+    }
+  ]
+}

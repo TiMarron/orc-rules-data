@@ -1,0 +1,114 @@
+{
+  "id": "creature.animated-broom",
+  "type": "creature",
+  "name": "creature.animated-broom.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 18,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "small",
+  "perception": {
+    "mod": 3,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 0,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 15,
+    "note": "creature.animated-broom.ac.note"
+  },
+  "saves": {
+    "fortitude": 3,
+    "reflex": 6,
+    "will": 3
+  },
+  "hp": {
+    "value": 6
+  },
+  "hardness": 2,
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "speeds": {
+    "land": 15
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.animated-broom.strikes.bristles.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "magical",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "dust"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "construct-armor",
+      "section": "defense",
+      "name": "creature.animated-broom.abilities.construct-armor.name",
+      "text": "creature.animated-broom.abilities.construct-armor.text"
+    },
+    {
+      "id": "dust",
+      "section": "offense",
+      "name": "creature.animated-broom.abilities.dust.name",
+      "text": "creature.animated-broom.abilities.dust.text"
+    }
+  ]
+}

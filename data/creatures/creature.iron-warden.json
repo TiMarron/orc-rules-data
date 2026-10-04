@@ -1,0 +1,151 @@
+{
+  "id": "creature.iron-warden",
+  "type": "creature",
+  "name": "creature.iron-warden.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 207,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 13,
+  "size": "large",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 30
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": -1,
+    "con": 4,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 26,
+    "reflex": 19,
+    "will": 22
+  },
+  "hp": {
+    "value": 190
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "fire",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 15,
+      "note": "creature.iron-warden.resistances.0.note"
+    },
+    {
+      "type": "spells",
+      "value": 15,
+      "note": "creature.iron-warden.resistances.1.note"
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.iron-warden.strikes.fist.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d10+12",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "shield-arm",
+      "section": "top",
+      "name": "creature.iron-warden.abilities.shield-arm.name",
+      "text": "creature.iron-warden.abilities.shield-arm.text"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.iron-warden.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction",
+      "text": "creature.iron-warden.abilities.shield-block.text"
+    },
+    {
+      "id": "breathe-poison",
+      "section": "offense",
+      "name": "creature.iron-warden.abilities.breathe-poison.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "poison"
+      ],
+      "text": "creature.iron-warden.abilities.breathe-poison.text"
+    },
+    {
+      "id": "inexorable-march",
+      "section": "offense",
+      "name": "creature.iron-warden.abilities.inexorable-march.name",
+      "actions": "1",
+      "text": "creature.iron-warden.abilities.inexorable-march.text"
+    },
+    {
+      "id": "iron-warden-poison",
+      "section": "offense",
+      "name": "creature.iron-warden.abilities.iron-warden-poison.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.iron-warden.abilities.iron-warden-poison.text"
+    }
+  ]
+}

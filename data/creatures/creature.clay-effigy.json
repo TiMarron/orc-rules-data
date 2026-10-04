@@ -1,0 +1,149 @@
+{
+  "id": "creature.clay-effigy",
+  "type": "creature",
+  "name": "creature.clay-effigy.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 64,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": -1,
+    "con": 6,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 16,
+    "will": 17
+  },
+  "hp": {
+    "value": 175
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10,
+      "note": "creature.clay-effigy.resistances.0.note"
+    },
+    {
+      "type": "spells",
+      "value": 10,
+      "note": "creature.clay-effigy.resistances.1.note"
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.clay-effigy.strikes.fist.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "reach",
+        "sanctified"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+6",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "spirit"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sacred-art",
+      "section": "top",
+      "name": "creature.clay-effigy.abilities.sacred-art.name",
+      "text": "creature.clay-effigy.abilities.sacred-art.text"
+    },
+    {
+      "id": "effigys-curse",
+      "section": "defense",
+      "name": "creature.clay-effigy.abilities.effigys-curse.name",
+      "traits": [
+        "curse",
+        "divine"
+      ],
+      "text": "creature.clay-effigy.abilities.effigys-curse.text"
+    },
+    {
+      "id": "cast-out",
+      "section": "offense",
+      "name": "creature.clay-effigy.abilities.cast-out.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "sanctified",
+        "spirit"
+      ],
+      "text": "creature.clay-effigy.abilities.cast-out.text"
+    },
+    {
+      "id": "heavy-stride",
+      "section": "offense",
+      "name": "creature.clay-effigy.abilities.heavy-stride.name",
+      "actions": "2",
+      "text": "creature.clay-effigy.abilities.heavy-stride.text"
+    }
+  ]
+}

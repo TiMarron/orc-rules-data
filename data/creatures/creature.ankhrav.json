@@ -1,0 +1,126 @@
+{
+  "id": "creature.ankhrav",
+  "type": "creature",
+  "name": "creature.ankhrav.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 20,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": -4,
+    "wis": 0,
+    "cha": -2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 8,
+    "will": 7
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25,
+    "burrow": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ankhrav.strikes.mandibles.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "acid"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "acid"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.ankhrav.strikes.acid-spit.name",
+      "actions": "1",
+      "bonus": 10,
+      "range": 30,
+      "traits": [
+        "acid"
+      ],
+      "damage": [
+        {
+          "dice": "3d6",
+          "type": "acid"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "armor-rending-bite",
+      "section": "offense",
+      "name": "creature.ankhrav.abilities.armor-rending-bite.name",
+      "actions": "2",
+      "text": "creature.ankhrav.abilities.armor-rending-bite.text"
+    },
+    {
+      "id": "spray-acid",
+      "section": "offense",
+      "name": "creature.ankhrav.abilities.spray-acid.name",
+      "actions": "2",
+      "traits": [
+        "acid"
+      ],
+      "frequency": "creature.ankhrav.abilities.spray-acid.frequency",
+      "text": "creature.ankhrav.abilities.spray-acid.text"
+    }
+  ]
+}

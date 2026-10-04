@@ -1,0 +1,167 @@
+{
+  "id": "creature.dragon-turtle",
+  "type": "creature",
+  "name": "creature.dragon-turtle.name",
+  "traits": [
+    "amphibious",
+    "dragon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 126,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "huge",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 18
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 0,
+    "con": 4,
+    "int": 2,
+    "wis": 4,
+    "cha": 2
+  },
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 15,
+    "will": 17
+  },
+  "hp": {
+    "value": 140
+  },
+  "immunities": [
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 20,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dragon-turtle.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+9",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dragon-turtle.strikes.claw.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "shell-block",
+      "section": "defense",
+      "name": "creature.dragon-turtle.abilities.shell-block.name",
+      "actions": "reaction",
+      "trigger": "creature.dragon-turtle.abilities.shell-block.trigger",
+      "text": "creature.dragon-turtle.abilities.shell-block.text"
+    },
+    {
+      "id": "capsize",
+      "section": "offense",
+      "name": "creature.dragon-turtle.abilities.capsize.name",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.dragon-turtle.abilities.capsize.text"
+    },
+    {
+      "id": "conjure-storm",
+      "section": "offense",
+      "name": "creature.dragon-turtle.abilities.conjure-storm.name",
+      "actions": "1",
+      "traits": [
+        "air",
+        "aura",
+        "primal",
+        "water"
+      ],
+      "text": "creature.dragon-turtle.abilities.conjure-storm.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.dragon-turtle.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.dragon-turtle.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "tsunami",
+      "section": "offense",
+      "name": "creature.dragon-turtle.abilities.tsunami.name",
+      "actions": "2",
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "text": "creature.dragon-turtle.abilities.tsunami.text"
+    }
+  ]
+}

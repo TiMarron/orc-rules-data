@@ -1,0 +1,136 @@
+{
+  "id": "creature.triceratops",
+  "type": "creature",
+  "name": "creature.triceratops.name",
+  "traits": [
+    "animal",
+    "dinosaur"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "huge",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 0,
+    "con": 4,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 12,
+    "will": 14
+  },
+  "hp": {
+    "value": 140
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.triceratops.strikes.horns.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.triceratops.strikes.foot.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frill-defense",
+      "section": "defense",
+      "name": "creature.triceratops.abilities.frill-defense.name",
+      "actions": "reaction",
+      "trigger": "creature.triceratops.abilities.frill-defense.trigger",
+      "requirements": "creature.triceratops.abilities.frill-defense.requirements",
+      "text": "creature.triceratops.abilities.frill-defense.text"
+    },
+    {
+      "id": "lumbering-charge",
+      "section": "offense",
+      "name": "creature.triceratops.abilities.lumbering-charge.name",
+      "actions": "1",
+      "text": "creature.triceratops.abilities.lumbering-charge.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.triceratops.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.triceratops.abilities.trample.text"
+    },
+    {
+      "id": "vicious-gore",
+      "section": "offense",
+      "name": "creature.triceratops.abilities.vicious-gore.name",
+      "text": "creature.triceratops.abilities.vicious-gore.text"
+    }
+  ]
+}

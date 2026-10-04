@@ -1,0 +1,107 @@
+{
+  "id": "creature.brine-shark",
+  "type": "creature",
+  "name": "creature.brine-shark.name",
+  "traits": [
+    "aquatic",
+    "elemental",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 148,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 2,
+    "int": -4,
+    "wis": 1,
+    "cha": 0
+  },
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 11,
+    "will": 6
+  },
+  "hp": {
+    "value": 45
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 15,
+    "swim": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.brine-shark.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d12+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-plunge",
+      "section": "offense",
+      "name": "creature.brine-shark.abilities.deep-plunge.name",
+      "actions": "1",
+      "text": "creature.brine-shark.abilities.deep-plunge.text"
+    }
+  ]
+}

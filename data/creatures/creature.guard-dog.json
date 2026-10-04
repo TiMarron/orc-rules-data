@@ -1,0 +1,95 @@
+{
+  "id": "creature.guard-dog",
+  "type": "creature",
+  "name": "creature.guard-dog.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 102,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "small",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 2,
+    "con": 2,
+    "int": -4,
+    "wis": 1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 7,
+    "will": 4
+  },
+  "hp": {
+    "value": 8
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.guard-dog.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.guard-dog.abilities.pack-attack.name",
+      "text": "creature.guard-dog.abilities.pack-attack.text"
+    }
+  ]
+}

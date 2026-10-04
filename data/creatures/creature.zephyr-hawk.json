@@ -1,0 +1,93 @@
+{
+  "id": "creature.zephyr-hawk",
+  "type": "creature",
+  "name": "creature.zephyr-hawk.name",
+  "traits": [
+    "air",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 140,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "small",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": -4,
+    "wis": 0,
+    "cha": 0
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 13,
+    "will": 7
+  },
+  "hp": {
+    "value": 36
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.zephyr-hawk.strikes.wing.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "circling-attack",
+      "section": "offense",
+      "name": "creature.zephyr-hawk.abilities.circling-attack.name",
+      "actions": "2",
+      "text": "creature.zephyr-hawk.abilities.circling-attack.text"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "creature.brontosaurus",
+  "type": "creature",
+  "name": "creature.brontosaurus.name",
+  "traits": [
+    "animal",
+    "dinosaur"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 100,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 0,
+    "con": 5,
+    "int": -4,
+    "wis": 2,
+    "cha": 1
+  },
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 14,
+    "will": 16
+  },
+  "hp": {
+    "value": 220
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.brontosaurus.strikes.tail.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "sweep",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d10+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.brontosaurus.strikes.tail.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.brontosaurus.strikes.foot.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+13",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "tail-sweep",
+      "section": "offense",
+      "name": "creature.brontosaurus.abilities.tail-sweep.name",
+      "actions": "2",
+      "text": "creature.brontosaurus.abilities.tail-sweep.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.brontosaurus.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.brontosaurus.abilities.trample.text"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "creature.roc",
+  "type": "creature",
+  "name": "creature.roc.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 294,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 2,
+    "con": 5,
+    "int": -4,
+    "wis": 1,
+    "cha": 0
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 17,
+    "will": 16
+  },
+  "hp": {
+    "value": 180
+  },
+  "speeds": {
+    "land": 20,
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.roc.strikes.beak.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d10+12",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.roc.strikes.talon.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+12",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.roc.strikes.talon.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.roc.strikes.wing.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "2d6+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.roc.strikes.wing.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "wing-rebuff",
+      "section": "defense",
+      "name": "creature.roc.abilities.wing-rebuff.name",
+      "actions": "reaction",
+      "trigger": "creature.roc.abilities.wing-rebuff.trigger",
+      "text": "creature.roc.abilities.wing-rebuff.text"
+    },
+    {
+      "id": "carry",
+      "section": "offense",
+      "name": "creature.roc.abilities.carry.name",
+      "text": "creature.roc.abilities.carry.text"
+    },
+    {
+      "id": "flying-strafe",
+      "section": "offense",
+      "name": "creature.roc.abilities.flying-strafe.name",
+      "actions": "2",
+      "text": "creature.roc.abilities.flying-strafe.text"
+    },
+    {
+      "id": "snack",
+      "section": "offense",
+      "name": "creature.roc.abilities.snack.name",
+      "text": "creature.roc.abilities.snack.text"
+    }
+  ]
+}

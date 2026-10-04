@@ -1,0 +1,15 @@
+{
+  "id": "ability.low-light-vision",
+  "type": "ability",
+  "name": "ability.low-light-vision.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.low-light-vision.text"
+}

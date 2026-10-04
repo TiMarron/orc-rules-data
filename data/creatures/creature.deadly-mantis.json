@@ -1,0 +1,137 @@
+{
+  "id": "creature.deadly-mantis",
+  "type": "creature",
+  "name": "creature.deadly-mantis.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 229,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 3,
+    "con": 5,
+    "int": -5,
+    "wis": 3,
+    "cha": -2
+  },
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 24,
+    "reflex": 20,
+    "will": 18
+  },
+  "hp": {
+    "value": 220
+  },
+  "speeds": {
+    "land": 50,
+    "climb": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.deadly-mantis.strikes.mandibles.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+14",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.deadly-mantis.strikes.leg.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d10+14",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fling",
+      "section": "offense",
+      "name": "creature.deadly-mantis.abilities.fling.name",
+      "actions": "1",
+      "text": "creature.deadly-mantis.abilities.fling.text"
+    },
+    {
+      "id": "leaping-grab",
+      "section": "offense",
+      "name": "creature.deadly-mantis.abilities.leaping-grab.name",
+      "actions": "2",
+      "text": "creature.deadly-mantis.abilities.leaping-grab.text"
+    },
+    {
+      "id": "rending-mandibles",
+      "section": "offense",
+      "name": "creature.deadly-mantis.abilities.rending-mandibles.name",
+      "actions": "1",
+      "text": "creature.deadly-mantis.abilities.rending-mandibles.text"
+    },
+    {
+      "id": "sudden-strike",
+      "section": "offense",
+      "name": "creature.deadly-mantis.abilities.sudden-strike.name",
+      "text": "creature.deadly-mantis.abilities.sudden-strike.text"
+    }
+  ]
+}

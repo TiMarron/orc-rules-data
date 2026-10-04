@@ -1,0 +1,117 @@
+{
+  "id": "creature.electric-eel",
+  "type": "creature",
+  "name": "creature.electric-eel.name",
+  "traits": [
+    "animal",
+    "aquatic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 2,
+    "con": 2,
+    "int": -5,
+    "wis": 1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 7,
+    "will": 4
+  },
+  "hp": {
+    "value": 18
+  },
+  "resistances": [
+    {
+      "type": "electricity",
+      "value": 7
+    }
+  ],
+  "speeds": {
+    "land": 5,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.electric-eel.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.electric-eel.strikes.tail.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d4",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        {
+          "own": "stunning-shock"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "stunning-shock",
+      "section": "offense",
+      "name": "creature.electric-eel.abilities.stunning-shock.name",
+      "traits": [
+        "incapacitation"
+      ],
+      "text": "creature.electric-eel.abilities.stunning-shock.text"
+    }
+  ]
+}

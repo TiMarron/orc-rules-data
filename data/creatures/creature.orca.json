@@ -1,0 +1,112 @@
+{
+  "id": "creature.orca",
+  "type": "creature",
+  "name": "creature.orca.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 103,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "huge",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "own": "aquatic-echolocation",
+        "range": 120
+      },
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 2,
+    "con": 5,
+    "int": -4,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 11,
+    "will": 12
+  },
+  "hp": {
+    "value": 75
+  },
+  "speeds": {
+    "swim": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.orca.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "aquatic-echolocation",
+      "section": "top",
+      "name": "creature.orca.abilities.aquatic-echolocation.name",
+      "text": "creature.orca.abilities.aquatic-echolocation.text"
+    },
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.orca.abilities.deep-breath.name",
+      "text": "creature.orca.abilities.deep-breath.text"
+    },
+    {
+      "id": "aquatic-ambush",
+      "section": "offense",
+      "name": "creature.orca.abilities.aquatic-ambush.name",
+      "ability": "ability.aquatic-ambush",
+      "actions": "1",
+      "text": "creature.orca.abilities.aquatic-ambush.text"
+    },
+    {
+      "id": "breach",
+      "section": "offense",
+      "name": "creature.orca.abilities.breach.name",
+      "actions": "2",
+      "text": "creature.orca.abilities.breach.text"
+    }
+  ]
+}

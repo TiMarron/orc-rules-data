@@ -1,0 +1,242 @@
+{
+  "id": "creature.mukradi",
+  "type": "creature",
+  "name": "creature.mukradi.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 233,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 15,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 24,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 32
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 0,
+    "con": 7,
+    "int": -3,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 37,
+    "note": "creature.mukradi.ac.note"
+  },
+  "saves": {
+    "fortitude": 32,
+    "reflex": 23,
+    "will": 26
+  },
+  "hp": {
+    "value": 300
+  },
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 20
+    },
+    {
+      "type": "electricity",
+      "value": 20
+    },
+    {
+      "type": "fire",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 60,
+    "burrow": 60,
+    "climb": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mukradi.strikes.acid-maw.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d12+17",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d6",
+          "type": "acid"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mukradi.strikes.flame-maw.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d12+17",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mukradi.strikes.shock-maw.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d12+17",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d6",
+          "type": "electricity"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mukradi.strikes.leg.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d10+17",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mukradi.strikes.tail-lash.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "3d10+17",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "partitioned-anatomy",
+      "section": "defense",
+      "name": "creature.mukradi.abilities.partitioned-anatomy.name",
+      "actions": "free",
+      "trigger": "creature.mukradi.abilities.partitioned-anatomy.trigger",
+      "text": "creature.mukradi.abilities.partitioned-anatomy.text"
+    },
+    {
+      "id": "spitting-rage",
+      "section": "defense",
+      "name": "creature.mukradi.abilities.spitting-rage.name",
+      "actions": "reaction",
+      "trigger": "creature.mukradi.abilities.spitting-rage.trigger",
+      "text": "creature.mukradi.abilities.spitting-rage.text"
+    },
+    {
+      "id": "breathe-energy",
+      "section": "offense",
+      "name": "creature.mukradi.abilities.breathe-energy.name",
+      "actions": "2",
+      "traits": [
+        "primal"
+      ],
+      "text": "creature.mukradi.abilities.breathe-energy.text"
+    },
+    {
+      "id": "pull-apart",
+      "section": "offense",
+      "name": "creature.mukradi.abilities.pull-apart.name",
+      "actions": "2",
+      "text": "creature.mukradi.abilities.pull-apart.text"
+    },
+    {
+      "id": "thrash",
+      "section": "offense",
+      "name": "creature.mukradi.abilities.thrash.name",
+      "actions": "2",
+      "text": "creature.mukradi.abilities.thrash.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.mukradi.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.mukradi.abilities.trample.text"
+    }
+  ]
+}

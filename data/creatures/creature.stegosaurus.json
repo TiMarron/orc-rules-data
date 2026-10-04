@@ -1,0 +1,118 @@
+{
+  "id": "creature.stegosaurus",
+  "type": "creature",
+  "name": "creature.stegosaurus.name",
+  "traits": [
+    "animal",
+    "dinosaur"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 99,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "huge",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 2,
+    "con": 4,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 13,
+    "will": 13
+  },
+  "hp": {
+    "value": 125
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.stegosaurus.strikes.tail.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "sweep",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.stegosaurus.strikes.foot.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "dorsal-deflection",
+      "section": "defense",
+      "name": "creature.stegosaurus.abilities.dorsal-deflection.name",
+      "actions": "reaction",
+      "trigger": "creature.stegosaurus.abilities.dorsal-deflection.trigger",
+      "text": "creature.stegosaurus.abilities.dorsal-deflection.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.stegosaurus.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.stegosaurus.abilities.trample.text"
+    }
+  ]
+}

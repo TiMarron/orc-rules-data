@@ -1,0 +1,134 @@
+{
+  "id": "creature.giant-moray-eel",
+  "type": "creature",
+  "name": "creature.giant-moray-eel.name",
+  "traits": [
+    "animal",
+    "aquatic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 2,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 13,
+    "will": 9
+  },
+  "hp": {
+    "value": 65
+  },
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 10,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-moray-eel.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ambush",
+      "section": "defense",
+      "name": "creature.giant-moray-eel.abilities.ambush.name",
+      "actions": "reaction",
+      "trigger": "creature.giant-moray-eel.abilities.ambush.trigger",
+      "text": "creature.giant-moray-eel.abilities.ambush.text"
+    },
+    {
+      "id": "pharyngeal-jaws",
+      "section": "offense",
+      "name": "creature.giant-moray-eel.abilities.pharyngeal-jaws.name",
+      "actions": "2",
+      "requirements": "creature.giant-moray-eel.abilities.pharyngeal-jaws.requirements",
+      "text": "creature.giant-moray-eel.abilities.pharyngeal-jaws.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.giant-moray-eel.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.giant-moray-eel.abilities.swallow-whole.text"
+    }
+  ]
+}

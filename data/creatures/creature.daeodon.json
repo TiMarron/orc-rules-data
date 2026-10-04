@@ -1,0 +1,99 @@
+{
+  "id": "creature.daeodon",
+  "type": "creature",
+  "name": "creature.daeodon.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "large",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 0,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 9,
+    "will": 10
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.daeodon.strikes.tusk.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ferocity",
+      "section": "defense",
+      "name": "creature.daeodon.abilities.ferocity.name",
+      "ability": "ability.ferocity",
+      "actions": "reaction"
+    },
+    {
+      "id": "daeodon-charge",
+      "section": "offense",
+      "name": "creature.daeodon.abilities.daeodon-charge.name",
+      "actions": "2",
+      "text": "creature.daeodon.abilities.daeodon-charge.text"
+    }
+  ]
+}

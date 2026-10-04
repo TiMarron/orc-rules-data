@@ -1,0 +1,130 @@
+{
+  "id": "creature.manticore",
+  "type": "creature",
+  "name": "creature.manticore.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 228,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 4,
+    "int": -2,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 12,
+    "will": 12
+  },
+  "hp": {
+    "value": 90
+  },
+  "speeds": {
+    "land": 25,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.manticore.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.manticore.strikes.claw.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.manticore.strikes.spike.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 40,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+5",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "spike-volley",
+      "section": "offense",
+      "name": "creature.manticore.abilities.spike-volley.name",
+      "actions": "1",
+      "text": "creature.manticore.abilities.spike-volley.text"
+    }
+  ]
+}

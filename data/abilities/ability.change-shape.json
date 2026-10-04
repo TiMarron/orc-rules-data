@@ -1,0 +1,16 @@
+{
+  "id": "ability.change-shape",
+  "type": "ability",
+  "name": "ability.change-shape.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 358,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.change-shape.text",
+  "actions": "1"
+}

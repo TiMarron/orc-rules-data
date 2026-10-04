@@ -1,0 +1,15 @@
+{
+  "id": "trait.oni",
+  "type": "trait",
+  "name": "trait.oni.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 363,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.oni.text"
+}

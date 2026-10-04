@@ -1,0 +1,208 @@
+{
+  "id": "creature.quai-dau-to",
+  "type": "creature",
+  "name": "creature.quai-dau-to.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 284,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 13,
+  "size": "huge",
+  "perception": {
+    "mod": 25,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "mist-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 120
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 25
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 4,
+    "con": 8,
+    "int": -3,
+    "wis": 5,
+    "cha": -1
+  },
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 26,
+    "reflex": 19,
+    "will": 21
+  },
+  "hp": {
+    "value": 300
+  },
+  "immunities": [
+    "blinded",
+    "dazzled"
+  ],
+  "weaknesses": [
+    {
+      "type": "sonic",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "swim": 30,
+    "note": "creature.quai-dau-to.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.quai-dau-to.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d12+14",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.quai-dau-to.strikes.tail.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.quai-dau-to.strikes.foot.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mist-vision",
+      "section": "top",
+      "name": "creature.quai-dau-to.abilities.mist-vision.name",
+      "text": "creature.quai-dau-to.abilities.mist-vision.text"
+    },
+    {
+      "id": "frightful-sight",
+      "section": "defense",
+      "name": "creature.quai-dau-to.abilities.frightful-sight.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental",
+        "visual"
+      ],
+      "aura": 60,
+      "text": "creature.quai-dau-to.abilities.frightful-sight.text"
+    },
+    {
+      "id": "reflective-scales",
+      "section": "defense",
+      "name": "creature.quai-dau-to.abilities.reflective-scales.name",
+      "actions": "reaction",
+      "trigger": "creature.quai-dau-to.abilities.reflective-scales.trigger",
+      "text": "creature.quai-dau-to.abilities.reflective-scales.text"
+    },
+    {
+      "id": "drain-water",
+      "section": "offense",
+      "name": "creature.quai-dau-to.abilities.drain-water.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "requirements": "creature.quai-dau-to.abilities.drain-water.requirements",
+      "text": "creature.quai-dau-to.abilities.drain-water.text"
+    },
+    {
+      "id": "inflate",
+      "section": "offense",
+      "name": "creature.quai-dau-to.abilities.inflate.name",
+      "actions": "1",
+      "text": "creature.quai-dau-to.abilities.inflate.text"
+    },
+    {
+      "id": "mist-breath",
+      "section": "offense",
+      "name": "creature.quai-dau-to.abilities.mist-breath.name",
+      "actions": "1",
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "requirements": "creature.quai-dau-to.abilities.mist-breath.requirements",
+      "text": "creature.quai-dau-to.abilities.mist-breath.text"
+    },
+    {
+      "id": "spout-water",
+      "section": "offense",
+      "name": "creature.quai-dau-to.abilities.spout-water.name",
+      "actions": "2",
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "requirements": "creature.quai-dau-to.abilities.spout-water.requirements",
+      "text": "creature.quai-dau-to.abilities.spout-water.text"
+    }
+  ]
+}

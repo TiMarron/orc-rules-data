@@ -1,0 +1,110 @@
+{
+  "id": "creature.giant-wasp",
+  "type": "creature",
+  "name": "creature.giant-wasp.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 343,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 4,
+    "int": -5,
+    "wis": 1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 11,
+    "will": 6
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 20,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-wasp.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "poison"
+      ],
+      "damage": [
+        {
+          "dice": "1d12+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "giant-wasp-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "implant-eggs",
+      "section": "offense",
+      "name": "creature.giant-wasp.abilities.implant-eggs.name",
+      "actions": "1",
+      "text": "creature.giant-wasp.abilities.implant-eggs.text"
+    },
+    {
+      "id": "giant-wasp-venom",
+      "section": "offense",
+      "name": "creature.giant-wasp.abilities.giant-wasp-venom.name",
+      "traits": [
+        "incapacitation",
+        "poison"
+      ],
+      "text": "creature.giant-wasp.abilities.giant-wasp-venom.text"
+    },
+    {
+      "id": "wasp-larva",
+      "section": "offense",
+      "name": "creature.giant-wasp.abilities.wasp-larva.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.giant-wasp.abilities.wasp-larva.text"
+    }
+  ]
+}

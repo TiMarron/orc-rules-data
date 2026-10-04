@@ -1,0 +1,143 @@
+{
+  "id": "creature.ankhrav-hive-mother",
+  "type": "creature",
+  "name": "creature.ankhrav-hive-mother.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 20,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "huge",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 90
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 1,
+    "con": 4,
+    "int": -4,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 15,
+    "will": 14
+  },
+  "hp": {
+    "value": 120
+  },
+  "speeds": {
+    "land": 25,
+    "burrow": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ankhrav-hive-mother.strikes.mandibles.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "acid"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "acid"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.ankhrav-hive-mother.strikes.acid-spit.name",
+      "actions": "1",
+      "bonus": 17,
+      "range": 30,
+      "traits": [
+        "acid"
+      ],
+      "damage": [
+        {
+          "dice": "5d6",
+          "type": "acid"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.ankhrav-hive-mother.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "armor-rending-bite",
+      "section": "offense",
+      "name": "creature.ankhrav-hive-mother.abilities.armor-rending-bite.name",
+      "actions": "2",
+      "text": "creature.ankhrav-hive-mother.abilities.armor-rending-bite.text"
+    },
+    {
+      "id": "frenzy-pheromone",
+      "section": "offense",
+      "name": "creature.ankhrav-hive-mother.abilities.frenzy-pheromone.name",
+      "actions": "2",
+      "text": "creature.ankhrav-hive-mother.abilities.frenzy-pheromone.text"
+    },
+    {
+      "id": "spray-acid",
+      "section": "offense",
+      "name": "creature.ankhrav-hive-mother.abilities.spray-acid.name",
+      "actions": "2",
+      "traits": [
+        "acid"
+      ],
+      "text": "creature.ankhrav-hive-mother.abilities.spray-acid.text"
+    }
+  ]
+}

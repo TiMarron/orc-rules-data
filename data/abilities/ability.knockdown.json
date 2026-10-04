@@ -1,0 +1,17 @@
+{
+  "id": "ability.knockdown",
+  "type": "ability",
+  "name": "ability.knockdown.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.knockdown.text",
+  "actions": "1",
+  "requirements": "ability.knockdown.requirements"
+}

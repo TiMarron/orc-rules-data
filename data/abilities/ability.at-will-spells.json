@@ -1,0 +1,15 @@
+{
+  "id": "ability.at-will-spells",
+  "type": "ability",
+  "name": "ability.at-will-spells.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 358,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.at-will-spells.text"
+}

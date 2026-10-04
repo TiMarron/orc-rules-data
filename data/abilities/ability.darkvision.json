@@ -1,0 +1,15 @@
+{
+  "id": "ability.darkvision",
+  "type": "ability",
+  "name": "ability.darkvision.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.darkvision.text"
+}

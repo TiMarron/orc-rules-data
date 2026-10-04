@@ -1,0 +1,125 @@
+{
+  "id": "creature.giant-tarantula",
+  "type": "creature",
+  "name": "creature.giant-tarantula.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 321,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 1,
+    "con": 5,
+    "int": -5,
+    "wis": 2,
+    "cha": -4
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 13,
+    "will": 10
+  },
+  "hp": {
+    "value": 135
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-tarantula.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "giant-tarantula-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.giant-tarantula.strikes.leg.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d12+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "giant-tarantula-venom",
+      "section": "offense",
+      "name": "creature.giant-tarantula.abilities.giant-tarantula-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.giant-tarantula.abilities.giant-tarantula-venom.text"
+    },
+    {
+      "id": "hair-barrage",
+      "section": "offense",
+      "name": "creature.giant-tarantula.abilities.hair-barrage.name",
+      "actions": "2",
+      "text": "creature.giant-tarantula.abilities.hair-barrage.text"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "creature.zombie-hulk",
+  "type": "creature",
+  "name": "creature.zombie-hulk.name",
+  "traits": [
+    "mindless",
+    "undead",
+    "unholy",
+    "zombie"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 357,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "huge",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": -1,
+    "con": 4,
+    "int": -5,
+    "wis": 0,
+    "cha": -2
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 9,
+    "will": 12
+  },
+  "hp": {
+    "value": 160,
+    "note": "creature.zombie-hulk.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "type": "slashing",
+      "value": 10
+    },
+    {
+      "type": "vitality",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.zombie-hulk.strikes.hunk-of-meat.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d10+9",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.zombie-hulk.strikes.corpse.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 30,
+      "traits": [
+        "brutal"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "slow",
+      "section": "top",
+      "name": "creature.zombie-hulk.abilities.slow.name",
+      "text": "creature.zombie-hulk.abilities.slow.text"
+    },
+    {
+      "id": "corpse-throwing",
+      "section": "offense",
+      "name": "creature.zombie-hulk.abilities.corpse-throwing.name",
+      "text": "creature.zombie-hulk.abilities.corpse-throwing.text"
+    },
+    {
+      "id": "wide-swing",
+      "section": "offense",
+      "name": "creature.zombie-hulk.abilities.wide-swing.name",
+      "actions": "1",
+      "text": "creature.zombie-hulk.abilities.wide-swing.text"
+    }
+  ]
+}

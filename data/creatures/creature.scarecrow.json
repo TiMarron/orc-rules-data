@@ -1,0 +1,157 @@
+{
+  "id": "creature.scarecrow",
+  "type": "creature",
+  "name": "creature.scarecrow.name",
+  "traits": [
+    "construct"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 297,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 3,
+    "int": -4,
+    "wis": 3,
+    "cha": -2
+  },
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 8,
+    "will": 11
+  },
+  "hp": {
+    "value": 60
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "fear",
+    "healing",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "note": "creature.scarecrow.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.scarecrow.strikes.claw.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "clawing-fear"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "scarecrows-leer",
+      "section": "defense",
+      "name": "creature.scarecrow.abilities.scarecrows-leer.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental",
+        "occult",
+        "visual"
+      ],
+      "aura": 40,
+      "text": "creature.scarecrow.abilities.scarecrows-leer.text"
+    },
+    {
+      "id": "baleful-glow",
+      "section": "offense",
+      "name": "creature.scarecrow.abilities.baleful-glow.name",
+      "actions": "free",
+      "traits": [
+        "concentrate",
+        "mental",
+        "light",
+        "occult"
+      ],
+      "text": "creature.scarecrow.abilities.baleful-glow.text"
+    },
+    {
+      "id": "clawing-fear",
+      "section": "offense",
+      "name": "creature.scarecrow.abilities.clawing-fear.name",
+      "text": "creature.scarecrow.abilities.clawing-fear.text"
+    },
+    {
+      "id": "mundane-appearance",
+      "section": "offense",
+      "name": "creature.scarecrow.abilities.mundane-appearance.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.scarecrow.abilities.mundane-appearance.text"
+    }
+  ]
+}

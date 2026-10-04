@@ -1,0 +1,172 @@
+{
+  "id": "creature.flame-drake",
+  "type": "creature",
+  "name": "creature.flame-drake.name",
+  "traits": [
+    "dragon",
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 129,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 1,
+    "con": 3,
+    "int": -1,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 10,
+    "will": 10
+  },
+  "hp": {
+    "value": 75
+  },
+  "immunities": [
+    "fire",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.flame-drake.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+5",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.flame-drake.strikes.tail.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.flame-drake.abilities.smoke-vision.name",
+      "text": "creature.flame-drake.abilities.smoke-vision.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.flame-drake.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.flame-drake.abilities.reactive-strike.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.flame-drake.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.flame-drake.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "fireball-breath",
+      "section": "offense",
+      "name": "creature.flame-drake.abilities.fireball-breath.name",
+      "actions": "2",
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "text": "creature.flame-drake.abilities.fireball-breath.text"
+    },
+    {
+      "id": "speed-surge",
+      "section": "offense",
+      "name": "creature.flame-drake.abilities.speed-surge.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "frequency": "creature.flame-drake.abilities.speed-surge.frequency",
+      "text": "creature.flame-drake.abilities.speed-surge.text"
+    }
+  ]
+}

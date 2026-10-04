@@ -1,0 +1,112 @@
+{
+  "id": "creature.zombie-brute",
+  "type": "creature",
+  "name": "creature.zombie-brute.name",
+  "traits": [
+    "mindless",
+    "undead",
+    "unholy",
+    "zombie"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 357,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "large",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": -3,
+    "con": 4,
+    "int": -5,
+    "wis": 0,
+    "cha": -2
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 3,
+    "will": 6
+  },
+  "hp": {
+    "value": 70,
+    "note": "creature.zombie-brute.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "type": "slashing",
+      "value": 10
+    },
+    {
+      "type": "vitality",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.zombie-brute.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d12+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.zombie-brute.strikes.fist.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "slow",
+      "section": "top",
+      "name": "creature.zombie-brute.abilities.slow.name",
+      "text": "creature.zombie-brute.abilities.slow.text"
+    }
+  ]
+}

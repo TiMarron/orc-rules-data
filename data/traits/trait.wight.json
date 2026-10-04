@@ -1,0 +1,15 @@
+{
+  "id": "trait.wight",
+  "type": "trait",
+  "name": "trait.wight.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 364,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.wight.text"
+}

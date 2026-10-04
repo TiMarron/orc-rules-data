@@ -1,0 +1,17 @@
+{
+  "id": "ability.aquatic-ambush",
+  "type": "ability",
+  "name": "ability.aquatic-ambush.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 358,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.aquatic-ambush.text",
+  "actions": "1",
+  "requirements": "ability.aquatic-ambush.requirements"
+}

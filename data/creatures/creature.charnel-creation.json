@@ -1,0 +1,138 @@
+{
+  "id": "creature.charnel-creation",
+  "type": "creature",
+  "name": "creature.charnel-creation.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 61,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": -1,
+    "con": 3,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 14,
+    "will": 15
+  },
+  "hp": {
+    "value": 140
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "electricity",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "note": "creature.charnel-creation.resistances.0.note"
+    },
+    {
+      "type": "spells",
+      "value": 5,
+      "note": "creature.charnel-creation.resistances.1.note"
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.charnel-creation.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "berserk",
+      "section": "defense",
+      "name": "creature.charnel-creation.abilities.berserk.name",
+      "text": "creature.charnel-creation.abilities.berserk.text"
+    },
+    {
+      "id": "electric-healing",
+      "section": "defense",
+      "name": "creature.charnel-creation.abilities.electric-healing.name",
+      "text": "creature.charnel-creation.abilities.electric-healing.text"
+    },
+    {
+      "id": "electric-reflexes",
+      "section": "defense",
+      "name": "creature.charnel-creation.abilities.electric-reflexes.name",
+      "actions": "reaction",
+      "trigger": "creature.charnel-creation.abilities.electric-reflexes.trigger",
+      "text": "creature.charnel-creation.abilities.electric-reflexes.text"
+    },
+    {
+      "id": "berserk-slam",
+      "section": "offense",
+      "name": "creature.charnel-creation.abilities.berserk-slam.name",
+      "actions": "1",
+      "requirements": "creature.charnel-creation.abilities.berserk-slam.requirements",
+      "text": "creature.charnel-creation.abilities.berserk-slam.text"
+    }
+  ]
+}

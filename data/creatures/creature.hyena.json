@@ -1,0 +1,103 @@
+{
+  "id": "creature.hyena",
+  "type": "creature",
+  "name": "creature.hyena.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 205,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 2,
+    "int": -4,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 8,
+    "will": 4
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hyena.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "drag",
+      "section": "offense",
+      "name": "creature.hyena.abilities.drag.name",
+      "actions": "1",
+      "text": "creature.hyena.abilities.drag.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.hyena.abilities.pack-attack.name",
+      "text": "creature.hyena.abilities.pack-attack.text"
+    }
+  ]
+}

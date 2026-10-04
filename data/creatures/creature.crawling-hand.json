@@ -1,0 +1,126 @@
+{
+  "id": "creature.crawling-hand",
+  "type": "creature",
+  "name": "creature.crawling-hand.name",
+  "traits": [
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 68,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "tiny",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.lifesense",
+        "range": 30
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.crawling-hand.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 2
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 0,
+    "int": -4,
+    "wis": 0,
+    "cha": 0
+  },
+  "ac": {
+    "value": 12
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 5,
+    "will": 2
+  },
+  "hp": {
+    "value": 8,
+    "note": "creature.crawling-hand.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious",
+    "visual"
+  ],
+  "speeds": {
+    "land": 30,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.crawling-hand.strikes.claw.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "throat-grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mark-quarry",
+      "section": "offense",
+      "name": "creature.crawling-hand.abilities.mark-quarry.name",
+      "text": "creature.crawling-hand.abilities.mark-quarry.text"
+    },
+    {
+      "id": "throat-grab",
+      "section": "offense",
+      "name": "creature.crawling-hand.abilities.throat-grab.name",
+      "actions": "1",
+      "text": "creature.crawling-hand.abilities.throat-grab.text"
+    }
+  ]
+}

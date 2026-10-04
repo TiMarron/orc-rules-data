@@ -1,0 +1,15 @@
+{
+  "id": "trait.brutal",
+  "type": "trait",
+  "name": "trait.brutal.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 364,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.brutal.text"
+}

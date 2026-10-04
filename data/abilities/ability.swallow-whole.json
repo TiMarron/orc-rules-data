@@ -1,0 +1,16 @@
+{
+  "id": "ability.swallow-whole",
+  "type": "ability",
+  "name": "ability.swallow-whole.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 360,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.swallow-whole.text",
+  "actions": "1"
+}

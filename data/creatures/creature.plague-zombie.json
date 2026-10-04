@@ -1,0 +1,128 @@
+{
+  "id": "creature.plague-zombie",
+  "type": "creature",
+  "name": "creature.plague-zombie.name",
+  "traits": [
+    "mindless",
+    "undead",
+    "unholy",
+    "zombie"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 356,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 3,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": -2,
+    "con": 3,
+    "int": -5,
+    "wis": 0,
+    "cha": -2
+  },
+  "ac": {
+    "value": 13
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 3,
+    "will": 4
+  },
+  "hp": {
+    "value": 50,
+    "note": "creature.plague-zombie.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "type": "slashing",
+      "value": 10
+    },
+    {
+      "type": "vitality",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.plague-zombie.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        },
+        {
+          "own": "zombie-rot"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "slow",
+      "section": "top",
+      "name": "creature.plague-zombie.abilities.slow.name",
+      "text": "creature.plague-zombie.abilities.slow.text"
+    },
+    {
+      "id": "zombie-bite",
+      "section": "offense",
+      "name": "creature.plague-zombie.abilities.zombie-bite.name",
+      "actions": "1",
+      "requirements": "creature.plague-zombie.abilities.zombie-bite.requirements",
+      "text": "creature.plague-zombie.abilities.zombie-bite.text"
+    },
+    {
+      "id": "zombie-rot",
+      "section": "offense",
+      "name": "creature.plague-zombie.abilities.zombie-rot.name",
+      "traits": [
+        "disease",
+        "divine",
+        "void"
+      ],
+      "text": "creature.plague-zombie.abilities.zombie-rot.text"
+    }
+  ]
+}

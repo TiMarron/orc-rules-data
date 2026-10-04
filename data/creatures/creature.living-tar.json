@@ -1,0 +1,129 @@
+{
+  "id": "creature.living-tar",
+  "type": "creature",
+  "name": "creature.living-tar.name",
+  "traits": [
+    "mindless",
+    "ooze"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "huge",
+  "perception": {
+    "mod": 9,
+    "note": "creature.living-tar.perception.note",
+    "senses": [
+      {
+        "own": "motion-sense",
+        "acuity": "precise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": -5,
+    "con": 7,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 6,
+    "will": 11
+  },
+  "hp": {
+    "value": 165
+  },
+  "immunities": [
+    "acid",
+    "bleed",
+    "bludgeoning",
+    "critical-hits",
+    "mental",
+    "precision",
+    "unconscious",
+    "visual"
+  ],
+  "speeds": {
+    "land": 20,
+    "climb": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.living-tar.strikes.pseudopod.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "motion-sense",
+      "section": "top",
+      "name": "creature.living-tar.abilities.motion-sense.name",
+      "text": "creature.living-tar.abilities.motion-sense.text"
+    },
+    {
+      "id": "adhesive-mass",
+      "section": "defense",
+      "name": "creature.living-tar.abilities.adhesive-mass.name",
+      "text": "creature.living-tar.abilities.adhesive-mass.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.living-tar.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.living-tar.abilities.constrict.text"
+    },
+    {
+      "id": "engulf",
+      "section": "offense",
+      "name": "creature.living-tar.abilities.engulf.name",
+      "ability": "ability.engulf",
+      "actions": "3",
+      "text": "creature.living-tar.abilities.engulf.text"
+    }
+  ]
+}

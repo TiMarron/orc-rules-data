@@ -1,0 +1,159 @@
+{
+  "id": "creature.wraith",
+  "type": "creature",
+  "name": "creature.wraith.name",
+  "traits": [
+    "incorporeal",
+    "undead",
+    "unholy",
+    "wraith"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 351,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.lifesense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 4,
+    "con": 0,
+    "int": 2,
+    "wis": 2,
+    "cha": 5
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 14,
+    "will": 14
+  },
+  "hp": {
+    "value": 80,
+    "note": "creature.wraith.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 5,
+      "note": "creature.wraith.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.wraith.strikes.wraith-touch.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "divine",
+        "finesse",
+        "void"
+      ],
+      "damage": [
+        {
+          "dice": "3d8",
+          "type": "void"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sunlight-powerlessness",
+      "section": "defense",
+      "name": "creature.wraith.abilities.sunlight-powerlessness.name",
+      "text": "creature.wraith.abilities.sunlight-powerlessness.text"
+    },
+    {
+      "id": "grip-of-fear",
+      "section": "offense",
+      "name": "creature.wraith.abilities.grip-of-fear.name",
+      "actions": "2",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental",
+        "nonlethal"
+      ],
+      "text": "creature.wraith.abilities.grip-of-fear.text"
+    },
+    {
+      "id": "robes-of-welcome",
+      "section": "offense",
+      "name": "creature.wraith.abilities.robes-of-welcome.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "frequency": "creature.wraith.abilities.robes-of-welcome.frequency",
+      "text": "creature.wraith.abilities.robes-of-welcome.text"
+    },
+    {
+      "id": "voids-embrace",
+      "section": "offense",
+      "name": "creature.wraith.abilities.voids-embrace.name",
+      "traits": [
+        "curse",
+        "death",
+        "divine",
+        "void"
+      ],
+      "text": "creature.wraith.abilities.voids-embrace.text"
+    }
+  ]
+}

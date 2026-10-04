@@ -1,0 +1,163 @@
+{
+  "id": "creature.elemental-inferno",
+  "type": "creature",
+  "name": "creature.elemental-inferno.name",
+  "traits": [
+    "elemental",
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 145,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "huge",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 6,
+    "con": 5,
+    "int": 0,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 23,
+    "will": 19
+  },
+  "hp": {
+    "value": 210,
+    "note": "creature.elemental-inferno.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 15
+    },
+    {
+      "type": "water",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 70
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.elemental-inferno.strikes.tendril.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d10+12",
+          "type": "fire"
+        },
+        {
+          "dice": "3d8",
+          "type": "fire",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.elemental-inferno.strikes.fire-mote.name",
+      "actions": "1",
+      "bonus": 24,
+      "rangeIncrement": 60,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.elemental-inferno.abilities.smoke-vision.name",
+      "text": "creature.elemental-inferno.abilities.smoke-vision.text"
+    },
+    {
+      "id": "explosion",
+      "section": "defense",
+      "name": "creature.elemental-inferno.abilities.explosion.name",
+      "traits": [
+        "fire"
+      ],
+      "text": "creature.elemental-inferno.abilities.explosion.text"
+    },
+    {
+      "id": "intense-heat",
+      "section": "defense",
+      "name": "creature.elemental-inferno.abilities.intense-heat.name",
+      "ability": "ability.aura",
+      "traits": [
+        "aura",
+        "fire"
+      ],
+      "aura": 10,
+      "text": "creature.elemental-inferno.abilities.intense-heat.text"
+    },
+    {
+      "id": "blue-flames",
+      "section": "offense",
+      "name": "creature.elemental-inferno.abilities.blue-flames.name",
+      "text": "creature.elemental-inferno.abilities.blue-flames.text"
+    },
+    {
+      "id": "inferno-leap",
+      "section": "offense",
+      "name": "creature.elemental-inferno.abilities.inferno-leap.name",
+      "actions": "2",
+      "traits": [
+        "fire"
+      ],
+      "text": "creature.elemental-inferno.abilities.inferno-leap.text"
+    }
+  ]
+}

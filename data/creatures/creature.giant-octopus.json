@@ -1,0 +1,165 @@
+{
+  "id": "creature.giant-octopus",
+  "type": "creature",
+  "name": "creature.giant-octopus.name",
+  "traits": [
+    "animal",
+    "aquatic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 248,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "huge",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": -4,
+    "wis": 3,
+    "cha": -2
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 17,
+    "will": 15
+  },
+  "hp": {
+    "value": 135
+  },
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 15,
+    "swim": 40,
+    "note": "creature.giant-octopus.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-octopus.strikes.arm.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.giant-octopus.strikes.beak.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "giant-octopus-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "compression",
+      "section": "offense",
+      "name": "creature.giant-octopus.abilities.compression.name",
+      "text": "creature.giant-octopus.abilities.compression.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.giant-octopus.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.giant-octopus.abilities.constrict.text"
+    },
+    {
+      "id": "giant-octopus-venom",
+      "section": "offense",
+      "name": "creature.giant-octopus.abilities.giant-octopus-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.giant-octopus.abilities.giant-octopus-venom.text"
+    },
+    {
+      "id": "ink-cloud",
+      "section": "offense",
+      "name": "creature.giant-octopus.abilities.ink-cloud.name",
+      "actions": "1",
+      "text": "creature.giant-octopus.abilities.ink-cloud.text"
+    },
+    {
+      "id": "jet",
+      "section": "offense",
+      "name": "creature.giant-octopus.abilities.jet.name",
+      "actions": "2",
+      "traits": [
+        "move"
+      ],
+      "text": "creature.giant-octopus.abilities.jet.text"
+    },
+    {
+      "id": "writhing-arms",
+      "section": "offense",
+      "name": "creature.giant-octopus.abilities.writhing-arms.name",
+      "actions": "2",
+      "text": "creature.giant-octopus.abilities.writhing-arms.text"
+    }
+  ]
+}

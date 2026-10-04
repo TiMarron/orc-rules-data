@@ -1,0 +1,145 @@
+{
+  "id": "creature.forest-troll",
+  "type": "creature",
+  "name": "creature.forest-troll.name",
+  "traits": [
+    "giant",
+    "humanoid",
+    "troll",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 330,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 6,
+    "int": -2,
+    "wis": 0,
+    "cha": -2
+  },
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 11,
+    "will": 7
+  },
+  "hp": {
+    "value": 125,
+    "note": "creature.forest-troll.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "electricity",
+      "value": 10
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.forest-troll.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+5",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.forest-troll.strikes.claw.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+5",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "easily-misled",
+      "section": "top",
+      "name": "creature.forest-troll.abilities.easily-misled.name",
+      "text": "creature.forest-troll.abilities.easily-misled.text"
+    },
+    {
+      "id": "furious-flailing",
+      "section": "defense",
+      "name": "creature.forest-troll.abilities.furious-flailing.name",
+      "actions": "reaction",
+      "trigger": "creature.forest-troll.abilities.furious-flailing.trigger",
+      "text": "creature.forest-troll.abilities.furious-flailing.text"
+    },
+    {
+      "id": "chase-prey",
+      "section": "offense",
+      "name": "creature.forest-troll.abilities.chase-prey.name",
+      "actions": "2",
+      "text": "creature.forest-troll.abilities.chase-prey.text"
+    },
+    {
+      "id": "rend",
+      "section": "offense",
+      "name": "creature.forest-troll.abilities.rend.name",
+      "ability": "ability.rend",
+      "actions": "1",
+      "text": "creature.forest-troll.abilities.rend.text"
+    }
+  ]
+}

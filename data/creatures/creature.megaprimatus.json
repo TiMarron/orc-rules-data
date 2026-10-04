@@ -1,0 +1,126 @@
+{
+  "id": "creature.megaprimatus",
+  "type": "creature",
+  "name": "creature.megaprimatus.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 2,
+    "con": 5,
+    "int": -4,
+    "wis": 1,
+    "cha": 2
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 16,
+    "will": 13
+  },
+  "hp": {
+    "value": 150
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.megaprimatus.strikes.fist.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.megaprimatus.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+10",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mangling-rend",
+      "section": "offense",
+      "name": "creature.megaprimatus.abilities.mangling-rend.name",
+      "actions": "2",
+      "text": "creature.megaprimatus.abilities.mangling-rend.text"
+    },
+    {
+      "id": "terrifying-display",
+      "section": "offense",
+      "name": "creature.megaprimatus.abilities.terrifying-display.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.megaprimatus.abilities.terrifying-display.text"
+    }
+  ]
+}

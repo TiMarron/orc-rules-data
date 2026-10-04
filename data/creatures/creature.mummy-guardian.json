@@ -1,0 +1,141 @@
+{
+  "id": "creature.mummy-guardian",
+  "type": "creature",
+  "name": "creature.mummy-guardian.name",
+  "traits": [
+    "mummy",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 234,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "necril"
+  ],
+  "languageNote": "creature.mummy-guardian.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 0,
+    "con": 2,
+    "int": -2,
+    "wis": 4,
+    "cha": 2
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 10,
+    "will": 16
+  },
+  "hp": {
+    "value": 125,
+    "note": "creature.mummy-guardian.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "type": "alchemical",
+      "value": 5,
+      "note": "creature.mummy-guardian.weaknesses.0.note"
+    },
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mummy-guardian.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "choking-pain"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "alchemical-weakness",
+      "section": "defense",
+      "name": "creature.mummy-guardian.abilities.alchemical-weakness.name",
+      "text": "creature.mummy-guardian.abilities.alchemical-weakness.text"
+    },
+    {
+      "id": "blighted-consumption",
+      "section": "defense",
+      "name": "creature.mummy-guardian.abilities.blighted-consumption.name",
+      "actions": "reaction",
+      "traits": [
+        "curse",
+        "divine",
+        "poison"
+      ],
+      "trigger": "creature.mummy-guardian.abilities.blighted-consumption.trigger",
+      "text": "creature.mummy-guardian.abilities.blighted-consumption.text"
+    },
+    {
+      "id": "choking-pain",
+      "section": "offense",
+      "name": "creature.mummy-guardian.abilities.choking-pain.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "illusion",
+        "mental",
+        "void"
+      ],
+      "requirements": "creature.mummy-guardian.abilities.choking-pain.requirements",
+      "text": "creature.mummy-guardian.abilities.choking-pain.text"
+    }
+  ]
+}

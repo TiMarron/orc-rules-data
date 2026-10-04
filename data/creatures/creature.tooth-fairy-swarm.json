@@ -1,0 +1,123 @@
+{
+  "id": "creature.tooth-fairy-swarm",
+  "type": "creature",
+  "name": "creature.tooth-fairy-swarm.name",
+  "traits": [
+    "fey",
+    "swarm"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 327,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": -2,
+    "dex": 3,
+    "con": 0,
+    "int": -1,
+    "wis": 2,
+    "cha": 2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 10,
+    "will": 7
+  },
+  "hp": {
+    "value": 28
+  },
+  "immunities": [
+    "grabbed",
+    "precision",
+    "prone",
+    "restrained",
+    "swarm-mind"
+  ],
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "cold-iron",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 2
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 10,
+    "fly": 40
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "plaque-burst",
+      "section": "defense",
+      "name": "creature.tooth-fairy-swarm.abilities.plaque-burst.name",
+      "text": "creature.tooth-fairy-swarm.abilities.plaque-burst.text"
+    },
+    {
+      "id": "pinch",
+      "section": "offense",
+      "name": "creature.tooth-fairy-swarm.abilities.pinch.name",
+      "actions": "1",
+      "text": "creature.tooth-fairy-swarm.abilities.pinch.text"
+    },
+    {
+      "id": "pry",
+      "section": "offense",
+      "name": "creature.tooth-fairy-swarm.abilities.pry.name",
+      "actions": "3",
+      "text": "creature.tooth-fairy-swarm.abilities.pry.text"
+    }
+  ]
+}

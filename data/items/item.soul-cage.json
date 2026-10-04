@@ -1,0 +1,23 @@
+{
+  "id": "item.soul-cage",
+  "type": "item",
+  "name": "item.soul-cage.name",
+  "traits": [
+    "arcane",
+    "void"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.soul-cage.text",
+  "level": 12,
+  "priceCp": 160000,
+  "bulk": "0",
+  "usage": "item.soul-cage.usage",
+  "category": "held"
+}

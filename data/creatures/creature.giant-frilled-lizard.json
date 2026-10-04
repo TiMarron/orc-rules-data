@@ -1,0 +1,124 @@
+{
+  "id": "creature.giant-frilled-lizard",
+  "type": "creature",
+  "name": "creature.giant-frilled-lizard.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 225,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 1,
+    "con": 4,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 12,
+    "will": 9
+  },
+  "hp": {
+    "value": 75
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-frilled-lizard.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.giant-frilled-lizard.strikes.tail.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "intimidating-display",
+      "section": "offense",
+      "name": "creature.giant-frilled-lizard.abilities.intimidating-display.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental",
+        "visual"
+      ],
+      "text": "creature.giant-frilled-lizard.abilities.intimidating-display.text"
+    }
+  ]
+}

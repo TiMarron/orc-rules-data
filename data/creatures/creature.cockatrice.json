@@ -1,0 +1,94 @@
+{
+  "id": "creature.cockatrice",
+  "type": "creature",
+  "name": "creature.cockatrice.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 66,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "small",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": -2,
+    "dex": 4,
+    "con": 1,
+    "int": -3,
+    "wis": 1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 11,
+    "will": 6
+  },
+  "hp": {
+    "value": 45
+  },
+  "immunities": [
+    "petrification"
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cockatrice.strikes.beak.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d8-2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "calcification"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "calcification",
+      "section": "offense",
+      "name": "creature.cockatrice.abilities.calcification.name",
+      "traits": [
+        "incapacitation",
+        "primal"
+      ],
+      "text": "creature.cockatrice.abilities.calcification.text"
+    }
+  ]
+}

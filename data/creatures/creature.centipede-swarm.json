@@ -1,0 +1,120 @@
+{
+  "id": "creature.centipede-swarm",
+  "type": "creature",
+  "name": "creature.centipede-swarm.name",
+  "traits": [
+    "animal",
+    "swarm"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 59,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 3,
+    "int": -5,
+    "wis": 0,
+    "cha": -4
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 11,
+    "will": 5
+  },
+  "hp": {
+    "value": 30
+  },
+  "immunities": [
+    "grabbed",
+    "precision",
+    "prone",
+    "restrained",
+    "swarm-mind"
+  ],
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "climb": 30
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "centipede-swarm-venom",
+      "section": "offense",
+      "name": "creature.centipede-swarm.abilities.centipede-swarm-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.centipede-swarm.abilities.centipede-swarm-venom.text"
+    },
+    {
+      "id": "swarming-bites",
+      "section": "offense",
+      "name": "creature.centipede-swarm.abilities.swarming-bites.name",
+      "actions": "1",
+      "text": "creature.centipede-swarm.abilities.swarming-bites.text"
+    }
+  ]
+}

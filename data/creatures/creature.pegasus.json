@@ -1,0 +1,123 @@
+{
+  "id": "creature.pegasus",
+  "type": "creature",
+  "name": "creature.pegasus.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 261,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.pegasus.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 3
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 11,
+    "will": 7
+  },
+  "hp": {
+    "value": 55
+  },
+  "speeds": {
+    "land": 40,
+    "fly": 80
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pegasus.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.pegasus.strikes.wing.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "buck",
+      "section": "defense",
+      "name": "creature.pegasus.abilities.buck.name",
+      "ability": "ability.buck",
+      "actions": "reaction",
+      "text": "creature.pegasus.abilities.buck.text"
+    },
+    {
+      "id": "assisted-mount",
+      "section": "offense",
+      "name": "creature.pegasus.abilities.assisted-mount.name",
+      "actions": "1",
+      "requirements": "creature.pegasus.abilities.assisted-mount.requirements",
+      "text": "creature.pegasus.abilities.assisted-mount.text"
+    },
+    {
+      "id": "gallop",
+      "section": "offense",
+      "name": "creature.pegasus.abilities.gallop.name",
+      "actions": "2",
+      "text": "creature.pegasus.abilities.gallop.text"
+    }
+  ]
+}

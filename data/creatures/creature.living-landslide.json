@@ -1,0 +1,124 @@
+{
+  "id": "creature.living-landslide",
+  "type": "creature",
+  "name": "creature.living-landslide.name",
+  "traits": [
+    "earth",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 142,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": -1,
+    "con": 4,
+    "int": -2,
+    "wis": 1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 8,
+    "will": 10
+  },
+  "hp": {
+    "value": 90
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 25,
+    "burrow": 25,
+    "note": "creature.living-landslide.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.living-landslide.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "earthbound",
+      "section": "top",
+      "name": "creature.living-landslide.abilities.earthbound.name",
+      "text": "creature.living-landslide.abilities.earthbound.text"
+    },
+    {
+      "id": "crumble",
+      "section": "defense",
+      "name": "creature.living-landslide.abilities.crumble.name",
+      "actions": "reaction",
+      "trigger": "creature.living-landslide.abilities.crumble.trigger",
+      "text": "creature.living-landslide.abilities.crumble.text"
+    },
+    {
+      "id": "earth-glide",
+      "section": "offense",
+      "name": "creature.living-landslide.abilities.earth-glide.name",
+      "text": "creature.living-landslide.abilities.earth-glide.text"
+    },
+    {
+      "id": "sliding-earth",
+      "section": "offense",
+      "name": "creature.living-landslide.abilities.sliding-earth.name",
+      "actions": "2",
+      "text": "creature.living-landslide.abilities.sliding-earth.text"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "creature.sprigjack",
+  "type": "creature",
+  "name": "creature.sprigjack.name",
+  "traits": [
+    "fey",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 332,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "tiny",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 3
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": -1,
+    "wis": 1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 7,
+    "will": 3
+  },
+  "hp": {
+    "value": 10
+  },
+  "weaknesses": [
+    {
+      "type": "axes",
+      "value": 2
+    },
+    {
+      "type": "fire",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sprigjack.strikes.claw.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.sprigjack.strikes.splinter.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 30,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bramble-jump",
+      "section": "offense",
+      "name": "creature.sprigjack.abilities.bramble-jump.name",
+      "actions": "3",
+      "traits": [
+        "plant",
+        "primal",
+        "teleportation",
+        "wood"
+      ],
+      "requirements": "creature.sprigjack.abilities.bramble-jump.requirements",
+      "text": "creature.sprigjack.abilities.bramble-jump.text"
+    }
+  ]
+}

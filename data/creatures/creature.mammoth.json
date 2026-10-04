@@ -1,0 +1,150 @@
+{
+  "id": "creature.mammoth",
+  "type": "creature",
+  "name": "creature.mammoth.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 150,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "huge",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 1,
+    "con": 5,
+    "int": -4,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 15,
+    "will": 18,
+    "note": "creature.mammoth.saves.note"
+  },
+  "hp": {
+    "value": 190
+  },
+  "speeds": {
+    "land": 45
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mammoth.strikes.tusk.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d8+12",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mammoth.strikes.trunk.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [],
+      "effects": [
+        {
+          "own": "grabbing-trunk"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mammoth.strikes.foot.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+12",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cold-adaptation",
+      "section": "defense",
+      "name": "creature.mammoth.abilities.cold-adaptation.name",
+      "text": "creature.mammoth.abilities.cold-adaptation.text"
+    },
+    {
+      "id": "dual-tusks",
+      "section": "offense",
+      "name": "creature.mammoth.abilities.dual-tusks.name",
+      "actions": "1",
+      "text": "creature.mammoth.abilities.dual-tusks.text"
+    },
+    {
+      "id": "grabbing-trunk",
+      "section": "offense",
+      "name": "creature.mammoth.abilities.grabbing-trunk.name",
+      "text": "creature.mammoth.abilities.grabbing-trunk.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.mammoth.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.mammoth.abilities.trample.text"
+    }
+  ]
+}
