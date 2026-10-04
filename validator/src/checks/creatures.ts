@@ -32,6 +32,17 @@ export const creaturesCheck: Check = (ds) => {
     list(f.record.strikes).forEach((s, i) => list(s.effects).forEach((e, j) => resolve(e.own, `strikes[${i}].effects[${j}].own`)));
     const perception = f.record.perception as Record<string, unknown> | undefined;
     list(perception?.senses).forEach((s, i) => resolve(s.own, `perception.senses[${i}].own`));
+    const ownTraits = (entries: unknown, name: string, what: string): void => {
+      list(entries).forEach((e, i) => {
+        if (e.traitValues === null || typeof e.traitValues !== 'object' || Array.isArray(e.traitValues)) return;
+        const traits = Array.isArray(e.traits) ? e.traits : [];
+        for (const slug of Object.keys(e.traitValues)) {
+          if (!traits.includes(slug)) error(`${name}[${i}].traitValues: "${slug}" is not among this ${what}'s traits`);
+        }
+      });
+    };
+    ownTraits(f.record.strikes, 'strikes', 'Strike');
+    ownTraits(f.record.abilities, 'abilities', 'ability');
     for (const t of Array.isArray(f.record.traits) ? f.record.traits : []) {
       if (typeof t === 'string' && SIZES.has(t)) error(`traits: "${t}" is a size and belongs in "size"`);
     }
