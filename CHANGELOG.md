@@ -16,8 +16,8 @@ major for renamed or removed ids, new required fields and markup changes.
 - The Monster Core traits those creatures carry.
 - A creature's `spellcasting`: its innate, prepared, spontaneous and focus
   spell blocks, each with a DC, an optional attack, and its cantrips, ranks and
-  constant spells (at will, repeated, slots, restrictions as printed). A
-  creature's sense may now be `{ spell }`, a sense a spell gives. Both are
+  constant spells (at will or repeated, never both; slots; restrictions as
+  printed). A DC is at least 1. A creature's sense may now be `{ spell }`, a sense a spell gives. Both are
   optional additions to the creature schema; the schema itself says which
   fields each kind of block takes.
 

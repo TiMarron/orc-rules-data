@@ -835,10 +835,27 @@ describe('type schemas', () => {
 
   it('rejects a spell entry that is not a spell reference, a count under two, an at-will that is not true, or a note that is not a key', () => {
     const entry = (e: unknown) => withBlocks([{ kind: 'innate', tradition: 'divine', dc: 20, ranks: [{ rank: 1, spells: [e] }] }]);
-    expect(issuesFor('creature', entry({ spell: 'spell.heal', count: 2, atWill: true, note: 'creature.cave-bear.spellcasting.0.ranks.1.0.note' }))).toEqual([]);
+    expect(issuesFor('creature', entry({ spell: 'spell.heal', count: 2, note: 'creature.cave-bear.spellcasting.0.ranks.1.0.note' }))).toEqual([]);
+    expect(issuesFor('creature', entry({ spell: 'spell.heal', atWill: true, note: 'creature.cave-bear.spellcasting.0.ranks.1.0.note' }))).toEqual([]);
     for (const bad of [{ spell: 'Heal' }, { spell: 'feat.heal' }, { atWill: true }, { spell: 'spell.heal', count: 1 }, { spell: 'spell.heal', count: 2.5 }, { spell: 'spell.heal', atWill: false }, { spell: 'spell.heal', note: 'self only' }, { spell: 'spell.heal', text: 'x' }]) {
       expect(issuesFor('creature', entry(bad)).join('\n'), JSON.stringify(bad)).toContain('/spellcasting/0');
     }
+  });
+
+  it('rejects a spell that is both at will and counted: a spell is cast at will or so many times a day, not both', () => {
+    const entry = (e: unknown) => withBlocks([{ kind: 'innate', tradition: 'divine', dc: 20, ranks: [{ rank: 1, spells: [e] }] }]);
+    expect(issuesFor('creature', entry({ spell: 'spell.heal', count: 2, atWill: true })).join('\n')).toContain('/spellcasting/0');
+  });
+
+  it('rejects a DC below 1, in every kind of block', () => {
+    const spells = [{ spell: 'spell.heal' }];
+    const blocks = (dc: number) => [
+      { kind: 'innate', tradition: 'divine', dc, ranks: [{ rank: 1, spells }] },
+      { kind: 'spontaneous', tradition: 'arcane', dc, ranks: [{ rank: 1, spells }] },
+      { kind: 'focus', name: 'creature.cave-bear.spellcasting.0.name', focusPoints: 1, dc, ranks: [{ rank: 1, spells }] },
+    ];
+    for (const b of blocks(1)) expect(issuesFor('creature', withBlocks([b])), b.kind).toEqual([]);
+    for (const dc of [0, -3]) for (const b of blocks(dc)) expect(issuesFor('creature', withBlocks([b])).join('\n'), `${b.kind} ${dc}`).toContain('/spellcasting/0');
   });
 
   it('rejects a rank outside 1 to 10, among cantrips, ranks and constants alike', () => {
