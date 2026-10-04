@@ -126,6 +126,9 @@ cost tokens.
   (`level`, `attributes`, `ac`, `saves`, `hp`, `speeds`, `perception`); a
   qualifier the book prints beside a number ("13 when broken", "+2 status to
   all saves vs. magic") is kept as text in that field's `note`, not parsed.
+- A creature's `perception.senses` entry is `{ ability }`, `{ own }` or
+  `{ text }`; an `{ ability }` sense may carry `text` too, when the stat block
+  prints more than the ability's own name ("greater darkvision").
 - A creature's size is in `size` and never among its `traits`: the book prints
   it in the trait line, but it has no glossary entry, and the rules compare
   sizes as a scale. The same holds for rarity, which is the envelope's `rarity`.

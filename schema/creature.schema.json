@@ -19,7 +19,7 @@
     },
     "sense": {
       "oneOf": [
-        { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } },
+        { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than the ability's own name: \"greater darkvision\"." }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } },
         { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } },
         { "type": "object", "additionalProperties": false, "required": ["text"], "properties": { "text": { "$ref": "#/$defs/key" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } }
       ]
