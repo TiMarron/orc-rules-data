@@ -4,6 +4,22 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Added
+
+- Creatures, a new record type, and the universal monster abilities they name
+  (`ability`). The first creatures are those of Monster Core that neither cast
+  spells nor carry items. The validator checks that a Strike effect or a sense
+  naming one of the creature's own abilities resolves, and that a size never
+  appears among the traits.
+- The Monster Core traits those creatures carry.
+
+### Changed
+
+- `weapon.damage.type` takes its list of damage types from `common.schema.json`,
+  where a creature's Strike reads the same one. No record changes.
+
 ## 0.5.0 — 2026-10-01
 
 ### Added

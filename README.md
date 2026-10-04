@@ -7,7 +7,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
-  school, thesis, package, archetype.
+  school, thesis, package, archetype, ability, creature.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -122,6 +122,32 @@ cost tokens.
 - A background's trained skill may instead be a choice, in the same shape as a
   class's `proficiencies.skills.choices`; a background must grant at least one
   skill through `skills` or through `choices`.
+- A `creature` is a stat block as structure. Its numbers are plain fields
+  (`level`, `attributes`, `ac`, `saves`, `hp`, `speeds`, `perception`); a
+  qualifier the book prints beside a number ("13 when broken", "+2 status to
+  all saves vs. magic") is kept as text in that field's `note`, not parsed.
+- A creature's size is in `size` and never among its `traits`: the book prints
+  it in the trait line, but it has no glossary entry, and the rules compare
+  sizes as a scale. The same holds for rarity, which is the envelope's `rarity`.
+- `creature.strikes` lists each Strike with its attack `bonus`, its `traits`
+  (a parameter such as reach in `traitValues`, a ranged Strike's distance in
+  `range` or `rangeIncrement`) and its `damage` parts as `{ dice, type }`.
+  `effects` is what the Strike does besides damage, each entry exactly one of
+  `{ ability }` (a universal ability), `{ own }` (one of this creature's
+  abilities, by its `id`) or `{ text }`.
+- `creature.abilities` holds the creature's own abilities in print order.
+  `section` says where in the stat block it stands: `top` (above the first
+  rule), `defense` or `offense`. The header is structure — `actions`, `traits`,
+  `aura`, `trigger`, `frequency`, `requirements` — and the effect is `text`.
+  An entry that only points at a universal ability is `{ ability, section }`,
+  with the creature's own parameters for it (a DC, a size) in `text`.
+- An `ability` is a universal monster ability — Grab, Darkvision, Trample —
+  defined once and pointed at by every creature that has it.
+- A creature's `languages` are identifiers, as an ancestry's are; what the book
+  prints after them (telepathy, "can't speak any language") is `languageNote`.
+- Creatures in this release are those without spells or carried items; the
+  rest follow once spellcasting and items are modelled. A creature record has
+  no `text` yet: descriptive lore is not imported.
 
 ## Versioning
 
