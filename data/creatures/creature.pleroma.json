@@ -31,8 +31,9 @@
       }
     ]
   },
-  "languages": [],
-  "languageNote": "creature.pleroma.language-note",
+  "languages": [
+    "envisioning"
+  ],
   "skills": [
     {
       "skill": "skill.acrobatics",
@@ -315,5 +316,5 @@
       ]
     }
   ],
-  "editNote": "Constant spell restored from the book: page 11 prints \"Constant (8th) truesight; (4th) unfettered movement\"; the source lists unfettered movement as an ordinary spell of that rank and the errata does not touch it. Languages corrected to the book: page 11 prints \"Languages envisioning\" and no spoken language; the source adds Common and the errata does not touch it."
+  "editNote": "Constant spell restored from the book: page 11 prints \"Constant (8th) truesight; (4th) unfettered movement\"; the source lists unfettered movement as an ordinary spell of that rank and the errata does not touch it. Languages corrected to the book: page 11 prints \"Languages envisioning\" and no spoken language, so envisioning is its one language; the source adds Common and the errata does not touch it."
 }

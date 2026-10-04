@@ -3040,7 +3040,6 @@
   "creature.pleroma.abilities.reality-twist.text": "The critical failure becomes a normal failure.",
   "creature.pleroma.abilities.reality-twist.trigger": "The pleroma critically fails a saving throw",
   "creature.pleroma.hp.note": "regeneration 20 (deactivated by [[trait.spirit|spirit]])",
-  "creature.pleroma.language-note": "envisioning",
   "creature.pleroma.name": "Pleroma",
   "creature.pleroma.saves.note": "+1 status to all saves vs. [[trait.magical|magic]]",
   "creature.pleroma.speeds.note": "[[spell.unfettered-movement|unfettered movement]]",
