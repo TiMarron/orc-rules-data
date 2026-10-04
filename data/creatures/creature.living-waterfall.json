@@ -1,0 +1,140 @@
+{
+  "id": "creature.living-waterfall",
+  "type": "creature",
+  "name": "creature.living-waterfall.name",
+  "traits": [
+    "aquatic",
+    "elemental",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 148,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": -2,
+    "wis": 1,
+    "cha": 0
+  },
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 12,
+    "will": 10
+  },
+  "hp": {
+    "value": 90
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "swim": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.living-waterfall.strikes.wave.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "choice": [
+            {
+              "ability": "ability.push",
+              "text": "creature.living-waterfall.strikes.wave.effects.0.0"
+            },
+            {
+              "ability": "ability.pull",
+              "text": "creature.living-waterfall.strikes.wave.effects.0.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "waterbound",
+      "section": "top",
+      "name": "creature.living-waterfall.abilities.waterbound.name",
+      "text": "creature.living-waterfall.abilities.waterbound.text"
+    },
+    {
+      "id": "vortex",
+      "section": "defense",
+      "name": "creature.living-waterfall.abilities.vortex.name",
+      "traits": [
+        "aura",
+        "water"
+      ],
+      "aura": 30,
+      "text": "creature.living-waterfall.abilities.vortex.text"
+    },
+    {
+      "id": "drench",
+      "section": "offense",
+      "name": "creature.living-waterfall.abilities.drench.name",
+      "actions": "1",
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "text": "creature.living-waterfall.abilities.drench.text"
+    }
+  ]
+}

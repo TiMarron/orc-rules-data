@@ -1,0 +1,226 @@
+{
+  "id": "creature.terotricus",
+  "type": "creature",
+  "name": "creature.terotricus.name",
+  "traits": [
+    "fungus",
+    "unholy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 326,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 19,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 31,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 120
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "elven",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 37
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 32
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 35
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 31
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 31
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": 5,
+    "con": 9,
+    "int": -1,
+    "wis": 6,
+    "cha": 5
+  },
+  "ac": {
+    "value": 42
+  },
+  "saves": {
+    "fortitude": 34,
+    "reflex": 28,
+    "will": 33,
+    "note": "creature.terotricus.saves.note"
+  },
+  "hp": {
+    "value": 370,
+    "note": "creature.terotricus.hp.note"
+  },
+  "immunities": [
+    "controlled",
+    "disease",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 15
+    },
+    {
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "type": "holy",
+      "value": 15
+    },
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "burrow": 25,
+    "climb": 25,
+    "swim": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.terotricus.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 37,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "4d10+18",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        {
+          "choice": [
+            {
+              "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+              "text": "creature.terotricus.strikes.tentacle.effects.0.0"
+            },
+            {
+              "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+              "text": "creature.terotricus.strikes.tentacle.effects.0.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.terotricus.strikes.spores.name",
+      "actions": "1",
+      "bonus": 37,
+      "rangeIncrement": 80,
+      "traits": [
+        "brutal",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "4d8+8",
+          "type": "poison"
+        },
+        {
+          "dice": "2d6",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        {
+          "own": "spore-blight"
+        },
+        {
+          "own": "sticky-spores"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "spore-cloud",
+      "section": "defense",
+      "name": "creature.terotricus.abilities.spore-cloud.name",
+      "traits": [
+        "aura",
+        "disease"
+      ],
+      "aura": 30,
+      "text": "creature.terotricus.abilities.spore-cloud.text"
+    },
+    {
+      "id": "infest-environs",
+      "section": "offense",
+      "name": "creature.terotricus.abilities.infest-environs.name",
+      "actions": "2",
+      "traits": [
+        "primal"
+      ],
+      "frequency": "creature.terotricus.abilities.infest-environs.frequency",
+      "requirements": "creature.terotricus.abilities.infest-environs.requirements",
+      "text": "creature.terotricus.abilities.infest-environs.text"
+    },
+    {
+      "id": "spore-blight",
+      "section": "offense",
+      "name": "creature.terotricus.abilities.spore-blight.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.terotricus.abilities.spore-blight.text"
+    },
+    {
+      "id": "sticky-spores",
+      "section": "offense",
+      "name": "creature.terotricus.abilities.sticky-spores.name",
+      "text": "creature.terotricus.abilities.sticky-spores.text"
+    }
+  ]
+}

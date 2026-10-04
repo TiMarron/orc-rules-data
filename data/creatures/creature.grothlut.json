@@ -1,0 +1,127 @@
+{
+  "id": "creature.grothlut",
+  "type": "creature",
+  "name": "creature.grothlut.name",
+  "traits": [
+    "aberration",
+    "mindless"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 152,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": -2,
+    "con": 4,
+    "int": -5,
+    "wis": 0,
+    "cha": -3
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 5,
+    "will": 7
+  },
+  "hp": {
+    "value": 50
+  },
+  "immunities": [
+    "acid",
+    "mental"
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.grothlut.strikes.claw.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+8",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.grothlut.strikes.digestive-spew.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 15,
+      "traits": [
+        "acid",
+        "splash"
+      ],
+      "damage": [
+        {
+          "dice": "2d6",
+          "type": "acid"
+        },
+        {
+          "dice": "1d6",
+          "type": "acid",
+          "splash": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "disgusting-demise",
+      "section": "defense",
+      "name": "creature.grothlut.abilities.disgusting-demise.name",
+      "traits": [
+        "acid",
+        "poison"
+      ],
+      "text": "creature.grothlut.abilities.disgusting-demise.text"
+    },
+    {
+      "id": "piteous-moan",
+      "section": "offense",
+      "name": "creature.grothlut.abilities.piteous-moan.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "aura",
+        "concentrate",
+        "emotion",
+        "mental",
+        "occult"
+      ],
+      "aura": 60,
+      "text": "creature.grothlut.abilities.piteous-moan.text"
+    }
+  ]
+}

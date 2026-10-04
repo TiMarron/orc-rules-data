@@ -1,0 +1,131 @@
+{
+  "id": "creature.dire-wolf",
+  "type": "creature",
+  "name": "creature.dire-wolf.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 350,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 4,
+    "int": -4,
+    "wis": 3,
+    "cha": -2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 8,
+    "will": 8
+  },
+  "hp": {
+    "value": 50
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dire-wolf.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d10+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "choice": [
+            {
+              "ability": "ability.grab"
+            },
+            {
+              "ability": "ability.knockdown"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "buck",
+      "section": "defense",
+      "name": "creature.dire-wolf.abilities.buck.name",
+      "ability": "ability.buck",
+      "actions": "reaction",
+      "text": "creature.dire-wolf.abilities.buck.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.dire-wolf.abilities.pack-attack.name",
+      "text": "creature.dire-wolf.abilities.pack-attack.text"
+    },
+    {
+      "id": "worry",
+      "section": "offense",
+      "name": "creature.dire-wolf.abilities.worry.name",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "requirements": "creature.dire-wolf.abilities.worry.requirements",
+      "text": "creature.dire-wolf.abilities.worry.text"
+    }
+  ]
+}

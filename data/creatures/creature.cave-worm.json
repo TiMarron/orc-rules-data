@@ -1,0 +1,213 @@
+{
+  "id": "creature.cave-worm",
+  "type": "creature",
+  "name": "creature.cave-worm.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 54,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 13,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 100
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 30
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": -1,
+    "con": 7,
+    "int": -5,
+    "wis": -1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 28,
+    "reflex": 21,
+    "will": 21
+  },
+  "hp": {
+    "value": 270
+  },
+  "speeds": {
+    "land": 40,
+    "burrow": 40,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cave-worm.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "deadly",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "2d10",
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d10+15",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.cave-worm.strikes.jaws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.cave-worm.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "poison",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d12+15",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "cave-worm-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.cave-worm.strikes.body.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "1d10+13",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.cave-worm.strikes.regurgitate.name",
+      "actions": "1",
+      "bonus": 26,
+      "rangeIncrement": 60,
+      "traits": [
+        "brutal"
+      ],
+      "damage": [],
+      "effects": [
+        {
+          "own": "regurgitate"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "inexorable",
+      "section": "defense",
+      "name": "creature.cave-worm.abilities.inexorable.name",
+      "text": "creature.cave-worm.abilities.inexorable.text"
+    },
+    {
+      "id": "slough-skin",
+      "section": "defense",
+      "name": "creature.cave-worm.abilities.slough-skin.name",
+      "actions": "reaction",
+      "frequency": "creature.cave-worm.abilities.slough-skin.frequency",
+      "trigger": "creature.cave-worm.abilities.slough-skin.trigger",
+      "text": "creature.cave-worm.abilities.slough-skin.text"
+    },
+    {
+      "id": "cave-worm-venom",
+      "section": "offense",
+      "name": "creature.cave-worm.abilities.cave-worm-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.cave-worm.abilities.cave-worm-venom.text"
+    },
+    {
+      "id": "fast-swallow",
+      "section": "offense",
+      "name": "creature.cave-worm.abilities.fast-swallow.name",
+      "actions": "reaction",
+      "trigger": "creature.cave-worm.abilities.fast-swallow.trigger",
+      "text": "creature.cave-worm.abilities.fast-swallow.text"
+    },
+    {
+      "id": "regurgitate",
+      "section": "offense",
+      "name": "creature.cave-worm.abilities.regurgitate.name",
+      "text": "creature.cave-worm.abilities.regurgitate.text"
+    },
+    {
+      "id": "rock-tunneler",
+      "section": "offense",
+      "name": "creature.cave-worm.abilities.rock-tunneler.name",
+      "text": "creature.cave-worm.abilities.rock-tunneler.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.cave-worm.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.cave-worm.abilities.swallow-whole.text"
+    },
+    {
+      "id": "thrash",
+      "section": "offense",
+      "name": "creature.cave-worm.abilities.thrash.name",
+      "actions": "2",
+      "text": "creature.cave-worm.abilities.thrash.text"
+    }
+  ]
+}
