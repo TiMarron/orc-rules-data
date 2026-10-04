@@ -781,7 +781,7 @@ describe('type schemas', () => {
     }
   });
 
-  it('rejects potency or runes on an entry that has no item, a rune without an item, and a rune\'s variant (a grade is its own record)', () => {
+  it('rejects potency, runes or a material on an entry that has no item, a rune without an item, and a rune\'s variant (a grade is its own record)', () => {
     const c = structuredClone(VALID.creature) as any;
     for (const bad of [
       { name: 'creature.cave-bear.items.0.name', potency: 1 },
@@ -790,15 +790,16 @@ describe('type schemas', () => {
       { item: 'item.longsword', runes: [{ variant: 'greater' }] },
       { item: 'item.longsword', runes: [{ item: 'item.striking', variant: 'greater' }] },
       { item: 'item.longsword', runes: [{ item: 'item.striking', price: 1 }] },
+      { name: 'creature.cave-bear.items.0.name', material: 'silver' },
     ]) {
       c.items = [bad];
       expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/items/0');
     }
   });
 
-  it('rejects ammunition without a count, with neither an item nor a name, with a count below one, and with a name that is not a key', () => {
+  it('rejects ammunition without a count, with neither an item nor a name, with both (it is named once), with a count below one, and with a name that is not a key', () => {
     const c = structuredClone(VALID.creature) as any;
-    for (const ammunition of [{ item: 'item.arrows' }, { count: 20 }, { item: 'item.arrows', count: 0 }, { item: 'item.arrows', count: 20, note: 'x' }, { name: 'arrows', count: 20 }]) {
+    for (const ammunition of [{ item: 'item.arrows' }, { count: 20 }, { item: 'item.arrows', count: 0 }, { item: 'item.arrows', count: 20, note: 'x' }, { name: 'arrows', count: 20 }, { item: 'item.arrows', name: 'creature.cave-bear.items.0.ammunition.name', count: 20 }]) {
       c.items = [{ item: 'item.longbow', ammunition }];
       expect(issuesFor('creature', c).join('\n'), JSON.stringify(ammunition)).toContain('/items/0/ammunition');
     }

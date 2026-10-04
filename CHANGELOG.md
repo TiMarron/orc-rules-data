@@ -24,7 +24,8 @@ major for renamed or removed ids, new required fields and markup changes.
   potency, runes, material, count, ammunition, a shield's statistics, a note),
   and a Strike's `item`, the carried item it is made with. A rune is the
   record of its own grade (`item.striking-greater`). The validator checks that
-  a Strike's item is among the creature's items. Optional additions to the
+  a Strike's item is among the creature's items, that a rune is a record of
+  category `rune` and an entry's own item is not one. Optional additions to the
   creature schema.
 
 ### Changed

@@ -174,7 +174,7 @@
     },
     "ammunition": {
       "type": "object", "additionalProperties": false, "required": ["count"],
-      "anyOf": [
+      "oneOf": [
         { "properties": { "item": true }, "required": ["item"] },
         { "properties": { "name": true }, "required": ["name"] }
       ],
@@ -183,7 +183,7 @@
         "name": { "$ref": "#/$defs/key", "$comment": "The printed name, when the dataset has no record for the ammunition." },
         "count": { "type": "integer", "minimum": 1 }
       },
-      "$comment": "\"(20 arrows)\" after a weapon: what it fires, and how many of them the creature carries."
+      "$comment": "\"(20 arrows)\" after a weapon: what it fires, and how many of them the creature carries. The ammunition is named once: by its record, or by its printed name when there is none."
     },
     "carried": {
       "type": "object", "additionalProperties": false,
@@ -194,6 +194,7 @@
       "dependentRequired": {
         "potency": ["item"],
         "runes": ["item"],
+        "material": ["item"],
         "hardness": ["hp", "bt"],
         "hp": ["hardness", "bt"],
         "bt": ["hardness", "hp"]
@@ -211,7 +212,7 @@
         "bt": { "type": "integer", "minimum": 0 },
         "note": { "$ref": "#/$defs/key", "$comment": "What else the parenthesis says, as printed: \"see sidebar\", \"handheld\"." }
       },
-      "$comment": "One entry of the stat block's Items line: an item of the dataset, or only a name when there is none. `potency` and `runes` belong to an entry that has `item`."
+      "$comment": "One entry of the stat block's Items line: an item of the dataset, or only a name when there is none. `potency`, `runes` and `material` belong to an entry that has `item`."
     },
     "ability": {
       "type": "object", "additionalProperties": false, "required": ["id", "section", "name"],
