@@ -15,7 +15,12 @@
     },
     "typed": {
       "type": "object", "additionalProperties": false, "required": ["type", "value"],
-      "properties": { "type": { "$ref": "#/$defs/slug" }, "value": { "type": "integer", "minimum": 1 }, "note": { "$ref": "#/$defs/key" } }
+      "properties": {
+        "type": { "$ref": "#/$defs/slug" },
+        "value": { "type": "integer", "minimum": 1 },
+        "except": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true, "$comment": "What bypasses the resistance (or weakness): damage types, materials, traits (adamantine, slashing, ghost-touch), when the book prints a plain list. A qualification that is not a plain list (\"double resistance vs. non-magical\", \"magical silver\") stays in `note`." },
+        "note": { "$ref": "#/$defs/key" }
+      }
     },
     "sense": {
       "oneOf": [
@@ -48,6 +53,7 @@
         "bonus": { "type": "integer" },
         "traits": { "$ref": "#/$defs/traits" },
         "traitValues": { "$ref": "#/$defs/traitValues" },
+        "material": { "$ref": "#/$defs/slug", "$comment": "The precious material the Strike counts as (cold iron, silver, adamantine); the same slug a weakness or a resistance exception names. The book prints it among the Strike's traits although it is a material, not a trait." },
         "range": { "$ref": "#/$defs/feet", "$comment": "A ranged Strike with a flat maximum range." },
         "rangeIncrement": { "$ref": "#/$defs/feet" },
         "reload": { "type": "integer", "minimum": 0, "maximum": 3, "$comment": "Actions it takes to reload, which the book prints among the Strike's traits (\"reload 1\") although it is a weapon's statistic, not a trait." },

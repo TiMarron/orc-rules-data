@@ -140,7 +140,15 @@ cost tokens.
   this creature's abilities, by its `id`) or `{ text }`. An `{ ability }`
   effect may carry `text` too, when the stat block prints more than the
   ability's own name: "Improved Grab" (one universal record covers Improved
-  Grab, Knockdown and Push), "Push 10 feet".
+  Grab, Knockdown and Push), "Push 10 feet". The book prints a precious
+  material among a Strike's traits ("cold iron"); it is not a trait and goes in
+  the Strike's `material`, the same slug a weakness or an exception names.
+- A creature's `resistances` and `weaknesses` are `{ type, value }` entries.
+  When the book prints what bypasses one as a plain list ("except adamantine
+  or bludgeoning") it is `except`, an array of slugs (damage types, materials,
+  traits); `note` keeps any qualification that is not such a list ("double
+  resistance vs. non-magical"). Resistance to all damage is the type
+  `all-damage`.
 - `creature.abilities` holds the creature's own abilities in print order, each
   with an `id`, a `name` and a `section` that says where in the stat block it
   stands: `top` (above the first rule), `defense` or `offense`. The header is
