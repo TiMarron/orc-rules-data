@@ -42,6 +42,12 @@ describe('creatures check', () => {
     expect(messages({ abilities: twice })).toEqual(['abilities: "venom" is listed twice']);
   });
 
+  it('treats an entry that is an instance of a universal ability like any other: `own` can name it, and its id is unique', () => {
+    const trample = { id: 'trample', section: 'offense', name: 'creature.viper.abilities.trample.name', ability: 'ability.trample', actions: '3' };
+    expect(messages({ abilities: [trample], strikes: [{ effects: [{ own: 'trample' }] }] })).toEqual([]);
+    expect(messages({ abilities: [trample, { ...trample, section: 'defense' }] })).toEqual(['abilities: "trample" is listed twice']);
+  });
+
   it('rejects a size among the traits', () => {
     expect(messages({ traits: ['animal', 'large'] })).toEqual(['traits: "large" is a size and belongs in "size"']);
   });

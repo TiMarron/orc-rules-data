@@ -36,12 +36,12 @@ const VALID: Record<string, Record<string, unknown>> = {
     strikes: [{
       kind: 'melee', name: 'creature.cave-bear.strikes.claw.name', actions: '1', bonus: 16, traits: ['agile', 'reach'], traitValues: { reach: '10' },
       damage: [{ dice: '2d8+6', type: 'slashing' }, { dice: '1d6', type: 'bleed', persistent: true }],
-      effects: [{ ability: 'ability.grab' }, { own: 'mauler' }],
+      effects: [{ ability: 'ability.grab' }, { own: 'mauler' }, { ability: 'ability.improved-grab', text: 'creature.cave-bear.strikes.claw.effects.2' }],
     }],
     abilities: [
       { id: 'mauler', section: 'offense', name: 'creature.cave-bear.abilities.mauler.name', text: 'creature.cave-bear.abilities.mauler.text' },
       { id: 'rush', section: 'offense', name: 'creature.cave-bear.abilities.rush.name', actions: '2', traits: ['aura'], aura: 20, text: 'creature.cave-bear.abilities.rush.text' },
-      { ability: 'ability.trample', section: 'offense', text: 'creature.cave-bear.abilities.trample.text' },
+      { id: 'trample', section: 'offense', name: 'creature.cave-bear.abilities.trample.name', ability: 'ability.trample', actions: '3', text: 'creature.cave-bear.abilities.trample.text' },
     ],
   }),
   package: record('package', 'fighter', {
@@ -679,6 +679,30 @@ describe('type schemas', () => {
     const issues = issuesFor('creature', c);
     expect(issues.length).toBeGreaterThanOrEqual(1);
     expect(issues.join('\n')).toContain('/strikes/0/effects/0');
+  });
+
+  it('rejects an ability entry that only points at a universal ability, without an id and a name of its own', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.abilities[2] = { ability: 'ability.trample', section: 'offense', text: 'creature.cave-bear.abilities.trample.text' };
+    const issues = issuesFor('creature', c).join('\n');
+    expect(issues).toContain('/abilities/2');
+    expect(issues).toContain("must have required property 'id'");
+  });
+
+  it('rejects text on a Strike effect that names one of the creature\'s own abilities', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].effects = [{ own: 'mauler', text: 'creature.cave-bear.strikes.claw.effects.0' }];
+    expect(issuesFor('creature', c).join('\n')).toContain('/strikes/0/effects/0');
+  });
+
+  it('accepts a Strike\'s reload, and rejects one that is not a small whole number', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes.push({ kind: 'ranged', name: 'creature.cave-bear.strikes.crossbow.name', actions: '1', bonus: 12, traits: [], rangeIncrement: 120, reload: 1, damage: [{ dice: '1d8', type: 'piercing' }] });
+    expect(issuesFor('creature', c)).toEqual([]);
+    for (const reload of [4, -1, '1', 1.5]) {
+      c.strikes[1].reload = reload;
+      expect(issuesFor('creature', c).join('\n')).toContain('/strikes/1/reload');
+    }
   });
 
   it('rejects damage dice that are not NdM, NdM±K or a flat number', () => {
