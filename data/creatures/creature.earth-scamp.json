@@ -1,0 +1,130 @@
+{
+  "id": "creature.earth-scamp",
+  "type": "creature",
+  "name": "creature.earth-scamp.name",
+  "traits": [
+    "earth",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 146,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 3,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 2
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": -1,
+    "con": 2,
+    "int": -2,
+    "wis": 0,
+    "cha": -1
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 4,
+    "will": 3
+  },
+  "hp": {
+    "value": 20,
+    "note": "creature.earth-scamp.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 20,
+    "burrow": 20,
+    "fly": 15
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.earth-scamp.strikes.body.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "scree-breath",
+      "section": "offense",
+      "name": "creature.earth-scamp.abilities.scree-breath.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "earth"
+      ],
+      "text": "creature.earth-scamp.abilities.scree-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 17,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.enlarge",
+              "note": "creature.earth-scamp.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.one-with-stone"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

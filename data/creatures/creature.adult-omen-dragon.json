@@ -1,0 +1,287 @@
+{
+  "id": "creature.adult-omen-dragon",
+  "type": "creature",
+  "name": "creature.adult-omen-dragon.name",
+  "traits": [
+    "dragon",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 11,
+  "size": "large",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "fey",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 20
+    },
+    {
+      "lore": "creature.adult-omen-dragon.lore.3",
+      "mod": 26
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 24,
+      "note": "creature.adult-omen-dragon.skills.4.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 24
+    },
+    {
+      "skill": "skill.society",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 4,
+    "con": 5,
+    "int": 7,
+    "wis": 6,
+    "cha": 3
+  },
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 19,
+    "will": 23,
+    "note": "creature.adult-omen-dragon.saves.note"
+  },
+  "hp": {
+    "value": 185
+  },
+  "immunities": [
+    "confused",
+    "doomed",
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 50,
+    "fly": 130
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.adult-omen-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+11",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d8",
+          "type": "mental"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-omen-dragon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+11",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d8",
+          "type": "mental"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-omen-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+11",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d8",
+          "type": "mental"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-omen-dragon.strikes.wing.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d8+11",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d8",
+          "type": "mental"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "untethered-to-fate",
+      "section": "defense",
+      "name": "creature.adult-omen-dragon.abilities.untethered-to-fate.name",
+      "text": "creature.adult-omen-dragon.abilities.untethered-to-fate.text"
+    },
+    {
+      "id": "challenge-fate",
+      "section": "defense",
+      "name": "creature.adult-omen-dragon.abilities.challenge-fate.name",
+      "actions": "reaction",
+      "traits": [
+        "misfortune",
+        "occult"
+      ],
+      "trigger": "creature.adult-omen-dragon.abilities.challenge-fate.trigger",
+      "text": "creature.adult-omen-dragon.abilities.challenge-fate.text"
+    },
+    {
+      "id": "destiny-breath",
+      "section": "offense",
+      "name": "creature.adult-omen-dragon.abilities.destiny-breath.name",
+      "actions": "2",
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "text": "creature.adult-omen-dragon.abilities.destiny-breath.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.adult-omen-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.adult-omen-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.adult-omen-dragon.abilities.draconic-momentum.name",
+      "text": "creature.adult-omen-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "prophetic-wings",
+      "section": "offense",
+      "name": "creature.adult-omen-dragon.abilities.prophetic-wings.name",
+      "text": "creature.adult-omen-dragon.abilities.prophetic-wings.text"
+    },
+    {
+      "id": "walk-the-timelines",
+      "section": "offense",
+      "name": "creature.adult-omen-dragon.abilities.walk-the-timelines.name",
+      "actions": "2",
+      "traits": [
+        "occult"
+      ],
+      "frequency": "creature.adult-omen-dragon.abilities.walk-the-timelines.frequency",
+      "text": "creature.adult-omen-dragon.abilities.walk-the-timelines.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 30,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.guidance"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.ill-omen",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mindlink",
+              "atWill": true
+            },
+            {
+              "spell": "spell.sure-strike",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 124 prints \"Lore (any one subcategory) +24\"; the source omits the parenthesis and the errata does not touch it. Size corrected to the book: page 124 prints the trait line \"LARGE DRAGON OCCULT\"; the source has Huge and the errata does not touch it."
+}

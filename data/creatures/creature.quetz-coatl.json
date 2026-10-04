@@ -1,0 +1,226 @@
+{
+  "id": "creature.quetz-coatl",
+  "type": "creature",
+  "name": "creature.quetz-coatl.name",
+  "traits": [
+    "beast",
+    "coatl",
+    "holy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 65,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "large",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "empyrean",
+    "sussuran",
+    "utopian"
+  ],
+  "languageNote": "creature.quetz-coatl.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 19
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 22
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 22
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 19
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 22
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 3,
+    "con": 5,
+    "int": 6,
+    "wis": 5,
+    "cha": 5
+  },
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 19,
+    "will": 21
+  },
+  "hp": {
+    "value": 175
+  },
+  "speeds": {
+    "land": 15,
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.quetz-coatl.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "holy",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+13",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "quetz-coatl-venom"
+        },
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "greater-constrict",
+      "section": "offense",
+      "name": "creature.quetz-coatl.abilities.greater-constrict.name",
+      "ability": "ability.greater-constrict",
+      "actions": "1",
+      "text": "creature.quetz-coatl.abilities.greater-constrict.text"
+    },
+    {
+      "id": "quetz-coatl-venom",
+      "section": "offense",
+      "name": "creature.quetz-coatl.abilities.quetz-coatl-venom.name",
+      "traits": [
+        "holy",
+        "poison"
+      ],
+      "text": "creature.quetz-coatl.abilities.quetz-coatl-venom.text"
+    },
+    {
+      "id": "radiant-wings",
+      "section": "offense",
+      "name": "creature.quetz-coatl.abilities.radiant-wings.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "incapacitation",
+        "light",
+        "mental",
+        "visual"
+      ],
+      "text": "creature.quetz-coatl.abilities.radiant-wings.text"
+    },
+    {
+      "id": "wrap-in-coils",
+      "section": "offense",
+      "name": "creature.quetz-coatl.abilities.wrap-in-coils.name",
+      "actions": "1",
+      "requirements": "creature.quetz-coatl.abilities.wrap-in-coils.requirements",
+      "text": "creature.quetz-coatl.abilities.wrap-in-coils.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 29,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.vitality-lash"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.mind-reading",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.vapor-form"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.breath-of-life"
+            },
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.divine-wrath"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "note": "creature.quetz-coatl.spellcasting.0.ranks.7.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

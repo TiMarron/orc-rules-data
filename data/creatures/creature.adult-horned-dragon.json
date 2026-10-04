@@ -1,0 +1,298 @@
+{
+  "id": "creature.adult-horned-dragon",
+  "type": "creature",
+  "name": "creature.adult-horned-dragon.name",
+  "traits": [
+    "amphibious",
+    "dragon",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 120,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "huge",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "elven",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 22
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 19
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 23
+    },
+    {
+      "lore": "creature.adult-horned-dragon.lore.5",
+      "mod": 22
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 23
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 20
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 24
+    },
+    {
+      "skill": "skill.society",
+      "mod": 22
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 3,
+    "int": 4,
+    "wis": 4,
+    "cha": 5
+  },
+  "ac": {
+    "value": 34
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 22,
+    "will": 23,
+    "note": "creature.adult-horned-dragon.saves.note"
+  },
+  "hp": {
+    "value": 215
+  },
+  "immunities": [
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 40,
+    "fly": 160,
+    "swim": 40,
+    "note": "creature.adult-horned-dragon.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.adult-horned-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "magical",
+        "poison",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d10+12",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d4",
+          "type": "poison"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-horned-dragon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d8+12",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-horned-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-horned-dragon.strikes.horn.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.adult-horned-dragon.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 90,
+      "text": "creature.adult-horned-dragon.abilities.frightful-presence.text"
+    },
+    {
+      "id": "twisting-tail",
+      "section": "defense",
+      "name": "creature.adult-horned-dragon.abilities.twisting-tail.name",
+      "actions": "reaction",
+      "trigger": "creature.adult-horned-dragon.abilities.twisting-tail.trigger",
+      "text": "creature.adult-horned-dragon.abilities.twisting-tail.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.adult-horned-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.adult-horned-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.adult-horned-dragon.abilities.draconic-momentum.name",
+      "text": "creature.adult-horned-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "forest-passage",
+      "section": "offense",
+      "name": "creature.adult-horned-dragon.abilities.forest-passage.name",
+      "text": "creature.adult-horned-dragon.abilities.forest-passage.text"
+    },
+    {
+      "id": "impaling-charge",
+      "section": "offense",
+      "name": "creature.adult-horned-dragon.abilities.impaling-charge.name",
+      "actions": "2",
+      "requirements": "creature.adult-horned-dragon.abilities.impaling-charge.requirements",
+      "text": "creature.adult-horned-dragon.abilities.impaling-charge.text"
+    },
+    {
+      "id": "poison-breath",
+      "section": "offense",
+      "name": "creature.adult-horned-dragon.abilities.poison-breath.name",
+      "actions": "2",
+      "traits": [
+        "primal",
+        "poison"
+      ],
+      "text": "creature.adult-horned-dragon.abilities.poison-breath.text"
+    },
+    {
+      "id": "trackless-journey",
+      "section": "offense",
+      "name": "creature.adult-horned-dragon.abilities.trackless-journey.name",
+      "text": "creature.adult-horned-dragon.abilities.trackless-journey.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 32,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "atWill": true
+            },
+            {
+              "spell": "spell.entangling-flora",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

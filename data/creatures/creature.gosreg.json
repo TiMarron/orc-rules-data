@@ -1,0 +1,250 @@
+{
+  "id": "creature.gosreg",
+  "type": "creature",
+  "name": "creature.gosreg.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 107,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "medium",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "thoughtsense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "sakvroth"
+  ],
+  "languageNote": "creature.gosreg.language-note",
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 24
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 22
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 23
+    },
+    {
+      "skill": "skill.society",
+      "mod": 19
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 23
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 6,
+    "con": 3,
+    "int": 6,
+    "wis": 5,
+    "cha": 7
+  },
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 23,
+    "will": 22,
+    "note": "creature.gosreg.saves.note"
+  },
+  "hp": {
+    "value": 195
+  },
+  "immunities": [
+    "confused"
+  ],
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gosreg.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+7",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "mental"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gosreg.strikes.claw.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "borrow-languages",
+      "section": "top",
+      "name": "creature.gosreg.abilities.borrow-languages.name",
+      "text": "creature.gosreg.abilities.borrow-languages.text"
+    },
+    {
+      "id": "thoughtsense",
+      "section": "top",
+      "name": "creature.gosreg.abilities.thoughtsense.name",
+      "text": "creature.gosreg.abilities.thoughtsense.text"
+    },
+    {
+      "id": "unsettled-aura",
+      "section": "defense",
+      "name": "creature.gosreg.abilities.unsettled-aura.name",
+      "traits": [
+        "aura",
+        "mental",
+        "occult"
+      ],
+      "aura": 30,
+      "text": "creature.gosreg.abilities.unsettled-aura.text"
+    },
+    {
+      "id": "broadcast-stance",
+      "section": "offense",
+      "name": "creature.gosreg.abilities.broadcast-stance.name",
+      "actions": "1",
+      "traits": [
+        "mental",
+        "occult",
+        "stance"
+      ],
+      "requirements": "creature.gosreg.abilities.broadcast-stance.requirements",
+      "text": "creature.gosreg.abilities.broadcast-stance.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.gosreg.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.gosreg.abilities.change-shape.text"
+    },
+    {
+      "id": "mind-bolt",
+      "section": "offense",
+      "name": "creature.gosreg.abilities.mind-bolt.name",
+      "actions": "2",
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "text": "creature.gosreg.abilities.mind-bolt.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 30,
+      "attack": 22,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.nightmare"
+            },
+            {
+              "spell": "spell.suggestion",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.mind-probe"
+            },
+            {
+              "spell": "spell.sending"
+            },
+            {
+              "spell": "spell.subconscious-suggestion"
+            },
+            {
+              "spell": "spell.synaptic-pulse"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.phantasmal-calamity"
+            },
+            {
+              "spell": "spell.phantom-pain"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

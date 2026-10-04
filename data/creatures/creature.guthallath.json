@@ -1,0 +1,236 @@
+{
+  "id": "creature.guthallath",
+  "type": "creature",
+  "name": "creature.guthallath.name",
+  "traits": [
+    "construct"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 187,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 19,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 30,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 40
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": 2,
+    "con": 8,
+    "int": -4,
+    "wis": 0,
+    "cha": -1
+  },
+  "ac": {
+    "value": 43
+  },
+  "saves": {
+    "fortitude": 38,
+    "reflex": 32,
+    "will": 30
+  },
+  "hp": {
+    "value": 325
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 15,
+      "except": [
+        "adamantine"
+      ]
+    },
+    {
+      "type": "spells",
+      "value": 15,
+      "except": [
+        "cold",
+        "earth",
+        "water"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "burrow": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.guthallath.strikes.fist.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "deadly",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "3d12",
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "4d12+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "choice": [
+            {
+              "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+              "text": "creature.guthallath.strikes.fist.effects.0.0"
+            },
+            {
+              "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+              "text": "creature.guthallath.strikes.fist.effects.0.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.guthallath.strikes.foot.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "deadly",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "3d12",
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "4d8+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.guthallath.strikes.foot.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "erosion-aura",
+      "section": "defense",
+      "name": "creature.guthallath.abilities.erosion-aura.name",
+      "traits": [
+        "aura",
+        "primal"
+      ],
+      "aura": 120,
+      "text": "creature.guthallath.abilities.erosion-aura.text"
+    },
+    {
+      "id": "immunity-to-magic",
+      "section": "defense",
+      "name": "creature.guthallath.abilities.immunity-to-magic.name",
+      "text": "creature.guthallath.abilities.immunity-to-magic.text"
+    },
+    {
+      "id": "annihilation-beams",
+      "section": "offense",
+      "name": "creature.guthallath.abilities.annihilation-beams.name",
+      "actions": "2",
+      "text": "creature.guthallath.abilities.annihilation-beams.text"
+    },
+    {
+      "id": "deadly-throw",
+      "section": "offense",
+      "name": "creature.guthallath.abilities.deadly-throw.name",
+      "actions": "1",
+      "requirements": "creature.guthallath.abilities.deadly-throw.requirements",
+      "text": "creature.guthallath.abilities.deadly-throw.text"
+    },
+    {
+      "id": "powerful-blows",
+      "section": "offense",
+      "name": "creature.guthallath.abilities.powerful-blows.name",
+      "text": "creature.guthallath.abilities.powerful-blows.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.guthallath.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.guthallath.abilities.trample.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 37,
+      "constant": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.haste"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 187 prints \"Constant (8th) truesight; (3rd) haste\"; the source lists haste as an ordinary spell of that rank and the errata does not touch it."
+}

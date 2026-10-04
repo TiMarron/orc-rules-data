@@ -1,0 +1,276 @@
+{
+  "id": "creature.azuretzi",
+  "type": "creature",
+  "name": "creature.azuretzi.name",
+  "traits": [
+    "monitor",
+    "protean"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 271,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "small",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "entropy-sense",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "empyrean",
+    "protean"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 4,
+    "int": 4,
+    "wis": 2,
+    "cha": 4
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 15,
+    "will": 11,
+    "note": "creature.azuretzi.saves.note"
+  },
+  "hp": {
+    "value": 65,
+    "note": "creature.azuretzi.hp.note"
+  },
+  "resistances": [
+    {
+      "type": "precision",
+      "value": 5
+    },
+    {
+      "type": "protean-anatomy",
+      "value": 8
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 25,
+    "swim": 25,
+    "note": "creature.azuretzi.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.azuretzi.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+5",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.azuretzi.strikes.claw.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+5",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.azuretzi.strikes.tail.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d12+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "entropy-sense",
+      "section": "top",
+      "name": "creature.azuretzi.abilities.entropy-sense.name",
+      "traits": [
+        "divine",
+        "prediction"
+      ],
+      "text": "creature.azuretzi.abilities.entropy-sense.text"
+    },
+    {
+      "id": "protean-anatomy",
+      "section": "defense",
+      "name": "creature.azuretzi.abilities.protean-anatomy.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.azuretzi.abilities.protean-anatomy.text"
+    },
+    {
+      "id": "spell-pilfer",
+      "section": "defense",
+      "name": "creature.azuretzi.abilities.spell-pilfer.name",
+      "actions": "reaction",
+      "trigger": "creature.azuretzi.abilities.spell-pilfer.trigger",
+      "text": "creature.azuretzi.abilities.spell-pilfer.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.azuretzi.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.azuretzi.abilities.constrict.text"
+    },
+    {
+      "id": "mimic-form",
+      "section": "offense",
+      "name": "creature.azuretzi.abilities.mimic-form.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.azuretzi.abilities.mimic-form.text"
+    },
+    {
+      "id": "mocking-touch",
+      "section": "offense",
+      "name": "creature.azuretzi.abilities.mocking-touch.name",
+      "actions": "2",
+      "traits": [
+        "divine"
+      ],
+      "requirements": "creature.azuretzi.abilities.mocking-touch.requirements",
+      "text": "creature.azuretzi.abilities.mocking-touch.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 22,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.laughing-fit"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.crisis-of-faith"
+            },
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.shatter"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

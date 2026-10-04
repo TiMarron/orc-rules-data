@@ -1,0 +1,197 @@
+{
+  "id": "creature.sphinx",
+  "type": "creature",
+  "name": "creature.sphinx.name",
+  "traits": [
+    "beast",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 319,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "sphinx"
+  ],
+  "languageNote": "creature.sphinx.language-note",
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "lore": "creature.sphinx.lore.2",
+      "mod": 19
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 16
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 16
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 18
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 1,
+    "con": 3,
+    "int": 5,
+    "wis": 4,
+    "cha": 4
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 14,
+    "will": 19
+  },
+  "hp": {
+    "value": 135
+  },
+  "speeds": {
+    "land": 35,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sphinx.strikes.claw.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bardic-lore",
+      "section": "top",
+      "name": "creature.sphinx.abilities.bardic-lore.name",
+      "text": "creature.sphinx.abilities.bardic-lore.text"
+    },
+    {
+      "id": "claw-rake",
+      "section": "offense",
+      "name": "creature.sphinx.abilities.claw-rake.name",
+      "actions": "3",
+      "text": "creature.sphinx.abilities.claw-rake.text"
+    },
+    {
+      "id": "pounce",
+      "section": "offense",
+      "name": "creature.sphinx.abilities.pounce.name",
+      "actions": "1",
+      "text": "creature.sphinx.abilities.pounce.text"
+    },
+    {
+      "id": "riddlers-rune",
+      "section": "offense",
+      "name": "creature.sphinx.abilities.riddlers-rune.name",
+      "text": "creature.sphinx.abilities.riddlers-rune.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 27,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.locate"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.clairaudience",
+              "atWill": true
+            },
+            {
+              "spell": "spell.clairvoyance",
+              "atWill": true
+            },
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.read-omens"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 319 prints \"Constant (5th) truespeech; (2nd) see the unseen\"; the source lists see the unseen as an ordinary spell of that rank and the errata does not touch it."
+}

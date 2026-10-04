@@ -1,0 +1,300 @@
+{
+  "id": "creature.phoenix",
+  "type": "creature",
+  "name": "creature.phoenix.name",
+  "traits": [
+    "beast",
+    "fire",
+    "holy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 264,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 15,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 27,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.detect-magic"
+      },
+      {
+        "spell": "spell.see-the-unseen"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "empyrean",
+    "pyric",
+    "sussuran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 31
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 27
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 25
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 7,
+    "con": 5,
+    "int": 7,
+    "wis": 6,
+    "cha": 6
+  },
+  "ac": {
+    "value": 36
+  },
+  "saves": {
+    "fortitude": 27,
+    "reflex": 31,
+    "will": 28,
+    "note": "creature.phoenix.saves.note"
+  },
+  "hp": {
+    "value": 300,
+    "note": "creature.phoenix.hp.note"
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "unholy",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 70
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.phoenix.strikes.beak.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "finesse",
+        "fire",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d12+9",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d8",
+          "type": "fire"
+        },
+        {
+          "dice": "2d10",
+          "type": "fire",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.phoenix.strikes.talon.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "finesse",
+        "fire",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d8",
+          "type": "fire"
+        },
+        {
+          "dice": "2d10",
+          "type": "fire",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.phoenix.strikes.flame-jet.name",
+      "actions": "1",
+      "bonus": 30,
+      "rangeIncrement": 40,
+      "traits": [
+        "fire"
+      ],
+      "damage": [
+        {
+          "dice": "6d6",
+          "type": "fire"
+        },
+        {
+          "dice": "2d10",
+          "type": "fire",
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "shroud-of-flame",
+      "section": "defense",
+      "name": "creature.phoenix.abilities.shroud-of-flame.name",
+      "traits": [
+        "aura",
+        "fire",
+        "primal"
+      ],
+      "aura": 20,
+      "text": "creature.phoenix.abilities.shroud-of-flame.text"
+    },
+    {
+      "id": "self-resurrection",
+      "section": "defense",
+      "name": "creature.phoenix.abilities.self-resurrection.name",
+      "traits": [
+        "healing",
+        "primal"
+      ],
+      "text": "creature.phoenix.abilities.self-resurrection.text"
+    },
+    {
+      "id": "flaming-strafe",
+      "section": "offense",
+      "name": "creature.phoenix.abilities.flaming-strafe.name",
+      "actions": "1",
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "text": "creature.phoenix.abilities.flaming-strafe.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 39,
+      "cantrips": {
+        "rank": 8,
+        "spells": [
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.dispel-magic",
+              "count": 3
+            },
+            {
+              "spell": "spell.divine-immolation"
+            },
+            {
+              "spell": "spell.everlight",
+              "atWill": true
+            },
+            {
+              "spell": "spell.heal",
+              "count": 3
+            },
+            {
+              "spell": "spell.wall-of-fire",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.detect-magic"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Spell block read by hand: the source misspells its label (\"Primal Inante Spells\"), so the converter leaves it unparsed. The spells are the source's, checked against page 264, which prints \"Primal Innate Spells DC 39; 8th cleanse affliction, dispel magic (×3), divine immolation, everlight (at will), heal (×3), wall of fire (×3); 7th dispel magic (at will); 6th cleanse affliction (×3); Cantrips (8th) light; Constant (8th) detect magic; (6th) see the unseen\"."
+}

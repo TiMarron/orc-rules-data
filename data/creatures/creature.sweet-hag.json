@@ -1,0 +1,236 @@
+{
+  "id": "creature.sweet-hag",
+  "type": "creature",
+  "name": "creature.sweet-hag.name",
+  "traits": [
+    "hag",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 189,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "fey",
+    "jotun"
+  ],
+  "languageNote": "creature.sweet-hag.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 8
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 3,
+    "int": 2,
+    "wis": 2,
+    "cha": 4
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 11,
+    "will": 12,
+    "note": "creature.sweet-hag.saves.note"
+  },
+  "hp": {
+    "value": 70
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sweet-hag.strikes.candy-cane-claw.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "soporific-touch"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "coven",
+      "section": "top",
+      "name": "creature.sweet-hag.abilities.coven.name",
+      "ability": "ability.coven",
+      "text": "creature.sweet-hag.abilities.coven.text"
+    },
+    {
+      "id": "betraying-touch",
+      "section": "offense",
+      "name": "creature.sweet-hag.abilities.betraying-touch.name",
+      "actions": "1",
+      "text": "creature.sweet-hag.abilities.betraying-touch.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.sweet-hag.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.sweet-hag.abilities.change-shape.text"
+    },
+    {
+      "id": "poisoned-candy",
+      "section": "offense",
+      "name": "creature.sweet-hag.abilities.poisoned-candy.name",
+      "actions": "2",
+      "traits": [
+        "occult"
+      ],
+      "text": "creature.sweet-hag.abilities.poisoned-candy.text"
+    },
+    {
+      "id": "soporific-touch",
+      "section": "offense",
+      "name": "creature.sweet-hag.abilities.soporific-touch.name",
+      "traits": [
+        "incapacitation",
+        "occult"
+      ],
+      "text": "creature.sweet-hag.abilities.soporific-touch.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 20,
+      "attack": 14,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.message"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "atWill": true
+            },
+            {
+              "spell": "spell.cleanse-cuisine",
+              "atWill": true
+            },
+            {
+              "spell": "spell.spider-sting"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.create-food",
+              "note": "creature.sweet-hag.spellcasting.0.ranks.2.0.note"
+            },
+            {
+              "spell": "spell.invisibility",
+              "atWill": true
+            },
+            {
+              "spell": "spell.laughing-fit"
+            },
+            {
+              "spell": "spell.shrink"
+            },
+            {
+              "spell": "spell.sleep"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

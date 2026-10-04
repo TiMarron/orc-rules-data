@@ -1,0 +1,162 @@
+{
+  "id": "creature.nightmare",
+  "type": "creature",
+  "name": "creature.nightmare.name",
+  "traits": [
+    "beast",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 238,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "daemonic",
+    "diabolic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 3,
+    "int": 1,
+    "wis": 4,
+    "cha": 2
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 15,
+    "will": 12
+  },
+  "hp": {
+    "value": 100
+  },
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "fly": 90
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.nightmare.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+8",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.nightmare.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "fire",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke",
+      "section": "top",
+      "name": "creature.nightmare.abilities.smoke.name",
+      "traits": [
+        "aura"
+      ],
+      "aura": 15,
+      "text": "creature.nightmare.abilities.smoke.text"
+    },
+    {
+      "id": "flaming-gallop",
+      "section": "offense",
+      "name": "creature.nightmare.abilities.flaming-gallop.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.nightmare.abilities.flaming-gallop.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 24,
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "note": "creature.nightmare.spellcasting.0.ranks.7.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

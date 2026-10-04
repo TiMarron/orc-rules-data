@@ -1,0 +1,243 @@
+{
+  "id": "creature.kraken",
+  "type": "creature",
+  "name": "creature.kraken.name",
+  "traits": [
+    "aquatic",
+    "beast"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 212,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 18,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 34,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 38
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 32
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 35
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 33
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 4,
+    "con": 9,
+    "int": 5,
+    "wis": 6,
+    "cha": 5
+  },
+  "ac": {
+    "value": 42
+  },
+  "saves": {
+    "fortitude": 35,
+    "reflex": 28,
+    "will": 32
+  },
+  "hp": {
+    "value": 360
+  },
+  "immunities": [
+    "controlled",
+    "emotion"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "poison",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 10,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kraken.strikes.arm.name",
+      "actions": "1",
+      "bonus": 37,
+      "traits": [
+        "reach",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "40"
+      },
+      "damage": [
+        {
+          "dice": "4d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kraken.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 37,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "60"
+      },
+      "damage": [
+        {
+          "dice": "3d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kraken.strikes.beak.name",
+      "actions": "1",
+      "bonus": 37,
+      "traits": [
+        "reach",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d10+17",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "altered-weather",
+      "section": "defense",
+      "name": "creature.kraken.abilities.altered-weather.name",
+      "traits": [
+        "aura",
+        "primal"
+      ],
+      "text": "creature.kraken.abilities.altered-weather.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.kraken.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.kraken.abilities.constrict.text"
+    },
+    {
+      "id": "double-attack",
+      "section": "offense",
+      "name": "creature.kraken.abilities.double-attack.name",
+      "actions": "1",
+      "text": "creature.kraken.abilities.double-attack.text"
+    },
+    {
+      "id": "ink-cloud",
+      "section": "offense",
+      "name": "creature.kraken.abilities.ink-cloud.name",
+      "actions": "1",
+      "text": "creature.kraken.abilities.ink-cloud.text"
+    },
+    {
+      "id": "jet",
+      "section": "offense",
+      "name": "creature.kraken.abilities.jet.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "text": "creature.kraken.abilities.jet.text"
+    },
+    {
+      "id": "kraken-ink",
+      "section": "offense",
+      "name": "creature.kraken.abilities.kraken-ink.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.kraken.abilities.kraken-ink.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 40,
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.resist-energy"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.punishing-winds"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.dominate",
+              "note": "creature.kraken.spellcasting.0.ranks.10.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

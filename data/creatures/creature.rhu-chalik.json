@@ -1,0 +1,199 @@
+{
+  "id": "creature.rhu-chalik",
+  "type": "creature",
+  "name": "creature.rhu-chalik.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 104,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "small",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.rhu-chalik.senses.0"
+      },
+      {
+        "own": "thoughtsense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "aklo"
+  ],
+  "languageNote": "creature.rhu-chalik.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 4,
+    "int": 2,
+    "wis": 5,
+    "cha": 3
+  },
+  "ac": {
+    "value": 23,
+    "note": "creature.rhu-chalik.ac.note"
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 11,
+    "will": 17
+  },
+  "hp": {
+    "value": 95
+  },
+  "speeds": {
+    "land": 5,
+    "fly": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.rhu-chalik.strikes.tendril.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+6",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        {
+          "own": "excruciating-enzyme"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "thoughtsense",
+      "section": "top",
+      "name": "creature.rhu-chalik.abilities.thoughtsense.name",
+      "text": "creature.rhu-chalik.abilities.thoughtsense.text"
+    },
+    {
+      "id": "no-breath",
+      "section": "defense",
+      "name": "creature.rhu-chalik.abilities.no-breath.name",
+      "text": "creature.rhu-chalik.abilities.no-breath.text"
+    },
+    {
+      "id": "excruciating-enzyme",
+      "section": "offense",
+      "name": "creature.rhu-chalik.abilities.excruciating-enzyme.name",
+      "traits": [
+        "occult",
+        "poison"
+      ],
+      "text": "creature.rhu-chalik.abilities.excruciating-enzyme.text"
+    },
+    {
+      "id": "label-memories",
+      "section": "offense",
+      "name": "creature.rhu-chalik.abilities.label-memories.name",
+      "actions": "2",
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "text": "creature.rhu-chalik.abilities.label-memories.text"
+    },
+    {
+      "id": "transmit-memories",
+      "section": "offense",
+      "name": "creature.rhu-chalik.abilities.transmit-memories.name",
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "mental",
+        "occult"
+      ],
+      "requirements": "creature.rhu-chalik.abilities.transmit-memories.requirements",
+      "text": "creature.rhu-chalik.abilities.transmit-memories.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 24,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.rhu-chalik.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.mind-reading",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.rewrite-memory"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.mind-probe"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

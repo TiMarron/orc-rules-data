@@ -1,0 +1,245 @@
+{
+  "id": "creature.giylea",
+  "type": "creature",
+  "name": "creature.giylea.name",
+  "traits": [
+    "archon",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 29,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 16,
+  "size": "huge",
+  "perception": {
+    "mod": 28,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "utopian"
+  ],
+  "languageNote": "creature.giylea.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 31
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 29
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 28
+    },
+    {
+      "lore": "creature.giylea.lore.4",
+      "mod": 29
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 9,
+    "con": 6,
+    "int": 5,
+    "wis": 6,
+    "cha": 3
+  },
+  "ac": {
+    "value": 41,
+    "note": "creature.giylea.ac.note"
+  },
+  "saves": {
+    "fortitude": 26,
+    "reflex": 31,
+    "will": 28,
+    "note": "creature.giylea.saves.note"
+  },
+  "hp": {
+    "value": 230
+  },
+  "immunities": [
+    "fear"
+  ],
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giylea.strikes.slam.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "holy",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d12+14",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.giylea.strikes.tongue-of-flame.name",
+      "actions": "1",
+      "bonus": 33,
+      "range": 30,
+      "traits": [
+        "fire",
+        "holy",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "7d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "all-knowing-eyes",
+      "section": "defense",
+      "name": "creature.giylea.abilities.all-knowing-eyes.name",
+      "traits": [
+        "aura",
+        "divine",
+        "mental",
+        "visual"
+      ],
+      "aura": 30,
+      "text": "creature.giylea.abilities.all-knowing-eyes.text"
+    },
+    {
+      "id": "archons-protection",
+      "section": "defense",
+      "name": "creature.giylea.abilities.archons-protection.name",
+      "actions": "reaction",
+      "trigger": "creature.giylea.abilities.archons-protection.trigger",
+      "text": "creature.giylea.abilities.archons-protection.text"
+    },
+    {
+      "id": "fiery-spokes",
+      "section": "offense",
+      "name": "creature.giylea.abilities.fiery-spokes.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire",
+        "holy",
+        "spirit"
+      ],
+      "text": "creature.giylea.abilities.fiery-spokes.text"
+    },
+    {
+      "id": "focus-gaze",
+      "section": "offense",
+      "name": "creature.giylea.abilities.focus-gaze.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "mental",
+        "visual"
+      ],
+      "text": "creature.giylea.abilities.focus-gaze.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 37,
+      "attack": 29,
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.divine-decree"
+            },
+            {
+              "spell": "spell.divine-immolation"
+            },
+            {
+              "spell": "spell.scouting-eye"
+            },
+            {
+              "spell": "spell.zealous-conviction"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.divine-wrath"
+            },
+            {
+              "spell": "spell.ring-of-truth",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.detonate-magic"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.ring-of-truth"
+            },
+            {
+              "spell": "spell.truesight"
+            },
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

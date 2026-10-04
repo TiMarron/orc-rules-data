@@ -1,0 +1,295 @@
+{
+  "id": "creature.young-conspirator-dragon",
+  "type": "creature",
+  "name": "creature.young-conspirator-dragon.name",
+  "traits": [
+    "dragon",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 110,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "note": "creature.young-conspirator-dragon.perception.note",
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "shadowtongue"
+  ],
+  "languageNote": "creature.young-conspirator-dragon.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 18
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 16,
+      "note": "creature.young-conspirator-dragon.skills.5.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 16
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 18
+    },
+    {
+      "skill": "skill.society",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 2,
+    "int": 2,
+    "wis": 4,
+    "cha": 4
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 15,
+    "will": 18,
+    "note": "creature.young-conspirator-dragon.saves.note"
+  },
+  "hp": {
+    "value": 135
+  },
+  "immunities": [
+    "controlled",
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 30,
+    "climb": 30,
+    "fly": 120
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.young-conspirator-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-conspirator-dragon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-conspirator-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "1d10+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.young-conspirator-dragon.strikes.mental-blast.name",
+      "actions": "1",
+      "bonus": 18,
+      "range": 100,
+      "traits": [
+        "mental"
+      ],
+      "damage": [
+        {
+          "dice": "3d6+3",
+          "type": "mental"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "retract-body",
+      "section": "defense",
+      "name": "creature.young-conspirator-dragon.abilities.retract-body.name",
+      "actions": "reaction",
+      "trigger": "creature.young-conspirator-dragon.abilities.retract-body.trigger",
+      "text": "creature.young-conspirator-dragon.abilities.retract-body.text"
+    },
+    {
+      "id": "conjure-disguise",
+      "section": "offense",
+      "name": "creature.young-conspirator-dragon.abilities.conjure-disguise.name",
+      "traits": [
+        "manipulate",
+        "occult",
+        "polymorph"
+      ],
+      "frequency": "creature.young-conspirator-dragon.abilities.conjure-disguise.frequency",
+      "text": "creature.young-conspirator-dragon.abilities.conjure-disguise.text"
+    },
+    {
+      "id": "detonate-disguise",
+      "section": "offense",
+      "name": "creature.young-conspirator-dragon.abilities.detonate-disguise.name",
+      "actions": "2",
+      "traits": [
+        "occult"
+      ],
+      "requirements": "creature.young-conspirator-dragon.abilities.detonate-disguise.requirements",
+      "text": "creature.young-conspirator-dragon.abilities.detonate-disguise.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.young-conspirator-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.young-conspirator-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.young-conspirator-dragon.abilities.draconic-momentum.name",
+      "text": "creature.young-conspirator-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "rushed-transformation",
+      "section": "offense",
+      "name": "creature.young-conspirator-dragon.abilities.rushed-transformation.name",
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "occult",
+        "manipulate",
+        "polymorph"
+      ],
+      "frequency": "creature.young-conspirator-dragon.abilities.rushed-transformation.frequency",
+      "text": "creature.young-conspirator-dragon.abilities.rushed-transformation.text"
+    },
+    {
+      "id": "smoke-breath",
+      "section": "offense",
+      "name": "creature.young-conspirator-dragon.abilities.smoke-breath.name",
+      "actions": "2",
+      "traits": [
+        "occult",
+        "poison"
+      ],
+      "text": "creature.young-conspirator-dragon.abilities.smoke-breath.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.young-conspirator-dragon.abilities.sneak-attack.name",
+      "text": "creature.young-conspirator-dragon.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 26,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.mind-reading",
+              "atWill": true
+            },
+            {
+              "spell": "spell.rewrite-memory"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 110 prints \"Lore (any one region or settlement) +16\"; the source omits the parenthesis and the errata does not touch it."
+}

@@ -1,0 +1,272 @@
+{
+  "id": "creature.young-mirage-dragon",
+  "type": "creature",
+  "name": "creature.young-mirage-dragon.name",
+  "traits": [
+    "arcane",
+    "dragon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 122,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 19
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 19
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 21
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 19
+    },
+    {
+      "lore": "creature.young-mirage-dragon.lore.6",
+      "mod": 21
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 19
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 19
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 3,
+    "int": 4,
+    "wis": 5,
+    "cha": 6
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 17,
+    "will": 20,
+    "note": "creature.young-mirage-dragon.saves.note"
+  },
+  "hp": {
+    "value": 155
+  },
+  "immunities": [
+    "fascinated",
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 40,
+    "climb": 20,
+    "fly": 120
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.young-mirage-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+8",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-mirage-dragon.strikes.claws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-mirage-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "camouflage",
+      "section": "top",
+      "name": "creature.young-mirage-dragon.abilities.camouflage.name",
+      "text": "creature.young-mirage-dragon.abilities.camouflage.text"
+    },
+    {
+      "id": "scintillating-defense",
+      "section": "defense",
+      "name": "creature.young-mirage-dragon.abilities.scintillating-defense.name",
+      "actions": "reaction",
+      "traits": [
+        "visual"
+      ],
+      "trigger": "creature.young-mirage-dragon.abilities.scintillating-defense.trigger",
+      "text": "creature.young-mirage-dragon.abilities.scintillating-defense.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.young-mirage-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.young-mirage-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.young-mirage-dragon.abilities.draconic-momentum.name",
+      "text": "creature.young-mirage-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "hallucinatory-breath",
+      "section": "offense",
+      "name": "creature.young-mirage-dragon.abilities.hallucinatory-breath.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.young-mirage-dragon.abilities.hallucinatory-breath.text"
+    },
+    {
+      "id": "lunging-bite",
+      "section": "offense",
+      "name": "creature.young-mirage-dragon.abilities.lunging-bite.name",
+      "actions": "2",
+      "text": "creature.young-mirage-dragon.abilities.lunging-bite.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.young-mirage-dragon.abilities.sneak-attack.name",
+      "text": "creature.young-mirage-dragon.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 27,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.message"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.illusory-creature"
+            },
+            {
+              "spell": "spell.illusory-object",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mirage"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.illusory-scene"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

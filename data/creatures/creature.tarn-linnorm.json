@@ -1,0 +1,257 @@
+{
+  "id": "creature.tarn-linnorm",
+  "type": "creature",
+  "name": "creature.tarn-linnorm.name",
+  "traits": [
+    "acid",
+    "amphibious",
+    "dragon"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 221,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 20,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 35,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "draconic",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 32
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 38
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 34
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": 6,
+    "con": 8,
+    "int": -1,
+    "wis": 7,
+    "cha": 8
+  },
+  "ac": {
+    "value": 46
+  },
+  "saves": {
+    "fortitude": 36,
+    "reflex": 32,
+    "will": 31,
+    "note": "creature.tarn-linnorm.saves.note"
+  },
+  "hp": {
+    "value": 400,
+    "note": "creature.tarn-linnorm.hp.note"
+  },
+  "immunities": [
+    "acid",
+    "curse",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "fly": 100,
+    "swim": 80,
+    "note": "creature.tarn-linnorm.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tarn-linnorm.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "reach",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "4d12+18",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "tarn-linnorm-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tarn-linnorm.strikes.claw.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "4d8+18",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tarn-linnorm.strikes.tail.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "4d6+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.tarn-linnorm.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "curse-of-death",
+      "section": "defense",
+      "name": "creature.tarn-linnorm.abilities.curse-of-death.name",
+      "traits": [
+        "curse",
+        "death",
+        "primal"
+      ],
+      "text": "creature.tarn-linnorm.abilities.curse-of-death.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.tarn-linnorm.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.tarn-linnorm.abilities.reactive-strike.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.tarn-linnorm.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.tarn-linnorm.abilities.constrict.text"
+    },
+    {
+      "id": "corrosive-breath",
+      "section": "offense",
+      "name": "creature.tarn-linnorm.abilities.corrosive-breath.name",
+      "actions": "2",
+      "traits": [
+        "acid",
+        "poison",
+        "primal"
+      ],
+      "text": "creature.tarn-linnorm.abilities.corrosive-breath.text"
+    },
+    {
+      "id": "double-bite",
+      "section": "offense",
+      "name": "creature.tarn-linnorm.abilities.double-bite.name",
+      "actions": "1",
+      "text": "creature.tarn-linnorm.abilities.double-bite.text"
+    },
+    {
+      "id": "double-breath",
+      "section": "offense",
+      "name": "creature.tarn-linnorm.abilities.double-breath.name",
+      "actions": "3",
+      "text": "creature.tarn-linnorm.abilities.double-breath.text"
+    },
+    {
+      "id": "tarn-linnorm-venom",
+      "section": "offense",
+      "name": "creature.tarn-linnorm.abilities.tarn-linnorm-venom.name",
+      "traits": [
+        "acid",
+        "poison"
+      ],
+      "text": "creature.tarn-linnorm.abilities.tarn-linnorm-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 42,
+      "constant": [
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 222 prints \"Constant (9th) unfettered movement; (8th) truesight\"; the source lists truesight as an ordinary spell of that rank and the errata does not touch it."
+}

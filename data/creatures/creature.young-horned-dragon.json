@@ -1,0 +1,280 @@
+{
+  "id": "creature.young-horned-dragon",
+  "type": "creature",
+  "name": "creature.young-horned-dragon.name",
+  "traits": [
+    "amphibious",
+    "dragon",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 119,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 16
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 16
+    },
+    {
+      "lore": "creature.young-horned-dragon.lore.5",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 14
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    },
+    {
+      "skill": "skill.society",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 1,
+    "con": 3,
+    "int": 2,
+    "wis": 2,
+    "cha": 4
+  },
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 16,
+    "will": 17
+  },
+  "hp": {
+    "value": 135
+  },
+  "immunities": [
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 30,
+    "fly": 120,
+    "swim": 30,
+    "note": "creature.young-horned-dragon.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.young-horned-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "poison",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d4",
+          "type": "poison"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-horned-dragon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-horned-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-horned-dragon.strikes.horn.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d12+7",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.young-horned-dragon.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 90,
+      "text": "creature.young-horned-dragon.abilities.frightful-presence.text"
+    },
+    {
+      "id": "twisting-tail",
+      "section": "defense",
+      "name": "creature.young-horned-dragon.abilities.twisting-tail.name",
+      "actions": "reaction",
+      "trigger": "creature.young-horned-dragon.abilities.twisting-tail.trigger",
+      "text": "creature.young-horned-dragon.abilities.twisting-tail.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.young-horned-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.young-horned-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.young-horned-dragon.abilities.draconic-momentum.name",
+      "text": "creature.young-horned-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "forest-passage",
+      "section": "offense",
+      "name": "creature.young-horned-dragon.abilities.forest-passage.name",
+      "text": "creature.young-horned-dragon.abilities.forest-passage.text"
+    },
+    {
+      "id": "impaling-charge",
+      "section": "offense",
+      "name": "creature.young-horned-dragon.abilities.impaling-charge.name",
+      "actions": "2",
+      "requirements": "creature.young-horned-dragon.abilities.impaling-charge.requirements",
+      "text": "creature.young-horned-dragon.abilities.impaling-charge.text"
+    },
+    {
+      "id": "poison-breath",
+      "section": "offense",
+      "name": "creature.young-horned-dragon.abilities.poison-breath.name",
+      "actions": "2",
+      "traits": [
+        "primal",
+        "poison"
+      ],
+      "text": "creature.young-horned-dragon.abilities.poison-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 26,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.entangling-flora"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "id": "creature.raktavarna",
+  "type": "creature",
+  "name": "creature.raktavarna.name",
+  "traits": [
+    "rakshasa",
+    "spirit",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "tiny",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "diabolic",
+    "empyrean",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 7
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 2,
+    "int": 1,
+    "wis": 1,
+    "cha": 2
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 9,
+    "will": 6,
+    "note": "creature.raktavarna.saves.note"
+  },
+  "hp": {
+    "value": 20
+  },
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "climb": 20,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.raktavarna.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "raktavarna-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "knowledge-of-delusion",
+      "section": "defense",
+      "name": "creature.raktavarna.abilities.knowledge-of-delusion.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.raktavarna.abilities.knowledge-of-delusion.text"
+    },
+    {
+      "id": "betraying-bite",
+      "section": "offense",
+      "name": "creature.raktavarna.abilities.betraying-bite.name",
+      "text": "creature.raktavarna.abilities.betraying-bite.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.raktavarna.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.raktavarna.abilities.change-shape.text"
+    },
+    {
+      "id": "designate-master",
+      "section": "offense",
+      "name": "creature.raktavarna.abilities.designate-master.name",
+      "traits": [
+        "divine",
+        "exploration"
+      ],
+      "text": "creature.raktavarna.abilities.designate-master.text"
+    },
+    {
+      "id": "masters-eyes",
+      "section": "offense",
+      "name": "creature.raktavarna.abilities.masters-eyes.name",
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "divine",
+        "scrying"
+      ],
+      "text": "creature.raktavarna.abilities.masters-eyes.text"
+    },
+    {
+      "id": "raktavarna-venom",
+      "section": "offense",
+      "name": "creature.raktavarna.abilities.raktavarna-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.raktavarna.abilities.raktavarna-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 16,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.command"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.read-omens"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

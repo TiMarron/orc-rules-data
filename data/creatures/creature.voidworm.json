@@ -1,0 +1,233 @@
+{
+  "id": "creature.voidworm",
+  "type": "creature",
+  "name": "creature.voidworm.name",
+  "traits": [
+    "monitor",
+    "protean"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 270,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "tiny",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "own": "entropy-sense",
+        "acuity": "imprecise",
+        "range": 30
+      },
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "protean"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 6
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 4,
+    "con": 0,
+    "int": -1,
+    "wis": -1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 9,
+    "will": 6
+  },
+  "hp": {
+    "value": 16,
+    "note": "creature.voidworm.hp.note"
+  },
+  "resistances": [
+    {
+      "type": "precision",
+      "value": 3
+    },
+    {
+      "type": "protean-anatomy",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 40,
+    "note": "creature.voidworm.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.voidworm.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "finesse",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d8+1",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.voidworm.strikes.tail.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "finesse",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "confounding-lash"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "entropy-sense",
+      "section": "top",
+      "name": "creature.voidworm.abilities.entropy-sense.name",
+      "traits": [
+        "divine",
+        "prediction"
+      ],
+      "text": "creature.voidworm.abilities.entropy-sense.text"
+    },
+    {
+      "id": "protean-anatomy",
+      "section": "defense",
+      "name": "creature.voidworm.abilities.protean-anatomy.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.voidworm.abilities.protean-anatomy.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.voidworm.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.voidworm.abilities.change-shape.text"
+    },
+    {
+      "id": "confounding-lash",
+      "section": "offense",
+      "name": "creature.voidworm.abilities.confounding-lash.name",
+      "traits": [
+        "divine",
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.voidworm.abilities.confounding-lash.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 16,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur",
+              "note": "creature.voidworm.spellcasting.0.ranks.2.0.note"
+            },
+            {
+              "spell": "spell.mist"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.read-omens"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

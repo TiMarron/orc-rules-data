@@ -1,0 +1,298 @@
+{
+  "id": "creature.ancient-fortune-dragon",
+  "type": "creature",
+  "name": "creature.ancient-fortune-dragon.name",
+  "traits": [
+    "arcane",
+    "dragon"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 118,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 19,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 30,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "dwarven",
+    "petran"
+  ],
+  "skills": [
+    {
+      "lore": "creature.ancient-fortune-dragon.lore.0",
+      "mod": 37
+    },
+    {
+      "skill": "skill.acrobatics",
+      "mod": 36
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 37
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 34
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 37
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 32
+    },
+    {
+      "lore": "creature.ancient-fortune-dragon.lore.6",
+      "mod": 37
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 36
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 9,
+    "con": 8,
+    "int": 10,
+    "wis": 5,
+    "cha": 5
+  },
+  "ac": {
+    "value": 43
+  },
+  "saves": {
+    "fortitude": 31,
+    "reflex": 34,
+    "will": 32,
+    "note": "creature.ancient-fortune-dragon.saves.note"
+  },
+  "hp": {
+    "value": 300
+  },
+  "immunities": [
+    "drained",
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 80,
+    "fly": 180
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ancient-fortune-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "4d10+15",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "force"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-fortune-dragon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "4d6+15",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "force"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-fortune-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "25"
+      },
+      "damage": [
+        {
+          "dice": "4d10+15",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "force"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "aura-of-disruption",
+      "section": "defense",
+      "name": "creature.ancient-fortune-dragon.abilities.aura-of-disruption.name",
+      "traits": [
+        "arcane",
+        "aura"
+      ],
+      "aura": 120,
+      "text": "creature.ancient-fortune-dragon.abilities.aura-of-disruption.text"
+    },
+    {
+      "id": "capture-spell",
+      "section": "defense",
+      "name": "creature.ancient-fortune-dragon.abilities.capture-spell.name",
+      "actions": "reaction",
+      "traits": [
+        "arcane"
+      ],
+      "trigger": "creature.ancient-fortune-dragon.abilities.capture-spell.trigger",
+      "text": "creature.ancient-fortune-dragon.abilities.capture-spell.text"
+    },
+    {
+      "id": "disruptive-breath",
+      "section": "offense",
+      "name": "creature.ancient-fortune-dragon.abilities.disruptive-breath.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "force"
+      ],
+      "text": "creature.ancient-fortune-dragon.abilities.disruptive-breath.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.ancient-fortune-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.ancient-fortune-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.ancient-fortune-dragon.abilities.draconic-momentum.name",
+      "text": "creature.ancient-fortune-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "drain-hoard",
+      "section": "offense",
+      "name": "creature.ancient-fortune-dragon.abilities.drain-hoard.name",
+      "actions": "1",
+      "requirements": "creature.ancient-fortune-dragon.abilities.drain-hoard.requirements",
+      "frequency": "creature.ancient-fortune-dragon.abilities.drain-hoard.frequency",
+      "text": "creature.ancient-fortune-dragon.abilities.drain-hoard.text"
+    },
+    {
+      "id": "share-the-wealth",
+      "section": "offense",
+      "name": "creature.ancient-fortune-dragon.abilities.share-the-wealth.name",
+      "actions": "2",
+      "requirements": "creature.ancient-fortune-dragon.abilities.share-the-wealth.requirements",
+      "text": "creature.ancient-fortune-dragon.abilities.share-the-wealth.text"
+    },
+    {
+      "id": "treasure-dive",
+      "section": "offense",
+      "name": "creature.ancient-fortune-dragon.abilities.treasure-dive.name",
+      "actions": "2",
+      "requirements": "creature.ancient-fortune-dragon.abilities.treasure-dive.requirements",
+      "text": "creature.ancient-fortune-dragon.abilities.treasure-dive.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "arcane",
+      "dc": 45,
+      "attack": 37,
+      "cantrips": {
+        "rank": 10,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.chain-lightning"
+            },
+            {
+              "spell": "spell.fireball"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.implosion"
+            },
+            {
+              "spell": "spell.quandary"
+            },
+            {
+              "spell": "spell.slither"
+            },
+            {
+              "spell": "spell.unfettered-movement"
+            },
+            {
+              "spell": "spell.warp-mind"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    }
+  ],
+  "editNote": "Disruptive Breath regains the period the source drops after the save: page 117 prints the young dragon's sentence ending \"(DC 30 basic Reflex save).\" and page 119 prints this one as \"As young fortune dragon, but 18d6 force damage, 60-foot cone, and DC 45.\""
+}

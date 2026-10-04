@@ -1,0 +1,285 @@
+{
+  "id": "creature.astradaemon",
+  "type": "creature",
+  "name": "creature.astradaemon.name",
+  "traits": [
+    "daemon",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 75,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 16,
+  "size": "large",
+  "perception": {
+    "mod": 28,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.lifesense",
+        "range": 30
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "daemonic"
+  ],
+  "languageNote": "creature.astradaemon.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 32
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 33
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 26
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 28
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 26
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 6,
+    "con": 7,
+    "int": 2,
+    "wis": 4,
+    "cha": 7
+  },
+  "ac": {
+    "value": 39
+  },
+  "saves": {
+    "fortitude": 27,
+    "reflex": 30,
+    "will": 26,
+    "note": "creature.astradaemon.saves.note"
+  },
+  "hp": {
+    "value": 240
+  },
+  "immunities": [
+    "death-effects",
+    "void"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 60,
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.astradaemon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d6+8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "essence-drain"
+        },
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.astradaemon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "agile",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "essence-drain"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.astradaemon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d10+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "essence-drain"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "soul-siphon",
+      "section": "defense",
+      "name": "creature.astradaemon.abilities.soul-siphon.name",
+      "traits": [
+        "aura",
+        "divine",
+        "force"
+      ],
+      "aura": 30,
+      "text": "creature.astradaemon.abilities.soul-siphon.text"
+    },
+    {
+      "id": "bent-light",
+      "section": "defense",
+      "name": "creature.astradaemon.abilities.bent-light.name",
+      "traits": [
+        "divine",
+        "illusion",
+        "visual"
+      ],
+      "text": "creature.astradaemon.abilities.bent-light.text"
+    },
+    {
+      "id": "devour-soul",
+      "section": "offense",
+      "name": "creature.astradaemon.abilities.devour-soul.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "incapacitation"
+      ],
+      "requirements": "creature.astradaemon.abilities.devour-soul.requirements",
+      "text": "creature.astradaemon.abilities.devour-soul.text"
+    },
+    {
+      "id": "essence-drain",
+      "section": "offense",
+      "name": "creature.astradaemon.abilities.essence-drain.name",
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "text": "creature.astradaemon.abilities.essence-drain.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 37,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.execute"
+            },
+            {
+              "spell": "spell.pinpoint"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Spell rank corrected to the book: page 75 prints \"7th interplanar teleport (×2), 5th translocate; 4th translocate (at will)\", a 5th-rank translocate run on after a comma; the source reads it as a 7th-rank spell and the errata does not touch it."
+}

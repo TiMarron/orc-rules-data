@@ -1,0 +1,164 @@
+{
+  "id": "creature.quatoid",
+  "type": "creature",
+  "name": "creature.quatoid.name",
+  "traits": [
+    "aquatic",
+    "elemental",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 148,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "small",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "lore": "creature.quatoid.lore.2",
+      "mod": 17
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    },
+    {
+      "skill": "skill.society",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 0,
+    "int": 4,
+    "wis": 3,
+    "cha": 1
+  },
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 15,
+    "will": 18
+  },
+  "hp": {
+    "value": 120
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.quatoid.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "calming-bioluminescence",
+      "section": "defense",
+      "name": "creature.quatoid.abilities.calming-bioluminescence.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "aura": 30,
+      "text": "creature.quatoid.abilities.calming-bioluminescence.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.quatoid.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.quatoid.abilities.constrict.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 27,
+      "attack": 17,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.hydraulic-push",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "id": "creature.unicorn",
+  "type": "creature",
+  "name": "creature.unicorn.name",
+  "traits": [
+    "beast",
+    "fey",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 333,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": 0,
+    "wis": 4,
+    "cha": 4
+  },
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 8,
+    "will": 11,
+    "note": "creature.unicorn.saves.note"
+  },
+  "hp": {
+    "value": 45
+  },
+  "immunities": [
+    "poison"
+  ],
+  "speeds": {
+    "land": 45
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.unicorn.strikes.horn.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "holy",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d4",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        {
+          "own": "ghost-touch"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.unicorn.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "ghost-touch"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "animal-empathy",
+      "section": "top",
+      "name": "creature.unicorn.abilities.animal-empathy.name",
+      "text": "creature.unicorn.abilities.animal-empathy.text"
+    },
+    {
+      "id": "ghost-touch",
+      "section": "offense",
+      "name": "creature.unicorn.abilities.ghost-touch.name",
+      "text": "creature.unicorn.abilities.ghost-touch.text"
+    },
+    {
+      "id": "powerful-charge",
+      "section": "offense",
+      "name": "creature.unicorn.abilities.powerful-charge.name",
+      "actions": "2",
+      "text": "creature.unicorn.abilities.powerful-charge.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 21,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.heal",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.natures-pathway"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "creature.fungus-leshy",
+  "type": "creature",
+  "name": "creature.fungus-leshy.name",
+  "traits": [
+    "fungus",
+    "leshy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 217,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "languageNote": "creature.fungus-leshy.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": -1,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 10,
+    "will": 6
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.fungus-leshy.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.fungus-leshy.strikes.spore-pod.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 30,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "spores"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "verdant-burst",
+      "section": "defense",
+      "name": "creature.fungus-leshy.abilities.verdant-burst.name",
+      "traits": [
+        "healing",
+        "primal",
+        "vitality"
+      ],
+      "text": "creature.fungus-leshy.abilities.verdant-burst.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.fungus-leshy.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.fungus-leshy.abilities.change-shape.text"
+    },
+    {
+      "id": "spore-cloud",
+      "section": "offense",
+      "name": "creature.fungus-leshy.abilities.spore-cloud.name",
+      "actions": "2",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.fungus-leshy.abilities.spore-cloud.text"
+    },
+    {
+      "id": "spores",
+      "section": "offense",
+      "name": "creature.fungus-leshy.abilities.spores.name",
+      "text": "creature.fungus-leshy.abilities.spores.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 16,
+      "constant": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.speak-with-plants",
+              "note": "creature.fungus-leshy.spellcasting.0.constant.3.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

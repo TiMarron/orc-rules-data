@@ -1,0 +1,326 @@
+{
+  "id": "creature.naiad-queen",
+  "type": "creature",
+  "name": "creature.naiad-queen.name",
+  "traits": [
+    "amphibious",
+    "fey",
+    "nymph",
+    "water"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 246,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven",
+    "fey",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9,
+      "note": "creature.naiad-queen.skills.1.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 20
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 15
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 14
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 5,
+    "con": 4,
+    "int": 3,
+    "wis": 4,
+    "cha": 7
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 18,
+    "will": 17
+  },
+  "hp": {
+    "value": 100
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.naiad-queen.strikes.aqueous-fist.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "water"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.naiad-queen.strikes.water-orb.name",
+      "actions": "1",
+      "bonus": 18,
+      "range": 60,
+      "traits": [
+        "magical",
+        "water"
+      ],
+      "damage": [
+        {
+          "dice": "4d6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "animal-empathy",
+      "section": "top",
+      "name": "creature.naiad-queen.abilities.animal-empathy.name",
+      "text": "creature.naiad-queen.abilities.animal-empathy.text"
+    },
+    {
+      "id": "tied-to-the-land",
+      "section": "top",
+      "name": "creature.naiad-queen.abilities.tied-to-the-land.name",
+      "text": "creature.naiad-queen.abilities.tied-to-the-land.text"
+    },
+    {
+      "id": "nymphs-beauty",
+      "section": "defense",
+      "name": "creature.naiad-queen.abilities.nymphs-beauty.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental",
+        "primal",
+        "visual"
+      ],
+      "aura": 30,
+      "text": "creature.naiad-queen.abilities.nymphs-beauty.text"
+    },
+    {
+      "id": "water-healing",
+      "section": "defense",
+      "name": "creature.naiad-queen.abilities.water-healing.name",
+      "traits": [
+        "healing",
+        "primal",
+        "vitality"
+      ],
+      "text": "creature.naiad-queen.abilities.water-healing.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.naiad-queen.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "polymorph",
+        "primal"
+      ]
+    },
+    {
+      "id": "focus-beauty",
+      "section": "offense",
+      "name": "creature.naiad-queen.abilities.focus-beauty.name",
+      "actions": "1",
+      "traits": [
+        "emotion",
+        "incapacitation",
+        "mental",
+        "primal",
+        "visual"
+      ],
+      "text": "creature.naiad-queen.abilities.focus-beauty.text"
+    },
+    {
+      "id": "inspiration",
+      "section": "offense",
+      "name": "creature.naiad-queen.abilities.inspiration.name",
+      "actions": "3",
+      "traits": [
+        "emotion",
+        "mental",
+        "primal"
+      ]
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 28,
+      "attack": 18,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.stabilize"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.air-bubble"
+            },
+            {
+              "spell": "spell.fleet-step"
+            },
+            {
+              "spell": "spell.gust-of-wind"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.animal-messenger"
+            },
+            {
+              "spell": "spell.one-with-plants"
+            },
+            {
+              "spell": "spell.revealing-light"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.aqueous-orb"
+            },
+            {
+              "spell": "spell.earthbind"
+            },
+            {
+              "spell": "spell.heal"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.summon-animal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 28,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.create-water"
+            },
+            {
+              "spell": "spell.hydraulic-push"
+            },
+            {
+              "spell": "spell.tidal-surge",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 246 prints \"Athletics +9 (+13 to Swim)\"; the source omits the parenthesis and the errata does not touch it."
+}

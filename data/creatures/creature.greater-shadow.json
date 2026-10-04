@@ -1,0 +1,158 @@
+{
+  "id": "creature.greater-shadow",
+  "type": "creature",
+  "name": "creature.greater-shadow.name",
+  "traits": [
+    "incorporeal",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 306,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 5,
+    "con": 0,
+    "int": 0,
+    "wis": 2,
+    "cha": 4
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 18,
+    "will": 15
+  },
+  "hp": {
+    "value": 75,
+    "note": "creature.greater-shadow.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "own": "light-vulnerability"
+    }
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 10,
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "note": "creature.greater-shadow.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.greater-shadow.strikes.shadow-hand.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+6",
+          "type": "void"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "light-vulnerability",
+      "section": "defense",
+      "name": "creature.greater-shadow.abilities.light-vulnerability.name",
+      "text": "creature.greater-shadow.abilities.light-vulnerability.text"
+    },
+    {
+      "id": "shadow-spawn",
+      "section": "offense",
+      "name": "creature.greater-shadow.abilities.shadow-spawn.name",
+      "text": "creature.greater-shadow.abilities.shadow-spawn.text"
+    },
+    {
+      "id": "slink-in-shadows",
+      "section": "offense",
+      "name": "creature.greater-shadow.abilities.slink-in-shadows.name",
+      "text": "creature.greater-shadow.abilities.slink-in-shadows.text"
+    },
+    {
+      "id": "steal-shadow",
+      "section": "offense",
+      "name": "creature.greater-shadow.abilities.steal-shadow.name",
+      "actions": "1",
+      "traits": [
+        "divine"
+      ],
+      "requirements": "creature.greater-shadow.abilities.steal-shadow.requirements",
+      "text": "creature.greater-shadow.abilities.steal-shadow.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 25,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkness",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

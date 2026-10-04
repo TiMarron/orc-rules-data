@@ -12,8 +12,8 @@
     "page": 307,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 9,
   "size": "gargantuan",
   "perception": {
@@ -128,7 +128,11 @@
       "id": "breach",
       "section": "offense",
       "name": "creature.megalodon.abilities.breach.name",
-      "actions": "2",
+      "actions": "1",
+      "traits": [
+        "attack",
+        "move"
+      ],
       "text": "creature.megalodon.abilities.breach.text"
     },
     {
@@ -150,5 +154,6 @@
       ],
       "text": "creature.megalodon.abilities.swallow-whole.text"
     }
-  ]
+  ],
+  "editNote": "Breach corrected to the book: page 307 prints the megalodon's own entry as \"Breach [one-action] (attack, move) As great white shark, but …\"; the source keeps the great white shark's two actions and no traits, and the errata does not touch it."
 }

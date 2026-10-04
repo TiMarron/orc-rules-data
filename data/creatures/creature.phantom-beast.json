@@ -1,0 +1,177 @@
+{
+  "id": "creature.phantom-beast",
+  "type": "creature",
+  "name": "creature.phantom-beast.name",
+  "traits": [
+    "ethereal",
+    "incorporeal",
+    "phantom",
+    "spirit"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 263,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "languageNote": "creature.phantom-beast.language-note",
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 16
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 18
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 14
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 6,
+    "con": 1,
+    "int": 0,
+    "wis": 4,
+    "cha": 6
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 18,
+    "will": 16,
+    "note": "creature.phantom-beast.saves.note"
+  },
+  "hp": {
+    "value": 120
+  },
+  "immunities": [
+    "bleed",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 8,
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit"
+      ],
+      "note": "creature.phantom-beast.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.phantom-beast.strikes.phantom-horn.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "walk-the-ethereal-line",
+      "section": "top",
+      "name": "creature.phantom-beast.abilities.walk-the-ethereal-line.name",
+      "actions": "2",
+      "text": "creature.phantom-beast.abilities.walk-the-ethereal-line.text"
+    },
+    {
+      "id": "susceptible-to-death",
+      "section": "defense",
+      "name": "creature.phantom-beast.abilities.susceptible-to-death.name",
+      "text": "creature.phantom-beast.abilities.susceptible-to-death.text"
+    },
+    {
+      "id": "grab-item",
+      "section": "offense",
+      "name": "creature.phantom-beast.abilities.grab-item.name",
+      "actions": "1",
+      "text": "creature.phantom-beast.abilities.grab-item.text"
+    },
+    {
+      "id": "phantom-touch",
+      "section": "offense",
+      "name": "creature.phantom-beast.abilities.phantom-touch.name",
+      "traits": [
+        "spirit"
+      ],
+      "text": "creature.phantom-beast.abilities.phantom-touch.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 28,
+      "attack": 20,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.phantom-pain"
+            },
+            {
+              "spell": "spell.sleep"
+            },
+            {
+              "spell": "spell.spiritual-armament"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with the generic descriptor the dataset already uses. The rules text is the book's."
+}

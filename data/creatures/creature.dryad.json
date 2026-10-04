@@ -1,0 +1,190 @@
+{
+  "id": "creature.dryad",
+  "type": "creature",
+  "name": "creature.dryad.name",
+  "traits": [
+    "fey",
+    "nymph",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven",
+    "fey",
+    "muan"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 7,
+      "note": "creature.dryad.skills.2.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 1,
+    "int": 2,
+    "wis": 3,
+    "cha": 4
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 11,
+    "will": 10
+  },
+  "hp": {
+    "value": 55
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dryad.strikes.branch.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d12+2",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "nature-empathy",
+      "section": "top",
+      "name": "creature.dryad.abilities.nature-empathy.name",
+      "text": "creature.dryad.abilities.nature-empathy.text"
+    },
+    {
+      "id": "tree-dependent",
+      "section": "defense",
+      "name": "creature.dryad.abilities.tree-dependent.name",
+      "text": "creature.dryad.abilities.tree-dependent.text"
+    },
+    {
+      "id": "tree-meld",
+      "section": "offense",
+      "name": "creature.dryad.abilities.tree-meld.name",
+      "actions": "2",
+      "text": "creature.dryad.abilities.tree-meld.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.entangling-flora",
+              "atWill": true
+            },
+            {
+              "spell": "spell.one-with-plants",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "count": 3
+            },
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.natures-pathway",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 245 prints \"Crafting +7 (+9 woodworking)\"; the source omits the parenthesis and the errata does not touch it."
+}
