@@ -741,6 +741,85 @@ describe('type schemas', () => {
     }
   });
 
+  it('accepts what a creature carries: an item, an item with its runes, a name alone, a count, ammunition, a shield, a note', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.items = [
+      { item: 'item.longsword' },
+      { item: 'item.longsword', potency: 1, runes: [{ item: 'item.striking' }], material: 'silver' },
+      { item: 'item.full-plate', potency: 2, runes: [{ item: 'item.resilient', variant: 'greater' }, { item: 'item.invisibility' }] },
+      { item: 'item.javelin', count: 4 },
+      { item: 'item.longbow', ammunition: { item: 'item.arrows', count: 20 } },
+      { item: 'item.sling', ammunition: { name: 'creature.cave-bear.items.4.ammunition.name', count: 12 } },
+      { item: 'item.steel-shield', hardness: 5, hp: 20, bt: 10 },
+      { name: 'creature.cave-bear.items.7.name', note: 'creature.cave-bear.items.7.note' },
+      { item: 'item.club', name: 'creature.cave-bear.items.8.name' },
+    ];
+    expect(issuesFor('creature', c)).toEqual([]);
+    c.strikes[0].item = 'item.longsword';
+    expect(issuesFor('creature', c)).toEqual([]);
+  });
+
+  it('rejects an empty items list, an entry with neither an item nor a name, and an unknown field', () => {
+    const c = structuredClone(VALID.creature) as any;
+    for (const bad of [[], [{}], [{ count: 2 }], [{ item: 'item.longsword', price: 5 }]]) {
+      c.items = bad;
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/items');
+    }
+  });
+
+  it('rejects a carried entry with an item that is not an item id, a name that is not a key, and a bad potency, count or material', () => {
+    const c = structuredClone(VALID.creature) as any;
+    for (const bad of [
+      { item: 'longsword' }, { item: 'spell.longsword' }, { name: 'panpipes' },
+      { item: 'item.longsword', potency: 0 }, { item: 'item.longsword', potency: 5 }, { item: 'item.longsword', potency: 1.5 },
+      { item: 'item.javelin', count: 1 }, { item: 'item.javelin', count: '4' },
+      { item: 'item.longsword', material: 'Cold Iron' },
+      { item: 'item.longsword', note: 'see sidebar' },
+    ]) {
+      c.items = [bad];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/items/0');
+    }
+  });
+
+  it('rejects potency or runes on an entry that has no item, and a rune without an item', () => {
+    const c = structuredClone(VALID.creature) as any;
+    for (const bad of [
+      { name: 'creature.cave-bear.items.0.name', potency: 1 },
+      { name: 'creature.cave-bear.items.0.name', runes: [{ item: 'item.striking' }] },
+      { item: 'item.longsword', runes: [] },
+      { item: 'item.longsword', runes: [{ variant: 'greater' }] },
+      { item: 'item.longsword', runes: [{ item: 'item.striking', variant: 'Greater' }] },
+      { item: 'item.longsword', runes: [{ item: 'item.striking', price: 1 }] },
+    ]) {
+      c.items = [bad];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/items/0');
+    }
+  });
+
+  it('rejects ammunition without a count, with neither an item nor a name, with a count below one, and with a name that is not a key', () => {
+    const c = structuredClone(VALID.creature) as any;
+    for (const ammunition of [{ item: 'item.arrows' }, { count: 20 }, { item: 'item.arrows', count: 0 }, { item: 'item.arrows', count: 20, note: 'x' }, { name: 'arrows', count: 20 }]) {
+      c.items = [{ item: 'item.longbow', ammunition }];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(ammunition)).toContain('/items/0/ammunition');
+    }
+  });
+
+  it('rejects a shield with only some of hardness, hp and bt', () => {
+    const c = structuredClone(VALID.creature) as any;
+    for (const bad of [{ hardness: 5 }, { hp: 20 }, { bt: 10 }, { hardness: 5, hp: 20 }, { hp: 20, bt: 10 }]) {
+      c.items = [{ item: 'item.steel-shield', ...bad }];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/items/0');
+    }
+  });
+
+  it('rejects a Strike\'s item that is not an item id', () => {
+    const c = structuredClone(VALID.creature) as any;
+    for (const item of ['longsword', 'spell.longsword', 5, '']) {
+      c.strikes[0].item = item;
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(item)).toContain('/strikes/0/item');
+    }
+  });
+
   it('accepts the precious material a Strike counts as, and rejects one that is not a slug', () => {
     const c = structuredClone(VALID.creature) as any;
     c.strikes[0].material = 'cold-iron';

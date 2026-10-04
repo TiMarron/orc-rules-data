@@ -162,8 +162,57 @@
           },
           "$comment": "May be empty: some Strikes deal no damage and only apply an effect."
         },
-        "effects": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/effect" } }
+        "effects": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/effect" } },
+        "item": { "$ref": "common.schema.json#/$defs/refItem", "$comment": "The item the Strike is made with: one of this creature's `items` (the validator checks that it is). Absent when the Strike is a natural attack or the book names no carried item for it." }
       }
+    },
+    "rune": {
+      "type": "object", "additionalProperties": false, "required": ["item"],
+      "properties": {
+        "item": { "$ref": "common.schema.json#/$defs/refItem" },
+        "variant": { "$ref": "#/$defs/slug", "$comment": "The id of the variant of the rune item the book prints: \"greater\" in \"greater striking\". The validator checks that the rune item has it." }
+      }
+    },
+    "ammunition": {
+      "type": "object", "additionalProperties": false, "required": ["count"],
+      "anyOf": [
+        { "properties": { "item": true }, "required": ["item"] },
+        { "properties": { "name": true }, "required": ["name"] }
+      ],
+      "properties": {
+        "item": { "$ref": "common.schema.json#/$defs/refItem", "$comment": "The ammunition, when the dataset has it." },
+        "name": { "$ref": "#/$defs/key", "$comment": "The printed name, when the dataset has no record for the ammunition." },
+        "count": { "type": "integer", "minimum": 1 }
+      },
+      "$comment": "\"(20 arrows)\" after a weapon: what it fires, and how many of them the creature carries."
+    },
+    "carried": {
+      "type": "object", "additionalProperties": false,
+      "anyOf": [
+        { "properties": { "item": true }, "required": ["item"] },
+        { "properties": { "name": true }, "required": ["name"] }
+      ],
+      "dependentRequired": {
+        "potency": ["item"],
+        "runes": ["item"],
+        "hardness": ["hp", "bt"],
+        "hp": ["hardness", "bt"],
+        "bt": ["hardness", "hp"]
+      },
+      "properties": {
+        "item": { "$ref": "common.schema.json#/$defs/refItem" },
+        "name": { "$ref": "#/$defs/key", "$comment": "The printed name, when it is not the name of the item (\"baton\" for a club) or when the book has no item for it at all (\"panpipes\")." },
+        "potency": { "type": "integer", "minimum": 1, "maximum": 4, "$comment": "The \"+N\" of \"+1 striking longsword\"." },
+        "runes": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/rune" }, "$comment": "The runes printed before the item, apart from the potency, in print order." },
+        "material": { "$ref": "#/$defs/slug", "$comment": "The same vocabulary as a Strike's `material` and an `except`." },
+        "count": { "type": "integer", "minimum": 2, "$comment": "\"(4)\", \"(2 doses)\". Absent means one." },
+        "ammunition": { "$ref": "#/$defs/ammunition" },
+        "hardness": { "type": "integer", "minimum": 0, "$comment": "A shield's statistics as the stat block prints them, all three or none." },
+        "hp": { "type": "integer", "minimum": 1 },
+        "bt": { "type": "integer", "minimum": 0 },
+        "note": { "$ref": "#/$defs/key", "$comment": "What else the parenthesis says, as printed: \"see sidebar\", \"handheld\"." }
+      },
+      "$comment": "One entry of the stat block's Items line: an item of the dataset, or only a name when there is none. `potency` and `runes` belong to an entry that has `item`."
     },
     "ability": {
       "type": "object", "additionalProperties": false, "required": ["id", "section", "name"],
@@ -220,6 +269,7 @@
           "properties": { "land": { "$ref": "#/$defs/feet" }, "fly": { "$ref": "#/$defs/feet" }, "swim": { "$ref": "#/$defs/feet" }, "climb": { "$ref": "#/$defs/feet" }, "burrow": { "$ref": "#/$defs/feet" }, "note": { "$ref": "#/$defs/key" } }
         },
         "strikes": { "type": "array", "items": { "$ref": "#/$defs/strike" } },
+        "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/carried" }, "$comment": "What the creature carries, in the order the stat block's Items line prints it. Absent when the line is." },
         "spellcasting": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellBlock" }, "$comment": "The stat block's spell blocks in print order. Absent for a creature that casts none." },
         "abilities": { "type": "array", "items": { "$ref": "#/$defs/ability" } }
       }
