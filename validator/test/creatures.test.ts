@@ -45,4 +45,25 @@ describe('creatures check', () => {
   it('rejects a size among the traits', () => {
     expect(messages({ traits: ['animal', 'large'] })).toEqual(['traits: "large" is a size and belongs in "size"']);
   });
+
+  it('accepts trait parameters that belong to the same entry\'s own traits', () => {
+    expect(messages({
+      strikes: [{ traits: ['agile', 'reach'], traitValues: { reach: '10' } }],
+      abilities: [{ id: 'venom', section: 'offense', name: 'creature.viper.abilities.venom.name', traits: ['aura'], traitValues: { aura: '20' } }],
+    })).toEqual([]);
+  });
+
+  it('rejects a Strike\'s trait parameter for a trait the Strike does not have', () => {
+    expect(messages({ strikes: [{ traits: ['agile'], traitValues: { reach: '10' } }] })).toEqual([
+      'strikes[0].traitValues: "reach" is not among this Strike\'s traits',
+    ]);
+  });
+
+  it('rejects an ability\'s trait parameter for a trait the ability does not have', () => {
+    const abilities = [
+      { id: 'venom', section: 'offense', name: 'creature.viper.abilities.venom.name' },
+      { id: 'hiss', section: 'offense', name: 'creature.viper.abilities.hiss.name', traits: ['auditory'], traitValues: { aura: '20' } },
+    ];
+    expect(messages({ abilities })).toEqual(['abilities[1].traitValues: "aura" is not among this ability\'s traits']);
+  });
 });

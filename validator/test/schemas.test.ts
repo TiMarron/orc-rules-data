@@ -687,6 +687,18 @@ describe('type schemas', () => {
     expect(issuesFor('creature', c).join('\n')).toContain('/strikes/0/damage/0/dice');
   });
 
+  it('rejects speeds that carry a note but no speed', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.speeds = { note: 'creature.cave-bear.speeds.note' };
+    expect(issuesFor('creature', c).length).toBeGreaterThanOrEqual(1);
+  });
+
+  it('accepts speeds with a single speed that is not land', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.speeds = { fly: 40 };
+    expect(issuesFor('creature', c)).toEqual([]);
+  });
+
   it('rejects a creature missing one of the six attributes', () => {
     const c = structuredClone(VALID.creature) as any;
     delete c.attributes.cha;
