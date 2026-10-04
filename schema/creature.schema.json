@@ -33,8 +33,84 @@
       "oneOf": [
         { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than the ability's own name: \"greater darkvision\"." }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } },
         { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } },
+        { "type": "object", "additionalProperties": false, "required": ["spell"], "properties": { "spell": { "$ref": "common.schema.json#/$defs/refSpell" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } }, "$comment": "A sense a spell gives the creature: truesight, see the unseen, detect magic." },
         { "type": "object", "additionalProperties": false, "required": ["text"], "properties": { "text": { "$ref": "#/$defs/key" }, "acuity": { "$ref": "#/$defs/acuity" }, "range": { "$ref": "#/$defs/feet" } } }
       ]
+    },
+    "spellRank": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "spellEntry": {
+      "type": "object", "additionalProperties": false, "required": ["spell"],
+      "properties": {
+        "spell": { "$ref": "common.schema.json#/$defs/refSpell" },
+        "count": { "type": "integer", "minimum": 2, "$comment": "\"(×2)\": the creature has the spell this many times a day. Absent means once." },
+        "atWill": { "const": true, "$comment": "\"(at will)\"." },
+        "note": { "$ref": "#/$defs/key", "$comment": "A restriction as printed: \"self only\", \"animals only\", \"see soul covenant\"." }
+      }
+    },
+    "spellList": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellEntry" } },
+    "spellsByRank": {
+      "type": "object", "additionalProperties": false, "required": ["rank", "spells"],
+      "properties": { "rank": { "$ref": "#/$defs/spellRank" }, "spells": { "$ref": "#/$defs/spellList" } },
+      "$comment": "One printed line of a block: \"3rd\", \"Constant (5th)\"."
+    },
+    "spellsWithSlots": {
+      "type": "object", "additionalProperties": false, "required": ["rank", "spells"],
+      "properties": { "rank": { "$ref": "#/$defs/spellRank" }, "spells": { "$ref": "#/$defs/spellList" }, "slots": { "type": "integer", "minimum": 1, "$comment": "\"(2 slots)\": how many times a day the creature casts a spell of this rank, whichever it picks from the list." } }
+    },
+    "spellCantrips": {
+      "type": "object", "additionalProperties": false, "required": ["rank", "spells"],
+      "properties": { "rank": { "$ref": "#/$defs/spellRank", "$comment": "The rank the cantrips are heightened to: \"Cantrips (3rd)\"." }, "spells": { "$ref": "#/$defs/spellList" } }
+    },
+    "spellsSomewhere": {
+      "type": "object",
+      "anyOf": [
+        { "properties": { "cantrips": true }, "required": ["cantrips"] },
+        { "properties": { "ranks": true }, "required": ["ranks"] },
+        { "properties": { "constant": true }, "required": ["constant"] }
+      ],
+      "$comment": "A block that lists no spell at all is not a block."
+    },
+    "spellBlock": {
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "name", "focusPoints", "dc"],
+          "allOf": [{ "$ref": "#/$defs/spellsSomewhere" }],
+          "properties": {
+            "kind": { "const": "focus" },
+            "name": { "$ref": "#/$defs/key", "$comment": "The block's printed name: \"Cleric Domain Spells\". A focus block has no tradition of its own in the stat block." },
+            "focusPoints": { "type": "integer", "minimum": 1 },
+            "dc": { "type": "integer" }, "attack": { "type": "integer" },
+            "cantrips": { "$ref": "#/$defs/spellCantrips" },
+            "ranks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellsByRank" } },
+            "constant": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellsByRank" } }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "tradition", "dc"],
+          "allOf": [{ "$ref": "#/$defs/spellsSomewhere" }],
+          "properties": {
+            "kind": { "enum": ["innate", "prepared"] },
+            "tradition": { "$ref": "common.schema.json#/$defs/tradition" },
+            "dc": { "type": "integer" }, "attack": { "type": "integer" },
+            "cantrips": { "$ref": "#/$defs/spellCantrips" },
+            "ranks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellsByRank" } },
+            "constant": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellsByRank" } }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "tradition", "dc"],
+          "allOf": [{ "$ref": "#/$defs/spellsSomewhere" }],
+          "properties": {
+            "kind": { "const": "spontaneous" },
+            "tradition": { "$ref": "common.schema.json#/$defs/tradition" },
+            "dc": { "type": "integer" }, "attack": { "type": "integer" },
+            "cantrips": { "$ref": "#/$defs/spellCantrips" },
+            "ranks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellsWithSlots" } },
+            "constant": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellsByRank" } }
+          }
+        }
+      ],
+      "$comment": "One spellcasting block of a stat block. The three branches are the three shapes the kinds take: a focus block has a name and focus points and no tradition; the other kinds have a tradition; only a spontaneous caster's ranks carry slots."
     },
     "skill": {
       "oneOf": [
@@ -142,6 +218,7 @@
           "properties": { "land": { "$ref": "#/$defs/feet" }, "fly": { "$ref": "#/$defs/feet" }, "swim": { "$ref": "#/$defs/feet" }, "climb": { "$ref": "#/$defs/feet" }, "burrow": { "$ref": "#/$defs/feet" }, "note": { "$ref": "#/$defs/key" } }
         },
         "strikes": { "type": "array", "items": { "$ref": "#/$defs/strike" } },
+        "spellcasting": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellBlock" }, "$comment": "The stat block's spell blocks in print order. Absent for a creature that casts none." },
         "abilities": { "type": "array", "items": { "$ref": "#/$defs/ability" } }
       }
     }

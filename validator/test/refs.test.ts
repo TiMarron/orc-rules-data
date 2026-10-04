@@ -282,4 +282,24 @@ describe('refs check', () => {
     const messages = refsCheck(loadDataset(root)).map((i) => i.message);
     expect(messages.some((m) => m.includes('options'))).toBe(false);
   });
+
+  it('resolves the spells of a creature\'s spellcasting and of its senses, and flags one with no record; the array is not a class\'s spellcasting', () => {
+    const creature = (spell: string) => record('creature', 'lich', {
+      perception: { mod: 20, senses: [{ spell: 'spell.truesight' }] },
+      spellcasting: [{ kind: 'innate', tradition: 'divine', dc: 23, ranks: [{ rank: 1, spells: [{ spell }] }] }],
+    });
+    const records = (spell: string) => [
+      { folder: 'creatures', file: 'creature.lich.json', json: creature(spell) },
+      { folder: 'spells', file: 'spell.truesight.json', json: record('spell', 'truesight') },
+      { folder: 'spells', file: 'spell.heal.json', json: record('spell', 'heal') },
+    ];
+    expect(refsCheck(loadDataset(writeFixture({ records: records('spell.heal') })))).toEqual([]);
+    expect(refsCheck(loadDataset(writeFixture({ records: records('spell.harm') }))).map((i) => i.message)).toEqual([
+      'spellcasting[0].ranks[0].spells[0].spell: reference "spell.harm" does not resolve',
+    ]);
+    const sense = record('creature', 'lich', { perception: { mod: 20, senses: [{ spell: 'spell.gone' }] } });
+    expect(refsCheck(loadDataset(writeFixture({ records: [{ folder: 'creatures', file: 'creature.lich.json', json: sense }] }))).map((i) => i.message)).toEqual([
+      'perception.senses[0].spell: reference "spell.gone" does not resolve',
+    ]);
+  });
 });

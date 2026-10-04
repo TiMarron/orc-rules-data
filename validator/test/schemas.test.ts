@@ -775,6 +775,90 @@ describe('type schemas', () => {
     expect(issuesFor('creature', c).join('\n')).toContain('/weaknesses/0');
   });
 
+  const SPELLS = [{ spell: 'spell.heal' }, { spell: 'spell.noise-blast', atWill: true }, { spell: 'spell.harm', count: 4 }, { spell: 'spell.invisibility', atWill: true, note: 'creature.cave-bear.spellcasting.0.ranks.2.0.note' }];
+  const innate = () => ({
+    kind: 'innate', tradition: 'divine', dc: 23, attack: 15,
+    cantrips: { rank: 3, spells: [{ spell: 'spell.shield' }] },
+    ranks: [{ rank: 1, spells: SPELLS }, { rank: 3, spells: [{ spell: 'spell.heal' }] }],
+    constant: [{ rank: 5, spells: [{ spell: 'spell.truespeech' }] }],
+  });
+  const withBlocks = (blocks: unknown[]) => { const c = structuredClone(VALID.creature) as any; c.spellcasting = blocks; return c; };
+
+  it('accepts a creature\'s spellcasting: every kind of block, a spell that is at will, repeated or restricted, and a spontaneous rank\'s slots', () => {
+    const spontaneous = { kind: 'spontaneous', tradition: 'arcane', dc: 22, cantrips: { rank: 3, spells: [{ spell: 'spell.shield' }] }, ranks: [{ rank: 1, spells: [{ spell: 'spell.fear' }], slots: 4 }, { rank: 2, spells: [{ spell: 'spell.fear' }] }] };
+    const focus = { kind: 'focus', name: 'creature.cave-bear.spellcasting.1.name', focusPoints: 1, dc: 18, ranks: [{ rank: 1, spells: [{ spell: 'spell.deaths-call' }] }] };
+    const prepared = { kind: 'prepared', tradition: 'divine', dc: 18, ranks: [{ rank: 1, spells: [{ spell: 'spell.harm', count: 4 }] }] };
+    expect(issuesFor('creature', withBlocks([innate(), spontaneous, prepared, focus]))).toEqual([]);
+    expect(issuesFor('creature', withBlocks([{ kind: 'innate', tradition: 'primal', dc: 40, constant: [{ rank: 4, spells: [{ spell: 'spell.fly' }] }] }]))).toEqual([]);
+  });
+
+  it('rejects a spellcasting that is empty or not an array', () => {
+    expect(issuesFor('creature', withBlocks([])).join('\n')).toContain('/spellcasting');
+    expect(issuesFor('creature', withBlocks(innate() as any)).join('\n')).toContain('/spellcasting');
+  });
+
+  it('rejects a block without a kind, a DC, or any spell, and one of an unknown kind or tradition', () => {
+    const { kind: _k, ...noKind } = innate();
+    const { dc: _d, ...noDc } = innate();
+    const { cantrips: _c, ranks: _r, constant: _o, ...noSpells } = innate();
+    const bad = [noKind, noDc, noSpells, { ...innate(), kind: 'wild' }, { ...innate(), tradition: 'elemental' }, { ...innate(), tradition: undefined }, { ...innate(), dc: '23' }, { ...innate(), attack: 15.5 }];
+    for (const b of bad) expect(issuesFor('creature', withBlocks([b])).join('\n'), JSON.stringify(b)).toContain('/spellcasting/0');
+  });
+
+  it('rejects an empty list of ranks, constants or spells, which says nothing', () => {
+    const empties = [{ ...innate(), ranks: [] }, { ...innate(), constant: [] }, { ...innate(), cantrips: { rank: 3, spells: [] } }, { ...innate(), ranks: [{ rank: 1, spells: [] }] }];
+    for (const b of empties) expect(issuesFor('creature', withBlocks([b])).join('\n'), JSON.stringify(b)).toContain('/spellcasting/0');
+    // A block of one list and an empty other is the same as a block without it, and says nothing for the empty one.
+    expect(issuesFor('creature', withBlocks([{ kind: 'innate', tradition: 'divine', dc: 20, ranks: [] }])).join('\n')).toContain('/spellcasting/0');
+  });
+
+  it('rejects a focus block with a tradition, without its name or points, and any other block with a name or points', () => {
+    const focus = { kind: 'focus', name: 'creature.cave-bear.spellcasting.0.name', focusPoints: 2, dc: 21, ranks: [{ rank: 1, spells: [{ spell: 'spell.heal' }] }] };
+    expect(issuesFor('creature', withBlocks([focus]))).toEqual([]);
+    const { name: _n, ...noName } = focus;
+    const { focusPoints: _p, ...noPoints } = focus;
+    for (const b of [{ ...focus, tradition: 'divine' }, noName, noPoints, { ...focus, focusPoints: 0 }, { ...innate(), name: 'creature.cave-bear.spellcasting.0.name' }, { ...innate(), focusPoints: 1 }]) {
+      expect(issuesFor('creature', withBlocks([b])).join('\n'), JSON.stringify(b)).toContain('/spellcasting/0');
+    }
+  });
+
+  it('rejects slots anywhere but a spontaneous block\'s ranks, and a slot count that is not a positive whole number', () => {
+    const spontaneous = (slots: unknown) => ({ kind: 'spontaneous', tradition: 'arcane', dc: 22, ranks: [{ rank: 1, spells: [{ spell: 'spell.fear' }], slots }] });
+    expect(issuesFor('creature', withBlocks([spontaneous(3)]))).toEqual([]);
+    for (const slots of [0, -1, 1.5, '3']) expect(issuesFor('creature', withBlocks([spontaneous(slots)])).join('\n'), String(slots)).toContain('/spellcasting/0');
+    const innateSlots = { ...innate(), ranks: [{ rank: 1, spells: [{ spell: 'spell.heal' }], slots: 2 }] };
+    const preparedSlots = { kind: 'prepared', tradition: 'divine', dc: 18, ranks: [{ rank: 1, spells: [{ spell: 'spell.harm' }], slots: 2 }] };
+    const focusSlots = { kind: 'focus', name: 'creature.cave-bear.spellcasting.0.name', focusPoints: 1, dc: 18, ranks: [{ rank: 1, spells: [{ spell: 'spell.harm' }], slots: 2 }] };
+    const constantSlots = { kind: 'spontaneous', tradition: 'arcane', dc: 22, constant: [{ rank: 1, spells: [{ spell: 'spell.fear' }], slots: 2 }] };
+    for (const b of [innateSlots, preparedSlots, focusSlots, constantSlots]) expect(issuesFor('creature', withBlocks([b])).join('\n'), JSON.stringify(b)).toContain('/spellcasting/0');
+  });
+
+  it('rejects a spell entry that is not a spell reference, a count under two, an at-will that is not true, or a note that is not a key', () => {
+    const entry = (e: unknown) => withBlocks([{ kind: 'innate', tradition: 'divine', dc: 20, ranks: [{ rank: 1, spells: [e] }] }]);
+    expect(issuesFor('creature', entry({ spell: 'spell.heal', count: 2, atWill: true, note: 'creature.cave-bear.spellcasting.0.ranks.1.0.note' }))).toEqual([]);
+    for (const bad of [{ spell: 'Heal' }, { spell: 'feat.heal' }, { atWill: true }, { spell: 'spell.heal', count: 1 }, { spell: 'spell.heal', count: 2.5 }, { spell: 'spell.heal', atWill: false }, { spell: 'spell.heal', note: 'self only' }, { spell: 'spell.heal', text: 'x' }]) {
+      expect(issuesFor('creature', entry(bad)).join('\n'), JSON.stringify(bad)).toContain('/spellcasting/0');
+    }
+  });
+
+  it('rejects a rank outside 1 to 10, among cantrips, ranks and constants alike', () => {
+    for (const rank of [0, 11, 1.5, '3']) {
+      expect(issuesFor('creature', withBlocks([{ ...innate(), ranks: [{ rank, spells: [{ spell: 'spell.heal' }] }] }])).join('\n'), String(rank)).toContain('/spellcasting/0');
+      expect(issuesFor('creature', withBlocks([{ ...innate(), cantrips: { rank, spells: [{ spell: 'spell.shield' }] } }])).join('\n'), String(rank)).toContain('/spellcasting/0');
+      expect(issuesFor('creature', withBlocks([{ ...innate(), constant: [{ rank, spells: [{ spell: 'spell.fly' }] }] }])).join('\n'), String(rank)).toContain('/spellcasting/0');
+    }
+  });
+
+  it('accepts a sense that is a spell, with its acuity and range, and rejects one that also names an ability or text', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.perception.senses = [{ spell: 'spell.truesight' }, { spell: 'spell.see-the-unseen', acuity: 'precise', range: 60 }];
+    expect(issuesFor('creature', c)).toEqual([]);
+    for (const bad of [{ spell: 'spell.truesight', ability: 'ability.darkvision' }, { spell: 'spell.truesight', text: 'creature.cave-bear.senses.0' }, { spell: 'truesight' }, { spell: 'ability.truesight' }]) {
+      c.perception.senses = [bad];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/perception/senses/0');
+    }
+  });
+
   it('accepts text on a sense that is a universal ability, for what the stat block prints beyond its name (greater darkvision)', () => {
     const c = structuredClone(VALID.creature) as any;
     c.perception.senses = [{ ability: 'ability.darkvision', text: 'creature.cave-bear.senses.0' }];
