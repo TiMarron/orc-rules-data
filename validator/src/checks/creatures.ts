@@ -7,7 +7,7 @@ const list = (value: unknown): Record<string, unknown>[] =>
 /**
  * What JSON Schema cannot say about a creature:
  *
- * - `own` — in a Strike's effects, in a sense, in a weakness or in a resistance — names one of the
+ * - `own` — in a Strike's effects (also inside a `choice`), in a sense, in a weakness or in a resistance — names one of the
  *   same creature's abilities by its `id`. A dangling one is a rule the stat block promises and
  *   the record does not carry.
  * - Ability ids are unique within the creature, or `own` would be ambiguous.
@@ -30,7 +30,10 @@ export const creaturesCheck: Check = (ds) => {
     const resolve = (value: unknown, path: string): void => {
       if (typeof value === 'string' && !own.has(value)) error(`${path}: "${value}" is not one of this creature's abilities`);
     };
-    list(f.record.strikes).forEach((s, i) => list(s.effects).forEach((e, j) => resolve(e.own, `strikes[${i}].effects[${j}].own`)));
+    list(f.record.strikes).forEach((s, i) => list(s.effects).forEach((e, j) => {
+      resolve(e.own, `strikes[${i}].effects[${j}].own`);
+      list(e.choice).forEach((c, k) => resolve(c.own, `strikes[${i}].effects[${j}].choice[${k}].own`));
+    }));
     const perception = f.record.perception as Record<string, unknown> | undefined;
     list(perception?.senses).forEach((s, i) => resolve(s.own, `perception.senses[${i}].own`));
     for (const key of ['weaknesses', 'resistances']) {

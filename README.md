@@ -135,12 +135,17 @@ cost tokens.
 - `creature.strikes` lists each Strike with its attack `bonus`, its `traits`
   (a parameter such as reach in `traitValues`, a ranged Strike's distance in
   `range` or `rangeIncrement`, its `reload`) and its `damage` parts as
-  `{ dice, type }`. `effects` is what the Strike does besides damage, each
+  `{ dice, type }` (`persistent: true` for persistent damage, `splash: true`
+  for splash damage). `effects` is what the Strike does besides damage, each
   entry exactly one of `{ ability }` (a universal ability), `{ own }` (one of
-  this creature's abilities, by its `id`) or `{ text }`. An `{ ability }`
-  effect may carry `text` too, when the stat block prints more than the
-  ability's own name: "Improved Grab" (one universal record covers Improved
-  Grab, Knockdown and Push), "Push 10 feet". The book prints a precious
+  this creature's abilities, by its `id`), `{ text }` or `{ choice }`. An
+  `{ ability }` or `{ own }` effect may carry `text` too, when the stat block
+  prints more than the ability's own name: "Improved Grab" (one universal
+  record covers Improved Grab, Knockdown and Push), "Push 10 feet", or the
+  damage printed beside an own ability ("2d6 energy damage (see draconic
+  bite)"). A `{ choice }` is an array of two or more of those plain effects
+  (never another choice) and means the creature picks one when the Strike hits
+  ("Grab or Knockdown"). The book prints a precious
   material among a Strike's traits ("cold iron"); it is not a trait and goes in
   the Strike's `material`, the same slug a weakness or an exception names.
 - A creature's `resistances` and `weaknesses` are `{ type, value }` entries.

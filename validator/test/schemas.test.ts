@@ -689,10 +689,46 @@ describe('type schemas', () => {
     expect(issues).toContain("must have required property 'id'");
   });
 
-  it('rejects text on a Strike effect that names one of the creature\'s own abilities', () => {
+  it('accepts text on a Strike effect that names one of the creature\'s own abilities, and rejects an own with an ability beside it', () => {
     const c = structuredClone(VALID.creature) as any;
     c.strikes[0].effects = [{ own: 'mauler', text: 'creature.cave-bear.strikes.claw.effects.0' }];
+    expect(issuesFor('creature', c)).toEqual([]);
+    c.strikes[0].effects = [{ own: 'mauler', text: 'creature.cave-bear.strikes.claw.effects.0', ability: 'ability.grab' }];
     expect(issuesFor('creature', c).join('\n')).toContain('/strikes/0/effects/0');
+  });
+
+  it('accepts a Strike effect that is a choice between two or more plain effects', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].effects = [
+      { choice: [{ ability: 'ability.grab' }, { ability: 'ability.knockdown' }] },
+      { choice: [{ ability: 'ability.push', text: 'creature.cave-bear.strikes.claw.effects.1.0' }, { own: 'mauler' }, { text: 'creature.cave-bear.strikes.claw.effects.1.2' }] },
+    ];
+    expect(issuesFor('creature', c)).toEqual([]);
+  });
+
+  it('rejects a choice of one, a choice that nests a choice, an empty item and a choice with a sibling property', () => {
+    const c = structuredClone(VALID.creature) as any;
+    for (const bad of [
+      { choice: [{ ability: 'ability.grab' }] },
+      { choice: [] },
+      { choice: [{ ability: 'ability.grab' }, { choice: [{ ability: 'ability.push' }, { ability: 'ability.knockdown' }] }] },
+      { choice: [{ ability: 'ability.grab' }, {}] },
+      { choice: [{ ability: 'ability.grab' }, { ability: 'ability.push', own: 'mauler' }] },
+      { choice: [{ ability: 'ability.grab' }, { ability: 'ability.push' }], text: 'creature.cave-bear.strikes.claw.effects.0' },
+    ]) {
+      c.strikes[0].effects = [bad];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/strikes/0/effects/0');
+    }
+  });
+
+  it('accepts splash damage, and rejects a splash that is not true', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].damage = [{ dice: '2d6', type: 'acid' }, { dice: '1d6', type: 'acid', splash: true }];
+    expect(issuesFor('creature', c)).toEqual([]);
+    for (const splash of [false, 'yes', 1]) {
+      c.strikes[0].damage[1].splash = splash;
+      expect(issuesFor('creature', c).join('\n')).toContain('/strikes/0/damage/1');
+    }
   });
 
   it('accepts a Strike\'s reload, and rejects one that is not a small whole number', () => {
