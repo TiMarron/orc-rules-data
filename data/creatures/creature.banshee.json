@@ -1,0 +1,170 @@
+{
+  "id": "creature.banshee",
+  "type": "creature",
+  "name": "creature.banshee.name",
+  "traits": [
+    "incorporeal",
+    "spirit",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 37,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 17,
+  "size": "medium",
+  "perception": {
+    "mod": 32,
+    "senses": [
+      {
+        "own": "hears-heartbeats",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 31
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 32
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 25
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 6,
+    "con": 2,
+    "int": 0,
+    "wis": 7,
+    "cha": 7
+  },
+  "ac": {
+    "value": 39
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 29,
+    "will": 32
+  },
+  "hp": {
+    "value": 250,
+    "note": "creature.banshee.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 12,
+      "note": "creature.banshee.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.banshee.strikes.hand.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "4d10+14",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        {
+          "own": "terrifying-touch"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hears-heartbeats",
+      "section": "top",
+      "name": "creature.banshee.abilities.hears-heartbeats.name",
+      "text": "creature.banshee.abilities.hears-heartbeats.text"
+    },
+    {
+      "id": "sunlight-powerlessness",
+      "section": "top",
+      "name": "creature.banshee.abilities.sunlight-powerlessness.name",
+      "text": "creature.banshee.abilities.sunlight-powerlessness.text"
+    },
+    {
+      "id": "vengeful-spite",
+      "section": "defense",
+      "name": "creature.banshee.abilities.vengeful-spite.name",
+      "actions": "reaction",
+      "traits": [
+        "occult"
+      ],
+      "trigger": "creature.banshee.abilities.vengeful-spite.trigger",
+      "text": "creature.banshee.abilities.vengeful-spite.text"
+    },
+    {
+      "id": "spectral-ripple",
+      "section": "offense",
+      "name": "creature.banshee.abilities.spectral-ripple.name",
+      "text": "creature.banshee.abilities.spectral-ripple.text"
+    },
+    {
+      "id": "terrifying-touch",
+      "section": "offense",
+      "name": "creature.banshee.abilities.terrifying-touch.name",
+      "traits": [
+        "emotion",
+        "fear",
+        "occult"
+      ],
+      "text": "creature.banshee.abilities.terrifying-touch.text"
+    },
+    {
+      "id": "wail",
+      "section": "offense",
+      "name": "creature.banshee.abilities.wail.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "death",
+        "occult"
+      ],
+      "text": "creature.banshee.abilities.wail.text"
+    }
+  ],
+  "editNote": "Traits corrected to the book: page 37 prints the trait line \"UNCOMMON MEDIUM INCORPOREAL SPIRIT UNDEAD UNHOLY\"; the source has ghost in place of incorporeal and the errata does not touch it."
+}

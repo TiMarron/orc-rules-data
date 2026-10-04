@@ -1,0 +1,115 @@
+{
+  "id": "creature.great-white-shark",
+  "type": "creature",
+  "name": "creature.great-white-shark.name",
+  "traits": [
+    "animal",
+    "aquatic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 307,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "huge",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "own": "blood-scent"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 100
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 2,
+    "con": 4,
+    "int": -4,
+    "wis": 1,
+    "cha": -4
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 10,
+    "will": 9
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.great-white-shark.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d12+8",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blood-scent",
+      "section": "top",
+      "name": "creature.great-white-shark.abilities.blood-scent.name",
+      "text": "creature.great-white-shark.abilities.blood-scent.text"
+    },
+    {
+      "id": "breach",
+      "section": "offense",
+      "name": "creature.great-white-shark.abilities.breach.name",
+      "actions": "2",
+      "text": "creature.great-white-shark.abilities.breach.text"
+    },
+    {
+      "id": "savage",
+      "section": "offense",
+      "name": "creature.great-white-shark.abilities.savage.name",
+      "actions": "1",
+      "requirements": "creature.great-white-shark.abilities.savage.requirements",
+      "text": "creature.great-white-shark.abilities.savage.text"
+    },
+    {
+      "id": "strafing-chomp",
+      "section": "offense",
+      "name": "creature.great-white-shark.abilities.strafing-chomp.name",
+      "actions": "1",
+      "text": "creature.great-white-shark.abilities.strafing-chomp.text"
+    }
+  ],
+  "editNote": "Size corrected to the book: page 307 prints the trait line \"HUGE ANIMAL AQUATIC\"; the source has Large and the errata does not touch it."
+}

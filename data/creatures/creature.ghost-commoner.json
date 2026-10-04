@@ -1,0 +1,133 @@
+{
+  "id": "creature.ghost-commoner",
+  "type": "creature",
+  "name": "creature.ghost-commoner.name",
+  "traits": [
+    "ghost",
+    "incorporeal",
+    "spirit",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 161,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.ghost-commoner.lore.0",
+      "mod": 10,
+      "note": "creature.ghost-commoner.skills.0.note"
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 3,
+    "con": 0,
+    "int": 0,
+    "wis": 2,
+    "cha": 2
+  },
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 11,
+    "will": 8
+  },
+  "hp": {
+    "value": 30,
+    "note": "creature.ghost-commoner.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 5,
+      "note": "creature.ghost-commoner.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ghost-commoner.strikes.ghostly-hand.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+2",
+          "type": "void"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "site-bound",
+      "section": "top",
+      "name": "creature.ghost-commoner.abilities.site-bound.name"
+    },
+    {
+      "id": "rejuvenation",
+      "section": "defense",
+      "name": "creature.ghost-commoner.abilities.rejuvenation.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.ghost-commoner.abilities.rejuvenation.text"
+    },
+    {
+      "id": "frightful-moan",
+      "section": "offense",
+      "name": "creature.ghost-commoner.abilities.frightful-moan.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "divine",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.ghost-commoner.abilities.frightful-moan.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 161 prints \"Dwelling Lore +10 (applies to the place the ghost is bound to)\"; the source omits the parenthesis and the errata does not touch it."
+}

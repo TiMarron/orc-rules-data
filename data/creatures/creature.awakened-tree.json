@@ -1,0 +1,121 @@
+{
+  "id": "creature.awakened-tree",
+  "type": "creature",
+  "name": "creature.awakened-tree.name",
+  "traits": [
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 25,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "huge",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "arboreal"
+  ],
+  "languageNote": "creature.awakened-tree.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9,
+      "note": "creature.awakened-tree.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": -1,
+    "con": 6,
+    "int": -5,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 9,
+    "will": 13
+  },
+  "hp": {
+    "value": 100
+  },
+  "weaknesses": [
+    {
+      "type": "axes",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.awakened-tree.strikes.branch.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.awakened-tree.strikes.root.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [],
+  "editNote": "Skill qualifier added from the book: page 25 prints \"Stealth +9 (+14 in forests)\"; the source omits the parenthesis and the errata does not touch it."
+}

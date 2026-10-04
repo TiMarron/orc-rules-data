@@ -1,0 +1,124 @@
+{
+  "id": "creature.chupacabra",
+  "type": "creature",
+  "name": "creature.chupacabra.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 63,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "small",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo"
+  ],
+  "languageNote": "creature.chupacabra.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9,
+      "note": "creature.chupacabra.skills.0.note"
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9,
+      "note": "creature.chupacabra.skills.2.note"
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": -3,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 11,
+    "will": 7
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.chupacabra.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.chupacabra.strikes.claw.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pounce",
+      "section": "offense",
+      "name": "creature.chupacabra.abilities.pounce.name",
+      "actions": "1",
+      "text": "creature.chupacabra.abilities.pounce.text"
+    },
+    {
+      "id": "suck-blood",
+      "section": "offense",
+      "name": "creature.chupacabra.abilities.suck-blood.name",
+      "actions": "1",
+      "requirements": "creature.chupacabra.abilities.suck-blood.requirements",
+      "text": "creature.chupacabra.abilities.suck-blood.text"
+    }
+  ],
+  "editNote": "Skill qualifiers added from the book: page 63 prints \"Acrobatics +9 (+11 to Leap)\" and \"Stealth +9 (+11 in undergrowth or rocky areas)\"; the source omits the parentheses and the errata does not touch them."
+}

@@ -1,0 +1,118 @@
+{
+  "id": "creature.string-slime",
+  "type": "creature",
+  "name": "creature.string-slime.name",
+  "traits": [
+    "mindless",
+    "ooze"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 256,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 5,
+    "note": "creature.string-slime.perception.note",
+    "senses": [
+      {
+        "own": "motion-sense",
+        "acuity": "precise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11,
+      "note": "creature.string-slime.skills.0.note"
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": -5,
+    "con": 5,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 10
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 0,
+    "will": 5
+  },
+  "hp": {
+    "value": 90
+  },
+  "immunities": [
+    "acid",
+    "bleed",
+    "critical-hits",
+    "mental",
+    "precision",
+    "slashing",
+    "unconscious",
+    "visual"
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.string-slime.strikes.pseudopod.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "acid"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "motion-sense",
+      "section": "top",
+      "name": "creature.string-slime.abilities.motion-sense.name",
+      "text": "creature.string-slime.abilities.motion-sense.text"
+    },
+    {
+      "id": "split",
+      "section": "defense",
+      "name": "creature.string-slime.abilities.split.name",
+      "text": "creature.string-slime.abilities.split.text"
+    },
+    {
+      "id": "tag-team",
+      "section": "offense",
+      "name": "creature.string-slime.abilities.tag-team.name",
+      "actions": "2",
+      "requirements": "creature.string-slime.abilities.tag-team.requirements",
+      "text": "creature.string-slime.abilities.tag-team.text"
+    },
+    {
+      "id": "weak-acid",
+      "section": "offense",
+      "name": "creature.string-slime.abilities.weak-acid.name",
+      "text": "creature.string-slime.abilities.weak-acid.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 256 prints \"Athletics +11 (+13 to Shove)\"; the source omits the parenthesis and the errata does not touch it."
+}

@@ -1,0 +1,105 @@
+{
+  "id": "creature.sewer-ooze",
+  "type": "creature",
+  "name": "creature.sewer-ooze.name",
+  "traits": [
+    "mindless",
+    "ooze"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 256,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 3,
+    "note": "creature.sewer-ooze.perception.note",
+    "senses": [
+      {
+        "own": "motion-sense",
+        "acuity": "precise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.stealth",
+      "mod": 1,
+      "note": "creature.sewer-ooze.skills.0.note"
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": -5,
+    "con": 4,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 8
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 1,
+    "will": 3
+  },
+  "hp": {
+    "value": 40
+  },
+  "immunities": [
+    "acid",
+    "bleed",
+    "critical-hits",
+    "mental",
+    "precision",
+    "unconscious",
+    "visual"
+  ],
+  "speeds": {
+    "land": 10
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sewer-ooze.strikes.pseudopod.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d4",
+          "type": "acid"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "motion-sense",
+      "section": "top",
+      "name": "creature.sewer-ooze.abilities.motion-sense.name",
+      "text": "creature.sewer-ooze.abilities.motion-sense.text"
+    },
+    {
+      "id": "filth-wave",
+      "section": "offense",
+      "name": "creature.sewer-ooze.abilities.filth-wave.name",
+      "actions": "1",
+      "frequency": "creature.sewer-ooze.abilities.filth-wave.frequency",
+      "text": "creature.sewer-ooze.abilities.filth-wave.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 256 prints \"Stealth +1 (+4 in sewers)\"; the source omits the parenthesis and the errata does not touch it."
+}

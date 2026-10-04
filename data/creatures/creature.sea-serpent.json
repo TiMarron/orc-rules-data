@@ -1,0 +1,198 @@
+{
+  "id": "creature.sea-serpent",
+  "type": "creature",
+  "name": "creature.sea-serpent.name",
+  "traits": [
+    "animal",
+    "aquatic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 299,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 12,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 26,
+      "note": "creature.sea-serpent.skills.1.note"
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 28
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 4,
+    "con": 6,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 35
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 21,
+    "will": 21
+  },
+  "hp": {
+    "value": 210
+  },
+  "speeds": {
+    "land": 20,
+    "swim": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sea-serpent.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d10+14",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sea-serpent.strikes.tail.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "2d10+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.sea-serpent.strikes.water-spout.name",
+      "actions": "1",
+      "bonus": 25,
+      "rangeIncrement": 100,
+      "traits": [
+        "brutal",
+        "water"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "sea-serpent-algae"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "undetectable",
+      "section": "top",
+      "name": "creature.sea-serpent.abilities.undetectable.name",
+      "traits": [
+        "primal"
+      ],
+      "text": "creature.sea-serpent.abilities.undetectable.text"
+    },
+    {
+      "id": "capsize",
+      "section": "offense",
+      "name": "creature.sea-serpent.abilities.capsize.name",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.sea-serpent.abilities.capsize.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.sea-serpent.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.sea-serpent.abilities.constrict.text"
+    },
+    {
+      "id": "sea-serpent-algae",
+      "section": "offense",
+      "name": "creature.sea-serpent.abilities.sea-serpent-algae.name",
+      "traits": [
+        "incapacitation",
+        "poison"
+      ],
+      "text": "creature.sea-serpent.abilities.sea-serpent-algae.text"
+    },
+    {
+      "id": "spine-rake",
+      "section": "offense",
+      "name": "creature.sea-serpent.abilities.spine-rake.name",
+      "actions": "2",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.sea-serpent.abilities.spine-rake.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.sea-serpent.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.sea-serpent.abilities.swallow-whole.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 299 prints \"Athletics +26 (+28 to Swim)\"; the source omits the parenthesis and the errata does not touch it."
+}

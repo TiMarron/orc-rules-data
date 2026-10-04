@@ -1,0 +1,105 @@
+{
+  "id": "creature.giant-rat",
+  "type": "creature",
+  "name": "creature.giant-rat.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "small",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 2,
+      "note": "creature.giant-rat.skills.1.note"
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": -4,
+    "wis": 1,
+    "cha": -3
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 7,
+    "will": 3
+  },
+  "hp": {
+    "value": 8
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 10
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-rat.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "putrid-plague"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "putrid-plague",
+      "section": "offense",
+      "name": "creature.giant-rat.abilities.putrid-plague.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.giant-rat.abilities.putrid-plague.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 288 prints \"Athletics +2 (+4 to Climb or Swim)\"; the source omits the parenthesis and the errata does not touch it."
+}
