@@ -1,0 +1,185 @@
+{
+  "id": "creature.naiad",
+  "type": "creature",
+  "name": "creature.naiad.name",
+  "traits": [
+    "amphibious",
+    "fey",
+    "nymph",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven",
+    "fey",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 3
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 7
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 0,
+    "int": 1,
+    "wis": 1,
+    "cha": 4
+  },
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 3,
+    "reflex": 6,
+    "will": 8
+  },
+  "hp": {
+    "value": 20
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 3
+    }
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.naiad.strikes.aqueous-fist.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "water"
+      ],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.naiad.strikes.water-orb.name",
+      "actions": "1",
+      "bonus": 8,
+      "range": 60,
+      "traits": [
+        "magical",
+        "water"
+      ],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "animal-empathy",
+      "section": "top",
+      "name": "creature.naiad.abilities.animal-empathy.name",
+      "text": "creature.naiad.abilities.animal-empathy.text"
+    },
+    {
+      "id": "water-dependent",
+      "section": "defense",
+      "name": "creature.naiad.abilities.water-dependent.name",
+      "text": "creature.naiad.abilities.water-dependent.text"
+    },
+    {
+      "id": "water-healing",
+      "section": "defense",
+      "name": "creature.naiad.abilities.water-healing.name",
+      "traits": [
+        "healing",
+        "primal",
+        "vitality"
+      ],
+      "text": "creature.naiad.abilities.water-healing.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 17,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.create-water"
+            },
+            {
+              "spell": "spell.hydraulic-push"
+            },
+            {
+              "spell": "spell.tidal-surge",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

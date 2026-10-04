@@ -1,0 +1,306 @@
+{
+  "id": "creature.ancient-omen-dragon",
+  "type": "creature",
+  "name": "creature.ancient-omen-dragon.name",
+  "traits": [
+    "dragon",
+    "occult"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 125,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 16,
+  "size": "huge",
+  "perception": {
+    "mod": 29,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "draconic",
+    "fey",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 29
+    },
+    {
+      "lore": "creature.ancient-omen-dragon.lore.3",
+      "mod": 33
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 31,
+      "note": "creature.ancient-omen-dragon.skills.4.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 33
+    },
+    {
+      "skill": "skill.society",
+      "mod": 31
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 6,
+    "con": 7,
+    "int": 9,
+    "wis": 7,
+    "cha": 5
+  },
+  "ac": {
+    "value": 38
+  },
+  "saves": {
+    "fortitude": 27,
+    "reflex": 28,
+    "will": 29,
+    "note": "creature.ancient-omen-dragon.saves.note"
+  },
+  "hp": {
+    "value": 280
+  },
+  "immunities": [
+    "confused",
+    "doomed",
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 60,
+    "fly": 180
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ancient-omen-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d8",
+          "type": "mental"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-omen-dragon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d6+14",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d8",
+          "type": "mental"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-omen-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d8",
+          "type": "mental"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-omen-dragon.strikes.wing.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+14",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d8",
+          "type": "mental"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "untethered-to-fate",
+      "section": "defense",
+      "name": "creature.ancient-omen-dragon.abilities.untethered-to-fate.name",
+      "text": "creature.ancient-omen-dragon.abilities.untethered-to-fate.text"
+    },
+    {
+      "id": "challenge-fate",
+      "section": "defense",
+      "name": "creature.ancient-omen-dragon.abilities.challenge-fate.name",
+      "actions": "reaction",
+      "traits": [
+        "misfortune",
+        "occult"
+      ],
+      "trigger": "creature.ancient-omen-dragon.abilities.challenge-fate.trigger",
+      "text": "creature.ancient-omen-dragon.abilities.challenge-fate.text"
+    },
+    {
+      "id": "destiny-breath",
+      "section": "offense",
+      "name": "creature.ancient-omen-dragon.abilities.destiny-breath.name",
+      "actions": "2",
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "text": "creature.ancient-omen-dragon.abilities.destiny-breath.text"
+    },
+    {
+      "id": "impending-fate",
+      "section": "offense",
+      "name": "creature.ancient-omen-dragon.abilities.impending-fate.name",
+      "text": "creature.ancient-omen-dragon.abilities.impending-fate.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.ancient-omen-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.ancient-omen-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.ancient-omen-dragon.abilities.draconic-momentum.name",
+      "text": "creature.ancient-omen-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "prophetic-wings",
+      "section": "offense",
+      "name": "creature.ancient-omen-dragon.abilities.prophetic-wings.name",
+      "text": "creature.ancient-omen-dragon.abilities.prophetic-wings.text"
+    },
+    {
+      "id": "walk-the-timelines",
+      "section": "offense",
+      "name": "creature.ancient-omen-dragon.abilities.walk-the-timelines.name",
+      "actions": "2",
+      "traits": [
+        "occult"
+      ],
+      "frequency": "creature.ancient-omen-dragon.abilities.walk-the-timelines.frequency",
+      "text": "creature.ancient-omen-dragon.abilities.walk-the-timelines.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 39,
+      "cantrips": {
+        "rank": 8,
+        "spells": [
+          {
+            "spell": "spell.guidance"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.ill-omen",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mindlink",
+              "atWill": true
+            },
+            {
+              "spell": "spell.true-target",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.retrocognition"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 125 prints \"Lore (any one subcategory) +31\"; the source omits the parenthesis and the errata does not touch it. Prophetic Wings corrected to the book: page 125 prints \"As young omen dragon, but the augury spell is 8th rank. In addition, a creature can choose to predict events up to 1 year into the future\"; the source also carries the adult dragon's 1-month paragraph, which is dropped."
+}

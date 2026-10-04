@@ -1,0 +1,260 @@
+{
+  "id": "creature.venedaemon",
+  "type": "creature",
+  "name": "creature.venedaemon.name",
+  "traits": [
+    "daemon",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 73,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "smell-magic",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "chthonian",
+    "common",
+    "daemonic",
+    "diabolic",
+    "draconic",
+    "requian"
+  ],
+  "languageNote": "creature.venedaemon.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 16
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 12
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 14
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 13
+    },
+    {
+      "lore": "creature.venedaemon.lore.5",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": 5,
+    "wis": 3,
+    "cha": 3
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 11,
+    "will": 14,
+    "note": "creature.venedaemon.saves.note"
+  },
+  "hp": {
+    "value": 75
+  },
+  "immunities": [
+    "death-effects"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.venedaemon.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smell-magic",
+      "section": "top",
+      "name": "creature.venedaemon.abilities.smell-magic.name",
+      "text": "creature.venedaemon.abilities.smell-magic.text"
+    },
+    {
+      "id": "residual-force",
+      "section": "offense",
+      "name": "creature.venedaemon.abilities.residual-force.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "force"
+      ],
+      "requirements": "creature.venedaemon.abilities.residual-force.requirements",
+      "text": "creature.venedaemon.abilities.residual-force.text"
+    },
+    {
+      "id": "soul-spell",
+      "section": "offense",
+      "name": "creature.venedaemon.abilities.soul-spell.name",
+      "text": "creature.venedaemon.abilities.soul-spell.text"
+    },
+    {
+      "id": "twisted-whispers",
+      "section": "offense",
+      "name": "creature.venedaemon.abilities.twisted-whispers.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.venedaemon.abilities.twisted-whispers.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "arcane",
+      "dc": 22,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.electric-arc"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.sigil"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.enfeeble"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blazing-bolt"
+            },
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.invisibility"
+            },
+            {
+              "spell": "spell.noise-blast"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.fireball"
+            },
+            {
+              "spell": "spell.levitate"
+            },
+            {
+              "spell": "spell.paralyze"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 22,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

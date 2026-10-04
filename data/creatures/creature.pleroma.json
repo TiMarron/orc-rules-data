@@ -1,0 +1,319 @@
+{
+  "id": "creature.pleroma",
+  "type": "creature",
+  "name": "creature.pleroma.name",
+  "traits": [
+    "aeon",
+    "monitor"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 20,
+  "size": "large",
+  "perception": {
+    "mod": 37,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.lifesense",
+        "range": 120
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [],
+  "languageNote": "creature.pleroma.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 38
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 34
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 34
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 38
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 39
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 35
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 7,
+    "con": 6,
+    "int": 8,
+    "wis": 9,
+    "cha": 6
+  },
+  "ac": {
+    "value": 45
+  },
+  "saves": {
+    "fortitude": 32,
+    "reflex": 31,
+    "will": 37,
+    "note": "creature.pleroma.saves.note"
+  },
+  "hp": {
+    "value": 335,
+    "note": "creature.pleroma.hp.note"
+  },
+  "immunities": [
+    "vitality",
+    "void"
+  ],
+  "weaknesses": [
+    {
+      "type": "spirit",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "fly": 40,
+    "note": "creature.pleroma.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pleroma.strikes.touch-of-creation.name",
+      "actions": "1",
+      "bonus": 36,
+      "traits": [
+        "agile",
+        "magical",
+        "vitality"
+      ],
+      "damage": [
+        {
+          "dice": "5d8+16",
+          "type": "vitality"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.pleroma.strikes.touch-of-destruction.name",
+      "actions": "1",
+      "bonus": 36,
+      "traits": [
+        "agile",
+        "magical",
+        "void"
+      ],
+      "damage": [
+        {
+          "dice": "5d8+16",
+          "type": "void"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "envisioning",
+      "section": "top",
+      "name": "creature.pleroma.abilities.envisioning.name",
+      "traits": [
+        "aura",
+        "divine",
+        "mental"
+      ],
+      "aura": 100,
+      "text": "creature.pleroma.abilities.envisioning.text"
+    },
+    {
+      "id": "reality-twist",
+      "section": "defense",
+      "name": "creature.pleroma.abilities.reality-twist.name",
+      "actions": "reaction",
+      "trigger": "creature.pleroma.abilities.reality-twist.trigger",
+      "text": "creature.pleroma.abilities.reality-twist.text"
+    },
+    {
+      "id": "generate-sphere",
+      "section": "offense",
+      "name": "creature.pleroma.abilities.generate-sphere.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "divine"
+      ],
+      "text": "creature.pleroma.abilities.generate-sphere.text"
+    },
+    {
+      "id": "propel-sphere",
+      "section": "offense",
+      "name": "creature.pleroma.abilities.propel-sphere.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine"
+      ],
+      "requirements": "creature.pleroma.abilities.propel-sphere.requirements",
+      "text": "creature.pleroma.abilities.propel-sphere.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 47,
+      "attack": 39,
+      "cantrips": {
+        "rank": 10,
+        "spells": [
+          {
+            "spell": "spell.vitality-lash"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.create-water",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.shape-wood",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.hypercognition",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.create-food",
+              "atWill": true
+            },
+            {
+              "spell": "spell.shape-stone",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.creation",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport"
+            },
+            {
+              "spell": "spell.retrocognition"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.disintegrate",
+              "count": 2
+            },
+            {
+              "spell": "spell.unrelenting-observation"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.banishment"
+            },
+            {
+              "spell": "spell.blessed-boundary"
+            },
+            {
+              "spell": "spell.detonate-magic"
+            },
+            {
+              "spell": "spell.overwhelming-presence"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.manifestation"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 11 prints \"Constant (8th) truesight; (4th) unfettered movement\"; the source lists unfettered movement as an ordinary spell of that rank and the errata does not touch it. Languages corrected to the book: page 11 prints \"Languages envisioning\" and no spoken language; the source adds Common and the errata does not touch it."
+}

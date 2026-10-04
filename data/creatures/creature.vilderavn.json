@@ -1,0 +1,276 @@
+{
+  "id": "creature.vilderavn",
+  "type": "creature",
+  "name": "creature.vilderavn.name",
+  "traits": [
+    "fey"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 340,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 16,
+  "size": "medium",
+  "perception": {
+    "mod": 28,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.vilderavn.senses.0"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "diabolic",
+    "fey"
+  ],
+  "languageNote": "creature.vilderavn.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 32
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 29
+    },
+    {
+      "lore": "creature.vilderavn.lore.3",
+      "mod": 26
+    },
+    {
+      "skill": "skill.society",
+      "mod": 24
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 32
+    },
+    {
+      "lore": "creature.vilderavn.lore.6",
+      "mod": 26
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 6,
+    "con": 5,
+    "int": 4,
+    "wis": 4,
+    "cha": 7
+  },
+  "ac": {
+    "value": 40
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 30,
+    "will": 28
+  },
+  "hp": {
+    "value": 300
+  },
+  "immunities": [
+    "curse",
+    "death-effects",
+    "drained",
+    "fear"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "fly": 120
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vilderavn.strikes.greatsword.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "3d12+16",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "bloodbird"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vilderavn.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d8+16",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "bloodbird"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vilderavn.strikes.talon.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d8+16",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "bloodbird"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "aura-of-disquietude",
+      "section": "defense",
+      "name": "creature.vilderavn.abilities.aura-of-disquietude.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 30,
+      "text": "creature.vilderavn.abilities.aura-of-disquietude.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.vilderavn.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "bloodbird",
+      "section": "offense",
+      "name": "creature.vilderavn.abilities.bloodbird.name",
+      "traits": [
+        "curse",
+        "occult"
+      ],
+      "text": "creature.vilderavn.abilities.bloodbird.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.vilderavn.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.vilderavn.abilities.change-shape.text"
+    },
+    {
+      "id": "souleater",
+      "section": "offense",
+      "name": "creature.vilderavn.abilities.souleater.name",
+      "traits": [
+        "occult"
+      ],
+      "text": "creature.vilderavn.abilities.souleater.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 37,
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.outcasts-curse",
+              "atWill": true
+            },
+            {
+              "spell": "spell.suggestion",
+              "atWill": true
+            },
+            {
+              "spell": "spell.translocate"
+            },
+            {
+              "spell": "spell.wave-of-despair",
+              "atWill": true
+            },
+            {
+              "spell": "spell.rewrite-memory"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            },
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

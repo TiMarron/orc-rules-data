@@ -1,0 +1,180 @@
+{
+  "id": "creature.fey-dragonet",
+  "type": "creature",
+  "name": "creature.fey-dragonet.name",
+  "traits": [
+    "dragon",
+    "fey"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 127,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "tiny",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "fey"
+  ],
+  "languageNote": "creature.fey-dragonet.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 8
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": -2,
+    "dex": 4,
+    "con": 0,
+    "int": 2,
+    "wis": 0,
+    "cha": 2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 12,
+    "will": 11
+  },
+  "hp": {
+    "value": 30
+  },
+  "immunities": [
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 15,
+    "fly": 40,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.fey-dragonet.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "magical",
+        "finesse",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "euphoric-breath",
+      "section": "offense",
+      "name": "creature.fey-dragonet.abilities.euphoric-breath.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "poison"
+      ],
+      "text": "creature.fey-dragonet.abilities.euphoric-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 21,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "note": "creature.fey-dragonet.spellcasting.0.ranks.4.0.note"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "spontaneous",
+      "tradition": "arcane",
+      "dc": 18,
+      "attack": 10,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.grease"
+            },
+            {
+              "spell": "spell.illusory-object"
+            },
+            {
+              "spell": "spell.sleep"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    }
+  ],
+  "editNote": "Euphoric Breath: \"15- foot cone\" is a line break the source kept as a space; page 127 prints \"15-foot cone\"."
+}

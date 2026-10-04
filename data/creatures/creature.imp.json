@@ -1,0 +1,211 @@
+{
+  "id": "creature.imp",
+  "type": "creature",
+  "name": "creature.imp.name",
+  "traits": [
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 206,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "tiny",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "daemonic",
+    "diabolic"
+  ],
+  "languageNote": "creature.imp.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 6
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 4,
+    "con": 0,
+    "int": 1,
+    "wis": 2,
+    "cha": 2
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 9,
+    "will": 7
+  },
+  "hp": {
+    "value": 15
+  },
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 3
+    }
+  ],
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.imp.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d4-1",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "imp-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.imp.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.imp.abilities.change-shape.text"
+    },
+    {
+      "id": "fiendish-healing",
+      "section": "offense",
+      "name": "creature.imp.abilities.fiendish-healing.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "healing",
+        "vitality"
+      ],
+      "frequency": "creature.imp.abilities.fiendish-healing.frequency",
+      "text": "creature.imp.abilities.fiendish-healing.text"
+    },
+    {
+      "id": "fiendish-temptation",
+      "section": "offense",
+      "name": "creature.imp.abilities.fiendish-temptation.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "fortune",
+        "unholy"
+      ],
+      "frequency": "creature.imp.abilities.fiendish-temptation.frequency",
+      "text": "creature.imp.abilities.fiendish-temptation.text"
+    },
+    {
+      "id": "imp-venom",
+      "section": "offense",
+      "name": "creature.imp.abilities.imp-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.imp.abilities.imp-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 17,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.imp.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.read-omens"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

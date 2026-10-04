@@ -1,0 +1,256 @@
+{
+  "id": "creature.jah-tohl",
+  "type": "creature",
+  "name": "creature.jah-tohl.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 106,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "thoughtsense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "chthonian",
+    "draconic",
+    "protean",
+    "sakvroth"
+  ],
+  "languageNote": "creature.jah-tohl.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 18
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 18,
+      "note": "creature.jah-tohl.skills.3.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 5,
+    "int": 4,
+    "wis": 4,
+    "cha": 3
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 13,
+    "will": 18,
+    "note": "creature.jah-tohl.saves.note"
+  },
+  "hp": {
+    "value": 140
+  },
+  "immunities": [
+    "confused"
+  ],
+  "weaknesses": [
+    {
+      "own": "brain-loss"
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.jah-tohl.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d12+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "mind-snatcher-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.jah-tohl.strikes.claw.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "thoughtsense",
+      "section": "top",
+      "name": "creature.jah-tohl.abilities.thoughtsense.name",
+      "text": "creature.jah-tohl.abilities.thoughtsense.text"
+    },
+    {
+      "id": "brain-blisters",
+      "section": "defense",
+      "name": "creature.jah-tohl.abilities.brain-blisters.name",
+      "text": "creature.jah-tohl.abilities.brain-blisters.text"
+    },
+    {
+      "id": "brain-loss",
+      "section": "defense",
+      "name": "creature.jah-tohl.abilities.brain-loss.name",
+      "text": "creature.jah-tohl.abilities.brain-loss.text"
+    },
+    {
+      "id": "mind-snatcher-venom",
+      "section": "offense",
+      "name": "creature.jah-tohl.abilities.mind-snatcher-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.jah-tohl.abilities.mind-snatcher-venom.text"
+    },
+    {
+      "id": "collect-brain",
+      "section": "offense",
+      "name": "creature.jah-tohl.abilities.collect-brain.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.jah-tohl.abilities.collect-brain.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 26,
+      "attack": 18,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.enfeeble"
+            },
+            {
+              "spell": "spell.mindlink"
+            },
+            {
+              "spell": "spell.sure-strike"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.humanoid-form"
+            },
+            {
+              "spell": "spell.invisibility"
+            },
+            {
+              "spell": "spell.paranoia"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.paralyze"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.confusion"
+            },
+            {
+              "spell": "spell.vision-of-death"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 106 prints \"Lore (all subcategories) +18\"; the source omits the parenthesis and the errata does not touch it. Collect Brain: the creature's name regains its hyphen (page 106 prints \"The jah-tohl extracts the brain\", broken across a line)."
+}

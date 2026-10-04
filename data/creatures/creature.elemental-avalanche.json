@@ -12,8 +12,8 @@
     "page": 143,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 11,
   "size": "huge",
   "perception": {
@@ -129,7 +129,7 @@
         "earth",
         "primal"
       ],
-      "aura": 5,
+      "aura": 10,
       "text": "creature.elemental-avalanche.abilities.spike-stones.text"
     },
     {
@@ -161,5 +161,6 @@
       "actions": "3",
       "text": "creature.elemental-avalanche.abilities.trample.text"
     }
-  ]
+  ],
+  "editNote": "Spike Stones corrected to the book: page 143 prints \"Spike Stones (aura, earth, primal) 10 feet. As stone mauler, but 2d8 piercing.\"; the source keeps the stone mauler's 5 feet and calls the creature a \"living avalanche\", a name the book does not use, and the errata touches neither."
 }

@@ -1,0 +1,329 @@
+{
+  "id": "creature.ancient-empyreal-dragon",
+  "type": "creature",
+  "name": "creature.ancient-empyreal-dragon.name",
+  "traits": [
+    "divine",
+    "dragon",
+    "holy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 116,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 19,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 35,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.lifesense",
+        "acuity": "imprecise",
+        "range": 30
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "fey",
+    "necril"
+  ],
+  "languageNote": "creature.ancient-empyreal-dragon.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 31
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 35
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 31
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 31
+    },
+    {
+      "lore": "creature.ancient-empyreal-dragon.lore.4",
+      "mod": 32
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 35
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 32
+    },
+    {
+      "skill": "skill.society",
+      "mod": 30
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": 6,
+    "con": 8,
+    "int": 5,
+    "wis": 8,
+    "cha": 6
+  },
+  "ac": {
+    "value": 43
+  },
+  "saves": {
+    "fortitude": 31,
+    "reflex": 31,
+    "will": 35,
+    "note": "creature.ancient-empyreal-dragon.saves.note"
+  },
+  "hp": {
+    "value": 350
+  },
+  "immunities": [
+    "fear",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 80,
+    "fly": 200
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ancient-empyreal-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 35,
+      "traits": [
+        "holy",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "4d10+16",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d8",
+          "type": "spirit"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-empyreal-dragon.strikes.claws.name",
+      "actions": "1",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "holy",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "4d8+16",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d8",
+          "type": "spirit"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-empyreal-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "holy",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "25"
+      },
+      "damage": [
+        {
+          "dice": "4d10+16",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d8",
+          "type": "spirit"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-empyreal-dragon.strikes.wing.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d10+16",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d8",
+          "type": "spirit"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "inspiring-presence",
+      "section": "defense",
+      "name": "creature.ancient-empyreal-dragon.abilities.inspiring-presence.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental"
+      ],
+      "aura": 20,
+      "text": "creature.ancient-empyreal-dragon.abilities.inspiring-presence.text"
+    },
+    {
+      "id": "divine-deflection",
+      "section": "defense",
+      "name": "creature.ancient-empyreal-dragon.abilities.divine-deflection.name",
+      "actions": "reaction",
+      "trigger": "creature.ancient-empyreal-dragon.abilities.divine-deflection.trigger",
+      "text": "creature.ancient-empyreal-dragon.abilities.divine-deflection.text"
+    },
+    {
+      "id": "direct-halo",
+      "section": "offense",
+      "name": "creature.ancient-empyreal-dragon.abilities.direct-halo.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "manipulate"
+      ],
+      "text": "creature.ancient-empyreal-dragon.abilities.direct-halo.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.ancient-empyreal-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.ancient-empyreal-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.ancient-empyreal-dragon.abilities.draconic-momentum.name",
+      "text": "creature.ancient-empyreal-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "halo-pulse",
+      "section": "offense",
+      "name": "creature.ancient-empyreal-dragon.abilities.halo-pulse.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "divine"
+      ],
+      "text": "creature.ancient-empyreal-dragon.abilities.halo-pulse.text"
+    },
+    {
+      "id": "spirit-breath",
+      "section": "offense",
+      "name": "creature.ancient-empyreal-dragon.abilities.spirit-breath.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "holy",
+        "spirit"
+      ],
+      "text": "creature.ancient-empyreal-dragon.abilities.spirit-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 41,
+      "attack": 33,
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.holy-light",
+              "atWill": true
+            },
+            {
+              "spell": "spell.interplanar-teleport",
+              "atWill": true,
+              "note": "creature.ancient-empyreal-dragon.spellcasting.0.ranks.7.1.note"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.heal"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane in a Lore skill's name is replaced with the generic descriptor the dataset already uses. The rules text is the book's."
+}

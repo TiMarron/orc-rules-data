@@ -1,0 +1,319 @@
+{
+  "id": "creature.adult-diabolic-dragon",
+  "type": "creature",
+  "name": "creature.adult-diabolic-dragon.name",
+  "traits": [
+    "divine",
+    "dragon",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 113,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 15,
+  "size": "huge",
+  "perception": {
+    "mod": 26,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.adult-diabolic-dragon.senses.0"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "necril",
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 26
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 28
+    },
+    {
+      "lore": "creature.adult-diabolic-dragon.lore.4",
+      "mod": 24
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 26
+    },
+    {
+      "lore": "creature.adult-diabolic-dragon.lore.6",
+      "mod": 26
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 26
+    },
+    {
+      "skill": "skill.society",
+      "mod": 24
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 27
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 4,
+    "con": 6,
+    "int": 3,
+    "wis": 5,
+    "cha": 5
+  },
+  "ac": {
+    "value": 36
+  },
+  "saves": {
+    "fortitude": 29,
+    "reflex": 25,
+    "will": 26,
+    "note": "creature.adult-diabolic-dragon.saves.note"
+  },
+  "hp": {
+    "value": 285
+  },
+  "immunities": [
+    "fire",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 60,
+    "fly": 150
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.adult-diabolic-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "fire",
+        "reach",
+        "magical",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d12+11",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-diabolic-dragon.strikes.claws.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "fire",
+        "magical",
+        "unholy",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d8+11",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-diabolic-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "fire",
+        "reach",
+        "magical",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+11",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.adult-diabolic-dragon.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.adult-diabolic-dragon.abilities.smoke-vision.name",
+      "text": "creature.adult-diabolic-dragon.abilities.smoke-vision.text"
+    },
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.adult-diabolic-dragon.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 90,
+      "text": "creature.adult-diabolic-dragon.abilities.frightful-presence.text"
+    },
+    {
+      "id": "hells-sting",
+      "section": "defense",
+      "name": "creature.adult-diabolic-dragon.abilities.hells-sting.name",
+      "actions": "reaction",
+      "traits": [
+        "divine",
+        "mental",
+        "unholy"
+      ],
+      "trigger": "creature.adult-diabolic-dragon.abilities.hells-sting.trigger",
+      "text": "creature.adult-diabolic-dragon.abilities.hells-sting.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.adult-diabolic-dragon.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "diabolic-fire",
+      "section": "offense",
+      "name": "creature.adult-diabolic-dragon.abilities.diabolic-fire.name",
+      "text": "creature.adult-diabolic-dragon.abilities.diabolic-fire.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.adult-diabolic-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.adult-diabolic-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.adult-diabolic-dragon.abilities.draconic-momentum.name",
+      "text": "creature.adult-diabolic-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "hellfire-breath",
+      "section": "offense",
+      "name": "creature.adult-diabolic-dragon.abilities.hellfire-breath.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.adult-diabolic-dragon.abilities.hellfire-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 34,
+      "attack": 26,
+      "cantrips": {
+        "rank": 8,
+        "spells": [
+          {
+            "spell": "spell.ignition"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.divine-immolation"
+            },
+            {
+              "spell": "spell.interplanar-teleport",
+              "atWill": true,
+              "note": "creature.adult-diabolic-dragon.spellcasting.0.ranks.7.1.note"
+            },
+            {
+              "spell": "spell.wall-of-fire",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

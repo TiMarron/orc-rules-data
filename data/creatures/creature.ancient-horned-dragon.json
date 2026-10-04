@@ -1,0 +1,325 @@
+{
+  "id": "creature.ancient-horned-dragon",
+  "type": "creature",
+  "name": "creature.ancient-horned-dragon.name",
+  "traits": [
+    "amphibious",
+    "dragon",
+    "primal"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 17,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 30,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "draconic",
+    "elven",
+    "fey",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 32
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 27
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 31
+    },
+    {
+      "lore": "creature.ancient-horned-dragon.lore.5",
+      "mod": 31
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 31
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 28
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 34
+    },
+    {
+      "skill": "skill.society",
+      "mod": 31
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 29
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 4,
+    "con": 5,
+    "int": 6,
+    "wis": 5,
+    "cha": 6
+  },
+  "ac": {
+    "value": 41
+  },
+  "saves": {
+    "fortitude": 30,
+    "reflex": 29,
+    "will": 32,
+    "note": "creature.ancient-horned-dragon.saves.note"
+  },
+  "hp": {
+    "value": 315
+  },
+  "immunities": [
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 50,
+    "fly": 200,
+    "swim": 50,
+    "note": "creature.ancient-horned-dragon.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ancient-horned-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "poison",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d12+15",
+          "type": "piercing"
+        },
+        {
+          "dice": "4d4",
+          "type": "poison"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-horned-dragon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d10+15",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-horned-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 31,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "25"
+      },
+      "damage": [
+        {
+          "dice": "3d10+13",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-horned-dragon.strikes.horn.name",
+      "actions": "1",
+      "bonus": 31,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d10+13",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "camouflage",
+      "section": "top",
+      "name": "creature.ancient-horned-dragon.abilities.camouflage.name",
+      "text": "creature.ancient-horned-dragon.abilities.camouflage.text"
+    },
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.ancient-horned-dragon.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 90,
+      "text": "creature.ancient-horned-dragon.abilities.frightful-presence.text"
+    },
+    {
+      "id": "miasma",
+      "section": "defense",
+      "name": "creature.ancient-horned-dragon.abilities.miasma.name",
+      "traits": [
+        "aura",
+        "poison"
+      ],
+      "aura": 20,
+      "text": "creature.ancient-horned-dragon.abilities.miasma.text"
+    },
+    {
+      "id": "twisting-tail",
+      "section": "defense",
+      "name": "creature.ancient-horned-dragon.abilities.twisting-tail.name",
+      "actions": "reaction",
+      "trigger": "creature.ancient-horned-dragon.abilities.twisting-tail.trigger",
+      "text": "creature.ancient-horned-dragon.abilities.twisting-tail.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.ancient-horned-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.ancient-horned-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.ancient-horned-dragon.abilities.draconic-momentum.name",
+      "text": "creature.ancient-horned-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "forest-passage",
+      "section": "offense",
+      "name": "creature.ancient-horned-dragon.abilities.forest-passage.name",
+      "text": "creature.ancient-horned-dragon.abilities.forest-passage.text"
+    },
+    {
+      "id": "impaling-charge",
+      "section": "offense",
+      "name": "creature.ancient-horned-dragon.abilities.impaling-charge.name",
+      "actions": "2",
+      "requirements": "creature.ancient-horned-dragon.abilities.impaling-charge.requirements",
+      "text": "creature.ancient-horned-dragon.abilities.impaling-charge.text"
+    },
+    {
+      "id": "poison-breath",
+      "section": "offense",
+      "name": "creature.ancient-horned-dragon.abilities.poison-breath.name",
+      "actions": "2",
+      "traits": [
+        "primal",
+        "poison"
+      ],
+      "text": "creature.ancient-horned-dragon.abilities.poison-breath.text"
+    },
+    {
+      "id": "trackless-journey",
+      "section": "offense",
+      "name": "creature.ancient-horned-dragon.abilities.trackless-journey.name",
+      "text": "creature.ancient-horned-dragon.abilities.trackless-journey.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 39,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.entangling-flora",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "atWill": true
+            },
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.dominate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

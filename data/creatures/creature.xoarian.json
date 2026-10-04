@@ -1,0 +1,213 @@
+{
+  "id": "creature.xoarian",
+  "type": "creature",
+  "name": "creature.xoarian.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 105,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "small",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "own": "thoughtsense",
+        "range": 60
+      },
+      {
+        "ability": "ability.tremorsense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "aklo"
+  ],
+  "languageNote": "creature.xoarian.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 20
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 16
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    },
+    {
+      "skill": "skill.society",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 4,
+    "int": 5,
+    "wis": 4,
+    "cha": 6
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 16,
+    "will": 18
+  },
+  "hp": {
+    "value": 130
+  },
+  "immunities": [
+    "blinded",
+    "controlled",
+    "emotion",
+    "possession"
+  ],
+  "speeds": {
+    "land": 35,
+    "climb": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.xoarian.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+5",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "stolen-identity",
+      "section": "top",
+      "name": "creature.xoarian.abilities.stolen-identity.name",
+      "text": "creature.xoarian.abilities.stolen-identity.text"
+    },
+    {
+      "id": "thoughtsense",
+      "section": "top",
+      "name": "creature.xoarian.abilities.thoughtsense.name",
+      "text": "creature.xoarian.abilities.thoughtsense.text"
+    },
+    {
+      "id": "body-thief",
+      "section": "offense",
+      "name": "creature.xoarian.abilities.body-thief.name",
+      "actions": "3",
+      "traits": [
+        "manipulate",
+        "occult",
+        "possession"
+      ],
+      "text": "creature.xoarian.abilities.body-thief.text"
+    },
+    {
+      "id": "exit-body",
+      "section": "offense",
+      "name": "creature.xoarian.abilities.exit-body.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "requirements": "creature.xoarian.abilities.exit-body.requirements",
+      "text": "creature.xoarian.abilities.exit-body.text"
+    },
+    {
+      "id": "ravage",
+      "section": "offense",
+      "name": "creature.xoarian.abilities.ravage.name",
+      "actions": "3",
+      "text": "creature.xoarian.abilities.ravage.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 27,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.xoarian.spellcasting.0.ranks.2.0.note"
+            },
+            {
+              "spell": "spell.paranoia",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.paralyze",
+              "count": 3
+            },
+            {
+              "spell": "spell.soothe",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.confusion"
+            },
+            {
+              "spell": "spell.dispelling-globe"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

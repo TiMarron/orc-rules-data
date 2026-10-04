@@ -1,0 +1,135 @@
+{
+  "id": "creature.air-scamp",
+  "type": "creature",
+  "name": "creature.air-scamp.name",
+  "traits": [
+    "air",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 146,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 3,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "fog-vision"
+      }
+    ]
+  },
+  "languages": [
+    "sussuran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 0,
+    "int": -2,
+    "wis": 0,
+    "cha": 0
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 3,
+    "reflex": 9,
+    "will": 7
+  },
+  "hp": {
+    "value": 12,
+    "note": "creature.air-scamp.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.air-scamp.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fog-vision",
+      "section": "top",
+      "name": "creature.air-scamp.abilities.fog-vision.name",
+      "text": "creature.air-scamp.abilities.fog-vision.text"
+    },
+    {
+      "id": "sirocco-breath",
+      "section": "offense",
+      "name": "creature.air-scamp.abilities.sirocco-breath.name",
+      "actions": "2",
+      "traits": [
+        "air",
+        "arcane"
+      ],
+      "text": "creature.air-scamp.abilities.sirocco-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 17,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.gust-of-wind"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Fortitude corrected to the book: page 146 prints \"AC 16; Fort +3, Ref +9, Will +7\"; the source has Fort +2 and the errata does not touch it."
+}

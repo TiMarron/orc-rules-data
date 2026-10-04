@@ -1,0 +1,193 @@
+{
+  "id": "creature.arboreal-regent",
+  "type": "creature",
+  "name": "creature.arboreal-regent.name",
+  "traits": [
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 25,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "huge",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "arboreal",
+    "common",
+    "fey"
+  ],
+  "languageNote": "creature.arboreal-regent.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 16
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 18
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11,
+      "note": "creature.arboreal-regent.skills.4.note"
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": -1,
+    "con": 6,
+    "int": 1,
+    "wis": 4,
+    "cha": 2
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 11,
+    "will": 16
+  },
+  "hp": {
+    "value": 150
+  },
+  "weaknesses": [
+    {
+      "type": "axes",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.arboreal-regent.strikes.branch.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d12+7",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.arboreal-regent.strikes.root.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.arboreal-regent.strikes.rock.name",
+      "actions": "1",
+      "bonus": 19,
+      "rangeIncrement": 120,
+      "traits": [
+        "brutal"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "awaken-tree",
+      "section": "offense",
+      "name": "creature.arboreal-regent.abilities.awaken-tree.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "primal"
+      ],
+      "text": "creature.arboreal-regent.abilities.awaken-tree.text"
+    },
+    {
+      "id": "sunder-objects",
+      "section": "offense",
+      "name": "creature.arboreal-regent.abilities.sunder-objects.name",
+      "text": "creature.arboreal-regent.abilities.sunder-objects.text"
+    },
+    {
+      "id": "throw-rock",
+      "section": "offense",
+      "name": "creature.arboreal-regent.abilities.throw-rock.name",
+      "ability": "ability.throw-rock",
+      "actions": "1"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 26,
+      "constant": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.speak-with-plants"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 25 prints \"Stealth +11 (+21 in forests)\"; the source omits the parenthesis and the errata does not touch it."
+}

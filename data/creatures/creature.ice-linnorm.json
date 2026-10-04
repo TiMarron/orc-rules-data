@@ -1,0 +1,241 @@
+{
+  "id": "creature.ice-linnorm",
+  "type": "creature",
+  "name": "creature.ice-linnorm.name",
+  "traits": [
+    "cold",
+    "dragon"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 221,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 17,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 29,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "draconic",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 32
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 5,
+    "con": 7,
+    "int": -3,
+    "wis": 6,
+    "cha": 7
+  },
+  "ac": {
+    "value": 41
+  },
+  "saves": {
+    "fortitude": 32,
+    "reflex": 28,
+    "will": 27,
+    "note": "creature.ice-linnorm.saves.note"
+  },
+  "hp": {
+    "value": 330,
+    "note": "creature.ice-linnorm.hp.note"
+  },
+  "immunities": [
+    "cold",
+    "curse",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "fly": 100,
+    "swim": 40,
+    "note": "creature.ice-linnorm.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ice-linnorm.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "reach",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "25"
+      },
+      "damage": [
+        {
+          "dice": "3d12+17",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "ice-linnorm-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ice-linnorm.strikes.claw.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+17",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ice-linnorm.strikes.tail.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "25"
+      },
+      "damage": [
+        {
+          "dice": "3d6+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.ice-linnorm.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "curse-of-frost",
+      "section": "defense",
+      "name": "creature.ice-linnorm.abilities.curse-of-frost.name",
+      "traits": [
+        "cold",
+        "curse",
+        "primal"
+      ],
+      "text": "creature.ice-linnorm.abilities.curse-of-frost.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.ice-linnorm.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.ice-linnorm.abilities.reactive-strike.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.ice-linnorm.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.ice-linnorm.abilities.constrict.text"
+    },
+    {
+      "id": "ice-linnorm-venom",
+      "section": "offense",
+      "name": "creature.ice-linnorm.abilities.ice-linnorm-venom.name",
+      "traits": [
+        "cold",
+        "poison"
+      ],
+      "text": "creature.ice-linnorm.abilities.ice-linnorm-venom.text"
+    },
+    {
+      "id": "icemire-breath",
+      "section": "offense",
+      "name": "creature.ice-linnorm.abilities.icemire-breath.name",
+      "actions": "2",
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "text": "creature.ice-linnorm.abilities.icemire-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 38,
+      "constant": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 221 prints \"Constant (8th) unfettered movement; (7th) truesight\"; the source lists truesight as an ordinary spell of that rank and the errata does not touch it. The Hit Points note regains the closing parenthesis the source drops: page 221 prints \"regeneration 10 (deactivated by cold iron; page 360)\"."
+}

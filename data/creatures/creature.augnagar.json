@@ -1,0 +1,223 @@
+{
+  "id": "creature.augnagar",
+  "type": "creature",
+  "name": "creature.augnagar.name",
+  "traits": [
+    "fiend",
+    "qlippoth",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 281,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 14,
+  "size": "huge",
+  "perception": {
+    "mod": 27,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian"
+  ],
+  "languageNote": "creature.augnagar.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 26
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 5,
+    "con": 8,
+    "int": -2,
+    "wis": 5,
+    "cha": 4
+  },
+  "ac": {
+    "value": 36
+  },
+  "saves": {
+    "fortitude": 28,
+    "reflex": 23,
+    "will": 25
+  },
+  "hp": {
+    "value": 225
+  },
+  "immunities": [
+    "controlled",
+    "fear"
+  ],
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 15
+    },
+    {
+      "type": "physical",
+      "value": 15,
+      "except": [
+        "cold-iron"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "climb": 40,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.augnagar.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d12+14",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d6",
+          "type": "bleed",
+          "persistent": true
+        }
+      ],
+      "effects": [
+        {
+          "own": "rotting-curse"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.augnagar.strikes.sting.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "magical",
+        "finesse",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "slashing"
+        },
+        {
+          "dice": "3d6",
+          "type": "bleed",
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "confusing-display",
+      "section": "offense",
+      "name": "creature.augnagar.abilities.confusing-display.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "emotion",
+        "fear",
+        "incapacitation",
+        "mental",
+        "occult",
+        "visual"
+      ],
+      "text": "creature.augnagar.abilities.confusing-display.text"
+    },
+    {
+      "id": "inhale-vitality",
+      "section": "offense",
+      "name": "creature.augnagar.abilities.inhale-vitality.name",
+      "actions": "2",
+      "traits": [
+        "occult",
+        "void"
+      ],
+      "frequency": "creature.augnagar.abilities.inhale-vitality.frequency",
+      "text": "creature.augnagar.abilities.inhale-vitality.text"
+    },
+    {
+      "id": "rotting-curse",
+      "section": "offense",
+      "name": "creature.augnagar.abilities.rotting-curse.name",
+      "traits": [
+        "curse",
+        "disease",
+        "occult"
+      ],
+      "text": "creature.augnagar.abilities.rotting-curse.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 31,
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

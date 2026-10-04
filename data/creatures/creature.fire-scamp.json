@@ -1,0 +1,141 @@
+{
+  "id": "creature.fire-scamp",
+  "type": "creature",
+  "name": "creature.fire-scamp.name",
+  "traits": [
+    "elemental",
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 147,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 3,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 0,
+    "int": -2,
+    "wis": 0,
+    "cha": 2
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 3,
+    "reflex": 9,
+    "will": 7
+  },
+  "hp": {
+    "value": 16,
+    "note": "creature.fire-scamp.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.fire-scamp.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d4",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.fire-scamp.abilities.smoke-vision.name",
+      "text": "creature.fire-scamp.abilities.smoke-vision.text"
+    },
+    {
+      "id": "flame-breath",
+      "section": "offense",
+      "name": "creature.fire-scamp.abilities.flame-breath.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "fire"
+      ],
+      "text": "creature.fire-scamp.abilities.flame-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 15,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.light"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "id": "creature.vicharamuni",
+  "type": "creature",
+  "name": "creature.vicharamuni.name",
+  "traits": [
+    "beast",
+    "holy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 237,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "large",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "empyrean"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 18
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 21
+    },
+    {
+      "lore": "creature.vicharamuni.lore.4",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 6,
+    "con": 5,
+    "int": 3,
+    "wis": 5,
+    "cha": 4
+  },
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 21,
+    "will": 22
+  },
+  "hp": {
+    "value": 175
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vicharamuni.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "finesse",
+        "holy",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d10+8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "vicharamuni-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vicharamuni.strikes.tail.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "finesse",
+        "holy",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "coils-of-knowledge"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.vicharamuni.strikes.spit.name",
+      "actions": "1",
+      "bonus": 22,
+      "rangeIncrement": 30,
+      "traits": [
+        "agile",
+        "holy",
+        "poison"
+      ],
+      "damage": [],
+      "effects": [
+        {
+          "own": "vicharamuni-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "coils-of-knowledge",
+      "section": "offense",
+      "name": "creature.vicharamuni.abilities.coils-of-knowledge.name",
+      "traits": [
+        "force",
+        "magical"
+      ],
+      "text": "creature.vicharamuni.abilities.coils-of-knowledge.text"
+    },
+    {
+      "id": "greater-constrict",
+      "section": "offense",
+      "name": "creature.vicharamuni.abilities.greater-constrict.name",
+      "ability": "ability.greater-constrict",
+      "actions": "1",
+      "text": "creature.vicharamuni.abilities.greater-constrict.text"
+    },
+    {
+      "id": "spiritual-venom",
+      "section": "offense",
+      "name": "creature.vicharamuni.abilities.spiritual-venom.name",
+      "text": "creature.vicharamuni.abilities.spiritual-venom.text"
+    },
+    {
+      "id": "vicharamuni-venom",
+      "section": "offense",
+      "name": "creature.vicharamuni.abilities.vicharamuni-venom.name",
+      "traits": [
+        "divine",
+        "holy",
+        "mental",
+        "poison",
+        "spirit"
+      ],
+      "text": "creature.vicharamuni.abilities.vicharamuni-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "divine",
+      "dc": 29,
+      "attack": 21,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.stabilize"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.protection"
+            },
+            {
+              "spell": "spell.spirit-link"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.calm"
+            },
+            {
+              "spell": "spell.noise-blast"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.crisis-of-faith"
+            },
+            {
+              "spell": "spell.holy-light"
+            },
+            {
+              "spell": "spell.mind-reading"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.lightning-bolt"
+            },
+            {
+              "spell": "spell.fly"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.breath-of-life"
+            },
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.divine-immolation"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane in a Lore skill's name is replaced with the generic descriptor the dataset already uses. The rules text is the book's."
+}

@@ -1,0 +1,176 @@
+{
+  "id": "creature.zoaem",
+  "type": "creature",
+  "name": "creature.zoaem.name",
+  "traits": [
+    "archon",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "utopian"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 3,
+    "con": 1,
+    "int": -1,
+    "wis": 1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 10,
+    "will": 4
+  },
+  "hp": {
+    "value": 20,
+    "note": "creature.zoaem.hp.note"
+  },
+  "immunities": [
+    "fear"
+  ],
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 3
+    }
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "ranged",
+      "name": "creature.zoaem.strikes.eye-ray.name",
+      "actions": "1",
+      "bonus": 8,
+      "range": 30,
+      "traits": [
+        "agile",
+        "fire",
+        "holy",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "archons-protection",
+      "section": "defense",
+      "name": "creature.zoaem.abilities.archons-protection.name",
+      "actions": "reaction",
+      "trigger": "creature.zoaem.abilities.archons-protection.trigger",
+      "text": "creature.zoaem.abilities.archons-protection.text"
+    },
+    {
+      "id": "behold",
+      "section": "offense",
+      "name": "creature.zoaem.abilities.behold.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "illusion",
+        "incapacitation",
+        "visual"
+      ],
+      "frequency": "creature.zoaem.abilities.behold.frequency",
+      "text": "creature.zoaem.abilities.behold.text"
+    },
+    {
+      "id": "light-of-truth",
+      "section": "offense",
+      "name": "creature.zoaem.abilities.light-of-truth.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "light"
+      ],
+      "text": "creature.zoaem.abilities.light-of-truth.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 17,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.heal"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.read-omens"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

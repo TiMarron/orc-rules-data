@@ -1,0 +1,299 @@
+{
+  "id": "creature.ancient-mirage-dragon",
+  "type": "creature",
+  "name": "creature.ancient-mirage-dragon.name",
+  "traits": [
+    "arcane",
+    "dragon"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 123,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 18,
+  "size": "huge",
+  "perception": {
+    "mod": 33,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "illusion-sense"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "fey",
+    "shadowtongue"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 32
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 34
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 32
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 37
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 35
+    },
+    {
+      "lore": "creature.ancient-mirage-dragon.lore.6",
+      "mod": 34
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 35
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 35
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 33
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 7,
+    "con": 6,
+    "int": 6,
+    "wis": 7,
+    "cha": 9
+  },
+  "ac": {
+    "value": 41
+  },
+  "saves": {
+    "fortitude": 28,
+    "reflex": 29,
+    "will": 33,
+    "note": "creature.ancient-mirage-dragon.saves.note"
+  },
+  "hp": {
+    "value": 345
+  },
+  "immunities": [
+    "fascinated",
+    "paralyzed",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 60,
+    "climb": 40,
+    "fly": 180
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ancient-mirage-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d10+15",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-mirage-dragon.strikes.claws.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d6+15",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-mirage-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 31,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+15",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "camouflage",
+      "section": "top",
+      "name": "creature.ancient-mirage-dragon.abilities.camouflage.name",
+      "text": "creature.ancient-mirage-dragon.abilities.camouflage.text"
+    },
+    {
+      "id": "illusion-sense",
+      "section": "top",
+      "name": "creature.ancient-mirage-dragon.abilities.illusion-sense.name",
+      "text": "creature.ancient-mirage-dragon.abilities.illusion-sense.text"
+    },
+    {
+      "id": "scintillating-defense",
+      "section": "defense",
+      "name": "creature.ancient-mirage-dragon.abilities.scintillating-defense.name",
+      "actions": "reaction",
+      "traits": [
+        "visual"
+      ],
+      "trigger": "creature.ancient-mirage-dragon.abilities.scintillating-defense.trigger",
+      "text": "creature.ancient-mirage-dragon.abilities.scintillating-defense.text"
+    },
+    {
+      "id": "captivating-display",
+      "section": "offense",
+      "name": "creature.ancient-mirage-dragon.abilities.captivating-display.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "visual"
+      ],
+      "frequency": "creature.ancient-mirage-dragon.abilities.captivating-display.frequency",
+      "text": "creature.ancient-mirage-dragon.abilities.captivating-display.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.ancient-mirage-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.ancient-mirage-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.ancient-mirage-dragon.abilities.draconic-momentum.name",
+      "text": "creature.ancient-mirage-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "hallucinatory-breath",
+      "section": "offense",
+      "name": "creature.ancient-mirage-dragon.abilities.hallucinatory-breath.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.ancient-mirage-dragon.abilities.hallucinatory-breath.text"
+    },
+    {
+      "id": "lunging-bite",
+      "section": "offense",
+      "name": "creature.ancient-mirage-dragon.abilities.lunging-bite.name",
+      "actions": "2",
+      "text": "creature.ancient-mirage-dragon.abilities.lunging-bite.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.ancient-mirage-dragon.abilities.sneak-attack.name",
+      "text": "creature.ancient-mirage-dragon.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 43,
+      "cantrips": {
+        "rank": 9,
+        "spells": [
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.message"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.illusory-creature"
+            },
+            {
+              "spell": "spell.illusory-object",
+              "atWill": true
+            },
+            {
+              "spell": "spell.illusory-scene",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mirage"
+            },
+            {
+              "spell": "spell.vibrant-pattern"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

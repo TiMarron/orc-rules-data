@@ -1,0 +1,166 @@
+{
+  "id": "creature.gourd-leshy",
+  "type": "creature",
+  "name": "creature.gourd-leshy.name",
+  "traits": [
+    "leshy",
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 217,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "languageNote": "creature.gourd-leshy.language-note",
+  "skills": [
+    {
+      "skill": "skill.nature",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": -1,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 9,
+    "will": 7
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gourd-leshy.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "ensnare"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gourd-leshy.strikes.seed.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 30,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "ensnare"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "keepsake",
+      "section": "top",
+      "name": "creature.gourd-leshy.abilities.keepsake.name",
+      "traits": [
+        "primal"
+      ],
+      "text": "creature.gourd-leshy.abilities.keepsake.text"
+    },
+    {
+      "id": "verdant-burst",
+      "section": "defense",
+      "name": "creature.gourd-leshy.abilities.verdant-burst.name",
+      "traits": [
+        "healing",
+        "primal",
+        "vitality"
+      ],
+      "text": "creature.gourd-leshy.abilities.verdant-burst.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.gourd-leshy.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.gourd-leshy.abilities.change-shape.text"
+    },
+    {
+      "id": "ensnare",
+      "section": "offense",
+      "name": "creature.gourd-leshy.abilities.ensnare.name",
+      "text": "creature.gourd-leshy.abilities.ensnare.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 15,
+      "constant": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.speak-with-plants",
+              "note": "creature.gourd-leshy.spellcasting.0.constant.3.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Change Shape: the source's expanded text names the leaf leshy; page 217 prints \"As leaf leshy, except the gourd leshy transforms into a gourd-bearing plant\"."
+}

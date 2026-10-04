@@ -1,0 +1,371 @@
+{
+  "id": "creature.keketar",
+  "type": "creature",
+  "name": "creature.keketar.name",
+  "traits": [
+    "monitor",
+    "protean"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 272,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 17,
+  "size": "large",
+  "perception": {
+    "mod": 30,
+    "senses": [
+      {
+        "own": "entropy-sense",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "empyrean",
+    "protean"
+  ],
+  "languageNote": "creature.keketar.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 26
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 32
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 34
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 34
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 30
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 30
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 5,
+    "con": 7,
+    "int": 5,
+    "wis": 7,
+    "cha": 7
+  },
+  "ac": {
+    "value": 40
+  },
+  "saves": {
+    "fortitude": 30,
+    "reflex": 28,
+    "will": 34,
+    "note": "creature.keketar.saves.note"
+  },
+  "hp": {
+    "value": 260,
+    "note": "creature.keketar.hp.note"
+  },
+  "resistances": [
+    {
+      "type": "precision",
+      "value": 10
+    },
+    {
+      "type": "protean-anatomy",
+      "value": 25
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "fly": 50,
+    "swim": 40,
+    "note": "creature.keketar.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.keketar.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d12+16",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "warpwave-strike"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.keketar.strikes.claw.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+16",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "warpwave-strike"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.keketar.strikes.tail.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d12+16",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "entropy-sense",
+      "section": "top",
+      "name": "creature.keketar.abilities.entropy-sense.name",
+      "traits": [
+        "divine",
+        "prediction"
+      ],
+      "text": "creature.keketar.abilities.entropy-sense.text"
+    },
+    {
+      "id": "protean-anatomy",
+      "section": "defense",
+      "name": "creature.keketar.abilities.protean-anatomy.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.keketar.abilities.protean-anatomy.text"
+    },
+    {
+      "id": "spatial-riptide",
+      "section": "defense",
+      "name": "creature.keketar.abilities.spatial-riptide.name",
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "aura": 30,
+      "text": "creature.keketar.abilities.spatial-riptide.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.keketar.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.keketar.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.keketar.abilities.change-shape.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.keketar.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.keketar.abilities.constrict.text"
+    },
+    {
+      "id": "reshape-reality",
+      "section": "offense",
+      "name": "creature.keketar.abilities.reshape-reality.name",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.keketar.abilities.reshape-reality.text"
+    },
+    {
+      "id": "warpwave-strike",
+      "section": "offense",
+      "name": "creature.keketar.abilities.warpwave-strike.name",
+      "traits": [
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.keketar.abilities.warpwave-strike.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 42,
+      "attack": 32,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.confusion",
+              "atWill": true
+            },
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.creation",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mirage",
+              "count": 2,
+              "note": "creature.keketar.spellcasting.0.ranks.5.1.note"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.teleport",
+              "atWill": true,
+              "note": "creature.keketar.spellcasting.0.ranks.6.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.disintegrate"
+            },
+            {
+              "spell": "spell.dispel-magic",
+              "atWill": true
+            },
+            {
+              "spell": "spell.shatter",
+              "atWill": true
+            },
+            {
+              "spell": "spell.warp-mind",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.confusion"
+            },
+            {
+              "spell": "spell.cursed-metamorphosis"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.divine-wrath"
+            },
+            {
+              "spell": "spell.unfathomable-song"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 273 prints \"Constant (5th) truespeech; (4th) unfettered movement\"; the source lists unfettered movement as an ordinary spell of that rank and the errata does not touch it."
+}

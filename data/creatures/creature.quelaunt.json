@@ -1,0 +1,193 @@
+{
+  "id": "creature.quelaunt",
+  "type": "creature",
+  "name": "creature.quelaunt.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 285,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 15,
+  "size": "large",
+  "perception": {
+    "mod": 29,
+    "senses": [
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "aklo"
+  ],
+  "languageNote": "creature.quelaunt.language-note",
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 30
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 30
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 27
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 5,
+    "con": 4,
+    "int": 5,
+    "wis": 6,
+    "cha": 8
+  },
+  "ac": {
+    "value": 36
+  },
+  "saves": {
+    "fortitude": 27,
+    "reflex": 26,
+    "will": 31,
+    "note": "creature.quelaunt.saves.note"
+  },
+  "hp": {
+    "value": 305
+  },
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "note": "creature.quelaunt.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.quelaunt.strikes.claw.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d8+12",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "emotional-focus",
+      "section": "offense",
+      "name": "creature.quelaunt.abilities.emotional-focus.name",
+      "text": "creature.quelaunt.abilities.emotional-focus.text"
+    },
+    {
+      "id": "emotional-frenzy",
+      "section": "offense",
+      "name": "creature.quelaunt.abilities.emotional-frenzy.name",
+      "actions": "3",
+      "text": "creature.quelaunt.abilities.emotional-frenzy.text"
+    },
+    {
+      "id": "feed-on-emotion",
+      "section": "offense",
+      "name": "creature.quelaunt.abilities.feed-on-emotion.name",
+      "actions": "1",
+      "traits": [
+        "emotion",
+        "incapacitation",
+        "mental"
+      ],
+      "frequency": "creature.quelaunt.abilities.feed-on-emotion.frequency",
+      "text": "creature.quelaunt.abilities.feed-on-emotion.text"
+    },
+    {
+      "id": "rapid-strikes",
+      "section": "offense",
+      "name": "creature.quelaunt.abilities.rapid-strikes.name",
+      "actions": "2",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.quelaunt.abilities.rapid-strikes.text"
+    },
+    {
+      "id": "spiral-of-despair",
+      "section": "offense",
+      "name": "creature.quelaunt.abilities.spiral-of-despair.name",
+      "actions": "free",
+      "traits": [
+        "emotion",
+        "mental"
+      ],
+      "trigger": "creature.quelaunt.abilities.spiral-of-despair.trigger",
+      "text": "creature.quelaunt.abilities.spiral-of-despair.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 39,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.laughing-fit"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.fear",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.wave-of-despair",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.fly"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

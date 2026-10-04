@@ -1,0 +1,159 @@
+{
+  "id": "creature.pipefox",
+  "type": "creature",
+  "name": "creature.pipefox.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 265,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "tiny",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic"
+  ],
+  "languageNote": "creature.pipefox.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 9
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 3,
+    "int": 4,
+    "wis": 1,
+    "cha": 3
+  },
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 11,
+    "will": 7
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pipefox.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "finesse",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "master-of-tongues",
+      "section": "offense",
+      "name": "creature.pipefox.abilities.master-of-tongues.name",
+      "text": "creature.pipefox.abilities.master-of-tongues.text"
+    },
+    {
+      "id": "rapid-erudition",
+      "section": "offense",
+      "name": "creature.pipefox.abilities.rapid-erudition.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "requirements": "creature.pipefox.abilities.rapid-erudition.requirements",
+      "text": "creature.pipefox.abilities.rapid-erudition.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 18,
+      "attack": 8,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.pipefox.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.translate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Spell block corrected to the book: page 265 prints \"2nd invisibility (at will, self only) Cantrips (1st) read aura; Constant (2nd) translate\"; the source runs the Cantrips label into the restriction (\"self only Cantrips\") and drops the cantrip, so the note is \"self only\" and read aura is restored as a 1st-rank cantrip."
+}

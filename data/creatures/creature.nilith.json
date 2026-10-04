@@ -1,0 +1,218 @@
+{
+  "id": "creature.nilith",
+  "type": "creature",
+  "name": "creature.nilith.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 239,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 19,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common"
+  ],
+  "languageNote": "creature.nilith.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 23
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 19
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 21
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 5,
+    "con": 4,
+    "int": 3,
+    "wis": 3,
+    "cha": 5
+  },
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 20,
+    "will": 20
+  },
+  "hp": {
+    "value": 150
+  },
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 10
+    },
+    {
+      "type": "physical",
+      "value": 5,
+      "except": [
+        "silver"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.nilith.strikes.claw.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+9",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.nilith.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d12+9",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mind-crush",
+      "section": "offense",
+      "name": "creature.nilith.abilities.mind-crush.name",
+      "actions": "1",
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "requirements": "creature.nilith.abilities.mind-crush.requirements",
+      "text": "creature.nilith.abilities.mind-crush.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 29,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.mind-reading",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.confusion"
+            },
+            {
+              "spell": "spell.dream-message"
+            },
+            {
+              "spell": "spell.flicker"
+            },
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.nilith.spellcasting.0.ranks.4.3.note"
+            },
+            {
+              "spell": "spell.nightmare"
+            },
+            {
+              "spell": "spell.wave-of-despair"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.hallucination"
+            },
+            {
+              "spell": "spell.mind-probe"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

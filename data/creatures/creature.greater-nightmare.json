@@ -1,0 +1,175 @@
+{
+  "id": "creature.greater-nightmare",
+  "type": "creature",
+  "name": "creature.greater-nightmare.name",
+  "traits": [
+    "beast",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 238,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 11,
+  "size": "huge",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "daemonic",
+    "diabolic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 22
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 4,
+    "con": 5,
+    "int": 2,
+    "wis": 5,
+    "cha": 3
+  },
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 24,
+    "will": 21
+  },
+  "hp": {
+    "value": 200
+  },
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 60,
+    "fly": 120
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.greater-nightmare.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "unholy",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d10+13",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.greater-nightmare.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "fire",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke",
+      "section": "top",
+      "name": "creature.greater-nightmare.abilities.smoke.name",
+      "traits": [
+        "aura"
+      ],
+      "aura": 20,
+      "text": "creature.greater-nightmare.abilities.smoke.text"
+    },
+    {
+      "id": "flaming-gallop",
+      "section": "offense",
+      "name": "creature.greater-nightmare.abilities.flaming-gallop.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.greater-nightmare.abilities.flaming-gallop.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.greater-nightmare.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.greater-nightmare.abilities.trample.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 30,
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "note": "creature.greater-nightmare.spellcasting.0.ranks.7.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Smoke aura corrected to the book: page 238 prints \"Smoke (aura) 20 feet. As nightmare, but DC 28.\"; the source keeps the nightmare's 15 feet and the errata does not touch it."
+}

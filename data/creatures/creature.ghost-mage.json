@@ -1,0 +1,237 @@
+{
+  "id": "creature.ghost-mage",
+  "type": "creature",
+  "name": "creature.ghost-mage.name",
+  "traits": [
+    "ghost",
+    "incorporeal",
+    "spirit",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 161,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 22
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 22
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 3,
+    "con": 0,
+    "int": 6,
+    "wis": 3,
+    "cha": 6
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 19,
+    "will": 22
+  },
+  "hp": {
+    "value": 135,
+    "note": "creature.ghost-mage.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 10,
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "note": "creature.ghost-mage.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ghost-mage.strikes.ghostly-hand.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+12",
+          "type": "void"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "site-bound",
+      "section": "top",
+      "name": "creature.ghost-mage.abilities.site-bound.name"
+    },
+    {
+      "id": "rejuvenation",
+      "section": "defense",
+      "name": "creature.ghost-mage.abilities.rejuvenation.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.ghost-mage.abilities.rejuvenation.text"
+    },
+    {
+      "id": "frightful-moan",
+      "section": "offense",
+      "name": "creature.ghost-mage.abilities.frightful-moan.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "divine",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.ghost-mage.abilities.frightful-moan.text"
+    },
+    {
+      "id": "telekinetic-assault",
+      "section": "offense",
+      "name": "creature.ghost-mage.abilities.telekinetic-assault.name",
+      "actions": "2",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.ghost-mage.abilities.telekinetic-assault.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 29,
+      "attack": 23,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.enfeeble",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.telekinetic-maneuver",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.blindness"
+            },
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.veil-of-privacy"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.suggestion"
+            },
+            {
+              "spell": "spell.vision-of-death"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.hallucination"
+            },
+            {
+              "spell": "spell.howling-blizzard"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Kept by the errata: page 161 prints \"read magic\" among the cantrips and the record has read aura; the errata says \"Page 161: Change the ghost mage's “read magic” spell to “read aura”.\""
+}

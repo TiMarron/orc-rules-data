@@ -1,0 +1,212 @@
+{
+  "id": "creature.barghest",
+  "type": "creature",
+  "name": "creature.barghest.name",
+  "traits": [
+    "beast",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 38,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey",
+    "goblin",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 3,
+    "int": 2,
+    "wis": 2,
+    "cha": 3
+  },
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 12,
+    "will": 8
+  },
+  "hp": {
+    "value": 50
+  },
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "except": [
+        "cold-iron"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.barghest.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.barghest.strikes.claw.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+5",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "unhealing-wound"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "primal-hunt",
+      "section": "defense",
+      "name": "creature.barghest.abilities.primal-hunt.name",
+      "actions": "reaction",
+      "traits": [
+        "primal",
+        "teleportation"
+      ],
+      "trigger": "creature.barghest.abilities.primal-hunt.trigger",
+      "text": "creature.barghest.abilities.primal-hunt.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.barghest.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.barghest.abilities.change-shape.text"
+    },
+    {
+      "id": "unhealing-wound",
+      "section": "offense",
+      "name": "creature.barghest.abilities.unhealing-wound.name",
+      "traits": [
+        "curse",
+        "primal"
+      ],
+      "text": "creature.barghest.abilities.unhealing-wound.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 21,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility"
+            },
+            {
+              "spell": "spell.mist"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

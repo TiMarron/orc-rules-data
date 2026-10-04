@@ -1,0 +1,255 @@
+{
+  "id": "creature.tor-linnorm",
+  "type": "creature",
+  "name": "creature.tor-linnorm.name",
+  "traits": [
+    "dragon",
+    "fire"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 222,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 21,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 37,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "draconic",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 35
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 40
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 37
+    }
+  ],
+  "attributes": {
+    "str": 11,
+    "dex": 8,
+    "con": 9,
+    "int": -1,
+    "wis": 8,
+    "cha": 9
+  },
+  "ac": {
+    "value": 47
+  },
+  "saves": {
+    "fortitude": 38,
+    "reflex": 35,
+    "will": 33,
+    "note": "creature.tor-linnorm.saves.note"
+  },
+  "hp": {
+    "value": 440,
+    "note": "creature.tor-linnorm.hp.note"
+  },
+  "immunities": [
+    "curse",
+    "fire",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "climb": 35,
+    "fly": 100,
+    "swim": 60,
+    "note": "creature.tor-linnorm.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tor-linnorm.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 40,
+      "traits": [
+        "reach",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "4d12+19",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "tor-linnorm-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tor-linnorm.strikes.claw.name",
+      "actions": "1",
+      "bonus": 40,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "4d8+19",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tor-linnorm.strikes.tail.name",
+      "actions": "1",
+      "bonus": 40,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "4d6+19",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.tor-linnorm.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "curse-of-boiling-blood",
+      "section": "defense",
+      "name": "creature.tor-linnorm.abilities.curse-of-boiling-blood.name",
+      "traits": [
+        "curse",
+        "fire",
+        "primal"
+      ],
+      "text": "creature.tor-linnorm.abilities.curse-of-boiling-blood.text"
+    },
+    {
+      "id": "lava-affinity",
+      "section": "defense",
+      "name": "creature.tor-linnorm.abilities.lava-affinity.name",
+      "text": "creature.tor-linnorm.abilities.lava-affinity.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.tor-linnorm.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.tor-linnorm.abilities.reactive-strike.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.tor-linnorm.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.tor-linnorm.abilities.constrict.text"
+    },
+    {
+      "id": "pyroclastic-breath",
+      "section": "offense",
+      "name": "creature.tor-linnorm.abilities.pyroclastic-breath.name",
+      "actions": "2",
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "text": "creature.tor-linnorm.abilities.pyroclastic-breath.text"
+    },
+    {
+      "id": "slashing-claws",
+      "section": "offense",
+      "name": "creature.tor-linnorm.abilities.slashing-claws.name",
+      "actions": "1",
+      "text": "creature.tor-linnorm.abilities.slashing-claws.text"
+    },
+    {
+      "id": "tor-linnorm-venom",
+      "section": "offense",
+      "name": "creature.tor-linnorm.abilities.tor-linnorm-venom.name",
+      "traits": [
+        "fire",
+        "poison"
+      ],
+      "text": "creature.tor-linnorm.abilities.tor-linnorm-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 44,
+      "constant": [
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 223 prints \"Constant (9th) unfettered movement; (8th) truesight\"; the source lists truesight as an ordinary spell of that rank and the errata does not touch it."
+}

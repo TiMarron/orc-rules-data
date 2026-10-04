@@ -1,0 +1,187 @@
+{
+  "id": "creature.aolaz",
+  "type": "creature",
+  "name": "creature.aolaz.name",
+  "traits": [
+    "construct"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 22,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 18,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 33,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "own": "flawless-hearing"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 35
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 4,
+    "con": 8,
+    "int": -4,
+    "wis": 6,
+    "cha": 3
+  },
+  "ac": {
+    "value": 42
+  },
+  "saves": {
+    "fortitude": 35,
+    "reflex": 27,
+    "will": 31
+  },
+  "hp": {
+    "value": 255
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "sonic",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 15,
+      "except": [
+        "adamantine"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 50,
+    "note": "creature.aolaz.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.aolaz.strikes.trunk.name",
+      "actions": "1",
+      "bonus": 35,
+      "traits": [
+        "magical",
+        "reach",
+        "sweep",
+        "trip"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "5d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.aolaz.strikes.foot.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "5d8+15",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "flawless-hearing",
+      "section": "top",
+      "name": "creature.aolaz.abilities.flawless-hearing.name",
+      "text": "creature.aolaz.abilities.flawless-hearing.text"
+    },
+    {
+      "id": "roll",
+      "section": "offense",
+      "name": "creature.aolaz.abilities.roll.name",
+      "actions": "1",
+      "text": "creature.aolaz.abilities.roll.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.aolaz.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "2",
+      "text": "creature.aolaz.abilities.trample.text"
+    },
+    {
+      "id": "ultrasonic-blast",
+      "section": "offense",
+      "name": "creature.aolaz.abilities.ultrasonic-blast.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "sonic"
+      ],
+      "text": "creature.aolaz.abilities.ultrasonic-blast.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 40,
+      "constant": [
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.water-walk"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
