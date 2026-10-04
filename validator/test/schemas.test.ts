@@ -705,6 +705,27 @@ describe('type schemas', () => {
     }
   });
 
+  it('accepts the precious material a Strike counts as, and rejects one that is not a slug', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].material = 'cold-iron';
+    expect(issuesFor('creature', c)).toEqual([]);
+    for (const material of ['Cold Iron', 'cold iron', '', 5]) {
+      c.strikes[0].material = material;
+      expect(issuesFor('creature', c).join('\n')).toContain('/strikes/0/material');
+    }
+  });
+
+  it('accepts what bypasses a resistance or a weakness in `except`, and rejects an empty list, a repeat and a non-slug', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.resistances = [{ type: 'physical', value: 10, except: ['adamantine'] }, { type: 'all-damage', value: 5, except: ['force', 'ghost-touch', 'spirit', 'vitality'], note: 'creature.cave-bear.resistances.1.note' }];
+    c.weaknesses = [{ type: 'fire', value: 5, except: ['cold-iron'] }];
+    expect(issuesFor('creature', c)).toEqual([]);
+    for (const except of [[], ['silver', 'silver'], ['Silver'], 'silver']) {
+      c.resistances[0].except = except;
+      expect(issuesFor('creature', c).join('\n')).toContain('/resistances/0/except');
+    }
+  });
+
   it('accepts text on a sense that is a universal ability, for what the stat block prints beyond its name (greater darkvision)', () => {
     const c = structuredClone(VALID.creature) as any;
     c.perception.senses = [{ ability: 'ability.darkvision', text: 'creature.cave-bear.senses.0' }];
