@@ -1,0 +1,174 @@
+{
+  "id": "creature.chimera",
+  "type": "creature",
+  "name": "creature.chimera.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 62,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 2,
+    "con": 4,
+    "int": -3,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 16,
+    "will": 14
+  },
+  "hp": {
+    "value": 135
+  },
+  "speeds": {
+    "land": 25,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.chimera.strikes.dragon-jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "draconic-bite",
+          "text": "creature.chimera.strikes.dragon-jaws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.chimera.strikes.lion-jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+9",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.chimera.strikes.goat-horns.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+9",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.chimera.strikes.claw.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "multiple-reactions",
+      "section": "defense",
+      "name": "creature.chimera.abilities.multiple-reactions.name",
+      "text": "creature.chimera.abilities.multiple-reactions.text"
+    },
+    {
+      "id": "three-headed",
+      "section": "defense",
+      "name": "creature.chimera.abilities.three-headed.name",
+      "text": "creature.chimera.abilities.three-headed.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.chimera.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "draconic-bite",
+      "section": "offense",
+      "name": "creature.chimera.abilities.draconic-bite.name",
+      "text": "creature.chimera.abilities.draconic-bite.text"
+    },
+    {
+      "id": "dragon-breath",
+      "section": "offense",
+      "name": "creature.chimera.abilities.dragon-breath.name",
+      "actions": "2",
+      "text": "creature.chimera.abilities.dragon-breath.text"
+    },
+    {
+      "id": "three-headed-strike",
+      "section": "offense",
+      "name": "creature.chimera.abilities.three-headed-strike.name",
+      "actions": "2",
+      "text": "creature.chimera.abilities.three-headed-strike.text"
+    }
+  ]
+}

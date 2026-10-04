@@ -1,0 +1,147 @@
+{
+  "id": "creature.elemental-tsunami",
+  "type": "creature",
+  "name": "creature.elemental-tsunami.name",
+  "traits": [
+    "aquatic",
+    "elemental",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 149,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "huge",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 23
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 6,
+    "con": 6,
+    "int": 0,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 22,
+    "will": 19
+  },
+  "hp": {
+    "value": 195
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "swim": 100
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.elemental-tsunami.strikes.wave.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d12+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "choice": [
+            {
+              "ability": "ability.push",
+              "text": "creature.elemental-tsunami.strikes.wave.effects.0.0"
+            },
+            {
+              "ability": "ability.pull",
+              "text": "creature.elemental-tsunami.strikes.wave.effects.0.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "waterbound",
+      "section": "top",
+      "name": "creature.elemental-tsunami.abilities.waterbound.name",
+      "text": "creature.elemental-tsunami.abilities.waterbound.text"
+    },
+    {
+      "id": "vortex",
+      "section": "defense",
+      "name": "creature.elemental-tsunami.abilities.vortex.name",
+      "traits": [
+        "aura",
+        "water"
+      ],
+      "aura": 50,
+      "text": "creature.elemental-tsunami.abilities.vortex.text"
+    },
+    {
+      "id": "drench",
+      "section": "offense",
+      "name": "creature.elemental-tsunami.abilities.drench.name",
+      "actions": "1",
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "text": "creature.elemental-tsunami.abilities.drench.text"
+    },
+    {
+      "id": "surge",
+      "section": "offense",
+      "name": "creature.elemental-tsunami.abilities.surge.name",
+      "actions": "2",
+      "text": "creature.elemental-tsunami.abilities.surge.text"
+    }
+  ]
+}

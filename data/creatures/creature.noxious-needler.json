@@ -1,0 +1,167 @@
+{
+  "id": "creature.noxious-needler",
+  "type": "creature",
+  "name": "creature.noxious-needler.name",
+  "traits": [
+    "alchemical",
+    "construct",
+    "mindless"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 242,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 4,
+    "con": 3,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 19,
+    "will": 15
+  },
+  "hp": {
+    "value": 150
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10,
+      "except": [
+        "adamantine",
+        "bludgeoning"
+      ]
+    },
+    {
+      "type": "spells",
+      "value": 10,
+      "except": [
+        "sonic"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.noxious-needler.strikes.syringe.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "alchemical-injection"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.noxious-needler.strikes.bomb.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [],
+      "effects": [
+        {
+          "own": "generate-bomb"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "alchemical-chambers",
+      "section": "defense",
+      "name": "creature.noxious-needler.abilities.alchemical-chambers.name",
+      "text": "creature.noxious-needler.abilities.alchemical-chambers.text"
+    },
+    {
+      "id": "alchemical-rupture",
+      "section": "defense",
+      "name": "creature.noxious-needler.abilities.alchemical-rupture.name",
+      "text": "creature.noxious-needler.abilities.alchemical-rupture.text"
+    },
+    {
+      "id": "alchemical-injection",
+      "section": "offense",
+      "name": "creature.noxious-needler.abilities.alchemical-injection.name",
+      "text": "creature.noxious-needler.abilities.alchemical-injection.text"
+    },
+    {
+      "id": "generate-bomb",
+      "section": "offense",
+      "name": "creature.noxious-needler.abilities.generate-bomb.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.noxious-needler.abilities.generate-bomb.text"
+    }
+  ]
+}

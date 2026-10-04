@@ -1,0 +1,203 @@
+{
+  "id": "creature.warsworn",
+  "type": "creature",
+  "name": "creature.warsworn.name",
+  "traits": [
+    "undead",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 342,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 16,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 27,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.warsworn.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 33
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 5,
+    "con": 7,
+    "int": -1,
+    "wis": 5,
+    "cha": 5
+  },
+  "ac": {
+    "value": 37
+  },
+  "saves": {
+    "fortitude": 29,
+    "reflex": 25,
+    "will": 27,
+    "note": "creature.warsworn.saves.note"
+  },
+  "hp": {
+    "value": 350,
+    "note": "creature.warsworn.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.warsworn.strikes.corpse-wave.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "4d12+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "energy-drain"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.warsworn.strikes.animated-weapon.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "100"
+      },
+      "damage": [],
+      "effects": [
+        {
+          "own": "animated-weapons"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.warsworn.strikes.scrap-ball.name",
+      "actions": "1",
+      "bonus": 28,
+      "rangeIncrement": 100,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "4d12+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "plummet"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "animated-weapons",
+      "section": "defense",
+      "name": "creature.warsworn.abilities.animated-weapons.name",
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "aura": 100,
+      "text": "creature.warsworn.abilities.animated-weapons.text"
+    },
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.warsworn.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 100,
+      "text": "creature.warsworn.abilities.frightful-presence.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.warsworn.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "absorb",
+      "section": "offense",
+      "name": "creature.warsworn.abilities.absorb.name",
+      "actions": "free",
+      "traits": [
+        "death",
+        "divine",
+        "void"
+      ],
+      "trigger": "creature.warsworn.abilities.absorb.trigger",
+      "text": "creature.warsworn.abilities.absorb.text"
+    },
+    {
+      "id": "energy-drain",
+      "section": "offense",
+      "name": "creature.warsworn.abilities.energy-drain.name",
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "text": "creature.warsworn.abilities.energy-drain.text"
+    },
+    {
+      "id": "plummet",
+      "section": "offense",
+      "name": "creature.warsworn.abilities.plummet.name",
+      "text": "creature.warsworn.abilities.plummet.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.warsworn.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.warsworn.abilities.trample.text"
+    }
+  ]
+}
