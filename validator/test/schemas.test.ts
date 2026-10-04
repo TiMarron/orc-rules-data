@@ -705,6 +705,14 @@ describe('type schemas', () => {
     }
   });
 
+  it('accepts text on a sense that is a universal ability, for what the stat block prints beyond its name (greater darkvision)', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.perception.senses = [{ ability: 'ability.darkvision', text: 'creature.cave-bear.senses.0' }];
+    expect(issuesFor('creature', c)).toEqual([]);
+    c.perception.senses = [{ own: 'web-sense', text: 'creature.cave-bear.senses.0' }];
+    expect(issuesFor('creature', c).join('\n')).toContain('/perception/senses/0');
+  });
+
   it('rejects damage dice that are not NdM, NdM±K or a flat number', () => {
     const c = structuredClone(VALID.creature) as any;
     c.strikes[0].damage = [{ dice: 'lots', type: 'slashing' }];
