@@ -85,7 +85,9 @@
     {
       "type": "physical",
       "value": 6,
-      "note": "creature.rat-swarm.resistances.0.note"
+      "except": [
+        "bludgeoning"
+      ]
     }
   ],
   "speeds": {

@@ -11,7 +11,7 @@
     "page": 292,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 6,
   "size": "medium",
@@ -72,7 +72,9 @@
     {
       "type": "physical",
       "value": 5,
-      "note": "creature.revenant.resistances.0.note"
+      "except": [
+        "slashing"
+      ]
     }
   ],
   "speeds": {

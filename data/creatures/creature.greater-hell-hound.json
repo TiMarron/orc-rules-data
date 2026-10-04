@@ -1,0 +1,139 @@
+{
+  "id": "creature.greater-hell-hound",
+  "type": "creature",
+  "name": "creature.greater-hell-hound.name",
+  "traits": [
+    "beast",
+    "fiend",
+    "fire",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 194,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 19,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 120
+      }
+    ]
+  },
+  "languages": [
+    "diabolic"
+  ],
+  "languageNote": "creature.greater-hell-hound.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 20,
+      "note": "creature.greater-hell-hound.skills.3.note"
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 5,
+    "con": 5,
+    "int": -2,
+    "wis": 4,
+    "cha": -2
+  },
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 19,
+    "will": 16
+  },
+  "hp": {
+    "value": 150
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.greater-hell-hound.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hellish-revenge",
+      "section": "defense",
+      "name": "creature.greater-hell-hound.abilities.hellish-revenge.name",
+      "actions": "reaction",
+      "trigger": "creature.greater-hell-hound.abilities.hellish-revenge.trigger",
+      "text": "creature.greater-hell-hound.abilities.hellish-revenge.text"
+    },
+    {
+      "id": "hellfire-breath",
+      "section": "offense",
+      "name": "creature.greater-hell-hound.abilities.hellfire-breath.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.greater-hell-hound.abilities.hellfire-breath.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.greater-hell-hound.abilities.pack-attack.name",
+      "text": "creature.greater-hell-hound.abilities.pack-attack.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 194 prints \"Survival +20 (+22 to Track)\"; the source omits the parenthesis and the errata does not touch it."
+}

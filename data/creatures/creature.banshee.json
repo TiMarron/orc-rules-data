@@ -82,6 +82,12 @@
     {
       "type": "all-damage",
       "value": 12,
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
       "note": "creature.banshee.resistances.0.note"
     }
   ],

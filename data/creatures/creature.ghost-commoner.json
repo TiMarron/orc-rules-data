@@ -74,6 +74,12 @@
     {
       "type": "all-damage",
       "value": 5,
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
       "note": "creature.ghost-commoner.resistances.0.note"
     }
   ],
