@@ -1,0 +1,214 @@
+{
+  "id": "creature.vescavor-queen",
+  "type": "creature",
+  "name": "creature.vescavor-queen.name",
+  "traits": [
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 339,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 5,
+    "con": 5,
+    "int": 1,
+    "wis": 3,
+    "cha": 2
+  },
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 19,
+    "will": 15
+  },
+  "hp": {
+    "value": 150
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    },
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vescavor-queen.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+13",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "acid"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vescavor-queen.strikes.claw.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+8",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vescavor-queen.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d4",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d10",
+          "type": "acid"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.vescavor-queen.strikes.spit.name",
+      "actions": "1",
+      "bonus": 19,
+      "rangeIncrement": 30,
+      "traits": [
+        "acid",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        {
+          "own": "rage-pheromones"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "chaotic-spawning",
+      "section": "offense",
+      "name": "creature.vescavor-queen.abilities.chaotic-spawning.name",
+      "actions": "3",
+      "text": "creature.vescavor-queen.abilities.chaotic-spawning.text"
+    },
+    {
+      "id": "feeding-time",
+      "section": "offense",
+      "name": "creature.vescavor-queen.abilities.feeding-time.name",
+      "actions": "1",
+      "text": "creature.vescavor-queen.abilities.feeding-time.text"
+    },
+    {
+      "id": "opportune-snack",
+      "section": "offense",
+      "name": "creature.vescavor-queen.abilities.opportune-snack.name",
+      "actions": "1",
+      "text": "creature.vescavor-queen.abilities.opportune-snack.text"
+    },
+    {
+      "id": "rage-pheromones",
+      "section": "offense",
+      "name": "creature.vescavor-queen.abilities.rage-pheromones.name",
+      "text": "creature.vescavor-queen.abilities.rage-pheromones.text"
+    }
+  ]
+}

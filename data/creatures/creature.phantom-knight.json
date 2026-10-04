@@ -1,0 +1,149 @@
+{
+  "id": "creature.phantom-knight",
+  "type": "creature",
+  "name": "creature.phantom-knight.name",
+  "traits": [
+    "ethereal",
+    "incorporeal",
+    "phantom",
+    "spirit"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.intimidation",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 4,
+    "con": 0,
+    "int": 0,
+    "wis": 5,
+    "cha": 4
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 12,
+    "will": 13,
+    "note": "creature.phantom-knight.saves.note"
+  },
+  "hp": {
+    "value": 45
+  },
+  "immunities": [
+    "bleed",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 3,
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit"
+      ],
+      "note": "creature.phantom-knight.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.phantom-knight.strikes.phantom-sword.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "finesse",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.phantom-knight.strikes.phantom-bow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 120,
+      "traits": [
+        "deadly",
+        "magical",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+5",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "walk-the-ethereal-line",
+      "section": "top",
+      "name": "creature.phantom-knight.abilities.walk-the-ethereal-line.name",
+      "actions": "2",
+      "text": "creature.phantom-knight.abilities.walk-the-ethereal-line.text"
+    },
+    {
+      "id": "susceptible-to-death",
+      "section": "defense",
+      "name": "creature.phantom-knight.abilities.susceptible-to-death.name",
+      "text": "creature.phantom-knight.abilities.susceptible-to-death.text"
+    },
+    {
+      "id": "phantom-touch",
+      "section": "offense",
+      "name": "creature.phantom-knight.abilities.phantom-touch.name",
+      "traits": [
+        "spirit"
+      ],
+      "text": "creature.phantom-knight.abilities.phantom-touch.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with the generic descriptor the dataset already uses. The rules text is the book's."
+}

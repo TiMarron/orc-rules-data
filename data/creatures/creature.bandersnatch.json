@@ -1,0 +1,237 @@
+{
+  "id": "creature.bandersnatch",
+  "type": "creature",
+  "name": "creature.bandersnatch.name",
+  "traits": [
+    "beast",
+    "tane"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 36,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 17,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 30,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "precise",
+        "range": 120
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 32
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 32
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 28
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 6,
+    "con": 6,
+    "int": -4,
+    "wis": 6,
+    "cha": 6
+  },
+  "ac": {
+    "value": 41
+  },
+  "saves": {
+    "fortitude": 32,
+    "reflex": 30,
+    "will": 27,
+    "note": "creature.bandersnatch.saves.note"
+  },
+  "hp": {
+    "value": 335,
+    "note": "creature.bandersnatch.hp.note"
+  },
+  "immunities": [
+    "confused"
+  ],
+  "speeds": {
+    "land": 50,
+    "climb": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bandersnatch.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d12+19",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bandersnatch.strikes.claw.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d8+19",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bandersnatch.strikes.tail.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "fatal",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "fatal": "1d8",
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d4+19",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "pain"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bandersnatch.strikes.quill.name",
+      "actions": "1",
+      "bonus": 30,
+      "rangeIncrement": 100,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "3d4+19",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "pain"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "planar-acclimation",
+      "section": "top",
+      "name": "creature.bandersnatch.abilities.planar-acclimation.name",
+      "text": "creature.bandersnatch.abilities.planar-acclimation.text"
+    },
+    {
+      "id": "confusing-gaze",
+      "section": "defense",
+      "name": "creature.bandersnatch.abilities.confusing-gaze.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental",
+        "primal",
+        "visual"
+      ],
+      "aura": 20,
+      "text": "creature.bandersnatch.abilities.confusing-gaze.text"
+    },
+    {
+      "id": "quick-recovery",
+      "section": "defense",
+      "name": "creature.bandersnatch.abilities.quick-recovery.name",
+      "text": "creature.bandersnatch.abilities.quick-recovery.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.bandersnatch.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.bandersnatch.abilities.reactive-strike.text"
+    },
+    {
+      "id": "focus-gaze",
+      "section": "offense",
+      "name": "creature.bandersnatch.abilities.focus-gaze.name",
+      "actions": "1",
+      "traits": [
+        "emotion",
+        "mental",
+        "primal",
+        "visual"
+      ],
+      "text": "creature.bandersnatch.abilities.focus-gaze.text"
+    },
+    {
+      "id": "frumious-charge",
+      "section": "offense",
+      "name": "creature.bandersnatch.abilities.frumious-charge.name",
+      "actions": "2",
+      "text": "creature.bandersnatch.abilities.frumious-charge.text"
+    },
+    {
+      "id": "pain",
+      "section": "offense",
+      "name": "creature.bandersnatch.abilities.pain.name",
+      "text": "creature.bandersnatch.abilities.pain.text"
+    },
+    {
+      "id": "relentless-tracker",
+      "section": "offense",
+      "name": "creature.bandersnatch.abilities.relentless-tracker.name",
+      "text": "creature.bandersnatch.abilities.relentless-tracker.text"
+    }
+  ]
+}
