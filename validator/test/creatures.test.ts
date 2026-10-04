@@ -31,6 +31,13 @@ describe('creatures check', () => {
     ]);
   });
 
+  it('resolves an own inside a choice like any other own', () => {
+    expect(messages({ strikes: [{ effects: [{ choice: [{ ability: 'ability.grab' }, { own: 'venom' }] }] }] })).toEqual([]);
+    expect(messages({ strikes: [{ effects: [{ choice: [{ own: 'venom' }, { own: 'grabbing-trunk' }] }] }] })).toEqual([
+      'strikes[0].effects[0].choice[1].own: "grabbing-trunk" is not one of this creature\'s abilities',
+    ]);
+  });
+
   it('rejects a sense naming an ability the creature does not have', () => {
     expect(messages({ perception: { mod: 7, senses: [{ own: 'web-sense' }] } })).toEqual([
       'perception.senses[0].own: "web-sense" is not one of this creature\'s abilities',

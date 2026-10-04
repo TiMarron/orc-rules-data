@@ -42,13 +42,20 @@
         { "type": "object", "additionalProperties": false, "required": ["lore", "mod"], "properties": { "lore": { "$ref": "#/$defs/key" }, "mod": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } } }
       ]
     },
-    "effect": {
+    "plainEffect": {
       "oneOf": [
         { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than the ability's own name: \"Improved Grab\" (one universal record covers Improved Grab, Knockdown and Push), \"Push 10 feet\"." } } },
-        { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" } } },
+        { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than a pointer at the ability: the damage that comes with it, \"2d6 energy damage (see draconic bite)\"." } } },
         { "type": "object", "additionalProperties": false, "required": ["text"], "properties": { "text": { "$ref": "#/$defs/key" } } }
       ],
-      "$comment": "What a Strike does besides damage: a universal ability (with what is printed for it, when that is more than its name), one of this creature's own abilities (by its id), or text the import could not place."
+      "$comment": "An effect of one thing: a universal ability, one of this creature's own abilities, or text. Kept apart from `effect` so that a `choice` offers these and does not nest."
+    },
+    "effect": {
+      "oneOf": [
+        { "$ref": "#/$defs/plainEffect" },
+        { "type": "object", "additionalProperties": false, "required": ["choice"], "properties": { "choice": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/plainEffect" } } }, "$comment": "The creature picks one of these when the Strike hits (\"Grab or Knockdown\")." }
+      ],
+      "$comment": "What a Strike does besides damage: a universal ability (with what is printed for it, when that is more than its name), one of this creature's own abilities (by its id, with what is printed for it), text the import could not place, or a choice between such effects."
     },
     "strike": {
       "type": "object", "additionalProperties": false,
@@ -71,7 +78,8 @@
             "properties": {
               "dice": { "type": "string", "pattern": "^[1-9][0-9]*(d(4|6|8|10|12|20)([+-][1-9][0-9]*)?)?$" },
               "type": { "anyOf": [{ "$ref": "common.schema.json#/$defs/damageType" }, { "const": "bleed" }] },
-              "persistent": { "const": true }
+              "persistent": { "const": true },
+              "splash": { "const": true, "$comment": "Splash damage: dealt to the target's surroundings besides the Strike's own damage (\"1d6 acid splash damage\")." }
             }
           },
           "$comment": "May be empty: some Strikes deal no damage and only apply an effect."
