@@ -116,8 +116,32 @@ describe('creatures check', () => {
     ]);
   });
 
-  it('leaves a rune to the refs check: a rune, a graded rune (its own record) or a rune the dataset lacks raises nothing here', () => {
+  it('leaves a rune the dataset lacks to the refs check: it raises nothing here', () => {
     const items = [{ item: 'item.longsword', potency: 2, runes: [{ item: 'item.striking-greater' }, { item: 'item.wounding' }] }];
     expect(messages({ items })).toEqual([]);
+  });
+
+  describe('runes', () => {
+    const item = (slug: string, category: string) => ({ folder: 'items', file: `item.${slug}.json`, json: record('item', slug, { category }) });
+    const dataset = [item('striking-greater', 'rune'), item('wounding', 'rune'), item('longsword', 'weapon'), item('dagger', 'weapon'), item('breastplate', 'armor')];
+
+    it('accepts a rune that is a record of category rune, a graded one included', () => {
+      const items = [{ item: 'item.longsword', potency: 2, runes: [{ item: 'item.striking-greater' }, { item: 'item.wounding' }] }];
+      expect(messages({ items }, dataset)).toEqual([]);
+    });
+
+    it('rejects a rune that is a record of another category, naming the category', () => {
+      const items = [{ item: 'item.longsword', runes: [{ item: 'item.wounding' }, { item: 'item.dagger' }] }, { item: 'item.breastplate', runes: [{ item: 'item.longsword' }] }];
+      expect(messages({ items }, dataset)).toEqual([
+        'items[0].runes[1]: "item.dagger" is a weapon, not a rune',
+        'items[1].runes[0]: "item.longsword" is a weapon, not a rune',
+      ]);
+    });
+
+    it('rejects an entry whose own item is a rune', () => {
+      expect(messages({ items: [{ item: 'item.wounding' }, { item: 'item.longsword' }] }, dataset)).toEqual([
+        'items[0].item: "item.wounding" is a rune, not something a creature carries on its own',
+      ]);
+    });
   });
 });

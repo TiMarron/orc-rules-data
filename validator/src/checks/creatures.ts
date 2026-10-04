@@ -16,8 +16,11 @@ const list = (value: unknown): Record<string, unknown>[] =>
  * - A Strike's `item` is one of the same creature's `items[].item`: a Strike made with something the
  *   creature does not carry is a promise the record does not keep.
  *
- * A rune names a record of its own (`item.striking-greater`: a grade is a record, not a `variants`
- * entry), so there is nothing to resolve beyond what the refs check does. A reference to an `ability.*` record is the refs check's to report, not this one's.
+ * - A rune (`items[].runes[].item`) is a record of category `rune`, when the dataset has the record, and an
+ *   entry's own `item` is not one: a longsword among a creature's runes, or a bare rune among its things,
+ *   is a link to the wrong record. A grade is a record of its own (`item.striking-greater`, not a
+ *   `variants` entry); a record the dataset lacks is the refs check's to report, as is a reference to an
+ *   `ability.*` record, not this one's.
  */
 export const creaturesCheck: Check = (ds) => {
   const issues: Issue[] = [];
@@ -38,9 +41,15 @@ export const creaturesCheck: Check = (ds) => {
       list(e.choice).forEach((c, k) => resolve(c.own, `strikes[${i}].effects[${j}].choice[${k}].own`));
     }));
     const carried = new Set<string>();
-    for (const entry of list(f.record.items)) {
+    const categoryOf = (id: unknown): unknown => (typeof id === 'string' ? ds.byId.get(id)?.record.category : undefined);
+    list(f.record.items).forEach((entry, i) => {
       if (typeof entry.item === 'string') carried.add(entry.item);
-    }
+      if (categoryOf(entry.item) === 'rune') error(`items[${i}].item: "${String(entry.item)}" is a rune, not something a creature carries on its own`);
+      list(entry.runes).forEach((r, j) => {
+        const category = categoryOf(r.item);
+        if (category !== undefined && category !== 'rune') error(`items[${i}].runes[${j}]: "${String(r.item)}" is ${/^[aeiou]/.test(String(category)) ? 'an' : 'a'} ${String(category)}, not a rune`);
+      });
+    });
     list(f.record.strikes).forEach((s, i) => {
       if (typeof s.item === 'string' && !carried.has(s.item)) error(`strikes[${i}].item: "${s.item}" is not among this creature's items`);
     });

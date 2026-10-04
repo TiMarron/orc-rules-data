@@ -195,9 +195,10 @@ cost tokens.
   "greater striking" is `item.striking-greater`), `material`
   (the slug a Strike's `material` also uses), `count` ("(4)", "(2 doses)"; two
   or more, absent means one), `ammunition` ("(20 arrows)": `{ item | name,
-  count }`), a shield's `hardness`, `hp` and `bt` (all three or none) and
+  count }`, named once: by its record or by its printed name, never both), a shield's `hardness`, `hp` and `bt` (all three or none) and
   `note` for any other parenthesis, as printed ("see sidebar"). `potency` and
-  `runes` belong to an entry that has `item`.
+  `runes` and `material` belong to an entry that has `item`. A rune is a record
+  of category `rune`, and an entry's own `item` is not one; the validator checks both.
 - A Strike's `item` is the item of the creature's `items` it is made with. The
   validator checks that it is there.
 - Creatures in this release are those without rituals; those follow once they
