@@ -7,8 +7,9 @@ const list = (value: unknown): Record<string, unknown>[] =>
 /**
  * What JSON Schema cannot say about a creature:
  *
- * - `own` — in a Strike's effects and in a sense — names one of the same creature's abilities by
- *   its `id`. A dangling one is a rule the stat block promises and the record does not carry.
+ * - `own` — in a Strike's effects, in a sense, in a weakness or in a resistance — names one of the
+ *   same creature's abilities by its `id`. A dangling one is a rule the stat block promises and
+ *   the record does not carry.
  * - Ability ids are unique within the creature, or `own` would be ambiguous.
  * - A size is never a trait: the book prints it in the trait line, but it has no glossary entry,
  *   and the rules compare sizes as a scale. It lives in `size` alone, so the two cannot disagree.
@@ -32,6 +33,9 @@ export const creaturesCheck: Check = (ds) => {
     list(f.record.strikes).forEach((s, i) => list(s.effects).forEach((e, j) => resolve(e.own, `strikes[${i}].effects[${j}].own`)));
     const perception = f.record.perception as Record<string, unknown> | undefined;
     list(perception?.senses).forEach((s, i) => resolve(s.own, `perception.senses[${i}].own`));
+    for (const key of ['weaknesses', 'resistances']) {
+      list(f.record[key]).forEach((e, i) => resolve(e.own, `${key}[${i}].own`));
+    }
     const ownTraits = (entries: unknown, name: string, what: string): void => {
       list(entries).forEach((e, i) => {
         if (e.traitValues === null || typeof e.traitValues !== 'object' || Array.isArray(e.traitValues)) return;

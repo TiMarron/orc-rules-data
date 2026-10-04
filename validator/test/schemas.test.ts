@@ -726,6 +726,19 @@ describe('type schemas', () => {
     }
   });
 
+  it('accepts a weakness or a resistance that names one of the creature\'s own abilities, and rejects one that also carries a value', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.weaknesses = [{ type: 'fire', value: 5 }, { own: 'light-vulnerability' }];
+    c.resistances = [{ own: 'divine-revulsion' }];
+    expect(issuesFor('creature', c)).toEqual([]);
+    c.weaknesses = [{ own: 'light-vulnerability', value: 5 }];
+    expect(issuesFor('creature', c).join('\n')).toContain('/weaknesses/0');
+    c.weaknesses = [{ own: 'Light Vulnerability' }];
+    expect(issuesFor('creature', c).join('\n')).toContain('/weaknesses/0');
+    c.weaknesses = [{ own: 'light-vulnerability', type: 'light' }];
+    expect(issuesFor('creature', c).join('\n')).toContain('/weaknesses/0');
+  });
+
   it('accepts text on a sense that is a universal ability, for what the stat block prints beyond its name (greater darkvision)', () => {
     const c = structuredClone(VALID.creature) as any;
     c.perception.senses = [{ ability: 'ability.darkvision', text: 'creature.cave-bear.senses.0' }];
