@@ -32,11 +32,11 @@
     },
     "effect": {
       "oneOf": [
-        { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" } } },
+        { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than the ability's own name: \"Improved Grab\" (one universal record covers Improved Grab, Knockdown and Push), \"Push 10 feet\"." } } },
         { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" } } },
         { "type": "object", "additionalProperties": false, "required": ["text"], "properties": { "text": { "$ref": "#/$defs/key" } } }
       ],
-      "$comment": "What a Strike does besides damage: a universal ability, one of this creature's own abilities (by its id), or text the import could not place."
+      "$comment": "What a Strike does besides damage: a universal ability (with what is printed for it, when that is more than its name), one of this creature's own abilities (by its id), or text the import could not place."
     },
     "strike": {
       "type": "object", "additionalProperties": false,
@@ -50,6 +50,7 @@
         "traitValues": { "$ref": "#/$defs/traitValues" },
         "range": { "$ref": "#/$defs/feet", "$comment": "A ranged Strike with a flat maximum range." },
         "rangeIncrement": { "$ref": "#/$defs/feet" },
+        "reload": { "type": "integer", "minimum": 0, "maximum": 3, "$comment": "Actions it takes to reload, which the book prints among the Strike's traits (\"reload 1\") although it is a weapon's statistic, not a trait." },
         "damage": {
           "type": "array",
           "items": {
@@ -66,32 +67,21 @@
       }
     },
     "ability": {
-      "oneOf": [
-        {
-          "type": "object", "additionalProperties": false, "required": ["id", "section", "name"],
-          "properties": {
-            "id": { "$ref": "#/$defs/slug", "$comment": "Unique within the creature; what a Strike effect or a sense points at with `own`." },
-            "section": { "$ref": "#/$defs/section" },
-            "name": { "$ref": "#/$defs/key" },
-            "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
-            "traits": { "$ref": "#/$defs/traits" },
-            "traitValues": { "$ref": "#/$defs/traitValues" },
-            "aura": { "$ref": "#/$defs/feet", "$comment": "Emanation radius of an ability with the aura trait." },
-            "trigger": { "$ref": "#/$defs/key" },
-            "frequency": { "$ref": "#/$defs/key" },
-            "requirements": { "$ref": "#/$defs/key" },
-            "text": { "$ref": "#/$defs/key" }
-          }
-        },
-        {
-          "type": "object", "additionalProperties": false, "required": ["ability", "section"],
-          "properties": {
-            "ability": { "$ref": "common.schema.json#/$defs/refAbility" },
-            "section": { "$ref": "#/$defs/section" },
-            "text": { "$ref": "#/$defs/key", "$comment": "The creature's own parameters for the universal ability, as printed: a DC, a size, a damage entry." }
-          }
-        }
-      ]
+      "type": "object", "additionalProperties": false, "required": ["id", "section", "name"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug", "$comment": "Unique within the creature; what a Strike effect or a sense points at with `own`." },
+        "section": { "$ref": "#/$defs/section" },
+        "name": { "$ref": "#/$defs/key" },
+        "ability": { "$ref": "common.schema.json#/$defs/refAbility", "$comment": "The universal ability this entry is an instance of: Trample, or the generic Aura that an aura of the creature's own links. The entry still carries what the stat block prints for it: the action cost, the traits, and the creature's own parameters (a DC, a size) in `text`." },
+        "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+        "traits": { "$ref": "#/$defs/traits" },
+        "traitValues": { "$ref": "#/$defs/traitValues" },
+        "aura": { "$ref": "#/$defs/feet", "$comment": "Emanation radius of an ability with the aura trait." },
+        "trigger": { "$ref": "#/$defs/key" },
+        "frequency": { "$ref": "#/$defs/key" },
+        "requirements": { "$ref": "#/$defs/key" },
+        "text": { "$ref": "#/$defs/key" }
+      }
     }
   },
   "type": "object",

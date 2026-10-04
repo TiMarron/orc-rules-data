@@ -131,16 +131,21 @@ cost tokens.
   sizes as a scale. The same holds for rarity, which is the envelope's `rarity`.
 - `creature.strikes` lists each Strike with its attack `bonus`, its `traits`
   (a parameter such as reach in `traitValues`, a ranged Strike's distance in
-  `range` or `rangeIncrement`) and its `damage` parts as `{ dice, type }`.
-  `effects` is what the Strike does besides damage, each entry exactly one of
-  `{ ability }` (a universal ability), `{ own }` (one of this creature's
-  abilities, by its `id`) or `{ text }`.
-- `creature.abilities` holds the creature's own abilities in print order.
-  `section` says where in the stat block it stands: `top` (above the first
-  rule), `defense` or `offense`. The header is structure — `actions`, `traits`,
-  `aura`, `trigger`, `frequency`, `requirements` — and the effect is `text`.
-  An entry that only points at a universal ability is `{ ability, section }`,
-  with the creature's own parameters for it (a DC, a size) in `text`.
+  `range` or `rangeIncrement`, its `reload`) and its `damage` parts as
+  `{ dice, type }`. `effects` is what the Strike does besides damage, each
+  entry exactly one of `{ ability }` (a universal ability), `{ own }` (one of
+  this creature's abilities, by its `id`) or `{ text }`. An `{ ability }`
+  effect may carry `text` too, when the stat block prints more than the
+  ability's own name: "Improved Grab" (one universal record covers Improved
+  Grab, Knockdown and Push), "Push 10 feet".
+- `creature.abilities` holds the creature's own abilities in print order, each
+  with an `id`, a `name` and a `section` that says where in the stat block it
+  stands: `top` (above the first rule), `defense` or `offense`. The header is
+  structure — `actions`, `traits`, `aura`, `trigger`, `frequency`,
+  `requirements` — and the effect is `text`. An entry that is an instance of a
+  universal ability (Trample, or an aura of its own that links the generic
+  Aura) says so in `ability`, and keeps the action cost and traits it is
+  printed with; its `text` is the creature's own parameters (a DC, a size).
 - An `ability` is a universal monster ability — Grab, Darkvision, Trample —
   defined once and pointed at by every creature that has it.
 - A creature's `languages` are identifiers, as an ancestry's are; what the book
