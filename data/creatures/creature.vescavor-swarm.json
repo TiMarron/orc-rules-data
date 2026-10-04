@@ -1,0 +1,136 @@
+{
+  "id": "creature.vescavor-swarm",
+  "type": "creature",
+  "name": "creature.vescavor-swarm.name",
+  "traits": [
+    "fiend",
+    "swarm",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 338,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": -2,
+    "dex": 5,
+    "con": 4,
+    "int": -3,
+    "wis": 1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 15,
+    "will": 9
+  },
+  "hp": {
+    "value": 60
+  },
+  "immunities": [
+    "grabbed",
+    "precision",
+    "prone",
+    "restrained",
+    "swarm-mind"
+  ],
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "cold-iron",
+      "value": 5
+    },
+    {
+      "type": "holy",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 40
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "devour-all",
+      "section": "offense",
+      "name": "creature.vescavor-swarm.abilities.devour-all.name",
+      "actions": "2",
+      "text": "creature.vescavor-swarm.abilities.devour-all.text"
+    },
+    {
+      "id": "maddening-gibbers",
+      "section": "offense",
+      "name": "creature.vescavor-swarm.abilities.maddening-gibbers.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "mental"
+      ],
+      "text": "creature.vescavor-swarm.abilities.maddening-gibbers.text"
+    },
+    {
+      "id": "ravenous-bites",
+      "section": "offense",
+      "name": "creature.vescavor-swarm.abilities.ravenous-bites.name",
+      "actions": "1",
+      "text": "creature.vescavor-swarm.abilities.ravenous-bites.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with the generic descriptor the dataset already uses. The rules text is the book's."
+}

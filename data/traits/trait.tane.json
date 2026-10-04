@@ -1,0 +1,16 @@
+{
+  "id": "trait.tane",
+  "type": "trait",
+  "name": "trait.tane.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 363,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "trait.tane.text",
+  "editNote": "Reserved Material removed: the proper names of a plane and of its rulers are replaced with generic descriptors. The rules text is the book's."
+}

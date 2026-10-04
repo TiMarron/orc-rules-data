@@ -1,0 +1,16 @@
+{
+  "id": "trait.dero",
+  "type": "trait",
+  "name": "trait.dero.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 362,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "trait.dero.text",
+  "editNote": "Reserved Material removed: the proper name of an underground region is replaced with a generic descriptor. The rules text is the book's."
+}
