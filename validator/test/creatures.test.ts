@@ -17,14 +17,6 @@ const creature = (over: Record<string, unknown>) => ({
 const messages = (over: Record<string, unknown>, extra: { folder: string; file: string; json: unknown }[] = []): string[] =>
   creaturesCheck(loadDataset(writeFixture({ records: [creature(over), ...extra] }))).map((i) => i.message);
 
-const rune = (slug: string, variants?: string[]) => ({
-  folder: 'items', file: `item.${slug}.json`,
-  json: record('item', slug, {
-    category: 'rune', level: 4,
-    ...(variants ? { variants: variants.map((id) => ({ id, name: `item.${slug}.variant.${id}.name`, level: 4 })) } : {}),
-  }),
-});
-
 describe('creatures check', () => {
   it('accepts a Strike effect and a sense that name one of the creature\'s own abilities', () => {
     expect(messages({
@@ -124,23 +116,8 @@ describe('creatures check', () => {
     ]);
   });
 
-  it('accepts a rune variant the rune item has, and a rune whose record is not in the dataset (the refs check reports that)', () => {
-    const items = [{ item: 'item.longsword', potency: 2, runes: [{ item: 'item.striking', variant: 'greater' }, { item: 'item.wounding' }] }];
-    expect(messages({ items }, [rune('striking', ['striking', 'greater', 'major'])])).toEqual([]);
+  it('leaves a rune to the refs check: a rune, a graded rune (its own record) or a rune the dataset lacks raises nothing here', () => {
+    const items = [{ item: 'item.longsword', potency: 2, runes: [{ item: 'item.striking-greater' }, { item: 'item.wounding' }] }];
     expect(messages({ items })).toEqual([]);
-  });
-
-  it('rejects a rune variant the rune item does not have, naming the ones it has', () => {
-    const items = [{ item: 'item.longsword' }, { item: 'item.full-plate', runes: [{ item: 'item.resilient', variant: 'superior' }] }];
-    expect(messages({ items }, [rune('resilient', ['resilient', 'greater', 'major'])])).toEqual([
-      'items[1].runes[0].variant: "superior" is not a variant of item.resilient (resilient, greater, major)',
-    ]);
-  });
-
-  it('rejects a rune variant on a rune item that has no variants', () => {
-    const items = [{ item: 'item.longsword', runes: [{ item: 'item.wounding', variant: 'greater' }] }];
-    expect(messages({ items }, [rune('wounding')])).toEqual([
-      'items[0].runes[0].variant: "greater" is not a variant of item.wounding (it has none)',
-    ]);
   });
 });

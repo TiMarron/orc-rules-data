@@ -169,8 +169,7 @@
     "rune": {
       "type": "object", "additionalProperties": false, "required": ["item"],
       "properties": {
-        "item": { "$ref": "common.schema.json#/$defs/refItem" },
-        "variant": { "$ref": "#/$defs/slug", "$comment": "The id of the variant of the rune item the book prints: \"greater\" in \"greater striking\". The validator checks that the rune item has it." }
+        "item": { "$ref": "common.schema.json#/$defs/refItem", "$comment": "The rune's record. A grade is a record of its own (\"greater striking\" is item.striking-greater), not a variant of the base rune." }
       }
     },
     "ammunition": {

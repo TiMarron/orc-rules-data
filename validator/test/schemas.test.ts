@@ -746,7 +746,7 @@ describe('type schemas', () => {
     c.items = [
       { item: 'item.longsword' },
       { item: 'item.longsword', potency: 1, runes: [{ item: 'item.striking' }], material: 'silver' },
-      { item: 'item.full-plate', potency: 2, runes: [{ item: 'item.resilient', variant: 'greater' }, { item: 'item.invisibility' }] },
+      { item: 'item.full-plate', potency: 2, runes: [{ item: 'item.resilient-greater' }, { item: 'item.invisibility' }] },
       { item: 'item.javelin', count: 4 },
       { item: 'item.longbow', ammunition: { item: 'item.arrows', count: 20 } },
       { item: 'item.sling', ammunition: { name: 'creature.cave-bear.items.4.ammunition.name', count: 12 } },
@@ -781,14 +781,14 @@ describe('type schemas', () => {
     }
   });
 
-  it('rejects potency or runes on an entry that has no item, and a rune without an item', () => {
+  it('rejects potency or runes on an entry that has no item, a rune without an item, and a rune\'s variant (a grade is its own record)', () => {
     const c = structuredClone(VALID.creature) as any;
     for (const bad of [
       { name: 'creature.cave-bear.items.0.name', potency: 1 },
       { name: 'creature.cave-bear.items.0.name', runes: [{ item: 'item.striking' }] },
       { item: 'item.longsword', runes: [] },
       { item: 'item.longsword', runes: [{ variant: 'greater' }] },
-      { item: 'item.longsword', runes: [{ item: 'item.striking', variant: 'Greater' }] },
+      { item: 'item.longsword', runes: [{ item: 'item.striking', variant: 'greater' }] },
       { item: 'item.longsword', runes: [{ item: 'item.striking', price: 1 }] },
     ]) {
       c.items = [bad];

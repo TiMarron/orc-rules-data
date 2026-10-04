@@ -191,16 +191,15 @@ cost tokens.
   record, or `{ name }` when the dataset has no record for it or the book's
   name for it is not the item's ("baton" for a club); at least one of the two.
   What the line prints around the name is structure: `potency` ("+1"), `runes`
-  (`[{ item, variant? }]`, the runes in print order; `variant` is the id of one
-  of the rune item's `variants`, "greater" in "greater striking"), `material`
+  (`[{ item }]`, the runes in print order; a grade is a record of its own,
+  "greater striking" is `item.striking-greater`), `material`
   (the slug a Strike's `material` also uses), `count` ("(4)", "(2 doses)"; two
   or more, absent means one), `ammunition` ("(20 arrows)": `{ item | name,
   count }`), a shield's `hardness`, `hp` and `bt` (all three or none) and
   `note` for any other parenthesis, as printed ("see sidebar"). `potency` and
   `runes` belong to an entry that has `item`.
 - A Strike's `item` is the item of the creature's `items` it is made with. The
-  validator checks that it is there, and that a rune's `variant` exists on the
-  rune item.
+  validator checks that it is there.
 - Creatures in this release are those without rituals; those follow once they
   are modelled. A creature record has no `text` yet: descriptive lore is not
   imported.
