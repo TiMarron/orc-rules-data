@@ -148,7 +148,10 @@ cost tokens.
   or bludgeoning") it is `except`, an array of slugs (damage types, materials,
   traits); `note` keeps any qualification that is not such a list ("double
   resistance vs. non-magical"). Resistance to all damage is the type
-  `all-damage`.
+  `all-damage`. When the stat block prints, where a type and a number would go,
+  the name of one of the creature's own abilities ("Weaknesses light
+  vulnerability"), the entry is `{ own }` — that ability's id, with no value —
+  and the ability states the rule.
 - `creature.abilities` holds the creature's own abilities in print order, each
   with an `id`, a `name` and a `section` that says where in the stat block it
   stands: `top` (above the first rule), `defense` or `offense`. The header is

@@ -37,6 +37,23 @@ describe('creatures check', () => {
     ]);
   });
 
+  it('accepts a weakness and a resistance that name one of the creature\'s own abilities', () => {
+    expect(messages({
+      weaknesses: [{ type: 'fire', value: 5 }, { own: 'venom' }],
+      resistances: [{ own: 'venom' }],
+    })).toEqual([]);
+  });
+
+  it('rejects a weakness or a resistance naming an ability the creature does not have', () => {
+    expect(messages({
+      weaknesses: [{ type: 'fire', value: 5 }, { own: 'x' }],
+      resistances: [{ own: 'light-vulnerability' }],
+    })).toEqual([
+      'weaknesses[1].own: "x" is not one of this creature\'s abilities',
+      'resistances[0].own: "light-vulnerability" is not one of this creature\'s abilities',
+    ]);
+  });
+
   it('rejects two abilities with one id', () => {
     const twice = [{ id: 'venom', section: 'offense', name: 'creature.viper.abilities.venom.name' }, { id: 'venom', section: 'defense', name: 'creature.viper.abilities.venom.name' }];
     expect(messages({ abilities: twice })).toEqual(['abilities: "venom" is listed twice']);
