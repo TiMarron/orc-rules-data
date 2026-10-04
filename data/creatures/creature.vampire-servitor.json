@@ -13,7 +13,7 @@
     "page": 336,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 4,
   "size": "medium",
@@ -82,7 +82,9 @@
     {
       "type": "physical",
       "value": 5,
-      "note": "creature.vampire-servitor.resistances.0.note"
+      "except": [
+        "silver"
+      ]
     }
   ],
   "speeds": {

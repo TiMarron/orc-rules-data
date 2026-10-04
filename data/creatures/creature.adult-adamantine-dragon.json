@@ -12,7 +12,7 @@
     "page": 109,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 13,
   "size": "huge",
@@ -96,7 +96,9 @@
     {
       "type": "physical",
       "value": 15,
-      "note": "creature.adult-adamantine-dragon.resistances.0.note"
+      "except": [
+        "adamantine"
+      ]
     }
   ],
   "speeds": {

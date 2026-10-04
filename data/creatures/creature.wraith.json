@@ -14,7 +14,7 @@
     "page": 351,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 6,
   "size": "medium",
@@ -85,6 +85,12 @@
     {
       "type": "all-damage",
       "value": 5,
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
       "note": "creature.wraith.resistances.0.note"
     }
   ],

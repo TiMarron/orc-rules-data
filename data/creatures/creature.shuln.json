@@ -11,7 +11,7 @@
     "page": 309,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 12,
   "size": "huge",
@@ -63,7 +63,10 @@
     {
       "type": "physical",
       "value": 10,
-      "note": "creature.shuln.resistances.0.note"
+      "except": [
+        "adamantine",
+        "bludgeoning"
+      ]
     },
     {
       "type": "poison",

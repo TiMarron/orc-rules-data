@@ -11,7 +11,7 @@
     "page": 297,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 4,
   "size": "medium",
@@ -77,7 +77,9 @@
     {
       "type": "physical",
       "value": 5,
-      "note": "creature.scarecrow.resistances.0.note"
+      "except": [
+        "slashing"
+      ]
     }
   ],
   "speeds": {

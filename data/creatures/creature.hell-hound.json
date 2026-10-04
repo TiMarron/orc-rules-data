@@ -1,0 +1,131 @@
+{
+  "id": "creature.hell-hound",
+  "type": "creature",
+  "name": "creature.hell-hound.name",
+  "traits": [
+    "beast",
+    "fiend",
+    "fire",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 194,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "diabolic"
+  ],
+  "languageNote": "creature.hell-hound.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 9,
+      "note": "creature.hell-hound.skills.3.note"
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": -2,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 10,
+    "will": 7
+  },
+  "hp": {
+    "value": 40
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hell-hound.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hellfire-breath",
+      "section": "offense",
+      "name": "creature.hell-hound.abilities.hellfire-breath.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.hell-hound.abilities.hellfire-breath.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.hell-hound.abilities.pack-attack.name",
+      "text": "creature.hell-hound.abilities.pack-attack.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 194 prints \"Survival +9 (+11 to Track)\"; the source omits the parenthesis and the errata does not touch it."
+}

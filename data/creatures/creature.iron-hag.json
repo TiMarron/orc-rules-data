@@ -1,0 +1,178 @@
+{
+  "id": "creature.iron-hag",
+  "type": "creature",
+  "name": "creature.iron-hag.name",
+  "traits": [
+    "hag",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 190,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 14,
+      "note": "creature.iron-hag.skills.1.note"
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 4,
+    "con": 4,
+    "int": 1,
+    "wis": 4,
+    "cha": 3
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 12,
+    "will": 14,
+    "note": "creature.iron-hag.saves.note"
+  },
+  "hp": {
+    "value": 80
+  },
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 3,
+      "except": [
+        "adamantine"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.iron-hag.strikes.claw.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "material": "cold-iron",
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.iron-hag.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "magical"
+      ],
+      "material": "cold-iron",
+      "damage": [
+        {
+          "dice": "2d6+6",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "coven",
+      "section": "top",
+      "name": "creature.iron-hag.abilities.coven.name",
+      "ability": "ability.coven",
+      "text": "creature.iron-hag.abilities.coven.text"
+    },
+    {
+      "id": "bonds-of-iron",
+      "section": "offense",
+      "name": "creature.iron-hag.abilities.bonds-of-iron.name",
+      "actions": "2",
+      "traits": [
+        "attack",
+        "occult"
+      ],
+      "frequency": "creature.iron-hag.abilities.bonds-of-iron.frequency",
+      "text": "creature.iron-hag.abilities.bonds-of-iron.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.iron-hag.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.iron-hag.abilities.change-shape.text"
+    },
+    {
+      "id": "embrace-of-iron",
+      "section": "offense",
+      "name": "creature.iron-hag.abilities.embrace-of-iron.name",
+      "actions": "1",
+      "requirements": "creature.iron-hag.abilities.embrace-of-iron.requirements",
+      "text": "creature.iron-hag.abilities.embrace-of-iron.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 190 prints \"Athletics +14 (+16 to Grapple)\"; the source omits the parenthesis and the errata does not touch it."
+}

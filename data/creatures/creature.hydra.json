@@ -1,0 +1,140 @@
+{
+  "id": "creature.hydra",
+  "type": "creature",
+  "name": "creature.hydra.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 204,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "huge",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12,
+      "note": "creature.hydra.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 4,
+    "con": 5,
+    "int": -3,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 23,
+    "note": "creature.hydra.ac.note"
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 12,
+    "will": 10
+  },
+  "hp": {
+    "value": 90,
+    "note": "creature.hydra.hp.note"
+  },
+  "immunities": [
+    "area-damage"
+  ],
+  "weaknesses": [
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hydra.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "head-regrowth",
+      "section": "defense",
+      "name": "creature.hydra.abilities.head-regrowth.name",
+      "text": "creature.hydra.abilities.head-regrowth.text"
+    },
+    {
+      "id": "hydra-regeneration",
+      "section": "defense",
+      "name": "creature.hydra.abilities.hydra-regeneration.name",
+      "text": "creature.hydra.abilities.hydra-regeneration.text"
+    },
+    {
+      "id": "reactive-heads",
+      "section": "defense",
+      "name": "creature.hydra.abilities.reactive-heads.name",
+      "text": "creature.hydra.abilities.reactive-heads.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.hydra.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.hydra.abilities.reactive-strike.text"
+    },
+    {
+      "id": "focused-assault",
+      "section": "offense",
+      "name": "creature.hydra.abilities.focused-assault.name",
+      "actions": "2",
+      "text": "creature.hydra.abilities.focused-assault.text"
+    },
+    {
+      "id": "storm-of-jaws",
+      "section": "offense",
+      "name": "creature.hydra.abilities.storm-of-jaws.name",
+      "actions": "2",
+      "text": "creature.hydra.abilities.storm-of-jaws.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 204 prints \"Stealth +12 (+15 in water)\"; the source omits the parenthesis and the errata does not touch it. The page prints two Hit Point lines, \"HP (body) 90, hydra regeneration\" and \"HP (head) 15, head regrowth\"; the record has one, so hp is the body's 90 with a note that each head has 15 (the owner's decision: body parts are not modelled, the head rules are in Head Regrowth)."
+}

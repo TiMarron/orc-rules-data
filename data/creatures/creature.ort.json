@@ -14,7 +14,7 @@
     "page": 86,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 0,
   "size": "medium",
@@ -67,7 +67,9 @@
     {
       "type": "physical",
       "value": 3,
-      "note": "creature.ort.resistances.0.note"
+      "except": [
+        "silver"
+      ]
     },
     {
       "type": "poison",

@@ -1,0 +1,153 @@
+{
+  "id": "creature.grikkitog",
+  "type": "creature",
+  "name": "creature.grikkitog.name",
+  "traits": [
+    "aberration",
+    "earth"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 183,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 14,
+  "size": "huge",
+  "perception": {
+    "mod": 29,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "manifold-vision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 27,
+      "note": "creature.grikkitog.skills.1.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 25
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 4,
+    "con": 5,
+    "int": 2,
+    "wis": 5,
+    "cha": 5
+  },
+  "ac": {
+    "value": 36
+  },
+  "saves": {
+    "fortitude": 28,
+    "reflex": 23,
+    "will": 24
+  },
+  "hp": {
+    "value": 200
+  },
+  "speeds": {
+    "land": 20,
+    "burrow": 20,
+    "note": "creature.grikkitog.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.grikkitog.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 29,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d12+14",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "barbed-maw"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "implant-core",
+      "section": "top",
+      "name": "creature.grikkitog.abilities.implant-core.name",
+      "actions": "3",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.grikkitog.abilities.implant-core.text"
+    },
+    {
+      "id": "manifold-vision",
+      "section": "top",
+      "name": "creature.grikkitog.abilities.manifold-vision.name",
+      "text": "creature.grikkitog.abilities.manifold-vision.text"
+    },
+    {
+      "id": "infestation-aura",
+      "section": "defense",
+      "name": "creature.grikkitog.abilities.infestation-aura.name",
+      "traits": [
+        "aura",
+        "earth",
+        "occult"
+      ],
+      "aura": 120,
+      "text": "creature.grikkitog.abilities.infestation-aura.text"
+    },
+    {
+      "id": "barbed-maw",
+      "section": "offense",
+      "name": "creature.grikkitog.abilities.barbed-maw.name",
+      "actions": "free",
+      "trigger": "creature.grikkitog.abilities.barbed-maw.trigger",
+      "text": "creature.grikkitog.abilities.barbed-maw.text"
+    },
+    {
+      "id": "earth-glide",
+      "section": "offense",
+      "name": "creature.grikkitog.abilities.earth-glide.name",
+      "text": "creature.grikkitog.abilities.earth-glide.text"
+    }
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 10,
+      "except": [
+        "adamantine"
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 183 prints \"Deception +27 (+31 to imitate stone)\"; the source omits the parenthesis and the errata does not touch it. Resistance read by the owner's decision: page 183 prints \"Resistances 10 (except adamantine)\" with no damage type; read as resistance to all damage."
+}

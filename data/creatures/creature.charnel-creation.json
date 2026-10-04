@@ -12,7 +12,7 @@
     "page": 61,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 8,
   "size": "large",
@@ -73,12 +73,16 @@
     {
       "type": "physical",
       "value": 5,
-      "note": "creature.charnel-creation.resistances.0.note"
+      "except": [
+        "adamantine"
+      ]
     },
     {
       "type": "spells",
       "value": 5,
-      "note": "creature.charnel-creation.resistances.1.note"
+      "except": [
+        "fire"
+      ]
     }
   ],
   "speeds": {
