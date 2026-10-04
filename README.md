@@ -169,9 +169,26 @@ cost tokens.
   defined once and pointed at by every creature that has it.
 - A creature's `languages` are identifiers, as an ancestry's are; what the book
   prints after them (telepathy, "can't speak any language") is `languageNote`.
-- Creatures in this release are those without spells or carried items; the
-  rest follow once spellcasting and items are modelled. A creature record has
-  no `text` yet: descriptive lore is not imported.
+- A creature's `spellcasting` lists the stat block's spell blocks in print
+  order. A block has a `kind` (`innate`, `prepared`, `spontaneous` or `focus`),
+  a `dc` and, when the book prints one, an `attack`. Every kind but `focus` has
+  the `tradition` its heading names; a `focus` block ("Cleric Domain Spells 1
+  Focus Point") has instead the printed `name` of the block and its
+  `focusPoints`, and no tradition. The spells are `cantrips` (`{ rank, spells }`,
+  the rank the cantrips are heightened to), `ranks` (an array of `{ rank, spells }`)
+  and `constant` (the same, for "Constant (5th)" lines); a block lists at least
+  one spell. A spell is `{ spell }`, a reference to a `spell` record, with
+  `atWill: true` for "(at will)", `count` for "(×3)" (two or more; no `count`
+  means once) and `note` for any other restriction as printed ("self only",
+  "animals only"). A spontaneous block's rank may carry `slots`, the "(2
+  slots)" the book prints after a rank's last spell; no other block has them.
+  Whatever the book prints that is no spell (a ritual, an item) is not here.
+- A creature's `perception.senses` entry may also be `{ spell }`: a sense that
+  a spell gives the creature (truesight, see the unseen), with the `acuity` and
+  `range` the stat block prints.
+- Creatures in this release are those without carried items or rituals; the
+  rest follow once those are modelled. A creature record has no `text` yet:
+  descriptive lore is not imported.
 
 ## Versioning
 
