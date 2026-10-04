@@ -1,0 +1,124 @@
+{
+  "id": "creature.skeletal-horse",
+  "type": "creature",
+  "name": "creature.skeletal-horse.name",
+  "traits": [
+    "mindless",
+    "skeleton",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 313,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "large",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 2,
+    "int": -5,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 9,
+    "will": 8
+  },
+  "hp": {
+    "value": 33,
+    "note": "creature.skeletal-horse.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 5
+    },
+    {
+      "type": "electricity",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.skeletal-horse.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+5",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "gallop",
+      "section": "offense",
+      "name": "creature.skeletal-horse.abilities.gallop.name",
+      "actions": "2",
+      "text": "creature.skeletal-horse.abilities.gallop.text"
+    },
+    {
+      "id": "undead-steed",
+      "section": "offense",
+      "name": "creature.skeletal-horse.abilities.undead-steed.name",
+      "text": "creature.skeletal-horse.abilities.undead-steed.text"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "creature.smilodon",
+  "type": "creature",
+  "name": "creature.smilodon.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 2,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 12,
+    "will": 10
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.smilodon.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.smilodon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pierce-armor",
+      "section": "offense",
+      "name": "creature.smilodon.abilities.pierce-armor.name",
+      "actions": "1",
+      "text": "creature.smilodon.abilities.pierce-armor.text"
+    },
+    {
+      "id": "pounce",
+      "section": "offense",
+      "name": "creature.smilodon.abilities.pounce.name",
+      "actions": "1",
+      "text": "creature.smilodon.abilities.pounce.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.smilodon.abilities.sneak-attack.name",
+      "text": "creature.smilodon.abilities.sneak-attack.text"
+    }
+  ]
+}

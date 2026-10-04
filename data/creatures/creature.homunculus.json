@@ -1,0 +1,128 @@
+{
+  "id": "creature.homunculus",
+  "type": "creature",
+  "name": "creature.homunculus.name",
+  "traits": [
+    "construct"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 200,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "tiny",
+  "perception": {
+    "mod": 3,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.homunculus.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 3,
+    "con": 0,
+    "int": 0,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 7,
+    "will": 3
+  },
+  "hp": {
+    "value": 17
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "speeds": {
+    "land": 15,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.homunculus.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "finesse",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "homunculus-poison"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "master-link",
+      "section": "top",
+      "name": "creature.homunculus.abilities.master-link.name",
+      "traits": [
+        "arcane",
+        "mental"
+      ],
+      "text": "creature.homunculus.abilities.master-link.text"
+    },
+    {
+      "id": "homunculus-poison",
+      "section": "offense",
+      "name": "creature.homunculus.abilities.homunculus-poison.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.homunculus.abilities.homunculus-poison.text"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "creature.hippocampus",
+  "type": "creature",
+  "name": "creature.hippocampus.name",
+  "traits": [
+    "animal",
+    "aquatic"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 196,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "large",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 4
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 4,
+    "int": -4,
+    "wis": 3,
+    "cha": 1
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 4,
+    "will": 6
+  },
+  "hp": {
+    "value": 24
+  },
+  "speeds": {
+    "land": 5,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hippocampus.strikes.tail.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "buck",
+      "section": "defense",
+      "name": "creature.hippocampus.abilities.buck.name",
+      "ability": "ability.buck",
+      "actions": "reaction",
+      "text": "creature.hippocampus.abilities.buck.text"
+    },
+    {
+      "id": "sudden-retreat",
+      "section": "offense",
+      "name": "creature.hippocampus.abilities.sudden-retreat.name",
+      "actions": "2",
+      "text": "creature.hippocampus.abilities.sudden-retreat.text"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "creature.ankylosaurus",
+  "type": "creature",
+  "name": "creature.ankylosaurus.name",
+  "traits": [
+    "animal",
+    "dinosaur"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "huge",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 0,
+    "con": 4,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 10,
+    "will": 12
+  },
+  "hp": {
+    "value": 90
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ankylosaurus.strikes.tail.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "backswing",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "punishing-tail"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ankylosaurus.strikes.foot.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "punishing-tail",
+      "section": "offense",
+      "name": "creature.ankylosaurus.abilities.punishing-tail.name",
+      "text": "creature.ankylosaurus.abilities.punishing-tail.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.ankylosaurus.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.ankylosaurus.abilities.trample.text"
+    }
+  ]
+}

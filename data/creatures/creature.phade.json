@@ -1,0 +1,120 @@
+{
+  "id": "creature.phade",
+  "type": "creature",
+  "name": "creature.phade.name",
+  "traits": [
+    "air",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 140,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "sussuran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 6,
+    "con": 3,
+    "int": 2,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 18,
+    "will": 11
+  },
+  "hp": {
+    "value": 70
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.phade.strikes.fist.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+5",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "naturally-invisible",
+      "section": "defense",
+      "name": "creature.phade.abilities.naturally-invisible.name",
+      "text": "creature.phade.abilities.naturally-invisible.text"
+    },
+    {
+      "id": "hush",
+      "section": "offense",
+      "name": "creature.phade.abilities.hush.name",
+      "actions": "1",
+      "traits": [
+        "air",
+        "primal"
+      ],
+      "text": "creature.phade.abilities.hush.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.phade.abilities.sneak-attack.name",
+      "text": "creature.phade.abilities.sneak-attack.text"
+    }
+  ]
+}

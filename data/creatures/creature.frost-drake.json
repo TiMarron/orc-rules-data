@@ -1,0 +1,181 @@
+{
+  "id": "creature.frost-drake",
+  "type": "creature",
+  "name": "creature.frost-drake.name",
+  "traits": [
+    "cold",
+    "dragon"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 132,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "large",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      },
+      {
+        "own": "snow-vision"
+      }
+    ]
+  },
+  "languages": [
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 2,
+    "con": 4,
+    "int": -1,
+    "wis": 3,
+    "cha": 1
+  },
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 15,
+    "will": 14
+  },
+  "hp": {
+    "value": 115
+  },
+  "immunities": [
+    "cold",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "burrow": 20,
+    "climb": 20,
+    "fly": 50,
+    "note": "creature.frost-drake.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.frost-drake.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d12+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "cold"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.frost-drake.strikes.tail.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+8",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "snow-vision",
+      "section": "top",
+      "name": "creature.frost-drake.abilities.snow-vision.name",
+      "text": "creature.frost-drake.abilities.snow-vision.text"
+    },
+    {
+      "id": "retaliatory-strike",
+      "section": "defense",
+      "name": "creature.frost-drake.abilities.retaliatory-strike.name",
+      "actions": "reaction",
+      "trigger": "creature.frost-drake.abilities.retaliatory-strike.trigger",
+      "text": "creature.frost-drake.abilities.retaliatory-strike.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.frost-drake.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.frost-drake.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "freezing-mist-breath",
+      "section": "offense",
+      "name": "creature.frost-drake.abilities.freezing-mist-breath.name",
+      "actions": "2",
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "text": "creature.frost-drake.abilities.freezing-mist-breath.text"
+    },
+    {
+      "id": "ice-stride",
+      "section": "offense",
+      "name": "creature.frost-drake.abilities.ice-stride.name",
+      "text": "creature.frost-drake.abilities.ice-stride.text"
+    },
+    {
+      "id": "speed-surge",
+      "section": "offense",
+      "name": "creature.frost-drake.abilities.speed-surge.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "frequency": "creature.frost-drake.abilities.speed-surge.frequency",
+      "text": "creature.frost-drake.abilities.speed-surge.text"
+    }
+  ]
+}

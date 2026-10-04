@@ -1,0 +1,131 @@
+{
+  "id": "creature.warg",
+  "type": "creature",
+  "name": "creature.warg.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 341,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin",
+    "orcish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 6
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": -1,
+    "wis": 2,
+    "cha": 2
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 9,
+    "will": 6
+  },
+  "hp": {
+    "value": 36
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.warg.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "avenging-bite",
+      "section": "defense",
+      "name": "creature.warg.abilities.avenging-bite.name",
+      "actions": "reaction",
+      "trigger": "creature.warg.abilities.avenging-bite.trigger",
+      "text": "creature.warg.abilities.avenging-bite.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.warg.abilities.pack-attack.name",
+      "text": "creature.warg.abilities.pack-attack.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.warg.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.warg.abilities.swallow-whole.text"
+    }
+  ]
+}

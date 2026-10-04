@@ -1,0 +1,282 @@
+{
+  "id": "creature.adult-adamantine-dragon",
+  "type": "creature",
+  "name": "creature.adult-adamantine-dragon.name",
+  "traits": [
+    "dragon",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 109,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 13,
+  "size": "huge",
+  "perception": {
+    "mod": 23,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 90
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "fey",
+    "petran",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 24
+    },
+    {
+      "lore": "creature.adult-adamantine-dragon.lore.3",
+      "mod": 24
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 23
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 25
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 3,
+    "con": 6,
+    "int": 3,
+    "wis": 4,
+    "cha": 5
+  },
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 20,
+    "will": 23,
+    "note": "creature.adult-adamantine-dragon.saves.note"
+  },
+  "hp": {
+    "value": 220
+  },
+  "immunities": [
+    "paralyzed",
+    "petrified",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 15,
+      "note": "creature.adult-adamantine-dragon.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "burrow": 40,
+    "fly": 150
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.adult-adamantine-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d12+14",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.adult-adamantine-dragon.strikes.jaws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-adamantine-dragon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.adult-adamantine-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d10+14",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.adult-adamantine-dragon.strikes.rock.name",
+      "actions": "1",
+      "bonus": 25,
+      "rangeIncrement": 120,
+      "traits": [
+        "brutal"
+      ],
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "abandon-armor",
+      "section": "defense",
+      "name": "creature.adult-adamantine-dragon.abilities.abandon-armor.name",
+      "text": "creature.adult-adamantine-dragon.abilities.abandon-armor.text"
+    },
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.adult-adamantine-dragon.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 90,
+      "text": "creature.adult-adamantine-dragon.abilities.frightful-presence.text"
+    },
+    {
+      "id": "resilient-form",
+      "section": "defense",
+      "name": "creature.adult-adamantine-dragon.abilities.resilient-form.name",
+      "actions": "reaction",
+      "trigger": "creature.adult-adamantine-dragon.abilities.resilient-form.trigger",
+      "text": "creature.adult-adamantine-dragon.abilities.resilient-form.text"
+    },
+    {
+      "id": "adamantine-body",
+      "section": "offense",
+      "name": "creature.adult-adamantine-dragon.abilities.adamantine-body.name",
+      "text": "creature.adult-adamantine-dragon.abilities.adamantine-body.text"
+    },
+    {
+      "id": "avalanche-breath",
+      "section": "offense",
+      "name": "creature.adult-adamantine-dragon.abilities.avalanche-breath.name",
+      "actions": "2",
+      "traits": [
+        "primal"
+      ],
+      "text": "creature.adult-adamantine-dragon.abilities.avalanche-breath.text"
+    },
+    {
+      "id": "burrowing-pounce",
+      "section": "offense",
+      "name": "creature.adult-adamantine-dragon.abilities.burrowing-pounce.name",
+      "actions": "3",
+      "requirements": "creature.adult-adamantine-dragon.abilities.burrowing-pounce.requirements",
+      "text": "creature.adult-adamantine-dragon.abilities.burrowing-pounce.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.adult-adamantine-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.adult-adamantine-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.adult-adamantine-dragon.abilities.draconic-momentum.name",
+      "text": "creature.adult-adamantine-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "rock-tunneler",
+      "section": "offense",
+      "name": "creature.adult-adamantine-dragon.abilities.rock-tunneler.name",
+      "text": "creature.adult-adamantine-dragon.abilities.rock-tunneler.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.adult-adamantine-dragon.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "text": "creature.adult-adamantine-dragon.abilities.swallow-whole.text"
+    },
+    {
+      "id": "throw-rock",
+      "section": "offense",
+      "name": "creature.adult-adamantine-dragon.abilities.throw-rock.name",
+      "ability": "ability.throw-rock",
+      "actions": "1"
+    }
+  ]
+}

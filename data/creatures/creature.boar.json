@@ -1,0 +1,99 @@
+{
+  "id": "creature.boar",
+  "type": "creature",
+  "name": "creature.boar.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 43,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 4,
+    "int": -4,
+    "wis": 2,
+    "cha": -3
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 5,
+    "will": 8
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.boar.strikes.tusk.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d6+4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ferocity",
+      "section": "defense",
+      "name": "creature.boar.abilities.ferocity.name",
+      "ability": "ability.ferocity",
+      "actions": "reaction"
+    },
+    {
+      "id": "boar-charge",
+      "section": "offense",
+      "name": "creature.boar.abilities.boar-charge.name",
+      "actions": "2",
+      "text": "creature.boar.abilities.boar-charge.text"
+    }
+  ]
+}

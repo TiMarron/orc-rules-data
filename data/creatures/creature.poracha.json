@@ -1,0 +1,148 @@
+{
+  "id": "creature.poracha",
+  "type": "creature",
+  "name": "creature.poracha.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 269,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 10
+      },
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 5,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 3
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 13,
+    "will": 10
+  },
+  "hp": {
+    "value": 50
+  },
+  "weaknesses": [
+    {
+      "type": "sonic",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.poracha.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.poracha.strikes.claw.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+7",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "jaunt",
+      "section": "offense",
+      "name": "creature.poracha.abilities.jaunt.name",
+      "actions": "1",
+      "traits": [
+        "move",
+        "primal",
+        "teleportation"
+      ],
+      "text": "creature.poracha.abilities.jaunt.text"
+    },
+    {
+      "id": "object-meld",
+      "section": "offense",
+      "name": "creature.poracha.abilities.object-meld.name",
+      "actions": "2",
+      "traits": [
+        "primal"
+      ],
+      "text": "creature.poracha.abilities.object-meld.text"
+    }
+  ]
+}

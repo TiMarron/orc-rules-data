@@ -1,0 +1,114 @@
+{
+  "id": "creature.scorpion-swarm",
+  "type": "creature",
+  "name": "creature.scorpion-swarm.name",
+  "traits": [
+    "animal",
+    "swarm"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 5,
+    "con": 2,
+    "int": -5,
+    "wis": 0,
+    "cha": -4
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 13,
+    "will": 8
+  },
+  "hp": {
+    "value": 55
+  },
+  "immunities": [
+    "grapple",
+    "precision",
+    "prone",
+    "restrained",
+    "swarm-mind"
+  ],
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 3
+    },
+    {
+      "type": "piercing",
+      "value": 7
+    },
+    {
+      "type": "slashing",
+      "value": 7
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "scorpion-venom",
+      "section": "offense",
+      "name": "creature.scorpion-swarm.abilities.scorpion-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.scorpion-swarm.abilities.scorpion-venom.text"
+    },
+    {
+      "id": "swarming-stings",
+      "section": "offense",
+      "name": "creature.scorpion-swarm.abilities.swarming-stings.name",
+      "actions": "1",
+      "text": "creature.scorpion-swarm.abilities.swarming-stings.text"
+    }
+  ]
+}

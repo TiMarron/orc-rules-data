@@ -1,0 +1,96 @@
+{
+  "id": "creature.riding-pony",
+  "type": "creature",
+  "name": "creature.riding-pony.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 201,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 4
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 4,
+    "will": 4
+  },
+  "hp": {
+    "value": 16
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.riding-pony.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "buck",
+      "section": "defense",
+      "name": "creature.riding-pony.abilities.buck.name",
+      "ability": "ability.buck",
+      "actions": "reaction",
+      "text": "creature.riding-pony.abilities.buck.text"
+    },
+    {
+      "id": "gallop",
+      "section": "offense",
+      "name": "creature.riding-pony.abilities.gallop.name",
+      "actions": "2",
+      "text": "creature.riding-pony.abilities.gallop.text"
+    }
+  ]
+}

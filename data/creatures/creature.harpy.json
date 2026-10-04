@@ -1,0 +1,164 @@
+{
+  "id": "creature.harpy",
+  "type": "creature",
+  "name": "creature.harpy.name",
+  "traits": [
+    "air",
+    "beast",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 193,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.harpy.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 0,
+    "int": -1,
+    "wis": 1,
+    "cha": 2
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 15,
+    "will": 12
+  },
+  "hp": {
+    "value": 75
+  },
+  "speeds": {
+    "land": 20,
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.harpy.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "putrid-plague"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.harpy.strikes.talon.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+4",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "winds-whispers",
+      "section": "top",
+      "name": "creature.harpy.abilities.winds-whispers.name",
+      "traits": [
+        "air",
+        "primal"
+      ],
+      "text": "creature.harpy.abilities.winds-whispers.text"
+    },
+    {
+      "id": "stench",
+      "section": "defense",
+      "name": "creature.harpy.abilities.stench.name",
+      "ability": "ability.stench",
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "aura": 30,
+      "text": "creature.harpy.abilities.stench.text"
+    },
+    {
+      "id": "hungry-winds",
+      "section": "offense",
+      "name": "creature.harpy.abilities.hungry-winds.name",
+      "actions": "2",
+      "traits": [
+        "air",
+        "concentrate",
+        "primal"
+      ],
+      "text": "creature.harpy.abilities.hungry-winds.text"
+    },
+    {
+      "id": "putrid-plague",
+      "section": "offense",
+      "name": "creature.harpy.abilities.putrid-plague.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.harpy.abilities.putrid-plague.text"
+    }
+  ]
+}

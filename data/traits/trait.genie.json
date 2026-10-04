@@ -1,0 +1,15 @@
+{
+  "id": "trait.genie",
+  "type": "trait",
+  "name": "trait.genie.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 362,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.genie.text"
+}

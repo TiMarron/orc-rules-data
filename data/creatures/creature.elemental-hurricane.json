@@ -1,0 +1,154 @@
+{
+  "id": "creature.elemental-hurricane",
+  "type": "creature",
+  "name": "creature.elemental-hurricane.name",
+  "traits": [
+    "air",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 141,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "huge",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "sussuran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 7,
+    "con": 4,
+    "int": 0,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 24,
+    "will": 18
+  },
+  "hp": {
+    "value": 140
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "fly": 100,
+    "note": "creature.elemental-hurricane.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.elemental-hurricane.strikes.gust.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "finesse",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d10+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.push",
+          "text": "creature.elemental-hurricane.strikes.gust.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.elemental-hurricane.strikes.lightning-lash.name",
+      "actions": "1",
+      "bonus": 24,
+      "rangeIncrement": 75,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d12+6",
+          "type": "electricity"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "high-winds",
+      "section": "defense",
+      "name": "creature.elemental-hurricane.abilities.high-winds.name",
+      "traits": [
+        "air",
+        "aura"
+      ],
+      "aura": 40,
+      "text": "creature.elemental-hurricane.abilities.high-winds.text"
+    },
+    {
+      "id": "disperse",
+      "section": "defense",
+      "name": "creature.elemental-hurricane.abilities.disperse.name",
+      "actions": "reaction",
+      "traits": [
+        "air"
+      ],
+      "trigger": "creature.elemental-hurricane.abilities.disperse.trigger",
+      "text": "creature.elemental-hurricane.abilities.disperse.text"
+    },
+    {
+      "id": "gale-breath",
+      "section": "offense",
+      "name": "creature.elemental-hurricane.abilities.gale-breath.name",
+      "actions": "2",
+      "traits": [
+        "air"
+      ],
+      "text": "creature.elemental-hurricane.abilities.gale-breath.text"
+    },
+    {
+      "id": "swiftness",
+      "section": "offense",
+      "name": "creature.elemental-hurricane.abilities.swiftness.name",
+      "text": "creature.elemental-hurricane.abilities.swiftness.text"
+    }
+  ]
+}

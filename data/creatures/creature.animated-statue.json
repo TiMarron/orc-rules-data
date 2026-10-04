@@ -1,0 +1,106 @@
+{
+  "id": "creature.animated-statue",
+  "type": "creature",
+  "name": "creature.animated-statue.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 19,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": -2,
+    "con": 5,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 19,
+    "note": "creature.animated-statue.ac.note"
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 5,
+    "will": 5
+  },
+  "hp": {
+    "value": 35
+  },
+  "hardness": 6,
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.animated-statue.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "construct-armor",
+      "section": "defense",
+      "name": "creature.animated-statue.abilities.construct-armor.name",
+      "text": "creature.animated-statue.abilities.construct-armor.text"
+    }
+  ]
+}

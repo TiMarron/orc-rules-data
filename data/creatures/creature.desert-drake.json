@@ -1,0 +1,189 @@
+{
+  "id": "creature.desert-drake",
+  "type": "creature",
+  "name": "creature.desert-drake.name",
+  "traits": [
+    "dragon",
+    "earth"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 133,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "sandstorm-sight"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 5,
+    "int": -1,
+    "wis": 3,
+    "cha": 1
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 15,
+    "will": 13
+  },
+  "hp": {
+    "value": 135
+  },
+  "immunities": [
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "burrow": 20,
+    "fly": 50,
+    "note": "creature.desert-drake.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.desert-drake.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d12+10",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.desert-drake.strikes.tail.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.push",
+          "text": "creature.desert-drake.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sandstorm-sight",
+      "section": "top",
+      "name": "creature.desert-drake.abilities.sandstorm-sight.name",
+      "text": "creature.desert-drake.abilities.sandstorm-sight.text"
+    },
+    {
+      "id": "wing-deflection",
+      "section": "defense",
+      "name": "creature.desert-drake.abilities.wing-deflection.name",
+      "actions": "reaction",
+      "trigger": "creature.desert-drake.abilities.wing-deflection.trigger",
+      "text": "creature.desert-drake.abilities.wing-deflection.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.desert-drake.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.desert-drake.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "sandstorm-breath",
+      "section": "offense",
+      "name": "creature.desert-drake.abilities.sandstorm-breath.name",
+      "actions": "2",
+      "traits": [
+        "earth",
+        "primal"
+      ],
+      "text": "creature.desert-drake.abilities.sandstorm-breath.text"
+    },
+    {
+      "id": "speed-surge",
+      "section": "offense",
+      "name": "creature.desert-drake.abilities.speed-surge.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "frequency": "creature.desert-drake.abilities.speed-surge.frequency",
+      "text": "creature.desert-drake.abilities.speed-surge.text"
+    },
+    {
+      "id": "surprise-attacker",
+      "section": "offense",
+      "name": "creature.desert-drake.abilities.surprise-attacker.name",
+      "text": "creature.desert-drake.abilities.surprise-attacker.text"
+    }
+  ]
+}

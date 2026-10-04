@@ -1,0 +1,147 @@
+{
+  "id": "creature.tyrannosaurus",
+  "type": "creature",
+  "name": "creature.tyrannosaurus.name",
+  "traits": [
+    "animal",
+    "dinosaur"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 101,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 19,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 1,
+    "con": 5,
+    "int": -4,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 15,
+    "will": 19
+  },
+  "hp": {
+    "value": 180
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tyrannosaurus.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "deadly",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d12",
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d12+12",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tyrannosaurus.strikes.foot.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d10+12",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fling",
+      "section": "offense",
+      "name": "creature.tyrannosaurus.abilities.fling.name",
+      "actions": "1",
+      "requirements": "creature.tyrannosaurus.abilities.fling.requirements",
+      "text": "creature.tyrannosaurus.abilities.fling.text"
+    },
+    {
+      "id": "pin-prey",
+      "section": "offense",
+      "name": "creature.tyrannosaurus.abilities.pin-prey.name",
+      "actions": "reaction",
+      "trigger": "creature.tyrannosaurus.abilities.pin-prey.trigger",
+      "text": "creature.tyrannosaurus.abilities.pin-prey.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.tyrannosaurus.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.tyrannosaurus.abilities.swallow-whole.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.tyrannosaurus.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.tyrannosaurus.abilities.trample.text"
+    }
+  ]
+}

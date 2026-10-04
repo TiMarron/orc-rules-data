@@ -1,0 +1,164 @@
+{
+  "id": "creature.river-drake",
+  "type": "creature",
+  "name": "creature.river-drake.name",
+  "traits": [
+    "amphibious",
+    "dragon",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 129,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": -1,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 9,
+    "will": 7
+  },
+  "hp": {
+    "value": 45
+  },
+  "immunities": [
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 50,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.river-drake.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.river-drake.strikes.tail.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+3",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "tail-lash",
+      "section": "defense",
+      "name": "creature.river-drake.abilities.tail-lash.name",
+      "actions": "reaction",
+      "trigger": "creature.river-drake.abilities.tail-lash.trigger",
+      "text": "creature.river-drake.abilities.tail-lash.text"
+    },
+    {
+      "id": "caustic-mucus",
+      "section": "offense",
+      "name": "creature.river-drake.abilities.caustic-mucus.name",
+      "actions": "2",
+      "traits": [
+        "acid",
+        "primal"
+      ],
+      "text": "creature.river-drake.abilities.caustic-mucus.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.river-drake.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.river-drake.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "speed-surge",
+      "section": "offense",
+      "name": "creature.river-drake.abilities.speed-surge.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "frequency": "creature.river-drake.abilities.speed-surge.frequency",
+      "text": "creature.river-drake.abilities.speed-surge.text"
+    }
+  ]
+}

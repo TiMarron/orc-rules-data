@@ -1,0 +1,145 @@
+{
+  "id": "creature.hunting-spider",
+  "type": "creature",
+  "name": "creature.hunting-spider.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 320,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "web-sense"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": -5,
+    "wis": 2,
+    "cha": -4
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 9,
+    "will": 5
+  },
+  "hp": {
+    "value": 16
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hunting-spider.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "hunting-spider-venom"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hunting-spider.strikes.web.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 30,
+      "traits": [],
+      "damage": [],
+      "effects": [
+        {
+          "own": "web-trap"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "web-sense",
+      "section": "top",
+      "name": "creature.hunting-spider.abilities.web-sense.name",
+      "text": "creature.hunting-spider.abilities.web-sense.text"
+    },
+    {
+      "id": "spring-upon-prey",
+      "section": "defense",
+      "name": "creature.hunting-spider.abilities.spring-upon-prey.name",
+      "actions": "reaction",
+      "requirements": "creature.hunting-spider.abilities.spring-upon-prey.requirements",
+      "trigger": "creature.hunting-spider.abilities.spring-upon-prey.trigger",
+      "text": "creature.hunting-spider.abilities.spring-upon-prey.text"
+    },
+    {
+      "id": "descend-on-a-web",
+      "section": "offense",
+      "name": "creature.hunting-spider.abilities.descend-on-a-web.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "text": "creature.hunting-spider.abilities.descend-on-a-web.text"
+    },
+    {
+      "id": "hunting-spider-venom",
+      "section": "offense",
+      "name": "creature.hunting-spider.abilities.hunting-spider-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.hunting-spider.abilities.hunting-spider-venom.text"
+    },
+    {
+      "id": "web-trap",
+      "section": "offense",
+      "name": "creature.hunting-spider.abilities.web-trap.name",
+      "text": "creature.hunting-spider.abilities.web-trap.text"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "creature.paleohemoth",
+  "type": "creature",
+  "name": "creature.paleohemoth.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 260,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "huge",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 2,
+    "con": 6,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 26,
+    "reflex": 20,
+    "will": 18
+  },
+  "hp": {
+    "value": 195
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "earth",
+      "value": 10
+    },
+    {
+      "type": "water",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10,
+      "note": "creature.paleohemoth.resistances.0.note"
+    },
+    {
+      "type": "spells",
+      "value": 10,
+      "note": "creature.paleohemoth.resistances.1.note"
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.paleohemoth.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "deadly",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "2d10",
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d10+13",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "fossilization"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fossilization",
+      "section": "offense",
+      "name": "creature.paleohemoth.abilities.fossilization.name",
+      "traits": [
+        "arcane",
+        "incapacitation"
+      ],
+      "text": "creature.paleohemoth.abilities.fossilization.text"
+    },
+    {
+      "id": "reassemble",
+      "section": "offense",
+      "name": "creature.paleohemoth.abilities.reassemble.name",
+      "actions": "1",
+      "text": "creature.paleohemoth.abilities.reassemble.text"
+    }
+  ]
+}

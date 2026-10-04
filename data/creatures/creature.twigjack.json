@@ -1,0 +1,146 @@
+{
+  "id": "creature.twigjack",
+  "type": "creature",
+  "name": "creature.twigjack.name",
+  "traits": [
+    "fey",
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 332,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "tiny",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 11,
+    "will": 7
+  },
+  "hp": {
+    "value": 50
+  },
+  "weaknesses": [
+    {
+      "type": "axes",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.twigjack.strikes.claw.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.twigjack.strikes.splinter.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 30,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "1d6"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bramble-jump",
+      "section": "offense",
+      "name": "creature.twigjack.abilities.bramble-jump.name",
+      "actions": "3",
+      "traits": [
+        "plant",
+        "primal",
+        "teleportation",
+        "wood"
+      ],
+      "requirements": "creature.twigjack.abilities.bramble-jump.requirements",
+      "text": "creature.twigjack.abilities.bramble-jump.text"
+    },
+    {
+      "id": "splinter-spray",
+      "section": "offense",
+      "name": "creature.twigjack.abilities.splinter-spray.name",
+      "actions": "2",
+      "text": "creature.twigjack.abilities.splinter-spray.text"
+    }
+  ]
+}

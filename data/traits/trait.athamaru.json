@@ -1,0 +1,15 @@
+{
+  "id": "trait.athamaru",
+  "type": "trait",
+  "name": "trait.athamaru.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 361,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.athamaru.text"
+}

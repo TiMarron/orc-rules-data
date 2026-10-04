@@ -1,0 +1,133 @@
+{
+  "id": "creature.bogwid",
+  "type": "creature",
+  "name": "creature.bogwid.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 46,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 4,
+    "int": -4,
+    "wis": -2,
+    "cha": 1
+  },
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 12,
+    "will": 8
+  },
+  "hp": {
+    "value": 100
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 20,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bogwid.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "bogwid-fever"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bogwid.strikes.larval-spit.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "bleed",
+          "persistent": true
+        }
+      ],
+      "effects": [
+        {
+          "own": "ravenous-young"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "revolting-aura",
+      "section": "defense",
+      "name": "creature.bogwid.abilities.revolting-aura.name",
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "aura": 20,
+      "text": "creature.bogwid.abilities.revolting-aura.text"
+    },
+    {
+      "id": "bogwid-fever",
+      "section": "offense",
+      "name": "creature.bogwid.abilities.bogwid-fever.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.bogwid.abilities.bogwid-fever.text"
+    },
+    {
+      "id": "ravenous-young",
+      "section": "offense",
+      "name": "creature.bogwid.abilities.ravenous-young.name",
+      "text": "creature.bogwid.abilities.ravenous-young.text"
+    }
+  ]
+}

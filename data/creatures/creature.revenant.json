@@ -1,0 +1,158 @@
+{
+  "id": "creature.revenant",
+  "type": "creature",
+  "name": "creature.revenant.name",
+  "traits": [
+    "undead"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 292,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "sense-murderer"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.revenant.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 4,
+    "int": 0,
+    "wis": 3,
+    "cha": 2
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 13,
+    "will": 17
+  },
+  "hp": {
+    "value": 115,
+    "note": "creature.revenant.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "note": "creature.revenant.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.revenant.strikes.claw.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+5",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sense-murderer",
+      "section": "top",
+      "name": "creature.revenant.abilities.sense-murderer.name",
+      "traits": [
+        "occult",
+        "scrying"
+      ],
+      "text": "creature.revenant.abilities.sense-murderer.text"
+    },
+    {
+      "id": "self-loathing",
+      "section": "defense",
+      "name": "creature.revenant.abilities.self-loathing.name",
+      "traits": [
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "text": "creature.revenant.abilities.self-loathing.text"
+    },
+    {
+      "id": "undying-vendetta",
+      "section": "defense",
+      "name": "creature.revenant.abilities.undying-vendetta.name",
+      "traits": [
+        "emotion",
+        "occult"
+      ],
+      "text": "creature.revenant.abilities.undying-vendetta.text"
+    },
+    {
+      "id": "baleful-shriek",
+      "section": "offense",
+      "name": "creature.revenant.abilities.baleful-shriek.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "incapacitation",
+        "mental"
+      ],
+      "text": "creature.revenant.abilities.baleful-shriek.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.revenant.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.revenant.abilities.constrict.text"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "creature.elephant",
+  "type": "creature",
+  "name": "creature.elephant.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 150,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "huge",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 0,
+    "con": 4,
+    "int": -4,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 11,
+    "will": 13
+  },
+  "hp": {
+    "value": 130
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.elephant.strikes.tusk.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d8+9",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.elephant.strikes.trunk.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [],
+      "effects": [
+        {
+          "own": "grabbing-trunk"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.elephant.strikes.foot.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+9",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "grabbing-trunk",
+      "section": "offense",
+      "name": "creature.elephant.abilities.grabbing-trunk.name",
+      "text": "creature.elephant.abilities.grabbing-trunk.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.elephant.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.elephant.abilities.trample.text"
+    }
+  ]
+}

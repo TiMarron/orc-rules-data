@@ -1,0 +1,118 @@
+{
+  "id": "creature.giant-monitor-lizard",
+  "type": "creature",
+  "name": "creature.giant-monitor-lizard.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 224,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 3,
+    "int": -4,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 8,
+    "will": 5
+  },
+  "hp": {
+    "value": 36
+  },
+  "speeds": {
+    "land": 30,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-monitor-lizard.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+3",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        },
+        {
+          "own": "monitor-lizard-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "gnashing-grip",
+      "section": "defense",
+      "name": "creature.giant-monitor-lizard.abilities.gnashing-grip.name",
+      "actions": "reaction",
+      "trigger": "creature.giant-monitor-lizard.abilities.gnashing-grip.trigger",
+      "text": "creature.giant-monitor-lizard.abilities.gnashing-grip.text"
+    },
+    {
+      "id": "lurching-charge",
+      "section": "offense",
+      "name": "creature.giant-monitor-lizard.abilities.lurching-charge.name",
+      "actions": "2",
+      "text": "creature.giant-monitor-lizard.abilities.lurching-charge.text"
+    },
+    {
+      "id": "monitor-lizard-venom",
+      "section": "offense",
+      "name": "creature.giant-monitor-lizard.abilities.monitor-lizard-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.giant-monitor-lizard.abilities.monitor-lizard-venom.text"
+    }
+  ]
+}

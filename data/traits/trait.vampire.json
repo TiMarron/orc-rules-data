@@ -1,0 +1,15 @@
+{
+  "id": "trait.vampire",
+  "type": "trait",
+  "name": "trait.vampire.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 364,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.vampire.text"
+}

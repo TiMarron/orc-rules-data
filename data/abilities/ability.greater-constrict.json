@@ -1,0 +1,16 @@
+{
+  "id": "ability.greater-constrict",
+  "type": "ability",
+  "name": "ability.greater-constrict.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.greater-constrict.text",
+  "actions": "1"
+}

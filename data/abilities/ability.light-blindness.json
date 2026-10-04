@@ -1,0 +1,15 @@
+{
+  "id": "ability.light-blindness",
+  "type": "ability",
+  "name": "ability.light-blindness.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.light-blindness.text"
+}

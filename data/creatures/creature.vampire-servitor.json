@@ -1,0 +1,137 @@
+{
+  "id": "creature.vampire-servitor",
+  "type": "creature",
+  "name": "creature.vampire-servitor.name",
+  "traits": [
+    "undead",
+    "unholy",
+    "vampire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 336,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.vampire-servitor.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    },
+    {
+      "skill": "skill.society",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 5,
+    "con": 1,
+    "int": -1,
+    "wis": 3,
+    "cha": 2
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 13,
+    "will": 11
+  },
+  "hp": {
+    "value": 40,
+    "note": "creature.vampire-servitor.hp.note"
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "note": "creature.vampire-servitor.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "climb": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vampire-servitor.strikes.claw.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "vampire-vulnerabilities",
+      "section": "defense",
+      "name": "creature.vampire-servitor.abilities.vampire-vulnerabilities.name"
+    },
+    {
+      "id": "drink-blood",
+      "section": "offense",
+      "name": "creature.vampire-servitor.abilities.drink-blood.name",
+      "actions": "1",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.vampire-servitor.abilities.drink-blood.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.vampire-servitor.abilities.sneak-attack.name",
+      "text": "creature.vampire-servitor.abilities.sneak-attack.text"
+    }
+  ]
+}

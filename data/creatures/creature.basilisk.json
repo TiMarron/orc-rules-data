@@ -1,0 +1,105 @@
+{
+  "id": "creature.basilisk",
+  "type": "creature",
+  "name": "creature.basilisk.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 39,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": -1,
+    "con": 5,
+    "int": -3,
+    "wis": 2,
+    "cha": 1
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 8,
+    "will": 11
+  },
+  "hp": {
+    "value": 75
+  },
+  "immunities": [
+    "petrified"
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.basilisk.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "petrifying-glance",
+      "section": "defense",
+      "name": "creature.basilisk.abilities.petrifying-glance.name",
+      "actions": "reaction",
+      "traits": [
+        "arcane",
+        "aura",
+        "visual"
+      ],
+      "trigger": "creature.basilisk.abilities.petrifying-glance.trigger",
+      "text": "creature.basilisk.abilities.petrifying-glance.text"
+    },
+    {
+      "id": "petrifying-gaze",
+      "section": "offense",
+      "name": "creature.basilisk.abilities.petrifying-gaze.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "incapacitation",
+        "visual"
+      ],
+      "text": "creature.basilisk.abilities.petrifying-gaze.text"
+    }
+  ]
+}

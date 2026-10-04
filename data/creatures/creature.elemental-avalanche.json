@@ -1,0 +1,165 @@
+{
+  "id": "creature.elemental-avalanche",
+  "type": "creature",
+  "name": "creature.elemental-avalanche.name",
+  "traits": [
+    "earth",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 143,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "huge",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 90
+      }
+    ]
+  },
+  "languages": [
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": -1,
+    "con": 8,
+    "int": 0,
+    "wis": 3,
+    "cha": -1
+  },
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 26,
+    "reflex": 17,
+    "will": 21
+  },
+  "hp": {
+    "value": 215
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 25,
+    "burrow": 25,
+    "note": "creature.elemental-avalanche.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.elemental-avalanche.strikes.fist.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d12+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.elemental-avalanche.strikes.rock.name",
+      "actions": "1",
+      "bonus": 24,
+      "rangeIncrement": 80,
+      "traits": [
+        "brutal"
+      ],
+      "damage": [
+        {
+          "dice": "2d12+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "earthbound",
+      "section": "top",
+      "name": "creature.elemental-avalanche.abilities.earthbound.name",
+      "text": "creature.elemental-avalanche.abilities.earthbound.text"
+    },
+    {
+      "id": "spike-stones",
+      "section": "defense",
+      "name": "creature.elemental-avalanche.abilities.spike-stones.name",
+      "traits": [
+        "aura",
+        "earth",
+        "primal"
+      ],
+      "aura": 5,
+      "text": "creature.elemental-avalanche.abilities.spike-stones.text"
+    },
+    {
+      "id": "crumble",
+      "section": "defense",
+      "name": "creature.elemental-avalanche.abilities.crumble.name",
+      "actions": "reaction",
+      "trigger": "creature.elemental-avalanche.abilities.crumble.trigger",
+      "text": "creature.elemental-avalanche.abilities.crumble.text"
+    },
+    {
+      "id": "earth-glide",
+      "section": "offense",
+      "name": "creature.elemental-avalanche.abilities.earth-glide.name",
+      "text": "creature.elemental-avalanche.abilities.earth-glide.text"
+    },
+    {
+      "id": "grinding-stones",
+      "section": "offense",
+      "name": "creature.elemental-avalanche.abilities.grinding-stones.name",
+      "actions": "2",
+      "text": "creature.elemental-avalanche.abilities.grinding-stones.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.elemental-avalanche.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.elemental-avalanche.abilities.trample.text"
+    }
+  ]
+}

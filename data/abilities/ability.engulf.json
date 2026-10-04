@@ -1,0 +1,16 @@
+{
+  "id": "ability.engulf",
+  "type": "ability",
+  "name": "ability.engulf.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.engulf.text",
+  "actions": "2"
+}

@@ -1,0 +1,133 @@
+{
+  "id": "creature.will-o-wisp",
+  "type": "creature",
+  "name": "creature.will-o-wisp.name",
+  "traits": [
+    "aberration",
+    "air"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 349,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "small",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 6,
+    "con": 0,
+    "int": 2,
+    "wis": 4,
+    "cha": 2
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 16,
+    "will": 14
+  },
+  "hp": {
+    "value": 50
+  },
+  "immunities": [
+    "magic"
+  ],
+  "speeds": {
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.will-o-wisp.strikes.shock.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "electricity",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+4",
+          "type": "electricity"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "glow",
+      "section": "defense",
+      "name": "creature.will-o-wisp.abilities.glow.name",
+      "traits": [
+        "aura",
+        "light"
+      ],
+      "aura": 20,
+      "text": "creature.will-o-wisp.abilities.glow.text"
+    },
+    {
+      "id": "magic-immunity",
+      "section": "defense",
+      "name": "creature.will-o-wisp.abilities.magic-immunity.name",
+      "text": "creature.will-o-wisp.abilities.magic-immunity.text"
+    },
+    {
+      "id": "feed-on-fear",
+      "section": "offense",
+      "name": "creature.will-o-wisp.abilities.feed-on-fear.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "creature.will-o-wisp.abilities.feed-on-fear.frequency",
+      "requirements": "creature.will-o-wisp.abilities.feed-on-fear.requirements",
+      "text": "creature.will-o-wisp.abilities.feed-on-fear.text"
+    },
+    {
+      "id": "go-dark",
+      "section": "offense",
+      "name": "creature.will-o-wisp.abilities.go-dark.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.will-o-wisp.abilities.go-dark.text"
+    }
+  ]
+}

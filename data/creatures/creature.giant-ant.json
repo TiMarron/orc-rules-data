@@ -1,0 +1,124 @@
+{
+  "id": "creature.giant-ant",
+  "type": "creature",
+  "name": "creature.giant-ant.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 21,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 4,
+    "int": -5,
+    "wis": 1,
+    "cha": -4
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 7,
+    "will": 5
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 40,
+    "climb": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-ant.strikes.mandibles.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.giant-ant.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "giant-ant-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "giant-ant-venom",
+      "section": "offense",
+      "name": "creature.giant-ant.abilities.giant-ant-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.giant-ant.abilities.giant-ant-venom.text"
+    },
+    {
+      "id": "haul-away",
+      "section": "offense",
+      "name": "creature.giant-ant.abilities.haul-away.name",
+      "actions": "1",
+      "requirements": "creature.giant-ant.abilities.haul-away.requirements",
+      "text": "creature.giant-ant.abilities.haul-away.text"
+    }
+  ]
+}

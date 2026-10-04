@@ -1,0 +1,16 @@
+{
+  "id": "ability.trample",
+  "type": "ability",
+  "name": "ability.trample.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 360,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.trample.text",
+  "actions": "3"
+}

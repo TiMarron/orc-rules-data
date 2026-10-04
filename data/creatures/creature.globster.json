@@ -1,0 +1,123 @@
+{
+  "id": "creature.globster",
+  "type": "creature",
+  "name": "creature.globster.name",
+  "traits": [
+    "aquatic",
+    "ooze"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 171,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": -5,
+    "con": 5,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 12
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 6,
+    "will": 9
+  },
+  "hp": {
+    "value": 170
+  },
+  "immunities": [
+    "critical-hits",
+    "mental",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "type": "electricity",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 15,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.globster.strikes.tendril.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        },
+        {
+          "own": "nauseating-slap"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "stench",
+      "section": "defense",
+      "name": "creature.globster.abilities.stench.name",
+      "ability": "ability.stench",
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "aura": 30,
+      "text": "creature.globster.abilities.stench.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.globster.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.globster.abilities.constrict.text"
+    },
+    {
+      "id": "nauseating-slap",
+      "section": "offense",
+      "name": "creature.globster.abilities.nauseating-slap.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.globster.abilities.nauseating-slap.text"
+    },
+    {
+      "id": "saturated",
+      "section": "offense",
+      "name": "creature.globster.abilities.saturated.name",
+      "text": "creature.globster.abilities.saturated.text"
+    }
+  ]
+}

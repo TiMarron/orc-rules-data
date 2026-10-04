@@ -1,0 +1,125 @@
+{
+  "id": "creature.cinder-rat",
+  "type": "creature",
+  "name": "creature.cinder-rat.name",
+  "traits": [
+    "elemental",
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "small",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 2,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 6
+  },
+  "hp": {
+    "value": 45
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 5
+    },
+    {
+      "type": "water",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cinder-rat.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "fire"
+        },
+        {
+          "dice": "1d4",
+          "type": "fire",
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.cinder-rat.abilities.smoke-vision.name",
+      "text": "creature.cinder-rat.abilities.smoke-vision.text"
+    },
+    {
+      "id": "fetid-fumes",
+      "section": "defense",
+      "name": "creature.cinder-rat.abilities.fetid-fumes.name",
+      "traits": [
+        "aura",
+        "fire"
+      ],
+      "aura": 5,
+      "text": "creature.cinder-rat.abilities.fetid-fumes.text"
+    }
+  ]
+}

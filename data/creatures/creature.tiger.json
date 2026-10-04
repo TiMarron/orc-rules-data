@@ -1,0 +1,125 @@
+{
+  "id": "creature.tiger",
+  "type": "creature",
+  "name": "creature.tiger.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 51,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "large",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 11,
+    "will": 8
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tiger.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tiger.strikes.claw.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pounce",
+      "section": "offense",
+      "name": "creature.tiger.abilities.pounce.name",
+      "actions": "1",
+      "text": "creature.tiger.abilities.pounce.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.tiger.abilities.sneak-attack.name",
+      "text": "creature.tiger.abilities.sneak-attack.text"
+    },
+    {
+      "id": "wrestle",
+      "section": "offense",
+      "name": "creature.tiger.abilities.wrestle.name",
+      "actions": "1",
+      "text": "creature.tiger.abilities.wrestle.text"
+    }
+  ]
+}

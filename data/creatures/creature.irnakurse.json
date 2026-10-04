@@ -1,0 +1,147 @@
+{
+  "id": "creature.irnakurse",
+  "type": "creature",
+  "name": "creature.irnakurse.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 153,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "elven",
+    "sakvroth"
+  ],
+  "languageNote": "creature.irnakurse.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 5,
+    "con": 3,
+    "int": -2,
+    "wis": 3,
+    "cha": 4
+  },
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 18,
+    "will": 16
+  },
+  "hp": {
+    "value": 152
+  },
+  "speeds": {
+    "land": 15
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.irnakurse.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+11",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.irnakurse.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d8+11",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "mind-lash"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mind-lash",
+      "section": "offense",
+      "name": "creature.irnakurse.abilities.mind-lash.name",
+      "traits": [
+        "emotion",
+        "mental",
+        "occult"
+      ],
+      "text": "creature.irnakurse.abilities.mind-lash.text"
+    },
+    {
+      "id": "soul-scream",
+      "section": "offense",
+      "name": "creature.irnakurse.abilities.soul-scream.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "mental",
+        "occult"
+      ],
+      "frequency": "creature.irnakurse.abilities.soul-scream.frequency",
+      "text": "creature.irnakurse.abilities.soul-scream.text"
+    },
+    {
+      "id": "storm-of-tentacles",
+      "section": "offense",
+      "name": "creature.irnakurse.abilities.storm-of-tentacles.name",
+      "actions": "2",
+      "text": "creature.irnakurse.abilities.storm-of-tentacles.text"
+    }
+  ]
+}

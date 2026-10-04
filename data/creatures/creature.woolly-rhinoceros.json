@@ -1,0 +1,125 @@
+{
+  "id": "creature.woolly-rhinoceros",
+  "type": "creature",
+  "name": "creature.woolly-rhinoceros.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 293,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 1,
+    "con": 5,
+    "int": -4,
+    "wis": 3,
+    "cha": -1
+  },
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 11,
+    "will": 15,
+    "note": "creature.woolly-rhinoceros.saves.note"
+  },
+  "hp": {
+    "value": 100
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.woolly-rhinoceros.strikes.horn.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+6",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.woolly-rhinoceros.strikes.foot.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cold-adaptation",
+      "section": "defense",
+      "name": "creature.woolly-rhinoceros.abilities.cold-adaptation.name",
+      "text": "creature.woolly-rhinoceros.abilities.cold-adaptation.text"
+    },
+    {
+      "id": "ferocity",
+      "section": "defense",
+      "name": "creature.woolly-rhinoceros.abilities.ferocity.name",
+      "ability": "ability.ferocity",
+      "actions": "reaction"
+    },
+    {
+      "id": "rhinoceros-charge",
+      "section": "offense",
+      "name": "creature.woolly-rhinoceros.abilities.rhinoceros-charge.name",
+      "actions": "2",
+      "text": "creature.woolly-rhinoceros.abilities.rhinoceros-charge.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.woolly-rhinoceros.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.woolly-rhinoceros.abilities.trample.text"
+    }
+  ]
+}

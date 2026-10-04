@@ -1,0 +1,120 @@
+{
+  "id": "creature.giant-eagle",
+  "type": "creature",
+  "name": "creature.giant-eagle.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 137,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "fey",
+    "sussuran"
+  ],
+  "languageNote": "creature.giant-eagle.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 2,
+    "cha": 2
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 11,
+    "will": 9
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 10,
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-eagle.strikes.beak.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+5",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.giant-eagle.strikes.talon.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+5",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "evasive-maneuvers",
+      "section": "defense",
+      "name": "creature.giant-eagle.abilities.evasive-maneuvers.name",
+      "text": "creature.giant-eagle.abilities.evasive-maneuvers.text"
+    },
+    {
+      "id": "carry",
+      "section": "offense",
+      "name": "creature.giant-eagle.abilities.carry.name",
+      "text": "creature.giant-eagle.abilities.carry.text"
+    },
+    {
+      "id": "eagle-dive",
+      "section": "offense",
+      "name": "creature.giant-eagle.abilities.eagle-dive.name",
+      "actions": "2",
+      "text": "creature.giant-eagle.abilities.eagle-dive.text"
+    }
+  ]
+}

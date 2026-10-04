@@ -1,0 +1,123 @@
+{
+  "id": "creature.lion",
+  "type": "creature",
+  "name": "creature.lion.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": -4,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 10,
+    "will": 7
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lion.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.lion.strikes.claw.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.lion.abilities.pack-attack.name",
+      "text": "creature.lion.abilities.pack-attack.text"
+    },
+    {
+      "id": "pounce",
+      "section": "offense",
+      "name": "creature.lion.abilities.pounce.name",
+      "actions": "1",
+      "text": "creature.lion.abilities.pounce.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.lion.abilities.sneak-attack.name",
+      "text": "creature.lion.abilities.sneak-attack.text"
+    }
+  ]
+}

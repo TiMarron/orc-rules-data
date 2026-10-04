@@ -1,0 +1,131 @@
+{
+  "id": "creature.tomb-jelly",
+  "type": "creature",
+  "name": "creature.tomb-jelly.name",
+  "traits": [
+    "mindless",
+    "ooze"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 257,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 7,
+    "note": "creature.tomb-jelly.perception.note",
+    "senses": [
+      {
+        "own": "motion-sense",
+        "acuity": "precise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": -5,
+    "con": 6,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 12
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 4,
+    "will": 7
+  },
+  "hp": {
+    "value": 150
+  },
+  "immunities": [
+    "acid",
+    "bleed",
+    "critical-hits",
+    "mental",
+    "precision",
+    "slashing",
+    "unconscious",
+    "visual",
+    "void"
+  ],
+  "speeds": {
+    "land": 15,
+    "climb": 10
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tomb-jelly.strikes.pseudopod.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        {
+          "own": "tomb-curse"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "motion-sense",
+      "section": "top",
+      "name": "creature.tomb-jelly.abilities.motion-sense.name",
+      "text": "creature.tomb-jelly.abilities.motion-sense.text"
+    },
+    {
+      "id": "bound-in-death",
+      "section": "offense",
+      "name": "creature.tomb-jelly.abilities.bound-in-death.name",
+      "actions": "1",
+      "traits": [
+        "healing",
+        "void"
+      ],
+      "text": "creature.tomb-jelly.abilities.bound-in-death.text"
+    },
+    {
+      "id": "flesh-dissolving-acid",
+      "section": "offense",
+      "name": "creature.tomb-jelly.abilities.flesh-dissolving-acid.name",
+      "text": "creature.tomb-jelly.abilities.flesh-dissolving-acid.text"
+    },
+    {
+      "id": "tomb-curse",
+      "section": "offense",
+      "name": "creature.tomb-jelly.abilities.tomb-curse.name",
+      "traits": [
+        "curse",
+        "divine",
+        "void"
+      ],
+      "text": "creature.tomb-jelly.abilities.tomb-curse.text"
+    }
+  ]
+}

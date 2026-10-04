@@ -1,0 +1,17 @@
+{
+  "id": "ability.pull",
+  "type": "ability",
+  "name": "ability.pull.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.pull.text",
+  "actions": "1",
+  "requirements": "ability.pull.requirements"
+}

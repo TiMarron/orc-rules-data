@@ -1,0 +1,16 @@
+{
+  "id": "ability.improved-grab-improved-knockdown-or-improved-push",
+  "type": "ability",
+  "name": "ability.improved-grab-improved-knockdown-or-improved-push.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.improved-grab-improved-knockdown-or-improved-push.text",
+  "actions": "free"
+}

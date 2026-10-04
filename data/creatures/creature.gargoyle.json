@@ -1,0 +1,131 @@
+{
+  "id": "creature.gargoyle",
+  "type": "creature",
+  "name": "creature.gargoyle.name",
+  "traits": [
+    "beast",
+    "earth"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 155,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 3,
+    "int": -2,
+    "wis": 2,
+    "cha": -2
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 10,
+    "will": 10
+  },
+  "hp": {
+    "value": 40
+  },
+  "immunities": [
+    "bleed"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "note": "creature.gargoyle.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gargoyle.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gargoyle.strikes.claw.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+3",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "clawed-feet",
+      "section": "defense",
+      "name": "creature.gargoyle.abilities.clawed-feet.name",
+      "actions": "reaction",
+      "traits": [
+        "attack"
+      ],
+      "trigger": "creature.gargoyle.abilities.clawed-feet.trigger",
+      "text": "creature.gargoyle.abilities.clawed-feet.text"
+    },
+    {
+      "id": "statue",
+      "section": "offense",
+      "name": "creature.gargoyle.abilities.statue.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.gargoyle.abilities.statue.text"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "creature.pachycephalosaurus",
+  "type": "creature",
+  "name": "creature.pachycephalosaurus.name",
+  "traits": [
+    "animal",
+    "dinosaur"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 97,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 4,
+    "int": -4,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 11,
+    "will": 7
+  },
+  "hp": {
+    "value": 65
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pachycephalosaurus.strikes.skull.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "forceful",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d10+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "clobbering-charge",
+      "section": "offense",
+      "name": "creature.pachycephalosaurus.abilities.clobbering-charge.name",
+      "actions": "2",
+      "text": "creature.pachycephalosaurus.abilities.clobbering-charge.text"
+    },
+    {
+      "id": "sudden-shove",
+      "section": "offense",
+      "name": "creature.pachycephalosaurus.abilities.sudden-shove.name",
+      "actions": "reaction",
+      "traits": [
+        "attack"
+      ],
+      "trigger": "creature.pachycephalosaurus.abilities.sudden-shove.trigger",
+      "text": "creature.pachycephalosaurus.abilities.sudden-shove.text"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ability.aura",
+  "type": "ability",
+  "name": "ability.aura.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 358,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.aura.text"
+}

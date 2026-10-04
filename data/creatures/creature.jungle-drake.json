@@ -1,0 +1,186 @@
+{
+  "id": "creature.jungle-drake",
+  "type": "creature",
+  "name": "creature.jungle-drake.name",
+  "traits": [
+    "dragon",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 130,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 4,
+    "int": -1,
+    "wis": 1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 13,
+    "will": 11
+  },
+  "hp": {
+    "value": 90
+  },
+  "immunities": [
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 50,
+    "note": "creature.jungle-drake.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.jungle-drake.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "predatory-grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.jungle-drake.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "jungle-drake-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "twisting-tail",
+      "section": "defense",
+      "name": "creature.jungle-drake.abilities.twisting-tail.name",
+      "actions": "reaction",
+      "trigger": "creature.jungle-drake.abilities.twisting-tail.trigger",
+      "text": "creature.jungle-drake.abilities.twisting-tail.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.jungle-drake.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.jungle-drake.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "forest-passage",
+      "section": "offense",
+      "name": "creature.jungle-drake.abilities.forest-passage.name",
+      "text": "creature.jungle-drake.abilities.forest-passage.text"
+    },
+    {
+      "id": "jungle-drake-venom",
+      "section": "offense",
+      "name": "creature.jungle-drake.abilities.jungle-drake-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.jungle-drake.abilities.jungle-drake-venom.text"
+    },
+    {
+      "id": "predatory-grab",
+      "section": "offense",
+      "name": "creature.jungle-drake.abilities.predatory-grab.name",
+      "actions": "1",
+      "text": "creature.jungle-drake.abilities.predatory-grab.text"
+    },
+    {
+      "id": "speed-surge",
+      "section": "offense",
+      "name": "creature.jungle-drake.abilities.speed-surge.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "frequency": "creature.jungle-drake.abilities.speed-surge.frequency",
+      "text": "creature.jungle-drake.abilities.speed-surge.text"
+    },
+    {
+      "id": "spit-venom",
+      "section": "offense",
+      "name": "creature.jungle-drake.abilities.spit-venom.name",
+      "actions": "2",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.jungle-drake.abilities.spit-venom.text"
+    }
+  ]
+}

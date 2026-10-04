@@ -1,0 +1,130 @@
+{
+  "id": "creature.living-whirlwind",
+  "type": "creature",
+  "name": "creature.living-whirlwind.name",
+  "traits": [
+    "air",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 140,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "sussuran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 5,
+    "con": 2,
+    "int": -2,
+    "wis": 1,
+    "cha": 0
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 16,
+    "will": 10
+  },
+  "hp": {
+    "value": 50
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "fly": 50,
+    "note": "creature.living-whirlwind.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.living-whirlwind.strikes.gust.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "finesse",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "high-winds",
+      "section": "defense",
+      "name": "creature.living-whirlwind.abilities.high-winds.name",
+      "traits": [
+        "air",
+        "aura"
+      ],
+      "aura": 20,
+      "text": "creature.living-whirlwind.abilities.high-winds.text"
+    },
+    {
+      "id": "disperse",
+      "section": "defense",
+      "name": "creature.living-whirlwind.abilities.disperse.name",
+      "actions": "reaction",
+      "traits": [
+        "air"
+      ],
+      "trigger": "creature.living-whirlwind.abilities.disperse.trigger",
+      "text": "creature.living-whirlwind.abilities.disperse.text"
+    },
+    {
+      "id": "forceful-winds",
+      "section": "offense",
+      "name": "creature.living-whirlwind.abilities.forceful-winds.name",
+      "actions": "2",
+      "traits": [
+        "air"
+      ],
+      "text": "creature.living-whirlwind.abilities.forceful-winds.text"
+    },
+    {
+      "id": "swiftness",
+      "section": "offense",
+      "name": "creature.living-whirlwind.abilities.swiftness.name",
+      "text": "creature.living-whirlwind.abilities.swiftness.text"
+    }
+  ]
+}

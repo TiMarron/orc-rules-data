@@ -1,0 +1,143 @@
+{
+  "id": "creature.sea-hag",
+  "type": "creature",
+  "name": "creature.sea-hag.name",
+  "traits": [
+    "amphibious",
+    "hag",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 188,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "fey",
+    "jotun",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 4,
+    "int": 1,
+    "wis": 3,
+    "cha": 3
+  },
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 8,
+    "will": 10,
+    "note": "creature.sea-hag.saves.note"
+  },
+  "hp": {
+    "value": 45
+  },
+  "immunities": [
+    "polymorph"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "swim": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sea-hag.strikes.claw.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "coven",
+      "section": "top",
+      "name": "creature.sea-hag.abilities.coven.name",
+      "ability": "ability.coven",
+      "text": "creature.sea-hag.abilities.coven.text"
+    },
+    {
+      "id": "dread-gaze",
+      "section": "offense",
+      "name": "creature.sea-hag.abilities.dread-gaze.name",
+      "actions": "2",
+      "traits": [
+        "curse",
+        "emotion",
+        "fear",
+        "mental",
+        "occult"
+      ],
+      "text": "creature.sea-hag.abilities.dread-gaze.text"
+    },
+    {
+      "id": "sea-hags-bargain",
+      "section": "offense",
+      "name": "creature.sea-hag.abilities.sea-hags-bargain.name",
+      "traits": [
+        "concentrate",
+        "exploration",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.sea-hag.abilities.sea-hags-bargain.text"
+    }
+  ]
+}

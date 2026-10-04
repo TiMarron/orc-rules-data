@@ -1,0 +1,146 @@
+{
+  "id": "creature.shuln",
+  "type": "creature",
+  "name": "creature.shuln.name",
+  "traits": [
+    "beast"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 309,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "huge",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.scent",
+        "range": 30
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 4,
+    "con": 6,
+    "int": -3,
+    "wis": 4,
+    "cha": 1
+  },
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 19,
+    "will": 21
+  },
+  "hp": {
+    "value": 195
+  },
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10,
+      "note": "creature.shuln.resistances.0.note"
+    },
+    {
+      "type": "poison",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "burrow": 20,
+    "note": "creature.shuln.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.shuln.strikes.adamantine-claw.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d8+10",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.shuln.strikes.adamantine-fangs.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d10+10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "shuln-saliva"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "armor-rending-strikes",
+      "section": "offense",
+      "name": "creature.shuln.abilities.armor-rending-strikes.name",
+      "text": "creature.shuln.abilities.armor-rending-strikes.text"
+    },
+    {
+      "id": "shuln-saliva",
+      "section": "offense",
+      "name": "creature.shuln.abilities.shuln-saliva.name",
+      "traits": [
+        "incapacitation",
+        "poison"
+      ],
+      "text": "creature.shuln.abilities.shuln-saliva.text"
+    },
+    {
+      "id": "unstoppable-burrow",
+      "section": "offense",
+      "name": "creature.shuln.abilities.unstoppable-burrow.name",
+      "text": "creature.shuln.abilities.unstoppable-burrow.text"
+    }
+  ]
+}

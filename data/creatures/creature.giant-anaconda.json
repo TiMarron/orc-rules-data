@@ -1,0 +1,168 @@
+{
+  "id": "creature.giant-anaconda",
+  "type": "creature",
+  "name": "creature.giant-anaconda.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 317,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "huge",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 3,
+    "con": 6,
+    "int": -4,
+    "wis": 3,
+    "cha": -2
+  },
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 20,
+    "reflex": 17,
+    "will": 15
+  },
+  "hp": {
+    "value": 175
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 30,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.giant-anaconda.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.giant-anaconda.strikes.tail.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.push",
+          "text": "creature.giant-anaconda.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "tighten-coils",
+      "section": "defense",
+      "name": "creature.giant-anaconda.abilities.tighten-coils.name",
+      "actions": "reaction",
+      "trigger": "creature.giant-anaconda.abilities.tighten-coils.trigger",
+      "text": "creature.giant-anaconda.abilities.tighten-coils.text"
+    },
+    {
+      "id": "greater-constrict",
+      "section": "offense",
+      "name": "creature.giant-anaconda.abilities.greater-constrict.name",
+      "ability": "ability.greater-constrict",
+      "actions": "1",
+      "text": "creature.giant-anaconda.abilities.greater-constrict.text"
+    },
+    {
+      "id": "slither",
+      "section": "offense",
+      "name": "creature.giant-anaconda.abilities.slither.name",
+      "actions": "1",
+      "text": "creature.giant-anaconda.abilities.slither.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.giant-anaconda.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.giant-anaconda.abilities.swallow-whole.text"
+    },
+    {
+      "id": "wrap-in-coils",
+      "section": "offense",
+      "name": "creature.giant-anaconda.abilities.wrap-in-coils.name",
+      "actions": "1",
+      "requirements": "creature.giant-anaconda.abilities.wrap-in-coils.requirements",
+      "text": "creature.giant-anaconda.abilities.wrap-in-coils.text"
+    }
+  ]
+}

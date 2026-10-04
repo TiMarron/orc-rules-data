@@ -1,0 +1,128 @@
+{
+  "id": "creature.goblin-dog",
+  "type": "creature",
+  "name": "creature.goblin-dog.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 176,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 2,
+    "int": -4,
+    "wis": 1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 8,
+    "will": 5
+  },
+  "hp": {
+    "value": 17
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.goblin-dog.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "goblin-pox"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "irritating-dander",
+      "section": "defense",
+      "name": "creature.goblin-dog.abilities.irritating-dander.name",
+      "text": "creature.goblin-dog.abilities.irritating-dander.text"
+    },
+    {
+      "id": "buck",
+      "section": "defense",
+      "name": "creature.goblin-dog.abilities.buck.name",
+      "ability": "ability.buck",
+      "actions": "reaction",
+      "text": "creature.goblin-dog.abilities.buck.text"
+    },
+    {
+      "id": "juke",
+      "section": "defense",
+      "name": "creature.goblin-dog.abilities.juke.name",
+      "actions": "reaction",
+      "requirements": "creature.goblin-dog.abilities.juke.requirements",
+      "trigger": "creature.goblin-dog.abilities.juke.trigger",
+      "text": "creature.goblin-dog.abilities.juke.text"
+    },
+    {
+      "id": "goblin-pox",
+      "section": "offense",
+      "name": "creature.goblin-dog.abilities.goblin-pox.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.goblin-dog.abilities.goblin-pox.text"
+    },
+    {
+      "id": "scratch",
+      "section": "offense",
+      "name": "creature.goblin-dog.abilities.scratch.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.goblin-dog.abilities.scratch.text"
+    }
+  ]
+}

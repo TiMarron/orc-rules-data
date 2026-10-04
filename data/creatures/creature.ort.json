@@ -1,0 +1,107 @@
+{
+  "id": "creature.ort",
+  "type": "creature",
+  "name": "creature.ort.name",
+  "traits": [
+    "devil",
+    "fiend",
+    "mindless",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 0,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.ort.senses.0"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 0,
+    "con": 3,
+    "int": -5,
+    "wis": 0,
+    "cha": -3
+  },
+  "ac": {
+    "value": 13
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 6,
+    "will": 2
+  },
+  "hp": {
+    "value": 20
+  },
+  "immunities": [
+    "fire",
+    "mental"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 3
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 3,
+      "note": "creature.ort.resistances.0.note"
+    },
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ort.strikes.claw.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "subservience",
+      "section": "offense",
+      "name": "creature.ort.abilities.subservience.name",
+      "text": "creature.ort.abilities.subservience.text"
+    }
+  ]
+}

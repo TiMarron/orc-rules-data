@@ -1,0 +1,149 @@
+{
+  "id": "creature.goliath-spider",
+  "type": "creature",
+  "name": "creature.goliath-spider.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 321,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "web-sense"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 5,
+    "con": 7,
+    "int": -5,
+    "wis": 3,
+    "cha": -4
+  },
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 21,
+    "will": 17
+  },
+  "hp": {
+    "value": 220
+  },
+  "speeds": {
+    "land": 45,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.goliath-spider.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+12",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "goliath-spider-venom"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.goliath-spider.strikes.web.name",
+      "actions": "1",
+      "bonus": 22,
+      "rangeIncrement": 60,
+      "traits": [],
+      "damage": [],
+      "effects": [
+        {
+          "own": "web-tether"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "web-sense",
+      "section": "top",
+      "name": "creature.goliath-spider.abilities.web-sense.name",
+      "text": "creature.goliath-spider.abilities.web-sense.text"
+    },
+    {
+      "id": "spring-upon-prey",
+      "section": "defense",
+      "name": "creature.goliath-spider.abilities.spring-upon-prey.name",
+      "actions": "reaction",
+      "requirements": "creature.goliath-spider.abilities.spring-upon-prey.requirements",
+      "trigger": "creature.goliath-spider.abilities.spring-upon-prey.trigger",
+      "text": "creature.goliath-spider.abilities.spring-upon-prey.text"
+    },
+    {
+      "id": "descend-on-a-web",
+      "section": "offense",
+      "name": "creature.goliath-spider.abilities.descend-on-a-web.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "text": "creature.goliath-spider.abilities.descend-on-a-web.text"
+    },
+    {
+      "id": "goliath-spider-venom",
+      "section": "offense",
+      "name": "creature.goliath-spider.abilities.goliath-spider-venom.name",
+      "traits": [
+        "incapacitation",
+        "poison"
+      ],
+      "text": "creature.goliath-spider.abilities.goliath-spider-venom.text"
+    },
+    {
+      "id": "web-tether",
+      "section": "offense",
+      "name": "creature.goliath-spider.abilities.web-tether.name",
+      "text": "creature.goliath-spider.abilities.web-tether.text"
+    }
+  ]
+}

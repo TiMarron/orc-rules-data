@@ -1,0 +1,15 @@
+{
+  "id": "trait.xulgath",
+  "type": "trait",
+  "name": "trait.xulgath.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 364,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.xulgath.text"
+}

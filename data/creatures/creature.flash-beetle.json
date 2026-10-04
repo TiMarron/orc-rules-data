@@ -1,0 +1,102 @@
+{
+  "id": "creature.flash-beetle",
+  "type": "creature",
+  "name": "creature.flash-beetle.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 42,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "small",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": -5,
+    "wis": 1,
+    "cha": -2
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 8,
+    "will": 4
+  },
+  "hp": {
+    "value": 6
+  },
+  "speeds": {
+    "land": 20,
+    "fly": 15
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.flash-beetle.strikes.mandibles.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "luminescent-aura",
+      "section": "defense",
+      "name": "creature.flash-beetle.abilities.luminescent-aura.name",
+      "traits": [
+        "aura",
+        "light"
+      ],
+      "aura": 10,
+      "text": "creature.flash-beetle.abilities.luminescent-aura.text"
+    },
+    {
+      "id": "light-flash",
+      "section": "offense",
+      "name": "creature.flash-beetle.abilities.light-flash.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "light"
+      ],
+      "text": "creature.flash-beetle.abilities.light-flash.text"
+    }
+  ]
+}

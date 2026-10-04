@@ -1,0 +1,108 @@
+{
+  "id": "creature.bottlenose-dolphin",
+  "type": "creature",
+  "name": "creature.bottlenose-dolphin.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 103,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "own": "aquatic-echolocation",
+        "range": 120
+      },
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 2,
+    "int": -4,
+    "wis": 3,
+    "cha": 0
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 7,
+    "will": 5
+  },
+  "hp": {
+    "value": 16
+  },
+  "speeds": {
+    "swim": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bottlenose-dolphin.strikes.snout.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bottlenose-dolphin.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "aquatic-echolocation",
+      "section": "top",
+      "name": "creature.bottlenose-dolphin.abilities.aquatic-echolocation.name",
+      "text": "creature.bottlenose-dolphin.abilities.aquatic-echolocation.text"
+    },
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.bottlenose-dolphin.abilities.deep-breath.name",
+      "text": "creature.bottlenose-dolphin.abilities.deep-breath.text"
+    },
+    {
+      "id": "ramming-speed",
+      "section": "offense",
+      "name": "creature.bottlenose-dolphin.abilities.ramming-speed.name",
+      "actions": "2",
+      "text": "creature.bottlenose-dolphin.abilities.ramming-speed.text"
+    }
+  ]
+}

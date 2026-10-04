@@ -1,0 +1,151 @@
+{
+  "id": "creature.stone-mauler",
+  "type": "creature",
+  "name": "creature.stone-mauler.name",
+  "traits": [
+    "earth",
+    "elemental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 142,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 80
+      }
+    ]
+  },
+  "languages": [
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": -1,
+    "con": 7,
+    "int": -1,
+    "wis": 3,
+    "cha": -1
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 15,
+    "will": 19
+  },
+  "hp": {
+    "value": 180
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "speeds": {
+    "land": 35,
+    "burrow": 35,
+    "note": "creature.stone-mauler.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.stone-mauler.strikes.fist.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.push",
+          "text": "creature.stone-mauler.strikes.fist.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.stone-mauler.strikes.rock.name",
+      "actions": "1",
+      "bonus": 21,
+      "rangeIncrement": 80,
+      "traits": [
+        "brutal"
+      ],
+      "damage": [
+        {
+          "dice": "2d12+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "earthbound",
+      "section": "top",
+      "name": "creature.stone-mauler.abilities.earthbound.name",
+      "text": "creature.stone-mauler.abilities.earthbound.text"
+    },
+    {
+      "id": "spike-stones",
+      "section": "defense",
+      "name": "creature.stone-mauler.abilities.spike-stones.name",
+      "traits": [
+        "aura",
+        "earth",
+        "primal"
+      ],
+      "aura": 5,
+      "text": "creature.stone-mauler.abilities.spike-stones.text"
+    },
+    {
+      "id": "crumble",
+      "section": "defense",
+      "name": "creature.stone-mauler.abilities.crumble.name",
+      "actions": "reaction",
+      "trigger": "creature.stone-mauler.abilities.crumble.trigger",
+      "text": "creature.stone-mauler.abilities.crumble.text"
+    },
+    {
+      "id": "earth-glide",
+      "section": "offense",
+      "name": "creature.stone-mauler.abilities.earth-glide.name",
+      "text": "creature.stone-mauler.abilities.earth-glide.text"
+    }
+  ]
+}

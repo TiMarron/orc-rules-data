@@ -1,0 +1,17 @@
+{
+  "id": "ability.reactive-strike",
+  "type": "ability",
+  "name": "ability.reactive-strike.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 359,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.reactive-strike.text",
+  "actions": "reaction",
+  "trigger": "ability.reactive-strike.trigger"
+}

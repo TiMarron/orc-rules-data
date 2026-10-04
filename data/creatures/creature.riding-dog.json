@@ -1,0 +1,99 @@
+{
+  "id": "creature.riding-dog",
+  "type": "creature",
+  "name": "creature.riding-dog.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 102,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 2,
+    "int": -4,
+    "wis": 2,
+    "cha": -1
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 5,
+    "will": 5
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.riding-dog.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "buck",
+      "section": "defense",
+      "name": "creature.riding-dog.abilities.buck.name",
+      "ability": "ability.buck",
+      "actions": "reaction",
+      "text": "creature.riding-dog.abilities.buck.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.riding-dog.abilities.pack-attack.name",
+      "text": "creature.riding-dog.abilities.pack-attack.text"
+    }
+  ]
+}

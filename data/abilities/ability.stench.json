@@ -1,0 +1,15 @@
+{
+  "id": "ability.stench",
+  "type": "ability",
+  "name": "ability.stench.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 360,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.stench.text"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "creature.hadrosaurid",
+  "type": "creature",
+  "name": "creature.hadrosaurid.name",
+  "traits": [
+    "animal",
+    "dinosaur"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 98,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "huge",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 2,
+    "con": 3,
+    "int": -4,
+    "wis": 1,
+    "cha": 0
+  },
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 10,
+    "will": 11
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hadrosaurid.strikes.tail.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.hadrosaurid.strikes.foot.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sprint",
+      "section": "offense",
+      "name": "creature.hadrosaurid.abilities.sprint.name",
+      "actions": "2",
+      "frequency": "creature.hadrosaurid.abilities.sprint.frequency",
+      "text": "creature.hadrosaurid.abilities.sprint.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.hadrosaurid.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.hadrosaurid.abilities.trample.text"
+    }
+  ]
+}

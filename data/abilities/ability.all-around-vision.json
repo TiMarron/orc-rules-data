@@ -1,0 +1,15 @@
+{
+  "id": "ability.all-around-vision",
+  "type": "ability",
+  "name": "ability.all-around-vision.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 358,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.all-around-vision.text"
+}

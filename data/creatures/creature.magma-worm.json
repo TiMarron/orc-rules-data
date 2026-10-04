@@ -1,0 +1,233 @@
+{
+  "id": "creature.magma-worm",
+  "type": "creature",
+  "name": "creature.magma-worm.name",
+  "traits": [
+    "beast",
+    "fire"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 57,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 18,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 25,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 100
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 38
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": -1,
+    "con": 9,
+    "int": -3,
+    "wis": -1,
+    "cha": -1
+  },
+  "ac": {
+    "value": 40
+  },
+  "saves": {
+    "fortitude": 36,
+    "reflex": 25,
+    "will": 27
+  },
+  "hp": {
+    "value": 410
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "burrow": 40,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.magma-worm.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 36,
+      "traits": [
+        "deadly",
+        "fire",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "3d10",
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d10+18",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.magma-worm.strikes.jaws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.magma-worm.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 36,
+      "traits": [
+        "agile",
+        "fire",
+        "poison",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d12+18",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        {
+          "own": "magma-worm-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.magma-worm.strikes.body.name",
+      "actions": "1",
+      "bonus": 34,
+      "traits": [
+        "fire",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d10+16",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fire-healing",
+      "section": "defense",
+      "name": "creature.magma-worm.abilities.fire-healing.name",
+      "text": "creature.magma-worm.abilities.fire-healing.text"
+    },
+    {
+      "id": "inexorable",
+      "section": "defense",
+      "name": "creature.magma-worm.abilities.inexorable.name",
+      "text": "creature.magma-worm.abilities.inexorable.text"
+    },
+    {
+      "id": "slough-skin",
+      "section": "defense",
+      "name": "creature.magma-worm.abilities.slough-skin.name",
+      "actions": "reaction",
+      "frequency": "creature.magma-worm.abilities.slough-skin.frequency",
+      "trigger": "creature.magma-worm.abilities.slough-skin.trigger",
+      "text": "creature.magma-worm.abilities.slough-skin.text"
+    },
+    {
+      "id": "fast-swallow",
+      "section": "offense",
+      "name": "creature.magma-worm.abilities.fast-swallow.name",
+      "actions": "reaction",
+      "trigger": "creature.magma-worm.abilities.fast-swallow.trigger",
+      "text": "creature.magma-worm.abilities.fast-swallow.text"
+    },
+    {
+      "id": "fire-breath",
+      "section": "offense",
+      "name": "creature.magma-worm.abilities.fire-breath.name",
+      "actions": "2",
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "text": "creature.magma-worm.abilities.fire-breath.text"
+    },
+    {
+      "id": "magma-worm-venom",
+      "section": "offense",
+      "name": "creature.magma-worm.abilities.magma-worm-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.magma-worm.abilities.magma-worm-venom.text"
+    },
+    {
+      "id": "rock-tunneler",
+      "section": "offense",
+      "name": "creature.magma-worm.abilities.rock-tunneler.name",
+      "text": "creature.magma-worm.abilities.rock-tunneler.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.magma-worm.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.magma-worm.abilities.swallow-whole.text"
+    },
+    {
+      "id": "thrash",
+      "section": "offense",
+      "name": "creature.magma-worm.abilities.thrash.name",
+      "actions": "2",
+      "text": "creature.magma-worm.abilities.thrash.text"
+    }
+  ]
+}

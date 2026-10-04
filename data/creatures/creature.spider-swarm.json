@@ -1,0 +1,124 @@
+{
+  "id": "creature.spider-swarm",
+  "type": "creature",
+  "name": "creature.spider-swarm.name",
+  "traits": [
+    "animal",
+    "swarm"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 320,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "large",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "web-sense"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 2
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": -2,
+    "dex": 3,
+    "con": 0,
+    "int": -5,
+    "wis": 0,
+    "cha": -4
+  },
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 4,
+    "reflex": 7,
+    "will": 2
+  },
+  "hp": {
+    "value": 12
+  },
+  "immunities": [
+    "grabbed",
+    "precision",
+    "prone",
+    "restrained",
+    "swarm-mind"
+  ],
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 2
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "climb": 20
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "web-sense",
+      "section": "top",
+      "name": "creature.spider-swarm.abilities.web-sense.name",
+      "text": "creature.spider-swarm.abilities.web-sense.text"
+    },
+    {
+      "id": "swarming-bites",
+      "section": "offense",
+      "name": "creature.spider-swarm.abilities.swarming-bites.name",
+      "actions": "1",
+      "text": "creature.spider-swarm.abilities.swarming-bites.text"
+    },
+    {
+      "id": "spider-swarm-venom",
+      "section": "offense",
+      "name": "creature.spider-swarm.abilities.spider-swarm-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.spider-swarm.abilities.spider-swarm-venom.text"
+    }
+  ]
+}

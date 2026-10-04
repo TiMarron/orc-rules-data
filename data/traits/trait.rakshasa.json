@@ -1,0 +1,15 @@
+{
+  "id": "trait.rakshasa",
+  "type": "trait",
+  "name": "trait.rakshasa.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 363,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.rakshasa.text"
+}

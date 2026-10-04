@@ -1,0 +1,15 @@
+{
+  "id": "ability.void-healing",
+  "type": "ability",
+  "name": "ability.void-healing.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 360,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.void-healing.text"
+}

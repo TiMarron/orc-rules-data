@@ -1,0 +1,16 @@
+{
+  "id": "ability.buck",
+  "type": "ability",
+  "name": "ability.buck.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 358,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.buck.text",
+  "actions": "reaction"
+}

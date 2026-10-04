@@ -1,0 +1,15 @@
+{
+  "id": "trait.mummy",
+  "type": "trait",
+  "name": "trait.mummy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 363,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.mummy.text"
+}

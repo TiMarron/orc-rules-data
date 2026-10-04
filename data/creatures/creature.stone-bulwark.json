@@ -1,0 +1,172 @@
+{
+  "id": "creature.stone-bulwark",
+  "type": "creature",
+  "name": "creature.stone-bulwark.name",
+  "traits": [
+    "construct",
+    "mindless"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 324,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "large",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 26
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": -1,
+    "con": 4,
+    "int": -5,
+    "wis": 0,
+    "cha": -5
+  },
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 24,
+    "reflex": 18,
+    "will": 19
+  },
+  "hp": {
+    "value": 175
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10,
+      "note": "creature.stone-bulwark.resistances.0.note"
+    },
+    {
+      "type": "spells",
+      "value": 10,
+      "note": "creature.stone-bulwark.resistances.1.note"
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.stone-bulwark.strikes.fist.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "binding-stone"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.stone-bulwark.strikes.rock.name",
+      "actions": "1",
+      "bonus": 22,
+      "rangeIncrement": 120,
+      "traits": [
+        "brutal",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "binding-stone"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "statuary-aura",
+      "section": "defense",
+      "name": "creature.stone-bulwark.abilities.statuary-aura.name",
+      "traits": [
+        "arcane",
+        "aura",
+        "earth"
+      ],
+      "aura": 20,
+      "text": "creature.stone-bulwark.abilities.statuary-aura.text"
+    },
+    {
+      "id": "binding-stone",
+      "section": "offense",
+      "name": "creature.stone-bulwark.abilities.binding-stone.name",
+      "traits": [
+        "arcane",
+        "earth"
+      ],
+      "text": "creature.stone-bulwark.abilities.binding-stone.text"
+    },
+    {
+      "id": "inexorable-march",
+      "section": "offense",
+      "name": "creature.stone-bulwark.abilities.inexorable-march.name",
+      "actions": "1",
+      "text": "creature.stone-bulwark.abilities.inexorable-march.text"
+    },
+    {
+      "id": "throw-rock",
+      "section": "offense",
+      "name": "creature.stone-bulwark.abilities.throw-rock.name",
+      "ability": "ability.throw-rock",
+      "actions": "1"
+    }
+  ]
+}
