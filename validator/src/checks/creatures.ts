@@ -16,6 +16,9 @@ const list = (value: unknown): Record<string, unknown>[] =>
  * - A Strike's `item` is one of the same creature's `items[].item`: a Strike made with something the
  *   creature does not carry is a promise the record does not keep.
  *
+ * - A ritual a creature performs `heightened` (`rituals.ranks[].rituals[].heightened`) is performed at a rank
+ *   above the rank of the line it stands under: the line says the ritual's own rank, "(5th)" says the
+ *   rank the creature raises it to, and a lower or equal one is a heightening that raises nothing.
  * - A rune (`items[].runes[].item`) is a record of category `rune`, when the dataset has the record, and an
  *   entry's own `item` is not one: a longsword among a creature's runes, or a bare rune among its things,
  *   is a link to the wrong record. A grade is a record of its own (`item.striking-greater`, not a
@@ -53,6 +56,12 @@ export const creaturesCheck: Check = (ds) => {
     list(f.record.strikes).forEach((s, i) => {
       if (typeof s.item === 'string' && !carried.has(s.item)) error(`strikes[${i}].item: "${s.item}" is not among this creature's items`);
     });
+    const rituals = f.record.rituals as Record<string, unknown> | undefined;
+    list(rituals?.ranks).forEach((line, i) => list(line.rituals).forEach((r, j) => {
+      if (typeof r.heightened === 'number' && typeof line.rank === 'number' && r.heightened <= line.rank) {
+        error(`rituals.ranks[${i}].rituals[${j}].heightened: ${r.heightened} is not above the line's rank ${line.rank}`);
+      }
+    }));
     const perception = f.record.perception as Record<string, unknown> | undefined;
     list(perception?.senses).forEach((s, i) => resolve(s.own, `perception.senses[${i}].own`));
     for (const key of ['weaknesses', 'resistances']) {

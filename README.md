@@ -7,7 +7,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
-  school, thesis, package, archetype, ability, creature.
+  school, thesis, package, archetype, ability, creature, ritual.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -183,6 +183,26 @@ cost tokens.
   "animals only"). A spontaneous block's rank may carry `slots`, the "(2
   slots)" the book prints after a rank's last spell; no other block has them.
   Whatever the book prints that is no spell (a ritual, an item) is not here.
+- A `ritual` is a rite of the Rituals chapter (Geas, Collective Memories, Demonic
+  Pact), cast over `cast` ("1 day") for an optional `cost`, with `secondaryCasters`
+  (a number, at least 1; absent means none) beside the primary caster. The
+  `primaryCheck` is an array of `{ skill, rank, note? }` alternatives: the primary
+  caster rolls whichever skill they prefer, needing the proficiency `rank` in it
+  (`note` is a condition the book prints beside the rank, "you must be a demon").
+  The `secondaryChecks` are what the secondary casters roll, each entry a
+  `{ skill }`, a `{ lore }` (the printed name of a Lore, which has no record) or
+  a `{ oneOf }` of two or more of those when the book offers a choice; the
+  outcomes of the checks stay in `text`. `range`, `area`, `targets`, `duration`
+  and `heightened` are the spell's own. A ritual's `rank` is its own rank, 1 to
+  10.
+- A creature's `rituals` is the stat block's Rituals line: the `dc` and, per
+  printed rank, the rituals the creature performs. A line is `{ rank, rituals }`
+  and an entry is `{ ritual }`, a reference to a `ritual` record, or `{ name }`
+  when the dataset has none (a ritual whose Remaster version is printed in a
+  book the dataset does not hold); never both. `heightened` is the rank the
+  stat block raises the ritual to ("geas (5th)" under the 3rd-rank line), always
+  above the rank of its line, which the validator checks; `note` is any other
+  restriction as printed ("see Skeletal Lore").
 - A creature's `perception.senses` entry may also be `{ spell }`: a sense that
   a spell gives the creature (truesight, see the unseen), with the `acuity` and
   `range` the stat block prints.

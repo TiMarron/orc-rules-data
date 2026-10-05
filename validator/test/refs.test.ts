@@ -302,4 +302,24 @@ describe('refs check', () => {
       'perception.senses[0].spell: reference "spell.gone" does not resolve',
     ]);
   });
+  it('resolves the rituals a creature performs like any other id, and flags one the dataset lacks', () => {
+    const creature = (ritual: string) => ({ folder: 'creatures', file: 'creature.x.json', json: record('creature', 'x', { rituals: { dc: 20, ranks: [{ rank: 3, rituals: [{ ritual }] }] } }) });
+    const geas = { folder: 'rituals', file: 'ritual.geas.json', json: record('ritual', 'geas', { rank: 3 }) };
+    expect(refsCheck(loadDataset(writeFixture({ records: [creature('ritual.geas'), geas] })))).toEqual([]);
+    expect(refsCheck(loadDataset(writeFixture({ records: [creature('ritual.atone'), geas] }))).map((i) => i.message)).toEqual([
+      'rituals.ranks[0].rituals[0].ritual: reference "ritual.atone" does not resolve',
+    ]);
+  });
+
+  it('resolves a [[ritual.*]] link in a string and flags a broken one', () => {
+    const root = writeFixture({
+      i18n: { 'trait.flourish.text': 'See [[ritual.geas|Geas]] and [[ritual.nope]].' },
+      records: [
+        { folder: 'traits', file: 'trait.flourish.json', json: trait('flourish') },
+        { folder: 'rituals', file: 'ritual.geas.json', json: record('ritual', 'geas', { rank: 3 }) },
+      ],
+    });
+    expect(refsCheck(loadDataset(root)).map((i) => i.message)).toEqual(['trait.flourish.text: [[ritual.nope]] does not resolve']);
+  });
+
 });

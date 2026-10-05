@@ -44,6 +44,13 @@ const VALID: Record<string, Record<string, unknown>> = {
       { id: 'trample', section: 'offense', name: 'creature.cave-bear.abilities.trample.name', ability: 'ability.trample', actions: '3', text: 'creature.cave-bear.abilities.trample.text' },
     ],
   }),
+  ritual: record('ritual', 'geas', {
+    rank: 3, cast: 'ritual.geas.cast',
+    primaryCheck: [{ skill: 'skill.occultism', rank: 'master' }, { skill: 'skill.religion', rank: 'master' }],
+    secondaryChecks: [{ skill: 'skill.diplomacy' }, { oneOf: [{ skill: 'skill.arcana' }, { lore: 'ritual.geas.secondary-checks.1.1.lore' }] }],
+    range: 'ritual.geas.range', targets: 'ritual.geas.targets', duration: 'ritual.geas.duration',
+    heightened: [{ level: '+1', text: 'ritual.geas.heightened.0' }],
+  }),
   package: record('package', 'fighter', {
     class: 'class.fighter',
     items: [{ item: 'item.scale-mail', count: 1 }, { item: 'item.arrows', count: 2 }],
@@ -992,4 +999,112 @@ describe('type schemas', () => {
     const { text: _, ...rest } = VALID.ability as Record<string, unknown>;
     expect(issuesFor('ability', rest).join('\n')).toContain("must have required property 'text'");
   });
+  describe('rituals', () => {
+    const ritual = () => structuredClone(VALID.ritual) as any;
+    const FULL = () => {
+      const r = ritual();
+      r.cost = 'ritual.geas.cost'; r.secondaryCasters = 2; r.area = 'ritual.geas.area';
+      r.primaryCheck[0].note = 'ritual.geas.primary-check.0.note';
+      r.secondaryChecks = [{ lore: 'ritual.geas.secondary-checks.0.lore' }, { oneOf: [{ skill: 'skill.arcana' }, { skill: 'skill.nature' }, { lore: 'ritual.geas.secondary-checks.1.2.lore' }] }];
+      return r;
+    };
+
+    it('accepts a ritual with every optional field, a condition on a check, a Lore and a choice of three', () => {
+      expect(issuesFor('ritual', FULL())).toEqual([]);
+    });
+
+    it('accepts a ritual with no secondary casters and no secondary checks', () => {
+      const r = ritual();
+      delete r.secondaryChecks;
+      expect(issuesFor('ritual', r)).toEqual([]);
+    });
+
+    it('rejects a rank outside 1 to 10', () => {
+      for (const rank of [0, 11, 3.5, '3']) expect(issuesFor('ritual', { ...ritual(), rank }).join('\n'), String(rank)).toContain('/rank');
+    });
+
+    it('rejects a ritual without text, rank, cast or a primary check', () => {
+      for (const key of ['text', 'rank', 'cast', 'primaryCheck']) {
+        const r = ritual();
+        delete r[key];
+        expect(issuesFor('ritual', r).join('\n'), key).toContain(`must have required property '${key}'`);
+      }
+    });
+
+    it('rejects a cast that is not an i18n key, and zero or no number of secondary casters', () => {
+      expect(issuesFor('ritual', { ...ritual(), cast: '1 day' }).join('\n')).toContain('/cast');
+      expect(issuesFor('ritual', { ...ritual(), cast: { time: 'ritual.geas.cast' } }).join('\n')).toContain('/cast');
+      for (const secondaryCasters of [0, 1.5, '2']) expect(issuesFor('ritual', { ...ritual(), secondaryCasters }).join('\n'), String(secondaryCasters)).toContain('/secondaryCasters');
+    });
+
+    it('rejects an empty primary check, and one without a skill or a rank', () => {
+      expect(issuesFor('ritual', { ...ritual(), primaryCheck: [] }).join('\n')).toContain('/primaryCheck');
+      const bad = [{ rank: 'master' }, { skill: 'skill.religion' }, { skill: 'skill.religion', rank: 'supreme' }, { skill: 'religion', rank: 'master' }, { skill: 'skill.religion', rank: 'master', note: 'you must be a demon' }, { skill: 'skill.religion', rank: 'master', lore: 'ritual.geas.x' }];
+      for (const b of bad) expect(issuesFor('ritual', { ...ritual(), primaryCheck: [b] }).join('\n'), JSON.stringify(b)).toContain('/primaryCheck/0');
+    });
+
+    it('rejects a secondary check that is empty, mixes a skill and a Lore, or is a choice of one or of a choice', () => {
+      expect(issuesFor('ritual', { ...ritual(), secondaryChecks: [] }).join('\n')).toContain('/secondaryChecks');
+      const bad = [
+        {}, { skill: 'skill.arcana', lore: 'ritual.geas.x.lore' }, { skill: 'arcana' }, { lore: 'Underworld Lore' },
+        { oneOf: [{ skill: 'skill.arcana' }] }, { oneOf: [] },
+        { oneOf: [{ skill: 'skill.arcana' }, { oneOf: [{ skill: 'skill.nature' }, { skill: 'skill.occultism' }] }] },
+        { oneOf: [{ skill: 'skill.arcana' }, { skill: 'skill.nature' }], skill: 'skill.occultism' },
+      ];
+      for (const b of bad) expect(issuesFor('ritual', { ...ritual(), secondaryChecks: [b] }).join('\n'), JSON.stringify(b)).toContain('/secondaryChecks/0');
+    });
+
+    it('rejects a heightened line with a level the book cannot print, and a field the schema does not know', () => {
+      expect(issuesFor('ritual', { ...ritual(), heightened: [{ level: '11', text: 'ritual.geas.heightened.0' }] }).join('\n')).toContain('/heightened/0/level');
+      expect(issuesFor('ritual', { ...ritual(), heightened: [{ level: '+1' }] }).join('\n')).toContain("must have required property 'text'");
+      expect(issuesFor('ritual', { ...ritual(), traditions: ['divine'] }).join('\n')).toContain('traditions');
+    });
+  });
+
+  describe('a creature\'s rituals', () => {
+    const withRituals = (rituals: unknown) => { const c = structuredClone(VALID.creature) as any; c.rituals = rituals; return c; };
+    const GOOD = () => ({
+      dc: 26,
+      ranks: [
+        { rank: 1, rituals: [{ ritual: 'ritual.angelic-messenger' }] },
+        { rank: 3, rituals: [{ ritual: 'ritual.geas', heightened: 5 }, { ritual: 'ritual.atone' }] },
+        { rank: 8, rituals: [{ name: 'creature.cave-bear.rituals.ranks.2.rituals.0.name' }] },
+        { rank: 7, rituals: [{ ritual: 'ritual.collective-memories', note: 'creature.cave-bear.rituals.ranks.3.rituals.0.note' }] },
+      ],
+    });
+
+    it('accepts a ritual line with a record, a heightened rank, a printed name and a note', () => {
+      expect(issuesFor('creature', withRituals(GOOD()))).toEqual([]);
+    });
+
+    it('rejects rituals that are not an object, without a DC or without lines, or with an empty line', () => {
+      expect(issuesFor('creature', withRituals([GOOD()])).join('\n')).toContain('/rituals');
+      const { dc: _d, ...noDc } = GOOD();
+      const { ranks: _r, ...noRanks } = GOOD();
+      for (const r of [noDc, noRanks, { ...GOOD(), dc: 0 }, { ...GOOD(), ranks: [] }, { ...GOOD(), ranks: [{ rank: 1, rituals: [] }] }, { ...GOOD(), extra: 1 }]) {
+        expect(issuesFor('creature', withRituals(r)).join('\n'), JSON.stringify(r)).toContain('/rituals');
+      }
+    });
+
+    it('rejects a line rank outside 1 to 10', () => {
+      for (const rank of [0, 11, '3']) {
+        expect(issuesFor('creature', withRituals({ dc: 20, ranks: [{ rank, rituals: [{ ritual: 'ritual.geas' }] }] })).join('\n'), String(rank)).toContain('/rituals/ranks/0/rank');
+      }
+    });
+
+    it('rejects an entry that names both a record and a printed name, or neither, or a record of another type', () => {
+      const bad = [{ ritual: 'ritual.geas', name: 'creature.cave-bear.rituals.ranks.0.rituals.0.name' }, {}, { heightened: 5 }, { ritual: 'spell.geas' }, { ritual: 'geas' }, { name: 'Geas' }];
+      for (const b of bad) {
+        expect(issuesFor('creature', withRituals({ dc: 20, ranks: [{ rank: 3, rituals: [b] }] })).join('\n'), JSON.stringify(b)).toContain('/rituals/ranks/0/rituals/0');
+      }
+    });
+
+    it('rejects a heightened rank the book cannot print, and a note that is not an i18n key', () => {
+      for (const heightened of [1, 11, 5.5, '5']) {
+        expect(issuesFor('creature', withRituals({ dc: 20, ranks: [{ rank: 3, rituals: [{ ritual: 'ritual.geas', heightened }] }] })).join('\n'), String(heightened)).toContain('/heightened');
+      }
+      expect(issuesFor('creature', withRituals({ dc: 20, ranks: [{ rank: 3, rituals: [{ ritual: 'ritual.geas', note: 'see Skeletal Lore' }] }] })).join('\n')).toContain('/note');
+    });
+  });
+
 });

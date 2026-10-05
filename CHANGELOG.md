@@ -27,6 +27,15 @@ major for renamed or removed ids, new required fields and markup changes.
   a Strike's item is among the creature's items, that a rune is a record of
   category `rune` and an entry's own item is not one. Optional additions to the
   creature schema.
+- Rituals, a new record type (`ritual`): rank, cast time, cost, secondary
+  casters, the primary caster's skills with the proficiency each needs, the
+  secondary casters' checks (a skill, a Lore, or a choice between them), range,
+  area, targets, duration and heightened lines. A creature's `rituals`, the
+  ritual line of its stat block: the DC, and under each printed rank the rituals
+  it performs, as a record or, when the dataset has none, by printed name, with
+  the rank it raises one to and any restriction. The validator checks that a
+  ritual performed heightened is raised above the rank of its line. Optional
+  addition to the creature schema.
 
 ### Changed
 

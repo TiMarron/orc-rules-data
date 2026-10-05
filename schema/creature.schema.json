@@ -114,6 +114,27 @@
       ],
       "$comment": "One spellcasting block of a stat block. The three branches are the three shapes the kinds take: a focus block has a name and focus points and no tradition; the other kinds have a tradition; only a spontaneous caster's ranks carry slots."
     },
+    "ritualEntry": {
+      "type": "object", "additionalProperties": false,
+      "oneOf": [
+        { "properties": { "ritual": true }, "required": ["ritual"] },
+        { "properties": { "name": true }, "required": ["name"] }
+      ],
+      "properties": {
+        "ritual": { "$ref": "common.schema.json#/$defs/refRitual", "$comment": "The ritual's record." },
+        "name": { "$ref": "#/$defs/key", "$comment": "The printed name, when the dataset has no record for the ritual (its Remaster version is printed in a book the dataset does not hold)." },
+        "heightened": { "type": "integer", "minimum": 2, "maximum": 10, "$comment": "\"geas (5th)\": the rank the creature performs the ritual at, above the rank of the line the ritual stands under. The validator checks that it is." },
+        "note": { "$ref": "#/$defs/key", "$comment": "A restriction as printed: \"see Skeletal Lore\"." }
+      },
+      "$comment": "A ritual the creature can perform: the ritual's record or, when there is none, its printed name; never both."
+    },
+    "ritualsByRank": {
+      "type": "object", "additionalProperties": false, "required": ["rank", "rituals"],
+      "properties": {
+        "rank": { "$ref": "#/$defs/spellRank", "$comment": "The printed rank of the line (\"3rd\")." },
+        "rituals": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/ritualEntry" } }
+      }
+    },
     "skill": {
       "oneOf": [
         { "type": "object", "additionalProperties": false, "required": ["skill", "mod"], "properties": { "skill": { "$ref": "common.schema.json#/$defs/refSkill" }, "mod": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } } },
@@ -271,6 +292,14 @@
         "strikes": { "type": "array", "items": { "$ref": "#/$defs/strike" } },
         "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/carried" }, "$comment": "What the creature carries, in the order the stat block's Items line prints it. Absent when the line is." },
         "spellcasting": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellBlock" }, "$comment": "The stat block's spell blocks in print order. Absent for a creature that casts none." },
+        "rituals": {
+          "type": "object", "additionalProperties": false, "required": ["dc", "ranks"],
+          "properties": {
+            "dc": { "type": "integer", "minimum": 1 },
+            "ranks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/ritualsByRank" } }
+          },
+          "$comment": "The stat block's Rituals line: the DC of the rituals the creature performs and, per printed rank, which they are. Absent for a creature that performs none."
+        },
         "abilities": { "type": "array", "items": { "$ref": "#/$defs/ability" } }
       }
     }
