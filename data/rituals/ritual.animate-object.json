@@ -29,5 +29,5 @@
   ],
   "range": "ritual.animate-object.range",
   "targets": "ritual.animate-object.targets",
-  "editNote": "Compared field by field and word by word with page 390: rank, rarity, cast, cost, secondary casters, both checks, range, target, description and the four outcomes all match. The table is the Creature Creation Rituals table of page 390, which the book prints once beside the three creature-creating rituals and the source repeats inside each: eighteen rows of creature level, ritual rank required and cost, from level -1 or 0 (rank 2, 15 gp) through level 9 (rank 6, 2,100 gp) to level 17 (rank 10, 45,000 gp). The dataset markup carries no tables, so the level cap and the cost the ritual refers to are not in the record; the omission is recorded rather than left silent."
+  "editNote": "Compared field by field and word by word with page 390; everything matches. The Creature Creation Rituals table of page 390, which the book prints once beside the three creature-creating rituals, is restated as a list after the opening paragraph: eighteen rows of creature level, ritual rank required and cost, read from the page. The dataset markup carries no tables."
 }
