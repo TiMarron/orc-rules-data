@@ -102,13 +102,6 @@ export const flagsCheck: Check = (ds) => {
         issues.push({ level: 'error', file: f.path, message: 'class and ancestry records must be reviewed, not "auto"' });
       }
     }
-    if (f.record.type === 'background') {
-      const skills = Array.isArray(f.record.skills) ? f.record.skills : [];
-      const choices = Array.isArray(f.record.choices) ? f.record.choices : [];
-      if (skills.length === 0 && choices.length === 0) {
-        issues.push({ level: 'error', file: f.path, message: 'background must grant at least one skill, through "skills" or through "choices"' });
-      }
-    }
   }
   return issues;
 };

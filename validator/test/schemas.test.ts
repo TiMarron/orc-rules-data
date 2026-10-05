@@ -177,6 +177,25 @@ describe('type schemas', () => {
     expect(issues[0]).toContain('/weapon/damage/dice must match pattern');
   });
 
+  it('accepts a weapon whose damage type is a choice, as a modular weapon is printed', () => {
+    const modular = { ...WEAPON, weapon: { ...(WEAPON.weapon as object), damage: { dice: '1d6', types: ['bludgeoning', 'piercing', 'slashing'] } } };
+    expect(issuesFor('item', modular)).toEqual([]);
+  });
+
+  it('rejects a weapon damage with both a type and types, and one with neither', () => {
+    const both = { ...WEAPON, weapon: { ...(WEAPON.weapon as object), damage: { dice: '1d6', type: 'piercing', types: ['bludgeoning', 'piercing'] } } };
+    expect(issuesFor('item', both).some((m) => m.includes('/weapon/damage must match exactly one schema in oneOf'))).toBe(true);
+    const neither = { ...WEAPON, weapon: { ...(WEAPON.weapon as object), damage: { dice: '1d6' } } };
+    expect(issuesFor('item', neither).some((m) => m.includes('/weapon/damage must match exactly one schema in oneOf'))).toBe(true);
+  });
+
+  it('rejects weapon damage types that hold one type, repeat one, or name none the dataset knows', () => {
+    const withTypes = (types: string[]) => ({ ...WEAPON, weapon: { ...(WEAPON.weapon as object), damage: { dice: '1d6', types } } });
+    expect(issuesFor('item', withTypes(['piercing'])).some((m) => m.includes('/weapon/damage/types must NOT have fewer than 2 items'))).toBe(true);
+    expect(issuesFor('item', withTypes(['piercing', 'piercing'])).some((m) => m.includes('/weapon/damage/types must NOT have duplicate items'))).toBe(true);
+    expect(issuesFor('item', withTypes(['piercing', 'modular'])).some((m) => m.includes('/weapon/damage/types/1 must be equal to one of the allowed values'))).toBe(true);
+  });
+
   it('accepts an envelope with no "text"', () => {
     expect(issuesFor('trait', { ...VALID.trait, text: undefined })).toEqual([]);
   });
@@ -559,9 +578,77 @@ describe('type schemas', () => {
     expect(issues[0]).toContain('/heightened/0/level must match pattern');
   });
 
-  it('rejects a background skills list with more than one entry with exactly one issue', () => {
-    const issues = issuesFor('background', { ...VALID.background, skills: ['skill.intimidation', 'skill.deception'] });
+  it('accepts a background trained in two skills, as the feral child is', () => {
+    expect(issuesFor('background', { ...VALID.background, skills: ['skill.nature', 'skill.survival'] })).toEqual([]);
+  });
+
+  it('rejects a background skills list with more than two entries with exactly one issue', () => {
+    const issues = issuesFor('background', { ...VALID.background, skills: ['skill.intimidation', 'skill.deception', 'skill.nature'] });
     expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('/skills must NOT have more than 2 items');
+  });
+
+  it('accepts a background with no lore and no feat, as the rare ones are printed', () => {
+    const { lore: _lore, feat: _feat, ...bare } = VALID.background;
+    expect(issuesFor('background', bare)).toEqual([]);
+  });
+
+  it('accepts a background with a feat and no lore, and one with a lore and no feat', () => {
+    const { lore: _lore, ...noLore } = VALID.background;
+    const { feat: _feat, ...noFeat } = VALID.background;
+    expect(issuesFor('background', noLore)).toEqual([]);
+    expect(issuesFor('background', noFeat)).toEqual([]);
+  });
+
+  it('still rejects a background without boosts or without skills', () => {
+    const { boosts: _boosts, ...noBoosts } = VALID.background;
+    const { skills: _skills, ...noSkills } = VALID.background;
+    expect(issuesFor('background', noBoosts).some((m) => m.includes("must have required property 'boosts'"))).toBe(true);
+    expect(issuesFor('background', noSkills).some((m) => m.includes("must have required property 'skills'"))).toBe(true);
+  });
+
+  it('accepts a background with one boost and one with three', () => {
+    expect(issuesFor('background', { ...VALID.background, boosts: [['str', 'dex', 'con']] })).toEqual([]);
+    expect(issuesFor('background', { ...VALID.background, boosts: ['free', 'free', 'free'] })).toEqual([]);
+  });
+
+  it('rejects a background with no boosts and one with four, each with exactly one issue', () => {
+    const none = issuesFor('background', { ...VALID.background, boosts: [] });
+    expect(none).toHaveLength(1);
+    expect(none[0]).toContain('/boosts must NOT have fewer than 1 items');
+    const four = issuesFor('background', { ...VALID.background, boosts: ['free', 'free', 'free', 'free'] });
+    expect(four).toHaveLength(1);
+    expect(four[0]).toContain('/boosts must NOT have more than 3 items');
+  });
+
+  it('accepts a background grants entry that is an ability, a feat, a spell or an item', () => {
+    const grant = { name: 'background.warrior.grants.0.name', text: 'background.warrior.grants.0.text' };
+    for (const extra of [{}, { feat: 'feat.additional-lore' }, { spell: 'spell.guidance' }, { item: 'item.clan-dagger' }]) {
+      expect(issuesFor('background', { ...VALID.background, grants: [{ ...grant, ...extra }] })).toEqual([]);
+    }
+  });
+
+  it('rejects an empty background grants list with exactly one issue', () => {
+    const issues = issuesFor('background', { ...VALID.background, grants: [] });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('/grants must NOT have fewer than 1 items');
+  });
+
+  it('rejects a background grants entry without its name or its text', () => {
+    const noText = issuesFor('background', { ...VALID.background, grants: [{ name: 'background.warrior.grants.0.name' }] });
+    expect(noText.some((m) => m.includes("must have required property 'text'"))).toBe(true);
+    const noName = issuesFor('background', { ...VALID.background, grants: [{ text: 'background.warrior.grants.0.text' }] });
+    expect(noName.some((m) => m.includes("must have required property 'name'"))).toBe(true);
+  });
+
+  it('rejects a background grants entry with a property the schema does not know, or a feat that is not a feat', () => {
+    const grant = { name: 'background.warrior.grants.0.name', text: 'background.warrior.grants.0.text' };
+    const unknown = issuesFor('background', { ...VALID.background, grants: [{ ...grant, sense: 'low-light-vision' }] });
+    expect(unknown.some((m) => m.includes('must NOT have additional properties'))).toBe(true);
+    const notFeat = issuesFor('background', { ...VALID.background, grants: [{ ...grant, feat: 'spell.guidance' }] });
+    expect(notFeat.some((m) => m.includes('/grants/0/feat must match pattern'))).toBe(true);
+    const list = issuesFor('background', { ...VALID.background, feat: ['feat.diehard', 'feat.additional-lore'] });
+    expect(list.some((m) => m.includes('/feat must be string'))).toBe(true);
   });
 
   it('accepts an empty background skills list when choices supply a skill', () => {
@@ -574,9 +661,8 @@ describe('type schemas', () => {
     expect(issuesFor('background', withChoice)).toEqual([]);
   });
 
-  it('accepts a background with empty skills and no choices at the schema level', () => {
-    // The "must grant at least one skill" invariant is a cross-field rule enforced by
-    // flagsCheck (see flags.test.ts), not JSON Schema — mirrors the class/ancestry pattern.
+  it('accepts a background with empty skills and no choices', () => {
+    // The amnesiac trains no skill at all, so no rule anywhere asks for one.
     expect(issuesFor('background', { ...VALID.background, skills: [] })).toEqual([]);
   });
 

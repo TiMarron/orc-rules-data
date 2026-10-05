@@ -314,13 +314,7 @@ describe('flags check', () => {
     ).toEqual([]);
   });
 
-  it('rejects a background with an empty skills list and no choices', () => {
-    expect(backgroundIssuesFor(record('background', 'x', { skills: [] }))).toEqual([
-      {
-        level: 'error',
-        file: 'data/backgrounds/background.x.json',
-        message: 'background must grant at least one skill, through "skills" or through "choices"',
-      },
-    ]);
+  it('accepts a background with an empty skills list and no choices, as the amnesiac trains no skill', () => {
+    expect(backgroundIssuesFor(record('background', 'x', { skills: [] }))).toEqual([]);
   });
 });

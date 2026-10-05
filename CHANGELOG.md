@@ -4,6 +4,30 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Changed
+
+- A background is stored as the rare ones are printed, and a weapon's damage
+  type may be a choice. `background.lore` and `background.feat` are no longer
+  required; `background.boosts` may hold one to three entries instead of
+  exactly two, and `background.skills` up to two instead of at most one;
+  `weapon.damage` may carry `types` (two or more damage types, one of which the
+  wielder chooses) instead of `type`. The validator no longer requires a
+  background to grant a skill. Published records are unchanged, but a consumer
+  that assumed the old shape — that every background has a `lore` and a `feat`,
+  exactly two boosts and at most one skill, or that every weapon has
+  `damage.type` — must handle the new one. Fields that were required are now
+  optional and a field that was always present may be replaced by another, so
+  by the README's Versioning section this is a major-level change.
+
+### Added
+
+- `background.grants`: what a background gives beyond boosts, skills, a Lore
+  and its one feat, in the shape of `ancestry.grants` — a `name` and a `text`,
+  and optionally a `feat`, a `spell` or an `item` the entry points at. Optional
+  addition to the background schema.
+
 ## 0.6.0 — 2026-10-05
 
 ### Added
