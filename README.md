@@ -119,9 +119,27 @@ cost tokens.
   Chalk) carries no `text` at all rather than an empty one.
 - `weapon.damage.dice` may be a plain positive integer (e.g. `"1"`) instead of
   `NdM` for a weapon whose damage is a flat number, not a die roll.
+- `weapon.damage` is `{ dice, type }`, or `{ dice, types }` for a weapon whose
+  damage type is a choice: a modular weapon ("1d6 modular", trait "modular B,
+  P, or S") carries `types`, an array of two or more distinct damage types in
+  the order printed, and no `type`. Exactly one of the two is present, so a
+  consumer must not assume `damage.type` exists.
+- A background carries what the book prints for it and nothing else. `boosts`
+  holds one to three entries (two for an ordinary background; the feral child
+  has one, the amnesiac three) and `skills` up to two. `lore` and `feat` may be
+  absent: an ordinary background trains one Lore and gives one skill feat, but
+  several rare backgrounds print neither, or only one of them, and the record
+  does not invent what the page lacks. A consumer must handle both being
+  missing.
 - A background's trained skill may instead be a choice, in the same shape as a
-  class's `proficiencies.skills.choices`; a background must grant at least one
-  skill through `skills` or through `choices`.
+  class's `proficiencies.skills.choices`. A background may train no skill at
+  all (the amnesiac): `skills` is then empty and there are no `choices`.
+- `background.grants` is what a background gives beyond boosts, skills, a Lore
+  and its one feat, in the shape of `ancestry.grants`: each entry has a `name`
+  and a `text`, and may point at a record with `feat` (a further feat; `feat`
+  itself stays a single reference), `spell` (an innate spell) or `item`. An
+  entry with no reference is an ability printed in the background itself — a
+  reaction, a free action, senses.
 - A `creature` is a stat block as structure. Its numbers are plain fields
   (`level`, `attributes`, `ac`, `saves`, `hp`, `speeds`, `perception`); a
   qualifier the book prints beside a number ("13 when broken", "+2 status to

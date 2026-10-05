@@ -62,10 +62,21 @@
             "damage": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["dice", "type"],
+              "required": ["dice"],
+              "oneOf": [
+                { "properties": { "type": true }, "required": ["type"] },
+                { "properties": { "types": true }, "required": ["types"] }
+              ],
               "properties": {
                 "dice": { "type": "string", "pattern": "^([1-9][0-9]*d(4|6|8|10|12)|[1-9][0-9]*)$" },
-                "type": { "$ref": "common.schema.json#/$defs/damageType" }
+                "type": { "$ref": "common.schema.json#/$defs/damageType" },
+                "types": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": { "$ref": "common.schema.json#/$defs/damageType" },
+                  "uniqueItems": true,
+                  "$comment": "The damage is of one of these types, as a modular weapon's is (\"1d6 modular\", with the trait \"modular B, P, or S\"). A weapon's damage has `type` or `types`, never both."
+                }
               }
             },
             "hands": { "enum": ["1", "2", "1+"] },
