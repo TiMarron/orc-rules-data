@@ -1,0 +1,173 @@
+{
+  "id": "creature.herexen",
+  "type": "creature",
+  "name": "creature.herexen.name",
+  "traits": [
+    "undead",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 1,
+    "int": 0,
+    "wis": 4,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.religious-symbol",
+      "name": "creature.herexen.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 8,
+    "will": 10
+  },
+  "hp": {
+    "value": 30,
+    "note": "creature.herexen.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.herexen.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "heretics-smite"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "final-blasphemy",
+      "section": "defense",
+      "name": "creature.herexen.abilities.final-blasphemy.name",
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "text": "creature.herexen.abilities.final-blasphemy.text"
+    },
+    {
+      "id": "heretics-smite",
+      "section": "offense",
+      "name": "creature.herexen.abilities.heretics-smite.name",
+      "traits": [
+        "divine",
+        "unholy"
+      ],
+      "text": "creature.herexen.abilities.heretics-smite.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "divine",
+      "dc": 18,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.harm",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.herexen.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 18,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.deaths-call"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: a deity's name in an item's printed name is dropped. Page 195 prints a defiled religious symbol of the creature's former deity; the entry is the religious symbol item under its printed name without the deity."
+}

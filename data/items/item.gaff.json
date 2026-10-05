@@ -1,0 +1,35 @@
+{
+  "id": "item.gaff",
+  "type": "item",
+  "name": "item.gaff.name",
+  "traits": [
+    "trip",
+    "versatile"
+  ],
+  "traitValues": {
+    "versatile": "piercing"
+  },
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 164,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.gaff.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "club",
+    "damage": {
+      "dice": "1d6",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "The source's description comes from another book. Replaced with the sentence page 164 prints for the weapon; its statistics there (common martial, club group, 1d6 bludgeoning, 1 Bulk, one hand, trip and versatile P, 1 gp) match the record."
+}

@@ -1,0 +1,402 @@
+{
+  "id": "creature.dryad-queen",
+  "type": "creature",
+  "name": "creature.dryad-queen.name",
+  "traits": [
+    "fey",
+    "nymph",
+    "plant",
+    "wood"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 247,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 13,
+  "size": "medium",
+  "perception": {
+    "mod": 25,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven",
+    "fey",
+    "muan"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 23,
+      "note": "creature.dryad-queen.skills.2.note"
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 30
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 30
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 27
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 24
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 28
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 25
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 6,
+    "con": 6,
+    "int": 4,
+    "wis": 4,
+    "cha": 8
+  },
+  "ac": {
+    "value": 35
+  },
+  "saves": {
+    "fortitude": 24,
+    "reflex": 26,
+    "will": 24
+  },
+  "hp": {
+    "value": 220
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dryad-queen.strikes.branch.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d12+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dryad-queen.strikes.leaves.name",
+      "actions": "1",
+      "bonus": 27,
+      "rangeIncrement": 60,
+      "traits": [
+        "plant",
+        "primal"
+      ],
+      "damage": [
+        {
+          "dice": "3d8+6",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "nature-empathy",
+      "section": "top",
+      "name": "creature.dryad-queen.abilities.nature-empathy.name",
+      "text": "creature.dryad-queen.abilities.nature-empathy.text"
+    },
+    {
+      "id": "tied-to-the-land",
+      "section": "top",
+      "name": "creature.dryad-queen.abilities.tied-to-the-land.name",
+      "text": "creature.dryad-queen.abilities.tied-to-the-land.text"
+    },
+    {
+      "id": "nymphs-beauty",
+      "section": "defense",
+      "name": "creature.dryad-queen.abilities.nymphs-beauty.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "incapacitation",
+        "mental",
+        "primal",
+        "visual"
+      ],
+      "text": "creature.dryad-queen.abilities.nymphs-beauty.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.dryad-queen.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "primal"
+      ]
+    },
+    {
+      "id": "focus-beauty",
+      "section": "offense",
+      "name": "creature.dryad-queen.abilities.focus-beauty.name",
+      "actions": "1",
+      "traits": [
+        "emotion",
+        "incapacitation",
+        "mental",
+        "primal",
+        "visual"
+      ],
+      "text": "creature.dryad-queen.abilities.focus-beauty.text"
+    },
+    {
+      "id": "inspiration",
+      "section": "offense",
+      "name": "creature.dryad-queen.abilities.inspiration.name",
+      "actions": "3",
+      "traits": [
+        "emotion",
+        "mental",
+        "primal"
+      ]
+    },
+    {
+      "id": "tree-meld",
+      "section": "offense",
+      "name": "creature.dryad-queen.abilities.tree-meld.name",
+      "actions": "2",
+      "traits": [
+        "primal"
+      ],
+      "text": "creature.dryad-queen.abilities.tree-meld.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 35,
+      "attack": 25,
+      "cantrips": {
+        "rank": 7,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.stabilize"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.fleet-step"
+            },
+            {
+              "spell": "spell.gust-of-wind"
+            },
+            {
+              "spell": "spell.pest-form"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.animal-messenger"
+            },
+            {
+              "spell": "spell.clear-mind"
+            },
+            {
+              "spell": "spell.revealing-light"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.earthbind"
+            },
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.wall-of-thorns"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.mountain-resilience"
+            },
+            {
+              "spell": "spell.resist-energy"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.banishment"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.howling-blizzard"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.chain-lightning"
+            },
+            {
+              "spell": "spell.cursed-metamorphosis"
+            },
+            {
+              "spell": "spell.tangling-creepers"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.regenerate"
+            },
+            {
+              "spell": "spell.summon-plant-or-fungus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 35,
+      "attack": 25,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "atWill": true
+            },
+            {
+              "spell": "spell.entangling-flora",
+              "atWill": true
+            },
+            {
+              "spell": "spell.shape-wood",
+              "atWill": true
+            },
+            {
+              "spell": "spell.suggestion",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.natures-pathway",
+              "count": 3
+            },
+            {
+              "spell": "spell.one-with-plants",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.impaling-briars"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 247 prints \"Crafting +23 (+25 woodworking)\"; the source omits the parenthesis and the errata does not touch it."
+}

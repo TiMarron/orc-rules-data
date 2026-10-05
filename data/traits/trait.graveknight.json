@@ -1,0 +1,16 @@
+{
+  "id": "trait.graveknight",
+  "type": "trait",
+  "name": "trait.graveknight.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 178,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "trait.graveknight.text",
+  "editNote": "The source has no description for this trait. The text is the family's own opening sentence, which page 178 prints; the page is set to it."
+}

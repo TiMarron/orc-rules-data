@@ -1,0 +1,118 @@
+{
+  "id": "creature.ogre-warrior",
+  "type": "creature",
+  "name": "creature.ogre-warrior.name",
+  "traits": [
+    "giant",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 250,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": -1,
+    "con": 4,
+    "int": -2,
+    "wis": 0,
+    "cha": -2
+  },
+  "items": [
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.javelin",
+      "count": 6
+    },
+    {
+      "item": "item.ogre-hook"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 6,
+    "will": 5
+  },
+  "hp": {
+    "value": 50
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ogre-warrior.strikes.ogre-hook.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "deadly",
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d10+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.ogre-hook"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.ogre-warrior.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": []
+}

@@ -1,0 +1,154 @@
+{
+  "id": "creature.ogre-boss",
+  "type": "creature",
+  "name": "creature.ogre-boss.name",
+  "traits": [
+    "giant",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 251,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "large",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 0,
+    "con": 4,
+    "int": 0,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.breastplate"
+    },
+    {
+      "item": "item.javelin",
+      "count": 6
+    },
+    {
+      "item": "item.ogre-hook",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 12,
+    "will": 15
+  },
+  "hp": {
+    "value": 130
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ogre-boss.strikes.ogre-hook.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "deadly",
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d10+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.ogre-hook"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.ogre-boss.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.ogre-boss.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "bellowing-command",
+      "section": "offense",
+      "name": "creature.ogre-boss.abilities.bellowing-command.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.ogre-boss.abilities.bellowing-command.text"
+    },
+    {
+      "id": "sweeping-hook",
+      "section": "offense",
+      "name": "creature.ogre-boss.abilities.sweeping-hook.name",
+      "actions": "reaction",
+      "trigger": "creature.ogre-boss.abilities.sweeping-hook.trigger",
+      "text": "creature.ogre-boss.abilities.sweeping-hook.text"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "id": "creature.graveknight",
+  "type": "creature",
+  "name": "creature.graveknight.name",
+  "traits": [
+    "graveknight",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 179,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 19,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 22
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 19
+    },
+    {
+      "lore": "creature.graveknight.lore.3",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 4,
+    "con": 4,
+    "int": 2,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.full-plate",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    },
+    {
+      "item": "item.greatsword"
+    }
+  ],
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 19,
+    "will": 18
+  },
+  "hp": {
+    "value": 175,
+    "note": "creature.graveknight.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "cold",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.graveknight.strikes.frost-greatsword.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "cold",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d12+10",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d6",
+          "type": "cold"
+        }
+      ],
+      "item": "item.greatsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.graveknight.strikes.frost-fist.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "cold",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+10",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "cold"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.graveknight.strikes.frost-composite-longbow.name",
+      "actions": "1",
+      "bonus": 21,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "cold",
+        "deadly",
+        "magical",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "cold"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sacrilegious-aura",
+      "section": "defense",
+      "name": "creature.graveknight.abilities.sacrilegious-aura.name",
+      "text": "creature.graveknight.abilities.sacrilegious-aura.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.graveknight.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "devastating-blast",
+      "section": "offense",
+      "name": "creature.graveknight.abilities.devastating-blast.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "cold"
+      ],
+      "text": "creature.graveknight.abilities.devastating-blast.text"
+    },
+    {
+      "id": "graveknights-curse",
+      "section": "offense",
+      "name": "creature.graveknight.abilities.graveknights-curse.name",
+      "text": "creature.graveknight.abilities.graveknights-curse.text"
+    },
+    {
+      "id": "phantom-mount",
+      "section": "offense",
+      "name": "creature.graveknight.abilities.phantom-mount.name",
+      "actions": "3",
+      "traits": [
+        "arcane"
+      ],
+      "text": "creature.graveknight.abilities.phantom-mount.text"
+    },
+    {
+      "id": "weapon-master",
+      "section": "offense",
+      "name": "creature.graveknight.abilities.weapon-master.name"
+    }
+  ],
+  "editNote": "The page does not print the frost fist Strike the record has: the errata for page 179 says to change the fist Strike to \"Melee [one-action] frost fist +24 (agile, cold, magical), Damage 2d6+10 bludgeoning plus 1d6 cold\", and the record's Strike is exactly that, so the record stands."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "item.ogre-hook",
+  "type": "item",
+  "name": "item.ogre-hook.name",
+  "traits": [
+    "deadly",
+    "trip"
+  ],
+  "traitValues": {
+    "deadly": "d10"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 251,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.ogre-hook.text",
+  "level": 0,
+  "priceCp": 100,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "pick",
+    "damage": {
+      "dice": "1d10",
+      "type": "piercing"
+    }
+  }
+}
