@@ -971,6 +971,116 @@ describe('type schemas', () => {
     expect(issuesFor('creature', c).join('\n')).toContain('/perception/senses/0');
   });
 
+  it('accepts a damage part with a choice of type, a note, and the persistent and splash parts that go with it', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].damage = [
+      { dice: '2d12', types: ['bludgeoning', 'piercing', 'slashing'], note: 'creature.cave-bear.strikes.claw.damage.0.note' },
+      { dice: '1d6', types: ['acid', 'cold', 'fire'] },
+      { dice: '1', types: ['acid', 'cold', 'fire'], persistent: true, note: 'creature.cave-bear.strikes.claw.damage.2.note' },
+      { dice: '1', types: ['acid', 'cold', 'fire'], splash: true, note: 'creature.cave-bear.strikes.claw.damage.3.note' },
+      { dice: '1d4', type: 'spirit', note: 'creature.cave-bear.strikes.claw.damage.4.note' },
+    ];
+    expect(issuesFor('creature', c)).toEqual([]);
+  });
+
+  it('rejects a damage part that has both a type and types, neither, one type in types, a repeated one, an unknown one, or a note that is not a key', () => {
+    const c = structuredClone(VALID.creature) as any;
+    for (const bad of [
+      { dice: '2d6', type: 'fire', types: ['acid', 'cold'] },
+      { dice: '2d6' },
+      { dice: '2d6', types: ['fire'] },
+      { dice: '2d6', types: [] },
+      { dice: '2d6', types: ['fire', 'fire'] },
+      { dice: '2d6', types: ['fire', 'lightning'] },
+      { dice: '2d6', types: 'fire' },
+      { types: ['acid', 'cold'] },
+      { dice: '2d6', type: 'fire', note: 'when it burns' },
+      { dice: '2d6', type: 'fire', text: 'creature.cave-bear.strikes.claw.damage.0.note' },
+    ]) {
+      c.strikes[0].damage = [bad];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/strikes/0/damage/0');
+    }
+  });
+
+  it('accepts a damage item that is a choice between two or more plain parts, and rejects a choice of one, an empty one, a nested one, a sibling property, or a bad alternative', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].damage = [
+      { dice: '3d6', type: 'fire' },
+      { choice: [{ dice: '1d6', type: 'vitality' }, { dice: '1d6', type: 'void' }] },
+      { choice: [{ dice: '1d6', types: ['acid', 'cold'] }, { dice: '1d4', type: 'bleed', persistent: true }, { dice: '1', type: 'fire', splash: true, note: 'creature.cave-bear.strikes.claw.damage.1.choice.2.note' }] },
+    ];
+    expect(issuesFor('creature', c)).toEqual([]);
+    const pair = [{ dice: '1d6', type: 'vitality' }, { dice: '1d6', type: 'void' }];
+    for (const bad of [
+      { choice: [pair[0]] },
+      { choice: [] },
+      { choice: [pair[0], { choice: pair }] },
+      { choice: [pair[0], {}] },
+      { choice: [pair[0], { dice: '1d6', type: 'lightning' }] },
+      { choice: pair, dice: '1d6' },
+      { choice: pair, type: 'fire' },
+      { choice: pair, note: 'creature.cave-bear.strikes.claw.damage.0.note' },
+    ]) {
+      c.strikes[0].damage = [bad];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/strikes/0/damage/0');
+    }
+  });
+
+  it('accepts `instead: true` on an own or universal ability effect, and rejects it on text, when false, or not a boolean', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].effects = [{ own: 'mauler', instead: true }, { ability: 'ability.grab', instead: true }, { own: 'mauler', instead: true, text: 'creature.cave-bear.strikes.claw.effects.2' }];
+    expect(issuesFor('creature', c)).toEqual([]);
+    for (const bad of [{ own: 'mauler', instead: false }, { own: 'mauler', instead: 'yes' }, { text: 'creature.cave-bear.strikes.claw.effects.0', instead: true }, { item: 'item.darkening-poison', instead: true }, { choice: [{ own: 'mauler' }, { own: 'rush' }], instead: true }]) {
+      c.strikes[0].effects = [bad];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/strikes/0/effects/0');
+    }
+  });
+
+  it('accepts an effect that is an item, with text, alone or inside a choice, and rejects one with a bad item or another name beside it', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.strikes[0].effects = [
+      { item: 'item.darkening-poison' },
+      { item: 'item.lethargy-poison', text: 'creature.cave-bear.strikes.claw.effects.1' },
+      { choice: [{ own: 'mauler' }, { item: 'item.spider-venom' }] },
+    ];
+    expect(issuesFor('creature', c)).toEqual([]);
+    for (const bad of [{ item: 'darkening-poison' }, { item: 'spell.heal' }, { item: 'item.darkening-poison', own: 'mauler' }, { item: 'item.darkening-poison', ability: 'ability.grab' }, { item: 'item.darkening-poison', text: 'one dose' }, { choice: [{ item: 'item.spider-venom' }] }]) {
+      c.strikes[0].effects = [bad];
+      expect(issuesFor('creature', c).join('\n'), JSON.stringify(bad)).toContain('/strikes/0/effects/0');
+    }
+  });
+
+  it('accepts immunitiesNote, with immunities or alone, and rejects one that is not a key or is empty', () => {
+    const c = structuredClone(VALID.creature) as any;
+    c.immunities = ['electricity'];
+    c.immunitiesNote = 'creature.cave-bear.immunities.note';
+    expect(issuesFor('creature', c)).toEqual([]);
+    delete c.immunities;
+    expect(issuesFor('creature', c)).toEqual([]);
+    for (const bad of ['see lightning drinker', '', 3]) {
+      c.immunitiesNote = bad;
+      expect(issuesFor('creature', c).join('\n'), String(bad)).toContain('/immunitiesNote');
+    }
+    c.immunitiesNote = 'creature.cave-bear.immunities.note';
+    c.immunities = [];
+    expect(issuesFor('creature', c).join('\n')).toContain('/immunities');
+  });
+
+  it('accepts a spell entry that is only a name, and rejects one that also has a spell, a count, at will, a note, or no key', () => {
+    const entry = (e: unknown) => withBlocks([{ kind: 'innate', tradition: 'divine', dc: 20, ranks: [{ rank: 2, spells: [{ spell: 'spell.heal' }, e] }] }]);
+    expect(issuesFor('creature', entry({ name: 'creature.cave-bear.spellcasting.0.ranks.0.1.name' }))).toEqual([]);
+    for (const bad of [
+      { name: 'creature.cave-bear.spellcasting.0.ranks.0.1.name', spell: 'spell.heal' },
+      { name: 'creature.cave-bear.spellcasting.0.ranks.0.1.name', count: 2 },
+      { name: 'creature.cave-bear.spellcasting.0.ranks.0.1.name', atWill: true },
+      { name: 'creature.cave-bear.spellcasting.0.ranks.0.1.name', note: 'creature.cave-bear.spellcasting.0.ranks.0.1.note' },
+      { name: 'one spell' },
+      {},
+    ]) {
+      expect(issuesFor('creature', entry(bad)).join('\n'), JSON.stringify(bad)).toContain('/spellcasting/0');
+    }
+  });
+
   it('rejects damage dice that are not NdM, NdM±K or a flat number', () => {
     const c = structuredClone(VALID.creature) as any;
     c.strikes[0].damage = [{ dice: 'lots', type: 'slashing' }];

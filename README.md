@@ -136,16 +136,27 @@ cost tokens.
   (a parameter such as reach in `traitValues`, a ranged Strike's distance in
   `range` or `rangeIncrement`, its `reload`) and its `damage` parts as
   `{ dice, type }` (`persistent: true` for persistent damage, `splash: true`
-  for splash damage). `effects` is what the Strike does besides damage, each
-  entry exactly one of `{ ability }` (a universal ability), `{ own }` (one of
-  this creature's abilities, by its `id`), `{ text }` or `{ choice }`. An
-  `{ ability }` or `{ own }` effect may carry `text` too, when the stat block
-  prints more than the ability's own name: "Improved Grab" (one universal
-  record covers Improved Grab, Knockdown and Push), "Push 10 feet", or the
-  damage printed beside an own ability ("2d6 energy damage (see draconic
-  bite)"). A `{ choice }` is an array of two or more of those plain effects
-  (never another choice) and means the creature picks one when the Strike hits
-  ("Grab or Knockdown"). The book prints a precious
+  for splash damage). A part has `type` or, when the book offers a choice of
+  type ("2d12 bludgeoning, piercing, or slashing"), `types`: an array of two or
+  more distinct damage types, the one chosen when the Strike is made. A part
+  may carry a `note`, a qualification as printed that the import does not read
+  ("depending on object", "of the same type", "if the target is undead", "or
+  2d4 spirit vs. an unholy target"). A `damage` entry may also be `{ choice }`:
+  two or more plain parts (never another choice) of which the Strike deals one
+  ("1d6 vitality or 1d6 void"). `effects` is what the Strike does besides
+  damage, each entry exactly one of `{ ability }` (a universal ability), `{ own }`
+  (one of this creature's abilities, by its `id`), `{ item }` (an item the
+  Strike delivers, a poison or a venom: "plus lethargy poison"), `{ text }` or
+  `{ choice }`. An `{ ability }`, `{ own }` or `{ item }` effect may carry `text`
+  too, when the stat block prints more than the name: "Improved Grab" (one
+  universal record covers Improved Grab, Knockdown and Push), "Push 10 feet",
+  or the damage printed beside an own ability ("2d6 energy damage (see draconic
+  bite)"). An `{ ability }` or `{ own }` effect may be `instead: true`: the
+  damage line offers it in place of the damage ("1d8 piercing or bola bolt"),
+  so the Strike deals either the damage or what the ability says; the validator
+  checks that the Strike has damage. A `{ choice }` is an array of two or more
+  of those plain effects (never another choice) and means the creature picks
+  one when the Strike hits ("Grab or Knockdown"). The book prints a precious
   material among a Strike's traits ("cold iron"); it is not a trait and goes in
   the Strike's `material`, the same slug a weakness or an exception names.
 - A creature's `resistances` and `weaknesses` are `{ type, value }` entries.
@@ -167,6 +178,11 @@ cost tokens.
   printed with; its `text` is the creature's own parameters (a DC, a size).
 - An `ability` is a universal monster ability — Grab, Darkvision, Trample —
   defined once and pointed at by every creature that has it.
+- A creature's `immunities` are slugs. What the Immunities line prints that is
+  not a plain name goes in `immunitiesNote`, as printed: a parenthesis ("electricity
+  (see lightning drinker)": the name is also in `immunities`) or a clause
+  ("effects that would transform their body or soul to an undead": only the
+  note, and `immunities` may then be absent).
 - A creature's `languages` are identifiers, as an ancestry's are; what the book
   prints after them (telepathy, "can't speak any language") is `languageNote`.
 - A creature's `spellcasting` lists the stat block's spell blocks in print
@@ -182,7 +198,10 @@ cost tokens.
   means once) and `note` for any other restriction as printed ("self only",
   "animals only"). A spontaneous block's rank may carry `slots`, the "(2
   slots)" the book prints after a rank's last spell; no other block has them.
-  Whatever the book prints that is no spell (a ritual, an item) is not here.
+  When a line names no spell of the dataset but a choice of one ("one spell
+  based on donor soul's personality trait (see sidebar)") the entry is `{ name }`
+  alone: the printed words, parenthesis included, with no `count` and no
+  `atWill`. Whatever the book prints that is no spell (a ritual, an item) is not here.
 - A `ritual` is a rite of the Rituals chapter (Geas, Collective Memories, Demonic
   Pact), cast over `cast` ("1 day") for an optional `cost`, with `secondaryCasters`
   (a number, at least 1; absent means none) beside the primary caster, and

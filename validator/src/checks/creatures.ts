@@ -10,6 +10,7 @@ const list = (value: unknown): Record<string, unknown>[] =>
  * - `own` — in a Strike's effects (also inside a `choice`), in a sense, in a weakness or in a resistance — names one of the
  *   same creature's abilities by its `id`. A dangling one is a rule the stat block promises and
  *   the record does not carry.
+ * - `instead` on an effect says the effect replaces the Strike's damage: a Strike with no damage has nothing to replace.
  * - Ability ids are unique within the creature, or `own` would be ambiguous.
  * - A size is never a trait: the book prints it in the trait line, but it has no glossary entry,
  *   and the rules compare sizes as a scale. It lives in `size` alone, so the two cannot disagree.
@@ -41,7 +42,15 @@ export const creaturesCheck: Check = (ds) => {
     };
     list(f.record.strikes).forEach((s, i) => list(s.effects).forEach((e, j) => {
       resolve(e.own, `strikes[${i}].effects[${j}].own`);
-      list(e.choice).forEach((c, k) => resolve(c.own, `strikes[${i}].effects[${j}].choice[${k}].own`));
+      const hasDamage = Array.isArray(s.damage) && s.damage.length > 0;
+      const instead = (c: Record<string, unknown>, path: string): void => {
+        if (c.instead === true && !hasDamage) error(`${path}.instead: the Strike has no damage for the effect to replace`);
+      };
+      instead(e, `strikes[${i}].effects[${j}]`);
+      list(e.choice).forEach((c, k) => {
+        resolve(c.own, `strikes[${i}].effects[${j}].choice[${k}].own`);
+        instead(c, `strikes[${i}].effects[${j}].choice[${k}]`);
+      });
     }));
     const carried = new Set<string>();
     const categoryOf = (id: unknown): unknown => (typeof id === 'string' ? ds.byId.get(id)?.record.category : undefined);

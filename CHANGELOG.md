@@ -45,6 +45,18 @@ major for renamed or removed ids, new required fields and markup changes.
   optional, absent only when the book prints none. Optional additions to the
   ritual schema.
 
+- A creature's damage and effects, in the shapes the book prints them: a
+  damage part may carry `types` (a choice of two or more damage types) instead
+  of `type`, and a `note` (a qualification as printed); a `damage` entry may be
+  `{ choice }` between two or more plain parts; a Strike's effect may be
+  `{ item }` (a poison or venom the Strike delivers) and an own or universal
+  ability effect may be `instead: true` (offered in place of the damage; the
+  validator checks that the Strike has damage). Two smaller gaps: a creature's
+  `immunitiesNote` (a parenthesis or a clause the Immunities line prints; the
+  `immunities` may then be absent) and a spell entry that is only a `{ name }`
+  (a line that names no spell of the dataset). Optional additions to the
+  creature schema.
+
 ### Changed
 
 - `weapon.damage.type` takes its list of damage types from `common.schema.json`,
