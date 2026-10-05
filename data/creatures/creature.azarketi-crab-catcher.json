@@ -1,0 +1,155 @@
+{
+  "id": "creature.azarketi-crab-catcher",
+  "type": "creature",
+  "name": "creature.azarketi-crab-catcher.name",
+  "traits": [
+    "amphibious",
+    "azarketi",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 31,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "alghollthu",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 4,
+      "note": "creature.azarketi-crab-catcher.skills.0.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 3
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 3
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5,
+      "note": "creature.azarketi-crab-catcher.skills.3.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    },
+    {
+      "lore": "creature.azarketi-crab-catcher.lore.5",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.azarketi-crab-catcher.items.0.name"
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.sack"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 9,
+    "will": 3
+  },
+  "hp": {
+    "value": 15
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.azarketi-crab-catcher.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.azarketi-crab-catcher.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hydration",
+      "section": "defense",
+      "name": "creature.azarketi-crab-catcher.abilities.hydration.name",
+      "text": "creature.azarketi-crab-catcher.abilities.hydration.text"
+    },
+    {
+      "id": "swim-away",
+      "section": "defense",
+      "name": "creature.azarketi-crab-catcher.abilities.swim-away.name",
+      "actions": "reaction",
+      "requirements": "creature.azarketi-crab-catcher.abilities.swim-away.requirements",
+      "trigger": "creature.azarketi-crab-catcher.abilities.swim-away.trigger",
+      "text": "creature.azarketi-crab-catcher.abilities.swim-away.text"
+    }
+  ],
+  "editNote": "Skill qualifiers added from the book: page 31 prints \"Athletics +4 (+6 to Swim)\" and \"Stealth +5 (+7 underwater)\"; the source omits the parentheses and the errata does not touch them."
+}

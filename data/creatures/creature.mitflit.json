@@ -1,0 +1,195 @@
+{
+  "id": "creature.mitflit",
+  "type": "creature",
+  "name": "creature.mitflit.name",
+  "traits": [
+    "fey",
+    "gremlin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 180,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "small",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 1,
+      "note": "creature.mitflit.skills.1.note"
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 3
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 3,
+    "con": 0,
+    "int": -1,
+    "wis": 1,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.dart",
+      "count": 10
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 7,
+    "will": 4
+  },
+  "hp": {
+    "value": 10
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "climb": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mitflit.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6-1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.mitflit.strikes.dart.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 20,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "damage": [
+        {
+          "dice": "1d4-1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dart"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "self-loathing",
+      "section": "top",
+      "name": "creature.mitflit.abilities.self-loathing.name",
+      "traits": [
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.mitflit.abilities.self-loathing.text"
+    },
+    {
+      "id": "vengeful-anger",
+      "section": "offense",
+      "name": "creature.mitflit.abilities.vengeful-anger.name",
+      "traits": [
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.mitflit.abilities.vengeful-anger.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 16,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.prestidigitation"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bane"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.speak-with-animals",
+              "atWill": true,
+              "note": "creature.mitflit.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 180 prints \"Diplomacy +1 (+7 vs. arthropods)\"; the source omits the parenthesis and the errata does not touch it."
+}

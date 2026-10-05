@@ -1,0 +1,22 @@
+{
+  "id": "item.wounding",
+  "type": "item",
+  "name": "item.wounding.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.wounding.text",
+  "level": 7,
+  "priceCp": 34000,
+  "bulk": "0",
+  "usage": "item.wounding.usage",
+  "category": "rune"
+}

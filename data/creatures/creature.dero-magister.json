@@ -1,0 +1,262 @@
+{
+  "id": "creature.dero-magister",
+  "type": "creature",
+  "name": "creature.dero-magister.name",
+  "traits": [
+    "dero",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 85,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "small",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 12
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 10
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 2,
+    "int": 3,
+    "wis": -1,
+    "cha": 5
+  },
+  "items": [
+    {
+      "name": "creature.dero-magister.items.0.name",
+      "note": "creature.dero-magister.items.0.note"
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 13,
+    "will": 10
+  },
+  "hp": {
+    "value": 65
+  },
+  "immunities": [
+    "confused"
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dero-magister.strikes.staff.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "vulnerable-to-sunlight",
+      "section": "defense",
+      "name": "creature.dero-magister.abilities.vulnerable-to-sunlight.name",
+      "text": "creature.dero-magister.abilities.vulnerable-to-sunlight.text"
+    },
+    {
+      "id": "cytillesh-stare",
+      "section": "offense",
+      "name": "creature.dero-magister.abilities.cytillesh-stare.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "incapacitation",
+        "mental",
+        "visual"
+      ],
+      "frequency": "creature.dero-magister.abilities.cytillesh-stare.frequency",
+      "text": "creature.dero-magister.abilities.cytillesh-stare.text"
+    },
+    {
+      "id": "dero-medicine",
+      "section": "offense",
+      "name": "creature.dero-magister.abilities.dero-medicine.name",
+      "actions": "1",
+      "traits": [
+        "healing",
+        "manipulate"
+      ],
+      "requirements": "creature.dero-magister.abilities.dero-medicine.requirements",
+      "text": "creature.dero-magister.abilities.dero-medicine.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 24,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkness"
+            },
+            {
+              "spell": "spell.revealing-light"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.nightmare"
+            },
+            {
+              "spell": "spell.rewrite-memory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 24,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.forbidding-ward"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.grim-tendrils"
+            },
+            {
+              "spell": "spell.phantom-pain"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.laughing-fit"
+            },
+            {
+              "spell": "spell.paranoia"
+            },
+            {
+              "spell": "spell.stupefy"
+            },
+            {
+              "spell": "spell.telekinetic-maneuver"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.blindness"
+            },
+            {
+              "spell": "spell.levitate"
+            },
+            {
+              "spell": "spell.vampiric-feast"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    }
+  ],
+  "editNote": "Page 85 prints \"Items cytillesh toolkit (see sidebar on page 84), staff\". The dataset has no record for the toolkit, which the book describes only in a sidebar, so the entry kept as its printed name is a complete record of what the page prints. The parenthesis is kept as the entry's note."
+}

@@ -1,0 +1,174 @@
+{
+  "id": "creature.xulgath-leader",
+  "type": "creature",
+  "name": "creature.xulgath-leader.name",
+  "traits": [
+    "humanoid",
+    "xulgath"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 353,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "draconic",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 2,
+    "int": -1,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.breastplate"
+    },
+    {
+      "item": "item.greataxe"
+    },
+    {
+      "item": "item.javelin",
+      "count": 4
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 6,
+    "will": 9
+  },
+  "hp": {
+    "value": 44
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.xulgath-leader.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+6",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.xulgath-leader.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "weakening-strike"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.xulgath-leader.strikes.claw.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "weakening-strike"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.xulgath-leader.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "stench",
+      "section": "defense",
+      "name": "creature.xulgath-leader.abilities.stench.name",
+      "ability": "ability.stench",
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "aura": 30,
+      "text": "creature.xulgath-leader.abilities.stench.text"
+    },
+    {
+      "id": "weakening-strike",
+      "section": "offense",
+      "name": "creature.xulgath-leader.abilities.weakening-strike.name",
+      "text": "creature.xulgath-leader.abilities.weakening-strike.text"
+    }
+  ]
+}

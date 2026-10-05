@@ -1,0 +1,216 @@
+{
+  "id": "creature.umbral-gnome-rockwarden",
+  "type": "creature",
+  "name": "creature.umbral-gnome-rockwarden.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 173,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "small",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "gnomish",
+    "petran",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 9
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 2,
+    "con": 3,
+    "int": 0,
+    "wis": 5,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.pick"
+    },
+    {
+      "item": "item.primal-symbol"
+    },
+    {
+      "name": "creature.umbral-gnome-rockwarden.items.3.name"
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 10
+      }
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 9,
+    "will": 14
+  },
+  "hp": {
+    "value": 63
+  },
+  "speeds": {
+    "land": 15
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.umbral-gnome-rockwarden.strikes.pick.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.pick"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.umbral-gnome-rockwarden.strikes.sling.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 50,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 24,
+      "attack": 14,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.caustic-blast"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.ant-haul"
+            },
+            {
+              "spell": "spell.thunderstrike"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.acid-grip"
+            },
+            {
+              "spell": "spell.deafness"
+            },
+            {
+              "spell": "spell.gecko-grip"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.blindness"
+            },
+            {
+              "spell": "spell.one-with-stone"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 21,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

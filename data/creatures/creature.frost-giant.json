@@ -1,0 +1,198 @@
+{
+  "id": "creature.frost-giant",
+  "type": "creature",
+  "name": "creature.frost-giant.name",
+  "traits": [
+    "cold",
+    "giant",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 165,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 18
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17,
+      "note": "creature.frost-giant.skills.4.note"
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 0,
+    "con": 5,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.breastplate"
+    },
+    {
+      "item": "item.greataxe",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 16,
+    "will": 16
+  },
+  "hp": {
+    "value": 150
+  },
+  "immunities": [
+    "cold"
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "note": "creature.frost-giant.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.frost-giant.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "reach",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+12",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.frost-giant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+12",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.frost-giant.strikes.icicle.name",
+      "actions": "1",
+      "bonus": 19,
+      "range": 120,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d6",
+          "type": "cold"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.frost-giant.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "chill-breath",
+      "section": "offense",
+      "name": "creature.frost-giant.abilities.chill-breath.name",
+      "actions": "1",
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "text": "creature.frost-giant.abilities.chill-breath.text"
+    },
+    {
+      "id": "ice-stride",
+      "section": "offense",
+      "name": "creature.frost-giant.abilities.ice-stride.name",
+      "text": "creature.frost-giant.abilities.ice-stride.text"
+    },
+    {
+      "id": "wide-swing",
+      "section": "offense",
+      "name": "creature.frost-giant.abilities.wide-swing.name",
+      "actions": "1",
+      "text": "creature.frost-giant.abilities.wide-swing.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 166 prints \"Stealth +17 (+21 in snow)\"; the source omits the parenthesis and the errata does not touch it."
+}

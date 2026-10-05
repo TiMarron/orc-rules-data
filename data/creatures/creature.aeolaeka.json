@@ -1,0 +1,213 @@
+{
+  "id": "creature.aeolaeka",
+  "type": "creature",
+  "name": "creature.aeolaeka.name",
+  "traits": [
+    "azata",
+    "celestial",
+    "earth",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 35,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "large",
+  "perception": {
+    "mod": 23,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "precise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "draconic",
+    "empyrean",
+    "petran"
+  ],
+  "languageNote": "creature.aeolaeka.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 22
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 22
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 23
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 4,
+    "con": 7,
+    "int": 2,
+    "wis": 5,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.warhammer",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 20,
+    "will": 23
+  },
+  "hp": {
+    "value": 250
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "type": "unholy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "burrow": 25,
+    "note": "creature.aeolaeka.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.aeolaeka.strikes.warhammer.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "holy",
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.warhammer"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "earth-glide",
+      "section": "offense",
+      "name": "creature.aeolaeka.abilities.earth-glide.name",
+      "text": "creature.aeolaeka.abilities.earth-glide.text"
+    },
+    {
+      "id": "liberate-the-earth",
+      "section": "offense",
+      "name": "creature.aeolaeka.abilities.liberate-the-earth.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "divine",
+        "earth"
+      ],
+      "text": "creature.aeolaeka.abilities.liberate-the-earth.text"
+    },
+    {
+      "id": "statue",
+      "section": "offense",
+      "name": "creature.aeolaeka.abilities.statue.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.aeolaeka.abilities.statue.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 32,
+      "attack": 24,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.earthbind",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.locate"
+            },
+            {
+              "spell": "spell.wall-of-stone"
+            },
+            {
+              "spell": "spell.weapon-storm"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.petrify"
+            },
+            {
+              "spell": "spell.sure-footing"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.speak-with-stones"
+            },
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

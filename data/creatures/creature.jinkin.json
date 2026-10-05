@@ -1,0 +1,149 @@
+{
+  "id": "creature.jinkin",
+  "type": "creature",
+  "name": "creature.jinkin.name",
+  "traits": [
+    "fey",
+    "gremlin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 181,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "tiny",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 5,
+      "note": "creature.jinkin.skills.1.note"
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 5
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": -2,
+    "dex": 4,
+    "con": 0,
+    "int": 2,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 10,
+    "will": 7
+  },
+  "hp": {
+    "value": 19
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.jinkin.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "0",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6-2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.jinkin.abilities.sneak-attack.name",
+      "text": "creature.jinkin.abilities.sneak-attack.text"
+    },
+    {
+      "id": "tinker",
+      "section": "offense",
+      "name": "creature.jinkin.abilities.tinker.name",
+      "traits": [
+        "curse",
+        "primal"
+      ],
+      "text": "creature.jinkin.abilities.tinker.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 17,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.prestidigitation"
+          }
+        ]
+      }
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 181 prints \"Crafting +5 (+7 traps)\"; the source omits the parenthesis and the errata does not touch it."
+}

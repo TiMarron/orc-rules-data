@@ -1,0 +1,228 @@
+{
+  "id": "creature.boggard-swampseer",
+  "type": "creature",
+  "name": "creature.boggard-swampseer.name",
+  "traits": [
+    "amphibious",
+    "boggard",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 45,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "boggard",
+    "chthonian",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 9
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 11
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 8
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 0,
+    "con": 2,
+    "int": 0,
+    "wis": 4,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 7,
+    "will": 11
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 20,
+    "swim": 25,
+    "note": "creature.boggard-swampseer.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.boggard-swampseer.strikes.staff.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.boggard-swampseer.strikes.tongue.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [],
+      "effects": [
+        {
+          "own": "tongue-grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "destructive-croak",
+      "section": "offense",
+      "name": "creature.boggard-swampseer.abilities.destructive-croak.name",
+      "actions": "2",
+      "traits": [
+        "sonic"
+      ],
+      "text": "creature.boggard-swampseer.abilities.destructive-croak.text"
+    },
+    {
+      "id": "drowning-drone",
+      "section": "offense",
+      "name": "creature.boggard-swampseer.abilities.drowning-drone.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "mental"
+      ],
+      "trigger": "creature.boggard-swampseer.abilities.drowning-drone.trigger",
+      "text": "creature.boggard-swampseer.abilities.drowning-drone.text"
+    },
+    {
+      "id": "swamp-passage",
+      "section": "offense",
+      "name": "creature.boggard-swampseer.abilities.swamp-passage.name",
+      "text": "creature.boggard-swampseer.abilities.swamp-passage.text"
+    },
+    {
+      "id": "terrifying-croak",
+      "section": "offense",
+      "name": "creature.boggard-swampseer.abilities.terrifying-croak.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.boggard-swampseer.abilities.terrifying-croak.text"
+    },
+    {
+      "id": "tongue-grab",
+      "section": "offense",
+      "name": "creature.boggard-swampseer.abilities.tongue-grab.name",
+      "text": "creature.boggard-swampseer.abilities.tongue-grab.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 21,
+      "attack": 11,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.caustic-blast"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.jump"
+            },
+            {
+              "spell": "spell.runic-weapon"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.acid-grip"
+            },
+            {
+              "spell": "spell.mist"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

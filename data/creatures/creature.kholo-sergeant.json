@@ -1,0 +1,174 @@
+{
+  "id": "creature.kholo-sergeant",
+  "type": "creature",
+  "name": "creature.kholo-sergeant.name",
+  "traits": [
+    "humanoid",
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 209,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "kholo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.scimitar"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 10,
+    "will": 8
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kholo-sergeant.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kholo-sergeant.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kholo-sergeant.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 12,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.kholo-sergeant.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "bark-orders",
+      "section": "offense",
+      "name": "creature.kholo-sergeant.abilities.bark-orders.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "linguistic"
+      ],
+      "text": "creature.kholo-sergeant.abilities.bark-orders.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.kholo-sergeant.abilities.pack-attack.name",
+      "text": "creature.kholo-sergeant.abilities.pack-attack.text"
+    },
+    {
+      "id": "rugged-travel",
+      "section": "offense",
+      "name": "creature.kholo-sergeant.abilities.rugged-travel.name",
+      "text": "creature.kholo-sergeant.abilities.rugged-travel.text"
+    }
+  ]
+}

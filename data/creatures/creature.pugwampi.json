@@ -1,0 +1,181 @@
+{
+  "id": "creature.pugwampi",
+  "type": "creature",
+  "name": "creature.pugwampi.name",
+  "traits": [
+    "fey",
+    "gremlin"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 180,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "tiny",
+  "perception": {
+    "mod": 6,
+    "note": "creature.pugwampi.perception.note",
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "kholo",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 2
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 2
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": -3,
+    "dex": 3,
+    "con": 0,
+    "int": 0,
+    "wis": 2,
+    "cha": -2
+  },
+  "items": [
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 60
+      }
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 8,
+    "will": 6
+  },
+  "hp": {
+    "value": 17
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pugwampi.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "0",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6-3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.pugwampi.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "unluck-aura",
+      "section": "defense",
+      "name": "creature.pugwampi.abilities.unluck-aura.name",
+      "traits": [
+        "aura",
+        "mental",
+        "misfortune",
+        "primal"
+      ],
+      "aura": 20,
+      "text": "creature.pugwampi.abilities.unluck-aura.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 16,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.prestidigitation"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.speak-with-animals",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

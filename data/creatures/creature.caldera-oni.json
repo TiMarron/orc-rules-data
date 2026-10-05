@@ -1,0 +1,237 @@
+{
+  "id": "creature.caldera-oni",
+  "type": "creature",
+  "name": "creature.caldera-oni.name",
+  "traits": [
+    "fire",
+    "giant",
+    "humanoid",
+    "oni"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 254,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 14,
+  "size": "large",
+  "perception": {
+    "mod": 26,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.caldera-oni.senses.0"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 25
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 27
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 27
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 6,
+    "con": 6,
+    "int": 0,
+    "wis": 6,
+    "cha": 8
+  },
+  "items": [
+    {
+      "item": "item.katana",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.breastplate",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 35
+  },
+  "saves": {
+    "fortitude": 28,
+    "reflex": 25,
+    "will": 23
+  },
+  "hp": {
+    "value": 315
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "own": "bean-panic"
+    },
+    {
+      "type": "spirit",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.caldera-oni.strikes.katana.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "deadly",
+        "magical",
+        "two-hand",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "two-hand": "1d10",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d6+14",
+          "type": "slashing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "item": "item.katana"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.caldera-oni.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+14",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d8",
+          "type": "bleed",
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bean-panic",
+      "section": "defense",
+      "name": "creature.caldera-oni.abilities.bean-panic.name",
+      "text": "creature.caldera-oni.abilities.bean-panic.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.caldera-oni.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "stoke-the-volcano",
+      "section": "defense",
+      "name": "creature.caldera-oni.abilities.stoke-the-volcano.name",
+      "text": "creature.caldera-oni.abilities.stoke-the-volcano.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.caldera-oni.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.caldera-oni.abilities.change-shape.text"
+    },
+    {
+      "id": "ash-form",
+      "section": "offense",
+      "name": "creature.caldera-oni.abilities.ash-form.name",
+      "actions": "2",
+      "traits": [
+        "polymorph",
+        "primal"
+      ],
+      "frequency": "creature.caldera-oni.abilities.ash-form.frequency",
+      "text": "creature.caldera-oni.abilities.ash-form.text"
+    },
+    {
+      "id": "dance-of-burning-war",
+      "section": "offense",
+      "name": "creature.caldera-oni.abilities.dance-of-burning-war.name",
+      "actions": "3",
+      "frequency": "creature.caldera-oni.abilities.dance-of-burning-war.frequency",
+      "text": "creature.caldera-oni.abilities.dance-of-burning-war.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 34,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.caldera-oni.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

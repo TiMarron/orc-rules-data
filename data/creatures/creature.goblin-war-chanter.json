@@ -1,0 +1,190 @@
+{
+  "id": "creature.goblin-war-chanter",
+  "type": "creature",
+  "name": "creature.goblin-war-chanter.name",
+  "traits": [
+    "goblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 175,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 4
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 2,
+    "int": 1,
+    "wis": 0,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dogslicer"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 10
+      }
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 8,
+    "will": 5
+  },
+  "hp": {
+    "value": 16
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.goblin-war-chanter.strikes.dogslicer.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "backstabber",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.dogslicer"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.goblin-war-chanter.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "goblin-scuttle",
+      "section": "defense",
+      "name": "creature.goblin-war-chanter.abilities.goblin-scuttle.name",
+      "actions": "reaction",
+      "trigger": "creature.goblin-war-chanter.abilities.goblin-scuttle.trigger",
+      "text": "creature.goblin-war-chanter.abilities.goblin-scuttle.text"
+    },
+    {
+      "id": "goblin-song",
+      "section": "offense",
+      "name": "creature.goblin-war-chanter.abilities.goblin-song.name",
+      "actions": "1",
+      "text": "creature.goblin-war-chanter.abilities.goblin-song.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 17,
+      "attack": 7,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.courageous-anthem"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bless"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    }
+  ]
+}

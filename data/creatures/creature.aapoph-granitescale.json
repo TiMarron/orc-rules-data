@@ -1,0 +1,186 @@
+{
+  "id": "creature.aapoph-granitescale",
+  "type": "creature",
+  "name": "creature.aapoph-granitescale.name",
+  "traits": [
+    "humanoid",
+    "mutant",
+    "serpentfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "sakvroth"
+  ],
+  "languageNote": "creature.aapoph-granitescale.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 4,
+    "int": -1,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.javelin",
+      "count": 5
+    },
+    {
+      "item": "item.longspear"
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "creature.aapoph-granitescale.ac.note"
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 14,
+    "will": 11,
+    "note": "creature.aapoph-granitescale.saves.note"
+  },
+  "hp": {
+    "value": 120
+  },
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.aapoph-granitescale.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d8+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.aapoph-granitescale.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+11",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "serpentfolk-venom"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.aapoph-granitescale.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 16,
+      "rangeIncrement": 30,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "chipping-scales",
+      "section": "defense",
+      "name": "creature.aapoph-granitescale.abilities.chipping-scales.name",
+      "actions": "reaction",
+      "frequency": "creature.aapoph-granitescale.abilities.chipping-scales.frequency",
+      "trigger": "creature.aapoph-granitescale.abilities.chipping-scales.trigger",
+      "text": "creature.aapoph-granitescale.abilities.chipping-scales.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.aapoph-granitescale.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "rattling-spear",
+      "section": "offense",
+      "name": "creature.aapoph-granitescale.abilities.rattling-spear.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "mental"
+      ],
+      "requirements": "creature.aapoph-granitescale.abilities.rattling-spear.requirements",
+      "text": "creature.aapoph-granitescale.abilities.rattling-spear.text"
+    },
+    {
+      "id": "serpentfolk-venom",
+      "section": "offense",
+      "name": "creature.aapoph-granitescale.abilities.serpentfolk-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.aapoph-granitescale.abilities.serpentfolk-venom.text"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "id": "creature.medusa",
+  "type": "creature",
+  "name": "creature.medusa.name",
+  "traits": [
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 230,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 16
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 5,
+    "con": 4,
+    "int": 2,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 60
+      }
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 25,
+    "note": "creature.medusa.ac.note"
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 16,
+    "will": 14
+  },
+  "hp": {
+    "value": 105
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.medusa.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "serpent-venom"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.medusa.strikes.snake-fangs.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "serpent-venom"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.medusa.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 19,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "serpent-venom"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "petrifying-gaze",
+      "section": "defense",
+      "name": "creature.medusa.abilities.petrifying-gaze.name",
+      "traits": [
+        "arcane",
+        "aura",
+        "visual"
+      ],
+      "aura": 30,
+      "text": "creature.medusa.abilities.petrifying-gaze.text"
+    },
+    {
+      "id": "biting-snakes",
+      "section": "defense",
+      "name": "creature.medusa.abilities.biting-snakes.name",
+      "actions": "reaction",
+      "trigger": "creature.medusa.abilities.biting-snakes.trigger",
+      "text": "creature.medusa.abilities.biting-snakes.text"
+    },
+    {
+      "id": "focus-gaze",
+      "section": "offense",
+      "name": "creature.medusa.abilities.focus-gaze.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "incapacitation",
+        "visual"
+      ],
+      "text": "creature.medusa.abilities.focus-gaze.text"
+    },
+    {
+      "id": "serpent-venom",
+      "section": "offense",
+      "name": "creature.medusa.abilities.serpent-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.medusa.abilities.serpent-venom.text"
+    }
+  ]
+}

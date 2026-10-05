@@ -1,0 +1,210 @@
+{
+  "id": "creature.cloud-giant",
+  "type": "creature",
+  "name": "creature.cloud-giant.name",
+  "traits": [
+    "air",
+    "giant",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 167,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "huge",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "own": "cloudsight"
+      },
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun",
+    "sussuran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 26
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 21
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 24
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 26
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 0,
+    "con": 5,
+    "int": 1,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.ranseur",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 18,
+    "will": 21
+  },
+  "hp": {
+    "value": 220
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cloud-giant.strikes.ranseur.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "disarm",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d10+13",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.ranseur"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.cloud-giant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+13",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cloudsight",
+      "section": "top",
+      "name": "creature.cloud-giant.abilities.cloudsight.name",
+      "text": "creature.cloud-giant.abilities.cloudsight.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.cloud-giant.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "crushing-cloud",
+      "section": "offense",
+      "name": "creature.cloud-giant.abilities.crushing-cloud.name",
+      "actions": "1",
+      "traits": [
+        "air",
+        "primal"
+      ],
+      "text": "creature.cloud-giant.abilities.crushing-cloud.text"
+    },
+    {
+      "id": "wind-strike",
+      "section": "offense",
+      "name": "creature.cloud-giant.abilities.wind-strike.name",
+      "actions": "2",
+      "traits": [
+        "air",
+        "primal"
+      ],
+      "text": "creature.cloud-giant.abilities.wind-strike.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 30,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.mist",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.levitate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.vapor-form"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

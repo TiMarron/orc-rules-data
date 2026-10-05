@@ -1,0 +1,227 @@
+{
+  "id": "creature.axiomite",
+  "type": "creature",
+  "name": "creature.axiomite.name",
+  "traits": [
+    "aeon",
+    "monitor"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 9,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 19,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "utopian"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "lore": "creature.axiomite.lore.1",
+      "mod": 17
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 21
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 15
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 3,
+    "int": 5,
+    "wis": 5,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit-sterling"
+    },
+    {
+      "item": "item.warhammer",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 16,
+    "will": 18,
+    "note": "creature.axiomite.saves.note"
+  },
+  "hp": {
+    "value": 155
+  },
+  "immunities": [
+    "disease",
+    "emotion",
+    "fear"
+  ],
+  "resistances": [
+    {
+      "type": "electricity",
+      "value": 10
+    },
+    {
+      "type": "mental",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.axiomite.strikes.warhammer.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.warhammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.axiomite.strikes.fist.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "crystalline-dust-form",
+      "section": "offense",
+      "name": "creature.axiomite.abilities.crystalline-dust-form.name",
+      "actions": "1",
+      "traits": [
+        "polymorph"
+      ],
+      "text": "creature.axiomite.abilities.crystalline-dust-form.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 27,
+      "attack": 17,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.sure-strike",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.telekinetic-maneuver"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.haste",
+              "count": 3
+            },
+            {
+              "spell": "spell.paralyze"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.lightning-bolt",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.telekinetic-haul"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

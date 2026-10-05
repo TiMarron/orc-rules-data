@@ -1,0 +1,279 @@
+{
+  "id": "creature.leukodaemon",
+  "type": "creature",
+  "name": "creature.leukodaemon.name",
+  "traits": [
+    "daemon",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 74,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "plaguesense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "daemonic"
+  ],
+  "languageNote": "creature.leukodaemon.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 18
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 20
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 5,
+    "con": 1,
+    "int": 3,
+    "wis": 5,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 50
+      }
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 21,
+    "will": 19,
+    "note": "creature.leukodaemon.saves.note"
+  },
+  "hp": {
+    "value": 155
+  },
+  "immunities": [
+    "death-effects",
+    "disease"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.leukodaemon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "disease",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "daemonic-pestilence"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.leukodaemon.strikes.claw.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "disease",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "daemonic-pestilence"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.leukodaemon.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 21,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "disease",
+        "magical",
+        "propulsive",
+        "volley",
+        "unholy"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "daemonic-pestilence"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "plaguesense",
+      "section": "top",
+      "name": "creature.leukodaemon.abilities.plaguesense.name",
+      "text": "creature.leukodaemon.abilities.plaguesense.text"
+    },
+    {
+      "id": "infectious-aura",
+      "section": "defense",
+      "name": "creature.leukodaemon.abilities.infectious-aura.name",
+      "traits": [
+        "aura",
+        "disease"
+      ],
+      "aura": 30,
+      "text": "creature.leukodaemon.abilities.infectious-aura.text"
+    },
+    {
+      "id": "daemonic-pestilence",
+      "section": "offense",
+      "name": "creature.leukodaemon.abilities.daemonic-pestilence.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.leukodaemon.abilities.daemonic-pestilence.text"
+    },
+    {
+      "id": "plague-breath",
+      "section": "offense",
+      "name": "creature.leukodaemon.abilities.plague-breath.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "unholy"
+      ],
+      "text": "creature.leukodaemon.abilities.plague-breath.text"
+    },
+    {
+      "id": "quicken-pestilence",
+      "section": "offense",
+      "name": "creature.leukodaemon.abilities.quicken-pestilence.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "manipulate"
+      ],
+      "text": "creature.leukodaemon.abilities.quicken-pestilence.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 26,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic",
+              "count": 2
+            },
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

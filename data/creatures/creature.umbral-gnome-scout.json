@@ -1,0 +1,150 @@
+{
+  "id": "creature.umbral-gnome-scout",
+  "type": "creature",
+  "name": "creature.umbral-gnome-scout.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 172,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "gnomish",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7,
+      "note": "creature.umbral-gnome-scout.skills.2.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.light-pick"
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 9,
+    "will": 5
+  },
+  "hp": {
+    "value": 18
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.umbral-gnome-scout.strikes.light-pick.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.light-pick"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.umbral-gnome-scout.strikes.sling.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hidden-movement",
+      "section": "offense",
+      "name": "creature.umbral-gnome-scout.abilities.hidden-movement.name",
+      "text": "creature.umbral-gnome-scout.abilities.hidden-movement.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 14,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 173 prints \"Stealth +7 (+10 underground)\"; the source omits the parenthesis and the errata does not touch it."
+}

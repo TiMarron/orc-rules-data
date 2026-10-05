@@ -1,0 +1,285 @@
+{
+  "id": "creature.jann",
+  "type": "creature",
+  "name": "creature.jann.name",
+  "traits": [
+    "air",
+    "earth",
+    "elemental",
+    "fire",
+    "genie",
+    "metal",
+    "water",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 156,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "muan",
+    "petran",
+    "pyric",
+    "sussuran",
+    "talican",
+    "thalassic"
+  ],
+  "languageNote": "creature.jann.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 10
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 2,
+    "int": 3,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.scimitar"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 10,
+    "will": 13
+  },
+  "hp": {
+    "value": 60
+  },
+  "resistances": [
+    {
+      "type": "elemental-resistance",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 15
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.jann.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "all-made-one"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.jann.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "magical",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "all-made-one"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.jann.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 12,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "all-made-one"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "commanding-presence",
+      "section": "defense",
+      "name": "creature.jann.abilities.commanding-presence.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 20,
+      "text": "creature.jann.abilities.commanding-presence.text"
+    },
+    {
+      "id": "elemental-resistance",
+      "section": "defense",
+      "name": "creature.jann.abilities.elemental-resistance.name",
+      "text": "creature.jann.abilities.elemental-resistance.text"
+    },
+    {
+      "id": "all-made-one",
+      "section": "offense",
+      "name": "creature.jann.abilities.all-made-one.name",
+      "actions": "1",
+      "text": "creature.jann.abilities.all-made-one.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.jann.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "polymorph"
+      ],
+      "text": "creature.jann.abilities.change-shape.text"
+    },
+    {
+      "id": "wanderers-wish",
+      "section": "offense",
+      "name": "creature.jann.abilities.wanderers-wish.name",
+      "actions": "3",
+      "frequency": "creature.jann.abilities.wanderers-wish.frequency",
+      "text": "creature.jann.abilities.wanderers-wish.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 21,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.know-the-way"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.read-omens"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "note": "creature.jann.spellcasting.0.ranks.7.0.note"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane in a spell's restriction is replaced with the generic descriptor the dataset already uses. The punctuation is the book's: page 156 prints the restriction's three destinations with commas where the source has semicolons."
+}

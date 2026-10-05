@@ -1,0 +1,143 @@
+{
+  "id": "creature.ogre-glutton",
+  "type": "creature",
+  "name": "creature.ogre-glutton.name",
+  "traits": [
+    "giant",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 250,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "large",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 10
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": -1,
+    "con": 4,
+    "int": -2,
+    "wis": 0,
+    "cha": -2
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.greataxe"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 7,
+    "will": 6
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ogre-glutton.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "reach",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d12+8",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ogre-glutton.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        },
+        {
+          "own": "gluttons-feast"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "gluttons-feast",
+      "section": "offense",
+      "name": "creature.ogre-glutton.abilities.gluttons-feast.name",
+      "text": "creature.ogre-glutton.abilities.gluttons-feast.text"
+    },
+    {
+      "id": "gluttons-rush",
+      "section": "offense",
+      "name": "creature.ogre-glutton.abilities.gluttons-rush.name",
+      "actions": "2",
+      "text": "creature.ogre-glutton.abilities.gluttons-rush.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.ogre-glutton.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.ogre-glutton.abilities.swallow-whole.text"
+    }
+  ]
+}

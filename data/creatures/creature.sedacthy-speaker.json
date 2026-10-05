@@ -1,0 +1,215 @@
+{
+  "id": "creature.sedacthy-speaker",
+  "type": "creature",
+  "name": "creature.sedacthy-speaker.name",
+  "traits": [
+    "amphibious",
+    "humanoid",
+    "sedacthy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 301,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.wavesense",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "thalassic"
+  ],
+  "languageNote": "creature.sedacthy-speaker.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 14
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": 2,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.trident",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 13,
+    "will": 15
+  },
+  "hp": {
+    "value": 95
+  },
+  "speeds": {
+    "land": 20,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-speaker.strikes.trident.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-speaker.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d4",
+          "type": "bleed",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-speaker.strikes.claw.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.sedacthy-speaker.strikes.trident-2.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sea-speech",
+      "section": "top",
+      "name": "creature.sedacthy-speaker.abilities.sea-speech.name",
+      "text": "creature.sedacthy-speaker.abilities.sea-speech.text"
+    },
+    {
+      "id": "speakers-privilege",
+      "section": "defense",
+      "name": "creature.sedacthy-speaker.abilities.speakers-privilege.name",
+      "actions": "reaction",
+      "trigger": "creature.sedacthy-speaker.abilities.speakers-privilege.trigger",
+      "requirements": "creature.sedacthy-speaker.abilities.speakers-privilege.requirements",
+      "text": "creature.sedacthy-speaker.abilities.speakers-privilege.text"
+    },
+    {
+      "id": "animal-shield",
+      "section": "offense",
+      "name": "creature.sedacthy-speaker.abilities.animal-shield.name",
+      "actions": "1",
+      "requirements": "creature.sedacthy-speaker.abilities.animal-shield.requirements",
+      "text": "creature.sedacthy-speaker.abilities.animal-shield.text"
+    },
+    {
+      "id": "exploit-weakness",
+      "section": "offense",
+      "name": "creature.sedacthy-speaker.abilities.exploit-weakness.name",
+      "text": "creature.sedacthy-speaker.abilities.exploit-weakness.text"
+    },
+    {
+      "id": "painful-cry",
+      "section": "offense",
+      "name": "creature.sedacthy-speaker.abilities.painful-cry.name",
+      "actions": "2",
+      "traits": [
+        "mental",
+        "sonic"
+      ],
+      "text": "creature.sedacthy-speaker.abilities.painful-cry.text"
+    },
+    {
+      "id": "shared-feast",
+      "section": "offense",
+      "name": "creature.sedacthy-speaker.abilities.shared-feast.name",
+      "actions": "2",
+      "text": "creature.sedacthy-speaker.abilities.shared-feast.text"
+    },
+    {
+      "id": "swim-together",
+      "section": "offense",
+      "name": "creature.sedacthy-speaker.abilities.swim-together.name",
+      "actions": "2",
+      "requirements": "creature.sedacthy-speaker.abilities.swim-together.requirements",
+      "text": "creature.sedacthy-speaker.abilities.swim-together.text"
+    }
+  ]
+}

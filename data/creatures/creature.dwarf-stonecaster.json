@@ -1,0 +1,156 @@
+{
+  "id": "creature.dwarf-stonecaster",
+  "type": "creature",
+  "name": "creature.dwarf-stonecaster.name",
+  "traits": [
+    "dwarf",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 135,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 10
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "dwarven",
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 8
+    },
+    {
+      "lore": "creature.dwarf-stonecaster.lore.2",
+      "mod": 8
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": 2,
+    "wis": 5,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 8,
+    "will": 14
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-stonecaster.strikes.staff.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-stonecaster.strikes.clan-dagger.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "parry",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "bludgeoning"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "boulder-roll",
+      "section": "offense",
+      "name": "creature.dwarf-stonecaster.abilities.boulder-roll.name",
+      "actions": "2",
+      "traits": [
+        "earth",
+        "primal"
+      ],
+      "text": "creature.dwarf-stonecaster.abilities.boulder-roll.text"
+    },
+    {
+      "id": "dwarven-doughtiness",
+      "section": "offense",
+      "name": "creature.dwarf-stonecaster.abilities.dwarven-doughtiness.name",
+      "text": "creature.dwarf-stonecaster.abilities.dwarven-doughtiness.text"
+    },
+    {
+      "id": "tremor",
+      "section": "offense",
+      "name": "creature.dwarf-stonecaster.abilities.tremor.name",
+      "actions": "1",
+      "traits": [
+        "earth",
+        "primal"
+      ],
+      "text": "creature.dwarf-stonecaster.abilities.tremor.text"
+    }
+  ]
+}

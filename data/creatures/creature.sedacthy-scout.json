@@ -1,0 +1,173 @@
+{
+  "id": "creature.sedacthy-scout",
+  "type": "creature",
+  "name": "creature.sedacthy-scout.name",
+  "traits": [
+    "amphibious",
+    "humanoid",
+    "sedacthy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 300,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.wavesense",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "thalassic"
+  ],
+  "languageNote": "creature.sedacthy-scout.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.spear"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 7
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 20,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-scout.strikes.spear.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-scout.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d4",
+          "type": "bleed",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-scout.strikes.claw.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.sedacthy-scout.strikes.spear-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sea-speech",
+      "section": "top",
+      "name": "creature.sedacthy-scout.abilities.sea-speech.name",
+      "text": "creature.sedacthy-scout.abilities.sea-speech.text"
+    },
+    {
+      "id": "shared-feast",
+      "section": "offense",
+      "name": "creature.sedacthy-scout.abilities.shared-feast.name",
+      "actions": "2",
+      "text": "creature.sedacthy-scout.abilities.shared-feast.text"
+    },
+    {
+      "id": "wriggling-rush",
+      "section": "offense",
+      "name": "creature.sedacthy-scout.abilities.wriggling-rush.name",
+      "actions": "1",
+      "frequency": "creature.sedacthy-scout.abilities.wriggling-rush.frequency",
+      "text": "creature.sedacthy-scout.abilities.wriggling-rush.text"
+    }
+  ]
+}

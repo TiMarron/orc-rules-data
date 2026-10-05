@@ -1,0 +1,217 @@
+{
+  "id": "creature.troll-warleader",
+  "type": "creature",
+  "name": "creature.troll-warleader.name",
+  "traits": [
+    "giant",
+    "humanoid",
+    "troll",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 331,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "large",
+  "perception": {
+    "mod": 19,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 22
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 17
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 3,
+    "con": 7,
+    "int": -1,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.battle-axe",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "count": 2
+    },
+    {
+      "item": "item.half-plate"
+    }
+  ],
+  "ac": {
+    "value": 29,
+    "note": "creature.troll-warleader.ac.note"
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 17,
+    "will": 15
+  },
+  "hp": {
+    "value": 240,
+    "note": "creature.troll-warleader.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "electricity",
+      "value": 10
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.troll-warleader.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+13",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.troll-warleader.strikes.battle-axe.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "reach",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+13",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.battle-axe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.troll-warleader.strikes.claw.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+13",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "easily-misled",
+      "section": "top",
+      "name": "creature.troll-warleader.abilities.easily-misled.name",
+      "text": "creature.troll-warleader.abilities.easily-misled.text"
+    },
+    {
+      "id": "furious-roar",
+      "section": "defense",
+      "name": "creature.troll-warleader.abilities.furious-roar.name",
+      "actions": "reaction",
+      "trigger": "creature.troll-warleader.abilities.furious-roar.trigger",
+      "text": "creature.troll-warleader.abilities.furious-roar.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.troll-warleader.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "primordial-roar",
+      "section": "offense",
+      "name": "creature.troll-warleader.abilities.primordial-roar.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.troll-warleader.abilities.primordial-roar.text"
+    },
+    {
+      "id": "shed-armor",
+      "section": "offense",
+      "name": "creature.troll-warleader.abilities.shed-armor.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.troll-warleader.abilities.shed-armor.text"
+    },
+    {
+      "id": "sweeping-axes",
+      "section": "offense",
+      "name": "creature.troll-warleader.abilities.sweeping-axes.name",
+      "actions": "3",
+      "requirements": "creature.troll-warleader.abilities.sweeping-axes.requirements",
+      "text": "creature.troll-warleader.abilities.sweeping-axes.text"
+    }
+  ]
+}

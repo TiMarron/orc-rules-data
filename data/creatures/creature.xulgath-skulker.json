@@ -1,0 +1,180 @@
+{
+  "id": "creature.xulgath-skulker",
+  "type": "creature",
+  "name": "creature.xulgath-skulker.name",
+  "traits": [
+    "humanoid",
+    "xulgath"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 353,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "draconic",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": -1,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 4
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 10,
+    "will": 5
+  },
+  "hp": {
+    "value": 28
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.xulgath-skulker.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.xulgath-skulker.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.xulgath-skulker.strikes.claw.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.xulgath-skulker.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "stench",
+      "section": "defense",
+      "name": "creature.xulgath-skulker.abilities.stench.name",
+      "ability": "ability.stench",
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "aura": 30,
+      "text": "creature.xulgath-skulker.abilities.stench.text"
+    },
+    {
+      "id": "hidden-movement",
+      "section": "offense",
+      "name": "creature.xulgath-skulker.abilities.hidden-movement.name",
+      "text": "creature.xulgath-skulker.abilities.hidden-movement.text"
+    },
+    {
+      "id": "mask-stench",
+      "section": "offense",
+      "name": "creature.xulgath-skulker.abilities.mask-stench.name",
+      "actions": "free",
+      "text": "creature.xulgath-skulker.abilities.mask-stench.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.xulgath-skulker.abilities.sneak-attack.name",
+      "text": "creature.xulgath-skulker.abilities.sneak-attack.text"
+    }
+  ]
+}

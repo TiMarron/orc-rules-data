@@ -1,0 +1,137 @@
+{
+  "id": "creature.goblin-warrior",
+  "type": "creature",
+  "name": "creature.goblin-warrior.name",
+  "traits": [
+    "goblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 174,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "small",
+  "perception": {
+    "mod": 2,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 2
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 1
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": -1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.dogslicer"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 10
+      }
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 7,
+    "will": 3
+  },
+  "hp": {
+    "value": 6
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.goblin-warrior.strikes.dogslicer.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "backstabber",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.dogslicer"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.goblin-warrior.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "goblin-scuttle",
+      "section": "defense",
+      "name": "creature.goblin-warrior.abilities.goblin-scuttle.name",
+      "actions": "reaction",
+      "trigger": "creature.goblin-warrior.abilities.goblin-scuttle.trigger",
+      "text": "creature.goblin-warrior.abilities.goblin-scuttle.text"
+    }
+  ]
+}

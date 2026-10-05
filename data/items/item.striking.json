@@ -1,0 +1,23 @@
+{
+  "id": "item.striking",
+  "type": "item",
+  "name": "item.striking.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 236,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.striking.text",
+  "level": 4,
+  "priceCp": 6500,
+  "bulk": "0",
+  "usage": "item.striking.usage",
+  "category": "rune",
+  "editNote": "Compared word by word with page 236: usage, trait, level 4, Price 65 gp and text. The page prints \"You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes' Prices.\" and the record has only the second half: the Fall 2024 errata for page 236 says to change that sentence \"to simply 'The Price of the upgrade is the difference between the two runes' Prices.'\", so the record stands. The variant headings are dropped because each grade is a record of its own, carrying the level and Price of its own Type line; the second source citation is the source site naming the earlier edition beside this book, and the text was compared with this book's page."
+}

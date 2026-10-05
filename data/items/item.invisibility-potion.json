@@ -1,0 +1,25 @@
+{
+  "id": "item.invisibility-potion",
+  "type": "item",
+  "name": "item.invisibility-potion.name",
+  "traits": [
+    "consumable",
+    "illusion",
+    "magical",
+    "potion"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 259,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.invisibility-potion.text",
+  "level": 4,
+  "priceCp": 2000,
+  "bulk": "L",
+  "usage": "item.invisibility-potion.usage",
+  "category": "consumable"
+}

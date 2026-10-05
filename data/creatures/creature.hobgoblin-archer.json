@@ -1,0 +1,152 @@
+{
+  "id": "creature.hobgoblin-archer",
+  "type": "creature",
+  "name": "creature.hobgoblin-archer.name",
+  "traits": [
+    "hobgoblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 199,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.scale-mail"
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 12,
+    "will": 8
+  },
+  "hp": {
+    "value": 50
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hobgoblin-archer.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hobgoblin-archer.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "crossbow-precision"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "formation",
+      "section": "defense",
+      "name": "creature.hobgoblin-archer.abilities.formation.name",
+      "text": "creature.hobgoblin-archer.abilities.formation.text"
+    },
+    {
+      "id": "crossbow-precision",
+      "section": "offense",
+      "name": "creature.hobgoblin-archer.abilities.crossbow-precision.name",
+      "text": "creature.hobgoblin-archer.abilities.crossbow-precision.text"
+    },
+    {
+      "id": "perfect-aim",
+      "section": "offense",
+      "name": "creature.hobgoblin-archer.abilities.perfect-aim.name",
+      "text": "creature.hobgoblin-archer.abilities.perfect-aim.text"
+    },
+    {
+      "id": "running-reload",
+      "section": "offense",
+      "name": "creature.hobgoblin-archer.abilities.running-reload.name",
+      "actions": "1",
+      "text": "creature.hobgoblin-archer.abilities.running-reload.text"
+    }
+  ]
+}

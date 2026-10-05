@@ -1,0 +1,178 @@
+{
+  "id": "creature.stone-giant",
+  "type": "creature",
+  "name": "creature.stone-giant.name",
+  "traits": [
+    "earth",
+    "giant",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 164,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun",
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 18
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 14,
+      "note": "creature.stone-giant.skills.4.note"
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 2,
+    "con": 4,
+    "int": 0,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.greatclub",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 14,
+    "will": 14
+  },
+  "hp": {
+    "value": 150
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.stone-giant.strikes.greatclub.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "backswing",
+        "magical",
+        "reach",
+        "shove"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.greatclub"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.stone-giant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+14",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.stone-giant.strikes.rock.name",
+      "actions": "1",
+      "bonus": 18,
+      "rangeIncrement": 120,
+      "traits": [
+        "brutal"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+12",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "swat-projectile",
+      "section": "defense",
+      "name": "creature.stone-giant.abilities.swat-projectile.name",
+      "actions": "reaction",
+      "requirements": "creature.stone-giant.abilities.swat-projectile.requirements",
+      "trigger": "creature.stone-giant.abilities.swat-projectile.trigger",
+      "text": "creature.stone-giant.abilities.swat-projectile.text"
+    },
+    {
+      "id": "big-swing",
+      "section": "offense",
+      "name": "creature.stone-giant.abilities.big-swing.name",
+      "actions": "2",
+      "text": "creature.stone-giant.abilities.big-swing.text"
+    },
+    {
+      "id": "create-boulder",
+      "section": "offense",
+      "name": "creature.stone-giant.abilities.create-boulder.name",
+      "actions": "1",
+      "traits": [
+        "earth",
+        "primal"
+      ],
+      "text": "creature.stone-giant.abilities.create-boulder.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 165 prints \"Stealth +14 (+18 in rocky terrain)\"; the source omits the parenthesis and the errata does not touch it."
+}

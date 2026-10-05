@@ -1,0 +1,186 @@
+{
+  "id": "creature.shadow-giant",
+  "type": "creature",
+  "name": "creature.shadow-giant.name",
+  "traits": [
+    "giant",
+    "humanoid",
+    "shadow"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 168,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 13,
+  "size": "large",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun",
+    "shadowtongue"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 24
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 21,
+      "note": "creature.shadow-giant.skills.2.note"
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 2,
+    "con": 5,
+    "int": 0,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.breastplate",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    },
+    {
+      "item": "item.spiked-chain",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 20,
+    "will": 23
+  },
+  "hp": {
+    "value": 275
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.shadow-giant.strikes.spiked-chain.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "disarm",
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d8+18",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "pall-of-shadow"
+        }
+      ],
+      "item": "item.spiked-chain"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.shadow-giant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d8+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "pall-of-shadow"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.shadow-giant.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "pall-of-shadow",
+      "section": "offense",
+      "name": "creature.shadow-giant.abilities.pall-of-shadow.name",
+      "traits": [
+        "divine",
+        "shadow"
+      ],
+      "text": "creature.shadow-giant.abilities.pall-of-shadow.text"
+    },
+    {
+      "id": "shadow-chain",
+      "section": "offense",
+      "name": "creature.shadow-giant.abilities.shadow-chain.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "shadow",
+        "teleportation"
+      ],
+      "text": "creature.shadow-giant.abilities.shadow-chain.text"
+    },
+    {
+      "id": "shadowcloak",
+      "section": "offense",
+      "name": "creature.shadow-giant.abilities.shadowcloak.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "shadow"
+      ],
+      "text": "creature.shadow-giant.abilities.shadowcloak.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 168 prints \"Stealth +21 (+23 to Hide in dim light)\"; the source omits the parenthesis and the errata does not touch it."
+}

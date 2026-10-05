@@ -1,0 +1,182 @@
+{
+  "id": "creature.boggard-warrior",
+  "type": "creature",
+  "name": "creature.boggard-warrior.name",
+  "traits": [
+    "amphibious",
+    "boggard",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 44,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "boggard"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6,
+      "note": "creature.boggard-warrior.skills.2.note"
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 0,
+    "con": 4,
+    "int": -1,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.club"
+    },
+    {
+      "item": "item.javelin",
+      "count": 3
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 5,
+    "will": 8
+  },
+  "hp": {
+    "value": 38
+  },
+  "speeds": {
+    "land": 20,
+    "swim": 25,
+    "note": "creature.boggard-warrior.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.boggard-warrior.strikes.club.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.boggard-warrior.strikes.tongue.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [],
+      "effects": [
+        {
+          "own": "tongue-grab"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.boggard-warrior.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.boggard-warrior.strikes.club-2.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "swamp-passage",
+      "section": "offense",
+      "name": "creature.boggard-warrior.abilities.swamp-passage.name",
+      "text": "creature.boggard-warrior.abilities.swamp-passage.text"
+    },
+    {
+      "id": "terrifying-croak",
+      "section": "offense",
+      "name": "creature.boggard-warrior.abilities.terrifying-croak.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.boggard-warrior.abilities.terrifying-croak.text"
+    },
+    {
+      "id": "tongue-grab",
+      "section": "offense",
+      "name": "creature.boggard-warrior.abilities.tongue-grab.name",
+      "text": "creature.boggard-warrior.abilities.tongue-grab.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 44 prints \"Stealth +6 (+8 in water)\"; the source omits the parenthesis and the errata does not touch it."
+}

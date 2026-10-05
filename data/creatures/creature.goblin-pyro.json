@@ -1,0 +1,143 @@
+{
+  "id": "creature.goblin-pyro",
+  "type": "creature",
+  "name": "creature.goblin-pyro.name",
+  "traits": [
+    "goblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 175,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "lore": "creature.goblin-pyro.lore.1",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": -1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.torch"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 9,
+    "will": 4
+  },
+  "hp": {
+    "value": 15
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.goblin-pyro.strikes.torch.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "fire"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1",
+          "type": "fire"
+        }
+      ],
+      "item": "item.torch"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "goblin-scuttle",
+      "section": "defense",
+      "name": "creature.goblin-pyro.abilities.goblin-scuttle.name",
+      "actions": "reaction",
+      "trigger": "creature.goblin-pyro.abilities.goblin-scuttle.trigger",
+      "text": "creature.goblin-pyro.abilities.goblin-scuttle.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "arcane",
+      "dc": 16,
+      "attack": 6,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.breathe-fire"
+            },
+            {
+              "spell": "spell.grease"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    }
+  ]
+}

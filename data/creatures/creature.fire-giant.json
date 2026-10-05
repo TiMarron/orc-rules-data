@@ -1,0 +1,183 @@
+{
+  "id": "creature.fire-giant",
+  "type": "creature",
+  "name": "creature.fire-giant.name",
+  "traits": [
+    "fire",
+    "giant",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 166,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "large",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun",
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 22
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 23
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 0,
+    "con": 5,
+    "int": 2,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.greatsword",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.half-plate",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 16,
+    "will": 18
+  },
+  "hp": {
+    "value": 175
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.fire-giant.strikes.greatsword.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "10",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d12+13",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greatsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.fire-giant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+13",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.fire-giant.strikes.flame.name",
+      "actions": "1",
+      "bonus": 21,
+      "range": 120,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "damage": [
+        {
+          "dice": "4d6",
+          "type": "fire"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire",
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.fire-giant.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "flaming-stroke",
+      "section": "offense",
+      "name": "creature.fire-giant.abilities.flaming-stroke.name",
+      "actions": "2",
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "text": "creature.fire-giant.abilities.flaming-stroke.text"
+    }
+  ],
+  "editNote": "The page prints \"Items +1 striking greatsword, +1 half plate, sack with 5 rocks\" and the record has no sack: the errata for page 166 says \"Take the sack with 5 rocks away from the fire giant's items. The remastered creature doesn't need them for any abilities.\", so the record stands."
+}

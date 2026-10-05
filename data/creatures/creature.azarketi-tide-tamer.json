@@ -1,0 +1,171 @@
+{
+  "id": "creature.azarketi-tide-tamer",
+  "type": "creature",
+  "name": "creature.azarketi-tide-tamer.name",
+  "traits": [
+    "amphibious",
+    "azarketi",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 31,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "alghollthu",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15,
+      "note": "creature.azarketi-tide-tamer.skills.0.note"
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15,
+      "note": "creature.azarketi-tide-tamer.skills.3.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 14
+    },
+    {
+      "lore": "creature.azarketi-tide-tamer.lore.5",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.studded-leather-armor"
+    },
+    {
+      "item": "item.trident",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 18,
+    "will": 12
+  },
+  "hp": {
+    "value": 115
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.azarketi-tide-tamer.strikes.trident.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.azarketi-tide-tamer.strikes.trident-2.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.azarketi-tide-tamer.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hydration",
+      "section": "defense",
+      "name": "creature.azarketi-tide-tamer.abilities.hydration.name",
+      "text": "creature.azarketi-tide-tamer.abilities.hydration.text"
+    },
+    {
+      "id": "speaker-of-the-oceans",
+      "section": "defense",
+      "name": "creature.azarketi-tide-tamer.abilities.speaker-of-the-oceans.name",
+      "text": "creature.azarketi-tide-tamer.abilities.speaker-of-the-oceans.text"
+    },
+    {
+      "id": "aquatic-predator",
+      "section": "offense",
+      "name": "creature.azarketi-tide-tamer.abilities.aquatic-predator.name",
+      "text": "creature.azarketi-tide-tamer.abilities.aquatic-predator.text"
+    }
+  ],
+  "editNote": "Skill qualifiers added from the book: page 31 prints \"Athletics +15 (+17 to Swim)\" and \"Stealth +15 (+17 underwater)\"; the source omits the parentheses and the errata does not touch them."
+}

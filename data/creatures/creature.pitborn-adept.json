@@ -1,0 +1,206 @@
+{
+  "id": "creature.pitborn-adept",
+  "type": "creature",
+  "name": "creature.pitborn-adept.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "nephilim"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 266,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 9
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 9
+    },
+    {
+      "lore": "creature.pitborn-adept.lore.5",
+      "mod": 9
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 6
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 2,
+    "con": 0,
+    "int": 4,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.explorers-clothing"
+    },
+    {
+      "name": "creature.pitborn-adept.items.1.name"
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 7,
+    "will": 8
+  },
+  "hp": {
+    "value": 29
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pitborn-adept.strikes.staff.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "drain-bonded-item",
+      "section": "offense",
+      "name": "creature.pitborn-adept.abilities.drain-bonded-item.name",
+      "actions": "free",
+      "frequency": "creature.pitborn-adept.abilities.drain-bonded-item.frequency",
+      "requirements": "creature.pitborn-adept.abilities.drain-bonded-item.requirements",
+      "text": "creature.pitborn-adept.abilities.drain-bonded-item.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 21,
+      "attack": 11,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.enfeeble"
+            },
+            {
+              "spell": "spell.force-barrage"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.floating-flame"
+            },
+            {
+              "spell": "spell.invisibility"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 17,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkness"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane in a Lore skill's name is replaced with the generic descriptor the dataset already uses. The rules text is the book's."
+}

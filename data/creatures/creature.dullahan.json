@@ -1,0 +1,222 @@
+{
+  "id": "creature.dullahan",
+  "type": "creature",
+  "name": "creature.dullahan.name",
+  "traits": [
+    "undead",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 134,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.lifesense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 2,
+    "con": 2,
+    "int": 2,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.full-plate"
+    },
+    {
+      "item": "item.hatchet",
+      "potency": 1
+    },
+    {
+      "item": "item.longsword",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 15,
+    "will": 17
+  },
+  "hp": {
+    "value": 95,
+    "note": "creature.dullahan.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "fear",
+    "death-effects",
+    "disease",
+    "poison",
+    "paralyzed",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dullahan.strikes.keen-longsword.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dullahan.strikes.keen-returning-hatchet.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dullahan.strikes.fist.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dullahan.strikes.keen-returning-hatchet-2.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.dullahan.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 30,
+      "text": "creature.dullahan.abilities.frightful-presence.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.dullahan.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "head-hunter",
+      "section": "offense",
+      "name": "creature.dullahan.abilities.head-hunter.name",
+      "text": "creature.dullahan.abilities.head-hunter.text"
+    },
+    {
+      "id": "reap",
+      "section": "offense",
+      "name": "creature.dullahan.abilities.reap.name",
+      "actions": "2",
+      "text": "creature.dullahan.abilities.reap.text"
+    },
+    {
+      "id": "summon-steed",
+      "section": "offense",
+      "name": "creature.dullahan.abilities.summon-steed.name",
+      "actions": "2",
+      "traits": [
+        "occult"
+      ],
+      "text": "creature.dullahan.abilities.summon-steed.text"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "item.resilient-major",
+  "type": "item",
+  "name": "item.resilient-major.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 226,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.resilient-major.text",
+  "level": 20,
+  "priceCp": 4944000,
+  "bulk": "0",
+  "usage": "item.resilient-major.usage",
+  "category": "rune",
+  "editNote": "Compared word by word with page 226: usage, trait, level 20, Price 49,440 gp, the shared text and \"The armor grants a +3 item bonus to saving throws.\"; the record leaves out only the page reference \"(page 223)\". The errata has no entry for this rune. The variant headings are dropped because each grade is a record of its own, carrying the level and Price of its own Type line; the second source citation is the source site naming the earlier edition beside this book, and the text was compared with this book's page."
+}

@@ -1,0 +1,157 @@
+{
+  "id": "creature.skeletal-giant",
+  "type": "creature",
+  "name": "creature.skeletal-giant.name",
+  "traits": [
+    "mindless",
+    "skeleton",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 313,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 1,
+    "con": 3,
+    "int": -5,
+    "wis": 0,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.glaive"
+    },
+    {
+      "item": "item.half-plate"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 8,
+    "will": 7
+  },
+  "hp": {
+    "value": 50,
+    "note": "creature.skeletal-giant.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 5
+    },
+    {
+      "type": "electricity",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.skeletal-giant.strikes.glaive.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "deadly",
+        "forceful",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.glaive"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.skeletal-giant.strikes.horns.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+5",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "broad-swipe",
+      "section": "offense",
+      "name": "creature.skeletal-giant.abilities.broad-swipe.name",
+      "actions": "2",
+      "text": "creature.skeletal-giant.abilities.broad-swipe.text"
+    },
+    {
+      "id": "terrifying-charge",
+      "section": "offense",
+      "name": "creature.skeletal-giant.abilities.terrifying-charge.name",
+      "actions": "2",
+      "text": "creature.skeletal-giant.abilities.terrifying-charge.text"
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "id": "creature.dhampir-wizard",
+  "type": "creature",
+  "name": "creature.dhampir-wizard.name",
+  "traits": [
+    "dhampir",
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 95,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 5
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 5
+    },
+    {
+      "skill": "skill.society",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "lore": "creature.dhampir-wizard.lore.6",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 0,
+    "int": 4,
+    "wis": 0,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "name": "creature.dhampir-wizard.items.1.name"
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 4,
+    "reflex": 7,
+    "will": 6,
+    "note": "creature.dhampir-wizard.saves.note"
+  },
+  "hp": {
+    "value": 22,
+    "note": "creature.dhampir-wizard.hp.note"
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dhampir-wizard.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dhampir-wizard.strikes.staff.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dhampir-wizard.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dhampir-wizard.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blood-of-the-night",
+      "section": "defense",
+      "name": "creature.dhampir-wizard.abilities.blood-of-the-night.name",
+      "text": "creature.dhampir-wizard.abilities.blood-of-the-night.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 18,
+      "attack": 8,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.grim-tendrils",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

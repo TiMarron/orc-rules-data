@@ -1,0 +1,211 @@
+{
+  "id": "creature.kobold-cavern-mage",
+  "type": "creature",
+  "name": "creature.kobold-cavern-mage.name",
+  "traits": [
+    "humanoid",
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 211,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey",
+    "petran",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 8
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": -1,
+    "int": 0,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.light-hammer"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 6,
+    "will": 7
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kobold-cavern-mage.strikes.light-hammer.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kobold-cavern-mage.strikes.claw.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kobold-cavern-mage.strikes.light-hammer-2.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "inspiring-display",
+      "section": "offense",
+      "name": "creature.kobold-cavern-mage.abilities.inspiring-display.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "requirements": "creature.kobold-cavern-mage.abilities.inspiring-display.requirements",
+      "text": "creature.kobold-cavern-mage.abilities.inspiring-display.text"
+    },
+    {
+      "id": "scamper",
+      "section": "offense",
+      "name": "creature.kobold-cavern-mage.abilities.scamper.name",
+      "actions": "1",
+      "requirements": "creature.kobold-cavern-mage.abilities.scamper.requirements",
+      "text": "creature.kobold-cavern-mage.abilities.scamper.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "primal",
+      "dc": 18,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.caustic-blast"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.know-the-way"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.fleet-step"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.pummeling-rubble"
+            },
+            {
+              "spell": "spell.runic-weapon"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "id": "creature.qarna",
+  "type": "creature",
+  "name": "creature.qarna.name",
+  "traits": [
+    "archon",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 27,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "utopian"
+  ],
+  "languageNote": "creature.qarna.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 11
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11,
+      "note": "creature.qarna.skills.5.note"
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 3,
+    "int": 1,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 22,
+    "note": "creature.qarna.ac.note"
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 10,
+    "will": 11,
+    "note": "creature.qarna.saves.note"
+  },
+  "hp": {
+    "value": 65
+  },
+  "immunities": [
+    "fear"
+  ],
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.qarna.strikes.horn.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "holy",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.push"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.qarna.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 100,
+      "traits": [
+        "holy",
+        "deadly",
+        "magical",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "archons-protection",
+      "section": "defense",
+      "name": "creature.qarna.abilities.archons-protection.name",
+      "actions": "reaction",
+      "trigger": "creature.qarna.abilities.archons-protection.trigger",
+      "text": "creature.qarna.abilities.archons-protection.text"
+    },
+    {
+      "id": "archons-pursuit",
+      "section": "offense",
+      "name": "creature.qarna.abilities.archons-pursuit.name",
+      "actions": "2",
+      "frequency": "creature.qarna.abilities.archons-pursuit.frequency",
+      "requirements": "creature.qarna.abilities.archons-pursuit.requirements",
+      "text": "creature.qarna.abilities.archons-pursuit.text"
+    },
+    {
+      "id": "distracting-arrow",
+      "section": "offense",
+      "name": "creature.qarna.abilities.distracting-arrow.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "mental"
+      ],
+      "text": "creature.qarna.abilities.distracting-arrow.text"
+    },
+    {
+      "id": "touch-of-charity",
+      "section": "offense",
+      "name": "creature.qarna.abilities.touch-of-charity.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "healing",
+        "manipulate",
+        "vitality"
+      ],
+      "text": "creature.qarna.abilities.touch-of-charity.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 21,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "count": 3,
+              "note": "creature.qarna.spellcasting.0.ranks.1.0.note"
+            },
+            {
+              "spell": "spell.sure-strike",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.animal-messenger",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 27 prints \"Survival +11 (+15 to Track)\"; the source omits the parenthesis and the errata does not touch it."
+}

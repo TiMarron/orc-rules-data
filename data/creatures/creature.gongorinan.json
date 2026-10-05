@@ -1,0 +1,276 @@
+{
+  "id": "creature.gongorinan",
+  "type": "creature",
+  "name": "creature.gongorinan.name",
+  "traits": [
+    "fiend",
+    "qlippoth",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 281,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "medium",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian"
+  ],
+  "languageNote": "creature.gongorinan.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 6,
+    "con": 7,
+    "int": 1,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.club",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 24,
+    "reflex": 21,
+    "will": 20
+  },
+  "hp": {
+    "value": 205
+  },
+  "immunities": [
+    "controlled",
+    "fear"
+  ],
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 10
+    },
+    {
+      "type": "physical",
+      "value": 10,
+      "except": [
+        "cold-iron"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "climb": 40,
+    "fly": 40,
+    "note": "creature.gongorinan.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gongorinan.strikes.club.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "reject-tools"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gongorinan.strikes.pincer.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+9",
+          "type": "slashing"
+        },
+        {
+          "dice": "2d6",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gongorinan.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "mental"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gongorinan.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "gongorinan-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "disquieting-display",
+      "section": "offense",
+      "name": "creature.gongorinan.abilities.disquieting-display.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "mental",
+        "occult",
+        "visual"
+      ],
+      "text": "creature.gongorinan.abilities.disquieting-display.text"
+    },
+    {
+      "id": "gongorinan-venom",
+      "section": "offense",
+      "name": "creature.gongorinan.abilities.gongorinan-venom.name",
+      "traits": [
+        "poison",
+        "polymorph"
+      ],
+      "text": "creature.gongorinan.abilities.gongorinan-venom.text"
+    },
+    {
+      "id": "painful-limbs",
+      "section": "offense",
+      "name": "creature.gongorinan.abilities.painful-limbs.name",
+      "actions": "2",
+      "text": "creature.gongorinan.abilities.painful-limbs.text"
+    },
+    {
+      "id": "reject-tools",
+      "section": "offense",
+      "name": "creature.gongorinan.abilities.reject-tools.name",
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "text": "creature.gongorinan.abilities.reject-tools.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 30,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.one-with-stone",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.cursed-metamorphosis"
+            },
+            {
+              "spell": "spell.petrify"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

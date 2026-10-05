@@ -1,0 +1,166 @@
+{
+  "id": "creature.catfolk-pouncer",
+  "type": "creature",
+  "name": "creature.catfolk-pouncer.name",
+  "traits": [
+    "catfolk",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 52,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "amurrun",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": -1,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 3
+    },
+    {
+      "item": "item.greataxe"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 9,
+    "will": 4
+  },
+  "hp": {
+    "value": 17
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.catfolk-pouncer.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d12+3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.catfolk-pouncer.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.catfolk-pouncer.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cats-luck",
+      "section": "defense",
+      "name": "creature.catfolk-pouncer.abilities.cats-luck.name",
+      "actions": "reaction",
+      "traits": [
+        "fortune"
+      ],
+      "trigger": "creature.catfolk-pouncer.abilities.cats-luck.trigger",
+      "frequency": "creature.catfolk-pouncer.abilities.cats-luck.frequency",
+      "text": "creature.catfolk-pouncer.abilities.cats-luck.text"
+    },
+    {
+      "id": "sudden-charge",
+      "section": "offense",
+      "name": "creature.catfolk-pouncer.abilities.sudden-charge.name",
+      "actions": "2",
+      "text": "creature.catfolk-pouncer.abilities.sudden-charge.text"
+    }
+  ]
+}

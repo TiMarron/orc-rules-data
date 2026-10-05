@@ -1,0 +1,175 @@
+{
+  "id": "creature.lizardfolk-defender",
+  "type": "creature",
+  "name": "creature.lizardfolk-defender.name",
+  "traits": [
+    "humanoid",
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 226,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "iruxi"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.flail"
+    },
+    {
+      "item": "item.javelin",
+      "count": 3
+    },
+    {
+      "item": "item.wooden-shield",
+      "hardness": 3,
+      "hp": 12,
+      "bt": 6
+    }
+  ],
+  "ac": {
+    "value": 16,
+    "note": "creature.lizardfolk-defender.ac.note"
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 7,
+    "will": 5
+  },
+  "hp": {
+    "value": 21
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 15
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lizardfolk-defender.strikes.flail.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "disarm",
+        "sweep",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.flail"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.lizardfolk-defender.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.lizardfolk-defender.strikes.tail.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.lizardfolk-defender.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.lizardfolk-defender.abilities.deep-breath.name",
+      "text": "creature.lizardfolk-defender.abilities.deep-breath.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.lizardfolk-defender.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.lizardfolk-defender.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "terrain-advantage",
+      "section": "offense",
+      "name": "creature.lizardfolk-defender.abilities.terrain-advantage.name",
+      "text": "creature.lizardfolk-defender.abilities.terrain-advantage.text"
+    }
+  ]
+}

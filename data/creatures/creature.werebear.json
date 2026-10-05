@@ -1,0 +1,263 @@
+{
+  "id": "creature.werebear",
+  "type": "creature",
+  "name": "creature.werebear.name",
+  "traits": [
+    "beast",
+    "human",
+    "humanoid",
+    "werecreature"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 346,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.werebear.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 9
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 4,
+    "int": 1,
+    "wis": 3,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.chain-shirt"
+    },
+    {
+      "item": "item.greataxe"
+    },
+    {
+      "item": "item.hatchet",
+      "count": 8
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 10,
+    "will": 10
+  },
+  "hp": {
+    "value": 75
+  },
+  "weaknesses": [
+    {
+      "type": "silver",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.werebear.strikes.claw.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d10+7",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.werebear.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "reach",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d12+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.werebear.strikes.hatchet.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.werebear.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d12+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "curse-of-the-werebear"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.werebear.strikes.hatchet-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bear-empathy",
+      "section": "top",
+      "name": "creature.werebear.abilities.bear-empathy.name",
+      "text": "creature.werebear.abilities.bear-empathy.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.werebear.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.werebear.abilities.change-shape.text"
+    },
+    {
+      "id": "curse-of-the-werebear",
+      "section": "offense",
+      "name": "creature.werebear.abilities.curse-of-the-werebear.name",
+      "traits": [
+        "curse",
+        "primal"
+      ],
+      "text": "creature.werebear.abilities.curse-of-the-werebear.text"
+    },
+    {
+      "id": "hunt-prey",
+      "section": "offense",
+      "name": "creature.werebear.abilities.hunt-prey.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.werebear.abilities.hunt-prey.text"
+    },
+    {
+      "id": "mauler",
+      "section": "offense",
+      "name": "creature.werebear.abilities.mauler.name",
+      "text": "creature.werebear.abilities.mauler.text"
+    },
+    {
+      "id": "moon-frenzy",
+      "section": "offense",
+      "name": "creature.werebear.abilities.moon-frenzy.name",
+      "traits": [
+        "polymorph",
+        "primal"
+      ]
+    }
+  ]
+}

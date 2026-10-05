@@ -1,0 +1,239 @@
+{
+  "id": "creature.lamia",
+  "type": "creature",
+  "name": "creature.lamia.name",
+  "traits": [
+    "beast",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 214,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "large",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "lore": "creature.lamia.lore.1",
+      "mod": 11
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 15
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 2,
+    "int": 1,
+    "wis": 3,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.javelin",
+      "count": 2
+    },
+    {
+      "item": "item.spear",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 15,
+    "will": 15
+  },
+  "hp": {
+    "value": 95
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lamia.strikes.spear.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.lamia.strikes.tail.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.lamia.strikes.spear-2.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.lamia.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "lamias-caress",
+      "section": "offense",
+      "name": "creature.lamia.abilities.lamias-caress.name",
+      "actions": "2",
+      "traits": [
+        "curse",
+        "mental",
+        "occult"
+      ],
+      "text": "creature.lamia.abilities.lamias-caress.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 25,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise",
+              "atWill": true
+            },
+            {
+              "spell": "spell.illusory-object",
+              "atWill": true
+            },
+            {
+              "spell": "spell.ventriloquism",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur"
+            },
+            {
+              "spell": "spell.humanoid-form",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.sleep"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "count": 3
+            },
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

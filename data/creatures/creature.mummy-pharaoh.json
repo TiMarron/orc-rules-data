@@ -1,0 +1,216 @@
+{
+  "id": "creature.mummy-pharaoh",
+  "type": "creature",
+  "name": "creature.mummy-pharaoh.name",
+  "traits": [
+    "mummy",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 235,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "necril"
+  ],
+  "languageNote": "creature.mummy-pharaoh.language-note",
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 20
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 15
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 4,
+    "int": 0,
+    "wis": 5,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.longspear",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 15,
+    "will": 20,
+    "note": "creature.mummy-pharaoh.saves.note"
+  },
+  "hp": {
+    "value": 175,
+    "note": "creature.mummy-pharaoh.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    },
+    {
+      "type": "water",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mummy-pharaoh.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+11",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "void"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mummy-pharaoh.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+11",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "void"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "rejuvenation",
+      "section": "top",
+      "name": "creature.mummy-pharaoh.abilities.rejuvenation.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.mummy-pharaoh.abilities.rejuvenation.text"
+    },
+    {
+      "id": "undead-mastery",
+      "section": "defense",
+      "name": "creature.mummy-pharaoh.abilities.undead-mastery.name",
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "aura": 100,
+      "text": "creature.mummy-pharaoh.abilities.undead-mastery.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.mummy-pharaoh.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.mummy-pharaoh.abilities.reactive-strike.text"
+    },
+    {
+      "id": "sacred-wrappings",
+      "section": "defense",
+      "name": "creature.mummy-pharaoh.abilities.sacred-wrappings.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.mummy-pharaoh.abilities.sacred-wrappings.text"
+    },
+    {
+      "id": "sandstorm-wrath",
+      "section": "offense",
+      "name": "creature.mummy-pharaoh.abilities.sandstorm-wrath.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "divine",
+        "earth",
+        "fire"
+      ],
+      "text": "creature.mummy-pharaoh.abilities.sandstorm-wrath.text"
+    },
+    {
+      "id": "veil-of-sand",
+      "section": "offense",
+      "name": "creature.mummy-pharaoh.abilities.veil-of-sand.name",
+      "actions": "1",
+      "traits": [
+        "aura",
+        "divine",
+        "earth"
+      ],
+      "text": "creature.mummy-pharaoh.abilities.veil-of-sand.text"
+    }
+  ]
+}

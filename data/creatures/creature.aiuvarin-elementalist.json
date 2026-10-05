@@ -1,0 +1,202 @@
+{
+  "id": "creature.aiuvarin-elementalist",
+  "type": "creature",
+  "name": "creature.aiuvarin-elementalist.name",
+  "traits": [
+    "aiuvarin",
+    "elf",
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 151,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 4
+    },
+    {
+      "lore": "creature.aiuvarin-elementalist.lore.4",
+      "mod": 8
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 0,
+    "int": 4,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 11,
+    "will": 8
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.aiuvarin-elementalist.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.aiuvarin-elementalist.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "elf-step",
+      "section": "offense",
+      "name": "creature.aiuvarin-elementalist.abilities.elf-step.name",
+      "actions": "1",
+      "text": "creature.aiuvarin-elementalist.abilities.elf-step.text"
+    },
+    {
+      "id": "elemental-field",
+      "section": "offense",
+      "name": "creature.aiuvarin-elementalist.abilities.elemental-field.name",
+      "actions": "2",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "electricity"
+      ],
+      "text": "creature.aiuvarin-elementalist.abilities.elemental-field.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 18,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.electric-arc"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.shield"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.gentle-landing"
+            },
+            {
+              "spell": "spell.gust-of-wind"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            },
+            {
+              "spell": "spell.thunderstrike"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

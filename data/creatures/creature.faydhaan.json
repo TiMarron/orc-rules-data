@@ -1,0 +1,305 @@
+{
+  "id": "creature.faydhaan",
+  "type": "creature",
+  "name": "creature.faydhaan.name",
+  "traits": [
+    "elemental",
+    "genie",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 158,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "note": "creature.faydhaan.perception.note",
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.wavesense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "muan",
+    "petran",
+    "pyric",
+    "sussuran",
+    "talican",
+    "thalassic"
+  ],
+  "languageNote": "creature.faydhaan.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 19,
+      "note": "creature.faydhaan.skills.0.note"
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 16
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 18
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 20
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 18
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 20
+    },
+    {
+      "skill": "skill.society",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 5,
+    "con": 2,
+    "int": 1,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.trident",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 18,
+    "will": 18
+  },
+  "hp": {
+    "value": 145
+  },
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.faydhaan.strikes.trident.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.faydhaan.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "nonlethal",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.faydhaan.strikes.trident-2.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "turbulent-seas",
+      "section": "defense",
+      "name": "creature.faydhaan.abilities.turbulent-seas.name",
+      "traits": [
+        "aura",
+        "water"
+      ],
+      "aura": 40,
+      "text": "creature.faydhaan.abilities.turbulent-seas.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.faydhaan.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "polymorph"
+      ],
+      "text": "creature.faydhaan.abilities.change-shape.text"
+    },
+    {
+      "id": "gift-of-hospitality",
+      "section": "offense",
+      "name": "creature.faydhaan.abilities.gift-of-hospitality.name",
+      "actions": "3",
+      "traits": [
+        "arcane",
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.faydhaan.abilities.gift-of-hospitality.text"
+    },
+    {
+      "id": "skewer",
+      "section": "offense",
+      "name": "creature.faydhaan.abilities.skewer.name",
+      "actions": "1",
+      "text": "creature.faydhaan.abilities.skewer.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 24,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.create-water",
+              "atWill": true
+            },
+            {
+              "spell": "spell.invisibility",
+              "count": 2
+            },
+            {
+              "spell": "spell.water-breathing"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.hydraulic-push",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.control-water",
+              "atWill": true
+            },
+            {
+              "spell": "spell.hydraulic-torrent"
+            },
+            {
+              "spell": "spell.truespeech",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "note": "creature.faydhaan.spellcasting.0.ranks.7.0.note"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 158 prints \"Athletics +19 (+23 to Swim)\"; the source omits the parenthesis and the errata does not touch it. Reserved Material removed: the proper name of a plane in a spell's restriction is replaced with the generic descriptor the dataset already uses. The punctuation is the book's: page 159 prints the restriction's three destinations with commas where the source has semicolons."
+}
