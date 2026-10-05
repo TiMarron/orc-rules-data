@@ -1,0 +1,290 @@
+{
+  "id": "creature.rune-giant",
+  "type": "creature",
+  "name": "creature.rune-giant.name",
+  "traits": [
+    "giant",
+    "humanoid",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 169,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 16,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 28,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun",
+    "petran"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 28
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 32
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 28
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 28
+    },
+    {
+      "skill": "skill.society",
+      "mod": 27
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 2,
+    "con": 7,
+    "int": 2,
+    "wis": 6,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.greatsword",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking-greater"
+        }
+      ]
+    },
+    {
+      "item": "item.longspear",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.splint-mail",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 38
+  },
+  "saves": {
+    "fortitude": 33,
+    "reflex": 26,
+    "will": 28
+  },
+  "hp": {
+    "value": 330
+  },
+  "immunities": [
+    "fire"
+  ],
+  "speeds": {
+    "land": 45,
+    "fly": 45
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.rune-giant.strikes.greatsword.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "20",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "3d12+17",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greatsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.rune-giant.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "25"
+      },
+      "damage": [
+        {
+          "dice": "2d8+17",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.rune-giant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 31,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+17",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.rune-giant.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.rune-giant.abilities.reactive-strike.text"
+    },
+    {
+      "id": "command-giants",
+      "section": "offense",
+      "name": "creature.rune-giant.abilities.command-giants.name",
+      "text": "creature.rune-giant.abilities.command-giants.text"
+    },
+    {
+      "id": "demand",
+      "section": "offense",
+      "name": "creature.rune-giant.abilities.demand.name",
+      "actions": "free",
+      "traits": [
+        "arcane",
+        "mental"
+      ],
+      "text": "creature.rune-giant.abilities.demand.text"
+    },
+    {
+      "id": "flashing-runes",
+      "section": "offense",
+      "name": "creature.rune-giant.abilities.flashing-runes.name",
+      "actions": "free",
+      "traits": [
+        "arcane",
+        "light"
+      ],
+      "trigger": "creature.rune-giant.abilities.flashing-runes.trigger",
+      "text": "creature.rune-giant.abilities.flashing-runes.text"
+    },
+    {
+      "id": "invoke-rune",
+      "section": "offense",
+      "name": "creature.rune-giant.abilities.invoke-rune.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "electricity"
+      ],
+      "text": "creature.rune-giant.abilities.invoke-rune.text"
+    },
+    {
+      "id": "wide-swing",
+      "section": "offense",
+      "name": "creature.rune-giant.abilities.wide-swing.name",
+      "actions": "1",
+      "text": "creature.rune-giant.abilities.wide-swing.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 35,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "atWill": true
+            },
+            {
+              "spell": "spell.suggestion",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.sending"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.dominate",
+              "count": 3
+            },
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.fly"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Rarity corrected to the book: page 169 prints the trait line \"UNCOMMON GARGANTUAN GIANT HUMANOID UNHOLY\"; the record had common and the errata does not touch it."
+}

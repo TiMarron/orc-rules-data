@@ -1,0 +1,192 @@
+{
+  "id": "creature.skeletal-champion",
+  "type": "creature",
+  "name": "creature.skeletal-champion.name",
+  "traits": [
+    "skeleton",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 312,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 1,
+    "int": -1,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.chain-mail"
+    },
+    {
+      "item": "item.lance"
+    },
+    {
+      "item": "item.longsword"
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "creature.skeletal-champion.ac.note"
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 10,
+    "will": 6
+  },
+  "hp": {
+    "value": 25,
+    "note": "creature.skeletal-champion.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 5
+    },
+    {
+      "type": "electricity",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.skeletal-champion.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.skeletal-champion.strikes.claw.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.skeletal-champion.strikes.lance.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "deadly",
+        "jousting",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "jousting": "1d6",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.lance"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.skeletal-champion.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.skeletal-champion.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    }
+  ]
+}

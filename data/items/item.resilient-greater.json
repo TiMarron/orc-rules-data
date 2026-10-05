@@ -1,0 +1,23 @@
+{
+  "id": "item.resilient-greater",
+  "type": "item",
+  "name": "item.resilient-greater.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 226,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.resilient-greater.text",
+  "level": 14,
+  "priceCp": 344000,
+  "bulk": "0",
+  "usage": "item.resilient-greater.usage",
+  "category": "rune",
+  "editNote": "Final period restored from the book: page 226 prints \"The armor grants a +2 item bonus to saving throws.\" and the source drops the full stop."
+}

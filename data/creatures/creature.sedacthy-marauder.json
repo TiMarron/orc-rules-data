@@ -1,0 +1,186 @@
+{
+  "id": "creature.sedacthy-marauder",
+  "type": "creature",
+  "name": "creature.sedacthy-marauder.name",
+  "traits": [
+    "amphibious",
+    "humanoid",
+    "sedacthy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 300,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.wavesense",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "thalassic"
+  ],
+  "languageNote": "creature.sedacthy-marauder.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": 0,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.breastplate"
+    },
+    {
+      "item": "item.spear",
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 9,
+    "will": 9
+  },
+  "hp": {
+    "value": 75
+  },
+  "speeds": {
+    "land": 20,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-marauder.strikes.spear.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-marauder.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d4",
+          "type": "bleed",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sedacthy-marauder.strikes.claw.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.sedacthy-marauder.strikes.spear-2.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sea-speech",
+      "section": "top",
+      "name": "creature.sedacthy-marauder.abilities.sea-speech.name",
+      "text": "creature.sedacthy-marauder.abilities.sea-speech.text"
+    },
+    {
+      "id": "vengeful-throw",
+      "section": "defense",
+      "name": "creature.sedacthy-marauder.abilities.vengeful-throw.name",
+      "actions": "reaction",
+      "trigger": "creature.sedacthy-marauder.abilities.vengeful-throw.trigger",
+      "text": "creature.sedacthy-marauder.abilities.vengeful-throw.text"
+    },
+    {
+      "id": "challenging-shriek",
+      "section": "offense",
+      "name": "creature.sedacthy-marauder.abilities.challenging-shriek.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.sedacthy-marauder.abilities.challenging-shriek.text"
+    },
+    {
+      "id": "shared-feast",
+      "section": "offense",
+      "name": "creature.sedacthy-marauder.abilities.shared-feast.name",
+      "actions": "2",
+      "text": "creature.sedacthy-marauder.abilities.shared-feast.text"
+    }
+  ]
+}

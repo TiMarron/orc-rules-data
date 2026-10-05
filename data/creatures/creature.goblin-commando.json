@@ -1,0 +1,145 @@
+{
+  "id": "creature.goblin-commando",
+  "type": "creature",
+  "name": "creature.goblin-commando.name",
+  "traits": [
+    "goblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 174,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 5
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 2,
+    "int": -1,
+    "wis": 0,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.horsechopper"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 8,
+    "will": 5
+  },
+  "hp": {
+    "value": 18
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.goblin-commando.strikes.horsechopper.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "reach",
+        "trip",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "10",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.horsechopper"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.goblin-commando.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "goblin-scuttle",
+      "section": "defense",
+      "name": "creature.goblin-commando.abilities.goblin-scuttle.name",
+      "actions": "reaction",
+      "trigger": "creature.goblin-commando.abilities.goblin-scuttle.trigger",
+      "text": "creature.goblin-commando.abilities.goblin-scuttle.text"
+    }
+  ]
+}

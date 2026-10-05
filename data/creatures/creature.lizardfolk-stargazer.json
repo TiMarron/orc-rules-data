@@ -1,0 +1,186 @@
+{
+  "id": "creature.lizardfolk-stargazer",
+  "type": "creature",
+  "name": "creature.lizardfolk-stargazer.name",
+  "traits": [
+    "humanoid",
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 227,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "iruxi"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 4
+    },
+    {
+      "lore": "creature.lizardfolk-stargazer.lore.1",
+      "mod": 6
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 1,
+    "int": 0,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 6,
+    "will": 10
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lizardfolk-stargazer.strikes.staff.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.lizardfolk-stargazer.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.lizardfolk-stargazer.strikes.tail.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.lizardfolk-stargazer.abilities.deep-breath.name",
+      "text": "creature.lizardfolk-stargazer.abilities.deep-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 18,
+      "attack": 10,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.know-the-way"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.stabilize"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.runic-body"
+            },
+            {
+              "spell": "spell.pest-form"
+            },
+            {
+              "spell": "spell.summon-animal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "The text check fails because page 227 prints \"Deep Breath As lizardfolk defender, but 20 minutes.\" and the source expands it. Page 226 prints the defender's ability as \"A lizardfolk defender can hold their breath for 15 minutes.\"; the record has the same sentence with the stargazer and 20 minutes, which is the stated change and nothing else."
+}

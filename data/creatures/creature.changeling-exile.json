@@ -1,0 +1,214 @@
+{
+  "id": "creature.changeling-exile",
+  "type": "creature",
+  "name": "creature.changeling-exile.name",
+  "traits": [
+    "changeling",
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 60,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "wildsong"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 9
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 9
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 0,
+    "int": 0,
+    "wis": 4,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.sickle"
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 8,
+    "will": 11,
+    "note": "creature.changeling-exile.saves.note"
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.changeling-exile.strikes.claws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.changeling-exile.strikes.staff.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.changeling-exile.strikes.sickle.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.sickle"
+    }
+  ],
+  "abilities": [],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 21,
+      "attack": 11,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.breathe-fire"
+            },
+            {
+              "spell": "spell.spider-sting"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkness"
+            },
+            {
+              "spell": "spell.humanoid-form"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.changeling-exile.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 21,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.untamed-form"
+            },
+            {
+              "spell": "spell.untamed-shift"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Rarity and spell ranks corrected to the book: page 60 prints the trait line \"UNCOMMON MEDIUM CHANGELING HUMAN HUMANOID\" and \"2nd darkness, humanoid form, 1st breathe fire, spider sting, ventriloquism\" (a comma where the rank changes); the record had common and the source runs the 1st-rank spells into the 2nd rank, and the errata touches neither."
+}

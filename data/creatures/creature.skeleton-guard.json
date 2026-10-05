@@ -1,0 +1,163 @@
+{
+  "id": "creature.skeleton-guard",
+  "type": "creature",
+  "name": "creature.skeleton-guard.name",
+  "traits": [
+    "mindless",
+    "skeleton",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 312,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 2,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 3
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 0,
+    "int": -5,
+    "wis": 0,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.scimitar"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 8,
+    "will": 2
+  },
+  "hp": {
+    "value": 4,
+    "note": "creature.skeleton-guard.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 5
+    },
+    {
+      "type": "electricity",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.skeleton-guard.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.skeleton-guard.strikes.claw.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.skeleton-guard.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 6,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": []
+}

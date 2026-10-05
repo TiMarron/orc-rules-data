@@ -1,0 +1,326 @@
+{
+  "id": "creature.vampire-mastermind",
+  "type": "creature",
+  "name": "creature.vampire-mastermind.name",
+  "traits": [
+    "undead",
+    "unholy",
+    "vampire"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 337,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "languageNote": "creature.vampire-mastermind.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 21
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 20
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 20
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 22
+    },
+    {
+      "skill": "skill.society",
+      "mod": 19
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": 6,
+    "wis": 4,
+    "cha": 5
+  },
+  "items": [
+    {
+      "name": "creature.vampire-mastermind.items.0.name"
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 18,
+    "will": 20
+  },
+  "hp": {
+    "value": 115,
+    "note": "creature.vampire-mastermind.hp.note"
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10,
+      "note": "creature.vampire-mastermind.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "climb": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vampire-mastermind.strikes.claw.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "children-of-the-night",
+      "section": "top",
+      "name": "creature.vampire-mastermind.abilities.children-of-the-night.name",
+      "traits": [
+        "divine",
+        "mental"
+      ]
+    },
+    {
+      "id": "vampire-vulnerabilities",
+      "section": "defense",
+      "name": "creature.vampire-mastermind.abilities.vampire-vulnerabilities.name"
+    },
+    {
+      "id": "mist-escape",
+      "section": "defense",
+      "name": "creature.vampire-mastermind.abilities.mist-escape.name",
+      "actions": "free"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.vampire-mastermind.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.vampire-mastermind.abilities.change-shape.text"
+    },
+    {
+      "id": "create-servitor",
+      "section": "offense",
+      "name": "creature.vampire-mastermind.abilities.create-servitor.name",
+      "traits": [
+        "divine",
+        "downtime"
+      ]
+    },
+    {
+      "id": "dominate",
+      "section": "offense",
+      "name": "creature.vampire-mastermind.abilities.dominate.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "incapacitation",
+        "mental",
+        "visual"
+      ],
+      "text": "creature.vampire-mastermind.abilities.dominate.text"
+    },
+    {
+      "id": "drain-bonded-item",
+      "section": "offense",
+      "name": "creature.vampire-mastermind.abilities.drain-bonded-item.name",
+      "actions": "free",
+      "traits": [
+        "arcane"
+      ],
+      "frequency": "creature.vampire-mastermind.abilities.drain-bonded-item.frequency",
+      "requirements": "creature.vampire-mastermind.abilities.drain-bonded-item.requirements",
+      "text": "creature.vampire-mastermind.abilities.drain-bonded-item.text"
+    },
+    {
+      "id": "drink-blood",
+      "section": "offense",
+      "name": "creature.vampire-mastermind.abilities.drink-blood.name",
+      "actions": "1",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.vampire-mastermind.abilities.drink-blood.text"
+    },
+    {
+      "id": "steady-spellcasting",
+      "section": "offense",
+      "name": "creature.vampire-mastermind.abilities.steady-spellcasting.name",
+      "text": "creature.vampire-mastermind.abilities.steady-spellcasting.text"
+    },
+    {
+      "id": "turn-to-mist",
+      "section": "offense",
+      "name": "creature.vampire-mastermind.abilities.turn-to-mist.name",
+      "actions": "1",
+      "traits": [
+        "air",
+        "concentrate",
+        "divine",
+        "polymorph"
+      ]
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 29,
+      "attack": 19,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.sigil"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.dizzying-colors",
+              "count": 2
+            },
+            {
+              "spell": "spell.enfeeble"
+            },
+            {
+              "spell": "spell.fleet-step"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur"
+            },
+            {
+              "spell": "spell.floating-flame"
+            },
+            {
+              "spell": "spell.invisibility"
+            },
+            {
+              "spell": "spell.stupefy"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.fireball"
+            },
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.lightning-bolt"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.fire-shield"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            },
+            {
+              "spell": "spell.vision-of-death"
+            },
+            {
+              "spell": "spell.wall-of-fire"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Rarity corrected to the book: page 337 prints the trait line \"RARE MEDIUM UNDEAD UNHOLY VAMPIRE\"; the record had common and the errata does not touch it."
+}

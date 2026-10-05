@@ -1,0 +1,156 @@
+{
+  "id": "creature.sinspawn",
+  "type": "creature",
+  "name": "creature.sinspawn.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 311,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "sin-scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "aklo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 4,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.sinspawn.items.0.name"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 9,
+    "will": 6,
+    "note": "creature.sinspawn.saves.note"
+  },
+  "hp": {
+    "value": 30
+  },
+  "immunities": [
+    "controlled"
+  ],
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sinspawn.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "sinful-bite"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sinspawn.strikes.claw.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sin",
+      "section": "top",
+      "name": "creature.sinspawn.abilities.sin.name",
+      "text": "creature.sinspawn.abilities.sin.text"
+    },
+    {
+      "id": "sin-scent",
+      "section": "top",
+      "name": "creature.sinspawn.abilities.sin-scent.name",
+      "text": "creature.sinspawn.abilities.sin-scent.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.sinspawn.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "sinful-bite",
+      "section": "offense",
+      "name": "creature.sinspawn.abilities.sinful-bite.name",
+      "traits": [
+        "arcane",
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.sinspawn.abilities.sinful-bite.text"
+    }
+  ]
+}

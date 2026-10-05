@@ -1,0 +1,254 @@
+{
+  "id": "creature.kanya",
+  "type": "creature",
+  "name": "creature.kanya.name",
+  "traits": [
+    "azata",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 34,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.kanya.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 16
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 18
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 14
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 20
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 14
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 5,
+    "int": 2,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.longsword",
+      "potency": 1
+    },
+    {
+      "name": "creature.kanya.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 16,
+    "will": 16
+  },
+  "hp": {
+    "value": 135
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    },
+    {
+      "type": "unholy",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 45
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kanya.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "holy",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d6",
+          "type": "sonic"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kanya.strikes.tail.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "holy",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "free-expression",
+      "section": "defense",
+      "name": "creature.kanya.abilities.free-expression.name",
+      "text": "creature.kanya.abilities.free-expression.text"
+    },
+    {
+      "id": "muses-courage",
+      "section": "offense",
+      "name": "creature.kanya.abilities.muses-courage.name",
+      "text": "creature.kanya.abilities.muses-courage.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 26,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          },
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.summon-instrument"
+          },
+          {
+            "spell": "spell.uplifting-overture"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.clear-mind"
+            },
+            {
+              "spell": "spell.counter-performance"
+            },
+            {
+              "spell": "spell.noise-blast"
+            },
+            {
+              "spell": "spell.soothe"
+            },
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Page 34 prints \"Items +1 longsword, virtuoso harp\". The dataset has no record for a harp, so the entry kept as its printed name is a complete record of what the page prints. No item reference is inferred for it."
+}

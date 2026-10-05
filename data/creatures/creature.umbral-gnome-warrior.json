@@ -1,0 +1,154 @@
+{
+  "id": "creature.umbral-gnome-warrior",
+  "type": "creature",
+  "name": "creature.umbral-gnome-warrior.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 173,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "gnomish",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": 0,
+    "wis": 1,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.heavy-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.spear"
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "creature.umbral-gnome-warrior.ac.note"
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 8,
+    "will": 5
+  },
+  "hp": {
+    "value": 34
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.umbral-gnome-warrior.strikes.spear.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.umbral-gnome-warrior.strikes.heavy-crossbow.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 120,
+      "reload": 2,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.heavy-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.umbral-gnome-warrior.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.umbral-gnome-warrior.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 15,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "creature.grindylow",
+  "type": "creature",
+  "name": "creature.grindylow.name",
+  "traits": [
+    "aberration",
+    "amphibious"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 186,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "small",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": -1,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.spear"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 7,
+    "will": 5
+  },
+  "hp": {
+    "value": 14
+  },
+  "speeds": {
+    "land": 10,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.grindylow.strikes.bite.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.grindylow.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.grindylow.strikes.spear.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.grindylow.strikes.spear-2.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.grindylow.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.grindylow.abilities.reactive-strike.text"
+    },
+    {
+      "id": "clinging-suckers",
+      "section": "offense",
+      "name": "creature.grindylow.abilities.clinging-suckers.name",
+      "text": "creature.grindylow.abilities.clinging-suckers.text"
+    },
+    {
+      "id": "jet",
+      "section": "offense",
+      "name": "creature.grindylow.abilities.jet.name",
+      "actions": "2",
+      "traits": [
+        "move"
+      ],
+      "text": "creature.grindylow.abilities.jet.text"
+    }
+  ]
+}

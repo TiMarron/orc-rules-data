@@ -1,0 +1,153 @@
+{
+  "id": "creature.hobgoblin-general",
+  "type": "creature",
+  "name": "creature.hobgoblin-general.name",
+  "traits": [
+    "hobgoblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 199,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.glaive",
+      "potency": 1
+    },
+    {
+      "item": "item.half-plate"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 15,
+    "will": 13
+  },
+  "hp": {
+    "value": 90
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hobgoblin-general.strikes.glaive.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "deadly",
+        "forceful",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.glaive"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hobgoblin-general.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 15,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "brutal",
+        "deadly",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "generals-cry",
+      "section": "top",
+      "name": "creature.hobgoblin-general.abilities.generals-cry.name",
+      "text": "creature.hobgoblin-general.abilities.generals-cry.text"
+    },
+    {
+      "id": "formation",
+      "section": "defense",
+      "name": "creature.hobgoblin-general.abilities.formation.name",
+      "text": "creature.hobgoblin-general.abilities.formation.text"
+    },
+    {
+      "id": "polearm-critical-specialization",
+      "section": "offense",
+      "name": "creature.hobgoblin-general.abilities.polearm-critical-specialization.name",
+      "text": "creature.hobgoblin-general.abilities.polearm-critical-specialization.text"
+    }
+  ]
+}

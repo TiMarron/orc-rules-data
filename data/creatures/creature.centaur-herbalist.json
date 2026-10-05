@@ -1,0 +1,147 @@
+{
+  "id": "creature.centaur-herbalist",
+  "type": "creature",
+  "name": "creature.centaur-herbalist.name",
+  "traits": [
+    "beast",
+    "centaur",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 58,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "large",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 6
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 7
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 1,
+    "int": 0,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.healers-toolkit"
+    },
+    {
+      "name": "creature.centaur-herbalist.items.1.name",
+      "count": 6
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 10
+      }
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 9,
+    "will": 10
+  },
+  "hp": {
+    "value": 36
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.centaur-herbalist.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.centaur-herbalist.strikes.sling.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "load-sachet",
+      "section": "offense",
+      "name": "creature.centaur-herbalist.abilities.load-sachet.name",
+      "actions": "1",
+      "requirements": "creature.centaur-herbalist.abilities.load-sachet.requirements",
+      "text": "creature.centaur-herbalist.abilities.load-sachet.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.centaur-herbalist.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.centaur-herbalist.abilities.trample.text"
+    }
+  ],
+  "editNote": "Count added from the book: page 58 prints \"herbal sachet (6)\"; the source omits the parenthesis and the errata does not touch it."
+}

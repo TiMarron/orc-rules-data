@@ -1,0 +1,159 @@
+{
+  "id": "creature.bugbear-prowler",
+  "type": "creature",
+  "name": "creature.bugbear-prowler.name",
+  "traits": [
+    "bugbear",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 47,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.bastard-sword"
+    },
+    {
+      "item": "item.javelin",
+      "count": 3
+    },
+    {
+      "item": "item.leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 8,
+    "will": 5
+  },
+  "hp": {
+    "value": 34
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bugbear-prowler.strikes.bastard-sword.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d12"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.bastard-sword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bugbear-prowler.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bugbear-prowler.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bushwhack",
+      "section": "offense",
+      "name": "creature.bugbear-prowler.abilities.bushwhack.name",
+      "actions": "1",
+      "text": "creature.bugbear-prowler.abilities.bushwhack.text"
+    },
+    {
+      "id": "mauler",
+      "section": "offense",
+      "name": "creature.bugbear-prowler.abilities.mauler.name",
+      "text": "creature.bugbear-prowler.abilities.mauler.text"
+    }
+  ]
+}

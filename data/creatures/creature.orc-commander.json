@@ -1,0 +1,162 @@
+{
+  "id": "creature.orc-commander",
+  "type": "creature",
+  "name": "creature.orc-commander.name",
+  "traits": [
+    "humanoid",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "orcish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 1,
+    "int": -1,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.greatclub"
+    },
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.javelin",
+      "count": 6
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 6,
+    "will": 7
+  },
+  "hp": {
+    "value": 32
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.orc-commander.strikes.greatclub.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "backswing",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.greatclub"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.orc-commander.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.orc-commander.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ferocity",
+      "section": "defense",
+      "name": "creature.orc-commander.abilities.ferocity.name",
+      "ability": "ability.ferocity",
+      "actions": "reaction"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.orc-commander.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "battle-cry",
+      "section": "offense",
+      "name": "creature.orc-commander.abilities.battle-cry.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.orc-commander.abilities.battle-cry.text"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "id": "creature.tengu-sneak",
+  "type": "creature",
+  "name": "creature.tengu-sneak.name",
+  "traits": [
+    "humanoid",
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 325,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "tengu"
+  ],
+  "languageNote": "creature.tengu-sneak.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "skill": "skill.society",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 1,
+    "wis": 0,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 30
+      }
+    },
+    {
+      "name": "creature.tengu-sneak.items.1.name",
+      "note": "creature.tengu-sneak.items.1.note"
+    },
+    {
+      "item": "item.wakizashi"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 4
+  },
+  "hp": {
+    "value": 27
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tengu-sneak.strikes.wakizashi.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.wakizashi"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tengu-sneak.strikes.beak.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tengu-sneak.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "eat-fortune",
+      "section": "defense",
+      "name": "creature.tengu-sneak.abilities.eat-fortune.name",
+      "actions": "reaction",
+      "traits": [
+        "divine",
+        "tengu",
+        "concentrate"
+      ],
+      "frequency": "creature.tengu-sneak.abilities.eat-fortune.frequency",
+      "trigger": "creature.tengu-sneak.abilities.eat-fortune.trigger",
+      "text": "creature.tengu-sneak.abilities.eat-fortune.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.tengu-sneak.abilities.sneak-attack.name",
+      "text": "creature.tengu-sneak.abilities.sneak-attack.text"
+    },
+    {
+      "id": "surprise-attacker",
+      "section": "offense",
+      "name": "creature.tengu-sneak.abilities.surprise-attacker.name",
+      "text": "creature.tengu-sneak.abilities.surprise-attacker.text"
+    },
+    {
+      "id": "feather-fan-dustup",
+      "section": "offense",
+      "name": "creature.tengu-sneak.abilities.feather-fan-dustup.name",
+      "actions": "2",
+      "traits": [
+        "air",
+        "divine"
+      ],
+      "frequency": "creature.tengu-sneak.abilities.feather-fan-dustup.frequency",
+      "text": "creature.tengu-sneak.abilities.feather-fan-dustup.text"
+    }
+  ],
+  "editNote": "Item note added from the book: page 325 prints \"tengu feather fan (worth 0 gp)\"; the source omits the parenthesis and the errata does not touch it."
+}

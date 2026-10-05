@@ -1,0 +1,220 @@
+{
+  "id": "creature.caligni-dancer",
+  "type": "creature",
+  "name": "creature.caligni-dancer.name",
+  "traits": [
+    "caligni",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 48,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.caligni-dancer.senses.0"
+      },
+      {
+        "ability": "ability.light-blindness"
+      }
+    ]
+  },
+  "languages": [
+    "caligni"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 2,
+    "int": -1,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.light-mace",
+      "name": "creature.caligni-dancer.items.0.name"
+    },
+    {
+      "item": "item.dagger"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 9,
+    "will": 4
+  },
+  "hp": {
+    "value": 18,
+    "note": "creature.caligni-dancer.hp.note"
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.caligni-dancer.strikes.baton.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.caligni-dancer.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.caligni-dancer.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "distracting-frolic",
+      "section": "defense",
+      "name": "creature.caligni-dancer.abilities.distracting-frolic.name",
+      "actions": "reaction",
+      "traits": [
+        "fortune",
+        "manipulate"
+      ],
+      "trigger": "creature.caligni-dancer.abilities.distracting-frolic.trigger",
+      "text": "creature.caligni-dancer.abilities.distracting-frolic.text"
+    },
+    {
+      "id": "final-dance",
+      "section": "defense",
+      "name": "creature.caligni-dancer.abilities.final-dance.name",
+      "traits": [
+        "occult",
+        "shadow",
+        "visual"
+      ],
+      "text": "creature.caligni-dancer.abilities.final-dance.text"
+    },
+    {
+      "id": "dancers-curse",
+      "section": "offense",
+      "name": "creature.caligni-dancer.abilities.dancers-curse.name",
+      "actions": "1",
+      "traits": [
+        "curse",
+        "mental",
+        "occult"
+      ],
+      "text": "creature.caligni-dancer.abilities.dancers-curse.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.caligni-dancer.abilities.sneak-attack.name",
+      "text": "creature.caligni-dancer.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 16,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.counter-performance",
+              "note": "creature.caligni-dancer.spellcasting.0.ranks.1.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

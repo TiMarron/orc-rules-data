@@ -1,0 +1,138 @@
+{
+  "id": "creature.minotaur-hunter",
+  "type": "creature",
+  "name": "creature.minotaur-hunter.name",
+  "traits": [
+    "beast",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "large",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12,
+      "note": "creature.minotaur-hunter.skills.2.note"
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 0,
+    "con": 3,
+    "int": -2,
+    "wis": 2,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.greataxe"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 8,
+    "will": 10
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.minotaur-hunter.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "reach",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d12+8",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.minotaur-hunter.strikes.horn.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "perfect-orienteering",
+      "section": "top",
+      "name": "creature.minotaur-hunter.abilities.perfect-orienteering.name",
+      "text": "creature.minotaur-hunter.abilities.perfect-orienteering.text"
+    },
+    {
+      "id": "axe-swipe",
+      "section": "offense",
+      "name": "creature.minotaur-hunter.abilities.axe-swipe.name",
+      "actions": "2",
+      "text": "creature.minotaur-hunter.abilities.axe-swipe.text"
+    },
+    {
+      "id": "hunted-fear",
+      "section": "offense",
+      "name": "creature.minotaur-hunter.abilities.hunted-fear.name",
+      "actions": "1",
+      "text": "creature.minotaur-hunter.abilities.hunted-fear.text"
+    },
+    {
+      "id": "powerful-charge",
+      "section": "offense",
+      "name": "creature.minotaur-hunter.abilities.powerful-charge.name",
+      "actions": "2",
+      "text": "creature.minotaur-hunter.abilities.powerful-charge.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 232 prints \"Survival +12 (perfect orienteering)\"; the source omits the parenthesis and the errata does not touch it."
+}

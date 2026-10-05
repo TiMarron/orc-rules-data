@@ -1,0 +1,157 @@
+{
+  "id": "creature.kholo-hunter",
+  "type": "creature",
+  "name": "creature.kholo-hunter.name",
+  "traits": [
+    "humanoid",
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 208,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "kholo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": -1,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.battle-axe"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 7,
+    "will": 7
+  },
+  "hp": {
+    "value": 29
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kholo-hunter.strikes.battle-axe.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.battle-axe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kholo-hunter.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+2",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kholo-hunter.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 60,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.kholo-hunter.abilities.pack-attack.name",
+      "text": "creature.kholo-hunter.abilities.pack-attack.text"
+    },
+    {
+      "id": "rugged-travel",
+      "section": "offense",
+      "name": "creature.kholo-hunter.abilities.rugged-travel.name",
+      "text": "creature.kholo-hunter.abilities.rugged-travel.text"
+    }
+  ]
+}

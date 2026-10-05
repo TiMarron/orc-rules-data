@@ -1,0 +1,168 @@
+{
+  "id": "creature.bugbear-tormentor",
+  "type": "creature",
+  "name": "creature.bugbear-tormentor.name",
+  "traits": [
+    "bugbear",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 47,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": -1,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.chain-shirt"
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.sickle",
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 10,
+    "will": 6
+  },
+  "hp": {
+    "value": 44
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bugbear-tormentor.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bugbear-tormentor.strikes.sickle.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.sickle"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bugbear-tormentor.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.bugbear-tormentor.abilities.sneak-attack.name",
+      "text": "creature.bugbear-tormentor.abilities.sneak-attack.text"
+    },
+    {
+      "id": "twin-feint",
+      "section": "offense",
+      "name": "creature.bugbear-tormentor.abilities.twin-feint.name",
+      "actions": "2",
+      "text": "creature.bugbear-tormentor.abilities.twin-feint.text"
+    }
+  ]
+}

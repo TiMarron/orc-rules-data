@@ -1,0 +1,194 @@
+{
+  "id": "creature.kholo-bonekeeper",
+  "type": "creature",
+  "name": "creature.kholo-bonekeeper.name",
+  "traits": [
+    "humanoid",
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 209,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "kholo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 7
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 0,
+    "int": 0,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.falchion"
+    },
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.religious-symbol-wooden"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 6,
+    "will": 10
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kholo-bonekeeper.strikes.falchion.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.falchion"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kholo-bonekeeper.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.kholo-bonekeeper.abilities.pack-attack.name",
+      "text": "creature.kholo-bonekeeper.abilities.pack-attack.text"
+    },
+    {
+      "id": "rugged-travel",
+      "section": "offense",
+      "name": "creature.kholo-bonekeeper.abilities.rugged-travel.name",
+      "text": "creature.kholo-bonekeeper.abilities.rugged-travel.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "divine",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.sigil"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.runic-weapon"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkness"
+            },
+            {
+              "spell": "spell.harm",
+              "count": 4
+            },
+            {
+              "spell": "spell.spiritual-armament"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

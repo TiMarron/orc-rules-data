@@ -1,0 +1,23 @@
+{
+  "id": "item.striking-major",
+  "type": "item",
+  "name": "item.striking-major.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 236,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.striking-major.text",
+  "level": 19,
+  "priceCp": 3106500,
+  "bulk": "0",
+  "usage": "item.striking-major.usage",
+  "category": "rune",
+  "editNote": "Compared word by word with page 236: usage, trait, level 19, Price 31,065 gp, the shared text and \"The weapon deals four weapon damage dice.\" The page prints \"You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes' Prices.\" and the record has only the second half: the Fall 2024 errata for page 236 says to change that sentence \"to simply 'The Price of the upgrade is the difference between the two runes' Prices.'\", so the record stands. The variant headings are dropped because each grade is a record of its own, carrying the level and Price of its own Type line; the second source citation is the source site naming the earlier edition beside this book, and the text was compared with this book's page."
+}

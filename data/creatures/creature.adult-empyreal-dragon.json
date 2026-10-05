@@ -218,7 +218,7 @@
         "emotion",
         "mental"
       ],
-      "aura": 20,
+      "aura": 40,
       "text": "creature.adult-empyreal-dragon.abilities.inspiring-presence.text"
     },
     {
@@ -320,5 +320,5 @@
       ]
     }
   ],
-  "editNote": "Reserved Material removed: the proper name of a plane in a Lore skill's name is replaced with the generic descriptor the dataset already uses. The rules text is the book's."
+  "editNote": "Reserved Material removed: the proper name of a plane in a Lore skill's name is replaced with the generic descriptor the dataset already uses. The rules text is the book's. Inspiring Presence aura corrected to the book: page 116 prints \"Inspiring Presence (aura, emotion, mental) 40 feet. As young empyreal dragon.\"; the source keeps the young dragon's 20 feet and the errata does not touch it."
 }

@@ -1,0 +1,215 @@
+{
+  "id": "creature.gancanagh",
+  "type": "creature",
+  "name": "creature.gancanagh.name",
+  "traits": [
+    "azata",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 33,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.gancanagh.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 13
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 14
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 5,
+    "con": 3,
+    "int": 2,
+    "wis": 1,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.rapier",
+      "material": "silver"
+    },
+    {
+      "name": "creature.gancanagh.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 13,
+    "will": 11
+  },
+  "hp": {
+    "value": 75
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    },
+    {
+      "type": "unholy",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gancanagh.strikes.silver-rapier.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse",
+        "holy",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.rapier"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "vulnerable-to-smoke",
+      "section": "defense",
+      "name": "creature.gancanagh.abilities.vulnerable-to-smoke.name",
+      "text": "creature.gancanagh.abilities.vulnerable-to-smoke.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.gancanagh.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.gancanagh.abilities.change-shape.text"
+    },
+    {
+      "id": "invigorating-passion",
+      "section": "offense",
+      "name": "creature.gancanagh.abilities.invigorating-passion.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.gancanagh.abilities.invigorating-passion.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 23,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.sure-footing"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.heroism"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Page 33 prints \"Items silver rapier, silver virtuoso flute\". The dataset has no record for a flute, so the entry kept as its printed name is a complete record of what the page prints. No item reference is inferred for it."
+}

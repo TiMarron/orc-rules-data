@@ -1,0 +1,193 @@
+{
+  "id": "creature.wight",
+  "type": "creature",
+  "name": "creature.wight.name",
+  "traits": [
+    "undead",
+    "unholy",
+    "wight"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 348,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 4,
+    "int": 0,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 6,
+    "will": 10
+  },
+  "hp": {
+    "value": 40,
+    "note": "creature.wight.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.wight.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "corrupting-spite"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.wight.strikes.claw.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "corrupting-spite"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.wight.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "corrupting-spite"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "grave-weapon",
+      "section": "top",
+      "name": "creature.wight.abilities.grave-weapon.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.wight.abilities.grave-weapon.text"
+    },
+    {
+      "id": "final-spite",
+      "section": "defense",
+      "name": "creature.wight.abilities.final-spite.name",
+      "actions": "reaction",
+      "trigger": "creature.wight.abilities.final-spite.trigger",
+      "text": "creature.wight.abilities.final-spite.text"
+    },
+    {
+      "id": "fueled-by-spite",
+      "section": "defense",
+      "name": "creature.wight.abilities.fueled-by-spite.name",
+      "text": "creature.wight.abilities.fueled-by-spite.text"
+    },
+    {
+      "id": "corrupting-spite",
+      "section": "offense",
+      "name": "creature.wight.abilities.corrupting-spite.name",
+      "traits": [
+        "curse",
+        "divine",
+        "void"
+      ],
+      "text": "creature.wight.abilities.corrupting-spite.text"
+    }
+  ],
+  "editNote": "Errata applied in full: the errata for page 348 changes the damage of \"the wight's dagger Strikes\" from slashing to piercing; the source changed the melee Strike only, so the ranged dagger Strike is set to piercing too."
+}

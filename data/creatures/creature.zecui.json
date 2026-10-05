@@ -1,0 +1,198 @@
+{
+  "id": "creature.zecui",
+  "type": "creature",
+  "name": "creature.zecui.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 355,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 12
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 5,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.shortsword",
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 17,
+    "will": 12
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 30,
+    "burrow": 20,
+    "climb": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.zecui.strikes.mandibles.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.zecui.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.zecui.strikes.claws.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+7",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.zecui.strikes.spit.name",
+      "actions": "1",
+      "bonus": 17,
+      "range": 30,
+      "traits": [],
+      "damage": [],
+      "effects": [
+        {
+          "own": "spit-mucus"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "preserve-prey",
+      "section": "defense",
+      "name": "creature.zecui.abilities.preserve-prey.name",
+      "actions": "reaction",
+      "traits": [
+        "healing",
+        "manipulate",
+        "occult",
+        "vitality"
+      ],
+      "trigger": "creature.zecui.abilities.preserve-prey.trigger",
+      "text": "creature.zecui.abilities.preserve-prey.text"
+    },
+    {
+      "id": "dual-stab",
+      "section": "offense",
+      "name": "creature.zecui.abilities.dual-stab.name",
+      "actions": "1",
+      "frequency": "creature.zecui.abilities.dual-stab.frequency",
+      "text": "creature.zecui.abilities.dual-stab.text"
+    },
+    {
+      "id": "harden-chitin",
+      "section": "offense",
+      "name": "creature.zecui.abilities.harden-chitin.name",
+      "actions": "1",
+      "text": "creature.zecui.abilities.harden-chitin.text"
+    },
+    {
+      "id": "spit-mucus",
+      "section": "offense",
+      "name": "creature.zecui.abilities.spit-mucus.name",
+      "text": "creature.zecui.abilities.spit-mucus.text"
+    },
+    {
+      "id": "zecui-larvae",
+      "section": "offense",
+      "name": "creature.zecui.abilities.zecui-larvae.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.zecui.abilities.zecui-larvae.text"
+    }
+  ]
+}

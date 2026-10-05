@@ -1,0 +1,23 @@
+{
+  "id": "item.resilient",
+  "type": "item",
+  "name": "item.resilient.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 226,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.resilient.text",
+  "level": 8,
+  "priceCp": 34000,
+  "bulk": "0",
+  "usage": "item.resilient.usage",
+  "category": "rune",
+  "editNote": "Compared word by word with page 226: usage, trait, level 8, Price 340 gp and text; the record leaves out only the page reference \"(page 223)\". The errata has no entry for this rune. The variant headings are dropped because each grade is a record of its own, carrying the level and Price of its own Type line; the second source citation is the source site naming the earlier edition beside this book, and the text was compared with this book's page."
+}

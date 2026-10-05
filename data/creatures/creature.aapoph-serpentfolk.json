@@ -1,0 +1,168 @@
+{
+  "id": "creature.aapoph-serpentfolk",
+  "type": "creature",
+  "name": "creature.aapoph-serpentfolk.name",
+  "traits": [
+    "humanoid",
+    "mutant",
+    "serpentfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 303,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "sakvroth"
+  ],
+  "languageNote": "creature.aapoph-serpentfolk.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 1,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.scimitar"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 7,
+    "will": 6,
+    "note": "creature.aapoph-serpentfolk.saves.note"
+  },
+  "hp": {
+    "value": 60
+  },
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.aapoph-serpentfolk.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.aapoph-serpentfolk.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "serpentfolk-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.aapoph-serpentfolk.strikes.tail.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.aapoph-serpentfolk.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "serpentfolk-venom",
+      "section": "offense",
+      "name": "creature.aapoph-serpentfolk.abilities.serpentfolk-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.aapoph-serpentfolk.abilities.serpentfolk-venom.text"
+    },
+    {
+      "id": "slithering-attack",
+      "section": "offense",
+      "name": "creature.aapoph-serpentfolk.abilities.slithering-attack.name",
+      "actions": "1",
+      "text": "creature.aapoph-serpentfolk.abilities.slithering-attack.text"
+    }
+  ]
+}

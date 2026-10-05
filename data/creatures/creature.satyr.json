@@ -1,0 +1,253 @@
+{
+  "id": "creature.satyr",
+  "type": "creature",
+  "name": "creature.satyr.name",
+  "traits": [
+    "fey"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 296,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 9
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": 1,
+    "wis": 2,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "name": "creature.satyr.items.1.name"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "name": "creature.satyr.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 11,
+    "will": 12
+  },
+  "hp": {
+    "value": 80
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.satyr.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.satyr.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.satyr.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sylvan-wine",
+      "section": "top",
+      "name": "creature.satyr.abilities.sylvan-wine.name",
+      "traits": [
+        "emotion",
+        "mental",
+        "primal"
+      ],
+      "text": "creature.satyr.abilities.sylvan-wine.text"
+    },
+    {
+      "id": "fleet-performer",
+      "section": "offense",
+      "name": "creature.satyr.abilities.fleet-performer.name",
+      "text": "creature.satyr.abilities.fleet-performer.text"
+    },
+    {
+      "id": "play-the-pipes",
+      "section": "offense",
+      "name": "creature.satyr.abilities.play-the-pipes.name",
+      "actions": "3",
+      "traits": [
+        "auditory",
+        "primal"
+      ],
+      "requirements": "creature.satyr.abilities.play-the-pipes.requirements",
+      "text": "creature.satyr.abilities.play-the-pipes.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 21,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.triple-time"
+          },
+          {
+            "spell": "spell.uplifting-overture"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.sleep"
+            },
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

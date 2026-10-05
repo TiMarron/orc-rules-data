@@ -1,0 +1,217 @@
+{
+  "id": "creature.lesser-death",
+  "type": "creature",
+  "name": "creature.lesser-death.name",
+  "traits": [
+    "undead",
+    "unholy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 185,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 16,
+  "size": "medium",
+  "perception": {
+    "mod": 32,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.see-the-unseen"
+      },
+      {
+        "own": "status-sight"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 30
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 32
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 30
+    },
+    {
+      "skill": "skill.society",
+      "mod": 26
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 35
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 9,
+    "con": 6,
+    "int": 4,
+    "wis": 6,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.scythe"
+    }
+  ],
+  "ac": {
+    "value": 39
+  },
+  "saves": {
+    "fortitude": 30,
+    "reflex": 33,
+    "will": 32,
+    "note": "creature.lesser-death.saves.note"
+  },
+  "hp": {
+    "value": 255,
+    "note": "creature.lesser-death.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "speeds": {
+    "land": 50,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lesser-death.strikes.keen-scythe.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "agile",
+        "deadly",
+        "magical",
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "deadly": "2d10",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d10+14",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d12",
+          "type": "void"
+        }
+      ],
+      "item": "item.scythe"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "status-sight",
+      "section": "top",
+      "name": "creature.lesser-death.abilities.status-sight.name",
+      "text": "creature.lesser-death.abilities.status-sight.text"
+    },
+    {
+      "id": "aura-of-misfortune",
+      "section": "defense",
+      "name": "creature.lesser-death.abilities.aura-of-misfortune.name",
+      "traits": [
+        "aura",
+        "divine",
+        "misfortune"
+      ],
+      "aura": 20,
+      "text": "creature.lesser-death.abilities.aura-of-misfortune.text"
+    },
+    {
+      "id": "deaths-grace",
+      "section": "defense",
+      "name": "creature.lesser-death.abilities.deaths-grace.name",
+      "text": "creature.lesser-death.abilities.deaths-grace.text"
+    },
+    {
+      "id": "void-healing",
+      "section": "defense",
+      "name": "creature.lesser-death.abilities.void-healing.name",
+      "text": "creature.lesser-death.abilities.void-healing.text"
+    },
+    {
+      "id": "lurking-death",
+      "section": "defense",
+      "name": "creature.lesser-death.abilities.lurking-death.name",
+      "actions": "reaction",
+      "traits": [
+        "divine",
+        "teleportation"
+      ],
+      "trigger": "creature.lesser-death.abilities.lurking-death.trigger",
+      "text": "creature.lesser-death.abilities.lurking-death.text"
+    },
+    {
+      "id": "infuse-weapon",
+      "section": "offense",
+      "name": "creature.lesser-death.abilities.infuse-weapon.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.lesser-death.abilities.infuse-weapon.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 38,
+      "constant": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 185 prints \"Constant (6th) truesight; (2nd) see the unseen\"; the source lists see the unseen as an ordinary spell of that rank and the errata does not touch it. Capital restored at the head of Status Sight: page 185 prints \"Status Sight As Grim Reaper.\" and the source expands it into a sentence that starts in lower case."
+}

@@ -1,0 +1,189 @@
+{
+  "id": "creature.redcap",
+  "type": "creature",
+  "name": "creature.redcap.name",
+  "traits": [
+    "fey"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 290,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "small",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 2,
+    "int": 1,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.halberd"
+    },
+    {
+      "name": "creature.redcap.items.1.name"
+    },
+    {
+      "name": "creature.redcap.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 15,
+    "will": 10
+  },
+  "hp": {
+    "value": 60,
+    "note": "creature.redcap.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    },
+    {
+      "own": "divine-revulsion"
+    }
+  ],
+  "speeds": {
+    "land": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.redcap.strikes.halberd.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d10+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.halberd"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.redcap.strikes.iron-boot.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "bludgeoning"
+      },
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "red-cap",
+      "section": "top",
+      "name": "creature.redcap.abilities.red-cap.name",
+      "traits": [
+        "primal"
+      ],
+      "text": "creature.redcap.abilities.red-cap.text"
+    },
+    {
+      "id": "divine-revulsion",
+      "section": "defense",
+      "name": "creature.redcap.abilities.divine-revulsion.name",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.redcap.abilities.divine-revulsion.text"
+    },
+    {
+      "id": "blood-soak",
+      "section": "offense",
+      "name": "creature.redcap.abilities.blood-soak.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.redcap.abilities.blood-soak.text"
+    },
+    {
+      "id": "deadly-cleave",
+      "section": "offense",
+      "name": "creature.redcap.abilities.deadly-cleave.name",
+      "actions": "reaction",
+      "trigger": "creature.redcap.abilities.deadly-cleave.trigger",
+      "text": "creature.redcap.abilities.deadly-cleave.text"
+    },
+    {
+      "id": "stomp",
+      "section": "offense",
+      "name": "creature.redcap.abilities.stomp.name",
+      "actions": "1",
+      "text": "creature.redcap.abilities.stomp.text"
+    }
+  ],
+  "editNote": "The page prints a sickle among the Items and a sickle Strike, and the record has neither: the errata for page 290 says \"Cut the sickle from Items and the sickle Strike, and update Deadly Cleave as follows.\" The record has no sickle Strike, and its Deadly Cleave trigger and effect read word for word as the errata gives them (a halberd Strike, \"This counts toward their multiple attack penalty as normal.\"), so the record stands."
+}

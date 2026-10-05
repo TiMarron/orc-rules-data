@@ -1,0 +1,189 @@
+{
+  "id": "creature.great-cyclops",
+  "type": "creature",
+  "name": "creature.great-cyclops.name",
+  "traits": [
+    "giant",
+    "humanoid",
+    "mutant"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 71,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "huge",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "cyclops",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "lore": "creature.great-cyclops.lore.1",
+      "mod": 18
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 1,
+    "con": 6,
+    "int": -2,
+    "wis": 4,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.greatclub"
+    },
+    {
+      "item": "item.hide-armor"
+    }
+  ],
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 19,
+    "will": 22
+  },
+  "hp": {
+    "value": 235
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.great-cyclops.strikes.greatclub.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "backswing",
+        "reach",
+        "shove"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d10+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.greatclub"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.great-cyclops.strikes.horn.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d10+13",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.great-cyclops.strikes.fist.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d4+13",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.great-cyclops.strikes.rock.name",
+      "actions": "1",
+      "bonus": 23,
+      "rangeIncrement": 120,
+      "traits": [
+        "brutal"
+      ],
+      "damage": [
+        {
+          "dice": "4d6+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ferocity",
+      "section": "defense",
+      "name": "creature.great-cyclops.abilities.ferocity.name",
+      "ability": "ability.ferocity",
+      "actions": "reaction"
+    },
+    {
+      "id": "flash-of-brutality",
+      "section": "defense",
+      "name": "creature.great-cyclops.abilities.flash-of-brutality.name",
+      "actions": "free",
+      "traits": [
+        "fortune",
+        "occult"
+      ],
+      "frequency": "creature.great-cyclops.abilities.flash-of-brutality.frequency",
+      "trigger": "creature.great-cyclops.abilities.flash-of-brutality.trigger",
+      "text": "creature.great-cyclops.abilities.flash-of-brutality.text"
+    },
+    {
+      "id": "powerful-charge",
+      "section": "offense",
+      "name": "creature.great-cyclops.abilities.powerful-charge.name",
+      "actions": "2",
+      "text": "creature.great-cyclops.abilities.powerful-charge.text"
+    },
+    {
+      "id": "throw-rock",
+      "section": "offense",
+      "name": "creature.great-cyclops.abilities.throw-rock.name",
+      "ability": "ability.throw-rock",
+      "actions": "1"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "creature.orc-scrapper",
+  "type": "creature",
+  "name": "creature.orc-scrapper.name",
+  "traits": [
+    "humanoid",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "orcish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 2
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "name": "creature.orc-scrapper.items.0.name"
+    },
+    {
+      "item": "item.javelin",
+      "count": 3
+    },
+    {
+      "item": "item.orc-knuckle-dagger",
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 4,
+    "will": 2
+  },
+  "hp": {
+    "value": 18
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.orc-scrapper.strikes.orc-knuckle-dagger.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "disarm"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.orc-knuckle-dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.orc-scrapper.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.orc-scrapper.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ferocity",
+      "section": "defense",
+      "name": "creature.orc-scrapper.abilities.ferocity.name",
+      "ability": "ability.ferocity",
+      "actions": "reaction"
+    }
+  ],
+  "editNote": "Page 258 prints \"Items shoddy breastplate, javelin (3), orc knuckle dagger (2)\". The dataset has no record for a shoddy breastplate, so the entry kept as its printed name is a complete record of what the page prints. Shoddy is neither a material nor a parenthesis, so the entry is not the breastplate with a qualifier."
+}

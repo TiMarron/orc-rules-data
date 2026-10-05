@@ -1,0 +1,211 @@
+{
+  "id": "creature.gnome-bard",
+  "type": "creature",
+  "name": "creature.gnome-bard.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 172,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey",
+    "gnomish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 1,
+    "int": 1,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.musical-instrument",
+      "note": "creature.gnome-bard.items.1.note"
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 7,
+    "will": 9
+  },
+  "hp": {
+    "value": 16
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gnome-bard.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gnome-bard.strikes.sling.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "gnomish-shift",
+      "section": "defense",
+      "name": "creature.gnome-bard.abilities.gnomish-shift.name",
+      "actions": "reaction",
+      "traits": [
+        "primal",
+        "teleportation"
+      ],
+      "trigger": "creature.gnome-bard.abilities.gnomish-shift.trigger",
+      "text": "creature.gnome-bard.abilities.gnomish-shift.text"
+    },
+    {
+      "id": "do-a-jig",
+      "section": "offense",
+      "name": "creature.gnome-bard.abilities.do-a-jig.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "incapacitation",
+        "occult",
+        "mental"
+      ],
+      "text": "creature.gnome-bard.abilities.do-a-jig.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 19,
+      "attack": 11,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          },
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.summon-instrument"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.command"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    }
+  ]
+}

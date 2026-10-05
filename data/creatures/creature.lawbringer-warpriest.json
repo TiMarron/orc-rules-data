@@ -1,0 +1,232 @@
+{
+  "id": "creature.lawbringer-warpriest",
+  "type": "creature",
+  "name": "creature.lawbringer-warpriest.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "nephilim"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 267,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "empyrean"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 10
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 12
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": 0,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.greatsword"
+    },
+    {
+      "item": "item.half-plate"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 8,
+    "will": 12
+  },
+  "hp": {
+    "value": 64
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lawbringer-warpriest.strikes.greatsword.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d12+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greatsword"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.lawbringer-warpriest.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "responsive-recovery",
+      "section": "defense",
+      "name": "creature.lawbringer-warpriest.abilities.responsive-recovery.name",
+      "actions": "reaction",
+      "trigger": "creature.lawbringer-warpriest.abilities.responsive-recovery.trigger",
+      "requirements": "creature.lawbringer-warpriest.abilities.responsive-recovery.requirements",
+      "text": "creature.lawbringer-warpriest.abilities.responsive-recovery.text"
+    },
+    {
+      "id": "channel-smite",
+      "section": "offense",
+      "name": "creature.lawbringer-warpriest.abilities.channel-smite.name",
+      "actions": "2",
+      "requirements": "creature.lawbringer-warpriest.abilities.channel-smite.requirements",
+      "text": "creature.lawbringer-warpriest.abilities.channel-smite.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "divine",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.divine-lance"
+          },
+          {
+            "spell": "spell.forbidding-ward"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.harm"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.sure-strike"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.enlarge"
+            },
+            {
+              "spell": "spell.harm"
+            },
+            {
+              "spell": "spell.heal"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.blindness"
+            },
+            {
+              "spell": "spell.haste"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.lawbringer-warpriest.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 20,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.athletic-rush"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

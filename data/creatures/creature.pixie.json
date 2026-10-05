@@ -1,0 +1,213 @@
+{
+  "id": "creature.pixie",
+  "type": "creature",
+  "name": "creature.pixie.name",
+  "traits": [
+    "fey",
+    "sprite"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 323,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "small",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 5,
+    "con": 1,
+    "int": 3,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.longbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 60
+      }
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 14,
+    "will": 12,
+    "note": "creature.pixie.saves.note"
+  },
+  "hp": {
+    "value": 40
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 15,
+    "fly": 45
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pixie.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.pixie.strikes.longbow.name",
+      "actions": "1",
+      "bonus": 13,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sprinkle-pixie-dust",
+      "section": "offense",
+      "name": "creature.pixie.abilities.sprinkle-pixie-dust.name",
+      "actions": "1",
+      "traits": [
+        "manipulate",
+        "primal"
+      ],
+      "text": "creature.pixie.abilities.sprinkle-pixie-dust.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 21,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.shield"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.entangling-flora"
+            },
+            {
+              "spell": "spell.revealing-light"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.pixie.spellcasting.0.ranks.4.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "creature.gimmerling",
+  "type": "creature",
+  "name": "creature.gimmerling.name",
+  "traits": [
+    "fey"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 170,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "small",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "own": "hungersense",
+        "acuity": "imprecise",
+        "range": 30
+      },
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 23
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 25
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 25
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 25
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 7,
+    "con": 4,
+    "int": 5,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.hand-crossbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 34
+  },
+  "saves": {
+    "fortitude": 22,
+    "reflex": 25,
+    "will": 19
+  },
+  "hp": {
+    "value": 235
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "note": "creature.gimmerling.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gimmerling.strikes.claw.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+7",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "sly-disarm"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gimmerling.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "3d8+7",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "poison"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gimmerling.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 28,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d6+3",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "poison"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hungersense",
+      "section": "top",
+      "name": "creature.gimmerling.abilities.hungersense.name",
+      "text": "creature.gimmerling.abilities.hungersense.text"
+    },
+    {
+      "id": "treacherous-aura",
+      "section": "defense",
+      "name": "creature.gimmerling.abilities.treacherous-aura.name",
+      "traits": [
+        "aura",
+        "primal"
+      ],
+      "aura": 15,
+      "text": "creature.gimmerling.abilities.treacherous-aura.text"
+    },
+    {
+      "id": "trip-up",
+      "section": "defense",
+      "name": "creature.gimmerling.abilities.trip-up.name",
+      "actions": "reaction",
+      "trigger": "creature.gimmerling.abilities.trip-up.trigger",
+      "text": "creature.gimmerling.abilities.trip-up.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.gimmerling.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.gimmerling.abilities.change-shape.text"
+    },
+    {
+      "id": "sly-disarm",
+      "section": "offense",
+      "name": "creature.gimmerling.abilities.sly-disarm.name",
+      "actions": "1",
+      "requirements": "creature.gimmerling.abilities.sly-disarm.requirements",
+      "text": "creature.gimmerling.abilities.sly-disarm.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.gimmerling.abilities.sneak-attack.name",
+      "text": "creature.gimmerling.abilities.sneak-attack.text"
+    },
+    {
+      "id": "tricksters-step",
+      "section": "offense",
+      "name": "creature.gimmerling.abilities.tricksters-step.name",
+      "text": "creature.gimmerling.abilities.tricksters-step.text"
+    }
+  ]
+}

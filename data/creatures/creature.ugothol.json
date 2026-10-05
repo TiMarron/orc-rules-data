@@ -1,0 +1,189 @@
+{
+  "id": "creature.ugothol",
+  "type": "creature",
+  "name": "creature.ugothol.name",
+  "traits": [
+    "aberration"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 12,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "alghollthu",
+    "common",
+    "thalassic"
+  ],
+  "languageNote": "creature.ugothol.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.longsword"
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 9,
+    "will": 12,
+    "note": "creature.ugothol.saves.note"
+  },
+  "hp": {
+    "value": 60
+  },
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ugothol.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ugothol.strikes.claw.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+6",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "assume-form",
+      "section": "top",
+      "name": "creature.ugothol.abilities.assume-form.name",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.ugothol.abilities.assume-form.text"
+    },
+    {
+      "id": "blood-nourishment",
+      "section": "offense",
+      "name": "creature.ugothol.abilities.blood-nourishment.name",
+      "actions": "1",
+      "text": "creature.ugothol.abilities.blood-nourishment.text"
+    },
+    {
+      "id": "compression",
+      "section": "offense",
+      "name": "creature.ugothol.abilities.compression.name",
+      "text": "creature.ugothol.abilities.compression.text"
+    },
+    {
+      "id": "revert-form",
+      "section": "offense",
+      "name": "creature.ugothol.abilities.revert-form.name",
+      "actions": "free",
+      "requirements": "creature.ugothol.abilities.revert-form.requirements",
+      "text": "creature.ugothol.abilities.revert-form.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.ugothol.abilities.sneak-attack.name",
+      "text": "creature.ugothol.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 19,
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

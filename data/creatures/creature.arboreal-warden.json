@@ -1,0 +1,154 @@
+{
+  "id": "creature.arboreal-warden",
+  "type": "creature",
+  "name": "creature.arboreal-warden.name",
+  "traits": [
+    "plant",
+    "wood"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 24,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "large",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "arboreal",
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9,
+      "note": "creature.arboreal-warden.skills.1.note"
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 1,
+    "con": 3,
+    "int": 1,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.arboreal-warden.items.0.name",
+      "hardness": 3,
+      "hp": 20,
+      "bt": 10
+    },
+    {
+      "name": "creature.arboreal-warden.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 20,
+    "note": "creature.arboreal-warden.ac.note"
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 9,
+    "will": 11
+  },
+  "hp": {
+    "value": 75
+  },
+  "weaknesses": [
+    {
+      "type": "axes",
+      "value": 5
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.arboreal-warden.strikes.stone-longsword.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.arboreal-warden.strikes.shield-bash.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.arboreal-warden.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.arboreal-warden.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-push",
+      "section": "offense",
+      "name": "creature.arboreal-warden.abilities.shield-push.name",
+      "actions": "2",
+      "text": "creature.arboreal-warden.abilities.shield-push.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 24 prints \"Stealth +9 (+14 in forests)\"; the source omits the parenthesis and the errata does not touch it. Shield statistics added from the book: page 24 prints \"large bark shield (Hardness 3, Hit Points 20, BT 10)\"; the source omits the parenthesis and the errata does not touch it."
+}

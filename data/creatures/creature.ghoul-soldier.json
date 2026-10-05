@@ -1,0 +1,203 @@
+{
+  "id": "creature.ghoul-soldier",
+  "type": "creature",
+  "name": "creature.ghoul-soldier.name",
+  "traits": [
+    "ghoul",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 163,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 2,
+    "int": 1,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.bastard-sword"
+    },
+    {
+      "item": "item.breastplate"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 8,
+    "will": 6
+  },
+  "hp": {
+    "value": 28,
+    "note": "creature.ghoul-soldier.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "speeds": {
+    "land": 25,
+    "burrow": 5
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ghoul-soldier.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ghoul-soldier.strikes.bastard-sword.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d12"
+      },
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.bastard-sword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ghoul-soldier.strikes.claw.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.ghoul-soldier.abilities.reactive-strike.name",
+      "actions": "reaction"
+    },
+    {
+      "id": "stench",
+      "section": "defense",
+      "name": "creature.ghoul-soldier.abilities.stench.name",
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "aura": 10,
+      "text": "creature.ghoul-soldier.abilities.stench.text"
+    },
+    {
+      "id": "consume-flesh",
+      "section": "offense",
+      "name": "creature.ghoul-soldier.abilities.consume-flesh.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.ghoul-soldier.abilities.consume-flesh.text"
+    },
+    {
+      "id": "ghoul-whispers",
+      "section": "offense",
+      "name": "creature.ghoul-soldier.abilities.ghoul-whispers.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "linguistic",
+        "occult"
+      ],
+      "text": "creature.ghoul-soldier.abilities.ghoul-whispers.text"
+    },
+    {
+      "id": "grave-knowledge",
+      "section": "offense",
+      "name": "creature.ghoul-soldier.abilities.grave-knowledge.name",
+      "traits": [
+        "occult"
+      ],
+      "text": "creature.ghoul-soldier.abilities.grave-knowledge.text"
+    },
+    {
+      "id": "swift-leap",
+      "section": "offense",
+      "name": "creature.ghoul-soldier.abilities.swift-leap.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ]
+    }
+  ]
+}

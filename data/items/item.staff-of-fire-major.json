@@ -1,0 +1,30 @@
+{
+  "id": "item.staff-of-fire-major",
+  "type": "item",
+  "name": "item.staff-of-fire-major.name",
+  "traits": [
+    "magical",
+    "staff"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 279,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.staff-of-fire-major.text",
+  "level": 12,
+  "priceCp": 180000,
+  "bulk": "1",
+  "usage": "item.staff-of-fire-major.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "text": "item.staff-of-fire-major.activations.0.text"
+    }
+  ],
+  "category": "staff",
+  "editNote": "Compared word by word with pages 279-280: traits, usage, Bulk 1, level 12, Price 1,800 gp, description, activation, craft requirements and the list printed under its own Type line, \"4th fire shield, fireball, wall of fire; 5th fireball, wall of fire\". The text check fails only because that list is on page 280, the page after the one the record claims. The list tags are the bulleted spell list, which the record keeps as a list after the Craft Requirements line where the page prints it before; the words are the same. The errata has no entry for this staff. The variant headings are dropped because each grade is a record of its own, carrying the level and Price of its own Type line; the second source citation is the source site naming the earlier edition beside this book, and the text was compared with this book's page."
+}

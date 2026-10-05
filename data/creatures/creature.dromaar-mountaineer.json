@@ -1,0 +1,159 @@
+{
+  "id": "creature.dromaar-mountaineer",
+  "type": "creature",
+  "name": "creature.dromaar-mountaineer.name",
+  "traits": [
+    "dromaar",
+    "human",
+    "humanoid",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 259,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 11,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "orcish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.pick"
+    },
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.rope",
+      "note": "creature.dromaar-mountaineer.items.2.note"
+    },
+    {
+      "item": "item.bola",
+      "count": 6
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 9,
+    "will": 8
+  },
+  "hp": {
+    "value": 28
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dromaar-mountaineer.strikes.pick.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.pick"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dromaar-mountaineer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dromaar-mountaineer.strikes.bola.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "nonlethal",
+        "ranged-trip",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.bola"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ferocity",
+      "section": "defense",
+      "name": "creature.dromaar-mountaineer.abilities.ferocity.name",
+      "ability": "ability.ferocity",
+      "actions": "reaction"
+    },
+    {
+      "id": "tangle-prey",
+      "section": "offense",
+      "name": "creature.dromaar-mountaineer.abilities.tangle-prey.name",
+      "actions": "1",
+      "text": "creature.dromaar-mountaineer.abilities.tangle-prey.text"
+    }
+  ]
+}

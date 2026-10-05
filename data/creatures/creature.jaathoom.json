@@ -1,0 +1,280 @@
+{
+  "id": "creature.jaathoom",
+  "type": "creature",
+  "name": "creature.jaathoom.name",
+  "traits": [
+    "air",
+    "elemental",
+    "genie"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 157,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "sussuran"
+  ],
+  "languageNote": "creature.jaathoom.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 13
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 5,
+    "con": 2,
+    "int": 2,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.scimitar"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 14,
+    "will": 11
+  },
+  "hp": {
+    "value": 55
+  },
+  "speeds": {
+    "land": 25,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.jaathoom.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "forceful",
+        "reach",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.jaathoom.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "nonlethal",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.jaathoom.strikes.crashing-wind.name",
+      "actions": "1",
+      "bonus": 16,
+      "rangeIncrement": 20,
+      "traits": [
+        "air",
+        "arcane"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cloud-of-visions",
+      "section": "top",
+      "name": "creature.jaathoom.abilities.cloud-of-visions.name",
+      "traits": [
+        "arcane",
+        "aura",
+        "mental"
+      ],
+      "aura": 60,
+      "text": "creature.jaathoom.abilities.cloud-of-visions.text"
+    },
+    {
+      "id": "naturally-invisible",
+      "section": "defense",
+      "name": "creature.jaathoom.abilities.naturally-invisible.name",
+      "text": "creature.jaathoom.abilities.naturally-invisible.text"
+    },
+    {
+      "id": "turbulent-skies",
+      "section": "defense",
+      "name": "creature.jaathoom.abilities.turbulent-skies.name",
+      "traits": [
+        "air",
+        "arcane",
+        "aura"
+      ],
+      "aura": 20,
+      "text": "creature.jaathoom.abilities.turbulent-skies.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.jaathoom.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "polymorph"
+      ],
+      "text": "creature.jaathoom.abilities.change-shape.text"
+    },
+    {
+      "id": "hurricane-blast",
+      "section": "offense",
+      "name": "creature.jaathoom.abilities.hurricane-blast.name",
+      "actions": "1",
+      "traits": [
+        "air",
+        "arcane"
+      ],
+      "frequency": "creature.jaathoom.abilities.hurricane-blast.frequency",
+      "text": "creature.jaathoom.abilities.hurricane-blast.text"
+    },
+    {
+      "id": "ominous-dreams",
+      "section": "offense",
+      "name": "creature.jaathoom.abilities.ominous-dreams.name",
+      "actions": "2",
+      "traits": [
+        "mental",
+        "prediction"
+      ],
+      "text": "creature.jaathoom.abilities.ominous-dreams.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 21,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.ill-omen"
+            },
+            {
+              "spell": "spell.illusory-creature"
+            },
+            {
+              "spell": "spell.illusory-object"
+            },
+            {
+              "spell": "spell.sleep"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.nightmare"
+            },
+            {
+              "spell": "spell.vapor-form"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "note": "creature.jaathoom.spellcasting.0.ranks.7.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane in a spell's restriction is replaced with the generic descriptor the dataset already uses. The punctuation is the book's: page 157 prints the restriction's three destinations with commas where the source has semicolons."
+}

@@ -1,0 +1,145 @@
+{
+  "id": "creature.dwarf-warrior",
+  "type": "creature",
+  "name": "creature.dwarf-warrior.name",
+  "traits": [
+    "dwarf",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 135,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "dwarven"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 5
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 3
+    },
+    {
+      "lore": "creature.dwarf-warrior.lore.3",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": 1,
+    "wis": 3,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.half-plate"
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    },
+    {
+      "item": "item.warhammer"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 3,
+    "will": 5
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-warrior.strikes.warhammer.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.warhammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-warrior.strikes.clan-dagger.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "parry",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "bludgeoning"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.dwarf-warrior.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "dwarven-doughtiness",
+      "section": "offense",
+      "name": "creature.dwarf-warrior.abilities.dwarven-doughtiness.name",
+      "text": "creature.dwarf-warrior.abilities.dwarven-doughtiness.text"
+    },
+    {
+      "id": "shielded-charge",
+      "section": "offense",
+      "name": "creature.dwarf-warrior.abilities.shielded-charge.name",
+      "actions": "2",
+      "text": "creature.dwarf-warrior.abilities.shielded-charge.text"
+    }
+  ]
+}

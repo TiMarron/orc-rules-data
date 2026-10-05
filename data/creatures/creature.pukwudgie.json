@@ -1,0 +1,245 @@
+{
+  "id": "creature.pukwudgie",
+  "type": "creature",
+  "name": "creature.pukwudgie.name",
+  "traits": [
+    "fey"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 279,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "small",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven",
+    "fey",
+    "gnomish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 15
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 6,
+    "con": 3,
+    "int": 4,
+    "wis": 6,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.hatchet",
+      "potency": 1
+    },
+    {
+      "item": "item.shortbow"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 15,
+    "will": 17
+  },
+  "hp": {
+    "value": 100
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pukwudgie.strikes.hatchet.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "pukwudgie-poison"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.pukwudgie.strikes.hatchet-2.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "pukwudgie-poison"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.pukwudgie.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 18,
+      "rangeIncrement": 60,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "pukwudgie-poison"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "defensive-quills",
+      "section": "defense",
+      "name": "creature.pukwudgie.abilities.defensive-quills.name",
+      "text": "creature.pukwudgie.abilities.defensive-quills.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.pukwudgie.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.pukwudgie.abilities.change-shape.text"
+    },
+    {
+      "id": "pukwudgie-poison",
+      "section": "offense",
+      "name": "creature.pukwudgie.abilities.pukwudgie-poison.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.pukwudgie.abilities.pukwudgie-poison.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 25,
+      "attack": 17,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.pukwudgie.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.wall-of-thorns"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.mirage"
+            },
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

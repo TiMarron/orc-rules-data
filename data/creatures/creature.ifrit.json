@@ -1,0 +1,261 @@
+{
+  "id": "creature.ifrit",
+  "type": "creature",
+  "name": "creature.ifrit.name",
+  "traits": [
+    "elemental",
+    "fire",
+    "genie"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 159,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "pyric"
+  ],
+  "languageNote": "creature.ifrit.language-note",
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 14
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 19
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 19
+    },
+    {
+      "skill": "skill.society",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 4,
+    "int": 1,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.breastplate"
+    },
+    {
+      "item": "item.scimitar",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 17,
+    "will": 20
+  },
+  "hp": {
+    "value": 175
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "water",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ifrit.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "fire",
+        "forceful",
+        "magical",
+        "reach",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+11",
+          "type": "slashing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ifrit.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "burning-grasp",
+      "section": "offense",
+      "name": "creature.ifrit.abilities.burning-grasp.name",
+      "traits": [
+        "fire"
+      ],
+      "text": "creature.ifrit.abilities.burning-grasp.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.ifrit.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "polymorph"
+      ],
+      "text": "creature.ifrit.abilities.change-shape.text"
+    },
+    {
+      "id": "combat-grab",
+      "section": "offense",
+      "name": "creature.ifrit.abilities.combat-grab.name",
+      "actions": "1",
+      "requirements": "creature.ifrit.abilities.combat-grab.requirements",
+      "text": "creature.ifrit.abilities.combat-grab.text"
+    },
+    {
+      "id": "wings-of-flame",
+      "section": "offense",
+      "name": "creature.ifrit.abilities.wings-of-flame.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "fire"
+      ],
+      "text": "creature.ifrit.abilities.wings-of-flame.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "arcane",
+      "dc": 27,
+      "attack": 19,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.ignition"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.fireball"
+            },
+            {
+              "spell": "spell.invisibility",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "note": "creature.ifrit.spellcasting.0.ranks.7.0.note"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane in a spell's restriction is replaced with the generic descriptor the dataset already uses. The punctuation is the book's: page 159 prints the restriction's three destinations with commas where the source has semicolons."
+}

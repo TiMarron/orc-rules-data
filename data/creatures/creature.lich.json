@@ -1,0 +1,310 @@
+{
+  "id": "creature.lich",
+  "type": "creature",
+  "name": "creature.lich.name",
+  "traits": [
+    "undead",
+    "unholy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 219,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 12,
+  "size": "medium",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "chthonian",
+    "common",
+    "diabolic",
+    "draconic",
+    "elven",
+    "necril",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 28
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 24,
+      "note": "creature.lich.skills.1.note"
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 17
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 19
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 22
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 0,
+    "int": 6,
+    "wis": 4,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.invisibility-potion"
+    },
+    {
+      "name": "creature.lich.items.1.name"
+    },
+    {
+      "item": "item.staff-of-fire-greater"
+    }
+  ],
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 21,
+    "will": 23,
+    "note": "creature.lich.saves.note"
+  },
+  "hp": {
+    "value": 190,
+    "note": "creature.lich.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "physical",
+      "value": 10,
+      "note": "creature.lich.resistances.1.note"
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lich.strikes.hand.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "4d8",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        {
+          "own": "siphon-life"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.lich.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 60,
+      "text": "creature.lich.abilities.frightful-presence.text"
+    },
+    {
+      "id": "counterspell",
+      "section": "defense",
+      "name": "creature.lich.abilities.counterspell.name",
+      "actions": "reaction",
+      "trigger": "creature.lich.abilities.counterspell.trigger",
+      "text": "creature.lich.abilities.counterspell.text"
+    },
+    {
+      "id": "drain-soul-cage",
+      "section": "offense",
+      "name": "creature.lich.abilities.drain-soul-cage.name",
+      "actions": "free",
+      "text": "creature.lich.abilities.drain-soul-cage.text"
+    },
+    {
+      "id": "siphon-life",
+      "section": "offense",
+      "name": "creature.lich.abilities.siphon-life.name",
+      "text": "creature.lich.abilities.siphon-life.text"
+    },
+    {
+      "id": "steady-spellcasting",
+      "section": "offense",
+      "name": "creature.lich.abilities.steady-spellcasting.name",
+      "text": "creature.lich.abilities.steady-spellcasting.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 36,
+      "attack": 26,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.enfeeble",
+              "count": 2
+            },
+            {
+              "spell": "spell.fleet-step"
+            },
+            {
+              "spell": "spell.sure-strike"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur"
+            },
+            {
+              "spell": "spell.false-vitality"
+            },
+            {
+              "spell": "spell.resist-energy"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.blindness"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.locate"
+            },
+            {
+              "spell": "spell.vampiric-feast"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.fire-shield"
+            },
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.howling-blizzard",
+              "count": 2
+            },
+            {
+              "spell": "spell.toxic-cloud"
+            },
+            {
+              "spell": "spell.wall-of-ice"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.chain-lightning"
+            },
+            {
+              "spell": "spell.dominate"
+            },
+            {
+              "spell": "spell.vampiric-exsanguination"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 219 prints \"Crafting +24 (can craft magic items)\"; the source omits the parenthesis and the errata does not touch it."
+}

@@ -1,0 +1,173 @@
+{
+  "id": "creature.arbiter",
+  "type": "creature",
+  "name": "creature.arbiter.name",
+  "traits": [
+    "aeon",
+    "monitor"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 8,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "tiny",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "locate-aeon"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "diabolic",
+    "empyrean",
+    "utopian"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "lore": "creature.arbiter.lore.1",
+      "mod": 5
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 7,
+    "will": 7,
+    "note": "creature.arbiter.saves.note"
+  },
+  "hp": {
+    "value": 22
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "emotion",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "electricity",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.arbiter.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "0",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "locate-aeon",
+      "section": "top",
+      "name": "creature.arbiter.abilities.locate-aeon.name",
+      "text": "creature.arbiter.abilities.locate-aeon.text"
+    },
+    {
+      "id": "electrical-burst",
+      "section": "offense",
+      "name": "creature.arbiter.abilities.electrical-burst.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "electricity"
+      ],
+      "text": "creature.arbiter.abilities.electrical-burst.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 17,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.mending",
+              "count": 3
+            },
+            {
+              "spell": "spell.sanctuary"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.read-omens"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
