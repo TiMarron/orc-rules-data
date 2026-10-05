@@ -1,0 +1,183 @@
+{
+  "id": "creature.pusk",
+  "type": "creature",
+  "name": "creature.pusk.name",
+  "traits": [
+    "demon",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 76,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian"
+  ],
+  "languageNote": "creature.pusk.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 0,
+    "con": 4,
+    "int": -3,
+    "wis": 0,
+    "cha": 0
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 4,
+    "will": 8
+  },
+  "hp": {
+    "value": 36
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 3
+    },
+    {
+      "type": "holy",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pusk.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.pusk.strikes.claw.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sloth",
+      "section": "top",
+      "name": "creature.pusk.abilities.sloth.name",
+      "text": "creature.pusk.abilities.sloth.text"
+    },
+    {
+      "id": "cower",
+      "section": "offense",
+      "name": "creature.pusk.abilities.cower.name",
+      "actions": "1",
+      "text": "creature.pusk.abilities.cower.text"
+    },
+    {
+      "id": "frenzied-slashes",
+      "section": "offense",
+      "name": "creature.pusk.abilities.frenzied-slashes.name",
+      "actions": "3",
+      "text": "creature.pusk.abilities.frenzied-slashes.text"
+    },
+    {
+      "id": "vicious-criticals",
+      "section": "offense",
+      "name": "creature.pusk.abilities.vicious-criticals.name",
+      "text": "creature.pusk.abilities.vicious-criticals.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 16,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.fear"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.slow"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 16,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.demonic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

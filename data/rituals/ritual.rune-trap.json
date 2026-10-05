@@ -1,0 +1,49 @@
+{
+  "id": "ritual.rune-trap",
+  "type": "ritual",
+  "name": "ritual.rune-trap.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 395,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.rune-trap.text",
+  "rank": 3,
+  "cast": "ritual.rune-trap.cast",
+  "cost": "ritual.rune-trap.cost",
+  "secondaryCasters": 1,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "expert",
+      "note": "ritual.rune-trap.primary-check.0.note"
+    },
+    {
+      "skill": "skill.nature",
+      "rank": "expert",
+      "note": "ritual.rune-trap.primary-check.1.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "expert",
+      "note": "ritual.rune-trap.primary-check.2.note"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "expert",
+      "note": "ritual.rune-trap.primary-check.3.note"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.crafting"
+    }
+  ],
+  "range": "ritual.rune-trap.range",
+  "targets": "ritual.rune-trap.targets",
+  "editNote": "Compared field by field and word by word with page 395: all fields, the description and the four outcomes match. The page prints \"Primary Check Arcana (expert), Nature (expert), Occultism (expert), or Religion (expert) as determined by the tradition of spell cast in the ritual\" with the condition outside any parenthesis; the record keeps it, as printed, as the note of each of the four alternatives, which is repetitive but faithful."
+}

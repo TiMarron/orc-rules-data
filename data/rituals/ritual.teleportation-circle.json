@@ -1,0 +1,51 @@
+{
+  "id": "ritual.teleportation-circle",
+  "type": "ritual",
+  "name": "ritual.teleportation-circle.name",
+  "traits": [
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 270,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.teleportation-circle.text",
+  "rank": 7,
+  "cast": "ritual.teleportation-circle.cast",
+  "cost": "ritual.teleportation-circle.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.crafting"
+    },
+    {
+      "skill": "skill.survival"
+    }
+  ],
+  "range": "ritual.teleportation-circle.range",
+  "duration": "ritual.teleportation-circle.duration",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "ritual.teleportation-circle.heightened.0"
+    },
+    {
+      "level": "10",
+      "text": "ritual.teleportation-circle.heightened.1"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "id": "creature.seraptis",
+  "type": "creature",
+  "name": "creature.seraptis.name",
+  "traits": [
+    "demon",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 80,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 15,
+  "size": "medium",
+  "perception": {
+    "mod": 25,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.seraptis.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 31
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 29
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 27
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 28
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 7,
+    "con": 6,
+    "int": 3,
+    "wis": 4,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.scimitar",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        },
+        {
+          "item": "item.wounding"
+        }
+      ],
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 37
+  },
+  "saves": {
+    "fortitude": 27,
+    "reflex": 28,
+    "will": 25,
+    "note": "creature.seraptis.saves.note"
+  },
+  "hp": {
+    "value": 340
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.seraptis.strikes.wounding-scimitar.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "forceful",
+        "magical",
+        "sweep",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+16",
+          "type": "slashing"
+        },
+        {
+          "dice": "2d6",
+          "type": "mental"
+        },
+        {
+          "dice": "1d6",
+          "type": "bleed",
+          "persistent": true
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.seraptis.strikes.claw.name",
+      "actions": "1",
+      "bonus": 31,
+      "traits": [
+        "agile",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+16",
+          "type": "slashing"
+        },
+        {
+          "dice": "2d6",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.seraptis.strikes.caustic-blood.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "acid",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "7d6",
+          "type": "acid"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blood-healing",
+      "section": "defense",
+      "name": "creature.seraptis.abilities.blood-healing.name",
+      "traits": [
+        "aura",
+        "healing",
+        "vitality"
+      ],
+      "aura": 30,
+      "text": "creature.seraptis.abilities.blood-healing.text"
+    },
+    {
+      "id": "recovery-vulnerability",
+      "section": "defense",
+      "name": "creature.seraptis.abilities.recovery-vulnerability.name",
+      "text": "creature.seraptis.abilities.recovery-vulnerability.text"
+    },
+    {
+      "id": "bloody-dance",
+      "section": "offense",
+      "name": "creature.seraptis.abilities.bloody-dance.name",
+      "actions": "2",
+      "text": "creature.seraptis.abilities.bloody-dance.text"
+    },
+    {
+      "id": "gnawing-arms",
+      "section": "offense",
+      "name": "creature.seraptis.abilities.gnawing-arms.name",
+      "actions": "1",
+      "traits": [
+        "unholy"
+      ],
+      "requirements": "creature.seraptis.abilities.gnawing-arms.requirements",
+      "text": "creature.seraptis.abilities.gnawing-arms.text"
+    },
+    {
+      "id": "isolating-words",
+      "section": "offense",
+      "name": "creature.seraptis.abilities.isolating-words.name",
+      "actions": "1",
+      "traits": [
+        "mental",
+        "curse",
+        "linguistic"
+      ],
+      "text": "creature.seraptis.abilities.isolating-words.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 35,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.phantasmal-calamity"
+            },
+            {
+              "spell": "spell.wave-of-despair"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.dominate"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            },
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 36,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.demonic-pact"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Spell ranks corrected to the book: page 81 prints \"8th dominate, 6th phantasmal calamity, wave of despair; 5th translocate\" (a comma where the rank changes); the source runs the two 6th-rank spells into the 8th rank and the errata does not touch it."
+}

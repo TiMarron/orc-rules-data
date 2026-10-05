@@ -1,0 +1,45 @@
+{
+  "id": "ritual.call-spirit",
+  "type": "ritual",
+  "name": "ritual.call-spirit.name",
+  "traits": [
+    "spirit"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 391,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.call-spirit.text",
+  "rank": 5,
+  "cast": "ritual.call-spirit.cast",
+  "cost": "ritual.call-spirit.cost",
+  "secondaryCasters": 1,
+  "primaryCheck": [
+    {
+      "skill": "skill.occultism",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.occultism"
+        },
+        {
+          "skill": "skill.religion"
+        }
+      ],
+      "note": "ritual.call-spirit.secondary-checks.0.note"
+    }
+  ],
+  "duration": "ritual.call-spirit.duration"
+}

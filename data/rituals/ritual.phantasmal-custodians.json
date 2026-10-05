@@ -1,0 +1,53 @@
+{
+  "id": "ritual.phantasmal-custodians",
+  "type": "ritual",
+  "name": "ritual.phantasmal-custodians.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 268,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.phantasmal-custodians.text",
+  "rank": 3,
+  "cast": "ritual.phantasmal-custodians.cast",
+  "cost": "ritual.phantasmal-custodians.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.arcana"
+        },
+        {
+          "skill": "skill.occultism"
+        }
+      ],
+      "note": "ritual.phantasmal-custodians.secondary-checks.0.note"
+    },
+    {
+      "skill": "skill.diplomacy"
+    }
+  ],
+  "area": "ritual.phantasmal-custodians.area",
+  "duration": "ritual.phantasmal-custodians.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "ritual.phantasmal-custodians.heightened.0"
+    }
+  ]
+}

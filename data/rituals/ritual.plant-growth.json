@@ -1,0 +1,42 @@
+{
+  "id": "ritual.plant-growth",
+  "type": "ritual",
+  "name": "ritual.plant-growth.name",
+  "traits": [
+    "plant",
+    "vitality",
+    "wood"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 394,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.plant-growth.text",
+  "rank": 4,
+  "cast": "ritual.plant-growth.cast",
+  "secondaryCasters": 1,
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "lore": "ritual.plant-growth.secondary-checks.0.0.lore"
+        },
+        {
+          "skill": "skill.survival"
+        }
+      ]
+    }
+  ],
+  "area": "ritual.plant-growth.area",
+  "duration": "ritual.plant-growth.duration"
+}

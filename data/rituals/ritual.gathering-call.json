@@ -1,0 +1,58 @@
+{
+  "id": "ritual.gathering-call",
+  "type": "ritual",
+  "name": "ritual.gathering-call.name",
+  "traits": [
+    "teleportation"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 267,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.gathering-call.text",
+  "rank": 7,
+  "cast": "ritual.gathering-call.cast",
+  "cost": "ritual.gathering-call.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "expert",
+      "note": "ritual.gathering-call.primary-check.0.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "expert",
+      "note": "ritual.gathering-call.primary-check.1.note"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.arcana"
+        },
+        {
+          "skill": "skill.occultism"
+        }
+      ],
+      "note": "ritual.gathering-call.secondary-checks.0.note"
+    },
+    {
+      "skill": "skill.society"
+    }
+  ],
+  "range": "ritual.gathering-call.range",
+  "targets": "ritual.gathering-call.targets",
+  "duration": "ritual.gathering-call.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "ritual.gathering-call.heightened.0"
+    }
+  ]
+}

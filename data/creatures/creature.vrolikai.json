@@ -1,0 +1,297 @@
+{
+  "id": "creature.vrolikai",
+  "type": "creature",
+  "name": "creature.vrolikai.name",
+  "traits": [
+    "demon",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 82,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 20,
+  "size": "large",
+  "perception": {
+    "mod": 34,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "draconic",
+    "empyrean",
+    "necril"
+  ],
+  "languageNote": "creature.vrolikai.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 37
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 33
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 36
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 36
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 38
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 34
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 34
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 34
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": 7,
+    "con": 9,
+    "int": 6,
+    "wis": 6,
+    "cha": 8
+  },
+  "ac": {
+    "value": 45
+  },
+  "saves": {
+    "fortitude": 35,
+    "reflex": 33,
+    "will": 34,
+    "note": "creature.vrolikai.saves.note"
+  },
+  "hp": {
+    "value": 440
+  },
+  "immunities": [
+    "death-effects"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vrolikai.strikes.black-flame-knife.name",
+      "actions": "1",
+      "bonus": 40,
+      "traits": [
+        "agile",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "3d4+18",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vrolikai.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "4d12+18",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vrolikai.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "4d8+18",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "mindwarping"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "death-stealing-gaze",
+      "section": "defense",
+      "name": "creature.vrolikai.abilities.death-stealing-gaze.name",
+      "traits": [
+        "aura",
+        "divine",
+        "visual"
+      ],
+      "aura": 30,
+      "text": "creature.vrolikai.abilities.death-stealing-gaze.text"
+    },
+    {
+      "id": "black-flame-knives",
+      "section": "offense",
+      "name": "creature.vrolikai.abilities.black-flame-knives.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "unholy"
+      ],
+      "text": "creature.vrolikai.abilities.black-flame-knives.text"
+    },
+    {
+      "id": "consume-death",
+      "section": "offense",
+      "name": "creature.vrolikai.abilities.consume-death.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "visual"
+      ],
+      "text": "creature.vrolikai.abilities.consume-death.text"
+    },
+    {
+      "id": "focused-flames",
+      "section": "offense",
+      "name": "creature.vrolikai.abilities.focused-flames.name",
+      "actions": "2",
+      "text": "creature.vrolikai.abilities.focused-flames.text"
+    },
+    {
+      "id": "mindwarping",
+      "section": "offense",
+      "name": "creature.vrolikai.abilities.mindwarping.name",
+      "traits": [
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.vrolikai.abilities.mindwarping.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 44,
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.regenerate"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.execute"
+            },
+            {
+              "spell": "spell.paralyze"
+            },
+            {
+              "spell": "spell.massacre"
+            },
+            {
+              "spell": "spell.vampiric-exsanguination"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 44,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.demonic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ritual.consecrate",
+  "type": "ritual",
+  "name": "ritual.consecrate.name",
+  "traits": [
+    "consecration"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 392,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.consecrate.text",
+  "rank": 2,
+  "cast": "ritual.consecrate.cast",
+  "cost": "ritual.consecrate.cost",
+  "secondaryCasters": 2,
+  "secondaryCastersNote": "ritual.consecrate.secondary-casters.note",
+  "primaryCheck": [
+    {
+      "skill": "skill.religion"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.crafting"
+    },
+    {
+      "skill": "skill.performance"
+    }
+  ],
+  "range": "ritual.consecrate.range",
+  "area": "ritual.consecrate.area",
+  "duration": "ritual.consecrate.duration",
+  "heightened": [
+    {
+      "level": "7",
+      "text": "ritual.consecrate.heightened.0"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper names of two deities given as examples are replaced with generic descriptors; the rule is the book's. Heightened entry corrected to the book: page 392 prints \"The cost increases to 200 gp × the spell rank\"; the source has \"the spell level\" and the errata does not touch it."
+}

@@ -1,0 +1,243 @@
+{
+  "id": "creature.omox",
+  "type": "creature",
+  "name": "creature.omox.name",
+  "traits": [
+    "demon",
+    "fiend",
+    "ooze",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 79,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "medium",
+  "perception": {
+    "mod": 22,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.omox.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 6,
+    "con": 7,
+    "int": 2,
+    "wis": 4,
+    "cha": 4
+  },
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 21,
+    "will": 20,
+    "note": "creature.omox.saves.note"
+  },
+  "hp": {
+    "value": 395
+  },
+  "immunities": [
+    "acid",
+    "critical-hits",
+    "disease",
+    "poison",
+    "precision"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    },
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "climb": 20,
+    "swim": 80
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.omox.strikes.sludge-tendril.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "acid",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+13",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.omox.strikes.slime-ball.name",
+      "actions": "1",
+      "bonus": 23,
+      "rangeIncrement": 30,
+      "traits": [
+        "acid",
+        "brutal",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+11",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        {
+          "own": "slime-trap"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cleanly-vulnerability",
+      "section": "top",
+      "name": "creature.omox.abilities.cleanly-vulnerability.name",
+      "text": "creature.omox.abilities.cleanly-vulnerability.text"
+    },
+    {
+      "id": "absorb-weapon",
+      "section": "defense",
+      "name": "creature.omox.abilities.absorb-weapon.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "trigger": "creature.omox.abilities.absorb-weapon.trigger",
+      "text": "creature.omox.abilities.absorb-weapon.text"
+    },
+    {
+      "id": "liquid-leap",
+      "section": "offense",
+      "name": "creature.omox.abilities.liquid-leap.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "teleportation"
+      ],
+      "requirements": "creature.omox.abilities.liquid-leap.requirements",
+      "text": "creature.omox.abilities.liquid-leap.text"
+    },
+    {
+      "id": "slime-trap",
+      "section": "offense",
+      "name": "creature.omox.abilities.slime-trap.name",
+      "text": "creature.omox.abilities.slime-trap.text"
+    },
+    {
+      "id": "smother",
+      "section": "offense",
+      "name": "creature.omox.abilities.smother.name",
+      "actions": "1",
+      "requirements": "creature.omox.abilities.smother.requirements",
+      "text": "creature.omox.abilities.smother.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 32,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.control-water"
+            },
+            {
+              "spell": "spell.create-water",
+              "atWill": true
+            },
+            {
+              "spell": "spell.toxic-cloud"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 32,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.demonic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

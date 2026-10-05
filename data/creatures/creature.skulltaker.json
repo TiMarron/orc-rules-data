@@ -1,0 +1,287 @@
+{
+  "id": "creature.skulltaker",
+  "type": "creature",
+  "name": "creature.skulltaker.name",
+  "traits": [
+    "undead",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 314,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 18,
+  "size": "huge",
+  "perception": {
+    "mod": 33,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "necril"
+  ],
+  "languageNote": "creature.skulltaker.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 34
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 35
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 30
+    },
+    {
+      "lore": "creature.skulltaker.lore.3",
+      "mod": 30
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 32
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 6,
+    "con": 6,
+    "int": 2,
+    "wis": 8,
+    "cha": 7
+  },
+  "ac": {
+    "value": 42
+  },
+  "saves": {
+    "fortitude": 31,
+    "reflex": 33,
+    "will": 35,
+    "note": "creature.skulltaker.saves.note"
+  },
+  "hp": {
+    "value": 300,
+    "note": "creature.skulltaker.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "cold",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "piercing",
+      "value": 15
+    },
+    {
+      "type": "slashing",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.skulltaker.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 35,
+      "traits": [
+        "deadly",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "2d12",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d10+14",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d6",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        {
+          "own": "vitality-drain"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.skulltaker.strikes.claw.name",
+      "actions": "1",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "deadly",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "2d12",
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d6+14",
+          "type": "slashing"
+        },
+        {
+          "dice": "3d6",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        {
+          "own": "vitality-drain"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.skulltaker.strikes.bone-javelin.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "100"
+      },
+      "damage": [
+        {
+          "dice": "3d8+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "3d6",
+          "type": "void"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "skeletal-lore",
+      "section": "top",
+      "name": "creature.skulltaker.abilities.skeletal-lore.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.skulltaker.abilities.skeletal-lore.text"
+    },
+    {
+      "id": "shard-storm",
+      "section": "defense",
+      "name": "creature.skulltaker.abilities.shard-storm.name",
+      "traits": [
+        "air",
+        "aura",
+        "divine"
+      ],
+      "aura": 10,
+      "text": "creature.skulltaker.abilities.shard-storm.text"
+    },
+    {
+      "id": "bonetaker",
+      "section": "offense",
+      "name": "creature.skulltaker.abilities.bonetaker.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.skulltaker.abilities.bonetaker.text"
+    },
+    {
+      "id": "splintered-ground",
+      "section": "offense",
+      "name": "creature.skulltaker.abilities.splintered-ground.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.skulltaker.abilities.splintered-ground.text"
+    },
+    {
+      "id": "vitality-drain",
+      "section": "offense",
+      "name": "creature.skulltaker.abilities.vitality-drain.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.skulltaker.abilities.vitality-drain.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 40,
+      "ranks": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.desiccate",
+              "count": 2
+            },
+            {
+              "spell": "spell.execute",
+              "count": 2
+            },
+            {
+              "spell": "spell.punishing-winds",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 40,
+    "ranks": [
+      {
+        "rank": 7,
+        "rituals": [
+          {
+            "ritual": "ritual.collective-memories",
+            "note": "creature.skulltaker.rituals.ranks.0.rituals.0.note"
+          }
+        ]
+      }
+    ]
+  }
+}

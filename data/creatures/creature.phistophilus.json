@@ -1,0 +1,320 @@
+{
+  "id": "creature.phistophilus",
+  "type": "creature",
+  "name": "creature.phistophilus.name",
+  "traits": [
+    "devil",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 90,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.phistophilus.senses.0"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "chthonian",
+    "common",
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "sakvroth"
+  ],
+  "languageNote": "creature.phistophilus.language-note",
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 19
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 23
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 21
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 21
+    },
+    {
+      "lore": "creature.phistophilus.lore.4",
+      "mod": 25
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 19
+    },
+    {
+      "skill": "skill.society",
+      "mod": 19
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 4,
+    "int": 7,
+    "wis": 5,
+    "cha": 5
+  },
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 18,
+    "will": 23,
+    "note": "creature.phistophilus.saves.note"
+  },
+  "hp": {
+    "value": 150
+  },
+  "immunities": [
+    "fire",
+    "ward-contract"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10,
+      "except": [
+        "silver"
+      ]
+    },
+    {
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.phistophilus.strikes.binding-contract.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "disarm",
+        "magical",
+        "reach",
+        "trip",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d6+11",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        },
+        {
+          "own": "infernal-wound"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.phistophilus.strikes.horn.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d10+11",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "infernal-wound"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ward-contract",
+      "section": "defense",
+      "name": "creature.phistophilus.abilities.ward-contract.name",
+      "text": "creature.phistophilus.abilities.ward-contract.text"
+    },
+    {
+      "id": "draft-contract",
+      "section": "offense",
+      "name": "creature.phistophilus.abilities.draft-contract.name",
+      "actions": "3",
+      "traits": [
+        "divine",
+        "manipulate"
+      ],
+      "text": "creature.phistophilus.abilities.draft-contract.text"
+    },
+    {
+      "id": "infernal-investment",
+      "section": "offense",
+      "name": "creature.phistophilus.abilities.infernal-investment.name",
+      "text": "creature.phistophilus.abilities.infernal-investment.text"
+    },
+    {
+      "id": "infernal-wound",
+      "section": "offense",
+      "name": "creature.phistophilus.abilities.infernal-wound.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.phistophilus.abilities.infernal-wound.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 31,
+      "cantrips": {
+        "rank": 7,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.mind-reading",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.peaceful-bubble"
+            },
+            {
+              "spell": "spell.silence"
+            },
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.fireball"
+            },
+            {
+              "spell": "spell.illusory-scene"
+            },
+            {
+              "spell": "spell.lightning-bolt"
+            },
+            {
+              "spell": "spell.locate",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mind-probe"
+            },
+            {
+              "spell": "spell.sending",
+              "atWill": true
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.scrying",
+              "atWill": true,
+              "note": "creature.phistophilus.spellcasting.0.ranks.10.0.note"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 31,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.diabolic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "id": "creature.vordine",
+  "type": "creature",
+  "name": "creature.vordine.name",
+  "traits": [
+    "devil",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 87,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.vordine.senses.0"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "diabolic"
+  ],
+  "languageNote": "creature.vordine.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "lore": "creature.vordine.lore.3",
+      "mod": 13
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 5,
+    "int": 2,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.breastplate"
+    },
+    {
+      "item": "item.whip"
+    },
+    {
+      "item": "item.trident"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 13,
+    "will": 10,
+    "note": "creature.vordine.saves.note"
+  },
+  "hp": {
+    "value": 60
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "except": [
+        "silver"
+      ]
+    },
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vordine.strikes.trident.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vordine.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d4",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.vordine.strikes.trident-2.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "thrown",
+        "unholy"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vordine.strikes.whip.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "unholy",
+        "disarm",
+        "magical",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.whip"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.vordine.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "burning-hoofprints",
+      "section": "offense",
+      "name": "creature.vordine.abilities.burning-hoofprints.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.vordine.abilities.burning-hoofprints.text"
+    },
+    {
+      "id": "trident-of-dis",
+      "section": "offense",
+      "name": "creature.vordine.abilities.trident-of-dis.name",
+      "actions": "1",
+      "text": "creature.vordine.abilities.trident-of-dis.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 19,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 19,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.diabolic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

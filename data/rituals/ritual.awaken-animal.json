@@ -1,0 +1,41 @@
+{
+  "id": "ritual.awaken-animal",
+  "type": "ritual",
+  "name": "ritual.awaken-animal.name",
+  "traits": [
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 390,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.awaken-animal.text",
+  "rank": 6,
+  "cast": "ritual.awaken-animal.cast",
+  "cost": "ritual.awaken-animal.cost",
+  "secondaryCasters": 3,
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "lore": "ritual.awaken-animal.secondary-checks.0.lore"
+    },
+    {
+      "skill": "skill.society"
+    },
+    {
+      "skill": "skill.survival"
+    }
+  ],
+  "range": "ritual.awaken-animal.range",
+  "targets": "ritual.awaken-animal.targets",
+  "editNote": "Compared field by field and word by word with pages 390-391: rank, rarity and trait, cast, cost, secondary casters, both checks (Lore (any), Society, Survival), range, target, description and the four outcomes all match. The table is the Creature Creation Rituals table of page 390, which the book prints once beside the three creature-creating rituals and the source repeats inside each: eighteen rows of creature level, ritual rank required and cost, from level -1 or 0 (rank 2, 15 gp) through level 9 (rank 6, 2,100 gp) to level 17 (rank 10, 45,000 gp). The dataset markup carries no tables, so the level cap and the cost the ritual refers to are not in the record; the omission is recorded rather than left silent."
+}

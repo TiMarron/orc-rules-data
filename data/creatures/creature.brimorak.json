@@ -1,0 +1,236 @@
+{
+  "id": "creature.brimorak",
+  "type": "creature",
+  "name": "creature.brimorak.name",
+  "traits": [
+    "demon",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 77,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "draconic",
+    "empyrean",
+    "pyric"
+  ],
+  "languageNote": "creature.brimorak.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 4,
+    "int": 1,
+    "wis": 1,
+    "cha": 2
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 12,
+    "will": 10
+  },
+  "hp": {
+    "value": 80
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    },
+    {
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.brimorak.strikes.flaming-sword.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+4",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.brimorak.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+4",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "extinguishing-aversion",
+      "section": "top",
+      "name": "creature.brimorak.abilities.extinguishing-aversion.name",
+      "text": "creature.brimorak.abilities.extinguishing-aversion.text"
+    },
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.brimorak.abilities.smoke-vision.name",
+      "text": "creature.brimorak.abilities.smoke-vision.text"
+    },
+    {
+      "id": "boiling-blood",
+      "section": "defense",
+      "name": "creature.brimorak.abilities.boiling-blood.name",
+      "text": "creature.brimorak.abilities.boiling-blood.text"
+    },
+    {
+      "id": "flaming-weapon",
+      "section": "offense",
+      "name": "creature.brimorak.abilities.flaming-weapon.name",
+      "traits": [
+        "divine",
+        "fire"
+      ],
+      "text": "creature.brimorak.abilities.flaming-weapon.text"
+    },
+    {
+      "id": "frothing-spew",
+      "section": "offense",
+      "name": "creature.brimorak.abilities.frothing-spew.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.brimorak.abilities.frothing-spew.text"
+    },
+    {
+      "id": "fume",
+      "section": "offense",
+      "name": "creature.brimorak.abilities.fume.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire"
+      ],
+      "frequency": "creature.brimorak.abilities.fume.frequency",
+      "text": "creature.brimorak.abilities.fume.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 21,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.ignition"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.fireball"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 21,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.demonic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

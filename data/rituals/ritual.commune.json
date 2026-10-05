@@ -1,0 +1,53 @@
+{
+  "id": "ritual.commune",
+  "type": "ritual",
+  "name": "ritual.commune.name",
+  "traits": [
+    "prediction"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 392,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.commune.text",
+  "rank": 6,
+  "cast": "ritual.commune.cast",
+  "cost": "ritual.commune.cost",
+  "secondaryCasters": 1,
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.nature"
+        },
+        {
+          "skill": "skill.occultism"
+        },
+        {
+          "skill": "skill.religion"
+        }
+      ],
+      "note": "ritual.commune.secondary-checks.0.note"
+    }
+  ],
+  "duration": "ritual.commune.duration",
+  "editNote": "Page corrected to the book: the ritual is printed on page 392; the source cites page 301, where it does not appear, and the errata does not touch it. Paragraph restored: page 392 prints \"You can ask up to seven questions...\" as its own paragraph after the three-item list; the source ran it into the last list item."
+}

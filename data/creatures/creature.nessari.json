@@ -1,0 +1,397 @@
+{
+  "id": "creature.nessari",
+  "type": "creature",
+  "name": "creature.nessari.name",
+  "traits": [
+    "devil",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 92,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 20,
+  "size": "large",
+  "perception": {
+    "mod": 37,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.nessari.senses.0"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "diabolic",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.nessari.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 34
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 32
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 39
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 34
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 39
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 37
+    },
+    {
+      "skill": "skill.society",
+      "mod": 36
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 34
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 8,
+    "con": 9,
+    "int": 8,
+    "wis": 9,
+    "cha": 8
+  },
+  "ac": {
+    "value": 46
+  },
+  "saves": {
+    "fortitude": 37,
+    "reflex": 32,
+    "will": 35,
+    "note": "creature.nessari.saves.note"
+  },
+  "hp": {
+    "value": 335,
+    "note": "creature.nessari.hp.note"
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 15,
+      "except": [
+        "silver"
+      ]
+    },
+    {
+      "type": "poison",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.nessari.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 40,
+      "traits": [
+        "magical",
+        "poison",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "4d10+17",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "nessari-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.nessari.strikes.claw.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "agile",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "4d6+17",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.nessari.strikes.tail.name",
+      "actions": "1",
+      "bonus": 36,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "4d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.nessari.strikes.tail.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.nessari.strikes.wing.name",
+      "actions": "1",
+      "bonus": 36,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "4d6+17",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "shape-devils",
+      "section": "top",
+      "name": "creature.nessari.abilities.shape-devils.name",
+      "traits": [
+        "divine",
+        "downtime"
+      ],
+      "text": "creature.nessari.abilities.shape-devils.text"
+    },
+    {
+      "id": "commanders-aura",
+      "section": "defense",
+      "name": "creature.nessari.abilities.commanders-aura.name",
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "aura": 100,
+      "text": "creature.nessari.abilities.commanders-aura.text"
+    },
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.nessari.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "divine",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 20,
+      "text": "creature.nessari.abilities.frightful-presence.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.nessari.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.nessari.abilities.reactive-strike.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.nessari.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "traits": [
+        "unholy"
+      ],
+      "text": "creature.nessari.abilities.constrict.text"
+    },
+    {
+      "id": "fast-swoop",
+      "section": "offense",
+      "name": "creature.nessari.abilities.fast-swoop.name",
+      "actions": "1",
+      "text": "creature.nessari.abilities.fast-swoop.text"
+    },
+    {
+      "id": "masterful-quickened-casting",
+      "section": "offense",
+      "name": "creature.nessari.abilities.masterful-quickened-casting.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "creature.nessari.abilities.masterful-quickened-casting.frequency",
+      "text": "creature.nessari.abilities.masterful-quickened-casting.text"
+    },
+    {
+      "id": "nessari-venom",
+      "section": "offense",
+      "name": "creature.nessari.abilities.nessari-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.nessari.abilities.nessari-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 42,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic",
+              "atWill": true
+            },
+            {
+              "spell": "spell.divine-decree",
+              "atWill": true
+            },
+            {
+              "spell": "spell.fireball",
+              "atWill": true
+            },
+            {
+              "spell": "spell.scrying"
+            },
+            {
+              "spell": "spell.wall-of-fire",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.seize-soul",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.falling-stars"
+            },
+            {
+              "spell": "spell.manifestation"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 42,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.diabolic-pact"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Reference corrected to the book: page 93 prints \"the number of orts listed on the table in the sidebar on page 92\"; the source has \"in the sidebar below\" and the errata does not touch it. The sidebar's table (devil level against number of orts, nine rows from \"4 or below: 4\" to \"19-20: 1,024\") is not part of the record: the dataset markup carries no tables."
+}

@@ -1,0 +1,234 @@
+{
+  "id": "creature.coarti",
+  "type": "creature",
+  "name": "creature.coarti.name",
+  "traits": [
+    "devil",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 87,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.coarti.senses.0"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "diabolic",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.coarti.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 17
+    },
+    {
+      "lore": "creature.coarti.lore.3",
+      "mod": 14
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 6,
+    "con": 2,
+    "int": 3,
+    "wis": 4,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.morningstar",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 17,
+    "will": 15,
+    "note": "creature.coarti.saves.note"
+  },
+  "hp": {
+    "value": 110
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 5,
+      "note": "creature.coarti.weaknesses.0.note"
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "except": [
+        "silver"
+      ]
+    },
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.coarti.strikes.morningstar.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "unholy",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "spirit"
+        }
+      ],
+      "item": "item.morningstar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.coarti.strikes.wing.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "unholy",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blood-contract",
+      "section": "defense",
+      "name": "creature.coarti.abilities.blood-contract.name",
+      "text": "creature.coarti.abilities.blood-contract.text"
+    },
+    {
+      "id": "despairing-shriek",
+      "section": "offense",
+      "name": "creature.coarti.abilities.despairing-shriek.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "sonic",
+        "unholy"
+      ],
+      "text": "creature.coarti.abilities.despairing-shriek.text"
+    },
+    {
+      "id": "wing-snap",
+      "section": "offense",
+      "name": "creature.coarti.abilities.wing-snap.name",
+      "actions": "1",
+      "frequency": "creature.coarti.abilities.wing-snap.frequency",
+      "text": "creature.coarti.abilities.wing-snap.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 25,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.darkness"
+            },
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 25,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.diabolic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

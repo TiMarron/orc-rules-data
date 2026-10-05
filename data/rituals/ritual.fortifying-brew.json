@@ -1,0 +1,51 @@
+{
+  "id": "ritual.fortifying-brew",
+  "type": "ritual",
+  "name": "ritual.fortifying-brew.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 267,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.fortifying-brew.text",
+  "rank": 5,
+  "cast": "ritual.fortifying-brew.cast",
+  "cost": "ritual.fortifying-brew.cost",
+  "secondaryCasters": 1,
+  "primaryCheck": [
+    {
+      "skill": "skill.crafting",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.nature",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.society",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "lore": "ritual.fortifying-brew.secondary-checks.0.lore"
+    },
+    {
+      "skill": "skill.crafting"
+    },
+    {
+      "skill": "skill.society"
+    }
+  ],
+  "range": "ritual.fortifying-brew.range",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "ritual.fortifying-brew.heightened.0"
+    }
+  ]
+}

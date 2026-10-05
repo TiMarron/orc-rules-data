@@ -1,0 +1,62 @@
+{
+  "id": "ritual.reincarnate",
+  "type": "ritual",
+  "name": "ritual.reincarnate.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 269,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.reincarnate.text",
+  "rank": 3,
+  "cast": "ritual.reincarnate.cast",
+  "cost": "ritual.reincarnate.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.occultism"
+    },
+    {
+      "skill": "skill.religion"
+    }
+  ],
+  "range": "ritual.reincarnate.range",
+  "targets": "ritual.reincarnate.targets",
+  "heightened": [
+    {
+      "level": "4",
+      "text": "ritual.reincarnate.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "ritual.reincarnate.heightened.1"
+    },
+    {
+      "level": "6",
+      "text": "ritual.reincarnate.heightened.2"
+    },
+    {
+      "level": "7",
+      "text": "ritual.reincarnate.heightened.3"
+    },
+    {
+      "level": "8",
+      "text": "ritual.reincarnate.heightened.4"
+    },
+    {
+      "level": "9",
+      "text": "ritual.reincarnate.heightened.5"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a deity is replaced with the generic descriptor the dataset already uses, and the title of a book (\"a common ancestry from\" that book) with \"the core rules\". The rules text is otherwise the book's with its errata."
+}
