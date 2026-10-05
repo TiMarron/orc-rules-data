@@ -393,5 +393,5 @@
       }
     ]
   },
-  "editNote": "Reference corrected to the book: page 93 prints \"the number of orts listed on the table in the sidebar on page 92\"; the source has \"in the sidebar below\" and the errata does not touch it. The sidebar's table (devil level against number of orts, nine rows from \"4 or below: 4\" to \"19-20: 1,024\") is not part of the record: the dataset markup carries no tables."
+  "editNote": "Reference corrected to the book: page 93 prints \"the number of orts listed on the table in the sidebar on page 92\"; the source has \"in the sidebar below\" and the errata does not touch it. The sidebar's table on page 92 (devil level against the minimum number of orts, nine rows) is restated as a list at the end of the ability's text, read from the page; the dataset markup carries no tables."
 }
