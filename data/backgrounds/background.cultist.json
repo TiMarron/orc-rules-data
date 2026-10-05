@@ -9,8 +9,8 @@
     "page": 86,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "background.cultist.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.occultism"
   ],
-  "feat": "feat.schooled-in-secrets"
+  "feat": "feat.schooled-in-secrets",
+  "editNote": "Page 85 prints \"You're trained in the Occultism skill, and a Lore skill\" with the comma that the converter drops for the other backgrounds; it is kept."
 }

@@ -33,5 +33,5 @@
     }
   ],
   "feat": "feat.assurance",
-  "editNote": "Accepted: the book (p.88) offers a 4-way skill choice (Arcana, Nature, Occultism, or Religion), with Assurance in whichever is chosen; the schema's skills array holds exactly one, so a specific pick can't be recorded without misrepresenting the other three legal options, and leaving it empty (rather than picking one arbitrarily, unlike the 2-way choices elsewhere) correctly signals that no single value is defensible here. The record's own text lists all four options and the Academia Lore skill."
+  "editNote": "Page 88 prints \"You have a knack for learning and sequestered yourself\", \"always dreaming about one day seeing the real things\", and \"trained in your choice of the Arcana, Nature, Occultism, or Religion skill, and gain the Assurance skill feat in your chosen skill. You're also trained in the Academia Lore skill\"; the source words these differently, and the page's wording is used."
 }

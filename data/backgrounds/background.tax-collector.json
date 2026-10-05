@@ -9,8 +9,8 @@
     "page": 51,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "background.tax-collector.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.intimidation"
   ],
-  "feat": "feat.quick-coercion"
+  "feat": "feat.quick-coercion",
+  "editNote": "Page 51 prints \"You're trained in the Intimidation skill and the Lore skill for the settlement that employed you\"; the source has \"a Lore skill\", and the page's wording is used."
 }

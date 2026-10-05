@@ -9,8 +9,8 @@
     "page": 87,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "background.noble.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.society"
   ],
-  "feat": "feat.courtly-graces"
+  "feat": "feat.courtly-graces",
+  "editNote": "Page 87 prints \"You're trained in the Society skill and your choice of the Genealogy Lore or Heraldry Lore skill\"; the source drops \"your choice of\" and names \"skill\" twice, and the page's wording is used."
 }
