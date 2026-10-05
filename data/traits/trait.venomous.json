@@ -9,7 +9,8 @@
     "page": 119,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
-  "text": "trait.venomous.text"
+  "review": "assistant",
+  "edited": true,
+  "text": "trait.venomous.text",
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

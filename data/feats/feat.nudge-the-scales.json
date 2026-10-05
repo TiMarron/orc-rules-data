@@ -15,12 +15,13 @@
     "page": 138,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.nudge-the-scales.text",
   "level": 1,
   "category": "class",
   "class": "class.oracle",
   "actions": "1",
-  "prerequisites": []
+  "prerequisites": [],
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

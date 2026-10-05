@@ -13,8 +13,8 @@
     "page": 378,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.protectors-sacrifice.text",
   "rank": 1,
   "focus": true,
@@ -31,5 +31,6 @@
       "text": "spell.protectors-sacrifice.heightened.0"
     }
   ],
-  "trigger": "spell.protectors-sacrifice.trigger"
+  "trigger": "spell.protectors-sacrifice.trigger",
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

@@ -12,8 +12,8 @@
     "page": 204,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.dread-marshal-stance.text",
   "level": 4,
   "category": "archetype",
@@ -28,5 +28,6 @@
       "target": "skill.intimidation",
       "rank": "trained"
     }
-  ]
+  ],
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

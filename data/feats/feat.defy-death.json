@@ -11,8 +11,8 @@
     "page": 72,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.defy-death.text",
   "level": 5,
   "category": "ancestry",
@@ -22,5 +22,6 @@
       "kind": "feat",
       "id": "feat.orc-ferocity"
     }
-  ]
+  ],
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }
