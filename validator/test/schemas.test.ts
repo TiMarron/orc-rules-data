@@ -1004,13 +1004,52 @@ describe('type schemas', () => {
     const FULL = () => {
       const r = ritual();
       r.cost = 'ritual.geas.cost'; r.secondaryCasters = 2; r.area = 'ritual.geas.area';
+      r.secondaryCastersNote = 'ritual.geas.secondary-casters.note'; r.requirements = 'ritual.geas.requirements';
       r.primaryCheck[0].note = 'ritual.geas.primary-check.0.note';
-      r.secondaryChecks = [{ lore: 'ritual.geas.secondary-checks.0.lore' }, { oneOf: [{ skill: 'skill.arcana' }, { skill: 'skill.nature' }, { lore: 'ritual.geas.secondary-checks.1.2.lore' }] }];
+      r.secondaryChecks = [
+        { lore: 'ritual.geas.secondary-checks.0.lore' },
+        { oneOf: [{ skill: 'skill.arcana' }, { skill: 'skill.nature' }, { lore: 'ritual.geas.secondary-checks.1.2.lore' }], note: 'ritual.geas.secondary-checks.1.note' },
+        { skill: 'skill.crafting', note: 'ritual.geas.secondary-checks.2.note' },
+      ];
       return r;
     };
 
     it('accepts a ritual with every optional field, a condition on a check, a Lore and a choice of three', () => {
       expect(issuesFor('ritual', FULL())).toEqual([]);
+    });
+
+    it('accepts a condition on a choice, on a single skill, the number of secondary casters with its qualifier, and requirements', () => {
+      const r = ritual();
+      r.secondaryChecks = [{ oneOf: [{ skill: 'skill.nature' }, { skill: 'skill.religion' }], note: 'ritual.geas.secondary-checks.0.note' }];
+      r.secondaryCasters = 2; r.secondaryCastersNote = 'ritual.geas.secondary-casters.note';
+      r.requirements = 'ritual.geas.requirements';
+      expect(issuesFor('ritual', r)).toEqual([]);
+    });
+
+    it('accepts a primary check with no rank, the book printing none, and still rejects a rank that is not one', () => {
+      const r = ritual();
+      r.primaryCheck = [{ skill: 'skill.religion' }, { skill: 'skill.nature', note: 'ritual.geas.primary-check.1.note' }];
+      expect(issuesFor('ritual', r)).toEqual([]);
+      expect(issuesFor('ritual', { ...ritual(), primaryCheck: [{ skill: 'skill.religion', rank: 'supreme' }] }).join('\n')).toContain('/primaryCheck/0');
+    });
+
+    it('rejects a condition that is not an i18n key, one on a Lore, and one inside a choice', () => {
+      const bad: unknown[] = [
+        { skill: 'skill.arcana', note: 'whichever is used for the primary check' },
+        { oneOf: [{ skill: 'skill.arcana' }, { skill: 'skill.nature' }], note: 'whichever is used for the primary check' },
+        { lore: 'ritual.geas.x.lore', note: 'ritual.geas.x.note' },
+        { oneOf: [{ skill: 'skill.arcana', note: 'ritual.geas.x.note' }, { skill: 'skill.nature' }] },
+        { oneOf: [{ skill: 'skill.arcana' }, { skill: 'skill.nature' }], note: 'ritual.geas.x.note', skill: 'skill.occultism' },
+        { note: 'ritual.geas.x.note' },
+      ];
+      for (const b of bad) expect(issuesFor('ritual', { ...ritual(), secondaryChecks: [b] }).join('\n'), JSON.stringify(b)).toContain('/secondaryChecks/0');
+    });
+
+    it('rejects a qualifier on the secondary casters without their number, one that is not a key, and requirements that are not a key', () => {
+      expect(ritual().secondaryCasters).toBeUndefined();
+      expect(issuesFor('ritual', { ...ritual(), secondaryCastersNote: 'ritual.geas.secondary-casters.note' }).join('\n')).toContain('secondaryCasters');
+      expect(issuesFor('ritual', { ...ritual(), secondaryCasters: 2, secondaryCastersNote: 'or more' }).join('\n')).toContain('/secondaryCastersNote');
+      expect(issuesFor('ritual', { ...ritual(), requirements: 'a planar key' }).join('\n')).toContain('/requirements');
     });
 
     it('accepts a ritual with no secondary casters and no secondary checks', () => {
@@ -1037,9 +1076,9 @@ describe('type schemas', () => {
       for (const secondaryCasters of [0, 1.5, '2']) expect(issuesFor('ritual', { ...ritual(), secondaryCasters }).join('\n'), String(secondaryCasters)).toContain('/secondaryCasters');
     });
 
-    it('rejects an empty primary check, and one without a skill or a rank', () => {
+    it('rejects an empty primary check, and one without a skill or with a rank that is not one', () => {
       expect(issuesFor('ritual', { ...ritual(), primaryCheck: [] }).join('\n')).toContain('/primaryCheck');
-      const bad = [{ rank: 'master' }, { skill: 'skill.religion' }, { skill: 'skill.religion', rank: 'supreme' }, { skill: 'religion', rank: 'master' }, { skill: 'skill.religion', rank: 'master', note: 'you must be a demon' }, { skill: 'skill.religion', rank: 'master', lore: 'ritual.geas.x' }];
+      const bad = [{ rank: 'master' }, {}, { skill: 'skill.religion', rank: 'supreme' }, { skill: 'religion', rank: 'master' }, { skill: 'skill.religion', rank: 'master', note: 'you must be a demon' }, { skill: 'skill.religion', rank: 'master', lore: 'ritual.geas.x' }];
       for (const b of bad) expect(issuesFor('ritual', { ...ritual(), primaryCheck: [b] }).join('\n'), JSON.stringify(b)).toContain('/primaryCheck/0');
     });
 

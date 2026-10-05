@@ -36,6 +36,14 @@ major for renamed or removed ids, new required fields and markup changes.
   the rank it raises one to and any restriction. The validator checks that a
   ritual performed heightened is raised above the rank of its line. Optional
   addition to the creature schema.
+- A ritual's conditions on its checks and casters, and its requirements. A
+  secondary check that is one skill or a choice takes an optional `note`, the
+  condition as printed ("whichever isn't used for the primary check"); the
+  number of secondary casters takes an optional `secondaryCastersNote` ("or
+  more", "must be the ritual's target"), only with `secondaryCasters`; a ritual
+  takes optional `requirements`, as a spell has. A primary check's `rank` is now
+  optional, absent only when the book prints none. Optional additions to the
+  ritual schema.
 
 ### Changed
 
