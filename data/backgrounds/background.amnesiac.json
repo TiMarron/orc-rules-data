@@ -1,0 +1,22 @@
+{
+  "id": "background.amnesiac",
+  "type": "background",
+  "name": "background.amnesiac.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 52,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.amnesiac.text",
+  "boosts": [
+    "free",
+    "free",
+    "free"
+  ],
+  "skills": [],
+  "editNote": "Page 52 prints \"You gain three free attribute boosts\" and nothing more: three free boosts, no trained skill, no Lore and no feat."
+}

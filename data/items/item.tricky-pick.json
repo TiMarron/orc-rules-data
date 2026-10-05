@@ -1,0 +1,42 @@
+{
+  "id": "item.tricky-pick",
+  "type": "item",
+  "name": "item.tricky-pick.name",
+  "traits": [
+    "backstabber",
+    "fatal",
+    "kobold",
+    "modular"
+  ],
+  "traitValues": {
+    "fatal": "1d10",
+    "modular": "bludgeoning, piercing, or slashing"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 275,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.tricky-pick.text",
+  "level": 0,
+  "priceCp": 1000,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "advanced",
+    "hands": "1",
+    "group": "pick",
+    "damage": {
+      "dice": "1d6",
+      "types": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    }
+  },
+  "editNote": "Compared with the weapon table and the description on page 275: uncommon advanced weapon, 10 gp, 1d6 modular, Bulk 1, one hand, pick group, traits backstabber, fatal d10, kobold, modular (B, P, or S); the damage is of one of the three types the modular trait lists. The dropped section is the weapon group's shared critical specialization text, which is not part of this record."
+}

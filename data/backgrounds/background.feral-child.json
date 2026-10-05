@@ -1,0 +1,38 @@
+{
+  "id": "background.feral-child",
+  "type": "background",
+  "name": "background.feral-child.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 52,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.feral-child.text",
+  "boosts": [
+    [
+      "str",
+      "dex",
+      "con"
+    ]
+  ],
+  "skills": [
+    "skill.nature",
+    "skill.survival"
+  ],
+  "feat": "feat.forager",
+  "grants": [
+    {
+      "name": "background.feral-child.grants.0.name",
+      "text": "background.feral-child.grants.0.text"
+    },
+    {
+      "name": "background.feral-child.grants.1.name",
+      "text": "background.feral-child.grants.1.text"
+    }
+  ],
+  "editNote": "Page 52 prints one attribute boost (\"It must be to Strength, Dexterity, or Constitution\"), training in both Nature and Survival, and no Lore. The low-light vision and the imprecise scent it gives are recorded as grants."
+}

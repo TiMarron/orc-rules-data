@@ -1,0 +1,28 @@
+{
+  "id": "background.driver",
+  "type": "background",
+  "name": "background.driver.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.driver.text",
+  "boosts": [
+    [
+      "str",
+      "dex"
+    ],
+    "free"
+  ],
+  "lore": "background.driver.lore",
+  "skills": [
+    "skill.acrobatics"
+  ],
+  "feat": "feat.assurance",
+  "editNote": "The Fall 2024 errata replaces this background's text on page 50. The source carries that text but for one clause (\"skill, and the\" where the errata has \"skill and either the\"), which is set to the errata's wording."
+}

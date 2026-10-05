@@ -1,0 +1,32 @@
+{
+  "id": "background.haunted",
+  "type": "background",
+  "name": "background.haunted.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 53,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.haunted.text",
+  "boosts": [
+    [
+      "wis",
+      "cha"
+    ],
+    "free"
+  ],
+  "skills": [
+    "skill.occultism"
+  ],
+  "choices": [
+    {
+      "count": 1,
+      "text": "background.haunted.skill-choice.0"
+    }
+  ],
+  "editNote": "Page 53 prints no feat and no Lore: the source's structured field named a feat its own text does not give, and it is removed. The second trained skill, \"an additional skill in which the haunting entity is well-versed, determined by the GM\", is recorded as a described choice."
+}
