@@ -1,0 +1,233 @@
+{
+  "id": "creature.vampire-count",
+  "type": "creature",
+  "name": "creature.vampire-count.name",
+  "traits": [
+    "undead",
+    "unholy",
+    "vampire"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 336,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "languageNote": "creature.vampire-count.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "skill": "skill.society",
+      "mod": 14
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 3,
+    "con": 2,
+    "int": 2,
+    "wis": 4,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.rapier",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 14,
+    "will": 17
+  },
+  "hp": {
+    "value": 65,
+    "note": "creature.vampire-count.hp.note"
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 7,
+      "note": "creature.vampire-count.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "climb": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vampire-count.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "deadly",
+        "disarm"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "disarm": "+1"
+      },
+      "damage": [
+        {
+          "dice": "1d6+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vampire-count.strikes.claw.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "children-of-the-night",
+      "section": "top",
+      "name": "creature.vampire-count.abilities.children-of-the-night.name",
+      "traits": [
+        "divine",
+        "mental"
+      ]
+    },
+    {
+      "id": "vampire-vulnerabilities",
+      "section": "defense",
+      "name": "creature.vampire-count.abilities.vampire-vulnerabilities.name"
+    },
+    {
+      "id": "mist-escape",
+      "section": "defense",
+      "name": "creature.vampire-count.abilities.mist-escape.name",
+      "actions": "free"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.vampire-count.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.vampire-count.abilities.change-shape.text"
+    },
+    {
+      "id": "create-servitor",
+      "section": "offense",
+      "name": "creature.vampire-count.abilities.create-servitor.name",
+      "traits": [
+        "divine",
+        "downtime"
+      ]
+    },
+    {
+      "id": "dominate",
+      "section": "offense",
+      "name": "creature.vampire-count.abilities.dominate.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "incapacitation",
+        "mental",
+        "visual"
+      ],
+      "text": "creature.vampire-count.abilities.dominate.text"
+    },
+    {
+      "id": "drink-blood",
+      "section": "offense",
+      "name": "creature.vampire-count.abilities.drink-blood.name",
+      "actions": "1",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.vampire-count.abilities.drink-blood.text"
+    },
+    {
+      "id": "turn-to-mist",
+      "section": "offense",
+      "name": "creature.vampire-count.abilities.turn-to-mist.name",
+      "actions": "1",
+      "traits": [
+        "air",
+        "concentrate",
+        "divine",
+        "polymorph"
+      ]
+    }
+  ],
+  "editNote": "Rarity corrected to the book: page 336 prints the trait line \"UNCOMMON MEDIUM UNDEAD UNHOLY VAMPIRE\"; the record had common and the errata does not touch it."
+}

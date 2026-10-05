@@ -1,0 +1,206 @@
+{
+  "id": "creature.duskwalker-ghost-hunter",
+  "type": "creature",
+  "name": "creature.duskwalker-ghost-hunter.name",
+  "traits": [
+    "duskwalker",
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 266,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 6
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.hatchet",
+      "count": 2
+    },
+    {
+      "item": "item.leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "creature.duskwalker-ghost-hunter.ac.note"
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 10,
+    "note": "creature.duskwalker-ghost-hunter.saves.note"
+  },
+  "hp": {
+    "value": 56
+  },
+  "immunitiesNote": "creature.duskwalker-ghost-hunter.immunities-note",
+  "resistances": [
+    {
+      "type": "void",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.duskwalker-ghost-hunter.strikes.hatchet.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.duskwalker-ghost-hunter.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.duskwalker-ghost-hunter.strikes.hatchet-2.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ghost-dodge",
+      "section": "defense",
+      "name": "creature.duskwalker-ghost-hunter.abilities.ghost-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.duskwalker-ghost-hunter.abilities.ghost-dodge.trigger",
+      "text": "creature.duskwalker-ghost-hunter.abilities.ghost-dodge.text"
+    },
+    {
+      "id": "ghost-hunter",
+      "section": "offense",
+      "name": "creature.duskwalker-ghost-hunter.abilities.ghost-hunter.name",
+      "text": "creature.duskwalker-ghost-hunter.abilities.ghost-hunter.text"
+    },
+    {
+      "id": "spirit-hunter",
+      "section": "offense",
+      "name": "creature.duskwalker-ghost-hunter.abilities.spirit-hunter.name",
+      "actions": "1",
+      "text": "creature.duskwalker-ghost-hunter.abilities.spirit-hunter.text"
+    },
+    {
+      "id": "spirit-shot",
+      "section": "offense",
+      "name": "creature.duskwalker-ghost-hunter.abilities.spirit-shot.name",
+      "actions": "1",
+      "frequency": "creature.duskwalker-ghost-hunter.abilities.spirit-shot.frequency",
+      "requirements": "creature.duskwalker-ghost-hunter.abilities.spirit-shot.requirements",
+      "text": "creature.duskwalker-ghost-hunter.abilities.spirit-shot.text"
+    }
+  ],
+  "editNote": "AC note corrected to the book: page 266 prints \"AC 21 (22 against prey; see Spirit Hunter)\"; the source drops the reference to the ability and the errata does not touch it."
+}

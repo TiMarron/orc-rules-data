@@ -1,0 +1,215 @@
+{
+  "id": "creature.dero-strangler",
+  "type": "creature",
+  "name": "creature.dero-strangler.name",
+  "traits": [
+    "dero",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 84,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "small",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": 0,
+    "wis": -1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "name": "creature.dero-strangler.items.0.name",
+      "note": "creature.dero-strangler.items.0.note"
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.lethargy-poison",
+      "count": 5
+    },
+    {
+      "item": "item.rope",
+      "note": "creature.dero-strangler.items.3.note"
+    },
+    {
+      "item": "item.spiked-chain"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 8,
+    "will": 6
+  },
+  "hp": {
+    "value": 45
+  },
+  "immunities": [
+    "confused"
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dero-strangler.strikes.spiked-chain.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "disarm",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.spiked-chain"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dero-strangler.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "item": "item.lethargy-poison"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ill-glow",
+      "section": "defense",
+      "name": "creature.dero-strangler.abilities.ill-glow.name",
+      "traits": [
+        "disease",
+        "light"
+      ],
+      "text": "creature.dero-strangler.abilities.ill-glow.text"
+    },
+    {
+      "id": "vulnerable-to-sunlight",
+      "section": "defense",
+      "name": "creature.dero-strangler.abilities.vulnerable-to-sunlight.name",
+      "text": "creature.dero-strangler.abilities.vulnerable-to-sunlight.text"
+    },
+    {
+      "id": "dero-medicine",
+      "section": "offense",
+      "name": "creature.dero-strangler.abilities.dero-medicine.name",
+      "actions": "1",
+      "traits": [
+        "healing",
+        "manipulate"
+      ],
+      "requirements": "creature.dero-strangler.abilities.dero-medicine.requirements",
+      "text": "creature.dero-strangler.abilities.dero-medicine.text"
+    },
+    {
+      "id": "strangle",
+      "section": "offense",
+      "name": "creature.dero-strangler.abilities.strangle.name",
+      "actions": "1",
+      "traits": [
+        "attack",
+        "nonlethal"
+      ],
+      "requirements": "creature.dero-strangler.abilities.strangle.requirements",
+      "text": "creature.dero-strangler.abilities.strangle.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 19,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkness"
+            },
+            {
+              "spell": "spell.revealing-light"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Vulnerable to Sunlight restored as an ability of its own: page 85 prints \"Vulnerable to Sunlight As dero stalker, but 8 damage.\" after Ill Glow; the source runs it into the text of Ill Glow."
+}

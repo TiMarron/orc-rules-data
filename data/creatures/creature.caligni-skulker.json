@@ -1,0 +1,164 @@
+{
+  "id": "creature.caligni-skulker",
+  "type": "creature",
+  "name": "creature.caligni-skulker.name",
+  "traits": [
+    "caligni",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 48,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.caligni-skulker.senses.0"
+      },
+      {
+        "ability": "ability.light-blindness"
+      }
+    ]
+  },
+  "languages": [
+    "caligni"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 3,
+    "int": -1,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.caligni-skulker.items.0.name",
+      "count": 3
+    },
+    {
+      "item": "item.dagger"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 10,
+    "will": 6
+  },
+  "hp": {
+    "value": 30,
+    "note": "creature.caligni-skulker.hp.note"
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.caligni-skulker.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "text": "creature.caligni-skulker.strikes.dagger.effects.0"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.caligni-skulker.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "text": "creature.caligni-skulker.strikes.dagger-2.effects.0"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "final-night",
+      "section": "defense",
+      "name": "creature.caligni-skulker.abilities.final-night.name",
+      "traits": [
+        "darkness",
+        "occult"
+      ],
+      "text": "creature.caligni-skulker.abilities.final-night.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.caligni-skulker.abilities.sneak-attack.name",
+      "text": "creature.caligni-skulker.abilities.sneak-attack.text"
+    },
+    {
+      "id": "tumble-behind",
+      "section": "offense",
+      "name": "creature.caligni-skulker.abilities.tumble-behind.name",
+      "text": "creature.caligni-skulker.abilities.tumble-behind.text"
+    }
+  ],
+  "editNote": "Page 49 prints \"plus darkening poison (page 48)\" on both dagger Strikes and \"darkening poison (3 doses; page 48)\" among the Items. The dataset has no record for the poison, which the book prints only in a sidebar on page 48, so the effect stays its printed name and the Items entry a name with its doses. The whole record was read against the page."
+}

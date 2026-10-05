@@ -1,0 +1,246 @@
+{
+  "id": "creature.akhana",
+  "type": "creature",
+  "name": "creature.akhana.name",
+  "traits": [
+    "aeon",
+    "monitor"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 10,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "medium",
+  "perception": {
+    "mod": 27,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.lifesense",
+        "range": 120
+      }
+    ]
+  },
+  "languages": [
+    "envisioning"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    },
+    {
+      "lore": "creature.akhana.lore.2",
+      "mod": 23
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 23
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 21
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 23
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 6,
+    "con": 7,
+    "int": 3,
+    "wis": 5,
+    "cha": 4
+  },
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 22,
+    "will": 23,
+    "note": "creature.akhana.saves.note"
+  },
+  "hp": {
+    "value": 225
+  },
+  "immunities": [
+    "vitality",
+    "void"
+  ],
+  "weaknesses": [
+    {
+      "type": "spirit",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.akhana.strikes.tail.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "void"
+      ],
+      "damage": [
+        {
+          "dice": "5d10",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.akhana.strikes.fist.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d6+12",
+          "type": "bludgeoning"
+        },
+        {
+          "choice": [
+            {
+              "dice": "1d6",
+              "type": "vitality"
+            },
+            {
+              "dice": "1d6",
+              "type": "void"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "envisioning",
+      "section": "top",
+      "name": "creature.akhana.abilities.envisioning.name",
+      "traits": [
+        "aura",
+        "divine",
+        "mental"
+      ],
+      "aura": 100,
+      "text": "creature.akhana.abilities.envisioning.text"
+    },
+    {
+      "id": "balance-life",
+      "section": "defense",
+      "name": "creature.akhana.abilities.balance-life.name",
+      "actions": "reaction",
+      "traits": [
+        "divine"
+      ],
+      "trigger": "creature.akhana.abilities.balance-life.trigger",
+      "text": "creature.akhana.abilities.balance-life.text"
+    },
+    {
+      "id": "flying-fists",
+      "section": "offense",
+      "name": "creature.akhana.abilities.flying-fists.name",
+      "actions": "2",
+      "text": "creature.akhana.abilities.flying-fists.text"
+    },
+    {
+      "id": "reclaim-life",
+      "section": "offense",
+      "name": "creature.akhana.abilities.reclaim-life.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "requirements": "creature.akhana.abilities.reclaim-life.requirements",
+      "text": "creature.akhana.abilities.reclaim-life.text"
+    },
+    {
+      "id": "sprout-life",
+      "section": "offense",
+      "name": "creature.akhana.abilities.sprout-life.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "divine",
+        "plant",
+        "vitality"
+      ],
+      "text": "creature.akhana.abilities.sprout-life.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 32,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.stabilize"
+          },
+          {
+            "spell": "spell.vitality-lash"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.peaceful-rest",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.harm",
+              "atWill": true
+            },
+            {
+              "spell": "spell.heal",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

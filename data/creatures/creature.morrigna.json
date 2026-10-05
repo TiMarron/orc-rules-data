@@ -1,0 +1,384 @@
+{
+  "id": "creature.morrigna",
+  "type": "creature",
+  "name": "creature.morrigna.name",
+  "traits": [
+    "monitor",
+    "psychopomp"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 276,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 15,
+  "size": "medium",
+  "perception": {
+    "mod": 28,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.lifesense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "diabolic",
+    "empyrean",
+    "necril",
+    "requian"
+  ],
+  "languageNote": "creature.morrigna.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 27
+    },
+    {
+      "lore": "creature.morrigna.lore.1",
+      "mod": 28
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 27
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 29
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 29
+    },
+    {
+      "skill": "skill.society",
+      "mod": 24
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 27
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 4,
+    "con": 4,
+    "int": 3,
+    "wis": 6,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.bo-staff",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 38
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 27,
+    "will": 29,
+    "note": "creature.morrigna.saves.note"
+  },
+  "hp": {
+    "value": 240,
+    "note": "creature.morrigna.hp.note"
+  },
+  "immunities": [
+    "death-effects",
+    "disease"
+  ],
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 15
+    },
+    {
+      "type": "void",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "climb": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.morrigna.strikes.bo-staff.name",
+      "actions": "1",
+      "bonus": 31,
+      "traits": [
+        "magical",
+        "parry",
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "shepherds-touch",
+          "text": "creature.morrigna.strikes.bo-staff.effects.0"
+        }
+      ],
+      "item": "item.bo-staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.morrigna.strikes.web-wrappings.name",
+      "actions": "1",
+      "bonus": 29,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d12+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        },
+        {
+          "own": "shepherds-touch",
+          "text": "creature.morrigna.strikes.web-wrappings.effects.1"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "wrappings-lash",
+      "section": "defense",
+      "name": "creature.morrigna.abilities.wrappings-lash.name",
+      "actions": "reaction",
+      "trigger": "creature.morrigna.abilities.wrappings-lash.trigger",
+      "text": "creature.morrigna.abilities.wrappings-lash.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.morrigna.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.morrigna.abilities.change-shape.text"
+    },
+    {
+      "id": "shepherds-touch",
+      "section": "offense",
+      "name": "creature.morrigna.abilities.shepherds-touch.name",
+      "text": "creature.morrigna.abilities.shepherds-touch.text"
+    },
+    {
+      "id": "spider-minions",
+      "section": "offense",
+      "name": "creature.morrigna.abilities.spider-minions.name",
+      "actions": "3",
+      "traits": [
+        "divine",
+        "summon"
+      ],
+      "text": "creature.morrigna.abilities.spider-minions.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "divine",
+      "dc": 35,
+      "attack": 30,
+      "cantrips": {
+        "rank": 8,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.stabilize"
+          },
+          {
+            "spell": "spell.vitality-lash"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bane"
+            },
+            {
+              "spell": "spell.bless"
+            },
+            {
+              "spell": "spell.enfeeble"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.calm"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            },
+            {
+              "spell": "spell.silence"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.blindness"
+            },
+            {
+              "spell": "spell.crisis-of-faith"
+            },
+            {
+              "spell": "spell.dream-message"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.dispelling-globe"
+            },
+            {
+              "spell": "spell.read-omens"
+            },
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.scouting-eye"
+            },
+            {
+              "spell": "spell.sending"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.field-of-life"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.spirit-blast"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 37,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.talking-corpse"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.speak-with-animals"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 37,
+    "ranks": [
+      {
+        "rank": 5,
+        "rituals": [
+          {
+            "ritual": "ritual.call-spirit"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Constant spell rank corrected to the book: page 276 prints \"Constant (5th) truespeech, (2nd) speak with animals\"; the source lists both at 5th rank and the errata does not touch it. Reserved Material removed: the proper name of a plane in a Lore skill's name is replaced with the generic descriptor the dataset already uses."
+}

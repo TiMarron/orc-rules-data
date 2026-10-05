@@ -1,0 +1,301 @@
+{
+  "id": "creature.lamia-matriarch",
+  "type": "creature",
+  "name": "creature.lamia-matriarch.name",
+  "traits": [
+    "beast",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 215,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "draconic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "lore": "creature.lamia-matriarch.lore.1",
+      "mod": 15
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 20
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 20
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 18
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 4,
+    "con": 3,
+    "int": 3,
+    "wis": 3,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.scimitar",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 18,
+    "will": 17,
+    "note": "creature.lamia-matriarch.saves.note"
+  },
+  "hp": {
+    "value": 135
+  },
+  "immunities": [
+    "controlled"
+  ],
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "climb": 30,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lamia-matriarch.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "traitValues": {
+        "forceful": "+2"
+      },
+      "damage": [
+        {
+          "dice": "2d6+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.scimitar"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.lamia-matriarch.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.lamia-matriarch.abilities.change-shape.text"
+    },
+    {
+      "id": "matriarchs-caress",
+      "section": "offense",
+      "name": "creature.lamia-matriarch.abilities.matriarchs-caress.name",
+      "actions": "2",
+      "traits": [
+        "curse",
+        "mental",
+        "occult"
+      ],
+      "text": "creature.lamia-matriarch.abilities.matriarchs-caress.text"
+    },
+    {
+      "id": "scimitar-storm",
+      "section": "offense",
+      "name": "creature.lamia-matriarch.abilities.scimitar-storm.name",
+      "actions": "3",
+      "text": "creature.lamia-matriarch.abilities.scimitar-storm.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 28,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bless"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.phantom-pain"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur"
+            },
+            {
+              "spell": "spell.illusory-creature"
+            },
+            {
+              "spell": "spell.invisibility"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.enthrall"
+            },
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.mind-reading"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 28,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.ventriloquism",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise",
+              "atWill": true
+            },
+            {
+              "spell": "spell.illusory-object",
+              "atWill": true
+            },
+            {
+              "spell": "spell.blur"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.sleep"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "count": 3
+            },
+            {
+              "spell": "spell.suggestion",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Spell rank corrected to the book: page 215 prints \"4th charm (×3), suggestion (×3), 3rd sleep; 2nd illusory disguise (at will), …\" (a comma where the rank changes); the source runs sleep into the 4th rank and the errata does not touch it. Strike trait corrected to the book: page 215 prints \"scimitar +19 (forceful +2, sweep)\"; the source links it to a trait that does not exist. Matriarch's Caress corrected to the book: page 215 prints \"As Lamia's Caress, but DC 28, and the creature is stupefied 2 (or has its existing stupefied increased by 2) if it critically fails\"; the source applies the doubled values to any failure and the errata does not touch it."
+}

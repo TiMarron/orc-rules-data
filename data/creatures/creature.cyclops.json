@@ -1,0 +1,156 @@
+{
+  "id": "creature.cyclops",
+  "type": "creature",
+  "name": "creature.cyclops.name",
+  "traits": [
+    "giant",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 70,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "large",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "cyclops",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "lore": "creature.cyclops.lore.1",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 10
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": -1,
+    "con": 2,
+    "int": 0,
+    "wis": 3,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.greataxe"
+    },
+    {
+      "item": "item.heavy-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.hide-armor"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 8,
+    "will": 12
+  },
+  "hp": {
+    "value": 80
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cyclops.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "reach",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d12+9",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.cyclops.strikes.heavy-crossbow.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 120,
+      "reload": 2,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.heavy-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ferocity",
+      "section": "defense",
+      "name": "creature.cyclops.abilities.ferocity.name",
+      "ability": "ability.ferocity",
+      "actions": "reaction"
+    },
+    {
+      "id": "flash-of-insight",
+      "section": "defense",
+      "name": "creature.cyclops.abilities.flash-of-insight.name",
+      "actions": "free",
+      "traits": [
+        "fortune",
+        "occult"
+      ],
+      "frequency": "creature.cyclops.abilities.flash-of-insight.frequency",
+      "trigger": "creature.cyclops.abilities.flash-of-insight.trigger",
+      "text": "creature.cyclops.abilities.flash-of-insight.text"
+    },
+    {
+      "id": "swipe",
+      "section": "offense",
+      "name": "creature.cyclops.abilities.swipe.name",
+      "actions": "2",
+      "frequency": "creature.cyclops.abilities.swipe.frequency",
+      "text": "creature.cyclops.abilities.swipe.text"
+    }
+  ],
+  "editNote": "Frequency of Flash of Insight restored from the book: page 70 prints \"Flash of Insight [free-action] (fortune, occult) Frequency once per day; Trigger The cyclops is about to roll a d20; Effect …\"; the source wraps the frequency into the link of the last trait and the record lost it."
+}

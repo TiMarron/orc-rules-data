@@ -1,0 +1,208 @@
+{
+  "id": "creature.dero-stalker",
+  "type": "creature",
+  "name": "creature.dero-stalker.name",
+  "traits": [
+    "dero",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 84,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 3,
+    "int": 0,
+    "wis": -1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.club"
+    },
+    {
+      "name": "creature.dero-stalker.items.1.name",
+      "note": "creature.dero-stalker.items.1.note"
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.lethargy-poison",
+      "count": 2
+    },
+    {
+      "item": "item.rope",
+      "note": "creature.dero-stalker.items.4.note"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 3
+  },
+  "hp": {
+    "value": 30
+  },
+  "immunities": [
+    "confused"
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dero-stalker.strikes.club.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dero-stalker.strikes.club-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dero-stalker.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "item": "item.lethargy-poison"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "vulnerable-to-sunlight",
+      "section": "defense",
+      "name": "creature.dero-stalker.abilities.vulnerable-to-sunlight.name",
+      "text": "creature.dero-stalker.abilities.vulnerable-to-sunlight.text"
+    },
+    {
+      "id": "dero-medicine",
+      "section": "offense",
+      "name": "creature.dero-stalker.abilities.dero-medicine.name",
+      "actions": "1",
+      "traits": [
+        "healing",
+        "manipulate"
+      ],
+      "requirements": "creature.dero-stalker.abilities.dero-medicine.requirements",
+      "text": "creature.dero-stalker.abilities.dero-medicine.text"
+    },
+    {
+      "id": "exploit-lethargy",
+      "section": "offense",
+      "name": "creature.dero-stalker.abilities.exploit-lethargy.name",
+      "text": "creature.dero-stalker.abilities.exploit-lethargy.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.dero-stalker.abilities.sneak-attack.name",
+      "text": "creature.dero-stalker.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 17,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      }
+    }
+  ],
+  "editNote": "Page 84 prints \"Items club, cytillesh toolkit (see sidebar), …\". The dataset has no record for the toolkit, which the book describes only in a sidebar on page 84, so the entry kept as its printed name with the parenthesis as its note is a complete record of what the page prints. The whole record was read against the page."
+}

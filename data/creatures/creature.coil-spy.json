@@ -1,0 +1,280 @@
+{
+  "id": "creature.coil-spy",
+  "type": "creature",
+  "name": "creature.coil-spy.name",
+  "traits": [
+    "humanoid",
+    "serpentfolk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 304,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "dwarven",
+    "gnomish",
+    "sakvroth"
+  ],
+  "languageNote": "creature.coil-spy.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 10
+    },
+    {
+      "skill": "skill.society",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 4,
+    "wis": 2,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.spider-venom",
+      "count": 2
+    },
+    {
+      "item": "item.shortsword"
+    },
+    {
+      "item": "item.thieves-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 10,
+    "note": "creature.coil-spy.saves.note"
+  },
+  "hp": {
+    "value": 48
+  },
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.coil-spy.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "serpentfolk-venom"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.coil-spy.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "serpentfolk-venom"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.coil-spy.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "choice": [
+            {
+              "own": "serpentfolk-venom"
+            },
+            {
+              "item": "item.spider-venom"
+            }
+          ]
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "thin-of-blood",
+      "section": "defense",
+      "name": "creature.coil-spy.abilities.thin-of-blood.name",
+      "text": "creature.coil-spy.abilities.thin-of-blood.text"
+    },
+    {
+      "id": "deceptive-reposition",
+      "section": "offense",
+      "name": "creature.coil-spy.abilities.deceptive-reposition.name",
+      "actions": "1",
+      "text": "creature.coil-spy.abilities.deceptive-reposition.text"
+    },
+    {
+      "id": "maintain-disguise",
+      "section": "offense",
+      "name": "creature.coil-spy.abilities.maintain-disguise.name",
+      "text": "creature.coil-spy.abilities.maintain-disguise.text"
+    },
+    {
+      "id": "serpentfolk-venom",
+      "section": "offense",
+      "name": "creature.coil-spy.abilities.serpentfolk-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.coil-spy.abilities.serpentfolk-venom.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.coil-spy.abilities.sneak-attack.name",
+      "text": "creature.coil-spy.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 21,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.ventriloquism",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur",
+              "atWill": true,
+              "note": "creature.coil-spy.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Rarity corrected to the book: page 304 prints the trait line \"UNCOMMON MEDIUM HUMANOID SERPENTFOLK\"; the record had common and the errata does not touch it."
+}

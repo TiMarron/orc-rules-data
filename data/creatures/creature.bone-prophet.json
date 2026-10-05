@@ -1,0 +1,356 @@
+{
+  "id": "creature.bone-prophet",
+  "type": "creature",
+  "name": "creature.bone-prophet.name",
+  "traits": [
+    "humanoid",
+    "serpentfolk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 305,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 15,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "necril",
+    "sakvroth"
+  ],
+  "languageNote": "creature.bone-prophet.language-note",
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 15
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 19
+    },
+    {
+      "skill": "skill.society",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 2,
+    "int": 5,
+    "wis": 5,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.invisibility-potion"
+    },
+    {
+      "item": "item.religious-symbol",
+      "name": "creature.bone-prophet.items.1.name"
+    },
+    {
+      "item": "item.staff",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 15,
+    "will": 19,
+    "note": "creature.bone-prophet.saves.note"
+  },
+  "hp": {
+    "value": 115
+  },
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bone-prophet.strikes.staff.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "2d4+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bone-prophet.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "serpentfolk-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "thin-of-blood",
+      "section": "defense",
+      "name": "creature.bone-prophet.abilities.thin-of-blood.name",
+      "text": "creature.bone-prophet.abilities.thin-of-blood.text"
+    },
+    {
+      "id": "raise-serpent",
+      "section": "offense",
+      "name": "creature.bone-prophet.abilities.raise-serpent.name",
+      "actions": "3",
+      "traits": [
+        "divine"
+      ],
+      "frequency": "creature.bone-prophet.abilities.raise-serpent.frequency",
+      "text": "creature.bone-prophet.abilities.raise-serpent.text"
+    },
+    {
+      "id": "serpentfolk-venom",
+      "section": "offense",
+      "name": "creature.bone-prophet.abilities.serpentfolk-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.bone-prophet.abilities.serpentfolk-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "divine",
+      "dc": 28,
+      "attack": 20,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bane"
+            },
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blood-vendetta"
+            },
+            {
+              "spell": "spell.darkness"
+            },
+            {
+              "spell": "spell.resist-energy"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.bind-undead"
+            },
+            {
+              "spell": "spell.blindness"
+            },
+            {
+              "spell": "spell.chilling-darkness"
+            },
+            {
+              "spell": "spell.vampiric-feast"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.harm"
+            },
+            {
+              "spell": "spell.read-omens"
+            },
+            {
+              "spell": "spell.talking-corpse"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 28,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.ventriloquism",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur",
+              "atWill": true,
+              "note": "creature.bone-prophet.spellcasting.1.ranks.2.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.illusory-scene"
+            },
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.dominate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 28,
+    "ranks": [
+      {
+        "rank": 2,
+        "rituals": [
+          {
+            "ritual": "ritual.create-undead"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Rarity corrected to the book: page 305 prints the trait line \"UNCOMMON MEDIUM HUMANOID SERPENTFOLK\"; the record had common and the errata does not touch it. Reserved Material removed: a deity's name in an item's printed name is dropped; page 305 prints a religious symbol of the creature's deity, and the entry is the religious symbol item (its printed name is kept, without the deity, because an edit cannot remove a string). Raise Serpent corrected to the book: page 305 prints \"up to three Medium creatures as skeletal champions\"; the source has the singular."
+}

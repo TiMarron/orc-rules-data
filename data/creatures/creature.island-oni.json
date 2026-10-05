@@ -1,0 +1,301 @@
+{
+  "id": "creature.island-oni",
+  "type": "creature",
+  "name": "creature.island-oni.name",
+  "traits": [
+    "giant",
+    "humanoid",
+    "oni",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 254,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 17,
+  "size": "huge",
+  "perception": {
+    "mod": 32,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.island-oni.senses.0"
+      },
+      {
+        "own": "mist-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 30
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 32
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 32
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 29
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 6,
+    "con": 6,
+    "int": 2,
+    "wis": 9,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.longspear",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking-greater"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 38
+  },
+  "saves": {
+    "fortitude": 26,
+    "reflex": 28,
+    "will": 34,
+    "note": "creature.island-oni.saves.note"
+  },
+  "hp": {
+    "value": 390
+  },
+  "immunities": [
+    "electricity"
+  ],
+  "weaknesses": [
+    {
+      "own": "bean-panic"
+    },
+    {
+      "type": "spirit",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "fly": 40,
+    "swim": 50,
+    "note": "creature.island-oni.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.island-oni.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 35,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+10",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "electricity"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.island-oni.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "3d6+10",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "electricity",
+          "persistent": true
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.island-oni.strikes.jaws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.island-oni.strikes.thunderbolt.name",
+      "actions": "1",
+      "bonus": 30,
+      "rangeIncrement": 60,
+      "traits": [
+        "electricity",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d12+12",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        {
+          "text": "creature.island-oni.strikes.thunderbolt.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mist-vision",
+      "section": "top",
+      "name": "creature.island-oni.abilities.mist-vision.name",
+      "text": "creature.island-oni.abilities.mist-vision.text"
+    },
+    {
+      "id": "bean-panic",
+      "section": "defense",
+      "name": "creature.island-oni.abilities.bean-panic.name",
+      "text": "creature.island-oni.abilities.bean-panic.text"
+    },
+    {
+      "id": "lost-oni-island",
+      "section": "defense",
+      "name": "creature.island-oni.abilities.lost-oni-island.name",
+      "traits": [
+        "aura",
+        "primal"
+      ],
+      "text": "creature.island-oni.abilities.lost-oni-island.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.island-oni.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.island-oni.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.island-oni.abilities.change-shape.text"
+    },
+    {
+      "id": "conductive-downpour",
+      "section": "offense",
+      "name": "creature.island-oni.abilities.conductive-downpour.name",
+      "actions": "2",
+      "traits": [
+        "electricity",
+        "primal",
+        "water"
+      ],
+      "text": "creature.island-oni.abilities.conductive-downpour.text"
+    },
+    {
+      "id": "electrifying-pierce",
+      "section": "offense",
+      "name": "creature.island-oni.abilities.electrifying-pierce.name",
+      "actions": "1",
+      "traits": [
+        "electricity",
+        "primal"
+      ],
+      "requirements": "creature.island-oni.abilities.electrifying-pierce.requirements",
+      "text": "creature.island-oni.abilities.electrifying-pierce.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.island-oni.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "text": "creature.island-oni.abilities.swallow-whole.text"
+    },
+    {
+      "id": "tripping-tide",
+      "section": "offense",
+      "name": "creature.island-oni.abilities.tripping-tide.name",
+      "actions": "2",
+      "traits": [
+        "water"
+      ],
+      "text": "creature.island-oni.abilities.tripping-tide.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 37,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.island-oni.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.water-walk"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Spell block built from the book: page 255 prints \"Primal Innate Spells DC 37 2nd invisibility (at will, self only); Constant (9th) water walk\" (the page itself lacks the semicolon after the DC); the source runs the first spell into the header and the record had no spells."
+}

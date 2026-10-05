@@ -1,0 +1,163 @@
+{
+  "id": "creature.hryngar-sharpshooter",
+  "type": "creature",
+  "name": "creature.hryngar-sharpshooter.name",
+  "traits": [
+    "dwarf",
+    "hryngar",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 202,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "dwarven",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 3
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": -2
+  },
+  "items": [
+    {
+      "item": "item.chain-shirt"
+    },
+    {
+      "item": "item.crossbow",
+      "note": "creature.hryngar-sharpshooter.items.1.note"
+    },
+    {
+      "item": "item.light-mace"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 7,
+    "will": 4,
+    "note": "creature.hryngar-sharpshooter.saves.note"
+  },
+  "hp": {
+    "value": 18
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hryngar-sharpshooter.strikes.light-mace.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "finesse",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-mace"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hryngar-sharpshooter.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "bola-bolt",
+          "instead": true
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "light-blindness",
+      "section": "defense",
+      "name": "creature.hryngar-sharpshooter.abilities.light-blindness.name",
+      "ability": "ability.light-blindness"
+    },
+    {
+      "id": "bola-bolt",
+      "section": "offense",
+      "name": "creature.hryngar-sharpshooter.abilities.bola-bolt.name",
+      "text": "creature.hryngar-sharpshooter.abilities.bola-bolt.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 12,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.sigil"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blood-vendetta"
+            },
+            {
+              "spell": "spell.paranoia"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Page 202 prints \"crossbow (3 bola bolts and 10 bolts)\"; the parenthesis names two kinds of ammunition, one of which has no record, and is kept whole as the entry's note. The whole record was read against the page."
+}

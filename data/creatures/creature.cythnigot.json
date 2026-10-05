@@ -1,0 +1,187 @@
+{
+  "id": "creature.cythnigot",
+  "type": "creature",
+  "name": "creature.cythnigot.name",
+  "traits": [
+    "fiend",
+    "qlippoth",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 280,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "tiny",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian"
+  ],
+  "languageNote": "creature.cythnigot.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 4,
+    "int": 2,
+    "wis": 2,
+    "cha": 1
+  },
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 6,
+    "will": 5
+  },
+  "hp": {
+    "value": 14
+  },
+  "immunities": [
+    "controlled",
+    "fear"
+  ],
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 3
+    },
+    {
+      "type": "physical",
+      "value": 3,
+      "except": [
+        "cold-iron"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cythnigot.strikes.bite.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d10+1",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "tangle-spores",
+          "text": "creature.cythnigot.strikes.bite.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sickening-display",
+      "section": "offense",
+      "name": "creature.cythnigot.abilities.sickening-display.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "emotion",
+        "fear",
+        "mental",
+        "occult",
+        "visual"
+      ],
+      "text": "creature.cythnigot.abilities.sickening-display.text"
+    },
+    {
+      "id": "tangle-spores",
+      "section": "offense",
+      "name": "creature.cythnigot.abilities.tangle-spores.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.cythnigot.abilities.tangle-spores.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 17,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.phantom-pain"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.paranoia"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.read-omens"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "The bite's effect resolved from the book: page 280 prints \"plus and tangle spores\" (a stray \"and\") and the ability Tangle Spores below; the effect is set to the creature's own ability. Its printed words are kept beside it, without the stray word, because an edit cannot remove the string the source produced."
+}

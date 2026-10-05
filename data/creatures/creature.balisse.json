@@ -1,0 +1,245 @@
+{
+  "id": "creature.balisse",
+  "type": "creature",
+  "name": "creature.balisse.name",
+  "traits": [
+    "angel",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 15,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 18,
+    "note": "creature.balisse.perception.note",
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.balisse.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 17
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 4,
+    "int": 1,
+    "wis": 6,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.scimitar",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 12,
+    "will": 18,
+    "note": "creature.balisse.saves.note"
+  },
+  "hp": {
+    "value": 145
+  },
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.balisse.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "fire",
+        "forceful",
+        "holy",
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ],
+      "item": "item.scimitar"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "confessors-aura",
+      "section": "defense",
+      "name": "creature.balisse.abilities.confessors-aura.name",
+      "traits": [
+        "aura",
+        "divine",
+        "mental"
+      ],
+      "aura": 20,
+      "text": "creature.balisse.abilities.confessors-aura.text"
+    },
+    {
+      "id": "brand-of-the-impenitent",
+      "section": "offense",
+      "name": "creature.balisse.abilities.brand-of-the-impenitent.name",
+      "actions": "2",
+      "traits": [
+        "curse",
+        "divine"
+      ],
+      "frequency": "creature.balisse.abilities.brand-of-the-impenitent.frequency",
+      "text": "creature.balisse.abilities.brand-of-the-impenitent.text"
+    },
+    {
+      "id": "guiding-angel",
+      "section": "offense",
+      "name": "creature.balisse.abilities.guiding-angel.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine"
+      ],
+      "requirements": "creature.balisse.abilities.guiding-angel.requirements",
+      "text": "creature.balisse.abilities.guiding-angel.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 26,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.balisse.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.clear-mind",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.divine-wrath"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.paralyze"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 26,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.angelic-messenger"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rituals": [
+          {
+            "ritual": "ritual.geas"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rituals": [
+          {
+            "ritual": "ritual.atone"
+          }
+        ]
+      }
+    ]
+  },
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 10
+    }
+  ],
+  "editNote": "Weaknesses and an ability restored from the book: page 15 prints \"Weaknesses unholy 10; Resistances fire 15\" and then the ability \"Confessor's Aura (aura, divine, mental) 20 feet. …\"; the source runs the ability into the Weaknesses line and loses both."
+}

@@ -1,0 +1,219 @@
+{
+  "id": "creature.dybbuk",
+  "type": "creature",
+  "name": "creature.dybbuk.name",
+  "traits": [
+    "incorporeal",
+    "spirit",
+    "undead",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 136,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 15,
+  "size": "medium",
+  "perception": {
+    "mod": 27,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "chthonian",
+    "common"
+  ],
+  "languageNote": "creature.dybbuk.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 31
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 27
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 29
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 28
+    }
+  ],
+  "attributes": {
+    "str": -5,
+    "dex": 7,
+    "con": 0,
+    "int": 1,
+    "wis": 6,
+    "cha": 8
+  },
+  "ac": {
+    "value": 35
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 28,
+    "will": 29
+  },
+  "hp": {
+    "value": 175,
+    "note": "creature.dybbuk.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 10,
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "note": "creature.dybbuk.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dybbuk.strikes.ghostly-hand.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "3d10+14",
+          "type": "void"
+        },
+        {
+          "dice": "2d6",
+          "type": "spirit"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.dybbuk.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "divine",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 30,
+      "text": "creature.dybbuk.abilities.frightful-presence.text"
+    },
+    {
+      "id": "malevolent-possession",
+      "section": "offense",
+      "name": "creature.dybbuk.abilities.malevolent-possession.name",
+      "actions": "2",
+      "traits": [
+        "incapacitation",
+        "mental",
+        "occult",
+        "possession"
+      ],
+      "text": "creature.dybbuk.abilities.malevolent-possession.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 36,
+      "attack": 30,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.fear",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.rewrite-memory"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.chilling-darkness",
+              "count": 2
+            },
+            {
+              "spell": "spell.fear"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.dominate"
+            },
+            {
+              "spell": "spell.never-mind"
+            },
+            {
+              "spell": "spell.telekinetic-maneuver",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Frightful Presence set from the book: page 136 prints \"Frightful Presence (aura, divine, emotion, fear, mental) 30 feet, DC 33\"; the source puts the radius and the DC inside the trait list."
+}
