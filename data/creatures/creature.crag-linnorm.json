@@ -1,0 +1,237 @@
+{
+  "id": "creature.crag-linnorm",
+  "type": "creature",
+  "name": "creature.crag-linnorm.name",
+  "traits": [
+    "dragon",
+    "fire"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 220,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 14,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 26,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "draconic",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 28
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 4,
+    "con": 6,
+    "int": -3,
+    "wis": 4,
+    "cha": 5
+  },
+  "ac": {
+    "value": 37
+  },
+  "saves": {
+    "fortitude": 28,
+    "reflex": 24,
+    "will": 22,
+    "note": "creature.crag-linnorm.saves.note"
+  },
+  "hp": {
+    "value": 270,
+    "note": "creature.crag-linnorm.hp.note"
+  },
+  "immunities": [
+    "curse",
+    "fire",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "fly": 100,
+    "swim": 60,
+    "note": "creature.crag-linnorm.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.crag-linnorm.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "reach",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d12+14",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "crag-linnorm-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.crag-linnorm.strikes.claw.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.crag-linnorm.strikes.tail.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "reach",
+        "agile",
+        "magical"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d6+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.crag-linnorm.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "curse-of-fire",
+      "section": "defense",
+      "name": "creature.crag-linnorm.abilities.curse-of-fire.name",
+      "traits": [
+        "curse",
+        "fire",
+        "primal"
+      ],
+      "text": "creature.crag-linnorm.abilities.curse-of-fire.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.crag-linnorm.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.crag-linnorm.abilities.reactive-strike.text"
+    },
+    {
+      "id": "constrict",
+      "section": "offense",
+      "name": "creature.crag-linnorm.abilities.constrict.name",
+      "ability": "ability.constrict",
+      "actions": "1",
+      "text": "creature.crag-linnorm.abilities.constrict.text"
+    },
+    {
+      "id": "crag-linnorm-venom",
+      "section": "offense",
+      "name": "creature.crag-linnorm.abilities.crag-linnorm-venom.name",
+      "traits": [
+        "fire",
+        "poison"
+      ],
+      "text": "creature.crag-linnorm.abilities.crag-linnorm-venom.text"
+    },
+    {
+      "id": "magma-breath",
+      "section": "offense",
+      "name": "creature.crag-linnorm.abilities.magma-breath.name",
+      "actions": "2",
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "text": "creature.crag-linnorm.abilities.magma-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 33,
+      "constant": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Constant spell restored from the book: page 220 prints \"Constant (6th) unfettered movement; (6th) truesight\"; the source lists truesight as an ordinary spell of that rank and the errata does not touch it. The tail's effect resolved from the book: page 220 prints \"plus Improved Grab\"; the source's link for it is broken, so the effect is set to the universal ability by hand."
+}

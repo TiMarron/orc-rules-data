@@ -1,0 +1,360 @@
+{
+  "id": "creature.yamaraj",
+  "type": "creature",
+  "name": "creature.yamaraj.name",
+  "traits": [
+    "monitor",
+    "psychopomp"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 277,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 20,
+  "size": "huge",
+  "perception": {
+    "mod": 37,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.lifesense",
+        "range": 240
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "diabolic",
+    "empyrean",
+    "requian"
+  ],
+  "languageNote": "creature.yamaraj.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 38
+    },
+    {
+      "lore": "creature.yamaraj.lore.2",
+      "mod": 40
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 34
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 34
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 36
+    },
+    {
+      "lore": "creature.yamaraj.lore.6",
+      "mod": 40
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 38
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 38
+    },
+    {
+      "skill": "skill.society",
+      "mod": 38
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": 7,
+    "con": 7,
+    "int": 10,
+    "wis": 7,
+    "cha": 6
+  },
+  "ac": {
+    "value": 45
+  },
+  "saves": {
+    "fortitude": 33,
+    "reflex": 31,
+    "will": 35,
+    "note": "creature.yamaraj.saves.note"
+  },
+  "hp": {
+    "value": 375,
+    "note": "creature.yamaraj.hp.note"
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "electricity"
+  ],
+  "immunitiesNote": "creature.yamaraj.immunities-note",
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 20
+    },
+    {
+      "type": "void",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "fly": 50,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.yamaraj.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "4d8+18",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.yamaraj.strikes.jaws.effects.0"
+        },
+        {
+          "own": "yamaraj-venom"
+        },
+        {
+          "own": "shepherds-touch",
+          "text": "creature.yamaraj.strikes.jaws.effects.2"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.yamaraj.strikes.claw.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "4d4+18",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "shepherds-touch",
+          "text": "creature.yamaraj.strikes.claw.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.yamaraj.strikes.tail.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "4d10+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "shepherds-touch",
+          "text": "creature.yamaraj.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.yamaraj.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 60,
+      "text": "creature.yamaraj.abilities.frightful-presence.text"
+    },
+    {
+      "id": "lightning-drinker",
+      "section": "defense",
+      "name": "creature.yamaraj.abilities.lightning-drinker.name",
+      "text": "creature.yamaraj.abilities.lightning-drinker.text"
+    },
+    {
+      "id": "beetle-breath",
+      "section": "offense",
+      "name": "creature.yamaraj.abilities.beetle-breath.name",
+      "actions": "2",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.yamaraj.abilities.beetle-breath.text"
+    },
+    {
+      "id": "final-judgment",
+      "section": "offense",
+      "name": "creature.yamaraj.abilities.final-judgment.name",
+      "text": "creature.yamaraj.abilities.final-judgment.text"
+    },
+    {
+      "id": "shepherds-touch",
+      "section": "offense",
+      "name": "creature.yamaraj.abilities.shepherds-touch.name",
+      "text": "creature.yamaraj.abilities.shepherds-touch.text"
+    },
+    {
+      "id": "yamaraj-venom",
+      "section": "offense",
+      "name": "creature.yamaraj.abilities.yamaraj-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.yamaraj.abilities.yamaraj-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 44,
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mind-probe",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.chain-lightning",
+              "count": 3
+            },
+            {
+              "spell": "spell.dispel-magic",
+              "count": 3
+            },
+            {
+              "spell": "spell.wall-of-force"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.harm"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.seize-soul"
+            },
+            {
+              "spell": "spell.spirit-blast"
+            },
+            {
+              "spell": "spell.wails-of-the-damned"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.manifestation",
+              "note": "creature.yamaraj.spellcasting.0.ranks.10.0.note"
+            },
+            {
+              "spell": "spell.revival"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 44,
+    "ranks": [
+      {
+        "rank": 5,
+        "rituals": [
+          {
+            "ritual": "ritual.call-spirit"
+          },
+          {
+            "ritual": "ritual.resurrect"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Reserved Material removed: the proper name of a plane, in a Lore skill's name and twice in Final Judgment, is replaced with the generic descriptor the dataset already uses. The rules text is the book's. The jaws' first effect resolved from the book: page 277 prints \"plus Improved Grab and yamaraj venom and 3d6 shepherd's touch\"; the source links only half of the name, so the effect is set to the universal ability by hand."
+}

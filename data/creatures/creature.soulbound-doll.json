@@ -1,0 +1,169 @@
+{
+  "id": "creature.soulbound-doll",
+  "type": "creature",
+  "name": "creature.soulbound-doll.name",
+  "traits": [
+    "construct",
+    "soulbound"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 318,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "tiny",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.soulbound-doll.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": -2,
+    "dex": 4,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 6
+  },
+  "hp": {
+    "value": 23
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "unconscious",
+    "vitality",
+    "void"
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 3
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 3
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.soulbound-doll.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "personality-fragments",
+      "section": "top",
+      "name": "creature.soulbound-doll.abilities.personality-fragments.name",
+      "text": "creature.soulbound-doll.abilities.personality-fragments.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 18,
+      "attack": 10,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "name": "creature.soulbound-doll.spellcasting.0.ranks.2.0.name"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.levitate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "The source's structured spell list names a spell the stat block does not print. Page 318 prints \"2nd one spell based on donor soul's personality trait (see sidebar)\", and the record follows the page. The whole record was read against the page."
+}

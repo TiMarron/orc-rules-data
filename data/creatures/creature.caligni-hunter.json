@@ -1,0 +1,187 @@
+{
+  "id": "creature.caligni-hunter",
+  "type": "creature",
+  "name": "creature.caligni-hunter.name",
+  "traits": [
+    "caligni",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 49,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.caligni-hunter.senses.0"
+      },
+      {
+        "ability": "ability.light-blindness"
+      }
+    ]
+  },
+  "languages": [
+    "caligni",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 5,
+    "con": 2,
+    "int": -1,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.caligni-hunter.items.0.name",
+      "count": 6
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortsword",
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 13,
+    "will": 8
+  },
+  "hp": {
+    "value": 60,
+    "note": "creature.caligni-hunter.hp.note"
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.caligni-hunter.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "text": "creature.caligni-hunter.strikes.shortsword.effects.0"
+        }
+      ],
+      "item": "item.shortsword"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "final-fate",
+      "section": "defense",
+      "name": "creature.caligni-hunter.abilities.final-fate.name",
+      "traits": [
+        "occult",
+        "spirit"
+      ],
+      "text": "creature.caligni-hunter.abilities.final-fate.text"
+    },
+    {
+      "id": "double-slice",
+      "section": "offense",
+      "name": "creature.caligni-hunter.abilities.double-slice.name",
+      "actions": "2",
+      "text": "creature.caligni-hunter.abilities.double-slice.text"
+    },
+    {
+      "id": "encircling-command",
+      "section": "offense",
+      "name": "creature.caligni-hunter.abilities.encircling-command.name",
+      "actions": "1",
+      "traits": [
+        "auditory"
+      ],
+      "text": "creature.caligni-hunter.abilities.encircling-command.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.caligni-hunter.abilities.sneak-attack.name",
+      "text": "creature.caligni-hunter.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 19,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.figment"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkness",
+              "atWill": true
+            },
+            {
+              "spell": "spell.see-the-unseen",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Page 49 prints \"plus darkening poison (page 48)\" on the shortsword Strike and \"darkening poison (6 doses; page 48)\" among the Items. The dataset has no record for the poison, which the book prints only in a sidebar on page 48, so the effect stays its printed name and the Items entry a name with its doses. The whole record was read against the page."
+}

@@ -1,0 +1,231 @@
+{
+  "id": "creature.tabellia",
+  "type": "creature",
+  "name": "creature.tabellia.name",
+  "traits": [
+    "angel",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 16,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 14,
+  "size": "medium",
+  "perception": {
+    "mod": 26,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.tabellia.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 26
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 28
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 4,
+    "con": 5,
+    "int": 4,
+    "wis": 4,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.warhammer",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 36
+  },
+  "saves": {
+    "fortitude": 27,
+    "reflex": 26,
+    "will": 22,
+    "note": "creature.tabellia.saves.note"
+  },
+  "hp": {
+    "value": 285
+  },
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "fly": 75
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tabellia.strikes.holy-warhammer.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "holy",
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+14",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d4",
+          "type": "spirit",
+          "note": "creature.tabellia.strikes.holy-warhammer.damage.1.note"
+        }
+      ],
+      "item": "item.warhammer"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "travelers-aura",
+      "section": "defense",
+      "name": "creature.tabellia.abilities.travelers-aura.name",
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "aura": 20,
+      "text": "creature.tabellia.abilities.travelers-aura.text"
+    },
+    {
+      "id": "messengers-amnesty",
+      "section": "defense",
+      "name": "creature.tabellia.abilities.messengers-amnesty.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.tabellia.abilities.messengers-amnesty.text"
+    },
+    {
+      "id": "stunning-strike",
+      "section": "offense",
+      "name": "creature.tabellia.abilities.stunning-strike.name",
+      "actions": "1",
+      "requirements": "creature.tabellia.abilities.stunning-strike.requirements",
+      "text": "creature.tabellia.abilities.stunning-strike.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 36,
+      "attack": 28,
+      "cantrips": {
+        "rank": 7,
+        "spells": [
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.tabellia.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.ring-of-truth",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.blessed-boundary"
+            },
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.clear-mind"
+            },
+            {
+              "spell": "spell.divine-decree"
+            },
+            {
+              "spell": "spell.divine-wrath"
+            },
+            {
+              "spell": "spell.heal"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 36,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.angelic-messenger"
+          }
+        ]
+      }
+    ]
+  }
+}

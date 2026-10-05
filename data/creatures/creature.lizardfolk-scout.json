@@ -1,0 +1,177 @@
+{
+  "id": "creature.lizardfolk-scout",
+  "type": "creature",
+  "name": "creature.lizardfolk-scout.name",
+  "traits": [
+    "humanoid",
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 227,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "iruxi"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 4
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 1,
+    "int": -1,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.blowgun",
+      "ammunition": {
+        "item": "item.blowgun-darts",
+        "count": 10
+      },
+      "note": "creature.lizardfolk-scout.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 8,
+    "will": 6
+  },
+  "hp": {
+    "value": 17
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lizardfolk-scout.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.lizardfolk-scout.strikes.tail.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.lizardfolk-scout.strikes.blowgun.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 20,
+      "reload": 1,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "giant-centipede-venom"
+        }
+      ],
+      "item": "item.blowgun"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.lizardfolk-scout.abilities.deep-breath.name",
+      "text": "creature.lizardfolk-scout.abilities.deep-breath.text"
+    },
+    {
+      "id": "giant-centipede-venom",
+      "section": "offense",
+      "name": "creature.lizardfolk-scout.abilities.giant-centipede-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.lizardfolk-scout.abilities.giant-centipede-venom.text"
+    },
+    {
+      "id": "hidden-movement",
+      "section": "offense",
+      "name": "creature.lizardfolk-scout.abilities.hidden-movement.name",
+      "text": "creature.lizardfolk-scout.abilities.hidden-movement.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.lizardfolk-scout.abilities.sneak-attack.name",
+      "text": "creature.lizardfolk-scout.abilities.sneak-attack.text"
+    },
+    {
+      "id": "terrain-advantage",
+      "section": "offense",
+      "name": "creature.lizardfolk-scout.abilities.terrain-advantage.name",
+      "text": "creature.lizardfolk-scout.abilities.terrain-advantage.text"
+    }
+  ],
+  "editNote": "Items line corrected to the book: page 227 prints one entry, \"blowgun (10 darts, 1 of which is coated with giant centipede venom)\"; the source closes the parenthesis early and makes a second item of its tail, and the errata does not touch it. The entry is the blowgun with its ten darts and the rest of the parenthesis as its note; the note reuses the string key of the dropped second entry, since an edit cannot remove a string. Terrain Advantage restored as an ability: page 227 prints \"Terrain Advantage As lizardfolk defender.\" and page 226 prints the defender's; the source marks the whole entry as its name and the record lost it."
+}

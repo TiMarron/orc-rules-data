@@ -1,0 +1,275 @@
+{
+  "id": "creature.grim-reaper",
+  "type": "creature",
+  "name": "creature.grim-reaper.name",
+  "traits": [
+    "undead",
+    "unholy"
+  ],
+  "rarity": "unique",
+  "source": {
+    "book": "monster-core",
+    "page": 184,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 21,
+  "size": "medium",
+  "perception": {
+    "mod": 41,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.see-the-unseen"
+      },
+      {
+        "own": "status-sight"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 43
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 38
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 40
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 43
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 39
+    },
+    {
+      "skill": "skill.society",
+      "mod": 36
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 43
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 10,
+    "con": 8,
+    "int": 5,
+    "wis": 7,
+    "cha": 8
+  },
+  "items": [
+    {
+      "item": "item.scythe"
+    }
+  ],
+  "ac": {
+    "value": 47
+  },
+  "saves": {
+    "fortitude": 37,
+    "reflex": 41,
+    "will": 38,
+    "note": "creature.grim-reaper.saves.note"
+  },
+  "hp": {
+    "value": 320,
+    "note": "creature.grim-reaper.hp.note"
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 50,
+    "fly": 75
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.grim-reaper.strikes.keen-scythe.name",
+      "actions": "1",
+      "bonus": 40,
+      "traits": [
+        "agile",
+        "deadly",
+        "magical",
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "deadly": "3d10",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "4d10+23",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "death-strike"
+        },
+        {
+          "own": "energy-drain"
+        }
+      ],
+      "item": "item.scythe"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "status-sight",
+      "section": "top",
+      "name": "creature.grim-reaper.abilities.status-sight.name",
+      "text": "creature.grim-reaper.abilities.status-sight.text"
+    },
+    {
+      "id": "aura-of-misfortune",
+      "section": "defense",
+      "name": "creature.grim-reaper.abilities.aura-of-misfortune.name",
+      "traits": [
+        "aura",
+        "divine",
+        "misfortune"
+      ],
+      "aura": 20,
+      "text": "creature.grim-reaper.abilities.aura-of-misfortune.text"
+    },
+    {
+      "id": "deaths-grace",
+      "section": "defense",
+      "name": "creature.grim-reaper.abilities.deaths-grace.name",
+      "text": "creature.grim-reaper.abilities.deaths-grace.text"
+    },
+    {
+      "id": "void-healing",
+      "section": "defense",
+      "name": "creature.grim-reaper.abilities.void-healing.name",
+      "text": "creature.grim-reaper.abilities.void-healing.text"
+    },
+    {
+      "id": "lurking-death",
+      "section": "defense",
+      "name": "creature.grim-reaper.abilities.lurking-death.name",
+      "actions": "reaction",
+      "traits": [
+        "divine",
+        "teleportation"
+      ],
+      "trigger": "creature.grim-reaper.abilities.lurking-death.trigger",
+      "text": "creature.grim-reaper.abilities.lurking-death.text"
+    },
+    {
+      "id": "death-strike",
+      "section": "offense",
+      "name": "creature.grim-reaper.abilities.death-strike.name",
+      "traits": [
+        "death"
+      ],
+      "text": "creature.grim-reaper.abilities.death-strike.text"
+    },
+    {
+      "id": "energy-drain",
+      "section": "offense",
+      "name": "creature.grim-reaper.abilities.energy-drain.name",
+      "text": "creature.grim-reaper.abilities.energy-drain.text"
+    },
+    {
+      "id": "final-death",
+      "section": "offense",
+      "name": "creature.grim-reaper.abilities.final-death.name",
+      "text": "creature.grim-reaper.abilities.final-death.text"
+    },
+    {
+      "id": "infuse-weapon",
+      "section": "offense",
+      "name": "creature.grim-reaper.abilities.infuse-weapon.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.grim-reaper.abilities.infuse-weapon.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 47,
+      "attack": 37,
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.execute",
+              "count": 4
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.haste"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

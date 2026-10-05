@@ -1,0 +1,245 @@
+{
+  "id": "creature.rekhep",
+  "type": "creature",
+  "name": "creature.rekhep.name",
+  "traits": [
+    "archon",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 28,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "large",
+  "perception": {
+    "mod": 19,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "utopian"
+  ],
+  "languageNote": "creature.rekhep.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 19
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 19
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 19
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 1,
+    "con": 7,
+    "int": 2,
+    "wis": 3,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.lance",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 31,
+    "note": "creature.rekhep.ac.note"
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 15,
+    "will": 19,
+    "note": "creature.rekhep.saves.note"
+  },
+  "hp": {
+    "value": 150
+  },
+  "immunities": [
+    "fear"
+  ],
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "fly": 60
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.rekhep.strikes.holy-lance.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "deadly",
+        "divine",
+        "holy",
+        "jousting",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "jousting": "1d6",
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+11",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d4",
+          "type": "spirit",
+          "note": "creature.rekhep.strikes.holy-lance.damage.1.note"
+        }
+      ],
+      "item": "item.lance"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "archons-protection",
+      "section": "defense",
+      "name": "creature.rekhep.abilities.archons-protection.name",
+      "actions": "reaction",
+      "trigger": "creature.rekhep.abilities.archons-protection.trigger",
+      "text": "creature.rekhep.abilities.archons-protection.text"
+    },
+    {
+      "id": "archons-pursuit",
+      "section": "offense",
+      "name": "creature.rekhep.abilities.archons-pursuit.name",
+      "actions": "2",
+      "frequency": "creature.rekhep.abilities.archons-pursuit.frequency",
+      "requirements": "creature.rekhep.abilities.archons-pursuit.requirements",
+      "text": "creature.rekhep.abilities.archons-pursuit.text"
+    },
+    {
+      "id": "courageous-switch",
+      "section": "offense",
+      "name": "creature.rekhep.abilities.courageous-switch.name",
+      "text": "creature.rekhep.abilities.courageous-switch.text"
+    },
+    {
+      "id": "holy-armament",
+      "section": "offense",
+      "name": "creature.rekhep.abilities.holy-armament.name",
+      "traits": [
+        "divine",
+        "holy"
+      ],
+      "text": "creature.rekhep.abilities.holy-armament.text"
+    },
+    {
+      "id": "living-shield",
+      "section": "offense",
+      "name": "creature.rekhep.abilities.living-shield.name",
+      "actions": "1",
+      "text": "creature.rekhep.abilities.living-shield.text"
+    },
+    {
+      "id": "terrifying-smite",
+      "section": "offense",
+      "name": "creature.rekhep.abilities.terrifying-smite.name",
+      "actions": "2",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.rekhep.abilities.terrifying-smite.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 27,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.divine-lance"
+          },
+          {
+            "spell": "spell.message"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.sure-strike",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.share-life",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

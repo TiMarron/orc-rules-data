@@ -1,0 +1,343 @@
+{
+  "id": "creature.ancient-diabolic-dragon",
+  "type": "creature",
+  "name": "creature.ancient-diabolic-dragon.name",
+  "traits": [
+    "divine",
+    "dragon",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 20,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 33,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.ancient-diabolic-dragon.senses.0"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "chthonian",
+    "common",
+    "diabolic",
+    "draconic",
+    "empyrean",
+    "necril",
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 38
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 34
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 36
+    },
+    {
+      "lore": "creature.ancient-diabolic-dragon.lore.4",
+      "mod": 33
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 34
+    },
+    {
+      "lore": "creature.ancient-diabolic-dragon.lore.6",
+      "mod": 35
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 35
+    },
+    {
+      "skill": "skill.society",
+      "mod": 33
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 33
+    }
+  ],
+  "attributes": {
+    "str": 10,
+    "dex": 5,
+    "con": 8,
+    "int": 5,
+    "wis": 7,
+    "cha": 8
+  },
+  "ac": {
+    "value": 44
+  },
+  "saves": {
+    "fortitude": 36,
+    "reflex": 32,
+    "will": 32,
+    "note": "creature.ancient-diabolic-dragon.saves.note"
+  },
+  "hp": {
+    "value": 390
+  },
+  "immunities": [
+    "fire",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 70,
+    "fly": 180
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ancient-diabolic-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "fire",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "4d12+18",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-diabolic-dragon.strikes.claws.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "agile",
+        "fire",
+        "magical",
+        "unholy",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "4d8+18",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.ancient-diabolic-dragon.strikes.claws.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ancient-diabolic-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 36,
+      "traits": [
+        "fire",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "25"
+      },
+      "damage": [
+        {
+          "dice": "4d8+18",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.ancient-diabolic-dragon.strikes.tail.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.ancient-diabolic-dragon.abilities.smoke-vision.name",
+      "text": "creature.ancient-diabolic-dragon.abilities.smoke-vision.text"
+    },
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.ancient-diabolic-dragon.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 90,
+      "text": "creature.ancient-diabolic-dragon.abilities.frightful-presence.text"
+    },
+    {
+      "id": "hells-sting",
+      "section": "defense",
+      "name": "creature.ancient-diabolic-dragon.abilities.hells-sting.name",
+      "actions": "reaction",
+      "traits": [
+        "divine",
+        "mental",
+        "unholy"
+      ],
+      "trigger": "creature.ancient-diabolic-dragon.abilities.hells-sting.trigger",
+      "text": "creature.ancient-diabolic-dragon.abilities.hells-sting.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.ancient-diabolic-dragon.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "diabolic-fire",
+      "section": "offense",
+      "name": "creature.ancient-diabolic-dragon.abilities.diabolic-fire.name",
+      "text": "creature.ancient-diabolic-dragon.abilities.diabolic-fire.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.ancient-diabolic-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.ancient-diabolic-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.ancient-diabolic-dragon.abilities.draconic-momentum.name",
+      "text": "creature.ancient-diabolic-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "hellfire-breath",
+      "section": "offense",
+      "name": "creature.ancient-diabolic-dragon.abilities.hellfire-breath.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.ancient-diabolic-dragon.abilities.hellfire-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 40,
+      "attack": 32,
+      "cantrips": {
+        "rank": 10,
+        "spells": [
+          {
+            "spell": "spell.ignition"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "atWill": true,
+              "note": "creature.ancient-diabolic-dragon.spellcasting.0.ranks.7.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.summon-fiend",
+              "atWill": true,
+              "note": "creature.ancient-diabolic-dragon.spellcasting.0.ranks.8.0.note"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.divine-immolation",
+              "atWill": true
+            },
+            {
+              "spell": "spell.falling-stars",
+              "note": "creature.ancient-diabolic-dragon.spellcasting.0.ranks.9.1.note"
+            },
+            {
+              "spell": "spell.wall-of-fire",
+              "atWill": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Frightful Presence set from the book: page 114 prints \"Frightful Presence (aura, emotion, fear, mental) 90 feet, DC 40\"; the source puts the radius and the DC inside the trait list. Hellfire Breath corrected to the book: page 114 prints \"As young diabolic dragon, but a 60-foot cone, 21d6 fire damage, and DC 42\"; the source has a 50-foot cone and the errata does not touch it."
+}

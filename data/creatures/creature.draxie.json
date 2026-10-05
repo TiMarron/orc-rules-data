@@ -1,0 +1,180 @@
+{
+  "id": "creature.draxie",
+  "type": "creature",
+  "name": "creature.draxie.name",
+  "traits": [
+    "fey",
+    "sprite"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 322,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "tiny",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "languageNote": "creature.draxie.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 4,
+    "con": 1,
+    "int": 3,
+    "wis": 1,
+    "cha": 3
+  },
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 11,
+    "will": 8
+  },
+  "hp": {
+    "value": 45
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 15,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.draxie.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "0"
+      },
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.draxie.strikes.euphoric-spark.name",
+      "actions": "1",
+      "bonus": 7,
+      "range": 20,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+3",
+          "type": "mental"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "draxie-dust",
+      "section": "offense",
+      "name": "creature.draxie.abilities.draxie-dust.name",
+      "traits": [
+        "emotion",
+        "incapacitation",
+        "mental",
+        "primal"
+      ],
+      "text": "creature.draxie.abilities.draxie-dust.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 20,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility"
+            },
+            {
+              "spell": "spell.revealing-light"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Draxie Dust's four results restored as a numbered list: page 323 prints them numbered 1 to 4 after the ability's text; the source marks them up as an ordered list, which the import does not carry."
+}

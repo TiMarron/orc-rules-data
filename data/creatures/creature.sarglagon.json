@@ -1,0 +1,253 @@
+{
+  "id": "creature.sarglagon",
+  "type": "creature",
+  "name": "creature.sarglagon.name",
+  "traits": [
+    "amphibious",
+    "devil",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 89,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.sarglagon.senses.0"
+      },
+      {
+        "spell": "spell.see-the-unseen"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "empyrean"
+  ],
+  "languageNote": "creature.sarglagon.language-note",
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 15
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": 2,
+    "wis": 4,
+    "cha": 3
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 13,
+    "will": 16,
+    "note": "creature.sarglagon.saves.note"
+  },
+  "hp": {
+    "value": 120
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 5,
+      "except": [
+        "silver"
+      ]
+    },
+    {
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 25,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sarglagon.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d12+9",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sarglagon.strikes.tentacle-arm.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "sarglagon-venom"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "heavy-aura",
+      "section": "defense",
+      "name": "creature.sarglagon.abilities.heavy-aura.name",
+      "traits": [
+        "aura",
+        "divine",
+        "incapacitation"
+      ],
+      "aura": 10,
+      "text": "creature.sarglagon.abilities.heavy-aura.text"
+    },
+    {
+      "id": "stygian-guardian",
+      "section": "defense",
+      "name": "creature.sarglagon.abilities.stygian-guardian.name",
+      "actions": "reaction",
+      "trigger": "creature.sarglagon.abilities.stygian-guardian.trigger",
+      "text": "creature.sarglagon.abilities.stygian-guardian.text"
+    },
+    {
+      "id": "drown",
+      "section": "offense",
+      "name": "creature.sarglagon.abilities.drown.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "incapacitation",
+        "water"
+      ],
+      "text": "creature.sarglagon.abilities.drown.text"
+    },
+    {
+      "id": "sarglagon-venom",
+      "section": "offense",
+      "name": "creature.sarglagon.abilities.sarglagon-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.sarglagon.abilities.sarglagon-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 23,
+      "attack": 18,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            },
+            {
+              "spell": "spell.hydraulic-torrent"
+            },
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.control-water"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 23,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.diabolic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

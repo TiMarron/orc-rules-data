@@ -1,0 +1,172 @@
+{
+  "id": "creature.athamaru-hunter",
+  "type": "creature",
+  "name": "creature.athamaru-hunter.name",
+  "traits": [
+    "amphibious",
+    "athamaru",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 30,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 0,
+    "int": 1,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "name": "creature.athamaru-hunter.items.0.ammunition.name",
+        "count": 12
+      }
+    },
+    {
+      "item": "item.longspear"
+    },
+    {
+      "item": "item.scale-mail"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 9
+  },
+  "hp": {
+    "value": 38
+  },
+  "speeds": {
+    "land": 10,
+    "swim": 40,
+    "note": "creature.athamaru-hunter.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.athamaru-hunter.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.athamaru-hunter.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "fan-bolt"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cooperative-hunting",
+      "section": "offense",
+      "name": "creature.athamaru-hunter.abilities.cooperative-hunting.name",
+      "text": "creature.athamaru-hunter.abilities.cooperative-hunting.text"
+    },
+    {
+      "id": "fan-bolt",
+      "section": "offense",
+      "name": "creature.athamaru-hunter.abilities.fan-bolt.name",
+      "text": "creature.athamaru-hunter.abilities.fan-bolt.text"
+    },
+    {
+      "id": "hunt-prey",
+      "section": "offense",
+      "name": "creature.athamaru-hunter.abilities.hunt-prey.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.athamaru-hunter.abilities.hunt-prey.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.athamaru-hunter.abilities.pack-attack.name",
+      "text": "creature.athamaru-hunter.abilities.pack-attack.text"
+    },
+    {
+      "id": "smooth-swimmer",
+      "section": "offense",
+      "name": "creature.athamaru-hunter.abilities.smooth-swimmer.name",
+      "text": "creature.athamaru-hunter.abilities.smooth-swimmer.text"
+    }
+  ],
+  "editNote": "Page 30 itself labels the Strike \"Melee … crossbow +10 (range increment 120 feet, reload 1)\" although it has a range; the errata is silent, so the record stays as the book prints. The effect \"plus fan bolt\" is the creature's own ability, as printed. The whole record was read against the page."
+}

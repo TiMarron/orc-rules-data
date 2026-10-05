@@ -1,0 +1,181 @@
+{
+  "id": "creature.leaf-leshy",
+  "type": "creature",
+  "name": "creature.leaf-leshy.name",
+  "traits": [
+    "leshy",
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 216,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "small",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "languageNote": "creature.leaf-leshy.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 4
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 2,
+    "con": 2,
+    "int": -2,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.longspear"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 6,
+    "will": 4
+  },
+  "hp": {
+    "value": 15
+  },
+  "speeds": {
+    "land": 25,
+    "note": "creature.leaf-leshy.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.leaf-leshy.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 3,
+      "traits": [
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d8-1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.leaf-leshy.strikes.seedpod.name",
+      "actions": "1",
+      "bonus": 6,
+      "rangeIncrement": 30,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "deafening-blow"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "verdant-burst",
+      "section": "defense",
+      "name": "creature.leaf-leshy.abilities.verdant-burst.name",
+      "traits": [
+        "healing",
+        "primal",
+        "vitality"
+      ],
+      "text": "creature.leaf-leshy.abilities.verdant-burst.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.leaf-leshy.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.leaf-leshy.abilities.change-shape.text"
+    },
+    {
+      "id": "deafening-blow",
+      "section": "offense",
+      "name": "creature.leaf-leshy.abilities.deafening-blow.name",
+      "text": "creature.leaf-leshy.abilities.deafening-blow.text"
+    },
+    {
+      "id": "glide",
+      "section": "offense",
+      "name": "creature.leaf-leshy.abilities.glide.name",
+      "actions": "1",
+      "traits": [
+        "move"
+      ],
+      "text": "creature.leaf-leshy.abilities.glide.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 14,
+      "constant": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.speak-with-plants",
+              "note": "creature.leaf-leshy.spellcasting.0.constant.3.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 2
+    }
+  ],
+  "editNote": "Weakness restored from the book: page 216 prints \"HP 15, Weaknesses fire 2\"; the source put the weakness in a parenthesis after the Hit Points, so it had become a note on them. The weakness is its own field and the Hit Points carry no note."
+}

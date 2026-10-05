@@ -1,0 +1,307 @@
+{
+  "id": "creature.young-diabolic-dragon",
+  "type": "creature",
+  "name": "creature.young-diabolic-dragon.name",
+  "traits": [
+    "divine",
+    "dragon",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 112,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 11,
+  "size": "large",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.young-diabolic-dragon.senses.0"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "own": "smoke-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "diabolic",
+    "draconic",
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 20
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 22
+    },
+    {
+      "lore": "creature.young-diabolic-dragon.lore.4",
+      "mod": 19
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 20
+    },
+    {
+      "lore": "creature.young-diabolic-dragon.lore.6",
+      "mod": 21
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 21
+    },
+    {
+      "skill": "skill.society",
+      "mod": 19
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 3,
+    "con": 6,
+    "int": 2,
+    "wis": 4,
+    "cha": 3
+  },
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 20,
+    "will": 21,
+    "note": "creature.young-diabolic-dragon.saves.note"
+  },
+  "hp": {
+    "value": 215
+  },
+  "immunities": [
+    "fire",
+    "paralyzed",
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 50,
+    "fly": 120
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.young-diabolic-dragon.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "fire",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d12+10",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-diabolic-dragon.strikes.claws.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "fire",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.young-diabolic-dragon.strikes.tail.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "fire",
+        "reach",
+        "magical",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "15"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smoke-vision",
+      "section": "top",
+      "name": "creature.young-diabolic-dragon.senses.2",
+      "text": "creature.young-diabolic-dragon.abilities.smoke-vision.text"
+    },
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.young-diabolic-dragon.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 90,
+      "text": "creature.young-diabolic-dragon.abilities.frightful-presence.text"
+    },
+    {
+      "id": "hells-sting",
+      "section": "defense",
+      "name": "creature.young-diabolic-dragon.abilities.hells-sting.name",
+      "actions": "reaction",
+      "traits": [
+        "divine",
+        "mental",
+        "unholy"
+      ],
+      "trigger": "creature.young-diabolic-dragon.abilities.hells-sting.trigger",
+      "text": "creature.young-diabolic-dragon.abilities.hells-sting.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.young-diabolic-dragon.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "diabolic-fire",
+      "section": "offense",
+      "name": "creature.young-diabolic-dragon.abilities.diabolic-fire.name",
+      "text": "creature.young-diabolic-dragon.abilities.diabolic-fire.text"
+    },
+    {
+      "id": "draconic-frenzy",
+      "section": "offense",
+      "name": "creature.young-diabolic-dragon.abilities.draconic-frenzy.name",
+      "actions": "2",
+      "text": "creature.young-diabolic-dragon.abilities.draconic-frenzy.text"
+    },
+    {
+      "id": "draconic-momentum",
+      "section": "offense",
+      "name": "creature.young-diabolic-dragon.abilities.draconic-momentum.name",
+      "text": "creature.young-diabolic-dragon.abilities.draconic-momentum.text"
+    },
+    {
+      "id": "hellfire-breath",
+      "section": "offense",
+      "name": "creature.young-diabolic-dragon.abilities.hellfire-breath.name",
+      "actions": "2",
+      "traits": [
+        "divine",
+        "fire",
+        "unholy"
+      ],
+      "text": "creature.young-diabolic-dragon.abilities.hellfire-breath.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 28,
+      "attack": 20,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.ignition"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.divine-immolation"
+            },
+            {
+              "spell": "spell.wall-of-fire"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Smoke Vision restored as an ability and the sense pointed at it: page 112 prints \"Smoke Vision Smoke doesn't impair the dragon's vision; they ignore the concealed condition from smoke.\" above the AC line; the source omits the ability. The ability's name reuses the string key of the sense's text, since an edit cannot remove a string."
+}

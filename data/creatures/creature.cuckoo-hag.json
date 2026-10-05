@@ -1,0 +1,290 @@
+{
+  "id": "creature.cuckoo-hag",
+  "type": "creature",
+  "name": "creature.cuckoo-hag.name",
+  "traits": [
+    "hag",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 191,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "chthonian",
+    "common",
+    "daemonic",
+    "diabolic",
+    "fey",
+    "jotun"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 18
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 18
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 21
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 19
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 19
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 19
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 18
+    },
+    {
+      "skill": "skill.society",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 3,
+    "int": 4,
+    "wis": 3,
+    "cha": 6
+  },
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 19,
+    "will": 18,
+    "note": "creature.cuckoo-hag.saves.note"
+  },
+  "hp": {
+    "value": 170
+  },
+  "immunities": [
+    "sleep"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cuckoo-hag.strikes.claw.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d6",
+          "type": "spirit"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "coven",
+      "section": "top",
+      "name": "creature.cuckoo-hag.abilities.coven.name",
+      "ability": "ability.coven",
+      "text": "creature.cuckoo-hag.abilities.coven.text"
+    },
+    {
+      "id": "sound-imitation",
+      "section": "defense",
+      "name": "creature.cuckoo-hag.abilities.sound-imitation.name",
+      "text": "creature.cuckoo-hag.abilities.sound-imitation.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.cuckoo-hag.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "text": "creature.cuckoo-hag.abilities.change-shape.text"
+    },
+    {
+      "id": "cuckoos-lair",
+      "section": "offense",
+      "name": "creature.cuckoo-hag.abilities.cuckoos-lair.name",
+      "text": "creature.cuckoo-hag.abilities.cuckoos-lair.text"
+    },
+    {
+      "id": "soul-covenant",
+      "section": "offense",
+      "name": "creature.cuckoo-hag.abilities.soul-covenant.name",
+      "traits": [
+        "occult"
+      ],
+      "requirements": "creature.cuckoo-hag.abilities.soul-covenant.requirements"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 29,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dream-message",
+              "atWill": true
+            },
+            {
+              "spell": "spell.sleep",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.acid-grip",
+              "count": 3
+            },
+            {
+              "spell": "spell.clairaudience"
+            },
+            {
+              "spell": "spell.clairvoyance"
+            },
+            {
+              "spell": "spell.fly"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.dreaming-potential"
+            },
+            {
+              "spell": "spell.illusory-object"
+            },
+            {
+              "spell": "spell.illusory-scene"
+            },
+            {
+              "spell": "spell.mirage"
+            },
+            {
+              "spell": "spell.nightmare"
+            },
+            {
+              "spell": "spell.subconscious-suggestion"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.seize-soul",
+              "atWill": true,
+              "note": "creature.cuckoo-hag.spellcasting.0.ranks.9.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 28,
+    "ranks": [
+      {
+        "rank": 2,
+        "rituals": [
+          {
+            "ritual": "ritual.animate-object",
+            "heightened": 5
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Ritual rank added from the book: page 191 prints \"Rituals DC 28; 5th animate object\", the 2nd-rank ritual performed at 5th rank; the source lists it at its own rank only and the errata does not touch it."
+}

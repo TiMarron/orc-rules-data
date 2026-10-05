@@ -1,0 +1,324 @@
+{
+  "id": "creature.raja-krodha",
+  "type": "creature",
+  "name": "creature.raja-krodha.name",
+  "traits": [
+    "rakshasa",
+    "spirit",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 287,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "diabolic",
+    "empyrean",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 21
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 21
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 21
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 19
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 18
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 23
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 6,
+    "con": 4,
+    "int": 2,
+    "wis": 2,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.scimitar",
+      "name": "creature.raja-krodha.items.0.name",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 20,
+    "will": 18,
+    "note": "creature.raja-krodha.saves.note"
+  },
+  "hp": {
+    "value": 180
+  },
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.raja-krodha.strikes.taravari.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "forceful",
+        "magical",
+        "sweep",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+12",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.raja-krodha.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+12",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.raja-krodha.strikes.claw.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+12",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "knowledge-of-delusion",
+      "section": "defense",
+      "name": "creature.raja-krodha.abilities.knowledge-of-delusion.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.raja-krodha.abilities.knowledge-of-delusion.text"
+    },
+    {
+      "id": "reassert-fate",
+      "section": "defense",
+      "name": "creature.raja-krodha.abilities.reassert-fate.name",
+      "actions": "reaction",
+      "traits": [
+        "divine"
+      ],
+      "trigger": "creature.raja-krodha.abilities.reassert-fate.trigger",
+      "text": "creature.raja-krodha.abilities.reassert-fate.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.raja-krodha.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.raja-krodha.abilities.change-shape.text"
+    },
+    {
+      "id": "cruel-majesty",
+      "section": "offense",
+      "name": "creature.raja-krodha.abilities.cruel-majesty.name",
+      "actions": "1",
+      "traits": [
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "requirements": "creature.raja-krodha.abilities.cruel-majesty.requirements",
+      "text": "creature.raja-krodha.abilities.cruel-majesty.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.raja-krodha.abilities.sneak-attack.name",
+      "text": "creature.raja-krodha.abilities.sneak-attack.text"
+    },
+    {
+      "id": "swallow-whole",
+      "section": "offense",
+      "name": "creature.raja-krodha.abilities.swallow-whole.name",
+      "ability": "ability.swallow-whole",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "text": "creature.raja-krodha.abilities.swallow-whole.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 29,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.divine-lance"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.clairaudience"
+            },
+            {
+              "spell": "spell.haste"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.clairvoyance"
+            },
+            {
+              "spell": "spell.unfettered-movement"
+            },
+            {
+              "spell": "spell.vampiric-feast"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.crisis-of-faith"
+            },
+            {
+              "spell": "spell.hallucination"
+            },
+            {
+              "spell": "spell.invoke-spirits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.raja-krodha.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 29,
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.ignite-ambition"
+            },
+            {
+              "spell": "spell.savor-the-sting"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "immunities": [
+    "fear",
+    "fortune",
+    "misfortune"
+  ],
+  "editNote": "Immunities restored from the book: page 287 prints \"Weaknesses holy 10, Immunities fear, fortune, misfortune\" (a comma where a semicolon belongs, and the two lines in an unusual order); the source runs the Immunities into the Weaknesses line and loses them."
+}

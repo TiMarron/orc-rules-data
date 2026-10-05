@@ -1,0 +1,235 @@
+{
+  "id": "creature.shining-child",
+  "type": "creature",
+  "name": "creature.shining-child.name",
+  "traits": [
+    "astral"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 308,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 12,
+  "size": "medium",
+  "perception": {
+    "mod": 23,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo"
+  ],
+  "languageNote": "creature.shining-child.language-note",
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 18
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 23
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 21
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 21
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 5,
+    "con": 6,
+    "int": 2,
+    "wis": 5,
+    "cha": 7
+  },
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 22,
+    "reflex": 19,
+    "will": 19
+  },
+  "hp": {
+    "value": 215
+  },
+  "immunities": [
+    "blinded",
+    "dazzled",
+    "fire"
+  ],
+  "speeds": {
+    "land": 30,
+    "fly": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.shining-child.strikes.fist.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d4+5",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "4d6",
+          "type": "fire"
+        },
+        {
+          "dice": "2d4",
+          "type": "fire",
+          "persistent": true
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.shining-child.strikes.fire-ray.name",
+      "actions": "1",
+      "bonus": 25,
+      "range": 100,
+      "traits": [
+        "arcane",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d10+3",
+          "type": "fire"
+        },
+        {
+          "dice": "2d10",
+          "type": "vitality",
+          "note": "creature.shining-child.strikes.fire-ray.damage.1.note"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "radiance-dependence",
+      "section": "top",
+      "name": "creature.shining-child.abilities.radiance-dependence.name",
+      "text": "creature.shining-child.abilities.radiance-dependence.text"
+    },
+    {
+      "id": "blinding-aura",
+      "section": "defense",
+      "name": "creature.shining-child.abilities.blinding-aura.name",
+      "traits": [
+        "arcane",
+        "aura",
+        "incapacitation",
+        "light"
+      ],
+      "aura": 60,
+      "text": "creature.shining-child.abilities.blinding-aura.text"
+    },
+    {
+      "id": "overwhelming-light",
+      "section": "defense",
+      "name": "creature.shining-child.abilities.overwhelming-light.name",
+      "actions": "reaction",
+      "traits": [
+        "light"
+      ],
+      "trigger": "creature.shining-child.abilities.overwhelming-light.trigger",
+      "text": "creature.shining-child.abilities.overwhelming-light.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 33,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.illusory-object",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.false-vision"
+            },
+            {
+              "spell": "spell.mirage"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.vibrant-pattern"
+            },
+            {
+              "spell": "spell.wall-of-force"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.sunburst",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Page 308 itself labels the Strike \"Melee … fire ray +25 (arcane, magical, range 100 feet)\" although it has a range; the errata is silent on it, so the record stays as the book prints. The page check fails only on sunburst ×2, which is the errata: \"Page 308: In the shining child's spells, remove spell riposte and give them two castings of sunburst instead.\" The whole record was read against the page."
+}

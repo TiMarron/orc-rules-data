@@ -1,0 +1,196 @@
+{
+  "id": "creature.hryngar-bombardier",
+  "type": "creature",
+  "name": "creature.hryngar-bombardier.name",
+  "traits": [
+    "dwarf",
+    "hryngar",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 202,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 4,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "dwarven",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 6
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": 3,
+    "wis": 1,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.alchemists-toolkit"
+    },
+    {
+      "item": "item.studded-leather-armor"
+    },
+    {
+      "item": "item.warhammer"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 8,
+    "will": 4,
+    "note": "creature.hryngar-bombardier.saves.note"
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hryngar-bombardier.strikes.warhammer.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.warhammer"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hryngar-bombardier.strikes.alchemical-grenade.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 20,
+      "traits": [
+        "splash"
+      ],
+      "damage": [
+        {
+          "dice": "1d6",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ]
+        },
+        {
+          "dice": "1",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ],
+          "persistent": true,
+          "note": "creature.hryngar-bombardier.strikes.alchemical-grenade.damage.1.note"
+        },
+        {
+          "dice": "1",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ],
+          "splash": true,
+          "note": "creature.hryngar-bombardier.strikes.alchemical-grenade.damage.2.note"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "alchemical-grenades",
+      "section": "top",
+      "name": "creature.hryngar-bombardier.abilities.alchemical-grenades.name",
+      "text": "creature.hryngar-bombardier.abilities.alchemical-grenades.text"
+    },
+    {
+      "id": "light-blindness",
+      "section": "defense",
+      "name": "creature.hryngar-bombardier.abilities.light-blindness.name",
+      "ability": "ability.light-blindness"
+    },
+    {
+      "id": "quick-bombardier",
+      "section": "offense",
+      "name": "creature.hryngar-bombardier.abilities.quick-bombardier.name",
+      "actions": "1",
+      "text": "creature.hryngar-bombardier.abilities.quick-bombardier.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 17,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.sigil"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blood-vendetta"
+            },
+            {
+              "spell": "spell.paranoia"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
