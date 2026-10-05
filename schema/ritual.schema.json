@@ -4,16 +4,23 @@
   "$defs": {
     "key": { "$ref": "common.schema.json#/$defs/i18nKey" },
     "primaryCheck": {
-      "type": "object", "additionalProperties": false, "required": ["skill", "rank"],
+      "type": "object", "additionalProperties": false, "required": ["skill"],
       "properties": {
         "skill": { "$ref": "common.schema.json#/$defs/refSkill" },
-        "rank": { "$ref": "common.schema.json#/$defs/proficiencyRank", "$comment": "The proficiency rank the primary caster needs in the skill." },
+        "rank": { "$ref": "common.schema.json#/$defs/proficiencyRank", "$comment": "The proficiency rank the primary caster needs in the skill. Absent only when the book prints none." },
         "note": { "$ref": "#/$defs/key", "$comment": "A condition the book prints in the parenthesis beside the rank: \"you must be a demon\"." }
       }
     },
     "skillCheck": {
       "type": "object", "additionalProperties": false, "required": ["skill"],
       "properties": { "skill": { "$ref": "common.schema.json#/$defs/refSkill" } }
+    },
+    "noteSkillCheck": {
+      "type": "object", "additionalProperties": false, "required": ["skill"],
+      "properties": {
+        "skill": { "$ref": "common.schema.json#/$defs/refSkill" },
+        "note": { "$ref": "#/$defs/key", "$comment": "The condition the book prints in a parenthesis after the skill, as printed." }
+      }
     },
     "loreCheck": {
       "type": "object", "additionalProperties": false, "required": ["lore"],
@@ -27,11 +34,14 @@
     },
     "secondaryCheck": {
       "oneOf": [
-        { "$ref": "#/$defs/skillCheck" },
+        { "$ref": "#/$defs/noteSkillCheck" },
         { "$ref": "#/$defs/loreCheck" },
         {
           "type": "object", "additionalProperties": false, "required": ["oneOf"],
-          "properties": { "oneOf": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/plainCheck" } } },
+          "properties": {
+            "oneOf": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/plainCheck" } },
+            "note": { "$ref": "#/$defs/key", "$comment": "The condition on the choice, as printed: \"whichever isn't used for the primary check\"." }
+          },
           "$comment": "A check the book prints as alternatives (\"Arcana or Occultism\"): the secondary casters pick one of them."
         }
       ]
@@ -43,6 +53,7 @@
     {
       "type": "object",
       "required": ["text", "rank", "cast", "primaryCheck"],
+      "dependentRequired": { "secondaryCastersNote": ["secondaryCasters"] },
       "properties": {
         "type": { "const": "ritual" },
         "text": { "$ref": "common.schema.json#/$defs/i18nKey" },
@@ -50,6 +61,8 @@
         "cast": { "$ref": "#/$defs/key", "$comment": "How long the ritual takes to cast, as printed: \"1 day\"." },
         "cost": { "$ref": "#/$defs/key" },
         "secondaryCasters": { "type": "integer", "minimum": 1, "$comment": "How many secondary casters the ritual needs. Absent means none." },
+        "secondaryCastersNote": { "$ref": "#/$defs/key", "$comment": "What the book prints after the number, as printed: \"or more\", \"must be the ritual's target\". Only with `secondaryCasters`." },
+        "requirements": { "$ref": "#/$defs/key" },
         "primaryCheck": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/primaryCheck" }, "$comment": "The primary caster's skill check: the primary caster uses one of these, whichever they pick." },
         "secondaryChecks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/secondaryCheck" }, "$comment": "The secondary casters' checks, each of which is attempted (or one of a choice). What a check's result does stays in `text`." },
         "range": { "$ref": "common.schema.json#/$defs/i18nKey" },

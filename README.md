@@ -185,14 +185,19 @@ cost tokens.
   Whatever the book prints that is no spell (a ritual, an item) is not here.
 - A `ritual` is a rite of the Rituals chapter (Geas, Collective Memories, Demonic
   Pact), cast over `cast` ("1 day") for an optional `cost`, with `secondaryCasters`
-  (a number, at least 1; absent means none) beside the primary caster. The
-  `primaryCheck` is an array of `{ skill, rank, note? }` alternatives: the primary
+  (a number, at least 1; absent means none) beside the primary caster, and
+  `secondaryCastersNote` for what the book prints after the number ("or more",
+  "must be the ritual's target"; only with `secondaryCasters`). The
+  `primaryCheck` is an array of `{ skill, rank?, note? }` alternatives: the primary
   caster rolls whichever skill they prefer, needing the proficiency `rank` in it
-  (`note` is a condition the book prints beside the rank, "you must be a demon").
+  (`note` is a condition the book prints beside the rank, "you must be a demon";
+  `rank` is absent only when the book prints none, which a person has confirmed).
   The `secondaryChecks` are what the secondary casters roll, each entry a
   `{ skill }`, a `{ lore }` (the printed name of a Lore, which has no record) or
-  a `{ oneOf }` of two or more of those when the book offers a choice; the
-  outcomes of the checks stay in `text`. `range`, `area`, `targets`, `duration`
+  a `{ oneOf }` of two or more of those when the book offers a choice; a `{ skill }`
+  or a `{ oneOf }` may carry a `note`, the condition the book prints after it
+  ("whichever isn't used for the primary check"). The outcomes of the checks
+  stay in `text`. `requirements`, `range`, `area`, `targets`, `duration`
   and `heightened` are the spell's own. A ritual's `rank` is its own rank, 1 to
   10.
 - A creature's `rituals` is the stat block's Rituals line: the `dc` and, per
