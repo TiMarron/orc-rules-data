@@ -39,15 +39,26 @@
     },
     "spellRank": { "type": "integer", "minimum": 1, "maximum": 10 },
     "spellEntry": {
-      "type": "object", "additionalProperties": false, "required": ["spell"],
-      "properties": {
-        "spell": { "$ref": "common.schema.json#/$defs/refSpell" },
-        "count": { "type": "integer", "minimum": 2, "$comment": "\"(×2)\": the creature has the spell this many times a day. Absent means once." },
-        "atWill": { "const": true, "$comment": "\"(at will)\"." },
-        "note": { "$ref": "#/$defs/key", "$comment": "A restriction as printed: \"self only\", \"animals only\", \"see soul covenant\"." }
-      },
-      "not": { "properties": { "count": true, "atWill": true }, "required": ["count", "atWill"] },
-      "$comment": "A spell is cast at will or so many times a day: `count` and `atWill` are not both there."
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false, "required": ["spell"],
+          "properties": {
+            "spell": { "$ref": "common.schema.json#/$defs/refSpell" },
+            "count": { "type": "integer", "minimum": 2, "$comment": "\"(×2)\": the creature has the spell this many times a day. Absent means once." },
+            "atWill": { "const": true, "$comment": "\"(at will)\"." },
+            "note": { "$ref": "#/$defs/key", "$comment": "A restriction as printed: \"self only\", \"animals only\", \"see soul covenant\"." }
+          },
+          "not": { "properties": { "count": true, "atWill": true }, "required": ["count", "atWill"] },
+          "$comment": "A spell is cast at will or so many times a day: `count` and `atWill` are not both there."
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["name"],
+          "properties": {
+            "name": { "$ref": "#/$defs/key", "$comment": "What the stat block prints where it names no spell but a choice of one (\"one spell based on donor soul's personality trait (see sidebar)\"), parenthesis included. The dataset has no record to point at, so there is no count and no at will." }
+          }
+        }
+      ],
+      "$comment": "A spell the creature casts, by its record, or a printed name when the line names no spell of the dataset."
     },
     "spellList": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/spellEntry" } },
     "spellsByRank": {
@@ -141,20 +152,39 @@
         { "type": "object", "additionalProperties": false, "required": ["lore", "mod"], "properties": { "lore": { "$ref": "#/$defs/key" }, "mod": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } } }
       ]
     },
+    "instead": { "const": true, "$comment": "The Strike's damage line offers this effect in place of its damage (\"1d8 piercing or bola bolt\"): when it is chosen the Strike deals the damage of the ability, not its own. The validator checks that the Strike has damage to replace." },
     "plainEffect": {
       "oneOf": [
-        { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than the ability's own name: \"Improved Grab\" (one universal record covers Improved Grab, Knockdown and Push), \"Push 10 feet\"." } } },
-        { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than a pointer at the ability: the damage that comes with it, \"2d6 energy damage (see draconic bite)\"." } } },
+        { "type": "object", "additionalProperties": false, "required": ["ability"], "properties": { "ability": { "$ref": "common.schema.json#/$defs/refAbility" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than the ability's own name: \"Improved Grab\" (one universal record covers Improved Grab, Knockdown and Push), \"Push 10 feet\"." }, "instead": { "$ref": "#/$defs/instead" } } },
+        { "type": "object", "additionalProperties": false, "required": ["own"], "properties": { "own": { "$ref": "#/$defs/slug" }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than a pointer at the ability: the damage that comes with it, \"2d6 energy damage (see draconic bite)\"." }, "instead": { "$ref": "#/$defs/instead" } } },
+        { "type": "object", "additionalProperties": false, "required": ["item"], "properties": { "item": { "$ref": "common.schema.json#/$defs/refItem", "$comment": "An item that is the effect: a poison or a venom the Strike delivers (\"plus lethargy poison\")." }, "text": { "$ref": "#/$defs/key", "$comment": "What the stat block prints for it when that is more than the item's name." } } },
         { "type": "object", "additionalProperties": false, "required": ["text"], "properties": { "text": { "$ref": "#/$defs/key" } } }
       ],
-      "$comment": "An effect of one thing: a universal ability, one of this creature's own abilities, or text. Kept apart from `effect` so that a `choice` offers these and does not nest."
+      "$comment": "An effect of one thing: a universal ability, one of this creature's own abilities, an item, or text. Kept apart from `effect` so that a `choice` offers these and does not nest."
     },
     "effect": {
       "oneOf": [
         { "$ref": "#/$defs/plainEffect" },
         { "type": "object", "additionalProperties": false, "required": ["choice"], "properties": { "choice": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/plainEffect" } } }, "$comment": "The creature picks one of these when the Strike hits (\"Grab or Knockdown\")." }
       ],
-      "$comment": "What a Strike does besides damage: a universal ability (with what is printed for it, when that is more than its name), one of this creature's own abilities (by its id, with what is printed for it), text the import could not place, or a choice between such effects."
+      "$comment": "What a Strike does besides damage: a universal ability (with what is printed for it, when that is more than its name), one of this creature's own abilities (by its id, with what is printed for it), an item, text the import could not place, or a choice between such effects."
+    },
+    "damageType": { "anyOf": [{ "$ref": "common.schema.json#/$defs/damageType" }, { "const": "bleed" }] },
+    "damagePart": {
+      "type": "object", "additionalProperties": false, "required": ["dice"],
+      "oneOf": [
+        { "properties": { "type": true }, "required": ["type"] },
+        { "properties": { "types": true }, "required": ["types"] }
+      ],
+      "properties": {
+        "dice": { "type": "string", "pattern": "^[1-9][0-9]*(d(4|6|8|10|12|20)([+-][1-9][0-9]*)?)?$" },
+        "type": { "$ref": "#/$defs/damageType" },
+        "types": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/damageType" }, "uniqueItems": true, "$comment": "The damage is of one of these types, the one chosen when the Strike is made (\"2d6 acid, cold, or fire\"; \"2d12 bludgeoning, piercing, or slashing\"). A part has `type` or `types`, never both." },
+        "persistent": { "const": true },
+        "splash": { "const": true, "$comment": "Splash damage: dealt to the target's surroundings besides the Strike's own damage (\"1d6 acid splash damage\")." },
+        "note": { "$ref": "#/$defs/key", "$comment": "A qualification as printed: \"depending on object\", \"of the same type\", \"if the target is undead\", \"or 2d4 spirit vs. an unholy target\". The import does not read it." }
+      },
+      "$comment": "One part of a Strike's damage: dice and the damage type, or the several types it may be of."
     },
     "strike": {
       "type": "object", "additionalProperties": false,
@@ -173,13 +203,14 @@
         "damage": {
           "type": "array",
           "items": {
-            "type": "object", "additionalProperties": false, "required": ["dice", "type"],
-            "properties": {
-              "dice": { "type": "string", "pattern": "^[1-9][0-9]*(d(4|6|8|10|12|20)([+-][1-9][0-9]*)?)?$" },
-              "type": { "anyOf": [{ "$ref": "common.schema.json#/$defs/damageType" }, { "const": "bleed" }] },
-              "persistent": { "const": true },
-              "splash": { "const": true, "$comment": "Splash damage: dealt to the target's surroundings besides the Strike's own damage (\"1d6 acid splash damage\")." }
-            }
+            "oneOf": [
+              { "$ref": "#/$defs/damagePart" },
+              {
+                "type": "object", "additionalProperties": false, "required": ["choice"],
+                "properties": { "choice": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/damagePart" } } },
+                "$comment": "The Strike deals one of these parts, not both (\"1d6 vitality or 1d6 void\"): two or more plain parts, never another choice."
+              }
+            ]
           },
           "$comment": "May be empty: some Strikes deal no damage and only apply an effect."
         },
@@ -282,6 +313,7 @@
         "hp": { "$ref": "#/$defs/valued" },
         "hardness": { "type": "integer", "minimum": 1 },
         "immunities": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
+        "immunitiesNote": { "$ref": "#/$defs/key", "$comment": "What the Immunities line prints that is not a plain name: a parenthesis (\"electricity (see lightning drinker)\") or a clause (\"effects that would transform their body or soul to an undead\"), as printed. A name with a parenthesis is also in `immunities`; a clause is only here, and `immunities` may then be absent." },
         "weaknesses": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/modifier" } },
         "resistances": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/modifier" } },
         "speeds": {

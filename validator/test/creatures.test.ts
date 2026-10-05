@@ -38,6 +38,16 @@ describe('creatures check', () => {
     ]);
   });
 
+  it('accepts an effect that replaces the Strike\'s damage when the Strike has damage, and rejects one on a Strike with none', () => {
+    const damage = [{ dice: '1d8', type: 'piercing' }];
+    expect(messages({ strikes: [{ damage, effects: [{ own: 'venom', instead: true }] }] })).toEqual([]);
+    expect(messages({ strikes: [{ damage: [], effects: [{ own: 'venom', instead: true }] }, { effects: [{ own: 'venom', instead: true }] }] })).toEqual([
+      'strikes[0].effects[0].instead: the Strike has no damage for the effect to replace',
+      'strikes[1].effects[0].instead: the Strike has no damage for the effect to replace',
+    ]);
+    expect(messages({ strikes: [{ effects: [{ own: 'venom' }] }] })).toEqual([]);
+  });
+
   it('rejects a sense naming an ability the creature does not have', () => {
     expect(messages({ perception: { mod: 7, senses: [{ own: 'web-sense' }] } })).toEqual([
       'perception.senses[0].own: "web-sense" is not one of this creature\'s abilities',

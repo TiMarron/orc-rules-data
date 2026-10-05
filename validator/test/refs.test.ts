@@ -302,6 +302,16 @@ describe('refs check', () => {
       'perception.senses[0].spell: reference "spell.gone" does not resolve',
     ]);
   });
+  it('resolves the item of a Strike effect, alone or in a choice, and flags one the dataset lacks', () => {
+    const creature = (item: string) => ({ folder: 'creatures', file: 'creature.x.json', json: record('creature', 'x', { strikes: [{ effects: [{ item }, { choice: [{ item }, { text: 'creature.x.strikes.0.effects.1.choice.1' }] }] }] }) });
+    const poison = { folder: 'items', file: 'item.lethargy-poison.json', json: record('item', 'lethargy-poison') };
+    expect(refsCheck(loadDataset(writeFixture({ records: [creature('item.lethargy-poison'), poison] })))).toEqual([]);
+    expect(refsCheck(loadDataset(writeFixture({ records: [creature('item.darkening-poison'), poison] }))).map((i) => i.message)).toEqual([
+      'strikes[0].effects[0].item: reference "item.darkening-poison" does not resolve',
+      'strikes[0].effects[1].choice[0].item: reference "item.darkening-poison" does not resolve',
+    ]);
+  });
+
   it('resolves the rituals a creature performs like any other id, and flags one the dataset lacks', () => {
     const creature = (ritual: string) => ({ folder: 'creatures', file: 'creature.x.json', json: record('creature', 'x', { rituals: { dc: 20, ranks: [{ rank: 3, rituals: [{ ritual }] }] } }) });
     const geas = { folder: 'rituals', file: 'ritual.geas.json', json: record('ritual', 'geas', { rank: 3 }) };
