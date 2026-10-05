@@ -1,0 +1,43 @@
+{
+  "id": "ritual.inveigle",
+  "type": "ritual",
+  "name": "ritual.inveigle.name",
+  "traits": [
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 268,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.inveigle.text",
+  "rank": 2,
+  "cast": "ritual.inveigle.cast",
+  "cost": "ritual.inveigle.cost",
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "expert"
+    }
+  ],
+  "range": "ritual.inveigle.range",
+  "targets": "ritual.inveigle.targets",
+  "duration": "ritual.inveigle.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "ritual.inveigle.heightened.0"
+    }
+  ]
+}

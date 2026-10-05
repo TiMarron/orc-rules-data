@@ -1,0 +1,51 @@
+{
+  "id": "ritual.planar-displacement",
+  "type": "ritual",
+  "name": "ritual.planar-displacement.name",
+  "traits": [
+    "teleportation"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 393,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.planar-displacement.text",
+  "rank": 7,
+  "cast": "ritual.planar-displacement.cast",
+  "cost": "ritual.planar-displacement.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.nature",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "lore": "ritual.planar-displacement.secondary-checks.0.lore"
+    },
+    {
+      "skill": "skill.survival"
+    }
+  ],
+  "requirements": "ritual.planar-displacement.requirements",
+  "range": "ritual.planar-displacement.range",
+  "area": "ritual.planar-displacement.area",
+  "editNote": "Reserved Material removed: the proper names of two planes given as examples are replaced with generic descriptors. The rules text is the book's."
+}

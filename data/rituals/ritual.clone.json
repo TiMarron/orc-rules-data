@@ -1,0 +1,39 @@
+{
+  "id": "ritual.clone",
+  "type": "ritual",
+  "name": "ritual.clone.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 266,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.clone.text",
+  "rank": 9,
+  "cast": "ritual.clone.cast",
+  "cost": "ritual.clone.cost",
+  "secondaryCasters": 3,
+  "primaryCheck": [
+    {
+      "skill": "skill.crafting",
+      "rank": "legendary"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.arcana"
+    },
+    {
+      "skill": "skill.medicine"
+    },
+    {
+      "skill": "skill.occultism"
+    }
+  ],
+  "range": "ritual.clone.range",
+  "targets": "ritual.clone.targets",
+  "editNote": "Reserved Material removed: the proper name of a deity is replaced with the generic descriptor the dataset already uses. Link corrected: page 266 prints \"an expanded alchemist's lab\", which is its own record; the source linked the plain lab. The rules text is the book's."
+}

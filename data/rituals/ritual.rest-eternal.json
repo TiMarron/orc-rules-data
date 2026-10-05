@@ -1,0 +1,37 @@
+{
+  "id": "ritual.rest-eternal",
+  "type": "ritual",
+  "name": "ritual.rest-eternal.name",
+  "traits": [
+    "spirit"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 270,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.rest-eternal.text",
+  "rank": 4,
+  "cast": "ritual.rest-eternal.cast",
+  "cost": "ritual.rest-eternal.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.religion",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.occultism"
+    },
+    {
+      "skill": "skill.religion"
+    }
+  ],
+  "range": "ritual.rest-eternal.range",
+  "targets": "ritual.rest-eternal.targets"
+}

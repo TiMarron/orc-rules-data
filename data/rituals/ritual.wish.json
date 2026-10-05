@@ -1,0 +1,47 @@
+{
+  "id": "ritual.wish",
+  "type": "ritual",
+  "name": "ritual.wish.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core",
+    "page": 395,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.wish.text",
+  "rank": 10,
+  "cast": "ritual.wish.cast",
+  "cost": "ritual.wish.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "legendary"
+    },
+    {
+      "skill": "skill.nature",
+      "rank": "legendary"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "legendary"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "legendary"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.crafting"
+    },
+    {
+      "skill": "skill.diplomacy"
+    }
+  ],
+  "range": "ritual.wish.range",
+  "targets": "ritual.wish.targets"
+}

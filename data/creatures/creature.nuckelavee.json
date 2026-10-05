@@ -1,0 +1,270 @@
+{
+  "id": "creature.nuckelavee",
+  "type": "creature",
+  "name": "creature.nuckelavee.name",
+  "traits": [
+    "amphibious",
+    "fey"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 243,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 19
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": 1,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.bastard-sword",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 16,
+    "will": 20
+  },
+  "hp": {
+    "value": 190
+  },
+  "immunities": [
+    "disease",
+    "poison"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "swim": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.nuckelavee.strikes.bastard-sword.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "reach",
+        "two-hand"
+      ],
+      "traitValues": {
+        "reach": "10",
+        "two-hand": "1d12"
+      },
+      "damage": [
+        {
+          "dice": "2d8+12",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d6",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        {
+          "own": "mortasheen"
+        }
+      ],
+      "item": "item.bastard-sword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.nuckelavee.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+12",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        {
+          "own": "mortasheen"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.nuckelavee.strikes.hoof.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d6+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "mortasheen"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "frightful-presence",
+      "section": "defense",
+      "name": "creature.nuckelavee.abilities.frightful-presence.name",
+      "ability": "ability.frightful-presence",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 30,
+      "text": "creature.nuckelavee.abilities.frightful-presence.text"
+    },
+    {
+      "id": "purity-vulnerability",
+      "section": "defense",
+      "name": "creature.nuckelavee.abilities.purity-vulnerability.name",
+      "text": "creature.nuckelavee.abilities.purity-vulnerability.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.nuckelavee.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "blight-breath",
+      "section": "offense",
+      "name": "creature.nuckelavee.abilities.blight-breath.name",
+      "actions": "2",
+      "traits": [
+        "disease",
+        "poison",
+        "primal"
+      ],
+      "text": "creature.nuckelavee.abilities.blight-breath.text"
+    },
+    {
+      "id": "mortasheen",
+      "section": "offense",
+      "name": "creature.nuckelavee.abilities.mortasheen.name",
+      "traits": [
+        "disease"
+      ],
+      "text": "creature.nuckelavee.abilities.mortasheen.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.nuckelavee.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.nuckelavee.abilities.trample.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 28,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.aqueous-orb"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.control-water"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 28,
+    "ranks": [
+      {
+        "rank": 4,
+        "rituals": [
+          {
+            "ritual": "ritual.blight"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Kept by the errata: page 243 prints \"Primal Innate Spells DC 28; 5th control water; 3rd toxic cloud\" and the record has aqueous orb at 3rd rank; the errata says \"Page 243: The nuckelavee has toxic cloud as a 3rd-rank innate spell, but it's a 5th-rank spell. Replace it with aqueous orb.\" The rituals line matches the page: \"Rituals DC 28; blight\"."
+}

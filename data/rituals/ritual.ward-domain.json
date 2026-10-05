@@ -1,0 +1,52 @@
+{
+  "id": "ritual.ward-domain",
+  "type": "ritual",
+  "name": "ritual.ward-domain.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 271,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.ward-domain.text",
+  "rank": 6,
+  "cast": "ritual.ward-domain.cast",
+  "cost": "ritual.ward-domain.cost",
+  "secondaryCasters": 3,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.nature",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "lore": "ritual.ward-domain.secondary-checks.0.lore"
+    },
+    {
+      "skill": "skill.survival"
+    },
+    {
+      "skill": "skill.thievery"
+    }
+  ],
+  "area": "ritual.ward-domain.area",
+  "duration": "ritual.ward-domain.duration",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "ritual.ward-domain.heightened.0"
+    }
+  ]
+}

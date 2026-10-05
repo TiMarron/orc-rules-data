@@ -1,0 +1,45 @@
+{
+  "id": "ritual.heartbond",
+  "type": "ritual",
+  "name": "ritual.heartbond.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 268,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.heartbond.text",
+  "rank": 2,
+  "cast": "ritual.heartbond.cast",
+  "cost": "ritual.heartbond.cost",
+  "secondaryCasters": 2,
+  "secondaryCastersNote": "ritual.heartbond.secondary-casters.note",
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.diplomacy"
+    },
+    {
+      "skill": "skill.society"
+    }
+  ],
+  "range": "ritual.heartbond.range",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "ritual.heartbond.heightened.0"
+    }
+  ]
+}

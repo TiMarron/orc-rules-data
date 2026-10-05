@@ -1,0 +1,31 @@
+{
+  "id": "ritual.planar-servitor",
+  "type": "ritual",
+  "name": "ritual.planar-servitor.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 394,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.planar-servitor.text",
+  "rank": 5,
+  "cast": "ritual.planar-servitor.cast",
+  "cost": "ritual.planar-servitor.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.religion",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.diplomacy"
+    }
+  ],
+  "duration": "ritual.planar-servitor.duration"
+}

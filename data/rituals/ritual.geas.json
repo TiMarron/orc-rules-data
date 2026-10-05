@@ -1,0 +1,65 @@
+{
+  "id": "ritual.geas",
+  "type": "ritual",
+  "name": "ritual.geas.name",
+  "traits": [
+    "curse",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 393,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.geas.text",
+  "rank": 3,
+  "cast": "ritual.geas.cast",
+  "secondaryCasters": 1,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.society"
+        },
+        {
+          "lore": "ritual.geas.secondary-checks.0.1.lore"
+        }
+      ]
+    }
+  ],
+  "range": "ritual.geas.range",
+  "targets": "ritual.geas.targets",
+  "duration": "ritual.geas.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "ritual.geas.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "ritual.geas.heightened.1"
+    },
+    {
+      "level": "9",
+      "text": "ritual.geas.heightened.2"
+    }
+  ],
+  "editNote": "Heightened entries corrected to the book: page 393 prints \"powerful magic such as a wish ritual\" in the 5th-rank entry and \"As 5th rank\" in the 7th- and 9th-rank entries; the source has \"wish spell\" and \"As 5th level\", and the errata does not touch them."
+}

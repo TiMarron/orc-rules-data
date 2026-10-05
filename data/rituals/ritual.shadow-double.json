@@ -1,0 +1,63 @@
+{
+  "id": "ritual.shadow-double",
+  "type": "ritual",
+  "name": "ritual.shadow-double.name",
+  "traits": [
+    "illusion"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 270,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.shadow-double.text",
+  "rank": 4,
+  "cast": "ritual.shadow-double.cast",
+  "cost": "ritual.shadow-double.cost",
+  "secondaryCasters": 3,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "master",
+      "note": "ritual.shadow-double.primary-check.0.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "master",
+      "note": "ritual.shadow-double.primary-check.1.note"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.arcana"
+        },
+        {
+          "skill": "skill.nature"
+        },
+        {
+          "skill": "skill.occultism"
+        },
+        {
+          "skill": "skill.religion"
+        },
+        {
+          "skill": "skill.society"
+        }
+      ],
+      "note": "ritual.shadow-double.secondary-checks.0.note"
+    },
+    {
+      "skill": "skill.crafting"
+    },
+    {
+      "skill": "skill.deception"
+    }
+  ],
+  "targets": "ritual.shadow-double.targets",
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced with the generic descriptor the dataset already uses. The rules text is the book's."
+}

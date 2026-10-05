@@ -1,0 +1,33 @@
+{
+  "id": "ritual.collective-memories",
+  "type": "ritual",
+  "name": "ritual.collective-memories.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 391,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.collective-memories.text",
+  "rank": 7,
+  "cast": "ritual.collective-memories.cast",
+  "cost": "ritual.collective-memories.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.occultism",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.performance"
+    },
+    {
+      "skill": "skill.society"
+    }
+  ]
+}

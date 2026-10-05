@@ -1,0 +1,301 @@
+{
+  "id": "creature.thulgant",
+  "type": "creature",
+  "name": "creature.thulgant.name",
+  "traits": [
+    "fiend",
+    "qlippoth",
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 283,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 18,
+  "size": "large",
+  "perception": {
+    "mod": 30,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian"
+  ],
+  "languageNote": "creature.thulgant.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 32
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 35
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 33
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 32
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 6,
+    "con": 6,
+    "int": 5,
+    "wis": 6,
+    "cha": 9
+  },
+  "ac": {
+    "value": 42
+  },
+  "saves": {
+    "fortitude": 30,
+    "reflex": 28,
+    "will": 32
+  },
+  "hp": {
+    "value": 305,
+    "note": "creature.thulgant.hp.note"
+  },
+  "immunities": [
+    "controlled",
+    "fear"
+  ],
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 15
+    },
+    {
+      "type": "physical",
+      "value": 15,
+      "except": [
+        "cold-iron"
+      ]
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "climb": 30,
+    "fly": 50,
+    "note": "creature.thulgant.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.thulgant.strikes.stinger.name",
+      "actions": "1",
+      "bonus": 35,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d12+17",
+          "type": "piercing"
+        },
+        {
+          "dice": "4d6",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        {
+          "own": "thulgant-venom"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.thulgant.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d8+17",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "3d6",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "demon-hunter",
+      "section": "offense",
+      "name": "creature.thulgant.abilities.demon-hunter.name",
+      "actions": "1",
+      "traits": [
+        "occult"
+      ],
+      "text": "creature.thulgant.abilities.demon-hunter.text"
+    },
+    {
+      "id": "greater-constrict",
+      "section": "offense",
+      "name": "creature.thulgant.abilities.greater-constrict.name",
+      "ability": "ability.greater-constrict",
+      "actions": "1",
+      "text": "creature.thulgant.abilities.greater-constrict.text"
+    },
+    {
+      "id": "mind-rending-sting",
+      "section": "offense",
+      "name": "creature.thulgant.abilities.mind-rending-sting.name",
+      "actions": "1",
+      "requirements": "creature.thulgant.abilities.mind-rending-sting.requirements",
+      "text": "creature.thulgant.abilities.mind-rending-sting.text"
+    },
+    {
+      "id": "stunning-display",
+      "section": "offense",
+      "name": "creature.thulgant.abilities.stunning-display.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "emotion",
+        "fear",
+        "incapacitation",
+        "mental",
+        "occult",
+        "visual"
+      ],
+      "text": "creature.thulgant.abilities.stunning-display.text"
+    },
+    {
+      "id": "thulgant-venom",
+      "section": "offense",
+      "name": "creature.thulgant.abilities.thulgant-venom.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "creature.thulgant.abilities.thulgant-venom.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 40,
+      "cantrips": {
+        "rank": 9,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.divine-decree"
+            },
+            {
+              "spell": "spell.phantom-pain",
+              "count": 3
+            },
+            {
+              "spell": "spell.quandary"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.petrify",
+              "count": 3
+            },
+            {
+              "spell": "spell.phantasmal-calamity"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 40,
+    "ranks": [
+      {
+        "rank": 8,
+        "rituals": [
+          {
+            "name": "creature.thulgant.rituals.ranks.0.rituals.0.name",
+            "heightened": 9
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Constant spell restored from the book: page 283 prints \"Constant (6th) truesight; (4th) unfettered movement\"; the source lists unfettered movement as an ordinary spell of that rank and the errata does not touch it. Ritual rank added from the book: page 283 prints \"Rituals DC 40; 9th imprisonment\", so the ritual is performed at 9th rank; the 8th-rank line it stands under is the source's (the ritual's own rank, which the page does not print)."
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ritual.primal-call",
+  "type": "ritual",
+  "name": "ritual.primal-call.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 394,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.primal-call.text",
+  "rank": 6,
+  "cast": "ritual.primal-call.cast",
+  "cost": "ritual.primal-call.cost",
+  "secondaryCasters": 4,
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.crafting"
+    },
+    {
+      "skill": "skill.diplomacy"
+    },
+    {
+      "skill": "skill.survival"
+    }
+  ],
+  "range": "ritual.primal-call.range",
+  "targets": "ritual.primal-call.targets",
+  "duration": "ritual.primal-call.duration",
+  "editNote": "Compared field by field and word by word with page 394: every header field matches and the one-sentence description is printed there in full (\"This functions as planar servitor except you craft a faerie circle and call an animal, beast, fey, fungus, or plant from within 100 miles\"). Nothing in the record is absent from the page; the low containment score is an artefact of scoring a single short sentence."
+}

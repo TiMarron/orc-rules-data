@@ -1,0 +1,60 @@
+{
+  "id": "ritual.resurrect",
+  "type": "ritual",
+  "name": "ritual.resurrect.name",
+  "traits": [
+    "healing"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 394,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.resurrect.text",
+  "rank": 5,
+  "cast": "ritual.resurrect.cast",
+  "cost": "ritual.resurrect.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.religion",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.medicine"
+    },
+    {
+      "skill": "skill.society"
+    }
+  ],
+  "range": "ritual.resurrect.range",
+  "targets": "ritual.resurrect.targets",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "ritual.resurrect.heightened.0"
+    },
+    {
+      "level": "7",
+      "text": "ritual.resurrect.heightened.1"
+    },
+    {
+      "level": "8",
+      "text": "ritual.resurrect.heightened.2"
+    },
+    {
+      "level": "9",
+      "text": "ritual.resurrect.heightened.3"
+    },
+    {
+      "level": "10",
+      "text": "ritual.resurrect.heightened.4"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a deity and the proper name of a plane are replaced with the generic descriptors the dataset already uses. The rules text is the book's."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "ritual.diabolic-pact",
+  "type": "ritual",
+  "name": "ritual.diabolic-pact.name",
+  "traits": [
+    "unholy"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 364,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.diabolic-pact.text",
+  "rank": 1,
+  "cast": "ritual.diabolic-pact.cast",
+  "primaryCheck": [
+    {
+      "skill": "skill.religion",
+      "rank": "expert",
+      "note": "ritual.diabolic-pact.primary-check.0.note"
+    }
+  ],
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "ritual.diabolic-pact.heightened.0"
+    }
+  ]
+}

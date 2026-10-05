@@ -1,0 +1,279 @@
+{
+  "id": "creature.gylou",
+  "type": "creature",
+  "name": "creature.gylou.name",
+  "traits": [
+    "devil",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 91,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 14,
+  "size": "medium",
+  "perception": {
+    "mod": 28,
+    "senses": [
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.gylou.senses.0"
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "diabolic",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.gylou.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 28
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 25
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 30
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 28
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 26
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 28
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 8,
+    "con": 4,
+    "int": 5,
+    "wis": 6,
+    "cha": 8
+  },
+  "ac": {
+    "value": 36
+  },
+  "saves": {
+    "fortitude": 22,
+    "reflex": 25,
+    "will": 28,
+    "note": "creature.gylou.saves.note"
+  },
+  "hp": {
+    "value": 240
+  },
+  "immunities": [
+    "fire"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10,
+      "except": [
+        "silver"
+      ]
+    },
+    {
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "climb": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gylou.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "finesse",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d12+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.grab"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gylou.strikes.claw.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "3d8+12",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reflexive-grab",
+      "section": "defense",
+      "name": "creature.gylou.abilities.reflexive-grab.name",
+      "actions": "reaction",
+      "trigger": "creature.gylou.abilities.reflexive-grab.trigger",
+      "text": "creature.gylou.abilities.reflexive-grab.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.gylou.abilities.change-shape.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "text": "creature.gylou.abilities.change-shape.text"
+    },
+    {
+      "id": "encage-in-tentacles",
+      "section": "offense",
+      "name": "creature.gylou.abilities.encage-in-tentacles.name",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "requirements": "creature.gylou.abilities.encage-in-tentacles.requirements",
+      "text": "creature.gylou.abilities.encage-in-tentacles.text"
+    },
+    {
+      "id": "indispensable-savvy",
+      "section": "offense",
+      "name": "creature.gylou.abilities.indispensable-savvy.name",
+      "actions": "reaction",
+      "frequency": "creature.gylou.abilities.indispensable-savvy.frequency",
+      "trigger": "creature.gylou.abilities.indispensable-savvy.trigger",
+      "text": "creature.gylou.abilities.indispensable-savvy.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 36,
+      "attack": 28,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.charm",
+              "count": 3
+            },
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            },
+            {
+              "spell": "spell.enthrall",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.illusory-object",
+              "atWill": true
+            },
+            {
+              "spell": "spell.slither"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.dominate"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 36,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.diabolic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

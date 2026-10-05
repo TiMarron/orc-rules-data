@@ -1,0 +1,51 @@
+{
+  "id": "ritual.atone",
+  "type": "ritual",
+  "name": "ritual.atone.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 390,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.atone.text",
+  "rank": 4,
+  "cast": "ritual.atone.cast",
+  "cost": "ritual.atone.cost",
+  "secondaryCasters": 1,
+  "secondaryCastersNote": "ritual.atone.secondary-casters.note",
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "expert"
+    },
+    {
+      "skill": "skill.religion",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.nature"
+        },
+        {
+          "skill": "skill.religion"
+        }
+      ],
+      "note": "ritual.atone.secondary-checks.0.note"
+    }
+  ],
+  "range": "ritual.atone.range",
+  "targets": "ritual.atone.targets",
+  "heightened": [
+    {
+      "level": "+1",
+      "text": "ritual.atone.heightened.0"
+    }
+  ]
+}

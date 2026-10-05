@@ -1,0 +1,58 @@
+{
+  "id": "ritual.fantastic-facade",
+  "type": "ritual",
+  "name": "ritual.fantastic-facade.name",
+  "traits": [
+    "illusion"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 267,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.fantastic-facade.text",
+  "rank": 9,
+  "cast": "ritual.fantastic-facade.cast",
+  "cost": "ritual.fantastic-facade.cost",
+  "secondaryCasters": 3,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "legendary"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "legendary"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.deception"
+    },
+    {
+      "oneOf": [
+        {
+          "skill": "skill.society"
+        },
+        {
+          "skill": "skill.survival"
+        }
+      ]
+    },
+    {
+      "skill": "skill.stealth"
+    }
+  ],
+  "area": "ritual.fantastic-facade.area",
+  "targets": "ritual.fantastic-facade.targets",
+  "duration": "ritual.fantastic-facade.duration",
+  "heightened": [
+    {
+      "level": "10",
+      "text": "ritual.fantastic-facade.heightened.0"
+    }
+  ]
+}

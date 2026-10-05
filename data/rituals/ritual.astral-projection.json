@@ -1,0 +1,49 @@
+{
+  "id": "ritual.astral-projection",
+  "type": "ritual",
+  "name": "ritual.astral-projection.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 266,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.astral-projection.text",
+  "rank": 5,
+  "cast": "ritual.astral-projection.cast",
+  "cost": "ritual.astral-projection.cost",
+  "secondaryCasters": 2,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.arcana"
+        },
+        {
+          "skill": "skill.occultism"
+        }
+      ],
+      "note": "ritual.astral-projection.secondary-checks.0.note"
+    },
+    {
+      "skill": "skill.survival"
+    }
+  ],
+  "range": "ritual.astral-projection.range",
+  "targets": "ritual.astral-projection.targets",
+  "duration": "ritual.astral-projection.duration",
+  "editNote": "Reserved Material removed: the proper name of a plane is replaced, in all seven places, with the generic descriptor the dataset already uses. The rules text is the book's."
+}

@@ -1,0 +1,326 @@
+{
+  "id": "creature.shemhazian",
+  "type": "creature",
+  "name": "creature.shemhazian.name",
+  "traits": [
+    "demon",
+    "fiend",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 81,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 16,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 30,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.shemhazian.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 31
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 25
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 27
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 28
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 30
+    }
+  ],
+  "attributes": {
+    "str": 9,
+    "dex": 5,
+    "con": 7,
+    "int": 0,
+    "wis": 6,
+    "cha": 3
+  },
+  "ac": {
+    "value": 39
+  },
+  "saves": {
+    "fortitude": 32,
+    "reflex": 26,
+    "will": 27,
+    "note": "creature.shemhazian.saves.note"
+  },
+  "hp": {
+    "value": 350
+  },
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "climb": 20,
+    "fly": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.shemhazian.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d12+17",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "enfeebling-bite"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.shemhazian.strikes.claw.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "agile",
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+17",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.shemhazian.strikes.pincer.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d8+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.shemhazian.strikes.pincer.effects.0"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.shemhazian.strikes.tail.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach",
+        "unholy"
+      ],
+      "traitValues": {
+        "reach": "30"
+      },
+      "damage": [
+        {
+          "dice": "3d8+17",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "paralyzing-gaze",
+      "section": "defense",
+      "name": "creature.shemhazian.abilities.paralyzing-gaze.name",
+      "traits": [
+        "aura",
+        "divine",
+        "unholy",
+        "visual"
+      ],
+      "aura": 30,
+      "text": "creature.shemhazian.abilities.paralyzing-gaze.text"
+    },
+    {
+      "id": "succor-vulnerability",
+      "section": "defense",
+      "name": "creature.shemhazian.abilities.succor-vulnerability.name",
+      "text": "creature.shemhazian.abilities.succor-vulnerability.text"
+    },
+    {
+      "id": "tail-whip",
+      "section": "defense",
+      "name": "creature.shemhazian.abilities.tail-whip.name",
+      "actions": "reaction",
+      "trigger": "creature.shemhazian.abilities.tail-whip.trigger",
+      "text": "creature.shemhazian.abilities.tail-whip.text"
+    },
+    {
+      "id": "enfeebling-bite",
+      "section": "offense",
+      "name": "creature.shemhazian.abilities.enfeebling-bite.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.shemhazian.abilities.enfeebling-bite.text"
+    },
+    {
+      "id": "focused-gaze",
+      "section": "offense",
+      "name": "creature.shemhazian.abilities.focused-gaze.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "incapacitation",
+        "visual"
+      ],
+      "text": "creature.shemhazian.abilities.focused-gaze.text"
+    },
+    {
+      "id": "rend",
+      "section": "offense",
+      "name": "creature.shemhazian.abilities.rend.name",
+      "ability": "ability.rend",
+      "actions": "1",
+      "text": "creature.shemhazian.abilities.rend.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 37,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.clairvoyance",
+              "count": 3
+            },
+            {
+              "spell": "spell.translocate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.scouting-eye",
+              "count": 3
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.divine-decree"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 37,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.demonic-pact"
+          }
+        ]
+      }
+    ]
+  }
+}

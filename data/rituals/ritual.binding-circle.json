@@ -1,0 +1,55 @@
+{
+  "id": "ritual.binding-circle",
+  "type": "ritual",
+  "name": "ritual.binding-circle.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 391,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.binding-circle.text",
+  "rank": 6,
+  "cast": "ritual.binding-circle.cast",
+  "cost": "ritual.binding-circle.cost",
+  "secondaryCasters": 3,
+  "primaryCheck": [
+    {
+      "skill": "skill.arcana",
+      "rank": "master"
+    },
+    {
+      "skill": "skill.occultism",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "oneOf": [
+        {
+          "skill": "skill.diplomacy"
+        },
+        {
+          "skill": "skill.intimidation"
+        }
+      ]
+    },
+    {
+      "oneOf": [
+        {
+          "skill": "skill.arcana"
+        },
+        {
+          "skill": "skill.occultism"
+        }
+      ],
+      "note": "ritual.binding-circle.secondary-checks.1.note"
+    }
+  ],
+  "range": "ritual.binding-circle.range",
+  "targets": "ritual.binding-circle.targets",
+  "duration": "ritual.binding-circle.duration"
+}

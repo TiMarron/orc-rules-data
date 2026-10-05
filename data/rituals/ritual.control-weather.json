@@ -1,0 +1,38 @@
+{
+  "id": "ritual.control-weather",
+  "type": "ritual",
+  "name": "ritual.control-weather.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 392,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "ritual.control-weather.text",
+  "rank": 8,
+  "cast": "ritual.control-weather.cast",
+  "secondaryCasters": 1,
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "master"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.survival"
+    }
+  ],
+  "area": "ritual.control-weather.area",
+  "duration": "ritual.control-weather.duration",
+  "heightened": [
+    {
+      "level": "9",
+      "text": "ritual.control-weather.heightened.0"
+    }
+  ],
+  "editNote": "Corrected to the book: page 392 prints the list as \"Spring drizzle, heat, hurricane, sleet, thunderstorm, tornado\" then \"Summer drizzle, downpour, extreme heat, hail, heat\"; the source has the two season labels the other way round and the errata does not touch the ritual. The sentence \"You can't specifically control the manifestations...\" is printed after the list, not before it."
+}

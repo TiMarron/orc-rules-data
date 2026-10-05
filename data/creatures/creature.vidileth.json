@@ -1,0 +1,377 @@
+{
+  "id": "creature.vidileth",
+  "type": "creature",
+  "name": "creature.vidileth.name",
+  "traits": [
+    "aberration",
+    "aquatic"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 12,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 14,
+  "size": "large",
+  "perception": {
+    "mod": 25,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "alghollthu",
+    "common",
+    "sakvroth",
+    "thalassic"
+  ],
+  "languageNote": "creature.vidileth.language-note",
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 27
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 28
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 26
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 29,
+      "note": "creature.vidileth.skills.4.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 29
+    },
+    {
+      "skill": "skill.society",
+      "mod": 27
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 6,
+    "con": 8,
+    "int": 7,
+    "wis": 5,
+    "cha": 6
+  },
+  "ac": {
+    "value": 34
+  },
+  "saves": {
+    "fortitude": 26,
+    "reflex": 22,
+    "will": 24,
+    "note": "creature.vidileth.saves.note"
+  },
+  "hp": {
+    "value": 270
+  },
+  "immunities": [
+    "controlled",
+    "electricity",
+    "mental"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 10,
+    "swim": 80
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vidileth.strikes.fangs.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "magical",
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "3d8+12",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "consume-memories"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vidileth.strikes.claw.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d10+12",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "shape-flesh"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vidileth.strikes.tentacle.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "electricity",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "20"
+      },
+      "damage": [
+        {
+          "dice": "7d6",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        {
+          "own": "thoughtlance"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "numbing-lights",
+      "section": "top",
+      "name": "creature.vidileth.abilities.numbing-lights.name",
+      "traits": [
+        "aura",
+        "light",
+        "visual"
+      ],
+      "aura": 30,
+      "text": "creature.vidileth.abilities.numbing-lights.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.vidileth.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "free",
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "frequency": "creature.vidileth.abilities.change-shape.frequency",
+      "text": "creature.vidileth.abilities.change-shape.text"
+    },
+    {
+      "id": "consume-memories",
+      "section": "offense",
+      "name": "creature.vidileth.abilities.consume-memories.name",
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "text": "creature.vidileth.abilities.consume-memories.text"
+    },
+    {
+      "id": "delayed-suggestion",
+      "section": "offense",
+      "name": "creature.vidileth.abilities.delayed-suggestion.name",
+      "traits": [
+        "occult"
+      ],
+      "text": "creature.vidileth.abilities.delayed-suggestion.text"
+    },
+    {
+      "id": "shape-flesh",
+      "section": "offense",
+      "name": "creature.vidileth.abilities.shape-flesh.name",
+      "actions": "1",
+      "traits": [
+        "curse",
+        "occult",
+        "manipulate"
+      ],
+      "requirements": "creature.vidileth.abilities.shape-flesh.requirements",
+      "text": "creature.vidileth.abilities.shape-flesh.text"
+    },
+    {
+      "id": "tentacle-flurry",
+      "section": "offense",
+      "name": "creature.vidileth.abilities.tentacle-flurry.name",
+      "actions": "2",
+      "text": "creature.vidileth.abilities.tentacle-flurry.text"
+    },
+    {
+      "id": "thoughtlance",
+      "section": "offense",
+      "name": "creature.vidileth.abilities.thoughtlance.name",
+      "traits": [
+        "curse",
+        "occult"
+      ],
+      "text": "creature.vidileth.abilities.thoughtlance.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 37,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.hypnotize",
+              "atWill": true
+            },
+            {
+              "spell": "spell.levitate",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mind-reading",
+              "atWill": true
+            },
+            {
+              "spell": "spell.water-breathing",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.illusory-object",
+              "atWill": true
+            },
+            {
+              "spell": "spell.mirage",
+              "atWill": true
+            },
+            {
+              "spell": "spell.sending",
+              "atWill": true
+            },
+            {
+              "spell": "spell.translocate",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.dominate",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.illusory-scene",
+              "atWill": true
+            },
+            {
+              "spell": "spell.suggestion",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.project-image",
+              "atWill": true
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 37,
+    "ranks": [
+      {
+        "rank": 3,
+        "rituals": [
+          {
+            "ritual": "ritual.geas",
+            "heightened": 5
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Skill qualifier added from the book: page 13 prints \"Lore (any one subcategory) +29\"; the source omits the parenthesis and the errata does not touch it."
+}

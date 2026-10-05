@@ -1,0 +1,248 @@
+{
+  "id": "creature.choral",
+  "type": "creature",
+  "name": "creature.choral.name",
+  "traits": [
+    "angel",
+    "celestial",
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 15,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "small",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "diabolic",
+    "draconic",
+    "empyrean"
+  ],
+  "languageNote": "creature.choral.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 15
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 17
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 2,
+    "int": 3,
+    "wis": 4,
+    "cha": 5
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 14,
+    "will": 16,
+    "note": "creature.choral.saves.note"
+  },
+  "hp": {
+    "value": 100
+  },
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 5
+    }
+  ],
+  "resistances": [
+    {
+      "type": "sonic",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "fly": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.choral.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "holy",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.choral.strikes.piercing-hymn.name",
+      "actions": "1",
+      "bonus": 17,
+      "range": 90,
+      "traits": [
+        "holy",
+        "magical",
+        "sonic"
+      ],
+      "damage": [
+        {
+          "dice": "4d6",
+          "type": "sonic"
+        }
+      ],
+      "effects": [
+        {
+          "own": "deafening-aria"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "harmonizing-aura",
+      "section": "defense",
+      "name": "creature.choral.abilities.harmonizing-aura.name",
+      "traits": [
+        "aura",
+        "divine",
+        "sonic"
+      ],
+      "aura": 20,
+      "text": "creature.choral.abilities.harmonizing-aura.text"
+    },
+    {
+      "id": "deafening-aria",
+      "section": "offense",
+      "name": "creature.choral.abilities.deafening-aria.name",
+      "text": "creature.choral.abilities.deafening-aria.text"
+    },
+    {
+      "id": "harmonize",
+      "section": "offense",
+      "name": "creature.choral.abilities.harmonize.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "sonic"
+      ],
+      "text": "creature.choral.abilities.harmonize.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 23,
+      "attack": 15,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          },
+          {
+            "spell": "spell.uplifting-overture"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.counter-performance",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.choral.spellcasting.0.ranks.2.0.note"
+            },
+            {
+              "spell": "spell.noise-blast",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.clear-mind",
+              "atWill": true
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.noise-blast"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 23,
+    "ranks": [
+      {
+        "rank": 1,
+        "rituals": [
+          {
+            "ritual": "ritual.angelic-messenger"
+          }
+        ]
+      }
+    ]
+  }
+}

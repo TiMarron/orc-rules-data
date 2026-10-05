@@ -1,0 +1,34 @@
+{
+  "id": "ritual.blight",
+  "type": "ritual",
+  "name": "ritual.blight.name",
+  "traits": [
+    "plant",
+    "void"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core",
+    "page": 391,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ritual.blight.text",
+  "rank": 4,
+  "cast": "ritual.blight.cast",
+  "secondaryCasters": 1,
+  "primaryCheck": [
+    {
+      "skill": "skill.nature",
+      "rank": "expert"
+    }
+  ],
+  "secondaryChecks": [
+    {
+      "skill": "skill.survival"
+    }
+  ],
+  "area": "ritual.blight.area",
+  "duration": "ritual.blight.duration"
+}
