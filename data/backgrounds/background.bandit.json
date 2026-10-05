@@ -10,7 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "background.bandit.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.intimidation"
   ],
-  "feat": "feat.group-coercion"
+  "feat": "feat.group-coercion",
+  "editNote": "Page 84 ends the first paragraph with \"you eventually got caught up in the adventuring life.\"; the sentence the source adds after it is not on the page and is left out. \"Choose two attribute boosts\" follows the errata for page 84, which replaces the page's \"ability boosts\". The source words this differently, no errata covers it, and the page's wording is used."
 }

@@ -10,7 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "background.farmhand.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.athletics"
   ],
-  "feat": "feat.assurance"
+  "feat": "feat.assurance",
+  "editNote": "Page 86 prints \"but at some point, you became an adventurer\". The source words this differently, no errata covers it, and the page's wording is used."
 }

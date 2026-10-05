@@ -10,7 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "background.artisan.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.crafting"
   ],
-  "feat": "feat.specialty-crafting"
+  "feat": "feat.specialty-crafting",
+  "editNote": "Page 84 prints \"developing a specialized skill\". The source words this differently, no errata covers it, and the page's wording is used."
 }

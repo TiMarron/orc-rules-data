@@ -10,7 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "background.tinker.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.crafting"
   ],
-  "feat": "feat.specialty-crafting"
+  "feat": "feat.specialty-crafting",
+  "editNote": "Page 88 prints \"no one knows what you'll come up with next. It might be a genius device with tremendous potential or it might explode.\" The source words this differently, no errata covers it, and the page's wording is used."
 }
