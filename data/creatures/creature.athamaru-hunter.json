@@ -13,7 +13,7 @@
     "page": 30,
     "revision": "2024-first"
   },
-  "review": "assistant",
+  "review": "human",
   "edited": true,
   "level": 3,
   "size": "medium",
@@ -111,7 +111,7 @@
       "item": "item.longspear"
     },
     {
-      "kind": "melee",
+      "kind": "ranged",
       "name": "creature.athamaru-hunter.strikes.crossbow.name",
       "actions": "1",
       "bonus": 10,
@@ -168,5 +168,5 @@
       "text": "creature.athamaru-hunter.abilities.smooth-swimmer.text"
     }
   ],
-  "editNote": "Page 30 itself labels the Strike \"Melee … crossbow +10 (range increment 120 feet, reload 1)\" although it has a range; the errata is silent, so the record stays as the book prints. The effect \"plus fan bolt\" is the creature's own ability, as printed. The whole record was read against the page."
+  "editNote": "The crossbow Strike set to Ranged: page 30 and AoN both label it \"Melee … crossbow +10 (range increment 120 feet, reload 1)\", an obvious misprint for a crossbow with a range increment and reload; the errata is silent. The effect \"plus fan bolt\" is the creature's own ability, as printed. The whole record was read against the page."
 }
