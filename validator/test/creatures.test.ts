@@ -144,4 +144,24 @@ describe('creatures check', () => {
       ]);
     });
   });
+  describe('rituals', () => {
+    const line = (rank: number, ...rituals: Record<string, unknown>[]) => ({ rank, rituals });
+    const rituals = (...ranks: unknown[]) => ({ rituals: { dc: 30, ranks } });
+
+    it('accepts a ritual performed heightened above the rank of its line, and one not heightened at all', () => {
+      expect(messages(rituals(line(3, { ritual: 'ritual.geas', heightened: 5 }, { ritual: 'ritual.atone' }), line(8, { name: 'creature.viper.rituals.ranks.1.rituals.0.name' })))).toEqual([]);
+    });
+
+    it('rejects a heightened rank equal to the rank of its line, or below it', () => {
+      expect(messages(rituals(line(3, { ritual: 'ritual.geas', heightened: 3 }), line(5, { ritual: 'ritual.atone' }, { ritual: 'ritual.resurrect', heightened: 4 })))).toEqual([
+        "rituals.ranks[0].rituals[0].heightened: 3 is not above the line's rank 3",
+        "rituals.ranks[1].rituals[1].heightened: 4 is not above the line's rank 5",
+      ]);
+    });
+
+    it('says nothing about a creature without rituals', () => {
+      expect(messages({})).toEqual([]);
+    });
+  });
+
 });
