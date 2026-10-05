@@ -10,7 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "background.acolyte.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.religion"
   ],
-  "feat": "feat.student-of-the-canon"
+  "feat": "feat.student-of-the-canon",
+  "editNote": "Page 84 prints \"but deep down, you'll always carry within you\". The source words this differently, no errata covers it, and the page's wording is used."
 }

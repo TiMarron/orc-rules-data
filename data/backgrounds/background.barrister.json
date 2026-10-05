@@ -10,7 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "background.barrister.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.diplomacy"
   ],
-  "feat": "feat.group-impression"
+  "feat": "feat.group-impression",
+  "editNote": "Page 85 prints \"as you never know when you might need to know them\". The source words this differently, no errata covers it, and the page's wording is used."
 }

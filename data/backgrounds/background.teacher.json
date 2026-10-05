@@ -24,5 +24,5 @@
     "skill.performance"
   ],
   "feat": "feat.experienced-professional",
-  "editNote": "Accepted: the book (p.88) offers a choice of the Performance or Society skill, with the Experienced Professional feat granted regardless of which is chosen; the schema's skills array holds exactly one skill, so it can't express the choice, and the converter's pick of Performance is a reasonable single representative -- the record's own text spells out the full choice and the fixed Academia Lore skill."
+  "editNote": "Page 88 prints \"your choice of either the Performance or Society skill\". The source words this differently, no errata covers it, and the page's wording is used."
 }
