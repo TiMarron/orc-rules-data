@@ -1,0 +1,196 @@
+{
+  "id": "creature.mountain-oni",
+  "type": "creature",
+  "name": "creature.mountain-oni.name",
+  "traits": [
+    "giant",
+    "humanoid",
+    "oni"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 252,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 18
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": 0,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.tetsubo",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "note": "creature.mountain-oni.items.0.note"
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 15,
+    "will": 14
+  },
+  "hp": {
+    "value": 165
+  },
+  "weaknesses": [
+    {
+      "own": "bean-panic"
+    },
+    {
+      "type": "spirit",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mountain-oni.strikes.tetsubo.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "razing",
+        "reach",
+        "shove",
+        "sweep"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d10+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.tetsubo"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mountain-oni.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "bleed",
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bean-panic",
+      "section": "defense",
+      "name": "creature.mountain-oni.abilities.bean-panic.name",
+      "text": "creature.mountain-oni.abilities.bean-panic.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.mountain-oni.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.mountain-oni.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.mountain-oni.abilities.change-shape.text"
+    },
+    {
+      "id": "thundering-iron",
+      "section": "offense",
+      "name": "creature.mountain-oni.abilities.thundering-iron.name",
+      "actions": "2",
+      "text": "creature.mountain-oni.abilities.thundering-iron.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 25,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "atWill": true,
+              "note": "creature.mountain-oni.spellcasting.0.ranks.2.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Item note added from the book: page 252 prints \"+1 striking tetsubo (see sidebar)\"; the source omits the parenthesis and the errata does not touch it."
+}

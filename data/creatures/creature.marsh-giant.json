@@ -1,0 +1,197 @@
+{
+  "id": "creature.marsh-giant",
+  "type": "creature",
+  "name": "creature.marsh-giant.name",
+  "traits": [
+    "amphibious",
+    "giant",
+    "humanoid",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 164,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "large",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "jotun",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 15
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": 0,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.gaff",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 13,
+    "will": 17
+  },
+  "hp": {
+    "value": 150
+  },
+  "speeds": {
+    "land": 35,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.marsh-giant.strikes.gaff.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach",
+        "trip",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "10",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d6+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.gaff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.marsh-giant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+14",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.marsh-giant.strikes.spit.name",
+      "actions": "1",
+      "bonus": 20,
+      "range": 60,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "damage": [
+        {
+          "dice": "5d6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "drowning-hook",
+      "section": "offense",
+      "name": "creature.marsh-giant.abilities.drowning-hook.name",
+      "actions": "1",
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "requirements": "creature.marsh-giant.abilities.drowning-hook.requirements",
+      "text": "creature.marsh-giant.abilities.drowning-hook.text"
+    },
+    {
+      "id": "twist-the-hook",
+      "section": "offense",
+      "name": "creature.marsh-giant.abilities.twist-the-hook.name",
+      "actions": "2",
+      "text": "creature.marsh-giant.abilities.twist-the-hook.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 23,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.augury"
+            },
+            {
+              "spell": "spell.mist"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.mariners-curse"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
