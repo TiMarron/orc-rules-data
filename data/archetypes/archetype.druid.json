@@ -10,7 +10,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "archetype.druid.text",
   "class": "class.druid",
   "feats": [
@@ -46,5 +46,6 @@
       "level": 18,
       "feat": "feat.master-druid-spellcasting"
     }
-  ]
+  ],
+  "editNote": "Accepted: the text is the book's, word for word (the book, page 218); the comparison fell just short on a two-sentence text because the two spell links keep the source's italic labels, as link labels do throughout the dataset."
 }

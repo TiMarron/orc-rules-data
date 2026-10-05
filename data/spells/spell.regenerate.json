@@ -14,8 +14,8 @@
     "page": 352,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.regenerate.text",
   "rank": 7,
   "traditions": [
@@ -33,5 +33,6 @@
       "level": "9",
       "text": "spell.regenerate.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

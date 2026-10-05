@@ -16,8 +16,8 @@
     "page": 385,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.life-boost.text",
   "rank": 1,
   "focus": true,
@@ -32,5 +32,6 @@
       "level": "+1",
       "text": "spell.life-boost.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

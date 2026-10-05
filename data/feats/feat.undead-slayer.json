@@ -11,11 +11,12 @@
     "page": 43,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.undead-slayer.text",
   "level": 5,
   "category": "ancestry",
   "versatile": true,
-  "prerequisites": []
+  "prerequisites": [],
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

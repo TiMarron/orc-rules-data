@@ -15,8 +15,8 @@
     "page": 259,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.revel-in-retribution.text",
   "rank": 6,
   "focus": true,
@@ -32,5 +32,6 @@
       "level": "+1",
       "text": "spell.revel-in-retribution.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

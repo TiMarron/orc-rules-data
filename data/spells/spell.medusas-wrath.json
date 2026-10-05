@@ -14,12 +14,13 @@
     "page": 257,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.medusas-wrath.text",
   "rank": 8,
   "focus": true,
   "cast": {
     "actions": "2"
-  }
+  },
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

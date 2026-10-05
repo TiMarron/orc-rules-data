@@ -9,8 +9,9 @@
     "page": 419,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "action.avert-gaze.text",
-  "actions": "1"
+  "actions": "1",
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

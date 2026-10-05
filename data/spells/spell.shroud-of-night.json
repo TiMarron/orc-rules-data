@@ -15,8 +15,8 @@
     "page": 387,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.shroud-of-night.text",
   "rank": 1,
   "traditionsVary": true,
@@ -28,5 +28,6 @@
   "duration": "spell.shroud-of-night.duration",
   "defense": {
     "save": "will"
-  }
+  },
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

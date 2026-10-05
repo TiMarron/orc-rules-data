@@ -15,8 +15,8 @@
     "page": 373,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.darkened-sight.text",
   "rank": 4,
   "focus": true,
@@ -28,5 +28,6 @@
   },
   "range": "spell.darkened-sight.range",
   "targets": "spell.darkened-sight.targets",
-  "duration": "spell.darkened-sight.duration"
+  "duration": "spell.darkened-sight.duration",
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

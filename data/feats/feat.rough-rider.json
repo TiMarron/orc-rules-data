@@ -11,11 +11,12 @@
     "page": 56,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.rough-rider.text",
   "level": 1,
   "category": "ancestry",
   "ancestry": "ancestry.goblin",
-  "prerequisites": []
+  "prerequisites": [],
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }
