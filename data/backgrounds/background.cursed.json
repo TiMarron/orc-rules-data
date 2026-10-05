@@ -1,0 +1,33 @@
+{
+  "id": "background.cursed",
+  "type": "background",
+  "name": "background.cursed.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 52,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.cursed.text",
+  "boosts": [
+    [
+      "int",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.cursed.lore",
+  "skills": [
+    "skill.occultism"
+  ],
+  "grants": [
+    {
+      "name": "background.cursed.grants.0.name",
+      "text": "background.cursed.grants.0.text"
+    }
+  ],
+  "editNote": "Page 52 prints no feat. The Warding Sign reaction it gives is recorded as a grant, with the reaction as printed."
+}

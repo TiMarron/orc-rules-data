@@ -1,0 +1,32 @@
+{
+  "id": "background.blessed",
+  "type": "background",
+  "name": "background.blessed.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 52,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.blessed.text",
+  "boosts": [
+    [
+      "wis",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.blessed.lore",
+  "skills": [],
+  "grants": [
+    {
+      "name": "background.blessed.grants.0.name",
+      "text": "background.blessed.grants.0.text",
+      "spell": "spell.guidance"
+    }
+  ],
+  "editNote": "Reserved Material removed: the example of a Lore skill named after a deity carried the deity's name and is dropped. Page 52 prints no fixed skill and no feat; the Lore string now carries the GM's-choice alternative the page prints, and the guidance innate spell (or a similar blessing) is recorded as a grant."
+}

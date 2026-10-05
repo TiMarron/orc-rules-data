@@ -1,0 +1,31 @@
+{
+  "id": "background.feybound",
+  "type": "background",
+  "name": "background.feybound.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 52,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.feybound.text",
+  "boosts": [
+    [
+      "dex",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.feybound.lore",
+  "skills": [],
+  "grants": [
+    {
+      "name": "background.feybound.grants.0.name",
+      "text": "background.feybound.grants.0.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper names of a realm and of a market in it are replaced with generic descriptors. Page 52 prints no trained skill and no feat; the Fey's Fortune free action it gives is recorded as a grant, with the action as printed."
+}

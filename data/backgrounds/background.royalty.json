@@ -1,0 +1,27 @@
+{
+  "id": "background.royalty",
+  "type": "background",
+  "name": "background.royalty.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 53,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.royalty.text",
+  "boosts": [
+    [
+      "int",
+      "cha"
+    ],
+    "free"
+  ],
+  "skills": [
+    "skill.society"
+  ],
+  "feat": "feat.courtly-graces",
+  "editNote": "Page 53 prints \"If you later gain the Leverage Connections skill feat (page 232), you automatically have\"; the source dropped the comma along with the page reference, and it is restored."
+}

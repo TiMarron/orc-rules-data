@@ -1,0 +1,32 @@
+{
+  "id": "background.returned",
+  "type": "background",
+  "name": "background.returned.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "player-core-2",
+    "page": 53,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.returned.text",
+  "boosts": [
+    [
+      "con",
+      "wis"
+    ],
+    "free"
+  ],
+  "skills": [],
+  "feat": "feat.diehard",
+  "grants": [
+    {
+      "name": "background.returned.grants.0.name",
+      "text": "background.returned.grants.0.text",
+      "feat": "feat.additional-lore"
+    }
+  ],
+  "editNote": "Reserved Material removed: the proper name of a plane in a Lore skill's name is replaced with a generic descriptor. Page 53 prints two feats and nothing else: Diehard is the background's feat, and Additional Lore, which names its Lore, is a grant; there is no trained skill and no Lore of the background's own."
+}

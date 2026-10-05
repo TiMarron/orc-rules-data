@@ -1,0 +1,28 @@
+{
+  "id": "background.pilgrim",
+  "type": "background",
+  "name": "background.pilgrim.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "background.pilgrim.text",
+  "boosts": [
+    [
+      "wis",
+      "cha"
+    ],
+    "free"
+  ],
+  "lore": "background.pilgrim.lore",
+  "skills": [
+    "skill.religion"
+  ],
+  "feat": "feat.pilgrims-token",
+  "editNote": "Page 50 prints \"You're trained in the Religion skill and the Lore skill for your patron deity\"; the source put a comma after \"skill\" that the page does not print, and it is removed."
+}
