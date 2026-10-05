@@ -6,7 +6,7 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ## Unreleased
 
-### Changed
+### Changed — breaking
 
 - A background is stored as the rare ones are printed, and a weapon's damage
   type may be a choice. `background.lore` and `background.feat` are no longer
@@ -14,12 +14,13 @@ major for renamed or removed ids, new required fields and markup changes.
   exactly two, and `background.skills` up to two instead of at most one;
   `weapon.damage` may carry `types` (two or more damage types, one of which the
   wielder chooses) instead of `type`. The validator no longer requires a
-  background to grant a skill. Published records are unchanged, but a consumer
-  that assumed the old shape — that every background has a `lore` and a `feat`,
-  exactly two boosts and at most one skill, or that every weapon has
-  `damage.type` — must handle the new one. Fields that were required are now
-  optional and a field that was always present may be replaced by another, so
-  by the README's Versioning section this is a major-level change.
+  background to grant a skill. The rare backgrounds of Player Core 2 and the
+  tricky pick below use the new shape, so a consumer that assumed the old one —
+  that every background has a `lore` and a `feat`, exactly two boosts and at
+  most one skill, or that every weapon has `damage.type` — must handle it. Fields
+  that were required are now optional and a field that was always present may be
+  replaced by another, so by the README's Versioning section this is a
+  major-level change. No id changes, so there is no migration map.
 
 ### Added
 
@@ -27,6 +28,24 @@ major for renamed or removed ids, new required fields and markup changes.
   and its one feat, in the shape of `ancestry.grants` — a `name` and a `text`,
   and optionally a `feat`, a `spell` or an `item` the entry points at. Optional
   addition to the background schema.
+- The eight rare backgrounds of Player Core 2 (Amnesiac, Blessed, Cursed, Feral
+  Child, Feybound, Haunted, Returned, Royalty) as the book prints them: one to
+  three boosts, no Lore or feat where the book gives none, and what each grants
+  besides in `grants`. Also Pilgrim, Driver (with the Fall 2024 errata's text)
+  and the tricky pick, whose damage is a choice of three types.
+
+### Changed
+
+- Texts of the earlier books that name a rune, a universal monster ability, a
+  creature or a ritual now link the record; a graded item links its own grade,
+  and a plain item name links the ungraded item rather than one of its grades.
+  "Healer's tools" in two feats links the plain healer's toolkit.
+- Background texts follow the page: no comma before the Lore grant ("the
+  Religion skill and the Scribing Lore skill") unless the page prints one, no
+  line break inside a sentence, and the wording of the page where the source's
+  differed and no errata covers it (twenty backgrounds, among them Guard, Noble,
+  Scholar, Prisoner and Hermit). Bandit keeps "attribute boosts", as the errata
+  for page 84 says.
 
 ## 0.6.0 — 2026-10-05
 
