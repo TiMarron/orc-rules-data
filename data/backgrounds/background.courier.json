@@ -9,8 +9,8 @@
     "page": 50,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "background.courier.text",
   "boosts": [
     [
@@ -23,5 +23,6 @@
   "skills": [
     "skill.society"
   ],
-  "feat": "feat.glean-contents"
+  "feat": "feat.glean-contents",
+  "editNote": "Page 50 prints \"You're trained in the Society skill and the Lore skill for your city of origin\"; the source has \"a Lore skill\", and the page's wording is used."
 }

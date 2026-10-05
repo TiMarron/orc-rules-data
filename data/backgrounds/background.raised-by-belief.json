@@ -25,5 +25,5 @@
     }
   ],
   "feat": "feat.assurance",
-  "editNote": "Reserved Material removed: the example Lore subcategory that named a deity replaced with a generic description; accepted: the book (p.88) makes this background's attribute boost, trained skill, and Lore subcategory ALL depend on which deity the character reveres (their Divine Attribute and Divine Skill) -- there is no fixed value to fill in until that choice is made at character creation, which is exactly why boosts is free/free and skills is empty rather than a specific pick. The record's own text and lore field spell out the deity-dependent rule in full; the schema has no notion of a deity-conditional boost or skill, so this is the correct, complete representation of what the book actually specifies."
+  "editNote": "Reserved Material removed: the example Lore that named a deity is left out. Page 88 prints \"steeped in the traditions of a particular deity\", \"Choose two attribute boosts\", and \"You're trained in the deity's listed Divine Skill and gain the Assurance feat with that skill. You are also trained in a Lore skill related to your deity\"; the source words these differently, and the page's wording is used. Accepted: the boost, the trained skill and the Lore all depend on the deity, so boosts are free/free and the skill is a described choice."
 }
