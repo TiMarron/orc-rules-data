@@ -1,0 +1,35 @@
+{
+  "id": "item.shears",
+  "type": "item",
+  "name": "item.shears.name",
+  "traits": [
+    "deadly",
+    "finesse",
+    "versatile"
+  ],
+  "traitValues": {
+    "deadly": "d8",
+    "versatile": "piercing"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 241,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "level": 0,
+  "priceCp": 50,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "knife",
+    "damage": {
+      "dice": "1d4",
+      "type": "slashing"
+    }
+  }
+}

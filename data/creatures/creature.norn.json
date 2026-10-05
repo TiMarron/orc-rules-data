@@ -1,0 +1,335 @@
+{
+  "id": "creature.norn",
+  "type": "creature",
+  "name": "creature.norn.name",
+  "traits": [
+    "fey"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "monster-core",
+    "page": 240,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 20,
+  "size": "large",
+  "perception": {
+    "mod": 41,
+    "senses": [
+      {
+        "spell": "spell.detect-magic"
+      },
+      {
+        "ability": "ability.darkvision",
+        "text": "creature.norn.senses.1"
+      },
+      {
+        "ability": "ability.lifesense",
+        "range": 120
+      },
+      {
+        "spell": "spell.truesight"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey",
+    "jotun"
+  ],
+  "languageNote": "creature.norn.language-note",
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 36
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 35
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 37
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 28,
+      "note": "creature.norn.skills.3.note"
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 38
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 34
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 31
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 34
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 6,
+    "con": 6,
+    "int": 6,
+    "wis": 10,
+    "cha": 7
+  },
+  "items": [
+    {
+      "item": "item.shears",
+      "note": "creature.norn.items.0.note"
+    }
+  ],
+  "ac": {
+    "value": 46
+  },
+  "saves": {
+    "fortitude": 34,
+    "reflex": 30,
+    "will": 38,
+    "note": "creature.norn.saves.note"
+  },
+  "hp": {
+    "value": 375,
+    "note": "creature.norn.hp.note"
+  },
+  "immunities": [
+    "off-guard",
+    "void"
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 35,
+    "fly": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.norn.strikes.shears.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "deadly",
+        "magical",
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "2d8",
+        "reach": "10",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "4d4+15",
+          "type": "slashing"
+        },
+        {
+          "dice": "6d6",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        {
+          "own": "sever-fate"
+        }
+      ],
+      "item": "item.shears"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.norn.strikes.hand-of-fate.name",
+      "actions": "1",
+      "bonus": 38,
+      "traits": [
+        "agile",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "4d10+15",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        {
+          "own": "sever-fate"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sense-fate",
+      "section": "top",
+      "name": "creature.norn.abilities.sense-fate.name",
+      "traits": [
+        "fortune"
+      ],
+      "text": "creature.norn.abilities.sense-fate.text"
+    },
+    {
+      "id": "triumvirate",
+      "section": "top",
+      "name": "creature.norn.abilities.triumvirate.name",
+      "text": "creature.norn.abilities.triumvirate.text"
+    },
+    {
+      "id": "fated",
+      "section": "offense",
+      "name": "creature.norn.abilities.fated.name",
+      "text": "creature.norn.abilities.fated.text"
+    },
+    {
+      "id": "sever-fate",
+      "section": "offense",
+      "name": "creature.norn.abilities.sever-fate.name",
+      "traits": [
+        "occult"
+      ],
+      "text": "creature.norn.abilities.sever-fate.text"
+    },
+    {
+      "id": "shift-fate",
+      "section": "offense",
+      "name": "creature.norn.abilities.shift-fate.name",
+      "actions": "reaction",
+      "traits": [
+        "occult"
+      ],
+      "trigger": "creature.norn.abilities.shift-fate.trigger",
+      "text": "creature.norn.abilities.shift-fate.text"
+    },
+    {
+      "id": "snip-thread",
+      "section": "offense",
+      "name": "creature.norn.abilities.snip-thread.name",
+      "actions": "2",
+      "traits": [
+        "death",
+        "manipulate",
+        "occult"
+      ],
+      "frequency": "creature.norn.abilities.snip-thread.frequency",
+      "text": "creature.norn.abilities.snip-thread.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 42,
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic",
+              "atWill": true
+            },
+            {
+              "spell": "spell.read-omens",
+              "atWill": true
+            },
+            {
+              "spell": "spell.spellwrack",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.migration"
+            },
+            {
+              "spell": "spell.quandary"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.execute"
+            },
+            {
+              "spell": "spell.phantasmagoria"
+            },
+            {
+              "spell": "spell.retrocognition"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.freeze-time"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.detect-magic"
+            },
+            {
+              "spell": "spell.hidden-mind"
+            },
+            {
+              "spell": "spell.truesight"
+            },
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 42,
+    "ranks": [
+      {
+        "rank": 3,
+        "rituals": [
+          {
+            "ritual": "ritual.geas"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rituals": [
+          {
+            "ritual": "ritual.collective-memories"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Skill qualifier added from the book: page 241 prints \"Lore (all) +28\"; the source omits the parenthesis and the errata does not touch it. Reserved Material removed: the proper names of three divine beings given as examples in Fated are replaced with generic descriptors; the rule is the book's."
+}
