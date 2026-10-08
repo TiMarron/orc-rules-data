@@ -1,0 +1,137 @@
+{
+  "id": "material.adamantine",
+  "type": "material",
+  "class": "precious",
+  "name": "material.adamantine.name",
+  "text": "material.adamantine.text",
+  "traits": [
+    "precious"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "grades": [
+    {
+      "grade": "standard",
+      "level": 8,
+      "pricePerBulkCp": 35000
+    },
+    {
+      "grade": "high",
+      "level": 16,
+      "pricePerBulkCp": 600000
+    }
+  ],
+  "raw": [
+    {
+      "name": "material.adamantine.raw.0.name",
+      "priceCp": 50000,
+      "bulk": "L"
+    },
+    {
+      "name": "material.adamantine.raw.1.name",
+      "priceCp": 500000,
+      "bulk": "1"
+    }
+  ],
+  "hardness": {
+    "thin": {
+      "standard": {
+        "hardness": 10,
+        "hp": 40,
+        "bt": 20
+      },
+      "high": {
+        "hardness": 13,
+        "hp": 52,
+        "bt": 26
+      }
+    },
+    "item": {
+      "standard": {
+        "hardness": 14,
+        "hp": 56,
+        "bt": 28
+      },
+      "high": {
+        "hardness": 17,
+        "hp": 68,
+        "bt": 34
+      }
+    },
+    "structure": {
+      "standard": {
+        "hardness": 28,
+        "hp": 112,
+        "bt": 56
+      },
+      "high": {
+        "hardness": 34,
+        "hp": 136,
+        "bt": 68
+      }
+    }
+  },
+  "gear": {
+    "armor": {
+      "text": "material.adamantine.gear.armor.text",
+      "standard": {
+        "level": 12,
+        "priceCp": 160000,
+        "pricePerBulkCp": 16000
+      },
+      "high": {
+        "level": 19,
+        "priceCp": 3200000,
+        "pricePerBulkCp": 320000
+      }
+    },
+    "buckler": {
+      "standard": {
+        "level": 8,
+        "priceCp": 40000,
+        "craft": "material.adamantine.gear.buckler.standard.craft"
+      },
+      "high": {
+        "level": 16,
+        "priceCp": 800000,
+        "craft": "material.adamantine.gear.buckler.high.craft"
+      }
+    },
+    "shield": {
+      "standard": {
+        "level": 8,
+        "priceCp": 44000,
+        "craft": "material.adamantine.gear.shield.standard.craft"
+      },
+      "high": {
+        "level": 16,
+        "priceCp": 880000,
+        "craft": "material.adamantine.gear.shield.high.craft"
+      },
+      "text": "material.adamantine.gear.shield.text"
+    },
+    "weapon": {
+      "text": "material.adamantine.gear.weapon.text",
+      "standard": {
+        "level": 11,
+        "priceCp": 140000,
+        "pricePerBulkCp": 14000,
+        "craft": "material.adamantine.gear.weapon.standard.craft"
+      },
+      "high": {
+        "level": 17,
+        "priceCp": 1350000,
+        "pricePerBulkCp": 135000,
+        "craft": "material.adamantine.gear.weapon.high.craft"
+      }
+    }
+  },
+  "editNote": "Reserved Material removed: the book's wording for sky-fallen ore reworded to plain English ('rocks that fell from the sky'); the reserved scan matched a plane name inside the book's original ordinary noun, meaning unchanged"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "material.wood",
+  "type": "material",
+  "class": "base",
+  "name": "material.wood.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "hardness": {
+    "thin": {
+      "hardness": 3,
+      "hp": 12,
+      "bt": 6
+    },
+    "item": {
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    },
+    "structure": {
+      "hardness": 10,
+      "hp": 40,
+      "bt": 20
+    }
+  },
+  "exampleItems": "material.wood.examples"
+}

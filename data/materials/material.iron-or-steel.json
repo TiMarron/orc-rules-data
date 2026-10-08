@@ -1,0 +1,33 @@
+{
+  "id": "material.iron-or-steel",
+  "type": "material",
+  "class": "base",
+  "name": "material.iron-or-steel.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "hardness": {
+    "thin": {
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    },
+    "item": {
+      "hardness": 9,
+      "hp": 36,
+      "bt": 18
+    },
+    "structure": {
+      "hardness": 18,
+      "hp": 72,
+      "bt": 36
+    }
+  },
+  "exampleItems": "material.iron-or-steel.examples"
+}

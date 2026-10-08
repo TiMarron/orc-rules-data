@@ -1,0 +1,23 @@
+{
+  "id": "material.paper",
+  "type": "material",
+  "class": "base",
+  "name": "material.paper.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "hardness": {
+    "item": {
+      "hardness": 0,
+      "hp": 1
+    }
+  },
+  "exampleItems": "material.paper.examples",
+  "editNote": "sampled 5%: the row numbers match the book's material-statistics table incl. the em-dash BT rows"
+}

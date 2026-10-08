@@ -1,0 +1,28 @@
+{
+  "id": "material.leather",
+  "type": "material",
+  "class": "base",
+  "name": "material.leather.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "hardness": {
+    "thin": {
+      "hardness": 2,
+      "hp": 8,
+      "bt": 4
+    },
+    "item": {
+      "hardness": 4,
+      "hp": 16,
+      "bt": 8
+    }
+  },
+  "exampleItems": "material.leather.examples"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "material.stone",
+  "type": "material",
+  "class": "base",
+  "name": "material.stone.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "hardness": {
+    "thin": {
+      "hardness": 4,
+      "hp": 16,
+      "bt": 8
+    },
+    "item": {
+      "hardness": 7,
+      "hp": 28,
+      "bt": 14
+    },
+    "structure": {
+      "hardness": 14,
+      "hp": 56,
+      "bt": 28
+    }
+  },
+  "exampleItems": "material.stone.examples"
+}

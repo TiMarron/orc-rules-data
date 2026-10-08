@@ -1,0 +1,136 @@
+{
+  "id": "material.dawnsilver",
+  "type": "material",
+  "class": "precious",
+  "name": "material.dawnsilver.name",
+  "text": "material.dawnsilver.text",
+  "traits": [
+    "precious"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "grades": [
+    {
+      "grade": "standard",
+      "level": 8,
+      "pricePerBulkCp": 35000
+    },
+    {
+      "grade": "high",
+      "level": 16,
+      "pricePerBulkCp": 600000
+    }
+  ],
+  "raw": [
+    {
+      "name": "material.dawnsilver.raw.0.name",
+      "priceCp": 50000,
+      "bulk": "L"
+    },
+    {
+      "name": "material.dawnsilver.raw.1.name",
+      "priceCp": 500000,
+      "bulk": "1"
+    }
+  ],
+  "hardness": {
+    "thin": {
+      "standard": {
+        "hardness": 5,
+        "hp": 20,
+        "bt": 10
+      },
+      "high": {
+        "hardness": 8,
+        "hp": 32,
+        "bt": 16
+      }
+    },
+    "item": {
+      "standard": {
+        "hardness": 9,
+        "hp": 36,
+        "bt": 18
+      },
+      "high": {
+        "hardness": 12,
+        "hp": 48,
+        "bt": 24
+      }
+    },
+    "structure": {
+      "standard": {
+        "hardness": 18,
+        "hp": 72,
+        "bt": 36
+      },
+      "high": {
+        "hardness": 24,
+        "hp": 96,
+        "bt": 48
+      }
+    }
+  },
+  "gear": {
+    "armor": {
+      "text": "material.dawnsilver.gear.armor.text",
+      "standard": {
+        "level": 12,
+        "priceCp": 160000,
+        "pricePerBulkCp": 16000
+      },
+      "high": {
+        "level": 19,
+        "priceCp": 3200000,
+        "pricePerBulkCp": 320000
+      }
+    },
+    "buckler": {
+      "standard": {
+        "level": 8,
+        "priceCp": 40000,
+        "craft": "material.dawnsilver.gear.buckler.standard.craft"
+      },
+      "high": {
+        "level": 16,
+        "priceCp": 800000,
+        "craft": "material.dawnsilver.gear.buckler.high.craft"
+      }
+    },
+    "shield": {
+      "standard": {
+        "level": 8,
+        "priceCp": 44000,
+        "craft": "material.dawnsilver.gear.shield.standard.craft"
+      },
+      "high": {
+        "level": 16,
+        "priceCp": 880000,
+        "craft": "material.dawnsilver.gear.shield.high.craft"
+      },
+      "text": "material.dawnsilver.gear.shield.text"
+    },
+    "weapon": {
+      "text": "material.dawnsilver.gear.weapon.text",
+      "standard": {
+        "level": 11,
+        "priceCp": 140000,
+        "pricePerBulkCp": 14000,
+        "craft": "material.dawnsilver.gear.weapon.standard.craft"
+      },
+      "high": {
+        "level": 17,
+        "priceCp": 1350000,
+        "pricePerBulkCp": 135000,
+        "craft": "material.dawnsilver.gear.weapon.high.craft"
+      }
+    }
+  }
+}
