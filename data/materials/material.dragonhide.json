@@ -1,0 +1,99 @@
+{
+  "id": "material.dragonhide",
+  "type": "material",
+  "class": "precious",
+  "name": "material.dragonhide.name",
+  "text": "material.dragonhide.text",
+  "traits": [
+    "precious"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "player-core-2",
+    "page": 276,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "grades": [
+    {
+      "grade": "standard",
+      "level": 8,
+      "pricePerBulkCp": 35000
+    },
+    {
+      "grade": "high",
+      "level": 16,
+      "pricePerBulkCp": 600000
+    }
+  ],
+  "hardness": {
+    "thin": {
+      "standard": {
+        "hardness": 4,
+        "hp": 16,
+        "bt": 8
+      },
+      "high": {
+        "hardness": 8,
+        "hp": 32,
+        "bt": 16
+      }
+    },
+    "item": {
+      "standard": {
+        "hardness": 7,
+        "hp": 28,
+        "bt": 14
+      },
+      "high": {
+        "hardness": 11,
+        "hp": 44,
+        "bt": 22
+      }
+    }
+  },
+  "gear": {
+    "armor": {
+      "text": "material.dragonhide.gear.armor.text",
+      "standard": {
+        "level": 12,
+        "priceCp": 160000,
+        "pricePerBulkCp": 16000,
+        "craft": "material.dragonhide.gear.armor.standard.craft"
+      },
+      "high": {
+        "level": 19,
+        "priceCp": 3200000,
+        "pricePerBulkCp": 320000,
+        "craft": "material.dragonhide.gear.armor.high.craft"
+      }
+    },
+    "buckler": {
+      "standard": {
+        "level": 8,
+        "priceCp": 40000,
+        "craft": "material.dragonhide.gear.buckler.standard.craft"
+      },
+      "high": {
+        "level": 16,
+        "priceCp": 800000,
+        "craft": "material.dragonhide.gear.buckler.high.craft"
+      }
+    },
+    "shield": {
+      "standard": {
+        "level": 8,
+        "priceCp": 44000,
+        "craft": "material.dragonhide.gear.shield.standard.craft"
+      },
+      "high": {
+        "level": 16,
+        "priceCp": 880000,
+        "craft": "material.dragonhide.gear.shield.high.craft"
+      },
+      "text": "material.dragonhide.gear.shield.text"
+    }
+  }
+}
