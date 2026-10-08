@@ -359,3 +359,7 @@ rather than automatic; neither touches rules text.
 ## 0.1.0+2023-first
 
 First import: Player Core, 2212 records and 6310 English strings.
+
+## Materials migration
+
+- item.dragonhide* (11 records) migrate to a single material.dragonhide record: the material type now carries grades, the Hardness/HP/BT table and gear that eleven item records could not represent (see orc-rules-import).
