@@ -7,7 +7,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
-  school, thesis, package, archetype, ability, creature, ritual.
+  school, thesis, package, archetype, ability, creature, ritual, material.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -266,6 +266,20 @@ cost tokens.
 - Creatures in this release are those without rituals; those follow once they
   are modelled. A creature record has no `text` yet: descriptive lore is not
   imported.
+- A `material` is a row of the GM Core materials chapter, and its `class`
+  splits the two shapes the book prints. A `base` material (Wood, Paper,
+  Glass) carries the Material Statistics table in `hardness`, keyed by the
+  thickness the row's name encodes (`thin`, `item`, `structure`), each
+  `{ hardness, hp, bt }` with `bt` absent where the book prints an em dash,
+  beside `exampleItems`, the row's Example Items column. A `precious`
+  material (Adamantine, Silver) is craftable in grades: its own `level`; the
+  `grades` it comes in, `{ grade, level, pricePerBulkCp }` for the grade's
+  minimum level and its price per Bulk; `raw`, the chunks it is sold as
+  (`{ name, priceCp, bulk }`); `hardness` keyed by thickness and then by
+  grade; and `gear`, keyed by what the grade makes (`weapon`, `armor`,
+  `shield`, `buckler`, `tower-shield`), each kind holding the section's own
+  `text`, if it prints one, and per grade the Type line's `level`, `priceCp`,
+  `pricePerBulkCp` and `craft` requirement. Prices are integer copper pieces.
 
 ## Versioning
 

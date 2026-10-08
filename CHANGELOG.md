@@ -4,6 +4,21 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Added
+
+- Materials, a new record type, in two profiles. A `base` material is a row of
+  the common materials table: its Material Statistics by thickness (`thin`,
+  `item`, `structure`), each `{ hardness, hp, bt }` with `bt` absent where the
+  book prints an em dash, and the row's Example Items column. A `precious`
+  material is one of the craftable precious materials: its own `level`, the
+  `grades` it is crafted in (low, standard, high) with the price per Bulk, the
+  raw chunks it is sold as, the statistics of each grade by thickness, and the
+  weapon, armor, shield, buckler and tower-shield gear each grade makes, with
+  the Type lines' prices and Craft requirements. Records live in
+  `data/materials/`.
+
 ## 0.7.0 — 2026-10-05
 
 ### Changed — breaking
