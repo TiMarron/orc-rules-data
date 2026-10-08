@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material.schema.json",
+  "$defs": {
+    "key": { "$ref": "common.schema.json#/$defs/i18nKey" },
+    "gradeName": { "enum": ["low", "standard", "high"] },
+    "thickness": { "enum": ["thin", "item", "structure"] },
+    "stats": {
+      "type": "object", "additionalProperties": false, "required": ["hardness", "hp"],
+      "properties": {
+        "hardness": { "type": "integer", "minimum": 0 },
+        "hp": { "type": "integer", "minimum": 1 },
+        "bt": { "type": "integer", "minimum": 1, "$comment": "Absent when the book prints an em dash (Paper, Thin cloth, Thin glass)." }
+      }
+    },
+    "grade": {
+      "type": "object", "additionalProperties": false, "required": ["grade", "level", "pricePerBulkCp"],
+      "properties": {
+        "grade": { "$ref": "#/$defs/gradeName" },
+        "level": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "pricePerBulkCp": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "raw": {
+      "type": "object", "additionalProperties": false, "required": ["name", "priceCp", "bulk"],
+      "properties": {
+        "name": { "$ref": "#/$defs/key", "$comment": "\"Adamantine Chunk\", \"Duskwood Branch\" — as printed." },
+        "priceCp": { "type": "integer", "minimum": 0 },
+        "bulk": { "type": "string", "pattern": "^(-|L|[0-9]+)$" }
+      }
+    },
+    "gradeStats": {
+      "type": "object", "minProperties": 1,
+      "propertyNames": { "$ref": "#/$defs/gradeName" },
+      "additionalProperties": { "$ref": "#/$defs/stats" }
+    },
+    "gearGrade": {
+      "type": "object", "additionalProperties": false, "required": ["level"],
+      "properties": {
+        "level": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "priceCp": { "type": "integer", "minimum": 0, "$comment": "The Type line's base price: \"1,400 gp\"." },
+        "pricePerBulkCp": { "type": "integer", "minimum": 0, "$comment": "The \"+ 140 gp per Bulk\" part, when the line prints one." },
+        "craft": { "$ref": "#/$defs/key", "$comment": "The Craft Requirements sentence of that grade's Type line, as printed." }
+      }
+    },
+    "gearKind": {
+      "type": "object", "additionalProperties": false, "minProperties": 1,
+      "properties": {
+        "text": { "$ref": "#/$defs/key", "$comment": "The kind's own article the section prints above its Type lines (\"Adamantine weapons have a shiny black appearance…\")." },
+        "low": { "$ref": "#/$defs/gearGrade" },
+        "standard": { "$ref": "#/$defs/gearGrade" },
+        "high": { "$ref": "#/$defs/gearGrade" }
+      }
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["class"],
+      "properties": {
+        "type": { "const": "material" },
+        "class": { "enum": ["base", "precious"] }
+      }
+    },
+    {
+      "if": { "properties": { "class": { "const": "base" } }, "required": ["class"] },
+      "then": {
+        "required": ["hardness", "exampleItems"],
+        "properties": {
+          "hardness": {
+            "type": "object", "minProperties": 1,
+            "propertyNames": { "$ref": "#/$defs/thickness" },
+            "additionalProperties": { "$ref": "#/$defs/stats" },
+            "$comment": "The Material Statistics table, p. 252; the thickness the row's name encodes becomes the key."
+          },
+          "exampleItems": { "$ref": "#/$defs/key", "$comment": "\"chest, simple door, table, tree trunk\" — the row's Example Items column." }
+        }
+      },
+      "else": {
+        "required": ["text", "grades", "hardness", "gear"],
+        "properties": {
+          "text": { "$ref": "#/$defs/key" },
+          "level": { "type": "integer", "minimum": 1, "maximum": 20, "$comment": "Precious only: the material's own minimum level (Adamantine 8, Silver 2)." },
+          "grades": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/grade" } },
+          "raw": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/raw" } },
+          "hardness": {
+            "type": "object", "minProperties": 1,
+            "propertyNames": { "$ref": "#/$defs/thickness" },
+            "additionalProperties": { "$ref": "#/$defs/gradeStats" }
+          },
+          "gear": {
+            "type": "object", "minProperties": 1,
+            "propertyNames": { "enum": ["weapon", "armor", "shield", "buckler", "tower-shield"] },
+            "additionalProperties": { "$ref": "#/$defs/gearKind" }
+          }
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

@@ -1342,4 +1342,74 @@ describe('type schemas', () => {
     });
   });
 
+  describe('material', () => {
+    const precious = () => ({
+      id: 'material.adamantine', type: 'material', class: 'precious',
+      name: 'material.adamantine.name', text: 'material.adamantine.text',
+      traits: ['precious'], rarity: 'uncommon',
+      source: { book: 'gm-core', page: 253, revision: '2023-first' },
+      review: 'auto', edited: false, level: 8,
+      grades: [
+        { grade: 'standard', level: 8, pricePerBulkCp: 35000 },
+        { grade: 'high', level: 16, pricePerBulkCp: 600000 },
+      ],
+      raw: [
+        { name: 'material.adamantine.raw.0.name', priceCp: 50000, bulk: 'L' },
+        { name: 'material.adamantine.raw.1.name', priceCp: 500000, bulk: '1' },
+      ],
+      hardness: {
+        thin: { standard: { hardness: 10, hp: 40, bt: 20 }, high: { hardness: 13, hp: 52, bt: 26 } },
+        item: { standard: { hardness: 14, hp: 56, bt: 28 }, high: { hardness: 17, hp: 68, bt: 34 } },
+        structure: { standard: { hardness: 28, hp: 112, bt: 56 }, high: { hardness: 34, hp: 136, bt: 68 } },
+      },
+      gear: {
+        weapon: {
+          standard: { level: 11, priceCp: 140000, pricePerBulkCp: 14000, craft: 'material.adamantine.gear.weapon.standard.craft' },
+          high: { level: 17, priceCp: 1350000, pricePerBulkCp: 135000 },
+        },
+        armor: { standard: { level: 12, priceCp: 160000, pricePerBulkCp: 16000 } },
+      },
+    });
+    const base = () => ({
+      id: 'material.wood', type: 'material', class: 'base',
+      name: 'material.wood.name', traits: [], rarity: 'common',
+      source: { book: 'gm-core', page: 252, revision: '2023-first' },
+      review: 'auto', edited: false,
+      hardness: {
+        thin: { hardness: 3, hp: 12, bt: 6 },
+        item: { hardness: 5, hp: 20, bt: 10 },
+        structure: { hardness: 10, hp: 40, bt: 20 },
+      },
+      exampleItems: 'material.wood.examples',
+    });
+
+    it('accepts a full precious material and a base material whose thin rows print no BT', () => {
+      expect(issuesFor('material', precious() as any)).toEqual([]);
+      const paper = { ...base(), id: 'material.paper', name: 'material.paper.name', exampleItems: 'material.paper.examples',
+        hardness: { item: { hardness: 0, hp: 1 } } };
+      expect(issuesFor('material', paper as any)).toEqual([]);
+    });
+
+    it('rejects a base material with precious fields, and a precious one missing gear or grades', () => {
+      // ajv reports an unknown root property and a missing root required property
+      // on the record itself, naming the field in the message, not the instance path.
+      expect(issuesFor('material', { ...base(), grades: precious().grades } as any).join('\n')).toContain('(grades)');
+      const noGear = precious(); delete (noGear as any).gear;
+      expect(issuesFor('material', noGear as any).join('\n')).toContain("must have required property 'gear'");
+      const noGrades = precious(); delete (noGrades as any).grades;
+      expect(issuesFor('material', noGrades as any).join('\n')).toContain("must have required property 'grades'");
+      expect(issuesFor('material', { ...base(), level: 8 } as any).join('\n')).toContain('(level)');
+    });
+
+    it('rejects unknown thickness, grade and gear kind, a BT of 0, and a base record without exampleItems', () => {
+      expect(issuesFor('material', { ...base(), hardness: { thick: base().hardness.thin } } as any).join('\n')).toContain('/hardness');
+      expect(issuesFor('material', { ...precious(), grades: [{ grade: 'mid', level: 8, pricePerBulkCp: 1 }] } as any).join('\n')).toContain('/grades/0');
+      const badKind = precious(); (badKind as any).gear['tower shield'] = (badKind as any).gear.weapon;
+      expect(issuesFor('material', badKind as any).join('\n')).toContain('/gear');
+      expect(issuesFor('material', { ...precious(), hardness: { thin: { standard: { hardness: 10, hp: 40, bt: 0 } } } } as any).join('\n')).toContain('/hardness');
+      const noExamples = base(); delete (noExamples as any).exampleItems;
+      expect(issuesFor('material', noExamples as any).join('\n')).toContain("must have required property 'exampleItems'");
+    });
+  });
+
 });
