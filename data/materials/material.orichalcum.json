@@ -1,0 +1,95 @@
+{
+  "id": "material.orichalcum",
+  "type": "material",
+  "class": "precious",
+  "name": "material.orichalcum.name",
+  "text": "material.orichalcum.text",
+  "traits": [
+    "precious"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 254,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 17,
+  "grades": [
+    {
+      "grade": "high",
+      "level": 17,
+      "pricePerBulkCp": 1000000
+    }
+  ],
+  "raw": [
+    {
+      "name": "material.orichalcum.raw.0.name",
+      "priceCp": 100000,
+      "bulk": "L"
+    },
+    {
+      "name": "material.orichalcum.raw.1.name",
+      "priceCp": 1000000,
+      "bulk": "1"
+    }
+  ],
+  "hardness": {
+    "thin": {
+      "high": {
+        "hardness": 16,
+        "hp": 64,
+        "bt": 32
+      }
+    },
+    "item": {
+      "high": {
+        "hardness": 18,
+        "hp": 72,
+        "bt": 36
+      }
+    },
+    "structure": {
+      "high": {
+        "hardness": 35,
+        "hp": 140,
+        "bt": 70
+      }
+    }
+  },
+  "gear": {
+    "armor": {
+      "text": "material.orichalcum.gear.armor.text",
+      "high": {
+        "level": 20,
+        "priceCp": 5500000,
+        "pricePerBulkCp": 550000
+      }
+    },
+    "buckler": {
+      "high": {
+        "level": 17,
+        "priceCp": 1200000,
+        "craft": "material.orichalcum.gear.buckler.high.craft"
+      }
+    },
+    "shield": {
+      "high": {
+        "level": 17,
+        "priceCp": 1320000,
+        "craft": "material.orichalcum.gear.shield.high.craft"
+      },
+      "text": "material.orichalcum.gear.shield.text"
+    },
+    "weapon": {
+      "text": "material.orichalcum.gear.weapon.text",
+      "high": {
+        "level": 18,
+        "priceCp": 2250000,
+        "pricePerBulkCp": 225000,
+        "craft": "material.orichalcum.gear.weapon.high.craft"
+      }
+    }
+  }
+}

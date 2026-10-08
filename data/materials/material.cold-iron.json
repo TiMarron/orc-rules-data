@@ -1,0 +1,177 @@
+{
+  "id": "material.cold-iron",
+  "type": "material",
+  "class": "precious",
+  "name": "material.cold-iron.name",
+  "text": "material.cold-iron.text",
+  "traits": [
+    "precious"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 253,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "grades": [
+    {
+      "grade": "low",
+      "level": 2,
+      "pricePerBulkCp": 2000
+    },
+    {
+      "grade": "standard",
+      "level": 7,
+      "pricePerBulkCp": 25000
+    },
+    {
+      "grade": "high",
+      "level": 15,
+      "pricePerBulkCp": 450000
+    }
+  ],
+  "raw": [
+    {
+      "name": "material.cold-iron.raw.0.name",
+      "priceCp": 1000,
+      "bulk": "L"
+    },
+    {
+      "name": "material.cold-iron.raw.1.name",
+      "priceCp": 10000,
+      "bulk": "1"
+    }
+  ],
+  "hardness": {
+    "thin": {
+      "low": {
+        "hardness": 5,
+        "hp": 20,
+        "bt": 10
+      },
+      "standard": {
+        "hardness": 7,
+        "hp": 28,
+        "bt": 14
+      },
+      "high": {
+        "hardness": 10,
+        "hp": 40,
+        "bt": 20
+      }
+    },
+    "item": {
+      "low": {
+        "hardness": 9,
+        "hp": 36,
+        "bt": 18
+      },
+      "standard": {
+        "hardness": 11,
+        "hp": 44,
+        "bt": 22
+      },
+      "high": {
+        "hardness": 14,
+        "hp": 56,
+        "bt": 28
+      }
+    },
+    "structure": {
+      "low": {
+        "hardness": 18,
+        "hp": 72,
+        "bt": 36
+      },
+      "standard": {
+        "hardness": 22,
+        "hp": 88,
+        "bt": 44
+      },
+      "high": {
+        "hardness": 28,
+        "hp": 112,
+        "bt": 56
+      }
+    }
+  },
+  "gear": {
+    "armor": {
+      "text": "material.cold-iron.gear.armor.text",
+      "low": {
+        "level": 5,
+        "priceCp": 14000,
+        "pricePerBulkCp": 1400
+      },
+      "standard": {
+        "level": 11,
+        "priceCp": 120000,
+        "pricePerBulkCp": 12000
+      },
+      "high": {
+        "level": 18,
+        "priceCp": 2000000,
+        "pricePerBulkCp": 200000
+      }
+    },
+    "buckler": {
+      "low": {
+        "level": 2,
+        "priceCp": 3000,
+        "craft": "material.cold-iron.gear.buckler.low.craft"
+      },
+      "standard": {
+        "level": 7,
+        "priceCp": 30000,
+        "craft": "material.cold-iron.gear.buckler.standard.craft"
+      },
+      "high": {
+        "level": 15,
+        "priceCp": 500000,
+        "craft": "material.cold-iron.gear.buckler.high.craft"
+      }
+    },
+    "shield": {
+      "low": {
+        "level": 2,
+        "priceCp": 3400,
+        "craft": "material.cold-iron.gear.shield.low.craft"
+      },
+      "standard": {
+        "level": 7,
+        "priceCp": 34000,
+        "craft": "material.cold-iron.gear.shield.standard.craft"
+      },
+      "high": {
+        "level": 15,
+        "priceCp": 550000,
+        "craft": "material.cold-iron.gear.shield.high.craft"
+      },
+      "text": "material.cold-iron.gear.shield.text"
+    },
+    "weapon": {
+      "text": "material.cold-iron.gear.weapon.text",
+      "low": {
+        "level": 2,
+        "priceCp": 4000,
+        "pricePerBulkCp": 400,
+        "craft": "material.cold-iron.gear.weapon.low.craft"
+      },
+      "standard": {
+        "level": 10,
+        "priceCp": 88000,
+        "pricePerBulkCp": 8800,
+        "craft": "material.cold-iron.gear.weapon.standard.craft"
+      },
+      "high": {
+        "level": 16,
+        "priceCp": 900000,
+        "pricePerBulkCp": 90000,
+        "craft": "material.cold-iron.gear.weapon.high.craft"
+      }
+    }
+  }
+}

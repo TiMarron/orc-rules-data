@@ -1,0 +1,32 @@
+{
+  "id": "material.glass",
+  "type": "material",
+  "class": "base",
+  "name": "material.glass.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "hardness": {
+    "thin": {
+      "hardness": 0,
+      "hp": 1
+    },
+    "item": {
+      "hardness": 1,
+      "hp": 4,
+      "bt": 2
+    },
+    "structure": {
+      "hardness": 2,
+      "hp": 8,
+      "bt": 4
+    }
+  },
+  "exampleItems": "material.glass.examples"
+}

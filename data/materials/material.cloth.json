@@ -1,0 +1,28 @@
+{
+  "id": "material.cloth",
+  "type": "material",
+  "class": "base",
+  "name": "material.cloth.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 252,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "hardness": {
+    "thin": {
+      "hardness": 0,
+      "hp": 1
+    },
+    "item": {
+      "hardness": 1,
+      "hp": 4,
+      "bt": 2
+    }
+  },
+  "exampleItems": "material.cloth.examples",
+  "editNote": "sampled 5%: the row numbers match the book's material-statistics table incl. the em-dash BT rows"
+}
