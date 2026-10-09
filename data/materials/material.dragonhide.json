@@ -13,8 +13,8 @@
     "page": 276,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 8,
   "grades": [
     {
@@ -95,5 +95,6 @@
       },
       "text": "material.dragonhide.gear.shield.text"
     }
-  }
+  },
+  "editNote": "Craft requirements as the book prints them (PC2 p. 276-277): the structured source glues the standard shield's requirement to itself (\"55 gpdragonhide worth at least 55 gp\") and drops the unit of the armor's per-Bulk part (\"+ 20 per Bulk\" where the book prints \"+ 20 gp per Bulk\"). Carried over from the item.dragonhide-shield-standard-grade edit the migration left behind."
 }
