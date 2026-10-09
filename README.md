@@ -285,8 +285,9 @@ cost tokens.
 
 - patch: text fixes, typos, page numbers
 - minor: new records, new optional schema fields
-- major: renamed or removed ids, new required fields, markup changes — always
-  with a file in `migrations/`
+- major: renamed or removed ids, new required fields, markup changes — named
+  in the changelog; a file in `migrations/` once the dataset has consumers
+  outside this project
 
 ## Licensing
 
