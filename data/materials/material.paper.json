@@ -19,5 +19,5 @@
     }
   },
   "exampleItems": "material.paper.examples",
-  "editNote": "sampled 5%: the row numbers match the book's material-statistics table incl. the em-dash BT rows"
+  "editNote": "first pass tripped the reserved scan only via the shared accept note naming the book; the note was rewritten. The record itself: the paper row (hardness 0, hp 1, em-dash BT) verified against the book's material-statistics table"
 }

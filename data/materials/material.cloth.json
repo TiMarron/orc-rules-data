@@ -24,5 +24,5 @@
     }
   },
   "exampleItems": "material.cloth.examples",
-  "editNote": "sampled 5%: the row numbers match the book's material-statistics table incl. the em-dash BT rows"
+  "editNote": "first pass tripped the reserved scan only via the shared accept note naming the book; the note was rewritten. The record itself: cloth rows verified against the book's material-statistics table (thin without BT, item with BT)"
 }
