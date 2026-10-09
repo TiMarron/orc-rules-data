@@ -1,0 +1,31 @@
+{
+  "id": "item.wand-of-continuation-4th-rank-spell",
+  "type": "item",
+  "name": "item.wand-of-continuation-4th-rank-spell.name",
+  "traits": [
+    "magical",
+    "wand"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 282,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.wand-of-continuation-4th-rank-spell.text",
+  "level": 11,
+  "priceCp": 140000,
+  "bulk": "L",
+  "usage": "item.wand-of-continuation-4th-rank-spell.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "frequency": "item.wand-of-continuation-4th-rank-spell.activations.0.frequency",
+      "text": "item.wand-of-continuation-4th-rank-spell.activations.0.text"
+    }
+  ],
+  "category": "wand",
+  "editNote": "Page 283 prints 'Type 4th-rank spell; Level 11; Price 1,400 gp' for the wand of continuation; the source says 1,500 gp and the errata is silent (its 1,400 gp entry is for the 5th-rank magic wand), so the book's price stands."
+}

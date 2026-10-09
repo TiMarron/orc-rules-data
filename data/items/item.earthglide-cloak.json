@@ -1,0 +1,35 @@
+{
+  "id": "item.earthglide-cloak",
+  "type": "item",
+  "name": "item.earthglide-cloak.name",
+  "traits": [
+    "earth",
+    "invested",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 289,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.earthglide-cloak.text",
+  "level": 15,
+  "priceCp": 650000,
+  "bulk": "0",
+  "usage": "item.earthglide-cloak.usage",
+  "activations": [
+    {
+      "name": "item.earthglide-cloak.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.earthglide-cloak.activations.0.frequency",
+      "text": "item.earthglide-cloak.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "item.humbug-pocket",
+  "type": "item",
+  "name": "item.humbug-pocket.name",
+  "traits": [
+    "invested",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.humbug-pocket.text",
+  "level": 9,
+  "priceCp": 65000,
+  "bulk": "0",
+  "usage": "item.humbug-pocket.usage",
+  "activations": [
+    {
+      "name": "item.humbug-pocket.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.humbug-pocket.activations.0.frequency",
+      "text": "item.humbug-pocket.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Accepted: the only reports are informational. The book's Type lines on p.291 print 'Price 650' and 'Price 12,500' without the unit (a typo for gp); level 9/17 and those prices match the records."
+}

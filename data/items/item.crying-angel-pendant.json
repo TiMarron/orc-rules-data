@@ -1,0 +1,24 @@
+{
+  "id": "item.crying-angel-pendant",
+  "type": "item",
+  "name": "item.crying-angel-pendant.name",
+  "traits": [
+    "consumable",
+    "divine",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.crying-angel-pendant.text",
+  "level": 2,
+  "priceCp": 700,
+  "bulk": "0",
+  "usage": "item.crying-angel-pendant.usage",
+  "category": "talisman"
+}

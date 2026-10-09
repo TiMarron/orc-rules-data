@@ -1,0 +1,34 @@
+{
+  "id": "item.eye-of-fortune",
+  "type": "item",
+  "name": "item.eye-of-fortune.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 289,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.eye-of-fortune.text",
+  "level": 13,
+  "priceCp": 270000,
+  "bulk": "0",
+  "usage": "item.eye-of-fortune.usage",
+  "activations": [
+    {
+      "name": "item.eye-of-fortune.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate",
+        "fortune"
+      ]
+    }
+  ],
+  "category": "worn",
+  "editNote": "Reserved Material removed: the named deity dropped, leaving 'the god of the hunt'. Rules text is the book's."
+}

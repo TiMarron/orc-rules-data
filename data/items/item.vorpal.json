@@ -1,0 +1,35 @@
+{
+  "id": "item.vorpal",
+  "type": "item",
+  "name": "item.vorpal.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.vorpal.text",
+  "level": 17,
+  "priceCp": 1500000,
+  "bulk": "0",
+  "usage": "item.vorpal.usage",
+  "activations": [
+    {
+      "name": "item.vorpal.activations.0.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate",
+        "death",
+        "incapacitation"
+      ],
+      "trigger": "item.vorpal.activations.0.trigger",
+      "text": "item.vorpal.activations.0.text"
+    }
+  ],
+  "category": "rune"
+}

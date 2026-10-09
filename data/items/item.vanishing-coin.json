@@ -1,0 +1,25 @@
+{
+  "id": "item.vanishing-coin",
+  "type": "item",
+  "name": "item.vanishing-coin.name",
+  "traits": [
+    "consumable",
+    "illusion",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 267,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.vanishing-coin.text",
+  "level": 10,
+  "priceCp": 16000,
+  "bulk": "0",
+  "usage": "item.vanishing-coin.usage",
+  "category": "talisman"
+}

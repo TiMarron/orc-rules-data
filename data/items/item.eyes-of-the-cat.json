@@ -1,0 +1,23 @@
+{
+  "id": "item.eyes-of-the-cat",
+  "type": "item",
+  "name": "item.eyes-of-the-cat.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.eyes-of-the-cat.text",
+  "level": 9,
+  "priceCp": 70000,
+  "bulk": "0",
+  "usage": "item.eyes-of-the-cat.usage",
+  "category": "worn"
+}

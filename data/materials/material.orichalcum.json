@@ -13,8 +13,8 @@
     "page": 254,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 17,
   "grades": [
     {
@@ -91,5 +91,6 @@
         "craft": "material.orichalcum.gear.weapon.high.craft"
       }
     }
-  }
+  },
+  "editNote": "Re-reviewed: the only difference from the published record is a new link to a record imported now (the ghost touch rune, Invest an Item, the quickstrike rune); the words are unchanged."
 }

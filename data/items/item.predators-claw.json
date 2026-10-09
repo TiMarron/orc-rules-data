@@ -1,0 +1,24 @@
+{
+  "id": "item.predators-claw",
+  "type": "item",
+  "name": "item.predators-claw.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 266,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.predators-claw.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "0",
+  "usage": "item.predators-claw.usage",
+  "category": "talisman"
+}

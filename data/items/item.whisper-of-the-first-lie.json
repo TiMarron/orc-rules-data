@@ -1,0 +1,35 @@
+{
+  "id": "item.whisper-of-the-first-lie",
+  "type": "item",
+  "name": "item.whisper-of-the-first-lie.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 297,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.whisper-of-the-first-lie.text",
+  "level": 20,
+  "priceCp": 6000000,
+  "bulk": "0",
+  "usage": "item.whisper-of-the-first-lie.usage",
+  "activations": [
+    {
+      "name": "item.whisper-of-the-first-lie.activations.0.name",
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "item.whisper-of-the-first-lie.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Reserved Material removed: the proper name of a plane replaced with the descriptor the dataset already uses (the astral realm). Rules text is the book's."
+}

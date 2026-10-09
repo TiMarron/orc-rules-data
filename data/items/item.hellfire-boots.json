@@ -1,0 +1,35 @@
+{
+  "id": "item.hellfire-boots",
+  "type": "item",
+  "name": "item.hellfire-boots.name",
+  "traits": [
+    "fire",
+    "invested",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.hellfire-boots.text",
+  "level": 13,
+  "priceCp": 300000,
+  "bulk": "1",
+  "usage": "item.hellfire-boots.usage",
+  "activations": [
+    {
+      "name": "item.hellfire-boots.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.hellfire-boots.activations.0.frequency",
+      "text": "item.hellfire-boots.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

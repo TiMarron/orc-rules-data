@@ -1,0 +1,34 @@
+{
+  "id": "item.propulsive-boots",
+  "type": "item",
+  "name": "item.propulsive-boots.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 294,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.propulsive-boots.text",
+  "level": 13,
+  "priceCp": 300000,
+  "bulk": "L",
+  "usage": "item.propulsive-boots.usage",
+  "activations": [
+    {
+      "name": "item.propulsive-boots.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.propulsive-boots.activations.0.frequency",
+      "text": "item.propulsive-boots.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

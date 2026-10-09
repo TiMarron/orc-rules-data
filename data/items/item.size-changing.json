@@ -1,0 +1,33 @@
+{
+  "id": "item.size-changing",
+  "type": "item",
+  "name": "item.size-changing.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 227,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.size-changing.text",
+  "level": 7,
+  "priceCp": 35000,
+  "bulk": "0",
+  "usage": "item.size-changing.usage",
+  "activations": [
+    {
+      "name": "item.size-changing.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.size-changing.activations.0.frequency",
+      "text": "item.size-changing.activations.0.text"
+    }
+  ],
+  "category": "rune"
+}

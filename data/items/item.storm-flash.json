@@ -1,0 +1,46 @@
+{
+  "id": "item.storm-flash",
+  "type": "item",
+  "name": "item.storm-flash.name",
+  "traits": [
+    "electricity",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 243,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.storm-flash.text",
+  "level": 14,
+  "priceCp": 400000,
+  "bulk": "1",
+  "usage": "item.storm-flash.usage",
+  "activations": [
+    {
+      "name": "item.storm-flash.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.storm-flash.activations.0.frequency",
+      "text": "item.storm-flash.activations.0.text"
+    },
+    {
+      "name": "item.storm-flash.activations.1.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.storm-flash.activations.1.frequency",
+      "trigger": "item.storm-flash.activations.1.trigger",
+      "text": "item.storm-flash.activations.1.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

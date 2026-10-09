@@ -1,0 +1,32 @@
+{
+  "id": "item.animated",
+  "type": "item",
+  "name": "item.animated.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 236,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.animated.text",
+  "level": 13,
+  "priceCp": 270000,
+  "bulk": "0",
+  "usage": "item.animated.usage",
+  "activations": [
+    {
+      "name": "item.animated.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ]
+    }
+  ],
+  "category": "rune"
+}

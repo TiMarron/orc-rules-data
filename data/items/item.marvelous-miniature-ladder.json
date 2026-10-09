@@ -1,0 +1,25 @@
+{
+  "id": "item.marvelous-miniature-ladder",
+  "type": "item",
+  "name": "item.marvelous-miniature-ladder.name",
+  "traits": [
+    "consumable",
+    "expandable",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.marvelous-miniature-ladder.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "0",
+  "usage": "item.marvelous-miniature-ladder.usage",
+  "category": "consumable",
+  "editNote": "The source's markup does not convert (an unsupported spoilers block): the text is rebuilt from it as page 268 prints it — the family paragraph and this miniature's own Type paragraph. Dropped: the source's Swift Sparrow miniature and its spoiler notice (another book's item, appended by the source), and the raw link to a vehicle the dataset has no record for (kept as the word 'cutter')."
+}

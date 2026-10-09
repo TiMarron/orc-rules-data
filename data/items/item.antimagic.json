@@ -1,0 +1,34 @@
+{
+  "id": "item.antimagic",
+  "type": "item",
+  "name": "item.antimagic.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 226,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.antimagic.text",
+  "level": 15,
+  "priceCp": 650000,
+  "bulk": "0",
+  "usage": "item.antimagic.usage",
+  "activations": [
+    {
+      "name": "item.antimagic.activations.0.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.antimagic.activations.0.frequency",
+      "trigger": "item.antimagic.activations.0.trigger",
+      "text": "item.antimagic.activations.0.text"
+    }
+  ],
+  "category": "rune"
+}

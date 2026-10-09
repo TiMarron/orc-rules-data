@@ -1,0 +1,24 @@
+{
+  "id": "item.truesight-potion",
+  "type": "item",
+  "name": "item.truesight-potion.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 261,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.truesight-potion.text",
+  "level": 16,
+  "priceCp": 150000,
+  "bulk": "L",
+  "usage": "item.truesight-potion.usage",
+  "category": "consumable"
+}

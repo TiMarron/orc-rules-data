@@ -1,0 +1,17 @@
+{
+  "id": "action.invest-an-item",
+  "type": "action",
+  "name": "action.invest-an-item.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 219,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "action.invest-an-item.text",
+  "variable": true,
+  "editNote": "The book prints no fixed action cost (page 219 prints no action icon; it takes 1 or more Interact actions, usually as long as donning the item); the action is variable."
+}

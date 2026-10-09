@@ -1,0 +1,24 @@
+{
+  "id": "item.murderers-knot",
+  "type": "item",
+  "name": "item.murderers-knot.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 266,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.murderers-knot.text",
+  "level": 7,
+  "priceCp": 6600,
+  "bulk": "0",
+  "usage": "item.murderers-knot.usage",
+  "category": "talisman"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "item.10th-rank-scroll",
+  "type": "item",
+  "name": "item.10th-rank-scroll.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "scroll"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 262,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.10th-rank-scroll.text",
+  "level": 19,
+  "priceCp": 800000,
+  "bulk": "L",
+  "usage": "item.10th-rank-scroll.usage",
+  "category": "scroll",
+  "editNote": "Accepted: the name is the source's; page 262 prints the grades of Magic Scroll as Type lines ('Type 3rd-rank spell; Level 5; Price 30 gp'), not under this name, which is why the page check cannot find it. Level and Price of all ten match those lines."
+}

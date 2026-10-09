@@ -1,0 +1,24 @@
+{
+  "id": "item.everlight-crystal",
+  "type": "item",
+  "name": "item.everlight-crystal.name",
+  "traits": [
+    "light",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.everlight-crystal.text",
+  "level": 1,
+  "priceCp": 1500,
+  "bulk": "L",
+  "usage": "item.everlight-crystal.usage",
+  "category": "held",
+  "editNote": "The text differs from page 273 because the errata replaces the description ('Everlight crystal doesn't list the mechanics for the light. Change its description to the following.'); the record carries the errata's wording. Level 1 and 15 gp match."
+}

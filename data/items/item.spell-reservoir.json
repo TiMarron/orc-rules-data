@@ -1,0 +1,41 @@
+{
+  "id": "item.spell-reservoir",
+  "type": "item",
+  "name": "item.spell-reservoir.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.spell-reservoir.text",
+  "level": 13,
+  "priceCp": 270000,
+  "bulk": "0",
+  "usage": "item.spell-reservoir.usage",
+  "activations": [
+    {
+      "name": "item.spell-reservoir.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "requirements": "item.spell-reservoir.activations.0.requirements",
+      "text": "item.spell-reservoir.activations.0.text"
+    },
+    {
+      "name": "item.spell-reservoir.activations.1.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "item.spell-reservoir.activations.1.text"
+    }
+  ],
+  "category": "rune"
+}

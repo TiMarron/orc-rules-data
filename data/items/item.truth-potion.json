@@ -1,0 +1,25 @@
+{
+  "id": "item.truth-potion",
+  "type": "item",
+  "name": "item.truth-potion.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "mental",
+    "potion"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 261,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.truth-potion.text",
+  "level": 6,
+  "priceCp": 4600,
+  "bulk": "L",
+  "usage": "item.truth-potion.usage",
+  "category": "consumable"
+}

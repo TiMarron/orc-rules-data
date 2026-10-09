@@ -1,0 +1,24 @@
+{
+  "id": "item.aeon-stone-peering",
+  "type": "item",
+  "name": "item.aeon-stone-peering.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 284,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.aeon-stone-peering.text",
+  "level": 16,
+  "priceCp": 850000,
+  "bulk": "0",
+  "usage": "item.aeon-stone-peering.usage",
+  "category": "worn",
+  "editNote": "Page 284 prints 'Type peering; Level 16; Price 8,500 gp'; the source says 9,500 gp and the errata is silent, so the book's price stands."
+}

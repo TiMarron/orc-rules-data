@@ -1,0 +1,19 @@
+{
+  "id": "action.affix-a-talisman",
+  "type": "action",
+  "name": "action.affix-a-talisman.name",
+  "traits": [
+    "exploration",
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.affix-a-talisman.text",
+  "requirements": "action.affix-a-talisman.requirements"
+}

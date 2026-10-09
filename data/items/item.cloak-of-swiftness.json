@@ -1,0 +1,35 @@
+{
+  "id": "item.cloak-of-swiftness",
+  "type": "item",
+  "name": "item.cloak-of-swiftness.name",
+  "traits": [
+    "apex",
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 270,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.cloak-of-swiftness.text",
+  "level": 17,
+  "priceCp": 1500000,
+  "bulk": "0",
+  "usage": "item.cloak-of-swiftness.usage",
+  "activations": [
+    {
+      "name": "item.cloak-of-swiftness.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.cloak-of-swiftness.activations.0.frequency",
+      "text": "item.cloak-of-swiftness.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

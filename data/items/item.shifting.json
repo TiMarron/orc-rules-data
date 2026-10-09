@@ -1,0 +1,32 @@
+{
+  "id": "item.shifting",
+  "type": "item",
+  "name": "item.shifting.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.shifting.text",
+  "level": 6,
+  "priceCp": 22500,
+  "bulk": "0",
+  "usage": "item.shifting.usage",
+  "activations": [
+    {
+      "name": "item.shifting.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.shifting.activations.0.text"
+    }
+  ],
+  "category": "rune"
+}

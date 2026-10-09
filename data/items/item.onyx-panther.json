@@ -1,0 +1,24 @@
+{
+  "id": "item.onyx-panther",
+  "type": "item",
+  "name": "item.onyx-panther.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 266,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.onyx-panther.text",
+  "level": 2,
+  "priceCp": 700,
+  "bulk": "0",
+  "usage": "item.onyx-panther.usage",
+  "category": "talisman"
+}

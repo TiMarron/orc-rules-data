@@ -1,0 +1,25 @@
+{
+  "id": "item.potion-of-shared-memories",
+  "type": "item",
+  "name": "item.potion-of-shared-memories.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "mental",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.potion-of-shared-memories.text",
+  "level": 1,
+  "priceCp": 400,
+  "bulk": "L",
+  "usage": "item.potion-of-shared-memories.usage",
+  "category": "consumable"
+}

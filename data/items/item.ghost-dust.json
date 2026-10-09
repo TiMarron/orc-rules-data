@@ -1,0 +1,25 @@
+{
+  "id": "item.ghost-dust",
+  "type": "item",
+  "name": "item.ghost-dust.name",
+  "traits": [
+    "consumable",
+    "illusion",
+    "occult",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 265,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.ghost-dust.text",
+  "level": 16,
+  "priceCp": 180000,
+  "bulk": "0",
+  "usage": "item.ghost-dust.usage",
+  "category": "talisman"
+}

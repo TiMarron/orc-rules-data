@@ -1,0 +1,34 @@
+{
+  "id": "item.ring-of-lies",
+  "type": "item",
+  "name": "item.ring-of-lies.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 294,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.ring-of-lies.text",
+  "level": 10,
+  "priceCp": 85000,
+  "bulk": "0",
+  "usage": "item.ring-of-lies.usage",
+  "activations": [
+    {
+      "name": "item.ring-of-lies.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.ring-of-lies.activations.0.frequency",
+      "text": "item.ring-of-lies.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

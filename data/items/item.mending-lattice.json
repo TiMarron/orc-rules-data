@@ -1,0 +1,24 @@
+{
+  "id": "item.mending-lattice",
+  "type": "item",
+  "name": "item.mending-lattice.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 266,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.mending-lattice.text",
+  "level": 13,
+  "priceCp": 52500,
+  "bulk": "0",
+  "usage": "item.mending-lattice.usage",
+  "category": "talisman"
+}

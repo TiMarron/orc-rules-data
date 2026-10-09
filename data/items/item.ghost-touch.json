@@ -1,0 +1,22 @@
+{
+  "id": "item.ghost-touch",
+  "type": "item",
+  "name": "item.ghost-touch.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.ghost-touch.text",
+  "level": 4,
+  "priceCp": 7500,
+  "bulk": "0",
+  "usage": "item.ghost-touch.usage",
+  "category": "rune"
+}

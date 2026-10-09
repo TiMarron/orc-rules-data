@@ -1,0 +1,24 @@
+{
+  "id": "item.oil-of-repulsion",
+  "type": "item",
+  "name": "item.oil-of-repulsion.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.oil-of-repulsion.text",
+  "level": 11,
+  "priceCp": 17500,
+  "bulk": "L",
+  "usage": "item.oil-of-repulsion.usage",
+  "category": "consumable"
+}

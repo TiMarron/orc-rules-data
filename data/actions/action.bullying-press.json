@@ -1,0 +1,18 @@
+{
+  "id": "action.bullying-press",
+  "type": "action",
+  "name": "action.bullying-press.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.bullying-press.text",
+  "actions": "reaction",
+  "trigger": "action.bullying-press.trigger",
+  "requirements": "action.bullying-press.requirements"
+}

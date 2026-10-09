@@ -1,0 +1,24 @@
+{
+  "id": "item.shark-tooth-charm",
+  "type": "item",
+  "name": "item.shark-tooth-charm.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 267,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.shark-tooth-charm.text",
+  "level": 5,
+  "priceCp": 2300,
+  "bulk": "0",
+  "usage": "item.shark-tooth-charm.usage",
+  "category": "talisman"
+}

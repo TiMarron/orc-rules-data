@@ -1,0 +1,19 @@
+{
+  "id": "action.take-control",
+  "type": "action",
+  "name": "action.take-control.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 212,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.take-control.text",
+  "actions": "1",
+  "requirements": "action.take-control.requirements"
+}

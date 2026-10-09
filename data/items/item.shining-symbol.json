@@ -1,0 +1,38 @@
+{
+  "id": "item.shining-symbol",
+  "type": "item",
+  "name": "item.shining-symbol.name",
+  "traits": [
+    "divine",
+    "invested",
+    "light"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 295,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.shining-symbol.text",
+  "level": 3,
+  "priceCp": 5500,
+  "bulk": "0",
+  "usage": "item.shining-symbol.usage",
+  "activations": [
+    {
+      "name": "item.shining-symbol.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "light",
+        "revelation"
+      ],
+      "frequency": "item.shining-symbol.activations.0.frequency",
+      "text": "item.shining-symbol.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Accepted: the only reports are informational. The structured source repeats an item family's variants as headings under the family; each variant is its own record with its own level and price, so nothing is lost by dropping the headings. The 'other book' citations sit in the variants' source lines (the earlier printing), not in the text. For 244 of 263 records the level and price were read off the book's Type line on the record's page and match; the other 19 are family records (Armor Potency, Healing Potion, Magic Wand and the like) that print no Type line of their own, and their level is the lowest of their variants, as checked."
+}

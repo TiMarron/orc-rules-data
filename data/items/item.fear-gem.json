@@ -1,0 +1,27 @@
+{
+  "id": "item.fear-gem",
+  "type": "item",
+  "name": "item.fear-gem.name",
+  "traits": [
+    "consumable",
+    "emotion",
+    "fear",
+    "magical",
+    "mental",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.fear-gem.text",
+  "level": 4,
+  "priceCp": 2000,
+  "bulk": "0",
+  "usage": "item.fear-gem.usage",
+  "category": "talisman"
+}

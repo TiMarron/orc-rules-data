@@ -1,0 +1,22 @@
+{
+  "id": "item.shockwave",
+  "type": "item",
+  "name": "item.shockwave.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.shockwave.text",
+  "level": 13,
+  "priceCp": 300000,
+  "bulk": "0",
+  "usage": "item.shockwave.usage",
+  "category": "rune"
+}

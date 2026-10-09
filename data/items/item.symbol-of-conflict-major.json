@@ -1,0 +1,36 @@
+{
+  "id": "item.symbol-of-conflict-major",
+  "type": "item",
+  "name": "item.symbol-of-conflict-major.name",
+  "traits": [
+    "divine",
+    "invested"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 296,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.symbol-of-conflict-major.text",
+  "level": 18,
+  "priceCp": 1900000,
+  "bulk": "0",
+  "usage": "item.symbol-of-conflict-major.usage",
+  "activations": [
+    {
+      "name": "item.symbol-of-conflict-major.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.symbol-of-conflict-major.activations.0.frequency",
+      "text": "item.symbol-of-conflict-major.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "The source's '6th-rank' carries a stray space after the hyphen (a line-break hyphen); page 296 prints '6th-rank'."
+}

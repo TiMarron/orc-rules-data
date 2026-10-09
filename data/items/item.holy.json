@@ -1,0 +1,32 @@
+{
+  "id": "item.holy",
+  "type": "item",
+  "name": "item.holy.name",
+  "traits": [
+    "holy",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.holy.text",
+  "level": 11,
+  "priceCp": 140000,
+  "bulk": "0",
+  "usage": "item.holy.usage",
+  "activations": [
+    {
+      "name": "item.holy.activations.0.name",
+      "actions": "reaction",
+      "frequency": "item.holy.activations.0.frequency",
+      "trigger": "item.holy.activations.0.trigger",
+      "text": "item.holy.activations.0.text"
+    }
+  ],
+  "category": "rune"
+}

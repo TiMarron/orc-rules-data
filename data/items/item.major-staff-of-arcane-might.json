@@ -1,0 +1,40 @@
+{
+  "id": "item.major-staff-of-arcane-might",
+  "type": "item",
+  "name": "item.major-staff-of-arcane-might.name",
+  "traits": [
+    "magical",
+    "staff"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 279,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.major-staff-of-arcane-might.text",
+  "level": 20,
+  "priceCp": 9000000,
+  "bulk": "1",
+  "usage": "item.major-staff-of-arcane-might.usage",
+  "activations": [
+    {
+      "name": "item.major-staff-of-arcane-might.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "death",
+        "force",
+        "manipulate"
+      ],
+      "text": "item.major-staff-of-arcane-might.activations.0.text"
+    },
+    {
+      "castASpell": true,
+      "text": "item.major-staff-of-arcane-might.activations.1.text"
+    }
+  ],
+  "category": "staff",
+  "editNote": "The source's italics are misplaced in '+_3 greater striking staff_' (they start inside the bonus); page 279 prints plain '+3 greater striking staff', as the greater staff's line is."
+}

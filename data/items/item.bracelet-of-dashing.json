@@ -1,0 +1,34 @@
+{
+  "id": "item.bracelet-of-dashing",
+  "type": "item",
+  "name": "item.bracelet-of-dashing.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 286,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.bracelet-of-dashing.text",
+  "level": 3,
+  "priceCp": 5800,
+  "bulk": "L",
+  "usage": "item.bracelet-of-dashing.usage",
+  "activations": [
+    {
+      "name": "item.bracelet-of-dashing.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.bracelet-of-dashing.activations.0.frequency",
+      "text": "item.bracelet-of-dashing.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

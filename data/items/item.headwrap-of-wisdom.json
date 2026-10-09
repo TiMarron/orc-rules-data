@@ -1,0 +1,46 @@
+{
+  "id": "item.headwrap-of-wisdom",
+  "type": "item",
+  "name": "item.headwrap-of-wisdom.name",
+  "traits": [
+    "apex",
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 270,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.headwrap-of-wisdom.text",
+  "level": 17,
+  "priceCp": 1500000,
+  "bulk": "0",
+  "usage": "item.headwrap-of-wisdom.usage",
+  "activations": [
+    {
+      "name": "item.headwrap-of-wisdom.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.headwrap-of-wisdom.activations.0.frequency",
+      "text": "item.headwrap-of-wisdom.activations.0.text"
+    },
+    {
+      "name": "item.headwrap-of-wisdom.activations.1.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate",
+        "fortune"
+      ],
+      "frequency": "item.headwrap-of-wisdom.activations.1.frequency",
+      "trigger": "item.headwrap-of-wisdom.activations.1.trigger",
+      "text": "item.headwrap-of-wisdom.activations.1.text"
+    }
+  ],
+  "category": "worn"
+}

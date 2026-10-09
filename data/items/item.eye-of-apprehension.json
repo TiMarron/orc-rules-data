@@ -1,0 +1,25 @@
+{
+  "id": "item.eye-of-apprehension",
+  "type": "item",
+  "name": "item.eye-of-apprehension.name",
+  "traits": [
+    "consumable",
+    "fortune",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.eye-of-apprehension.text",
+  "level": 12,
+  "priceCp": 40000,
+  "bulk": "0",
+  "usage": "item.eye-of-apprehension.usage",
+  "category": "talisman"
+}

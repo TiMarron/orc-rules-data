@@ -1,0 +1,24 @@
+{
+  "id": "item.mesmerizing-opal",
+  "type": "item",
+  "name": "item.mesmerizing-opal.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 266,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.mesmerizing-opal.text",
+  "level": 2,
+  "priceCp": 700,
+  "bulk": "0",
+  "usage": "item.mesmerizing-opal.usage",
+  "category": "talisman"
+}

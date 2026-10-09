@@ -1,0 +1,21 @@
+{
+  "id": "item.elven-chain-high-grade",
+  "type": "item",
+  "name": "item.elven-chain-high-grade.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 228,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.elven-chain-high-grade.text",
+  "level": 20,
+  "priceCp": 5200000,
+  "bulk": "L",
+  "usage": "item.elven-chain-high-grade.usage",
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

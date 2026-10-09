@@ -1,0 +1,25 @@
+{
+  "id": "item.nectar-of-purification",
+  "type": "item",
+  "name": "item.nectar-of-purification.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.nectar-of-purification.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.nectar-of-purification.usage",
+  "category": "consumable",
+  "editNote": "The source's '1st-rank' carries a stray space after the hyphen (a line-break hyphen); page 257 prints '1st-rank'."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "item.ring-of-climbing",
+  "type": "item",
+  "name": "item.ring-of-climbing.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 294,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.ring-of-climbing.text",
+  "level": 12,
+  "priceCp": 175000,
+  "bulk": "0",
+  "usage": "item.ring-of-climbing.usage",
+  "category": "worn"
+}

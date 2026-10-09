@@ -1,0 +1,24 @@
+{
+  "id": "item.gecko-potion",
+  "type": "item",
+  "name": "item.gecko-potion.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 259,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.gecko-potion.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.gecko-potion.usage",
+  "category": "consumable"
+}

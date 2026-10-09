@@ -1,0 +1,31 @@
+{
+  "id": "item.magic-wand-5th-rank-spell",
+  "type": "item",
+  "name": "item.magic-wand-5th-rank-spell.name",
+  "traits": [
+    "magical",
+    "wand"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 282,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.magic-wand-5th-rank-spell.text",
+  "level": 11,
+  "priceCp": 140000,
+  "bulk": "L",
+  "usage": "item.magic-wand-5th-rank-spell.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "frequency": "item.magic-wand-5th-rank-spell.activations.0.frequency",
+      "text": "item.magic-wand-5th-rank-spell.activations.0.text"
+    }
+  ],
+  "category": "wand",
+  "editNote": "Accepted: the only reports are informational (variant headings, the earlier printing's source line). The book prints 1,500 gp on p.282, but the book's errata (Spring 2026) says 5th-rank magic wands had the wrong Price and cost 1,400 gp; the record's 1,400 gp is the errata's, and level 11 matches."
+}

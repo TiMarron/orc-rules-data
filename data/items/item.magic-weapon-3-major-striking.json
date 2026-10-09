@@ -1,0 +1,23 @@
+{
+  "id": "item.magic-weapon-3-major-striking",
+  "type": "item",
+  "name": "item.magic-weapon-3-major-striking.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 241,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.magic-weapon-3-major-striking.text",
+  "level": 19,
+  "priceCp": 4000000,
+  "bulk": "0",
+  "usage": "item.magic-weapon-3-major-striking.usage",
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

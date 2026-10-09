@@ -1,0 +1,24 @@
+{
+  "id": "item.oil-of-keen-edges",
+  "type": "item",
+  "name": "item.oil-of-keen-edges.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.oil-of-keen-edges.text",
+  "level": 11,
+  "priceCp": 25000,
+  "bulk": "L",
+  "usage": "item.oil-of-keen-edges.usage",
+  "category": "consumable"
+}

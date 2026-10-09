@@ -1,0 +1,33 @@
+{
+  "id": "item.flying-broomstick",
+  "type": "item",
+  "name": "item.flying-broomstick.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 274,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.flying-broomstick.text",
+  "level": 12,
+  "priceCp": 190000,
+  "bulk": "1",
+  "usage": "item.flying-broomstick.usage",
+  "activations": [
+    {
+      "name": "item.flying-broomstick.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "item.flying-broomstick.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

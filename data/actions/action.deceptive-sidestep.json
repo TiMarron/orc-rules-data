@@ -1,0 +1,18 @@
+{
+  "id": "action.deceptive-sidestep",
+  "type": "action",
+  "name": "action.deceptive-sidestep.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.deceptive-sidestep.text",
+  "actions": "reaction",
+  "trigger": "action.deceptive-sidestep.trigger",
+  "requirements": "action.deceptive-sidestep.requirements"
+}

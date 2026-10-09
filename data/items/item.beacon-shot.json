@@ -1,0 +1,22 @@
+{
+  "id": "item.beacon-shot",
+  "type": "item",
+  "name": "item.beacon-shot.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 255,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.beacon-shot.text",
+  "level": 3,
+  "priceCp": 1000,
+  "bulk": "0",
+  "category": "consumable"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "item.possibility-tome",
+  "type": "item",
+  "name": "item.possibility-tome.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 276,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.possibility-tome.text",
+  "level": 18,
+  "priceCp": 2200000,
+  "bulk": "2",
+  "usage": "item.possibility-tome.usage",
+  "activations": [
+    {
+      "name": "item.possibility-tome.activations.0.name",
+      "time": "item.possibility-tome.activations.0.time",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "item.possibility-tome.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

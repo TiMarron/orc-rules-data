@@ -1,0 +1,25 @@
+{
+  "id": "item.exquisite-alloy-orb-standard-grade",
+  "type": "item",
+  "name": "item.exquisite-alloy-orb-standard-grade.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.exquisite-alloy-orb-standard-grade.text",
+  "level": 12,
+  "priceCp": 40000,
+  "bulk": "0",
+  "usage": "item.exquisite-alloy-orb-standard-grade.usage",
+  "category": "talisman",
+  "editNote": "Accepted: page 263 prints these as Type lines of Alloy Orb ('Type exquisite standard-grade alloy orb; Level 12 (uncommon); Price 400 gp' and the high-grade one at level 18, 4,500 gp), not under this name; level, Price, uncommon rarity and the text match."
+}

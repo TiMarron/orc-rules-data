@@ -1,0 +1,35 @@
+{
+  "id": "item.devoted-vestments",
+  "type": "item",
+  "name": "item.devoted-vestments.name",
+  "traits": [
+    "divine",
+    "focused",
+    "invested"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 288,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.devoted-vestments.text",
+  "level": 11,
+  "priceCp": 125000,
+  "bulk": "L",
+  "usage": "item.devoted-vestments.usage",
+  "activations": [
+    {
+      "name": "item.devoted-vestments.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.devoted-vestments.activations.0.frequency",
+      "text": "item.devoted-vestments.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "item.collar-of-inconspicuousness",
+  "type": "item",
+  "name": "item.collar-of-inconspicuousness.name",
+  "traits": [
+    "companion",
+    "invested",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 272,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.collar-of-inconspicuousness.text",
+  "level": 8,
+  "priceCp": 47500,
+  "bulk": "1",
+  "usage": "item.collar-of-inconspicuousness.usage",
+  "activations": [
+    {
+      "name": "item.collar-of-inconspicuousness.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "item.collar-of-inconspicuousness.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

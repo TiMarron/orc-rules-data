@@ -1,0 +1,22 @@
+{
+  "id": "item.returning",
+  "type": "item",
+  "name": "item.returning.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.returning.text",
+  "level": 3,
+  "priceCp": 5500,
+  "bulk": "0",
+  "usage": "item.returning.usage",
+  "category": "rune"
+}

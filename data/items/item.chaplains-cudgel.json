@@ -1,0 +1,34 @@
+{
+  "id": "item.chaplains-cudgel",
+  "type": "item",
+  "name": "item.chaplains-cudgel.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 242,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.chaplains-cudgel.text",
+  "level": 9,
+  "priceCp": 65000,
+  "bulk": "1",
+  "usage": "item.chaplains-cudgel.usage",
+  "activations": [
+    {
+      "name": "item.chaplains-cudgel.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "requirements": "item.chaplains-cudgel.activations.0.requirements",
+      "text": "item.chaplains-cudgel.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: every line of the record's spell list was found verbatim on the book's page, and level and Price match the Type line (or the item's header). The list tags are the bulleted spell list, kept as a list where the record ends instead of under the Type line where the book prints it; the text check scores the list low because the PDF prints its bullets inline. Variant headings and the earlier printing's source line are informational; a specific staff or weapon stays category 'other' (the specific-item precedent)."
+}

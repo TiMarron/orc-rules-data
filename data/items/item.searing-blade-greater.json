@@ -1,0 +1,46 @@
+{
+  "id": "item.searing-blade-greater",
+  "type": "item",
+  "name": "item.searing-blade-greater.name",
+  "traits": [
+    "fire",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 243,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.searing-blade-greater.text",
+  "level": 17,
+  "priceCp": 1380000,
+  "bulk": "1",
+  "usage": "item.searing-blade-greater.usage",
+  "activations": [
+    {
+      "name": "item.searing-blade-greater.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "item.searing-blade-greater.activations.0.text"
+    },
+    {
+      "name": "item.searing-blade-greater.activations.1.name",
+      "actions": "1",
+      "traits": [
+        "aura",
+        "concentrate",
+        "fire"
+      ],
+      "frequency": "item.searing-blade-greater.activations.1.frequency",
+      "text": "item.searing-blade-greater.activations.1.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

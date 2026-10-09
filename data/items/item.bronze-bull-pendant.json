@@ -1,0 +1,24 @@
+{
+  "id": "item.bronze-bull-pendant",
+  "type": "item",
+  "name": "item.bronze-bull-pendant.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.bronze-bull-pendant.text",
+  "level": 2,
+  "priceCp": 700,
+  "bulk": "0",
+  "usage": "item.bronze-bull-pendant.usage",
+  "category": "talisman"
+}

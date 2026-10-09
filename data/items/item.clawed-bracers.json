@@ -1,0 +1,31 @@
+{
+  "id": "item.clawed-bracers",
+  "type": "item",
+  "name": "item.clawed-bracers.name",
+  "traits": [
+    "invested",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 287,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.clawed-bracers.text",
+  "level": 7,
+  "priceCp": 32500,
+  "bulk": "L",
+  "usage": "item.clawed-bracers.usage",
+  "activations": [
+    {
+      "name": "item.clawed-bracers.activations.0.name",
+      "actions": "1",
+      "frequency": "item.clawed-bracers.activations.0.frequency",
+      "text": "item.clawed-bracers.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}
