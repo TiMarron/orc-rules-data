@@ -4,6 +4,13 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Changed
+
+- An item's `level` (and a variant's) may be up to 25: artifacts are printed
+  at levels 21 to 25.
+
 ## 0.8.0 — 2026-10-10
 
 ### Changed — breaking
