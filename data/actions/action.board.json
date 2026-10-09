@@ -1,0 +1,19 @@
+{
+  "id": "action.board",
+  "type": "action",
+  "name": "action.board.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 212,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.board.text",
+  "actions": "1",
+  "requirements": "action.board.requirements"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.astral",
+  "type": "item",
+  "name": "item.astral.name",
+  "traits": [
+    "magical",
+    "spirit"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 236,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.astral.text",
+  "level": 8,
+  "priceCp": 45000,
+  "bulk": "0",
+  "usage": "item.astral.usage",
+  "category": "rune",
+  "editNote": "Reserved Material removed: the proper name of a plane replaced with the descriptor the dataset already uses (the astral realm). Rules text is the book's."
+}

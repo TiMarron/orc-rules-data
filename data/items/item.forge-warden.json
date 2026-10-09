@@ -1,0 +1,35 @@
+{
+  "id": "item.forge-warden",
+  "type": "item",
+  "name": "item.forge-warden.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 234,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.forge-warden.text",
+  "level": 10,
+  "priceCp": 97500,
+  "bulk": "1",
+  "usage": "item.forge-warden.usage",
+  "activations": [
+    {
+      "name": "item.forge-warden.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate",
+        "fire"
+      ],
+      "trigger": "item.forge-warden.activations.0.trigger",
+      "text": "item.forge-warden.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Reserved Material removed: the named deity replaced with 'the forge god', twice. Rules text is the book's."
+}

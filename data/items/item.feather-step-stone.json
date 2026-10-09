@@ -1,0 +1,24 @@
+{
+  "id": "item.feather-step-stone",
+  "type": "item",
+  "name": "item.feather-step-stone.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.feather-step-stone.text",
+  "level": 3,
+  "priceCp": 800,
+  "bulk": "0",
+  "usage": "item.feather-step-stone.usage",
+  "category": "talisman"
+}

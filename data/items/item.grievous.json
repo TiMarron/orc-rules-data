@@ -1,0 +1,22 @@
+{
+  "id": "item.grievous",
+  "type": "item",
+  "name": "item.grievous.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.grievous.text",
+  "level": 9,
+  "priceCp": 70000,
+  "bulk": "0",
+  "usage": "item.grievous.usage",
+  "category": "rune"
+}

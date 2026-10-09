@@ -1,0 +1,24 @@
+{
+  "id": "item.serum-of-sex-shift",
+  "type": "item",
+  "name": "item.serum-of-sex-shift.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.serum-of-sex-shift.text",
+  "level": 7,
+  "priceCp": 6000,
+  "bulk": "L",
+  "usage": "item.serum-of-sex-shift.usage",
+  "category": "consumable"
+}

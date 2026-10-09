@@ -1,0 +1,45 @@
+{
+  "id": "item.icicle",
+  "type": "item",
+  "name": "item.icicle.name",
+  "traits": [
+    "cold",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 242,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.icicle.text",
+  "level": 16,
+  "priceCp": 1000000,
+  "bulk": "2",
+  "usage": "item.icicle.usage",
+  "activations": [
+    {
+      "name": "item.icicle.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "item.icicle.activations.0.text"
+    },
+    {
+      "name": "item.icicle.activations.1.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.icicle.activations.1.frequency",
+      "text": "item.icicle.activations.1.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: the link reports are to rules pages (counteracting, flying and the like) the dataset does not model as records; the linked words are kept as plain labels. Level and Price match the book's Type line or header, and the text passes the comparison with the page. A specific shield or weapon stays category 'other' (the specific-item precedent); variant headings and the earlier printing's source line are informational."
+}

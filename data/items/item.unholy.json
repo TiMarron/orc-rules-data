@@ -1,0 +1,34 @@
+{
+  "id": "item.unholy",
+  "type": "item",
+  "name": "item.unholy.name",
+  "traits": [
+    "magical",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 239,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.unholy.text",
+  "level": 11,
+  "priceCp": 140000,
+  "bulk": "0",
+  "usage": "item.unholy.usage",
+  "activations": [
+    {
+      "name": "item.unholy.activations.0.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.unholy.activations.0.frequency",
+      "trigger": "item.unholy.activations.0.trigger"
+    }
+  ],
+  "category": "rune"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item.barding-of-the-zephyr",
+  "type": "item",
+  "name": "item.barding-of-the-zephyr.name",
+  "traits": [
+    "companion",
+    "invested",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 272,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.barding-of-the-zephyr.text",
+  "level": 10,
+  "priceCp": 90000,
+  "bulk": "L",
+  "usage": "item.barding-of-the-zephyr.usage",
+  "activations": [
+    {
+      "name": "item.barding-of-the-zephyr.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.barding-of-the-zephyr.activations.0.frequency",
+      "text": "item.barding-of-the-zephyr.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

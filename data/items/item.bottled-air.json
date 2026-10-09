@@ -1,0 +1,33 @@
+{
+  "id": "item.bottled-air",
+  "type": "item",
+  "name": "item.bottled-air.name",
+  "traits": [
+    "air",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.bottled-air.text",
+  "level": 7,
+  "priceCp": 32000,
+  "bulk": "L",
+  "usage": "item.bottled-air.usage",
+  "activations": [
+    {
+      "name": "item.bottled-air.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.bottled-air.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

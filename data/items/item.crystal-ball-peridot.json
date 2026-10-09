@@ -1,0 +1,46 @@
+{
+  "id": "item.crystal-ball-peridot",
+  "type": "item",
+  "name": "item.crystal-ball-peridot.name",
+  "traits": [
+    "magical",
+    "scrying"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.crystal-ball-peridot.text",
+  "level": 17,
+  "priceCp": 1250000,
+  "bulk": "L",
+  "usage": "item.crystal-ball-peridot.usage",
+  "activations": [
+    {
+      "name": "item.crystal-ball-peridot.activations.0.name",
+      "time": "item.crystal-ball-peridot.activations.0.time",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.crystal-ball-peridot.activations.0.frequency",
+      "text": "item.crystal-ball-peridot.activations.0.text"
+    },
+    {
+      "name": "item.crystal-ball-peridot.activations.1.name",
+      "time": "item.crystal-ball-peridot.activations.1.time",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.crystal-ball-peridot.activations.1.frequency",
+      "text": "item.crystal-ball-peridot.activations.1.text"
+    }
+  ],
+  "category": "held",
+  "editNote": "Accepted: the only reports are informational. The structured source repeats an item family's variants as headings under the family; each variant is its own record with its own level and price, so nothing is lost by dropping the headings. The 'other book' citations sit in the variants' source lines (the earlier printing), not in the text. For 244 of 263 records the level and price were read off the book's Type line on the record's page and match; the other 19 are family records (Armor Potency, Healing Potion, Magic Wand and the like) that print no Type line of their own, and their level is the lowest of their variants, as checked."
+}

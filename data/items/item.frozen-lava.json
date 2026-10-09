@@ -1,0 +1,25 @@
+{
+  "id": "item.frozen-lava",
+  "type": "item",
+  "name": "item.frozen-lava.name",
+  "traits": [
+    "consumable",
+    "fire",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.frozen-lava.text",
+  "level": 5,
+  "priceCp": 3000,
+  "bulk": "0",
+  "usage": "item.frozen-lava.usage",
+  "category": "consumable",
+  "editNote": "Reserved Material removed: the world's name replaced with 'the world'. Rules text is the book's."
+}

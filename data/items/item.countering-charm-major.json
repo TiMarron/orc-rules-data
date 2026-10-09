@@ -1,0 +1,36 @@
+{
+  "id": "item.countering-charm-major",
+  "type": "item",
+  "name": "item.countering-charm-major.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 287,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.countering-charm-major.text",
+  "level": 18,
+  "priceCp": 2000000,
+  "bulk": "0",
+  "usage": "item.countering-charm-major.usage",
+  "activations": [
+    {
+      "name": "item.countering-charm-major.activations.0.name",
+      "actions": "reaction",
+      "traits": [
+        "manipulate"
+      ],
+      "trigger": "item.countering-charm-major.activations.0.trigger",
+      "requirements": "item.countering-charm-major.activations.0.requirements",
+      "text": "item.countering-charm-major.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Accepted: the link reports are to rules pages (counteracting, flying and the like) the dataset does not model as records; the linked words are kept as plain labels. Level and Price match the book's Type line or header, and the text passes the comparison with the page. A specific shield or weapon stays category 'other' (the specific-item precedent); variant headings and the earlier printing's source line are informational."
+}

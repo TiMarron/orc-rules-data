@@ -1,0 +1,20 @@
+{
+  "id": "action.discover",
+  "type": "action",
+  "name": "action.discover.name",
+  "traits": [
+    "concentrate",
+    "secret"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 187,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "action.discover.text",
+  "variable": true,
+  "editNote": "The book prints no fixed action cost (page 187 prints no action icon; it is one action per round of an influence encounter, and the round's length is the GM's); the action is variable."
+}

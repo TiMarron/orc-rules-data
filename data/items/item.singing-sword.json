@@ -1,0 +1,53 @@
+{
+  "id": "item.singing-sword",
+  "type": "item",
+  "name": "item.singing-sword.name",
+  "traits": [
+    "intelligent",
+    "occult"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 305,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.singing-sword.text",
+  "level": 5,
+  "bulk": "1",
+  "usage": "item.singing-sword.usage",
+  "activations": [
+    {
+      "name": "item.singing-sword.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.singing-sword.activations.0.frequency",
+      "text": "item.singing-sword.activations.0.text"
+    },
+    {
+      "name": "item.singing-sword.activations.1.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.singing-sword.activations.1.frequency",
+      "text": "item.singing-sword.activations.1.text"
+    },
+    {
+      "name": "item.singing-sword.activations.2.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.singing-sword.activations.2.frequency",
+      "trigger": "item.singing-sword.activations.2.trigger",
+      "text": "item.singing-sword.activations.2.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "The no-alignment trait is a pre-Remaster leftover in the source; page 305 prints rare, intelligent, occult. The Will line's parentheses, '+13 (+17 against attempts to quiet its singing)', are restored as page 305 prints them."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "item.stone-bullet",
+  "type": "item",
+  "name": "item.stone-bullet.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.stone-bullet.text",
+  "level": 15,
+  "priceCp": 130000,
+  "bulk": "0",
+  "category": "consumable"
+}

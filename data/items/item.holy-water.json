@@ -1,0 +1,25 @@
+{
+  "id": "item.holy-water",
+  "type": "item",
+  "name": "item.holy-water.name",
+  "traits": [
+    "consumable",
+    "divine",
+    "holy",
+    "splash"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.holy-water.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "L",
+  "usage": "item.holy-water.usage",
+  "category": "consumable"
+}

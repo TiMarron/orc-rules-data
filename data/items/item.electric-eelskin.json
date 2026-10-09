@@ -1,0 +1,35 @@
+{
+  "id": "item.electric-eelskin",
+  "type": "item",
+  "name": "item.electric-eelskin.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 230,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.electric-eelskin.text",
+  "level": 10,
+  "priceCp": 95000,
+  "bulk": "1",
+  "usage": "item.electric-eelskin.usage",
+  "activations": [
+    {
+      "name": "item.electric-eelskin.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.electric-eelskin.activations.0.frequency",
+      "text": "item.electric-eelskin.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

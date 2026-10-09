@@ -1,0 +1,24 @@
+{
+  "id": "item.iron-medallion",
+  "type": "item",
+  "name": "item.iron-medallion.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 265,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.iron-medallion.text",
+  "level": 10,
+  "priceCp": 17500,
+  "bulk": "0",
+  "usage": "item.iron-medallion.usage",
+  "category": "talisman"
+}

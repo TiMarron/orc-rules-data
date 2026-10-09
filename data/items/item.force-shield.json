@@ -1,0 +1,36 @@
+{
+  "id": "item.force-shield",
+  "type": "item",
+  "name": "item.force-shield.name",
+  "traits": [
+    "force",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 234,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.force-shield.text",
+  "level": 9,
+  "priceCp": 65000,
+  "bulk": "L",
+  "usage": "item.force-shield.usage",
+  "activations": [
+    {
+      "name": "item.force-shield.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "force"
+      ],
+      "frequency": "item.force-shield.activations.0.frequency",
+      "text": "item.force-shield.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

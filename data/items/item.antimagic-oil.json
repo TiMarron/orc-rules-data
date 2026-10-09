@@ -1,0 +1,24 @@
+{
+  "id": "item.antimagic-oil",
+  "type": "item",
+  "name": "item.antimagic-oil.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.antimagic-oil.text",
+  "level": 20,
+  "priceCp": 1300000,
+  "bulk": "L",
+  "usage": "item.antimagic-oil.usage",
+  "category": "consumable"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "item.bracers-of-missile-deflection-greater",
+  "type": "item",
+  "name": "item.bracers-of-missile-deflection-greater.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 286,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.bracers-of-missile-deflection-greater.text",
+  "level": 9,
+  "priceCp": 65000,
+  "bulk": "L",
+  "usage": "item.bracers-of-missile-deflection-greater.usage",
+  "activations": [
+    {
+      "actions": "reaction",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.bracers-of-missile-deflection-greater.activations.0.frequency",
+      "trigger": "item.bracers-of-missile-deflection-greater.activations.0.trigger",
+      "requirements": "item.bracers-of-missile-deflection-greater.activations.0.requirements",
+      "text": "item.bracers-of-missile-deflection-greater.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Accepted: the only reports are informational. The structured source repeats an item family's variants as headings under the family; each variant is its own record with its own level and price, so nothing is lost by dropping the headings. The 'other book' citations sit in the variants' source lines (the earlier printing), not in the text. For 244 of 263 records the level and price were read off the book's Type line on the record's page and match; the other 19 are family records (Armor Potency, Healing Potion, Magic Wand and the like) that print no Type line of their own, and their level is the lowest of their variants, as checked."
+}

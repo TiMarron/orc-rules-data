@@ -1,0 +1,34 @@
+{
+  "id": "item.madcap-top",
+  "type": "item",
+  "name": "item.madcap-top.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 274,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.madcap-top.text",
+  "level": 8,
+  "priceCp": 45900,
+  "bulk": "L",
+  "usage": "item.madcap-top.usage",
+  "activations": [
+    {
+      "name": "item.madcap-top.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "item.madcap-top.activations.0.text"
+    }
+  ],
+  "category": "held",
+  "editNote": "The book's d20 effect table (pages 274-275) is kept as a numbered list, since the dataset markup has no tables; 'on the table below' reads 'on the list below'. The rows are the source's, checked against the page, with its spell and condition links resolved."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item.potion-of-undetectability",
+  "type": "item",
+  "name": "item.potion-of-undetectability.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.potion-of-undetectability.text",
+  "level": 18,
+  "priceCp": 440000,
+  "bulk": "L",
+  "usage": "item.potion-of-undetectability.usage",
+  "category": "consumable"
+}

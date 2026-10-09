@@ -1,0 +1,24 @@
+{
+  "id": "item.tiger-menuki",
+  "type": "item",
+  "name": "item.tiger-menuki.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 267,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.tiger-menuki.text",
+  "level": 5,
+  "priceCp": 3000,
+  "bulk": "0",
+  "usage": "item.tiger-menuki.usage",
+  "category": "talisman"
+}

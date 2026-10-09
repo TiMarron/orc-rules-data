@@ -1,0 +1,24 @@
+{
+  "id": "item.candle-of-truth",
+  "type": "item",
+  "name": "item.candle-of-truth.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "mental"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 268,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.candle-of-truth.text",
+  "level": 8,
+  "priceCp": 7500,
+  "bulk": "0",
+  "usage": "item.candle-of-truth.usage",
+  "category": "consumable"
+}

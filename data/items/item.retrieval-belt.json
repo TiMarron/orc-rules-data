@@ -1,0 +1,45 @@
+{
+  "id": "item.retrieval-belt",
+  "type": "item",
+  "name": "item.retrieval-belt.name",
+  "traits": [
+    "extradimensional",
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 294,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.retrieval-belt.text",
+  "level": 7,
+  "priceCp": 34000,
+  "bulk": "0",
+  "usage": "item.retrieval-belt.usage",
+  "activations": [
+    {
+      "name": "item.retrieval-belt.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "requirements": "item.retrieval-belt.activations.0.requirements",
+      "text": "item.retrieval-belt.activations.0.text"
+    },
+    {
+      "name": "item.retrieval-belt.activations.1.name",
+      "actions": "free",
+      "traits": [
+        "manipulate"
+      ],
+      "requirements": "item.retrieval-belt.activations.1.requirements",
+      "text": "item.retrieval-belt.activations.1.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Accepted: the only reports are informational. The structured source repeats an item family's variants as headings under the family; each variant is its own record with its own level and price, so nothing is lost by dropping the headings. The 'other book' citations sit in the variants' source lines (the earlier printing), not in the text. For 244 of 263 records the level and price were read off the book's Type line on the record's page and match; the other 19 are family records (Armor Potency, Healing Potion, Magic Wand and the like) that print no Type line of their own, and their level is the lowest of their variants, as checked."
+}

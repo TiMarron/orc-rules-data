@@ -1,0 +1,45 @@
+{
+  "id": "item.life-saver-mail",
+  "type": "item",
+  "name": "item.life-saver-mail.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 230,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.life-saver-mail.text",
+  "level": 14,
+  "priceCp": 400000,
+  "bulk": "3",
+  "usage": "item.life-saver-mail.usage",
+  "activations": [
+    {
+      "name": "item.life-saver-mail.activations.0.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.life-saver-mail.activations.0.frequency",
+      "trigger": "item.life-saver-mail.activations.0.trigger",
+      "text": "item.life-saver-mail.activations.0.text"
+    },
+    {
+      "name": "item.life-saver-mail.activations.1.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "item.life-saver-mail.activations.1.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

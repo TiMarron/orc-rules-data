@@ -1,0 +1,33 @@
+{
+  "id": "item.raiment",
+  "type": "item",
+  "name": "item.raiment.name",
+  "traits": [
+    "illusion",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 226,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.raiment.text",
+  "level": 5,
+  "priceCp": 14000,
+  "bulk": "0",
+  "usage": "item.raiment.usage",
+  "activations": [
+    {
+      "name": "item.raiment.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "item.raiment.activations.0.text"
+    }
+  ],
+  "category": "rune"
+}

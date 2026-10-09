@@ -1,0 +1,24 @@
+{
+  "id": "item.jade-cat",
+  "type": "item",
+  "name": "item.jade-cat.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 265,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.jade-cat.text",
+  "level": 2,
+  "priceCp": 600,
+  "bulk": "0",
+  "usage": "item.jade-cat.usage",
+  "category": "talisman"
+}

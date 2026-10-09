@@ -1,0 +1,25 @@
+{
+  "id": "item.potion-of-quickness",
+  "type": "item",
+  "name": "item.potion-of-quickness.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.potion-of-quickness.text",
+  "level": 8,
+  "priceCp": 9000,
+  "bulk": "L",
+  "usage": "item.potion-of-quickness.usage",
+  "category": "consumable",
+  "editNote": "Compared with pages 259-260: every sentence of the text is on the page; the text check scores the short description low only because of the spell link labels. Level and Price match the header."
+}

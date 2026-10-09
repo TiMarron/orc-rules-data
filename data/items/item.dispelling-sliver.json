@@ -1,0 +1,24 @@
+{
+  "id": "item.dispelling-sliver",
+  "type": "item",
+  "name": "item.dispelling-sliver.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.dispelling-sliver.text",
+  "level": 17,
+  "priceCp": 240000,
+  "bulk": "0",
+  "usage": "item.dispelling-sliver.usage",
+  "category": "talisman"
+}

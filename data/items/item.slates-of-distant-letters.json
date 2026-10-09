@@ -1,0 +1,33 @@
+{
+  "id": "item.slates-of-distant-letters",
+  "type": "item",
+  "name": "item.slates-of-distant-letters.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 276,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.slates-of-distant-letters.text",
+  "level": 13,
+  "priceCp": 245000,
+  "bulk": "L",
+  "usage": "item.slates-of-distant-letters.usage",
+  "activations": [
+    {
+      "name": "item.slates-of-distant-letters.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.slates-of-distant-letters.activations.0.frequency",
+      "text": "item.slates-of-distant-letters.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

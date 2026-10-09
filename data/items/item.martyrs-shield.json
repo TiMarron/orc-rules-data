@@ -1,0 +1,23 @@
+{
+  "id": "item.martyrs-shield",
+  "type": "item",
+  "name": "item.martyrs-shield.name",
+  "traits": [
+    "divine",
+    "intelligent"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 305,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.martyrs-shield.text",
+  "level": 7,
+  "bulk": "1",
+  "usage": "item.martyrs-shield.usage",
+  "category": "other",
+  "editNote": "Reserved Material removed: the two named deities given as examples of a righteous deity are dropped; the sentence keeps its meaning. The no-alignment trait is a pre-Remaster leftover in the source; page 305 prints rare, divine, intelligent. Rules text is the book's."
+}

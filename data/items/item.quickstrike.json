@@ -1,0 +1,22 @@
+{
+  "id": "item.quickstrike",
+  "type": "item",
+  "name": "item.quickstrike.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.quickstrike.text",
+  "level": 16,
+  "priceCp": 1000000,
+  "bulk": "0",
+  "usage": "item.quickstrike.usage",
+  "category": "rune"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item.inexplicable-apparatus",
+  "type": "item",
+  "name": "item.inexplicable-apparatus.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 291,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.inexplicable-apparatus.text",
+  "level": 18,
+  "priceCp": 1900000,
+  "bulk": "2",
+  "usage": "item.inexplicable-apparatus.usage",
+  "activations": [
+    {
+      "name": "item.inexplicable-apparatus.activations.0.name",
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.inexplicable-apparatus.activations.0.frequency",
+      "text": "item.inexplicable-apparatus.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

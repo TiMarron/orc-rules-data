@@ -1,0 +1,24 @@
+{
+  "id": "item.swift-block-cabochon",
+  "type": "item",
+  "name": "item.swift-block-cabochon.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 267,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.swift-block-cabochon.text",
+  "level": 7,
+  "priceCp": 7000,
+  "bulk": "0",
+  "usage": "item.swift-block-cabochon.usage",
+  "category": "talisman"
+}

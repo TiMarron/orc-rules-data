@@ -1,0 +1,18 @@
+{
+  "id": "action.sense-weakness",
+  "type": "action",
+  "name": "action.sense-weakness.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.sense-weakness.text",
+  "actions": "reaction",
+  "trigger": "action.sense-weakness.trigger",
+  "requirements": "action.sense-weakness.requirements"
+}

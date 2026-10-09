@@ -1,0 +1,24 @@
+{
+  "id": "item.dazing-coil",
+  "type": "item",
+  "name": "item.dazing-coil.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.dazing-coil.text",
+  "level": 14,
+  "priceCp": 90000,
+  "bulk": "0",
+  "usage": "item.dazing-coil.usage",
+  "category": "talisman"
+}

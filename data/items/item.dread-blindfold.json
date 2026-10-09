@@ -1,0 +1,38 @@
+{
+  "id": "item.dread-blindfold",
+  "type": "item",
+  "name": "item.dread-blindfold.name",
+  "traits": [
+    "emotion",
+    "fear",
+    "invested",
+    "magical",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 289,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.dread-blindfold.text",
+  "level": 17,
+  "priceCp": 1500000,
+  "bulk": "0",
+  "usage": "item.dread-blindfold.usage",
+  "activations": [
+    {
+      "name": "item.dread-blindfold.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "item.dread-blindfold.activations.0.frequency",
+      "trigger": "item.dread-blindfold.activations.0.trigger",
+      "text": "item.dread-blindfold.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

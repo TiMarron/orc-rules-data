@@ -1,0 +1,35 @@
+{
+  "id": "item.lions-shield",
+  "type": "item",
+  "name": "item.lions-shield.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 235,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.lions-shield.text",
+  "level": 6,
+  "priceCp": 24500,
+  "bulk": "1",
+  "usage": "item.lions-shield.usage",
+  "activations": [
+    {
+      "name": "item.lions-shield.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.lions-shield.activations.0.frequency",
+      "requirements": "item.lions-shield.activations.0.requirements",
+      "text": "item.lions-shield.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

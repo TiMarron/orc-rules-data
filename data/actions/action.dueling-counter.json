@@ -1,0 +1,18 @@
+{
+  "id": "action.dueling-counter",
+  "type": "action",
+  "name": "action.dueling-counter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.dueling-counter.text",
+  "actions": "reaction",
+  "trigger": "action.dueling-counter.trigger",
+  "requirements": "action.dueling-counter.requirements"
+}

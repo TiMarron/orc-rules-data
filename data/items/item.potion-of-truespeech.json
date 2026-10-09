@@ -1,0 +1,24 @@
+{
+  "id": "item.potion-of-truespeech",
+  "type": "item",
+  "name": "item.potion-of-truespeech.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.potion-of-truespeech.text",
+  "level": 12,
+  "priceCp": 32000,
+  "bulk": "L",
+  "usage": "item.potion-of-truespeech.usage",
+  "category": "consumable"
+}

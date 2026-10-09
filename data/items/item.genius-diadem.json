@@ -1,0 +1,36 @@
+{
+  "id": "item.genius-diadem",
+  "type": "item",
+  "name": "item.genius-diadem.name",
+  "traits": [
+    "apex",
+    "arcane",
+    "intelligent"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 305,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.genius-diadem.text",
+  "level": 18,
+  "bulk": "L",
+  "usage": "item.genius-diadem.usage",
+  "activations": [
+    {
+      "name": "item.genius-diadem.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.genius-diadem.activations.0.frequency",
+      "text": "item.genius-diadem.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "The no-alignment trait is a pre-Remaster leftover in the source; page 305 prints rare, apex, arcane, intelligent."
+}

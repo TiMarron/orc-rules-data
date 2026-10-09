@@ -1,0 +1,36 @@
+{
+  "id": "item.dancing-scarf",
+  "type": "item",
+  "name": "item.dancing-scarf.name",
+  "traits": [
+    "invested",
+    "magical",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 288,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.dancing-scarf.text",
+  "level": 3,
+  "priceCp": 6000,
+  "bulk": "0",
+  "usage": "item.dancing-scarf.usage",
+  "activations": [
+    {
+      "name": "item.dancing-scarf.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "requirements": "item.dancing-scarf.activations.0.requirements",
+      "text": "item.dancing-scarf.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Accepted: the only reports are informational. The structured source repeats an item family's variants as headings under the family; each variant is its own record with its own level and price, so nothing is lost by dropping the headings. The 'other book' citations sit in the variants' source lines (the earlier printing), not in the text. For 244 of 263 records the level and price were read off the book's Type line on the record's page and match; the other 19 are family records (Armor Potency, Healing Potion, Magic Wand and the like) that print no Type line of their own, and their level is the lowest of their variants, as checked."
+}

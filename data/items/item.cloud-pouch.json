@@ -1,0 +1,34 @@
+{
+  "id": "item.cloud-pouch",
+  "type": "item",
+  "name": "item.cloud-pouch.name",
+  "traits": [
+    "magical",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 273,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.cloud-pouch.text",
+  "level": 6,
+  "priceCp": 22500,
+  "bulk": "1",
+  "usage": "item.cloud-pouch.usage",
+  "activations": [
+    {
+      "name": "item.cloud-pouch.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.cloud-pouch.activations.0.frequency",
+      "text": "item.cloud-pouch.activations.0.text"
+    }
+  ],
+  "category": "held"
+}

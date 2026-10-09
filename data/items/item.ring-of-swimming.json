@@ -1,0 +1,23 @@
+{
+  "id": "item.ring-of-swimming",
+  "type": "item",
+  "name": "item.ring-of-swimming.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 295,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.ring-of-swimming.text",
+  "level": 12,
+  "priceCp": 175000,
+  "bulk": "0",
+  "usage": "item.ring-of-swimming.usage",
+  "category": "worn"
+}

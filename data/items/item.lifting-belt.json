@@ -1,0 +1,33 @@
+{
+  "id": "item.lifting-belt",
+  "type": "item",
+  "name": "item.lifting-belt.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 292,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.lifting-belt.text",
+  "level": 4,
+  "priceCp": 8000,
+  "bulk": "L",
+  "usage": "item.lifting-belt.usage",
+  "activations": [
+    {
+      "name": "item.lifting-belt.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.lifting-belt.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

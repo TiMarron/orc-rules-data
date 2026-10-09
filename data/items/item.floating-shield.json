@@ -1,0 +1,34 @@
+{
+  "id": "item.floating-shield",
+  "type": "item",
+  "name": "item.floating-shield.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 234,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.floating-shield.text",
+  "level": 11,
+  "priceCp": 125000,
+  "bulk": "L",
+  "usage": "item.floating-shield.usage",
+  "activations": [
+    {
+      "name": "item.floating-shield.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.floating-shield.activations.0.frequency",
+      "text": "item.floating-shield.activations.0.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "item.channel-protection-amulet",
+  "type": "item",
+  "name": "item.channel-protection-amulet.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 286,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.channel-protection-amulet.text",
+  "level": 3,
+  "priceCp": 5600,
+  "bulk": "0",
+  "usage": "item.channel-protection-amulet.usage",
+  "category": "worn"
+}

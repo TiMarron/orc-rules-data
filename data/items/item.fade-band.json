@@ -1,0 +1,25 @@
+{
+  "id": "item.fade-band",
+  "type": "item",
+  "name": "item.fade-band.name",
+  "traits": [
+    "consumable",
+    "illusion",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 264,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.fade-band.text",
+  "level": 12,
+  "priceCp": 32000,
+  "bulk": "0",
+  "usage": "item.fade-band.usage",
+  "category": "talisman"
+}

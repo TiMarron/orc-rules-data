@@ -1,0 +1,22 @@
+{
+  "id": "item.vine-arrow",
+  "type": "item",
+  "name": "item.vine-arrow.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.vine-arrow.text",
+  "level": 3,
+  "priceCp": 1000,
+  "bulk": "0",
+  "category": "consumable"
+}

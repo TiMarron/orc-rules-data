@@ -1,0 +1,17 @@
+{
+  "id": "action.change-tradition-focus",
+  "type": "action",
+  "name": "action.change-tradition-focus.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 203,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.change-tradition-focus.text",
+  "actions": "1",
+  "requirements": "action.change-tradition-focus.requirements"
+}

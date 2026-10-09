@@ -1,0 +1,25 @@
+{
+  "id": "item.basilisk-eye",
+  "type": "item",
+  "name": "item.basilisk-eye.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 263,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.basilisk-eye.text",
+  "level": 9,
+  "priceCp": 15000,
+  "bulk": "0",
+  "usage": "item.basilisk-eye.usage",
+  "category": "talisman"
+}

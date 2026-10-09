@@ -1,0 +1,41 @@
+{
+  "id": "item.philosophers-extractor",
+  "type": "item",
+  "name": "item.philosophers-extractor.name",
+  "traits": [
+    "artifact",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 301,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.philosophers-extractor.text",
+  "level": 28,
+  "bulk": "8",
+  "activations": [
+    {
+      "name": "item.philosophers-extractor.activations.0.name",
+      "actions": "3",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.philosophers-extractor.activations.0.frequency",
+      "text": "item.philosophers-extractor.activations.0.text"
+    },
+    {
+      "name": "item.philosophers-extractor.activations.1.name",
+      "time": "item.philosophers-extractor.activations.1.time",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.philosophers-extractor.activations.1.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Page 301 prints ITEM 28; the source says 25, and the errata is silent, so the book's level stands."
+}

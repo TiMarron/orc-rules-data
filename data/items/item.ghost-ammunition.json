@@ -1,0 +1,21 @@
+{
+  "id": "item.ghost-ammunition",
+  "type": "item",
+  "name": "item.ghost-ammunition.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 255,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.ghost-ammunition.text",
+  "level": 14,
+  "priceCp": 90000,
+  "bulk": "0",
+  "category": "consumable"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "item.pendant-of-the-occult-greater",
+  "type": "item",
+  "name": "item.pendant-of-the-occult-greater.name",
+  "traits": [
+    "invested",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 293,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.pendant-of-the-occult-greater.text",
+  "level": 9,
+  "priceCp": 65000,
+  "bulk": "0",
+  "usage": "item.pendant-of-the-occult-greater.usage",
+  "activations": [
+    {
+      "name": "item.pendant-of-the-occult-greater.activations.0.name",
+      "time": "item.pendant-of-the-occult-greater.activations.0.time",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "item.pendant-of-the-occult-greater.activations.0.frequency",
+      "text": "item.pendant-of-the-occult-greater.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Page 293 prints the Dream Message activation as '10 minutes (concentrate, manipulate)'; the source drops the time, which the edit restores."
+}

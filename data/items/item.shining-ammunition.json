@@ -1,0 +1,23 @@
+{
+  "id": "item.shining-ammunition",
+  "type": "item",
+  "name": "item.shining-ammunition.name",
+  "traits": [
+    "consumable",
+    "light",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 256,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.shining-ammunition.text",
+  "level": 1,
+  "priceCp": 300,
+  "bulk": "0",
+  "category": "consumable"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "item.voyagers-pack",
+  "type": "item",
+  "name": "item.voyagers-pack.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 297,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.voyagers-pack.text",
+  "level": 17,
+  "priceCp": 1480000,
+  "bulk": "0",
+  "usage": "item.voyagers-pack.usage",
+  "activations": [
+    {
+      "name": "item.voyagers-pack.activations.0.name",
+      "time": "item.voyagers-pack.activations.0.time",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "item.voyagers-pack.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

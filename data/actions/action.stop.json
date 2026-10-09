@@ -1,0 +1,19 @@
+{
+  "id": "action.stop",
+  "type": "action",
+  "name": "action.stop.name",
+  "traits": [
+    "manipulate"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 212,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.stop.text",
+  "actions": "1",
+  "requirements": "action.stop.requirements"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "item.horn-of-exorcism",
+  "type": "item",
+  "name": "item.horn-of-exorcism.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 274,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.horn-of-exorcism.text",
+  "level": 11,
+  "priceCp": 125000,
+  "bulk": "L",
+  "usage": "item.horn-of-exorcism.usage",
+  "activations": [
+    {
+      "name": "item.horn-of-exorcism.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "manipulate"
+      ],
+      "frequency": "item.horn-of-exorcism.activations.0.frequency",
+      "text": "item.horn-of-exorcism.activations.0.text"
+    },
+    {
+      "name": "item.horn-of-exorcism.activations.1.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.horn-of-exorcism.activations.1.frequency",
+      "text": "item.horn-of-exorcism.activations.1.text"
+    }
+  ],
+  "category": "held"
+}

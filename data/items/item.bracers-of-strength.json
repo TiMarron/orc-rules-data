@@ -1,0 +1,35 @@
+{
+  "id": "item.bracers-of-strength",
+  "type": "item",
+  "name": "item.bracers-of-strength.name",
+  "traits": [
+    "apex",
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 270,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.bracers-of-strength.text",
+  "level": 17,
+  "priceCp": 1500000,
+  "bulk": "0",
+  "usage": "item.bracers-of-strength.usage",
+  "activations": [
+    {
+      "name": "item.bracers-of-strength.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "item.bracers-of-strength.activations.0.text"
+    }
+  ],
+  "category": "worn",
+  "editNote": "Accepted: the link reports are to rules pages (counteracting, flying and the like) the dataset does not model as records; the linked words are kept as plain labels. Level and Price match the book's Type line or header, and the text passes the comparison with the page. A specific shield or weapon stays category 'other' (the specific-item precedent); variant headings and the earlier printing's source line are informational."
+}

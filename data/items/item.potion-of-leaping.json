@@ -1,0 +1,24 @@
+{
+  "id": "item.potion-of-leaping",
+  "type": "item",
+  "name": "item.potion-of-leaping.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "potion"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 260,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.potion-of-leaping.text",
+  "level": 5,
+  "priceCp": 2100,
+  "bulk": "L",
+  "usage": "item.potion-of-leaping.usage",
+  "category": "consumable"
+}

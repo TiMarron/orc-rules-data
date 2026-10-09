@@ -1,0 +1,24 @@
+{
+  "id": "item.magic-armor-1-resilient",
+  "type": "item",
+  "name": "item.magic-armor-1-resilient.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 229,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.magic-armor-1-resilient.text",
+  "level": 8,
+  "priceCp": 50000,
+  "bulk": "0",
+  "usage": "item.magic-armor-1-resilient.usage",
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}

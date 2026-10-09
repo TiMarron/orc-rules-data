@@ -1,0 +1,22 @@
+{
+  "id": "item.keen",
+  "type": "item",
+  "name": "item.keen.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 238,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.keen.text",
+  "level": 13,
+  "priceCp": 300000,
+  "bulk": "0",
+  "usage": "item.keen.usage",
+  "category": "rune"
+}

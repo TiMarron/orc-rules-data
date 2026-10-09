@@ -11,6 +11,18 @@ major for renamed or removed ids, new required fields and markup changes.
 - An item's `level` (and a variant's) may be up to 28: artifacts are printed
   above level 20, and GM Core's highest is level 28.
 
+### Added
+
+- The magic items of GM Core (524 records: runes, potions, oils, scrolls,
+  talismans, staves, wands, worn and held items, specific weapons, armor and
+  shields, cursed and intelligent items, structures and an artifact) and its
+  14 actions (Influence, Discover, Invest an Item, the duel and vehicle
+  actions and others). The forty-one items GM Core shares with Player Core 2
+  stay the Player Core 2 records. Items named for places or beings of the
+  setting are left out.
+- `trait.incorporeal`, `trait.invested` and `material.orichalcum` link the
+  GM Core records their text names.
+
 ## 0.8.0 — 2026-10-10
 
 ### Changed — breaking

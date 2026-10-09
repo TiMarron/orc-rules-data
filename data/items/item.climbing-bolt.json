@@ -1,0 +1,22 @@
+{
+  "id": "item.climbing-bolt",
+  "type": "item",
+  "name": "item.climbing-bolt.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 255,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.climbing-bolt.text",
+  "level": 4,
+  "priceCp": 1500,
+  "bulk": "0",
+  "category": "consumable"
+}

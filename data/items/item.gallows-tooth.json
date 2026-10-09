@@ -1,0 +1,24 @@
+{
+  "id": "item.gallows-tooth",
+  "type": "item",
+  "name": "item.gallows-tooth.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "talisman"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 265,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.gallows-tooth.text",
+  "level": 8,
+  "priceCp": 10000,
+  "bulk": "0",
+  "usage": "item.gallows-tooth.usage",
+  "category": "talisman"
+}

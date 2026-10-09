@@ -1,0 +1,20 @@
+{
+  "id": "action.run-over",
+  "type": "action",
+  "name": "action.run-over.name",
+  "traits": [
+    "move",
+    "reckless"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 212,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "action.run-over.text",
+  "actions": "3",
+  "requirements": "action.run-over.requirements"
+}

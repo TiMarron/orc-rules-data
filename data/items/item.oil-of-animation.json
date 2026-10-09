@@ -1,0 +1,24 @@
+{
+  "id": "item.oil-of-animation",
+  "type": "item",
+  "name": "item.oil-of-animation.name",
+  "traits": [
+    "consumable",
+    "magical",
+    "oil"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 257,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.oil-of-animation.text",
+  "level": 12,
+  "priceCp": 33000,
+  "bulk": "L",
+  "usage": "item.oil-of-animation.usage",
+  "category": "consumable"
+}

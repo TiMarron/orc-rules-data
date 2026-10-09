@@ -1,0 +1,24 @@
+{
+  "id": "item.trident-of-lightning",
+  "type": "item",
+  "name": "item.trident-of-lightning.name",
+  "traits": [
+    "consumable",
+    "electricity",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 269,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.trident-of-lightning.text",
+  "level": 9,
+  "priceCp": 11000,
+  "bulk": "L",
+  "usage": "item.trident-of-lightning.usage",
+  "category": "consumable"
+}

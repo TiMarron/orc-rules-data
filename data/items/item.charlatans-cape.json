@@ -1,0 +1,34 @@
+{
+  "id": "item.charlatans-cape",
+  "type": "item",
+  "name": "item.charlatans-cape.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 286,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.charlatans-cape.text",
+  "level": 10,
+  "priceCp": 98000,
+  "bulk": "L",
+  "usage": "item.charlatans-cape.usage",
+  "activations": [
+    {
+      "name": "item.charlatans-cape.activations.0.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.charlatans-cape.activations.0.frequency",
+      "text": "item.charlatans-cape.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

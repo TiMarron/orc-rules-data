@@ -1,0 +1,34 @@
+{
+  "id": "item.skeleton-key-greater",
+  "type": "item",
+  "name": "item.skeleton-key-greater.name",
+  "traits": [
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 276,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.skeleton-key-greater.text",
+  "level": 11,
+  "priceCp": 125000,
+  "bulk": "0",
+  "usage": "item.skeleton-key-greater.usage",
+  "activations": [
+    {
+      "name": "item.skeleton-key-greater.activations.0.name",
+      "actions": "free",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.skeleton-key-greater.activations.0.frequency",
+      "text": "item.skeleton-key-greater.activations.0.text"
+    }
+  ],
+  "category": "held",
+  "editNote": "Accepted: the only reports are informational. The structured source repeats an item family's variants as headings under the family; each variant is its own record with its own level and price, so nothing is lost by dropping the headings. The 'other book' citations sit in the variants' source lines (the earlier printing), not in the text. For 244 of 263 records the level and price were read off the book's Type line on the record's page and match; the other 19 are family records (Armor Potency, Healing Potion, Magic Wand and the like) that print no Type line of their own, and their level is the lowest of their variants, as checked."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "item.penetrating-ammunition",
+  "type": "item",
+  "name": "item.penetrating-ammunition.name",
+  "traits": [
+    "consumable",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 255,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.penetrating-ammunition.text",
+  "level": 12,
+  "priceCp": 40000,
+  "bulk": "0",
+  "category": "consumable"
+}

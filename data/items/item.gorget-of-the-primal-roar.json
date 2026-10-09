@@ -1,0 +1,39 @@
+{
+  "id": "item.gorget-of-the-primal-roar",
+  "type": "item",
+  "name": "item.gorget-of-the-primal-roar.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 290,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.gorget-of-the-primal-roar.text",
+  "level": 11,
+  "priceCp": 125000,
+  "bulk": "L",
+  "usage": "item.gorget-of-the-primal-roar.usage",
+  "activations": [
+    {
+      "name": "item.gorget-of-the-primal-roar.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "frequency": "item.gorget-of-the-primal-roar.activations.0.frequency",
+      "requirements": "item.gorget-of-the-primal-roar.activations.0.requirements",
+      "text": "item.gorget-of-the-primal-roar.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

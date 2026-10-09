@@ -1,0 +1,36 @@
+{
+  "id": "item.lovers-gloves",
+  "type": "item",
+  "name": "item.lovers-gloves.name",
+  "traits": [
+    "emotion",
+    "invested",
+    "magical",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 292,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.lovers-gloves.text",
+  "level": 8,
+  "priceCp": 50000,
+  "bulk": "0",
+  "usage": "item.lovers-gloves.usage",
+  "activations": [
+    {
+      "name": "item.lovers-gloves.activations.0.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "item.lovers-gloves.activations.0.frequency",
+      "text": "item.lovers-gloves.activations.0.text"
+    }
+  ],
+  "category": "worn"
+}

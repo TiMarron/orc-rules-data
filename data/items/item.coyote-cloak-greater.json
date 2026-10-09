@@ -1,0 +1,24 @@
+{
+  "id": "item.coyote-cloak-greater",
+  "type": "item",
+  "name": "item.coyote-cloak-greater.name",
+  "traits": [
+    "invested",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 287,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.coyote-cloak-greater.text",
+  "level": 9,
+  "priceCp": 65000,
+  "bulk": "0",
+  "usage": "item.coyote-cloak-greater.usage",
+  "category": "worn",
+  "editNote": "Accepted: the only reports are informational. The structured source repeats an item family's variants as headings under the family; each variant is its own record with its own level and price, so nothing is lost by dropping the headings. The 'other book' citations sit in the variants' source lines (the earlier printing), not in the text. For 244 of 263 records the level and price were read off the book's Type line on the record's page and match; the other 19 are family records (Armor Potency, Healing Potion, Magic Wand and the like) that print no Type line of their own, and their level is the lowest of their variants, as checked."
+}

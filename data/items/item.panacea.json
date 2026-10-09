@@ -1,0 +1,25 @@
+{
+  "id": "item.panacea",
+  "type": "item",
+  "name": "item.panacea.name",
+  "traits": [
+    "consumable",
+    "healing",
+    "magical",
+    "potion"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 259,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.panacea.text",
+  "level": 13,
+  "priceCp": 45000,
+  "bulk": "L",
+  "usage": "item.panacea.usage",
+  "category": "consumable"
+}

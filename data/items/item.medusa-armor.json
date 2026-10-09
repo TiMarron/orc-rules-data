@@ -1,0 +1,24 @@
+{
+  "id": "item.medusa-armor",
+  "type": "item",
+  "name": "item.medusa-armor.name",
+  "traits": [
+    "cursed",
+    "invested",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 306,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.medusa-armor.text",
+  "level": 14,
+  "bulk": "3",
+  "usage": "item.medusa-armor.usage",
+  "category": "other",
+  "editNote": "Accepted: level and Price were read off the book's page (the Type line or the item's own header) and match; the text passes the comparison with the page. Kept as category 'other' because a specific magic weapon, armor or shield takes its statistics from the base item its text names, and a cursed item or a structure has no item category of its own in the dataset (the specific-item precedent). Variant headings and the earlier printing's source line are informational."
+}
