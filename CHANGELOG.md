@@ -8,8 +8,8 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Changed
 
-- An item's `level` (and a variant's) may be up to 25: artifacts are printed
-  at levels 21 to 25.
+- An item's `level` (and a variant's) may be up to 28: artifacts are printed
+  above level 20, and GM Core's highest is level 28.
 
 ## 0.8.0 — 2026-10-10
 

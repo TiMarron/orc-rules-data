@@ -146,11 +146,11 @@ describe('type schemas', () => {
     expect(issuesFor('item', WEAPON)).toEqual([]);
   });
 
-  it('accepts an artifact item of level 25 and rejects level 26 with exactly one issue', () => {
-    expect(issuesFor('item', { ...WEAPON, level: 25 })).toEqual([]);
-    const issues = issuesFor('item', { ...WEAPON, level: 26 });
+  it('accepts an artifact item of level 28 and rejects level 29 with exactly one issue', () => {
+    expect(issuesFor('item', { ...WEAPON, level: 28 })).toEqual([]);
+    const issues = issuesFor('item', { ...WEAPON, level: 29 });
     expect(issues).toHaveLength(1);
-    expect(issues[0]).toContain('/level must be <= 25');
+    expect(issues[0]).toContain('/level must be <= 28');
   });
 
   it('rejects spell rank 11 with exactly one issue', () => {

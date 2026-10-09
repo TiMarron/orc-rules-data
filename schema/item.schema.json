@@ -12,7 +12,7 @@
         "category": {
           "enum": ["weapon", "armor", "shield", "gear", "consumable", "alchemical", "scroll", "talisman", "wand", "staff", "rune", "worn", "held", "other"]
         },
-        "level": { "type": "integer", "minimum": 0, "maximum": 25, "$comment": "Artifacts are printed at levels 21-25." },
+        "level": { "type": "integer", "minimum": 0, "maximum": 28, "$comment": "Artifacts are printed above level 20; GM Core's highest is level 28." },
         "priceCp": { "type": "integer", "minimum": 0 },
         "bulk": { "type": "string", "pattern": "^(-|L|[0-9]+)$" },
         "usage": { "$ref": "common.schema.json#/$defs/i18nKey" },
@@ -46,7 +46,7 @@
             "properties": {
               "id": { "$ref": "common.schema.json#/$defs/slug" },
               "name": { "$ref": "common.schema.json#/$defs/i18nKey" },
-              "level": { "type": "integer", "minimum": 0, "maximum": 25 },
+              "level": { "type": "integer", "minimum": 0, "maximum": 28 },
               "priceCp": { "type": "integer", "minimum": 0 },
               "text": { "$ref": "common.schema.json#/$defs/i18nKey" }
             }
