@@ -6,6 +6,10 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ## Unreleased
 
+### Materials
+
+- New material record type (base and precious profiles): 8 base materials from the book's material-statistics table, 6 precious materials of this book, and dragonhide migrated from Player Core 2's eleven item.dragonhide* item records into one material.dragonhide — grades, the Hardness/HP/BT table and gear those items could not represent (see orc-rules-import).
+
 ### Added
 
 - Materials, a new record type, in two profiles. A `base` material is a row of
@@ -19,9 +23,9 @@ major for renamed or removed ids, new required fields and markup changes.
   the Type lines' prices and Craft requirements. Records live in
   `data/materials/`.
 
-## 0.7.0 — 2026-10-05
+## 0.7.0 вЂ” 2026-10-05
 
-### Changed — breaking
+### Changed вЂ” breaking
 
 - A background is stored as the rare ones are printed, and a weapon's damage
   type may be a choice. `background.lore` and `background.feat` are no longer
@@ -30,9 +34,9 @@ major for renamed or removed ids, new required fields and markup changes.
   `weapon.damage` may carry `types` (two or more damage types, one of which the
   wielder chooses) instead of `type`. The validator no longer requires a
   background to grant a skill. The rare backgrounds of Player Core 2 and the
-  tricky pick below use the new shape, so a consumer that assumed the old one —
+  tricky pick below use the new shape, so a consumer that assumed the old one вЂ”
   that every background has a `lore` and a `feat`, exactly two boosts and at
-  most one skill, or that every weapon has `damage.type` — must handle it. Fields
+  most one skill, or that every weapon has `damage.type` вЂ” must handle it. Fields
   that were required are now optional and a field that was always present may be
   replaced by another, so by the README's Versioning section this is a
   major-level change. No id changes, so there is no migration map.
@@ -40,7 +44,7 @@ major for renamed or removed ids, new required fields and markup changes.
 ### Added
 
 - `background.grants`: what a background gives beyond boosts, skills, a Lore
-  and its one feat, in the shape of `ancestry.grants` — a `name` and a `text`,
+  and its one feat, in the shape of `ancestry.grants` вЂ” a `name` and a `text`,
   and optionally a `feat`, a `spell` or an `item` the entry points at. Optional
   addition to the background schema.
 - The eight rare backgrounds of Player Core 2 (Amnesiac, Blessed, Cursed, Feral
@@ -62,7 +66,7 @@ major for renamed or removed ids, new required fields and markup changes.
   Scholar, Prisoner and Hermit). Bandit keeps "attribute boosts", as the errata
   for page 84 says.
 
-## 0.6.0 — 2026-10-05
+## 0.6.0 вЂ” 2026-10-05
 
 ### Added
 
@@ -120,7 +124,7 @@ major for renamed or removed ids, new required fields and markup changes.
 - `weapon.damage.type` takes its list of damage types from `common.schema.json`,
   where a creature's Strike reads the same one. No record changes.
 
-## 0.5.0 — 2026-10-01
+## 0.5.0 вЂ” 2026-10-01
 
 ### Added
 
@@ -153,13 +157,13 @@ major for renamed or removed ids, new required fields and markup changes.
   the next, a craft requirement printed twice, and one misspelled name and id
   (Certain Stratagem).
 
-## 0.4.0 — 2026-09-27
+## 0.4.0 вЂ” 2026-09-27
 
 ### Added
 
 - Feats the book lets you select more than once carry `repeatable: true`.
 
-## 0.3.0 — 2026-09-27
+## 0.3.0 вЂ” 2026-09-27
 
 ### Added
 
@@ -177,12 +181,12 @@ major for renamed or removed ids, new required fields and markup changes.
 - Composite Shortbow's level is corrected to 0: the book prints every weapon
   at item level 0.
 
-## 0.2.0 — 2026-09-26
+## 0.2.0 вЂ” 2026-09-26
 
-### Changed — breaking
+### Changed вЂ” breaking
 
 - A weapon trait printed with a parameter no longer keeps that parameter in
-  its slug. Twenty-seven records — all of them weapons — change: `traits`
+  its slug. Twenty-seven records вЂ” all of them weapons вЂ” change: `traits`
   now lists the base trait and the new `traitValues` field carries the
   parameter. The sixteen affected slugs:
 
@@ -199,13 +203,13 @@ major for renamed or removed ids, new required fields and markup changes.
 
   None of those sixteen ever had a record. A consumer reading `traits` and
   resolving each slug against `data/traits/` saw thirty-two references that
-  pointed at nothing, and could not recover the parameter — which is the
+  pointed at nothing, and could not recover the parameter вЂ” which is the
   rule itself: `trait.deadly` states that the weapon adds a damage die "of
   the listed size".
 
 - A feat prerequisite the book prints as a list of alternatives is no longer
   prose. The new `any` kind holds the branches, and a reader that switches on
-  `kind` meets a value it has not seen before — the reference reader raises on
+  `kind` meets a value it has not seen before вЂ” the reference reader raises on
   an unknown kind rather than ignoring it, so this is a breaking read.
 
   ```json
@@ -223,7 +227,7 @@ major for renamed or removed ids, new required fields and markup changes.
 
 - A proficiency prerequisite's `target` is no longer always a skill id.
   Perception and the saving throws are proficiencies with no record of their
-  own — they are not skills — and are now named by the flat keys a character
+  own вЂ” they are not skills вЂ” and are now named by the flat keys a character
   sheet keys its proficiencies by: `perception`, and `save.fortitude` /
   `save.reflex` / `save.will`. Five entries use them, in `feat.blind-fight`,
   `feat.expeditious-search`, `feat.legendary-shot` and
@@ -231,7 +235,7 @@ major for renamed or removed ids, new required fields and markup changes.
   (`save.reflex`). `perception` carries no dot and so is not id-shaped at all;
   code that assumed `target` would always resolve against `data/` was reading
   a coincidence of the corpus, not a rule. Nothing resolves them, and the
-  validator does not try to — it checks the spelling against a closed list
+  validator does not try to вЂ” it checks the spelling against a closed list
   instead. The list grows only when a record needs it: a weapon or armour
   category (`attack.martial`, `defense.light`) and the class DC belong to the
   same namespace, but no prerequisite has asked for one yet.
@@ -259,7 +263,7 @@ major for renamed or removed ids, new required fields and markup changes.
 ### Added
 
 - `traitValues`, an optional object on every record's envelope: base trait
-  slug → the parameter that trait was printed with, normalised to this
+  slug в†’ the parameter that trait was printed with, normalised to this
   dataset's notation (feet as a bare number, a damage type as its full name,
   a die as `NdM` or a bare `dM`, an item as its slug). A validator check
   requires every key to be among the record's own `traits`.
@@ -267,14 +271,14 @@ major for renamed or removed ids, new required fields and markup changes.
   own: `school` (`data/schools/`, seven arcane schools) and `thesis`
   (`data/theses/`, five arcane theses), all from Player Core. Both name the
   class in `class` and the level they are chosen at in `level`. A school also
-  carries `curriculum` — its cantrips and one spell list per rank — and
+  carries `curriculum` вЂ” its cantrips and one spell list per rank вЂ” and
   `schoolSpells`, its initial and advanced focus spells; the school of unified
   magical theory has no curriculum and sets none. A reader that enumerates
   the type folders sees two new ones.
 - `refSpell` in `common.schema.json`, a reference to a spell record.
 - `spellcasting`, an optional block on a class record: `kind` (prepared or
   spontaneous), `source` (a spellbook or the tradition's list; a repertoire
-  is coming with the first spontaneous class), `tradition`, and `slots` —
+  is coming with the first spontaneous class), `tradition`, and `slots` вЂ”
   the spells-per-day table as twenty rows, one
   per level, each with its cantrips and a slot count per spell rank. A class
   that keeps a spellbook adds `spellbook` (what it holds at 1st level and how
@@ -288,10 +292,10 @@ major for renamed or removed ids, new required fields and markup changes.
 Reading `traits` and ignoring `traitValues` is valid and now resolves
 everywhere. Code that matched the literal slugs in the table above must read
 the base slug and the parameter separately. Rendering the trait line as the
-book sets it means composing it from the base trait's name and the value —
+book sets it means composing it from the base trait's name and the value вЂ”
 `"10"` back to "10 ft.", `"piercing"` back to "P".
 
-Reading a prerequisite by its `kind` must now handle `any` — recursively, since
+Reading a prerequisite by its `kind` must now handle `any` вЂ” recursively, since
 a branch may itself be one. A reader that cannot evaluate alternatives should
 treat the whole entry as unverifiable rather than picking a branch: the record
 states that any one of them suffices, and no one of them is the condition.
@@ -300,13 +304,13 @@ A `target` is a skill id, `perception`, or `save.fortitude`/`save.reflex`/`save.
 Resolving it against `data/skills/` still works for every skill; the other four
 spellings have no record and must be matched literally.
 
-A parameter that names an item (`attached` → `"shield"`) is a slug describing
-what the weapon attaches to, not a reference to an item record — there is no
+A parameter that names an item (`attached` в†’ `"shield"`) is a slug describing
+what the weapon attaches to, not a reference to an item record вЂ” there is no
 `item.shield`. Nothing resolves it, and the validator does not try to.
 
 `traitValues` is a new property, so a reader that rejects unknown properties
 rather than ignoring them will fail on the twenty-seven records that carry it
-— and, if it loads the corpus eagerly, on the corpus. That is worth knowing
+вЂ” and, if it loads the corpus eagerly, on the corpus. That is worth knowing
 before upgrading: the first consumer to take this release hit exactly that,
 and being told beats being skipped. Teach the reader the field, or configure
 it to ignore what it does not know.
@@ -321,12 +325,12 @@ it to ignore what it does not know.
     syntax become ordinary `[[id|label]]` references, in `spell.sunburst`,
     `spell.crisis-of-faith`, `spell.goblin-pox` and `spell.mad-monkeys`
     (twice). Each points at the record its label names.
-  - Nine records drop a `## …` line left stranded when a table this dataset
+  - Nine records drop a `## вЂ¦` line left stranded when a table this dataset
     does not carry was omitted: it was that table's caption.
     `action.treat-wounds` and `feat.specialty-crafting` drop the table's `*`
     footnote with it, which qualified a row that is no longer there.
-  - `ancestry.human` was publishing its body exactly as the source wrote it —
-    `<ul><li>` lists, stray blank lines and all — because one malformed
+  - `ancestry.human` was publishing its body exactly as the source wrote it вЂ”
+    `<ul><li>` lists, stray blank lines and all вЂ” because one malformed
     heading tag had stopped the conversion. Its lists are now `- ` items and
     its paragraphs read like every other ancestry's.
   - `item.tower-shield` drops a `<sup>2</sup>` marker footnoting an omitted
@@ -346,8 +350,8 @@ it to ignore what it does not know.
 
 ### Also in this release
 
-Three action records — `action.drain-bonded-item`, `action.fire-breath` and
-`action.jinx` — gain `edited: true` and an `editNote` they have carried in the
+Three action records вЂ” `action.drain-bonded-item`, `action.fire-breath` and
+`action.jinx` вЂ” gain `edited: true` and an `editNote` they have carried in the
 import pipeline since the previous release without the published copies
 catching up. Bookkeeping fields only: no rules text, stat or shape changes.
 
@@ -359,7 +363,3 @@ rather than automatic; neither touches rules text.
 ## 0.1.0+2023-first
 
 First import: Player Core, 2212 records and 6310 English strings.
-
-## Materials migration
-
-- item.dragonhide* (11 records) migrate to a single material.dragonhide record: the material type now carries grades, the Hardness/HP/BT table and gear that eleven item records could not represent (see orc-rules-import).
