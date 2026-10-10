@@ -20,9 +20,9 @@ major for renamed or removed ids, new required fields and markup changes.
   actions and others). The forty-one items GM Core shares with Player Core 2
   stay the Player Core 2 records. Items named for places or beings of the
   setting are left out.
-- `trait.incorporeal`, `trait.invested` and `material.orichalcum`, and sixty
+- `trait.incorporeal`, `trait.invested` and `material.orichalcum`, and sixty-five
   published records of Player Core, Player Core 2 and Monster Core (feats,
-  spells, creatures and others), link the GM Core items, runes and materials
+  spells, creatures, five classes and others), link the GM Core items, runes and materials
   their text names; only links changed.
 
 ## 0.8.0 — 2026-10-10
