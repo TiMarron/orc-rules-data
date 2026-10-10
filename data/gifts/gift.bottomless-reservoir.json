@@ -13,12 +13,13 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "gift.bottomless-reservoir.text",
   "tier": "major",
   "aspect": "water",
   "activations": [
     {
+      "name": "gift.bottomless-reservoir.activations.0.name",
       "actions": "1",
       "traits": [
         "manipulate"
@@ -26,6 +27,7 @@
       "text": "gift.bottomless-reservoir.activations.0.text"
     },
     {
+      "name": "gift.bottomless-reservoir.activations.1.name",
       "actions": "reaction",
       "traits": [
         "manipulate"
@@ -33,5 +35,6 @@
       "trigger": "gift.bottomless-reservoir.activations.1.trigger",
       "text": "gift.bottomless-reservoir.activations.1.text"
     }
-  ]
+  ],
+  "editNote": "Accepted: the only report is a link to a rules page the dataset does not model as a record (a basic save, a light level, a creature family); the linked words are kept as plain labels. Aspect and tier are as the page prints them. Page 319 names the two activations Draw Water and Liquid Shield; the source drops the names, restored here."
 }

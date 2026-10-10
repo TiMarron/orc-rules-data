@@ -11,13 +11,14 @@
     "page": 314,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "gift.command-legion.text",
   "tier": "grand",
   "aspect": "fiend",
   "activations": [
     {
+      "name": "gift.command-legion.activations.0.name",
       "actions": "3",
       "traits": [
         "concentrate"
@@ -26,11 +27,14 @@
       "text": "gift.command-legion.activations.0.text"
     },
     {
+      "name": "gift.command-legion.activations.1.name",
       "actions": "free",
       "traits": [
         "concentrate"
       ],
-      "text": "gift.command-legion.activations.1.text"
+      "text": "gift.command-legion.activations.1.text",
+      "trigger": "gift.command-legion.activations.1.trigger"
     }
-  ]
+  ],
+  "editNote": "Page 314 names the two activations Call Legion and Reinforce Legion and prints the free action's trigger (\"One of the fiends summoned by Call Legion is banished\"); the source drops all three, restored here."
 }
