@@ -12,12 +12,21 @@
     "page": 296,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.silver-salve.text",
   "level": 2,
   "priceCp": 600,
   "bulk": "L",
   "usage": "item.silver-salve.usage",
-  "category": "alchemical"
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
+  "category": "alchemical",
+  "editNote": "migration: the converter now links the printed material name (silver) to the new material record — the only change to the text"
 }

@@ -20,6 +20,14 @@
   "priceCp": 1000,
   "bulk": "0",
   "usage": "item.marvelous-miniature-chest.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "consumable",
-  "editNote": "The source's markup does not convert (an unsupported spoilers block): the text is rebuilt from it as page 268 prints it — the family paragraph and this miniature's own Type paragraph. Dropped: the source's Swift Sparrow miniature and its spoiler notice (another book's item, appended by the source), and the raw link to a vehicle the dataset has no record for (kept as the word 'cutter')."
+  "editNote": "The source's markup does not convert (an unsupported spoilers block): the text is rebuilt from it as page 268 prints it — the family paragraph and this miniature's own Type paragraph. Dropped: the source's Swift Sparrow miniature and its spoiler notice (another book's item, appended by the source)."
 }

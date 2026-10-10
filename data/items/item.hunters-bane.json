@@ -14,12 +14,21 @@
     "page": 305,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.hunters-bane.text",
   "level": 2,
   "priceCp": 600,
   "bulk": "0",
   "usage": "item.hunters-bane.usage",
-  "category": "talisman"
+  "activations": [
+    {
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ]
+    }
+  ],
+  "category": "talisman",
+  "editNote": "The record gains the activation the book prints in its stat header (AoN files it as a header row, which the converter did not read until now); the rest of the record is unchanged from the published one. Checked against the book's Activate line on p.305: 'Activate [free-action] (concentrate)'; the cost and traits match."
 }

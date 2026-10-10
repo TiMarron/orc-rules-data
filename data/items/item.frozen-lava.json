@@ -20,6 +20,14 @@
   "priceCp": 3000,
   "bulk": "0",
   "usage": "item.frozen-lava.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "consumable",
-  "editNote": "Reserved Material removed: the world's name replaced with 'the world'. Rules text is the book's."
+  "editNote": "Reserved Material removed: the world's name replaced with 'the world'. Rules text is the book's. The book prints seven further grades (levels 7 to 19, page 268), each named for a volcano of the setting; those are rejected for Reserved Material, so this family record carries the base grade only."
 }

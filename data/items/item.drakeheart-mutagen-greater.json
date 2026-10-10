@@ -24,9 +24,15 @@
   "usage": "item.drakeheart-mutagen-greater.usage",
   "activations": [
     {
-      "name": "item.drakeheart-mutagen-greater.activations.0.name",
       "actions": "1",
-      "text": "item.drakeheart-mutagen-greater.activations.0.text"
+      "traits": [
+        "manipulate"
+      ]
+    },
+    {
+      "name": "item.drakeheart-mutagen-greater.activations.1.name",
+      "actions": "1",
+      "text": "item.drakeheart-mutagen-greater.activations.1.text"
     }
   ],
   "category": "alchemical",

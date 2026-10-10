@@ -16,12 +16,21 @@
     "page": 264,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.fear-gem.text",
   "level": 4,
   "priceCp": 2000,
   "bulk": "0",
   "usage": "item.fear-gem.usage",
-  "category": "talisman"
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ]
+    }
+  ],
+  "category": "talisman",
+  "editNote": "The record gains the activation the book prints in its stat header (AoN files it as a header row, which the converter did not read until now); the rest of the record is unchanged from the published one. Checked against the book's Activate line on p.264: 'Activate [two-actions] (concentrate)'; the cost and traits match."
 }

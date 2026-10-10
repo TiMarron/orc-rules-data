@@ -12,12 +12,21 @@
     "page": 295,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.ghost-ink.text",
   "level": 1,
   "priceCp": 300,
   "bulk": "L",
   "usage": "item.ghost-ink.usage",
-  "category": "alchemical"
+  "activations": [
+    {
+      "time": "item.ghost-ink.activations.0.time",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
+  "category": "alchemical",
+  "editNote": "Activation from the book (p.295): it prints 'Activate 10 minutes (manipulate)'; AoN has a single action. The book's errata is silent on ghost ink."
 }

@@ -14,12 +14,21 @@
     "page": 291,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.belladonna.text",
   "level": 2,
   "priceCp": 500,
   "bulk": "L",
   "usage": "item.belladonna.usage",
-  "category": "alchemical"
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
+  "category": "alchemical",
+  "editNote": "Activation from the book (p.291): it prints 'Activate [one-action] (manipulate)'; AoN has two actions. The book's errata is silent on belladonna; the 3-to-2-action change AoN may have followed is errata to the pre-Remaster rulebook for injury poisons, and belladonna is ingested."
 }

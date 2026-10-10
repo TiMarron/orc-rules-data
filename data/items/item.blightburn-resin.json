@@ -14,12 +14,21 @@
     "page": 291,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.blightburn-resin.text",
   "level": 11,
   "priceCp": 22500,
   "bulk": "L",
   "usage": "item.blightburn-resin.usage",
-  "category": "alchemical"
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
+  "category": "alchemical",
+  "editNote": "The record gains the activation the book prints in its stat header (AoN files it as a header row, which the converter did not read until now); the rest of the record is unchanged from the published one. Checked: the book's Activate line (p.292, where the entry continues from p.291) reads '[one-action] (manipulate)' and matches."
 }
