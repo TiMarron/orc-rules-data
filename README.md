@@ -8,7 +8,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
   school, thesis, package, archetype, ability, creature, ritual, material,
-  affliction, hazard.
+  affliction, hazard, gift.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -300,6 +300,11 @@ cost tokens.
   resistances and speeds are shaped as a creature's; an ability is a creature's
   ability without a `section`. A complex hazard has a `routine` with its
   actions per round (and their traits, when printed); `reset` and `special` are printed text.
+- A `gift` is one of the powers a relic gains as its bearer grows: its
+  `aspect` (one of twelve, as the book groups them), its `tier` (minor, major,
+  grand) and, when the book prints one, what it `requires` — a relic of a form
+  (`relicIs`: worn, weapon) or another gift. Its activations are shaped as an
+  item's. The relic itself is an ordinary item; it is not a record type.
 
 ## Versioning
 

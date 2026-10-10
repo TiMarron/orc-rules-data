@@ -113,6 +113,10 @@ const VALID: Record<string, Record<string, unknown>> = {
     abilities: [{ id: 'falling-scythes', name: 'hazard.scythe-blades.abilities.falling-scythes.name', actions: 'reaction', trigger: 'hazard.scythe-blades.abilities.falling-scythes.trigger', text: 'hazard.scythe-blades.abilities.falling-scythes.text' }],
     reset: 'hazard.scythe-blades.reset',
   }),
+  gift: record('gift', 'feral-claws', {
+    aspect: 'beast', tier: 'minor', requires: { relicIs: 'worn' },
+    activations: [{ actions: '1', traits: ['concentrate'], text: 'gift.feral-claws.activations.0.text' }],
+  }),
 };
 
 const WEAPON: Record<string, unknown> = record('item', 'longsword', {
@@ -161,6 +165,18 @@ describe('type schemas', () => {
 
   it('accepts a weapon item', () => {
     expect(issuesFor('item', WEAPON)).toEqual([]);
+  });
+
+  it('accepts a gift that requires another gift, and one with text only', () => {
+    expect(issuesFor('gift', record('gift', 'form-of-vengeance', { aspect: 'beast', tier: 'major', requires: { gift: 'gift.form-of-fury' } }))).toEqual([]);
+    expect(issuesFor('gift', record('gift', 'living-storm', { aspect: 'air', tier: 'grand' }))).toEqual([]);
+  });
+
+  it('rejects an unknown aspect or tier, a requires with both forms, and a gift with neither text nor activations', () => {
+    expect(issuesFor('gift', { ...VALID.gift, aspect: 'void' }).some((m) => m.includes('/aspect'))).toBe(true);
+    expect(issuesFor('gift', { ...VALID.gift, tier: 'lesser' }).some((m) => m.includes('/tier'))).toBe(true);
+    expect(issuesFor('gift', { ...VALID.gift, requires: { relicIs: 'worn', gift: 'gift.form-of-fury' } }).some((m) => m.includes('/requires'))).toBe(true);
+    expect(issuesFor('gift', { ...VALID.gift, text: undefined, activations: undefined }).length).toBeGreaterThan(0);
   });
 
   it('accepts a complex hazard with named parts, a routine and a counteract option', () => {
