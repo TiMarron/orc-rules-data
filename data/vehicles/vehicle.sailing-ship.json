@@ -1,0 +1,70 @@
+{
+  "id": "vehicle.sailing-ship",
+  "type": "vehicle",
+  "name": "vehicle.sailing-ship.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "gargantuan",
+  "priceCp": 200000,
+  "space": {
+    "long": 75,
+    "wide": 20,
+    "high": 25
+  },
+  "crew": {
+    "pilots": 1,
+    "crew": 8
+  },
+  "passengers": 10,
+  "piloting": [
+    {
+      "lore": "vehicle.sailing-ship.piloting.0.lore",
+      "dc": 26
+    },
+    {
+      "skill": "skill.diplomacy",
+      "dc": 28
+    },
+    {
+      "skill": "skill.intimidation",
+      "dc": 28
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "fortitude": 18,
+  "hardness": 15,
+  "hp": 150,
+  "bt": 75,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "sluggish",
+      "name": "vehicle.sailing-ship.abilities.sluggish.name",
+      "text": "vehicle.sailing-ship.abilities.sluggish.text"
+    }
+  ],
+  "speed": {
+    "mode": "swim",
+    "feet": 40,
+    "propulsion": [
+      "wind"
+    ]
+  },
+  "collision": {
+    "damage": "6d10",
+    "dc": 26
+  },
+  "editNote": "Page 217 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

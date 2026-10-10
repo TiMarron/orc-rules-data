@@ -1,0 +1,72 @@
+{
+  "id": "vehicle.sleigh",
+  "type": "vehicle",
+  "name": "vehicle.sleigh.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 215,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "large",
+  "priceCp": 5000,
+  "space": {
+    "long": 10,
+    "wide": 5,
+    "high": 4
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 1,
+  "piloting": [
+    {
+      "lore": "vehicle.sleigh.piloting.0.lore",
+      "dc": 15
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 17,
+      "dcMax": 25,
+      "note": "vehicle.sleigh.piloting.1.note"
+    }
+  ],
+  "ac": {
+    "value": 11
+  },
+  "fortitude": 7,
+  "hardness": 5,
+  "hp": 18,
+  "bt": 9,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "ice-traverser",
+      "name": "vehicle.sleigh.abilities.ice-traverser.name",
+      "text": "vehicle.sleigh.abilities.ice-traverser.text"
+    },
+    {
+      "id": "sluggish",
+      "name": "vehicle.sleigh.abilities.sluggish.name",
+      "text": "vehicle.sleigh.abilities.sluggish.text"
+    }
+  ],
+  "speed": {
+    "mode": "land",
+    "propulsion": [
+      "pulled"
+    ],
+    "note": "vehicle.sleigh.speed.note"
+  },
+  "collision": {
+    "damage": "2d6",
+    "dc": 15
+  },
+  "editNote": "Page 215 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

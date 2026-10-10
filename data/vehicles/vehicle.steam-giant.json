@@ -1,0 +1,70 @@
+{
+  "id": "vehicle.steam-giant",
+  "type": "vehicle",
+  "name": "vehicle.steam-giant.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 14,
+  "size": "huge",
+  "priceCp": 1250000,
+  "space": {
+    "long": 20,
+    "wide": 20,
+    "high": 25
+  },
+  "crew": {
+    "pilots": 1,
+    "crew": 3
+  },
+  "passengers": 4,
+  "piloting": [
+    {
+      "lore": "vehicle.steam-giant.piloting.0.lore",
+      "dc": 32
+    },
+    {
+      "skill": "skill.crafting",
+      "dc": 34
+    }
+  ],
+  "ac": {
+    "value": 33
+  },
+  "fortitude": 28,
+  "hardness": 20,
+  "hp": 200,
+  "bt": 100,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "flame-jet",
+      "name": "vehicle.steam-giant.abilities.flame-jet.name",
+      "actions": "3",
+      "traits": [
+        "fire"
+      ],
+      "text": "vehicle.steam-giant.abilities.flame-jet.text"
+    }
+  ],
+  "speed": {
+    "mode": "land",
+    "feet": 20,
+    "propulsion": [
+      "alchemical"
+    ]
+  },
+  "collision": {
+    "damage": "10d10",
+    "dc": 29
+  },
+  "editNote": "Page 216 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

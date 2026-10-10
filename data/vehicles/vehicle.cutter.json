@@ -1,0 +1,73 @@
+{
+  "id": "vehicle.cutter",
+  "type": "vehicle",
+  "name": "vehicle.cutter.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "huge",
+  "priceCp": 75000,
+  "space": {
+    "long": 30,
+    "wide": 15,
+    "high": 20
+  },
+  "crew": {
+    "pilots": 1,
+    "crew": 3
+  },
+  "passengers": 6,
+  "piloting": [
+    {
+      "skill": "skill.nature",
+      "dc": 24
+    },
+    {
+      "lore": "vehicle.cutter.piloting.1.lore",
+      "dc": 22
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "fortitude": 14,
+  "hardness": 10,
+  "hp": 100,
+  "bt": 50,
+  "immunities": [
+    "object-immunities"
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10,
+      "note": "vehicle.cutter.weaknesses.0.note"
+    }
+  ],
+  "speed": {
+    "mode": "swim",
+    "feet": 30,
+    "propulsion": [
+      "wind"
+    ]
+  },
+  "collision": {
+    "damage": "4d10",
+    "dc": 22
+  },
+  "abilities": [
+    {
+      "id": "sluggish",
+      "name": "vehicle.cutter.abilities.sluggish.name",
+      "text": "vehicle.cutter.abilities.sluggish.text"
+    }
+  ],
+  "editNote": "Page 216 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands. Page 216 prints the ability Sluggish, which the source drops; restored here."
+}

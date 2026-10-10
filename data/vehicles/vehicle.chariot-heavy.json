@@ -1,0 +1,60 @@
+{
+  "id": "vehicle.chariot-heavy",
+  "type": "vehicle",
+  "name": "vehicle.chariot-heavy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 215,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "large",
+  "priceCp": 15000,
+  "space": {
+    "long": 10,
+    "wide": 10,
+    "high": 4
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 3,
+  "piloting": [
+    {
+      "lore": "vehicle.chariot-heavy.piloting.0.lore",
+      "dc": 18
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 20,
+      "dcMax": 28,
+      "note": "vehicle.chariot-heavy.piloting.1.note"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "fortitude": 9,
+  "hardness": 5,
+  "hp": 40,
+  "bt": 20,
+  "immunities": [
+    "object-immunities"
+  ],
+  "speed": {
+    "mode": "land",
+    "propulsion": [
+      "pulled"
+    ],
+    "note": "vehicle.chariot-heavy.speed.note"
+  },
+  "collision": {
+    "damage": "2d10",
+    "dc": 18
+  },
+  "editNote": "Page 215 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

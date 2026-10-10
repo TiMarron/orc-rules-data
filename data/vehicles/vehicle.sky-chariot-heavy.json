@@ -1,0 +1,65 @@
+{
+  "id": "vehicle.sky-chariot-heavy",
+  "type": "vehicle",
+  "name": "vehicle.sky-chariot-heavy.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 214,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 13,
+  "size": "huge",
+  "priceCp": 900000,
+  "space": {
+    "long": 20,
+    "wide": 20,
+    "high": 8
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 7,
+  "piloting": [
+    {
+      "skill": "skill.arcana",
+      "dc": 33
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 33,
+      "dcMax": 41,
+      "note": "vehicle.sky-chariot-heavy.piloting.1.note"
+    },
+    {
+      "lore": "vehicle.sky-chariot-heavy.piloting.2.lore",
+      "dc": 31
+    }
+  ],
+  "ac": {
+    "value": 29
+  },
+  "fortitude": 23,
+  "hardness": 20,
+  "hp": 230,
+  "bt": 115,
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "speed": {
+    "mode": "fly",
+    "propulsion": [
+      "pulled"
+    ],
+    "note": "vehicle.sky-chariot-heavy.speed.note"
+  },
+  "collision": {
+    "damage": "9d10",
+    "dc": 31
+  }
+}

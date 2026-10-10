@@ -1,0 +1,71 @@
+{
+  "id": "vehicle.hot-air-balloon",
+  "type": "vehicle",
+  "name": "vehicle.hot-air-balloon.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 214,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "huge",
+  "priceCp": 10000,
+  "space": {
+    "long": 15,
+    "wide": 15,
+    "high": 50
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 5,
+  "piloting": [
+    {
+      "lore": "vehicle.hot-air-balloon.piloting.0.lore",
+      "dc": 16
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 18
+    }
+  ],
+  "ac": {
+    "value": 13
+  },
+  "fortitude": 8,
+  "hardness": 0,
+  "hp": 40,
+  "bt": 20,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "drifter",
+      "name": "vehicle.hot-air-balloon.abilities.drifter.name",
+      "text": "vehicle.hot-air-balloon.abilities.drifter.text"
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speed": {
+    "mode": "fly",
+    "feet": 20,
+    "propulsion": [
+      "wind"
+    ]
+  },
+  "collision": {
+    "damage": "2d8",
+    "dc": 16
+  },
+  "editNote": "Page 214 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands. The ability Drifter is printed at the top of the next column; its text matches."
+}

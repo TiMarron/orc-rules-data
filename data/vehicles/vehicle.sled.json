@@ -1,0 +1,71 @@
+{
+  "id": "vehicle.sled",
+  "type": "vehicle",
+  "name": "vehicle.sled.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 215,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "priceCp": 300,
+  "space": {
+    "long": 5,
+    "wide": 1,
+    "high": 3
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "piloting": [
+    {
+      "lore": "vehicle.sled.piloting.0.lore",
+      "dc": 14
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 16,
+      "dcMax": 24,
+      "note": "vehicle.sled.piloting.1.note"
+    }
+  ],
+  "ac": {
+    "value": 10
+  },
+  "fortitude": 6,
+  "hardness": 5,
+  "hp": 14,
+  "bt": 7,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "ice-traverser",
+      "name": "vehicle.sled.abilities.ice-traverser.name",
+      "text": "vehicle.sled.abilities.ice-traverser.text"
+    },
+    {
+      "id": "sluggish",
+      "name": "vehicle.sled.abilities.sluggish.name",
+      "text": "vehicle.sled.abilities.sluggish.text"
+    }
+  ],
+  "speed": {
+    "mode": "land",
+    "propulsion": [
+      "pulled"
+    ],
+    "note": "vehicle.sled.speed.note"
+  },
+  "collision": {
+    "damage": "1d12",
+    "dc": 14
+  },
+  "editNote": "Page 215 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands. The page prints the defences, Speed and Collision before the header, in the previous column; every number was found on page 215, so the stat check's miss is the layout."
+}
