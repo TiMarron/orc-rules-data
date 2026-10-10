@@ -21008,5 +21008,5 @@
   "vehicle.wagon.name": "Wagon",
   "vehicle.wagon.piloting.0.lore": "Driving Lore",
   "vehicle.wagon.piloting.1.note": "depending on the pulling creature",
-  "vehicle.wagon.speed.note": "the speed of the slowest pulling creature (pulled by 2 Large creatures)"
+  "vehicle.wagon.speed.note": "the Speed of the slowest pulling creature (pulled by 2 Large creatures)"
 }
