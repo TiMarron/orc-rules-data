@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gift.schema.json",
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["aspect", "tier"],
+      "properties": {
+        "type": { "const": "gift" },
+        "aspect": { "enum": ["air", "beast", "celestial", "death", "earth", "fiend", "fire", "life", "mind", "plant", "shadow", "water"] },
+        "tier": { "enum": ["minor", "major", "grand"] },
+        "requires": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "relicIs": { "enum": ["worn", "weapon"], "$comment": "'The relic is a worn item.', 'The relic is a weapon.'" },
+            "gift": { "type": "string", "pattern": "^gift\\.[a-z0-9]+(-[a-z0-9]+)*$", "$comment": "Another gift the relic must already have." }
+          },
+          "oneOf": [{ "properties": { "relicIs": true }, "required": ["relicIs"] }, { "properties": { "gift": true }, "required": ["gift"] }]
+        },
+        "activations": { "$ref": "item.schema.json#/allOf/1/properties/activations" }
+      },
+      "anyOf": [{ "properties": { "text": true }, "required": ["text"] }, { "properties": { "activations": true }, "required": ["activations"] }]
+    }
+  ],
+  "unevaluatedProperties": false
+}
