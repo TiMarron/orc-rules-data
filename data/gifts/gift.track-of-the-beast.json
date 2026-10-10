@@ -10,8 +10,9 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "gift.track-of-the-beast.text",
   "tier": "major",
-  "aspect": "beast"
+  "aspect": "beast",
+  "editNote": "Accepted: the list tags are the gift's printed list, kept as a list; every item was found on the page. Aspect and tier are as printed."
 }

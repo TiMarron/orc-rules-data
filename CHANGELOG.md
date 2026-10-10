@@ -28,6 +28,12 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Fixed
 
+- Paragraph breaks around lists in the text of 83 records — spells (the
+  battle forms among them), feats, actions, archetypes, staves, a skill, a
+  condition and a gift. Each list now stands a blank line from the text before
+  and after it, and a sentence printed after a list is its own paragraph again
+  instead of running on from the last item (Storm Lord's "In addition…",
+  Strategic Assessment's "The GM can choose…"). Words and links are unchanged.
 - 383 items (242 of Player Core 2, 141 of GM Core) — potions, elixirs, bombs,
   poisons, oils, talismans, scrolls, ammunition and other consumables — gain
   the activation the book prints in their stat header ("Activate [one-action]

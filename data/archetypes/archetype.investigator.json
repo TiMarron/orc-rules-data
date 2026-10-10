@@ -10,7 +10,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "archetype.investigator.text",
   "class": "class.investigator",
   "feats": [
@@ -42,5 +42,6 @@
       "level": 12,
       "feat": "feat.master-spotter"
     }
-  ]
+  ],
+  "editNote": "Accepted: the ul/li tags are the book's bulleted 'Multiclass <Class> Characters' list, and the converter renders them as '- ' bullets; the text passed the comparison with the book page, and the feat list and class link are the archetype page's own."
 }

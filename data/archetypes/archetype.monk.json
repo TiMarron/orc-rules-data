@@ -43,5 +43,5 @@
       "feat": "feat.perfections-path"
     }
   ],
-  "editNote": "Reserved Material removed: the named god in the champion bullet is dropped, leaving 'champions of deities who favor unarmed attacks'; the advice is unchanged."
+  "editNote": "Reserved Material removed: the named god in the champion bullet is dropped, leaving 'champions of deities who favor unarmed attacks'; the advice is unchanged. The blank lines around its lists follow the converter, which now sets every list a paragraph apart from the text before and after it."
 }

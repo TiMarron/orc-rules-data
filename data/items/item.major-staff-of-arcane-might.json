@@ -36,5 +36,5 @@
     }
   ],
   "category": "staff",
-  "editNote": "The source's italics are misplaced in '+_3 greater striking staff_' (they start inside the bonus); page 279 prints plain '+3 greater striking staff', as the greater staff's line is."
+  "editNote": "The source's italics are misplaced in '+_3 greater striking staff_' (they start inside the bonus); page 279 prints plain '+3 greater striking staff', as the greater staff's line is. The blank lines around its lists follow the converter, which now sets every list a paragraph apart from the text before and after it."
 }
