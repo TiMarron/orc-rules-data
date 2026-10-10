@@ -1,0 +1,112 @@
+{
+  "id": "hazard.wheel-of-misery",
+  "type": "hazard",
+  "name": "hazard.wheel-of-misery.name",
+  "traits": [
+    "magical",
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 108,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.wheel-of-misery.text",
+  "kind": "trap",
+  "complexity": "complex",
+  "level": 6,
+  "stealth": {
+    "modifier": 16,
+    "rank": "expert",
+    "note": "hazard.wheel-of-misery.stealth.note"
+  },
+  "disable": [
+    {
+      "dc": 26,
+      "skill": "skill.thievery",
+      "rank": "expert",
+      "text": "hazard.wheel-of-misery.disable.0"
+    },
+    {
+      "dc": 22,
+      "skill": "skill.thievery",
+      "rank": "master",
+      "text": "hazard.wheel-of-misery.disable.1"
+    },
+    {
+      "counteract": {
+        "spell": "spell.dispel-magic",
+        "rank": 4,
+        "dc": 22
+      },
+      "text": "hazard.wheel-of-misery.disable.2"
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 13
+  },
+  "parts": [
+    {
+      "hardness": 14,
+      "hp": 56,
+      "bt": 28
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "wheel-spin",
+      "name": "hazard.wheel-of-misery.abilities.wheel-spin.name",
+      "actions": "reaction",
+      "trigger": "hazard.wheel-of-misery.abilities.wheel-spin.trigger",
+      "text": "hazard.wheel-of-misery.abilities.wheel-spin.text"
+    },
+    {
+      "id": "1",
+      "name": "hazard.wheel-of-misery.abilities.1.name",
+      "text": "hazard.wheel-of-misery.abilities.1.text"
+    },
+    {
+      "id": "2",
+      "name": "hazard.wheel-of-misery.abilities.2.name",
+      "text": "hazard.wheel-of-misery.abilities.2.text"
+    },
+    {
+      "id": "3",
+      "name": "hazard.wheel-of-misery.abilities.3.name",
+      "text": "hazard.wheel-of-misery.abilities.3.text"
+    },
+    {
+      "id": "4",
+      "name": "hazard.wheel-of-misery.abilities.4.name",
+      "text": "hazard.wheel-of-misery.abilities.4.text"
+    },
+    {
+      "id": "5",
+      "name": "hazard.wheel-of-misery.abilities.5.name",
+      "text": "hazard.wheel-of-misery.abilities.5.text"
+    },
+    {
+      "id": "6",
+      "name": "hazard.wheel-of-misery.abilities.6.name",
+      "text": "hazard.wheel-of-misery.abilities.6.text"
+    }
+  ],
+  "routine": {
+    "actions": 2,
+    "text": "hazard.wheel-of-misery.routine"
+  },
+  "reset": "hazard.wheel-of-misery.reset"
+}

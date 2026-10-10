@@ -1,0 +1,100 @@
+{
+  "id": "hazard.hammer-of-forbiddance",
+  "type": "hazard",
+  "name": "hazard.hammer-of-forbiddance.name",
+  "traits": [
+    "magical",
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 102,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "hazard.hammer-of-forbiddance.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 11,
+  "stealth": {
+    "dc": 30,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 28,
+      "skill": "skill.thievery",
+      "rank": "expert",
+      "text": "hazard.hammer-of-forbiddance.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 24,
+    "reflex": 15
+  },
+  "parts": [
+    {
+      "name": "hazard.hammer-of-forbiddance.parts.0.name",
+      "hardness": 22,
+      "hp": 88,
+      "bt": 44
+    },
+    {
+      "name": "hazard.hammer-of-forbiddance.parts.1.name",
+      "hardness": 16,
+      "hp": 64,
+      "bt": 32
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "forbid-entry",
+      "name": "hazard.hammer-of-forbiddance.abilities.forbid-entry.name",
+      "actions": "reaction",
+      "traits": [
+        "divine"
+      ],
+      "trigger": "hazard.hammer-of-forbiddance.abilities.forbid-entry.trigger",
+      "text": "hazard.hammer-of-forbiddance.abilities.forbid-entry.text"
+    }
+  ],
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "hazard.hammer-of-forbiddance.strikes.hammer.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "6d8+20",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "text": "hazard.hammer-of-forbiddance.strikes.hammer.effects.0"
+        },
+        {
+          "text": "hazard.hammer-of-forbiddance.strikes.hammer.effects.1"
+        },
+        {
+          "text": "hazard.hammer-of-forbiddance.strikes.hammer.map"
+        }
+      ]
+    }
+  ],
+  "reset": "hazard.hammer-of-forbiddance.reset",
+  "editNote": "Compared with page 102: the hammer Strike's damage, the knockback and the Will save it forces are as printed; the riders stay as the Strike's text effects, as no structure carries them."
+}

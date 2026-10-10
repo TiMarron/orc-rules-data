@@ -1,0 +1,97 @@
+{
+  "id": "hazard.titanic-flytrap",
+  "type": "hazard",
+  "name": "hazard.titanic-flytrap.name",
+  "traits": [
+    "environmental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.titanic-flytrap.text",
+  "kind": "environmental",
+  "complexity": "simple",
+  "level": 4,
+  "stealth": {
+    "dc": 25,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 22,
+      "skill": "skill.survival",
+      "rank": "trained",
+      "text": "hazard.titanic-flytrap.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 8
+  },
+  "parts": [
+    {
+      "hp": 56,
+      "bt": 28
+    }
+  ],
+  "immunities": [
+    "mental"
+  ],
+  "abilities": [
+    {
+      "id": "snap-shut",
+      "name": "hazard.titanic-flytrap.abilities.snap-shut.name",
+      "actions": "reaction",
+      "trigger": "hazard.titanic-flytrap.abilities.snap-shut.trigger",
+      "text": "hazard.titanic-flytrap.abilities.snap-shut.text"
+    },
+    {
+      "id": "devour",
+      "name": "hazard.titanic-flytrap.abilities.devour.name",
+      "text": "hazard.titanic-flytrap.abilities.devour.text"
+    },
+    {
+      "id": "titanic-flytrap-toxin",
+      "name": "hazard.titanic-flytrap.abilities.titanic-flytrap-toxin.name",
+      "traits": [
+        "contact",
+        "poison"
+      ],
+      "text": "hazard.titanic-flytrap.abilities.titanic-flytrap-toxin.text"
+    }
+  ],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 20
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "hazard.titanic-flytrap.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [],
+      "effects": [
+        {
+          "own": "devour"
+        }
+      ]
+    }
+  ],
+  "reset": "hazard.titanic-flytrap.reset"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "hazard.dance-of-death",
+  "type": "hazard",
+  "name": "hazard.dance-of-death.name",
+  "traits": [
+    "haunt"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.dance-of-death.text",
+  "kind": "haunt",
+  "complexity": "complex",
+  "level": 16,
+  "stealth": {
+    "modifier": 32,
+    "rank": "master"
+  },
+  "disable": [
+    {
+      "dc": 42,
+      "skill": "skill.intimidation",
+      "rank": "expert",
+      "text": "hazard.dance-of-death.disable.0"
+    },
+    {
+      "dc": 40,
+      "skill": "skill.performance",
+      "rank": "master",
+      "text": "hazard.dance-of-death.disable.1"
+    },
+    {
+      "dc": 42,
+      "skill": "skill.religion",
+      "rank": "master",
+      "text": "hazard.dance-of-death.disable.2"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "prelude",
+      "name": "hazard.dance-of-death.abilities.prelude.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "incapacitation",
+        "mental",
+        "occult"
+      ],
+      "trigger": "hazard.dance-of-death.abilities.prelude.trigger",
+      "text": "hazard.dance-of-death.abilities.prelude.text"
+    }
+  ],
+  "routine": {
+    "actions": 1,
+    "traits": [
+      "auditory",
+      "incapacitation",
+      "mental",
+      "occult"
+    ],
+    "text": "hazard.dance-of-death.routine"
+  },
+  "reset": "hazard.dance-of-death.reset"
+}

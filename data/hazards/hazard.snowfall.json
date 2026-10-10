@@ -1,0 +1,59 @@
+{
+  "id": "hazard.snowfall",
+  "type": "hazard",
+  "name": "hazard.snowfall.name",
+  "traits": [
+    "environmental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 104,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "hazard.snowfall.text",
+  "kind": "environmental",
+  "complexity": "simple",
+  "level": 0,
+  "stealth": {
+    "dc": 16,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 19,
+      "skill": "skill.survival",
+      "rank": "trained",
+      "text": "hazard.snowfall.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 8
+  },
+  "parts": [
+    {
+      "hp": 8
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "snowfall",
+      "name": "hazard.snowfall.abilities.snowfall.name",
+      "actions": "reaction",
+      "trigger": "hazard.snowfall.abilities.snowfall.trigger",
+      "text": "hazard.snowfall.abilities.snowfall.text"
+    }
+  ],
+  "editNote": "Page 104 prints AC 16, Fort +10, Ref +8; the source says AC 18, Fort +11, Ref +3 and the errata is silent, so the book's numbers stand."
+}

@@ -1,0 +1,105 @@
+{
+  "id": "hazard.poisoned-dart-gallery",
+  "type": "hazard",
+  "name": "hazard.poisoned-dart-gallery.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.poisoned-dart-gallery.text",
+  "kind": "trap",
+  "complexity": "complex",
+  "level": 8,
+  "stealth": {
+    "modifier": 16,
+    "rank": "expert",
+    "note": "hazard.poisoned-dart-gallery.stealth.note"
+  },
+  "disable": [
+    {
+      "dc": 21,
+      "skill": "skill.thievery",
+      "rank": "expert",
+      "text": "hazard.poisoned-dart-gallery.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 17
+  },
+  "parts": [
+    {
+      "hardness": 14,
+      "hp": 56,
+      "bt": 28
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "dart-volley",
+      "name": "hazard.poisoned-dart-gallery.abilities.dart-volley.name",
+      "actions": "reaction",
+      "trigger": "hazard.poisoned-dart-gallery.abilities.dart-volley.trigger",
+      "text": "hazard.poisoned-dart-gallery.abilities.dart-volley.text"
+    },
+    {
+      "id": "continuous-barrage",
+      "name": "hazard.poisoned-dart-gallery.abilities.continuous-barrage.name",
+      "actions": "free",
+      "trigger": "hazard.poisoned-dart-gallery.abilities.continuous-barrage.trigger",
+      "text": "hazard.poisoned-dart-gallery.abilities.continuous-barrage.text"
+    },
+    {
+      "id": "flesset-poison",
+      "name": "hazard.poisoned-dart-gallery.abilities.flesset-poison.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "hazard.poisoned-dart-gallery.abilities.flesset-poison.text"
+    }
+  ],
+  "strikes": [
+    {
+      "kind": "ranged",
+      "name": "hazard.poisoned-dart-gallery.strikes.poisoned-dart.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "3d4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "flesset-poison"
+        },
+        {
+          "text": "hazard.poisoned-dart-gallery.strikes.poisoned-dart.map"
+        }
+      ]
+    }
+  ],
+  "routine": {
+    "actions": 1,
+    "text": "hazard.poisoned-dart-gallery.routine"
+  },
+  "reset": "hazard.poisoned-dart-gallery.reset"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "hazard.drowning-pit",
+  "type": "hazard",
+  "name": "hazard.drowning-pit.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.drowning-pit.text",
+  "kind": "trap",
+  "complexity": "complex",
+  "level": 3,
+  "stealth": {
+    "modifier": 10,
+    "rank": "trained",
+    "note": "hazard.drowning-pit.stealth.note"
+  },
+  "disable": [
+    {
+      "dc": 18,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.drowning-pit.disable.0"
+    },
+    {
+      "dc": 22,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.drowning-pit.disable.1"
+    },
+    {
+      "dc": 22,
+      "skill": "skill.athletics",
+      "text": "hazard.drowning-pit.disable.2"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 5
+  },
+  "parts": [
+    {
+      "name": "hazard.drowning-pit.parts.0.name",
+      "hardness": 15,
+      "hp": 60,
+      "bt": 30
+    },
+    {
+      "name": "hazard.drowning-pit.parts.1.name",
+      "hardness": 8,
+      "hp": 32,
+      "bt": 16
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "pitfall",
+      "name": "hazard.drowning-pit.abilities.pitfall.name",
+      "actions": "reaction",
+      "trigger": "hazard.drowning-pit.abilities.pitfall.trigger",
+      "text": "hazard.drowning-pit.abilities.pitfall.text"
+    }
+  ],
+  "routine": {
+    "actions": 4,
+    "text": "hazard.drowning-pit.routine"
+  },
+  "reset": "hazard.drowning-pit.reset"
+}

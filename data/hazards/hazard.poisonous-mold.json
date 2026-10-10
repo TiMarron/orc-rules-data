@@ -1,0 +1,76 @@
+{
+  "id": "hazard.poisonous-mold",
+  "type": "hazard",
+  "name": "hazard.poisonous-mold.name",
+  "traits": [
+    "environmental",
+    "fungus"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.poisonous-mold.text",
+  "kind": "environmental",
+  "complexity": "simple",
+  "level": 2,
+  "stealth": {
+    "dc": 21,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 18,
+      "skill": "skill.survival",
+      "rank": "trained",
+      "text": "hazard.poisonous-mold.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 5
+  },
+  "parts": [
+    {
+      "hp": 30,
+      "bt": 15
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "feed-on-decay",
+      "name": "hazard.poisonous-mold.abilities.feed-on-decay.name",
+      "text": "hazard.poisonous-mold.abilities.feed-on-decay.text"
+    },
+    {
+      "id": "spore-burst",
+      "name": "hazard.poisonous-mold.abilities.spore-burst.name",
+      "actions": "reaction",
+      "traits": [
+        "poison"
+      ],
+      "frequency": "hazard.poisonous-mold.abilities.spore-burst.frequency",
+      "trigger": "hazard.poisonous-mold.abilities.spore-burst.trigger",
+      "text": "hazard.poisonous-mold.abilities.spore-burst.text"
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "reset": "hazard.poisonous-mold.reset"
+}

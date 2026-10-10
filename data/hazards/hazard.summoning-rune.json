@@ -1,0 +1,54 @@
+{
+  "id": "hazard.summoning-rune",
+  "type": "hazard",
+  "name": "hazard.summoning-rune.name",
+  "traits": [
+    "magical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 108,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "hazard.summoning-rune.text",
+  "kind": "trap",
+  "complexity": "complex",
+  "level": 1,
+  "stealth": {
+    "modifier": 7,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 15,
+      "skill": "skill.acrobatics",
+      "text": "hazard.summoning-rune.disable.0"
+    },
+    {
+      "counteract": {
+        "spell": "spell.dispel-magic",
+        "rank": 1,
+        "dc": 15
+      },
+      "text": "hazard.summoning-rune.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "summon-monster",
+      "name": "hazard.summoning-rune.abilities.summon-monster.name",
+      "actions": "reaction",
+      "traits": [
+        "arcane"
+      ],
+      "trigger": "hazard.summoning-rune.abilities.summon-monster.trigger",
+      "text": "hazard.summoning-rune.abilities.summon-monster.text"
+    }
+  ],
+  "reset": "hazard.summoning-rune.reset",
+  "editNote": "Compared with page 108: HAZARD 1 is printed after the Stealth line (the layout separates it from the name, which is why the header check misses it); stealth +7 (trained), the disable options, the Summon Monster reaction and the reset are as printed (the book prints no routine for it)."
+}

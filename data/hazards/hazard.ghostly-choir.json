@@ -1,0 +1,54 @@
+{
+  "id": "hazard.ghostly-choir",
+  "type": "hazard",
+  "name": "hazard.ghostly-choir.name",
+  "traits": [
+    "haunt"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 102,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.ghostly-choir.text",
+  "kind": "haunt",
+  "complexity": "simple",
+  "level": 6,
+  "stealth": {
+    "dc": 20,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 28,
+      "skill": "skill.performance",
+      "rank": "trained",
+      "text": "hazard.ghostly-choir.disable.0"
+    },
+    {
+      "dc": 28,
+      "skill": "skill.religion",
+      "rank": "trained",
+      "text": "hazard.ghostly-choir.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "profane-chant",
+      "name": "hazard.ghostly-choir.abilities.profane-chant.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental",
+        "occult"
+      ],
+      "trigger": "hazard.ghostly-choir.abilities.profane-chant.trigger",
+      "text": "hazard.ghostly-choir.abilities.profane-chant.text"
+    }
+  ]
+}

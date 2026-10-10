@@ -1,0 +1,80 @@
+{
+  "id": "hazard.flensing-blades",
+  "type": "hazard",
+  "name": "hazard.flensing-blades.name",
+  "traits": [
+    "haunt"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "hazard.flensing-blades.text",
+  "kind": "haunt",
+  "complexity": "complex",
+  "level": 12,
+  "stealth": {
+    "modifier": 25,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 35,
+      "skill": "skill.thievery",
+      "rank": "master",
+      "text": "hazard.flensing-blades.disable.0"
+    },
+    {
+      "dc": 38,
+      "skill": "skill.religion",
+      "rank": "expert",
+      "text": "hazard.flensing-blades.disable.1"
+    }
+  ],
+  "disableNote": "hazard.flensing-blades.disable-note",
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 27,
+    "reflex": 25,
+    "will": 22
+  },
+  "parts": [
+    {
+      "hardness": 20,
+      "hp": 100,
+      "bt": 50
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "whirling-blades",
+      "name": "hazard.flensing-blades.abilities.whirling-blades.name",
+      "actions": "reaction",
+      "trigger": "hazard.flensing-blades.abilities.whirling-blades.trigger",
+      "text": "hazard.flensing-blades.abilities.whirling-blades.text"
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "vitality",
+      "value": 15
+    }
+  ],
+  "routine": {
+    "actions": 3,
+    "text": "hazard.flensing-blades.routine"
+  },
+  "reset": "hazard.flensing-blades.reset",
+  "editNote": "Compared with the page: the disable options and the condition after them are as printed; the condition is kept as the disable note, the options as structure."
+}

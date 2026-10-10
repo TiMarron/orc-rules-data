@@ -1,0 +1,100 @@
+{
+  "id": "hazard.spinning-blade-pillar",
+  "type": "hazard",
+  "name": "hazard.spinning-blade-pillar.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "hazard.spinning-blade-pillar.text",
+  "kind": "trap",
+  "complexity": "complex",
+  "level": 4,
+  "stealth": {
+    "modifier": 11,
+    "rank": "trained",
+    "note": "hazard.spinning-blade-pillar.stealth.note"
+  },
+  "disable": [
+    {
+      "dc": 21,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.spinning-blade-pillar.disable.0"
+    },
+    {
+      "dc": 19,
+      "skill": "skill.thievery",
+      "rank": "expert",
+      "text": "hazard.spinning-blade-pillar.disable.1"
+    }
+  ],
+  "disableNote": "hazard.spinning-blade-pillar.disable-note",
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 12
+  },
+  "parts": [
+    {
+      "name": "hazard.spinning-blade-pillar.parts.0.name",
+      "hardness": 12,
+      "hp": 48,
+      "bt": 24
+    },
+    {
+      "name": "hazard.spinning-blade-pillar.parts.1.name",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "rising-pillar",
+      "name": "hazard.spinning-blade-pillar.abilities.rising-pillar.name",
+      "actions": "reaction",
+      "trigger": "hazard.spinning-blade-pillar.abilities.rising-pillar.trigger",
+      "text": "hazard.spinning-blade-pillar.abilities.rising-pillar.text"
+    }
+  ],
+  "speeds": {
+    "land": 10
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "hazard.spinning-blade-pillar.strikes.spinning-blade.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d10+5",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "routine": {
+    "actions": 3,
+    "text": "hazard.spinning-blade-pillar.routine"
+  },
+  "reset": "hazard.spinning-blade-pillar.reset",
+  "editNote": "Compared with the page: the disable options and the condition after them are as printed; the condition is kept as the disable note, the options as structure."
+}

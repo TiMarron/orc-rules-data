@@ -1,0 +1,55 @@
+{
+  "id": "hazard.bloodthirsty-urge",
+  "type": "hazard",
+  "name": "hazard.bloodthirsty-urge.name",
+  "traits": [
+    "haunt"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 100,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.bloodthirsty-urge.text",
+  "kind": "haunt",
+  "complexity": "simple",
+  "level": 10,
+  "stealth": {
+    "dc": 31,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 29,
+      "skill": "skill.religion",
+      "rank": "master",
+      "text": "hazard.bloodthirsty-urge.disable.0"
+    },
+    {
+      "dc": 31,
+      "skill": "skill.diplomacy",
+      "rank": "expert",
+      "text": "hazard.bloodthirsty-urge.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "quietus",
+      "name": "hazard.bloodthirsty-urge.abilities.quietus.name",
+      "actions": "reaction",
+      "traits": [
+        "death",
+        "emotion",
+        "fear",
+        "illusion",
+        "mental",
+        "occult"
+      ],
+      "trigger": "hazard.bloodthirsty-urge.abilities.quietus.trigger",
+      "text": "hazard.bloodthirsty-urge.abilities.quietus.text"
+    }
+  ]
+}

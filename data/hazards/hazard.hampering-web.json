@@ -1,0 +1,59 @@
+{
+  "id": "hazard.hampering-web",
+  "type": "hazard",
+  "name": "hazard.hampering-web.name",
+  "traits": [
+    "environmental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 102,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.hampering-web.text",
+  "kind": "environmental",
+  "complexity": "simple",
+  "level": 1,
+  "stealth": {
+    "dc": 18,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 17,
+      "skill": "skill.survival",
+      "rank": "trained",
+      "text": "hazard.hampering-web.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 11
+  },
+  "parts": [
+    {
+      "hp": 26,
+      "bt": 13
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "ensnare",
+      "name": "hazard.hampering-web.abilities.ensnare.name",
+      "actions": "reaction",
+      "trigger": "hazard.hampering-web.abilities.ensnare.trigger",
+      "text": "hazard.hampering-web.abilities.ensnare.text"
+    }
+  ]
+}

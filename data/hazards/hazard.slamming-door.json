@@ -1,0 +1,61 @@
+{
+  "id": "hazard.slamming-door",
+  "type": "hazard",
+  "name": "hazard.slamming-door.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 104,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.slamming-door.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 1,
+  "stealth": {
+    "dc": 17,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 15,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.slamming-door.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 2
+  },
+  "parts": [
+    {
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "slam-shut",
+      "name": "hazard.slamming-door.abilities.slam-shut.name",
+      "actions": "reaction",
+      "trigger": "hazard.slamming-door.abilities.slam-shut.trigger",
+      "text": "hazard.slamming-door.abilities.slam-shut.text"
+    }
+  ]
+}
