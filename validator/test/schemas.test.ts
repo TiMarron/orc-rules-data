@@ -181,6 +181,7 @@ describe('type schemas', () => {
 
   it('accepts a hazard part with HP but no Hardness, and a routine with traits', () => {
     const web = { ...VALID.hazard, kind: 'environmental', parts: [{ hp: 26, bt: 13 }] };
+    expect(issuesFor('hazard', { ...VALID.hazard, parts: [{ hardness: 18, hp: 120, bt: 60, note: 'hazard.scythe-blades.parts.0.note' }] })).toEqual([]);
     expect(issuesFor('hazard', web)).toEqual([]);
     const haunt = { ...VALID.hazard, complexity: 'complex', routine: { actions: 1, traits: ['illusion', 'occult'], text: 'hazard.scythe-blades.routine' } };
     expect(issuesFor('hazard', haunt)).toEqual([]);
