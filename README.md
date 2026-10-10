@@ -8,7 +8,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
   school, thesis, package, archetype, ability, creature, ritual, material,
-  affliction.
+  affliction, hazard.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -288,6 +288,16 @@ cost tokens.
   except a final "death", a duration — or a single `effect`. A cursed-item
   template has `usage` ("curses a ring, staff, or wand") and an `effect`, and
   no save.
+- A `hazard` is a trap, an environmental hazard or a haunt (`kind`), `simple`
+  or `complex`. `stealth` is the DC (or, for most complex hazards, the
+  modifier) to notice it, with the minimum proficiency `rank`; `disable` lists
+  the ways to disable it — a skill check `{ dc, skill, rank }` or a
+  counteract `{ spell, rank, dc }`, each with its printed `text` — and
+  `disableNote` any condition on them. `parts` are the hazard's Hardness/HP/BT,
+  one per printed part (a trapdoor and its spouts). Strikes, weaknesses,
+  resistances and speeds are shaped as a creature's; an ability is a creature's
+  ability without a `section`. A complex hazard has a `routine` with its
+  actions per round; `reset` and `special` are printed text.
 
 ## Versioning
 

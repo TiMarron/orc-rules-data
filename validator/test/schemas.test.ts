@@ -104,6 +104,15 @@ const VALID: Record<string, Record<string, unknown>> = {
       { text: 'affliction.scarlet-leprosy.stages.1' },
     ],
   }),
+  hazard: record('hazard', 'scythe-blades', {
+    kind: 'trap', complexity: 'simple', level: 4,
+    stealth: { dc: 23, rank: 'trained' },
+    disable: [{ dc: 21, skill: 'skill.thievery', rank: 'trained', text: 'hazard.scythe-blades.disable.0' }],
+    ac: { value: 21 }, saves: { fortitude: 12, reflex: 8 },
+    parts: [{ hardness: 11, hp: 44, bt: 22 }],
+    abilities: [{ id: 'falling-scythes', name: 'hazard.scythe-blades.abilities.falling-scythes.name', actions: 'reaction', trigger: 'hazard.scythe-blades.abilities.falling-scythes.trigger', text: 'hazard.scythe-blades.abilities.falling-scythes.text' }],
+    reset: 'hazard.scythe-blades.reset',
+  }),
 };
 
 const WEAPON: Record<string, unknown> = record('item', 'longsword', {
@@ -152,6 +161,30 @@ describe('type schemas', () => {
 
   it('accepts a weapon item', () => {
     expect(issuesFor('item', WEAPON)).toEqual([]);
+  });
+
+  it('accepts a complex hazard with named parts, a routine and a counteract option', () => {
+    const pit = record('hazard', 'drowning-pit', {
+      kind: 'trap', complexity: 'complex', level: 3,
+      stealth: { modifier: 10, rank: 'trained', note: 'hazard.drowning-pit.stealth.note' },
+      disable: [
+        { dc: 18, skill: 'skill.thievery', rank: 'trained', text: 'hazard.drowning-pit.disable.0' },
+        { counteract: { spell: 'spell.dispel-magic', rank: 3, dc: 20 }, text: 'hazard.drowning-pit.disable.1' },
+      ],
+      disableNote: 'hazard.drowning-pit.disable-note',
+      parts: [{ name: 'hazard.drowning-pit.parts.0.name', hardness: 15, hp: 60, bt: 30 }, { name: 'hazard.drowning-pit.parts.1.name', hardness: 8, hp: 32, bt: 16 }],
+      routine: { actions: 4, text: 'hazard.drowning-pit.routine' },
+      special: 'hazard.drowning-pit.special',
+    });
+    expect(issuesFor('hazard', pit)).toEqual([]);
+  });
+
+  it('rejects a routine on a simple hazard, a stealth with both dc and modifier, and a disable option with both dc and counteract', () => {
+    expect(issuesFor('hazard', { ...VALID.hazard, routine: { actions: 1, text: 'hazard.scythe-blades.routine' } }).length).toBeGreaterThan(0);
+    expect(issuesFor('hazard', { ...VALID.hazard, stealth: { dc: 23, modifier: 13 } }).some((m) => m.includes('/stealth'))).toBe(true);
+    const both = { ...VALID.hazard, disable: [{ dc: 20, counteract: { spell: 'spell.dispel-magic', rank: 3, dc: 20 }, text: 'hazard.scythe-blades.disable.0' }] };
+    expect(issuesFor('hazard', both).some((m) => m.includes('/disable/0'))).toBe(true);
+    expect(issuesFor('hazard', { ...VALID.hazard, disable: [] }).some((m) => m.includes('/disable'))).toBe(true);
   });
 
   it('accepts a curse with an effect, a cursed-item template, and a curse of varying level', () => {
