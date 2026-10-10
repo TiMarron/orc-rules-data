@@ -1,0 +1,47 @@
+{
+  "id": "hazard.quicksand",
+  "type": "hazard",
+  "name": "hazard.quicksand.name",
+  "traits": [
+    "environmental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 107,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.quicksand.text",
+  "kind": "environmental",
+  "complexity": "complex",
+  "level": 3,
+  "stealth": {
+    "modifier": 12,
+    "rank": "trained",
+    "note": "hazard.quicksand.stealth.note"
+  },
+  "disable": [
+    {
+      "dc": 18,
+      "skill": "skill.survival",
+      "rank": "trained",
+      "text": "hazard.quicksand.disable.0"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "submerge",
+      "name": "hazard.quicksand.abilities.submerge.name",
+      "actions": "free",
+      "trigger": "hazard.quicksand.abilities.submerge.trigger",
+      "text": "hazard.quicksand.abilities.submerge.text"
+    }
+  ],
+  "routine": {
+    "actions": 1,
+    "text": "hazard.quicksand.routine"
+  },
+  "reset": "hazard.quicksand.reset"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "hazard.fireball-rune",
+  "type": "hazard",
+  "name": "hazard.fireball-rune.name",
+  "traits": [
+    "fire",
+    "magical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.fireball-rune.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 5,
+  "stealth": {
+    "dc": 24,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 22,
+      "skill": "skill.thievery",
+      "rank": "expert",
+      "text": "hazard.fireball-rune.disable.0"
+    },
+    {
+      "counteract": {
+        "spell": "spell.dispel-magic",
+        "rank": 3,
+        "dc": 20
+      },
+      "text": "hazard.fireball-rune.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fireball",
+      "name": "hazard.fireball-rune.abilities.fireball.name",
+      "actions": "reaction",
+      "traits": [
+        "arcane",
+        "fire"
+      ],
+      "trigger": "hazard.fireball-rune.abilities.fireball.trigger",
+      "text": "hazard.fireball-rune.abilities.fireball.text"
+    }
+  ]
+}

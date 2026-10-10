@@ -1,0 +1,64 @@
+{
+  "id": "hazard.bottomless-pit",
+  "type": "hazard",
+  "name": "hazard.bottomless-pit.name",
+  "traits": [
+    "magical",
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.bottomless-pit.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 9,
+  "stealth": {
+    "dc": 30,
+    "note": "hazard.bottomless-pit.stealth.note"
+  },
+  "disable": [
+    {
+      "dc": 28,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.bottomless-pit.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 12
+  },
+  "parts": [
+    {
+      "name": "hazard.bottomless-pit.parts.0.name",
+      "hardness": 9,
+      "hp": 36,
+      "bt": 18
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "infinite-pitfall",
+      "name": "hazard.bottomless-pit.abilities.infinite-pitfall.name",
+      "actions": "reaction",
+      "trigger": "hazard.bottomless-pit.abilities.infinite-pitfall.trigger",
+      "text": "hazard.bottomless-pit.abilities.infinite-pitfall.text"
+    }
+  ],
+  "reset": "hazard.bottomless-pit.reset"
+}

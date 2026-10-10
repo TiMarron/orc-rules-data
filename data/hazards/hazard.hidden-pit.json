@@ -1,0 +1,62 @@
+{
+  "id": "hazard.hidden-pit",
+  "type": "hazard",
+  "name": "hazard.hidden-pit.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 102,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.hidden-pit.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 0,
+  "stealth": {
+    "dc": 18,
+    "note": "hazard.hidden-pit.stealth.note"
+  },
+  "disable": [
+    {
+      "dc": 12,
+      "skill": "skill.thievery",
+      "text": "hazard.hidden-pit.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 10
+  },
+  "saves": {
+    "fortitude": 1,
+    "reflex": 1
+  },
+  "parts": [
+    {
+      "name": "hazard.hidden-pit.parts.0.name",
+      "hardness": 3,
+      "hp": 12,
+      "bt": 6
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "pitfall",
+      "name": "hazard.hidden-pit.abilities.pitfall.name",
+      "actions": "reaction",
+      "trigger": "hazard.hidden-pit.abilities.pitfall.trigger",
+      "text": "hazard.hidden-pit.abilities.pitfall.text"
+    }
+  ],
+  "reset": "hazard.hidden-pit.reset"
+}

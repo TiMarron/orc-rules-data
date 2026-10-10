@@ -1,0 +1,93 @@
+{
+  "id": "hazard.spectral-reflection",
+  "type": "hazard",
+  "name": "hazard.spectral-reflection.name",
+  "traits": [
+    "haunt"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 104,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.spectral-reflection.text",
+  "kind": "haunt",
+  "complexity": "simple",
+  "level": 5,
+  "stealth": {
+    "dc": 26,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 23,
+      "skill": "skill.religion",
+      "rank": "trained",
+      "text": "hazard.spectral-reflection.disable.0"
+    },
+    {
+      "dc": 23,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.spectral-reflection.disable.1"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 10
+  },
+  "parts": [
+    {
+      "hardness": 13,
+      "hp": 50,
+      "bt": 25
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "spectral-impale",
+      "name": "hazard.spectral-reflection.abilities.spectral-impale.name",
+      "actions": "reaction",
+      "trigger": "hazard.spectral-reflection.abilities.spectral-impale.trigger",
+      "text": "hazard.spectral-reflection.abilities.spectral-impale.text"
+    },
+    {
+      "id": "sap-vitality",
+      "name": "hazard.spectral-reflection.abilities.sap-vitality.name",
+      "text": "hazard.spectral-reflection.abilities.sap-vitality.text"
+    }
+  ],
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "hazard.spectral-reflection.strikes.shadow-barbs.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "4d8+9",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        {
+          "own": "sap-vitality"
+        }
+      ]
+    }
+  ],
+  "reset": "hazard.spectral-reflection.reset",
+  "special": "hazard.spectral-reflection.special"
+}

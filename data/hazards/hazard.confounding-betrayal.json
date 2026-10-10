@@ -1,0 +1,61 @@
+{
+  "id": "hazard.confounding-betrayal",
+  "type": "hazard",
+  "name": "hazard.confounding-betrayal.name",
+  "traits": [
+    "haunt"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.confounding-betrayal.text",
+  "kind": "haunt",
+  "complexity": "complex",
+  "level": 8,
+  "stealth": {
+    "modifier": 21,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 28,
+      "skill": "skill.deception",
+      "rank": "expert",
+      "text": "hazard.confounding-betrayal.disable.0"
+    },
+    {
+      "dc": 28,
+      "skill": "skill.occultism",
+      "rank": "trained",
+      "text": "hazard.confounding-betrayal.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "unmask",
+      "name": "hazard.confounding-betrayal.abilities.unmask.name",
+      "actions": "reaction",
+      "traits": [
+        "illusion",
+        "occult"
+      ],
+      "trigger": "hazard.confounding-betrayal.abilities.unmask.trigger",
+      "text": "hazard.confounding-betrayal.abilities.unmask.text"
+    }
+  ],
+  "routine": {
+    "actions": 1,
+    "traits": [
+      "illusion",
+      "incapacitation",
+      "occult"
+    ],
+    "text": "hazard.confounding-betrayal.routine"
+  },
+  "reset": "hazard.confounding-betrayal.reset"
+}

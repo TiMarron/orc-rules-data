@@ -1,0 +1,57 @@
+{
+  "id": "hazard.eternal-flame",
+  "type": "hazard",
+  "name": "hazard.eternal-flame.name",
+  "traits": [
+    "haunt"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 106,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "hazard.eternal-flame.text",
+  "kind": "haunt",
+  "complexity": "complex",
+  "level": 7,
+  "stealth": {
+    "modifier": 18,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 27,
+      "skill": "skill.diplomacy",
+      "rank": "expert",
+      "text": "hazard.eternal-flame.disable.0"
+    },
+    {
+      "dc": 30,
+      "skill": "skill.religion",
+      "rank": "trained",
+      "text": "hazard.eternal-flame.disable.1"
+    }
+  ],
+  "disableNote": "hazard.eternal-flame.disable-note",
+  "abilities": [
+    {
+      "id": "searing-agony",
+      "name": "hazard.eternal-flame.abilities.searing-agony.name",
+      "actions": "reaction",
+      "traits": [
+        "mental"
+      ],
+      "trigger": "hazard.eternal-flame.abilities.searing-agony.trigger",
+      "text": "hazard.eternal-flame.abilities.searing-agony.text"
+    }
+  ],
+  "routine": {
+    "actions": 1,
+    "text": "hazard.eternal-flame.routine"
+  },
+  "reset": "hazard.eternal-flame.reset",
+  "editNote": "Compared with the page: the disable options and the condition after them are as printed; the condition is kept as the disable note, the options as structure."
+}

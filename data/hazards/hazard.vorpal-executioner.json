@@ -1,0 +1,96 @@
+{
+  "id": "hazard.vorpal-executioner",
+  "type": "hazard",
+  "name": "hazard.vorpal-executioner.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 105,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.vorpal-executioner.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 19,
+  "stealth": {
+    "dc": 43,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 41,
+      "skill": "skill.thievery",
+      "rank": "expert",
+      "text": "hazard.vorpal-executioner.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 43
+  },
+  "saves": {
+    "fortitude": 32,
+    "reflex": 32
+  },
+  "parts": [
+    {
+      "hardness": 30,
+      "hp": 120,
+      "bt": 60
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "total-decapitation",
+      "name": "hazard.vorpal-executioner.abilities.total-decapitation.name",
+      "actions": "reaction",
+      "trigger": "hazard.vorpal-executioner.abilities.total-decapitation.trigger",
+      "text": "hazard.vorpal-executioner.abilities.total-decapitation.text"
+    },
+    {
+      "id": "decapitation",
+      "name": "hazard.vorpal-executioner.abilities.decapitation.name",
+      "text": "hazard.vorpal-executioner.abilities.decapitation.text"
+    }
+  ],
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "hazard.vorpal-executioner.strikes.saw-blade.name",
+      "actions": "1",
+      "bonus": 40,
+      "traits": [
+        "deadly",
+        "death"
+      ],
+      "traitValues": {
+        "deadly": "d12"
+      },
+      "damage": [
+        {
+          "dice": "6d12+25",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "decapitation"
+        },
+        {
+          "text": "hazard.vorpal-executioner.strikes.saw-blade.map"
+        }
+      ]
+    }
+  ],
+  "reset": "hazard.vorpal-executioner.reset"
+}

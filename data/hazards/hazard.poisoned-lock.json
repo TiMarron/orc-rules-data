@@ -1,0 +1,89 @@
+{
+  "id": "hazard.poisoned-lock",
+  "type": "hazard",
+  "name": "hazard.poisoned-lock.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.poisoned-lock.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 1,
+  "stealth": {
+    "dc": 17,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 17,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.poisoned-lock.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 4
+  },
+  "parts": [
+    {
+      "hardness": 6,
+      "hp": 24,
+      "bt": 12
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "spring",
+      "name": "hazard.poisoned-lock.abilities.spring.name",
+      "actions": "reaction",
+      "trigger": "hazard.poisoned-lock.abilities.spring.trigger",
+      "text": "hazard.poisoned-lock.abilities.spring.text"
+    },
+    {
+      "id": "cladis-poison",
+      "name": "hazard.poisoned-lock.abilities.cladis-poison.name",
+      "traits": [
+        "poison"
+      ],
+      "text": "hazard.poisoned-lock.abilities.cladis-poison.text"
+    }
+  ],
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "hazard.poisoned-lock.strikes.spine.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "cladis-poison"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "hazard.planar-rift",
+  "type": "hazard",
+  "name": "hazard.planar-rift.name",
+  "traits": [
+    "magical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "hazard.planar-rift.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 13,
+  "stealth": {
+    "dc": 35,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 33,
+      "skill": "skill.thievery",
+      "rank": "master",
+      "text": "hazard.planar-rift.disable.0"
+    },
+    {
+      "counteract": {
+        "spell": "spell.dispel-magic",
+        "rank": 7,
+        "dc": 31
+      },
+      "text": "hazard.planar-rift.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "into-the-beyond",
+      "name": "hazard.planar-rift.abilities.into-the-beyond.name",
+      "actions": "reaction",
+      "traits": [
+        "occult",
+        "teleportation"
+      ],
+      "trigger": "hazard.planar-rift.abilities.into-the-beyond.trigger",
+      "text": "hazard.planar-rift.abilities.into-the-beyond.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the ability's name carried the setting's name for the planes; it reads 'Into the Beyond', with its id to match. Rules text is the book's."
+}

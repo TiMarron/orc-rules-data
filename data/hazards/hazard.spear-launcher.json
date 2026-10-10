@@ -1,0 +1,76 @@
+{
+  "id": "hazard.spear-launcher",
+  "type": "hazard",
+  "name": "hazard.spear-launcher.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 104,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.spear-launcher.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 2,
+  "stealth": {
+    "dc": 20,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 18,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.spear-launcher.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 3
+  },
+  "parts": [
+    {
+      "hardness": 8,
+      "hp": 32,
+      "bt": 16
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "spear",
+      "name": "hazard.spear-launcher.abilities.spear.name",
+      "actions": "reaction",
+      "trigger": "hazard.spear-launcher.abilities.spear.trigger",
+      "text": "hazard.spear-launcher.abilities.spear.text"
+    }
+  ],
+  "strikes": [
+    {
+      "kind": "ranged",
+      "name": "hazard.spear-launcher.strikes.spear.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d6+6",
+          "type": "piercing"
+        }
+      ]
+    }
+  ]
+}

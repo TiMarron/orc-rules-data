@@ -1,0 +1,55 @@
+{
+  "id": "hazard.electric-latch-rune",
+  "type": "hazard",
+  "name": "hazard.electric-latch-rune.name",
+  "traits": [
+    "electricity",
+    "magical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 101,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.electric-latch-rune.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 3,
+  "stealth": {
+    "dc": 20,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 20,
+      "skill": "skill.thievery",
+      "rank": "expert",
+      "text": "hazard.electric-latch-rune.disable.0"
+    },
+    {
+      "counteract": {
+        "spell": "spell.dispel-magic",
+        "rank": 2,
+        "dc": 18
+      },
+      "text": "hazard.electric-latch-rune.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "electrocution",
+      "name": "hazard.electric-latch-rune.abilities.electrocution.name",
+      "actions": "reaction",
+      "traits": [
+        "arcane",
+        "electricity"
+      ],
+      "trigger": "hazard.electric-latch-rune.abilities.electrocution.trigger",
+      "text": "hazard.electric-latch-rune.abilities.electrocution.text"
+    }
+  ]
+}

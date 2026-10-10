@@ -1,0 +1,87 @@
+{
+  "id": "hazard.scythe-blades",
+  "type": "hazard",
+  "name": "hazard.scythe-blades.name",
+  "traits": [
+    "mechanical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.scythe-blades.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 4,
+  "stealth": {
+    "dc": 23,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 21,
+      "skill": "skill.thievery",
+      "rank": "trained",
+      "text": "hazard.scythe-blades.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 8
+  },
+  "parts": [
+    {
+      "hardness": 11,
+      "hp": 44,
+      "bt": 22
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "falling-scythes",
+      "name": "hazard.scythe-blades.abilities.falling-scythes.name",
+      "actions": "reaction",
+      "trigger": "hazard.scythe-blades.abilities.falling-scythes.trigger",
+      "text": "hazard.scythe-blades.abilities.falling-scythes.text"
+    }
+  ],
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "hazard.scythe-blades.strikes.scythe.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d12"
+      },
+      "damage": [
+        {
+          "dice": "2d12+4",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "text": "hazard.scythe-blades.strikes.scythe.map"
+        }
+      ]
+    }
+  ],
+  "reset": "hazard.scythe-blades.reset"
+}

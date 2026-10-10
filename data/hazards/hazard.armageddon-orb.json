@@ -1,0 +1,49 @@
+{
+  "id": "hazard.armageddon-orb",
+  "type": "hazard",
+  "name": "hazard.armageddon-orb.name",
+  "traits": [
+    "magical",
+    "trap"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 100,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "hazard.armageddon-orb.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 23,
+  "stealth": {
+    "dc": 10,
+    "note": "hazard.armageddon-orb.stealth.note"
+  },
+  "disable": [
+    {
+      "dc": 48,
+      "skill": "skill.thievery",
+      "rank": "legendary",
+      "text": "hazard.armageddon-orb.disable.0"
+    }
+  ],
+  "disableNote": "hazard.armageddon-orb.disable-note",
+  "abilities": [
+    {
+      "id": "burn-it-all",
+      "name": "hazard.armageddon-orb.abilities.burn-it-all.name",
+      "actions": "reaction",
+      "traits": [
+        "death",
+        "divine",
+        "fire"
+      ],
+      "trigger": "hazard.armageddon-orb.abilities.burn-it-all.trigger",
+      "text": "hazard.armageddon-orb.abilities.burn-it-all.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the god whose blood forged the orb and the two gods whose aspects drain it are replaced with what they are (a god of destruction; a god of tyranny and a goddess of the sun). Rules text is the book's."
+}

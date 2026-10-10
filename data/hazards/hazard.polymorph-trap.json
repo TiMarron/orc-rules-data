@@ -1,0 +1,53 @@
+{
+  "id": "hazard.polymorph-trap",
+  "type": "hazard",
+  "name": "hazard.polymorph-trap.name",
+  "traits": [
+    "magical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.polymorph-trap.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 12,
+  "stealth": {
+    "dc": 34,
+    "rank": "trained"
+  },
+  "disable": [
+    {
+      "dc": 32,
+      "skill": "skill.thievery",
+      "rank": "master",
+      "text": "hazard.polymorph-trap.disable.0"
+    },
+    {
+      "counteract": {
+        "spell": "spell.dispel-magic",
+        "rank": 6,
+        "dc": 30
+      },
+      "text": "hazard.polymorph-trap.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cursed-metamorphosis",
+      "name": "hazard.polymorph-trap.abilities.cursed-metamorphosis.name",
+      "actions": "reaction",
+      "traits": [
+        "primal"
+      ],
+      "trigger": "hazard.polymorph-trap.abilities.cursed-metamorphosis.trigger",
+      "text": "hazard.polymorph-trap.abilities.cursed-metamorphosis.text"
+    }
+  ]
+}

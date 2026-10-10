@@ -1,0 +1,64 @@
+{
+  "id": "hazard.hallucination-powder-trap",
+  "type": "hazard",
+  "name": "hazard.hallucination-powder-trap.name",
+  "traits": [
+    "magical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 102,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.hallucination-powder-trap.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 6,
+  "stealth": {
+    "dc": 24,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 26,
+      "skill": "skill.thievery",
+      "rank": "expert",
+      "text": "hazard.hallucination-powder-trap.disable.0"
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 0,
+    "reflex": 0
+  },
+  "parts": [
+    {
+      "hardness": 0,
+      "hp": 1
+    }
+  ],
+  "immunities": [
+    "critical-hits",
+    "object-immunities",
+    "precision-damage"
+  ],
+  "abilities": [
+    {
+      "id": "powder-burst",
+      "name": "hazard.hallucination-powder-trap.abilities.powder-burst.name",
+      "actions": "reaction",
+      "traits": [
+        "mental",
+        "poison"
+      ],
+      "trigger": "hazard.hallucination-powder-trap.abilities.powder-burst.trigger",
+      "text": "hazard.hallucination-powder-trap.abilities.powder-burst.text"
+    }
+  ]
+}

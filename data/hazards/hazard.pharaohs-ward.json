@@ -1,0 +1,55 @@
+{
+  "id": "hazard.pharaohs-ward",
+  "type": "hazard",
+  "name": "hazard.pharaohs-ward.name",
+  "traits": [
+    "magical",
+    "trap"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 103,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "hazard.pharaohs-ward.text",
+  "kind": "trap",
+  "complexity": "simple",
+  "level": 7,
+  "stealth": {
+    "dc": 25,
+    "rank": "expert"
+  },
+  "disable": [
+    {
+      "dc": 27,
+      "skill": "skill.thievery",
+      "rank": "master",
+      "text": "hazard.pharaohs-ward.disable.0"
+    },
+    {
+      "counteract": {
+        "spell": "spell.dispel-magic",
+        "rank": 4,
+        "dc": 25
+      },
+      "text": "hazard.pharaohs-ward.disable.1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "curse-the-intruders",
+      "name": "hazard.pharaohs-ward.abilities.curse-the-intruders.name",
+      "actions": "reaction",
+      "traits": [
+        "curse",
+        "divine"
+      ],
+      "trigger": "hazard.pharaohs-ward.abilities.curse-the-intruders.trigger",
+      "text": "hazard.pharaohs-ward.abilities.curse-the-intruders.text"
+    }
+  ],
+  "reset": "hazard.pharaohs-ward.reset"
+}
