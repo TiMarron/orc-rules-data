@@ -12,7 +12,7 @@
     "page": 105,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "hazard.vorpal-executioner.text",
   "kind": "trap",
@@ -41,7 +41,8 @@
     {
       "hardness": 30,
       "hp": 120,
-      "bt": 60
+      "bt": 60,
+      "note": "hazard.vorpal-executioner.parts.0.note"
     }
   ],
   "immunities": [

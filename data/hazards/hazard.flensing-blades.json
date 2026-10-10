@@ -76,5 +76,5 @@
     "text": "hazard.flensing-blades.routine"
   },
   "reset": "hazard.flensing-blades.reset",
-  "editNote": "Compared with the page: the disable options and the condition after them are as printed; the condition is kept as the disable note, the options as structure."
+  "editNote": "The routine's Success outcome is the book's (page 107: \"The creature takes half damage\"); the source repeats the Critical Success line there and the errata is silent. The disable options and the condition after them are as printed."
 }
