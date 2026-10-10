@@ -6,6 +6,13 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ## Unreleased
 
+### Added
+
+- Afflictions, a new record type: diseases and curses with their saving
+  throw, onset, maximum duration and stages (each with its duration), or a
+  single effect; cursed-item templates carry their usage. Records live in
+  `data/afflictions/`.
+
 ### Fixed
 
 - 383 items (242 of Player Core 2, 141 of GM Core) — potions, elixirs, bombs,

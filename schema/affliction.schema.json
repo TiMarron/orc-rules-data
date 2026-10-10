@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "affliction.schema.json",
+  "$defs": {
+    "key": { "$ref": "common.schema.json#/$defs/i18nKey" },
+    "duration": {
+      "type": "object", "additionalProperties": false, "required": ["amount", "unit"],
+      "properties": {
+        "amount": { "type": "integer", "minimum": 1 },
+        "unit": { "enum": ["round", "minute", "hour", "day", "week", "month", "year"] }
+      }
+    },
+    "stage": {
+      "type": "object", "additionalProperties": false, "required": ["text"],
+      "properties": {
+        "text": { "$ref": "#/$defs/key" },
+        "duration": { "$ref": "#/$defs/duration", "$comment": "Absent when the book prints none, as on a final 'death' stage." }
+      }
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "type": { "const": "affliction" },
+        "kind": { "enum": ["disease", "curse"] },
+        "level": { "type": "integer", "minimum": 0, "maximum": 28, "$comment": "Absent when the book prints 'level varies' (Grave Curse)." },
+        "save": {
+          "type": "object", "additionalProperties": false, "required": ["type"],
+          "properties": {
+            "type": { "enum": ["fortitude", "reflex", "will"] },
+            "dc": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "saveNote": { "$ref": "#/$defs/key", "$comment": "The rule the book prints in place of a DC." },
+        "onset": { "$ref": "#/$defs/duration" },
+        "maxDuration": { "$ref": "#/$defs/duration" },
+        "stages": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/stage" } },
+        "effect": { "$ref": "#/$defs/key" },
+        "usage": { "$ref": "#/$defs/key", "$comment": "A cursed-item template's 'curses a ring, staff, or wand'." }
+      },
+      "oneOf": [{ "properties": { "stages": true }, "required": ["stages"] }, { "properties": { "effect": true }, "required": ["effect"] }],
+      "dependentSchemas": {
+        "saveNote": { "type": "object", "required": ["save"], "properties": { "save": { "type": "object", "properties": { "dc": false } } } }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

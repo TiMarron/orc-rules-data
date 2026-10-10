@@ -96,6 +96,14 @@ const VALID: Record<string, Record<string, unknown>> = {
     activations: [{ actions: '1', traits: ['manipulate'], text: 'item.healing-potion.activations.0.text' }],
     variants: [{ id: 'minor', name: 'item.healing-potion.variant.minor.name', level: 1, priceCp: 400, text: 'item.healing-potion.variant.minor.text' }],
   }),
+  affliction: record('affliction', 'scarlet-leprosy', {
+    kind: 'disease', level: 4, save: { type: 'fortitude', dc: 19 },
+    onset: { amount: 1, unit: 'day' },
+    stages: [
+      { text: 'affliction.scarlet-leprosy.stages.0', duration: { amount: 1, unit: 'day' } },
+      { text: 'affliction.scarlet-leprosy.stages.1' },
+    ],
+  }),
 };
 
 const WEAPON: Record<string, unknown> = record('item', 'longsword', {
@@ -144,6 +152,31 @@ describe('type schemas', () => {
 
   it('accepts a weapon item', () => {
     expect(issuesFor('item', WEAPON)).toEqual([]);
+  });
+
+  it('accepts a curse with an effect, a cursed-item template, and a curse of varying level', () => {
+    const curse = record('affliction', 'curse-of-nightmares', { kind: 'curse', level: 2, save: { type: 'will', dc: 16 }, effect: 'affliction.curse-of-nightmares.effect' });
+    expect(issuesFor('affliction', curse)).toEqual([]);
+    const template = record('affliction', 'ravenous', { kind: 'curse', level: 1, usage: 'affliction.ravenous.usage', effect: 'affliction.ravenous.effect', text: undefined });
+    expect(issuesFor('affliction', template)).toEqual([]);
+    const grave = record('affliction', 'grave-curse', { kind: 'curse', save: { type: 'will' }, saveNote: 'affliction.grave-curse.save-note', effect: 'affliction.grave-curse.effect' });
+    expect(issuesFor('affliction', grave)).toEqual([]);
+  });
+
+  it('rejects an affliction with both stages and effect, or with neither', () => {
+    const both = { ...VALID.affliction, effect: 'affliction.scarlet-leprosy.effect' };
+    expect(issuesFor('affliction', both).some((m) => m.includes('oneOf'))).toBe(true);
+    const neither = { ...VALID.affliction, stages: undefined };
+    expect(issuesFor('affliction', neither).some((m) => m.includes('oneOf'))).toBe(true);
+  });
+
+  it('rejects a saveNote beside a dc, and a duration that is not a whole positive amount of a known unit', () => {
+    const note = { ...VALID.affliction, saveNote: 'affliction.scarlet-leprosy.save-note' };
+    expect(issuesFor('affliction', note).length).toBeGreaterThan(0);
+    const badUnit = { ...VALID.affliction, onset: { amount: 1, unit: 'fortnight' } };
+    expect(issuesFor('affliction', badUnit).some((m) => m.includes('/onset/unit'))).toBe(true);
+    const zero = { ...VALID.affliction, onset: { amount: 0, unit: 'day' } };
+    expect(issuesFor('affliction', zero).some((m) => m.includes('/onset/amount'))).toBe(true);
   });
 
   it('accepts an artifact item of level 28 and rejects level 29 with exactly one issue', () => {

@@ -7,7 +7,8 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
-  school, thesis, package, archetype, ability, creature, ritual, material.
+  school, thesis, package, archetype, ability, creature, ritual, material,
+  affliction.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -280,6 +281,13 @@ cost tokens.
   `shield`, `buckler`, `tower-shield`), each kind holding the section's own
   `text`, if it prints one, and per grade the Type line's `level`, `priceCp`,
   `pricePerBulkCp` and `craft` requirement. Prices are integer copper pieces.
+- An `affliction` is a disease or a curse (`kind`). Its `save` is the saving
+  throw (`type`, and `dc` unless the book prints a rule instead, which is
+  `saveNote`); `onset`, `maxDuration` and each stage's `duration` are
+  `{ amount, unit }`. It has either `stages` — in order, each a text and,
+  except a final "death", a duration — or a single `effect`. A cursed-item
+  template has `usage` ("curses a ring, staff, or wand") and an `effect`, and
+  no save.
 
 ## Versioning
 
