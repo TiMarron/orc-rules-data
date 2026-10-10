@@ -9,8 +9,8 @@
     "page": 214,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 13,
   "size": "huge",
   "priceCp": 900000,
@@ -61,5 +61,6 @@
   "collision": {
     "damage": "9d10",
     "dc": 31
-  }
+  },
+  "editNote": "The page prints the next section heading and the next vehicle's split header after the Collision line; the stat check reads them as an ability the record lacks, which they are not."
 }
