@@ -12,7 +12,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 12,
   "size": "huge",
   "perception": {
@@ -145,5 +145,6 @@
       "name": "creature.shuln.abilities.unstoppable-burrow.name",
       "text": "creature.shuln.abilities.unstoppable-burrow.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }
