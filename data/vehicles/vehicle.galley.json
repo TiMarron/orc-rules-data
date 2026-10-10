@@ -67,5 +67,12 @@
     "damage": "7d10",
     "dc": 27
   },
-  "editNote": "Page 217 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 15,
+      "note": "vehicle.galley.weaknesses.0.note"
+    }
+  ],
+  "editNote": "Page 217 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands. Page 217 prints the weakness fire 15 until broken, which the source drops; restored here."
 }
