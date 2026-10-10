@@ -294,10 +294,11 @@ cost tokens.
   the ways to disable it — a skill check `{ dc, skill, rank }` or a
   counteract `{ spell, rank, dc }`, each with its printed `text` — and
   `disableNote` any condition on them. `parts` are the hazard's Hardness/HP/BT,
-  one per printed part (a trapdoor and its spouts). Strikes, weaknesses,
+  one per printed part (a trapdoor and its spouts; an
+  environmental hazard may print HP alone). Strikes, weaknesses,
   resistances and speeds are shaped as a creature's; an ability is a creature's
   ability without a `section`. A complex hazard has a `routine` with its
-  actions per round; `reset` and `special` are printed text.
+  actions per round (and their traits, when printed); `reset` and `special` are printed text.
 
 ## Versioning
 

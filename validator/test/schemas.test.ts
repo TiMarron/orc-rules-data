@@ -179,6 +179,13 @@ describe('type schemas', () => {
     expect(issuesFor('hazard', pit)).toEqual([]);
   });
 
+  it('accepts a hazard part with HP but no Hardness, and a routine with traits', () => {
+    const web = { ...VALID.hazard, kind: 'environmental', parts: [{ hp: 26, bt: 13 }] };
+    expect(issuesFor('hazard', web)).toEqual([]);
+    const haunt = { ...VALID.hazard, complexity: 'complex', routine: { actions: 1, traits: ['illusion', 'occult'], text: 'hazard.scythe-blades.routine' } };
+    expect(issuesFor('hazard', haunt)).toEqual([]);
+  });
+
   it('rejects a routine on a simple hazard, a stealth with both dc and modifier, and a disable option with both dc and counteract', () => {
     expect(issuesFor('hazard', { ...VALID.hazard, routine: { actions: 1, text: 'hazard.scythe-blades.routine' } }).length).toBeGreaterThan(0);
     expect(issuesFor('hazard', { ...VALID.hazard, stealth: { dc: 23, modifier: 13 } }).some((m) => m.includes('/stealth'))).toBe(true);
