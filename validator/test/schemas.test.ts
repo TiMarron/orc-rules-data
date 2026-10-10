@@ -117,6 +117,13 @@ const VALID: Record<string, Record<string, unknown>> = {
     aspect: 'beast', tier: 'minor', requires: { relicIs: 'worn' },
     activations: [{ actions: '1', traits: ['concentrate'], text: 'gift.feral-claws.activations.0.text' }],
   }),
+  vehicle: record('vehicle', 'cutter', {
+    level: 6, size: 'huge', priceCp: 75000, text: undefined,
+    space: { long: 30, wide: 15, high: 20 }, crew: { pilots: 1, crew: 3 }, passengers: 6,
+    piloting: [{ skill: 'skill.nature', dc: 24 }, { lore: 'vehicle.cutter.piloting.1.lore', dc: 22 }],
+    ac: { value: 19 }, fortitude: 14, hardness: 10, hp: 100, bt: 50,
+    speed: { mode: 'swim', feet: 30, propulsion: ['wind'] }, collision: { damage: '4d10', dc: 22 },
+  }),
 };
 
 const WEAPON: Record<string, unknown> = record('item', 'longsword', {
@@ -177,6 +184,23 @@ describe('type schemas', () => {
     expect(issuesFor('gift', { ...VALID.gift, tier: 'lesser' }).some((m) => m.includes('/tier'))).toBe(true);
     expect(issuesFor('gift', { ...VALID.gift, requires: { relicIs: 'worn', gift: 'gift.form-of-fury' } }).some((m) => m.includes('/requires'))).toBe(true);
     expect(issuesFor('gift', { ...VALID.gift, text: undefined, activations: undefined }).length).toBeGreaterThan(0);
+  });
+
+  it('accepts a pulled vehicle with a DC range and an ability', () => {
+    const carriage = record('vehicle', 'carriage', {
+      level: 2, size: 'large', text: undefined, space: { long: 10, wide: 10, high: 7 }, crew: { pilots: 1 },
+      piloting: [{ lore: 'vehicle.carriage.piloting.0.lore', dc: 16 }, { skill: 'skill.nature', dc: 18, dcMax: 26, note: 'vehicle.carriage.piloting.1.note' }],
+      ac: { value: 13 }, fortitude: 8, hardness: 5, hp: 40,
+      speed: { mode: 'land', propulsion: ['pulled'], note: 'vehicle.carriage.speed.note' }, collision: { damage: '2d8', dc: 16 },
+      abilities: [{ id: 'sluggish', name: 'vehicle.carriage.abilities.sluggish.name', text: 'vehicle.carriage.abilities.sluggish.text' }],
+    });
+    expect(issuesFor('vehicle', carriage)).toEqual([]);
+  });
+
+  it('rejects a piloting option with both skill and lore, a speed with neither feet nor note, and an unknown propulsion', () => {
+    expect(issuesFor('vehicle', { ...VALID.vehicle, piloting: [{ skill: 'skill.nature', lore: 'vehicle.cutter.piloting.0.lore', dc: 24 }] }).some((m) => m.includes('/piloting/0'))).toBe(true);
+    expect(issuesFor('vehicle', { ...VALID.vehicle, speed: { mode: 'swim', propulsion: ['wind'] } }).some((m) => m.includes('/speed'))).toBe(true);
+    expect(issuesFor('vehicle', { ...VALID.vehicle, speed: { mode: 'swim', feet: 30, propulsion: ['steam'] } }).some((m) => m.includes('/speed/propulsion'))).toBe(true);
   });
 
   it('accepts a complex hazard with named parts, a routine and a counteract option', () => {

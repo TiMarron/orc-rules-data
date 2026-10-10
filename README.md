@@ -8,7 +8,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
   school, thesis, package, archetype, ability, creature, ritual, material,
-  affliction, hazard, gift.
+  affliction, hazard, gift, vehicle.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -305,6 +305,13 @@ cost tokens.
   grand) and, when the book prints one, what it `requires` — a relic of a form
   (`relicIs`: worn, weapon) or another gift. Its activations are shaped as an
   item's. The relic itself is an ordinary item; it is not a record type.
+- A `vehicle` is a stat block: its `space` (feet long, wide, high), `crew`
+  (pilots, crew, rowers), `passengers`, the checks to pilot it (`piloting`: a
+  skill or a Lore skill's name, with a DC or a DC range), defences (`ac`,
+  `fortitude`, `hardness`, `hp`, `bt`), its `speed` (`mode`: land, fly, swim;
+  `feet`; how it moves — wind, rowed, alchemical, magical, pulled, pedaled — and
+  a `note` for a speed set by what pulls it), the `collision` damage and DC, and
+  special `abilities` shaped as a hazard's.
 
 ## Versioning
 

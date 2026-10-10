@@ -22,6 +22,7 @@ export const TYPE_FOLDERS: Record<string, string> = {
   affliction: 'afflictions',
   hazard: 'hazards',
   gift: 'gifts',
+  vehicle: 'vehicles',
 };
 export const RECORD_TYPES = Object.keys(TYPE_FOLDERS);
 export const ID_PATTERN = /^[a-z]+\.[a-z0-9]+(-[a-z0-9]+)*$/;
