@@ -9,7 +9,7 @@ major for renamed or removed ids, new required fields and markup changes.
 ### Added
 
 - Relic gifts, a new record type: each gift's aspect, tier, prerequisite and
-  activations. Records live in `data/gifts/`: 71 gifts of GM Core across its
+  activations. Records live in `data/gifts/`: the 72 gifts of GM Core, six for each of its
   twelve aspects.
 - "Heaven" joins the Reserved Material allowlist beside "Hell": a common
   English word (the heavens, heavenly), not claimable by itself.

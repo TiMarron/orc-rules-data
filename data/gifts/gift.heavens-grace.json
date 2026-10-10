@@ -1,0 +1,22 @@
+{
+  "id": "gift.heavens-grace",
+  "type": "gift",
+  "name": "gift.heavens-grace.name",
+  "traits": [
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 311,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.heavens-grace.text",
+  "tier": "minor",
+  "aspect": "celestial",
+  "requires": {
+    "relicIs": "worn"
+  }
+}
