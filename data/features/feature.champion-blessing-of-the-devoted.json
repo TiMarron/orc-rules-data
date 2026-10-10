@@ -14,5 +14,5 @@
   "text": "feature.champion-blessing-of-the-devoted.text",
   "class": "class.champion",
   "level": 3,
-  "editNote": "The structured source separates the three blessings with a line break in one place and a paragraph break in the other; the book prints each as its own paragraph, and the dataset markup takes a blank line between paragraphs, so the missing one is added. The wording is unchanged."
+  "editNote": "The structured source separates the three blessings with a line break in one place and a paragraph break in the other; the book prints each as its own paragraph, and the dataset markup takes a blank line between paragraphs, so the missing one is added. The wording is unchanged. The text links the newly imported records the source now resolves (the words are unchanged)."
 }

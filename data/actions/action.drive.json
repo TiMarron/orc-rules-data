@@ -1,0 +1,20 @@
+{
+  "id": "action.drive",
+  "type": "action",
+  "name": "action.drive.name",
+  "traits": [
+    "move"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 212,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "action.drive.text",
+  "requirements": "action.drive.requirements",
+  "variable": true,
+  "editNote": "The book prints the action as 'DRIVE (VARIES)': '(Varies)' stands where an action icon goes, so it is the cost, not part of the name (the rules say 'Driving' on page 212 and 'a 2-action or 3-action Drive' on page 215). The name is 'Drive' and the action is variable, with effects for 1 to 3 actions."
+}
