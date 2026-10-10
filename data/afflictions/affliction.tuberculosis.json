@@ -1,0 +1,60 @@
+{
+  "id": "affliction.tuberculosis",
+  "type": "affliction",
+  "name": "affliction.tuberculosis.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.tuberculosis.text",
+  "kind": "disease",
+  "level": 1,
+  "save": {
+    "type": "fortitude",
+    "dc": 15
+  },
+  "onset": {
+    "amount": 1,
+    "unit": "week"
+  },
+  "stages": [
+    {
+      "text": "affliction.tuberculosis.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "week"
+      }
+    },
+    {
+      "text": "affliction.tuberculosis.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "week"
+      }
+    },
+    {
+      "text": "affliction.tuberculosis.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "week"
+      }
+    },
+    {
+      "text": "affliction.tuberculosis.stages.3",
+      "duration": {
+        "amount": 1,
+        "unit": "week"
+      }
+    },
+    {
+      "text": "affliction.tuberculosis.stages.4"
+    }
+  ]
+}

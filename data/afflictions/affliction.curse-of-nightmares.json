@@ -1,0 +1,26 @@
+{
+  "id": "affliction.curse-of-nightmares",
+  "type": "affliction",
+  "name": "affliction.curse-of-nightmares.name",
+  "traits": [
+    "curse",
+    "magical",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.curse-of-nightmares.text",
+  "kind": "curse",
+  "level": 2,
+  "save": {
+    "type": "will",
+    "dc": 16
+  },
+  "effect": "affliction.curse-of-nightmares.effect"
+}

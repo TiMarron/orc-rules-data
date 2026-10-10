@@ -1,0 +1,68 @@
+{
+  "id": "affliction.brain-worms",
+  "type": "affliction",
+  "name": "affliction.brain-worms.name",
+  "traits": [
+    "disease",
+    "virulent"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 89,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "affliction.brain-worms.text",
+  "kind": "disease",
+  "level": 11,
+  "save": {
+    "type": "fortitude",
+    "dc": 28
+  },
+  "onset": {
+    "amount": 1,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.brain-worms.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.brain-worms.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.brain-worms.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.brain-worms.stages.3",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.brain-worms.stages.4",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.brain-worms.stages.5"
+    }
+  ]
+}

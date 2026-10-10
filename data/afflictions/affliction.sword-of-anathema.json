@@ -1,0 +1,25 @@
+{
+  "id": "affliction.sword-of-anathema",
+  "type": "affliction",
+  "name": "affliction.sword-of-anathema.name",
+  "traits": [
+    "curse",
+    "divine"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.sword-of-anathema.text",
+  "kind": "curse",
+  "level": 20,
+  "save": {
+    "type": "will",
+    "dc": 40
+  },
+  "effect": "affliction.sword-of-anathema.effect"
+}

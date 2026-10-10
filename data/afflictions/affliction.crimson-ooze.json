@@ -1,0 +1,64 @@
+{
+  "id": "affliction.crimson-ooze",
+  "type": "affliction",
+  "name": "affliction.crimson-ooze.name",
+  "traits": [
+    "disease",
+    "virulent"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 89,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.crimson-ooze.text",
+  "kind": "disease",
+  "level": 15,
+  "save": {
+    "type": "fortitude",
+    "dc": 34
+  },
+  "stages": [
+    {
+      "text": "affliction.crimson-ooze.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.crimson-ooze.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.crimson-ooze.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.crimson-ooze.stages.3",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.crimson-ooze.stages.4",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.crimson-ooze.stages.5"
+    }
+  ]
+}

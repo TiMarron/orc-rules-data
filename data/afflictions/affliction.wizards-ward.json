@@ -1,0 +1,25 @@
+{
+  "id": "affliction.wizards-ward",
+  "type": "affliction",
+  "name": "affliction.wizards-ward.name",
+  "traits": [
+    "curse",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.wizards-ward.text",
+  "kind": "curse",
+  "level": 6,
+  "save": {
+    "type": "will",
+    "dc": 22
+  },
+  "effect": "affliction.wizards-ward.effect"
+}

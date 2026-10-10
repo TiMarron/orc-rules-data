@@ -1,0 +1,58 @@
+{
+  "id": "affliction.bonechill",
+  "type": "affliction",
+  "name": "affliction.bonechill.name",
+  "traits": [
+    "disease",
+    "primal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.bonechill.text",
+  "kind": "disease",
+  "level": 5,
+  "save": {
+    "type": "fortitude",
+    "dc": 20
+  },
+  "onset": {
+    "amount": 1,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.bonechill.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.bonechill.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.bonechill.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.bonechill.stages.3",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    }
+  ]
+}

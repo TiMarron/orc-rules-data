@@ -1,0 +1,71 @@
+{
+  "id": "affliction.blinding-sickness",
+  "type": "affliction",
+  "name": "affliction.blinding-sickness.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 89,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "affliction.blinding-sickness.text",
+  "kind": "disease",
+  "level": 7,
+  "save": {
+    "type": "fortitude",
+    "dc": 23
+  },
+  "stages": [
+    {
+      "text": "affliction.blinding-sickness.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.blinding-sickness.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.blinding-sickness.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.blinding-sickness.stages.3",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.blinding-sickness.stages.4",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.blinding-sickness.stages.5",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.blinding-sickness.stages.6"
+    }
+  ],
+  "editNote": "Reserved Material removed: the region's proper name replaced with 'tropical jungles'. Rules text is the book's."
+}

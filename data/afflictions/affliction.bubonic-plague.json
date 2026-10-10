@@ -1,0 +1,50 @@
+{
+  "id": "affliction.bubonic-plague",
+  "type": "affliction",
+  "name": "affliction.bubonic-plague.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.bubonic-plague.text",
+  "kind": "disease",
+  "level": 3,
+  "save": {
+    "type": "fortitude",
+    "dc": 17
+  },
+  "onset": {
+    "amount": 1,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.bubonic-plague.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.bubonic-plague.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.bubonic-plague.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    }
+  ]
+}

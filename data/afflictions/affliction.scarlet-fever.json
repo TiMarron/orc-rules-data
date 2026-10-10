@@ -1,0 +1,53 @@
+{
+  "id": "affliction.scarlet-fever",
+  "type": "affliction",
+  "name": "affliction.scarlet-fever.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.scarlet-fever.text",
+  "kind": "disease",
+  "level": 1,
+  "save": {
+    "type": "fortitude",
+    "dc": 13
+  },
+  "onset": {
+    "amount": 2,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.scarlet-fever.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.scarlet-fever.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.scarlet-fever.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.scarlet-fever.stages.3"
+    }
+  ]
+}

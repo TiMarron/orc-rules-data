@@ -1,0 +1,53 @@
+{
+  "id": "affliction.tetanus",
+  "type": "affliction",
+  "name": "affliction.tetanus.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.tetanus.text",
+  "kind": "disease",
+  "level": 1,
+  "save": {
+    "type": "fortitude",
+    "dc": 14
+  },
+  "onset": {
+    "amount": 10,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.tetanus.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "week"
+      }
+    },
+    {
+      "text": "affliction.tetanus.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.tetanus.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.tetanus.stages.3"
+    }
+  ]
+}

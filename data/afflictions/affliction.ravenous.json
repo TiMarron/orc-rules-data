@@ -1,0 +1,21 @@
+{
+  "id": "affliction.ravenous",
+  "type": "affliction",
+  "name": "affliction.ravenous.name",
+  "traits": [
+    "cursed",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 307,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "kind": "curse",
+  "level": 1,
+  "usage": "affliction.ravenous.usage",
+  "effect": "affliction.ravenous.effect"
+}

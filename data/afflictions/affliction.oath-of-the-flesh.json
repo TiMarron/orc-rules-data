@@ -1,0 +1,25 @@
+{
+  "id": "affliction.oath-of-the-flesh",
+  "type": "affliction",
+  "name": "affliction.oath-of-the-flesh.name",
+  "traits": [
+    "curse",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.oath-of-the-flesh.text",
+  "kind": "curse",
+  "level": 7,
+  "save": {
+    "type": "fortitude",
+    "dc": 23
+  },
+  "effect": "affliction.oath-of-the-flesh.effect"
+}

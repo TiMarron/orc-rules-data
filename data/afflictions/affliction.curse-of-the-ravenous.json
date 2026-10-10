@@ -1,0 +1,25 @@
+{
+  "id": "affliction.curse-of-the-ravenous",
+  "type": "affliction",
+  "name": "affliction.curse-of-the-ravenous.name",
+  "traits": [
+    "curse",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.curse-of-the-ravenous.text",
+  "kind": "curse",
+  "level": 5,
+  "save": {
+    "type": "fortitude",
+    "dc": 20
+  },
+  "effect": "affliction.curse-of-the-ravenous.effect"
+}

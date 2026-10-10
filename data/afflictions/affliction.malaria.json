@@ -1,0 +1,60 @@
+{
+  "id": "affliction.malaria",
+  "type": "affliction",
+  "name": "affliction.malaria.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.malaria.text",
+  "kind": "disease",
+  "level": 2,
+  "save": {
+    "type": "fortitude",
+    "dc": 16
+  },
+  "onset": {
+    "amount": 10,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.malaria.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.malaria.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.malaria.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.malaria.stages.3",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.malaria.stages.4"
+    }
+  ]
+}

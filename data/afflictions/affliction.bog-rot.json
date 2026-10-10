@@ -1,0 +1,50 @@
+{
+  "id": "affliction.bog-rot",
+  "type": "affliction",
+  "name": "affliction.bog-rot.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.bog-rot.text",
+  "kind": "disease",
+  "level": 0,
+  "save": {
+    "type": "fortitude",
+    "dc": 13
+  },
+  "onset": {
+    "amount": 1,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.bog-rot.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.bog-rot.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.bog-rot.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    }
+  ]
+}

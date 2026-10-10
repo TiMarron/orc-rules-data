@@ -1,0 +1,51 @@
+{
+  "id": "affliction.scarlet-leprosy",
+  "type": "affliction",
+  "name": "affliction.scarlet-leprosy.name",
+  "traits": [
+    "disease",
+    "virulent"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.scarlet-leprosy.text",
+  "kind": "disease",
+  "level": 4,
+  "save": {
+    "type": "fortitude",
+    "dc": 19
+  },
+  "onset": {
+    "amount": 1,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.scarlet-leprosy.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.scarlet-leprosy.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.scarlet-leprosy.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    }
+  ]
+}

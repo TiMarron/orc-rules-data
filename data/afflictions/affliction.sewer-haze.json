@@ -1,0 +1,52 @@
+{
+  "id": "affliction.sewer-haze",
+  "type": "affliction",
+  "name": "affliction.sewer-haze.name",
+  "traits": [
+    "disease",
+    "virulent"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 89,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "affliction.sewer-haze.text",
+  "kind": "disease",
+  "level": 7,
+  "save": {
+    "type": "fortitude",
+    "dc": 23
+  },
+  "onset": {
+    "amount": 2,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.sewer-haze.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.sewer-haze.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.sewer-haze.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    }
+  ],
+  "editNote": "Page 89 prints Onset 2 days; the source says 3 days and the errata is silent, so the book's onset stands."
+}
