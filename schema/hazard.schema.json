@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hazard.schema.json",
+  "$defs": {
+    "key": { "$ref": "common.schema.json#/$defs/i18nKey" },
+    "rank": { "enum": ["trained", "expert", "master", "legendary"] },
+    "stealth": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "dc": { "type": "integer", "minimum": 0 },
+        "modifier": { "type": "integer" },
+        "rank": { "$ref": "#/$defs/rank" },
+        "note": { "$ref": "#/$defs/key", "$comment": "What follows the number and rank: 'DC 22 (expert) to notice the water spouts once the pit opens', '(or 0 if the trapdoor is disabled or broken)'." }
+      },
+      "oneOf": [{ "properties": { "dc": true }, "required": ["dc"] }, { "properties": { "modifier": true }, "required": ["modifier"] }]
+    },
+    "disableOption": {
+      "type": "object", "additionalProperties": false, "required": ["text"],
+      "properties": {
+        "dc": { "type": "integer", "minimum": 0 },
+        "skill": { "$ref": "common.schema.json#/$defs/refSkill" },
+        "rank": { "$ref": "#/$defs/rank" },
+        "counteract": {
+          "type": "object", "additionalProperties": false, "required": ["spell", "rank", "dc"],
+          "properties": {
+            "spell": { "$ref": "common.schema.json#/$defs/refSpell" },
+            "rank": { "type": "integer", "minimum": 1, "maximum": 10 },
+            "dc": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "text": { "$ref": "#/$defs/key" }
+      },
+      "oneOf": [{ "properties": { "dc": true }, "required": ["dc"] }, { "properties": { "counteract": true }, "required": ["counteract"] }]
+    },
+    "part": {
+      "type": "object", "additionalProperties": false, "required": ["hardness", "hp"],
+      "properties": {
+        "name": { "$ref": "#/$defs/key", "$comment": "'Trapdoor', 'Spout' — absent when the book prints a bare Hardness/HP." },
+        "hardness": { "type": "integer", "minimum": 0 },
+        "hp": { "type": "integer", "minimum": 1 },
+        "bt": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "ability": {
+      "type": "object", "additionalProperties": false, "required": ["id", "name"],
+      "properties": {
+        "id": { "$ref": "common.schema.json#/$defs/slug" },
+        "name": { "$ref": "#/$defs/key" },
+        "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+        "traits": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true },
+        "traitValues": { "$ref": "creature.schema.json#/$defs/traitValues" },
+        "trigger": { "$ref": "#/$defs/key" },
+        "frequency": { "$ref": "#/$defs/key" },
+        "requirements": { "$ref": "#/$defs/key" },
+        "text": { "$ref": "#/$defs/key" }
+      }
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["kind", "complexity", "level", "stealth", "disable"],
+      "properties": {
+        "type": { "const": "hazard" },
+        "kind": { "enum": ["trap", "environmental", "haunt"] },
+        "complexity": { "enum": ["simple", "complex"] },
+        "level": { "type": "integer", "minimum": 0, "maximum": 28 },
+        "stealth": { "$ref": "#/$defs/stealth" },
+        "disable": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/disableOption" } },
+        "disableNote": { "$ref": "#/$defs/key", "$comment": "Conditions after the options: 'three total successes are required to disable the trap'." },
+        "ac": { "$ref": "creature.schema.json#/$defs/valued" },
+        "saves": {
+          "type": "object", "additionalProperties": false, "minProperties": 1,
+          "properties": { "fortitude": { "type": "integer" }, "reflex": { "type": "integer" }, "will": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } }
+        },
+        "parts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/part" } },
+        "immunities": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true },
+        "immunitiesNote": { "$ref": "#/$defs/key" },
+        "weaknesses": { "type": "array", "minItems": 1, "items": { "$ref": "creature.schema.json#/$defs/modifier" } },
+        "resistances": { "type": "array", "minItems": 1, "items": { "$ref": "creature.schema.json#/$defs/modifier" } },
+        "speeds": { "$ref": "creature.schema.json#/allOf/1/properties/speeds" },
+        "abilities": { "type": "array", "items": { "$ref": "#/$defs/ability" } },
+        "strikes": { "type": "array", "items": { "$ref": "creature.schema.json#/$defs/strike" } },
+        "routine": {
+          "type": "object", "additionalProperties": false, "required": ["actions", "text"],
+          "properties": { "actions": { "type": "integer", "minimum": 1 }, "text": { "$ref": "#/$defs/key" } }
+        },
+        "reset": { "$ref": "#/$defs/key" },
+        "special": { "$ref": "#/$defs/key" }
+      },
+      "if": { "type": "object", "properties": { "complexity": { "const": "simple" } }, "required": ["complexity"] },
+      "then": { "type": "object", "properties": { "routine": false } }
+    }
+  ],
+  "unevaluatedProperties": false
+}

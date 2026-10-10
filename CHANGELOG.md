@@ -8,6 +8,9 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Added
 
+- Hazards, a new record type: traps, environmental hazards and haunts with
+  their Stealth, ways to disable them, defences and parts, abilities, Strikes,
+  routine and reset. Records live in `data/hazards/`.
 - Afflictions, a new record type: diseases and curses with their saving
   throw, onset, maximum duration and stages (each with its duration), or a
   single effect; cursed-item templates carry their usage. Records live in
