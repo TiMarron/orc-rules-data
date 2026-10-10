@@ -33,10 +33,10 @@
       "oneOf": [{ "properties": { "dc": true }, "required": ["dc"] }, { "properties": { "counteract": true }, "required": ["counteract"] }]
     },
     "part": {
-      "type": "object", "additionalProperties": false, "required": ["hardness", "hp"],
+      "type": "object", "additionalProperties": false, "required": ["hp"],
       "properties": {
         "name": { "$ref": "#/$defs/key", "$comment": "'Trapdoor', 'Spout' — absent when the book prints a bare Hardness/HP." },
-        "hardness": { "type": "integer", "minimum": 0 },
+        "hardness": { "type": "integer", "minimum": 0, "$comment": "Absent when the book prints HP alone (an environmental hazard such as a web)." },
         "hp": { "type": "integer", "minimum": 1 },
         "bt": { "type": "integer", "minimum": 0 }
       }
@@ -85,7 +85,7 @@
         "strikes": { "type": "array", "items": { "$ref": "creature.schema.json#/$defs/strike" } },
         "routine": {
           "type": "object", "additionalProperties": false, "required": ["actions", "text"],
-          "properties": { "actions": { "type": "integer", "minimum": 1 }, "text": { "$ref": "#/$defs/key" } }
+          "properties": { "actions": { "type": "integer", "minimum": 1 }, "traits": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }, "text": { "$ref": "#/$defs/key" } }
         },
         "reset": { "$ref": "#/$defs/key" },
         "special": { "$ref": "#/$defs/key" }
