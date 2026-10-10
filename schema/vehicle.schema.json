@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vehicle.schema.json",
+  "$defs": {
+    "key": { "$ref": "common.schema.json#/$defs/i18nKey" },
+    "feet": { "type": "integer", "minimum": 1 },
+    "piloting": {
+      "type": "object", "additionalProperties": false, "required": ["dc"],
+      "properties": {
+        "skill": { "$ref": "common.schema.json#/$defs/refSkill" },
+        "lore": { "$ref": "#/$defs/key", "$comment": "A Lore skill's name ('Sailing Lore'); Lore skills are not records." },
+        "dc": { "type": "integer", "minimum": 0 },
+        "dcMax": { "type": "integer", "minimum": 0, "$comment": "The top of a printed range: 'DC 18 to DC 26'." },
+        "note": { "$ref": "#/$defs/key", "$comment": "'depending on pulling creature'." }
+      },
+      "oneOf": [{ "properties": { "skill": true }, "required": ["skill"] }, { "properties": { "lore": true }, "required": ["lore"] }]
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["level", "size", "space", "crew", "piloting", "ac", "fortitude", "hardness", "hp", "speed", "collision"],
+      "properties": {
+        "type": { "const": "vehicle" },
+        "level": { "type": "integer", "minimum": -1, "maximum": 28 },
+        "size": { "$ref": "common.schema.json#/$defs/size" },
+        "priceCp": { "type": "integer", "minimum": 0 },
+        "space": {
+          "type": "object", "additionalProperties": false, "required": ["long", "wide", "high"],
+          "properties": { "long": { "$ref": "#/$defs/feet" }, "wide": { "$ref": "#/$defs/feet" }, "high": { "$ref": "#/$defs/feet" } }
+        },
+        "crew": {
+          "type": "object", "additionalProperties": false, "required": ["pilots"],
+          "properties": { "pilots": { "type": "integer", "minimum": 1 }, "crew": { "type": "integer", "minimum": 1 }, "rowers": { "type": "integer", "minimum": 1 } }
+        },
+        "passengers": { "type": "integer", "minimum": 1 },
+        "piloting": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/piloting" } },
+        "ac": { "$ref": "creature.schema.json#/$defs/valued" },
+        "fortitude": { "type": "integer" },
+        "hardness": { "type": "integer", "minimum": 0 },
+        "hp": { "type": "integer", "minimum": 1 },
+        "bt": { "type": "integer", "minimum": 0 },
+        "immunities": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true },
+        "immunitiesNote": { "$ref": "#/$defs/key" },
+        "weaknesses": { "type": "array", "minItems": 1, "items": { "$ref": "creature.schema.json#/$defs/modifier" } },
+        "resistances": { "type": "array", "minItems": 1, "items": { "$ref": "creature.schema.json#/$defs/modifier" } },
+        "speed": {
+          "type": "object", "additionalProperties": false, "required": ["mode", "propulsion"],
+          "properties": {
+            "mode": { "enum": ["land", "fly", "swim"] },
+            "feet": { "$ref": "#/$defs/feet" },
+            "propulsion": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["wind", "rowed", "alchemical", "magical", "pulled", "pedaled"] } },
+            "note": { "$ref": "#/$defs/key", "$comment": "'pulled by 2 Large creatures', 'underwater only'." }
+          },
+          "anyOf": [{ "properties": { "feet": true }, "required": ["feet"] }, { "properties": { "note": true }, "required": ["note"] }]
+        },
+        "collision": {
+          "type": "object", "additionalProperties": false, "required": ["damage", "dc"],
+          "properties": { "damage": { "type": "string", "pattern": "^[1-9][0-9]*d(4|6|8|10|12)$" }, "dc": { "type": "integer", "minimum": 0 } }
+        },
+        "abilities": { "type": "array", "items": { "$ref": "hazard.schema.json#/$defs/ability" } }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}
