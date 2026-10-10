@@ -1,0 +1,22 @@
+{
+  "id": "gift.feather-steps",
+  "type": "gift",
+  "name": "gift.feather-steps.name",
+  "traits": [
+    "air"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.feather-steps.text",
+  "tier": "minor",
+  "aspect": "air",
+  "requires": {
+    "relicIs": "worn"
+  }
+}

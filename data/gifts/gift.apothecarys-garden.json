@@ -1,0 +1,19 @@
+{
+  "id": "gift.apothecarys-garden",
+  "type": "gift",
+  "name": "gift.apothecarys-garden.name",
+  "traits": [
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.apothecarys-garden.text",
+  "tier": "minor",
+  "aspect": "plant"
+}

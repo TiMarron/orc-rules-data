@@ -1,0 +1,19 @@
+{
+  "id": "gift.obscure",
+  "type": "gift",
+  "name": "gift.obscure.name",
+  "traits": [
+    "shadow"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.obscure.text",
+  "tier": "minor",
+  "aspect": "shadow"
+}

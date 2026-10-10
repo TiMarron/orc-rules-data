@@ -1,0 +1,17 @@
+{
+  "id": "gift.living-death",
+  "type": "gift",
+  "name": "gift.living-death.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 312,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.living-death.text",
+  "tier": "minor",
+  "aspect": "death"
+}

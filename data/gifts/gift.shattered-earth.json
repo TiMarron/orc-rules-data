@@ -1,0 +1,30 @@
+{
+  "id": "gift.shattered-earth",
+  "type": "gift",
+  "name": "gift.shattered-earth.name",
+  "traits": [
+    "earth"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 313,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.shattered-earth.text",
+  "tier": "minor",
+  "aspect": "earth",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.shattered-earth.activations.0.frequency",
+      "text": "gift.shattered-earth.activations.0.text"
+    }
+  ]
+}

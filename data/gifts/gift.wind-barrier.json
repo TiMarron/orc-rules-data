@@ -1,0 +1,28 @@
+{
+  "id": "gift.wind-barrier",
+  "type": "gift",
+  "name": "gift.wind-barrier.name",
+  "traits": [
+    "air"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.wind-barrier.text",
+  "tier": "minor",
+  "aspect": "air",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "gift.wind-barrier.activations.0.text"
+    }
+  ]
+}

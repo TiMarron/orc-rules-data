@@ -1,0 +1,29 @@
+{
+  "id": "gift.dark-roads",
+  "type": "gift",
+  "name": "gift.dark-roads.name",
+  "traits": [
+    "shadow",
+    "teleportation"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.dark-roads.text",
+  "tier": "major",
+  "aspect": "shadow",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "gift.dark-roads.activations.0.text"
+    }
+  ]
+}

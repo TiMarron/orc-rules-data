@@ -1,0 +1,19 @@
+{
+  "id": "gift.ease-burden",
+  "type": "gift",
+  "name": "gift.ease-burden.name",
+  "traits": [
+    "earth"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 312,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.ease-burden.text",
+  "tier": "minor",
+  "aspect": "earth"
+}

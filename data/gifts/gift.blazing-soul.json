@@ -1,0 +1,29 @@
+{
+  "id": "gift.blazing-soul",
+  "type": "gift",
+  "name": "gift.blazing-soul.name",
+  "traits": [
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.blazing-soul.text",
+  "tier": "grand",
+  "aspect": "fire",
+  "activations": [
+    {
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "trigger": "gift.blazing-soul.activations.0.trigger",
+      "text": "gift.blazing-soul.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "gift.life-everlasting",
+  "type": "gift",
+  "name": "gift.life-everlasting.name",
+  "traits": [
+    "healing",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.life-everlasting.text",
+  "tier": "grand",
+  "aspect": "life",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.life-everlasting.activations.0.frequency",
+      "text": "gift.life-everlasting.activations.0.text"
+    }
+  ]
+}

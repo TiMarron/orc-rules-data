@@ -1,0 +1,30 @@
+{
+  "id": "gift.healing-wave",
+  "type": "gift",
+  "name": "gift.healing-wave.name",
+  "traits": [
+    "healing",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.healing-wave.text",
+  "tier": "minor",
+  "aspect": "life",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.healing-wave.activations.0.frequency",
+      "text": "gift.healing-wave.activations.0.text"
+    }
+  ]
+}

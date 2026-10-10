@@ -9,7 +9,8 @@ major for renamed or removed ids, new required fields and markup changes.
 ### Added
 
 - Relic gifts, a new record type: each gift's aspect, tier, prerequisite and
-  activations. Records live in `data/gifts/`.
+  activations. Records live in `data/gifts/`: 71 gifts of GM Core across its
+  twelve aspects.
 - Hazards, a new record type: traps, environmental hazards and haunts with
   their Stealth, ways to disable them, defences and parts, abilities, Strikes,
   routine and reset. Records live in `data/hazards/`: the 32 traps,

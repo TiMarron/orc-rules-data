@@ -1,0 +1,30 @@
+{
+  "id": "gift.raise-ramparts",
+  "type": "gift",
+  "name": "gift.raise-ramparts.name",
+  "traits": [
+    "earth"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 313,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.raise-ramparts.text",
+  "tier": "major",
+  "aspect": "earth",
+  "activations": [
+    {
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.raise-ramparts.activations.0.frequency",
+      "text": "gift.raise-ramparts.activations.0.text"
+    }
+  ]
+}

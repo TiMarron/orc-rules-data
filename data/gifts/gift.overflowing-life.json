@@ -1,0 +1,20 @@
+{
+  "id": "gift.overflowing-life",
+  "type": "gift",
+  "name": "gift.overflowing-life.name",
+  "traits": [
+    "healing",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.overflowing-life.text",
+  "tier": "minor",
+  "aspect": "life"
+}

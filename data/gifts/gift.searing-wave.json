@@ -1,0 +1,29 @@
+{
+  "id": "gift.searing-wave",
+  "type": "gift",
+  "name": "gift.searing-wave.name",
+  "traits": [
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.searing-wave.text",
+  "tier": "major",
+  "aspect": "fire",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "gift.searing-wave.activations.0.text"
+    }
+  ]
+}

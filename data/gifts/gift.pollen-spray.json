@@ -1,0 +1,29 @@
+{
+  "id": "gift.pollen-spray",
+  "type": "gift",
+  "name": "gift.pollen-spray.name",
+  "traits": [
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.pollen-spray.text",
+  "tier": "minor",
+  "aspect": "plant",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "gift.pollen-spray.activations.0.text"
+    }
+  ]
+}

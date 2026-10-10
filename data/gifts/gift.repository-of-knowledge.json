@@ -1,0 +1,19 @@
+{
+  "id": "gift.repository-of-knowledge",
+  "type": "gift",
+  "name": "gift.repository-of-knowledge.name",
+  "traits": [
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.repository-of-knowledge.text",
+  "tier": "minor",
+  "aspect": "mind"
+}

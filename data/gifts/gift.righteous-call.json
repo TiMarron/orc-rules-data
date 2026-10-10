@@ -1,0 +1,30 @@
+{
+  "id": "gift.righteous-call",
+  "type": "gift",
+  "name": "gift.righteous-call.name",
+  "traits": [
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 311,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.righteous-call.text",
+  "tier": "major",
+  "aspect": "celestial",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.righteous-call.activations.0.frequency",
+      "text": "gift.righteous-call.activations.0.text"
+    }
+  ]
+}

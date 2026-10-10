@@ -1,0 +1,29 @@
+{
+  "id": "gift.lightning-storm",
+  "type": "gift",
+  "name": "gift.lightning-storm.name",
+  "traits": [
+    "air",
+    "electricity"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.lightning-storm.text",
+  "tier": "major",
+  "aspect": "air",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "gift.lightning-storm.activations.0.text"
+    }
+  ]
+}

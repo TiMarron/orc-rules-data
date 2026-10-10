@@ -1,0 +1,29 @@
+{
+  "id": "gift.grappling-vine",
+  "type": "gift",
+  "name": "gift.grappling-vine.name",
+  "traits": [
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.grappling-vine.text",
+  "tier": "major",
+  "aspect": "plant",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "attack",
+        "manipulate"
+      ],
+      "text": "gift.grappling-vine.activations.0.text"
+    }
+  ]
+}

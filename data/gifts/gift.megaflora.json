@@ -1,0 +1,30 @@
+{
+  "id": "gift.megaflora",
+  "type": "gift",
+  "name": "gift.megaflora.name",
+  "traits": [
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.megaflora.text",
+  "tier": "grand",
+  "aspect": "plant",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.megaflora.activations.0.frequency",
+      "text": "gift.megaflora.activations.0.text"
+    }
+  ]
+}

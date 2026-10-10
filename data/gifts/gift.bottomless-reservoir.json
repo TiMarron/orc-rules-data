@@ -1,0 +1,37 @@
+{
+  "id": "gift.bottomless-reservoir",
+  "type": "gift",
+  "name": "gift.bottomless-reservoir.name",
+  "traits": [
+    "extradimensional",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.bottomless-reservoir.text",
+  "tier": "major",
+  "aspect": "water",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "gift.bottomless-reservoir.activations.0.text"
+    },
+    {
+      "actions": "reaction",
+      "traits": [
+        "manipulate"
+      ],
+      "trigger": "gift.bottomless-reservoir.activations.1.trigger",
+      "text": "gift.bottomless-reservoir.activations.1.text"
+    }
+  ]
+}

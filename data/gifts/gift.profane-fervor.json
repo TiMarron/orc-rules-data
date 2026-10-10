@@ -1,0 +1,30 @@
+{
+  "id": "gift.profane-fervor",
+  "type": "gift",
+  "name": "gift.profane-fervor.name",
+  "traits": [
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.profane-fervor.text",
+  "tier": "major",
+  "aspect": "fiend",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.profane-fervor.activations.0.frequency",
+      "text": "gift.profane-fervor.activations.0.text"
+    }
+  ]
+}

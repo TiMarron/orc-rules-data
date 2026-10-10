@@ -1,0 +1,20 @@
+{
+  "id": "gift.underground-bounty",
+  "type": "gift",
+  "name": "gift.underground-bounty.name",
+  "traits": [
+    "earth",
+    "metal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 313,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.underground-bounty.text",
+  "tier": "major",
+  "aspect": "earth"
+}

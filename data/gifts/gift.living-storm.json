@@ -1,0 +1,20 @@
+{
+  "id": "gift.living-storm",
+  "type": "gift",
+  "name": "gift.living-storm.name",
+  "traits": [
+    "air",
+    "electricity"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.living-storm.text",
+  "tier": "grand",
+  "aspect": "air"
+}

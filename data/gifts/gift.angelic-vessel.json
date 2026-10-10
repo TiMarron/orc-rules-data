@@ -1,0 +1,30 @@
+{
+  "id": "gift.angelic-vessel",
+  "type": "gift",
+  "name": "gift.angelic-vessel.name",
+  "traits": [
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 311,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.angelic-vessel.text",
+  "tier": "grand",
+  "aspect": "celestial",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.angelic-vessel.activations.0.frequency",
+      "text": "gift.angelic-vessel.activations.0.text"
+    }
+  ]
+}

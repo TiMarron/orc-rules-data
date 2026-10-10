@@ -1,0 +1,22 @@
+{
+  "id": "gift.tide-of-death",
+  "type": "gift",
+  "name": "gift.tide-of-death.name",
+  "traits": [
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 312,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.tide-of-death.text",
+  "tier": "major",
+  "aspect": "death",
+  "requires": {
+    "gift": "gift.death-gaze"
+  }
+}

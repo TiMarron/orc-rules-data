@@ -1,0 +1,19 @@
+{
+  "id": "gift.flowing-footsteps",
+  "type": "gift",
+  "name": "gift.flowing-footsteps.name",
+  "traits": [
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.flowing-footsteps.text",
+  "tier": "major",
+  "aspect": "water"
+}

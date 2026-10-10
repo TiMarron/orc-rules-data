@@ -1,0 +1,33 @@
+{
+  "id": "gift.curse-wound",
+  "type": "gift",
+  "name": "gift.curse-wound.name",
+  "traits": [
+    "curse",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 313,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.curse-wound.text",
+  "tier": "minor",
+  "aspect": "fiend",
+  "requires": {
+    "relicIs": "weapon"
+  },
+  "activations": [
+    {
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "trigger": "gift.curse-wound.activations.0.trigger",
+      "text": "gift.curse-wound.activations.0.text"
+    }
+  ]
+}

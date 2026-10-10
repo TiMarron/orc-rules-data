@@ -1,0 +1,31 @@
+{
+  "id": "gift.monsoon-curtain",
+  "type": "gift",
+  "name": "gift.monsoon-curtain.name",
+  "traits": [
+    "air",
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.monsoon-curtain.text",
+  "tier": "minor",
+  "aspect": "water",
+  "activations": [
+    {
+      "actions": "3",
+      "traits": [
+        "attack",
+        "concentrate"
+      ],
+      "frequency": "gift.monsoon-curtain.activations.0.frequency",
+      "text": "gift.monsoon-curtain.activations.0.text"
+    }
+  ]
+}
