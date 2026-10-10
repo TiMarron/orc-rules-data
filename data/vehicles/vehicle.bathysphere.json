@@ -1,0 +1,81 @@
+{
+  "id": "vehicle.bathysphere",
+  "type": "vehicle",
+  "name": "vehicle.bathysphere.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "large",
+  "priceCp": 48000,
+  "space": {
+    "long": 15,
+    "wide": 15,
+    "high": 15
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 4,
+  "piloting": [
+    {
+      "skill": "skill.crafting",
+      "dc": 22
+    },
+    {
+      "lore": "vehicle.bathysphere.piloting.1.lore",
+      "dc": 20
+    },
+    {
+      "lore": "vehicle.bathysphere.piloting.2.lore",
+      "dc": 20
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "fortitude": 12,
+  "hardness": 10,
+  "hp": 80,
+  "bt": 40,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "cable",
+      "name": "vehicle.bathysphere.abilities.cable.name",
+      "text": "vehicle.bathysphere.abilities.cable.text"
+    },
+    {
+      "id": "ballast-release",
+      "name": "vehicle.bathysphere.abilities.ballast-release.name",
+      "actions": "2",
+      "text": "vehicle.bathysphere.abilities.ballast-release.text"
+    },
+    {
+      "id": "tether-buoy",
+      "name": "vehicle.bathysphere.abilities.tether-buoy.name",
+      "text": "vehicle.bathysphere.abilities.tether-buoy.text"
+    }
+  ],
+  "speed": {
+    "mode": "swim",
+    "feet": 20,
+    "propulsion": [
+      "alchemical"
+    ],
+    "note": "vehicle.bathysphere.speed.note"
+  },
+  "collision": {
+    "damage": "2d10",
+    "dc": 20
+  },
+  "editNote": "Page 216 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

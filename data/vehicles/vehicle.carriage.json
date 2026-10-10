@@ -1,0 +1,60 @@
+{
+  "id": "vehicle.carriage",
+  "type": "vehicle",
+  "name": "vehicle.carriage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 214,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "large",
+  "priceCp": 10000,
+  "space": {
+    "long": 10,
+    "wide": 10,
+    "high": 7
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 4,
+  "piloting": [
+    {
+      "lore": "vehicle.carriage.piloting.0.lore",
+      "dc": 16
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 18,
+      "dcMax": 26,
+      "note": "vehicle.carriage.piloting.1.note"
+    }
+  ],
+  "ac": {
+    "value": 13
+  },
+  "fortitude": 8,
+  "hardness": 5,
+  "hp": 40,
+  "bt": 20,
+  "immunities": [
+    "object-immunities"
+  ],
+  "speed": {
+    "mode": "land",
+    "propulsion": [
+      "pulled"
+    ],
+    "note": "vehicle.carriage.speed.note"
+  },
+  "collision": {
+    "damage": "2d8",
+    "dc": 16
+  },
+  "editNote": "Page 214 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands. The page prints the header (level, size, price) apart from the rest of the stat block, which opens page 215; every number was found there, so the stat check's miss is the layout."
+}

@@ -1,0 +1,71 @@
+{
+  "id": "vehicle.longship",
+  "type": "vehicle",
+  "name": "vehicle.longship.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "gargantuan",
+  "priceCp": 150000,
+  "space": {
+    "long": 65,
+    "wide": 15,
+    "high": 25
+  },
+  "crew": {
+    "pilots": 1,
+    "rowers": 10
+  },
+  "passengers": 4,
+  "piloting": [
+    {
+      "lore": "vehicle.longship.piloting.0.lore",
+      "dc": 26
+    },
+    {
+      "skill": "skill.diplomacy",
+      "dc": 28
+    },
+    {
+      "skill": "skill.intimidation",
+      "dc": 28
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "fortitude": 16,
+  "hardness": 15,
+  "hp": 140,
+  "bt": 70,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "maneuverable",
+      "name": "vehicle.longship.abilities.maneuverable.name",
+      "text": "vehicle.longship.abilities.maneuverable.text"
+    }
+  ],
+  "speed": {
+    "mode": "swim",
+    "feet": 40,
+    "propulsion": [
+      "rowed",
+      "wind"
+    ]
+  },
+  "collision": {
+    "damage": "6d10",
+    "dc": 24
+  },
+  "editNote": "Page 217 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

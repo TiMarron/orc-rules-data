@@ -1,0 +1,70 @@
+{
+  "id": "vehicle.glider",
+  "type": "vehicle",
+  "name": "vehicle.glider.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 214,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "large",
+  "priceCp": 1500,
+  "space": {
+    "long": 5,
+    "wide": 10,
+    "high": 2
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "piloting": [
+    {
+      "lore": "vehicle.glider.piloting.0.lore",
+      "dc": 14
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 16
+    }
+  ],
+  "ac": {
+    "value": 10
+  },
+  "fortitude": 6,
+  "hardness": 0,
+  "hp": 16,
+  "bt": 8,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "starting-drop",
+      "name": "vehicle.glider.abilities.starting-drop.name",
+      "text": "vehicle.glider.abilities.starting-drop.text"
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speed": {
+    "mode": "fly",
+    "feet": 25,
+    "propulsion": [
+      "wind"
+    ]
+  },
+  "collision": {
+    "damage": "2d4",
+    "dc": 14
+  },
+  "editNote": "Page 214 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

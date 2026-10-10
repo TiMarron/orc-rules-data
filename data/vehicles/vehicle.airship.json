@@ -1,0 +1,82 @@
+{
+  "id": "vehicle.airship",
+  "type": "vehicle",
+  "name": "vehicle.airship.name",
+  "traits": [],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 213,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 12,
+  "size": "gargantuan",
+  "priceCp": 600000,
+  "space": {
+    "long": 90,
+    "wide": 30,
+    "high": 60
+  },
+  "crew": {
+    "pilots": 1,
+    "crew": 5
+  },
+  "passengers": 15,
+  "piloting": [
+    {
+      "skill": "skill.arcana",
+      "dc": 32
+    },
+    {
+      "skill": "skill.crafting",
+      "dc": 32
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 32
+    },
+    {
+      "lore": "vehicle.airship.piloting.3.lore",
+      "dc": 30
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "fortitude": 22,
+  "hardness": 20,
+  "hp": 210,
+  "bt": 105,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "sluggish",
+      "name": "vehicle.airship.abilities.sluggish.name",
+      "text": "vehicle.airship.abilities.sluggish.text"
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 15,
+      "note": "vehicle.airship.weaknesses.0.note"
+    }
+  ],
+  "speed": {
+    "mode": "fly",
+    "feet": 50,
+    "propulsion": [
+      "alchemical",
+      "magical"
+    ]
+  },
+  "collision": {
+    "damage": "9d10",
+    "dc": 30
+  },
+  "editNote": "Page 213 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

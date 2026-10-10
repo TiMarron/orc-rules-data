@@ -1,0 +1,60 @@
+{
+  "id": "vehicle.wagon",
+  "type": "vehicle",
+  "name": "vehicle.wagon.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "large",
+  "priceCp": 2500,
+  "space": {
+    "long": 10,
+    "wide": 10,
+    "high": 7
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 4,
+  "piloting": [
+    {
+      "lore": "vehicle.wagon.piloting.0.lore",
+      "dc": 15
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 17,
+      "dcMax": 25,
+      "note": "vehicle.wagon.piloting.1.note"
+    }
+  ],
+  "ac": {
+    "value": 11
+  },
+  "fortitude": 7,
+  "hardness": 5,
+  "hp": 18,
+  "bt": 9,
+  "immunities": [
+    "object-immunities"
+  ],
+  "speed": {
+    "mode": "land",
+    "propulsion": [
+      "pulled"
+    ],
+    "note": "vehicle.wagon.speed.note"
+  },
+  "collision": {
+    "damage": "2d6",
+    "dc": 15
+  },
+  "editNote": "Page 216 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

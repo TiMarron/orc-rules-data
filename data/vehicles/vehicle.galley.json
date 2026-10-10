@@ -1,0 +1,71 @@
+{
+  "id": "vehicle.galley",
+  "type": "vehicle",
+  "name": "vehicle.galley.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "gargantuan",
+  "priceCp": 300000,
+  "space": {
+    "long": 130,
+    "wide": 20,
+    "high": 25
+  },
+  "crew": {
+    "pilots": 1,
+    "rowers": 20
+  },
+  "passengers": 6,
+  "piloting": [
+    {
+      "lore": "vehicle.galley.piloting.0.lore",
+      "dc": 27
+    },
+    {
+      "skill": "skill.diplomacy",
+      "dc": 29
+    },
+    {
+      "skill": "skill.intimidation",
+      "dc": 29
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "fortitude": 19,
+  "hardness": 15,
+  "hp": 170,
+  "bt": 85,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "maneuverable",
+      "name": "vehicle.galley.abilities.maneuverable.name",
+      "text": "vehicle.galley.abilities.maneuverable.text"
+    }
+  ],
+  "speed": {
+    "mode": "swim",
+    "feet": 30,
+    "propulsion": [
+      "rowed",
+      "wind"
+    ]
+  },
+  "collision": {
+    "damage": "7d10",
+    "dc": 27
+  },
+  "editNote": "Page 217 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

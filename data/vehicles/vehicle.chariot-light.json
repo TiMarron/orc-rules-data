@@ -1,0 +1,59 @@
+{
+  "id": "vehicle.chariot-light",
+  "type": "vehicle",
+  "name": "vehicle.chariot-light.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 215,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "large",
+  "priceCp": 1000,
+  "space": {
+    "long": 5,
+    "wide": 5,
+    "high": 4
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "piloting": [
+    {
+      "lore": "vehicle.chariot-light.piloting.0.lore",
+      "dc": 14
+    },
+    {
+      "skill": "skill.nature",
+      "dc": 16,
+      "dcMax": 24,
+      "note": "vehicle.chariot-light.piloting.1.note"
+    }
+  ],
+  "ac": {
+    "value": 10
+  },
+  "fortitude": 6,
+  "hardness": 5,
+  "hp": 14,
+  "bt": 7,
+  "immunities": [
+    "object-immunities"
+  ],
+  "speed": {
+    "mode": "land",
+    "propulsion": [
+      "pulled"
+    ],
+    "note": "vehicle.chariot-light.speed.note"
+  },
+  "collision": {
+    "damage": "1d12",
+    "dc": 14
+  },
+  "editNote": "Page 215 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands. Page 215 prints the Speed as \"the Speed of the pulling creature\" (one creature pulls it); the source says \"the slowest pulling creature\", restored as printed."
+}

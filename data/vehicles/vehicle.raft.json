@@ -1,0 +1,65 @@
+{
+  "id": "vehicle.raft",
+  "type": "vehicle",
+  "name": "vehicle.raft.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "large",
+  "priceCp": 300,
+  "space": {
+    "long": 10,
+    "wide": 10,
+    "high": 2
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 4,
+  "piloting": [
+    {
+      "skill": "skill.athletics",
+      "dc": 14
+    },
+    {
+      "lore": "vehicle.raft.piloting.1.lore",
+      "dc": 12
+    }
+  ],
+  "ac": {
+    "value": 10
+  },
+  "fortitude": 5,
+  "hardness": 1,
+  "hp": 16,
+  "bt": 8,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "portaged",
+      "name": "vehicle.raft.abilities.portaged.name",
+      "text": "vehicle.raft.abilities.portaged.text"
+    }
+  ],
+  "speed": {
+    "mode": "swim",
+    "feet": 10,
+    "propulsion": [
+      "rowed"
+    ]
+  },
+  "collision": {
+    "damage": "1d4",
+    "dc": 14
+  },
+  "editNote": "Page 217 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

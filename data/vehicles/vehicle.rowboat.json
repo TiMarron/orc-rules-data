@@ -1,0 +1,65 @@
+{
+  "id": "vehicle.rowboat",
+  "type": "vehicle",
+  "name": "vehicle.rowboat.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 217,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "large",
+  "priceCp": 1500,
+  "space": {
+    "long": 10,
+    "wide": 5,
+    "high": 3
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 2,
+  "piloting": [
+    {
+      "skill": "skill.athletics",
+      "dc": 16
+    },
+    {
+      "lore": "vehicle.rowboat.piloting.1.lore",
+      "dc": 14
+    }
+  ],
+  "ac": {
+    "value": 10
+  },
+  "fortitude": 6,
+  "hardness": 5,
+  "hp": 16,
+  "bt": 8,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "portaged",
+      "name": "vehicle.rowboat.abilities.portaged.name",
+      "text": "vehicle.rowboat.abilities.portaged.text"
+    }
+  ],
+  "speed": {
+    "mode": "swim",
+    "feet": 20,
+    "propulsion": [
+      "rowed"
+    ]
+  },
+  "collision": {
+    "damage": "2d4",
+    "dc": 14
+  },
+  "editNote": "Page 217 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}

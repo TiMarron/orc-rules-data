@@ -10,7 +10,7 @@ major for renamed or removed ids, new required fields and markup changes.
 
 - Vehicles, a new record type: space, crew, piloting checks, defences, speed
   and how the vehicle moves, collision and special abilities. Records live in
-  `data/vehicles/`.
+  `data/vehicles/`: the 23 vehicles of GM Core.
 - Relic gifts, a new record type: each gift's aspect, tier, prerequisite and
   activations. Records live in `data/gifts/`: the 72 gifts of GM Core, six for each of its
   twelve aspects.

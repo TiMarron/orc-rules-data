@@ -1,0 +1,74 @@
+{
+  "id": "vehicle.strider",
+  "type": "vehicle",
+  "name": "vehicle.strider.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "gm-core",
+    "page": 216,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "large",
+  "priceCp": 120000,
+  "space": {
+    "long": 10,
+    "wide": 10,
+    "high": 25
+  },
+  "crew": {
+    "pilots": 1
+  },
+  "passengers": 2,
+  "piloting": [
+    {
+      "skill": "skill.arcana",
+      "dc": 25
+    },
+    {
+      "skill": "skill.crafting",
+      "dc": 25
+    },
+    {
+      "lore": "vehicle.strider.piloting.2.lore",
+      "dc": 23
+    },
+    {
+      "lore": "vehicle.strider.piloting.3.lore",
+      "dc": 23
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "fortitude": 13,
+  "hardness": 10,
+  "hp": 120,
+  "bt": 60,
+  "immunities": [
+    "object-immunities"
+  ],
+  "abilities": [
+    {
+      "id": "long-reach",
+      "name": "vehicle.strider.abilities.long-reach.name",
+      "text": "vehicle.strider.abilities.long-reach.text"
+    }
+  ],
+  "speed": {
+    "mode": "land",
+    "feet": 30,
+    "propulsion": [
+      "alchemical",
+      "magical"
+    ]
+  },
+  "collision": {
+    "damage": "3d10",
+    "dc": 24
+  },
+  "editNote": "Page 216 prints the immunities as object immunities alone; the source adds critical hits and precision damage and the errata is silent, so the book's stands."
+}
