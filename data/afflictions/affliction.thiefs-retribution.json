@@ -1,0 +1,25 @@
+{
+  "id": "affliction.thiefs-retribution",
+  "type": "affliction",
+  "name": "affliction.thiefs-retribution.name",
+  "traits": [
+    "curse",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.thiefs-retribution.text",
+  "kind": "curse",
+  "level": 19,
+  "save": {
+    "type": "fortitude",
+    "dc": 39
+  },
+  "effect": "affliction.thiefs-retribution.effect"
+}

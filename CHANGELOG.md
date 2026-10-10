@@ -11,7 +11,8 @@ major for renamed or removed ids, new required fields and markup changes.
 - Afflictions, a new record type: diseases and curses with their saving
   throw, onset, maximum duration and stages (each with its duration), or a
   single effect; cursed-item templates carry their usage. Records live in
-  `data/afflictions/`.
+  `data/afflictions/`: the 14 diseases and 23 curses of GM Core, the seven
+  cursed-item templates among them.
 
 ### Fixed
 

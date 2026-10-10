@@ -1,0 +1,27 @@
+{
+  "id": "affliction.slayers-haunt",
+  "type": "affliction",
+  "name": "affliction.slayers-haunt.name",
+  "traits": [
+    "curse",
+    "illusion",
+    "magical",
+    "visual"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.slayers-haunt.text",
+  "kind": "curse",
+  "level": 4,
+  "save": {
+    "type": "will",
+    "dc": 19
+  },
+  "effect": "affliction.slayers-haunt.effect"
+}

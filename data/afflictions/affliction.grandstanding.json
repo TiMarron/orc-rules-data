@@ -1,0 +1,21 @@
+{
+  "id": "affliction.grandstanding",
+  "type": "affliction",
+  "name": "affliction.grandstanding.name",
+  "traits": [
+    "cursed",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 307,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "kind": "curse",
+  "level": 11,
+  "usage": "affliction.grandstanding.usage",
+  "effect": "affliction.grandstanding.effect"
+}

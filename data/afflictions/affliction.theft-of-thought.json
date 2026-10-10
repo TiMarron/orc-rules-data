@@ -1,0 +1,26 @@
+{
+  "id": "affliction.theft-of-thought",
+  "type": "affliction",
+  "name": "affliction.theft-of-thought.name",
+  "traits": [
+    "curse",
+    "magical",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 86,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.theft-of-thought.text",
+  "kind": "curse",
+  "level": 3,
+  "save": {
+    "type": "will",
+    "dc": 18
+  },
+  "effect": "affliction.theft-of-thought.effect"
+}

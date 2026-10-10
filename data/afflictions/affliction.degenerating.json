@@ -1,0 +1,22 @@
+{
+  "id": "affliction.degenerating",
+  "type": "affliction",
+  "name": "affliction.degenerating.name",
+  "traits": [
+    "acid",
+    "cursed",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 307,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "kind": "curse",
+  "level": 5,
+  "usage": "affliction.degenerating.usage",
+  "effect": "affliction.degenerating.effect"
+}

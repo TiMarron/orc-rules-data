@@ -1,0 +1,24 @@
+{
+  "id": "affliction.grave-curse",
+  "type": "affliction",
+  "name": "affliction.grave-curse.name",
+  "traits": [
+    "curse",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.grave-curse.text",
+  "kind": "curse",
+  "save": {
+    "type": "will"
+  },
+  "saveNote": "affliction.grave-curse.save-note",
+  "effect": "affliction.grave-curse.effect"
+}

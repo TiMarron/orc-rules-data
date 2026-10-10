@@ -1,0 +1,27 @@
+{
+  "id": "affliction.reviled-of-nature",
+  "type": "affliction",
+  "name": "affliction.reviled-of-nature.name",
+  "traits": [
+    "curse",
+    "emotion",
+    "magical",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.reviled-of-nature.text",
+  "kind": "curse",
+  "level": 18,
+  "save": {
+    "type": "will",
+    "dc": 38
+  },
+  "effect": "affliction.reviled-of-nature.effect"
+}

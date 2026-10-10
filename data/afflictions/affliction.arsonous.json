@@ -1,0 +1,22 @@
+{
+  "id": "affliction.arsonous",
+  "type": "affliction",
+  "name": "affliction.arsonous.name",
+  "traits": [
+    "cursed",
+    "fire",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 307,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "kind": "curse",
+  "level": 7,
+  "usage": "affliction.arsonous.usage",
+  "effect": "affliction.arsonous.effect"
+}

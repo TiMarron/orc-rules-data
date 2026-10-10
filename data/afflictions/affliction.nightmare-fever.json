@@ -1,0 +1,57 @@
+{
+  "id": "affliction.nightmare-fever",
+  "type": "affliction",
+  "name": "affliction.nightmare-fever.name",
+  "traits": [
+    "disease",
+    "occult"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 89,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "affliction.nightmare-fever.text",
+  "kind": "disease",
+  "level": 8,
+  "save": {
+    "type": "will",
+    "dc": 25
+  },
+  "stages": [
+    {
+      "text": "affliction.nightmare-fever.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.nightmare-fever.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.nightmare-fever.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.nightmare-fever.stages.3",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.nightmare-fever.stages.4"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "affliction.sellswords-folly",
+  "type": "affliction",
+  "name": "affliction.sellswords-folly.name",
+  "traits": [
+    "curse",
+    "emotion",
+    "magical",
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "affliction.sellswords-folly.text",
+  "kind": "curse",
+  "level": 9,
+  "save": {
+    "type": "will",
+    "dc": 26
+  },
+  "effect": "affliction.sellswords-folly.effect",
+  "editNote": "The source's name carries a stray possessive s (Sellswords's); page 87 prints SELLSWORD'S FOLLY."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "affliction.raucous",
+  "type": "affliction",
+  "name": "affliction.raucous.name",
+  "traits": [
+    "cursed",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 307,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "kind": "curse",
+  "level": 3,
+  "usage": "affliction.raucous.usage",
+  "effect": "affliction.raucous.effect"
+}

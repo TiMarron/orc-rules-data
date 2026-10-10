@@ -1,0 +1,26 @@
+{
+  "id": "affliction.reviling-earth",
+  "type": "affliction",
+  "name": "affliction.reviling-earth.name",
+  "traits": [
+    "curse",
+    "death",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.reviling-earth.text",
+  "kind": "curse",
+  "level": 12,
+  "save": {
+    "type": "fortitude",
+    "dc": 30
+  },
+  "effect": "affliction.reviling-earth.effect"
+}

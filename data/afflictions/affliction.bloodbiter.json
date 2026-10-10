@@ -1,0 +1,21 @@
+{
+  "id": "affliction.bloodbiter",
+  "type": "affliction",
+  "name": "affliction.bloodbiter.name",
+  "traits": [
+    "cursed",
+    "magical"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "gm-core",
+    "page": 307,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "kind": "curse",
+  "level": 6,
+  "usage": "affliction.bloodbiter.usage",
+  "effect": "affliction.bloodbiter.effect"
+}

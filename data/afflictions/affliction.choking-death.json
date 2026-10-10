@@ -1,0 +1,53 @@
+{
+  "id": "affliction.choking-death",
+  "type": "affliction",
+  "name": "affliction.choking-death.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 88,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.choking-death.text",
+  "kind": "disease",
+  "level": 6,
+  "save": {
+    "type": "fortitude",
+    "dc": 22
+  },
+  "onset": {
+    "amount": 1,
+    "unit": "day"
+  },
+  "stages": [
+    {
+      "text": "affliction.choking-death.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.choking-death.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.choking-death.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.choking-death.stages.3"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "affliction.spirit-anchor",
+  "type": "affliction",
+  "name": "affliction.spirit-anchor.name",
+  "traits": [
+    "curse",
+    "magical"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.spirit-anchor.text",
+  "kind": "curse",
+  "level": 13,
+  "save": {
+    "type": "fortitude",
+    "dc": 31
+  },
+  "effect": "affliction.spirit-anchor.effect"
+}

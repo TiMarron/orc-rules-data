@@ -1,0 +1,27 @@
+{
+  "id": "affliction.curse-of-slumber",
+  "type": "affliction",
+  "name": "affliction.curse-of-slumber.name",
+  "traits": [
+    "curse",
+    "incapacitation",
+    "magical",
+    "sleep"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 87,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "affliction.curse-of-slumber.text",
+  "kind": "curse",
+  "level": 11,
+  "save": {
+    "type": "fortitude",
+    "dc": 28
+  },
+  "effect": "affliction.curse-of-slumber.effect"
+}
