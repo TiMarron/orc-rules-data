@@ -18,6 +18,14 @@
   "level": 4,
   "priceCp": 1700,
   "bulk": "0",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "consumable",
   "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
 }

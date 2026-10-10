@@ -12,12 +12,21 @@
     "page": 295,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.everlasting-adhesive.text",
   "level": 7,
   "priceCp": 5500,
   "bulk": "L",
   "usage": "item.everlasting-adhesive.usage",
-  "category": "alchemical"
+  "activations": [
+    {
+      "time": "item.everlasting-adhesive.activations.0.time",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
+  "category": "alchemical",
+  "editNote": "Activation from the book (p.295): it prints 'Activate 1 minute (manipulate)'; AoN prints '1 minute (Interact)', the pre-Remaster form, which the converter cannot read as traits. The book's errata is silent on it."
 }

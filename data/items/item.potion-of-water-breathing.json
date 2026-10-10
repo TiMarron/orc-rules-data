@@ -20,6 +20,14 @@
   "priceCp": 1100,
   "bulk": "L",
   "usage": "item.potion-of-water-breathing.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "consumable",
   "editNote": "The source's '2nd- rank' carries a stray space (a line-break hyphen); page 260 prints '2nd-rank'."
 }

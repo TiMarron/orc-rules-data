@@ -13,12 +13,21 @@
     "page": 266,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.mesmerizing-opal.text",
   "level": 2,
   "priceCp": 700,
   "bulk": "0",
   "usage": "item.mesmerizing-opal.usage",
-  "category": "talisman"
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ]
+    }
+  ],
+  "category": "talisman",
+  "editNote": "The record gains the activation the book prints in its stat header (AoN files it as a header row, which the converter did not read until now); the rest of the record is unchanged from the published one. Checked against the book's Activate line on p.266: 'Activate [one-action] (concentrate)'; the cost and traits match."
 }

@@ -22,6 +22,14 @@
   "priceCp": 1500,
   "bulk": "L",
   "usage": "item.oak-potion.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "consumable",
   "editNote": "Compared with pages 259-260: every sentence of the text is on the page; the text check scores the short description low only because of the spell link labels. Level and Price match the header."
 }

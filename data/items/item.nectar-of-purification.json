@@ -20,6 +20,14 @@
   "priceCp": 300,
   "bulk": "L",
   "usage": "item.nectar-of-purification.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "consumable",
   "editNote": "The source's '1st-rank' carries a stray space after the hyphen (a line-break hyphen); page 257 prints '1st-rank'."
 }

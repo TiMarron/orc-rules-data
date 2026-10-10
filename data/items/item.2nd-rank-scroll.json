@@ -20,6 +20,12 @@
   "priceCp": 1200,
   "bulk": "L",
   "usage": "item.2nd-rank-scroll.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "text": "item.2nd-rank-scroll.activations.0.text"
+    }
+  ],
   "category": "scroll",
   "editNote": "Accepted: the name is the source's; page 262 prints the grades of Magic Scroll as Type lines ('Type 3rd-rank spell; Level 5; Price 30 gp'), not under this name, which is why the page check cannot find it. Level and Price of all ten match those lines."
 }

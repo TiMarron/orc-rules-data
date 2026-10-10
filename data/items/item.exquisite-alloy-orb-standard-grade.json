@@ -20,6 +20,14 @@
   "priceCp": 40000,
   "bulk": "0",
   "usage": "item.exquisite-alloy-orb-standard-grade.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ]
+    }
+  ],
   "category": "talisman",
   "editNote": "Accepted: page 263 prints these as Type lines of Alloy Orb ('Type exquisite standard-grade alloy orb; Level 12 (uncommon); Price 400 gp' and the high-grade one at level 18, 4,500 gp), not under this name; level, Price, uncommon rarity and the text match."
 }

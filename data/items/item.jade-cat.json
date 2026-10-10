@@ -13,12 +13,21 @@
     "page": 265,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.jade-cat.text",
   "level": 2,
   "priceCp": 600,
   "bulk": "0",
   "usage": "item.jade-cat.usage",
-  "category": "talisman"
+  "activations": [
+    {
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ]
+    }
+  ],
+  "category": "talisman",
+  "editNote": "The record gains the activation the book prints in its stat header (AoN files it as a header row, which the converter did not read until now); the rest of the record is unchanged from the published one. Checked: the book's Activate line (p.266, where the entry continues from p.265) reads '[free-action] (concentrate)' and matches."
 }

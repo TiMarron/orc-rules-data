@@ -14,12 +14,21 @@
     "page": 264,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "item.fade-band.text",
   "level": 12,
   "priceCp": 32000,
   "bulk": "0",
   "usage": "item.fade-band.usage",
-  "category": "talisman"
+  "activations": [
+    {
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ]
+    }
+  ],
+  "category": "talisman",
+  "editNote": "Activation from the book (p.264): it prints 'Activate [reaction] (concentrate)' with a Trigger; AoN has a free action. The book's errata is silent on fade band."
 }

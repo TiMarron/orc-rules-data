@@ -18,6 +18,14 @@
   "level": 20,
   "bulk": "2",
   "usage": "item.philosophers-stone.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "alchemical",
-  "editNote": "Accepted: the description and activation were compared with the book and match. The flags are informational: bullet lists kept as dash lines, links to rules pages the dataset does not model kept as their labels, and the 'other book' citations that sit in the variants' source lines rather than in the text."
+  "editNote": "Activation from the book (p.295): it prints 'Activate [one-action] (manipulate) or 1 or more days; see below'; AoN has (concentrate). The errata is silent on it (only the philosopher's extractor, p.301). The 'or 1 or more days' alternative has no field in the schema; the text describes it. Earlier: links added where the text names records the dataset holds; bullet lists kept as dash lines."
 }

@@ -21,6 +21,14 @@
   "priceCp": 150000,
   "bulk": "L",
   "usage": "item.brimstone-fumes.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "alchemical",
   "editNote": "Reserved Material removed: the proper name of a plane is replaced with a generic descriptor. The rules text is the book's."
 }

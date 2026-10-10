@@ -20,6 +20,14 @@
   "priceCp": 300000,
   "bulk": "L",
   "usage": "item.energy-breath-potion-greater.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
   "category": "consumable",
   "editNote": "The book's energy-type table (page 259: acid 30-foot line, Reflex; cold 15-foot cone, Reflex; electricity 30-foot line, Reflex; fire 15-foot cone, Reflex; sonic 15-foot cone, Fortitude) is kept as a list, since the dataset markup has no tables; 'as seen in the table below' reads 'as listed below'."
 }
