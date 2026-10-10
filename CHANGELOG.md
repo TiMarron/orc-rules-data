@@ -6,6 +6,18 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ## Unreleased
 
+### Fixed
+
+- 383 items (242 of Player Core 2, 141 of GM Core) — potions, elixirs, bombs,
+  poisons, oils, talismans, scrolls, ammunition and other consumables — gain
+  the activation the book prints in their stat header ("Activate [one-action]
+  (manipulate)"), which they had been published without: its action cost or
+  time, Cast a Spell, and traits. A bomb's activation keeps "Strike" as its
+  text. The drakeheart mutagens' Final Surge moves to the second activation.
+  Belladonna, fade band, ghost ink, everlasting adhesive, philosopher's stone
+  and oil of dynamism take the cost or traits the book prints where the
+  structured source differs and the errata is silent.
+
 ### Changed
 
 - An item's `level` (and a variant's) may be up to 28: artifacts are printed
