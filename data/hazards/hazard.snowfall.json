@@ -48,12 +48,12 @@
   ],
   "abilities": [
     {
-      "id": "snowfall",
-      "name": "hazard.snowfall.abilities.snowfall.name",
+      "id": "snowdrop",
+      "name": "hazard.snowfall.abilities.snowdrop.name",
       "actions": "reaction",
-      "trigger": "hazard.snowfall.abilities.snowfall.trigger",
-      "text": "hazard.snowfall.abilities.snowfall.text"
+      "trigger": "hazard.snowfall.abilities.snowdrop.trigger",
+      "text": "hazard.snowfall.abilities.snowdrop.text"
     }
   ],
-  "editNote": "Page 104 prints AC 16, Fort +10, Ref +8; the source says AC 18, Fort +11, Ref +3 and the errata is silent, so the book's numbers stand."
+  "editNote": "Page 104 prints AC 16, Fort +10, Ref +8 and names the reaction Snowdrop; the source says AC 18, Fort +11, Ref +3 and Snowfall, and the errata is silent, so the book's stand."
 }

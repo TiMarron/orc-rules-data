@@ -13,7 +13,7 @@
     "page": 108,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "hazard.wheel-of-misery.text",
   "kind": "trap",
@@ -72,36 +72,6 @@
       "actions": "reaction",
       "trigger": "hazard.wheel-of-misery.abilities.wheel-spin.trigger",
       "text": "hazard.wheel-of-misery.abilities.wheel-spin.text"
-    },
-    {
-      "id": "1",
-      "name": "hazard.wheel-of-misery.abilities.1.name",
-      "text": "hazard.wheel-of-misery.abilities.1.text"
-    },
-    {
-      "id": "2",
-      "name": "hazard.wheel-of-misery.abilities.2.name",
-      "text": "hazard.wheel-of-misery.abilities.2.text"
-    },
-    {
-      "id": "3",
-      "name": "hazard.wheel-of-misery.abilities.3.name",
-      "text": "hazard.wheel-of-misery.abilities.3.text"
-    },
-    {
-      "id": "4",
-      "name": "hazard.wheel-of-misery.abilities.4.name",
-      "text": "hazard.wheel-of-misery.abilities.4.text"
-    },
-    {
-      "id": "5",
-      "name": "hazard.wheel-of-misery.abilities.5.name",
-      "text": "hazard.wheel-of-misery.abilities.5.text"
-    },
-    {
-      "id": "6",
-      "name": "hazard.wheel-of-misery.abilities.6.name",
-      "text": "hazard.wheel-of-misery.abilities.6.text"
     }
   ],
   "routine": {

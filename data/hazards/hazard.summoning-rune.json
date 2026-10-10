@@ -50,5 +50,5 @@
     }
   ],
   "reset": "hazard.summoning-rune.reset",
-  "editNote": "Compared with page 108: HAZARD 1 is printed after the Stealth line (the layout separates it from the name, which is why the header check misses it); stealth +7 (trained), the disable options, the Summon Monster reaction and the reset are as printed (the book prints no routine for it)."
+  "editNote": "Compared with page 108: HAZARD 1 is printed after the Stealth line (the layout separates it from the name, which is why the header check misses it); stealth +7 (trained), the Summon Monster reaction and the reset are as printed (the book prints no routine for it). The first disable option is structured as its DC 15 Acrobatics check only; the Thievery check that follows it is in the option's text."
 }
