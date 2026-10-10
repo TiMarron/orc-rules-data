@@ -11,8 +11,8 @@
     "page": 88,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "affliction.bog-rot.text",
   "kind": "disease",
   "level": 0,
@@ -46,5 +46,6 @@
         "unit": "day"
       }
     }
-  ]
+  ],
+  "editNote": "The source prints a stray '3**' at the start of stage 3 (a slip of its bold Stage label); page 88 prints 'Stage 3 clumsy 2 and a -10-foot status penalty to Speed'."
 }
