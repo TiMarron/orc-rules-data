@@ -1,0 +1,20 @@
+{
+  "id": "gift.beast-senses",
+  "type": "gift",
+  "name": "gift.beast-senses.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.beast-senses.text",
+  "tier": "minor",
+  "aspect": "beast",
+  "requires": {
+    "relicIs": "worn"
+  }
+}

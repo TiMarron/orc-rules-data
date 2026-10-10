@@ -1,0 +1,31 @@
+{
+  "id": "gift.feral-claws",
+  "type": "gift",
+  "name": "gift.feral-claws.name",
+  "traits": [
+    "morph"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.feral-claws.text",
+  "tier": "minor",
+  "aspect": "beast",
+  "requires": {
+    "relicIs": "worn"
+  },
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "gift.feral-claws.activations.0.text"
+    }
+  ]
+}

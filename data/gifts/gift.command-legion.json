@@ -1,0 +1,36 @@
+{
+  "id": "gift.command-legion",
+  "type": "gift",
+  "name": "gift.command-legion.name",
+  "traits": [
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.command-legion.text",
+  "tier": "grand",
+  "aspect": "fiend",
+  "activations": [
+    {
+      "actions": "3",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.command-legion.activations.0.frequency",
+      "text": "gift.command-legion.activations.0.text"
+    },
+    {
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "gift.command-legion.activations.1.text"
+    }
+  ]
+}

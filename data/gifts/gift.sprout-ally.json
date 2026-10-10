@@ -1,0 +1,30 @@
+{
+  "id": "gift.sprout-ally",
+  "type": "gift",
+  "name": "gift.sprout-ally.name",
+  "traits": [
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.sprout-ally.text",
+  "tier": "minor",
+  "aspect": "plant",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.sprout-ally.activations.0.frequency",
+      "text": "gift.sprout-ally.activations.0.text"
+    }
+  ]
+}

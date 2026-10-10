@@ -1,0 +1,28 @@
+{
+  "id": "gift.call-of-the-wild",
+  "type": "gift",
+  "name": "gift.call-of-the-wild.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.call-of-the-wild.text",
+  "tier": "minor",
+  "aspect": "beast",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.call-of-the-wild.activations.0.frequency",
+      "text": "gift.call-of-the-wild.activations.0.text"
+    }
+  ]
+}

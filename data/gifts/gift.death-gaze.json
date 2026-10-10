@@ -1,0 +1,29 @@
+{
+  "id": "gift.death-gaze",
+  "type": "gift",
+  "name": "gift.death-gaze.name",
+  "traits": [
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 312,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.death-gaze.text",
+  "tier": "minor",
+  "aspect": "death",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "gift.death-gaze.activations.0.text"
+    }
+  ]
+}

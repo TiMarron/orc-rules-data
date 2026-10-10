@@ -1,0 +1,29 @@
+{
+  "id": "gift.perception-filter",
+  "type": "gift",
+  "name": "gift.perception-filter.name",
+  "traits": [
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.perception-filter.text",
+  "tier": "major",
+  "aspect": "mind",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.perception-filter.activations.0.frequency",
+      "text": "gift.perception-filter.activations.0.text"
+    }
+  ]
+}

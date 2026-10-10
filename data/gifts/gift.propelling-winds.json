@@ -1,0 +1,30 @@
+{
+  "id": "gift.propelling-winds",
+  "type": "gift",
+  "name": "gift.propelling-winds.name",
+  "traits": [
+    "air"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.propelling-winds.text",
+  "tier": "major",
+  "aspect": "air",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.propelling-winds.activations.0.frequency",
+      "text": "gift.propelling-winds.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "gift.bestow-life",
+  "type": "gift",
+  "name": "gift.bestow-life.name",
+  "traits": [
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.bestow-life.text",
+  "tier": "minor",
+  "aspect": "life",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.bestow-life.activations.0.frequency",
+      "text": "gift.bestow-life.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "gift.petal-dance",
+  "type": "gift",
+  "name": "gift.petal-dance.name",
+  "traits": [
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.petal-dance.text",
+  "tier": "major",
+  "aspect": "plant",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.petal-dance.activations.0.frequency",
+      "text": "gift.petal-dance.activations.0.text"
+    }
+  ]
+}

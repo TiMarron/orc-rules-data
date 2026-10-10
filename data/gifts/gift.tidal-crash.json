@@ -1,0 +1,29 @@
+{
+  "id": "gift.tidal-crash",
+  "type": "gift",
+  "name": "gift.tidal-crash.name",
+  "traits": [
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.tidal-crash.text",
+  "tier": "minor",
+  "aspect": "water",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.tidal-crash.activations.0.frequency",
+      "text": "gift.tidal-crash.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "gift.vitality-siphon",
+  "type": "gift",
+  "name": "gift.vitality-siphon.name",
+  "traits": [
+    "healing",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.vitality-siphon.text",
+  "tier": "major",
+  "aspect": "life",
+  "activations": [
+    {
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "trigger": "gift.vitality-siphon.activations.0.trigger",
+      "text": "gift.vitality-siphon.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "gift.word-of-faith",
+  "type": "gift",
+  "name": "gift.word-of-faith.name",
+  "traits": [
+    "healing",
+    "holy",
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 311,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.word-of-faith.text",
+  "tier": "minor",
+  "aspect": "celestial",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.word-of-faith.activations.0.frequency",
+      "text": "gift.word-of-faith.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "gift.lashing-currents",
+  "type": "gift",
+  "name": "gift.lashing-currents.name",
+  "traits": [
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.lashing-currents.text",
+  "tier": "minor",
+  "aspect": "water",
+  "requires": {
+    "relicIs": "weapon"
+  }
+}

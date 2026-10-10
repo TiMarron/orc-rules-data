@@ -1,0 +1,30 @@
+{
+  "id": "gift.sacred-glow",
+  "type": "gift",
+  "name": "gift.sacred-glow.name",
+  "traits": [
+    "holy",
+    "light"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 311,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.sacred-glow.text",
+  "tier": "major",
+  "aspect": "celestial",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "gift.sacred-glow.activations.0.text"
+    }
+  ]
+}

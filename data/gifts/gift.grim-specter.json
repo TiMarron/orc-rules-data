@@ -1,0 +1,32 @@
+{
+  "id": "gift.grim-specter",
+  "type": "gift",
+  "name": "gift.grim-specter.name",
+  "traits": [
+    "polymorph",
+    "void"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 312,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.grim-specter.text",
+  "tier": "grand",
+  "aspect": "death",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "void"
+      ],
+      "frequency": "gift.grim-specter.activations.0.frequency",
+      "text": "gift.grim-specter.activations.0.text"
+    }
+  ]
+}

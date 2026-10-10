@@ -1,0 +1,29 @@
+{
+  "id": "gift.heat-haze",
+  "type": "gift",
+  "name": "gift.heat-haze.name",
+  "traits": [
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.heat-haze.text",
+  "tier": "minor",
+  "aspect": "fire",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.heat-haze.activations.0.frequency",
+      "text": "gift.heat-haze.activations.0.text"
+    }
+  ]
+}

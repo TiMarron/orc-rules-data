@@ -1,0 +1,29 @@
+{
+  "id": "gift.jet-propulsion",
+  "type": "gift",
+  "name": "gift.jet-propulsion.name",
+  "traits": [
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.jet-propulsion.text",
+  "tier": "major",
+  "aspect": "fire",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.jet-propulsion.activations.0.frequency",
+      "text": "gift.jet-propulsion.activations.0.text"
+    }
+  ]
+}

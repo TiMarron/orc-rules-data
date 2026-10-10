@@ -1,0 +1,29 @@
+{
+  "id": "gift.ripples-and-waves",
+  "type": "gift",
+  "name": "gift.ripples-and-waves.name",
+  "traits": [
+    "water"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 319,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.ripples-and-waves.text",
+  "tier": "grand",
+  "aspect": "water",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.ripples-and-waves.activations.0.frequency",
+      "text": "gift.ripples-and-waves.activations.0.text"
+    }
+  ]
+}

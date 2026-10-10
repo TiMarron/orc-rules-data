@@ -1,0 +1,30 @@
+{
+  "id": "gift.flare-bolt",
+  "type": "gift",
+  "name": "gift.flare-bolt.name",
+  "traits": [
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.flare-bolt.text",
+  "tier": "minor",
+  "aspect": "fire",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "attack",
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "gift.flare-bolt.activations.0.text"
+    }
+  ]
+}

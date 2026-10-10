@@ -1,0 +1,33 @@
+{
+  "id": "gift.dancing-shadow",
+  "type": "gift",
+  "name": "gift.dancing-shadow.name",
+  "traits": [
+    "shadow"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.dancing-shadow.text",
+  "tier": "major",
+  "aspect": "shadow",
+  "requires": {
+    "relicIs": "weapon"
+  },
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "frequency": "gift.dancing-shadow.activations.0.frequency",
+      "text": "gift.dancing-shadow.activations.0.text"
+    }
+  ]
+}

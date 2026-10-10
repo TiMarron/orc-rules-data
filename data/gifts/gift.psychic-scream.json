@@ -1,0 +1,28 @@
+{
+  "id": "gift.psychic-scream",
+  "type": "gift",
+  "name": "gift.psychic-scream.name",
+  "traits": [
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.psychic-scream.text",
+  "tier": "major",
+  "aspect": "mind",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "gift.psychic-scream.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "gift.shadow-smith",
+  "type": "gift",
+  "name": "gift.shadow-smith.name",
+  "traits": [
+    "shadow"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.shadow-smith.text",
+  "tier": "minor",
+  "aspect": "shadow",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "gift.shadow-smith.activations.0.text"
+    }
+  ]
+}

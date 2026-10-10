@@ -1,0 +1,19 @@
+{
+  "id": "gift.encompassing-darkness",
+  "type": "gift",
+  "name": "gift.encompassing-darkness.name",
+  "traits": [
+    "shadow"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 317,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.encompassing-darkness.text",
+  "tier": "minor",
+  "aspect": "shadow"
+}

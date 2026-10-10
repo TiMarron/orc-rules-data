@@ -1,0 +1,30 @@
+{
+  "id": "gift.form-of-fury",
+  "type": "gift",
+  "name": "gift.form-of-fury.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.form-of-fury.text",
+  "tier": "major",
+  "aspect": "beast",
+  "requires": {
+    "relicIs": "worn"
+  },
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.form-of-fury.activations.0.frequency",
+      "text": "gift.form-of-fury.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "gift.recalculate",
+  "type": "gift",
+  "name": "gift.recalculate.name",
+  "traits": [
+    "mental"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 316,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.recalculate.text",
+  "tier": "minor",
+  "aspect": "mind",
+  "activations": [
+    {
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "trigger": "gift.recalculate.activations.0.trigger",
+      "text": "gift.recalculate.activations.0.text"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "gift.umbral-body",
+  "type": "gift",
+  "name": "gift.umbral-body.name",
+  "traits": [
+    "shadow"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 318,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.umbral-body.text",
+  "tier": "grand",
+  "aspect": "shadow",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "gift.umbral-body.activations.0.text"
+    }
+  ]
+}

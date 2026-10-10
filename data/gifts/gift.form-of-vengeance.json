@@ -1,0 +1,20 @@
+{
+  "id": "gift.form-of-vengeance",
+  "type": "gift",
+  "name": "gift.form-of-vengeance.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.form-of-vengeance.text",
+  "tier": "grand",
+  "aspect": "beast",
+  "requires": {
+    "gift": "gift.form-of-fury"
+  }
+}

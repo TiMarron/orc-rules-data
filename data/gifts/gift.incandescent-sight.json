@@ -1,0 +1,29 @@
+{
+  "id": "gift.incandescent-sight",
+  "type": "gift",
+  "name": "gift.incandescent-sight.name",
+  "traits": [
+    "fire"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 314,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.incandescent-sight.text",
+  "tier": "minor",
+  "aspect": "fire",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.incandescent-sight.activations.0.frequency",
+      "text": "gift.incandescent-sight.activations.0.text"
+    }
+  ]
+}

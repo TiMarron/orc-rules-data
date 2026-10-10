@@ -1,0 +1,31 @@
+{
+  "id": "gift.divine-retribution",
+  "type": "gift",
+  "name": "gift.divine-retribution.name",
+  "traits": [
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 310,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.divine-retribution.text",
+  "tier": "minor",
+  "aspect": "celestial",
+  "requires": {
+    "relicIs": "weapon"
+  },
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "gift.divine-retribution.activations.0.text"
+    }
+  ]
+}

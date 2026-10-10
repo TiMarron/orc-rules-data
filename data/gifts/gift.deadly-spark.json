@@ -1,0 +1,30 @@
+{
+  "id": "gift.deadly-spark",
+  "type": "gift",
+  "name": "gift.deadly-spark.name",
+  "traits": [
+    "air",
+    "electricity"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 309,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.deadly-spark.text",
+  "tier": "minor",
+  "aspect": "air",
+  "activations": [
+    {
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "gift.deadly-spark.activations.0.text"
+    }
+  ]
+}

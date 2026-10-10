@@ -1,0 +1,29 @@
+{
+  "id": "gift.fiendish-bargain",
+  "type": "gift",
+  "name": "gift.fiendish-bargain.name",
+  "traits": [
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 313,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "gift.fiendish-bargain.text",
+  "tier": "major",
+  "aspect": "fiend",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "gift.fiendish-bargain.activations.0.frequency",
+      "text": "gift.fiendish-bargain.activations.0.text"
+    }
+  ]
+}

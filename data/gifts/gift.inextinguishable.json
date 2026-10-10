@@ -1,0 +1,19 @@
+{
+  "id": "gift.inextinguishable",
+  "type": "gift",
+  "name": "gift.inextinguishable.name",
+  "traits": [
+    "vitality"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 315,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "gift.inextinguishable.text",
+  "tier": "major",
+  "aspect": "life"
+}
