@@ -38,7 +38,8 @@
         "name": { "$ref": "#/$defs/key", "$comment": "'Trapdoor', 'Spout' — absent when the book prints a bare Hardness/HP." },
         "hardness": { "type": "integer", "minimum": 0, "$comment": "Absent when the book prints HP alone (an environmental hazard such as a web)." },
         "hp": { "type": "integer", "minimum": 1 },
-        "bt": { "type": "integer", "minimum": 0 }
+        "bt": { "type": "integer", "minimum": 0 },
+        "note": { "$ref": "#/$defs/key", "$comment": "What the book prints after the numbers: 'per junction', 'to destroy the control panel and disable the trap'." }
       }
     },
     "ability": {
