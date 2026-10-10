@@ -21,5 +21,5 @@
   "actions": "1",
   "requirements": "feat.tap-into-blood.requirements",
   "prerequisites": [],
-  "editNote": "The structured source glues the link to the next word (\"Arcana\" + \"instead\" with no space); the book prints them as two words, so the space is restored. Nothing else changes."
+  "editNote": "The structured source glues the link to the next word (\"Arcana\" + \"instead\" with no space); the book prints them as two words, so the space is restored. Nothing else changes. The blank lines around its lists follow the converter, which now sets every list a paragraph apart from the text before and after it."
 }

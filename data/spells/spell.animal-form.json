@@ -38,5 +38,5 @@
       "text": "spell.animal-form.heightened.2"
     }
   ],
-  "editNote": "Reserved Material removed: the heading grouping the animal list under another book's title dropped; the list itself is unchanged; the dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+  "editNote": "Reserved Material removed: the heading grouping the animal list under another book's title dropped; the list itself is unchanged; the dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent. The blank lines around its lists follow the converter, which now sets every list a paragraph apart from the text before and after it."
 }

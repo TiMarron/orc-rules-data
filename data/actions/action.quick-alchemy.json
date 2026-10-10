@@ -17,5 +17,5 @@
   "text": "action.quick-alchemy.text",
   "actions": "1",
   "requirements": "action.quick-alchemy.requirements",
-  "editNote": "Accepted: cost, traits and requirement match the printing, and both options (Create Consumable, Quick Vial) are kept as bullets. The dropped block is a clarification note the structured source adds; the book does not print it."
+  "editNote": "Accepted: cost, traits and requirement match the book, and both options (Create Consumable, Quick Vial) are kept as bullets. The dropped block is Paizo's clarification of the potency rule (spring 2026 errata, page 59), for which the dataset markup has no place."
 }
