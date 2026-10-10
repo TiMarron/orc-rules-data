@@ -11,8 +11,8 @@
     "page": 88,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "affliction.choking-death.text",
   "kind": "disease",
   "level": 6,
@@ -49,5 +49,6 @@
     {
       "text": "affliction.choking-death.stages.3"
     }
-  ]
+  ],
+  "editNote": "Reserved Material removed: the region's proper name replaced with 'one remote region'. Rules text is the book's."
 }
