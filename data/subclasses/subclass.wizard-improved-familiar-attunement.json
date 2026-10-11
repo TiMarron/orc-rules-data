@@ -1,0 +1,18 @@
+{
+  "id": "subclass.wizard-improved-familiar-attunement",
+  "type": "subclass",
+  "name": "subclass.wizard-improved-familiar-attunement.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 195,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.wizard-improved-familiar-attunement.text",
+  "class": "class.wizard",
+  "kind": "arcane-thesis",
+  "level": 1
+}

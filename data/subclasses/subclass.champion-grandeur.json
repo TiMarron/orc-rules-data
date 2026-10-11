@@ -1,0 +1,37 @@
+{
+  "id": "subclass.champion-grandeur",
+  "type": "subclass",
+  "name": "subclass.champion-grandeur.name",
+  "traits": [
+    "holy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 91,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.champion-grandeur.text",
+  "class": "class.champion",
+  "kind": "cause",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.champion-grandeur.features.0.name",
+      "text": "subclass.champion-grandeur.features.0.text"
+    },
+    {
+      "level": 9,
+      "name": "subclass.champion-grandeur.features.1.name",
+      "text": "subclass.champion-grandeur.features.1.text"
+    },
+    {
+      "level": 11,
+      "name": "subclass.champion-grandeur.features.2.name",
+      "text": "subclass.champion-grandeur.features.2.text"
+    }
+  ]
+}

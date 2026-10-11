@@ -1,0 +1,37 @@
+{
+  "id": "subclass.champion-iniquity",
+  "type": "subclass",
+  "name": "subclass.champion-iniquity.name",
+  "traits": [
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 91,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.champion-iniquity.text",
+  "class": "class.champion",
+  "kind": "cause",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.champion-iniquity.features.0.name",
+      "text": "subclass.champion-iniquity.features.0.text"
+    },
+    {
+      "level": 9,
+      "name": "subclass.champion-iniquity.features.1.name",
+      "text": "subclass.champion-iniquity.features.1.text"
+    },
+    {
+      "level": 11,
+      "name": "subclass.champion-iniquity.features.2.name",
+      "text": "subclass.champion-iniquity.features.2.text"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "subclass.oracle-tempest",
+  "type": "subclass",
+  "name": "subclass.oracle-tempest.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 137,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.oracle-tempest.text",
+  "class": "class.oracle",
+  "kind": "mystery",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.electric-arc"
+    ],
+    "ranks": {
+      "1": [
+        "spell.thunderstrike"
+      ],
+      "4": [
+        "spell.hydraulic-torrent"
+      ],
+      "6": [
+        "spell.chain-lightning"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.tempest-touch",
+    "advanced": "spell.thunderburst",
+    "greater": "spell.tempest-form"
+  },
+  "skills": [
+    "skill.nature"
+  ],
+  "feat": "feat.foretell-harm",
+  "editNote": "Reserved"
+}

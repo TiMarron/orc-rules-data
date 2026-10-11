@@ -1,0 +1,19 @@
+{
+  "id": "subclass.wizard-staff-nexus",
+  "type": "subclass",
+  "name": "subclass.wizard-staff-nexus.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 196,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.wizard-staff-nexus.text",
+  "class": "class.wizard",
+  "kind": "arcane-thesis",
+  "level": 1,
+  "editNote": "Reserved Material removed: the cross-reference to another book by its title and page, replaced with a generic descriptor; the wording otherwise unchanged."
+}

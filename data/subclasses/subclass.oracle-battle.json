@@ -1,0 +1,44 @@
+{
+  "id": "subclass.oracle-battle",
+  "type": "subclass",
+  "name": "subclass.oracle-battle.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 135,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.oracle-battle.text",
+  "class": "class.oracle",
+  "kind": "mystery",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.shield"
+    ],
+    "ranks": {
+      "1": [
+        "spell.sure-strike"
+      ],
+      "2": [
+        "spell.telekinetic-maneuver"
+      ],
+      "4": [
+        "spell.weapon-storm"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.weapon-trance",
+    "advanced": "spell.battlefield-persistence",
+    "greater": "spell.revel-in-retribution"
+  },
+  "skills": [
+    "skill.athletics"
+  ],
+  "feat": "feat.oracular-warning",
+  "editNote": "Reserved"
+}

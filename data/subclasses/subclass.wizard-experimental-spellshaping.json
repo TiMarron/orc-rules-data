@@ -1,0 +1,18 @@
+{
+  "id": "subclass.wizard-experimental-spellshaping",
+  "type": "subclass",
+  "name": "subclass.wizard-experimental-spellshaping.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 195,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.wizard-experimental-spellshaping.text",
+  "class": "class.wizard",
+  "kind": "arcane-thesis",
+  "level": 1
+}

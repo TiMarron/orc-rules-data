@@ -1,0 +1,44 @@
+{
+  "id": "subclass.oracle-ancestors",
+  "type": "subclass",
+  "name": "subclass.oracle-ancestors.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 135,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.oracle-ancestors.text",
+  "class": "class.oracle",
+  "kind": "mystery",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.guidance"
+    ],
+    "ranks": {
+      "1": [
+        "spell.ill-omen"
+      ],
+      "2": [
+        "spell.ghostly-carrier"
+      ],
+      "5": [
+        "spell.dreaming-potential"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.ancestral-touch",
+    "advanced": "spell.ancestral-defense",
+    "greater": "spell.ancestral-form"
+  },
+  "skills": [
+    "skill.society"
+  ],
+  "feat": "feat.whispers-of-weakness",
+  "editNote": "Reserved"
+}

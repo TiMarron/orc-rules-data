@@ -1,0 +1,22 @@
+{
+  "id": "subclass.witch-wilding-steward",
+  "type": "subclass",
+  "name": "subclass.witch-wilding-steward.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 185,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "subclass.witch-wilding-steward.text",
+  "class": "class.witch",
+  "kind": "patron",
+  "level": 1,
+  "tradition": "primal",
+  "skills": [
+    "skill.nature"
+  ]
+}

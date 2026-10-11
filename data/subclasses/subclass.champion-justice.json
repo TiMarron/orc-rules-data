@@ -1,0 +1,35 @@
+{
+  "id": "subclass.champion-justice",
+  "type": "subclass",
+  "name": "subclass.champion-justice.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 92,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.champion-justice.text",
+  "class": "class.champion",
+  "kind": "cause",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.champion-justice.features.0.name",
+      "text": "subclass.champion-justice.features.0.text"
+    },
+    {
+      "level": 9,
+      "name": "subclass.champion-justice.features.1.name",
+      "text": "subclass.champion-justice.features.1.text"
+    },
+    {
+      "level": 11,
+      "name": "subclass.champion-justice.features.2.name",
+      "text": "subclass.champion-justice.features.2.text"
+    }
+  ]
+}

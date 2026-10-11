@@ -1,0 +1,35 @@
+{
+  "id": "subclass.champion-obedience",
+  "type": "subclass",
+  "name": "subclass.champion-obedience.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 93,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.champion-obedience.text",
+  "class": "class.champion",
+  "kind": "cause",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.champion-obedience.features.0.name",
+      "text": "subclass.champion-obedience.features.0.text"
+    },
+    {
+      "level": 9,
+      "name": "subclass.champion-obedience.features.1.name",
+      "text": "subclass.champion-obedience.features.1.text"
+    },
+    {
+      "level": 11,
+      "name": "subclass.champion-obedience.features.2.name",
+      "text": "subclass.champion-obedience.features.2.text"
+    }
+  ]
+}

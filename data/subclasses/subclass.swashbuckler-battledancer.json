@@ -1,0 +1,28 @@
+{
+  "id": "subclass.swashbuckler-battledancer",
+  "type": "subclass",
+  "name": "subclass.swashbuckler-battledancer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 160,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.swashbuckler-battledancer.text",
+  "class": "class.swashbuckler",
+  "kind": "style",
+  "level": 1,
+  "skills": [
+    "skill.performance"
+  ],
+  "features": [
+    {
+      "level": 9,
+      "name": "subclass.swashbuckler-battledancer.features.0.name",
+      "text": "subclass.swashbuckler-battledancer.features.0.text"
+    }
+  ]
+}

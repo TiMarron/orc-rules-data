@@ -11,7 +11,10 @@ major for renamed or removed ids, new required fields and markup changes.
 - Subclasses, a new record type: the 1st-level choice of every class — its
   class and kind, the spells it grants by rank, its focus spells, tradition,
   trained skills, granted feat and abilities by level. Records live in
-  `data/subclasses/`.
+  `data/subclasses/`: the 69 first-level choices of Player Core (muses,
+  rackets, doctrines, druidic orders, hunter's edges, patrons) and Player
+  Core 2 (bloodlines, mysteries, causes, instincts, styles, methodologies,
+  research fields), beside the 7 arcane schools and 5 theses.
 - Vehicles, a new record type: space, crew, piloting checks, defences, speed
   and how the vehicle moves, collision and special abilities. Records live in
   `data/vehicles/`: the 23 vehicles of GM Core.
@@ -32,6 +35,9 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Fixed
 
+- Chemical Contagion, Expanded Splash and the berserker's cloaks link the
+  subclass records their text names (a research field, an instinct); only
+  links changed.
 - Paragraph breaks around lists in the text of 88 records — spells (the
   battle forms among them), feats, actions, archetypes, staves, a skill, a
   condition, a gift, and the energy breath potions and madcap top, whose

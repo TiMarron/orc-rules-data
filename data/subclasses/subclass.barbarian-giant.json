@@ -1,0 +1,35 @@
+{
+  "id": "subclass.barbarian-giant",
+  "type": "subclass",
+  "name": "subclass.barbarian-giant.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 75,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.barbarian-giant.text",
+  "class": "class.barbarian",
+  "kind": "instinct",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.barbarian-giant.features.0.name",
+      "text": "subclass.barbarian-giant.features.0.text"
+    },
+    {
+      "level": 7,
+      "name": "subclass.barbarian-giant.features.1.name",
+      "text": "subclass.barbarian-giant.features.1.text"
+    },
+    {
+      "level": 9,
+      "name": "subclass.barbarian-giant.features.2.name",
+      "text": "subclass.barbarian-giant.features.2.text"
+    }
+  ]
+}

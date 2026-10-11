@@ -1,0 +1,62 @@
+{
+  "id": "subclass.sorcerer-imperial",
+  "type": "subclass",
+  "name": "subclass.sorcerer-imperial.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 152,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.sorcerer-imperial.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.detect-magic"
+    ],
+    "ranks": {
+      "1": [
+        "spell.force-barrage"
+      ],
+      "2": [
+        "spell.dispel-magic"
+      ],
+      "3": [
+        "spell.haste"
+      ],
+      "4": [
+        "spell.translocate"
+      ],
+      "5": [
+        "spell.scouting-eye"
+      ],
+      "6": [
+        "spell.disintegrate"
+      ],
+      "7": [
+        "spell.retrocognition"
+      ],
+      "8": [
+        "spell.quandary"
+      ],
+      "9": [
+        "spell.implosion"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.ancestral-memories",
+    "advanced": "spell.extend-blood-magic",
+    "greater": "spell.arcane-countermeasure"
+  },
+  "tradition": "arcane",
+  "skills": [
+    "skill.arcana",
+    "skill.society"
+  ]
+}

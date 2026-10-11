@@ -1,0 +1,21 @@
+{
+  "id": "subclass.rogue-ruffian",
+  "type": "subclass",
+  "name": "subclass.rogue-ruffian.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 166,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "subclass.rogue-ruffian.text",
+  "class": "class.rogue",
+  "kind": "racket",
+  "level": 1,
+  "skills": [
+    "skill.intimidation"
+  ]
+}

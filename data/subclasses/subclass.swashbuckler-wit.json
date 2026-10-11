@@ -1,0 +1,28 @@
+{
+  "id": "subclass.swashbuckler-wit",
+  "type": "subclass",
+  "name": "subclass.swashbuckler-wit.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 161,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.swashbuckler-wit.text",
+  "class": "class.swashbuckler",
+  "kind": "style",
+  "level": 1,
+  "skills": [
+    "skill.diplomacy"
+  ],
+  "features": [
+    {
+      "level": 9,
+      "name": "subclass.swashbuckler-wit.features.0.name",
+      "text": "subclass.swashbuckler-wit.features.0.text"
+    }
+  ]
+}

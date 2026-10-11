@@ -1,0 +1,18 @@
+{
+  "id": "subclass.wizard-spell-blending",
+  "type": "subclass",
+  "name": "subclass.wizard-spell-blending.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 195,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.wizard-spell-blending.text",
+  "class": "class.wizard",
+  "kind": "arcane-thesis",
+  "level": 1
+}

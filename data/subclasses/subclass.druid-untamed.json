@@ -1,0 +1,18 @@
+{
+  "id": "subclass.druid-untamed",
+  "type": "subclass",
+  "name": "subclass.druid-untamed.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 126,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.druid-untamed.text",
+  "class": "class.druid",
+  "kind": "druidic-order",
+  "level": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "subclass.witch-the-inscribed-one",
+  "type": "subclass",
+  "name": "subclass.witch-the-inscribed-one.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 184,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.witch-the-inscribed-one.text",
+  "class": "class.witch",
+  "kind": "patron",
+  "level": 1,
+  "grantedSpells": {
+    "ranks": {
+      "1": [
+        "spell.runic-weapon"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.discern-secrets"
+  },
+  "tradition": "arcane",
+  "skills": [
+    "skill.arcana"
+  ]
+}

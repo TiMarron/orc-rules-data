@@ -1,0 +1,50 @@
+{
+  "id": "subclass.alchemist-bomber",
+  "type": "subclass",
+  "name": "subclass.alchemist-bomber.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 61,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.alchemist-bomber.text",
+  "class": "class.alchemist",
+  "kind": "research-field",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.alchemist-bomber.features.0.name",
+      "text": "subclass.alchemist-bomber.features.0.text"
+    },
+    {
+      "level": 1,
+      "name": "subclass.alchemist-bomber.features.1.name",
+      "text": "subclass.alchemist-bomber.features.1.text"
+    },
+    {
+      "level": 1,
+      "name": "subclass.alchemist-bomber.features.2.name",
+      "text": "subclass.alchemist-bomber.features.2.text"
+    },
+    {
+      "level": 5,
+      "name": "subclass.alchemist-bomber.features.3.name",
+      "text": "subclass.alchemist-bomber.features.3.text"
+    },
+    {
+      "level": 11,
+      "name": "subclass.alchemist-bomber.features.4.name",
+      "text": "subclass.alchemist-bomber.features.4.text"
+    },
+    {
+      "level": 13,
+      "name": "subclass.alchemist-bomber.features.5.name",
+      "text": "subclass.alchemist-bomber.features.5.text"
+    }
+  ]
+}

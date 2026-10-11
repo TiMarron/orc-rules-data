@@ -1,0 +1,36 @@
+{
+  "id": "subclass.barbarian-dragon",
+  "type": "subclass",
+  "name": "subclass.barbarian-dragon.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 74,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.barbarian-dragon.text",
+  "class": "class.barbarian",
+  "kind": "instinct",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.barbarian-dragon.features.0.name",
+      "text": "subclass.barbarian-dragon.features.0.text"
+    },
+    {
+      "level": 7,
+      "name": "subclass.barbarian-dragon.features.1.name",
+      "text": "subclass.barbarian-dragon.features.1.text"
+    },
+    {
+      "level": 9,
+      "name": "subclass.barbarian-dragon.features.2.name",
+      "text": "subclass.barbarian-dragon.features.2.text"
+    }
+  ],
+  "editNote": "The"
+}

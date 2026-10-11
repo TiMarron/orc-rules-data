@@ -1,0 +1,62 @@
+{
+  "id": "subclass.sorcerer-diabolic",
+  "type": "subclass",
+  "name": "subclass.sorcerer-diabolic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 150,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.sorcerer-diabolic.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.ignition"
+    ],
+    "ranks": {
+      "1": [
+        "spell.charm"
+      ],
+      "2": [
+        "spell.floating-flame"
+      ],
+      "3": [
+        "spell.enthrall"
+      ],
+      "4": [
+        "spell.suggestion"
+      ],
+      "5": [
+        "spell.wave-of-despair"
+      ],
+      "6": [
+        "spell.truesight"
+      ],
+      "7": [
+        "spell.divine-decree"
+      ],
+      "8": [
+        "spell.divine-inspiration"
+      ],
+      "9": [
+        "spell.falling-stars"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.diabolic-edict",
+    "advanced": "spell.embrace-the-pit",
+    "greater": "spell.hellfire-plume"
+  },
+  "tradition": "divine",
+  "skills": [
+    "skill.deception",
+    "skill.religion"
+  ]
+}

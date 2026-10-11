@@ -1,0 +1,27 @@
+{
+  "id": "subclass.bard-maestro",
+  "type": "subclass",
+  "name": "subclass.bard-maestro.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 98,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.bard-maestro.text",
+  "class": "class.bard",
+  "kind": "muse",
+  "level": 1,
+  "grantedSpells": {
+    "ranks": {
+      "1": [
+        "spell.soothe"
+      ]
+    }
+  },
+  "feat": "feat.lingering-composition",
+  "editNote": "Reserved"
+}

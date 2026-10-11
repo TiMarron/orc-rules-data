@@ -1,0 +1,25 @@
+{
+  "id": "subclass.ranger-outwit",
+  "type": "subclass",
+  "name": "subclass.ranger-outwit.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 154,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.ranger-outwit.text",
+  "class": "class.ranger",
+  "kind": "hunters-edge",
+  "level": 1,
+  "features": [
+    {
+      "level": 17,
+      "name": "subclass.ranger-outwit.features.0.name",
+      "text": "subclass.ranger-outwit.features.0.text"
+    }
+  ]
+}

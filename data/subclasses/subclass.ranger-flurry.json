@@ -1,0 +1,25 @@
+{
+  "id": "subclass.ranger-flurry",
+  "type": "subclass",
+  "name": "subclass.ranger-flurry.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 154,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.ranger-flurry.text",
+  "class": "class.ranger",
+  "kind": "hunters-edge",
+  "level": 1,
+  "features": [
+    {
+      "level": 17,
+      "name": "subclass.ranger-flurry.features.0.name",
+      "text": "subclass.ranger-flurry.features.0.text"
+    }
+  ]
+}

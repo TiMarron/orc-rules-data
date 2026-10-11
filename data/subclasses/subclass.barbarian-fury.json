@@ -1,0 +1,35 @@
+{
+  "id": "subclass.barbarian-fury",
+  "type": "subclass",
+  "name": "subclass.barbarian-fury.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 75,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.barbarian-fury.text",
+  "class": "class.barbarian",
+  "kind": "instinct",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.barbarian-fury.features.0.name",
+      "text": "subclass.barbarian-fury.features.0.text"
+    },
+    {
+      "level": 7,
+      "name": "subclass.barbarian-fury.features.1.name",
+      "text": "subclass.barbarian-fury.features.1.text"
+    },
+    {
+      "level": 9,
+      "name": "subclass.barbarian-fury.features.2.name",
+      "text": "subclass.barbarian-fury.features.2.text"
+    }
+  ]
+}

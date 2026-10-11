@@ -1,0 +1,21 @@
+{
+  "id": "subclass.investigator-alchemical-sciences",
+  "type": "subclass",
+  "name": "subclass.investigator-alchemical-sciences.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 103,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.investigator-alchemical-sciences.text",
+  "class": "class.investigator",
+  "kind": "methodology",
+  "level": 1,
+  "skills": [
+    "skill.crafting"
+  ]
+}
