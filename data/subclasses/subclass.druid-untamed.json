@@ -9,10 +9,18 @@
     "page": 126,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "subclass.druid-untamed.text",
   "class": "class.druid",
   "kind": "druidic-order",
-  "level": 1
+  "level": 1,
+  "skills": [
+    "skill.intimidation"
+  ],
+  "feat": "feat.untamed-form",
+  "focusSpells": {
+    "initial": "spell.untamed-shift"
+  },
+  "editNote": "Order skill, druid feat, order spell and anathema added as the book prints them under the order; the structured source carries only the order's description."
 }

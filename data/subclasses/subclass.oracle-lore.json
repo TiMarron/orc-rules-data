@@ -36,10 +36,9 @@
     "advanced": "spell.access-lore",
     "greater": "spell.dread-secret"
   },
-  "skills": [
-    "skill.occultism",
-    "skill.lore"
-  ],
   "feat": "feat.whispers-of-weakness",
-  "editNote": "Reserved"
+  "skills": [
+    "skill.occultism"
+  ],
+  "editNote": "Reserved Material removed: deity, people and plane names replaced with generic descriptors; the wording otherwise unchanged. The mystery skill is Occultism; the second is any Lore skill of the oracle's choice, which stays in the text."
 }
