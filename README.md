@@ -7,7 +7,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
-  school, thesis, package, archetype, ability, creature, ritual, material,
+  subclass, package, archetype, ability, creature, ritual, material,
   affliction, hazard, gift, vehicle.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
@@ -67,11 +67,19 @@ cost tokens.
   instead of `ancestry`.
 - An ancestry feat for a versatile heritage sets `versatile: true` instead of
   `ancestry`, the same way the heritage itself does.
-- A wizard's 1st-level choices are records of their own, not feats or features:
-  a `school` (arcane school) carries its `curriculum` — cantrips plus one spell list
-  per rank — and its `schoolSpells` focus spells; a `thesis` (arcane thesis) carries
-  its rules in `text`. Both name the class in `class` and the level they are chosen
-  at in `level`. The school of unified magical theory sets no `curriculum`.
+- A class's 1st-level choice — a wizard's arcane school or thesis, a bard's
+  muse, a sorcerer's bloodline, a rogue's racket, a champion's cause and the
+  like — is a `subclass` record of its own, not a feat or a feature. It names
+  its class in `class`, what the class calls the choice in `kind` and the level
+  it is chosen at in `level`. What the book prints as lists is structured:
+  `grantedSpells` (cantrips and one list per rank: a school's curriculum, a
+  bloodline's sorcerous gifts, a mystery's granted spells, a muse's spell, the
+  spell a witch's familiar learns), `focusSpells` (initial, advanced, greater:
+  school, bloodline and revelation spells, a patron's hex cantrip),
+  `tradition`, the `skills` it trains outright, the `feat` it grants and
+  `features`, its abilities by level. Everything else — doctrines, blood
+  magic, edicts and anathema, a mystery's curse — is in `text`. The school of
+  unified magical theory sets no `grantedSpells`.
 - An `archetype` lists its feats in `feats` as `{ level, feat }` entries, the
   way a class lists its features: every feat the book prints for it, the
   dedication included, at the level the archetype offers it — the feat's own,
