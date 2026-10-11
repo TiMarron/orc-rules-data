@@ -30,5 +30,5 @@
     }
   ],
   "category": "held",
-  "editNote": "The book's d20 effect table (pages 274-275) is kept as a numbered list, since the dataset markup has no tables; 'on the table below' reads 'on the list below'. The rows are the source's, checked against the page, with its spell and condition links resolved."
+  "editNote": "The book's d20 effect table (pages 274-275) is kept as a numbered list, since the dataset markup has no tables; 'on the table below' reads 'on the list below'. The rows are the source's, checked against the page, with its spell and condition links resolved. The list stands a blank line below its lead-in, as every converted list does."
 }

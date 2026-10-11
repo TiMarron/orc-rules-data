@@ -29,5 +29,5 @@
     }
   ],
   "category": "consumable",
-  "editNote": "The book's energy-type table (page 259: acid 30-foot line, Reflex; cold 15-foot cone, Reflex; electricity 30-foot line, Reflex; fire 15-foot cone, Reflex; sonic 15-foot cone, Fortitude) is kept as a list, since the dataset markup has no tables; 'as seen in the table below' reads 'as listed below'."
+  "editNote": "The book's energy-type table (page 259: acid 30-foot line, Reflex; cold 15-foot cone, Reflex; electricity 30-foot line, Reflex; fire 15-foot cone, Reflex; sonic 15-foot cone, Fortitude) is kept as a list, since the dataset markup has no tables; 'as seen in the table below' reads 'as listed below'. The list stands a blank line below its lead-in, as every converted list does."
 }
