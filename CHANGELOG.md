@@ -28,9 +28,10 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Fixed
 
-- Paragraph breaks around lists in the text of 83 records — spells (the
+- Paragraph breaks around lists in the text of 88 records — spells (the
   battle forms among them), feats, actions, archetypes, staves, a skill, a
-  condition and a gift. Each list now stands a blank line from the text before
+  condition, a gift, and the energy breath potions and madcap top, whose
+  printed tables are kept as lists. Each list now stands a blank line from the text before
   and after it, and a sentence printed after a list is its own paragraph again
   instead of running on from the last item (Storm Lord's "In addition…",
   Strategic Assessment's "The GM can choose…"). Words and links are unchanged.
