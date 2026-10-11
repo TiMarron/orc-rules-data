@@ -1,0 +1,18 @@
+{
+  "id": "subclass.wizard-spell-substitution",
+  "type": "subclass",
+  "name": "subclass.wizard-spell-substitution.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 196,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.wizard-spell-substitution.text",
+  "class": "class.wizard",
+  "kind": "arcane-thesis",
+  "level": 1
+}

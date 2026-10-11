@@ -1,0 +1,63 @@
+{
+  "id": "subclass.sorcerer-fey",
+  "type": "subclass",
+  "name": "subclass.sorcerer-fey.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 151,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.sorcerer-fey.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.figment"
+    ],
+    "ranks": {
+      "1": [
+        "spell.charm"
+      ],
+      "2": [
+        "spell.laughing-fit"
+      ],
+      "3": [
+        "spell.enthrall"
+      ],
+      "4": [
+        "spell.suggestion"
+      ],
+      "5": [
+        "spell.hallucination"
+      ],
+      "6": [
+        "spell.mislead"
+      ],
+      "7": [
+        "spell.visions-of-danger"
+      ],
+      "8": [
+        "spell.uncontrollable-dance"
+      ],
+      "9": [
+        "spell.metamorphosis"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.faerie-dust",
+    "advanced": "spell.fey-disappearance",
+    "greater": "spell.fey-glamour"
+  },
+  "tradition": "primal",
+  "skills": [
+    "skill.deception",
+    "skill.nature"
+  ],
+  "editNote": "Reserved"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "subclass.alchemist-mutagenist",
+  "type": "subclass",
+  "name": "subclass.alchemist-mutagenist.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 61,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.alchemist-mutagenist.text",
+  "class": "class.alchemist",
+  "kind": "research-field",
+  "level": 1,
+  "features": [
+    {
+      "level": 1,
+      "name": "subclass.alchemist-mutagenist.features.0.name",
+      "text": "subclass.alchemist-mutagenist.features.0.text"
+    },
+    {
+      "level": 1,
+      "name": "subclass.alchemist-mutagenist.features.1.name",
+      "text": "subclass.alchemist-mutagenist.features.1.text"
+    },
+    {
+      "level": 1,
+      "name": "subclass.alchemist-mutagenist.features.2.name",
+      "text": "subclass.alchemist-mutagenist.features.2.text"
+    },
+    {
+      "level": 5,
+      "name": "subclass.alchemist-mutagenist.features.3.name",
+      "text": "subclass.alchemist-mutagenist.features.3.text"
+    },
+    {
+      "level": 11,
+      "name": "subclass.alchemist-mutagenist.features.4.name",
+      "text": "subclass.alchemist-mutagenist.features.4.text"
+    },
+    {
+      "level": 13,
+      "name": "subclass.alchemist-mutagenist.features.5.name",
+      "text": "subclass.alchemist-mutagenist.features.5.text"
+    }
+  ]
+}

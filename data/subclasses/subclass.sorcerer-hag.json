@@ -1,0 +1,62 @@
+{
+  "id": "subclass.sorcerer-hag",
+  "type": "subclass",
+  "name": "subclass.sorcerer-hag.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 152,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.sorcerer-hag.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.daze"
+    ],
+    "ranks": {
+      "1": [
+        "spell.illusory-disguise"
+      ],
+      "2": [
+        "spell.stupefy"
+      ],
+      "3": [
+        "spell.blindness"
+      ],
+      "4": [
+        "spell.outcasts-curse"
+      ],
+      "5": [
+        "spell.mariners-curse"
+      ],
+      "6": [
+        "spell.cursed-metamorphosis"
+      ],
+      "7": [
+        "spell.warp-mind"
+      ],
+      "8": [
+        "spell.quandary"
+      ],
+      "9": [
+        "spell.phantasmagoria"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.jealous-hex",
+    "advanced": "spell.horrific-visage",
+    "greater": "spell.youre-mine"
+  },
+  "tradition": "occult",
+  "skills": [
+    "skill.deception",
+    "skill.occultism"
+  ]
+}

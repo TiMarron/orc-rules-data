@@ -1,0 +1,27 @@
+{
+  "id": "subclass.bard-polymath",
+  "type": "subclass",
+  "name": "subclass.bard-polymath.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 98,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.bard-polymath.text",
+  "class": "class.bard",
+  "kind": "muse",
+  "level": 1,
+  "grantedSpells": {
+    "ranks": {
+      "1": [
+        "spell.phantasmal-minion"
+      ]
+    }
+  },
+  "feat": "feat.versatile-performance",
+  "editNote": "Reserved"
+}

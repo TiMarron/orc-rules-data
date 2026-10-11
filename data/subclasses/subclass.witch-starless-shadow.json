@@ -1,0 +1,33 @@
+{
+  "id": "subclass.witch-starless-shadow",
+  "type": "subclass",
+  "name": "subclass.witch-starless-shadow.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 185,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.witch-starless-shadow.text",
+  "class": "class.witch",
+  "kind": "patron",
+  "level": 1,
+  "grantedSpells": {
+    "ranks": {
+      "1": [
+        "spell.fear"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.shroud-of-night"
+  },
+  "tradition": "occult",
+  "skills": [
+    "skill.occultism"
+  ],
+  "editNote": "Reserved"
+}

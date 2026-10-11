@@ -1,0 +1,62 @@
+{
+  "id": "subclass.sorcerer-angelic",
+  "type": "subclass",
+  "name": "subclass.sorcerer-angelic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 150,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.sorcerer-angelic.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.light"
+    ],
+    "ranks": {
+      "1": [
+        "spell.heal"
+      ],
+      "2": [
+        "spell.spiritual-armament"
+      ],
+      "3": [
+        "spell.holy-light"
+      ],
+      "4": [
+        "spell.divine-wrath"
+      ],
+      "5": [
+        "spell.divine-immolation"
+      ],
+      "6": [
+        "spell.blessed-boundary"
+      ],
+      "7": [
+        "spell.divine-decree"
+      ],
+      "8": [
+        "spell.moment-of-renewal"
+      ],
+      "9": [
+        "spell.foresight"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.angelic-halo",
+    "advanced": "spell.angelic-wings",
+    "greater": "spell.celestial-brand"
+  },
+  "tradition": "divine",
+  "skills": [
+    "skill.diplomacy",
+    "skill.religion"
+  ]
+}

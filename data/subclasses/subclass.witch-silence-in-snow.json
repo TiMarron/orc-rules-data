@@ -1,0 +1,32 @@
+{
+  "id": "subclass.witch-silence-in-snow",
+  "type": "subclass",
+  "name": "subclass.witch-silence-in-snow.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 185,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.witch-silence-in-snow.text",
+  "class": "class.witch",
+  "kind": "patron",
+  "level": 1,
+  "grantedSpells": {
+    "ranks": {
+      "1": [
+        "spell.gust-of-wind"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.clinging-ice"
+  },
+  "tradition": "primal",
+  "skills": [
+    "skill.nature"
+  ]
+}

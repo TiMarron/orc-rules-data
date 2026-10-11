@@ -1,0 +1,18 @@
+{
+  "id": "subclass.druid-animal",
+  "type": "subclass",
+  "name": "subclass.druid-animal.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 125,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.druid-animal.text",
+  "class": "class.druid",
+  "kind": "druidic-order",
+  "level": 1
+}

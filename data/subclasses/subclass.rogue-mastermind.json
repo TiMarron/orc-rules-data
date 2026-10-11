@@ -1,0 +1,21 @@
+{
+  "id": "subclass.rogue-mastermind",
+  "type": "subclass",
+  "name": "subclass.rogue-mastermind.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 166,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.rogue-mastermind.text",
+  "class": "class.rogue",
+  "kind": "racket",
+  "level": 1,
+  "skills": [
+    "skill.society"
+  ]
+}

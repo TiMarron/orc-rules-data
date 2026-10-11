@@ -1,0 +1,32 @@
+{
+  "id": "subclass.witch-the-resentment",
+  "type": "subclass",
+  "name": "subclass.witch-the-resentment.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 184,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.witch-the-resentment.text",
+  "class": "class.witch",
+  "kind": "patron",
+  "level": 1,
+  "grantedSpells": {
+    "ranks": {
+      "1": [
+        "spell.enfeeble"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.evil-eye"
+  },
+  "tradition": "occult",
+  "skills": [
+    "skill.occultism"
+  ]
+}

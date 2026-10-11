@@ -1,0 +1,22 @@
+{
+  "id": "subclass.rogue-scoundrel",
+  "type": "subclass",
+  "name": "subclass.rogue-scoundrel.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 166,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.rogue-scoundrel.text",
+  "class": "class.rogue",
+  "kind": "racket",
+  "level": 1,
+  "skills": [
+    "skill.deception",
+    "skill.diplomacy"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "subclass.witch-faiths-flamekeeper",
+  "type": "subclass",
+  "name": "subclass.witch-faiths-flamekeeper.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 184,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.witch-faiths-flamekeeper.text",
+  "class": "class.witch",
+  "kind": "patron",
+  "level": 1,
+  "grantedSpells": {
+    "ranks": {
+      "1": [
+        "spell.command"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.stoke-the-heart"
+  },
+  "tradition": "divine",
+  "skills": [
+    "skill.religion"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "subclass.druid-storm",
+  "type": "subclass",
+  "name": "subclass.druid-storm.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 125,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.druid-storm.text",
+  "class": "class.druid",
+  "kind": "druidic-order",
+  "level": 1
+}

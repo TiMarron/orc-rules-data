@@ -1,0 +1,29 @@
+{
+  "id": "subclass.sorcerer-elemental",
+  "type": "subclass",
+  "name": "subclass.sorcerer-elemental.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 151,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.sorcerer-elemental.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "focusSpells": {
+    "initial": "spell.elemental-toss",
+    "advanced": "spell.elemental-motion",
+    "greater": "spell.elemental-blast"
+  },
+  "tradition": "primal",
+  "skills": [
+    "skill.intimidation",
+    "skill.nature"
+  ],
+  "editNote": "The"
+}

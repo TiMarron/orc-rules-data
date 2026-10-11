@@ -1,0 +1,62 @@
+{
+  "id": "subclass.sorcerer-demonic",
+  "type": "subclass",
+  "name": "subclass.sorcerer-demonic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 150,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.sorcerer-demonic.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.caustic-blast"
+    ],
+    "ranks": {
+      "1": [
+        "spell.fear"
+      ],
+      "2": [
+        "spell.enlarge"
+      ],
+      "3": [
+        "spell.slow"
+      ],
+      "4": [
+        "spell.divine-wrath"
+      ],
+      "5": [
+        "spell.blister"
+      ],
+      "6": [
+        "spell.disintegrate"
+      ],
+      "7": [
+        "spell.divine-decree"
+      ],
+      "8": [
+        "spell.canticle-of-everlasting-grief"
+      ],
+      "9": [
+        "spell.implosion"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.gluttons-jaws",
+    "advanced": "spell.swamp-of-sloth",
+    "greater": "spell.chthonian-wrath"
+  },
+  "tradition": "divine",
+  "skills": [
+    "skill.intimidation",
+    "skill.religion"
+  ]
+}

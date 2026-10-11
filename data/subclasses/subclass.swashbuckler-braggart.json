@@ -1,0 +1,28 @@
+{
+  "id": "subclass.swashbuckler-braggart",
+  "type": "subclass",
+  "name": "subclass.swashbuckler-braggart.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 160,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.swashbuckler-braggart.text",
+  "class": "class.swashbuckler",
+  "kind": "style",
+  "level": 1,
+  "skills": [
+    "skill.intimidation"
+  ],
+  "features": [
+    {
+      "level": 9,
+      "name": "subclass.swashbuckler-braggart.features.0.name",
+      "text": "subclass.swashbuckler-braggart.features.0.text"
+    }
+  ]
+}

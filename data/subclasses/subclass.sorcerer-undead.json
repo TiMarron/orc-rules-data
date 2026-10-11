@@ -1,0 +1,62 @@
+{
+  "id": "subclass.sorcerer-undead",
+  "type": "subclass",
+  "name": "subclass.sorcerer-undead.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 152,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.sorcerer-undead.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.void-warp"
+    ],
+    "ranks": {
+      "1": [
+        "spell.harm"
+      ],
+      "2": [
+        "spell.see-the-unseen"
+      ],
+      "3": [
+        "spell.bind-undead"
+      ],
+      "4": [
+        "spell.talking-corpse"
+      ],
+      "5": [
+        "spell.invoke-spirits"
+      ],
+      "6": [
+        "spell.vampiric-exsanguination"
+      ],
+      "7": [
+        "spell.execute"
+      ],
+      "8": [
+        "spell.canticle-of-everlasting-grief"
+      ],
+      "9": [
+        "spell.wails-of-the-damned"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.undeaths-blessing",
+    "advanced": "spell.drain-life",
+    "greater": "spell.grasping-grave"
+  },
+  "tradition": "divine",
+  "skills": [
+    "skill.intimidation",
+    "skill.religion"
+  ]
+}

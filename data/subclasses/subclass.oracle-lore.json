@@ -1,0 +1,45 @@
+{
+  "id": "subclass.oracle-lore",
+  "type": "subclass",
+  "name": "subclass.oracle-lore.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 137,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.oracle-lore.text",
+  "class": "class.oracle",
+  "kind": "mystery",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.read-aura"
+    ],
+    "ranks": {
+      "1": [
+        "spell.mindlink"
+      ],
+      "3": [
+        "spell.hypercognition"
+      ],
+      "6": [
+        "spell.never-mind"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.brain-drain",
+    "advanced": "spell.access-lore",
+    "greater": "spell.dread-secret"
+  },
+  "skills": [
+    "skill.occultism",
+    "skill.lore"
+  ],
+  "feat": "feat.whispers-of-weakness",
+  "editNote": "Reserved"
+}

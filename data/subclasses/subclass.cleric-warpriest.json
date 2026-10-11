@@ -1,0 +1,18 @@
+{
+  "id": "subclass.cleric-warpriest",
+  "type": "subclass",
+  "name": "subclass.cleric-warpriest.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 112,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.cleric-warpriest.text",
+  "class": "class.cleric",
+  "kind": "doctrine",
+  "level": 1
+}

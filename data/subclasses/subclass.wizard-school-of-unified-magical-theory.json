@@ -1,0 +1,22 @@
+{
+  "id": "subclass.wizard-school-of-unified-magical-theory",
+  "type": "subclass",
+  "name": "subclass.wizard-school-of-unified-magical-theory.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core",
+    "page": 200,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.wizard-school-of-unified-magical-theory.text",
+  "class": "class.wizard",
+  "kind": "arcane-school",
+  "level": 1,
+  "focusSpells": {
+    "initial": "spell.hand-of-the-apprentice",
+    "advanced": "spell.interdisciplinary-incantation"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "subclass.oracle-life",
+  "type": "subclass",
+  "name": "subclass.oracle-life.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 137,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.oracle-life.text",
+  "class": "class.oracle",
+  "kind": "mystery",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.vitality-lash"
+    ],
+    "ranks": {
+      "1": [
+        "spell.soothe"
+      ],
+      "2": [
+        "spell.false-vitality"
+      ],
+      "5": [
+        "spell.grisly-growths"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.life-link",
+    "advanced": "spell.delay-affliction",
+    "greater": "spell.life-giving-form"
+  },
+  "skills": [
+    "skill.medicine"
+  ],
+  "feat": "feat.nudge-the-scales",
+  "editNote": "Reserved"
+}

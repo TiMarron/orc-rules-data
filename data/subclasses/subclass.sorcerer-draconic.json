@@ -1,0 +1,27 @@
+{
+  "id": "subclass.sorcerer-draconic",
+  "type": "subclass",
+  "name": "subclass.sorcerer-draconic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 150,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.sorcerer-draconic.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "focusSpells": {
+    "initial": "spell.flurry-of-claws",
+    "advanced": "spell.dragon-breath",
+    "greater": "spell.dragon-wings"
+  },
+  "skills": [
+    "skill.intimidation"
+  ],
+  "editNote": "The"
+}

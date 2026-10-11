@@ -1,0 +1,62 @@
+{
+  "id": "subclass.sorcerer-aberrant",
+  "type": "subclass",
+  "name": "subclass.sorcerer-aberrant.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 149,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.sorcerer-aberrant.text",
+  "class": "class.sorcerer",
+  "kind": "bloodline",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.daze"
+    ],
+    "ranks": {
+      "1": [
+        "spell.phantom-pain"
+      ],
+      "2": [
+        "spell.stupefy"
+      ],
+      "3": [
+        "spell.vampiric-feast"
+      ],
+      "4": [
+        "spell.confusion"
+      ],
+      "5": [
+        "spell.slither"
+      ],
+      "6": [
+        "spell.never-mind"
+      ],
+      "7": [
+        "spell.warp-mind"
+      ],
+      "8": [
+        "spell.uncontrollable-dance"
+      ],
+      "9": [
+        "spell.unfathomable-song"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.tentacular-limbs",
+    "advanced": "spell.aberrant-whispers",
+    "greater": "spell.unusual-anatomy"
+  },
+  "tradition": "occult",
+  "skills": [
+    "skill.intimidation",
+    "skill.occultism"
+  ]
+}

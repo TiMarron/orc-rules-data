@@ -1,0 +1,28 @@
+{
+  "id": "subclass.swashbuckler-fencer",
+  "type": "subclass",
+  "name": "subclass.swashbuckler-fencer.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 161,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.swashbuckler-fencer.text",
+  "class": "class.swashbuckler",
+  "kind": "style",
+  "level": 1,
+  "skills": [
+    "skill.deception"
+  ],
+  "features": [
+    {
+      "level": 9,
+      "name": "subclass.swashbuckler-fencer.features.0.name",
+      "text": "subclass.swashbuckler-fencer.features.0.text"
+    }
+  ]
+}

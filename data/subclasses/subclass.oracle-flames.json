@@ -1,0 +1,44 @@
+{
+  "id": "subclass.oracle-flames",
+  "type": "subclass",
+  "name": "subclass.oracle-flames.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 136,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "subclass.oracle-flames.text",
+  "class": "class.oracle",
+  "kind": "mystery",
+  "level": 1,
+  "grantedSpells": {
+    "cantrips": [
+      "spell.ignition"
+    ],
+    "ranks": {
+      "1": [
+        "spell.breathe-fire"
+      ],
+      "2": [
+        "spell.blazing-bolt"
+      ],
+      "3": [
+        "spell.fireball"
+      ]
+    }
+  },
+  "focusSpells": {
+    "initial": "spell.incendiary-aura",
+    "advanced": "spell.whirling-flames",
+    "greater": "spell.flaming-fusillade"
+  },
+  "skills": [
+    "skill.acrobatics"
+  ],
+  "feat": "feat.foretell-harm",
+  "editNote": "Reserved"
+}

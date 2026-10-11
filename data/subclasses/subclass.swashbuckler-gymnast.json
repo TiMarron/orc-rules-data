@@ -1,0 +1,28 @@
+{
+  "id": "subclass.swashbuckler-gymnast",
+  "type": "subclass",
+  "name": "subclass.swashbuckler-gymnast.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 161,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.swashbuckler-gymnast.text",
+  "class": "class.swashbuckler",
+  "kind": "style",
+  "level": 1,
+  "skills": [
+    "skill.athletics"
+  ],
+  "features": [
+    {
+      "level": 9,
+      "name": "subclass.swashbuckler-gymnast.features.0.name",
+      "text": "subclass.swashbuckler-gymnast.features.0.text"
+    }
+  ]
+}

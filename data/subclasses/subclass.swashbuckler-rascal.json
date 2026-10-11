@@ -1,0 +1,28 @@
+{
+  "id": "subclass.swashbuckler-rascal",
+  "type": "subclass",
+  "name": "subclass.swashbuckler-rascal.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 161,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.swashbuckler-rascal.text",
+  "class": "class.swashbuckler",
+  "kind": "style",
+  "level": 1,
+  "skills": [
+    "skill.thievery"
+  ],
+  "features": [
+    {
+      "level": 9,
+      "name": "subclass.swashbuckler-rascal.features.0.name",
+      "text": "subclass.swashbuckler-rascal.features.0.text"
+    }
+  ]
+}

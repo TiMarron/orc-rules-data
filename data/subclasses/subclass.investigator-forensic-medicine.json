@@ -1,0 +1,21 @@
+{
+  "id": "subclass.investigator-forensic-medicine",
+  "type": "subclass",
+  "name": "subclass.investigator-forensic-medicine.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "player-core-2",
+    "page": 104,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "subclass.investigator-forensic-medicine.text",
+  "class": "class.investigator",
+  "kind": "methodology",
+  "level": 1,
+  "skills": [
+    "skill.medicine"
+  ]
+}
