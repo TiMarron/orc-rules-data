@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subclass.schema.json",
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["class", "kind", "level"],
+      "properties": {
+        "type": { "const": "subclass" },
+        "class": { "$ref": "common.schema.json#/$defs/refClass" },
+        "kind": {
+          "enum": ["arcane-school", "arcane-thesis", "doctrine", "muse", "racket", "druidic-order", "hunters-edge", "patron", "bloodline", "mystery", "cause", "instinct", "style", "methodology", "research-field"],
+          "$comment": "What the class calls the choice: a wizard's arcane school or thesis, a bard's muse, a cleric's doctrine, a druid's order, a ranger's hunter's edge, a rogue's racket, a witch's patron, an alchemist's research field, a barbarian's instinct, a champion's cause, an investigator's methodology, an oracle's mystery, a sorcerer's bloodline, a swashbuckler's style."
+        },
+        "level": { "type": "integer", "minimum": 1, "maximum": 20, "$comment": "The level the choice is made at — 1st for every subclass of Player Core and Player Core 2." },
+        "grantedSpells": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "cantrips": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/refSpell" }, "minItems": 1, "uniqueItems": true },
+            "ranks": {
+              "type": "object",
+              "propertyNames": { "pattern": "^(10|[1-9])$" },
+              "additionalProperties": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/refSpell" }, "minItems": 1, "uniqueItems": true },
+              "minProperties": 1
+            }
+          },
+          "anyOf": [
+            { "properties": { "cantrips": true }, "required": ["cantrips"] },
+            { "properties": { "ranks": true }, "required": ["ranks"] }
+          ],
+          "$comment": "The spells the subclass adds to the class's spellbook or repertoire, as the book prints them: a cantrip list and one list per rank. A school's curriculum, a bloodline's sorcerous gifts, a mystery's granted spells, a muse's spell and the spell a witch's familiar learns from its patron (both rank 1). The school of unified magical theory sets none of this."
+        },
+        "focusSpells": {
+          "type": "object",
+          "required": ["initial"],
+          "additionalProperties": false,
+          "properties": {
+            "initial": { "$ref": "common.schema.json#/$defs/refSpell" },
+            "advanced": { "$ref": "common.schema.json#/$defs/refSpell" },
+            "greater": { "$ref": "common.schema.json#/$defs/refSpell" }
+          },
+          "$comment": "The focus spells the subclass grants as the character grows: a school's school spells, a bloodline's bloodline spells, a mystery's revelation spells, a patron's hex cantrip (initial only)."
+        },
+        "tradition": { "$ref": "common.schema.json#/$defs/tradition", "$comment": "The spell list the subclass fixes for a class whose tradition varies: a bloodline's, a patron's." },
+        "skills": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/refSkill" }, "minItems": 1, "uniqueItems": true, "$comment": "The skills the subclass trains outright. A choice the book offers ('one of the following') stays in the text." },
+        "feat": { "$ref": "common.schema.json#/$defs/refFeat", "$comment": "The feat the subclass grants at 1st level: a muse's, a mystery's." },
+        "features": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["level", "name", "text"],
+            "properties": {
+              "level": { "type": "integer", "minimum": 1, "maximum": 20 },
+              "name": { "$ref": "common.schema.json#/$defs/i18nKey" },
+              "text": { "$ref": "common.schema.json#/$defs/i18nKey" }
+            }
+          },
+          "$comment": "The subclass's abilities by level, in the book's order: a champion's reactions, a research field's discoveries, an instinct's specialization ability and raging resistance, a style's exemplary finisher, a hunter's edge's masterful hunter."
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

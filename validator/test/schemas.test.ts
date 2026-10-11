@@ -13,12 +13,12 @@ const VALID: Record<string, Record<string, unknown>> = {
   action: record('action', 'stride', { actions: '1' }),
   feat: record('feat', 'sudden-charge', { category: 'class', class: 'class.fighter', level: 1, actions: '2', prerequisites: [] }),
   feature: record('feature', 'reactive-strike', { class: 'class.fighter', level: 1 }),
-  school: record('school', 'school-of-mentalism', {
-    class: 'class.wizard', level: 1,
-    curriculum: { cantrips: ['spell.daze'], ranks: { 1: ['spell.sleep'] } },
-    schoolSpells: { initial: 'spell.charming-push', advanced: 'spell.invisibility-cloak' },
+  subclass: record('subclass', 'sorcerer-aberrant', {
+    class: 'class.sorcerer', kind: 'bloodline', level: 1, tradition: 'occult',
+    skills: ['skill.intimidation', 'skill.occultism'],
+    grantedSpells: { cantrips: ['spell.daze'], ranks: { 1: ['spell.phantom-pain'], 9: ['spell.unfathomable-song'] } },
+    focusSpells: { initial: 'spell.tentacular-limbs', advanced: 'spell.aberrant-whispers', greater: 'spell.unusual-anatomy' },
   }),
-  thesis: record('thesis', 'spell-blending', { class: 'class.wizard', level: 1 }),
   archetype: record('archetype', 'fighter', {
     class: 'class.fighter',
     feats: [{ level: 2, feat: 'feat.fighter-dedication' }, { level: 4, feat: 'feat.basic-maneuver' }],
@@ -398,32 +398,32 @@ describe('type schemas', () => {
     expect(issues[0]).toContain('/cost must match pattern');
   });
 
-  it('accepts a school without a curriculum (unified magical theory)', () => {
-    const school = record('school', 'school-of-unified-magical-theory', {
-      class: 'class.wizard', level: 1,
-      schoolSpells: { initial: 'spell.hand-of-the-apprentice', advanced: 'spell.interdisciplinary-incantation' },
-    });
-    expect(issuesFor('school', school)).toEqual([]);
+  it('accepts a thesis with only the required fields, a school without granted spells, and a cause with features', () => {
+    expect(issuesFor('subclass', record('subclass', 'wizard-spell-blending', { class: 'class.wizard', kind: 'arcane-thesis', level: 1 }))).toEqual([]);
+    expect(issuesFor('subclass', record('subclass', 'wizard-school-of-unified-magical-theory', {
+      class: 'class.wizard', kind: 'arcane-school', level: 1,
+      focusSpells: { initial: 'spell.hand-of-the-apprentice', advanced: 'spell.interdisciplinary-incantation' },
+    }))).toEqual([]);
+    expect(issuesFor('subclass', record('subclass', 'champion-justice', {
+      class: 'class.champion', kind: 'cause', level: 1, traits: ['holy'],
+      features: [
+        { level: 1, name: 'subclass.champion-justice.features.0.name', text: 'subclass.champion-justice.features.0.text' },
+        { level: 9, name: 'subclass.champion-justice.features.1.name', text: 'subclass.champion-justice.features.1.text' },
+      ],
+    }))).toEqual([]);
+    expect(issuesFor('subclass', record('subclass', 'bard-enigma', {
+      class: 'class.bard', kind: 'muse', level: 1, feat: 'feat.bardic-lore', grantedSpells: { ranks: { 1: ['spell.sure-strike'] } },
+    }))).toEqual([]);
   });
 
-  it('rejects a curriculum rank key outside 1..10', () => {
-    const school = record('school', 'school-of-mentalism', {
-      class: 'class.wizard', level: 1,
-      curriculum: { cantrips: ['spell.daze'], ranks: { 11: ['spell.sleep'] } },
-    });
-    const issues = issuesFor('school', school);
-    expect(issues.length).toBeGreaterThanOrEqual(1);
-    expect(issues.join(String.fromCharCode(10))).toContain('ranks');
-  });
-
-  it('rejects school spells without the initial one with exactly one issue', () => {
-    const school = record('school', 'school-of-mentalism', {
-      class: 'class.wizard', level: 1,
-      schoolSpells: { advanced: 'spell.invisibility-cloak' },
-    });
-    const issues = issuesFor('school', school);
+  it('rejects an unknown kind, a rank key outside 1..10, granted spells with neither list, focus spells without the initial one, and an empty features list', () => {
+    expect(issuesFor('subclass', { ...VALID.subclass, kind: 'lesson' }).some((m) => m.includes('/kind'))).toBe(true);
+    expect(issuesFor('subclass', { ...VALID.subclass, grantedSpells: { ranks: { 11: ['spell.sleep'] } } }).join('\n')).toContain('ranks');
+    expect(issuesFor('subclass', { ...VALID.subclass, grantedSpells: {} }).length).toBeGreaterThan(0);
+    const issues = issuesFor('subclass', { ...VALID.subclass, focusSpells: { advanced: 'spell.aberrant-whispers' } });
     expect(issues).toHaveLength(1);
     expect(issues[0]).toContain("must have required property 'initial'");
+    expect(issuesFor('subclass', { ...VALID.subclass, features: [] }).some((m) => m.includes('/features'))).toBe(true);
   });
 
   it('rejects an archetype with no feats', () => {
@@ -438,9 +438,9 @@ describe('type schemas', () => {
     expect(issues[0]).toContain("must have required property 'level'");
   });
 
-  it('rejects an unknown property on a thesis with exactly one issue naming it', () => {
-    const thesis = record('thesis', 'spell-blending', { class: 'class.wizard', level: 1, curriculum: {} });
-    const issues = issuesFor('thesis', thesis);
+  it('rejects an unknown property on a subclass with exactly one issue naming it', () => {
+    const thesis = record('subclass', 'wizard-spell-blending', { class: 'class.wizard', kind: 'arcane-thesis', level: 1, curriculum: {} });
+    const issues = issuesFor('subclass', thesis);
     expect(issues).toHaveLength(1);
     expect(issues[0]).toContain('curriculum');
   });

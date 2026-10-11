@@ -8,6 +8,10 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Added
 
+- Subclasses, a new record type: the 1st-level choice of every class — its
+  class and kind, the spells it grants by rank, its focus spells, tradition,
+  trained skills, granted feat and abilities by level. Records live in
+  `data/subclasses/`.
 - Vehicles, a new record type: space, crew, piloting checks, defences, speed
   and how the vehicle moves, collision and special abilities. Records live in
   `data/vehicles/`: the 23 vehicles of GM Core.
@@ -47,6 +51,11 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Changed
 
+- Arcane schools and theses are `subclass` records: `school.*` and `thesis.*`
+  ids became `subclass.wizard-*` (`school.school-of-mentalism` is now
+  `subclass.wizard-school-of-mentalism`), a school's `curriculum` is
+  `grantedSpells` and its `schoolSpells` are `focusSpells`. The `school` and
+  `thesis` types, their schemas and folders are gone.
 - An item's `level` (and a variant's) may be up to 28: artifacts are printed
   above level 20, and GM Core's highest is level 28.
 
