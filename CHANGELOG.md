@@ -4,7 +4,15 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
-## Unreleased
+## 0.9.0 — 2026-10-16
+
+### Changed — breaking
+
+- Arcane schools and theses are `subclass` records: `school.*` and `thesis.*`
+  ids became `subclass.wizard-*` (`school.school-of-mentalism` is now
+  `subclass.wizard-school-of-mentalism`), a school's `curriculum` is
+  `grantedSpells` and its `schoolSpells` are `focusSpells`. The `school` and
+  `thesis` types, their schemas and folders are gone.
 
 ### Added
 
@@ -39,6 +47,17 @@ major for renamed or removed ids, new required fields and markup changes.
   single effect; cursed-item templates carry their usage. Records live in
   `data/afflictions/`: the 14 diseases and 23 curses of GM Core, the seven
   cursed-item templates among them.
+- The magic items of GM Core (524 records: runes, potions, oils, scrolls,
+  talismans, staves, wands, worn and held items, specific weapons, armor and
+  shields, cursed and intelligent items, structures and an artifact) and its
+  14 actions (Influence, Discover, Invest an Item, the duel and vehicle
+  actions and others). The forty-one items GM Core shares with Player Core 2
+  stay the Player Core 2 records. Items named for places or beings of the
+  setting are left out.
+- `trait.incorporeal`, `trait.invested` and `material.orichalcum`, and sixty-five
+  published records of Player Core, Player Core 2 and Monster Core (feats,
+  spells, creatures, five classes and others), link the GM Core items, runes and materials
+  their text names; only links changed.
 
 ### Fixed
 
@@ -67,27 +86,8 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Changed
 
-- Arcane schools and theses are `subclass` records: `school.*` and `thesis.*`
-  ids became `subclass.wizard-*` (`school.school-of-mentalism` is now
-  `subclass.wizard-school-of-mentalism`), a school's `curriculum` is
-  `grantedSpells` and its `schoolSpells` are `focusSpells`. The `school` and
-  `thesis` types, their schemas and folders are gone.
 - An item's `level` (and a variant's) may be up to 28: artifacts are printed
   above level 20, and GM Core's highest is level 28.
-
-### Added
-
-- The magic items of GM Core (524 records: runes, potions, oils, scrolls,
-  talismans, staves, wands, worn and held items, specific weapons, armor and
-  shields, cursed and intelligent items, structures and an artifact) and its
-  14 actions (Influence, Discover, Invest an Item, the duel and vehicle
-  actions and others). The forty-one items GM Core shares with Player Core 2
-  stay the Player Core 2 records. Items named for places or beings of the
-  setting are left out.
-- `trait.incorporeal`, `trait.invested` and `material.orichalcum`, and sixty-five
-  published records of Player Core, Player Core 2 and Monster Core (feats,
-  spells, creatures, five classes and others), link the GM Core items, runes and materials
-  their text names; only links changed.
 
 ## 0.8.0 — 2026-10-10
 
