@@ -235,6 +235,35 @@ describe('type schemas', () => {
     expect(issuesFor('hazard', { ...VALID.hazard, disable: [] }).some((m) => m.includes('/disable'))).toBe(true);
   });
 
+  const ability = (slug: string, effect: unknown) => ({ id: slug, name: `hazard.scythe-blades.abilities.${slug}.name`, actions: 'reaction', text: `hazard.scythe-blades.abilities.${slug}.text`, effect });
+  const withEffect = (effect: unknown) => ({ ...VALID.hazard, abilities: [ability('x', effect)] });
+
+  it('accepts a hazard ability effect with damage and a basic save, a spell, and a poison, and a routine effect', () => {
+    const rune = { ...VALID.hazard, abilities: [
+      ability('electrocution', { damage: [{ dice: '3d12', type: 'electricity' }], save: { type: 'reflex', dc: 22, basic: true }, whole: true }),
+      ability('fireball', { damage: [{ dice: '6d6', type: 'fire' }], save: { type: 'reflex', dc: 22, basic: true }, spell: { id: 'spell.fireball', rank: 3 }, whole: true }),
+      ability('metamorphosis', { spell: { id: 'spell.cursed-metamorphosis' }, save: { type: 'will', dc: 32, basic: false }, whole: true }),
+      ability('poison', { affliction: { save: { type: 'fortitude', dc: 19 }, maxDuration: { amount: 4, unit: 'hour' }, stages: [{ text: 'hazard.scythe-blades.abilities.poison.stages.0', duration: { amount: 1, unit: 'hour' } }] }, whole: true }),
+    ] };
+    expect(issuesFor('hazard', rune)).toEqual([]);
+    const haunt = { ...VALID.hazard, complexity: 'complex', routine: { actions: 1, text: 'hazard.scythe-blades.routine', effect: { damage: [{ dice: '4d6', type: 'fire' }], save: { type: 'will', dc: 23, basic: true }, whole: false } } };
+    expect(issuesFor('hazard', haunt)).toEqual([]);
+  });
+
+  it('rejects an effect without whole, with only whole, with an unknown save type, without basic, and with an extra field', () => {
+    const save = { type: 'reflex', dc: 22, basic: true };
+    for (const effect of [
+      { save },
+      { whole: true },
+      { save: { ...save, type: 'perception' }, whole: true },
+      { save: { type: 'reflex', dc: 22 }, whole: true },
+      { save, whole: true, area: 'cone' },
+      { damage: [], whole: false },
+    ]) {
+      expect(issuesFor('hazard', withEffect(effect)).some((m) => m.includes('/effect')), JSON.stringify(effect)).toBe(true);
+    }
+  });
+
   it('accepts a curse with an effect, a cursed-item template, and a curse of varying level', () => {
     const curse = record('affliction', 'curse-of-nightmares', { kind: 'curse', level: 2, save: { type: 'will', dc: 16 }, effect: 'affliction.curse-of-nightmares.effect' });
     expect(issuesFor('affliction', curse)).toEqual([]);
