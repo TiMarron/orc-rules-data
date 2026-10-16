@@ -73,7 +73,21 @@
   ],
   "routine": {
     "actions": 3,
-    "text": "hazard.flensing-blades.routine"
+    "text": "hazard.flensing-blades.routine",
+    "effect": {
+      "damage": [
+        {
+          "dice": "2d10+10",
+          "type": "slashing"
+        }
+      ],
+      "save": {
+        "type": "reflex",
+        "dc": 33,
+        "basic": false
+      },
+      "whole": false
+    }
   },
   "reset": "hazard.flensing-blades.reset",
   "editNote": "The routine's Success outcome is the book's (page 107: \"The creature takes half damage\"); the source repeats the Critical Success line there and the errata is silent. The disable options and the condition after them are as printed."

@@ -12,7 +12,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "hazard.confounding-betrayal.text",
   "kind": "haunt",
   "complexity": "complex",
@@ -45,7 +45,15 @@
         "occult"
       ],
       "trigger": "hazard.confounding-betrayal.abilities.unmask.trigger",
-      "text": "hazard.confounding-betrayal.abilities.unmask.text"
+      "text": "hazard.confounding-betrayal.abilities.unmask.text",
+      "effect": {
+        "save": {
+          "type": "will",
+          "dc": 30,
+          "basic": false
+        },
+        "whole": false
+      }
     }
   ],
   "routine": {
@@ -55,7 +63,16 @@
       "incapacitation",
       "occult"
     ],
-    "text": "hazard.confounding-betrayal.routine"
+    "text": "hazard.confounding-betrayal.routine",
+    "effect": {
+      "save": {
+        "type": "will",
+        "dc": 26,
+        "basic": false
+      },
+      "whole": false
+    }
   },
-  "reset": "hazard.confounding-betrayal.reset"
+  "reset": "hazard.confounding-betrayal.reset",
+  "editNote": "Compared with the page: the routine prints its action and traits in one parenthesis; the routine's text starts after it, as printed."
 }

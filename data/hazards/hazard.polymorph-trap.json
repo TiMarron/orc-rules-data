@@ -12,8 +12,8 @@
     "page": 103,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.polymorph-trap.text",
   "kind": "trap",
   "complexity": "simple",
@@ -47,7 +47,19 @@
         "primal"
       ],
       "trigger": "hazard.polymorph-trap.abilities.cursed-metamorphosis.trigger",
-      "text": "hazard.polymorph-trap.abilities.cursed-metamorphosis.text"
+      "text": "hazard.polymorph-trap.abilities.cursed-metamorphosis.text",
+      "effect": {
+        "save": {
+          "type": "will",
+          "dc": 32,
+          "basic": false
+        },
+        "spell": {
+          "id": "spell.cursed-metamorphosis"
+        },
+        "whole": true
+      }
     }
-  ]
+  ],
+  "editNote": "Cursed Metamorphosis is the cursed metamorphosis spell against a DC 32 Will save; the page prints no rank, so none is given, and the spell says what it does: whole."
 }

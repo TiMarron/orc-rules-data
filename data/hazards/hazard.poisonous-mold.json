@@ -12,8 +12,8 @@
     "page": 103,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.poisonous-mold.text",
   "kind": "environmental",
   "complexity": "simple",
@@ -50,6 +50,15 @@
   ],
   "abilities": [
     {
+      "id": "floating-spores",
+      "name": "hazard.poisonous-mold.abilities.floating-spores.name",
+      "traits": [
+        "aura",
+        "poison"
+      ],
+      "text": "hazard.poisonous-mold.abilities.floating-spores.text"
+    },
+    {
       "id": "feed-on-decay",
       "name": "hazard.poisonous-mold.abilities.feed-on-decay.name",
       "text": "hazard.poisonous-mold.abilities.feed-on-decay.text"
@@ -63,7 +72,21 @@
       ],
       "frequency": "hazard.poisonous-mold.abilities.spore-burst.frequency",
       "trigger": "hazard.poisonous-mold.abilities.spore-burst.trigger",
-      "text": "hazard.poisonous-mold.abilities.spore-burst.text"
+      "text": "hazard.poisonous-mold.abilities.spore-burst.text",
+      "effect": {
+        "damage": [
+          {
+            "dice": "2d6+6",
+            "type": "poison"
+          }
+        ],
+        "save": {
+          "type": "fortitude",
+          "dc": 18,
+          "basic": true
+        },
+        "whole": true
+      }
     }
   ],
   "weaknesses": [
@@ -72,5 +95,6 @@
       "value": 10
     }
   ],
-  "reset": "hazard.poisonous-mold.reset"
+  "reset": "hazard.poisonous-mold.reset",
+  "editNote": "Page 103 prints a Floating Spores aura before the defences (5 feet; a creature that enters or starts its turn in it takes 2d6 poison damage) that the source lacks; the errata is silent, so the book's ability is restored. Spore Burst's effect is the page's 2d6+6 poison damage against a DC 18 basic Fortitude save, and nothing else happens: whole."
 }

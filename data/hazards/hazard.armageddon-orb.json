@@ -42,7 +42,21 @@
         "fire"
       ],
       "trigger": "hazard.armageddon-orb.abilities.burn-it-all.trigger",
-      "text": "hazard.armageddon-orb.abilities.burn-it-all.text"
+      "text": "hazard.armageddon-orb.abilities.burn-it-all.text",
+      "effect": {
+        "damage": [
+          {
+            "dice": "10d6",
+            "type": "fire"
+          }
+        ],
+        "save": {
+          "type": "reflex",
+          "dc": 46,
+          "basic": true
+        },
+        "whole": false
+      }
     }
   ],
   "editNote": "Reserved Material removed: the god whose blood forged the orb and the two gods whose aspects drain it are replaced with what they are (a god of destruction; a god of tyranny and a goddess of the sun). Rules text is the book's."

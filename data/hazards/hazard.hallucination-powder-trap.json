@@ -12,8 +12,8 @@
     "page": 102,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.hallucination-powder-trap.text",
   "kind": "trap",
   "complexity": "simple",
@@ -58,7 +58,16 @@
         "poison"
       ],
       "trigger": "hazard.hallucination-powder-trap.abilities.powder-burst.trigger",
-      "text": "hazard.hallucination-powder-trap.abilities.powder-burst.text"
+      "text": "hazard.hallucination-powder-trap.abilities.powder-burst.text",
+      "effect": {
+        "save": {
+          "type": "will",
+          "dc": 24,
+          "basic": false
+        },
+        "whole": false
+      }
     }
-  ]
+  ],
+  "editNote": "Compared with page 102: Powder Burst is a DC 24 Will save, not basic. Not whole: confusion and the penalty for 1d4 hours stay in the text."
 }

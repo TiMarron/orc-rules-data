@@ -11,8 +11,8 @@
     "page": 104,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.spectral-reflection.text",
   "kind": "haunt",
   "complexity": "simple",
@@ -65,7 +65,15 @@
     {
       "id": "sap-vitality",
       "name": "hazard.spectral-reflection.abilities.sap-vitality.name",
-      "text": "hazard.spectral-reflection.abilities.sap-vitality.text"
+      "text": "hazard.spectral-reflection.abilities.sap-vitality.text",
+      "effect": {
+        "save": {
+          "type": "fortitude",
+          "dc": 22,
+          "basic": false
+        },
+        "whole": false
+      }
     }
   ],
   "strikes": [
@@ -89,5 +97,6 @@
     }
   ],
   "reset": "hazard.spectral-reflection.reset",
-  "special": "hazard.spectral-reflection.special"
+  "special": "hazard.spectral-reflection.special",
+  "editNote": "Compared with page 104: Sap Vitality is a DC 22 Fortitude save, not basic; the Strike that delivers it is structured already. Not whole: drained stays in the text."
 }

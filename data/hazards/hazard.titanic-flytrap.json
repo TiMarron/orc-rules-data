@@ -11,8 +11,8 @@
     "page": 105,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.titanic-flytrap.text",
   "kind": "environmental",
   "complexity": "simple",
@@ -65,7 +65,43 @@
         "contact",
         "poison"
       ],
-      "text": "hazard.titanic-flytrap.abilities.titanic-flytrap-toxin.text"
+      "text": "hazard.titanic-flytrap.abilities.titanic-flytrap-toxin.text",
+      "effect": {
+        "affliction": {
+          "stages": [
+            {
+              "text": "hazard.titanic-flytrap.abilities.titanic-flytrap-toxin.stages.0",
+              "duration": {
+                "amount": 1,
+                "unit": "round"
+              }
+            },
+            {
+              "text": "hazard.titanic-flytrap.abilities.titanic-flytrap-toxin.stages.1",
+              "duration": {
+                "amount": 1,
+                "unit": "round"
+              }
+            },
+            {
+              "text": "hazard.titanic-flytrap.abilities.titanic-flytrap-toxin.stages.2",
+              "duration": {
+                "amount": 1,
+                "unit": "round"
+              }
+            }
+          ],
+          "save": {
+            "type": "fortitude",
+            "dc": 21
+          },
+          "maxDuration": {
+            "amount": 4,
+            "unit": "round"
+          }
+        },
+        "whole": true
+      }
     }
   ],
   "resistances": [
@@ -93,5 +129,6 @@
       ]
     }
   ],
-  "reset": "hazard.titanic-flytrap.reset"
+  "reset": "hazard.titanic-flytrap.reset",
+  "editNote": "The toxin is printed in an affliction's form (DC 21 Fortitude, maximum duration 4 rounds, three stages of 1 round) and is structured as one: whole. The penalty after a critical Strike and the acid damage while grabbed belong to Devour and stay in its text."
 }

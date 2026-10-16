@@ -48,8 +48,16 @@
         "teleportation"
       ],
       "trigger": "hazard.planar-rift.abilities.into-the-beyond.trigger",
-      "text": "hazard.planar-rift.abilities.into-the-beyond.text"
+      "text": "hazard.planar-rift.abilities.into-the-beyond.text",
+      "effect": {
+        "save": {
+          "type": "reflex",
+          "dc": 33,
+          "basic": false
+        },
+        "whole": false
+      }
     }
   ],
-  "editNote": "Reserved Material removed: the ability's name carried the setting's name for the planes; it reads 'Into the Beyond', with its id to match. Rules text is the book's."
+  "editNote": "Reserved Material removed: the ability's name carried the setting's name for the planes; it reads 'Into the Beyond', with its id to match. Rules text is the book's. Its effect is the page's DC 33 Reflex save; being drawn into another plane stays in the text (not whole)."
 }
