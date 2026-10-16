@@ -308,6 +308,18 @@ cost tokens.
   resistances and speeds are shaped as a creature's; an ability is a creature's
   ability without a `section`. A complex hazard has a `routine` with its
   actions per round (and their traits, when printed); `reset` and `special` are printed text.
+  An ability or the routine may carry an `effect`: the numbers its text
+  prints and nothing else — the `damage` it deals (parts shaped as a
+  Strike's), the saving throw against it (`save`: type, DC, and `basic` true
+  only when "basic" is printed), the `spell` it is (with its rank, when
+  printed), or a poison printed in an affliction's form (`affliction`: save,
+  maximum duration and stages, shaped as an `affliction` record's). Who is
+  hit, where, what an outcome does and every condition stay in the text,
+  which is unchanged. `whole` says whether the text adds a rule to these
+  fields: `true` when it does not (a rune that deals its damage against a
+  basic save), `false` when it does (a slab that also pushes, a curse, death
+  at 0 HP). It tells a reader whether it must read the text, not whether a
+  game can already play the hazard.
 - A `gift` is one of the powers a relic gains as its bearer grows: its
   `aspect` (one of twelve, as the book groups them), its `tier` (minor, major,
   grand) and, when the book prints one, what it `requires` — a relic of a form
