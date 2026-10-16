@@ -12,8 +12,8 @@
     "page": 103,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.poisoned-lock.text",
   "kind": "trap",
   "complexity": "simple",
@@ -63,7 +63,43 @@
       "traits": [
         "poison"
       ],
-      "text": "hazard.poisoned-lock.abilities.cladis-poison.text"
+      "text": "hazard.poisoned-lock.abilities.cladis-poison.text",
+      "effect": {
+        "affliction": {
+          "stages": [
+            {
+              "text": "hazard.poisoned-lock.abilities.cladis-poison.stages.0",
+              "duration": {
+                "amount": 1,
+                "unit": "hour"
+              }
+            },
+            {
+              "text": "hazard.poisoned-lock.abilities.cladis-poison.stages.1",
+              "duration": {
+                "amount": 1,
+                "unit": "hour"
+              }
+            },
+            {
+              "text": "hazard.poisoned-lock.abilities.cladis-poison.stages.2",
+              "duration": {
+                "amount": 1,
+                "unit": "hour"
+              }
+            }
+          ],
+          "save": {
+            "type": "fortitude",
+            "dc": 19
+          },
+          "maxDuration": {
+            "amount": 4,
+            "unit": "hour"
+          }
+        },
+        "whole": true
+      }
     }
   ],
   "strikes": [
@@ -85,5 +121,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "Cladis Poison is printed in an affliction's form (DC 19 Fortitude, maximum duration 4 hours, three stages of 1 hour) and is structured as one, its stage texts as printed: whole."
 }

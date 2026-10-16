@@ -45,12 +45,34 @@
         "mental"
       ],
       "trigger": "hazard.eternal-flame.abilities.searing-agony.trigger",
-      "text": "hazard.eternal-flame.abilities.searing-agony.text"
+      "text": "hazard.eternal-flame.abilities.searing-agony.text",
+      "effect": {
+        "save": {
+          "type": "will",
+          "dc": 25,
+          "basic": false
+        },
+        "whole": false
+      }
     }
   ],
   "routine": {
     "actions": 1,
-    "text": "hazard.eternal-flame.routine"
+    "text": "hazard.eternal-flame.routine",
+    "effect": {
+      "damage": [
+        {
+          "dice": "4d6",
+          "type": "fire"
+        }
+      ],
+      "save": {
+        "type": "will",
+        "dc": 23,
+        "basic": true
+      },
+      "whole": false
+    }
   },
   "reset": "hazard.eternal-flame.reset",
   "editNote": "Compared with the page: the disable options and the condition after them are as printed; the condition is kept as the disable note, the options as structure."

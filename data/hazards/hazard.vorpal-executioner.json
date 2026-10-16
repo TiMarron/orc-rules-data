@@ -13,7 +13,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "hazard.vorpal-executioner.text",
   "kind": "trap",
   "complexity": "simple",
@@ -61,7 +61,15 @@
     {
       "id": "decapitation",
       "name": "hazard.vorpal-executioner.abilities.decapitation.name",
-      "text": "hazard.vorpal-executioner.abilities.decapitation.text"
+      "text": "hazard.vorpal-executioner.abilities.decapitation.text",
+      "effect": {
+        "save": {
+          "type": "fortitude",
+          "dc": 39,
+          "basic": false
+        },
+        "whole": false
+      }
     }
   ],
   "strikes": [
@@ -93,5 +101,6 @@
       ]
     }
   ],
-  "reset": "hazard.vorpal-executioner.reset"
+  "reset": "hazard.vorpal-executioner.reset",
+  "editNote": "Compared with page 105: the part's HP is printed '120 (BT 60) per junction'; the words after the numbers are kept as the part's note."
 }

@@ -12,7 +12,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "hazard.dance-of-death.text",
   "kind": "haunt",
   "complexity": "complex",
@@ -53,7 +53,15 @@
         "occult"
       ],
       "trigger": "hazard.dance-of-death.abilities.prelude.trigger",
-      "text": "hazard.dance-of-death.abilities.prelude.text"
+      "text": "hazard.dance-of-death.abilities.prelude.text",
+      "effect": {
+        "save": {
+          "type": "will",
+          "dc": 41,
+          "basic": false
+        },
+        "whole": false
+      }
     }
   ],
   "routine": {
@@ -64,7 +72,16 @@
       "mental",
       "occult"
     ],
-    "text": "hazard.dance-of-death.routine"
+    "text": "hazard.dance-of-death.routine",
+    "effect": {
+      "save": {
+        "type": "will",
+        "dc": 37,
+        "basic": false
+      },
+      "whole": false
+    }
   },
-  "reset": "hazard.dance-of-death.reset"
+  "reset": "hazard.dance-of-death.reset",
+  "editNote": "Compared with the page: the routine prints its action and traits in one parenthesis; the routine's text starts after it, as printed."
 }

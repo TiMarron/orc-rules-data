@@ -72,7 +72,43 @@
       "traits": [
         "poison"
       ],
-      "text": "hazard.poisoned-dart-gallery.abilities.flesset-poison.text"
+      "text": "hazard.poisoned-dart-gallery.abilities.flesset-poison.text",
+      "effect": {
+        "affliction": {
+          "stages": [
+            {
+              "text": "hazard.poisoned-dart-gallery.abilities.flesset-poison.stages.0",
+              "duration": {
+                "amount": 1,
+                "unit": "round"
+              }
+            },
+            {
+              "text": "hazard.poisoned-dart-gallery.abilities.flesset-poison.stages.1",
+              "duration": {
+                "amount": 1,
+                "unit": "round"
+              }
+            },
+            {
+              "text": "hazard.poisoned-dart-gallery.abilities.flesset-poison.stages.2",
+              "duration": {
+                "amount": 1,
+                "unit": "round"
+              }
+            }
+          ],
+          "save": {
+            "type": "fortitude",
+            "dc": 22
+          },
+          "maxDuration": {
+            "amount": 6,
+            "unit": "round"
+          }
+        },
+        "whole": true
+      }
     }
   ],
   "strikes": [
@@ -103,5 +139,5 @@
     "text": "hazard.poisoned-dart-gallery.routine"
   },
   "reset": "hazard.poisoned-dart-gallery.reset",
-  "editNote": "Page 107 prints the HP as \"56 (BT 28) to destroy the control panel and disable the trap\"; the source drops the words after the numbers, restored as the part's note."
+  "editNote": "Page 107 prints the HP as \"56 (BT 28) to destroy the control panel and disable the trap\"; the source drops the words after the numbers, restored as the part's note. Flesset Poison is printed in an affliction's form (DC 22 Fortitude, maximum duration 6 rounds, three stages of 1 round) and is structured as one: whole."
 }

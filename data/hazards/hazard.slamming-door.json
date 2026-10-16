@@ -12,8 +12,8 @@
     "page": 104,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.slamming-door.text",
   "kind": "trap",
   "complexity": "simple",
@@ -55,7 +55,22 @@
       "name": "hazard.slamming-door.abilities.slam-shut.name",
       "actions": "reaction",
       "trigger": "hazard.slamming-door.abilities.slam-shut.trigger",
-      "text": "hazard.slamming-door.abilities.slam-shut.text"
+      "text": "hazard.slamming-door.abilities.slam-shut.text",
+      "effect": {
+        "damage": [
+          {
+            "dice": "3d8",
+            "type": "bludgeoning"
+          }
+        ],
+        "save": {
+          "type": "reflex",
+          "dc": 17,
+          "basic": false
+        },
+        "whole": false
+      }
     }
-  ]
+  ],
+  "editNote": "Compared with page 104: Slam Shut deals 3d8 bludgeoning damage against a DC 17 Reflex save that avoids it entirely, so not basic. Not whole: the push, the choice of direction, the slab's own Hardness and HP and the Athletics DC to lift it stay in the text."
 }

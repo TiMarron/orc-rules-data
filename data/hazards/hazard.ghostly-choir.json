@@ -11,8 +11,8 @@
     "page": 102,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.ghostly-choir.text",
   "kind": "haunt",
   "complexity": "simple",
@@ -48,7 +48,22 @@
         "occult"
       ],
       "trigger": "hazard.ghostly-choir.abilities.profane-chant.trigger",
-      "text": "hazard.ghostly-choir.abilities.profane-chant.text"
+      "text": "hazard.ghostly-choir.abilities.profane-chant.text",
+      "effect": {
+        "damage": [
+          {
+            "dice": "4d8+18",
+            "type": "mental"
+          }
+        ],
+        "save": {
+          "type": "will",
+          "dc": 24,
+          "basic": false
+        },
+        "whole": false
+      }
     }
-  ]
+  ],
+  "editNote": "Compared with page 102: Profane Chant deals 4d8+18 mental damage against a DC 24 Will save; the book prints its outcomes rather than 'basic'. Not whole: frightened and fleeing stay in the text."
 }

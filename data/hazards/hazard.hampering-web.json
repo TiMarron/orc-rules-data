@@ -11,8 +11,8 @@
     "page": 102,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.hampering-web.text",
   "kind": "environmental",
   "complexity": "simple",
@@ -53,7 +53,16 @@
       "name": "hazard.hampering-web.abilities.ensnare.name",
       "actions": "reaction",
       "trigger": "hazard.hampering-web.abilities.ensnare.trigger",
-      "text": "hazard.hampering-web.abilities.ensnare.text"
+      "text": "hazard.hampering-web.abilities.ensnare.text",
+      "effect": {
+        "save": {
+          "type": "reflex",
+          "dc": 20,
+          "basic": false
+        },
+        "whole": false
+      }
     }
-  ]
+  ],
+  "editNote": "Compared with page 102: Ensnare is a DC 20 Reflex save, not basic; the Escape DC 20 is not a save. Not whole: the Speed penalty and sickened stay in the text."
 }

@@ -8,6 +8,13 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Added
 
+- Hazard abilities and routines gain an optional `effect`: the damage,
+  saving throw, spell and poison their text prints, as numbers, with `whole`
+  saying whether the text adds a rule to them. 22 of the 32 hazards of GM
+  Core carry it on 25 abilities and routines; 7 are whole (the electric
+  latch and fireball runes, the poisonous mold's spore burst, the polymorph
+  trap and three poisons in an affliction's form). Texts are unchanged; the
+  stages of the three poisons are new strings.
 - Subclasses, a new record type: the 1st-level choice of every class — its
   class and kind, the spells it grants by rank, its focus spells, tradition,
   trained skills, granted feat and abilities by level. Records live in
@@ -35,6 +42,9 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Fixed
 
+- The poisonous mold gains the Floating Spores aura the book prints (5 feet,
+  2d6 poison damage to a creature that enters or starts its turn in it),
+  which it had been published without.
 - Chemical Contagion, Expanded Splash and the berserker's cloaks link the
   subclass records their text names (a research field, an instinct); only
   links changed.

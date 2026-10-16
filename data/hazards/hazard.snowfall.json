@@ -52,8 +52,22 @@
       "name": "hazard.snowfall.abilities.snowdrop.name",
       "actions": "reaction",
       "trigger": "hazard.snowfall.abilities.snowdrop.trigger",
-      "text": "hazard.snowfall.abilities.snowdrop.text"
+      "text": "hazard.snowfall.abilities.snowdrop.text",
+      "effect": {
+        "damage": [
+          {
+            "dice": "2d6+3",
+            "type": "bludgeoning"
+          }
+        ],
+        "save": {
+          "type": "reflex",
+          "dc": 18,
+          "basic": true
+        },
+        "whole": false
+      }
     }
   ],
-  "editNote": "Page 104 prints AC 16, Fort +10, Ref +8 and names the reaction Snowdrop; the source says AC 18, Fort +11, Ref +3 and Snowfall, and the errata is silent, so the book's stand."
+  "editNote": "Page 104 prints AC 16, Fort +10, Ref +8 and names the reaction Snowdrop; the source says AC 18, Fort +11, Ref +3 and Snowfall, and the errata is silent, so the book's stand. Snowdrop's effect is the page's 2d6+3 bludgeoning damage against a DC 18 basic Reflex save; the soaked clothing and the colder environment stay in its text (not whole)."
 }

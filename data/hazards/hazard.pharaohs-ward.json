@@ -12,8 +12,8 @@
     "page": 103,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.pharaohs-ward.text",
   "kind": "trap",
   "complexity": "simple",
@@ -48,8 +48,17 @@
         "divine"
       ],
       "trigger": "hazard.pharaohs-ward.abilities.curse-the-intruders.trigger",
-      "text": "hazard.pharaohs-ward.abilities.curse-the-intruders.text"
+      "text": "hazard.pharaohs-ward.abilities.curse-the-intruders.text",
+      "effect": {
+        "save": {
+          "type": "will",
+          "dc": 23,
+          "basic": false
+        },
+        "whole": false
+      }
     }
   ],
-  "reset": "hazard.pharaohs-ward.reset"
+  "reset": "hazard.pharaohs-ward.reset",
+  "editNote": "Compared with page 103: Curse the Intruders is a DC 23 Will save, not basic; the spell it names is how the curse ends, not the effect. Not whole: the curse stays in the text."
 }
