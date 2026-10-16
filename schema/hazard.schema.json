@@ -42,6 +42,40 @@
         "note": { "$ref": "#/$defs/key", "$comment": "What the book prints after the numbers: 'per junction', 'to destroy the control panel and disable the trap'." }
       }
     },
+    "effect": {
+      "type": "object", "additionalProperties": false, "required": ["whole"], "minProperties": 2,
+      "$comment": "The numbers the text prints: the damage the ability deals, the saving throw against it, the spell it is, the poison it carries. Only what is printed; who is hit, where, and every condition stay in the text.",
+      "properties": {
+        "damage": { "type": "array", "minItems": 1, "items": { "$ref": "creature.schema.json#/$defs/damagePart" }, "$comment": "What the ability deals ('deals 3d12 electricity damage'); damage an outcome or a condition deals stays in the text." },
+        "save": {
+          "type": "object", "additionalProperties": false, "required": ["type", "dc", "basic"],
+          "properties": {
+            "type": { "enum": ["fortitude", "reflex", "will"] },
+            "dc": { "type": "integer", "minimum": 0 },
+            "basic": { "type": "boolean", "$comment": "True only when the book prints 'basic'; otherwise the text prints the outcomes." }
+          }
+        },
+        "spell": {
+          "type": "object", "additionalProperties": false, "required": ["id"],
+          "$comment": "The spell the ability is ('a 3rd-rank fireball spell', 'is targeted by cursed metamorphosis').",
+          "properties": {
+            "id": { "$ref": "common.schema.json#/$defs/refSpell" },
+            "rank": { "type": "integer", "minimum": 1, "maximum": 10, "$comment": "Absent when the book prints none." }
+          }
+        },
+        "affliction": {
+          "type": "object", "additionalProperties": false, "required": ["save", "stages"],
+          "$comment": "A poison printed in an affliction's form, shaped as an affliction record's save, onset, maximum duration and stages.",
+          "properties": {
+            "save": { "$ref": "affliction.schema.json#/allOf/1/properties/save" },
+            "onset": { "$ref": "affliction.schema.json#/$defs/duration" },
+            "maxDuration": { "$ref": "affliction.schema.json#/$defs/duration" },
+            "stages": { "type": "array", "minItems": 1, "items": { "$ref": "affliction.schema.json#/$defs/stage" } }
+          }
+        },
+        "whole": { "type": "boolean", "$comment": "True when these fields are the whole printed effect and the text adds no rule beyond who is hit and where; false when the text carries more (a push, a condition in an outcome, death at 0 HP). Says whether a reader must read the text, not whether a game can play it." }
+      }
+    },
     "ability": {
       "type": "object", "additionalProperties": false, "required": ["id", "name"],
       "properties": {
@@ -53,7 +87,8 @@
         "trigger": { "$ref": "#/$defs/key" },
         "frequency": { "$ref": "#/$defs/key" },
         "requirements": { "$ref": "#/$defs/key" },
-        "text": { "$ref": "#/$defs/key" }
+        "text": { "$ref": "#/$defs/key" },
+        "effect": { "$ref": "#/$defs/effect" }
       }
     }
   },
@@ -86,7 +121,7 @@
         "strikes": { "type": "array", "items": { "$ref": "creature.schema.json#/$defs/strike" } },
         "routine": {
           "type": "object", "additionalProperties": false, "required": ["actions", "text"],
-          "properties": { "actions": { "type": "integer", "minimum": 1 }, "traits": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }, "text": { "$ref": "#/$defs/key" } }
+          "properties": { "actions": { "type": "integer", "minimum": 1 }, "traits": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/slug" }, "uniqueItems": true }, "text": { "$ref": "#/$defs/key" }, "effect": { "$ref": "#/$defs/effect" } }
         },
         "reset": { "$ref": "#/$defs/key" },
         "special": { "$ref": "#/$defs/key" }
