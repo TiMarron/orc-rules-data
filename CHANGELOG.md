@@ -4,6 +4,22 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Added
+
+- Three record types and a creature field, for GM Core's Building Creatures and
+  Monster Core's creature chapters: `family` (a group of creatures, with its
+  printed membership, transformations, rules and advice, and no lore), the
+  optional `family` on a creature record, `adjustment` (a printed
+  transformation of a creature — Elite and Weak, ghosts, ghouls, liches,
+  vampires, werecreatures and the rest — as operations plus printed caveats)
+  and `scale` (the eleven creature-building tables, by level −1…24).
+- Validator checks: family membership compared in both directions, a family's
+  parent, adjustment references to scales' tiers, abilities removed or
+  substituted per targeted creature, a `requires` naming an adjustment, scale
+  levels without gaps and cells under a carried tier.
+
 ## 0.9.0 — 2026-10-16
 
 ### Changed — breaking
