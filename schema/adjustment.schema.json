@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adjustment.schema.json",
+  "$defs": {
+    "key": { "$ref": "common.schema.json#/$defs/i18nKey" },
+    "slug": { "$ref": "common.schema.json#/$defs/slug" },
+    "refFamily": { "type": "string", "pattern": "^family\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refCreature": { "type": "string", "pattern": "^creature\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refAdjustment": { "type": "string", "pattern": "^adjustment\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refScale": { "type": "string", "pattern": "^scale\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "dice": { "type": "string", "pattern": "^[1-9][0-9]*(d(4|6|8|10|12|20)([+-][1-9][0-9]*)?)?$", "$comment": "Same notation as a Strike's damage." },
+    "when": { "type": "string", "enum": ["base", "new"], "$comment": "Which level the number is counted from: the base creature's ('starting level', the tables Elite, Weak, Vampire, Werecreature print) or the new creature's (default)." },
+    "tier": { "type": "string", "enum": ["extreme", "high", "moderate", "low", "terrible"], "$comment": "A tier of a creature-building scale — the value the scale record row carries for the creature's level." },
+    "levelValue": {
+      "oneOf": [
+        { "type": "integer" },
+        { "type": "object", "additionalProperties": false,
+          "oneOf": [
+            { "properties": { "scale": true, "tier": true }, "required": ["scale", "tier"] },
+            { "properties": { "byLevel": true }, "required": ["byLevel"] },
+            { "properties": { "ofLevel": true }, "required": ["ofLevel"] },
+            { "properties": { "dice": true, "per": true }, "required": ["dice", "per"] }
+          ],
+          "properties": {
+        "scale": { "$ref": "#/$defs/refScale" },
+        "tier": { "anyOf": [{ "$ref": "#/$defs/tier" }, { "type": "array", "minItems": 2, "maxItems": 2, "uniqueItems": true, "items": { "$ref": "#/$defs/tier" } }], "$comment": "One tier, or a pair of alternatives printed as 'a moderate or high' that the user picks between. Only tiers the scale record carries are valid — the validator checks the reference." },
+        "delta": { "type": "integer", "$comment": "A shift printed on top of the scale value: 'spell DC – 2'." },
+        "level": { "$ref": "#/$defs/when" },
+        "byLevel": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["level", "value"], "properties": { "level": { "type": "integer", "minimum": -1, "maximum": 25 }, "value": { "type": "integer" } } }, "$comment": "A value that holds from its level upward ('increases to 10 at 9th level and 15 at 16th'); levels strictly increasing is the validator's rule." },
+        "ofLevel": { "type": "number", "exclusiveMinimum": 0, "$comment": "A fraction of the creature's level: 0.5 for 'half its level'." },
+        "round": { "type": "string", "enum": ["down", "up"], "$comment": "How a fractional level is rounded; without it, the game's own rule." },
+        "min": { "type": "integer", "$comment": "'one-third its level (minimum 1)' beside `ofLevel`; the damage form's floor is its own shape." },
+        "dice": { "$ref": "#/$defs/dice", "$comment": "The part that repeats with level: '1d6 plus 1d6 for every 2 levels' holds dice '1d6' per 2 levels." },
+        "per": { "type": "integer", "minimum": 1, "$comment": "How many levels per repetition." },
+        "base": { "$ref": "#/$defs/dice", "$comment": "The flat part printed before the repeating one." }
+          }
+        }
+      ],
+      "$comment": "A number a template prints that depends on the creature's level: never only prose. The book prints no damage-form floor, so the integer `min` travels only beside `ofLevel`."
+    },
+    "modifyStat": { "type": "string", "enum": ["ac", "saves", "fortitude", "reflex", "will", "perception", "dc", "spell-dc", "spell-attack", "skills", "attack", "damage"], "$comment": "What a `modify` shifts. `saves` shifts all three saving throws; `fortitude`/`reflex`/`will` name one when the template does." },
+    "modify": {
+      "type": "object", "additionalProperties": false, "required": ["stats", "delta"],
+      "properties": {
+        "stats": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/modifyStat" } },
+        "delta": { "$ref": "#/$defs/levelValue" },
+        "limited": { "$ref": "#/$defs/levelValue", "$comment": "The smaller shift the template prints for an ability with a limit on its frequency." },
+        "note": { "$ref": "#/$defs/key" }
+      }
+    },
+    "typed": {
+      "type": "object", "additionalProperties": false, "required": ["type", "value"],
+      "properties": {
+        "type": { "$ref": "#/$defs/slug" },
+        "value": { "$ref": "#/$defs/levelValue", "$comment": "An integer, or a level-dependent one: the ghost's all-damage resistance, the vampire's fast healing." },
+        "except": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true, "$comment": "Same vocabulary as the creature's own `except`." },
+        "note": { "$ref": "#/$defs/key" }
+      },
+      "$comment": "An entry of `resistances` or `weaknesses`, as the creature's typed one, with a `value` a template may express per level."
+    },
+    "attributes": {
+      "type": "object", "additionalProperties": false, "minProperties": 1,
+      "properties": { "str": { "type": "integer" }, "dex": { "type": "integer" }, "con": { "type": "integer" }, "int": { "type": "integer" }, "wis": { "type": "integer" }, "cha": { "type": "integer" } },
+      "$comment": "A replacement of the base creature's attribute modifiers, printed in full ('a ghost has a Strength modifier of –5 and a Constitution modifier of +0'). The template names only the attributes it replaces; the rest are the base creature's."
+    },
+    "traitsOp": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "add": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
+        "remove": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true }
+      },
+      "$comment": "Traits added to or dropped from the base creature. The sentence that qualifies them ('many become unholy') stays in `caveats`."
+    },
+    "abilitiesOp": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "add": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/ability" } },
+        "remove": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true, "$comment": "Abilities the base creature loses, by their ids within the creature. The validator checks each creature listed in `appliesTo.creatures` actually has them." },
+        "replace": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["from", "to"], "properties": { "from": { "$ref": "#/$defs/slug" }, "to": { "$ref": "#/$defs/ability" } }, "$comment": "The text of the base creature's ability is swapped for the printed one ('the Sinful Bite effect of the sin'). `from` is by id within the creature; the validator checks it is there." } }
+      }
+    },
+    "strikesOp": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "add": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/strike" } }
+      }
+    },
+    "spellcastingOp": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "add": { "type": "array", "minItems": 1, "items": { "$ref": "creature.schema.json#/$defs/spellBlock" } },
+        "byCreature": {
+          "type": "object", "minProperties": 1, "propertyNames": { "$ref": "#/$defs/refCreature" },
+          "additionalProperties": { "type": "array", "minItems": 1, "items": { "$ref": "creature.schema.json#/$defs/spellBlock" } },
+          "$comment": "Spell blocks keyed by the creature they belong to: a dragon age's expanded list, with every rank spelled out even where the book prints 'as young …, plus …'."
+        }
+      }
+    },
+    "skillsOp": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "add": { "type": "array", "minItems": 1, "items": { "$ref": "creature.schema.json#/$defs/skill" } }
+      }
+    },
+    "speed": {
+      "oneOf": [
+        { "type": "integer", "minimum": 0, "multipleOf": 5 },
+        { "type": "object", "additionalProperties": false, "required": ["equalTo"], "properties": { "equalTo": { "type": "string", "enum": ["land", "fly", "swim", "climb", "burrow"] } } }
+      ]
+    },
+    "speeds": {
+      "type": "object", "additionalProperties": false,
+      "anyOf": [{ "properties": { "land": true }, "required": ["land"] }, { "properties": { "fly": true }, "required": ["fly"] }, { "properties": { "swim": true }, "required": ["swim"] }, { "properties": { "climb": true }, "required": ["climb"] }, { "properties": { "burrow": true }, "required": ["burrow"] }],
+      "properties": {
+        "land": { "$ref": "#/$defs/speed" },
+        "fly": { "$ref": "#/$defs/speed" },
+        "swim": { "$ref": "#/$defs/speed" },
+        "climb": { "$ref": "#/$defs/speed" },
+        "burrow": { "$ref": "#/$defs/speed" },
+        "note": { "$ref": "#/$defs/key" }
+      },
+      "$comment": "A speed replaced: feet, or equal to one of the creature's own speeds the book prints ('fly Speed equal to its Speed')."
+    },
+    "rescale": {
+      "type": "object", "additionalProperties": false, "required": ["stats"],
+      "properties": {
+        "stats": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "anyOf": [{ "$ref": "#/$defs/modifyStat" }, { "const": "hp" }, { "const": "strikes" }] }, "$comment": "The numbers rebuilt to the creature's new level: each keeps its printed tier and takes its value from that tier's cell in the scale record at the new level. The rule that finds the tier — nearest cell, a range as its midpoint, ties up — is stated in the dataset README. Strikes: the attack bonus by scale.strike-attack, the damage by scale.strike-damage. HP: the tier's range midpoint, rounded down." }
+      }
+    },
+    "hp": {
+      "type": "object", "additionalProperties": false,
+      "oneOf": [
+        { "properties": { "keep": true }, "required": ["keep"] },
+        { "properties": { "delta": true }, "required": ["delta"] }
+      ],
+      "properties": {
+        "keep": { "const": true, "$comment": "'Do not modify the Hit Points due to its new level.'" },
+        "delta": { "$ref": "#/$defs/levelValue", "$comment": "A shift, or the per-level table the template prints ('by the amount listed on the table'), expressed per level." }
+      }
+    },
+    "level": {
+      "type": "object", "additionalProperties": false,
+      "oneOf": [
+        { "properties": { "delta": true }, "required": ["delta"] },
+        { "properties": { "range": true }, "required": ["range"], "$comment": "The book prints a range to pick from ('increase the level by 6 to 10')." },
+        { "properties": { "set": true }, "required": ["set"], "$comment": "The result is fixed ('an 8th-level variant')." }
+      ],
+      "properties": {
+        "delta": { "$ref": "#/$defs/levelValue" },
+        "range": { "type": "object", "additionalProperties": false, "required": ["min", "max"], "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } } },
+        "set": { "type": "integer" }
+      }
+    },
+    "affliction": {
+      "type": "object", "additionalProperties": false, "required": ["save", "stages"],
+      "properties": {
+        "name": { "$ref": "#/$defs/key", "$comment": "The printed name of the curse or disease, when the ability names it apart from its own." },
+        "save": {
+          "type": "object", "additionalProperties": false, "required": ["type"],
+          "properties": {
+            "type": { "enum": ["fortitude", "reflex", "will"] },
+            "dc": { "$ref": "#/$defs/levelValue", "$comment": "An integer, or a level-dependent DC: 'the high spell DC of the creature's level'." }
+          }
+        },
+        "stages": { "type": "array", "minItems": 1, "items": { "$ref": "affliction.schema.json#/$defs/stage" } }
+      },
+      "$comment": "A curse or disease the added ability inflicts, in the shape a hazard ability's effect carries."
+    },
+    "ability": {
+      "type": "object", "additionalProperties": false, "required": ["id", "section", "name"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug", "$comment": "Unique within the adjustment; what a Strike effect points at with `own`." },
+        "section": { "$ref": "creature.schema.json#/$defs/section" },
+        "name": { "$ref": "#/$defs/key" },
+        "ability": { "$ref": "common.schema.json#/$defs/refAbility", "$comment": "The universal ability this entry is an instance of (Darkvision, Fast Healing, Stench). The validator checks the record exists." },
+        "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+        "traits": { "$ref": "creature.schema.json#/$defs/traits" },
+        "traitValues": { "$ref": "creature.schema.json#/$defs/traitValues" },
+        "aura": { "$ref": "creature.schema.json#/$defs/feet" },
+        "trigger": { "$ref": "#/$defs/key" },
+        "frequency": { "$ref": "#/$defs/key" },
+        "requirements": { "$ref": "#/$defs/key" },
+        "text": { "$ref": "#/$defs/key" },
+        "values": {
+          "type": "object", "minProperties": 1, "propertyNames": { "$ref": "#/$defs/slug" },
+          "additionalProperties": { "$ref": "#/$defs/levelValue" },
+          "$comment": "The level-dependent numbers of the ability, by a stable slug: `amount` for Fast Healing's value, `damage` for a repeating die. The printed text keeps its prose; the engine computes from here."
+        },
+        "affliction": { "$ref": "#/$defs/affliction" }
+      },
+      "$comment": "An added or replacement ability, in the shape of a creature's ability plus the level-dependent `values` and an `affliction` the ability inflicts."
+    },
+    "strike": {
+      "type": "object", "unevaluatedProperties": false,
+      "properties": {
+        "kind": { "enum": ["melee", "ranged"] },
+        "name": { "$ref": "#/$defs/key" },
+        "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+        "bonus": { "type": "integer" },
+        "traits": { "$ref": "creature.schema.json#/$defs/traits" },
+        "traitValues": { "$ref": "creature.schema.json#/$defs/traitValues" },
+        "material": { "$ref": "#/$defs/slug", "$comment": "The precious material the Strike counts as; silver for a Curse of the Werecreature's delivered curse." },
+        "range": { "type": "integer", "minimum": 0, "multipleOf": 5 },
+        "rangeIncrement": { "type": "integer", "minimum": 0, "multipleOf": 5 },
+        "reload": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "damage": { "$ref": "creature.schema.json#/$defs/strike/properties/damage" },
+        "effects": { "$ref": "creature.schema.json#/$defs/strike/properties/effects", "$comment": "A universal ability by its record, or text the book prints for the hit." },
+        "item": { "$ref": "common.schema.json#/$defs/refItem" },
+        "derive": { "$ref": "#/$defs/key", "$comment": "The printed rule that stands where damage dice would ('roughly the same as the damage dealt by its other attacks'). The game shows it; the engine computes no number from it." }
+      },
+      "$comment": "A Strike a template prints. Each field is what the book actually prints — some templates print no dice at all and give the rule in `derive` — so unlike a creature's Strike every field is optional."
+    },
+    "choose": {
+      "type": "object", "additionalProperties": false, "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "integer", "minimum": 0 },
+        "max": { "type": "integer", "minimum": 1, "$comment": "How many entries the player picks at least; a `min` of 0 is the template's 'optional'." },
+        "byLevel": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["level"], "properties": { "level": { "type": "integer", "minimum": -1, "maximum": 25 }, "min": { "type": "integer", "minimum": 0 }, "max": { "type": "integer", "minimum": 1 } }, "$comment": "From this level of the new creature up, the choice widens or narrows: from 9th, a ghost picks as many as three." } }
+      }
+    },
+    "entry": {
+      "type": "object", "additionalProperties": false, "required": ["id", "section", "name"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug", "$comment": "Unique within the adjustment; what a Strike effect points at with `own`." },
+        "section": { "$ref": "creature.schema.json#/$defs/section" },
+        "name": { "$ref": "#/$defs/key" },
+        "ability": { "$ref": "common.schema.json#/$defs/refAbility" },
+        "actions": { "$ref": "common.schema.json#/$defs/actionCost" },
+        "traits": { "$ref": "creature.schema.json#/$defs/traits" },
+        "traitValues": { "$ref": "creature.schema.json#/$defs/traitValues" },
+        "aura": { "$ref": "creature.schema.json#/$defs/feet" },
+        "trigger": { "$ref": "#/$defs/key" },
+        "frequency": { "$ref": "#/$defs/key" },
+        "requirements": { "$ref": "#/$defs/key" },
+        "text": { "$ref": "#/$defs/key" },
+        "values": {
+          "type": "object", "minProperties": 1, "propertyNames": { "$ref": "#/$defs/slug" },
+          "additionalProperties": { "$ref": "#/$defs/levelValue" }
+        },
+        "affliction": { "$ref": "#/$defs/affliction" },
+        "level": { "$ref": "#/$defs/level" },
+        "modify": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/modify" } },
+        "hp": { "$ref": "#/$defs/hp" },
+        "attributes": { "$ref": "#/$defs/attributes" },
+        "size": { "type": "object", "additionalProperties": false, "required": ["delta"], "properties": { "delta": { "type": "integer" }, "note": { "$ref": "#/$defs/key" } } },
+        "immunities": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
+        "resistances": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/typed" } },
+        "weaknesses": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/typed" } },
+        "speeds": { "$ref": "#/$defs/speeds" },
+        "abilities": { "$ref": "#/$defs/abilitiesOp" },
+        "strikes": { "$ref": "#/$defs/strikesOp" },
+        "spellcasting": { "$ref": "#/$defs/spellcastingOp" },
+        "skills": { "$ref": "#/$defs/skillsOp" },
+        "rescale": { "$ref": "#/$defs/rescale" }
+      },
+      "$comment": "One choice of an ability option: the ability itself plus any operations it brings (Unkillable raises the level by 1, a sin swaps Sinful Bite). Not composed of `ability` and the operation fields by `allOf` — a referenced `additionalProperties: false` would reject the sibling fields — so its shape is spelled out here; keep it in step with those defs."
+    },
+    "option": {
+      "type": "object", "additionalProperties": false, "required": ["id", "name", "choose", "entries"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "name": { "$ref": "#/$defs/key" },
+        "choose": { "$ref": "#/$defs/choose" },
+        "substituteFor": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true, "$comment": "An Alternate-abilities list: each entry replaces one of the base creature's printed abilities, by id (the Lich's frightful presence). The validator checks each creature in `appliesTo.creatures` has them." },
+        "entries": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/entry" } }
+      }
+    },
+    "appliesTo": {
+      "type": "object", "additionalProperties": false, "minProperties": 1,
+      "properties": {
+        "living": { "type": "boolean", "$comment": "'turn living creatures into…': the base creature's nature the template states, expressed by what the print says." },
+        "family": { "$ref": "#/$defs/refFamily", "$comment": "Only members of the printed family are affected (a Skeleton Abilities set)." },
+        "creatures": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/refCreature" }, "uniqueItems": true, "$comment": "Only these creatures (Greater Herexen over creature.herexen)." },
+        "traits": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true, "$comment": "The creature must carry all these traits (a living humanoid, for Werecreature)." },
+        "minLevel": { "type": "integer", "minimum": -1, "maximum": 25, "$comment": "'a creature of at least 5th level'." },
+        "spellcaster": { "type": "boolean", "$comment": "Only a creature with a spell block (the Lich)." },
+        "requires": { "$ref": "#/$defs/refAdjustment", "$comment": "Applied only on top of another adjustment first (True Vampire over Vampire)." },
+        "note": { "$ref": "#/$defs/key", "$comment": "A condition the fields above cannot express, as printed." }
+      }
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "properties": {
+        "type": { "const": "adjustment" },
+        "family": { "$ref": "#/$defs/refFamily", "$comment": "The family whose page prints the transformation. Elite and Weak have none." },
+        "appliesTo": { "$ref": "#/$defs/appliesTo" },
+        "level": { "$ref": "#/$defs/level" },
+        "modify": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/modify" } },
+        "hp": { "$ref": "#/$defs/hp" },
+        "attributes": { "$ref": "#/$defs/attributes" },
+        "size": { "type": "object", "additionalProperties": false, "required": ["delta"], "properties": { "delta": { "type": "integer", "$comment": "Steps on the size scale: +1 one category up, −1 down." }, "note": { "$ref": "#/$defs/key" } } },
+        "traitsOp": { "$ref": "#/$defs/traitsOp", "$comment": "Traits added to or dropped from the base creature, spelled out apart from the record's envelope `traits` — those are the adjustment's own (usually empty). Renamed here because the envelope already owns the name `traits` at the record's root." },
+        "immunities": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
+        "resistances": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/typed" } },
+        "weaknesses": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/typed" } },
+        "speeds": { "$ref": "#/$defs/speeds" },
+        "abilities": { "$ref": "#/$defs/abilitiesOp" },
+        "strikes": { "$ref": "#/$defs/strikesOp" },
+        "spellcasting": { "$ref": "#/$defs/spellcastingOp" },
+        "skills": { "$ref": "#/$defs/skillsOp" },
+        "rescale": { "$ref": "#/$defs/rescale" },
+        "options": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/option" } },
+        "caveats": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/key" }, "$comment": "Every printed sentence the operations above cannot express — in the order the page prints it. The engine shows them to the player or the GM." }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}
