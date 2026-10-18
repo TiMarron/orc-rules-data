@@ -19,7 +19,9 @@ export const scalesCheck: Check = (ds) => {
       if (typeof r.level === 'number') present.add(r.level);
       for (const [tier, cell] of Object.entries(r)) {
         if (tier === 'level') continue;
-        if (!tiersSet.has(tier)) {
+        // `value` is the resistance table's one untiered cell — its columns are Maximum and
+        // Minimum, no tiers, the range alone by the spec.
+        if (!tiersSet.has(tier) && tier !== 'value') {
           issues.push({ level: 'error', file: f.path, message: `rows[${i}]: tier "${tier}" not in tiers` });
           continue;
         }

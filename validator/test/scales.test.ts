@@ -50,4 +50,12 @@ describe('scales check', () => {
       'rows[1]: tier "insane" not in tiers',
     ]);
   });
+
+  it('accepts the resistance table\'s untiered rows: one `value` cell a row, no tiers', () => {
+    const valueRow = (level: number, min: number, max: number) => ({ level, value: { min, max } });
+    expect(messages([scale('resistance', LEVELS.map((l) => valueRow(l, 1, 3)), { tiers: [] })])).toEqual([]);
+    expect(messages([scale('resistance', LEVELS.map((l) => valueRow(l, l === 0 ? 3 : 1, l === 0 ? 1 : 3)), { tiers: [] })])).toEqual([
+      'rows[1].value: min > max',
+    ]);
+  });
 });
