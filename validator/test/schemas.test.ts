@@ -467,6 +467,23 @@ describe('type schemas', () => {
     expect(issues[0]).toContain("must have required property 'level'");
   });
 
+  it('accepts a racket that offers its own key attribute', () => {
+    expect(issuesFor('subclass', record('subclass', 'rogue-ruffian', {
+      class: 'class.rogue', kind: 'racket', level: 1, skills: ['skill.intimidation'], keyAttribute: 'str',
+    }))).toEqual([]);
+  });
+
+  it('rejects a subclass key attribute that is a list or not an attribute', () => {
+    expect(issuesFor('subclass', { ...VALID.subclass, keyAttribute: ['str', 'dex'] }).some((m) => m.includes('/keyAttribute'))).toBe(true);
+    expect(issuesFor('subclass', { ...VALID.subclass, keyAttribute: 'luck' }).some((m) => m.includes('/keyAttribute'))).toBe(true);
+  });
+
+  it('rejects a key attribute on a feat', () => {
+    const issues = issuesFor('feat', { ...VALID.feat, keyAttribute: 'str' });
+    expect(issues).toHaveLength(1);
+    expect(issues[0]).toContain('keyAttribute');
+  });
+
   it('rejects an unknown property on a subclass with exactly one issue naming it', () => {
     const thesis = record('subclass', 'wizard-spell-blending', { class: 'class.wizard', kind: 'arcane-thesis', level: 1, curriculum: {} });
     const issues = issuesFor('subclass', thesis);

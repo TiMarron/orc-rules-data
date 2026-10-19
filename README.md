@@ -76,8 +76,9 @@ cost tokens.
   bloodline's sorcerous gifts, a mystery's granted spells, a muse's spell, the
   spell a witch's familiar learns), `focusSpells` (initial, advanced, greater:
   school, bloodline and revelation spells, a patron's hex cantrip),
-  `tradition`, the `skills` it trains outright, the `feat` it grants and
-  `features`, its abilities by level. Everything else — doctrines, blood
+  `tradition`, the `skills` it trains outright, the `feat` it grants, the
+  `keyAttribute` it lets the character choose besides the class's own (a
+  ruffian's Strength) and `features`, its abilities by level. Everything else — doctrines, blood
   magic, edicts and anathema, a mystery's curse — is in `text`. The school of
   unified magical theory sets no `grantedSpells`.
 - An `archetype` lists its feats in `feats` as `{ level, feat }` entries, the
