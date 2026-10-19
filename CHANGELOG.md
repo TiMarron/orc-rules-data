@@ -4,6 +4,24 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Added
+
+- A subclass may name the `keyAttribute` it lets the character choose besides
+  the class's own. The ruffian's Strength, the scoundrel's Charisma and the
+  mastermind's Intelligence; the thief offers none, and the rogue's own key
+  attribute stays Dexterity.
+
+### Fixed
+
+- The ruffian's text as the book prints it: "whatever tools you have", without
+  "at hand", and a paragraph break after its opening paragraph.
+- The scoundrel's text: a period after "diplomat", and "key attribute" where
+  the source had the legacy "key ability score".
+- The thief's text: no "especially if you can do so completely unnoticed",
+  and "testing your clients' vaults".
+
 ## 0.9.0 — 2026-10-16
 
 ### Changed — breaking

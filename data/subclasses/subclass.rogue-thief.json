@@ -9,13 +9,14 @@
     "page": 167,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "subclass.rogue-thief.text",
   "class": "class.rogue",
   "kind": "racket",
   "level": 1,
   "skills": [
     "skill.thievery"
-  ]
+  ],
+  "editNote": "Text read against the book p.167 sentence by sentence: the book has no ', especially if you can do so completely unnoticed' after 'someone else', and says 'testing your clients' vaults'. The thief offers no key attribute of its own."
 }
