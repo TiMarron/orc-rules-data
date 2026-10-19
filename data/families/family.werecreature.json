@@ -9,10 +9,11 @@
     "page": 344,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "members": [
     "creature.werebear",
+    "creature.wererat",
     "creature.weretiger",
     "creature.werewolf"
   ],
