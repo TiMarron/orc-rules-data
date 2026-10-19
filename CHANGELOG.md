@@ -21,6 +21,13 @@ major for renamed or removed ids, new required fields and markup changes.
   parent, adjustment references to scales' tiers, abilities removed or
   substituted per targeted creature, a `requires` naming an adjustment, scale
   levels without gaps and cells under a carried tier.
+- A level value's `part` (`dc` or `attack`), which a reference into the Spell
+  DC table's two-number cells must name; the Area Damage table's `unlimited`
+  and `limited` tiers; a die floor beside a repeating die ("minimum 1d6").
+- Validator checks: an ability an adjustment replaces, and one an option entry
+  removes or replaces, exists on every targeted creature; a dragon age's spell
+  block is keyed by a creature the adjustment applies to; a creature's `family`
+  names a family.
 
 ## 0.9.0 — 2026-10-16
 
