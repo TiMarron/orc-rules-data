@@ -237,5 +237,5 @@
       "feature": "feature.rogue-master-strike"
     }
   ],
-  "editNote": "the book p.165: verified hp 8, key attribute Dexterity (the book's 'Dexterity or other' racket-dependent nuance is explained by the racket features themselves and is a documented, intentional simplification in transform/class.ts's keyAttributes()), saves (trained/expert/expert), skills (Stealth fixed + one-or-more from racket, +7 Int), attacks (simple/martial/unarmed trained, advanced untrained), defenses (unarmored/light trained, medium/heavy untrained), class DC trained all match the book's Initial Proficiencies block; dropped tables/images/document sections and unknown-tags are the expected by-design loss for a class record."
+  "editNote": "the book p.165: verified hp 8, key attribute Dexterity — the class's own; a racket may let the character choose another (Strength for the ruffian, Charisma for the scoundrel, Intelligence for the mastermind), carried as the subclass's keyAttribute — saves (trained/expert/expert), skills (Stealth fixed + one-or-more from racket, +7 Int), attacks (simple/martial/unarmed trained, advanced untrained), defenses (unarmored/light trained, medium/heavy untrained), class DC trained all match the book's Initial Proficiencies block; dropped tables/images/document sections and unknown-tags are the expected by-design loss for a class record."
 }

@@ -9,13 +9,15 @@
     "page": 166,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "subclass.rogue-mastermind.text",
   "class": "class.rogue",
   "kind": "racket",
   "level": 1,
   "skills": [
     "skill.society"
-  ]
+  ],
+  "keyAttribute": "int",
+  "editNote": "the book p.166: text read against the book sentence by sentence, no difference; key attribute Intelligence as the book prints it"
 }

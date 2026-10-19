@@ -9,8 +9,8 @@
     "page": 166,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "subclass.rogue-scoundrel.text",
   "class": "class.rogue",
   "kind": "racket",
@@ -18,5 +18,7 @@
   "skills": [
     "skill.deception",
     "skill.diplomacy"
-  ]
+  ],
+  "keyAttribute": "cha",
+  "editNote": "Text read against the book p.166 sentence by sentence: the first paragraph ends with a period after 'diplomat', and the book says 'key attribute', not the legacy 'key ability score'; the page reference '(page 239)' is not carried. Key attribute Charisma, as the book prints it."
 }

@@ -10,12 +10,14 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "subclass.rogue-ruffian.text",
   "class": "class.rogue",
   "kind": "racket",
   "level": 1,
   "skills": [
     "skill.intimidation"
-  ]
+  ],
+  "keyAttribute": "str",
+  "editNote": "The dropped block is the site's clarification note, not text of the book. Text read against the book p.166 sentence by sentence: the book has no 'at hand' after 'whatever tools you have', and the paragraph break after 'family's power.' is a blank line as printed; the page reference '(page 283)' is not carried. Key attribute Strength, as the book prints it."
 }
