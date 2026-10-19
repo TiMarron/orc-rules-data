@@ -12,9 +12,10 @@
     "page": 343,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.wasp",
   "size": "large",
   "perception": {
     "mod": 10,
@@ -103,5 +104,6 @@
       ],
       "text": "creature.wasp-swarm.abilities.wasp-venom.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

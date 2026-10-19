@@ -11,9 +11,10 @@
     "page": 350,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.wolf",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -96,5 +97,6 @@
       "name": "creature.wolf.abilities.pack-attack.name",
       "text": "creature.wolf.abilities.pack-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -1,0 +1,23 @@
+{
+  "id": "family.zombie",
+  "type": "family",
+  "name": "family.zombie.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 356,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.plague-zombie",
+    "creature.zombie-brute",
+    "creature.zombie-hulk",
+    "creature.zombie-shambler"
+  ],
+  "adjustments": [
+    "adjustment.zombie-abilities"
+  ]
+}

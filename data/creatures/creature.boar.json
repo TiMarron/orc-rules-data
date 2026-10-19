@@ -11,9 +11,10 @@
     "page": 43,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.boar",
   "size": "medium",
   "perception": {
     "mod": 8,
@@ -95,5 +96,6 @@
       "actions": "2",
       "text": "creature.boar.abilities.boar-charge.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

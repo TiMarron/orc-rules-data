@@ -1,0 +1,18 @@
+{
+  "id": "family.norn",
+  "type": "family",
+  "name": "family.norn.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 240,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.norn"
+  ],
+  "adjustments": []
+}

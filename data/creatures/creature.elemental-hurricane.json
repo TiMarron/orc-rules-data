@@ -12,9 +12,10 @@
     "page": 141,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 11,
+  "family": "family.elemental-air",
   "size": "huge",
   "perception": {
     "mod": 20,
@@ -150,5 +151,6 @@
       "name": "creature.elemental-hurricane.abilities.swiftness.name",
       "text": "creature.elemental-hurricane.abilities.swiftness.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

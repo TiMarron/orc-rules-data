@@ -11,9 +11,10 @@
     "page": 54,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 13,
+  "family": "family.cave-worm",
   "size": "gargantuan",
   "perception": {
     "mod": 20,
@@ -209,5 +210,6 @@
       "actions": "2",
       "text": "creature.cave-worm.abilities.thrash.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -11,9 +11,10 @@
     "page": 12,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.alghollthu",
   "size": "medium",
   "perception": {
     "mod": 10,
@@ -185,5 +186,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

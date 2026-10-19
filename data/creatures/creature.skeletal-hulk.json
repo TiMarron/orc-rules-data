@@ -14,9 +14,10 @@
     "page": 313,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.skeleton",
   "size": "huge",
   "perception": {
     "mod": 16,
@@ -127,5 +128,6 @@
       "actions": "2",
       "text": "creature.skeletal-hulk.abilities.massive-rush.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

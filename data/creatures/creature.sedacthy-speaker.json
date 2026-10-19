@@ -13,9 +13,10 @@
     "page": 301,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 6,
+  "family": "family.sedacthy",
   "size": "medium",
   "perception": {
     "mod": 15,
@@ -211,5 +212,6 @@
       "requirements": "creature.sedacthy-speaker.abilities.swim-together.requirements",
       "text": "creature.sedacthy-speaker.abilities.swim-together.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

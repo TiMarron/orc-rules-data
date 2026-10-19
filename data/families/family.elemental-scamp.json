@@ -1,0 +1,21 @@
+{
+  "id": "family.elemental-scamp",
+  "type": "family",
+  "name": "family.elemental-scamp.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 146,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.air-scamp",
+    "creature.earth-scamp",
+    "creature.fire-scamp",
+    "creature.water-scamp"
+  ],
+  "adjustments": []
+}

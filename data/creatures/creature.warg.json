@@ -11,9 +11,10 @@
     "page": 341,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.warg",
   "size": "medium",
   "perception": {
     "mod": 8,
@@ -127,5 +128,6 @@
       ],
       "text": "creature.warg.abilities.swallow-whole.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

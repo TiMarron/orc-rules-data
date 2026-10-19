@@ -1,0 +1,20 @@
+{
+  "id": "family.sinspawn",
+  "type": "family",
+  "name": "family.sinspawn.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.sinspawn"
+  ],
+  "adjustments": [
+    "adjustment.sinspawn-sin"
+  ]
+}

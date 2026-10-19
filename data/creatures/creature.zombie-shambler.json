@@ -14,9 +14,10 @@
     "page": 356,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": -1,
+  "family": "family.zombie",
   "size": "medium",
   "perception": {
     "mod": 0,
@@ -110,5 +111,6 @@
       "requirements": "creature.zombie-shambler.abilities.zombie-bite.requirements",
       "text": "creature.zombie-shambler.abilities.zombie-bite.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

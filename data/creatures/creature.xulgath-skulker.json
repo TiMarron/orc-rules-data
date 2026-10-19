@@ -12,9 +12,10 @@
     "page": 353,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.xulgath",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -176,5 +177,6 @@
       "name": "creature.xulgath-skulker.abilities.sneak-attack.name",
       "text": "creature.xulgath-skulker.abilities.sneak-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

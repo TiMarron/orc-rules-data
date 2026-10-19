@@ -1,0 +1,21 @@
+{
+  "id": "family.spider",
+  "type": "family",
+  "name": "family.spider.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 320,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.giant-tarantula",
+    "creature.goliath-spider",
+    "creature.hunting-spider",
+    "creature.spider-swarm"
+  ],
+  "adjustments": []
+}

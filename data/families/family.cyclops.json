@@ -1,0 +1,19 @@
+{
+  "id": "family.cyclops",
+  "type": "family",
+  "name": "family.cyclops.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 70,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.cyclops",
+    "creature.great-cyclops"
+  ],
+  "adjustments": []
+}

@@ -12,9 +12,10 @@
     "page": 250,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.ogre",
   "size": "large",
   "perception": {
     "mod": 5,
@@ -114,5 +115,6 @@
       "item": "item.javelin"
     }
   ],
-  "abilities": []
+  "abilities": [],
+  "editNote": "added only the family reference"
 }

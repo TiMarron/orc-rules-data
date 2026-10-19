@@ -1,0 +1,205 @@
+{
+  "id": "scale.ac",
+  "type": "scale",
+  "name": "scale.ac.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 117,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "scale.ac.text",
+  "tiers": [
+    "extreme",
+    "high",
+    "moderate",
+    "low"
+  ],
+  "rows": [
+    {
+      "level": -1,
+      "extreme": 18,
+      "high": 15,
+      "moderate": 14,
+      "low": 12
+    },
+    {
+      "level": 0,
+      "extreme": 19,
+      "high": 16,
+      "moderate": 15,
+      "low": 13
+    },
+    {
+      "level": 1,
+      "extreme": 19,
+      "high": 16,
+      "moderate": 15,
+      "low": 13
+    },
+    {
+      "level": 2,
+      "extreme": 21,
+      "high": 18,
+      "moderate": 17,
+      "low": 15
+    },
+    {
+      "level": 3,
+      "extreme": 22,
+      "high": 19,
+      "moderate": 18,
+      "low": 16
+    },
+    {
+      "level": 4,
+      "extreme": 24,
+      "high": 21,
+      "moderate": 20,
+      "low": 18
+    },
+    {
+      "level": 5,
+      "extreme": 25,
+      "high": 22,
+      "moderate": 21,
+      "low": 19
+    },
+    {
+      "level": 6,
+      "extreme": 27,
+      "high": 24,
+      "moderate": 23,
+      "low": 21
+    },
+    {
+      "level": 7,
+      "extreme": 28,
+      "high": 25,
+      "moderate": 24,
+      "low": 22
+    },
+    {
+      "level": 8,
+      "extreme": 30,
+      "high": 27,
+      "moderate": 26,
+      "low": 24
+    },
+    {
+      "level": 9,
+      "extreme": 31,
+      "high": 28,
+      "moderate": 27,
+      "low": 25
+    },
+    {
+      "level": 10,
+      "extreme": 33,
+      "high": 30,
+      "moderate": 29,
+      "low": 27
+    },
+    {
+      "level": 11,
+      "extreme": 34,
+      "high": 31,
+      "moderate": 30,
+      "low": 28
+    },
+    {
+      "level": 12,
+      "extreme": 36,
+      "high": 33,
+      "moderate": 32,
+      "low": 30
+    },
+    {
+      "level": 13,
+      "extreme": 37,
+      "high": 34,
+      "moderate": 33,
+      "low": 31
+    },
+    {
+      "level": 14,
+      "extreme": 39,
+      "high": 36,
+      "moderate": 35,
+      "low": 33
+    },
+    {
+      "level": 15,
+      "extreme": 40,
+      "high": 37,
+      "moderate": 36,
+      "low": 34
+    },
+    {
+      "level": 16,
+      "extreme": 42,
+      "high": 39,
+      "moderate": 38,
+      "low": 36
+    },
+    {
+      "level": 17,
+      "extreme": 43,
+      "high": 40,
+      "moderate": 39,
+      "low": 37
+    },
+    {
+      "level": 18,
+      "extreme": 45,
+      "high": 42,
+      "moderate": 41,
+      "low": 39
+    },
+    {
+      "level": 19,
+      "extreme": 46,
+      "high": 43,
+      "moderate": 42,
+      "low": 40
+    },
+    {
+      "level": 20,
+      "extreme": 48,
+      "high": 45,
+      "moderate": 44,
+      "low": 42
+    },
+    {
+      "level": 21,
+      "extreme": 49,
+      "high": 46,
+      "moderate": 45,
+      "low": 43
+    },
+    {
+      "level": 22,
+      "extreme": 51,
+      "high": 48,
+      "moderate": 47,
+      "low": 45
+    },
+    {
+      "level": 23,
+      "extreme": 52,
+      "high": 49,
+      "moderate": 48,
+      "low": 46
+    },
+    {
+      "level": 24,
+      "extreme": 54,
+      "high": 51,
+      "moderate": 50,
+      "low": 48
+    }
+  ]
+}

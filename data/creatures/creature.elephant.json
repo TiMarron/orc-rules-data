@@ -11,9 +11,10 @@
     "page": 150,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.elephant",
   "size": "huge",
   "perception": {
     "mod": 13,
@@ -132,5 +133,6 @@
       "actions": "3",
       "text": "creature.elephant.abilities.trample.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -1,0 +1,22 @@
+{
+  "id": "family.dragon-fortune",
+  "type": "family",
+  "name": "family.dragon-fortune.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 116,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-fortune-dragon",
+    "creature.ancient-fortune-dragon",
+    "creature.young-fortune-dragon"
+  ],
+  "adjustments": [],
+  "parent": "family.dragon",
+  "editNote": "The pdf-page check searches for the record’s raw name only, and the AoN family name prints inverted — the book prints “Fortune Dragon” on page 116, exactly the record’s source page (the family’s creature stat blocks print across 116–119 with the family’s rules). Compared by hand and accepted; the re-derived draft adds its family field."
+}

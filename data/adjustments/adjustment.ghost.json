@@ -1,0 +1,244 @@
+{
+  "id": "adjustment.ghost",
+  "type": "adjustment",
+  "name": "adjustment.ghost.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 160,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.ghost",
+  "appliesTo": {
+    "living": true
+  },
+  "level": {
+    "delta": 2
+  },
+  "modify": [
+    {
+      "stats": [
+        "ac",
+        "saves",
+        "perception",
+        "dc",
+        "skills"
+      ],
+      "delta": 2
+    },
+    {
+      "stats": [
+        "attack"
+      ],
+      "delta": 4
+    },
+    {
+      "stats": [
+        "attack"
+      ],
+      "delta": 2
+    }
+  ],
+  "hp": {
+    "keep": true
+  },
+  "attributes": {
+    "str": -5,
+    "con": 0
+  },
+  "traitsOp": {
+    "add": [
+      "ghost",
+      "incorporeal",
+      "spirit",
+      "undead"
+    ]
+  },
+  "immunities": [
+    "bleed",
+    "death",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "all-damage",
+      "value": {
+        "byLevel": [
+          {
+            "level": 1,
+            "value": 5
+          },
+          {
+            "level": 9,
+            "value": 10
+          },
+          {
+            "level": 16,
+            "value": 15
+          }
+        ]
+      },
+      "except": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "note": "adjustment.ghost.resistances.0.note"
+    }
+  ],
+  "speeds": {
+    "fly": {
+      "equalTo": "land"
+    }
+  },
+  "abilities": {
+    "add": [
+      {
+        "id": "darkvision",
+        "section": "top",
+        "name": "adjustment.ghost.abilities.darkvision.name",
+        "ability": "ability.darkvision"
+      },
+      {
+        "id": "site-bound",
+        "section": "top",
+        "name": "adjustment.ghost.abilities.site-bound.name",
+        "text": "adjustment.ghost.abilities.site-bound.text"
+      },
+      {
+        "id": "rejuvenation",
+        "section": "top",
+        "name": "adjustment.ghost.abilities.rejuvenation.name",
+        "traits": [
+          "divine"
+        ],
+        "text": "adjustment.ghost.abilities.rejuvenation.text"
+      },
+      {
+        "id": "void-healing",
+        "section": "top",
+        "name": "adjustment.ghost.abilities.void-healing.name",
+        "ability": "ability.void-healing"
+      },
+      {
+        "id": "ghostly-hand",
+        "section": "top",
+        "name": "adjustment.ghost.abilities.ghostly-hand.name",
+        "text": "adjustment.ghost.abilities.ghostly-hand.text"
+      }
+    ]
+  },
+  "strikes": {
+    "add": [
+      {
+        "kind": "melee",
+        "name": "adjustment.ghost.strikes.ghostly-hand.name",
+        "traits": [
+          "agile",
+          "finesse",
+          "magical",
+          "unarmed"
+        ],
+        "derive": "adjustment.ghost.strikes.ghostly-hand.derive"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "special-abilities",
+      "name": "adjustment.ghost.options.special-abilities.name",
+      "choose": {
+        "min": 1,
+        "max": 2,
+        "byLevel": [
+          {
+            "level": 9,
+            "max": 3
+          }
+        ]
+      },
+      "entries": [
+        {
+          "id": "corrupting-gaze",
+          "section": "top",
+          "name": "adjustment.ghost.options.special-abilities.abilities.corrupting-gaze.name",
+          "actions": "2",
+          "text": "adjustment.ghost.options.special-abilities.abilities.corrupting-gaze.text",
+          "values": {
+            "damage": {
+              "dice": "1d6",
+              "per": 2,
+              "base": "1d6"
+            }
+          }
+        },
+        {
+          "id": "draining-touch",
+          "section": "top",
+          "name": "adjustment.ghost.options.special-abilities.abilities.draining-touch.name",
+          "actions": "2",
+          "text": "adjustment.ghost.options.special-abilities.abilities.draining-touch.text",
+          "values": {
+            "amount": {
+              "ofLevel": 0.5
+            }
+          }
+        },
+        {
+          "id": "frightful-moan",
+          "section": "top",
+          "name": "adjustment.ghost.options.special-abilities.abilities.frightful-moan.name",
+          "actions": "1",
+          "traits": [
+            "auditory",
+            "divine",
+            "emotion",
+            "fear",
+            "mental"
+          ],
+          "text": "adjustment.ghost.options.special-abilities.abilities.frightful-moan.text"
+        },
+        {
+          "id": "inhabit-object",
+          "section": "top",
+          "name": "adjustment.ghost.options.special-abilities.abilities.inhabit-object.name",
+          "actions": "1",
+          "text": "adjustment.ghost.options.special-abilities.abilities.inhabit-object.text"
+        },
+        {
+          "id": "malevolent-possession",
+          "section": "top",
+          "name": "adjustment.ghost.options.special-abilities.abilities.malevolent-possession.name",
+          "actions": "2",
+          "text": "adjustment.ghost.options.special-abilities.abilities.malevolent-possession.text"
+        },
+        {
+          "id": "telekinetic-assault",
+          "section": "top",
+          "name": "adjustment.ghost.options.special-abilities.abilities.telekinetic-assault.name",
+          "actions": "2",
+          "traits": [
+            "divine"
+          ],
+          "text": "adjustment.ghost.options.special-abilities.abilities.telekinetic-assault.text"
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "adjustment.ghost.caveats.0",
+    "adjustment.ghost.caveats.1",
+    "adjustment.ghost.caveats.2",
+    "adjustment.ghost.caveats.3",
+    "adjustment.ghost.caveats.4",
+    "adjustment.ghost.caveats.5"
+  ]
+}

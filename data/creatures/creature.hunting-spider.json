@@ -11,9 +11,10 @@
     "page": 320,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.spider",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -141,5 +142,6 @@
       "name": "creature.hunting-spider.abilities.web-trap.name",
       "text": "creature.hunting-spider.abilities.web-trap.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

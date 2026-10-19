@@ -12,9 +12,10 @@
     "page": 133,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 8,
+  "family": "family.drake",
   "size": "large",
   "perception": {
     "mod": 15,
@@ -185,5 +186,6 @@
       "name": "creature.desert-drake.abilities.surprise-attacker.name",
       "text": "creature.desert-drake.abilities.surprise-attacker.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

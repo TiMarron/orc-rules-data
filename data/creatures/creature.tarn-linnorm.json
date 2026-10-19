@@ -16,6 +16,7 @@
   "review": "assistant",
   "edited": true,
   "level": 20,
+  "family": "family.linnorm",
   "size": "gargantuan",
   "perception": {
     "mod": 35,

@@ -1,0 +1,21 @@
+{
+  "id": "family.orc",
+  "type": "family",
+  "name": "family.orc.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 258,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.dromaar-mountaineer",
+    "creature.orc-commander",
+    "creature.orc-scrapper",
+    "creature.orc-veteran"
+  ],
+  "adjustments": []
+}

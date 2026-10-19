@@ -11,9 +11,10 @@
     "page": 21,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.ant",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -120,5 +121,6 @@
       "requirements": "creature.giant-ant.abilities.haul-away.requirements",
       "text": "creature.giant-ant.abilities.haul-away.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

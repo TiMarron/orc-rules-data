@@ -11,9 +11,10 @@
     "page": 23,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.ape",
   "size": "large",
   "perception": {
     "mod": 8,
@@ -119,5 +120,6 @@
       ],
       "text": "creature.gorilla.abilities.frightening-display.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

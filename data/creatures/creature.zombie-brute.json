@@ -14,9 +14,10 @@
     "page": 357,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.zombie",
   "size": "large",
   "perception": {
     "mod": 4,
@@ -108,5 +109,6 @@
       "name": "creature.zombie-brute.abilities.slow.name",
       "text": "creature.zombie-brute.abilities.slow.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

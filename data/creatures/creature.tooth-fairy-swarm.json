@@ -12,9 +12,10 @@
     "page": 327,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.tooth-fairy",
   "size": "large",
   "perception": {
     "mod": 8,
@@ -119,5 +120,6 @@
       "actions": "3",
       "text": "creature.tooth-fairy-swarm.abilities.pry.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

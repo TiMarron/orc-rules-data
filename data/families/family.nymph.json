@@ -1,0 +1,23 @@
+{
+  "id": "family.nymph",
+  "type": "family",
+  "name": "family.nymph.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.dryad",
+    "creature.dryad-queen",
+    "creature.naiad",
+    "creature.naiad-queen"
+  ],
+  "adjustments": [
+    "adjustment.nymph-queen"
+  ]
+}

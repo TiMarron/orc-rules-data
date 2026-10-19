@@ -1,0 +1,19 @@
+{
+  "id": "family.phantom",
+  "type": "family",
+  "name": "family.phantom.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.phantom-beast",
+    "creature.phantom-knight"
+  ],
+  "adjustments": []
+}

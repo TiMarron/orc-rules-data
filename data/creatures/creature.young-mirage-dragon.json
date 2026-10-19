@@ -12,9 +12,10 @@
     "page": 122,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 9,
+  "family": "family.dragon-mirage",
   "size": "large",
   "perception": {
     "mod": 20,
@@ -268,5 +269,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

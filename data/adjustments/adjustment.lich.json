@@ -1,0 +1,186 @@
+{
+  "id": "adjustment.lich",
+  "type": "adjustment",
+  "name": "adjustment.lich.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 218,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.lich",
+  "appliesTo": {
+    "spellcaster": true
+  },
+  "level": {
+    "delta": 1
+  },
+  "modify": [
+    {
+      "stats": [
+        "spell-dc",
+        "spell-attack"
+      ],
+      "delta": 2
+    }
+  ],
+  "traitsOp": {
+    "add": [
+      "undead"
+    ]
+  },
+  "immunities": [
+    "bleed",
+    "death",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "physical",
+      "value": 10,
+      "except": [
+        "magical-bludgeoning"
+      ]
+    }
+  ],
+  "abilities": {
+    "add": [
+      {
+        "id": "darkvision",
+        "section": "top",
+        "name": "adjustment.lich.abilities.darkvision.name",
+        "ability": "ability.darkvision"
+      },
+      {
+        "id": "saving-throws",
+        "section": "top",
+        "name": "adjustment.lich.abilities.saving-throws.name",
+        "text": "adjustment.lich.abilities.saving-throws.text"
+      },
+      {
+        "id": "void-healing",
+        "section": "top",
+        "name": "adjustment.lich.abilities.void-healing.name",
+        "ability": "ability.void-healing"
+      },
+      {
+        "id": "rejuvenation",
+        "section": "top",
+        "name": "adjustment.lich.abilities.rejuvenation.name",
+        "traits": [
+          "arcane"
+        ],
+        "text": "adjustment.lich.abilities.rejuvenation.text"
+      },
+      {
+        "id": "frightful-presence",
+        "section": "top",
+        "name": "adjustment.lich.abilities.frightful-presence.name",
+        "ability": "ability.frightful-presence",
+        "traits": [
+          "aura",
+          "emotion",
+          "fear",
+          "mental"
+        ],
+        "aura": 60,
+        "text": "adjustment.lich.abilities.frightful-presence.text"
+      },
+      {
+        "id": "hand-of-the-lich",
+        "section": "top",
+        "name": "adjustment.lich.abilities.hand-of-the-lich.name",
+        "text": "adjustment.lich.abilities.hand-of-the-lich.text",
+        "values": {
+          "damage": {
+            "dice": "1d8",
+            "per": 3
+          }
+        }
+      },
+      {
+        "id": "drain-soul-cage",
+        "section": "top",
+        "name": "adjustment.lich.abilities.drain-soul-cage.name",
+        "actions": "free",
+        "frequency": "adjustment.lich.abilities.drain-soul-cage.frequency",
+        "text": "adjustment.lich.abilities.drain-soul-cage.text"
+      },
+      {
+        "id": "siphon-life",
+        "section": "top",
+        "name": "adjustment.lich.abilities.siphon-life.name",
+        "text": "adjustment.lich.abilities.siphon-life.text"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "alternate-lich-abilities",
+      "name": "adjustment.lich.options.alternate-lich-abilities.name",
+      "choose": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "id": "blasphemous-utterances",
+          "section": "top",
+          "name": "adjustment.lich.options.alternate-lich-abilities.abilities.blasphemous-utterances.name",
+          "traits": [
+            "arcane",
+            "aura",
+            "mental"
+          ],
+          "aura": 10,
+          "text": "adjustment.lich.options.alternate-lich-abilities.abilities.blasphemous-utterances.text"
+        },
+        {
+          "id": "cold-beyond-cold",
+          "section": "top",
+          "name": "adjustment.lich.options.alternate-lich-abilities.abilities.cold-beyond-cold.name",
+          "text": "adjustment.lich.options.alternate-lich-abilities.abilities.cold-beyond-cold.text"
+        },
+        {
+          "id": "dark-deliverance",
+          "section": "top",
+          "name": "adjustment.lich.options.alternate-lich-abilities.abilities.dark-deliverance.name",
+          "text": "adjustment.lich.options.alternate-lich-abilities.abilities.dark-deliverance.text"
+        },
+        {
+          "id": "void-shroud",
+          "section": "top",
+          "name": "adjustment.lich.options.alternate-lich-abilities.abilities.void-shroud.name",
+          "traits": [
+            "aura",
+            "death"
+          ],
+          "aura": 30,
+          "text": "adjustment.lich.options.alternate-lich-abilities.abilities.void-shroud.text"
+        }
+      ],
+      "substituteFor": [
+        "frightful-presence",
+        "siphon-life",
+        "drain-soul-cage"
+      ]
+    }
+  ],
+  "caveats": [
+    "adjustment.lich.caveats.0",
+    "adjustment.lich.caveats.1",
+    "adjustment.lich.caveats.2",
+    "adjustment.lich.caveats.3"
+  ],
+  "editNote": "The unplaced sentence — liches lose all abilities that come from being a living creature — states a removal the adjustment schema has no operation for, so it stays the caveat that carries it for a human reader (its record’s other specifics are placed: the physical’s halved, the option entries, the spellcasting). Compared with page 218 and accepted; the losing is how the transformation reads there."
+}

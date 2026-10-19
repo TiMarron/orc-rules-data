@@ -1,0 +1,20 @@
+{
+  "id": "family.sprite",
+  "type": "family",
+  "name": "family.sprite.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 322,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.draxie",
+    "creature.pixie",
+    "creature.sprite"
+  ],
+  "adjustments": []
+}

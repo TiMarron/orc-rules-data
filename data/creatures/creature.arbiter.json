@@ -12,9 +12,10 @@
     "page": 8,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.aeon",
   "size": "tiny",
   "perception": {
     "mod": 7,
@@ -169,5 +170,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

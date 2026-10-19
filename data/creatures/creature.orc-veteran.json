@@ -12,9 +12,10 @@
     "page": 258,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.orc",
   "size": "medium",
   "perception": {
     "mod": 6,
@@ -169,5 +170,6 @@
       "ability": "ability.reactive-strike",
       "actions": "reaction"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

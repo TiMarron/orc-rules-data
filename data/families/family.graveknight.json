@@ -1,0 +1,18 @@
+{
+  "id": "family.graveknight",
+  "type": "family",
+  "name": "family.graveknight.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 178,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.graveknight"
+  ],
+  "adjustments": []
+}

@@ -12,9 +12,10 @@
     "page": 210,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.kobold",
   "size": "small",
   "perception": {
     "mod": 8,
@@ -152,5 +153,6 @@
       "name": "creature.kobold-scout.abilities.sneak-attack.name",
       "text": "creature.kobold-scout.abilities.sneak-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

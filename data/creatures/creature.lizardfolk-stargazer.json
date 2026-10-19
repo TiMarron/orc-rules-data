@@ -15,6 +15,7 @@
   "review": "assistant",
   "edited": true,
   "level": 2,
+  "family": "family.lizardfolk",
   "size": "medium",
   "perception": {
     "mod": 8

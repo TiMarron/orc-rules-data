@@ -12,9 +12,10 @@
     "page": 259,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.orc",
   "size": "medium",
   "perception": {
     "mod": 8,
@@ -158,5 +159,6 @@
       ],
       "text": "creature.orc-commander.abilities.battle-cry.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

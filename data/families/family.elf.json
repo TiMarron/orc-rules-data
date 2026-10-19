@@ -1,0 +1,19 @@
+{
+  "id": "family.elf",
+  "type": "family",
+  "name": "family.elf.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 151,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.aiuvarin-elementalist",
+    "creature.elf-ranger"
+  ],
+  "adjustments": []
+}

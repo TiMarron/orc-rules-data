@@ -12,9 +12,10 @@
     "page": 135,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.dwarf",
   "size": "medium",
   "perception": {
     "mod": 13,
@@ -152,5 +153,6 @@
       ],
       "text": "creature.dwarf-stonecaster.abilities.tremor.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

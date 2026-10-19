@@ -16,6 +16,7 @@
   "review": "assistant",
   "edited": true,
   "level": 3,
+  "family": "family.changeling",
   "size": "medium",
   "perception": {
     "mod": 11,

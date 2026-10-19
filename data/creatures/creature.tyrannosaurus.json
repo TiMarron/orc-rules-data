@@ -12,9 +12,10 @@
     "page": 101,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 10,
+  "family": "family.dinosaur",
   "size": "gargantuan",
   "perception": {
     "mod": 19,
@@ -143,5 +144,6 @@
       "actions": "3",
       "text": "creature.tyrannosaurus.abilities.trample.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

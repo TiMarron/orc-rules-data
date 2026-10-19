@@ -1,0 +1,19 @@
+{
+  "id": "family.sargassum-heap",
+  "type": "family",
+  "name": "family.sargassum-heap.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 295,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.doldrums-heap",
+    "creature.sargassum-heap"
+  ],
+  "adjustments": []
+}

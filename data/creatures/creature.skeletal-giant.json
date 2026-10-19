@@ -14,9 +14,10 @@
     "page": 313,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.skeleton",
   "size": "large",
   "perception": {
     "mod": 7,
@@ -153,5 +154,6 @@
       "actions": "2",
       "text": "creature.skeletal-giant.abilities.terrifying-charge.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

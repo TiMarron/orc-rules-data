@@ -12,9 +12,10 @@
     "page": 132,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.drake",
   "size": "large",
   "perception": {
     "mod": 14,
@@ -177,5 +178,6 @@
       "frequency": "creature.frost-drake.abilities.speed-surge.frequency",
       "text": "creature.frost-drake.abilities.speed-surge.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

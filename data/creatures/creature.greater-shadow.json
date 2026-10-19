@@ -13,9 +13,10 @@
     "page": 306,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.shadow",
   "size": "medium",
   "perception": {
     "mod": 14,
@@ -154,5 +155,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

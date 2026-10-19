@@ -1,0 +1,19 @@
+{
+  "id": "family.bear",
+  "type": "family",
+  "name": "family.bear.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 41,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.cave-bear",
+    "creature.grizzly-bear"
+  ],
+  "adjustments": []
+}

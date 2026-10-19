@@ -1,0 +1,19 @@
+{
+  "id": "family.rakshasa",
+  "type": "family",
+  "name": "family.rakshasa.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 286,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.raja-krodha",
+    "creature.raktavarna"
+  ],
+  "adjustments": []
+}

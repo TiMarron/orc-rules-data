@@ -12,9 +12,10 @@
     "page": 99,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.dinosaur",
   "size": "huge",
   "perception": {
     "mod": 15,
@@ -114,5 +115,6 @@
       "actions": "3",
       "text": "creature.stegosaurus.abilities.trample.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

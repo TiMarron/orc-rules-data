@@ -12,9 +12,10 @@
     "page": 352,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.xulgath",
   "size": "medium",
   "perception": {
     "mod": 6,
@@ -164,5 +165,6 @@
       "aura": 30,
       "text": "creature.xulgath-warrior.abilities.stench.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

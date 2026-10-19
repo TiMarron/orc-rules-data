@@ -1,0 +1,49 @@
+{
+  "id": "affliction.rabies",
+  "type": "affliction",
+  "name": "affliction.rabies.name",
+  "traits": [
+    "disease"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 102,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "kind": "disease",
+  "text": "affliction.rabies.text",
+  "save": {
+    "type": "fortitude",
+    "dc": 17
+  },
+  "stages": [
+    {
+      "text": "affliction.rabies.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.rabies.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.rabies.stages.2",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.rabies.stages.3"
+    }
+  ],
+  "editNote": "Compared with page 102: the inline disease prints no level header — “RABIES (DISEASE) … Saving Throw DC 17 Fortitude; stage 1 sickened 1 (1 day); stage 2 sickened 2; stage 3 confused; stage 4 dead” — and the record carries exactly that: kind disease, save DC 17 Fortitude, the four stages with the printed durations. The pdf-stats check looks for a “name kind level” header this inset affliction does not print; accepted with the comparison recorded."
+}

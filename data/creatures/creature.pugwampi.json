@@ -12,9 +12,10 @@
     "page": 180,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 0,
+  "family": "family.gremlin",
   "size": "tiny",
   "perception": {
     "mod": 6,
@@ -177,5 +178,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "link-only: beside its new family field, the only text changes are the new family references (family.gremlin, family.kholo); no other field or string changed."
 }

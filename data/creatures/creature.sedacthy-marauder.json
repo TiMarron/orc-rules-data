@@ -13,9 +13,10 @@
     "page": 300,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.sedacthy",
   "size": "medium",
   "perception": {
     "mod": 9,
@@ -182,5 +183,6 @@
       "actions": "2",
       "text": "creature.sedacthy-marauder.abilities.shared-feast.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

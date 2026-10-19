@@ -11,9 +11,10 @@
     "page": 224,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.lizard",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -114,5 +115,6 @@
       ],
       "text": "creature.giant-monitor-lizard.abilities.monitor-lizard-venom.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

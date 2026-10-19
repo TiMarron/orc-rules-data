@@ -1,0 +1,190 @@
+{
+  "id": "adjustment.werecreature",
+  "type": "adjustment",
+  "name": "adjustment.werecreature.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 344,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.werecreature",
+  "appliesTo": {
+    "living": true,
+    "traits": [
+      "humanoid"
+    ]
+  },
+  "level": {
+    "delta": 1
+  },
+  "modify": [
+    {
+      "stats": [
+        "ac",
+        "attack",
+        "dc",
+        "saves",
+        "skills"
+      ],
+      "delta": 1
+    },
+    {
+      "stats": [
+        "damage"
+      ],
+      "delta": 1,
+      "limited": 2
+    }
+  ],
+  "hp": {
+    "delta": {
+      "level": "base",
+      "byLevel": [
+        {
+          "level": -1,
+          "value": 25
+        },
+        {
+          "level": 5,
+          "value": 35
+        },
+        {
+          "level": 8,
+          "value": 50
+        },
+        {
+          "level": 15,
+          "value": 75
+        }
+      ]
+    }
+  },
+  "size": {
+    "delta": 1,
+    "note": "adjustment.werecreature.size.note"
+  },
+  "traitsOp": {
+    "add": [
+      "beast",
+      "werecreature"
+    ]
+  },
+  "weaknesses": [
+    {
+      "type": "silver",
+      "value": {
+        "level": "base",
+        "byLevel": [
+          {
+            "level": -1,
+            "value": 5
+          },
+          {
+            "level": 5,
+            "value": 7
+          },
+          {
+            "level": 8,
+            "value": 10
+          },
+          {
+            "level": 15,
+            "value": 15
+          }
+        ]
+      }
+    }
+  ],
+  "abilities": {
+    "add": [
+      {
+        "id": "senses",
+        "section": "top",
+        "name": "adjustment.werecreature.abilities.senses.name",
+        "text": "adjustment.werecreature.abilities.senses.text"
+      },
+      {
+        "id": "animal-empathy",
+        "section": "top",
+        "name": "adjustment.werecreature.abilities.animal-empathy.name",
+        "text": "adjustment.werecreature.abilities.animal-empathy.text"
+      },
+      {
+        "id": "change-shape",
+        "section": "top",
+        "name": "adjustment.werecreature.abilities.change-shape.name",
+        "ability": "ability.change-shape",
+        "actions": "1",
+        "traits": [
+          "concentrate",
+          "polymorph",
+          "primal"
+        ],
+        "text": "adjustment.werecreature.abilities.change-shape.text"
+      },
+      {
+        "id": "curse-of-the-werecreature",
+        "section": "top",
+        "name": "adjustment.werecreature.abilities.curse-of-the-werecreature.name",
+        "traits": [
+          "curse",
+          "primal"
+        ],
+        "text": "adjustment.werecreature.abilities.curse-of-the-werecreature.text",
+        "values": {
+          "amount": {
+            "ofLevel": 0.5
+          }
+        }
+      },
+      {
+        "id": "moon-frenzy",
+        "section": "top",
+        "name": "adjustment.werecreature.abilities.moon-frenzy.name",
+        "traits": [
+          "polymorph",
+          "primal"
+        ],
+        "text": "adjustment.werecreature.abilities.moon-frenzy.text"
+      }
+    ]
+  },
+  "strikes": {
+    "add": [
+      {
+        "kind": "melee",
+        "name": "adjustment.werecreature.strikes.claws.name",
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "derive": "adjustment.werecreature.strikes.claws.derive"
+      },
+      {
+        "kind": "melee",
+        "name": "adjustment.werecreature.strikes.jaws.name",
+        "traits": [
+          "unarmed",
+          "agile"
+        ],
+        "derive": "adjustment.werecreature.strikes.jaws.derive",
+        "effects": [
+          {
+            "own": "curse-of-the-werecreature"
+          }
+        ]
+      }
+    ]
+  },
+  "caveats": [
+    "adjustment.werecreature.caveats.0",
+    "adjustment.werecreature.caveats.1",
+    "adjustment.werecreature.caveats.2",
+    "adjustment.werecreature.caveats.3",
+    "adjustment.werecreature.caveats.4"
+  ]
+}

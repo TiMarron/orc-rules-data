@@ -1,0 +1,19 @@
+{
+  "id": "family.crawling-hand",
+  "type": "family",
+  "name": "family.crawling-hand.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 68,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.crawling-hand",
+    "creature.giant-crawling-hand"
+  ],
+  "adjustments": []
+}

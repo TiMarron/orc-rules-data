@@ -1,0 +1,307 @@
+{
+  "id": "scale.area-damage",
+  "type": "scale",
+  "name": "scale.area-damage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 124,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "scale.area-damage.text",
+  "tiers": [
+    "unlimited",
+    "limited"
+  ],
+  "rows": [
+    {
+      "level": -1,
+      "unlimited": {
+        "dice": "1d4",
+        "average": 2
+      },
+      "limited": {
+        "dice": "1d6",
+        "average": 4
+      }
+    },
+    {
+      "level": 0,
+      "unlimited": {
+        "dice": "1d6",
+        "average": 4
+      },
+      "limited": {
+        "dice": "1d10",
+        "average": 6
+      }
+    },
+    {
+      "level": 1,
+      "unlimited": {
+        "dice": "2d4",
+        "average": 5
+      },
+      "limited": {
+        "dice": "2d6",
+        "average": 7
+      }
+    },
+    {
+      "level": 2,
+      "unlimited": {
+        "dice": "2d6",
+        "average": 7
+      },
+      "limited": {
+        "dice": "3d6",
+        "average": 11
+      }
+    },
+    {
+      "level": 3,
+      "unlimited": {
+        "dice": "2d8",
+        "average": 9
+      },
+      "limited": {
+        "dice": "4d6",
+        "average": 14
+      }
+    },
+    {
+      "level": 4,
+      "unlimited": {
+        "dice": "3d6",
+        "average": 11
+      },
+      "limited": {
+        "dice": "5d6",
+        "average": 18
+      }
+    },
+    {
+      "level": 5,
+      "unlimited": {
+        "dice": "2d10",
+        "average": 12
+      },
+      "limited": {
+        "dice": "6d6",
+        "average": 21
+      }
+    },
+    {
+      "level": 6,
+      "unlimited": {
+        "dice": "4d6",
+        "average": 14
+      },
+      "limited": {
+        "dice": "7d6",
+        "average": 25
+      }
+    },
+    {
+      "level": 7,
+      "unlimited": {
+        "dice": "4d6",
+        "average": 15
+      },
+      "limited": {
+        "dice": "8d6",
+        "average": 28
+      }
+    },
+    {
+      "level": 8,
+      "unlimited": {
+        "dice": "5d6",
+        "average": 17
+      },
+      "limited": {
+        "dice": "9d6",
+        "average": 32
+      }
+    },
+    {
+      "level": 9,
+      "unlimited": {
+        "dice": "5d6",
+        "average": 18
+      },
+      "limited": {
+        "dice": "10d6",
+        "average": 35
+      }
+    },
+    {
+      "level": 10,
+      "unlimited": {
+        "dice": "6d6",
+        "average": 20
+      },
+      "limited": {
+        "dice": "11d6",
+        "average": 39
+      }
+    },
+    {
+      "level": 11,
+      "unlimited": {
+        "dice": "6d6",
+        "average": 21
+      },
+      "limited": {
+        "dice": "12d6",
+        "average": 42
+      }
+    },
+    {
+      "level": 12,
+      "unlimited": {
+        "dice": "5d8",
+        "average": 23
+      },
+      "limited": {
+        "dice": "13d6",
+        "average": 46
+      }
+    },
+    {
+      "level": 13,
+      "unlimited": {
+        "dice": "7d6",
+        "average": 24
+      },
+      "limited": {
+        "dice": "14d6",
+        "average": 49
+      }
+    },
+    {
+      "level": 14,
+      "unlimited": {
+        "dice": "4d12",
+        "average": 26
+      },
+      "limited": {
+        "dice": "15d6",
+        "average": 53
+      }
+    },
+    {
+      "level": 15,
+      "unlimited": {
+        "dice": "6d8",
+        "average": 27
+      },
+      "limited": {
+        "dice": "16d6",
+        "average": 56
+      }
+    },
+    {
+      "level": 16,
+      "unlimited": {
+        "dice": "8d6",
+        "average": 28
+      },
+      "limited": {
+        "dice": "17d6",
+        "average": 60
+      }
+    },
+    {
+      "level": 17,
+      "unlimited": {
+        "dice": "8d6",
+        "average": 29
+      },
+      "limited": {
+        "dice": "18d6",
+        "average": 63
+      }
+    },
+    {
+      "level": 18,
+      "unlimited": {
+        "dice": "9d6",
+        "average": 30
+      },
+      "limited": {
+        "dice": "19d6",
+        "average": 67
+      }
+    },
+    {
+      "level": 19,
+      "unlimited": {
+        "dice": "7d8",
+        "average": 32
+      },
+      "limited": {
+        "dice": "20d6",
+        "average": 70
+      }
+    },
+    {
+      "level": 20,
+      "unlimited": {
+        "dice": "6d10",
+        "average": 33
+      },
+      "limited": {
+        "dice": "21d6",
+        "average": 74
+      }
+    },
+    {
+      "level": 21,
+      "unlimited": {
+        "dice": "10d6",
+        "average": 35
+      },
+      "limited": {
+        "dice": "22d6",
+        "average": 77
+      }
+    },
+    {
+      "level": 22,
+      "unlimited": {
+        "dice": "8d8",
+        "average": 36
+      },
+      "limited": {
+        "dice": "23d6",
+        "average": 81
+      }
+    },
+    {
+      "level": 23,
+      "unlimited": {
+        "dice": "11d6",
+        "average": 38
+      },
+      "limited": {
+        "dice": "24d6",
+        "average": 84
+      }
+    },
+    {
+      "level": 24,
+      "unlimited": {
+        "dice": "11d6",
+        "average": 39
+      },
+      "limited": {
+        "dice": "25d6",
+        "average": 88
+      }
+    }
+  ]
+}

@@ -11,9 +11,10 @@
     "page": 43,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.boar",
   "size": "large",
   "perception": {
     "mod": 12,
@@ -95,5 +96,6 @@
       "actions": "2",
       "text": "creature.daeodon.abilities.daeodon-charge.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -11,9 +11,10 @@
     "page": 153,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 9,
+  "family": "family.fleshwarp",
   "size": "large",
   "perception": {
     "mod": 18,
@@ -143,5 +144,6 @@
       "actions": "2",
       "text": "creature.irnakurse.abilities.storm-of-tentacles.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

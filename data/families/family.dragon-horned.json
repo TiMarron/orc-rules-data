@@ -1,0 +1,24 @@
+{
+  "id": "family.dragon-horned",
+  "type": "family",
+  "name": "family.dragon-horned.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 119,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-horned-dragon",
+    "creature.ancient-horned-dragon",
+    "creature.young-horned-dragon"
+  ],
+  "adjustments": [
+    "adjustment.horned-dragon-spellcaster"
+  ],
+  "parent": "family.dragon",
+  "editNote": "The pdf-page check searches for the record’s raw name only, and the AoN family name prints inverted — the book prints “Horned Dragon” on page 119, exactly the record’s source page (the family’s creature stat blocks print across 119–122 with the family’s rules). Compared by hand and accepted; the re-derived draft adds its family field."
+}

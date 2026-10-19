@@ -12,9 +12,10 @@
     "page": 138,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.eel",
   "size": "small",
   "perception": {
     "mod": 4,
@@ -113,5 +114,6 @@
       ],
       "text": "creature.electric-eel.abilities.stunning-shock.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

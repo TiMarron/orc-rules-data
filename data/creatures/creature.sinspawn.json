@@ -11,9 +11,10 @@
     "page": 311,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.sinspawn",
   "size": "medium",
   "perception": {
     "mod": 10,
@@ -152,5 +153,6 @@
       ],
       "text": "creature.sinspawn.abilities.sinful-bite.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

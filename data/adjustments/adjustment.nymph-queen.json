@@ -1,0 +1,102 @@
+{
+  "id": "adjustment.nymph-queen",
+  "type": "adjustment",
+  "name": "adjustment.nymph-queen.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 244,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.nymph",
+  "level": {
+    "range": {
+      "min": 6,
+      "max": 10
+    }
+  },
+  "abilities": {
+    "add": [
+      {
+        "id": "tied-to-the-land",
+        "section": "top",
+        "name": "adjustment.nymph-queen.abilities.tied-to-the-land.name",
+        "text": "adjustment.nymph-queen.abilities.tied-to-the-land.text"
+      },
+      {
+        "id": "nymphs-beauty",
+        "section": "top",
+        "name": "adjustment.nymph-queen.abilities.nymphs-beauty.name",
+        "traits": [
+          "aura",
+          "emotion",
+          "mental",
+          "primal",
+          "visual"
+        ],
+        "aura": 30,
+        "text": "adjustment.nymph-queen.abilities.nymphs-beauty.text"
+      },
+      {
+        "id": "change-shape",
+        "section": "top",
+        "name": "adjustment.nymph-queen.abilities.change-shape.name",
+        "ability": "ability.change-shape",
+        "actions": "1",
+        "traits": [
+          "polymorph",
+          "primal"
+        ],
+        "text": "adjustment.nymph-queen.abilities.change-shape.text"
+      },
+      {
+        "id": "focus-beauty",
+        "section": "top",
+        "name": "adjustment.nymph-queen.abilities.focus-beauty.name",
+        "actions": "1",
+        "traits": [
+          "emotion",
+          "mental",
+          "primal",
+          "visual"
+        ],
+        "text": "adjustment.nymph-queen.abilities.focus-beauty.text"
+      },
+      {
+        "id": "inspiration",
+        "section": "top",
+        "name": "adjustment.nymph-queen.abilities.inspiration.name",
+        "actions": "3",
+        "traits": [
+          "emotion",
+          "mental",
+          "primal"
+        ],
+        "text": "adjustment.nymph-queen.abilities.inspiration.text"
+      }
+    ]
+  },
+  "rescale": {
+    "stats": [
+      "ac",
+      "saves",
+      "perception",
+      "skills",
+      "dc",
+      "attack",
+      "hp",
+      "strikes"
+    ]
+  },
+  "caveats": [
+    "adjustment.nymph-queen.caveats.0",
+    "adjustment.nymph-queen.caveats.1",
+    "adjustment.nymph-queen.caveats.2",
+    "adjustment.nymph-queen.caveats.3",
+    "adjustment.nymph-queen.caveats.4"
+  ],
+  "editNote": "The four prose sentences all describe placed content or rules without an operation shape: the Inspiration, Change Shape, Nymph’s Beauty aura and Focus Beauty abilities the sentences name are all placed as abilities on the record; the not-dependent-on-their-wards removal is a removal the schema has no operation for; and the primal prepared spells as a druid of her level needs a druid-table lookup keyed to each transformed creature’s level, which no imported table carries. All four stay caveats naming exactly what a human applies; compared with page 244 and accepted."
+}

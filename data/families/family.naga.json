@@ -1,0 +1,19 @@
+{
+  "id": "family.naga",
+  "type": "family",
+  "name": "family.naga.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 236,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.smaranava",
+    "creature.vicharamuni"
+  ],
+  "adjustments": []
+}

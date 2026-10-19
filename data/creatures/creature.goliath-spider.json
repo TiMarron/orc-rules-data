@@ -11,9 +11,10 @@
     "page": 321,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 11,
+  "family": "family.spider",
   "size": "gargantuan",
   "perception": {
     "mod": 22,
@@ -145,5 +146,6 @@
       "name": "creature.goliath-spider.abilities.web-tether.name",
       "text": "creature.goliath-spider.abilities.web-tether.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -11,9 +11,10 @@
     "page": 41,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 6,
+  "family": "family.bear",
   "size": "large",
   "perception": {
     "mod": 13,
@@ -110,5 +111,6 @@
       "actions": "2",
       "text": "creature.cave-bear.abilities.rush.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

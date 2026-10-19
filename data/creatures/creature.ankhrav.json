@@ -11,9 +11,10 @@
     "page": 20,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.ankhrav",
   "size": "large",
   "perception": {
     "mod": 7,
@@ -122,5 +123,6 @@
       "frequency": "creature.ankhrav.abilities.spray-acid.frequency",
       "text": "creature.ankhrav.abilities.spray-acid.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

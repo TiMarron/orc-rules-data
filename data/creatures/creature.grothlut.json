@@ -12,9 +12,10 @@
     "page": 152,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.fleshwarp",
   "size": "medium",
   "perception": {
     "mod": 5,
@@ -123,5 +124,6 @@
       "aura": 60,
       "text": "creature.grothlut.abilities.piteous-moan.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

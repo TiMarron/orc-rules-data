@@ -12,9 +12,10 @@
     "page": 226,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.lizardfolk",
   "size": "medium",
   "perception": {
     "mod": 7
@@ -171,5 +172,6 @@
       "name": "creature.lizardfolk-defender.abilities.terrain-advantage.name",
       "text": "creature.lizardfolk-defender.abilities.terrain-advantage.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

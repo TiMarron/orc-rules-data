@@ -11,9 +11,10 @@
     "page": 278,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.pterosaur",
   "size": "huge",
   "perception": {
     "mod": 15,
@@ -121,5 +122,6 @@
       "actions": "2",
       "text": "creature.quetzalcoatlus.abilities.swoop.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -11,9 +11,10 @@
     "page": 51,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 6,
+  "family": "family.cat",
   "size": "large",
   "perception": {
     "mod": 14,
@@ -126,5 +127,6 @@
       "name": "creature.smilodon.abilities.sneak-attack.name",
       "text": "creature.smilodon.abilities.sneak-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

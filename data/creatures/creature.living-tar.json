@@ -12,9 +12,10 @@
     "page": 257,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.ooze",
   "size": "huge",
   "perception": {
     "mod": 9,
@@ -125,5 +126,6 @@
       "actions": "3",
       "text": "creature.living-tar.abilities.engulf.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

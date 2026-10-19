@@ -12,9 +12,10 @@
     "page": 250,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.ogre",
   "size": "large",
   "perception": {
     "mod": 6,
@@ -139,5 +140,6 @@
       ],
       "text": "creature.ogre-glutton.abilities.swallow-whole.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

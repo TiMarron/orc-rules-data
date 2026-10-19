@@ -1,0 +1,18 @@
+{
+  "id": "family.minotaur",
+  "type": "family",
+  "name": "family.minotaur.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 232,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.minotaur-hunter"
+  ],
+  "adjustments": []
+}

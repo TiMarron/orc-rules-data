@@ -13,9 +13,10 @@
     "page": 300,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.sedacthy",
   "size": "medium",
   "perception": {
     "mod": 9,
@@ -169,5 +170,6 @@
       "frequency": "creature.sedacthy-scout.abilities.wriggling-rush.frequency",
       "text": "creature.sedacthy-scout.abilities.wriggling-rush.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

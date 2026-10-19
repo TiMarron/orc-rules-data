@@ -13,9 +13,10 @@
     "page": 234,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 6,
+  "family": "family.mummy",
   "size": "medium",
   "perception": {
     "mod": 16,
@@ -137,5 +138,6 @@
       "requirements": "creature.mummy-guardian.abilities.choking-pain.requirements",
       "text": "creature.mummy-guardian.abilities.choking-pain.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

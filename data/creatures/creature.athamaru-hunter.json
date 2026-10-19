@@ -13,9 +13,10 @@
     "page": 30,
     "revision": "2024-first"
   },
-  "review": "human",
+  "review": "assistant",
   "edited": true,
   "level": 3,
+  "family": "family.athamaru",
   "size": "medium",
   "perception": {
     "mod": 9,

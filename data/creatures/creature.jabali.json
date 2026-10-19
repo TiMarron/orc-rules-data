@@ -16,6 +16,7 @@
   "review": "assistant",
   "edited": true,
   "level": 7,
+  "family": "family.genie",
   "size": "large",
   "perception": {
     "mod": 15,

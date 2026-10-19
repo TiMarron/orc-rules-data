@@ -1,0 +1,19 @@
+{
+  "id": "family.wolf",
+  "type": "family",
+  "name": "family.wolf.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 350,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.dire-wolf",
+    "creature.wolf"
+  ],
+  "adjustments": []
+}

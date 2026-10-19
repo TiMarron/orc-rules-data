@@ -13,9 +13,10 @@
     "page": 267,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 5,
+  "family": "family.nephilim",
   "size": "medium",
   "perception": {
     "mod": 11,
@@ -228,5 +229,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

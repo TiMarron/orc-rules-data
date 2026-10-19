@@ -13,9 +13,10 @@
     "page": 32,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.azata",
   "size": "tiny",
   "perception": {
     "mod": 8,
@@ -191,5 +192,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

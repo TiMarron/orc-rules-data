@@ -1,0 +1,19 @@
+{
+  "id": "family.nephilim",
+  "type": "family",
+  "name": "family.nephilim.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 266,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.lawbringer-warpriest",
+    "creature.pitborn-adept"
+  ],
+  "adjustments": []
+}

@@ -12,9 +12,10 @@
     "page": 298,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.scorpion",
   "size": "large",
   "perception": {
     "mod": 11,
@@ -110,5 +111,6 @@
       "actions": "1",
       "text": "creature.scorpion-swarm.abilities.swarming-stings.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

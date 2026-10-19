@@ -12,9 +12,10 @@
     "page": 100,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 10,
+  "family": "family.dinosaur",
   "size": "gargantuan",
   "perception": {
     "mod": 16,
@@ -119,5 +120,6 @@
       "actions": "3",
       "text": "creature.brontosaurus.abilities.trample.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

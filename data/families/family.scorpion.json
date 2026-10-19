@@ -1,0 +1,19 @@
+{
+  "id": "family.scorpion",
+  "type": "family",
+  "name": "family.scorpion.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 298,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.giant-scorpion",
+    "creature.scorpion-swarm"
+  ],
+  "adjustments": []
+}

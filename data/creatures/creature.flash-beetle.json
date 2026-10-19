@@ -11,9 +11,10 @@
     "page": 42,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": -1,
+  "family": "family.beetle",
   "size": "small",
   "perception": {
     "mod": 6,
@@ -98,5 +99,6 @@
       ],
       "text": "creature.flash-beetle.abilities.light-flash.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

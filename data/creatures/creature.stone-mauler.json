@@ -12,9 +12,10 @@
     "page": 142,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 9,
+  "family": "family.elemental-earth",
   "size": "large",
   "perception": {
     "mod": 16,
@@ -147,5 +148,6 @@
       "name": "creature.stone-mauler.abilities.earth-glide.name",
       "text": "creature.stone-mauler.abilities.earth-glide.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

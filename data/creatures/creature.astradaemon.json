@@ -16,6 +16,7 @@
   "review": "assistant",
   "edited": true,
   "level": 16,
+  "family": "family.daemon",
   "size": "large",
   "perception": {
     "mod": 28,

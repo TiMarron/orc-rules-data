@@ -15,8 +15,9 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 0,
+  "family": "family.devil",
   "size": "medium",
   "perception": {
     "mod": 0,
@@ -105,5 +106,6 @@
       "name": "creature.ort.abilities.subservience.name",
       "text": "creature.ort.abilities.subservience.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

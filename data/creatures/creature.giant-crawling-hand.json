@@ -12,9 +12,10 @@
     "page": 68,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 5,
+  "family": "family.crawling-hand",
   "size": "medium",
   "perception": {
     "mod": 12,
@@ -115,5 +116,6 @@
       "name": "creature.giant-crawling-hand.abilities.mark-quarry.name",
       "text": "creature.giant-crawling-hand.abilities.mark-quarry.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

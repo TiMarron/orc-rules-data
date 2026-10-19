@@ -12,9 +12,10 @@
     "page": 339,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 9,
+  "family": "family.vescavor",
   "size": "large",
   "perception": {
     "mod": 11,
@@ -210,5 +211,6 @@
       "name": "creature.vescavor-queen.abilities.rage-pheromones.name",
       "text": "creature.vescavor-queen.abilities.rage-pheromones.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -12,9 +12,10 @@
     "page": 96,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": -1,
+  "family": "family.dinosaur",
   "size": "tiny",
   "perception": {
     "mod": 5,
@@ -100,5 +101,6 @@
       ],
       "text": "creature.compsognathus.abilities.compsognathus-venom.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -11,9 +11,10 @@
     "page": 236,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.naga",
   "size": "large",
   "perception": {
     "mod": 15,
@@ -192,5 +193,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

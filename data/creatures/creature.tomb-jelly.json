@@ -12,9 +12,10 @@
     "page": 257,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 5,
+  "family": "family.ooze",
   "size": "large",
   "perception": {
     "mod": 7,
@@ -127,5 +128,6 @@
       ],
       "text": "creature.tomb-jelly.abilities.tomb-curse.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

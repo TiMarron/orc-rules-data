@@ -1,0 +1,24 @@
+{
+  "id": "family.demon",
+  "type": "family",
+  "name": "family.demon.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 76,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.brimorak",
+    "creature.omox",
+    "creature.pusk",
+    "creature.seraptis",
+    "creature.shemhazian",
+    "creature.succubus",
+    "creature.vrolikai"
+  ],
+  "adjustments": []
+}

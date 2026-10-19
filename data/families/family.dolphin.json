@@ -1,0 +1,19 @@
+{
+  "id": "family.dolphin",
+  "type": "family",
+  "name": "family.dolphin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 103,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.bottlenose-dolphin",
+    "creature.orca"
+  ],
+  "adjustments": []
+}

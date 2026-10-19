@@ -12,9 +12,10 @@
     "page": 144,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 9,
+  "family": "family.elemental-fire",
   "size": "huge",
   "perception": {
     "mod": 16,
@@ -154,5 +155,6 @@
       ],
       "text": "creature.firewyrm.abilities.breathe-fire.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

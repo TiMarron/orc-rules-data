@@ -1,0 +1,20 @@
+{
+  "id": "family.leshy",
+  "type": "family",
+  "name": "family.leshy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 216,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.fungus-leshy",
+    "creature.gourd-leshy",
+    "creature.leaf-leshy"
+  ],
+  "adjustments": []
+}

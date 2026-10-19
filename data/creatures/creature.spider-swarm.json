@@ -12,9 +12,10 @@
     "page": 320,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 0,
+  "family": "family.spider",
   "size": "large",
   "perception": {
     "mod": 4,
@@ -120,5 +121,6 @@
       ],
       "text": "creature.spider-swarm.abilities.spider-swarm-venom.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

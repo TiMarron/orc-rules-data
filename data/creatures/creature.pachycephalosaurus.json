@@ -12,9 +12,10 @@
     "page": 97,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.dinosaur",
   "size": "large",
   "perception": {
     "mod": 10,
@@ -102,5 +103,6 @@
       "trigger": "creature.pachycephalosaurus.abilities.sudden-shove.trigger",
       "text": "creature.pachycephalosaurus.abilities.sudden-shove.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -1,0 +1,20 @@
+{
+  "id": "family.sedacthy",
+  "type": "family",
+  "name": "family.sedacthy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 300,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.sedacthy-marauder",
+    "creature.sedacthy-scout",
+    "creature.sedacthy-speaker"
+  ],
+  "adjustments": []
+}

@@ -12,9 +12,10 @@
     "page": 251,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.ogre",
   "size": "large",
   "perception": {
     "mod": 12,
@@ -150,5 +151,6 @@
       "trigger": "creature.ogre-boss.abilities.sweeping-hook.trigger",
       "text": "creature.ogre-boss.abilities.sweeping-hook.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

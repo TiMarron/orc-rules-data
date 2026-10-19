@@ -14,9 +14,10 @@
     "page": 151,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.elf",
   "size": "medium",
   "perception": {
     "mod": 11,
@@ -198,5 +199,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

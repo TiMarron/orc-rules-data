@@ -1,0 +1,18 @@
+{
+  "id": "family.basilisk",
+  "type": "family",
+  "name": "family.basilisk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 39,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.basilisk"
+  ],
+  "adjustments": []
+}

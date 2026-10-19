@@ -1,0 +1,21 @@
+{
+  "id": "family.cat",
+  "type": "family",
+  "name": "family.cat.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 50,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.leopard",
+    "creature.lion",
+    "creature.smilodon",
+    "creature.tiger"
+  ],
+  "adjustments": []
+}

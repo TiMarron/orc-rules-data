@@ -12,9 +12,10 @@
     "page": 68,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": -1,
+  "family": "family.crawling-hand",
   "size": "tiny",
   "perception": {
     "mod": 5,
@@ -122,5 +123,6 @@
       "actions": "1",
       "text": "creature.crawling-hand.abilities.throat-grab.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

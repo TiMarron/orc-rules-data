@@ -12,9 +12,10 @@
     "page": 323,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.sprite",
   "size": "small",
   "perception": {
     "mod": 12,
@@ -209,5 +210,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

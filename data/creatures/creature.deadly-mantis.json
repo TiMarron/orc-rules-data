@@ -11,9 +11,10 @@
     "page": 229,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 11,
+  "family": "family.mantis",
   "size": "gargantuan",
   "perception": {
     "mod": 20,
@@ -133,5 +134,6 @@
       "name": "creature.deadly-mantis.abilities.sudden-strike.name",
       "text": "creature.deadly-mantis.abilities.sudden-strike.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

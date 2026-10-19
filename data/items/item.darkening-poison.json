@@ -1,0 +1,24 @@
+{
+  "id": "item.darkening-poison",
+  "type": "item",
+  "name": "item.darkening-poison.name",
+  "traits": [
+    "injury",
+    "poison"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "monster-core",
+    "page": 48,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "category": "consumable",
+  "level": 0,
+  "text": "item.darkening-poison.text",
+  "priceCp": 500,
+  "bulk": "L",
+  "usage": "item.darkening-poison.usage",
+  "editNote": "Reserved Material removed: the reserved place name as the venom's provenance is dropped - the record reads 'made from spider venom' where the page prints the place-named venom, the bone-prophet precedent (the reserved name is dropped, not invented around). The rest of the item text reads verbatim as printed."
+}

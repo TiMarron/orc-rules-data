@@ -13,9 +13,10 @@
     "page": 148,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.elemental-water",
   "size": "small",
   "perception": {
     "mod": 18,
@@ -160,5 +161,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

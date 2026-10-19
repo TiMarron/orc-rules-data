@@ -11,9 +11,10 @@
     "page": 40,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.bat",
   "size": "large",
   "perception": {
     "mod": 11,
@@ -111,5 +112,6 @@
       "trigger": "creature.giant-bat.abilities.wing-thrash.trigger",
       "text": "creature.giant-bat.abilities.wing-thrash.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

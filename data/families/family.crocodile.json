@@ -1,0 +1,19 @@
+{
+  "id": "family.crocodile",
+  "type": "family",
+  "name": "family.crocodile.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 69,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.crocodile",
+    "creature.deinosuchus"
+  ],
+  "adjustments": []
+}

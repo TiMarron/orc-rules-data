@@ -12,9 +12,10 @@
     "page": 295,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 6,
+  "family": "family.sargassum-heap",
   "size": "large",
   "perception": {
     "mod": 10,
@@ -124,5 +125,6 @@
       "actions": "1",
       "text": "creature.sargassum-heap.abilities.constrict.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

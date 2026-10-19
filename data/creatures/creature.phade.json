@@ -12,9 +12,10 @@
     "page": 140,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.elemental-air",
   "size": "medium",
   "perception": {
     "mod": 16,
@@ -116,5 +117,6 @@
       "name": "creature.phade.abilities.sneak-attack.name",
       "text": "creature.phade.abilities.sneak-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

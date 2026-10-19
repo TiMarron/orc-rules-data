@@ -12,9 +12,10 @@
     "page": 175,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.goblin",
   "size": "small",
   "perception": {
     "mod": 5,
@@ -186,5 +187,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

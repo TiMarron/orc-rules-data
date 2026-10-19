@@ -13,8 +13,9 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 9,
+  "family": "family.dragon-adamantine",
   "size": "large",
   "perception": {
     "mod": 17,
@@ -273,5 +274,6 @@
       "ability": "ability.throw-rock",
       "actions": "1"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

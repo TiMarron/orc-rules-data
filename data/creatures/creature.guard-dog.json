@@ -11,9 +11,10 @@
     "page": 102,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": -1,
+  "family": "family.dog",
   "size": "small",
   "perception": {
     "mod": 6,
@@ -91,5 +92,6 @@
       "name": "creature.guard-dog.abilities.pack-attack.name",
       "text": "creature.guard-dog.abilities.pack-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

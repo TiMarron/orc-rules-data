@@ -1,0 +1,412 @@
+{
+  "id": "scale.spell-dc",
+  "type": "scale",
+  "name": "scale.spell-dc.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 121,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "scale.spell-dc.text",
+  "tiers": [
+    "extreme",
+    "high",
+    "moderate"
+  ],
+  "rows": [
+    {
+      "level": -1,
+      "extreme": {
+        "dc": 19,
+        "attack": 11
+      },
+      "high": {
+        "dc": 16,
+        "attack": 8
+      },
+      "moderate": {
+        "dc": 13,
+        "attack": 5
+      }
+    },
+    {
+      "level": 0,
+      "extreme": {
+        "dc": 19,
+        "attack": 11
+      },
+      "high": {
+        "dc": 16,
+        "attack": 8
+      },
+      "moderate": {
+        "dc": 13,
+        "attack": 5
+      }
+    },
+    {
+      "level": 1,
+      "extreme": {
+        "dc": 20,
+        "attack": 12
+      },
+      "high": {
+        "dc": 17,
+        "attack": 9
+      },
+      "moderate": {
+        "dc": 14,
+        "attack": 6
+      }
+    },
+    {
+      "level": 2,
+      "extreme": {
+        "dc": 22,
+        "attack": 14
+      },
+      "high": {
+        "dc": 18,
+        "attack": 10
+      },
+      "moderate": {
+        "dc": 15,
+        "attack": 7
+      }
+    },
+    {
+      "level": 3,
+      "extreme": {
+        "dc": 23,
+        "attack": 15
+      },
+      "high": {
+        "dc": 20,
+        "attack": 12
+      },
+      "moderate": {
+        "dc": 17,
+        "attack": 9
+      }
+    },
+    {
+      "level": 4,
+      "extreme": {
+        "dc": 25,
+        "attack": 17
+      },
+      "high": {
+        "dc": 21,
+        "attack": 13
+      },
+      "moderate": {
+        "dc": 18,
+        "attack": 10
+      }
+    },
+    {
+      "level": 5,
+      "extreme": {
+        "dc": 26,
+        "attack": 18
+      },
+      "high": {
+        "dc": 22,
+        "attack": 14
+      },
+      "moderate": {
+        "dc": 19,
+        "attack": 11
+      }
+    },
+    {
+      "level": 6,
+      "extreme": {
+        "dc": 27,
+        "attack": 19
+      },
+      "high": {
+        "dc": 24,
+        "attack": 16
+      },
+      "moderate": {
+        "dc": 21,
+        "attack": 13
+      }
+    },
+    {
+      "level": 7,
+      "extreme": {
+        "dc": 29,
+        "attack": 21
+      },
+      "high": {
+        "dc": 25,
+        "attack": 17
+      },
+      "moderate": {
+        "dc": 22,
+        "attack": 14
+      }
+    },
+    {
+      "level": 8,
+      "extreme": {
+        "dc": 30,
+        "attack": 22
+      },
+      "high": {
+        "dc": 26,
+        "attack": 18
+      },
+      "moderate": {
+        "dc": 23,
+        "attack": 15
+      }
+    },
+    {
+      "level": 9,
+      "extreme": {
+        "dc": 32,
+        "attack": 24
+      },
+      "high": {
+        "dc": 28,
+        "attack": 20
+      },
+      "moderate": {
+        "dc": 25,
+        "attack": 17
+      }
+    },
+    {
+      "level": 10,
+      "extreme": {
+        "dc": 33,
+        "attack": 25
+      },
+      "high": {
+        "dc": 29,
+        "attack": 21
+      },
+      "moderate": {
+        "dc": 26,
+        "attack": 18
+      }
+    },
+    {
+      "level": 11,
+      "extreme": {
+        "dc": 34,
+        "attack": 26
+      },
+      "high": {
+        "dc": 30,
+        "attack": 22
+      },
+      "moderate": {
+        "dc": 27,
+        "attack": 19
+      }
+    },
+    {
+      "level": 12,
+      "extreme": {
+        "dc": 36,
+        "attack": 28
+      },
+      "high": {
+        "dc": 32,
+        "attack": 24
+      },
+      "moderate": {
+        "dc": 29,
+        "attack": 21
+      }
+    },
+    {
+      "level": 13,
+      "extreme": {
+        "dc": 37,
+        "attack": 29
+      },
+      "high": {
+        "dc": 33,
+        "attack": 25
+      },
+      "moderate": {
+        "dc": 30,
+        "attack": 22
+      }
+    },
+    {
+      "level": 14,
+      "extreme": {
+        "dc": 39,
+        "attack": 31
+      },
+      "high": {
+        "dc": 34,
+        "attack": 26
+      },
+      "moderate": {
+        "dc": 31,
+        "attack": 23
+      }
+    },
+    {
+      "level": 15,
+      "extreme": {
+        "dc": 40,
+        "attack": 32
+      },
+      "high": {
+        "dc": 36,
+        "attack": 28
+      },
+      "moderate": {
+        "dc": 33,
+        "attack": 25
+      }
+    },
+    {
+      "level": 16,
+      "extreme": {
+        "dc": 41,
+        "attack": 33
+      },
+      "high": {
+        "dc": 37,
+        "attack": 29
+      },
+      "moderate": {
+        "dc": 34,
+        "attack": 26
+      }
+    },
+    {
+      "level": 17,
+      "extreme": {
+        "dc": 43,
+        "attack": 35
+      },
+      "high": {
+        "dc": 38,
+        "attack": 30
+      },
+      "moderate": {
+        "dc": 35,
+        "attack": 27
+      }
+    },
+    {
+      "level": 18,
+      "extreme": {
+        "dc": 44,
+        "attack": 36
+      },
+      "high": {
+        "dc": 40,
+        "attack": 32
+      },
+      "moderate": {
+        "dc": 37,
+        "attack": 29
+      }
+    },
+    {
+      "level": 19,
+      "extreme": {
+        "dc": 46,
+        "attack": 38
+      },
+      "high": {
+        "dc": 41,
+        "attack": 33
+      },
+      "moderate": {
+        "dc": 38,
+        "attack": 30
+      }
+    },
+    {
+      "level": 20,
+      "extreme": {
+        "dc": 47,
+        "attack": 39
+      },
+      "high": {
+        "dc": 42,
+        "attack": 34
+      },
+      "moderate": {
+        "dc": 39,
+        "attack": 31
+      }
+    },
+    {
+      "level": 21,
+      "extreme": {
+        "dc": 48,
+        "attack": 40
+      },
+      "high": {
+        "dc": 44,
+        "attack": 36
+      },
+      "moderate": {
+        "dc": 41,
+        "attack": 33
+      }
+    },
+    {
+      "level": 22,
+      "extreme": {
+        "dc": 50,
+        "attack": 42
+      },
+      "high": {
+        "dc": 45,
+        "attack": 37
+      },
+      "moderate": {
+        "dc": 42,
+        "attack": 34
+      }
+    },
+    {
+      "level": 23,
+      "extreme": {
+        "dc": 51,
+        "attack": 43
+      },
+      "high": {
+        "dc": 46,
+        "attack": 38
+      },
+      "moderate": {
+        "dc": 43,
+        "attack": 35
+      }
+    },
+    {
+      "level": 24,
+      "extreme": {
+        "dc": 52,
+        "attack": 44
+      },
+      "high": {
+        "dc": 48,
+        "attack": 40
+      },
+      "moderate": {
+        "dc": 45,
+        "attack": 37
+      }
+    }
+  ]
+}

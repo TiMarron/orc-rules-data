@@ -12,9 +12,10 @@
     "page": 196,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 8,
+  "family": "family.hippocampus",
   "size": "huge",
   "perception": {
     "mod": 16,
@@ -99,5 +100,6 @@
       "actions": "2",
       "text": "creature.giant-hippocampus.abilities.sudden-retreat.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -1,0 +1,19 @@
+{
+  "id": "family.lamia",
+  "type": "family",
+  "name": "family.lamia.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 214,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.lamia",
+    "creature.lamia-matriarch"
+  ],
+  "adjustments": []
+}

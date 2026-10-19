@@ -11,9 +11,10 @@
     "page": 103,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 5,
+  "family": "family.dolphin",
   "size": "huge",
   "perception": {
     "mod": 12,
@@ -108,5 +109,6 @@
       "actions": "2",
       "text": "creature.orca.abilities.breach.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

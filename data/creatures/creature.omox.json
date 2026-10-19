@@ -14,9 +14,10 @@
     "page": 79,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 12,
+  "family": "family.demon",
   "size": "medium",
   "perception": {
     "mod": 22,
@@ -239,5 +240,6 @@
         ]
       }
     ]
-  }
+  },
+  "editNote": "added only the family reference"
 }

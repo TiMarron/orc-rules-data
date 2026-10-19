@@ -12,9 +12,10 @@
     "page": 140,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 5,
+  "family": "family.elemental-air",
   "size": "medium",
   "perception": {
     "mod": 10,
@@ -126,5 +127,6 @@
       "name": "creature.living-whirlwind.abilities.swiftness.name",
       "text": "creature.living-whirlwind.abilities.swiftness.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

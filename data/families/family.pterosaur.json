@@ -1,0 +1,19 @@
+{
+  "id": "family.pterosaur",
+  "type": "family",
+  "name": "family.pterosaur.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 278,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.pteranodon",
+    "creature.quetzalcoatlus"
+  ],
+  "adjustments": []
+}

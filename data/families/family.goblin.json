@@ -1,0 +1,21 @@
+{
+  "id": "family.goblin",
+  "type": "family",
+  "name": "family.goblin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 174,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.goblin-commando",
+    "creature.goblin-pyro",
+    "creature.goblin-war-chanter",
+    "creature.goblin-warrior"
+  ],
+  "adjustments": []
+}

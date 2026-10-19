@@ -1,0 +1,22 @@
+{
+  "id": "family.serpentfolk",
+  "type": "family",
+  "name": "family.serpentfolk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 302,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.aapoph-granitescale",
+    "creature.aapoph-serpentfolk",
+    "creature.bone-prophet",
+    "creature.coil-spy",
+    "creature.zyss-serpentfolk"
+  ],
+  "adjustments": []
+}

@@ -11,9 +11,10 @@
     "page": 137,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.eagle",
   "size": "large",
   "perception": {
     "mod": 11,
@@ -116,5 +117,6 @@
       "actions": "2",
       "text": "creature.giant-eagle.abilities.eagle-dive.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

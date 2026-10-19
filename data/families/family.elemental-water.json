@@ -1,0 +1,21 @@
+{
+  "id": "family.elemental-water",
+  "type": "family",
+  "name": "family.elemental-water.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 148,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.brine-shark",
+    "creature.elemental-tsunami",
+    "creature.living-waterfall",
+    "creature.quatoid"
+  ],
+  "adjustments": []
+}

@@ -13,9 +13,10 @@
     "page": 121,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 17,
+  "family": "family.dragon-horned",
   "size": "gargantuan",
   "perception": {
     "mod": 30,
@@ -321,5 +322,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

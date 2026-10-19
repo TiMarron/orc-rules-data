@@ -1,0 +1,21 @@
+{
+  "id": "family.ghoul",
+  "type": "family",
+  "name": "family.ghoul.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 162,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.ghoul-soldier",
+    "creature.ghoul-stalker"
+  ],
+  "adjustments": [
+    "adjustment.ghoul"
+  ]
+}

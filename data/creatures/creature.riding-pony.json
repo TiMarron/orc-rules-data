@@ -11,9 +11,10 @@
     "page": 201,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 0,
+  "family": "family.horse",
   "size": "medium",
   "perception": {
     "mod": 4,
@@ -92,5 +93,6 @@
       "actions": "2",
       "text": "creature.riding-pony.abilities.gallop.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

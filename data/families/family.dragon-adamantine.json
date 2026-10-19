@@ -1,0 +1,22 @@
+{
+  "id": "family.dragon-adamantine",
+  "type": "family",
+  "name": "family.dragon-adamantine.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 108,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-adamantine-dragon",
+    "creature.ancient-adamantine-dragon",
+    "creature.young-adamantine-dragon"
+  ],
+  "adjustments": [],
+  "parent": "family.dragon",
+  "editNote": "The pdf-page check searches for the record’s raw name only, and the AoN family name prints inverted — the book prints “Adamantine Dragon” on page 108, exactly the record’s source page (the family’s creature stat blocks print across 108–111 with the family’s rules). Compared by hand and accepted; the re-derived draft adds its family field."
+}

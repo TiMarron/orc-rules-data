@@ -14,9 +14,10 @@
     "page": 331,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 10,
+  "family": "family.troll",
   "size": "large",
   "perception": {
     "mod": 19,
@@ -213,5 +214,6 @@
       "requirements": "creature.troll-warleader.abilities.sweeping-axes.requirements",
       "text": "creature.troll-warleader.abilities.sweeping-axes.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

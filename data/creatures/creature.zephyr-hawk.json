@@ -12,9 +12,10 @@
     "page": 140,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.elemental-air",
   "size": "small",
   "perception": {
     "mod": 7,
@@ -89,5 +90,6 @@
       "actions": "2",
       "text": "creature.zephyr-hawk.abilities.circling-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

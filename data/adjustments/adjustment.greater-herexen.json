@@ -1,0 +1,38 @@
+{
+  "id": "adjustment.greater-herexen",
+  "type": "adjustment",
+  "name": "adjustment.greater-herexen.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.herexen",
+  "appliesTo": {
+    "creatures": [
+      "creature.herexen"
+    ]
+  },
+  "level": {
+    "set": 8
+  },
+  "rescale": {
+    "stats": [
+      "ac",
+      "saves",
+      "perception",
+      "skills",
+      "dc",
+      "attack",
+      "hp",
+      "strikes"
+    ]
+  },
+  "caveats": [
+    "adjustment.greater-herexen.caveats.0"
+  ]
+}

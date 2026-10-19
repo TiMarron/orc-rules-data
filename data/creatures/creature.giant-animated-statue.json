@@ -12,9 +12,10 @@
     "page": 19,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 7,
+  "family": "family.animated-object",
   "size": "huge",
   "perception": {
     "mod": 13,
@@ -139,5 +140,6 @@
       ],
       "text": "creature.giant-animated-statue.abilities.burn-alive.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

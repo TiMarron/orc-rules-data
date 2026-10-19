@@ -12,9 +12,10 @@
     "page": 18,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.animated-object",
   "size": "medium",
   "perception": {
     "mod": 6,
@@ -121,5 +122,6 @@
       "name": "creature.animated-armor.abilities.construct-armor.name",
       "text": "creature.animated-armor.abilities.construct-armor.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

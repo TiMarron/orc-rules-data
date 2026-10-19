@@ -1,0 +1,19 @@
+{
+  "id": "family.merfolk",
+  "type": "family",
+  "name": "family.merfolk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 231,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.merfolk-warrior",
+    "creature.merfolk-wavecaller"
+  ],
+  "adjustments": []
+}

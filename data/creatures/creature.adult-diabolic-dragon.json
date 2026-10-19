@@ -13,9 +13,10 @@
     "page": 113,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 15,
+  "family": "family.dragon-diabolic",
   "size": "huge",
   "perception": {
     "mod": 26,
@@ -315,5 +316,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

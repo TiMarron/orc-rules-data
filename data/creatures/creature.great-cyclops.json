@@ -13,9 +13,10 @@
     "page": 71,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 12,
+  "family": "family.cyclops",
   "size": "huge",
   "perception": {
     "mod": 22,
@@ -185,5 +186,6 @@
       "ability": "ability.throw-rock",
       "actions": "1"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

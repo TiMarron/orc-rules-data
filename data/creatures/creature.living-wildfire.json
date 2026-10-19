@@ -12,9 +12,10 @@
     "page": 144,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 5,
+  "family": "family.elemental-fire",
   "size": "medium",
   "perception": {
     "mod": 10,
@@ -145,5 +146,6 @@
       "requirements": "creature.living-wildfire.abilities.spreading-flames.requirements",
       "text": "creature.living-wildfire.abilities.spreading-flames.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -1,0 +1,118 @@
+{
+  "id": "adjustment.true-vampire",
+  "type": "adjustment",
+  "name": "adjustment.true-vampire.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 334,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.vampire",
+  "appliesTo": {
+    "requires": "adjustment.vampire",
+    "minLevel": 5
+  },
+  "abilities": {
+    "add": [
+      {
+        "id": "create-servitor",
+        "section": "top",
+        "name": "adjustment.true-vampire.abilities.create-servitor.name",
+        "traits": [
+          "divine",
+          "downtime"
+        ],
+        "text": "adjustment.true-vampire.abilities.create-servitor.text"
+      },
+      {
+        "id": "mist-escape",
+        "section": "top",
+        "name": "adjustment.true-vampire.abilities.mist-escape.name",
+        "actions": "free",
+        "trigger": "adjustment.true-vampire.abilities.mist-escape.trigger",
+        "text": "adjustment.true-vampire.abilities.mist-escape.text"
+      },
+      {
+        "id": "change-shape",
+        "section": "top",
+        "name": "adjustment.true-vampire.abilities.change-shape.name",
+        "ability": "ability.change-shape",
+        "actions": "1",
+        "traits": [
+          "concentrate",
+          "divine",
+          "polymorph"
+        ],
+        "text": "adjustment.true-vampire.abilities.change-shape.text"
+      },
+      {
+        "id": "bat",
+        "section": "top",
+        "name": "adjustment.true-vampire.abilities.bat.name",
+        "text": "adjustment.true-vampire.abilities.bat.text"
+      },
+      {
+        "id": "children-of-the-night",
+        "section": "top",
+        "name": "adjustment.true-vampire.abilities.children-of-the-night.name",
+        "traits": [
+          "divine",
+          "mental"
+        ],
+        "text": "adjustment.true-vampire.abilities.children-of-the-night.text"
+      },
+      {
+        "id": "dominate",
+        "section": "top",
+        "name": "adjustment.true-vampire.abilities.dominate.name",
+        "actions": "2",
+        "traits": [
+          "divine",
+          "incapacitation",
+          "mental",
+          "visual"
+        ],
+        "text": "adjustment.true-vampire.abilities.dominate.text",
+        "values": {
+          "dc": {
+            "scale": "scale.spell-dc",
+            "tier": "high"
+          }
+        }
+      },
+      {
+        "id": "turn-to-mist",
+        "section": "top",
+        "name": "adjustment.true-vampire.abilities.turn-to-mist.name",
+        "actions": "1",
+        "traits": [
+          "air",
+          "concentrate",
+          "divine",
+          "polymorph"
+        ],
+        "text": "adjustment.true-vampire.abilities.turn-to-mist.text"
+      }
+    ],
+    "replace": [
+      {
+        "from": "drink-blood",
+        "to": {
+          "id": "drink-blood",
+          "section": "top",
+          "name": "adjustment.true-vampire.abilities.drink-blood.name",
+          "text": "adjustment.true-vampire.abilities.drink-blood.text"
+        }
+      }
+    ]
+  },
+  "caveats": [
+    "adjustment.true-vampire.caveats.0",
+    "adjustment.true-vampire.caveats.1"
+  ],
+  "editNote": "The intro sentence — powerful vampires that can create and control vampires from their victims gain additional vampire abilities, as detailed below — names the True Vampire Abilities section whose entries are already placed (the Drink Blood replacement and the adds); the resists-all-physical-damage-except-magical-silver prose prints no amount of its own (the amount lives on adjustment.vampire’s resistance table) and stays the caveat that carries it. Compared with page 334 and accepted."
+}

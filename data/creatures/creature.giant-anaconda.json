@@ -11,9 +11,10 @@
     "page": 317,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 8,
+  "family": "family.snake",
   "size": "huge",
   "perception": {
     "mod": 17,
@@ -164,5 +165,6 @@
       "requirements": "creature.giant-anaconda.abilities.wrap-in-coils.requirements",
       "text": "creature.giant-anaconda.abilities.wrap-in-coils.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

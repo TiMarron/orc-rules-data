@@ -12,9 +12,10 @@
     "page": 144,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.elemental-fire",
   "size": "small",
   "perception": {
     "mod": 9,
@@ -121,5 +122,6 @@
       "aura": 5,
       "text": "creature.cinder-rat.abilities.fetid-fumes.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

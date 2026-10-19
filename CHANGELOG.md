@@ -15,6 +15,8 @@ major for renamed or removed ids, new required fields and markup changes.
   transformation of a creature — Elite and Weak, ghosts, ghouls, liches,
   vampires, werecreatures and the rest — as operations plus printed caveats)
   and `scale` (the eleven creature-building tables, by level −1…24).
+- Records: GM Core's creature-building tables, Monster Core's creature
+  families and the adjustments they print; creatures carry their family.
 - Validator checks: family membership compared in both directions, a family's
   parent, adjustment references to scales' tiers, abilities removed or
   substituted per targeted creature, a `requires` naming an adjustment, scale

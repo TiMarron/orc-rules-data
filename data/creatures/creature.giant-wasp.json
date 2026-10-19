@@ -11,9 +11,10 @@
     "page": 343,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.wasp",
   "size": "large",
   "perception": {
     "mod": 8,
@@ -106,5 +107,6 @@
       ],
       "text": "creature.giant-wasp.abilities.wasp-larva.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

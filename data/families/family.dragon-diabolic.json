@@ -1,0 +1,22 @@
+{
+  "id": "family.dragon-diabolic",
+  "type": "family",
+  "name": "family.dragon-diabolic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 112,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-diabolic-dragon",
+    "creature.ancient-diabolic-dragon",
+    "creature.young-diabolic-dragon"
+  ],
+  "adjustments": [],
+  "parent": "family.dragon",
+  "editNote": "The pdf-page check searches for the record’s raw name only, and the AoN family name prints inverted — the book prints “Diabolic Dragon” on page 112, exactly the record’s source page (the family’s creature stat blocks print across 112–115 with the family’s rules). Compared by hand and accepted; the re-derived draft adds its family field."
+}

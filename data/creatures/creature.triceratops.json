@@ -12,9 +12,10 @@
     "page": 99,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 8,
+  "family": "family.dinosaur",
   "size": "huge",
   "perception": {
     "mod": 16,
@@ -132,5 +133,6 @@
       "name": "creature.triceratops.abilities.vicious-gore.name",
       "text": "creature.triceratops.abilities.vicious-gore.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -12,9 +12,10 @@
     "page": 217,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.leshy",
   "size": "small",
   "perception": {
     "mod": 6,
@@ -161,5 +162,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

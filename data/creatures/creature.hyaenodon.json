@@ -11,9 +11,10 @@
     "page": 205,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.hyena",
   "size": "large",
   "perception": {
     "mod": 9,
@@ -108,5 +109,6 @@
       "name": "creature.hyaenodon.abilities.pack-attack.name",
       "text": "creature.hyaenodon.abilities.pack-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

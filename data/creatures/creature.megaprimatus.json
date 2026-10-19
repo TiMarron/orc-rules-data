@@ -11,9 +11,10 @@
     "page": 23,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 8,
+  "family": "family.ape",
   "size": "gargantuan",
   "perception": {
     "mod": 15,
@@ -122,5 +123,6 @@
       ],
       "text": "creature.megaprimatus.abilities.terrifying-display.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

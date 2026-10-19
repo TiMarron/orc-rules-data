@@ -13,9 +13,10 @@
     "page": 95,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.dhampir",
   "size": "medium",
   "perception": {
     "mod": 4,
@@ -227,5 +228,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

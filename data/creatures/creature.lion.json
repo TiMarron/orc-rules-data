@@ -11,9 +11,10 @@
     "page": 50,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.cat",
   "size": "large",
   "perception": {
     "mod": 9,
@@ -119,5 +120,6 @@
       "name": "creature.lion.abilities.sneak-attack.name",
       "text": "creature.lion.abilities.sneak-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

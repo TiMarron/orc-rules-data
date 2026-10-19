@@ -12,9 +12,10 @@
     "page": 270,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.protean",
   "size": "tiny",
   "perception": {
     "mod": 4,
@@ -229,5 +230,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -1,0 +1,19 @@
+{
+  "id": "family.tooth-fairy",
+  "type": "family",
+  "name": "family.tooth-fairy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 327,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.tooth-fairy",
+    "creature.tooth-fairy-swarm"
+  ],
+  "adjustments": []
+}

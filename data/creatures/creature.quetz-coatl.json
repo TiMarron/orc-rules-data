@@ -13,9 +13,10 @@
     "page": 65,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 10,
+  "family": "family.coatl",
   "size": "large",
   "perception": {
     "mod": 21,
@@ -222,5 +223,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

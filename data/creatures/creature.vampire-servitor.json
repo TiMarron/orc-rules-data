@@ -14,8 +14,9 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 4,
+  "family": "family.vampire",
   "size": "medium",
   "perception": {
     "mod": 12,
@@ -135,5 +136,6 @@
       "name": "creature.vampire-servitor.abilities.sneak-attack.name",
       "text": "creature.vampire-servitor.abilities.sneak-attack.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

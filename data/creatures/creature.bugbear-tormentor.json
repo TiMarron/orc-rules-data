@@ -12,9 +12,10 @@
     "page": 47,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.bugbear",
   "size": "medium",
   "perception": {
     "mod": 8,
@@ -164,5 +165,6 @@
       "actions": "2",
       "text": "creature.bugbear-tormentor.abilities.twin-feint.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

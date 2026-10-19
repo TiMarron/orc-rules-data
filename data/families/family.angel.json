@@ -1,0 +1,21 @@
+{
+  "id": "family.angel",
+  "type": "family",
+  "name": "family.angel.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 14,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.balisse",
+    "creature.cassisian",
+    "creature.choral",
+    "creature.tabellia"
+  ],
+  "adjustments": []
+}

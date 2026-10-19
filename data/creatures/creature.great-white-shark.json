@@ -15,6 +15,7 @@
   "review": "assistant",
   "edited": true,
   "level": 4,
+  "family": "family.shark",
   "size": "huge",
   "perception": {
     "mod": 11,

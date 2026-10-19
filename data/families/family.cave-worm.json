@@ -1,0 +1,20 @@
+{
+  "id": "family.cave-worm",
+  "type": "family",
+  "name": "family.cave-worm.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 54,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.benthic-worm",
+    "creature.cave-worm",
+    "creature.magma-worm"
+  ],
+  "adjustments": []
+}

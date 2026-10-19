@@ -12,9 +12,10 @@
     "page": 189,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.hag",
   "size": "medium",
   "perception": {
     "mod": 10,
@@ -232,5 +233,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

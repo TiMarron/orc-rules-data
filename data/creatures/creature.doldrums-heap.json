@@ -12,9 +12,10 @@
     "page": 295,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 9,
+  "family": "family.sargassum-heap",
   "size": "huge",
   "perception": {
     "mod": 15,
@@ -132,5 +133,6 @@
       "actions": "2",
       "text": "creature.doldrums-heap.abilities.draw-in.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

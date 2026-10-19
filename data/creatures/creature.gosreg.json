@@ -11,9 +11,10 @@
     "page": 107,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 11,
+  "family": "family.dominion-of-the-black",
   "size": "medium",
   "perception": {
     "mod": 21,
@@ -246,5 +247,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

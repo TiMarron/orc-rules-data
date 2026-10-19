@@ -1,0 +1,22 @@
+{
+  "id": "family.dragon-empyreal",
+  "type": "family",
+  "name": "family.dragon-empyreal.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-empyreal-dragon",
+    "creature.ancient-empyreal-dragon",
+    "creature.young-empyreal-dragon"
+  ],
+  "adjustments": [],
+  "parent": "family.dragon",
+  "editNote": "The pdf-page check searches for the record’s raw name only, and the AoN family name prints inverted — the book prints “Empyreal Dragon” on page 114, exactly the record’s source page (the family’s creature stat blocks print across 114–117 with the family’s rules). Compared by hand and accepted; the re-derived draft adds its family field."
+}

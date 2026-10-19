@@ -11,9 +11,10 @@
     "page": 225,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 5,
+  "family": "family.lizard",
   "size": "large",
   "perception": {
     "mod": 11,
@@ -120,5 +121,6 @@
       ],
       "text": "creature.giant-frilled-lizard.abilities.intimidating-display.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

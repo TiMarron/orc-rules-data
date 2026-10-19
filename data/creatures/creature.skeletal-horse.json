@@ -14,9 +14,10 @@
     "page": 313,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.skeleton",
   "size": "large",
   "perception": {
     "mod": 8,
@@ -120,5 +121,6 @@
       "name": "creature.skeletal-horse.abilities.undead-steed.name",
       "text": "creature.skeletal-horse.abilities.undead-steed.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

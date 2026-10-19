@@ -1,0 +1,18 @@
+{
+  "id": "family.athamaru",
+  "type": "family",
+  "name": "family.athamaru.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 30,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.athamaru-hunter"
+  ],
+  "adjustments": []
+}

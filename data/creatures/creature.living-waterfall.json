@@ -13,9 +13,10 @@
     "page": 148,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 5,
+  "family": "family.elemental-water",
   "size": "large",
   "perception": {
     "mod": 10,
@@ -136,5 +137,6 @@
       ],
       "text": "creature.living-waterfall.abilities.drench.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

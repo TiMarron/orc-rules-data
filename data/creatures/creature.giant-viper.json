@@ -11,9 +11,10 @@
     "page": 317,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.snake",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -117,5 +118,6 @@
       ],
       "text": "creature.giant-viper.abilities.giant-viper-venom.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

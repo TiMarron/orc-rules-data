@@ -13,9 +13,10 @@
     "page": 281,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 11,
+  "family": "family.qlippoth",
   "size": "medium",
   "perception": {
     "mod": 20,
@@ -272,5 +273,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

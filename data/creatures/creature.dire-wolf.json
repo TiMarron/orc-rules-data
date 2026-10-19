@@ -11,9 +11,10 @@
     "page": 350,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 3,
+  "family": "family.wolf",
   "size": "large",
   "perception": {
     "mod": 10,
@@ -127,5 +128,6 @@
       "requirements": "creature.dire-wolf.abilities.worry.requirements",
       "text": "creature.dire-wolf.abilities.worry.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

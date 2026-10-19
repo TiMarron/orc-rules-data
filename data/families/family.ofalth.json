@@ -1,0 +1,19 @@
+{
+  "id": "family.ofalth",
+  "type": "family",
+  "name": "family.ofalth.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 249,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.larval-ofalth",
+    "creature.ofalth"
+  ],
+  "adjustments": []
+}

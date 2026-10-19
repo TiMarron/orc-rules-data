@@ -1,0 +1,20 @@
+{
+  "id": "family.ogre",
+  "type": "family",
+  "name": "family.ogre.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 250,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.ogre-boss",
+    "creature.ogre-glutton",
+    "creature.ogre-warrior"
+  ],
+  "adjustments": []
+}

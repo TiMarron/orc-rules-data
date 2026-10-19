@@ -13,9 +13,10 @@
     "page": 163,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.ghoul",
   "size": "medium",
   "perception": {
     "mod": 8,
@@ -199,5 +200,6 @@
         "move"
       ]
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

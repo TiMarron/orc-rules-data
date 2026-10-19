@@ -11,9 +11,10 @@
     "page": 102,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.dog",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -95,5 +96,6 @@
       "name": "creature.riding-dog.abilities.pack-attack.name",
       "text": "creature.riding-dog.abilities.pack-attack.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -12,9 +12,10 @@
     "page": 208,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 2,
+  "family": "family.kholo",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -153,5 +154,6 @@
       "name": "creature.kholo-hunter.abilities.rugged-travel.name",
       "text": "creature.kholo-hunter.abilities.rugged-travel.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

@@ -12,9 +12,10 @@
     "page": 98,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 4,
+  "family": "family.dinosaur",
   "size": "huge",
   "perception": {
     "mod": 13,
@@ -117,5 +118,6 @@
       "actions": "3",
       "text": "creature.hadrosaurid.abilities.trample.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }

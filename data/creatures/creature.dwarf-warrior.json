@@ -12,9 +12,10 @@
     "page": 135,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": 1,
+  "family": "family.dwarf",
   "size": "medium",
   "perception": {
     "mod": 7,
@@ -141,5 +142,6 @@
       "actions": "2",
       "text": "creature.dwarf-warrior.abilities.shielded-charge.text"
     }
-  ]
+  ],
+  "editNote": "added only the family reference"
 }
