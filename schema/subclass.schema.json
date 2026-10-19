@@ -45,6 +45,7 @@
           "$comment": "The focus spells the subclass grants as the character grows: a school's school spells, a bloodline's bloodline spells, a mystery's revelation spells, a patron's hex cantrip (initial only)."
         },
         "tradition": { "$ref": "common.schema.json#/$defs/tradition", "$comment": "The spell list the subclass fixes for a class whose tradition varies: a bloodline's, a patron's." },
+        "keyAttribute": { "$ref": "common.schema.json#/$defs/attribute", "$comment": "An attribute the subclass lets the character choose as their key attribute, besides the class's own: a ruffian's Strength, a scoundrel's Charisma, a mastermind's Intelligence. The sentence stays in the text." },
         "skills": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/refSkill" }, "minItems": 1, "uniqueItems": true, "$comment": "The skills the subclass trains outright. A choice the book offers ('one of the following') stays in the text." },
         "feat": { "$ref": "common.schema.json#/$defs/refFeat", "$comment": "The feat the subclass grants at 1st level: a muse's, a mystery's." },
         "features": {
