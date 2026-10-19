@@ -1,0 +1,311 @@
+{
+  "id": "adjustment.omen-dragon-spellcaster",
+  "type": "adjustment",
+  "name": "adjustment.omen-dragon-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 124,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.dragon-omen",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-omen-dragon",
+      "creature.adult-omen-dragon",
+      "creature.ancient-omen-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
+  "spellcasting": {
+    "byCreature": {
+      "creature.young-omen-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "occult",
+          "dc": 25,
+          "attack": 17,
+          "cantrips": {
+            "rank": 3,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.read-aura"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.dream-message"
+                },
+                {
+                  "spell": "spell.hypercognition"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.clear-mind"
+                },
+                {
+                  "spell": "spell.status"
+                },
+                {
+                  "spell": "spell.stupefy"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.command"
+                },
+                {
+                  "spell": "spell.fear"
+                },
+                {
+                  "spell": "spell.protection"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.adult-omen-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "occult",
+          "dc": 30,
+          "attack": 22,
+          "cantrips": {
+            "rank": 5,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.read-aura"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.locate"
+                },
+                {
+                  "spell": "spell.wave-of-despair"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.clairvoyance"
+                },
+                {
+                  "spell": "spell.confusion"
+                },
+                {
+                  "spell": "spell.read-omens"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.locate"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.clear-mind"
+                },
+                {
+                  "spell": "spell.status"
+                },
+                {
+                  "spell": "spell.stupefy"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.command"
+                },
+                {
+                  "spell": "spell.fear"
+                },
+                {
+                  "spell": "spell.protection"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.ancient-omen-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "occult",
+          "dc": 39,
+          "attack": 31,
+          "cantrips": {
+            "rank": 7,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.read-aura"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 7,
+              "spells": [
+                {
+                  "spell": "spell.never-mind"
+                },
+                {
+                  "spell": "spell.visions-of-danger"
+                },
+                {
+                  "spell": "spell.warp-mind"
+                }
+              ]
+            },
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.repulsion"
+                },
+                {
+                  "spell": "spell.scrying"
+                },
+                {
+                  "spell": "spell.truesight"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.sending"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.clairvoyance"
+                },
+                {
+                  "spell": "spell.confusion"
+                },
+                {
+                  "spell": "spell.read-omens"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.locate"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.clear-mind"
+                },
+                {
+                  "spell": "spell.status"
+                },
+                {
+                  "spell": "spell.stupefy"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.command"
+                },
+                {
+                  "spell": "spell.fear"
+                },
+                {
+                  "spell": "spell.protection"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "adjustment.omen-dragon-spellcaster.caveats.0"
+  ]
+}

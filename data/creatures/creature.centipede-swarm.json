@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 3,
+  "family": "family.centipede",
   "size": "large",
   "perception": {
     "mod": 9,

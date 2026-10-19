@@ -1,0 +1,24 @@
+{
+  "id": "family.devil",
+  "type": "family",
+  "name": "family.devil.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 86,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.coarti",
+    "creature.gylou",
+    "creature.nessari",
+    "creature.ort",
+    "creature.phistophilus",
+    "creature.sarglagon",
+    "creature.vordine"
+  ],
+  "adjustments": []
+}

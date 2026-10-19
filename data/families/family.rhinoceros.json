@@ -1,0 +1,19 @@
+{
+  "id": "family.rhinoceros",
+  "type": "family",
+  "name": "family.rhinoceros.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 293,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.rhinoceros",
+    "creature.woolly-rhinoceros"
+  ],
+  "adjustments": []
+}

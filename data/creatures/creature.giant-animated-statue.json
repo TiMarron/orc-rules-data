@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 7,
+  "family": "family.animated-object",
   "size": "huge",
   "perception": {
     "mod": 13,

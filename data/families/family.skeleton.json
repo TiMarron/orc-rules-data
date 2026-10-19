@@ -1,0 +1,27 @@
+{
+  "id": "family.skeleton",
+  "type": "family",
+  "name": "family.skeleton.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 312,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.skeletal-champion",
+    "creature.skeletal-giant",
+    "creature.skeletal-horse",
+    "creature.skeletal-hulk",
+    "creature.skeleton-guard"
+  ],
+  "adjustments": [
+    "adjustment.skeleton-abilities"
+  ],
+  "notes": [
+    "family.skeleton.notes.0"
+  ]
+}

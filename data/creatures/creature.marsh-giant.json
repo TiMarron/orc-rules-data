@@ -17,6 +17,7 @@
   "review": "auto",
   "edited": false,
   "level": 8,
+  "family": "family.giant",
   "size": "large",
   "perception": {
     "mod": 16,

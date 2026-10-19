@@ -1,0 +1,24 @@
+{
+  "id": "family.dragon-diabolic",
+  "type": "family",
+  "name": "family.dragon-diabolic.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 112,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-diabolic-dragon",
+    "creature.ancient-diabolic-dragon",
+    "creature.young-diabolic-dragon"
+  ],
+  "adjustments": [
+    "adjustment.diabolic-dragon-spellcaster"
+  ],
+  "parent": "family.dragon",
+  "editNote": "The book prints the family's name in natural order (“Diabolic Dragon”) on page 112; the page check searches the source's inverted form. The family now lists its spellcaster adjustment, the sidebar on page 114."
+}

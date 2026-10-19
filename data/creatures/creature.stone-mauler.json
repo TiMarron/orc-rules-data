@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 9,
+  "family": "family.elemental-earth",
   "size": "large",
   "perception": {
     "mod": 16,

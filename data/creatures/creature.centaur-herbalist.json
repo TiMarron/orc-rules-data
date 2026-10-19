@@ -16,6 +16,7 @@
   "review": "assistant",
   "edited": true,
   "level": 3,
+  "family": "family.centaur",
   "size": "large",
   "perception": {
     "mod": 10,

@@ -1,0 +1,21 @@
+{
+  "id": "family.elemental-fire",
+  "type": "family",
+  "name": "family.elemental-fire.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 144,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.cinder-rat",
+    "creature.elemental-inferno",
+    "creature.firewyrm",
+    "creature.living-wildfire"
+  ],
+  "adjustments": []
+}

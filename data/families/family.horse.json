@@ -1,0 +1,21 @@
+{
+  "id": "family.horse",
+  "type": "family",
+  "name": "family.horse.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 201,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.riding-horse",
+    "creature.riding-pony",
+    "creature.war-horse",
+    "creature.war-pony"
+  ],
+  "adjustments": []
+}

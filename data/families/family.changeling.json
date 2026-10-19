@@ -1,0 +1,18 @@
+{
+  "id": "family.changeling",
+  "type": "family",
+  "name": "family.changeling.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 60,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.changeling-exile"
+  ],
+  "adjustments": []
+}

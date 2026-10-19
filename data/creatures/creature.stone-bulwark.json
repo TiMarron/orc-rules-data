@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 11,
   "size": "large",
   "perception": {
@@ -174,5 +174,6 @@
       "ability": "ability.throw-rock",
       "actions": "1"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

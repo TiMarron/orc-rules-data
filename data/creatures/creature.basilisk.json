@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 5,
+  "family": "family.basilisk",
   "size": "medium",
   "perception": {
     "mod": 11,

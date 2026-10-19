@@ -1,0 +1,23 @@
+{
+  "id": "family.werecreature",
+  "type": "family",
+  "name": "family.werecreature.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 344,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "members": [
+    "creature.werebear",
+    "creature.wererat",
+    "creature.weretiger",
+    "creature.werewolf"
+  ],
+  "adjustments": [
+    "adjustment.werecreature"
+  ]
+}

@@ -17,6 +17,7 @@
   "review": "auto",
   "edited": false,
   "level": 10,
+  "family": "family.troll",
   "size": "large",
   "perception": {
     "mod": 19,

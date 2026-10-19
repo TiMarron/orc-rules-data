@@ -1,0 +1,77 @@
+{
+  "id": "adjustment.weak",
+  "type": "adjustment",
+  "name": "adjustment.weak.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 7,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": {
+    "delta": {
+      "level": "base",
+      "byLevel": [
+        {
+          "level": -1,
+          "value": -1
+        },
+        {
+          "level": 1,
+          "value": -2
+        },
+        {
+          "level": 2,
+          "value": -1
+        }
+      ]
+    }
+  },
+  "modify": [
+    {
+      "stats": [
+        "ac",
+        "attack",
+        "dc",
+        "saves",
+        "perception",
+        "skills"
+      ],
+      "delta": -2
+    },
+    {
+      "stats": [
+        "damage"
+      ],
+      "delta": -2,
+      "limited": -4
+    }
+  ],
+  "hp": {
+    "delta": {
+      "level": "base",
+      "byLevel": [
+        {
+          "level": 1,
+          "value": -10
+        },
+        {
+          "level": 3,
+          "value": -15
+        },
+        {
+          "level": 6,
+          "value": -20
+        },
+        {
+          "level": 21,
+          "value": -30
+        }
+      ]
+    }
+  },
+  "editNote": "Compared with page 7: the level falls by 1, by 2 for a level 1 creature only, and by 1 again from level 2 up."
+}

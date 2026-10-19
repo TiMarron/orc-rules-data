@@ -1,0 +1,27 @@
+{
+  "id": "family.dinosaur",
+  "type": "family",
+  "name": "family.dinosaur.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 96,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.ankylosaurus",
+    "creature.brontosaurus",
+    "creature.compsognathus",
+    "creature.deinonychus",
+    "creature.hadrosaurid",
+    "creature.pachycephalosaurus",
+    "creature.stegosaurus",
+    "creature.triceratops",
+    "creature.tyrannosaurus",
+    "creature.velociraptor"
+  ],
+  "adjustments": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "family.dog",
+  "type": "family",
+  "name": "family.dog.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 102,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.guard-dog",
+    "creature.riding-dog"
+  ],
+  "adjustments": []
+}

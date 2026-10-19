@@ -1,0 +1,353 @@
+{
+  "id": "adjustment.mirage-dragon-spellcaster",
+  "type": "adjustment",
+  "name": "adjustment.mirage-dragon-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 122,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.dragon-mirage",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-mirage-dragon",
+      "creature.adult-mirage-dragon",
+      "creature.ancient-mirage-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
+  "spellcasting": {
+    "byCreature": {
+      "creature.young-mirage-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "arcane",
+          "dc": 27,
+          "attack": 20,
+          "cantrips": {
+            "rank": 4,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.prestidigitation"
+              },
+              {
+                "spell": "spell.read-aura"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.confusion"
+                },
+                {
+                  "spell": "spell.vision-of-death"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.disguise-magic"
+                },
+                {
+                  "spell": "spell.enthrall"
+                },
+                {
+                  "spell": "spell.hypnotize"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.embed-message"
+                },
+                {
+                  "spell": "spell.revealing-light"
+                },
+                {
+                  "spell": "spell.see-the-unseen"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.item-facade"
+                },
+                {
+                  "spell": "spell.phantasmal-minion"
+                },
+                {
+                  "spell": "spell.ventriloquism"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.adult-mirage-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "arcane",
+          "dc": 35,
+          "attack": 27,
+          "cantrips": {
+            "rank": 6,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.prestidigitation"
+              },
+              {
+                "spell": "spell.read-aura"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.mislead"
+                },
+                {
+                  "spell": "spell.phantasmal-calamity"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.false-vision"
+                },
+                {
+                  "spell": "spell.sending"
+                },
+                {
+                  "spell": "spell.telekinetic-haul"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.vapor-form"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.disguise-magic"
+                },
+                {
+                  "spell": "spell.enthrall"
+                },
+                {
+                  "spell": "spell.hypnotize"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.embed-message"
+                },
+                {
+                  "spell": "spell.revealing-light"
+                },
+                {
+                  "spell": "spell.see-the-unseen"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.item-facade"
+                },
+                {
+                  "spell": "spell.phantasmal-minion"
+                },
+                {
+                  "spell": "spell.ventriloquism"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.ancient-mirage-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "arcane",
+          "dc": 43,
+          "attack": 35,
+          "cantrips": {
+            "rank": 8,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.prestidigitation"
+              },
+              {
+                "spell": "spell.read-aura"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 8,
+              "spells": [
+                {
+                  "spell": "spell.disappearance"
+                },
+                {
+                  "spell": "spell.hallucination"
+                },
+                {
+                  "spell": "spell.hidden-mind"
+                }
+              ]
+            },
+            {
+              "rank": 7,
+              "spells": [
+                {
+                  "spell": "spell.contingency"
+                },
+                {
+                  "spell": "spell.mask-of-terror"
+                },
+                {
+                  "spell": "spell.project-image"
+                }
+              ]
+            },
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.truesight"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.false-vision"
+                },
+                {
+                  "spell": "spell.sending"
+                },
+                {
+                  "spell": "spell.telekinetic-haul"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.vapor-form"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.disguise-magic"
+                },
+                {
+                  "spell": "spell.enthrall"
+                },
+                {
+                  "spell": "spell.hypnotize"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.embed-message"
+                },
+                {
+                  "spell": "spell.revealing-light"
+                },
+                {
+                  "spell": "spell.see-the-unseen"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.item-facade"
+                },
+                {
+                  "spell": "spell.phantasmal-minion"
+                },
+                {
+                  "spell": "spell.ventriloquism"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "adjustment.mirage-dragon-spellcaster.caveats.0"
+  ]
+}

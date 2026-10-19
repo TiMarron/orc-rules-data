@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 1,
+  "family": "family.hobgoblin",
   "size": "medium",
   "perception": {
     "mod": 7,

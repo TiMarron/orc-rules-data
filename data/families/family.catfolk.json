@@ -1,0 +1,18 @@
+{
+  "id": "family.catfolk",
+  "type": "family",
+  "name": "family.catfolk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 52,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.catfolk-pouncer"
+  ],
+  "adjustments": []
+}

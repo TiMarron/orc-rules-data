@@ -1,0 +1,391 @@
+{
+  "id": "adjustment.fortune-dragon-spellcaster",
+  "type": "adjustment",
+  "name": "adjustment.fortune-dragon-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 118,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.dragon-fortune",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-fortune-dragon",
+      "creature.adult-fortune-dragon",
+      "creature.ancient-fortune-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
+  "spellcasting": {
+    "byCreature": {
+      "creature.young-fortune-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "arcane",
+          "dc": 30,
+          "attack": 22,
+          "cantrips": {
+            "rank": 4,
+            "spells": [
+              {
+                "spell": "spell.electric-arc"
+              },
+              {
+                "spell": "spell.figment"
+              },
+              {
+                "spell": "spell.prestidigitation"
+              },
+              {
+                "spell": "spell.shield"
+              },
+              {
+                "spell": "spell.telekinetic-hand"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.flicker"
+                },
+                {
+                  "spell": "spell.translocate"
+                },
+                {
+                  "spell": "spell.vision-of-death"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.aqueous-orb"
+                },
+                {
+                  "spell": "spell.grease"
+                },
+                {
+                  "spell": "spell.haste"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.invisibility"
+                },
+                {
+                  "spell": "spell.mist"
+                },
+                {
+                  "spell": "spell.web"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.gust-of-wind"
+                },
+                {
+                  "spell": "spell.item-facade"
+                },
+                {
+                  "spell": "spell.phantasmal-minion"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.adult-fortune-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "arcane",
+          "dc": 36,
+          "attack": 28,
+          "cantrips": {
+            "rank": 6,
+            "spells": [
+              {
+                "spell": "spell.electric-arc"
+              },
+              {
+                "spell": "spell.figment"
+              },
+              {
+                "spell": "spell.prestidigitation"
+              },
+              {
+                "spell": "spell.shield"
+              },
+              {
+                "spell": "spell.telekinetic-hand"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.cursed-metamorphosis"
+                },
+                {
+                  "spell": "spell.teleport"
+                },
+                {
+                  "spell": "spell.wall-of-force"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.howling-blizzard"
+                },
+                {
+                  "spell": "spell.scouting-eye"
+                },
+                {
+                  "spell": "spell.toxic-cloud"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.flicker"
+                },
+                {
+                  "spell": "spell.translocate"
+                },
+                {
+                  "spell": "spell.vision-of-death"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.aqueous-orb"
+                },
+                {
+                  "spell": "spell.grease"
+                },
+                {
+                  "spell": "spell.haste"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.invisibility"
+                },
+                {
+                  "spell": "spell.mist"
+                },
+                {
+                  "spell": "spell.web"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.gust-of-wind"
+                },
+                {
+                  "spell": "spell.item-facade"
+                },
+                {
+                  "spell": "spell.phantasmal-minion"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.ancient-fortune-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "arcane",
+          "dc": 45,
+          "attack": 37,
+          "cantrips": {
+            "rank": 9,
+            "spells": [
+              {
+                "spell": "spell.electric-arc"
+              },
+              {
+                "spell": "spell.figment"
+              },
+              {
+                "spell": "spell.prestidigitation"
+              },
+              {
+                "spell": "spell.shield"
+              },
+              {
+                "spell": "spell.telekinetic-hand"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 9,
+              "spells": [
+                {
+                  "spell": "spell.detonate-magic"
+                },
+                {
+                  "spell": "spell.falling-stars"
+                },
+                {
+                  "spell": "spell.phantasmagoria"
+                }
+              ]
+            },
+            {
+              "rank": 8,
+              "spells": [
+                {
+                  "spell": "spell.arctic-rift"
+                },
+                {
+                  "spell": "spell.disappearance"
+                },
+                {
+                  "spell": "spell.uncontrollable-dance"
+                }
+              ]
+            },
+            {
+              "rank": 7,
+              "spells": [
+                {
+                  "spell": "spell.contingency"
+                },
+                {
+                  "spell": "spell.energy-aegis"
+                },
+                {
+                  "spell": "spell.planar-palace"
+                }
+              ]
+            },
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.cursed-metamorphosis"
+                },
+                {
+                  "spell": "spell.teleport"
+                },
+                {
+                  "spell": "spell.wall-of-force"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.howling-blizzard"
+                },
+                {
+                  "spell": "spell.scouting-eye"
+                },
+                {
+                  "spell": "spell.toxic-cloud"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.flicker"
+                },
+                {
+                  "spell": "spell.translocate"
+                },
+                {
+                  "spell": "spell.vision-of-death"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.aqueous-orb"
+                },
+                {
+                  "spell": "spell.grease"
+                },
+                {
+                  "spell": "spell.haste"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.invisibility"
+                },
+                {
+                  "spell": "spell.mist"
+                },
+                {
+                  "spell": "spell.web"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.gust-of-wind"
+                },
+                {
+                  "spell": "spell.item-facade"
+                },
+                {
+                  "spell": "spell.phantasmal-minion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "adjustment.fortune-dragon-spellcaster.caveats.0"
+  ]
+}

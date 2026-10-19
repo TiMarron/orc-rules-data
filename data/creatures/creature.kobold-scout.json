@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 1,
+  "family": "family.kobold",
   "size": "small",
   "perception": {
     "mod": 8,

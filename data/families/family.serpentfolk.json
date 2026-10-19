@@ -1,0 +1,26 @@
+{
+  "id": "family.serpentfolk",
+  "type": "family",
+  "name": "family.serpentfolk.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 302,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.aapoph-granitescale",
+    "creature.aapoph-serpentfolk",
+    "creature.bone-prophet",
+    "creature.coil-spy",
+    "creature.zyss-serpentfolk"
+  ],
+  "adjustments": [],
+  "notes": [
+    "family.serpentfolk.notes.0"
+  ],
+  "editNote": "The printed advice on alternative innate spells is now a note of the family (page 302): the book gives example spells, no rule to apply."
+}

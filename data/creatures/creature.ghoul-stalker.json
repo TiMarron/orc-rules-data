@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 1,
+  "family": "family.ghoul",
   "size": "medium",
   "perception": {
     "mod": 7,

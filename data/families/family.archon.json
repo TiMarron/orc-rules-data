@@ -1,0 +1,22 @@
+{
+  "id": "family.archon",
+  "type": "family",
+  "name": "family.archon.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 26,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.aesra",
+    "creature.giylea",
+    "creature.qarna",
+    "creature.rekhep",
+    "creature.zoaem"
+  ],
+  "adjustments": []
+}

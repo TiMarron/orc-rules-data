@@ -1,0 +1,20 @@
+{
+  "id": "family.herexen",
+  "type": "family",
+  "name": "family.herexen.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 195,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.herexen"
+  ],
+  "adjustments": [
+    "adjustment.greater-herexen"
+  ]
+}

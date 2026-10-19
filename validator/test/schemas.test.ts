@@ -124,6 +124,30 @@ const VALID: Record<string, Record<string, unknown>> = {
     ac: { value: 19 }, fortitude: 14, hardness: 10, hp: 100, bt: 50,
     speed: { mode: 'swim', feet: 30, propulsion: ['wind'] }, collision: { damage: '4d10', dc: 22 },
   }),
+  scale: record('scale', 'spell-dc', {
+    tiers: ['extreme', 'high', 'moderate'],
+    rows: [
+      { level: -1, extreme: 19, high: 16, moderate: 13 },
+      { level: 0, extreme: 20, high: 17, moderate: 14 },
+    ],
+  }),
+  family: record('family', 'vampire', {
+    text: undefined,
+    members: ['creature.vampire-count'],
+    adjustments: ['adjustment.vampire'],
+  }),
+  adjustment: record('adjustment', 'ghost', {
+    level: { delta: 2 },
+    hp: { keep: true },
+    attributes: { str: -5, con: 0 },
+    resistances: [{ type: 'all-damage', value: { byLevel: [{ level: -1, value: 5 }, { level: 9, value: 10 }, { level: 16, value: 15 }] } }],
+    options: [{
+      id: 'special-abilities', name: 'adjustment.ghost.options.0.name',
+      choose: { min: 1, max: 2, byLevel: [{ level: 9, max: 3 }] },
+      entries: [{ id: 'corrupting-gaze', section: 'top', name: 'adjustment.ghost.options.0.entries.0.name', actions: '2', text: 'adjustment.ghost.options.0.entries.0.text' }],
+    }],
+    caveats: ['adjustment.ghost.caveats.0'],
+  }),
 };
 
 const WEAPON: Record<string, unknown> = record('item', 'longsword', {
@@ -1559,6 +1583,83 @@ describe('type schemas', () => {
       expect(issuesFor('material', { ...precious(), hardness: { thin: { standard: { hardness: 10, hp: 40, bt: 0 } } } } as any).join('\n')).toContain('/hardness');
       const noExamples = base(); delete (noExamples as any).exampleItems;
       expect(issuesFor('material', noExamples as any).join('\n')).toContain("must have required property 'exampleItems'");
+    });
+  });
+
+  describe('scale', () => {
+    it('rejects a range cell without its max', () => {
+      const issues = issuesFor('scale', { ...VALID.scale, rows: [{ level: -1, high: { min: 3 } }] });
+      expect(issues.join('\n')).toContain('/rows/0/high');
+    });
+
+    it('rejects a row whose key is not a tier of the enumeration', () => {
+      expect(issuesFor('scale', { ...VALID.scale, rows: [{ level: -1, extreme: 19, insane: 30 }] }).join('\n')).toContain('/rows/0');
+    });
+
+    it('accepts a single-value cell under "value", and a dice cell', () => {
+      expect(issuesFor('scale', record('scale', 'resistance', {
+        tiers: [], rows: [{ level: -1, value: { min: 2, max: 5 } }, { level: 0, value: { min: 8, max: 15 } }],
+      }))).toEqual([]);
+      expect(issuesFor('scale', record('scale', 'strike-damage', {
+        tiers: ['extreme', 'high', 'moderate', 'low'],
+        rows: [{ level: -1, extreme: { dice: '1d6+1', average: 4 }, high: { dice: '1d6', average: 3 } }],
+      }))).toEqual([]);
+    });
+
+    it('accepts a spell DC cell that carries its attack modifier too', () => {
+      expect(issuesFor('scale', { ...VALID.scale, rows: [{ level: -1, extreme: { dc: 19, attack: 11 }, high: { dc: 16, attack: 8 }, moderate: { dc: 13, attack: 5 } }] })).toEqual([]);
+    });
+  });
+
+  describe('family', () => {
+    it('rejects lore: a family has no "text"', () => {
+      expect(issuesFor('family', { ...VALID.family, text: 'family.vampire.text' }).join('\n')).toContain('/text');
+    });
+
+    it('rejects a member or adjustment that is not an id of its type, and a parent that is not a family', () => {
+      for (const bad of [
+        { members: ['vampire-count'] }, { members: ['spell.vampire'] }, { members: ['creature.vampire-count', 'creature.vampire-count'] },
+        { adjustments: ['vampire'] }, { adjustments: ['ability.vampire'] },
+        { parent: 'vampire' }, { parent: 'adjustment.vampire' },
+      ]) {
+        expect(issuesFor('family', { ...VALID.family, ...bad }).join('\n'), JSON.stringify(bad)).toMatch(/members|adjustments|parent/);
+      }
+    });
+
+    it('rejects an unknown property', () => {
+      expect(issuesFor('family', { ...VALID.family, detail: 1 }).join('\n')).toContain('unevaluated');
+    });
+  });
+
+  describe('adjustment', () => {
+    it('rejects a levelValue naming a scale without a tier', () => {
+      expect(issuesFor('adjustment', { ...VALID.adjustment, resistances: [{ type: 'all-damage', value: { scale: 'scale.spell-dc' } }] }).join('\n')).toContain('/resistances/0/value');
+    });
+
+    it('rejects a levelValue that is several shapes at once', () => {
+      expect(issuesFor('adjustment', { ...VALID.adjustment, level: { delta: 2, set: 4 } }).join('\n')).toContain('/level');
+    });
+
+    it('rejects a modify stat the schema does not know', () => {
+      expect(issuesFor('adjustment', { ...VALID.adjustment, modify: [{ stats: ['speed'], delta: 2 }] }).join('\n')).toContain('/modify/0');
+    });
+
+    it('rejects an options choice without a max', () => {
+      const issues = issuesFor('adjustment', {
+        ...VALID.adjustment,
+        options: [{ id: 'special-abilities', name: 'adjustment.ghost.options.0.name', choose: { min: 1 }, entries: [] }],
+      });
+      expect(issues.join('\n')).toContain('/options/0/choose');
+    });
+
+    it('rejects an hp that is neither keep nor delta, and an attributes that names none', () => {
+      expect(issuesFor('adjustment', { ...VALID.adjustment, level: undefined, hp: { table: [] } }).join('\n')).toContain('/hp');
+      expect(issuesFor('adjustment', { ...VALID.adjustment, attributes: {} }).join('\n')).toContain('/attributes');
+    });
+
+    it('rejects a creature family that is not an id', () => {
+      const issues = issuesFor('creature', { ...VALID.creature, family: 'Vampire' });
+      expect(issues.join('\n')).toContain('/family');
     });
   });
 

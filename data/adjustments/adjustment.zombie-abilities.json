@@ -1,0 +1,103 @@
+{
+  "id": "adjustment.zombie-abilities",
+  "type": "adjustment",
+  "name": "adjustment.zombie-abilities.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 356,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.zombie",
+  "appliesTo": {
+    "family": "family.zombie"
+  },
+  "options": [
+    {
+      "id": "zombie-abilities",
+      "name": "adjustment.zombie-abilities.options.zombie-abilities.name",
+      "choose": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "id": "disgusting-pustules",
+          "section": "top",
+          "name": "adjustment.zombie-abilities.options.zombie-abilities.abilities.disgusting-pustules.name",
+          "traits": [
+            "disease"
+          ],
+          "text": "adjustment.zombie-abilities.options.zombie-abilities.abilities.disgusting-pustules.text",
+          "values": {
+            "dc": {
+              "scale": "scale.spell-dc",
+              "tier": "moderate",
+              "part": "dc"
+            }
+          }
+        },
+        {
+          "id": "feast",
+          "section": "top",
+          "name": "adjustment.zombie-abilities.options.zombie-abilities.abilities.feast.name",
+          "actions": "2",
+          "traits": [
+            "manipulate"
+          ],
+          "text": "adjustment.zombie-abilities.options.zombie-abilities.abilities.feast.text"
+        },
+        {
+          "id": "plague-ridden",
+          "section": "top",
+          "name": "adjustment.zombie-abilities.options.zombie-abilities.abilities.plague-ridden.name",
+          "traits": [
+            "disease"
+          ],
+          "text": "adjustment.zombie-abilities.options.zombie-abilities.abilities.plague-ridden.text",
+          "values": {
+            "dc": {
+              "scale": "scale.spell-dc",
+              "tier": "high",
+              "part": "dc"
+            }
+          }
+        },
+        {
+          "id": "rotting-aura",
+          "section": "top",
+          "name": "adjustment.zombie-abilities.options.zombie-abilities.abilities.rotting-aura.name",
+          "traits": [
+            "aura",
+            "disease",
+            "void"
+          ],
+          "text": "adjustment.zombie-abilities.options.zombie-abilities.abilities.rotting-aura.text",
+          "values": {
+            "damage": {
+              "dice": "1d6",
+              "per": 6,
+              "base": "1d6"
+            }
+          }
+        },
+        {
+          "id": "unkillable",
+          "section": "top",
+          "name": "adjustment.zombie-abilities.options.zombie-abilities.abilities.unkillable.name",
+          "text": "adjustment.zombie-abilities.options.zombie-abilities.abilities.unkillable.text",
+          "level": {
+            "delta": 1
+          }
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "adjustment.zombie-abilities.caveats.0"
+  ],
+  "editNote": "Compared with page 356: the five abilities the book prints; Rotting Aura deals 1d6 plus 1d6 per 6 levels."
+}

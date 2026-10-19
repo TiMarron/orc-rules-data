@@ -1,0 +1,21 @@
+{
+  "id": "family.linnorm",
+  "type": "family",
+  "name": "family.linnorm.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 220,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.crag-linnorm",
+    "creature.ice-linnorm",
+    "creature.tarn-linnorm",
+    "creature.tor-linnorm"
+  ],
+  "adjustments": []
+}

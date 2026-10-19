@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 11,
+  "family": "family.elemental-air",
   "size": "huge",
   "perception": {
     "mod": 20,

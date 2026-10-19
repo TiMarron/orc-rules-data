@@ -1,0 +1,19 @@
+{
+  "id": "family.eel",
+  "type": "family",
+  "name": "family.eel.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 138,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.electric-eel",
+    "creature.giant-moray-eel"
+  ],
+  "adjustments": []
+}

@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 1,
+  "family": "family.rakshasa",
   "size": "tiny",
   "perception": {
     "mod": 6,

@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 9,
+  "family": "family.elemental-fire",
   "size": "huge",
   "perception": {
     "mod": 16,

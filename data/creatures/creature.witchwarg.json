@@ -15,6 +15,7 @@
   "review": "assistant",
   "edited": true,
   "level": 5,
+  "family": "family.warg",
   "size": "large",
   "perception": {
     "mod": 14,

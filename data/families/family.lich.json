@@ -1,0 +1,20 @@
+{
+  "id": "family.lich",
+  "type": "family",
+  "name": "family.lich.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 218,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.lich"
+  ],
+  "adjustments": [
+    "adjustment.lich"
+  ]
+}

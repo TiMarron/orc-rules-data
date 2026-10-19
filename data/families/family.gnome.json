@@ -1,0 +1,21 @@
+{
+  "id": "family.gnome",
+  "type": "family",
+  "name": "family.gnome.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 172,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.gnome-bard",
+    "creature.umbral-gnome-rockwarden",
+    "creature.umbral-gnome-scout",
+    "creature.umbral-gnome-warrior"
+  ],
+  "adjustments": []
+}

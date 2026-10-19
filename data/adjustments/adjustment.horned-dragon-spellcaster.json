@@ -1,0 +1,356 @@
+{
+  "id": "adjustment.horned-dragon-spellcaster",
+  "type": "adjustment",
+  "name": "adjustment.horned-dragon-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 120,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.dragon-horned",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-horned-dragon",
+      "creature.adult-horned-dragon",
+      "creature.ancient-horned-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
+  "spellcasting": {
+    "byCreature": {
+      "creature.young-horned-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "primal",
+          "dc": 26,
+          "attack": 20,
+          "cantrips": {
+            "rank": 3,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.read-aura"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.slow"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                },
+                {
+                  "spell": "spell.wall-of-thorns"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.humanoid-form"
+                },
+                {
+                  "spell": "spell.one-with-plants"
+                },
+                {
+                  "spell": "spell.sound-body"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.gust-of-wind"
+                },
+                {
+                  "spell": "spell.vanishing-tracks"
+                },
+                {
+                  "spell": "spell.ventriloquism"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.adult-horned-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "primal",
+          "dc": 33,
+          "attack": 26,
+          "cantrips": {
+            "rank": 5,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.read-aura"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.toxic-cloud"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.hydraulic-torrent"
+                },
+                {
+                  "spell": "spell.mountain-resilience"
+                },
+                {
+                  "spell": "spell.unfettered-movement"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.slow"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                },
+                {
+                  "spell": "spell.wall-of-thorns"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.humanoid-form"
+                },
+                {
+                  "spell": "spell.one-with-plants"
+                },
+                {
+                  "spell": "spell.sound-body"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.gust-of-wind"
+                },
+                {
+                  "spell": "spell.vanishing-tracks"
+                },
+                {
+                  "spell": "spell.ventriloquism"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.ancient-horned-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "primal",
+          "dc": 39,
+          "attack": 33,
+          "cantrips": {
+            "rank": 8,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.read-aura"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 8,
+              "spells": [
+                {
+                  "spell": "spell.desiccate"
+                },
+                {
+                  "spell": "spell.punishing-winds"
+                }
+              ]
+            },
+            {
+              "rank": 7,
+              "spells": [
+                {
+                  "spell": "spell.execute"
+                },
+                {
+                  "spell": "spell.mask-of-terror"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                }
+              ]
+            },
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.field-of-life"
+                },
+                {
+                  "spell": "spell.tangling-creepers"
+                },
+                {
+                  "spell": "spell.truesight"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.toxic-cloud"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.hydraulic-torrent"
+                },
+                {
+                  "spell": "spell.mountain-resilience"
+                },
+                {
+                  "spell": "spell.unfettered-movement"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.slow"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                },
+                {
+                  "spell": "spell.wall-of-thorns"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.humanoid-form"
+                },
+                {
+                  "spell": "spell.one-with-plants"
+                },
+                {
+                  "spell": "spell.sound-body"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.gust-of-wind"
+                },
+                {
+                  "spell": "spell.vanishing-tracks"
+                },
+                {
+                  "spell": "spell.ventriloquism"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "adjustment.horned-dragon-spellcaster.caveats.0"
+  ],
+  "editNote": "Compared with page 120: the young, adult and ancient blocks keyed by the dataset’s creature ids, each with its cantrips at the printed rank; the adult and ancient carry the younger block’s ranks; Draconic Frenzy and Draconic Momentum go, as the group rule prints."
+}

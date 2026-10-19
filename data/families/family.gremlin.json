@@ -1,0 +1,20 @@
+{
+  "id": "family.gremlin",
+  "type": "family",
+  "name": "family.gremlin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 180,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.jinkin",
+    "creature.mitflit",
+    "creature.pugwampi"
+  ],
+  "adjustments": []
+}

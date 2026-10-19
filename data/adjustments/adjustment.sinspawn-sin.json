@@ -1,0 +1,388 @@
+{
+  "id": "adjustment.sinspawn-sin",
+  "type": "adjustment",
+  "name": "adjustment.sinspawn-sin.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 310,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.sinspawn",
+  "appliesTo": {
+    "creatures": [
+      "creature.sinspawn"
+    ]
+  },
+  "options": [
+    {
+      "id": "sin",
+      "name": "adjustment.sinspawn-sin.options.sin.name",
+      "choose": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "skills": {
+            "add": [
+              {
+                "skill": "skill.deception",
+                "mod": 7
+              }
+            ]
+          },
+          "text": "adjustment.sinspawn-sin.options.sin.envyspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.envyspawn.strikes.halberd.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "reach",
+                  "versatile"
+                ],
+                "traitValues": {
+                  "reach": "10",
+                  "versatile": "slashing"
+                },
+                "damage": [
+                  {
+                    "dice": "1d10+4",
+                    "type": "piercing"
+                  }
+                ],
+                "item": "item.halberd"
+              }
+            ]
+          },
+          "abilities": {
+            "replace": [
+              {
+                "from": "sinful-bite",
+                "to": {
+                  "id": "sinful-bite",
+                  "section": "top",
+                  "name": "adjustment.sinspawn-sin.options.sin.envyspawn.abilities.sinful-bite.name",
+                  "text": "adjustment.sinspawn-sin.options.sin.envyspawn.abilities.sinful-bite.text"
+                }
+              }
+            ]
+          },
+          "id": "envyspawn",
+          "section": "top",
+          "name": "adjustment.sinspawn-sin.options.sin.envyspawn.name"
+        },
+        {
+          "skills": {
+            "add": [
+              {
+                "skill": "skill.survival",
+                "mod": 10
+              }
+            ]
+          },
+          "text": "adjustment.sinspawn-sin.options.sin.gluttonyspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.gluttonyspawn.strikes.scythe.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "deadly",
+                  "trip"
+                ],
+                "traitValues": {
+                  "deadly": "d10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d10+4",
+                    "type": "slashing"
+                  }
+                ],
+                "item": "item.scythe"
+              }
+            ]
+          },
+          "abilities": {
+            "replace": [
+              {
+                "from": "sinful-bite",
+                "to": {
+                  "id": "sinful-bite",
+                  "section": "top",
+                  "name": "adjustment.sinspawn-sin.options.sin.gluttonyspawn.abilities.sinful-bite.name",
+                  "text": "adjustment.sinspawn-sin.options.sin.gluttonyspawn.abilities.sinful-bite.text"
+                }
+              }
+            ]
+          },
+          "id": "gluttonyspawn",
+          "section": "top",
+          "name": "adjustment.sinspawn-sin.options.sin.gluttonyspawn.name"
+        },
+        {
+          "skills": {
+            "add": [
+              {
+                "skill": "skill.thievery",
+                "mod": 9
+              }
+            ]
+          },
+          "text": "adjustment.sinspawn-sin.options.sin.greedspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.greedspawn.strikes.glaive.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "deadly",
+                  "forceful",
+                  "reach"
+                ],
+                "traitValues": {
+                  "deadly": "d8",
+                  "reach": "10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d8+4",
+                    "type": "slashing"
+                  }
+                ],
+                "item": "item.glaive"
+              }
+            ]
+          },
+          "abilities": {
+            "replace": [
+              {
+                "from": "sinful-bite",
+                "to": {
+                  "id": "sinful-bite",
+                  "section": "top",
+                  "name": "adjustment.sinspawn-sin.options.sin.greedspawn.abilities.sinful-bite.name",
+                  "text": "adjustment.sinspawn-sin.options.sin.greedspawn.abilities.sinful-bite.text"
+                }
+              }
+            ]
+          },
+          "id": "greedspawn",
+          "section": "top",
+          "name": "adjustment.sinspawn-sin.options.sin.greedspawn.name"
+        },
+        {
+          "skills": {
+            "add": [
+              {
+                "skill": "skill.diplomacy",
+                "mod": 7
+              }
+            ]
+          },
+          "text": "adjustment.sinspawn-sin.options.sin.lustspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.lustspawn.strikes.guisarme.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "reach",
+                  "trip"
+                ],
+                "traitValues": {
+                  "reach": "10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d10+4",
+                    "type": "slashing"
+                  }
+                ],
+                "item": "item.guisarme"
+              }
+            ]
+          },
+          "abilities": {
+            "replace": [
+              {
+                "from": "sinful-bite",
+                "to": {
+                  "id": "sinful-bite",
+                  "section": "top",
+                  "name": "adjustment.sinspawn-sin.options.sin.lustspawn.abilities.sinful-bite.name",
+                  "text": "adjustment.sinspawn-sin.options.sin.lustspawn.abilities.sinful-bite.text"
+                }
+              }
+            ]
+          },
+          "id": "lustspawn",
+          "section": "top",
+          "name": "adjustment.sinspawn-sin.options.sin.lustspawn.name"
+        },
+        {
+          "skills": {
+            "add": [
+              {
+                "skill": "skill.intimidation",
+                "mod": 7
+              }
+            ]
+          },
+          "text": "adjustment.sinspawn-sin.options.sin.pridespawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.pridespawn.strikes.maul.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "shove"
+                ],
+                "damage": [
+                  {
+                    "dice": "1d12+4",
+                    "type": "bludgeoning"
+                  }
+                ],
+                "item": "item.maul"
+              }
+            ]
+          },
+          "abilities": {
+            "replace": [
+              {
+                "from": "sinful-bite",
+                "to": {
+                  "id": "sinful-bite",
+                  "section": "top",
+                  "name": "adjustment.sinspawn-sin.options.sin.pridespawn.abilities.sinful-bite.name",
+                  "text": "adjustment.sinspawn-sin.options.sin.pridespawn.abilities.sinful-bite.text"
+                }
+              }
+            ]
+          },
+          "id": "pridespawn",
+          "section": "top",
+          "name": "adjustment.sinspawn-sin.options.sin.pridespawn.name"
+        },
+        {
+          "skills": {
+            "add": [
+              {
+                "skill": "skill.society",
+                "mod": 6
+              }
+            ]
+          },
+          "text": "adjustment.sinspawn-sin.options.sin.slothspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.slothspawn.strikes.longspear.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "reach"
+                ],
+                "traitValues": {
+                  "reach": "10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d8+4",
+                    "type": "piercing"
+                  }
+                ],
+                "item": "item.longspear"
+              }
+            ]
+          },
+          "abilities": {
+            "replace": [
+              {
+                "from": "sinful-bite",
+                "to": {
+                  "id": "sinful-bite",
+                  "section": "top",
+                  "name": "adjustment.sinspawn-sin.options.sin.slothspawn.abilities.sinful-bite.name",
+                  "text": "adjustment.sinspawn-sin.options.sin.slothspawn.abilities.sinful-bite.text"
+                }
+              }
+            ]
+          },
+          "id": "slothspawn",
+          "section": "top",
+          "name": "adjustment.sinspawn-sin.options.sin.slothspawn.name"
+        },
+        {
+          "skills": {
+            "add": [
+              {
+                "skill": "skill.athletics",
+                "mod": 12
+              }
+            ]
+          },
+          "text": "adjustment.sinspawn-sin.options.sin.wrathspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.wrathspawn.strikes.ranseur.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "disarm",
+                  "reach"
+                ],
+                "traitValues": {
+                  "reach": "10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d10+4",
+                    "type": "piercing"
+                  }
+                ],
+                "item": "item.ranseur"
+              }
+            ]
+          },
+          "abilities": {
+            "replace": [
+              {
+                "from": "sinful-bite",
+                "to": {
+                  "id": "sinful-bite",
+                  "section": "top",
+                  "name": "adjustment.sinspawn-sin.options.sin.wrathspawn.abilities.sinful-bite.name",
+                  "text": "adjustment.sinspawn-sin.options.sin.wrathspawn.abilities.sinful-bite.text"
+                }
+              }
+            ]
+          },
+          "id": "wrathspawn",
+          "section": "top",
+          "name": "adjustment.sinspawn-sin.options.sin.wrathspawn.name"
+        }
+      ]
+    }
+  ],
+  "editNote": "Compared with pages 310–311: every sin’s skill, Strike with its bonus and damage, and its Sinful Bite effect."
+}

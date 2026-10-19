@@ -14,7 +14,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 9,
   "size": "large",
   "perception": {
@@ -163,5 +163,6 @@
       ],
       "text": "creature.noxious-needler.abilities.generate-bomb.text"
     }
-  ]
+  ],
+  "editNote": "Re-reviewed: the only difference from the published record is links to records imported since (items, runes and materials the text names), with the item names italic as linked item names are; the words are unchanged. The record's other reasons are unchanged since its earlier review."
 }

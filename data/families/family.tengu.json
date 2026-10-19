@@ -1,0 +1,18 @@
+{
+  "id": "family.tengu",
+  "type": "family",
+  "name": "family.tengu.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 325,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.tengu-sneak"
+  ],
+  "adjustments": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "family.protean",
+  "type": "family",
+  "name": "family.protean.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 270,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.azuretzi",
+    "creature.keketar",
+    "creature.voidworm"
+  ],
+  "adjustments": [],
+  "rules": [
+    {
+      "id": "warpwaves",
+      "name": "family.protean.rules.warpwaves.name",
+      "text": "family.protean.rules.warpwaves.text"
+    }
+  ],
+  "editNote": "Compared with page 270: the record’s prose reads exactly as the book prints (“Warpwaves … roll 1d8 and consult the table below … a new warpwave effect negates any previous warpwave effect”), and the d8 warpwave-effect table prints right after it — a table the dataset markup does not carry, so it stays recorded as dropped, the same policy the spell and feat records’ reviews carry for their tables. The AoN markdown’s stray ## marker before the row is source furniture, not content. Accepted for the families series."
+}

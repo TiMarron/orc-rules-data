@@ -1,0 +1,19 @@
+{
+  "id": "family.bat",
+  "type": "family",
+  "name": "family.bat.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 40,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.giant-bat",
+    "creature.vampire-bat-swarm"
+  ],
+  "adjustments": []
+}

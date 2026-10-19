@@ -1,0 +1,20 @@
+{
+  "id": "family.dero",
+  "type": "family",
+  "name": "family.dero.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 84,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.dero-magister",
+    "creature.dero-stalker",
+    "creature.dero-strangler"
+  ],
+  "adjustments": []
+}

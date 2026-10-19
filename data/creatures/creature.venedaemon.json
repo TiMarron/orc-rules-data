@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 5,
+  "family": "family.daemon",
   "size": "medium",
   "perception": {
     "mod": 12,

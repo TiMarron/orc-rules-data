@@ -17,6 +17,7 @@
   "review": "auto",
   "edited": false,
   "level": 2,
+  "family": "family.zombie",
   "size": "large",
   "perception": {
     "mod": 4,

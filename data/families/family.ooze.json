@@ -1,0 +1,21 @@
+{
+  "id": "family.ooze",
+  "type": "family",
+  "name": "family.ooze.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 256,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.living-tar",
+    "creature.sewer-ooze",
+    "creature.string-slime",
+    "creature.tomb-jelly"
+  ],
+  "adjustments": []
+}

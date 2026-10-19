@@ -1,0 +1,19 @@
+{
+  "id": "family.rat",
+  "type": "family",
+  "name": "family.rat.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 288,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.giant-rat",
+    "creature.rat-swarm"
+  ],
+  "adjustments": []
+}

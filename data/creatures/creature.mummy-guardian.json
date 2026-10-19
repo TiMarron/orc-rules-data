@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 6,
+  "family": "family.mummy",
   "size": "medium",
   "perception": {
     "mod": 16,

@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 4,
+  "family": "family.rhinoceros",
   "size": "large",
   "perception": {
     "mod": 9,

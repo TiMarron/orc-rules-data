@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scale.schema.json",
+  "$defs": {
+    "key": { "$ref": "common.schema.json#/$defs/i18nKey" },
+    "tier": {
+      "enum": ["extreme", "high", "moderate", "low", "terrible", "unlimited", "limited"],
+      "$comment": "The five statistics tiers of Building Creatures, `unlimited | limited` only for area damage. Which of them a scale uses is the record's own `tiers`; the validator checks every row's keys against the record's list."
+    },
+    "cell": {
+      "oneOf": [
+        { "type": "integer" },
+        { "type": "object", "additionalProperties": false,
+          "oneOf": [
+            { "properties": { "min": true, "max": true }, "required": ["min", "max"] },
+            { "properties": { "dice": true, "average": true }, "required": ["dice", "average"] },
+            { "properties": { "dc": true, "attack": true }, "required": ["dc", "attack"] }
+          ],
+          "properties": {
+        "min": { "type": "integer" },
+        "max": { "type": "integer", "$comment": "A range cell (`{ min, max }`) is Hit Points' '20–17', the low Skills tier's '+2 to +1', or a value under 'value' for a scale without tiers. min <= max is the validator's rule." },
+        "dice": { "type": "string", "pattern": "^[1-9][0-9]*(d(4|6|8|10|12|20)([+-][1-9][0-9]*)?)?$", "$comment": "The printed damage expression, same notation as a Strike's damage." },
+        "average": { "type": "integer", "minimum": 0, "$comment": "The book's printed average, in '1d6+1 (4)'." },
+        "dc": { "type": "integer", "minimum": 1, "$comment": "Spell DC table prints both numbers per cell: this DC and the attack modifier." },
+        "attack": { "type": "integer", "$comment": "The spell attack modifier that shares the Spell DC table's cell." }
+          }
+        }
+      ],
+      "$comment": "One cell of the table (one tier at one level): an integer modifier, a { min, max } range, a { dice, average } damage expression, or Spell DC's { dc, attack } pair. A printed '—' is no cell — the row keys lack the tier."
+    },
+    "row": {
+      "type": "object", "additionalProperties": { "$ref": "#/$defs/cell" },
+      "propertyNames": { "anyOf": [{ "enum": ["level", "value"] }, { "$ref": "#/$defs/tier" }] },
+      "required": ["level"],
+      "properties": { "level": { "type": "integer", "minimum": -1, "maximum": 24 } },
+      "$comment": "One level of the table: `level` and one cell per tier. A resistance table has no tiers — its single cell sits under the key `value`. Rows in order −1…24 without gaps is the validator's rule."
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["tiers", "rows"],
+      "properties": {
+        "type": { "const": "scale" },
+        "tiers": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/tier" }, "$comment": "The scale's tiers in print order: the columns of the table ('extreme, high, moderate…'). Empty when the table has none — Resistance and Weaknesses prints a single value per level." },
+        "rows": { "type": "array", "items": { "$ref": "#/$defs/row" }, "$comment": "One row per level, in ascending order." },
+        "text": { "$ref": "#/$defs/key", "$comment": "The printed rule that says when each tier applies." }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

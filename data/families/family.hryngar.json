@@ -1,0 +1,20 @@
+{
+  "id": "family.hryngar",
+  "type": "family",
+  "name": "family.hryngar.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 202,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.hryngar-bombardier",
+    "creature.hryngar-sharpshooter",
+    "creature.hryngar-taskmaster"
+  ],
+  "adjustments": []
+}

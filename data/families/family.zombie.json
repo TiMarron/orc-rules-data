@@ -1,0 +1,27 @@
+{
+  "id": "family.zombie",
+  "type": "family",
+  "name": "family.zombie.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 356,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.plague-zombie",
+    "creature.zombie-brute",
+    "creature.zombie-hulk",
+    "creature.zombie-shambler"
+  ],
+  "adjustments": [
+    "adjustment.zombie-abilities"
+  ],
+  "notes": [
+    "family.zombie.notes.0"
+  ],
+  "editNote": "The printed advice on creating zombies is now a note of the family (page 356)."
+}

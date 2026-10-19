@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 0,
+  "family": "family.gremlin",
   "size": "tiny",
   "perception": {
     "mod": 6,

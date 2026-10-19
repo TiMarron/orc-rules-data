@@ -1,0 +1,41 @@
+{
+  "id": "adjustment.phantom",
+  "type": "adjustment",
+  "name": "adjustment.phantom.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 262,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.phantom",
+  "appliesTo": {
+    "living": true
+  },
+  "traitsOp": {
+    "add": [
+      "ethereal",
+      "incorporeal",
+      "spirit"
+    ]
+  },
+  "immunities": [
+    "bleed",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision"
+  ],
+  "caveats": [
+    "adjustment.phantom.caveats.0",
+    "adjustment.phantom.caveats.1",
+    "adjustment.phantom.caveats.2",
+    "adjustment.phantom.caveats.3",
+    "adjustment.phantom.caveats.4",
+    "adjustment.phantom.caveats.5"
+  ],
+  "editNote": "Reserved Material removed: the plane the caveat names is replaced with what it is (the ethereal realm). Rules text is the book's."
+}

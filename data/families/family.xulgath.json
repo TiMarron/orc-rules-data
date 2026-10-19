@@ -1,0 +1,20 @@
+{
+  "id": "family.xulgath",
+  "type": "family",
+  "name": "family.xulgath.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 352,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.xulgath-leader",
+    "creature.xulgath-skulker",
+    "creature.xulgath-warrior"
+  ],
+  "adjustments": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "family.dragon-adamantine",
+  "type": "family",
+  "name": "family.dragon-adamantine.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 108,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-adamantine-dragon",
+    "creature.ancient-adamantine-dragon",
+    "creature.young-adamantine-dragon"
+  ],
+  "adjustments": [
+    "adjustment.adamantine-dragon-spellcaster"
+  ],
+  "parent": "family.dragon",
+  "editNote": "The book prints the family's name in natural order (“Adamantine Dragon”) on page 108; the page check searches the source's inverted form. The family now lists its spellcaster adjustment, the sidebar on page 110."
+}

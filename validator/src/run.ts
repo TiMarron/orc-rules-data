@@ -9,9 +9,12 @@ import { sourceCheck } from './checks/source.js';
 import { reservedCheck } from './checks/reserved.js';
 import { archetypesCheck } from './checks/archetypes.js';
 import { creaturesCheck } from './checks/creatures.js';
+import { familiesCheck } from './checks/families.js';
+import { adjustmentsCheck } from './checks/adjustments.js';
+import { scalesCheck } from './checks/scales.js';
 
 export function defaultChecks(schemaDir: string): Check[] {
-  return [makeSchemaCheck(schemaDir), flagsCheck, idsCheck, refsCheck, i18nCheck, sourceCheck, reservedCheck, archetypesCheck, creaturesCheck];
+  return [makeSchemaCheck(schemaDir), flagsCheck, idsCheck, refsCheck, i18nCheck, sourceCheck, reservedCheck, archetypesCheck, creaturesCheck, familiesCheck, adjustmentsCheck, scalesCheck];
 }
 
 export function runChecks(ds: Dataset, schemaDir = join(ds.root, 'schema'), checks = defaultChecks(schemaDir)): Issue[] {

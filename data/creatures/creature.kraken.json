@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 18,
   "size": "gargantuan",
   "perception": {
@@ -239,5 +239,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "changed: an ability text now links the ritual it names ([[ritual.*]]), published after the creature; the wording is otherwise the published one"
 }

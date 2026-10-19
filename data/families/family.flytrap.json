@@ -1,0 +1,19 @@
+{
+  "id": "family.flytrap",
+  "type": "family",
+  "name": "family.flytrap.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 154,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.giant-flytrap",
+    "creature.snapping-flytrap"
+  ],
+  "adjustments": []
+}

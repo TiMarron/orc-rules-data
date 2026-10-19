@@ -1,0 +1,410 @@
+{
+  "id": "scale.hp",
+  "type": "scale",
+  "name": "scale.hp.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 118,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "scale.hp.text",
+  "tiers": [
+    "high",
+    "moderate",
+    "low"
+  ],
+  "rows": [
+    {
+      "level": -1,
+      "high": 9,
+      "moderate": {
+        "min": 7,
+        "max": 8
+      },
+      "low": {
+        "min": 5,
+        "max": 6
+      }
+    },
+    {
+      "level": 0,
+      "high": {
+        "min": 17,
+        "max": 20
+      },
+      "moderate": {
+        "min": 14,
+        "max": 16
+      },
+      "low": {
+        "min": 11,
+        "max": 13
+      }
+    },
+    {
+      "level": 1,
+      "high": {
+        "min": 24,
+        "max": 26
+      },
+      "moderate": {
+        "min": 19,
+        "max": 21
+      },
+      "low": {
+        "min": 14,
+        "max": 16
+      }
+    },
+    {
+      "level": 2,
+      "high": {
+        "min": 36,
+        "max": 40
+      },
+      "moderate": {
+        "min": 28,
+        "max": 32
+      },
+      "low": {
+        "min": 21,
+        "max": 25
+      }
+    },
+    {
+      "level": 3,
+      "high": {
+        "min": 53,
+        "max": 59
+      },
+      "moderate": {
+        "min": 42,
+        "max": 48
+      },
+      "low": {
+        "min": 31,
+        "max": 37
+      }
+    },
+    {
+      "level": 4,
+      "high": {
+        "min": 72,
+        "max": 78
+      },
+      "moderate": {
+        "min": 57,
+        "max": 63
+      },
+      "low": {
+        "min": 42,
+        "max": 48
+      }
+    },
+    {
+      "level": 5,
+      "high": {
+        "min": 91,
+        "max": 97
+      },
+      "moderate": {
+        "min": 72,
+        "max": 78
+      },
+      "low": {
+        "min": 53,
+        "max": 59
+      }
+    },
+    {
+      "level": 6,
+      "high": {
+        "min": 115,
+        "max": 123
+      },
+      "moderate": {
+        "min": 91,
+        "max": 99
+      },
+      "low": {
+        "min": 67,
+        "max": 75
+      }
+    },
+    {
+      "level": 7,
+      "high": {
+        "min": 140,
+        "max": 148
+      },
+      "moderate": {
+        "min": 111,
+        "max": 119
+      },
+      "low": {
+        "min": 82,
+        "max": 90
+      }
+    },
+    {
+      "level": 8,
+      "high": {
+        "min": 165,
+        "max": 173
+      },
+      "moderate": {
+        "min": 131,
+        "max": 139
+      },
+      "low": {
+        "min": 97,
+        "max": 105
+      }
+    },
+    {
+      "level": 9,
+      "high": {
+        "min": 190,
+        "max": 198
+      },
+      "moderate": {
+        "min": 151,
+        "max": 159
+      },
+      "low": {
+        "min": 112,
+        "max": 120
+      }
+    },
+    {
+      "level": 10,
+      "high": {
+        "min": 215,
+        "max": 223
+      },
+      "moderate": {
+        "min": 171,
+        "max": 179
+      },
+      "low": {
+        "min": 127,
+        "max": 135
+      }
+    },
+    {
+      "level": 11,
+      "high": {
+        "min": 240,
+        "max": 248
+      },
+      "moderate": {
+        "min": 191,
+        "max": 199
+      },
+      "low": {
+        "min": 142,
+        "max": 150
+      }
+    },
+    {
+      "level": 12,
+      "high": {
+        "min": 265,
+        "max": 273
+      },
+      "moderate": {
+        "min": 211,
+        "max": 219
+      },
+      "low": {
+        "min": 157,
+        "max": 165
+      }
+    },
+    {
+      "level": 13,
+      "high": {
+        "min": 290,
+        "max": 298
+      },
+      "moderate": {
+        "min": 231,
+        "max": 239
+      },
+      "low": {
+        "min": 172,
+        "max": 180
+      }
+    },
+    {
+      "level": 14,
+      "high": {
+        "min": 315,
+        "max": 323
+      },
+      "moderate": {
+        "min": 251,
+        "max": 259
+      },
+      "low": {
+        "min": 187,
+        "max": 195
+      }
+    },
+    {
+      "level": 15,
+      "high": {
+        "min": 340,
+        "max": 348
+      },
+      "moderate": {
+        "min": 271,
+        "max": 279
+      },
+      "low": {
+        "min": 202,
+        "max": 210
+      }
+    },
+    {
+      "level": 16,
+      "high": {
+        "min": 365,
+        "max": 373
+      },
+      "moderate": {
+        "min": 291,
+        "max": 299
+      },
+      "low": {
+        "min": 217,
+        "max": 225
+      }
+    },
+    {
+      "level": 17,
+      "high": {
+        "min": 390,
+        "max": 398
+      },
+      "moderate": {
+        "min": 311,
+        "max": 319
+      },
+      "low": {
+        "min": 232,
+        "max": 240
+      }
+    },
+    {
+      "level": 18,
+      "high": {
+        "min": 415,
+        "max": 423
+      },
+      "moderate": {
+        "min": 331,
+        "max": 339
+      },
+      "low": {
+        "min": 247,
+        "max": 255
+      }
+    },
+    {
+      "level": 19,
+      "high": {
+        "min": 440,
+        "max": 448
+      },
+      "moderate": {
+        "min": 351,
+        "max": 359
+      },
+      "low": {
+        "min": 262,
+        "max": 270
+      }
+    },
+    {
+      "level": 20,
+      "high": {
+        "min": 465,
+        "max": 473
+      },
+      "moderate": {
+        "min": 371,
+        "max": 379
+      },
+      "low": {
+        "min": 277,
+        "max": 285
+      }
+    },
+    {
+      "level": 21,
+      "high": {
+        "min": 495,
+        "max": 505
+      },
+      "moderate": {
+        "min": 395,
+        "max": 405
+      },
+      "low": {
+        "min": 295,
+        "max": 305
+      }
+    },
+    {
+      "level": 22,
+      "high": {
+        "min": 532,
+        "max": 544
+      },
+      "moderate": {
+        "min": 424,
+        "max": 436
+      },
+      "low": {
+        "min": 317,
+        "max": 329
+      }
+    },
+    {
+      "level": 23,
+      "high": {
+        "min": 569,
+        "max": 581
+      },
+      "moderate": {
+        "min": 454,
+        "max": 466
+      },
+      "low": {
+        "min": 339,
+        "max": 351
+      }
+    },
+    {
+      "level": 24,
+      "high": {
+        "min": 617,
+        "max": 633
+      },
+      "moderate": {
+        "min": 492,
+        "max": 508
+      },
+      "low": {
+        "min": 367,
+        "max": 383
+      }
+    }
+  ],
+  "editNote": "Compared with page 118: every row as printed. The rule's own text now carries its links as dataset references instead of raw source links."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "family.elemental-earth",
+  "type": "family",
+  "name": "family.elemental-earth.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 142,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.elemental-avalanche",
+    "creature.living-landslide",
+    "creature.sod-hound",
+    "creature.stone-mauler"
+  ],
+  "adjustments": []
+}

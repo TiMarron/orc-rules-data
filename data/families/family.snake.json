@@ -1,0 +1,21 @@
+{
+  "id": "family.snake",
+  "type": "family",
+  "name": "family.snake.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 316,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.giant-anaconda",
+    "creature.giant-viper",
+    "creature.python",
+    "creature.viper"
+  ],
+  "adjustments": []
+}

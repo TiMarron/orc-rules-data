@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 4,
+  "family": "family.scorpion",
   "size": "large",
   "perception": {
     "mod": 11,

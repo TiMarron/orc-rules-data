@@ -312,6 +312,7 @@
         },
         "hp": { "$ref": "#/$defs/valued" },
         "hardness": { "type": "integer", "minimum": 1 },
+        "family": { "$ref": "common.schema.json#/$defs/id", "$comment": "The creature family the AoN stat block's `creature_family` names — one family a creature belongs to, when the dataset holds it: 'family.vampire'. Optional; the membership is validated against the family's `members` both ways." },
         "immunities": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" }, "uniqueItems": true },
         "immunitiesNote": { "$ref": "#/$defs/key", "$comment": "What the Immunities line prints that is not a plain name: a parenthesis (\"electricity (see lightning drinker)\") or a clause (\"effects that would transform their body or soul to an undead\"), as printed. A name with a parenthesis is also in `immunities`; a clause is only here, and `immunities` may then be absent." },
         "weaknesses": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/modifier" } },

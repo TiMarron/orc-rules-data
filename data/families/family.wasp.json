@@ -1,0 +1,19 @@
+{
+  "id": "family.wasp",
+  "type": "family",
+  "name": "family.wasp.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 343,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.giant-wasp",
+    "creature.wasp-swarm"
+  ],
+  "adjustments": []
+}

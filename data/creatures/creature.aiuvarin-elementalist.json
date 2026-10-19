@@ -17,6 +17,7 @@
   "review": "auto",
   "edited": false,
   "level": 2,
+  "family": "family.elf",
   "size": "medium",
   "perception": {
     "mod": 11,

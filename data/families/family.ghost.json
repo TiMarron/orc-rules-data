@@ -1,0 +1,21 @@
+{
+  "id": "family.ghost",
+  "type": "family",
+  "name": "family.ghost.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 160,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.ghost-commoner",
+    "creature.ghost-mage"
+  ],
+  "adjustments": [
+    "adjustment.ghost"
+  ]
+}

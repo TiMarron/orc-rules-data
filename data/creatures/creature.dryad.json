@@ -17,6 +17,7 @@
   "review": "assistant",
   "edited": true,
   "level": 3,
+  "family": "family.nymph",
   "size": "medium",
   "perception": {
     "mod": 10,

@@ -1,0 +1,19 @@
+{
+  "id": "family.troll",
+  "type": "family",
+  "name": "family.troll.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 330,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.forest-troll",
+    "creature.troll-warleader"
+  ],
+  "adjustments": []
+}

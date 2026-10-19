@@ -1,0 +1,24 @@
+{
+  "id": "family.dragon-fortune",
+  "type": "family",
+  "name": "family.dragon-fortune.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 116,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-fortune-dragon",
+    "creature.ancient-fortune-dragon",
+    "creature.young-fortune-dragon"
+  ],
+  "adjustments": [
+    "adjustment.fortune-dragon-spellcaster"
+  ],
+  "parent": "family.dragon",
+  "editNote": "The book prints the family's name in natural order (“Fortune Dragon”) on page 116; the page check searches the source's inverted form. The family now lists its spellcaster adjustment, the sidebar on page 118."
+}

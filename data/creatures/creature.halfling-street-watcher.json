@@ -15,6 +15,7 @@
   "review": "assistant",
   "edited": true,
   "level": -1,
+  "family": "family.halfling",
   "size": "small",
   "perception": {
     "mod": 8

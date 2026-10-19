@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 1,
+  "family": "family.archon",
   "size": "small",
   "perception": {
     "mod": 6,

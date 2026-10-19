@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 1,
+  "family": "family.gnome",
   "size": "small",
   "perception": {
     "mod": 7,

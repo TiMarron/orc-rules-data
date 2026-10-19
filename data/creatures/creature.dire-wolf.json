@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 3,
+  "family": "family.wolf",
   "size": "large",
   "perception": {
     "mod": 10,

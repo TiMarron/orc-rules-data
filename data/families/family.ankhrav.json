@@ -1,0 +1,19 @@
+{
+  "id": "family.ankhrav",
+  "type": "family",
+  "name": "family.ankhrav.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 20,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.ankhrav",
+    "creature.ankhrav-hive-mother"
+  ],
+  "adjustments": []
+}

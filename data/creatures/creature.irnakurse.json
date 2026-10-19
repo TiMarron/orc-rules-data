@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 9,
+  "family": "family.fleshwarp",
   "size": "large",
   "perception": {
     "mod": 18,

@@ -15,6 +15,7 @@
   "review": "assistant",
   "edited": true,
   "level": 3,
+  "family": "family.flytrap",
   "size": "large",
   "perception": {
     "mod": 7,

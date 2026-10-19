@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": -1,
+  "family": "family.crawling-hand",
   "size": "tiny",
   "perception": {
     "mod": 5,

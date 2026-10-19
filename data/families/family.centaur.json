@@ -1,0 +1,18 @@
+{
+  "id": "family.centaur",
+  "type": "family",
+  "name": "family.centaur.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 58,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.centaur-herbalist"
+  ],
+  "adjustments": []
+}

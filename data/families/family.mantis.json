@@ -1,0 +1,19 @@
+{
+  "id": "family.mantis",
+  "type": "family",
+  "name": "family.mantis.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 229,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.deadly-mantis",
+    "creature.giant-mantis"
+  ],
+  "adjustments": []
+}

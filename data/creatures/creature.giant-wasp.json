@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 3,
+  "family": "family.wasp",
   "size": "large",
   "perception": {
     "mod": 8,

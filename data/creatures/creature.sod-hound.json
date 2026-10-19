@@ -15,6 +15,7 @@
   "review": "assistant",
   "edited": true,
   "level": 3,
+  "family": "family.elemental-earth",
   "size": "small",
   "perception": {
     "mod": 9,

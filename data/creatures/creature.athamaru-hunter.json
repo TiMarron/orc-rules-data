@@ -16,6 +16,7 @@
   "review": "human",
   "edited": true,
   "level": 3,
+  "family": "family.athamaru",
   "size": "medium",
   "perception": {
     "mod": 9,

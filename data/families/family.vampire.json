@@ -1,0 +1,23 @@
+{
+  "id": "family.vampire",
+  "type": "family",
+  "name": "family.vampire.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 334,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.vampire-count",
+    "creature.vampire-mastermind",
+    "creature.vampire-servitor"
+  ],
+  "adjustments": [
+    "adjustment.vampire",
+    "adjustment.true-vampire"
+  ]
+}

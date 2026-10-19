@@ -17,6 +17,7 @@
   "review": "auto",
   "edited": false,
   "level": 7,
+  "family": "family.skeleton",
   "size": "huge",
   "perception": {
     "mod": 16,

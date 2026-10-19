@@ -1,0 +1,21 @@
+{
+  "id": "family.azata",
+  "type": "family",
+  "name": "family.azata.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 32,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.aeolaeka",
+    "creature.gancanagh",
+    "creature.kanya",
+    "creature.lyrakien"
+  ],
+  "adjustments": []
+}

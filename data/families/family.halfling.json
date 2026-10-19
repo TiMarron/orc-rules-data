@@ -1,0 +1,19 @@
+{
+  "id": "family.halfling",
+  "type": "family",
+  "name": "family.halfling.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 192,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.halfling-street-watcher",
+    "creature.halfling-troublemaker"
+  ],
+  "adjustments": []
+}

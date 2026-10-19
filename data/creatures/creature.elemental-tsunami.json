@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 11,
+  "family": "family.elemental-water",
   "size": "huge",
   "perception": {
     "mod": 22,

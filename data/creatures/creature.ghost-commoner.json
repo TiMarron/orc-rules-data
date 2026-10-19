@@ -18,6 +18,7 @@
   "review": "assistant",
   "edited": true,
   "level": 4,
+  "family": "family.ghost",
   "size": "medium",
   "perception": {
     "mod": 10,

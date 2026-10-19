@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 8,
   "size": "large",
   "perception": {
@@ -138,5 +138,6 @@
       "requirements": "creature.charnel-creation.abilities.berserk-slam.requirements",
       "text": "creature.charnel-creation.abilities.berserk-slam.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

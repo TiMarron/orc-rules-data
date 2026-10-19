@@ -4,6 +4,31 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Added
+
+- Three record types and a creature field, for GM Core's Building Creatures and
+  Monster Core's creature chapters: `family` (a group of creatures, with its
+  printed membership, transformations, rules and advice, and no lore), the
+  optional `family` on a creature record, `adjustment` (a printed
+  transformation of a creature — Elite and Weak, ghosts, ghouls, liches,
+  vampires, werecreatures and the rest — as operations plus printed caveats)
+  and `scale` (the eleven creature-building tables, by level −1…24).
+- Records: GM Core's creature-building tables, Monster Core's creature
+  families and the adjustments they print; creatures carry their family.
+- Validator checks: family membership compared in both directions, a family's
+  parent, adjustment references to scales' tiers, abilities removed or
+  substituted per targeted creature, a `requires` naming an adjustment, scale
+  levels without gaps and cells under a carried tier.
+- A level value's `part` (`dc` or `attack`), which a reference into the Spell
+  DC table's two-number cells must name; the Area Damage table's `unlimited`
+  and `limited` tiers; a die floor beside a repeating die ("minimum 1d6").
+- Validator checks: an ability an adjustment replaces, and one an option entry
+  removes or replaces, exists on every targeted creature; a dragon age's spell
+  block is keyed by a creature the adjustment applies to; a creature's `family`
+  names a family.
+
 ## 0.9.0 — 2026-10-16
 
 ### Changed — breaking

@@ -1,0 +1,518 @@
+{
+  "id": "scale.strike-damage",
+  "type": "scale",
+  "name": "scale.strike-damage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 120,
+    "revision": "2023-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "scale.strike-damage.text",
+  "tiers": [
+    "extreme",
+    "high",
+    "moderate",
+    "low"
+  ],
+  "rows": [
+    {
+      "level": -1,
+      "extreme": {
+        "dice": "1d6+1",
+        "average": 4
+      },
+      "high": {
+        "dice": "1d4+1",
+        "average": 3
+      },
+      "moderate": {
+        "dice": "1d4",
+        "average": 3
+      },
+      "low": {
+        "dice": "1d4",
+        "average": 2
+      }
+    },
+    {
+      "level": 0,
+      "extreme": {
+        "dice": "1d6+3",
+        "average": 6
+      },
+      "high": {
+        "dice": "1d6+2",
+        "average": 5
+      },
+      "moderate": {
+        "dice": "1d4+2",
+        "average": 4
+      },
+      "low": {
+        "dice": "1d4+1",
+        "average": 3
+      }
+    },
+    {
+      "level": 1,
+      "extreme": {
+        "dice": "1d8+4",
+        "average": 8
+      },
+      "high": {
+        "dice": "1d6+3",
+        "average": 6
+      },
+      "moderate": {
+        "dice": "1d6+2",
+        "average": 5
+      },
+      "low": {
+        "dice": "1d4+2",
+        "average": 4
+      }
+    },
+    {
+      "level": 2,
+      "extreme": {
+        "dice": "1d12+4",
+        "average": 11
+      },
+      "high": {
+        "dice": "1d10+4",
+        "average": 9
+      },
+      "moderate": {
+        "dice": "1d8+4",
+        "average": 8
+      },
+      "low": {
+        "dice": "1d6+3",
+        "average": 6
+      }
+    },
+    {
+      "level": 3,
+      "extreme": {
+        "dice": "1d12+8",
+        "average": 15
+      },
+      "high": {
+        "dice": "1d10+6",
+        "average": 12
+      },
+      "moderate": {
+        "dice": "1d8+6",
+        "average": 10
+      },
+      "low": {
+        "dice": "1d6+5",
+        "average": 8
+      }
+    },
+    {
+      "level": 4,
+      "extreme": {
+        "dice": "2d10+7",
+        "average": 18
+      },
+      "high": {
+        "dice": "2d8+5",
+        "average": 14
+      },
+      "moderate": {
+        "dice": "2d6+5",
+        "average": 12
+      },
+      "low": {
+        "dice": "2d4+4",
+        "average": 9
+      }
+    },
+    {
+      "level": 5,
+      "extreme": {
+        "dice": "2d12+7",
+        "average": 20
+      },
+      "high": {
+        "dice": "2d8+7",
+        "average": 16
+      },
+      "moderate": {
+        "dice": "2d6+6",
+        "average": 13
+      },
+      "low": {
+        "dice": "2d4+6",
+        "average": 11
+      }
+    },
+    {
+      "level": 6,
+      "extreme": {
+        "dice": "2d12+10",
+        "average": 23
+      },
+      "high": {
+        "dice": "2d8+9",
+        "average": 18
+      },
+      "moderate": {
+        "dice": "2d6+8",
+        "average": 15
+      },
+      "low": {
+        "dice": "2d4+7",
+        "average": 12
+      }
+    },
+    {
+      "level": 7,
+      "extreme": {
+        "dice": "2d12+12",
+        "average": 25
+      },
+      "high": {
+        "dice": "2d10+9",
+        "average": 20
+      },
+      "moderate": {
+        "dice": "2d8+8",
+        "average": 17
+      },
+      "low": {
+        "dice": "2d6+6",
+        "average": 13
+      }
+    },
+    {
+      "level": 8,
+      "extreme": {
+        "dice": "2d12+15",
+        "average": 28
+      },
+      "high": {
+        "dice": "2d10+11",
+        "average": 22
+      },
+      "moderate": {
+        "dice": "2d8+9",
+        "average": 18
+      },
+      "low": {
+        "dice": "2d6+8",
+        "average": 15
+      }
+    },
+    {
+      "level": 9,
+      "extreme": {
+        "dice": "2d12+17",
+        "average": 30
+      },
+      "high": {
+        "dice": "2d10+13",
+        "average": 24
+      },
+      "moderate": {
+        "dice": "2d8+11",
+        "average": 20
+      },
+      "low": {
+        "dice": "2d6+9",
+        "average": 16
+      }
+    },
+    {
+      "level": 10,
+      "extreme": {
+        "dice": "2d12+20",
+        "average": 33
+      },
+      "high": {
+        "dice": "2d12+13",
+        "average": 26
+      },
+      "moderate": {
+        "dice": "2d10+11",
+        "average": 22
+      },
+      "low": {
+        "dice": "2d6+10",
+        "average": 17
+      }
+    },
+    {
+      "level": 11,
+      "extreme": {
+        "dice": "2d12+22",
+        "average": 35
+      },
+      "high": {
+        "dice": "2d12+15",
+        "average": 28
+      },
+      "moderate": {
+        "dice": "2d10+12",
+        "average": 23
+      },
+      "low": {
+        "dice": "2d8+10",
+        "average": 19
+      }
+    },
+    {
+      "level": 12,
+      "extreme": {
+        "dice": "3d12+19",
+        "average": 38
+      },
+      "high": {
+        "dice": "3d10+14",
+        "average": 30
+      },
+      "moderate": {
+        "dice": "3d8+12",
+        "average": 25
+      },
+      "low": {
+        "dice": "3d6+10",
+        "average": 20
+      }
+    },
+    {
+      "level": 13,
+      "extreme": {
+        "dice": "3d12+21",
+        "average": 40
+      },
+      "high": {
+        "dice": "3d10+16",
+        "average": 32
+      },
+      "moderate": {
+        "dice": "3d8+14",
+        "average": 27
+      },
+      "low": {
+        "dice": "3d6+11",
+        "average": 21
+      }
+    },
+    {
+      "level": 14,
+      "extreme": {
+        "dice": "3d12+24",
+        "average": 43
+      },
+      "high": {
+        "dice": "3d10+18",
+        "average": 34
+      },
+      "moderate": {
+        "dice": "3d8+15",
+        "average": 28
+      },
+      "low": {
+        "dice": "3d6+13",
+        "average": 23
+      }
+    },
+    {
+      "level": 15,
+      "extreme": {
+        "dice": "3d12+26",
+        "average": 45
+      },
+      "high": {
+        "dice": "3d12+17",
+        "average": 36
+      },
+      "moderate": {
+        "dice": "3d10+14",
+        "average": 30
+      },
+      "low": {
+        "dice": "3d6+14",
+        "average": 24
+      }
+    },
+    {
+      "level": 16,
+      "extreme": {
+        "dice": "3d12+29",
+        "average": 48
+      },
+      "high": {
+        "dice": "3d12+18",
+        "average": 37
+      },
+      "moderate": {
+        "dice": "3d10+15",
+        "average": 31
+      },
+      "low": {
+        "dice": "3d6+15",
+        "average": 25
+      }
+    },
+    {
+      "level": 17,
+      "extreme": {
+        "dice": "3d12+31",
+        "average": 50
+      },
+      "high": {
+        "dice": "3d12+19",
+        "average": 38
+      },
+      "moderate": {
+        "dice": "3d10+16",
+        "average": 32
+      },
+      "low": {
+        "dice": "3d6+16",
+        "average": 26
+      }
+    },
+    {
+      "level": 18,
+      "extreme": {
+        "dice": "3d12+34",
+        "average": 53
+      },
+      "high": {
+        "dice": "3d12+20",
+        "average": 40
+      },
+      "moderate": {
+        "dice": "3d10+17",
+        "average": 33
+      },
+      "low": {
+        "dice": "3d6+17",
+        "average": 27
+      }
+    },
+    {
+      "level": 19,
+      "extreme": {
+        "dice": "4d12+29",
+        "average": 55
+      },
+      "high": {
+        "dice": "4d10+20",
+        "average": 42
+      },
+      "moderate": {
+        "dice": "4d8+17",
+        "average": 35
+      },
+      "low": {
+        "dice": "4d6+14",
+        "average": 28
+      }
+    },
+    {
+      "level": 20,
+      "extreme": {
+        "dice": "4d12+32",
+        "average": 58
+      },
+      "high": {
+        "dice": "4d10+22",
+        "average": 44
+      },
+      "moderate": {
+        "dice": "4d8+19",
+        "average": 37
+      },
+      "low": {
+        "dice": "4d6+15",
+        "average": 29
+      }
+    },
+    {
+      "level": 21,
+      "extreme": {
+        "dice": "4d12+34",
+        "average": 60
+      },
+      "high": {
+        "dice": "4d10+24",
+        "average": 46
+      },
+      "moderate": {
+        "dice": "4d8+20",
+        "average": 38
+      },
+      "low": {
+        "dice": "4d6+17",
+        "average": 31
+      }
+    },
+    {
+      "level": 22,
+      "extreme": {
+        "dice": "4d12+37",
+        "average": 63
+      },
+      "high": {
+        "dice": "4d10+26",
+        "average": 48
+      },
+      "moderate": {
+        "dice": "4d8+22",
+        "average": 40
+      },
+      "low": {
+        "dice": "4d6+18",
+        "average": 32
+      }
+    },
+    {
+      "level": 23,
+      "extreme": {
+        "dice": "4d12+39",
+        "average": 65
+      },
+      "high": {
+        "dice": "4d12+24",
+        "average": 50
+      },
+      "moderate": {
+        "dice": "4d10+20",
+        "average": 42
+      },
+      "low": {
+        "dice": "4d6+19",
+        "average": 33
+      }
+    },
+    {
+      "level": 24,
+      "extreme": {
+        "dice": "4d12+42",
+        "average": 68
+      },
+      "high": {
+        "dice": "4d12+26",
+        "average": 52
+      },
+      "moderate": {
+        "dice": "4d10+22",
+        "average": 44
+      },
+      "low": {
+        "dice": "4d6+21",
+        "average": 35
+      }
+    }
+  ],
+  "editNote": "Compared with page 120: every row as printed. The rule's own text now carries its links as dataset references instead of raw source links."
+}

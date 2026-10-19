@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 13,
   "size": "large",
   "perception": {
@@ -149,5 +149,6 @@
       ],
       "text": "creature.iron-warden.abilities.iron-warden-poison.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

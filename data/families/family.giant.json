@@ -1,0 +1,24 @@
+{
+  "id": "family.giant",
+  "type": "family",
+  "name": "family.giant.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 164,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.cloud-giant",
+    "creature.fire-giant",
+    "creature.frost-giant",
+    "creature.marsh-giant",
+    "creature.rune-giant",
+    "creature.shadow-giant",
+    "creature.stone-giant"
+  ],
+  "adjustments": []
+}

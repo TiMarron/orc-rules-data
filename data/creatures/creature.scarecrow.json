@@ -12,7 +12,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 4,
   "size": "medium",
   "perception": {
@@ -155,5 +155,6 @@
       ],
       "text": "creature.scarecrow.abilities.mundane-appearance.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

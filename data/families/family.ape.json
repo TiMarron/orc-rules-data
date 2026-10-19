@@ -1,0 +1,19 @@
+{
+  "id": "family.ape",
+  "type": "family",
+  "name": "family.ape.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 23,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.gorilla",
+    "creature.megaprimatus"
+  ],
+  "adjustments": []
+}

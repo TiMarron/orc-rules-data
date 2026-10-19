@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 12,
+  "family": "family.cyclops",
   "size": "huge",
   "perception": {
     "mod": 22,

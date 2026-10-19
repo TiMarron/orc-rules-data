@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 10,
   "size": "large",
   "perception": {
@@ -151,5 +151,6 @@
       "actions": "2",
       "text": "creature.clay-effigy.abilities.heavy-stride.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

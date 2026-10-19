@@ -1,0 +1,24 @@
+{
+  "id": "family.dragon-mirage",
+  "type": "family",
+  "name": "family.dragon-mirage.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 121,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-mirage-dragon",
+    "creature.ancient-mirage-dragon",
+    "creature.young-mirage-dragon"
+  ],
+  "adjustments": [
+    "adjustment.mirage-dragon-spellcaster"
+  ],
+  "parent": "family.dragon",
+  "editNote": "The book prints the family's name in natural order (“Mirage Dragon”) on page 120; the page check searches the source's inverted form. The family now lists its spellcaster adjustment, the sidebar on page 122."
+}

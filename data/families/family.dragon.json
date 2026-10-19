@@ -1,0 +1,23 @@
+{
+  "id": "family.dragon",
+  "type": "family",
+  "name": "family.dragon.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 108,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [],
+  "adjustments": [],
+  "rules": [
+    {
+      "id": "draconic-spellcasters",
+      "name": "family.dragon.rules.draconic-spellcasters.name",
+      "text": "family.dragon.rules.draconic-spellcasters.text"
+    }
+  ]
+}

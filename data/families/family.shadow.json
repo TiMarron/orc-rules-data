@@ -1,0 +1,19 @@
+{
+  "id": "family.shadow",
+  "type": "family",
+  "name": "family.shadow.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 306,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.greater-shadow",
+    "creature.shadow"
+  ],
+  "adjustments": []
+}

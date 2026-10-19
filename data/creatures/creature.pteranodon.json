@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 2,
+  "family": "family.pterosaur",
   "size": "large",
   "perception": {
     "mod": 8,

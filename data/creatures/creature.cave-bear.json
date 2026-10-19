@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 6,
+  "family": "family.bear",
   "size": "large",
   "perception": {
     "mod": 13,

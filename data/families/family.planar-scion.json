@@ -1,0 +1,18 @@
+{
+  "id": "family.planar-scion",
+  "type": "family",
+  "name": "family.planar-scion.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 266,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.duskwalker-ghost-hunter"
+  ],
+  "adjustments": []
+}

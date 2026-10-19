@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 9,
+  "family": "family.sargassum-heap",
   "size": "huge",
   "perception": {
     "mod": 15,

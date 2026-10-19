@@ -1,0 +1,19 @@
+{
+  "id": "family.nightmare",
+  "type": "family",
+  "name": "family.nightmare.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 238,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.greater-nightmare",
+    "creature.nightmare"
+  ],
+  "adjustments": []
+}

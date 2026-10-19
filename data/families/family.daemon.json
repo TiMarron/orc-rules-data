@@ -1,0 +1,21 @@
+{
+  "id": "family.daemon",
+  "type": "family",
+  "name": "family.daemon.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 72,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.astradaemon",
+    "creature.cacodaemon",
+    "creature.leukodaemon",
+    "creature.venedaemon"
+  ],
+  "adjustments": []
+}

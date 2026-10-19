@@ -1,0 +1,21 @@
+{
+  "id": "family.hag",
+  "type": "family",
+  "name": "family.hag.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 188,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.cuckoo-hag",
+    "creature.iron-hag",
+    "creature.sea-hag",
+    "creature.sweet-hag"
+  ],
+  "adjustments": []
+}

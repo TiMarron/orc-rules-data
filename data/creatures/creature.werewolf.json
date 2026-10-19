@@ -17,6 +17,7 @@
   "review": "auto",
   "edited": false,
   "level": 3,
+  "family": "family.werecreature",
   "size": "medium",
   "perception": {
     "mod": 9,

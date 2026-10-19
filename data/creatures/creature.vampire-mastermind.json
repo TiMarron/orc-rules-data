@@ -16,6 +16,7 @@
   "review": "assistant",
   "edited": true,
   "level": 9,
+  "family": "family.vampire",
   "size": "medium",
   "perception": {
     "mod": 20,

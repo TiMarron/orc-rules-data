@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 5,
+  "family": "family.eel",
   "size": "large",
   "perception": {
     "mod": 11,

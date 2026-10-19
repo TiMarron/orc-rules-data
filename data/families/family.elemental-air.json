@@ -1,0 +1,21 @@
+{
+  "id": "family.elemental-air",
+  "type": "family",
+  "name": "family.elemental-air.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 140,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.elemental-hurricane",
+    "creature.living-whirlwind",
+    "creature.phade",
+    "creature.zephyr-hawk"
+  ],
+  "adjustments": []
+}

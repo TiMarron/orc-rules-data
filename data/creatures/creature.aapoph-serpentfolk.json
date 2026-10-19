@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 3,
+  "family": "family.serpentfolk",
   "size": "medium",
   "perception": {
     "mod": 8,

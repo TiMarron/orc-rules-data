@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 3,
+  "family": "family.tooth-fairy",
   "size": "large",
   "perception": {
     "mod": 8,

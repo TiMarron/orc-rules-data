@@ -1,0 +1,228 @@
+{
+  "id": "adjustment.vampire",
+  "type": "adjustment",
+  "name": "adjustment.vampire.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 334,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.vampire",
+  "appliesTo": {
+    "living": true
+  },
+  "level": {
+    "delta": 1
+  },
+  "modify": [
+    {
+      "stats": [
+        "ac",
+        "attack",
+        "dc",
+        "saves",
+        "skills"
+      ],
+      "delta": 1
+    },
+    {
+      "stats": [
+        "damage"
+      ],
+      "delta": 1,
+      "limited": 2
+    }
+  ],
+  "hp": {
+    "delta": {
+      "level": "base",
+      "byLevel": [
+        {
+          "level": 3,
+          "value": -20
+        },
+        {
+          "level": 5,
+          "value": -30
+        },
+        {
+          "level": 8,
+          "value": -40
+        },
+        {
+          "level": 15,
+          "value": -60
+        }
+      ]
+    }
+  },
+  "traitsOp": {
+    "add": [
+      "undead",
+      "vampire"
+    ]
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": {
+        "level": "base",
+        "byLevel": [
+          {
+            "level": 3,
+            "value": 5
+          },
+          {
+            "level": 5,
+            "value": 7
+          },
+          {
+            "level": 8,
+            "value": 10
+          },
+          {
+            "level": 15,
+            "value": 15
+          }
+        ]
+      },
+      "except": [
+        "silver"
+      ]
+    }
+  ],
+  "speeds": {
+    "climb": {
+      "equalTo": "land"
+    }
+  },
+  "abilities": {
+    "add": [
+      {
+        "id": "fast-healing",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.fast-healing.name",
+        "ability": "ability.fast-healing",
+        "values": {
+          "amount": {
+            "level": "base",
+            "byLevel": [
+              {
+                "level": 3,
+                "value": 5
+              },
+              {
+                "level": 5,
+                "value": 7
+              },
+              {
+                "level": 8,
+                "value": 10
+              },
+              {
+                "level": 15,
+                "value": 15
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "darkvision",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.darkvision.name",
+        "ability": "ability.darkvision"
+      },
+      {
+        "id": "void-healing",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.void-healing.name",
+        "ability": "ability.void-healing"
+      },
+      {
+        "id": "coffin-restoration",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.coffin-restoration.name",
+        "traits": [
+          "divine",
+          "void"
+        ],
+        "text": "adjustment.vampire.abilities.coffin-restoration.text"
+      },
+      {
+        "id": "vampire-vulnerabilities",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.vampire-vulnerabilities.name",
+        "text": "adjustment.vampire.abilities.vampire-vulnerabilities.text"
+      },
+      {
+        "id": "compulsions",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.compulsions.name",
+        "text": "adjustment.vampire.abilities.compulsions.text"
+      },
+      {
+        "id": "revulsion",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.revulsion.name",
+        "text": "adjustment.vampire.abilities.revulsion.text"
+      },
+      {
+        "id": "stake",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.stake.name",
+        "text": "adjustment.vampire.abilities.stake.text"
+      },
+      {
+        "id": "sunlight",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.sunlight.name",
+        "text": "adjustment.vampire.abilities.sunlight.text"
+      },
+      {
+        "id": "claws",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.claws.name",
+        "text": "adjustment.vampire.abilities.claws.text"
+      },
+      {
+        "id": "drink-blood",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.drink-blood.name",
+        "actions": "1",
+        "traits": [
+          "divine"
+        ],
+        "requirements": "adjustment.vampire.abilities.drink-blood.requirements",
+        "text": "adjustment.vampire.abilities.drink-blood.text"
+      },
+      {
+        "id": "grab",
+        "section": "top",
+        "name": "adjustment.vampire.abilities.grab.name",
+        "text": "adjustment.vampire.abilities.grab.text",
+        "ability": "ability.grab"
+      }
+    ]
+  },
+  "caveats": [
+    "adjustment.vampire.caveats.0",
+    "adjustment.vampire.caveats.1",
+    "adjustment.vampire.caveats.2",
+    "adjustment.vampire.caveats.3",
+    "adjustment.vampire.caveats.4",
+    "adjustment.vampire.caveats.5"
+  ],
+  "editNote": "Compared with page 335: immunities in the creatures’ own vocabulary (death effects); the trait sentence is one caveat."
+}

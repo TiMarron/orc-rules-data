@@ -15,6 +15,7 @@
   "review": "auto",
   "edited": false,
   "level": 4,
+  "family": "family.dinosaur",
   "size": "huge",
   "perception": {
     "mod": 13,

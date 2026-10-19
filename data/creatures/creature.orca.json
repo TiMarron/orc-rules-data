@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 5,
+  "family": "family.dolphin",
   "size": "huge",
   "perception": {
     "mod": 12,

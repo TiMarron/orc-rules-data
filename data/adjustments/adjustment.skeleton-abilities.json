@@ -1,0 +1,74 @@
+{
+  "id": "adjustment.skeleton-abilities",
+  "type": "adjustment",
+  "name": "adjustment.skeleton-abilities.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 312,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.skeleton",
+  "appliesTo": {
+    "family": "family.skeleton"
+  },
+  "options": [
+    {
+      "id": "skeleton-abilities",
+      "name": "adjustment.skeleton-abilities.options.skeleton-abilities.name",
+      "choose": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "id": "bloody",
+          "section": "top",
+          "name": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.bloody.name",
+          "text": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.bloody.text"
+        },
+        {
+          "id": "collapse",
+          "section": "top",
+          "name": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.collapse.name",
+          "actions": "reaction",
+          "trigger": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.collapse.trigger",
+          "text": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.collapse.text"
+        },
+        {
+          "id": "explosive-death",
+          "section": "top",
+          "name": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.explosive-death.name",
+          "text": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.explosive-death.text",
+          "values": {
+            "dc": {
+              "scale": "scale.spell-dc",
+              "tier": "moderate",
+              "part": "dc"
+            }
+          }
+        },
+        {
+          "id": "screaming-skull",
+          "section": "top",
+          "name": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.screaming-skull.name",
+          "actions": "2",
+          "traits": [
+            "auditory",
+            "emotion",
+            "fear",
+            "mental"
+          ],
+          "text": "adjustment.skeleton-abilities.options.skeleton-abilities.abilities.screaming-skull.text"
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "adjustment.skeleton-abilities.caveats.0"
+  ],
+  "editNote": "Compared with page 312: the four abilities the book prints; the DC reference names the DC of the Spell DC table."
+}

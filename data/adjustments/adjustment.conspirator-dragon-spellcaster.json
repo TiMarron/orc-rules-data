@@ -1,0 +1,346 @@
+{
+  "id": "adjustment.conspirator-dragon-spellcaster",
+  "type": "adjustment",
+  "name": "adjustment.conspirator-dragon-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 112,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.dragon-conspirator",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-conspirator-dragon",
+      "creature.adult-conspirator-dragon",
+      "creature.ancient-conspirator-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
+  "spellcasting": {
+    "byCreature": {
+      "creature.young-conspirator-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "occult",
+          "dc": 26,
+          "attack": 19,
+          "cantrips": {
+            "rank": 3,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.figment"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.telekinetic-projectile"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.clairaudience"
+                },
+                {
+                  "spell": "spell.paralyze"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.calm"
+                },
+                {
+                  "spell": "spell.invisibility"
+                },
+                {
+                  "spell": "spell.paranoia"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.bane"
+                },
+                {
+                  "spell": "spell.fear"
+                },
+                {
+                  "spell": "spell.phantom-pain"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.adult-conspirator-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "occult",
+          "dc": 33,
+          "attack": 26,
+          "cantrips": {
+            "rank": 5,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.figment"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.telekinetic-projectile"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.scouting-eye"
+                },
+                {
+                  "spell": "spell.synaptic-pulse"
+                },
+                {
+                  "spell": "spell.truespeech"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.clairvoyance"
+                },
+                {
+                  "spell": "spell.honeyed-words"
+                },
+                {
+                  "spell": "spell.suggestion"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.clairaudience"
+                },
+                {
+                  "spell": "spell.paralyze"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.calm"
+                },
+                {
+                  "spell": "spell.invisibility"
+                },
+                {
+                  "spell": "spell.paranoia"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.bane"
+                },
+                {
+                  "spell": "spell.fear"
+                },
+                {
+                  "spell": "spell.phantom-pain"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.ancient-conspirator-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "occult",
+          "dc": 39,
+          "attack": 33,
+          "cantrips": {
+            "rank": 8,
+            "spells": [
+              {
+                "spell": "spell.daze"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.figment"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.telekinetic-projectile"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 8,
+              "spells": [
+                {
+                  "spell": "spell.hidden-mind"
+                },
+                {
+                  "spell": "spell.unrelenting-observation"
+                }
+              ]
+            },
+            {
+              "rank": 7,
+              "spells": [
+                {
+                  "spell": "spell.duplicate-foe"
+                },
+                {
+                  "spell": "spell.project-image"
+                },
+                {
+                  "spell": "spell.warp-mind"
+                }
+              ]
+            },
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.mislead"
+                },
+                {
+                  "spell": "spell.scrying"
+                },
+                {
+                  "spell": "spell.truesight"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.scouting-eye"
+                },
+                {
+                  "spell": "spell.synaptic-pulse"
+                },
+                {
+                  "spell": "spell.truespeech"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.clairvoyance"
+                },
+                {
+                  "spell": "spell.honeyed-words"
+                },
+                {
+                  "spell": "spell.suggestion"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.clairaudience"
+                },
+                {
+                  "spell": "spell.paralyze"
+                },
+                {
+                  "spell": "spell.veil-of-privacy"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.calm"
+                },
+                {
+                  "spell": "spell.invisibility"
+                },
+                {
+                  "spell": "spell.paranoia"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.bane"
+                },
+                {
+                  "spell": "spell.fear"
+                },
+                {
+                  "spell": "spell.phantom-pain"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "adjustment.conspirator-dragon-spellcaster.caveats.0"
+  ]
+}

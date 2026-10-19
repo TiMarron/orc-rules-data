@@ -1,0 +1,21 @@
+{
+  "id": "family.psychopomp",
+  "type": "family",
+  "name": "family.psychopomp.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 274,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.morrigna",
+    "creature.nosoi",
+    "creature.vanth",
+    "creature.yamaraj"
+  ],
+  "adjustments": []
+}

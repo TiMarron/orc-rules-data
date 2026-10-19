@@ -1,0 +1,19 @@
+{
+  "id": "family.mummy",
+  "type": "family",
+  "name": "family.mummy.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 234,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.mummy-guardian",
+    "creature.mummy-pharaoh"
+  ],
+  "adjustments": []
+}

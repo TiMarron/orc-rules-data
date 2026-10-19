@@ -1,0 +1,72 @@
+{
+  "id": "adjustment.elite",
+  "type": "adjustment",
+  "name": "adjustment.elite.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 6,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": {
+    "delta": {
+      "level": "base",
+      "byLevel": [
+        {
+          "level": -1,
+          "value": 2
+        },
+        {
+          "level": 1,
+          "value": 1
+        }
+      ]
+    }
+  },
+  "modify": [
+    {
+      "stats": [
+        "ac",
+        "attack",
+        "dc",
+        "saves",
+        "perception",
+        "skills"
+      ],
+      "delta": 2
+    },
+    {
+      "stats": [
+        "damage"
+      ],
+      "delta": 2,
+      "limited": 4
+    }
+  ],
+  "hp": {
+    "delta": {
+      "level": "base",
+      "byLevel": [
+        {
+          "level": -1,
+          "value": 10
+        },
+        {
+          "level": 2,
+          "value": 15
+        },
+        {
+          "level": 5,
+          "value": 20
+        },
+        {
+          "level": 20,
+          "value": 30
+        }
+      ]
+    }
+  }
+}

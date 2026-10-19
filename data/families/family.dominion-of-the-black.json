@@ -1,0 +1,21 @@
+{
+  "id": "family.dominion-of-the-black",
+  "type": "family",
+  "name": "family.dominion-of-the-black.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 104,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.gosreg",
+    "creature.jah-tohl",
+    "creature.rhu-chalik",
+    "creature.xoarian"
+  ],
+  "adjustments": []
+}

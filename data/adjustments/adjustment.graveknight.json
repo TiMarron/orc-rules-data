@@ -1,0 +1,229 @@
+{
+  "id": "adjustment.graveknight",
+  "type": "adjustment",
+  "name": "adjustment.graveknight.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 178,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.graveknight",
+  "appliesTo": {
+    "living": true,
+    "minLevel": 5
+  },
+  "level": {
+    "delta": 1
+  },
+  "modify": [
+    {
+      "stats": [
+        "attack",
+        "ac",
+        "saves",
+        "perception",
+        "skills"
+      ],
+      "delta": 1
+    },
+    {
+      "stats": [
+        "damage"
+      ],
+      "delta": 1
+    }
+  ],
+  "hp": {
+    "delta": 5
+  },
+  "traitsOp": {
+    "add": [
+      "graveknight",
+      "undead",
+      "unholy"
+    ]
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "abilities": {
+    "add": [
+      {
+        "id": "darkvision",
+        "section": "top",
+        "name": "adjustment.graveknight.abilities.darkvision.name",
+        "ability": "ability.darkvision"
+      },
+      {
+        "id": "void-healing",
+        "section": "top",
+        "name": "adjustment.graveknight.abilities.void-healing.name",
+        "ability": "ability.void-healing"
+      },
+      {
+        "id": "rejuvenation",
+        "section": "top",
+        "name": "adjustment.graveknight.abilities.rejuvenation.name",
+        "traits": [
+          "divine"
+        ],
+        "text": "adjustment.graveknight.abilities.rejuvenation.text"
+      },
+      {
+        "id": "sacrilegious-aura",
+        "section": "top",
+        "name": "adjustment.graveknight.abilities.sacrilegious-aura.name",
+        "traits": [
+          "aura",
+          "divine",
+          "void"
+        ],
+        "aura": 30,
+        "text": "adjustment.graveknight.abilities.sacrilegious-aura.text"
+      },
+      {
+        "id": "devastating-blast",
+        "section": "top",
+        "name": "adjustment.graveknight.abilities.devastating-blast.name",
+        "actions": "2",
+        "traits": [
+          "arcane"
+        ],
+        "text": "adjustment.graveknight.abilities.devastating-blast.text",
+        "values": {
+          "damage": {
+            "scale": "scale.area-damage",
+            "tier": "limited"
+          },
+          "dc": {
+            "scale": "scale.spell-dc",
+            "tier": "high",
+            "part": "dc"
+          }
+        }
+      },
+      {
+        "id": "phantom-mount",
+        "section": "top",
+        "name": "adjustment.graveknight.abilities.phantom-mount.name",
+        "actions": "3",
+        "traits": [
+          "arcane",
+          "summon"
+        ],
+        "text": "adjustment.graveknight.abilities.phantom-mount.text",
+        "values": {
+          "amount": {
+            "ofLevel": 0.5
+          }
+        }
+      },
+      {
+        "id": "ruinous-weapons",
+        "section": "top",
+        "name": "adjustment.graveknight.abilities.ruinous-weapons.name",
+        "text": "adjustment.graveknight.abilities.ruinous-weapons.text"
+      },
+      {
+        "id": "weapon-master",
+        "section": "top",
+        "name": "adjustment.graveknight.abilities.weapon-master.name",
+        "text": "adjustment.graveknight.abilities.weapon-master.text"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "ruinous-weapons",
+      "name": "adjustment.graveknight.options.ruinous-weapons.name",
+      "choose": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "id": "acid",
+          "section": "top",
+          "name": "adjustment.graveknight.options.ruinous-weapons.acid.name",
+          "immunities": [
+            "acid"
+          ]
+        },
+        {
+          "id": "cold",
+          "section": "top",
+          "name": "adjustment.graveknight.options.ruinous-weapons.cold.name",
+          "immunities": [
+            "cold"
+          ]
+        },
+        {
+          "id": "electricity",
+          "section": "top",
+          "name": "adjustment.graveknight.options.ruinous-weapons.electricity.name",
+          "immunities": [
+            "electricity"
+          ]
+        },
+        {
+          "id": "fire",
+          "section": "top",
+          "name": "adjustment.graveknight.options.ruinous-weapons.fire.name",
+          "immunities": [
+            "fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alternate-graveknight-abilities",
+      "name": "adjustment.graveknight.options.alternate-graveknight-abilities.name",
+      "choose": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "id": "betrayed-revivification",
+          "section": "top",
+          "name": "adjustment.graveknight.options.alternate-graveknight-abilities.abilities.betrayed-revivification.name",
+          "text": "adjustment.graveknight.options.alternate-graveknight-abilities.abilities.betrayed-revivification.text"
+        },
+        {
+          "id": "create-grave-squire",
+          "section": "top",
+          "name": "adjustment.graveknight.options.alternate-graveknight-abilities.abilities.create-grave-squire.name",
+          "text": "adjustment.graveknight.options.alternate-graveknight-abilities.abilities.create-grave-squire.text"
+        },
+        {
+          "id": "dark-deliverance",
+          "section": "top",
+          "name": "adjustment.graveknight.options.alternate-graveknight-abilities.abilities.dark-deliverance.name",
+          "text": "adjustment.graveknight.options.alternate-graveknight-abilities.abilities.dark-deliverance.text"
+        }
+      ],
+      "substituteFor": [
+        "sacrilegious-aura",
+        "devastating-blast",
+        "phantom-mount",
+        "ruinous-weapons",
+        "weapon-master"
+      ]
+    }
+  ],
+  "caveats": [
+    "adjustment.graveknight.caveats.0",
+    "adjustment.graveknight.caveats.1",
+    "adjustment.graveknight.caveats.2",
+    "adjustment.graveknight.caveats.3"
+  ]
+}

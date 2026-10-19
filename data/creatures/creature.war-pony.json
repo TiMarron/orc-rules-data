@@ -14,6 +14,7 @@
   "review": "auto",
   "edited": false,
   "level": 1,
+  "family": "family.horse",
   "size": "medium",
   "perception": {
     "mod": 5,

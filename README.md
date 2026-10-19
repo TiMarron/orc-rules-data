@@ -8,7 +8,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
   subclass, package, archetype, ability, creature, ritual, material,
-  affliction, hazard, gift, vehicle.
+  affliction, hazard, gift, vehicle, family, adjustment, scale.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -329,9 +329,53 @@ cost tokens.
   (pilots, crew, rowers), `passengers`, the checks to pilot it (`piloting`: a
   skill or a Lore skill's name, with a DC or a DC range), defences (`ac`,
   `fortitude`, `hardness`, `hp`, `bt`), its `speed` (`mode`: land, fly, swim;
-  `feet`; how it moves — wind, rowed, alchemical, magical, pulled, pedaled — and
+  `feet`; how it moves - wind, rowed, alchemical, magical, pulled, pedaled - and
   a `note` for a speed set by what pulls it), the `collision` damage and DC, and
   special `abilities` shaped as a hazard's.
+- A `family` is a group of creatures the Monster Core chapters name: `members`
+  are the creatures of this dataset that belong to it (the validator compares
+  the membership both ways, each end against the other), `parent` is the family
+  group whose page names it (a group is a family record itself and may have no
+  members), `adjustments` are the transformations printed on its page, `rules`
+  is printed mechanics with no record type of its own (a table of Warpwaves,
+  the general rule for Draconic Spellcasters) and `notes` are printed advice to
+  the GM. A family carries no lore: its AoN description and its asides of
+  customs, lairs and treasures are Reserved Material the engine does not need,
+  so the record has no `text` at all.
+- A `creature` may carry `family` — the one family it belongs to.
+- An `adjustment` is a transformation of a creature the Monster Core prints as
+  a template: who it `appliesTo` (living creatures, a family, named creatures,
+  holders of printed traits, a minimum level, spellcasters only, or only on top
+  of another adjustment), a `level` change, the operations over the base
+  creature's statistics (`modify` shifts, `hp`, `attributes` replacements, a
+  `size` step, traits, immunities, resistances, weaknesses, speeds, added or
+  removed abilities, Strikes, spell blocks, skills, `rescale`) and `options` —
+  a printed choice — plus `caveats`: every printed sentence the operations
+  cannot express, in print order, which the engine shows to the player or the
+  GM instead of applying.
+- A level-dependent number in an adjustment is a `levelValue`, never prose
+  only: an integer, a reference to a scale record's tier (`{ scale, tier }`,
+  where a printed "a moderate or high" is a two-tier pair the user picks
+  from and a printed shift travels in `delta`), a value per level
+  (`{ byLevel: [...] }`, each value holding from its level upward), a
+  fraction of the level (`{ ofLevel, round?, min? }`) or a repeating die
+  (`{ dice, per, base? }`). `level` says which level counts — `"base"`
+  where the tables count the starting creature ("starting level"), `"new"`
+  by default.
+- A `scale` is one of GM Core's creature-building tables: its `tiers` (the
+  five statistics tiers, or `unlimited`/`limited` for area damage, or none
+  for a single-value table) and one `rows` entry per level −1 … 24, no gaps;
+  a cell is an integer, a `{ min, max }` range, a `{ dice, average }` damage
+  expression, a Spell DC table's `{ dc, attack }` pair, or nothing where the
+  book prints "—".
+- The `rescale` contract: for each stat it lists, take the creature's value at
+  its base level, find the tier whose cell is nearest (a range counts as its
+  midpoint; a tie goes to the higher tier), and replace the value with that
+  tier's cell at the new level (a range → its midpoint, rounded down).
+  Strikes: the attack bonus comes from `scale.strike-attack` and the damage
+  from `scale.strike-damage` — the expression, keeping the damage type. HP:
+  the tier's range midpoint, rounded down. A stat with no scale (a speed, a
+  resistance) is left alone.
 
 ## Versioning
 

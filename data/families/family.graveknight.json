@@ -1,0 +1,21 @@
+{
+  "id": "family.graveknight",
+  "type": "family",
+  "name": "family.graveknight.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 178,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.graveknight"
+  ],
+  "adjustments": [
+    "adjustment.graveknight"
+  ],
+  "editNote": "The family now lists the graveknight transformation its page prints (pages 178–179)."
+}

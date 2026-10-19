@@ -1,0 +1,391 @@
+{
+  "id": "adjustment.empyreal-dragon-spellcaster",
+  "type": "adjustment",
+  "name": "adjustment.empyreal-dragon-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 116,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.dragon-empyreal",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-empyreal-dragon",
+      "creature.adult-empyreal-dragon",
+      "creature.ancient-empyreal-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
+  "spellcasting": {
+    "byCreature": {
+      "creature.young-empyreal-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "divine",
+          "dc": 29,
+          "attack": 22,
+          "cantrips": {
+            "rank": 4,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.divine-lance"
+              },
+              {
+                "spell": "spell.guidance"
+              },
+              {
+                "spell": "spell.shield"
+              },
+              {
+                "spell": "spell.stabilize"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.unfettered-movement"
+                },
+                {
+                  "spell": "spell.vital-beacon"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.bind-undead"
+                },
+                {
+                  "spell": "spell.ring-of-truth"
+                },
+                {
+                  "spell": "spell.sound-body"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.clear-mind"
+                },
+                {
+                  "spell": "spell.everlight"
+                },
+                {
+                  "spell": "spell.share-life"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.bless"
+                },
+                {
+                  "spell": "spell.mending"
+                },
+                {
+                  "spell": "spell.sanctuary"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.adult-empyreal-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "divine",
+          "dc": 34,
+          "attack": 28,
+          "cantrips": {
+            "rank": 6,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.divine-lance"
+              },
+              {
+                "spell": "spell.guidance"
+              },
+              {
+                "spell": "spell.shield"
+              },
+              {
+                "spell": "spell.stabilize"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.field-of-life"
+                },
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.spirit-blast"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.breath-of-life"
+                },
+                {
+                  "spell": "spell.clear-mind"
+                },
+                {
+                  "spell": "spell.sending"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.unfettered-movement"
+                },
+                {
+                  "spell": "spell.vital-beacon"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.bind-undead"
+                },
+                {
+                  "spell": "spell.ring-of-truth"
+                },
+                {
+                  "spell": "spell.sound-body"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.clear-mind"
+                },
+                {
+                  "spell": "spell.everlight"
+                },
+                {
+                  "spell": "spell.share-life"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.bless"
+                },
+                {
+                  "spell": "spell.mending"
+                },
+                {
+                  "spell": "spell.sanctuary"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.ancient-empyreal-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "divine",
+          "dc": 41,
+          "attack": 35,
+          "cantrips": {
+            "rank": 9,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.divine-lance"
+              },
+              {
+                "spell": "spell.guidance"
+              },
+              {
+                "spell": "spell.shield"
+              },
+              {
+                "spell": "spell.stabilize"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 9,
+              "spells": [
+                {
+                  "spell": "spell.divine-decree"
+                },
+                {
+                  "spell": "spell.overwhelming-presence"
+                },
+                {
+                  "spell": "spell.sunburst"
+                }
+              ]
+            },
+            {
+              "rank": 8,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.divine-inspiration"
+                },
+                {
+                  "spell": "spell.moment-of-renewal"
+                }
+              ]
+            },
+            {
+              "rank": 7,
+              "spells": [
+                {
+                  "spell": "spell.energy-aegis"
+                },
+                {
+                  "spell": "spell.planar-seal"
+                },
+                {
+                  "spell": "spell.regenerate"
+                }
+              ]
+            },
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.field-of-life"
+                },
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.spirit-blast"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.breath-of-life"
+                },
+                {
+                  "spell": "spell.clear-mind"
+                },
+                {
+                  "spell": "spell.sending"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.dispel-magic"
+                },
+                {
+                  "spell": "spell.unfettered-movement"
+                },
+                {
+                  "spell": "spell.vital-beacon"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.bind-undead"
+                },
+                {
+                  "spell": "spell.ring-of-truth"
+                },
+                {
+                  "spell": "spell.sound-body"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.clear-mind"
+                },
+                {
+                  "spell": "spell.everlight"
+                },
+                {
+                  "spell": "spell.share-life"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.bless"
+                },
+                {
+                  "spell": "spell.mending"
+                },
+                {
+                  "spell": "spell.sanctuary"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "adjustment.empyreal-dragon-spellcaster.caveats.0"
+  ]
+}

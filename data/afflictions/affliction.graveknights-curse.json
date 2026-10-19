@@ -1,0 +1,46 @@
+{
+  "id": "affliction.graveknights-curse",
+  "type": "affliction",
+  "name": "affliction.graveknights-curse.name",
+  "traits": [
+    "arcane",
+    "curse"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 179,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "kind": "curse",
+  "text": "affliction.graveknights-curse.text",
+  "save": {
+    "type": "will"
+  },
+  "onset": {
+    "amount": 1,
+    "unit": "hour"
+  },
+  "stages": [
+    {
+      "text": "affliction.graveknights-curse.stages.0",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.graveknights-curse.stages.1",
+      "duration": {
+        "amount": 1,
+        "unit": "day"
+      }
+    },
+    {
+      "text": "affliction.graveknights-curse.stages.2"
+    }
+  ],
+  "editNote": "Compared with page 179: the curse prints inside the graveknight’s armor entry with no level of its own, so the stats check finds no header; save, onset and the three stages match the page. Its DC is the graveknight’s."
+}

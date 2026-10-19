@@ -1,0 +1,20 @@
+{
+  "id": "family.lizard",
+  "type": "family",
+  "name": "family.lizard.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 224,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "members": [
+    "creature.giant-frilled-lizard",
+    "creature.giant-gecko",
+    "creature.giant-monitor-lizard"
+  ],
+  "adjustments": []
+}

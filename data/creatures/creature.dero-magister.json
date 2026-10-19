@@ -15,6 +15,7 @@
   "review": "assistant",
   "edited": true,
   "level": 5,
+  "family": "family.dero",
   "size": "small",
   "perception": {
     "mod": 8,

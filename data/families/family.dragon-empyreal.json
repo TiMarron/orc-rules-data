@@ -1,0 +1,24 @@
+{
+  "id": "family.dragon-empyreal",
+  "type": "family",
+  "name": "family.dragon-empyreal.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-empyreal-dragon",
+    "creature.ancient-empyreal-dragon",
+    "creature.young-empyreal-dragon"
+  ],
+  "adjustments": [
+    "adjustment.empyreal-dragon-spellcaster"
+  ],
+  "parent": "family.dragon",
+  "editNote": "The book prints the family's name in natural order (“Empyreal Dragon”) on page 114; the page check searches the source's inverted form. The family now lists its spellcaster adjustment, the sidebar on page 116."
+}

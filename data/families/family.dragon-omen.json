@@ -1,0 +1,24 @@
+{
+  "id": "family.dragon-omen",
+  "type": "family",
+  "name": "family.dragon-omen.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 123,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "members": [
+    "creature.adult-omen-dragon",
+    "creature.ancient-omen-dragon",
+    "creature.young-omen-dragon"
+  ],
+  "adjustments": [
+    "adjustment.omen-dragon-spellcaster"
+  ],
+  "parent": "family.dragon",
+  "editNote": "The book prints the family's name in natural order (“Omen Dragon”) on page 122; the page check searches the source's inverted form. The family now lists its spellcaster adjustment, the sidebar on page 124."
+}

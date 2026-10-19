@@ -1,0 +1,229 @@
+{
+  "id": "adjustment.ghoul",
+  "type": "adjustment",
+  "name": "adjustment.ghoul.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 162,
+    "revision": "2024-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "family": "family.ghoul",
+  "appliesTo": {
+    "living": true
+  },
+  "level": {
+    "delta": 1
+  },
+  "modify": [
+    {
+      "stats": [
+        "ac",
+        "attack",
+        "dc",
+        "saves",
+        "perception",
+        "skills"
+      ],
+      "delta": 1
+    },
+    {
+      "stats": [
+        "damage"
+      ],
+      "delta": 1,
+      "limited": 2
+    }
+  ],
+  "traitsOp": {
+    "add": [
+      "undead",
+      "ghoul"
+    ]
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "speeds": {
+    "burrow": 5
+  },
+  "abilities": {
+    "add": [
+      {
+        "id": "darkvision",
+        "section": "top",
+        "name": "adjustment.ghoul.abilities.darkvision.name",
+        "ability": "ability.darkvision"
+      },
+      {
+        "id": "void-healing",
+        "section": "top",
+        "name": "adjustment.ghoul.abilities.void-healing.name",
+        "ability": "ability.void-healing"
+      },
+      {
+        "id": "stench",
+        "section": "top",
+        "name": "adjustment.ghoul.abilities.stench.name",
+        "ability": "ability.stench",
+        "traits": [
+          "aura",
+          "olfactory"
+        ],
+        "aura": 10,
+        "text": "adjustment.ghoul.abilities.stench.text",
+        "values": {
+          "dc": {
+            "scale": "scale.spell-dc",
+            "tier": "moderate",
+            "part": "dc"
+          }
+        }
+      },
+      {
+        "id": "consume-flesh",
+        "section": "top",
+        "name": "adjustment.ghoul.abilities.consume-flesh.name",
+        "actions": "1",
+        "traits": [
+          "manipulate"
+        ],
+        "requirements": "adjustment.ghoul.abilities.consume-flesh.requirements",
+        "text": "adjustment.ghoul.abilities.consume-flesh.text",
+        "values": {
+          "damage": {
+            "dice": "1d6",
+            "per": 2,
+            "base": "1d6"
+          }
+        }
+      },
+      {
+        "id": "ghoul-whispers",
+        "section": "top",
+        "name": "adjustment.ghoul.abilities.ghoul-whispers.name",
+        "actions": "1",
+        "traits": [
+          "auditory",
+          "linguistic",
+          "occult"
+        ],
+        "requirements": "adjustment.ghoul.abilities.ghoul-whispers.requirements",
+        "text": "adjustment.ghoul.abilities.ghoul-whispers.text"
+      },
+      {
+        "id": "forbidden-cravings",
+        "section": "top",
+        "name": "adjustment.ghoul.abilities.forbidden-cravings.name",
+        "traits": [
+          "curse"
+        ],
+        "text": "adjustment.ghoul.abilities.forbidden-cravings.text",
+        "affliction": {
+          "save": {
+            "type": "will",
+            "dc": {
+              "scale": "scale.spell-dc",
+              "tier": "high",
+              "part": "dc"
+            }
+          },
+          "stages": [
+            {
+              "text": "adjustment.ghoul.affliction.stages.1.text"
+            },
+            {
+              "text": "adjustment.ghoul.affliction.stages.2.text"
+            },
+            {
+              "text": "adjustment.ghoul.affliction.stages.3.text"
+            },
+            {
+              "text": "adjustment.ghoul.affliction.stages.4.text"
+            },
+            {
+              "text": "adjustment.ghoul.affliction.stages.5.text"
+            }
+          ]
+        },
+        "values": {
+          "dc": {
+            "scale": "scale.spell-dc",
+            "tier": "high",
+            "part": "dc"
+          }
+        }
+      },
+      {
+        "id": "grave-knowledge",
+        "section": "top",
+        "name": "adjustment.ghoul.abilities.grave-knowledge.name",
+        "traits": [
+          "occult"
+        ],
+        "frequency": "adjustment.ghoul.abilities.grave-knowledge.frequency",
+        "text": "adjustment.ghoul.abilities.grave-knowledge.text",
+        "values": {
+          "check": {
+            "scale": "scale.skill",
+            "tier": "high"
+          }
+        }
+      },
+      {
+        "id": "swift-leap",
+        "section": "top",
+        "name": "adjustment.ghoul.abilities.swift-leap.name",
+        "actions": "1",
+        "traits": [
+          "move"
+        ],
+        "text": "adjustment.ghoul.abilities.swift-leap.text"
+      }
+    ]
+  },
+  "strikes": {
+    "add": [
+      {
+        "kind": "melee",
+        "name": "adjustment.ghoul.strikes.claws.name",
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "effects": [
+          {
+            "ability": "ability.grab"
+          }
+        ],
+        "derive": "adjustment.ghoul.strikes.claws.derive"
+      },
+      {
+        "kind": "melee",
+        "name": "adjustment.ghoul.strikes.jaws.name",
+        "traits": [
+          "unarmed"
+        ],
+        "derive": "adjustment.ghoul.strikes.jaws.derive"
+      }
+    ]
+  },
+  "caveats": [
+    "adjustment.ghoul.caveats.0",
+    "adjustment.ghoul.caveats.1",
+    "adjustment.ghoul.caveats.2",
+    "adjustment.ghoul.caveats.3",
+    "adjustment.ghoul.caveats.4",
+    "adjustment.ghoul.caveats.5",
+    "adjustment.ghoul.caveats.6"
+  ],
+  "editNote": "Compared with pages 162–163: the immunities the list prints unbolded, claws agile with Grab, jaws not agile, Consume Flesh’s requirements as a field, the curse’s text apart from its stages; half its Speed is no level value."
+}

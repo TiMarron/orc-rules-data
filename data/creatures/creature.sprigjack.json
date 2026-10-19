@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": -1,
+  "family": "family.twigjack",
   "size": "tiny",
   "perception": {
     "mod": 5,

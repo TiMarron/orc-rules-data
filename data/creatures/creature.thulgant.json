@@ -16,6 +16,7 @@
   "review": "assistant",
   "edited": true,
   "level": 18,
+  "family": "family.qlippoth",
   "size": "large",
   "perception": {
     "mod": 30,
@@ -297,5 +298,5 @@
       }
     ]
   },
-  "editNote": "Constant spell restored from the book: page 283 prints \"Constant (6th) truesight; (4th) unfettered movement\"; the source lists unfettered movement as an ordinary spell of that rank and the errata does not touch it. Ritual rank added from the book: page 283 prints \"Rituals DC 40; 9th imprisonment\", so the ritual is performed at 9th rank; the 8th-rank line it stands under is the source's (the ritual's own rank, which the page does not print)."
+  "editNote": "Constant spell restored from the book: page 283 prints \"Constant (6th) truesight; (4th) unfettered movement\"; the source lists unfettered movement as an ordinary spell of that rank and the errata does not touch it. Ritual rank added from the book: page 283 prints \"Rituals DC 40; 9th imprisonment\", so the ritual is performed at 9th rank; the 8th-rank line it stands under is the ritual's own rank in its current printing, which is in a book the dataset does not hold, so the ritual is kept by name; the owner confirmed the creature performs a heightened version of it."
 }

@@ -16,6 +16,7 @@
   "review": "auto",
   "edited": false,
   "level": 20,
+  "family": "family.demon",
   "size": "large",
   "perception": {
     "mod": 34,
