@@ -9,8 +9,8 @@
     "page": 160,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "family": "family.ghost",
   "appliesTo": {
     "living": true
@@ -28,12 +28,6 @@
         "skills"
       ],
       "delta": 2
-    },
-    {
-      "stats": [
-        "attack"
-      ],
-      "delta": 4
     },
     {
       "stats": [
@@ -59,7 +53,7 @@
   },
   "immunities": [
     "bleed",
-    "death",
+    "death-effects",
     "disease",
     "paralyzed",
     "poison",
@@ -177,6 +171,11 @@
               "dice": "1d6",
               "per": 2,
               "base": "1d6"
+            },
+            "dc": {
+              "scale": "scale.spell-dc",
+              "tier": "high",
+              "part": "dc"
             }
           }
         },
@@ -204,14 +203,28 @@
             "fear",
             "mental"
           ],
-          "text": "adjustment.ghost.options.special-abilities.abilities.frightful-moan.text"
+          "text": "adjustment.ghost.options.special-abilities.abilities.frightful-moan.text",
+          "values": {
+            "dc": {
+              "scale": "scale.spell-dc",
+              "tier": "high",
+              "part": "dc"
+            }
+          }
         },
         {
           "id": "inhabit-object",
           "section": "top",
           "name": "adjustment.ghost.options.special-abilities.abilities.inhabit-object.name",
           "actions": "1",
-          "text": "adjustment.ghost.options.special-abilities.abilities.inhabit-object.text"
+          "text": "adjustment.ghost.options.special-abilities.abilities.inhabit-object.text",
+          "values": {
+            "dc": {
+              "scale": "scale.spell-dc",
+              "tier": "high",
+              "part": "dc"
+            }
+          }
         },
         {
           "id": "malevolent-possession",
@@ -228,7 +241,19 @@
           "traits": [
             "divine"
           ],
-          "text": "adjustment.ghost.options.special-abilities.abilities.telekinetic-assault.text"
+          "text": "adjustment.ghost.options.special-abilities.abilities.telekinetic-assault.text",
+          "values": {
+            "damage": {
+              "dice": "1d6",
+              "per": 2,
+              "base": "1d6"
+            },
+            "dc": {
+              "scale": "scale.spell-dc",
+              "tier": "high",
+              "part": "dc"
+            }
+          }
         }
       ]
     }
@@ -239,6 +264,8 @@
     "adjustment.ghost.caveats.2",
     "adjustment.ghost.caveats.3",
     "adjustment.ghost.caveats.4",
-    "adjustment.ghost.caveats.5"
-  ]
+    "adjustment.ghost.caveats.5",
+    "adjustment.ghost.caveats.6"
+  ],
+  "editNote": "Compared with pages 160–161: immunities in the creatures’ own vocabulary (death effects); one +2 to every attack, the +4 to the attack that becomes the ghostly hand stays the reader’s; every special ability that calls for a save carries the high spell DC its sentence prints."
 }

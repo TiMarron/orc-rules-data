@@ -12,8 +12,8 @@
     "page": 52,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 1,
   "family": "family.catfolk",
   "size": "medium",
@@ -163,6 +163,5 @@
       "actions": "2",
       "text": "creature.catfolk-pouncer.abilities.sudden-charge.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

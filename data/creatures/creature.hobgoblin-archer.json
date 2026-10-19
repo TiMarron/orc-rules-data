@@ -12,8 +12,8 @@
     "page": 199,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 4,
   "family": "family.hobgoblin",
   "size": "medium",
@@ -149,6 +149,5 @@
       "actions": "1",
       "text": "creature.hobgoblin-archer.abilities.running-reload.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

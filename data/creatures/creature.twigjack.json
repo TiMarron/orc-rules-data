@@ -13,8 +13,8 @@
     "page": 332,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.twigjack",
   "size": "tiny",
@@ -143,6 +143,5 @@
       "actions": "2",
       "text": "creature.twigjack.abilities.splinter-spray.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

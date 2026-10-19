@@ -9,8 +9,8 @@
     "page": 120,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "scale.strike-damage.text",
   "tiers": [
     "extreme",
@@ -513,5 +513,6 @@
         "average": 35
       }
     }
-  ]
+  ],
+  "editNote": "Compared with page 120: every row as printed. The rule's own text now carries its links as dataset references instead of raw source links."
 }

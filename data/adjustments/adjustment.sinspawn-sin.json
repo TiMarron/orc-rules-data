@@ -9,8 +9,8 @@
     "page": 310,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "family": "family.sinspawn",
   "appliesTo": {
     "creatures": [
@@ -88,6 +88,30 @@
             ]
           },
           "text": "adjustment.sinspawn-sin.options.sin.gluttonyspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.gluttonyspawn.strikes.scythe.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "deadly",
+                  "trip"
+                ],
+                "traitValues": {
+                  "deadly": "d10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d10+4",
+                    "type": "slashing"
+                  }
+                ],
+                "item": "item.scythe"
+              }
+            ]
+          },
           "abilities": {
             "replace": [
               {
@@ -115,6 +139,32 @@
             ]
           },
           "text": "adjustment.sinspawn-sin.options.sin.greedspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.greedspawn.strikes.glaive.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "deadly",
+                  "forceful",
+                  "reach"
+                ],
+                "traitValues": {
+                  "deadly": "d8",
+                  "reach": "10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d8+4",
+                    "type": "slashing"
+                  }
+                ],
+                "item": "item.glaive"
+              }
+            ]
+          },
           "abilities": {
             "replace": [
               {
@@ -142,6 +192,30 @@
             ]
           },
           "text": "adjustment.sinspawn-sin.options.sin.lustspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.lustspawn.strikes.guisarme.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "reach",
+                  "trip"
+                ],
+                "traitValues": {
+                  "reach": "10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d10+4",
+                    "type": "slashing"
+                  }
+                ],
+                "item": "item.guisarme"
+              }
+            ]
+          },
           "abilities": {
             "replace": [
               {
@@ -169,6 +243,26 @@
             ]
           },
           "text": "adjustment.sinspawn-sin.options.sin.pridespawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.pridespawn.strikes.maul.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "shove"
+                ],
+                "damage": [
+                  {
+                    "dice": "1d12+4",
+                    "type": "bludgeoning"
+                  }
+                ],
+                "item": "item.maul"
+              }
+            ]
+          },
           "abilities": {
             "replace": [
               {
@@ -196,6 +290,29 @@
             ]
           },
           "text": "adjustment.sinspawn-sin.options.sin.slothspawn.text",
+          "strikes": {
+            "add": [
+              {
+                "kind": "melee",
+                "name": "adjustment.sinspawn-sin.options.sin.slothspawn.strikes.longspear.name",
+                "actions": "1",
+                "bonus": 10,
+                "traits": [
+                  "reach"
+                ],
+                "traitValues": {
+                  "reach": "10"
+                },
+                "damage": [
+                  {
+                    "dice": "1d8+4",
+                    "type": "piercing"
+                  }
+                ],
+                "item": "item.longspear"
+              }
+            ]
+          },
           "abilities": {
             "replace": [
               {
@@ -266,5 +383,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "Compared with pages 310–311: every sin’s skill, Strike with its bonus and damage, and its Sinful Bite effect."
 }

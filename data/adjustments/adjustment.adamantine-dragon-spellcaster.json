@@ -1,0 +1,353 @@
+{
+  "id": "adjustment.adamantine-dragon-spellcaster",
+  "type": "adjustment",
+  "name": "adjustment.adamantine-dragon-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 110,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.dragon-adamantine",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-adamantine-dragon",
+      "creature.adult-adamantine-dragon",
+      "creature.ancient-adamantine-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
+  "spellcasting": {
+    "byCreature": {
+      "creature.young-adamantine-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "primal",
+          "dc": 28,
+          "attack": 21,
+          "cantrips": {
+            "rank": 4,
+            "spells": [
+              {
+                "spell": "spell.caustic-blast"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.sigil"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.shape-stone"
+                },
+                {
+                  "spell": "spell.unfettered-movement"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.earthbind"
+                },
+                {
+                  "spell": "spell.one-with-stone"
+                },
+                {
+                  "spell": "spell.slow"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.darkness"
+                },
+                {
+                  "spell": "spell.shatter"
+                },
+                {
+                  "spell": "spell.water-walk"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.air-bubble"
+                },
+                {
+                  "spell": "spell.tailwind"
+                },
+                {
+                  "spell": "spell.vanishing-tracks"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.adult-adamantine-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "primal",
+          "dc": 34,
+          "attack": 27,
+          "cantrips": {
+            "rank": 6,
+            "spells": [
+              {
+                "spell": "spell.caustic-blast"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.sigil"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.petrify"
+                },
+                {
+                  "spell": "spell.tangling-creepers"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.impaling-spike"
+                },
+                {
+                  "spell": "spell.magic-passage"
+                },
+                {
+                  "spell": "spell.speak-with-stones"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.vapor-form"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.earthbind"
+                },
+                {
+                  "spell": "spell.one-with-stone"
+                },
+                {
+                  "spell": "spell.slow"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.darkness"
+                },
+                {
+                  "spell": "spell.shatter"
+                },
+                {
+                  "spell": "spell.water-walk"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.air-bubble"
+                },
+                {
+                  "spell": "spell.tailwind"
+                },
+                {
+                  "spell": "spell.vanishing-tracks"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.ancient-adamantine-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "primal",
+          "dc": 41,
+          "attack": 36,
+          "cantrips": {
+            "rank": 8,
+            "spells": [
+              {
+                "spell": "spell.caustic-blast"
+              },
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.sigil"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 8,
+              "spells": [
+                {
+                  "spell": "spell.earthquake"
+                },
+                {
+                  "spell": "spell.desiccate"
+                },
+                {
+                  "spell": "spell.moment-of-renewal"
+                }
+              ]
+            },
+            {
+              "rank": 7,
+              "spells": [
+                {
+                  "spell": "spell.mask-of-terror"
+                },
+                {
+                  "spell": "spell.regenerate"
+                },
+                {
+                  "spell": "spell.volcanic-eruption"
+                }
+              ]
+            },
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.field-of-life"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.impaling-spike"
+                },
+                {
+                  "spell": "spell.magic-passage"
+                },
+                {
+                  "spell": "spell.speak-with-stones"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.vapor-form"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.earthbind"
+                },
+                {
+                  "spell": "spell.one-with-stone"
+                },
+                {
+                  "spell": "spell.slow"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.darkness"
+                },
+                {
+                  "spell": "spell.shatter"
+                },
+                {
+                  "spell": "spell.water-walk"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.air-bubble"
+                },
+                {
+                  "spell": "spell.tailwind"
+                },
+                {
+                  "spell": "spell.vanishing-tracks"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "adjustment.adamantine-dragon-spellcaster.caveats.0"
+  ]
+}

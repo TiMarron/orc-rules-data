@@ -12,8 +12,8 @@
     "page": 48,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 1,
   "family": "family.caligni",
   "size": "small",
@@ -217,6 +217,5 @@
         }
       ]
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

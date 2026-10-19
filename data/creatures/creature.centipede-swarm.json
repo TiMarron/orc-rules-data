@@ -12,8 +12,8 @@
     "page": 59,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.centipede",
   "size": "large",
@@ -117,6 +117,5 @@
       "actions": "1",
       "text": "creature.centipede-swarm.abilities.swarming-bites.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

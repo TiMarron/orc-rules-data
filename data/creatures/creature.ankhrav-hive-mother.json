@@ -11,8 +11,8 @@
     "page": 20,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 8,
   "family": "family.ankhrav",
   "size": "huge",
@@ -140,6 +140,5 @@
       ],
       "text": "creature.ankhrav-hive-mother.abilities.spray-acid.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

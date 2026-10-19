@@ -12,8 +12,8 @@
     "page": 145,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 11,
   "family": "family.elemental-fire",
   "size": "huge",
@@ -160,6 +160,5 @@
       ],
       "text": "creature.elemental-inferno.abilities.inferno-leap.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

@@ -16,7 +16,9 @@
     "creature.ancient-conspirator-dragon",
     "creature.young-conspirator-dragon"
   ],
-  "adjustments": [],
+  "adjustments": [
+    "adjustment.conspirator-dragon-spellcaster"
+  ],
   "parent": "family.dragon",
-  "editNote": "The pdf-page check searches for the record’s raw name only, and the AoN family name prints inverted — the book prints “Conspirator Dragon” on page 110, exactly the record’s source page (the family’s creature stat blocks print across 110–113 with the family’s rules). Compared by hand and accepted; the re-derived draft adds its family field."
+  "editNote": "The book prints the family's name in natural order (“Conspirator Dragon”) on page 110; the page check searches the source's inverted form. The family now lists its spellcaster adjustment, the sidebar on page 112."
 }

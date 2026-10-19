@@ -12,8 +12,8 @@
     "page": 250,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.ogre",
   "size": "large",
@@ -115,6 +115,5 @@
       "item": "item.javelin"
     }
   ],
-  "abilities": [],
-  "editNote": "added only the family reference"
+  "abilities": []
 }

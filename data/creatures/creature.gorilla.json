@@ -11,8 +11,8 @@
     "page": 23,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.ape",
   "size": "large",
@@ -120,6 +120,5 @@
       ],
       "text": "creature.gorilla.abilities.frightening-display.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

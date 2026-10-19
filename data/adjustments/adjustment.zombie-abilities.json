@@ -9,8 +9,8 @@
     "page": 356,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "family": "family.zombie",
   "appliesTo": {
     "family": "family.zombie"
@@ -35,7 +35,8 @@
           "values": {
             "dc": {
               "scale": "scale.spell-dc",
-              "tier": "moderate"
+              "tier": "moderate",
+              "part": "dc"
             }
           }
         },
@@ -60,7 +61,8 @@
           "values": {
             "dc": {
               "scale": "scale.spell-dc",
-              "tier": "high"
+              "tier": "high",
+              "part": "dc"
             }
           }
         },
@@ -77,7 +79,8 @@
           "values": {
             "damage": {
               "dice": "1d6",
-              "per": 6
+              "per": 6,
+              "base": "1d6"
             }
           }
         },
@@ -95,5 +98,6 @@
   ],
   "caveats": [
     "adjustment.zombie-abilities.caveats.0"
-  ]
+  ],
+  "editNote": "Compared with page 356: the five abilities the book prints; Rotting Aura deals 1d6 plus 1d6 per 6 levels."
 }

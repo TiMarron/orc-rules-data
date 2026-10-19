@@ -13,8 +13,8 @@
     "page": 74,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 9,
   "family": "family.daemon",
   "size": "large",
@@ -276,6 +276,5 @@
         }
       ]
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

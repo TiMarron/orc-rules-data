@@ -13,8 +13,8 @@
     "page": 129,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.drake",
   "size": "medium",
@@ -161,6 +161,5 @@
       "frequency": "creature.river-drake.abilities.speed-surge.frequency",
       "text": "creature.river-drake.abilities.speed-surge.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

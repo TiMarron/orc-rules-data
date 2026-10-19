@@ -11,8 +11,8 @@
     "page": 42,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 4,
   "family": "family.beetle",
   "size": "large",
@@ -95,6 +95,5 @@
       "actions": "3",
       "text": "creature.giant-stag-beetle.abilities.trample.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

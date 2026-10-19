@@ -14,8 +14,8 @@
     "page": 346,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 4,
   "family": "family.werecreature",
   "size": "large",
@@ -260,6 +260,5 @@
         "primal"
       ]
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

@@ -11,8 +11,8 @@
     "page": 39,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 5,
   "family": "family.basilisk",
   "size": "medium",
@@ -102,6 +102,5 @@
       ],
       "text": "creature.basilisk.abilities.petrifying-gaze.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

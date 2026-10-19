@@ -12,8 +12,8 @@
     "page": 209,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.kholo",
   "size": "medium",
@@ -191,6 +191,5 @@
         }
       ]
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

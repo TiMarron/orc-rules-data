@@ -80,7 +80,8 @@
         "values": {
           "dc": {
             "scale": "scale.spell-dc",
-            "tier": "high"
+            "tier": "high",
+            "part": "dc"
           }
         }
       },
@@ -114,5 +115,5 @@
     "adjustment.true-vampire.caveats.0",
     "adjustment.true-vampire.caveats.1"
   ],
-  "editNote": "The intro sentence — powerful vampires that can create and control vampires from their victims gain additional vampire abilities, as detailed below — names the True Vampire Abilities section whose entries are already placed (the Drink Blood replacement and the adds); the resists-all-physical-damage-except-magical-silver prose prints no amount of its own (the amount lives on adjustment.vampire’s resistance table) and stays the caveat that carries it. Compared with page 334 and accepted."
+  "editNote": "Compared with page 335: the introductory sentence stays a caveat; the resistance it prints without an amount uses the base vampire’s table."
 }

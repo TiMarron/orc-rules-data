@@ -12,8 +12,8 @@
     "page": 174,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": -1,
   "family": "family.goblin",
   "size": "small",
@@ -134,6 +134,5 @@
       "trigger": "creature.goblin-warrior.abilities.goblin-scuttle.trigger",
       "text": "creature.goblin-warrior.abilities.goblin-scuttle.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

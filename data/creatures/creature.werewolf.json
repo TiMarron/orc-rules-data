@@ -14,8 +14,8 @@
     "page": 346,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.werecreature",
   "size": "medium",
@@ -217,6 +217,5 @@
       "name": "creature.werewolf.abilities.pack-attack.name",
       "text": "creature.werewolf.abilities.pack-attack.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

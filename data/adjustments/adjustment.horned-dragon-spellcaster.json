@@ -9,17 +9,50 @@
     "page": 120,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "family": "family.dragon-horned",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-horned-dragon",
+      "creature.adult-horned-dragon",
+      "creature.ancient-horned-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
   "spellcasting": {
     "byCreature": {
-      "creature.horned-dragon-young": [
+      "creature.young-horned-dragon": [
         {
           "kind": "prepared",
           "tradition": "primal",
           "dc": 26,
           "attack": 20,
+          "cantrips": {
+            "rank": 3,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.read-aura"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
           "ranks": [
             {
               "rank": 3,
@@ -69,12 +102,32 @@
           ]
         }
       ],
-      "creature.horned-dragon-adult": [
+      "creature.adult-horned-dragon": [
         {
           "kind": "prepared",
           "tradition": "primal",
           "dc": 33,
           "attack": 26,
+          "cantrips": {
+            "rank": 5,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.read-aura"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
           "ranks": [
             {
               "rank": 5,
@@ -152,12 +205,32 @@
           ]
         }
       ],
-      "creature.horned-dragon-ancient": [
+      "creature.ancient-horned-dragon": [
         {
           "kind": "prepared",
           "tradition": "primal",
           "dc": 39,
           "attack": 33,
+          "cantrips": {
+            "rank": 8,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.know-the-way"
+              },
+              {
+                "spell": "spell.light"
+              },
+              {
+                "spell": "spell.read-aura"
+              },
+              {
+                "spell": "spell.tangle-vine"
+              }
+            ]
+          },
           "ranks": [
             {
               "rank": 8,
@@ -275,5 +348,9 @@
         }
       ]
     }
-  }
+  },
+  "caveats": [
+    "adjustment.horned-dragon-spellcaster.caveats.0"
+  ],
+  "editNote": "Compared with page 120: the young, adult and ancient blocks keyed by the dataset’s creature ids, each with its cantrips at the printed rank; the adult and ancient carry the younger block’s ranks; Draconic Frenzy and Draconic Momentum go, as the group rule prints."
 }

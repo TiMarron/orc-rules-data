@@ -13,8 +13,8 @@
     "page": 312,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 2,
   "family": "family.skeleton",
   "size": "medium",
@@ -189,6 +189,5 @@
       "ability": "ability.shield-block",
       "actions": "reaction"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

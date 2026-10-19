@@ -13,8 +13,8 @@
     "page": 188,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.hag",
   "size": "medium",
@@ -140,6 +140,5 @@
       ],
       "text": "creature.sea-hag.abilities.sea-hags-bargain.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

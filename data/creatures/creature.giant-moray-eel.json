@@ -12,8 +12,8 @@
     "page": 138,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 5,
   "family": "family.eel",
   "size": "large",
@@ -131,6 +131,5 @@
       ],
       "text": "creature.giant-moray-eel.abilities.swallow-whole.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

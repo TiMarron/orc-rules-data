@@ -11,8 +11,8 @@
     "page": 316,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 1,
   "family": "family.snake",
   "size": "medium",
@@ -117,6 +117,5 @@
       "requirements": "creature.python.abilities.wrap-in-coils.requirements",
       "text": "creature.python.abilities.wrap-in-coils.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

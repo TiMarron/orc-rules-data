@@ -11,8 +11,8 @@
     "page": 131,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 6,
   "family": "family.drake",
   "size": "large",
@@ -173,6 +173,5 @@
       ],
       "text": "creature.wyvern.abilities.wyvern-venom.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

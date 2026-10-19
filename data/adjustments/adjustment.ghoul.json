@@ -9,8 +9,8 @@
     "page": 162,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "family": "family.ghoul",
   "appliesTo": {
     "living": true
@@ -44,6 +44,14 @@
       "ghoul"
     ]
   },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
   "speeds": {
     "burrow": 5
   },
@@ -59,8 +67,7 @@
         "id": "void-healing",
         "section": "top",
         "name": "adjustment.ghoul.abilities.void-healing.name",
-        "ability": "ability.void-healing",
-        "text": "adjustment.ghoul.abilities.void-healing.text"
+        "ability": "ability.void-healing"
       },
       {
         "id": "stench",
@@ -76,7 +83,8 @@
         "values": {
           "dc": {
             "scale": "scale.spell-dc",
-            "tier": "moderate"
+            "tier": "moderate",
+            "part": "dc"
           }
         }
       },
@@ -85,6 +93,10 @@
         "section": "top",
         "name": "adjustment.ghoul.abilities.consume-flesh.name",
         "actions": "1",
+        "traits": [
+          "manipulate"
+        ],
+        "requirements": "adjustment.ghoul.abilities.consume-flesh.requirements",
         "text": "adjustment.ghoul.abilities.consume-flesh.text",
         "values": {
           "damage": {
@@ -104,6 +116,7 @@
           "linguistic",
           "occult"
         ],
+        "requirements": "adjustment.ghoul.abilities.ghoul-whispers.requirements",
         "text": "adjustment.ghoul.abilities.ghoul-whispers.text"
       },
       {
@@ -119,7 +132,8 @@
             "type": "will",
             "dc": {
               "scale": "scale.spell-dc",
-              "tier": "high"
+              "tier": "high",
+              "part": "dc"
             }
           },
           "stages": [
@@ -143,7 +157,8 @@
         "values": {
           "dc": {
             "scale": "scale.spell-dc",
-            "tier": "high"
+            "tier": "high",
+            "part": "dc"
           }
         }
       },
@@ -171,12 +186,7 @@
         "traits": [
           "move"
         ],
-        "text": "adjustment.ghoul.abilities.swift-leap.text",
-        "values": {
-          "amount": {
-            "ofLevel": 0.5
-          }
-        }
+        "text": "adjustment.ghoul.abilities.swift-leap.text"
       }
     ]
   },
@@ -189,13 +199,17 @@
           "agile",
           "unarmed"
         ],
+        "effects": [
+          {
+            "ability": "ability.grab"
+          }
+        ],
         "derive": "adjustment.ghoul.strikes.claws.derive"
       },
       {
         "kind": "melee",
         "name": "adjustment.ghoul.strikes.jaws.name",
         "traits": [
-          "agile",
           "unarmed"
         ],
         "derive": "adjustment.ghoul.strikes.jaws.derive"
@@ -209,7 +223,7 @@
     "adjustment.ghoul.caveats.3",
     "adjustment.ghoul.caveats.4",
     "adjustment.ghoul.caveats.5",
-    "adjustment.ghoul.caveats.6",
-    "adjustment.ghoul.caveats.7"
-  ]
+    "adjustment.ghoul.caveats.6"
+  ],
+  "editNote": "Compared with pages 162–163: the immunities the list prints unbolded, claws agile with Grab, jaws not agile, Consume Flesh’s requirements as a field, the curse’s text apart from its stages; half its Speed is no level value."
 }

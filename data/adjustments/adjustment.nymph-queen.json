@@ -12,6 +12,9 @@
   "review": "assistant",
   "edited": true,
   "family": "family.nymph",
+  "appliesTo": {
+    "family": "family.nymph"
+  },
   "level": {
     "range": {
       "min": 6,
@@ -98,5 +101,5 @@
     "adjustment.nymph-queen.caveats.3",
     "adjustment.nymph-queen.caveats.4"
   ],
-  "editNote": "The four prose sentences all describe placed content or rules without an operation shape: the Inspiration, Change Shape, Nymph’s Beauty aura and Focus Beauty abilities the sentences name are all placed as abilities on the record; the not-dependent-on-their-wards removal is a removal the schema has no operation for; and the primal prepared spells as a druid of her level needs a druid-table lookup keyed to each transformed creature’s level, which no imported table carries. All four stay caveats naming exactly what a human applies; compared with page 244 and accepted."
+  "editNote": "Compared with page 245: applies to nymphs; the sentences about the queen’s ward, the abilities whose effects depend on her kind and her druid spellcasting stay caveats, the schema has no operation for them."
 }

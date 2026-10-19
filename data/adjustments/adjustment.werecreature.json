@@ -9,8 +9,8 @@
     "page": 344,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "family": "family.werecreature",
   "appliesTo": {
     "living": true,
@@ -136,8 +136,10 @@
         ],
         "text": "adjustment.werecreature.abilities.curse-of-the-werecreature.text",
         "values": {
-          "amount": {
-            "ofLevel": 0.5
+          "dc": {
+            "scale": "scale.spell-dc",
+            "tier": "moderate",
+            "part": "dc"
           }
         }
       },
@@ -168,8 +170,7 @@
         "kind": "melee",
         "name": "adjustment.werecreature.strikes.jaws.name",
         "traits": [
-          "unarmed",
-          "agile"
+          "unarmed"
         ],
         "derive": "adjustment.werecreature.strikes.jaws.derive",
         "effects": [
@@ -186,5 +187,6 @@
     "adjustment.werecreature.caveats.2",
     "adjustment.werecreature.caveats.3",
     "adjustment.werecreature.caveats.4"
-  ]
+  ],
+  "editNote": "Compared with page 344: the jaws are not agile; the curse’s DC is the moderate spell DC of the new level."
 }

@@ -12,8 +12,8 @@
     "page": 129,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 5,
   "family": "family.drake",
   "size": "large",
@@ -169,6 +169,5 @@
       "frequency": "creature.flame-drake.abilities.speed-surge.frequency",
       "text": "creature.flame-drake.abilities.speed-surge.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

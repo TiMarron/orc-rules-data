@@ -12,8 +12,8 @@
     "page": 214,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 6,
   "family": "family.lamia",
   "size": "large",
@@ -236,6 +236,5 @@
         }
       ]
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

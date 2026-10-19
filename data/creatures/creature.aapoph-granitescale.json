@@ -13,8 +13,8 @@
     "page": 304,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 6,
   "family": "family.serpentfolk",
   "size": "medium",
@@ -183,6 +183,5 @@
       ],
       "text": "creature.aapoph-granitescale.abilities.serpentfolk-venom.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

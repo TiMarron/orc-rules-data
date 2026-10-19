@@ -16,7 +16,9 @@
     "creature.ancient-omen-dragon",
     "creature.young-omen-dragon"
   ],
-  "adjustments": [],
+  "adjustments": [
+    "adjustment.omen-dragon-spellcaster"
+  ],
   "parent": "family.dragon",
-  "editNote": "The pdf-page check searches for the record’s raw name only, and the AoN family name prints inverted — the book prints “Omen Dragon” on page 123, exactly the record’s source page (the family’s creature stat blocks print across 123–126 with the family’s rules). Compared by hand and accepted; the re-derived draft adds its family field."
+  "editNote": "The book prints the family's name in natural order (“Omen Dragon”) on page 122; the page check searches the source's inverted form. The family now lists its spellcaster adjustment, the sidebar on page 124."
 }

@@ -9,10 +9,13 @@
     "page": 178,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "members": [
     "creature.graveknight"
   ],
-  "adjustments": []
+  "adjustments": [
+    "adjustment.graveknight"
+  ],
+  "editNote": "The family now lists the graveknight transformation its page prints (pages 178–179)."
 }

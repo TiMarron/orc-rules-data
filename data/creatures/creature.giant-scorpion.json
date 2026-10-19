@@ -11,8 +11,8 @@
     "page": 298,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.scorpion",
   "size": "large",
@@ -137,6 +137,5 @@
       ],
       "text": "creature.giant-scorpion.abilities.giant-scorpion-venom.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

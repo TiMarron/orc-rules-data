@@ -13,8 +13,8 @@
     "page": 27,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 7,
   "family": "family.archon",
   "size": "medium",
@@ -251,6 +251,5 @@
         }
       ]
     }
-  ],
-  "editNote": "link-only: beside its new family field, the only text changes are the new family references (family.archon); no other field or string changed."
+  ]
 }

@@ -14,8 +14,8 @@
     "page": 357,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 6,
   "family": "family.zombie",
   "size": "huge",
@@ -132,6 +132,5 @@
       "actions": "1",
       "text": "creature.zombie-hulk.abilities.wide-swing.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

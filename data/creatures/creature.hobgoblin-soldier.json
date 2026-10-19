@@ -12,8 +12,8 @@
     "page": 198,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 1,
   "family": "family.hobgoblin",
   "size": "medium",
@@ -146,6 +146,5 @@
       "ability": "ability.shield-block",
       "actions": "reaction"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

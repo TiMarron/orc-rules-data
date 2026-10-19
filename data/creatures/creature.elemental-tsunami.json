@@ -13,8 +13,8 @@
     "page": 149,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 11,
   "family": "family.elemental-water",
   "size": "huge",
@@ -144,6 +144,5 @@
       "actions": "2",
       "text": "creature.elemental-tsunami.abilities.surge.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

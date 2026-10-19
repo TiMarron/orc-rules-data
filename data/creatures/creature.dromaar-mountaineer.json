@@ -14,8 +14,8 @@
     "page": 259,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 2,
   "family": "family.orc",
   "size": "medium",
@@ -156,6 +156,5 @@
       "actions": "1",
       "text": "creature.dromaar-mountaineer.abilities.tangle-prey.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

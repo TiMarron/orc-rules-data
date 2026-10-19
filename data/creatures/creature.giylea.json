@@ -13,8 +13,8 @@
     "page": 29,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 16,
   "family": "family.archon",
   "size": "huge",
@@ -242,6 +242,5 @@
         }
       ]
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

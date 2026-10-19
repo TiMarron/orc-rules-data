@@ -12,8 +12,8 @@
     "page": 199,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 6,
   "family": "family.hobgoblin",
   "size": "medium",
@@ -150,6 +150,5 @@
       "name": "creature.hobgoblin-general.abilities.polearm-critical-specialization.name",
       "text": "creature.hobgoblin-general.abilities.polearm-critical-specialization.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

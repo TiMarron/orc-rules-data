@@ -9,8 +9,8 @@
     "page": 356,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "members": [
     "creature.plague-zombie",
     "creature.zombie-brute",
@@ -19,5 +19,9 @@
   ],
   "adjustments": [
     "adjustment.zombie-abilities"
-  ]
+  ],
+  "notes": [
+    "family.zombie.notes.0"
+  ],
+  "editNote": "The printed advice on creating zombies is now a note of the family (page 356)."
 }

@@ -9,8 +9,8 @@
     "page": 116,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "scale.skill.text",
   "tiers": [
     "extreme",
@@ -279,5 +279,6 @@
         "max": 38
       }
     }
-  ]
+  ],
+  "editNote": "Compared with page 116: every row as printed. The rule's own text now carries its links as dataset references instead of raw source links."
 }

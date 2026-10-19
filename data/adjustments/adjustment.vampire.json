@@ -9,8 +9,8 @@
     "page": 334,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "family": "family.vampire",
   "appliesTo": {
     "living": true
@@ -67,7 +67,7 @@
     ]
   },
   "immunities": [
-    "death",
+    "death-effects",
     "disease",
     "paralyzed",
     "poison",
@@ -222,7 +222,7 @@
     "adjustment.vampire.caveats.2",
     "adjustment.vampire.caveats.3",
     "adjustment.vampire.caveats.4",
-    "adjustment.vampire.caveats.5",
-    "adjustment.vampire.caveats.6"
-  ]
+    "adjustment.vampire.caveats.5"
+  ],
+  "editNote": "Compared with page 335: immunities in the creatures’ own vocabulary (death effects); the trait sentence is one caveat."
 }

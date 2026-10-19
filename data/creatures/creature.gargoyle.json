@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 4,
   "size": "medium",
   "perception": {
@@ -129,5 +129,6 @@
       ],
       "text": "creature.gargoyle.abilities.statue.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

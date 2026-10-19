@@ -14,8 +14,8 @@
     "page": 312,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": -1,
   "family": "family.skeleton",
   "size": "medium",
@@ -160,6 +160,5 @@
       "item": "item.shortbow"
     }
   ],
-  "abilities": [],
-  "editNote": "added only the family reference"
+  "abilities": []
 }

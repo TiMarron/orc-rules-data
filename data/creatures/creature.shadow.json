@@ -13,8 +13,8 @@
     "page": 306,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 4,
   "family": "family.shadow",
   "size": "medium",
@@ -137,6 +137,5 @@
       "requirements": "creature.shadow.abilities.steal-shadow.requirements",
       "text": "creature.shadow.abilities.steal-shadow.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

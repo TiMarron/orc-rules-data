@@ -15,7 +15,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 6,
   "size": "medium",
   "perception": {
@@ -161,5 +161,6 @@
       ],
       "text": "creature.wraith.abilities.voids-embrace.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

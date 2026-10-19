@@ -12,8 +12,8 @@
     "page": 18,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": -1,
   "family": "family.animated-object",
   "size": "small",
@@ -111,6 +111,5 @@
       "name": "creature.animated-broom.abilities.dust.name",
       "text": "creature.animated-broom.abilities.dust.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

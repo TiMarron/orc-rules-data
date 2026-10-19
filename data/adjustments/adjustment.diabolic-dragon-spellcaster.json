@@ -1,0 +1,385 @@
+{
+  "id": "adjustment.diabolic-dragon-spellcaster",
+  "type": "adjustment",
+  "name": "adjustment.diabolic-dragon-spellcaster.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "monster-core",
+    "page": 114,
+    "revision": "2024-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "family": "family.dragon-diabolic",
+  "appliesTo": {
+    "creatures": [
+      "creature.young-diabolic-dragon",
+      "creature.adult-diabolic-dragon",
+      "creature.ancient-diabolic-dragon"
+    ]
+  },
+  "abilities": {
+    "remove": [
+      "draconic-frenzy",
+      "draconic-momentum"
+    ]
+  },
+  "spellcasting": {
+    "byCreature": {
+      "creature.young-diabolic-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "divine",
+          "dc": 30,
+          "attack": 24,
+          "cantrips": {
+            "rank": 4,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.divine-lance"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.sigil"
+              },
+              {
+                "spell": "spell.void-warp"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.dispelling-globe"
+                },
+                {
+                  "spell": "spell.divine-wrath"
+                },
+                {
+                  "spell": "spell.planar-tether"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.blindness"
+                },
+                {
+                  "spell": "spell.chilling-darkness"
+                },
+                {
+                  "spell": "spell.harm"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.blood-vendetta"
+                },
+                {
+                  "spell": "spell.darkness"
+                },
+                {
+                  "spell": "spell.translate"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.command",
+                  "count": 2
+                },
+                {
+                  "spell": "spell.fear"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.adult-diabolic-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "divine",
+          "dc": 36,
+          "attack": 30,
+          "cantrips": {
+            "rank": 6,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.divine-lance"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.sigil"
+              },
+              {
+                "spell": "spell.void-warp"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.banishment"
+                },
+                {
+                  "spell": "spell.blessed-boundary"
+                },
+                {
+                  "spell": "spell.dominate"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.sending"
+                },
+                {
+                  "spell": "spell.translocate"
+                },
+                {
+                  "spell": "spell.truespeech"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.dispelling-globe"
+                },
+                {
+                  "spell": "spell.divine-wrath"
+                },
+                {
+                  "spell": "spell.planar-tether"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.blindness"
+                },
+                {
+                  "spell": "spell.chilling-darkness"
+                },
+                {
+                  "spell": "spell.harm"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.blood-vendetta"
+                },
+                {
+                  "spell": "spell.darkness"
+                },
+                {
+                  "spell": "spell.translate"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.command",
+                  "count": 2
+                },
+                {
+                  "spell": "spell.fear"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creature.ancient-diabolic-dragon": [
+        {
+          "kind": "prepared",
+          "tradition": "divine",
+          "dc": 42,
+          "attack": 38,
+          "cantrips": {
+            "rank": 9,
+            "spells": [
+              {
+                "spell": "spell.detect-magic"
+              },
+              {
+                "spell": "spell.divine-lance"
+              },
+              {
+                "spell": "spell.message"
+              },
+              {
+                "spell": "spell.sigil"
+              },
+              {
+                "spell": "spell.void-warp"
+              }
+            ]
+          },
+          "ranks": [
+            {
+              "rank": 9,
+              "spells": [
+                {
+                  "spell": "spell.harm"
+                },
+                {
+                  "spell": "spell.massacre"
+                },
+                {
+                  "spell": "spell.wails-of-the-damned"
+                }
+              ]
+            },
+            {
+              "rank": 8,
+              "spells": [
+                {
+                  "spell": "spell.canticle-of-everlasting-grief"
+                },
+                {
+                  "spell": "spell.execute"
+                },
+                {
+                  "spell": "spell.pinpoint"
+                }
+              ]
+            },
+            {
+              "rank": 7,
+              "spells": [
+                {
+                  "spell": "spell.eclipse-burst"
+                },
+                {
+                  "spell": "spell.planar-seal"
+                },
+                {
+                  "spell": "spell.truespeech"
+                }
+              ]
+            },
+            {
+              "rank": 6,
+              "spells": [
+                {
+                  "spell": "spell.banishment"
+                },
+                {
+                  "spell": "spell.blessed-boundary"
+                },
+                {
+                  "spell": "spell.dominate"
+                }
+              ]
+            },
+            {
+              "rank": 5,
+              "spells": [
+                {
+                  "spell": "spell.sending"
+                },
+                {
+                  "spell": "spell.translocate"
+                },
+                {
+                  "spell": "spell.truespeech"
+                }
+              ]
+            },
+            {
+              "rank": 4,
+              "spells": [
+                {
+                  "spell": "spell.dispelling-globe"
+                },
+                {
+                  "spell": "spell.divine-wrath"
+                },
+                {
+                  "spell": "spell.planar-tether"
+                }
+              ]
+            },
+            {
+              "rank": 3,
+              "spells": [
+                {
+                  "spell": "spell.blindness"
+                },
+                {
+                  "spell": "spell.chilling-darkness"
+                },
+                {
+                  "spell": "spell.harm"
+                }
+              ]
+            },
+            {
+              "rank": 2,
+              "spells": [
+                {
+                  "spell": "spell.blood-vendetta"
+                },
+                {
+                  "spell": "spell.darkness"
+                },
+                {
+                  "spell": "spell.translate"
+                }
+              ]
+            },
+            {
+              "rank": 1,
+              "spells": [
+                {
+                  "spell": "spell.command",
+                  "count": 2
+                },
+                {
+                  "spell": "spell.fear"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "adjustment.diabolic-dragon-spellcaster.caveats.0"
+  ]
+}

@@ -11,8 +11,8 @@
     "page": 59,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": -1,
   "family": "family.centipede",
   "size": "medium",
@@ -94,6 +94,5 @@
       ],
       "text": "creature.giant-centipede.abilities.giant-centipede-venom.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

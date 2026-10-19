@@ -9,8 +9,8 @@
     "page": 7,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "level": {
     "delta": {
       "level": "base",
@@ -22,6 +22,10 @@
         {
           "level": 1,
           "value": -2
+        },
+        {
+          "level": 2,
+          "value": -1
         }
       ]
     }
@@ -68,5 +72,6 @@
         }
       ]
     }
-  }
+  },
+  "editNote": "Compared with page 7: the level falls by 1, by 2 for a level 1 creature only, and by 1 again from level 2 up."
 }

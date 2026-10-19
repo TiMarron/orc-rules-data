@@ -11,8 +11,8 @@
     "page": 278,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 2,
   "family": "family.pterosaur",
   "size": "large",
@@ -86,6 +86,5 @@
       "actions": "2",
       "text": "creature.pteranodon.abilities.swoop.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

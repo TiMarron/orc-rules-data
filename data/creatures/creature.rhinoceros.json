@@ -11,8 +11,8 @@
     "page": 293,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 4,
   "family": "family.rhinoceros",
   "size": "large",
@@ -103,6 +103,5 @@
       "actions": "2",
       "text": "creature.rhinoceros.abilities.trample.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

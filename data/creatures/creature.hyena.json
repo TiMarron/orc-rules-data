@@ -11,8 +11,8 @@
     "page": 205,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 1,
   "family": "family.hyena",
   "size": "medium",
@@ -100,6 +100,5 @@
       "name": "creature.hyena.abilities.pack-attack.name",
       "text": "creature.hyena.abilities.pack-attack.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

@@ -14,8 +14,8 @@
     "page": 356,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 1,
   "family": "family.zombie",
   "size": "medium",
@@ -125,6 +125,5 @@
       ],
       "text": "creature.plague-zombie.abilities.zombie-rot.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

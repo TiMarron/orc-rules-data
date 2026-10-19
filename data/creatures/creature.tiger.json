@@ -11,8 +11,8 @@
     "page": 51,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 4,
   "family": "family.cat",
   "size": "large",
@@ -122,6 +122,5 @@
       "actions": "1",
       "text": "creature.tiger.abilities.wrestle.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

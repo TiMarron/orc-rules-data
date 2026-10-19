@@ -12,8 +12,8 @@
     "page": 21,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 5,
   "family": "family.ant",
   "size": "large",
@@ -108,6 +108,5 @@
       "actions": "1",
       "text": "creature.army-ant-swarm.abilities.swarming-bites.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

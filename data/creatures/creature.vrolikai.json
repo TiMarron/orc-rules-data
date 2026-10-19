@@ -13,8 +13,8 @@
     "page": 82,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 20,
   "family": "family.demon",
   "size": "large",
@@ -294,6 +294,5 @@
         ]
       }
     ]
-  },
-  "editNote": "link-only: beside its new family field, the only text changes are the new family references (family.ghoul); no other field or string changed."
+  }
 }

@@ -13,8 +13,8 @@
     "page": 148,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.elemental-water",
   "size": "medium",
@@ -104,6 +104,5 @@
       "actions": "1",
       "text": "creature.brine-shark.abilities.deep-plunge.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

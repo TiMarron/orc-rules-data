@@ -14,8 +14,8 @@
     "page": 254,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 14,
   "family": "family.oni",
   "size": "large",
@@ -234,6 +234,5 @@
         }
       ]
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

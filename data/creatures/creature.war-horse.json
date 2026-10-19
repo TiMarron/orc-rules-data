@@ -11,8 +11,8 @@
     "page": 201,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 2,
   "family": "family.horse",
   "size": "large",
@@ -93,6 +93,5 @@
       "actions": "2",
       "text": "creature.war-horse.abilities.gallop.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

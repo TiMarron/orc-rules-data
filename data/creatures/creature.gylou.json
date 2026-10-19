@@ -13,8 +13,8 @@
     "page": 91,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 14,
   "family": "family.devil",
   "size": "medium",
@@ -276,6 +276,5 @@
         ]
       }
     ]
-  },
-  "editNote": "added only the family reference"
+  }
 }

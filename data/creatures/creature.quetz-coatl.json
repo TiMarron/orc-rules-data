@@ -13,8 +13,8 @@
     "page": 65,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 10,
   "family": "family.coatl",
   "size": "large",
@@ -223,6 +223,5 @@
         }
       ]
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

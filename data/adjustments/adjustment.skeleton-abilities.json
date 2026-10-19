@@ -9,8 +9,8 @@
     "page": 312,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "family": "family.skeleton",
   "appliesTo": {
     "family": "family.skeleton"
@@ -46,7 +46,8 @@
           "values": {
             "dc": {
               "scale": "scale.spell-dc",
-              "tier": "moderate"
+              "tier": "moderate",
+              "part": "dc"
             }
           }
         },
@@ -68,5 +69,6 @@
   ],
   "caveats": [
     "adjustment.skeleton-abilities.caveats.0"
-  ]
+  ],
+  "editNote": "Compared with page 312: the four abilities the book prints; the DC reference names the DC of the Spell DC table."
 }

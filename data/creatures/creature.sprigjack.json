@@ -13,8 +13,8 @@
     "page": 332,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": -1,
   "family": "family.twigjack",
   "size": "tiny",
@@ -127,6 +127,5 @@
       "requirements": "creature.sprigjack.abilities.bramble-jump.requirements",
       "text": "creature.sprigjack.abilities.bramble-jump.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

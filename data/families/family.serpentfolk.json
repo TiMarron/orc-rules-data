@@ -9,8 +9,8 @@
     "page": 302,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "members": [
     "creature.aapoph-granitescale",
     "creature.aapoph-serpentfolk",
@@ -18,5 +18,9 @@
     "creature.coil-spy",
     "creature.zyss-serpentfolk"
   ],
-  "adjustments": []
+  "adjustments": [],
+  "notes": [
+    "family.serpentfolk.notes.0"
+  ],
+  "editNote": "The printed advice on alternative innate spells is now a note of the family (page 302): the book gives example spells, no rule to apply."
 }

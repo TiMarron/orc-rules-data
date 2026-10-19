@@ -11,8 +11,8 @@
     "page": 137,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": -1,
   "family": "family.eagle",
   "size": "small",
@@ -95,6 +95,5 @@
       "actions": "2",
       "text": "creature.eagle.abilities.eagle-dive.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

@@ -34,7 +34,7 @@
   },
   "immunities": [
     "bleed",
-    "death",
+    "death-effects",
     "disease",
     "paralyzed",
     "poison",
@@ -129,7 +129,7 @@
       "id": "alternate-lich-abilities",
       "name": "adjustment.lich.options.alternate-lich-abilities.name",
       "choose": {
-        "min": 1,
+        "min": 0,
         "max": 1
       },
       "entries": [
@@ -182,5 +182,5 @@
     "adjustment.lich.caveats.2",
     "adjustment.lich.caveats.3"
   ],
-  "editNote": "The unplaced sentence — liches lose all abilities that come from being a living creature — states a removal the adjustment schema has no operation for, so it stays the caveat that carries it for a human reader (its record’s other specifics are placed: the physical’s halved, the option entries, the spellcasting). Compared with page 218 and accepted; the losing is how the transformation reads there."
+  "editNote": "Compared with page 218: the sentence that liches lose the abilities of a living creature stays a caveat, the schema has no operation for it; the substitution of one alternate ability is optional."
 }

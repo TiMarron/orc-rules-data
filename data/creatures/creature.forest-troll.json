@@ -14,8 +14,8 @@
     "page": 330,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 5,
   "family": "family.troll",
   "size": "large",
@@ -142,6 +142,5 @@
       "actions": "1",
       "text": "creature.forest-troll.abilities.rend.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

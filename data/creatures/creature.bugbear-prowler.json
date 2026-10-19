@@ -12,8 +12,8 @@
     "page": 47,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 2,
   "family": "family.bugbear",
   "size": "medium",
@@ -156,6 +156,5 @@
       "name": "creature.bugbear-prowler.abilities.mauler.name",
       "text": "creature.bugbear-prowler.abilities.mauler.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

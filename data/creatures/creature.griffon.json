@@ -11,8 +11,8 @@
     "page": 182,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 4,
   "family": "family.griffon",
   "size": "large",
@@ -156,6 +156,5 @@
       ],
       "text": "creature.griffon.abilities.regal-shriek.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

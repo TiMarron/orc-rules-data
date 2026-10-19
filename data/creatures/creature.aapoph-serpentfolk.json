@@ -13,8 +13,8 @@
     "page": 303,
     "revision": "2024-first"
   },
-  "review": "assistant",
-  "edited": true,
+  "review": "auto",
+  "edited": false,
   "level": 3,
   "family": "family.serpentfolk",
   "size": "medium",
@@ -165,6 +165,5 @@
       "actions": "1",
       "text": "creature.aapoph-serpentfolk.abilities.slithering-attack.text"
     }
-  ],
-  "editNote": "added only the family reference"
+  ]
 }

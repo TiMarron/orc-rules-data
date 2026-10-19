@@ -9,11 +9,14 @@
     "page": 262,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "members": [
     "creature.phantom-beast",
     "creature.phantom-knight"
   ],
-  "adjustments": []
+  "adjustments": [
+    "adjustment.phantom"
+  ],
+  "editNote": "The family now lists the phantom transformation its page prints (page 262)."
 }
