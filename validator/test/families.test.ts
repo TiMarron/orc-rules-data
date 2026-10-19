@@ -47,6 +47,14 @@ describe('families check', () => {
     ]);
   });
 
+  it('rejects a creature whose family names a record that is not a family', () => {
+    expect(messages([
+      creature('vampire-count', { family: 'creature.vampire-count' }),
+    ])).toEqual([
+      'family: "creature.vampire-count" is not a family',
+    ]);
+  });
+
   it('rejects a parent that names a creature or names nothing that is a family', () => {
     expect(messages([
       family('dragon-horned', { parent: 'creature.horned-dragon', members: [] }),

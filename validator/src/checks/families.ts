@@ -43,7 +43,11 @@ export const familiesCheck: Check = (ds) => {
 
   for (const [creatureId, own] of creatureFamily) {
     const famRec = byId.get(own.family);
-    if (!famRec || famRec.type !== 'family') continue; // refsCheck reports an unresolvable reference
+    if (!famRec) continue; // refsCheck reports an unresolvable reference
+    if (famRec.type !== 'family') {
+      issues.push({ level: 'error', file: own.path, message: `family: "${own.family}" is not a family` });
+      continue;
+    }
     const members = (famRec as unknown as Record<string, unknown>).members;
     if (Array.isArray(members) && members.includes(creatureId)) continue;
     const filePath = ds.files.find((fam) => fam.record === famRec)?.path ?? '(unknown)';

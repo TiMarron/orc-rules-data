@@ -10,7 +10,7 @@
     "refScale": { "type": "string", "pattern": "^scale\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "dice": { "type": "string", "pattern": "^[1-9][0-9]*(d(4|6|8|10|12|20)([+-][1-9][0-9]*)?)?$", "$comment": "Same notation as a Strike's damage." },
     "when": { "type": "string", "enum": ["base", "new"], "$comment": "Which level the number is counted from: the base creature's ('starting level', the tables Elite, Weak, Vampire, Werecreature print) or the new creature's (default)." },
-    "tier": { "type": "string", "enum": ["extreme", "high", "moderate", "low", "terrible"], "$comment": "A tier of a creature-building scale — the value the scale record row carries for the creature's level." },
+    "tier": { "type": "string", "enum": ["extreme", "high", "moderate", "low", "terrible", "unlimited", "limited"], "$comment": "A tier of a creature-building scale — the value the scale record row carries for the creature's level. `unlimited | limited` are the Area Damage table's columns ('limited use area damage for a creature of the graveknight's level')." },
     "levelValue": {
       "oneOf": [
         { "type": "integer" },
@@ -24,19 +24,20 @@
           "properties": {
         "scale": { "$ref": "#/$defs/refScale" },
         "tier": { "anyOf": [{ "$ref": "#/$defs/tier" }, { "type": "array", "minItems": 2, "maxItems": 2, "uniqueItems": true, "items": { "$ref": "#/$defs/tier" } }], "$comment": "One tier, or a pair of alternatives printed as 'a moderate or high' that the user picks between. Only tiers the scale record carries are valid — the validator checks the reference." },
+        "part": { "enum": ["dc", "attack"], "$comment": "Which number of a two-number cell the reference reads: the Spell DC table prints a DC and a spell attack modifier in each cell. Required on a reference into such a scale and absent otherwise — the validator's rule." },
         "delta": { "type": "integer", "$comment": "A shift printed on top of the scale value: 'spell DC – 2'." },
         "level": { "$ref": "#/$defs/when" },
         "byLevel": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["level", "value"], "properties": { "level": { "type": "integer", "minimum": -1, "maximum": 25 }, "value": { "type": "integer" } } }, "$comment": "A value that holds from its level upward ('increases to 10 at 9th level and 15 at 16th'); levels strictly increasing is the validator's rule." },
         "ofLevel": { "type": "number", "exclusiveMinimum": 0, "$comment": "A fraction of the creature's level: 0.5 for 'half its level'." },
         "round": { "type": "string", "enum": ["down", "up"], "$comment": "How a fractional level is rounded; without it, the game's own rule." },
-        "min": { "type": "integer", "$comment": "'one-third its level (minimum 1)' beside `ofLevel`; the damage form's floor is its own shape." },
+        "min": { "anyOf": [{ "type": "integer" }, { "$ref": "#/$defs/dice" }], "$comment": "The printed floor: an integer beside `ofLevel` ('one-third its level (minimum 1)'), a die expression beside `dice` ('1d6 per 2 levels (minimum 1d6)')." },
         "dice": { "$ref": "#/$defs/dice", "$comment": "The part that repeats with level: '1d6 plus 1d6 for every 2 levels' holds dice '1d6' per 2 levels." },
         "per": { "type": "integer", "minimum": 1, "$comment": "How many levels per repetition." },
         "base": { "$ref": "#/$defs/dice", "$comment": "The flat part printed before the repeating one." }
           }
         }
       ],
-      "$comment": "A number a template prints that depends on the creature's level: never only prose. The book prints no damage-form floor, so the integer `min` travels only beside `ofLevel`."
+      "$comment": "A number a template prints that depends on the creature's level: never only prose."
     },
     "modifyStat": { "type": "string", "enum": ["ac", "saves", "fortitude", "reflex", "will", "perception", "dc", "spell-dc", "spell-attack", "skills", "attack", "damage"], "$comment": "What a `modify` shifts. `saves` shifts all three saving throws; `fortitude`/`reflex`/`will` name one when the template does." },
     "modify": {

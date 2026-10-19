@@ -66,6 +66,12 @@ export const adjustmentsCheck: Check = (ds) => {
       if (typeof scaleId !== 'string') return; // a byLevel list without a scale
       const scaleRec = byId.get(scaleId);
       if (!scaleRec || scaleRec.type !== 'scale') return; // refsCheck reports an unresolvable reference
+      // A scale whose cells hold two numbers (Spell DC: `{ dc, attack }`) needs the reference to say
+      // which; any other scale has one number a cell and no `part`.
+      const rows = Array.isArray((scaleRec as Record<string, unknown>).rows) ? ((scaleRec as Record<string, unknown>).rows as Record<string, unknown>[]) : [];
+      const paired = rows.some((r) => Object.values(r ?? {}).some((c) => !!c && typeof c === 'object' && 'dc' in (c as object)));
+      if (paired && lv.part === undefined) issues.push({ level: 'error', file: f.path, message: `${path}: scale "${scaleId}" holds a DC and an attack per cell; part is required` });
+      if (!paired && lv.part !== undefined) issues.push({ level: 'error', file: f.path, message: `${path}: scale "${scaleId}" has one number per cell; part "${String(lv.part)}" names none` });
       const tiers = Array.isArray(scaleRec.tiers) ? scaleRec.tiers : [];
       const printed = Array.isArray(lv.tier)
         ? lv.tier.map((t) => String(t))
@@ -97,11 +103,32 @@ export const adjustmentsCheck: Check = (ds) => {
       }
     };
 
+    const fromsOf = (abilities: unknown): unknown => {
+      const replace = (abilities as Record<string, unknown> | undefined)?.replace;
+      return Array.isArray(replace) ? replace.map((r) => (r as Record<string, unknown>)?.from) : undefined;
+    };
     checkRemove('abilities.remove', (rec.abilities as Record<string, unknown> | undefined)?.remove);
+    checkRemove('abilities.replace', fromsOf(rec.abilities));
     const options = Array.isArray(rec.options) ? rec.options : [];
     options.forEach((o, i) => {
-      if (o && typeof o === 'object') checkRemove(`options[${i}].substituteFor`, (o as Record<string, unknown>).substituteFor);
+      if (!o || typeof o !== 'object') return;
+      checkRemove(`options[${i}].substituteFor`, (o as Record<string, unknown>).substituteFor);
+      // An entry's own operations act on the same base creatures (a sin swaps the sinspawn's bite).
+      const entries = Array.isArray((o as Record<string, unknown>).entries) ? ((o as Record<string, unknown>).entries as Record<string, unknown>[]) : [];
+      entries.forEach((e, j) => {
+        checkRemove(`options[${i}].entries[${j}].abilities.remove`, (e?.abilities as Record<string, unknown> | undefined)?.remove);
+        checkRemove(`options[${i}].entries[${j}].abilities.replace`, fromsOf(e?.abilities));
+      });
     });
+
+    // A dragon age's spell block belongs to a creature the dataset holds — one the adjustment applies to.
+    const byCreature = (rec.spellcasting as Record<string, unknown> | undefined)?.byCreature;
+    if (byCreature && typeof byCreature === 'object') {
+      for (const cid of Object.keys(byCreature)) {
+        if (!creatures.has(cid)) issues.push({ level: 'error', file: f.path, message: `spellcasting.byCreature: "${cid}" is not a creature` });
+        else if (targets.length && !targets.includes(cid)) issues.push({ level: 'error', file: f.path, message: `spellcasting.byCreature: "${cid}" is not in appliesTo.creatures` });
+      }
+    }
 
     const appliesTo = rec.appliesTo;
     if (appliesTo && typeof appliesTo === 'object') {

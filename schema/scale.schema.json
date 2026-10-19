@@ -44,7 +44,7 @@
       "required": ["tiers", "rows"],
       "properties": {
         "type": { "const": "scale" },
-        "tiers": { "type": "array", "uniqueItems": true, "$comment": "The scale's tiers in print order: the columns of the table ('extreme, high, moderate…'). Empty when the table has none — Resistance and Weaknesses prints a single value per level." },
+        "tiers": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/tier" }, "$comment": "The scale's tiers in print order: the columns of the table ('extreme, high, moderate…'). Empty when the table has none — Resistance and Weaknesses prints a single value per level." },
         "rows": { "type": "array", "items": { "$ref": "#/$defs/row" }, "$comment": "One row per level, in ascending order." },
         "text": { "$ref": "#/$defs/key", "$comment": "The printed rule that says when each tier applies." }
       }

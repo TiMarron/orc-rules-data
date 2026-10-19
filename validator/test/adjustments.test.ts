@@ -91,6 +91,55 @@ describe('adjustments check', () => {
     ]);
   });
 
+  it('requires `part` on a reference into a two-number scale, and refuses it on any other', () => {
+    const spellDc = scale('spell-dc', { tiers: ['high'], rows: [{ level: 1, high: { dc: 17, attack: 9 } }] });
+    const skill = scale('skill', { tiers: ['high'], rows: [{ level: 1, high: 8 }] });
+    expect(messages([
+      adjustment('ghoul', { resistances: [{ type: 'all-damage', value: { scale: 'scale.spell-dc', tier: 'high', part: 'dc' } }] }),
+      spellDc,
+    ])).toEqual([]);
+    expect(messages([
+      adjustment('ghoul', { resistances: [{ type: 'all-damage', value: { scale: 'scale.spell-dc', tier: 'high' } }] }),
+      spellDc,
+    ])).toEqual(['resistances[0].value: scale "scale.spell-dc" holds a DC and an attack per cell; part is required']);
+    expect(messages([
+      adjustment('ghoul', { resistances: [{ type: 'all-damage', value: { scale: 'scale.skill', tier: 'high', part: 'dc' } }] }),
+      skill,
+    ])).toEqual(['resistances[0].value: scale "scale.skill" has one number per cell; part "dc" names none']);
+  });
+
+  it('rejects a replace, and an option entry’s own remove or replace, naming an ability a targeted creature lacks', () => {
+    expect(messages([
+      adjustment('sinspawn-sin', {
+        appliesTo: { creatures: ['creature.sinspawn'] },
+        abilities: { replace: [{ from: 'sinful-gaze', to: { id: 'sinful-gaze', section: 'top', name: 'x.name' } }] },
+        options: [{
+          id: 'sin', name: 'x.name', choose: { min: 1, max: 1 },
+          entries: [{ id: 'envyspawn', section: 'top', name: 'x.name', abilities: { remove: ['claws'], replace: [{ from: 'sinful-bite', to: { id: 'sinful-bite', section: 'top', name: 'x.name' } }] } }],
+        }],
+      }),
+      creature('sinspawn', ['sinful-bite']),
+    ])).toEqual([
+      'abilities.replace: "sinful-gaze" is not an ability of creature.sinspawn',
+      'options[0].entries[0].abilities.remove: "claws" is not an ability of creature.sinspawn',
+    ]);
+  });
+
+  it('rejects a spell block keyed by no creature, or by one the adjustment does not apply to', () => {
+    const block = [{ kind: 'prepared', tradition: 'primal', dc: 26, ranks: [{ rank: 1, spells: [{ spell: 'spell.light' }] }] }];
+    expect(messages([
+      adjustment('horned-dragon-spellcaster', {
+        appliesTo: { creatures: ['creature.young-horned-dragon'] },
+        spellcasting: { byCreature: { 'creature.young-horned-dragon': block, 'creature.horned-dragon-young': block, 'creature.adult-horned-dragon': block } },
+      }),
+      creature('young-horned-dragon', []),
+      creature('adult-horned-dragon', []),
+    ])).toEqual([
+      'spellcasting.byCreature: "creature.horned-dragon-young" is not a creature',
+      'spellcasting.byCreature: "creature.adult-horned-dragon" is not in appliesTo.creatures',
+    ]);
+  });
+
   it('rejects a requires that resolves to a record that is not an adjustment', () => {
     expect(messages([
       adjustment('true-vampire', { appliesTo: { requires: 'ability.grab', minLevel: 5 } }),
