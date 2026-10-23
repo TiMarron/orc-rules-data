@@ -17,7 +17,7 @@
     "page": 261,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "spell.life-giving-form.text",
   "rank": 6,
@@ -34,5 +34,8 @@
       "level": "+1",
       "text": "spell.life-giving-form.heightened.0"
     }
-  ]
+  ],
+  "light": {
+    "as": "item.torch"
+  }
 }

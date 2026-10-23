@@ -9,11 +9,17 @@
     "page": 287,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "item.candle.text",
   "level": 0,
   "priceCp": 1,
   "bulk": "0",
-  "category": "gear"
+  "category": "gear",
+  "light": {
+    "bright": 0,
+    "dim": 10,
+    "shape": "radius",
+    "minutes": 480
+  }
 }

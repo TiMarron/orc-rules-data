@@ -40,5 +40,8 @@
     "skill.acrobatics"
   ],
   "feat": "feat.foretell-harm",
-  "editNote": "Reserved Material removed: deity, people and plane names replaced with generic descriptors; the wording otherwise unchanged."
+  "editNote": "Reserved Material removed: deity, people and plane names replaced with generic descriptors; the wording otherwise unchanged.",
+  "light": {
+    "as": "item.torch"
+  }
 }

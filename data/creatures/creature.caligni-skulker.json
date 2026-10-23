@@ -145,7 +145,18 @@
         "darkness",
         "occult"
       ],
-      "text": "creature.caligni-skulker.abilities.final-night.text"
+      "text": "creature.caligni-skulker.abilities.final-night.text",
+      "darkness": {
+        "radius": 20,
+        "shape": "emanation",
+        "becomes": "darkness",
+        "magicalLight": {
+          "counteract": {
+            "rank": 1,
+            "modifier": 10
+          }
+        }
+      }
     },
     {
       "id": "sneak-attack",

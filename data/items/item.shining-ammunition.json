@@ -13,11 +13,17 @@
     "page": 256,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "item.shining-ammunition.text",
   "level": 1,
   "priceCp": 300,
   "bulk": "0",
-  "category": "consumable"
+  "category": "consumable",
+  "light": {
+    "bright": 20,
+    "dim": 40,
+    "shape": "radius",
+    "minutes": 10
+  }
 }

@@ -13,7 +13,7 @@
     "page": 148,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 7,
   "size": "small",
@@ -131,7 +131,13 @@
         "visual"
       ],
       "aura": 30,
-      "text": "creature.quatoid.abilities.calming-bioluminescence.text"
+      "text": "creature.quatoid.abilities.calming-bioluminescence.text",
+      "light": {
+        "bright": 0,
+        "dim": 30,
+        "shape": "emanation",
+        "closable": true
+      }
     },
     {
       "id": "constrict",

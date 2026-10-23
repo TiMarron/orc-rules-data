@@ -145,7 +145,11 @@
         "light"
       ],
       "aura": 60,
-      "text": "creature.shining-child.abilities.blinding-aura.text"
+      "text": "creature.shining-child.abilities.blinding-aura.text",
+      "light": {
+        "bright": 60,
+        "shape": "emanation"
+      }
     },
     {
       "id": "overwhelming-light",
