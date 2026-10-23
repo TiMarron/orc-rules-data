@@ -10,7 +10,7 @@ major for renamed or removed ids, new required fields and markup changes.
 
 - `light`: the light a record sheds — bright and dim radius, shape, how long
   it lasts, its fuel, whether it can be closed — or the record whose light it
-  sheds (`as`). 33 records: the torch, candle, hooded and bull's-eye lanterns
+  sheds (`as`). 32 records: the torch, candle, hooded and bull's-eye lanterns
   and glow rod; the magic items that shed light (holy chain, life-saver mail,
   searing blade, shining ammunition, shining symbol, staff of illumination,
   each grade a record of its own); the light, everlight, angelic wings, vital
@@ -22,7 +22,7 @@ major for renamed or removed ids, new required fields and markup changes.
   light into, how it treats magical light, whether light passes through it.
   The darkness spell (and its 4th-rank heightening, which darkvision sees
   through only as concealed), cloak of shadow, and the caligni skulker's death.
-- 15 of these records gained a review note (`editNote`), and all 36 are now
+- 15 of these records gained a review note (`editNote`), and all 35 are now
   `"assistant"`: their numbers were checked against the book.
 
 ### Without a light field

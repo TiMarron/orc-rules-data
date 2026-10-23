@@ -71,7 +71,10 @@ cost tokens.
   names no dim light there is no `dim`, and the book's rule applies — a source
   sheds dim light to double its bright radius. A record that sheds another's
   light ("like a torch", "the effects of a light cantrip") says so with `as` and
-  that record's id instead of numbers. Whether the light is magical follows from
+  that record's id instead of numbers; it lends only its `bright`, `dim` and
+  `shape` (a sprite that sheds light like a torch does not go out after the
+  torch's hour), and a spell lends its light at the rank the referring text
+  sets. Whether the light is magical follows from
   the record's traits.
 - A record that makes darkness carries `darkness`: its `radius` and `shape`
   (burst, emanation), what the light in it `becomes` (darkness, or dim where it
