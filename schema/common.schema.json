@@ -28,7 +28,7 @@
         {
           "type": "object", "additionalProperties": false, "required": ["as"],
           "properties": {
-            "as": { "oneOf": [{ "$ref": "#/$defs/refItem" }, { "$ref": "#/$defs/refSpell" }], "$comment": "The record whose light this one sheds; that record carries its own `light` with numbers." },
+            "as": { "oneOf": [{ "$ref": "#/$defs/refItem" }, { "$ref": "#/$defs/refSpell" }], "$comment": "The record whose light this one sheds; that record carries its own `light` with numbers. It lends only `bright`, `dim` and `shape`: how long the light lasts and whether it closes are this record's own. A spell lends its light at the rank this record's text sets, heightened entries included." },
             "minutes": { "$ref": "#/$defs/lightMinutes" },
             "closable": { "$ref": "#/$defs/lightClosable" }
           }
