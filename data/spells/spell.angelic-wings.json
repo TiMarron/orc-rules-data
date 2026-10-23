@@ -16,7 +16,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.angelic-wings.text",
   "rank": 3,
   "focus": true,
@@ -30,6 +30,7 @@
       "text": "spell.angelic-wings.heightened.0"
     }
   ],
+  "editNote": "The light field read from the text; every number checked against the book p.262.",
   "light": {
     "bright": 30,
     "shape": "radius"

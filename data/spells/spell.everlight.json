@@ -14,7 +14,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.everlight.text",
   "rank": 2,
   "traditions": [
@@ -29,6 +29,7 @@
   "range": "spell.everlight.range",
   "targets": "spell.everlight.targets",
   "duration": "spell.everlight.duration",
+  "editNote": "The light field read from the text; every number checked against the book p.329.",
   "light": {
     "bright": 20,
     "dim": 40,

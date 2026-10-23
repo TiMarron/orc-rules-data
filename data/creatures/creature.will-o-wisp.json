@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 6,
   "size": "small",
   "perception": {
@@ -134,5 +134,6 @@
       ],
       "text": "creature.will-o-wisp.abilities.go-dark.text"
     }
-  ]
+  ],
+  "editNote": "The light field read from the text; every number checked against the book p.349."
 }
