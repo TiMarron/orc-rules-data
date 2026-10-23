@@ -21,6 +21,62 @@
     "refSpell": { "type": "string", "pattern": "^spell\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "refAbility": { "type": "string", "pattern": "^ability\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "refRitual": { "type": "string", "pattern": "^ritual\\.[a-z0-9]+(-[a-z0-9]+)*$" },
+    "feet": { "type": "integer", "minimum": 0, "multipleOf": 5 },
+    "light": {
+      "$comment": "The light a record sheds, as its text prints it. A source sheds bright light in its radius and dim light to double that radius (the book p.432): when the text names no dim light, `dim` is absent and that rule applies. `as` points at a record whose light this one sheds (\"like a torch\").",
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false, "required": ["as"],
+          "properties": {
+            "as": { "oneOf": [{ "$ref": "#/$defs/refItem" }, { "$ref": "#/$defs/refSpell" }], "$comment": "The record whose light this one sheds; that record carries its own `light` with numbers." },
+            "minutes": { "$ref": "#/$defs/lightMinutes" },
+            "closable": { "$ref": "#/$defs/lightClosable" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["bright", "shape"],
+          "properties": {
+            "bright": { "$ref": "#/$defs/feet", "$comment": "Radius of bright light in feet; 0 when the source sheds only dim light." },
+            "dim": { "$ref": "#/$defs/feet", "$comment": "Outer radius of dim light in feet (20 feet of bright and \"the next 20 feet\" of dim is 40). Absent: double `bright`, by the book's rule." },
+            "shape": { "enum": ["radius", "emanation", "cone"], "$comment": "As the text prints it." },
+            "minutes": { "$ref": "#/$defs/lightMinutes" },
+            "fuel": { "$ref": "#/$defs/refItem", "$comment": "What the source burns for `minutes` (a lantern's pint of oil)." },
+            "closable": { "$ref": "#/$defs/lightClosable" }
+          },
+          "if": { "properties": { "bright": { "const": 0 } } },
+          "then": { "properties": { "dim": true }, "required": ["dim"] }
+        }
+      ]
+    },
+    "lightMinutes": { "type": "integer", "minimum": 1, "$comment": "How long the light lasts when the text gives the light itself a duration; absent, it lasts as long as its source (a spell's own duration, a constant item)." },
+    "lightClosable": { "const": true, "$comment": "The text lets the light be covered, shut, suppressed or put out and brought back without ending its source. How, and at what cost, is in the text." },
+    "darkness": {
+      "type": "object", "additionalProperties": false, "required": ["radius", "shape", "becomes"],
+      "$comment": "An area of darkness a record makes. Non-magical light in it goes out by the darkness trait itself.",
+      "properties": {
+        "radius": { "$ref": "#/$defs/feet" },
+        "shape": { "enum": ["burst", "emanation"] },
+        "becomes": { "enum": ["darkness", "dim"], "$comment": "What the light in the area becomes: darkness, or dim light where it was bright (\"reduces bright light ... to dim light\")." },
+        "magicalLight": {
+          "oneOf": [
+            { "const": "rank", "$comment": "Suppresses magical light of the effect's rank or lower." },
+            {
+              "type": "object", "additionalProperties": false, "required": ["counteract"],
+              "properties": {
+                "counteract": {
+                  "type": "object", "additionalProperties": false, "required": ["rank", "modifier"],
+                  "properties": { "rank": { "type": "integer", "minimum": 1, "maximum": 10 }, "modifier": { "type": "integer" } }
+                }
+              },
+              "$comment": "Attempts to counteract magical light with the printed counteract rank and modifier."
+            }
+          ],
+          "$comment": "Absent: the darkness trait's own rule (it can counteract less powerful magical light)."
+        },
+        "opaque": { "const": true, "$comment": "Light does not pass through the area, and creatures inside cannot see out." },
+        "darkvision": { "const": "concealed", "$comment": "Darkvision (not greater darkvision) sees targets through the darkness as concealed." }
+      }
+    },
     "damageType": { "enum": ["bludgeoning", "piercing", "slashing", "acid", "cold", "electricity", "fire", "sonic", "force", "vitality", "void", "mental", "poison", "spirit"] },
     "tradition": { "enum": ["arcane", "divine", "occult", "primal"] },
     "boost": {

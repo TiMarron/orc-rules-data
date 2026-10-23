@@ -1580,3 +1580,48 @@ describe('type schemas', () => {
   });
 
 });
+
+describe('light and darkness', () => {
+  const TORCH = { bright: 20, dim: 40, shape: 'radius', minutes: 60 };
+  const DARKNESS = { radius: 20, shape: 'burst', becomes: 'darkness', magicalLight: 'rank', opaque: true };
+  const item = (light: unknown) => ({ ...VALID.item, light });
+  const messages = (type: string, json: Record<string, unknown>) => issuesFor(type, json).join(String.fromCharCode(10));
+  const creatureWith = (ability: Record<string, unknown>) => ({
+    ...VALID.creature,
+    abilities: [{ id: 'final-night', section: 'defense', name: 'creature.cave-bear.abilities.final-night.name', text: 'creature.cave-bear.abilities.final-night.text', ...ability }],
+  });
+
+  it('accepts the light an item, a lantern, a candle and a reference shed', () => {
+    expect(issuesFor('item', item(TORCH))).toEqual([]);
+    expect(issuesFor('item', item({ bright: 30, dim: 60, shape: 'radius', minutes: 360, fuel: 'item.oil', closable: true }))).toEqual([]);
+    expect(issuesFor('item', item({ bright: 0, dim: 10, shape: 'radius', minutes: 480 }))).toEqual([]);
+    expect(issuesFor('spell', { ...VALID.spell, light: { as: 'item.torch' } })).toEqual([]);
+  });
+
+  it('accepts light on a heightened entry, an activation, a feat, a subclass and a creature ability', () => {
+    expect(issuesFor('spell', { ...VALID.spell, heightened: [{ level: '4', text: 'spell.heal.heightened.0', light: { bright: 60, dim: 120, shape: 'radius' } }] })).toEqual([]);
+    expect(issuesFor('item', { ...VALID.item, activations: [{ actions: '1', text: 'item.healing-potion.activations.0.text', light: { ...TORCH, minutes: 10 } }] })).toEqual([]);
+    expect(issuesFor('feat', { ...VALID.feat, light: { as: 'spell.light', closable: true } })).toEqual([]);
+    expect(issuesFor('subclass', { ...VALID.subclass, light: { as: 'item.torch' } })).toEqual([]);
+    expect(issuesFor('creature', creatureWith({ aura: 30, light: { bright: 0, dim: 30, shape: 'emanation' } }))).toEqual([]);
+  });
+
+  it('accepts darkness on a spell, its heightened entry and a creature ability', () => {
+    expect(issuesFor('spell', { ...VALID.spell, darkness: DARKNESS, heightened: [{ level: '4', text: 'spell.heal.heightened.0', darkness: { ...DARKNESS, darkvision: 'concealed' } }] })).toEqual([]);
+    expect(issuesFor('creature', creatureWith({ darkness: { radius: 20, shape: 'emanation', becomes: 'darkness', magicalLight: { counteract: { rank: 1, modifier: 10 } } } }))).toEqual([]);
+    expect(issuesFor('spell', { ...VALID.spell, darkness: { radius: 20, shape: 'emanation', becomes: 'dim' } })).toEqual([]);
+  });
+
+  it('rejects dim light without its radius, an odd radius, an unknown shape, a reference with numbers, an empty light and an unknown key', () => {
+    expect(messages('item', item({ bright: 0, shape: 'radius' }))).toContain("required property 'dim'");
+    expect(messages('item', item({ bright: 12, shape: 'radius' }))).toContain('/light/bright must be multiple of 5');
+    expect(messages('item', item({ bright: 20, shape: 'line' }))).toContain('/light/shape');
+    expect(messages('item', item({ as: 'item.torch', bright: 20 }))).toContain('/light must match exactly one schema');
+    expect(messages('item', item({}))).toContain("required property 'bright'");
+    expect(messages('item', item({ ...TORCH, color: 'red' }))).toContain('(color)');
+  });
+
+  it('rejects darkness without what the area becomes', () => {
+    expect(messages('spell', { ...VALID.spell, darkness: { radius: 20, shape: 'burst' } })).toContain("required property 'becomes'");
+  });
+});
