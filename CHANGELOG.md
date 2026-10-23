@@ -10,8 +10,8 @@ major for renamed or removed ids, new required fields and markup changes.
 
 - `light`: the light a record sheds — bright and dim radius, shape, how long
   it lasts, its fuel, whether it can be closed — or the record whose light it
-  sheds (`as`). 32 records: the torch, candle, hooded and bull's-eye lanterns
-  and glow rod; the magic items that shed light (holy chain, life-saver mail,
+  sheds (`as`). 33 records: the torch, candle, hooded and bull's-eye lanterns
+  and glow rod; the magic items that shed light (everlight crystal, holy chain, life-saver mail,
   searing blade, shining ammunition, shining symbol, staff of illumination,
   each grade a record of its own); the light, everlight, angelic wings, vital
   luminance, reaper's lantern, touch of the moon and life-giving form spells;
@@ -22,16 +22,13 @@ major for renamed or removed ids, new required fields and markup changes.
   light into, how it treats magical light, whether light passes through it.
   The darkness spell (and its 4th-rank heightening, which darkvision sees
   through only as concealed), cloak of shadow, and the caligni skulker's death.
-- 15 of these records gained a review note (`editNote`), and all 35 are now
+- 15 of these records gained a review note (`editNote`), and all 36 are now
   `"assistant"`: their numbers were checked against the book.
 
 ### Without a light field
 
 - The plain lantern: the book prints a shared Lantern paragraph with no radius,
   and its price table lists only the bull's-eye and hooded lanterns.
-- The everlight crystal: the book prints no radius ("sheds magical light
-  constantly"); the radius in this record's text is not the book's and will be
-  corrected separately.
 - The peering aeon stone sheds dim light only while in bright light, so it
   changes no light level. The wands of hopeless night cast `darkness`, whose
   record carries the field; the explorer's yurt keeps light in, it sheds none.
