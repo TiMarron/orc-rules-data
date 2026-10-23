@@ -20,5 +20,11 @@
   "bulk": "L",
   "usage": "item.everlight-crystal.usage",
   "category": "held",
-  "editNote": "The text differs from page 273 because the errata replaces the description ('Everlight crystal doesn't list the mechanics for the light. Change its description to the following.'); the record carries the errata's wording. Level 1 and 15 gp match."
+  "editNote": "The text differs from page 273 because the errata replaces the description ('Everlight crystal doesn't list the mechanics for the light. Change its description to the following.'); the record carries the errata's wording. Level 1 and 15 gp match.",
+  "light": {
+    "bright": 20,
+    "dim": 40,
+    "shape": "radius",
+    "closable": true
+  }
 }
