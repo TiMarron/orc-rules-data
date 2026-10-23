@@ -13,7 +13,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": -1,
   "size": "tiny",
   "perception": {
@@ -166,5 +166,6 @@
         }
       ]
     }
-  ]
+  ],
+  "editNote": "The light field read from the text; every number checked against the book p.322."
 }

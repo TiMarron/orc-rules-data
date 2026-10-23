@@ -14,12 +14,13 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.shining-ammunition.text",
   "level": 1,
   "priceCp": 300,
   "bulk": "0",
   "category": "consumable",
+  "editNote": "The light field read from the text; every number checked against the book p.256.",
   "light": {
     "bright": 20,
     "dim": 40,

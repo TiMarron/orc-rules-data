@@ -12,12 +12,13 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "feat.halo.text",
   "level": 1,
   "category": "ancestry",
   "versatile": true,
   "prerequisites": [],
+  "editNote": "The light field read from the text; every number checked against the book p.80.",
   "light": {
     "as": "spell.light",
     "closable": true

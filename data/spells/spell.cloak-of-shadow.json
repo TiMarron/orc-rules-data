@@ -17,7 +17,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.cloak-of-shadow.text",
   "rank": 1,
   "focus": true,
@@ -30,6 +30,7 @@
   "range": "spell.cloak-of-shadow.range",
   "targets": "spell.cloak-of-shadow.targets",
   "duration": "spell.cloak-of-shadow.duration",
+  "editNote": "The darkness field read from the text; every number checked against the book p.373.",
   "darkness": {
     "radius": 20,
     "shape": "emanation",

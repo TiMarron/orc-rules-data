@@ -15,7 +15,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.light.text",
   "rank": 1,
   "traditions": [
@@ -40,6 +40,7 @@
       }
     }
   ],
+  "editNote": "The light field read from the text; every number checked against the book p.340–341.",
   "light": {
     "bright": 20,
     "dim": 40,

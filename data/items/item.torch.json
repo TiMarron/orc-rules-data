@@ -10,12 +10,13 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "item.torch.text",
   "level": 0,
   "priceCp": 1,
   "bulk": "L",
   "category": "gear",
+  "editNote": "The light field read from the text; every number checked against the book p.292.",
   "light": {
     "bright": 20,
     "dim": 40,

@@ -17,7 +17,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.vital-luminance.text",
   "rank": 4,
   "focus": true,
@@ -34,6 +34,7 @@
       "text": "spell.vital-luminance.heightened.0"
     }
   ],
+  "editNote": "The light field read from the text; every number checked against the book p.379.",
   "light": {
     "bright": 30,
     "dim": 60,

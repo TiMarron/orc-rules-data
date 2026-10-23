@@ -16,7 +16,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.reapers-lantern.text",
   "rank": 2,
   "traditions": [
@@ -32,6 +32,7 @@
   "defense": {
     "save": "fortitude"
   },
+  "editNote": "The light field read from the text; every number checked against the book p.249.",
   "light": {
     "bright": 5,
     "dim": 10,
