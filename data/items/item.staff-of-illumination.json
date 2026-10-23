@@ -22,7 +22,13 @@
   "activations": [
     {
       "actions": "1",
-      "text": "item.staff-of-illumination.activations.0.text"
+      "text": "item.staff-of-illumination.activations.0.text",
+      "light": {
+        "bright": 20,
+        "dim": 40,
+        "shape": "radius",
+        "minutes": 10
+      }
     },
     {
       "castASpell": true

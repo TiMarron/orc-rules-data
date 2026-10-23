@@ -192,7 +192,12 @@
         "visual"
       ],
       "aura": 30,
-      "text": "creature.vidileth.abilities.numbing-lights.text"
+      "text": "creature.vidileth.abilities.numbing-lights.text",
+      "light": {
+        "bright": 0,
+        "dim": 30,
+        "shape": "emanation"
+      }
     },
     {
       "id": "change-shape",

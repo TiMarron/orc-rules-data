@@ -12,7 +12,7 @@
     "page": 349,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": 6,
   "size": "small",
@@ -99,7 +99,12 @@
         "light"
       ],
       "aura": 20,
-      "text": "creature.will-o-wisp.abilities.glow.text"
+      "text": "creature.will-o-wisp.abilities.glow.text",
+      "light": {
+        "bright": 20,
+        "shape": "emanation",
+        "closable": true
+      }
     },
     {
       "id": "magic-immunity",

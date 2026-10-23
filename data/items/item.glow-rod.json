@@ -28,5 +28,11 @@
     }
   ],
   "category": "alchemical",
-  "editNote": "The record gains the activation the book prints in its stat header (AoN files it as a header row, which the converter did not read until now); the rest of the record is unchanged from the published one. Checked against the book's Activate line on p.295: 'Activate [one-action] (manipulate)'; the cost and traits match."
+  "editNote": "The record gains the activation the book prints in its stat header (AoN files it as a header row, which the converter did not read until now); the rest of the record is unchanged from the published one. Checked against the book's Activate line on p.295: 'Activate [one-action] (manipulate)'; the cost and traits match.",
+  "light": {
+    "bright": 20,
+    "dim": 60,
+    "shape": "radius",
+    "minutes": 360
+  }
 }

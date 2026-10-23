@@ -14,7 +14,7 @@
     "page": 340,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "spell.light.text",
   "rank": 1,
@@ -32,7 +32,17 @@
   "heightened": [
     {
       "level": "4",
-      "text": "spell.light.heightened.0"
+      "text": "spell.light.heightened.0",
+      "light": {
+        "bright": 60,
+        "dim": 120,
+        "shape": "radius"
+      }
     }
-  ]
+  ],
+  "light": {
+    "bright": 20,
+    "dim": 40,
+    "shape": "radius"
+  }
 }

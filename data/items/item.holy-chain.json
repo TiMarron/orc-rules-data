@@ -28,7 +28,13 @@
         "concentrate"
       ],
       "frequency": "item.holy-chain.activations.0.frequency",
-      "text": "item.holy-chain.activations.0.text"
+      "text": "item.holy-chain.activations.0.text",
+      "light": {
+        "bright": 40,
+        "dim": 80,
+        "shape": "radius",
+        "minutes": 10
+      }
     }
   ],
   "category": "other",

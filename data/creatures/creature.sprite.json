@@ -12,7 +12,7 @@
     "page": 322,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": -1,
   "size": "tiny",
@@ -129,7 +129,11 @@
         "light",
         "primal"
       ],
-      "text": "creature.sprite.abilities.luminous-fire.text"
+      "text": "creature.sprite.abilities.luminous-fire.text",
+      "light": {
+        "as": "item.torch",
+        "closable": true
+      }
     }
   ],
   "spellcasting": [

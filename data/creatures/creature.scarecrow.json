@@ -12,7 +12,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "level": 4,
   "size": "medium",
   "perception": {
@@ -137,7 +137,13 @@
         "light",
         "occult"
       ],
-      "text": "creature.scarecrow.abilities.baleful-glow.text"
+      "text": "creature.scarecrow.abilities.baleful-glow.text",
+      "light": {
+        "bright": 20,
+        "dim": 40,
+        "shape": "emanation",
+        "closable": true
+      }
     },
     {
       "id": "clawing-fear",
@@ -155,5 +161,6 @@
       ],
       "text": "creature.scarecrow.abilities.mundane-appearance.text"
     }
-  ]
+  ],
+  "editNote": "Resistance exceptions restructured from the note into except (type all renamed all-damage where printed so); no rules text changed."
 }

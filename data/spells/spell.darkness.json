@@ -32,8 +32,23 @@
   "heightened": [
     {
       "level": "4",
-      "text": "spell.darkness.heightened.0"
+      "text": "spell.darkness.heightened.0",
+      "darkness": {
+        "radius": 20,
+        "shape": "burst",
+        "becomes": "darkness",
+        "magicalLight": "rank",
+        "opaque": true,
+        "darkvision": "concealed"
+      }
     }
   ],
-  "editNote": "The reference points at a rules page the dataset does not model as a record; the link's label survives as plain text."
+  "editNote": "The reference points at a rules page the dataset does not model as a record; the link's label survives as plain text.",
+  "darkness": {
+    "radius": 20,
+    "shape": "burst",
+    "becomes": "darkness",
+    "magicalLight": "rank",
+    "opaque": true
+  }
 }

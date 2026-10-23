@@ -13,7 +13,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "gift.sacred-glow.text",
   "tier": "major",
   "aspect": "celestial",
@@ -24,7 +24,12 @@
         "concentrate",
         "manipulate"
       ],
-      "text": "gift.sacred-glow.activations.0.text"
+      "text": "gift.sacred-glow.activations.0.text",
+      "light": {
+        "bright": 30,
+        "shape": "emanation"
+      }
     }
-  ]
+  ],
+  "editNote": "Accepted: the only report is a link to a rules page the dataset does not model as a record (a basic save, a light level, a creature family); the linked words are kept as plain labels. Aspect and tier are as the page prints them."
 }

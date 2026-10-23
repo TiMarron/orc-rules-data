@@ -11,7 +11,7 @@
     "page": 42,
     "revision": "2024-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "level": -1,
   "size": "small",
@@ -85,7 +85,12 @@
         "light"
       ],
       "aura": 10,
-      "text": "creature.flash-beetle.abilities.luminescent-aura.text"
+      "text": "creature.flash-beetle.abilities.luminescent-aura.text",
+      "light": {
+        "bright": 10,
+        "shape": "emanation",
+        "closable": true
+      }
     },
     {
       "id": "light-flash",

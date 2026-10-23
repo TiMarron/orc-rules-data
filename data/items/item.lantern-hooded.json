@@ -16,5 +16,13 @@
   "priceCp": 70,
   "bulk": "L",
   "category": "gear",
-  "editNote": "pdf-page fail: this variant's disambiguating name (a base item plus a bracketed size/quality/rank variant, e.g. 'Lock (Average)', 'Spellcasting (1st rank)') is never printed in the book as its own heading; the page is the table that lists the variant as a priced row, confirmed against the cached PDF text for its claimed page range."
+  "editNote": "pdf-page fail: this variant's disambiguating name (a base item plus a bracketed size/quality/rank variant, e.g. 'Lock (Average)', 'Spellcasting (1st rank)') is never printed in the book as its own heading; the page is the table that lists the variant as a priced row, confirmed against the cached PDF text for its claimed page range.",
+  "light": {
+    "bright": 30,
+    "dim": 60,
+    "shape": "radius",
+    "minutes": 360,
+    "fuel": "item.oil",
+    "closable": true
+  }
 }

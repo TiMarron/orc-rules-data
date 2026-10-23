@@ -13,7 +13,7 @@
     "page": 329,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "spell.everlight.text",
   "rank": 2,
@@ -28,5 +28,10 @@
   },
   "range": "spell.everlight.range",
   "targets": "spell.everlight.targets",
-  "duration": "spell.everlight.duration"
+  "duration": "spell.everlight.duration",
+  "light": {
+    "bright": 20,
+    "dim": 40,
+    "shape": "radius"
+  }
 }

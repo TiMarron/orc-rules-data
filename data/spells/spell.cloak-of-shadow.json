@@ -16,7 +16,7 @@
     "page": 373,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "spell.cloak-of-shadow.text",
   "rank": 1,
@@ -29,5 +29,10 @@
   },
   "range": "spell.cloak-of-shadow.range",
   "targets": "spell.cloak-of-shadow.targets",
-  "duration": "spell.cloak-of-shadow.duration"
+  "duration": "spell.cloak-of-shadow.duration",
+  "darkness": {
+    "radius": 20,
+    "shape": "emanation",
+    "becomes": "dim"
+  }
 }

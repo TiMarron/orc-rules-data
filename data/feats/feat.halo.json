@@ -11,11 +11,15 @@
     "page": 80,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "feat.halo.text",
   "level": 1,
   "category": "ancestry",
   "versatile": true,
-  "prerequisites": []
+  "prerequisites": [],
+  "light": {
+    "as": "spell.light",
+    "closable": true
+  }
 }

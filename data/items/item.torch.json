@@ -9,11 +9,17 @@
     "page": 292,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
   "text": "item.torch.text",
   "level": 0,
   "priceCp": 1,
   "bulk": "L",
-  "category": "gear"
+  "category": "gear",
+  "light": {
+    "bright": 20,
+    "dim": 40,
+    "shape": "radius",
+    "minutes": 60
+  }
 }
