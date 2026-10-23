@@ -60,6 +60,26 @@ cost tokens.
   it holds at 1st level and gains per level. A school's curriculum slots are not
   in that table — `spellcasting.curriculum` states the rule that adds them.
 - A ranged weapon points at the ammunition it fires in `weapon.ammunition`.
+- A record that sheds light carries `light`: on the item, spell, feat or
+  subclass itself, on the activation or heightened entry that sheds it, or on a
+  creature's ability. `bright` is the radius of bright light in feet (0 when the
+  source sheds only dim light), `dim` the outer radius of its dim light (a torch's
+  20 feet and "the next 20 feet" is 40), `shape` what the text prints (radius,
+  emanation, cone), `minutes` how long the light itself lasts when the text says,
+  `fuel` what it burns (a lantern's oil) and `closable` that it can be covered,
+  shut or put out and brought back. Only what the text prints is stored: when it
+  names no dim light there is no `dim`, and the book's rule applies — a source
+  sheds dim light to double its bright radius. A record that sheds another's
+  light ("like a torch", "the effects of a light cantrip") says so with `as` and
+  that record's id instead of numbers. Whether the light is magical follows from
+  the record's traits.
+- A record that makes darkness carries `darkness`: its `radius` and `shape`
+  (burst, emanation), what the light in it `becomes` (darkness, or dim where it
+  was bright), how it treats magical light (`magicalLight`: `"rank"` suppresses
+  magical light of its rank or lower; `counteract` carries a printed rank and
+  modifier; absent, the darkness trait's own rule), `opaque` when light cannot
+  pass through it, and `darkvision: "concealed"` when darkvision sees through it
+  only as concealed. Non-magical light in it goes out by the darkness trait.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens
   `{1a} {2a} {3a} {r} {f}`.
