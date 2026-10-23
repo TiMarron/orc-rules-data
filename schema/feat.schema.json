@@ -15,6 +15,7 @@
         "trigger": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "requirements": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "frequency": { "$ref": "common.schema.json#/$defs/i18nKey" },
+        "light": { "$ref": "common.schema.json#/$defs/light" },
         "prerequisites": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/prerequisite" } },
         "class": {
           "oneOf": [

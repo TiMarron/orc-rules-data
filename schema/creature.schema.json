@@ -280,7 +280,9 @@
         "trigger": { "$ref": "#/$defs/key" },
         "frequency": { "$ref": "#/$defs/key" },
         "requirements": { "$ref": "#/$defs/key" },
-        "text": { "$ref": "#/$defs/key" }
+        "text": { "$ref": "#/$defs/key" },
+        "light": { "$ref": "common.schema.json#/$defs/light" },
+        "darkness": { "$ref": "common.schema.json#/$defs/darkness" }
       }
     }
   },

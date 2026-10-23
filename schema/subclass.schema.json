@@ -10,6 +10,7 @@
       "properties": {
         "type": { "const": "subclass" },
         "class": { "$ref": "common.schema.json#/$defs/refClass" },
+        "light": { "$ref": "common.schema.json#/$defs/light", "$comment": "Light the subclass itself makes its bearer shed (an oracle's curse)." },
         "kind": {
           "enum": ["arcane-school", "arcane-thesis", "doctrine", "muse", "racket", "druidic-order", "hunters-edge", "patron", "bloodline", "mystery", "cause", "instinct", "style", "methodology", "research-field"],
           "$comment": "What the class calls the choice: a wizard's arcane school or thesis, a bard's muse, a cleric's doctrine, a druid's order, a ranger's hunter's edge, a rogue's racket, a witch's patron, an alchemist's research field, a barbarian's instinct, a champion's cause, an investigator's methodology, an oracle's mystery, a sorcerer's bloodline, a swashbuckler's style."

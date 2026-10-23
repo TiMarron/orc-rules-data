@@ -59,10 +59,14 @@
             "required": ["level", "text"],
             "properties": {
               "level": { "type": "string", "pattern": "^(\\+[1-9]|[1-9]|10)$" },
-              "text": { "$ref": "common.schema.json#/$defs/i18nKey" }
+              "text": { "$ref": "common.schema.json#/$defs/i18nKey" },
+              "light": { "$ref": "common.schema.json#/$defs/light" },
+              "darkness": { "$ref": "common.schema.json#/$defs/darkness" }
             }
           }
-        }
+        },
+        "light": { "$ref": "common.schema.json#/$defs/light" },
+        "darkness": { "$ref": "common.schema.json#/$defs/darkness" }
       }
     }
   ],
