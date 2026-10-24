@@ -1625,3 +1625,128 @@ describe('light and darkness', () => {
     expect(messages('spell', { ...VALID.spell, darkness: { radius: 20, shape: 'burst' } })).toContain("required property 'becomes'");
   });
 });
+
+describe('spell effect', () => {
+  const withEffect = (effect: unknown) => ({ ...VALID.spell, effect });
+  const messages = (effect: unknown) => issuesFor('spell', withEffect(effect)).join(String.fromCharCode(10));
+  const dmg = { kind: 'damage', dice: '2d6', type: 'fire' };
+  const FIREBALL = {
+    whole: true, range: { feet: 500 }, area: { shape: 'burst', feet: 20 },
+    parts: [{ kind: 'damage', dice: '6d6', type: 'fire', heighten: { every: 1, dice: '2d6' } }],
+  };
+
+  it('accepts fireball: range, area, and damage that heightens by dice', () => {
+    expect(issuesFor('spell', withEffect(FIREBALL))).toEqual([]);
+  });
+
+  it('accepts a target count, and a count that grows with the rank', () => {
+    expect(issuesFor('spell', withEffect({ whole: true, range: { feet: 30 }, targets: { min: 1, max: 2 }, parts: [dmg] }))).toEqual([]);
+    const fear = {
+      whole: false, range: { feet: 30 }, defense: { save: 'will' },
+      targets: { min: 1, max: 1, heightenMax: { fromRank: 3, max: 5 } },
+      parts: [
+        { kind: 'condition', id: 'condition.frightened', value: 1, on: ['success'], duration: { rounds: 1 } },
+        { kind: 'condition', id: 'condition.frightened', value: 2, on: ['failure', 'criticalFailure'] },
+      ],
+    };
+    expect(issuesFor('spell', withEffect(fear))).toEqual([]);
+  });
+
+  it('accepts persistent damage that applies on one outcome and heightens by a flat step', () => {
+    const caustic = {
+      whole: true, range: { feet: 30 }, defense: { save: 'reflex', basic: true },
+      parts: [
+        { kind: 'damage', dice: '2d4', type: 'acid' },
+        { kind: 'damage', dice: '1', type: 'acid', persistent: true, on: ['criticalFailure'], heighten: { every: 2, dice: '1' } },
+      ],
+    };
+    expect(issuesFor('spell', withEffect(caustic))).toEqual([]);
+  });
+
+  it('accepts heal with variants per action count and a basic save in the block', () => {
+    const heal = {
+      whole: false, defense: { save: 'fortitude', basic: true },
+      variants: [
+        { actions: 1, range: { touch: true }, targets: { min: 1, max: 1 }, parts: [{ kind: 'heal', dice: '1d8', to: 'living' }] },
+        { actions: 2, range: { feet: 30 }, targets: { min: 1, max: 1 }, parts: [{ kind: 'heal', dice: '1d8+8', to: 'living' }] },
+        { actions: 3, area: { shape: 'emanation', feet: 30 }, parts: [{ kind: 'heal', dice: '1d8+8', to: 'living', heighten: { every: 1, dice: '1d8' } }] },
+      ],
+    };
+    expect(issuesFor('spell', withEffect(heal))).toEqual([]);
+  });
+
+  it('accepts a block on a heightened entry', () => {
+    const e = { whole: true, parts: [dmg] };
+    expect(issuesFor('spell', { ...VALID.spell, heightened: [{ level: '4', text: 'spell.heal.heightened.0', effect: e }] })).toEqual([]);
+  });
+
+  it('accepts every duration form', () => {
+    for (const duration of [
+      { rounds: 3 }, { minutes: 10 }, { sustained: {} }, { sustained: { minutes: 1 } },
+      { untilStartOfCasterNextTurn: true }, { untilStartOfTargetNextTurn: true }, { untilEndOfTargetNextTurn: true }, { permanent: true },
+    ]) {
+      const part = { kind: 'condition', id: 'condition.blinded', duration };
+      expect(issuesFor('spell', withEffect({ whole: false, duration, parts: [part] }))).toEqual([]);
+    }
+  });
+
+  it('accepts the other part kinds', () => {
+    const parts = [
+      { kind: 'push', feet: 10, direction: 'away' },
+      { kind: 'push', feet: 5, direction: 'choice', on: ['failure'] },
+      { kind: 'heal', dice: '2d8', to: 'undead' },
+      { kind: 'tempHp', dice: '5', duration: { minutes: 1 } },
+      { kind: 'modifier', stat: 'ac', type: 'status', value: 1, who: 'target', duration: { rounds: 1 } },
+      { kind: 'modifier', stat: 'skill:stealth', type: 'circumstance', value: -2 },
+      { kind: 'modifier', stat: 'skills', type: 'status', value: 1, heighten: { every: 2, value: 1 } },
+      { kind: 'weakness', type: 'fire', value: 5, duration: { rounds: 1 } },
+      { kind: 'resistance', type: 'cold', value: 5 },
+      { kind: 'temporaryImmunity', minutes: 10 },
+      { kind: 'condition', id: 'condition.slowed', value: 1, who: 'self' },
+      { kind: 'damage', dice: '2d6', types: ['fire', 'cold'], doubleOnCritical: false },
+    ];
+    expect(issuesFor('spell', withEffect({ whole: false, parts }))).toEqual([]);
+  });
+
+  it('rejects a block without whole', () => {
+    expect(messages({ parts: [dmg] })).toContain("required property 'whole'");
+  });
+
+  it('rejects empty parts', () => {
+    expect(messages({ whole: true, parts: [] })).toContain('/effect/parts must NOT have fewer than 1 items');
+  });
+
+  it('rejects an area together with targets, in the block and in a variant', () => {
+    expect(messages({ whole: true, area: { shape: 'burst', feet: 20 }, targets: { min: 1, max: 1 } })).toContain('/effect');
+    expect(messages({ whole: true, variants: [{ actions: 1, area: { shape: 'burst', feet: 20 }, targets: { min: 1, max: 1 } }] })).toContain('/effect/variants/0');
+  });
+
+  it('rejects a range that is not a multiple of 5', () => {
+    expect(messages({ whole: true, range: { feet: 12 } })).toContain('/effect/range/feet must be multiple of 5');
+  });
+
+  it('rejects an unknown part kind', () => {
+    expect(messages({ whole: true, parts: [{ kind: 'summon' }] })).toContain('/effect/parts/0');
+  });
+
+  it('rejects an empty or unknown outcome list', () => {
+    expect(messages({ whole: true, parts: [{ ...dmg, on: [] }] })).toContain('/effect/parts/0');
+    expect(messages({ whole: true, parts: [{ ...dmg, on: ['hit'] }] })).toContain('/effect/parts/0');
+    expect(messages({ whole: true, parts: [{ ...dmg, on: ['success', 'success'] }] })).toContain('/effect/parts/0');
+  });
+
+  it('rejects damage with neither type nor types, and with both', () => {
+    expect(messages({ whole: true, parts: [{ kind: 'damage', dice: '2d6' }] })).toContain('/effect/parts/0');
+    expect(messages({ whole: true, parts: [{ kind: 'damage', dice: '2d6', type: 'fire', types: ['fire', 'cold'] }] })).toContain('/effect/parts/0');
+  });
+
+  it('rejects a modifier on a stat the schema does not know, or with a zero value', () => {
+    expect(messages({ whole: true, parts: [{ kind: 'modifier', stat: 'luck', type: 'status', value: 1 }] })).toContain('/effect/parts/0');
+    expect(messages({ whole: true, parts: [{ kind: 'modifier', stat: 'ac', type: 'status', value: 0 }] })).toContain('/effect/parts/0');
+  });
+
+  it('rejects a key the block does not have', () => {
+    expect(messages({ whole: true, note: 'x' })).toContain('(note)');
+    expect(messages({ whole: true, parts: [{ ...dmg, note: 'x' }] })).toContain('/effect/parts/0');
+  });
+});

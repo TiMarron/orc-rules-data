@@ -1,6 +1,365 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "spell.schema.json",
+  "$defs": {
+    "defense": {
+      "oneOf": [
+        { "type": "string", "const": "ac" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["save"],
+          "properties": { "save": { "enum": ["fortitude", "reflex", "will"] }, "basic": { "type": "boolean" } }
+        }
+      ],
+      "$comment": "What the spell is rolled against: the target's AC for an attack, or a saving throw (basic when the book prints it). Shared by the record and by an effect block."
+    },
+    "effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["whole"],
+      "$comment": "The spell's rules as structured parts. Only what the book prints in the words the vocabulary has; everything else stays in the text (whole: false).",
+      "allOf": [{ "$ref": "#/$defs/castParams" }],
+      "properties": {
+        "whole": {
+          "type": "boolean",
+          "$comment": "True when the parts are the whole printed effect and the text adds no rule beyond them; false when the text carries more. Says whether a reader must read the text, not whether a game can play it."
+        },
+        "defense": {
+          "$ref": "#/$defs/defense",
+          "$comment": "Only for a spell whose stat block prints no Defense but whose text names a saving throw (heal, harm, grease); never together with the record's `defense` (the validator checks)."
+        },
+        "range": { "$ref": "#/$defs/range" },
+        "area": { "$ref": "#/$defs/area" },
+        "targets": { "$ref": "#/$defs/targets" },
+        "duration": { "$ref": "#/$defs/duration", "$comment": "The spell's duration; a single part may carry its own." },
+        "parts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/part" }, "$comment": "What the spell does, in the order the book prints it." },
+        "variants": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/variant" },
+          "$comment": "One entry per number of actions for a spell cast with 1-3 actions; `actions` must be unique (the validator checks, a schema cannot)."
+        }
+      }
+    },
+    "castParams": {
+      "type": "object",
+      "not": { "properties": { "area": true, "targets": true }, "required": ["area", "targets"] },
+      "$comment": "A spell has an area or targets, never both."
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actions"],
+      "allOf": [{ "$ref": "#/$defs/castParams" }],
+      "$comment": "What the version cast with this many actions overrides; whatever it leaves out comes from the block.",
+      "properties": {
+        "actions": { "type": "integer", "minimum": 1, "maximum": 3, "$comment": "The number of actions this version costs." },
+        "range": { "$ref": "#/$defs/range" },
+        "area": { "$ref": "#/$defs/area" },
+        "targets": { "$ref": "#/$defs/targets" },
+        "parts": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/part" },
+          "$comment": "Replaces the block's parts for this version when present."
+        }
+      }
+    },
+    "range": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["feet"],
+          "properties": { "feet": { "type": "integer", "minimum": 5, "multipleOf": 5, "$comment": "Maximum range in feet." } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["touch"],
+          "properties": { "touch": { "const": true, "$comment": "The spell is cast on a creature or object the caster touches." } }
+        }
+      ],
+      "$comment": "Absent when the spell has no range (an area from the caster, or the caster alone)."
+    },
+    "area": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shape", "feet"],
+      "$comment": "The area the spell affects; a burst needs a range (the validator checks).",
+      "properties": {
+        "shape": { "enum": ["burst", "cone", "emanation", "line"], "$comment": "The area's shape as the book names it." },
+        "feet": { "type": "integer", "minimum": 5, "multipleOf": 5, "$comment": "Radius of a burst or emanation, length of a cone or line." }
+      }
+    },
+    "targets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "$comment": "Who the spell is aimed at; `max` not below `min` is checked by the validator.",
+      "properties": {
+        "min": { "type": "integer", "minimum": 0, "$comment": "The fewest targets the spell can be cast on." },
+        "max": { "type": "integer", "minimum": 0, "$comment": "The most targets the spell can be cast on." },
+        "heightenMax": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["fromRank", "max"],
+          "$comment": "The maximum grows when the spell is heightened (up to 5 creatures when heightened to 5th rank).",
+          "properties": {
+            "fromRank": { "type": "integer", "minimum": 2, "maximum": 10, "$comment": "The rank from which the larger maximum applies." },
+            "max": { "type": "integer", "minimum": 0, "$comment": "The maximum from that rank up." }
+          }
+        },
+        "willing": { "const": true, "$comment": "Only willing creatures can be targeted." },
+        "only": { "enum": ["living", "undead", "enemy", "ally"], "$comment": "The one filter the book puts on who can be targeted." }
+      }
+    },
+    "duration": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["rounds"],
+          "properties": { "rounds": { "type": "integer", "minimum": 1, "$comment": "Lasts this many rounds." } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["minutes"],
+          "properties": { "minutes": { "type": "integer", "minimum": 1, "$comment": "Lasts this many minutes." } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sustained"],
+          "properties": {
+            "sustained": {
+              "type": "object",
+              "additionalProperties": false,
+              "$comment": "Lasts while the caster Sustains it.",
+              "properties": {
+                "minutes": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "$comment": "The longest it can be sustained (sustained up to 1 minute); absent when the book prints none."
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["untilStartOfCasterNextTurn"],
+          "properties": { "untilStartOfCasterNextTurn": { "const": true, "$comment": "Ends when the caster's next turn begins." } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["untilStartOfTargetNextTurn"],
+          "properties": { "untilStartOfTargetNextTurn": { "const": true, "$comment": "Ends when the target's next turn begins (until its next turn begins)." } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["untilEndOfTargetNextTurn"],
+          "properties": { "untilEndOfTargetNextTurn": { "const": true, "$comment": "Ends when the target's next turn ends." } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["permanent"],
+          "properties": { "permanent": { "const": true, "$comment": "Never ends by itself (blinded permanently)." } }
+        }
+      ],
+      "$comment": "How long an effect lasts; days, hours and \"until your next daily preparations\" are not structure and stay in the text."
+    },
+    "on": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["criticalSuccess", "success", "failure", "criticalFailure"] },
+      "$comment": "The degrees of success on which the part applies (the target's for a saving throw, the caster's for a spell attack); absent when it applies whatever the result."
+    },
+    "heighten": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["every", "dice"],
+          "properties": {
+            "every": { "type": "integer", "minimum": 1, "maximum": 9, "$comment": "Each this many ranks above the spell's base rank." },
+            "dice": { "$ref": "creature.schema.json#/$defs/damagePart/properties/dice", "$comment": "The dice added at each step." }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["every", "value"],
+          "properties": {
+            "every": { "type": "integer", "minimum": 1, "maximum": 9, "$comment": "Each this many ranks above the spell's base rank." },
+            "value": {
+              "type": "integer",
+              "minimum": 1,
+              "$comment": "The flat amount added at each step (a condition value, a modifier, a weakness, persistent damage)."
+            }
+          }
+        }
+      ],
+      "$comment": "How the part grows with the spell's rank."
+    },
+    "part": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "dice"],
+          "$comment": "Damage dealt; without `on` it scales by the basic save (0, half, full, double - Player Core p. 404) or, for an attack, full and double.",
+          "properties": {
+            "kind": { "const": "damage" },
+            "dice": {
+              "$ref": "creature.schema.json#/$defs/damagePart/properties/dice",
+              "$comment": "The dice as printed (\"6d6\", \"2d8+4\", \"1\" for flat damage)."
+            },
+            "type": { "$ref": "creature.schema.json#/$defs/damageType", "$comment": "The damage type; a part has `type` or `types`, never both." },
+            "types": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": { "$ref": "creature.schema.json#/$defs/damageType" },
+              "$comment": "The caster picks one of these types when casting."
+            },
+            "persistent": { "const": true, "$comment": "Persistent damage of this type." },
+            "doubleOnCritical": { "const": false, "$comment": "The book prints the full amount, not double, on a critical failure." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          },
+          "oneOf": [{ "properties": { "type": true }, "required": ["type"] }, { "properties": { "types": true }, "required": ["types"] }]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "id"],
+          "$comment": "A condition the spell applies.",
+          "properties": {
+            "kind": { "const": "condition" },
+            "id": { "type": "string", "pattern": "^condition\\.[a-z0-9-]+$", "$comment": "The condition's record (the validator checks it exists)." },
+            "value": { "type": "integer", "minimum": 1, "maximum": 10, "$comment": "The condition's value, for a valued condition." },
+            "duration": { "$ref": "#/$defs/duration", "$comment": "How long the condition lasts, when the book prints it." },
+            "who": { "enum": ["target", "self"], "$comment": "Who gets the condition; the target when absent." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "feet", "direction"],
+          "$comment": "Forced movement.",
+          "properties": {
+            "kind": { "const": "push" },
+            "feet": { "type": "integer", "minimum": 5, "multipleOf": 5, "$comment": "How far the target is pushed." },
+            "direction": { "enum": ["away", "choice"], "$comment": "Directly away from the caster, or in a direction the caster names." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "dice"],
+          "$comment": "Hit Points restored.",
+          "properties": {
+            "kind": { "const": "heal" },
+            "dice": { "$ref": "creature.schema.json#/$defs/damagePart/properties/dice", "$comment": "The dice as printed (\"1d8+8\", \"6\")." },
+            "to": { "enum": ["living", "undead"], "$comment": "Whom it heals; the living when absent." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "dice"],
+          "$comment": "Temporary Hit Points granted.",
+          "properties": {
+            "kind": { "const": "tempHp" },
+            "dice": { "$ref": "creature.schema.json#/$defs/damagePart/properties/dice", "$comment": "The amount as printed (\"5\", \"2d4\")." },
+            "duration": { "$ref": "#/$defs/duration", "$comment": "How long the temporary Hit Points last." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "stat", "type", "value"],
+          "$comment": "A bonus or penalty of a type.",
+          "properties": {
+            "kind": { "const": "modifier" },
+            "stat": {
+              "anyOf": [
+                { "enum": ["ac", "attack", "damage", "saves", "fortitude", "reflex", "will", "perception", "skills", "all-checks-and-dcs", "speed"] },
+                { "type": "string", "pattern": "^skill:[a-z0-9-]+$" }
+              ],
+              "$comment": "What it modifies: a name from the list, or `skill:<slug>` for one skill; `skills` means all skill checks."
+            },
+            "type": { "enum": ["status", "circumstance", "item"], "$comment": "The bonus or penalty type." },
+            "value": { "type": "integer", "not": { "const": 0 }, "$comment": "The modifier, negative for a penalty; feet for `speed`." },
+            "who": {
+              "enum": ["target", "self", "allies-in-area", "caster-and-allies-in-area", "all-in-area"],
+              "$comment": "Whom it applies to; the target when absent."
+            },
+            "duration": { "$ref": "#/$defs/duration", "$comment": "How long the modifier lasts." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "type", "value"],
+          "$comment": "A weakness the target gains.",
+          "properties": {
+            "kind": { "const": "weakness" },
+            "type": { "$ref": "creature.schema.json#/$defs/damageType", "$comment": "The damage type it is weak to." },
+            "value": { "type": "integer", "minimum": 1, "$comment": "The weakness value." },
+            "duration": { "$ref": "#/$defs/duration", "$comment": "How long the weakness lasts." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "type", "value"],
+          "$comment": "A resistance the target gains.",
+          "properties": {
+            "kind": { "const": "resistance" },
+            "type": { "$ref": "creature.schema.json#/$defs/damageType", "$comment": "The damage type it resists." },
+            "value": { "type": "integer", "minimum": 1, "$comment": "The resistance value." },
+            "duration": { "$ref": "#/$defs/duration", "$comment": "How long the resistance lasts." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "minutes"],
+          "$comment": "The target becomes immune to the same spell for a time.",
+          "properties": {
+            "kind": { "const": "temporaryImmunity" },
+            "minutes": { "type": "integer", "minimum": 1, "$comment": "How many minutes the immunity lasts." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          }
+        }
+      ],
+      "$comment": "One thing the spell does; `kind` picks the vocabulary word."
+    }
+  },
   "type": "object",
   "allOf": [
     { "$ref": "common.schema.json#/$defs/envelope" },
@@ -37,20 +396,8 @@
         "area": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "targets": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "duration": { "$ref": "common.schema.json#/$defs/i18nKey" },
-        "defense": {
-          "oneOf": [
-            { "type": "string", "const": "ac" },
-            {
-              "type": "object",
-              "additionalProperties": false,
-              "required": ["save"],
-              "properties": {
-                "save": { "enum": ["fortitude", "reflex", "will"] },
-                "basic": { "type": "boolean" }
-              }
-            }
-          ]
-        },
+        "defense": { "$ref": "#/$defs/defense" },
+        "effect": { "$ref": "#/$defs/effect" },
         "heightened": {
           "type": "array",
           "items": {
@@ -61,7 +408,8 @@
               "level": { "type": "string", "pattern": "^(\\+[1-9]|[1-9]|10)$" },
               "text": { "$ref": "common.schema.json#/$defs/i18nKey" },
               "light": { "$ref": "common.schema.json#/$defs/light" },
-              "darkness": { "$ref": "common.schema.json#/$defs/darkness" }
+              "darkness": { "$ref": "common.schema.json#/$defs/darkness" },
+              "effect": { "$ref": "#/$defs/effect", "$comment": "From this rank up the entry replaces the record's block entirely (a full block with its own `whole`), as `light` does." }
             }
           }
         },
