@@ -60,15 +60,6 @@
         "kind": "damage",
         "dice": "1d4",
         "type": "electricity",
-        "heighten": {
-          "every": 2,
-          "dice": "1d4"
-        }
-      },
-      {
-        "kind": "damage",
-        "dice": "1d4",
-        "type": "electricity",
         "persistent": true,
         "on": [
           "criticalSuccess"

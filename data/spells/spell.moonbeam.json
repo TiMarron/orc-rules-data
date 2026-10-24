@@ -56,6 +56,26 @@
           "every": 1,
           "dice": "1d6"
         }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.dazzled",
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "criticalSuccess"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.dazzled",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "success"
+        ]
       }
     ]
   }
