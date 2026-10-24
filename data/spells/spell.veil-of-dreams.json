@@ -52,7 +52,8 @@
         "value": -1,
         "who": "target",
         "on": [
-          "success"
+          "success",
+          "failure"
         ]
       },
       {
@@ -62,7 +63,8 @@
         "value": -1,
         "who": "target",
         "on": [
-          "success"
+          "success",
+          "failure"
         ]
       },
       {
@@ -72,7 +74,8 @@
         "value": -1,
         "who": "target",
         "on": [
-          "success"
+          "success",
+          "failure"
         ]
       }
     ]

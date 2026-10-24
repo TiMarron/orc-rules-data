@@ -50,16 +50,6 @@
           "every": 1,
           "dice": "2d4"
         }
-      },
-      {
-        "kind": "damage",
-        "dice": "1",
-        "type": "bleed",
-        "persistent": true,
-        "heighten": {
-          "every": 1,
-          "dice": "1"
-        }
       }
     ]
   }

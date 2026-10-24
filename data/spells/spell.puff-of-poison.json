@@ -55,16 +55,6 @@
           "every": 2,
           "dice": "1d4"
         }
-      },
-      {
-        "kind": "damage",
-        "dice": "1d4",
-        "type": "poison",
-        "persistent": true,
-        "heighten": {
-          "every": 2,
-          "dice": "1d4"
-        }
       }
     ]
   }

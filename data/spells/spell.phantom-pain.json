@@ -55,6 +55,11 @@
         "kind": "damage",
         "dice": "2d4",
         "type": "mental",
+        "on": [
+          "success",
+          "failure",
+          "criticalFailure"
+        ],
         "heighten": {
           "every": 1,
           "dice": "2d4"
@@ -65,10 +70,30 @@
         "dice": "1d4",
         "type": "mental",
         "persistent": true,
+        "on": [
+          "failure",
+          "criticalFailure"
+        ],
         "heighten": {
           "every": 1,
           "dice": "1d4"
         }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.sickened",
+        "value": 1,
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.sickened",
+        "value": 2,
+        "on": [
+          "criticalFailure"
+        ]
       }
     ]
   }
