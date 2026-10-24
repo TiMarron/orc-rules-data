@@ -14,8 +14,8 @@
     "page": 319,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.caustic-blast.text",
   "rank": 1,
   "traditions": [
@@ -36,5 +36,40 @@
       "level": "+2",
       "text": "spell.caustic-blast.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.319",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 30
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 5
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "1d8",
+        "type": "acid",
+        "heighten": {
+          "every": 2,
+          "dice": "1d8"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "1",
+        "type": "acid",
+        "persistent": true,
+        "on": [
+          "criticalFailure"
+        ],
+        "heighten": {
+          "every": 2,
+          "dice": "1"
+        }
+      }
+    ]
+  }
 }

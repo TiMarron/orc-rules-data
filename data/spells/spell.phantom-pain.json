@@ -15,8 +15,8 @@
     "page": 349,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.phantom-pain.text",
   "rank": 1,
   "traditions": [
@@ -36,5 +36,40 @@
       "level": "+1",
       "text": "spell.phantom-pain.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.349",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "duration": {
+      "minutes": 1
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d4",
+        "type": "mental",
+        "heighten": {
+          "every": 1,
+          "dice": "2d4"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "1d4",
+        "type": "mental",
+        "persistent": true,
+        "heighten": {
+          "every": 1,
+          "dice": "1d4"
+        }
+      }
+    ]
+  }
 }

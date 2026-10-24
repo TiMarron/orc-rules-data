@@ -15,8 +15,8 @@
     "page": 331,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.fear.text",
   "rank": 1,
   "traditions": [
@@ -39,5 +39,56 @@
       "level": "3",
       "text": "spell.fear.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.331",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "heightenMax": {
+        "fromRank": 3,
+        "max": 5
+      }
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.frightened",
+        "value": 1,
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.frightened",
+        "value": 2,
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.frightened",
+        "value": 3,
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.fleeing",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

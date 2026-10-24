@@ -13,8 +13,8 @@
     "page": 362,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.tailwind.text",
   "rank": 1,
   "traditions": [
@@ -30,5 +30,18 @@
       "level": "2",
       "text": "spell.tailwind.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.362",
+  "effect": {
+    "whole": false,
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "speed",
+        "type": "status",
+        "value": 10,
+        "who": "self"
+      }
+    ]
+  }
 }

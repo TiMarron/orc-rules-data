@@ -31,5 +31,38 @@
       "text": "spell.lay-on-hands.heightened.0"
     }
   ],
-  "editNote": "Accepted: rank, rarity, traits, cost, focus, range, targets, both bulleted options and the heightening line all match the printing word for word. The converter's flag is only the two bullet lists, kept as dash lines."
+  "editNote": "Accepted: rank, rarity, traits, cost, focus, range, targets, both bulleted options and the heightening line all match the printing word for word. The converter's flag is only the two bullet lists, kept as dash lines.",
+  "effect": {
+    "whole": false,
+    "defense": {
+      "save": "fortitude",
+      "basic": true
+    },
+    "range": {
+      "touch": true
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "heal",
+        "dice": "6",
+        "heighten": {
+          "every": 1,
+          "dice": "6"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "1d6",
+        "type": "vitality",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      }
+    ]
+  }
 }

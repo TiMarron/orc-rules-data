@@ -16,8 +16,8 @@
     "page": 241,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.blistering-invective.text",
   "rank": 2,
   "traditions": [
@@ -36,5 +36,44 @@
       "level": "+2",
       "text": "spell.blistering-invective.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.241",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d6",
+        "type": "fire",
+        "persistent": true,
+        "heighten": {
+          "every": 2,
+          "dice": "2d6"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.frightened",
+        "value": 1,
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.frightened",
+        "value": 2,
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

@@ -15,8 +15,8 @@
     "page": 374,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.cry-of-destruction.text",
   "rank": 1,
   "focus": true,
@@ -36,5 +36,24 @@
       "level": "+1",
       "text": "spell.cry-of-destruction.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.374",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "cone",
+      "feet": 15
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "1d8",
+        "type": "sonic",
+        "heighten": {
+          "every": 1,
+          "dice": "1d8"
+        }
+      }
+    ]
+  }
 }

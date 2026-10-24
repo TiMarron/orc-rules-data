@@ -13,8 +13,8 @@
     "page": 335,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.heal.text",
   "rank": 1,
   "traditions": [
@@ -31,5 +31,80 @@
       "level": "+1",
       "text": "spell.heal.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.335",
+  "effect": {
+    "whole": true,
+    "defense": {
+      "save": "fortitude",
+      "basic": true
+    },
+    "parts": [
+      {
+        "kind": "heal",
+        "dice": "1d8",
+        "heighten": {
+          "every": 1,
+          "dice": "1d8"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "1d8",
+        "type": "vitality",
+        "heighten": {
+          "every": 1,
+          "dice": "1d8"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "actions": 1,
+        "range": {
+          "touch": true
+        },
+        "targets": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      {
+        "actions": 2,
+        "range": {
+          "feet": 30
+        },
+        "parts": [
+          {
+            "kind": "heal",
+            "dice": "1d8+8",
+            "heighten": {
+              "every": 1,
+              "dice": "1d8+8"
+            }
+          },
+          {
+            "kind": "damage",
+            "dice": "1d8",
+            "type": "vitality",
+            "heighten": {
+              "every": 1,
+              "dice": "1d8"
+            }
+          }
+        ],
+        "targets": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      {
+        "actions": 3,
+        "area": {
+          "shape": "emanation",
+          "feet": 30
+        }
+      }
+    ]
+  }
 }

@@ -14,8 +14,8 @@
     "page": 383,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.heal-companion.text",
   "rank": 1,
   "focus": true,
@@ -32,5 +32,43 @@
       "level": "+1",
       "text": "spell.heal-companion.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.383",
+  "effect": {
+    "whole": false,
+    "parts": [
+      {
+        "kind": "heal",
+        "dice": "1d10",
+        "heighten": {
+          "every": 1,
+          "dice": "1d10"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "actions": 1,
+        "range": {
+          "touch": true
+        }
+      },
+      {
+        "actions": 2,
+        "range": {
+          "feet": 30
+        },
+        "parts": [
+          {
+            "kind": "heal",
+            "dice": "1d10+8",
+            "heighten": {
+              "every": 1,
+              "dice": "1d10+8"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

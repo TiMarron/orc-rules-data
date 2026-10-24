@@ -15,8 +15,8 @@
     "page": 387,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.stoke-the-heart.text",
   "rank": 1,
   "traditionsVary": true,
@@ -31,5 +31,34 @@
       "level": "+2",
       "text": "spell.stoke-the-heart.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.387",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "duration": {
+      "sustained": {
+        "minutes": 1
+      }
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "damage",
+        "type": "status",
+        "value": 2,
+        "who": "target",
+        "heighten": {
+          "every": 2,
+          "value": 1
+        }
+      }
+    ]
+  }
 }

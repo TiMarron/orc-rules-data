@@ -15,8 +15,8 @@
     "page": 322,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.daze.text",
   "rank": 1,
   "traditions": [
@@ -31,12 +31,46 @@
   "targets": "spell.daze.targets",
   "duration": "spell.daze.duration",
   "defense": {
-    "save": "will"
+    "save": "will",
+    "basic": true
   },
   "heightened": [
     {
       "level": "+2",
       "text": "spell.daze.heightened.0"
     }
-  ]
+  ],
+  "editNote": "defense basic as the book p.322 prints it: the stat block's Defense line says Will, the text a basic Will save",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 60
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "duration": {
+      "rounds": 1
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "1d6",
+        "type": "mental",
+        "heighten": {
+          "every": 2,
+          "dice": "1d6"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "value": 1,
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

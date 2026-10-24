@@ -11,8 +11,8 @@
     "page": 318,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.blood-vendetta.text",
   "rank": 2,
   "traditions": [
@@ -36,5 +36,24 @@
     }
   ],
   "trigger": "spell.blood-vendetta.trigger",
-  "requirements": "spell.blood-vendetta.requirements"
+  "requirements": "spell.blood-vendetta.requirements",
+  "editNote": "effect read from the book p.318",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d6",
+        "type": "bleed",
+        "persistent": true,
+        "heighten": {
+          "every": 2,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

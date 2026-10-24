@@ -15,8 +15,8 @@
     "page": 326,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.dizzying-colors.text",
   "rank": 1,
   "traditions": [
@@ -30,5 +30,73 @@
   "duration": "spell.dizzying-colors.duration",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.326",
+  "effect": {
+    "whole": true,
+    "area": {
+      "shape": "cone",
+      "feet": 15
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.dazzled",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "value": 1,
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.blinded",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.dazzled",
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.blinded",
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
   }
 }

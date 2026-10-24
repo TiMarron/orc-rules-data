@@ -16,8 +16,8 @@
     "page": 383,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.soothing-mist.text",
   "rank": 2,
   "focus": true,
@@ -34,5 +34,39 @@
       "level": "+1",
       "text": "spell.soothing-mist.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.383",
+  "effect": {
+    "whole": false,
+    "defense": {
+      "save": "fortitude",
+      "basic": true
+    },
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "heal",
+        "dice": "2d8",
+        "heighten": {
+          "every": 1,
+          "dice": "1d8"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "2d8",
+        "type": "vitality",
+        "heighten": {
+          "every": 1,
+          "dice": "1d8"
+        }
+      }
+    ]
+  }
 }

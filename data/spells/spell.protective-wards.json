@@ -14,8 +14,8 @@
     "page": 387,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.protective-wards.text",
   "rank": 1,
   "focus": true,
@@ -26,5 +26,27 @@
     "actions": "1"
   },
   "area": "spell.protective-wards.area",
-  "duration": "spell.protective-wards.duration"
+  "duration": "spell.protective-wards.duration",
+  "editNote": "effect read from the book p.387",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "emanation",
+      "feet": 5
+    },
+    "duration": {
+      "sustained": {
+        "minutes": 1
+      }
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "ac",
+        "type": "status",
+        "value": 1,
+        "who": "caster-and-allies-in-area"
+      }
+    ]
+  }
 }

@@ -12,8 +12,8 @@
     "page": 240,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.animated-assault.text",
   "rank": 2,
   "traditions": [
@@ -35,5 +35,32 @@
       "level": "+2",
       "text": "spell.animated-assault.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.240",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 10
+    },
+    "duration": {
+      "sustained": {
+        "minutes": 1
+      }
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d10",
+        "type": "bludgeoning",
+        "heighten": {
+          "every": 2,
+          "dice": "2d10"
+        }
+      }
+    ]
+  }
 }

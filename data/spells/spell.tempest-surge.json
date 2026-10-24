@@ -16,8 +16,8 @@
     "page": 382,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.tempest-surge.text",
   "rank": 1,
   "focus": true,
@@ -38,5 +38,27 @@
       "level": "+1",
       "text": "spell.tempest-surge.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.382",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "1d12",
+        "type": "electricity",
+        "heighten": {
+          "every": 1,
+          "dice": "1d12"
+        }
+      }
+    ]
+  }
 }

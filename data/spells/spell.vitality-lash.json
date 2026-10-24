@@ -37,5 +37,33 @@
       "text": "spell.vitality-lash.heightened.0"
     }
   ],
-  "editNote": "Reserved Material removed: the generated text named Reserved terms; they are replaced with generic wording, and the edited text carries none. (The original note was cut short to a single word when it was recorded, so this states what the edit does rather than what it replaced.)"
+  "editNote": "Reserved Material removed: the generated text named Reserved terms; they are replaced with generic wording, and the edited text carries none. (The original note was cut short to a single word when it was recorded, so this states what the edit does rather than what it replaced.)",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d6",
+        "type": "vitality",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.enfeebled",
+        "value": 1,
+        "duration": {
+          "untilStartOfCasterNextTurn": true
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

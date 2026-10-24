@@ -13,8 +13,8 @@
     "page": 334,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.grim-tendrils.text",
   "rank": 1,
   "traditions": [
@@ -33,5 +33,34 @@
       "level": "+1",
       "text": "spell.grim-tendrils.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.334",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "line",
+      "feet": 30
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d4",
+        "type": "void",
+        "heighten": {
+          "every": 1,
+          "dice": "2d4"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "1",
+        "type": "bleed",
+        "persistent": true,
+        "heighten": {
+          "every": 1,
+          "dice": "1"
+        }
+      }
+    ]
+  }
 }
