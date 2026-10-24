@@ -16,8 +16,8 @@
     "page": 260,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.spray-of-stars.text",
   "rank": 1,
   "focus": true,
@@ -36,5 +36,54 @@
       "level": "+1",
       "text": "spell.spray-of-stars.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.260",
+  "effect": {
+    "whole": true,
+    "area": {
+      "shape": "cone",
+      "feet": 15
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d4",
+        "type": "fire",
+        "heighten": {
+          "every": 1,
+          "dice": "1d4"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.dazzled",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.dazzled",
+        "duration": {
+          "rounds": 3
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.dazzled",
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

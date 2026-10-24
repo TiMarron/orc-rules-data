@@ -14,8 +14,8 @@
     "page": 328,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.electric-arc.text",
   "rank": 1,
   "traditions": [
@@ -36,5 +36,27 @@
       "level": "+1",
       "text": "spell.electric-arc.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.328",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 2
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d4",
+        "type": "electricity",
+        "heighten": {
+          "every": 1,
+          "dice": "1d4"
+        }
+      }
+    ]
+  }
 }

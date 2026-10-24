@@ -13,8 +13,8 @@
     "page": 332,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.floating-flame.text",
   "rank": 2,
   "traditions": [
@@ -28,12 +28,36 @@
   "area": "spell.floating-flame.area",
   "duration": "spell.floating-flame.duration",
   "defense": {
-    "save": "reflex"
+    "save": "reflex",
+    "basic": true
   },
   "heightened": [
     {
       "level": "+1",
       "text": "spell.floating-flame.heightened.0"
     }
-  ]
+  ],
+  "editNote": "defense basic as the book p.332 prints it: the stat block's Defense line says Reflex, the text a basic Reflex save",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "duration": {
+      "sustained": {
+        "minutes": 1
+      }
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "3d6",
+        "type": "fire",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      }
+    ]
+  }
 }

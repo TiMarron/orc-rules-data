@@ -15,8 +15,8 @@
     "page": 386,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.veil-of-dreams.text",
   "rank": 1,
   "focus": true,
@@ -28,5 +28,53 @@
   "duration": "spell.veil-of-dreams.duration",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.386",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "duration": {
+      "sustained": {
+        "minutes": 1
+      }
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "perception",
+        "type": "status",
+        "value": -1,
+        "who": "target",
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "modifier",
+        "stat": "attack",
+        "type": "status",
+        "value": -1,
+        "who": "target",
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "modifier",
+        "stat": "will",
+        "type": "status",
+        "value": -1,
+        "who": "target",
+        "on": [
+          "success"
+        ]
+      }
+    ]
   }
 }

@@ -15,8 +15,8 @@
     "page": 372,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.pushing-gust.text",
   "rank": 1,
   "focus": true,
@@ -30,5 +30,49 @@
   "targets": "spell.pushing-gust.targets",
   "defense": {
     "save": "fortitude"
+  },
+  "editNote": "effect read from the book p.372",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 500
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "push",
+        "feet": 5,
+        "direction": "away",
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "push",
+        "feet": 10,
+        "direction": "away",
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "push",
+        "feet": 10,
+        "direction": "away",
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.prone",
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
   }
 }

@@ -16,8 +16,8 @@
     "page": 372,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.triple-time.text",
   "rank": 2,
   "traditions": [
@@ -27,5 +27,28 @@
     "actions": "1"
   },
   "area": "spell.triple-time.area",
-  "duration": "spell.triple-time.duration"
+  "duration": "spell.triple-time.duration",
+  "editNote": "effect read from the book p.372",
+  "effect": {
+    "whole": true,
+    "area": {
+      "shape": "emanation",
+      "feet": 60
+    },
+    "duration": {
+      "rounds": 1
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "speed",
+        "type": "status",
+        "value": 10,
+        "who": "caster-and-allies-in-area",
+        "duration": {
+          "rounds": 1
+        }
+      }
+    ]
+  }
 }

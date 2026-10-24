@@ -14,8 +14,8 @@
     "page": 340,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.laughing-fit.text",
   "rank": 2,
   "traditions": [
@@ -30,5 +30,30 @@
   "duration": "spell.laughing-fit.duration",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.340",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "only": "living"
+    },
+    "duration": {
+      "sustained": {}
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.slowed",
+        "value": 1,
+        "on": [
+          "failure"
+        ]
+      }
+    ]
   }
 }

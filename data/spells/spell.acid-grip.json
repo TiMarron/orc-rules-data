@@ -13,8 +13,8 @@
     "page": 314,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.acid-grip.text",
   "rank": 2,
   "traditions": [
@@ -34,5 +34,65 @@
       "level": "+2",
       "text": "spell.acid-grip.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.314",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d8",
+        "type": "acid",
+        "heighten": {
+          "every": 2,
+          "dice": "2d8"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "1d6",
+        "type": "acid",
+        "persistent": true,
+        "on": [
+          "failure",
+          "criticalFailure"
+        ],
+        "heighten": {
+          "every": 2,
+          "dice": "1d6"
+        }
+      },
+      {
+        "kind": "push",
+        "feet": 5,
+        "direction": "choice",
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "push",
+        "feet": 10,
+        "direction": "choice",
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "push",
+        "feet": 20,
+        "direction": "choice",
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

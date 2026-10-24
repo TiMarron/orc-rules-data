@@ -12,8 +12,8 @@
     "page": 332,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.fleet-step.text",
   "rank": 1,
   "traditions": [
@@ -23,5 +23,21 @@
   "cast": {
     "actions": "2"
   },
-  "duration": "spell.fleet-step.duration"
+  "duration": "spell.fleet-step.duration",
+  "editNote": "effect read from the book p.332",
+  "effect": {
+    "whole": true,
+    "duration": {
+      "minutes": 1
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "speed",
+        "type": "status",
+        "value": 30,
+        "who": "self"
+      }
+    ]
+  }
 }

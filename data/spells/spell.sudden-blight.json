@@ -13,8 +13,8 @@
     "page": 253,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.sudden-blight.text",
   "rank": 2,
   "traditions": [
@@ -35,5 +35,27 @@
       "level": "+1",
       "text": "spell.sudden-blight.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.253",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 20
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d10",
+        "type": "void",
+        "heighten": {
+          "every": 1,
+          "dice": "1d10"
+        }
+      }
+    ]
+  }
 }

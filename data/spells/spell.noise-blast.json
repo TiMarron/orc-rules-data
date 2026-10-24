@@ -13,8 +13,8 @@
     "page": 347,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.noise-blast.text",
   "rank": 2,
   "traditions": [
@@ -35,5 +35,55 @@
       "level": "+1",
       "text": "spell.noise-blast.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.347",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 30
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 10
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d10",
+        "type": "sonic",
+        "heighten": {
+          "every": 1,
+          "dice": "1d10"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.deafened",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.deafened",
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "value": 1,
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

@@ -15,8 +15,8 @@
     "page": 382,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.heal-animal.text",
   "rank": 1,
   "focus": true,
@@ -33,5 +33,43 @@
       "level": "+1",
       "text": "spell.heal-animal.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.382",
+  "effect": {
+    "whole": false,
+    "parts": [
+      {
+        "kind": "heal",
+        "dice": "1d8",
+        "heighten": {
+          "every": 1,
+          "dice": "1d8"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "actions": 1,
+        "range": {
+          "touch": true
+        }
+      },
+      {
+        "actions": 2,
+        "range": {
+          "feet": 30
+        },
+        "parts": [
+          {
+            "kind": "heal",
+            "dice": "1d8+8",
+            "heighten": {
+              "every": 1,
+              "dice": "1d8+8"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

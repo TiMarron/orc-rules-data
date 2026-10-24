@@ -13,8 +13,8 @@
     "page": 376,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.magics-vessel.text",
   "rank": 1,
   "focus": true,
@@ -26,5 +26,30 @@
   },
   "range": "spell.magics-vessel.range",
   "targets": "spell.magics-vessel.targets",
-  "duration": "spell.magics-vessel.duration"
+  "duration": "spell.magics-vessel.duration",
+  "editNote": "effect read from the book p.376",
+  "effect": {
+    "whole": false,
+    "range": {
+      "touch": true
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "duration": {
+      "sustained": {
+        "minutes": 1
+      }
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "saves",
+        "type": "status",
+        "value": 1,
+        "who": "target"
+      }
+    ]
+  }
 }

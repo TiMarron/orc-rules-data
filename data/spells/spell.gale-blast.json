@@ -14,8 +14,8 @@
     "page": 246,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.gale-blast.text",
   "rank": 1,
   "traditions": [
@@ -34,5 +34,40 @@
       "level": "+1",
       "text": "spell.gale-blast.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.246",
+  "effect": {
+    "whole": true,
+    "area": {
+      "shape": "emanation",
+      "feet": 5
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "1d6",
+        "type": "bludgeoning",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      },
+      {
+        "kind": "push",
+        "feet": 5,
+        "direction": "away",
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "push",
+        "feet": 10,
+        "direction": "away",
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

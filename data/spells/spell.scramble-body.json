@@ -14,8 +14,8 @@
     "page": 388,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.scramble-body.text",
   "rank": 1,
   "focus": true,
@@ -29,5 +29,27 @@
   "targets": "spell.scramble-body.targets",
   "defense": {
     "save": "fortitude"
+  },
+  "editNote": "effect read from the book p.388",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "only": "living"
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.sickened",
+        "value": 1,
+        "on": [
+          "failure"
+        ]
+      }
+    ]
   }
 }

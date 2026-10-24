@@ -15,8 +15,8 @@
     "page": 246,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.haunting-hymn.text",
   "rank": 1,
   "traditions": [
@@ -36,5 +36,34 @@
       "level": "+2",
       "text": "spell.haunting-hymn.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.246",
+  "effect": {
+    "whole": true,
+    "area": {
+      "shape": "cone",
+      "feet": 15
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "1d8",
+        "type": "sonic",
+        "heighten": {
+          "every": 2,
+          "dice": "1d8"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.deafened",
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

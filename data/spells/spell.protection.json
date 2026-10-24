@@ -12,8 +12,8 @@
     "page": 351,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.protection.text",
   "rank": 1,
   "traditions": [
@@ -31,5 +31,36 @@
       "level": "3",
       "text": "spell.protection.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.351",
+  "effect": {
+    "whole": true,
+    "range": {
+      "touch": true
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "willing": true
+    },
+    "duration": {
+      "minutes": 1
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "ac",
+        "type": "status",
+        "value": 1,
+        "who": "target"
+      },
+      {
+        "kind": "modifier",
+        "stat": "saves",
+        "type": "status",
+        "value": 1,
+        "who": "target"
+      }
+    ]
+  }
 }

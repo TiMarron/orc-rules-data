@@ -12,8 +12,8 @@
     "page": 334,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.harm.text",
   "rank": 1,
   "traditions": [
@@ -29,5 +29,82 @@
       "level": "+1",
       "text": "spell.harm.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.334",
+  "effect": {
+    "whole": true,
+    "defense": {
+      "save": "fortitude",
+      "basic": true
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "1d8",
+        "type": "void",
+        "heighten": {
+          "every": 1,
+          "dice": "1d8"
+        }
+      },
+      {
+        "kind": "heal",
+        "dice": "1d8",
+        "to": "undead",
+        "heighten": {
+          "every": 1,
+          "dice": "1d8"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "actions": 1,
+        "range": {
+          "touch": true
+        },
+        "targets": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      {
+        "actions": 2,
+        "range": {
+          "feet": 30
+        },
+        "parts": [
+          {
+            "kind": "damage",
+            "dice": "1d8",
+            "type": "void",
+            "heighten": {
+              "every": 1,
+              "dice": "1d8"
+            }
+          },
+          {
+            "kind": "heal",
+            "dice": "1d8+8",
+            "to": "undead",
+            "heighten": {
+              "every": 1,
+              "dice": "1d8+8"
+            }
+          }
+        ],
+        "targets": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      {
+        "actions": 3,
+        "area": {
+          "shape": "emanation",
+          "feet": 30
+        }
+      }
+    ]
+  }
 }

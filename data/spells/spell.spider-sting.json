@@ -13,8 +13,8 @@
     "page": 358,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.spider-sting.text",
   "rank": 1,
   "traditions": [
@@ -28,5 +28,31 @@
   "targets": "spell.spider-sting.targets",
   "defense": {
     "save": "fortitude"
+  },
+  "editNote": "effect read from the book p.358",
+  "effect": {
+    "whole": false,
+    "range": {
+      "touch": true
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "1d4",
+        "type": "piercing"
+      },
+      {
+        "kind": "damage",
+        "dice": "1d4",
+        "type": "poison",
+        "on": [
+          "success"
+        ]
+      }
+    ]
   }
 }

@@ -14,8 +14,8 @@
     "page": 380,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.touch-of-obedience.text",
   "rank": 1,
   "focus": true,
@@ -30,5 +30,30 @@
   "duration": "spell.touch-of-obedience.duration",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.380",
+  "effect": {
+    "whole": false,
+    "range": {
+      "touch": true
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "only": "living"
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.stupefied",
+        "value": 2,
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
   }
 }

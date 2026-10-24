@@ -15,8 +15,8 @@
     "page": 357,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.sleep.text",
   "rank": 1,
   "traditions": [
@@ -36,5 +36,48 @@
       "level": "4",
       "text": "spell.sleep.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.357",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 5
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "perception",
+        "type": "status",
+        "value": -1,
+        "who": "target",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.unconscious",
+        "on": [
+          "failure"
+        ],
+        "duration": {
+          "minutes": 1
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.unconscious",
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

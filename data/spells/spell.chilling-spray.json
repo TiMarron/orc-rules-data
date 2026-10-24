@@ -13,8 +13,8 @@
     "page": 242,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.chilling-spray.text",
   "rank": 1,
   "traditions": [
@@ -33,5 +33,50 @@
       "level": "+1",
       "text": "spell.chilling-spray.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.242",
+  "effect": {
+    "whole": true,
+    "area": {
+      "shape": "cone",
+      "feet": 15
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d4",
+        "type": "cold",
+        "heighten": {
+          "every": 1,
+          "dice": "2d4"
+        }
+      },
+      {
+        "kind": "modifier",
+        "stat": "speed",
+        "type": "status",
+        "value": -5,
+        "who": "target",
+        "duration": {
+          "rounds": 2
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "modifier",
+        "stat": "speed",
+        "type": "status",
+        "value": -10,
+        "who": "target",
+        "duration": {
+          "rounds": 2
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

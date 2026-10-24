@@ -14,8 +14,8 @@
     "page": 336,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.hydraulic-push.text",
   "rank": 1,
   "traditions": [
@@ -33,5 +33,46 @@
       "level": "+1",
       "text": "spell.hydraulic-push.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.336",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 60
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "6d6",
+        "type": "bludgeoning",
+        "on": [
+          "criticalSuccess"
+        ]
+      },
+      {
+        "kind": "push",
+        "feet": 10,
+        "direction": "away",
+        "on": [
+          "criticalSuccess"
+        ]
+      },
+      {
+        "kind": "damage",
+        "dice": "3d6",
+        "type": "bludgeoning",
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "push",
+        "feet": 5,
+        "direction": "away",
+        "on": [
+          "success"
+        ]
+      }
+    ]
+  }
 }
