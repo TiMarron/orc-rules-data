@@ -43,11 +43,6 @@
       {
         "kind": "damage",
         "dice": "1d4",
-        "type": "piercing"
-      },
-      {
-        "kind": "damage",
-        "dice": "1d4",
         "type": "poison",
         "on": [
           "success"

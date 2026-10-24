@@ -16,8 +16,8 @@
     "page": 370,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.courageous-anthem.text",
   "rank": 1,
   "traditions": [
@@ -27,5 +27,32 @@
     "actions": "1"
   },
   "area": "spell.courageous-anthem.area",
-  "duration": "spell.courageous-anthem.duration"
+  "duration": "spell.courageous-anthem.duration",
+  "editNote": "effect read from the book p.370",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "emanation",
+      "feet": 60
+    },
+    "duration": {
+      "rounds": 1
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "attack",
+        "type": "status",
+        "value": 1,
+        "who": "caster-and-allies-in-area"
+      },
+      {
+        "kind": "modifier",
+        "stat": "damage",
+        "type": "status",
+        "value": 1,
+        "who": "caster-and-allies-in-area"
+      }
+    ]
+  }
 }

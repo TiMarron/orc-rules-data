@@ -13,8 +13,8 @@
     "page": 250,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.schadenfreude.text",
   "rank": 1,
   "traditions": [
@@ -30,5 +30,70 @@
   "defense": {
     "save": "will"
   },
-  "trigger": "spell.schadenfreude.trigger"
+  "trigger": "spell.schadenfreude.trigger",
+  "editNote": "effect read from the book p.250",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "perception",
+        "type": "status",
+        "value": -1,
+        "who": "target",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "modifier",
+        "stat": "will",
+        "type": "status",
+        "value": -1,
+        "who": "target",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stupefied",
+        "value": 1,
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stupefied",
+        "value": 2,
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "value": 1,
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

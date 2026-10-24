@@ -51,7 +51,8 @@
         "id": "condition.slowed",
         "value": 1,
         "on": [
-          "failure"
+          "failure",
+          "criticalFailure"
         ]
       }
     ]
