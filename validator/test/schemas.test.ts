@@ -1666,6 +1666,7 @@ describe('spell effect', () => {
   it('accepts heal with variants per action count and a basic save in the block', () => {
     const heal = {
       whole: false, defense: { save: 'fortitude', basic: true },
+      parts: [{ kind: 'heal', dice: '1d8', heighten: { every: 1, dice: '1d8' } }],
       variants: [
         { actions: 1, range: { touch: true }, targets: { min: 1, max: 1 }, parts: [{ kind: 'heal', dice: '1d8', to: 'living' }] },
         { actions: 2, range: { feet: 30 }, targets: { min: 1, max: 1 }, parts: [{ kind: 'heal', dice: '1d8+8', to: 'living' }] },
@@ -1714,6 +1715,11 @@ describe('spell effect', () => {
 
   it('rejects empty parts', () => {
     expect(messages({ whole: true, parts: [] })).toContain('/effect/parts must NOT have fewer than 1 items');
+  });
+
+  it('rejects a block without parts, even with variants', () => {
+    expect(messages({ whole: true })).toContain("required property 'parts'");
+    expect(messages({ whole: true, variants: [{ actions: 1, parts: [{ kind: 'heal', dice: '1d8' }] }] })).toContain("required property 'parts'");
   });
 
   it('rejects an area together with targets, in the block and in a variant', () => {

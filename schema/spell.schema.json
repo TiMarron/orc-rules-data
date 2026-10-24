@@ -17,7 +17,7 @@
     "effect": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["whole"],
+      "required": ["whole", "parts"],
       "$comment": "The spell's rules as structured parts. Only what the book prints in the words the vocabulary has; everything else stays in the text (whole: false).",
       "allOf": [{ "$ref": "#/$defs/castParams" }],
       "properties": {
