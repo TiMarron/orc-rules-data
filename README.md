@@ -83,6 +83,30 @@ cost tokens.
   modifier; absent, the darkness trait's own rule), `opaque` when light cannot
   pass through it, and `darkvision: "concealed"` when darkvision sees through it
   only as concealed. Non-magical light in it goes out by the darkness trait.
+- A spell may carry `effect`: what the spell does, as structured parts, in
+  the words the vocabulary has and nothing else. `parts` lists them in print
+  order, each of one of nine kinds: `damage` (dice, type or a choice of
+  `types`, `persistent`), `condition` (a condition record, its value and
+  duration, on the target or on the caster), `push`, `heal`, `tempHp`,
+  `modifier`, `weakness`, `resistance` and `temporaryImmunity`. `on` names the
+  degrees of success a part applies on: the target's for a saving throw, the
+  caster's for a spell attack. A `damage` part without `on` follows the scale
+  the roll implies — the rule for basic saves (nothing, half, full, double) or,
+  for an attack, full and double — which is the reader's rule, not data.
+  `heighten` says how a part grows (`every` so many ranks, by `dice` or by a
+  flat `value`). `range`, `area`, `targets` and `duration` repeat the printed
+  strings as structure; a spell cast with one to three actions lists its
+  `variants`, one per action count, each overriding what differs. When the
+  stat block prints no defense but the text names a saving throw, the block
+  carries its own `defense`; it is never given beside the record's. A
+  `heightened` entry may carry a full `effect` that replaces the block from
+  its rank up. `whole` says whether the text adds a rule beyond the structure.
+  A reader sees three states: `whole` and every part known, the spell is
+  playable from data; `whole` with a part the reader does not know, it is
+  playable in part and the unknown part is a gap; not `whole`, the text
+  carries a rule the structure does not and must be read. Only ranks 0 to 2 are
+  classified so far; a spell without `effect` is not yet read, or has nothing
+  the vocabulary can say.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens
   `{1a} {2a} {3a} {r} {f}`.
