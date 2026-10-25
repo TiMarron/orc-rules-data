@@ -36,26 +36,5 @@
       "text": "spell.noxious-vapors.heightened.0"
     }
   ],
-  "editNote": "effect read from the book p.248",
-  "effect": {
-    "whole": false,
-    "area": {
-      "shape": "emanation",
-      "feet": 10
-    },
-    "duration": {
-      "rounds": 1
-    },
-    "parts": [
-      {
-        "kind": "damage",
-        "dice": "1d6",
-        "type": "poison",
-        "heighten": {
-          "every": 1,
-          "dice": "1d6"
-        }
-      }
-    ]
-  }
+  "editNote": "no effect: the book p.248 spares the caster and hits only creatures in the area at casting"
 }
