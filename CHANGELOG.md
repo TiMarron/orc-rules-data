@@ -14,19 +14,27 @@ major for renamed or removed ids, new required fields and markup changes.
   area, targets and duration as structure, a version per action count, and
   `whole`: whether the text adds a rule beyond the structure. A heightened
   entry may carry a full `effect` that replaces the block from its rank up.
-- 96 records of ranks 0 to 2 carry an `effect`, 31 of them `whole: true`. All 96
-  are `"assistant"` with a review note: every number was checked against the
-  book.
+  A duration is a number of rounds or minutes, sustained, permanent, or the
+  start or end of the caster's or the target's next turn — among them
+  `untilEndOfCasterNextTurn`, "until the end of your next turn".
+- 95 records among the cantrips and spells of ranks 1–2 carry an `effect`, 32
+  of them `whole: true`. All 95 are `"assistant"`: every number was checked
+  against the book. 88 carry the review note "effect read from the book p.N";
+  the other 7 keep an earlier review note (4) or the note on their corrected
+  defense (3).
+
+### Changed
+
 - Three records' `defense` is now basic, as the text prints: daze, brain drain
   and floating flame.
 
 ### Without an effect
 
-The other 180 records of ranks 0 to 2 are read and named, and carry no `effect`
-because the vocabulary has no word for what they do. Ranks 3 and above are not
-yet classified; they follow in later waves.
+The other 181 cantrips and spells of ranks 1–2 are read and named, and carry no
+`effect` because the vocabulary has no word for what they do. Ranks 3 and above
+are not yet classified; they follow in later waves.
 
-- utility, 82: a bonus, a penalty, a roll made twice, extra healing or damage by
+- utility, 83: a bonus, a penalty, a roll made twice, extra healing or damage by
   a formula, an attitude, a compulsion, and other effects that fit no part.
 - object, 20: the spell acts on an item, food or a weapon, not on a creature.
 - hours, 16: its effect lasts hours or is worked out of encounter time.
