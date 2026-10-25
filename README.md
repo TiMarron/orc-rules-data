@@ -95,17 +95,21 @@ cost tokens.
   for an attack, full and double — which is the reader's rule, not data.
   `heighten` says how a part grows (`every` so many ranks, by `dice` or by a
   flat `value`). `range`, `area`, `targets` and `duration` repeat the printed
-  strings as structure; a spell cast with one to three actions lists its
-  `variants`, one per action count, each overriding what differs. When the
+  strings as structure; a part without a `duration` of its own lasts as long
+  as the block's. A spell cast with one to three actions lists its
+  `variants`, one per action count, each overriding what differs; a variant's
+  `parts`, when it has them, replace the block's parts. When the
   stat block prints no defense but the text names a saving throw, the block
-  carries its own `defense`; it is never given beside the record's. A
+  carries its own `defense`; it is never given beside the record's. A spell
+  with no defense at all, neither the record's nor the block's, hits
+  automatically: its parts apply with no roll. A
   `heightened` entry may carry a full `effect` that replaces the block from
   its rank up. `whole` says whether the text adds a rule beyond the structure.
   A reader sees three states: `whole` and every part known, the spell is
   playable from data; `whole` with a part the reader does not know, it is
   playable in part and the unknown part is a gap; not `whole`, the text
-  carries a rule the structure does not and must be read. Only ranks 0 to 2 are
-  classified so far; a spell without `effect` is not yet read, or has nothing
+  carries a rule the structure does not and must be read. Only cantrips and
+  ranks 1–2 are classified so far; a spell without `effect` is not yet read, or has nothing
   the vocabulary can say.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens
