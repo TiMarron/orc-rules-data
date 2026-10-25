@@ -157,6 +157,12 @@
         {
           "type": "object",
           "additionalProperties": false,
+          "required": ["untilEndOfCasterNextTurn"],
+          "properties": { "untilEndOfCasterNextTurn": { "const": true, "$comment": "Ends when the caster's next turn ends (until the end of your next turn)." } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
           "required": ["untilStartOfTargetNextTurn"],
           "properties": { "untilStartOfTargetNextTurn": { "const": true, "$comment": "Ends when the target's next turn begins (until its next turn begins)." } }
         },
@@ -202,7 +208,7 @@
             "value": {
               "type": "integer",
               "minimum": 1,
-              "$comment": "The flat amount added at each step (a condition value, a modifier, a weakness, persistent damage)."
+              "$comment": "The flat amount added at each step: a condition's value, a modifier, a weakness or a resistance. Damage, persistent damage too, grows by `dice`."
             }
           }
         }

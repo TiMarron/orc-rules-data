@@ -1684,11 +1684,19 @@ describe('spell effect', () => {
   it('accepts every duration form', () => {
     for (const duration of [
       { rounds: 3 }, { minutes: 10 }, { sustained: {} }, { sustained: { minutes: 1 } },
-      { untilStartOfCasterNextTurn: true }, { untilStartOfTargetNextTurn: true }, { untilEndOfTargetNextTurn: true }, { permanent: true },
+      { untilStartOfCasterNextTurn: true }, { untilEndOfCasterNextTurn: true }, { untilStartOfTargetNextTurn: true },
+      { untilEndOfTargetNextTurn: true }, { permanent: true },
     ]) {
       const part = { kind: 'condition', id: 'condition.blinded', duration };
       expect(issuesFor('spell', withEffect({ whole: false, duration, parts: [part] }))).toEqual([]);
     }
+  });
+
+  it('rejects a turn duration that is not true, carries another unit, or names no form the schema knows', () => {
+    const at = (duration: unknown) => messages({ whole: false, duration, parts: [dmg] });
+    expect(at({ untilEndOfCasterNextTurn: false })).toContain('/effect/duration');
+    expect(at({ untilEndOfCasterNextTurn: true, rounds: 1 })).toContain('/effect/duration');
+    expect(at({ untilEndOfCasterTurn: true })).toContain('/effect/duration');
   });
 
   it('accepts the other part kinds', () => {
