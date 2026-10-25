@@ -52,6 +52,16 @@
           "every": 1,
           "dice": "1d4"
         }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.off-guard",
+        "duration": {
+          "untilEndOfCasterNextTurn": true
+        },
+        "on": [
+          "criticalFailure"
+        ]
       }
     ]
   }

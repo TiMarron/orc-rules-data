@@ -46,6 +46,28 @@
       {
         "kind": "condition",
         "id": "condition.stupefied",
+        "value": 1,
+        "duration": {
+          "untilEndOfCasterNextTurn": true
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stupefied",
+        "value": 2,
+        "duration": {
+          "untilEndOfCasterNextTurn": true
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stupefied",
         "value": 2,
         "duration": {
           "minutes": 1

@@ -39,7 +39,7 @@
   ],
   "editNote": "effect read from the book p.261",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "touch": true
     },
@@ -65,6 +65,33 @@
           "every": 1,
           "dice": "1d4"
         }
+      },
+      {
+        "kind": "modifier",
+        "stat": "speed",
+        "type": "circumstance",
+        "value": -5,
+        "who": "target",
+        "duration": {
+          "untilEndOfCasterNextTurn": true
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "modifier",
+        "stat": "speed",
+        "type": "circumstance",
+        "value": -10,
+        "who": "target",
+        "duration": {
+          "untilEndOfCasterNextTurn": true
+        },
+        "on": [
+          "failure",
+          "criticalFailure"
+        ]
       }
     ]
   }
