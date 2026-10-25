@@ -4,6 +4,41 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## 0.12.0 — 2026-10-25
+
+### Added
+
+- `spell.effect`: what a spell does as structured parts (damage, condition,
+  push, heal, temporary Hit Points, modifier, weakness, resistance, temporary
+  immunity), with the degrees each applies on, how it heightens, the range,
+  area, targets and duration as structure, a version per action count, and
+  `whole`: whether the text adds a rule beyond the structure. A heightened
+  entry may carry a full `effect` that replaces the block from its rank up.
+- 96 records of ranks 0 to 2 carry an `effect`, 31 of them `whole: true`. All 96
+  are `"assistant"` with a review note: every number was checked against the
+  book.
+- Three records' `defense` is now basic, as the text prints: daze, brain drain
+  and floating flame.
+
+### Without an effect
+
+The other 180 records of ranks 0 to 2 are read and named, and carry no `effect`
+because the vocabulary has no word for what they do. Ranks 3 and above are not
+yet classified; they follow in later waves.
+
+- utility, 82: a bonus, a penalty, a roll made twice, extra healing or damage by
+  a formula, an attitude, a compulsion, and other effects that fit no part.
+- object, 20: the spell acts on an item, food or a weapon, not on a creature.
+- hours, 16: its effect lasts hours or is worked out of encounter time.
+- illusion, 13: a sensory effect that is no rule the parts can state.
+- summon, 11: a creature appears; its stat block is the effect.
+- polymorph, 10: the target takes a new form, whose statistics are the effect.
+- movement, 9: a Speed, a fall slowed, or a creature moved.
+- terrain, 9: a zone that lasts and changes what crosses it.
+- companion, 5: the spell acts on the caster's companion or minion.
+- counteract, 4: the spell is a counteract check against another effect.
+- affliction, 1: it cleanses an affliction.
+
 ## 0.11.0 — 2026-10-23
 
 ### Added
