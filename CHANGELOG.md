@@ -13,11 +13,12 @@ major for renamed or removed ids, new required fields and markup changes.
   rank, `legendaryNoDamage`), `noDamage` (with `freeHand` when the text asks for
   one), `halfDistance`.
 - `effect.pit` on a hazard's ability: `side` and `depth` in feet.
-- Ten records carry the new fields, read from the book: Combat Climber, Sure
-  Feet, Cliffscale Lizardfolk, Vine Leshy and Shortshanks Hobgoblin (`climb`);
+- Eleven records carry the new fields, read from the book: Combat Climber, Sure
+  Feet, Cliffscale Lizardfolk, Deep Orc, Vine Leshy and Shortshanks Hobgoblin
+  (`climb`);
   Cat Fall, Skyborn Tengu, Leaf Leshy, Windweb Tripkee and Unbreakable Goblin
   (`fall`). The hidden pit carries its measure, 10 feet square and 20 feet deep,
-  with `whole: true`. All eleven are `"assistant"`, with a review note naming the
+  with `whole: true`. All twelve are `"assistant"`, with a review note naming the
   page. Every other part of these records' effects stays in the text.
 
 ## 0.12.0 — 2026-10-25

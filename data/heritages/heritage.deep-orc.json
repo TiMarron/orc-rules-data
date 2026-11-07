@@ -9,8 +9,12 @@
     "page": 71,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "heritage.deep-orc.text",
-  "ancestry": "ancestry.orc"
+  "ancestry": "ancestry.orc",
+  "climb": {
+    "notOffGuard": true
+  },
+  "editNote": "climb read from the book p.71: not off-guard comes from the Combat Climber feat the heritage grants, a grant the dataset does not model. The Terrain Expertise feat stays in the text."
 }
