@@ -22,6 +22,48 @@
     "refAbility": { "type": "string", "pattern": "^ability\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "refRitual": { "type": "string", "pattern": "^ritual\\.[a-z0-9]+(-[a-z0-9]+)*$" },
     "feet": { "type": "integer", "minimum": 0, "multipleOf": 5 },
+    "climbModifier": {
+      "type": "object", "additionalProperties": false, "minProperties": 1,
+      "$comment": "What a record changes about Climbing, as its text prints it. Only these flags; the rest of the record's effect is text.",
+      "properties": {
+        "notOffGuard": { "const": true, "$comment": "The creature is not off-guard while it Climbs. The rest of the record's effect is text." },
+        "successIsCritical": { "const": true, "$comment": "A success on the Athletics check to Climb is a critical success. The rest of the record's effect is text." }
+      }
+    },
+    "fallModifier": {
+      "$comment": "What a record changes about falling, exactly one kind. The rest of the record's effect is text.",
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false, "required": ["shorter"],
+          "properties": {
+            "shorter": {
+              "type": "object", "additionalProperties": false, "required": ["skill", "trained", "expert", "master"],
+              "$comment": "A skill check shortens the fall by the feet printed for the character's rank in the skill. The rest of the record's effect is text.",
+              "properties": {
+                "skill": { "$ref": "#/$defs/refSkill" },
+                "trained": { "$ref": "#/$defs/feet" },
+                "expert": { "$ref": "#/$defs/feet" },
+                "master": { "$ref": "#/$defs/feet" },
+                "legendaryNoDamage": { "const": true, "$comment": "A legendary character takes no damage from the fall at all." }
+              }
+            }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["noDamage"],
+          "properties": {
+            "noDamage": { "const": true, "$comment": "The fall deals no damage. The rest of the record's effect is text." },
+            "freeHand": { "const": true, "$comment": "Needs a free hand to grab the edge. Only with `noDamage`." }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["halfDistance"],
+          "properties": {
+            "halfDistance": { "const": true, "$comment": "The fall counts as half its distance. The rest of the record's effect is text." }
+          }
+        }
+      ]
+    },
     "light": {
       "$comment": "The light a record sheds, as its text prints it. A source sheds bright light in its radius and dim light to double that radius (the book p.432): when the text names no dim light, `dim` is absent and that rule applies. `as` points at a record whose light this one sheds (\"like a torch\").",
       "oneOf": [

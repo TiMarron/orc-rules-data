@@ -9,6 +9,8 @@
       "properties": {
         "type": { "const": "heritage" },
         "ancestry": { "$ref": "common.schema.json#/$defs/refAncestry" },
+        "climb": { "$ref": "common.schema.json#/$defs/climbModifier" },
+        "fall": { "$ref": "common.schema.json#/$defs/fallModifier" },
         "versatile": { "type": "boolean" }
       }
     }
