@@ -83,6 +83,16 @@ cost tokens.
   modifier; absent, the darkness trait's own rule), `opaque` when light cannot
   pass through it, and `darkvision: "concealed"` when darkvision sees through it
   only as concealed. Non-magical light in it goes out by the darkness trait.
+- A feat or a heritage may carry `climb` and `fall`: what its text prints about
+  climbing and falling, and nothing else; every other part of its effect stays in
+  the text. `climb` has `notOffGuard` (not off-guard while Climbing) and
+  `successIsCritical` (a success to Climb is a critical success), at least one of
+  the two. `fall` is exactly one of three kinds: `shorter` (falls count as shorter:
+  the `skill`, the feet at `trained`, `expert` and `master`, and `legendaryNoDamage`
+  when a legendary creature takes no damage), `noDamage` (no damage from a fall of
+  any distance, with `freeHand` when that needs a free hand), or `halfDistance`
+  (falling damage as though from half the distance). A heritage that grants a feat
+  repeats that feat's fields, because the grant itself is not modelled.
 - A spell may carry `effect`: what the spell does, as structured parts, in
   the words the vocabulary has and nothing else. `parts` lists them in print
   order, each of one of nine kinds: `damage` (dice, type or a choice of
@@ -371,7 +381,10 @@ cost tokens.
   fields: `true` when it does not (a rune that deals its damage against a
   basic save), `false` when it does (a slab that also pushes, a curse, death
   at 0 HP). It tells a reader whether it must read the text, not whether a
-  game can already play the hazard.
+  game can already play the hazard. A trap's ability may also carry `pit`, the
+  pit it drops a creature into: `side` and `depth` in feet. These are the one
+  thing here not printed in the ability's own text; they come from the
+  hazard's description.
 - A `gift` is one of the powers a relic gains as its bearer grows: its
   `aspect` (one of twelve, as the book groups them), its `tier` (minor, major,
   grand) and, when the book prints one, what it `requires` — a relic of a form

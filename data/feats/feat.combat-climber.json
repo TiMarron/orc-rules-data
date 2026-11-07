@@ -12,8 +12,8 @@
     "page": 253,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.combat-climber.text",
   "level": 1,
   "category": "skill",
@@ -23,5 +23,9 @@
       "target": "skill.athletics",
       "rank": "trained"
     }
-  ]
+  ],
+  "climb": {
+    "notOffGuard": true
+  },
+  "editNote": "climb read from the book p.253: not off-guard while Climbing; Climbing with a hand occupied stays in the text."
 }

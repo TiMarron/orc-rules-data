@@ -9,8 +9,12 @@
     "page": 13,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "heritage.shortshanks-hobgoblin.text",
-  "ancestry": "ancestry.hobgoblin"
+  "ancestry": "ancestry.hobgoblin",
+  "climb": {
+    "notOffGuard": true
+  },
+  "editNote": "climb read from the book p.13: not off-guard while Climbing; the Ride feat stays in the text."
 }

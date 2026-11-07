@@ -9,8 +9,13 @@
     "page": 25,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "heritage.cliffscale-lizardfolk.text",
-  "ancestry": "ancestry.lizardfolk"
+  "ancestry": "ancestry.lizardfolk",
+  "climb": {
+    "notOffGuard": true,
+    "successIsCritical": true
+  },
+  "editNote": "climb read from the book p.25: a success to climb is a critical success; not off-guard comes from the Combat Climber feat the heritage grants, a grant the dataset does not model. Climbing with free hands stays in the text."
 }

@@ -12,8 +12,8 @@
     "page": 102,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "hazard.hidden-pit.text",
   "kind": "trap",
   "complexity": "simple",
@@ -55,8 +55,16 @@
       "name": "hazard.hidden-pit.abilities.pitfall.name",
       "actions": "reaction",
       "trigger": "hazard.hidden-pit.abilities.pitfall.trigger",
-      "text": "hazard.hidden-pit.abilities.pitfall.text"
+      "text": "hazard.hidden-pit.abilities.pitfall.text",
+      "effect": {
+        "pit": {
+          "side": 10,
+          "depth": 20
+        },
+        "whole": true
+      }
     }
   ],
-  "reset": "hazard.hidden-pit.reset"
+  "reset": "hazard.hidden-pit.reset",
+  "editNote": "pit read from the book pp.102-103: the pit is 10 feet square and 20 feet deep (p.102); Pitfall is printed on p.103. Whole: the fall and Grab an Edge are general rules."
 }

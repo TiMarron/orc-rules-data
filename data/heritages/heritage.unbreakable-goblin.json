@@ -9,8 +9,12 @@
     "page": 55,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "heritage.unbreakable-goblin.text",
-  "ancestry": "ancestry.goblin"
+  "ancestry": "ancestry.goblin",
+  "fall": {
+    "halfDistance": true
+  },
+  "editNote": "fall read from the book p.55: falling damage as though from half the distance; the Hit Points stay in the text."
 }
