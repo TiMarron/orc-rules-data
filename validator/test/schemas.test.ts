@@ -1626,6 +1626,74 @@ describe('light and darkness', () => {
   });
 });
 
+describe('climb and fall modifiers, a hazard pit', () => {
+  const messages = (type: string, json: Record<string, unknown>) => issuesFor(type, json).join(String.fromCharCode(10));
+  const SHORTER = { skill: 'skill.acrobatics', trained: 10, expert: 25, master: 50, legendaryNoDamage: true };
+  const effectOf = (effect: unknown) => ({
+    ...VALID.hazard,
+    abilities: [{ id: 'x', name: 'hazard.scythe-blades.abilities.x.name', actions: 'reaction', text: 'hazard.scythe-blades.abilities.x.text', effect }],
+  });
+
+  it('accepts climb and fall on a feat and a heritage', () => {
+    for (const climb of [{ notOffGuard: true }, { successIsCritical: true }, { notOffGuard: true, successIsCritical: true }]) {
+      expect(issuesFor('feat', { ...VALID.feat, climb })).toEqual([]);
+      expect(issuesFor('heritage', { ...VALID.heritage, climb })).toEqual([]);
+    }
+    for (const fall of [{ shorter: SHORTER }, { noDamage: true }, { noDamage: true, freeHand: true }, { halfDistance: true }]) {
+      expect(issuesFor('feat', { ...VALID.feat, fall })).toEqual([]);
+      expect(issuesFor('heritage', { ...VALID.heritage, fall })).toEqual([]);
+    }
+  });
+
+  it('rejects an empty climb, an unknown climb field and a false flag', () => {
+    expect(messages('feat', { ...VALID.feat, climb: {} })).toContain('/climb');
+    expect(messages('heritage', { ...VALID.heritage, climb: {} })).toContain('/climb');
+    expect(messages('feat', { ...VALID.feat, climb: { notOffGuard: true, speed: 10 } })).toContain('(speed)');
+    expect(messages('feat', { ...VALID.feat, climb: { notOffGuard: false } })).toContain('/climb');
+  });
+
+  it('rejects a fall with two kinds, none, an unknown field, or a free hand without no damage', () => {
+    expect(messages('feat', { ...VALID.feat, fall: { noDamage: true, halfDistance: true } })).toContain('/fall');
+    expect(messages('feat', { ...VALID.feat, fall: { shorter: SHORTER, noDamage: true } })).toContain('/fall');
+    expect(messages('feat', { ...VALID.feat, fall: {} })).toContain('/fall');
+    expect(messages('feat', { ...VALID.feat, fall: { halfDistance: true, extra: 1 } })).toContain('/fall');
+    expect(messages('feat', { ...VALID.feat, fall: { halfDistance: true, freeHand: true } })).toContain('/fall');
+    expect(messages('feat', { ...VALID.feat, fall: { shorter: SHORTER, freeHand: true } })).toContain('/fall');
+  });
+
+  it('rejects a shorter fall without its skill or a rank, or with an unknown field', () => {
+    const { skill, ...noSkill } = SHORTER;
+    const { master, ...noMaster } = SHORTER;
+    expect(messages('feat', { ...VALID.feat, fall: { shorter: noSkill } })).toContain("required property 'skill'");
+    expect(messages('feat', { ...VALID.feat, fall: { shorter: noMaster } })).toContain("required property 'master'");
+    expect(messages('feat', { ...VALID.feat, fall: { shorter: { ...SHORTER, legendary: 1 } } })).toContain('(legendary)');
+  });
+
+  it('accepts a shorter fall without legendaryNoDamage', () => {
+    const { legendaryNoDamage, ...rest } = SHORTER;
+    expect(issuesFor('feat', { ...VALID.feat, fall: { shorter: rest } })).toEqual([]);
+  });
+
+  it('accepts a pit with a whole effect', () => {
+    expect(issuesFor('hazard', effectOf({ pit: { side: 10, depth: 20 }, whole: true }))).toEqual([]);
+    expect(issuesFor('hazard', effectOf({ pit: { side: 10, depth: 20 }, save: { type: 'reflex', dc: 20, basic: false }, whole: false }))).toEqual([]);
+  });
+
+  it('rejects a pit without a depth, a side, with a zero or fractional size, an unknown field, and a lone pit without whole', () => {
+    expect(messages('hazard', effectOf({ pit: { side: 10 }, whole: true }))).toContain("required property 'depth'");
+    expect(messages('hazard', effectOf({ pit: { depth: 20 }, whole: true }))).toContain("required property 'side'");
+    expect(messages('hazard', effectOf({ pit: { side: 0, depth: 20 }, whole: true }))).toContain('/pit/side');
+    expect(messages('hazard', effectOf({ pit: { side: 10, depth: 2.5 }, whole: true }))).toContain('/pit/depth');
+    expect(messages('hazard', effectOf({ pit: { side: 10, depth: 20, spikes: true }, whole: true }))).toContain('(spikes)');
+    expect(messages('hazard', effectOf({ pit: { side: 10, depth: 20 } }))).toContain("required property 'whole'");
+  });
+
+  it('rejects climb, fall and pit on records that have no use for them', () => {
+    expect(messages('item', { ...VALID.item, climb: { notOffGuard: true } })).toContain('(climb)');
+    expect(messages('item', { ...VALID.item, fall: { noDamage: true } })).toContain('(fall)');
+  });
+});
+
 describe('spell effect', () => {
   const withEffect = (effect: unknown) => ({ ...VALID.spell, effect });
   const messages = (effect: unknown) => issuesFor('spell', withEffect(effect)).join(String.fromCharCode(10));

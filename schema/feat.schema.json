@@ -16,6 +16,8 @@
         "requirements": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "frequency": { "$ref": "common.schema.json#/$defs/i18nKey" },
         "light": { "$ref": "common.schema.json#/$defs/light" },
+        "climb": { "$ref": "common.schema.json#/$defs/climbModifier" },
+        "fall": { "$ref": "common.schema.json#/$defs/fallModifier" },
         "prerequisites": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/prerequisite" } },
         "class": {
           "oneOf": [
