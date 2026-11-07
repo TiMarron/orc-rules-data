@@ -24,5 +24,14 @@
       "rank": "trained"
     }
   ],
-  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
+  "fall": {
+    "shorter": {
+      "skill": "skill.acrobatics",
+      "trained": 10,
+      "expert": 25,
+      "master": 50,
+      "legendaryNoDamage": true
+    }
+  },
+  "editNote": "fall read from the book p.253: falls 10 feet shorter, 25 at expert, 50 at master, no damage at legendary. Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
 }

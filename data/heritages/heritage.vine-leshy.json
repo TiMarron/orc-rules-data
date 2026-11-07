@@ -9,8 +9,12 @@
     "page": 68,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "heritage.vine-leshy.text",
-  "ancestry": "ancestry.leshy"
+  "ancestry": "ancestry.leshy",
+  "climb": {
+    "successIsCritical": true
+  },
+  "editNote": "climb read from the book p.68: a success to Climb is a critical success; needing no free hands stays in the text."
 }

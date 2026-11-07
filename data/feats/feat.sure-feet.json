@@ -11,11 +11,16 @@
     "page": 60,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "feat.sure-feet.text",
   "level": 1,
   "category": "ancestry",
   "ancestry": "ancestry.halfling",
-  "prerequisites": []
+  "prerequisites": [],
+  "climb": {
+    "notOffGuard": true,
+    "successIsCritical": true
+  },
+  "editNote": "climb read from the book p.60: a success to Climb is a critical success, not off-guard while Climbing; the same for Balance stays in the text."
 }
