@@ -306,10 +306,10 @@
             "kind": { "const": "modifier" },
             "stat": {
               "anyOf": [
-                { "enum": ["ac", "attack", "damage", "saves", "fortitude", "reflex", "will", "perception", "skills", "all-checks-and-dcs", "speed"] },
+                { "enum": ["ac", "attack", "damage", "saves", "fortitude", "reflex", "will", "perception", "skills", "all-checks-and-dcs", "speed", "speed:land"] },
                 { "type": "string", "pattern": "^skill:[a-z0-9-]+$" }
               ],
-              "$comment": "What it modifies: a name from the list, or `skill:<slug>` for one skill; `skills` means all skill checks."
+              "$comment": "What it modifies: a name from the list, or `skill:<slug>` for one skill; `skills` means all skill checks; `speed` is all of the creature's Speeds (\"its Speeds\", \"all Speeds\"), `speed:land` its land Speed only (a bare \"Speed\", Player Core p.420)."
             },
             "type": { "enum": ["status", "circumstance", "item"], "$comment": "The bonus or penalty type." },
             "value": { "type": "integer", "not": { "const": 0 }, "$comment": "The modifier, negative for a penalty; feet for `speed`." },
