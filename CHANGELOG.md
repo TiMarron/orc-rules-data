@@ -4,6 +4,18 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## 0.14.0 — 2026-11-10
+
+### Added
+
+- `speed:land` as the `stat` of a spell's modifier part: the land Speed only.
+
+### Changed
+
+- Fleet Step, Tailwind and Athletic Rush modify `speed:land`, as their bare
+  "Speed" reads (Player Core p.420). `speed` now means all of a creature's
+  Speeds, as the five records that keep it print.
+
 ## 0.13.0 — 2026-11-07
 
 ### Added

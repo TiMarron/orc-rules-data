@@ -98,7 +98,8 @@ cost tokens.
   order, each of one of nine kinds: `damage` (dice, type or a choice of
   `types`, `persistent`), `condition` (a condition record, its value and
   duration, on the target or on the caster), `push`, `heal`, `tempHp`,
-  `modifier`, `weakness`, `resistance` and `temporaryImmunity`. `on` names the
+  `modifier` (its `stat` `speed` is all of a creature's Speeds, `speed:land` the
+  land Speed only), `weakness`, `resistance` and `temporaryImmunity`. `on` names the
   degrees of success a part applies on: the target's for a saving throw, the
   caster's for a spell attack. A `damage` part without `on` follows the scale
   the roll implies — the rule for basic saves (nothing, half, full, double) or,

@@ -37,7 +37,7 @@
     "parts": [
       {
         "kind": "modifier",
-        "stat": "speed",
+        "stat": "speed:land",
         "type": "status",
         "value": 10,
         "who": "self"
