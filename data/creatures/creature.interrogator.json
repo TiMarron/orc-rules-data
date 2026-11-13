@@ -1,0 +1,179 @@
+{
+  "id": "creature.interrogator",
+  "type": "creature",
+  "name": "creature.interrogator.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 158,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.dart",
+      "count": 5
+    },
+    {
+      "item": "item.healers-toolkit"
+    },
+    {
+      "item": "item.leather-armor",
+      "name": "creature.interrogator.items.2.name"
+    },
+    {
+      "item": "item.war-razor",
+      "potency": 1,
+      "note": "creature.interrogator.items.3.note"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 12,
+    "will": 11
+  },
+  "hp": {
+    "value": 90
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.interrogator.strikes.war-razor.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "backstabber",
+        "deadly",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "torment"
+        }
+      ],
+      "item": "item.war-razor"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.interrogator.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "torment"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.interrogator.strikes.dart.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "torment"
+        }
+      ],
+      "item": "item.dart"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blood-and-fear",
+      "section": "offense",
+      "name": "creature.interrogator.abilities.blood-and-fear.name",
+      "actions": "2",
+      "text": "creature.interrogator.abilities.blood-and-fear.text"
+    },
+    {
+      "id": "hobble",
+      "section": "offense",
+      "name": "creature.interrogator.abilities.hobble.name",
+      "actions": "1",
+      "requirements": "creature.interrogator.abilities.hobble.requirements",
+      "text": "creature.interrogator.abilities.hobble.text"
+    },
+    {
+      "id": "torment",
+      "section": "offense",
+      "name": "creature.interrogator.abilities.torment.name",
+      "text": "creature.interrogator.abilities.torment.text"
+    }
+  ],
+  "editNote": "Item parenthesis added from the book: page 158 prints \"(see sidebar)\" is the entry's note; the source omits it, and there is no errata for the book."
+}

@@ -1,0 +1,188 @@
+{
+  "id": "creature.tripkee-scout",
+  "type": "creature",
+  "name": "creature.tripkee-scout.name",
+  "traits": [
+    "humanoid",
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 214,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "tripkee"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 4
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7,
+      "note": "creature.tripkee-scout.skills.3.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 3,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.dart",
+      "count": 5
+    },
+    {
+      "item": "item.hand-adze"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.net"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 9,
+    "will": 6
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 20,
+    "note": "creature.tripkee-scout.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tripkee-scout.strikes.hand-adze.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hand-adze"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tripkee-scout.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tripkee-scout.strikes.dart.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dart"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tripkee-scout.strikes.hand-adze-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hand-adze"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hurl-net",
+      "section": "offense",
+      "name": "creature.tripkee-scout.abilities.hurl-net.name",
+      "actions": "1",
+      "requirements": "creature.tripkee-scout.abilities.hurl-net.requirements",
+      "text": "creature.tripkee-scout.abilities.hurl-net.text"
+    },
+    {
+      "id": "forest-passage",
+      "section": "offense",
+      "name": "creature.tripkee-scout.abilities.forest-passage.name",
+      "text": "creature.tripkee-scout.abilities.forest-passage.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 214 prints \"Stealth +7 (+9 in forests)\"; the source omits the parenthesis, and there is no errata for the book."
+}

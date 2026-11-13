@@ -1,0 +1,263 @@
+{
+  "id": "creature.sibyl",
+  "type": "creature",
+  "name": "creature.sibyl.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 30,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.lifesense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 9
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 9
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": -1,
+    "int": 2,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "name": "creature.sibyl.items.0.name"
+    },
+    {
+      "item": "item.dagger"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 8,
+    "will": 12
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sibyl.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "spirit"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sibyl.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "spirit"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.sibyl.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "spirit"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "induce-awe",
+      "section": "top",
+      "name": "creature.sibyl.abilities.induce-awe.name",
+      "text": "creature.sibyl.abilities.induce-awe.text"
+    },
+    {
+      "id": "foresight",
+      "section": "defense",
+      "name": "creature.sibyl.abilities.foresight.name",
+      "actions": "reaction",
+      "trigger": "creature.sibyl.abilities.foresight.trigger",
+      "text": "creature.sibyl.abilities.foresight.text"
+    },
+    {
+      "id": "divine-frenzy",
+      "section": "offense",
+      "name": "creature.sibyl.abilities.divine-frenzy.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "emotion",
+        "mental"
+      ],
+      "requirements": "creature.sibyl.abilities.divine-frenzy.requirements",
+      "text": "creature.sibyl.abilities.divine-frenzy.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "divine",
+      "dc": 19,
+      "attack": 11,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.divine-lance"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.haunting-hymn"
+          },
+          {
+            "spell": "spell.know-the-way"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.concordant-choir"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.mindlink"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.augury"
+            },
+            {
+              "spell": "spell.darkness"
+            },
+            {
+              "spell": "spell.sudden-blight"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.sibyl.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 19,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.brain-drain"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

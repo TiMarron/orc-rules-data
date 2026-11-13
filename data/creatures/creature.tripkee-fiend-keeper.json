@@ -1,0 +1,184 @@
+{
+  "id": "creature.tripkee-fiend-keeper",
+  "type": "creature",
+  "name": "creature.tripkee-fiend-keeper.name",
+  "traits": [
+    "humanoid",
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 215,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "small",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "diabolic",
+    "tripkee"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 16
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17,
+      "note": "creature.tripkee-fiend-keeper.skills.4.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 2,
+    "int": 1,
+    "wis": 4,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.cruuk",
+      "potency": 1
+    },
+    {
+      "item": "item.leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 15,
+    "will": 18
+  },
+  "hp": {
+    "value": 125
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 20,
+    "note": "creature.tripkee-fiend-keeper.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tripkee-fiend-keeper.strikes.cruuk.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.cruuk"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tripkee-fiend-keeper.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tripkee-fiend-keeper.strikes.cruuk-2.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.cruuk"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bounce-cruuk",
+      "section": "offense",
+      "name": "creature.tripkee-fiend-keeper.abilities.bounce-cruuk.name",
+      "actions": "2",
+      "text": "creature.tripkee-fiend-keeper.abilities.bounce-cruuk.text"
+    },
+    {
+      "id": "harness-wickedness",
+      "section": "offense",
+      "name": "creature.tripkee-fiend-keeper.abilities.harness-wickedness.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "divine",
+        "unholy"
+      ],
+      "requirements": "creature.tripkee-fiend-keeper.abilities.harness-wickedness.requirements",
+      "text": "creature.tripkee-fiend-keeper.abilities.harness-wickedness.text"
+    },
+    {
+      "id": "hunter-of-virtue",
+      "section": "offense",
+      "name": "creature.tripkee-fiend-keeper.abilities.hunter-of-virtue.name",
+      "text": "creature.tripkee-fiend-keeper.abilities.hunter-of-virtue.text"
+    },
+    {
+      "id": "forest-passage",
+      "section": "offense",
+      "name": "creature.tripkee-fiend-keeper.abilities.forest-passage.name",
+      "text": "creature.tripkee-fiend-keeper.abilities.forest-passage.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 215 prints \"Stealth +17 (+19 in forests)\"; the source omits the parenthesis, and there is no errata for the book."
+}

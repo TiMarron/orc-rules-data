@@ -1,0 +1,336 @@
+{
+  "id": "creature.halfling-yarnspinner",
+  "type": "creature",
+  "name": "creature.halfling-yarnspinner.name",
+  "traits": [
+    "halfling",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 192,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "small",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "own": "keen-eyes"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "halfling"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 16
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 16
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 16
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "lore": "creature.halfling-yarnspinner.lore.4",
+      "mod": 19
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 19,
+      "note": "creature.halfling-yarnspinner.skills.6.note"
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 15
+    },
+    {
+      "skill": "skill.society",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 4,
+    "con": 0,
+    "int": 4,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "name": "creature.halfling-yarnspinner.items.0.name"
+    },
+    {
+      "item": "item.chain-shirt"
+    },
+    {
+      "item": "item.halfling-sling-staff",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.shortsword",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 15,
+    "will": 18
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.halfling-yarnspinner.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "resonant-weapons"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.halfling-yarnspinner.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.halfling-yarnspinner.strikes.halfling-sling-staff.name",
+      "actions": "1",
+      "bonus": 16,
+      "rangeIncrement": 30,
+      "reload": 1,
+      "traits": [
+        "magical",
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "resonant-weapons"
+        }
+      ],
+      "item": "item.halfling-sling-staff"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "keen-eyes",
+      "section": "top",
+      "name": "creature.halfling-yarnspinner.abilities.keen-eyes.name",
+      "text": "creature.halfling-yarnspinner.abilities.keen-eyes.text"
+    },
+    {
+      "id": "tale-specialist",
+      "section": "top",
+      "name": "creature.halfling-yarnspinner.abilities.tale-specialist.name",
+      "text": "creature.halfling-yarnspinner.abilities.tale-specialist.text"
+    },
+    {
+      "id": "guidance-through-tales",
+      "section": "defense",
+      "name": "creature.halfling-yarnspinner.abilities.guidance-through-tales.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "trigger": "creature.halfling-yarnspinner.abilities.guidance-through-tales.trigger",
+      "text": "creature.halfling-yarnspinner.abilities.guidance-through-tales.text"
+    },
+    {
+      "id": "mesmerizing-tale",
+      "section": "offense",
+      "name": "creature.halfling-yarnspinner.abilities.mesmerizing-tale.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "aura",
+        "incapacitation",
+        "linguistic",
+        "mental",
+        "occult"
+      ],
+      "text": "creature.halfling-yarnspinner.abilities.mesmerizing-tale.text"
+    },
+    {
+      "id": "resonant-weapons",
+      "section": "offense",
+      "name": "creature.halfling-yarnspinner.abilities.resonant-weapons.name",
+      "traits": [
+        "occult",
+        "sonic"
+      ],
+      "text": "creature.halfling-yarnspinner.abilities.resonant-weapons.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 26,
+      "attack": 18,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.illusory-disguise"
+            },
+            {
+              "spell": "spell.illusory-object"
+            },
+            {
+              "spell": "spell.mindlink"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility"
+            },
+            {
+              "spell": "spell.laughing-fit"
+            },
+            {
+              "spell": "spell.revealing-light"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.heroism"
+            },
+            {
+              "spell": "spell.ring-of-truth"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.confusion"
+            },
+            {
+              "spell": "spell.honeyed-words"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 192 prints \"Performance +19 (+21 for oratory)\"; the source omits the parenthesis, and there is no errata for the book."
+}

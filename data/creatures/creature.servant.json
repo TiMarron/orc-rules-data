@@ -1,0 +1,161 @@
+{
+  "id": "creature.servant",
+  "type": "creature",
+  "name": "creature.servant.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 66,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 4
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 6,
+      "note": "creature.servant.skills.2.note"
+    },
+    {
+      "skill": "skill.society",
+      "mod": 2
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "name": "creature.servant.items.0.name",
+      "count": 10
+    },
+    {
+      "name": "creature.servant.items.1.name"
+    },
+    {
+      "name": "creature.servant.items.2.name",
+      "hardness": 3,
+      "hp": 6,
+      "bt": 3
+    }
+  ],
+  "ac": {
+    "value": 14,
+    "note": "creature.servant.ac.note"
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 7,
+    "will": 3
+  },
+  "hp": {
+    "value": 7
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.servant.strikes.cutlery.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.servant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.servant.strikes.cutlery-2.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "15",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "quick-catch",
+      "section": "defense",
+      "name": "creature.servant.abilities.quick-catch.name",
+      "actions": "reaction",
+      "trigger": "creature.servant.abilities.quick-catch.trigger",
+      "requirements": "creature.servant.abilities.quick-catch.requirements",
+      "text": "creature.servant.abilities.quick-catch.text"
+    },
+    {
+      "id": "protective-platter",
+      "section": "offense",
+      "name": "creature.servant.abilities.protective-platter.name",
+      "text": "creature.servant.abilities.protective-platter.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 66 prints \"Lore (any one subcategory related to their job, such as Alcohol Lore, Baking Lore, or Household Lore) +6\"; the source omits the parenthesis, and there is no errata for the book. Item parentheses added from the book: page 66 prints \"(10)\" is the entry's count; \"(Hardness 3, HP 6, BT 3)\" are the entry's shield statistics; the source omits them, and there is no errata for the book."
+}

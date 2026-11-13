@@ -1,0 +1,206 @@
+{
+  "id": "creature.prophet",
+  "type": "creature",
+  "name": "creature.prophet.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 30,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 8,
+      "note": "creature.prophet.skills.1.note"
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 0,
+    "int": 1,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.flail"
+    },
+    {
+      "item": "item.religious-text",
+      "name": "creature.prophet.items.1.name"
+    },
+    {
+      "name": "creature.prophet.items.2.name",
+      "count": 10
+    },
+    {
+      "name": "creature.prophet.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 7,
+    "will": 11
+  },
+  "hp": {
+    "value": 25
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.prophet.strikes.flail.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "disarm",
+        "sweep",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.flail"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.prophet.strikes.fist.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.prophet.strikes.rock.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "divine",
+      "dc": 18,
+      "attack": 10,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.know-the-way"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bless"
+            },
+            {
+              "spell": "spell.enfeeble"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.sanctuary"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.prophet.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 18,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.read-fate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 30 prints \"Performance +8 (+10 to spout prophecy)\"; the source omits the parenthesis, and there is no errata for the book. Item parenthesis added from the book: page 30 prints \"(10)\" is the entry's count; the source omits it, and there is no errata for the book."
+}

@@ -1,0 +1,175 @@
+{
+  "id": "creature.orc-gamekeeper",
+  "type": "creature",
+  "name": "creature.orc-gamekeeper.name",
+  "traits": [
+    "humanoid",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 206,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "orcish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 0,
+    "int": 0,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.bola",
+      "count": 4
+    },
+    {
+      "item": "item.hampering-snare",
+      "count": 2
+    },
+    {
+      "item": "item.net"
+    },
+    {
+      "item": "item.whip"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 12,
+    "will": 9
+  },
+  "hp": {
+    "value": 65
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.orc-gamekeeper.strikes.whip.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "disarm",
+        "finesse",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.whip"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.orc-gamekeeper.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.orc-gamekeeper.strikes.bola.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "nonlethal",
+        "ranged-trip",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.bola"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "insistent-command",
+      "section": "top",
+      "name": "creature.orc-gamekeeper.abilities.insistent-command.name",
+      "text": "creature.orc-gamekeeper.abilities.insistent-command.text"
+    },
+    {
+      "id": "play-chicken",
+      "section": "defense",
+      "name": "creature.orc-gamekeeper.abilities.play-chicken.name",
+      "actions": "reaction",
+      "trigger": "creature.orc-gamekeeper.abilities.play-chicken.trigger",
+      "text": "creature.orc-gamekeeper.abilities.play-chicken.text"
+    },
+    {
+      "id": "animal-tandem",
+      "section": "offense",
+      "name": "creature.orc-gamekeeper.abilities.animal-tandem.name",
+      "actions": "2",
+      "text": "creature.orc-gamekeeper.abilities.animal-tandem.text"
+    }
+  ]
+}

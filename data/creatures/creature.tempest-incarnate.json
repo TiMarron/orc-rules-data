@@ -1,0 +1,331 @@
+{
+  "id": "creature.tempest-incarnate",
+  "type": "creature",
+  "name": "creature.tempest-incarnate.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 136,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 19,
+  "size": "medium",
+  "perception": {
+    "mod": 29
+  },
+  "languages": [
+    "common",
+    "sussuran",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 35
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 37
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 34
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 35
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 31
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 5,
+    "con": 3,
+    "int": 1,
+    "wis": 4,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.explorers-clothing",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.resilient-greater"
+        }
+      ]
+    },
+    {
+      "item": "item.handwraps-of-mighty-blows",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking-greater"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 40
+  },
+  "saves": {
+    "fortitude": 30,
+    "reflex": 34,
+    "will": 31
+  },
+  "hp": {
+    "value": 360
+  },
+  "weaknesses": [
+    {
+      "own": "earthbound-vulnerability"
+    }
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 15
+    },
+    {
+      "type": "electricity",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 60,
+    "note": "creature.tempest-incarnate.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tempest-incarnate.strikes.fist.name",
+      "actions": "1",
+      "bonus": 32,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "3d4+8",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "3d12",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.push",
+          "text": "creature.tempest-incarnate.strikes.fist.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "wind-rider",
+      "section": "top",
+      "name": "creature.tempest-incarnate.abilities.wind-rider.name",
+      "text": "creature.tempest-incarnate.abilities.wind-rider.text"
+    },
+    {
+      "id": "hurricane-cloak",
+      "section": "defense",
+      "name": "creature.tempest-incarnate.abilities.hurricane-cloak.name",
+      "traits": [
+        "air",
+        "aura",
+        "primal"
+      ],
+      "aura": 10,
+      "text": "creature.tempest-incarnate.abilities.hurricane-cloak.text"
+    },
+    {
+      "id": "earthbound-vulnerability",
+      "section": "defense",
+      "name": "creature.tempest-incarnate.abilities.earthbound-vulnerability.name",
+      "text": "creature.tempest-incarnate.abilities.earthbound-vulnerability.text"
+    },
+    {
+      "id": "intimidating-storm",
+      "section": "offense",
+      "name": "creature.tempest-incarnate.abilities.intimidating-storm.name",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.tempest-incarnate.abilities.intimidating-storm.text"
+    },
+    {
+      "id": "swiftness",
+      "section": "offense",
+      "name": "creature.tempest-incarnate.abilities.swiftness.name",
+      "text": "creature.tempest-incarnate.abilities.swiftness.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "primal",
+      "dc": 44,
+      "attack": 37,
+      "cantrips": {
+        "rank": 10,
+        "spells": [
+          {
+            "spell": "spell.caustic-blast"
+          },
+          {
+            "spell": "spell.electric-arc"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.know-the-way"
+          },
+          {
+            "spell": "spell.sigil"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.air-bubble"
+            },
+            {
+              "spell": "spell.gust-of-wind"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.mist"
+            },
+            {
+              "spell": "spell.water-breathing"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.wall-of-wind"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.hydraulic-torrent"
+            },
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.control-water"
+            },
+            {
+              "spell": "spell.environmental-endurance"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.field-of-life"
+            },
+            {
+              "spell": "spell.truesight"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.unfettered-pack"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.arctic-rift"
+            },
+            {
+              "spell": "spell.chain-lightning"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.detonate-magic",
+              "note": "creature.tempest-incarnate.spellcasting.0.ranks.9.0.note"
+            },
+            {
+              "spell": "spell.wrathful-storm"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 10,
+          "spells": [
+            {
+              "spell": "spell.cataclysm"
+            }
+          ],
+          "slots": 1
+        }
+      ]
+    }
+  ],
+  "editNote": "Slots corrected to the book: page 136 prints \"2nd (4 slots) mist, water breathing\"; the source gives no slots for the rank."
+}

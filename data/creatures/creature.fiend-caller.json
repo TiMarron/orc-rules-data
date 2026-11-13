@@ -1,0 +1,276 @@
+{
+  "id": "creature.fiend-caller",
+  "type": "creature",
+  "name": "creature.fiend-caller.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "unholy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 153,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "chthonian",
+    "common",
+    "daemonic",
+    "diabolic",
+    "requian"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 15
+    },
+    {
+      "lore": "creature.fiend-caller.lore.2",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 10
+    },
+    {
+      "lore": "creature.fiend-caller.lore.4",
+      "mod": 18
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 16
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 13
+    },
+    {
+      "skill": "skill.society",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 0,
+    "int": 4,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "name": "creature.fiend-caller.items.1.name",
+      "note": "creature.fiend-caller.items.1.note"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 9,
+    "will": 8
+  },
+  "hp": {
+    "value": 35
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.fiend-caller.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d4",
+          "type": "bleed",
+          "persistent": true
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.fiend-caller.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.fiend-caller.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d4",
+          "type": "bleed",
+          "persistent": true
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "legal-specialist",
+      "section": "top",
+      "name": "creature.fiend-caller.abilities.legal-specialist.name",
+      "text": "creature.fiend-caller.abilities.legal-specialist.text"
+    },
+    {
+      "id": "fiendish-contract",
+      "section": "offense",
+      "name": "creature.fiend-caller.abilities.fiendish-contract.name",
+      "traits": [
+        "downtime",
+        "occult"
+      ],
+      "text": "creature.fiend-caller.abilities.fiendish-contract.text"
+    },
+    {
+      "id": "fiendish-ritualist",
+      "section": "offense",
+      "name": "creature.fiend-caller.abilities.fiendish-ritualist.name",
+      "text": "creature.fiend-caller.abilities.fiendish-ritualist.text"
+    },
+    {
+      "id": "planar-communique",
+      "section": "offense",
+      "name": "creature.fiend-caller.abilities.planar-communique.name",
+      "text": "creature.fiend-caller.abilities.planar-communique.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "occult",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.sigil"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.grim-tendrils"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.calm"
+            },
+            {
+              "spell": "spell.paranoia"
+            },
+            {
+              "spell": "spell.spiritual-armament"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 20,
+    "ranks": [
+      {
+        "rank": 6,
+        "rituals": [
+          {
+            "ritual": "ritual.binding-circle"
+          },
+          {
+            "ritual": "ritual.commune"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Items corrected to the book: page 153 prints \"dagger, ritual materials (candles, chalk, ink, parchment, quill, vial of blood)\"; the source broke the parenthesis into items of their own."
+}

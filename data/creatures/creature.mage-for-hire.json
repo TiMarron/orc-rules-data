@@ -1,0 +1,169 @@
+{
+  "id": "creature.mage-for-hire",
+  "type": "creature",
+  "name": "creature.mage-for-hire.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 82,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 11
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 2,
+    "con": 1,
+    "int": 4,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.invisibility-potion"
+    },
+    {
+      "name": "creature.mage-for-hire.items.1.name"
+    },
+    {
+      "item": "item.staff"
+    },
+    {
+      "item": "item.thieves-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 9,
+    "will": 10
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mage-for-hire.strikes.staff.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    }
+  ],
+  "abilities": [],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.electric-arc"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.grease"
+            },
+            {
+              "spell": "spell.mystic-armor"
+            },
+            {
+              "spell": "spell.sure-strike"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.floating-flame"
+            },
+            {
+              "spell": "spell.knock"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Traits corrected to the book: page 82 prints \"MEDIUM HUMAN HUMANOID\"; the source adds aiuvarin, and there is no errata for the book."
+}

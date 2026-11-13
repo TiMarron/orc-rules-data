@@ -1,0 +1,199 @@
+{
+  "id": "creature.departmental-chair",
+  "type": "creature",
+  "name": "creature.departmental-chair.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 141,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.departmental-chair.language-note",
+  "skills": [
+    {
+      "lore": "creature.departmental-chair.lore.0",
+      "mod": 25
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 22
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 15
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 22
+    },
+    {
+      "skill": "skill.society",
+      "mod": 17
+    },
+    {
+      "lore": "creature.departmental-chair.lore.5",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 0,
+    "int": 5,
+    "wis": 5,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.spellbook-blank"
+    },
+    {
+      "item": "item.staff",
+      "potency": 1
+    },
+    {
+      "name": "creature.departmental-chair.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 14,
+    "will": 18
+  },
+  "hp": {
+    "value": 115
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.departmental-chair.strikes.staff.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.departmental-chair.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "veteran-researcher",
+      "section": "top",
+      "name": "creature.departmental-chair.abilities.veteran-researcher.name",
+      "text": "creature.departmental-chair.abilities.veteran-researcher.text"
+    },
+    {
+      "id": "paper-pusher",
+      "section": "offense",
+      "name": "creature.departmental-chair.abilities.paper-pusher.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "spellshape"
+      ],
+      "text": "creature.departmental-chair.abilities.paper-pusher.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 25,
+      "attack": 17,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.fireball",
+              "count": 2
+            },
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.lightning-bolt"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.mountain-resilience"
+            },
+            {
+              "spell": "spell.wall-of-fire"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "creature.traveling-actor",
+  "type": "creature",
+  "name": "creature.traveling-actor.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 127,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.traveling-actor.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 10
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "lore": "creature.traveling-actor.lore.5",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 0,
+    "int": 1,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.padded-armor"
+    },
+    {
+      "item": "item.light-mace",
+      "name": "creature.traveling-actor.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 12,
+    "will": 9
+  },
+  "hp": {
+    "value": 35
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.traveling-actor.strikes.wooden-sword.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.traveling-actor.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "dramatic-death",
+      "section": "defense",
+      "name": "creature.traveling-actor.abilities.dramatic-death.name",
+      "actions": "reaction",
+      "trigger": "creature.traveling-actor.abilities.dramatic-death.trigger",
+      "text": "creature.traveling-actor.abilities.dramatic-death.text"
+    },
+    {
+      "id": "versatile-performance",
+      "section": "defense",
+      "name": "creature.traveling-actor.abilities.versatile-performance.name",
+      "text": "creature.traveling-actor.abilities.versatile-performance.text"
+    },
+    {
+      "id": "overacted-strike",
+      "section": "offense",
+      "name": "creature.traveling-actor.abilities.overacted-strike.name",
+      "actions": "2",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental",
+        "visual"
+      ],
+      "text": "creature.traveling-actor.abilities.overacted-strike.text"
+    }
+  ]
+}

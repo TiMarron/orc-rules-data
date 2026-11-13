@@ -1,0 +1,163 @@
+{
+  "id": "creature.leaping-thief",
+  "type": "creature",
+  "name": "creature.leaping-thief.name",
+  "traits": [
+    "catfolk",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 172,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "amurrun",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 2,
+    "int": 1,
+    "wis": 0,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.claw-blade"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.thieves-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 11,
+    "will": 7
+  },
+  "hp": {
+    "value": 38
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 10
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.leaping-thief.strikes.claw-blade.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "deadly",
+        "disarm",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.claw-blade"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.leaping-thief.strikes.claw.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "coiled-leap",
+      "section": "offense",
+      "name": "creature.leaping-thief.abilities.coiled-leap.name",
+      "actions": "2",
+      "text": "creature.leaping-thief.abilities.coiled-leap.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.leaping-thief.abilities.sneak-attack.name",
+      "text": "creature.leaping-thief.abilities.sneak-attack.text"
+    },
+    {
+      "id": "stealthy-pad",
+      "section": "offense",
+      "name": "creature.leaping-thief.abilities.stealthy-pad.name",
+      "actions": "1",
+      "frequency": "creature.leaping-thief.abilities.stealthy-pad.frequency",
+      "text": "creature.leaping-thief.abilities.stealthy-pad.text"
+    },
+    {
+      "id": "unexpected-angle",
+      "section": "offense",
+      "name": "creature.leaping-thief.abilities.unexpected-angle.name",
+      "text": "creature.leaping-thief.abilities.unexpected-angle.text"
+    }
+  ]
+}

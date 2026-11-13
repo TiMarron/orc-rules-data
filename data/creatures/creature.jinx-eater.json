@@ -1,0 +1,160 @@
+{
+  "id": "creature.jinx-eater",
+  "type": "creature",
+  "name": "creature.jinx-eater.name",
+  "traits": [
+    "humanoid",
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 212,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "tengu"
+  ],
+  "languageNote": "creature.jinx-eater.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 12
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 10
+    },
+    {
+      "lore": "creature.jinx-eater.lore.5",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 1,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "name": "creature.jinx-eater.items.0.name",
+      "note": "creature.jinx-eater.items.0.note"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.tengu-gale-blade"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 14,
+    "will": 11
+  },
+  "hp": {
+    "value": 65
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.jinx-eater.strikes.tengu-gale-blade.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "disarm",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.tengu-gale-blade"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.jinx-eater.strikes.beak.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "eat-fortune",
+      "section": "defense",
+      "name": "creature.jinx-eater.abilities.eat-fortune.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate",
+        "divine"
+      ],
+      "frequency": "creature.jinx-eater.abilities.eat-fortune.frequency",
+      "trigger": "creature.jinx-eater.abilities.eat-fortune.trigger",
+      "text": "creature.jinx-eater.abilities.eat-fortune.text"
+    },
+    {
+      "id": "jinxed-call",
+      "section": "offense",
+      "name": "creature.jinx-eater.abilities.jinxed-call.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "occult"
+      ],
+      "text": "creature.jinx-eater.abilities.jinxed-call.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.jinx-eater.abilities.sneak-attack.name",
+      "text": "creature.jinx-eater.abilities.sneak-attack.text"
+    }
+  ],
+  "editNote": "Item parenthesis added from the book: page 212 prints \"(containing fine alcohol to throw overboard as an offering)\" is the entry's note; the source omits it, and there is no errata for the book."
+}

@@ -1,0 +1,144 @@
+{
+  "id": "creature.standard-bearer",
+  "type": "creature",
+  "name": "creature.standard-bearer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 89,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 10
+    },
+    {
+      "skill": "skill.society",
+      "mod": 8
+    },
+    {
+      "lore": "creature.standard-bearer.lore.3",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "name": "creature.standard-bearer.items.0.name",
+      "note": "creature.standard-bearer.items.0.note"
+    },
+    {
+      "item": "item.chain-shirt"
+    },
+    {
+      "item": "item.healers-toolkit",
+      "name": "creature.standard-bearer.items.2.name"
+    },
+    {
+      "item": "item.ranseur"
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 8,
+    "will": 14
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.standard-bearer.strikes.ranseur.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "disarm",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d10+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.ranseur"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "inspiring-aura",
+      "section": "defense",
+      "name": "creature.standard-bearer.abilities.inspiring-aura.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "aura": 60,
+      "text": "creature.standard-bearer.abilities.inspiring-aura.text"
+    },
+    {
+      "id": "signal-the-advance",
+      "section": "offense",
+      "name": "creature.standard-bearer.abilities.signal-the-advance.name",
+      "actions": "2",
+      "traits": [
+        "mental",
+        "visual"
+      ],
+      "text": "creature.standard-bearer.abilities.signal-the-advance.text"
+    },
+    {
+      "id": "stay-in-the-fight",
+      "section": "offense",
+      "name": "creature.standard-bearer.abilities.stay-in-the-fight.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "mental"
+      ],
+      "text": "creature.standard-bearer.abilities.stay-in-the-fight.text"
+    }
+  ],
+  "editNote": "Items, page 89: \"Healer's Tools\" is item.healers-toolkit under its printed name: healer's tools are the healer's toolkit, the name it had before the Remaster; the source links the old page."
+}
