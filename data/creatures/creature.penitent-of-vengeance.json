@@ -1,0 +1,179 @@
+{
+  "id": "creature.penitent-of-vengeance",
+  "type": "creature",
+  "name": "creature.penitent-of-vengeance.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 28,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 4
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "lore": "creature.penitent-of-vengeance.lore.1",
+      "mod": 6
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 5
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 3
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.explorers-clothing"
+    },
+    {
+      "item": "item.religious-symbol"
+    },
+    {
+      "item": "item.whip"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 5,
+    "will": 6
+  },
+  "hp": {
+    "value": 18
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.penitent-of-vengeance.strikes.whip.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "disarm",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.whip"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.penitent-of-vengeance.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.penitent-of-vengeance.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.penitent-of-vengeance.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "agonizing-drive",
+      "section": "offense",
+      "name": "creature.penitent-of-vengeance.abilities.agonizing-drive.name",
+      "text": "creature.penitent-of-vengeance.abilities.agonizing-drive.text"
+    },
+    {
+      "id": "repentant-defiance",
+      "section": "offense",
+      "name": "creature.penitent-of-vengeance.abilities.repentant-defiance.name",
+      "actions": "2",
+      "text": "creature.penitent-of-vengeance.abilities.repentant-defiance.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore."
+}

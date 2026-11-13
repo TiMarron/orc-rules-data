@@ -8,9 +8,11 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Added
 
-- NPC Core (`npc-core`) as a source book. Its first records: 109 creatures,
+- NPC Core (`npc-core`) as a source book. Its first records: 115 creatures,
   the firearm traits capacity, concussive, kickback and scatter, the troop trait
-  and the Troop Defenses and Troop Movement abilities, two spells and two items.
+  and the Troop Defenses and Troop Movement abilities, two spells and three items.
+  The NPCs the book names for a deity or an organization of the setting carry a
+  generic name instead (Pilgrim of Self-Perfection, Order Knight Cavalry Brigade).
 
 ## 0.14.0 — 2026-11-10
 

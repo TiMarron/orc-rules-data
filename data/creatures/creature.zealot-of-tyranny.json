@@ -1,0 +1,245 @@
+{
+  "id": "creature.zealot-of-tyranny",
+  "type": "creature",
+  "name": "creature.zealot-of-tyranny.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 31,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 10
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 12
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 1,
+    "int": 0,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.half-plate"
+    },
+    {
+      "item": "item.mace"
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    }
+  ],
+  "ac": {
+    "value": 22,
+    "note": "creature.zealot-of-tyranny.ac.note"
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 7,
+    "will": 11
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.zealot-of-tyranny.strikes.mace.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.zealot-of-tyranny.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.zealot-of-tyranny.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.zealot-of-tyranny.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "swear-vengeance",
+      "section": "defense",
+      "name": "creature.zealot-of-tyranny.abilities.swear-vengeance.name",
+      "actions": "reaction",
+      "trigger": "creature.zealot-of-tyranny.abilities.swear-vengeance.trigger",
+      "text": "creature.zealot-of-tyranny.abilities.swear-vengeance.text"
+    },
+    {
+      "id": "channel-smite",
+      "section": "offense",
+      "name": "creature.zealot-of-tyranny.abilities.channel-smite.name",
+      "actions": "2",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.zealot-of-tyranny.abilities.channel-smite.text"
+    },
+    {
+      "id": "deadly-simplicity",
+      "section": "offense",
+      "name": "creature.zealot-of-tyranny.abilities.deadly-simplicity.name",
+      "text": "creature.zealot-of-tyranny.abilities.deadly-simplicity.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "divine",
+      "dc": 19,
+      "attack": 11,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.divine-lance"
+          },
+          {
+            "spell": "spell.forbidding-ward"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.sigil"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.runic-weapon"
+            },
+            {
+              "spell": "spell.spirit-link"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.harm",
+              "count": 4
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            },
+            {
+              "spell": "spell.share-life"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore."
+}

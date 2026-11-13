@@ -1,0 +1,152 @@
+{
+  "id": "creature.pilgrim-of-self-perfection",
+  "type": "creature",
+  "name": "creature.pilgrim-of-self-perfection.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 28,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 5
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "lore": "creature.pilgrim-of-self-perfection.lore.1",
+      "mod": 6
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 5
+    },
+    {
+      "skill": "skill.society",
+      "mod": 4
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 0,
+    "con": 2,
+    "int": 0,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.explorers-clothing"
+    },
+    {
+      "item": "item.religious-symbol"
+    },
+    {
+      "item": "item.staff",
+      "name": "creature.pilgrim-of-self-perfection.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 4,
+    "reflex": 4,
+    "will": 7
+  },
+  "hp": {
+    "value": 9
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pilgrim-of-self-perfection.strikes.staff.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.pilgrim-of-self-perfection.strikes.fist.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.pilgrim-of-self-perfection.strikes.rock.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ambulatory-oration",
+      "section": "top",
+      "name": "creature.pilgrim-of-self-perfection.abilities.ambulatory-oration.name",
+      "text": "creature.pilgrim-of-self-perfection.abilities.ambulatory-oration.text"
+    },
+    {
+      "id": "path-of-the-faithful",
+      "section": "top",
+      "name": "creature.pilgrim-of-self-perfection.abilities.path-of-the-faithful.name",
+      "text": "creature.pilgrim-of-self-perfection.abilities.path-of-the-faithful.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore."
+}
