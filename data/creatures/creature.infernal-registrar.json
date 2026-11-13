@@ -1,0 +1,261 @@
+{
+  "id": "creature.infernal-registrar",
+  "type": "creature",
+  "name": "creature.infernal-registrar.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "unholy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 119,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 19,
+    "note": "creature.infernal-registrar.perception.note"
+  },
+  "languages": [
+    "common",
+    "diabolic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 22
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 33
+    },
+    {
+      "lore": "creature.infernal-registrar.lore.2",
+      "mod": 33
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 30
+    },
+    {
+      "lore": "creature.infernal-registrar.lore.4",
+      "mod": 30
+    },
+    {
+      "skill": "skill.society",
+      "mod": 33
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 2,
+    "int": 5,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.staff",
+      "name": "creature.infernal-registrar.items.0.name",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.flaming"
+        },
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 16,
+    "will": 33,
+    "note": "creature.infernal-registrar.saves.note"
+  },
+  "hp": {
+    "value": 180
+  },
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.infernal-registrar.strikes.staff-of-office.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "magical",
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.infernal-registrar.strikes.fist.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "contract-specialist",
+      "section": "top",
+      "name": "creature.infernal-registrar.abilities.contract-specialist.name",
+      "text": "creature.infernal-registrar.abilities.contract-specialist.text"
+    },
+    {
+      "id": "death-is-a-promotion",
+      "section": "top",
+      "name": "creature.infernal-registrar.abilities.death-is-a-promotion.name",
+      "text": "creature.infernal-registrar.abilities.death-is-a-promotion.text"
+    },
+    {
+      "id": "friends-in-low-places",
+      "section": "top",
+      "name": "creature.infernal-registrar.abilities.friends-in-low-places.name",
+      "text": "creature.infernal-registrar.abilities.friends-in-low-places.text"
+    },
+    {
+      "id": "technically-correct",
+      "section": "top",
+      "name": "creature.infernal-registrar.abilities.technically-correct.name",
+      "text": "creature.infernal-registrar.abilities.technically-correct.text"
+    },
+    {
+      "id": "a-favor-for-a-favor",
+      "section": "offense",
+      "name": "creature.infernal-registrar.abilities.a-favor-for-a-favor.name",
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "divine"
+      ],
+      "text": "creature.infernal-registrar.abilities.a-favor-for-a-favor.text"
+    },
+    {
+      "id": "request-document",
+      "section": "offense",
+      "name": "creature.infernal-registrar.abilities.request-document.name",
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "divine"
+      ],
+      "text": "creature.infernal-registrar.abilities.request-document.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 29,
+      "attack": 21,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.translate",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.chilling-darkness"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.ring-of-truth"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.detect-scrying"
+            },
+            {
+              "spell": "spell.suggestion"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.banishment"
+            },
+            {
+              "spell": "spell.divine-immolation"
+            },
+            {
+              "spell": "spell.locate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Items, page 119: \"staff of office (functions as +1 flaming striking staff)\" is a +1 flaming striking staff under the printed name; the source does not link the staff."
+}

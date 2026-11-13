@@ -1,0 +1,177 @@
+{
+  "id": "creature.musketeer",
+  "type": "creature",
+  "name": "creature.musketeer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 77,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 8,
+      "note": "creature.musketeer.skills.2.note"
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.flintlock-musket",
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.rapier"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 11,
+    "will": 6
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.musketeer.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.musketeer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.musketeer.strikes.flintlock-musket.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 70,
+      "reload": 1,
+      "traits": [
+        "concussive",
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.flintlock-musket"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "musketeers-advance",
+      "section": "offense",
+      "name": "creature.musketeer.abilities.musketeers-advance.name",
+      "actions": "2",
+      "requirements": "creature.musketeer.abilities.musketeers-advance.requirements",
+      "text": "creature.musketeer.abilities.musketeers-advance.text"
+    },
+    {
+      "id": "one-for-all",
+      "section": "offense",
+      "name": "creature.musketeer.abilities.one-for-all.name",
+      "actions": "1",
+      "requirements": "creature.musketeer.abilities.one-for-all.requirements",
+      "text": "creature.musketeer.abilities.one-for-all.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.musketeer.abilities.sneak-attack.name",
+      "text": "creature.musketeer.abilities.sneak-attack.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 77 prints \"Deception +8 (+10 to Feint)\"; the source omits the parenthesis, and there is no errata for the book."
+}

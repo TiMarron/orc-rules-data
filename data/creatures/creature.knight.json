@@ -1,0 +1,213 @@
+{
+  "id": "creature.knight",
+  "type": "creature",
+  "name": "creature.knight.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 16,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "skill": "skill.society",
+      "mod": 13
+    },
+    {
+      "lore": "creature.knight.lore.4",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.bastard-sword",
+      "potency": 1
+    },
+    {
+      "item": "item.full-plate",
+      "name": "creature.knight.items.1.name"
+    },
+    {
+      "item": "item.spear",
+      "count": 3
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    }
+  ],
+  "ac": {
+    "value": 25,
+    "note": "creature.knight.ac.note"
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 14,
+    "will": 13
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.knight.strikes.bastard-sword.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d12"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.bastard-sword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.knight.strikes.spear.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.knight.strikes.gauntlet.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.knight.strikes.spear-2.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "knights-courage",
+      "section": "defense",
+      "name": "creature.knight.abilities.knights-courage.name",
+      "text": "creature.knight.abilities.knights-courage.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.knight.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.knight.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction",
+      "text": "creature.knight.abilities.shield-block.text"
+    },
+    {
+      "id": "intimidating-strike",
+      "section": "offense",
+      "name": "creature.knight.abilities.intimidating-strike.name",
+      "actions": "2",
+      "traits": [
+        "emotion",
+        "fear",
+        "fighter",
+        "mental"
+      ],
+      "text": "creature.knight.abilities.intimidating-strike.text"
+    },
+    {
+      "id": "rearming-advance",
+      "section": "offense",
+      "name": "creature.knight.abilities.rearming-advance.name",
+      "actions": "1",
+      "text": "creature.knight.abilities.rearming-advance.text"
+    },
+    {
+      "id": "warding-shift",
+      "section": "offense",
+      "name": "creature.knight.abilities.warding-shift.name",
+      "actions": "1",
+      "requirements": "creature.knight.abilities.warding-shift.requirements",
+      "text": "creature.knight.abilities.warding-shift.text"
+    }
+  ],
+  "editNote": "Items, page 16: \"full plate with livery\" is the full plate under its printed name; the livery is no part of the armor's rules."
+}

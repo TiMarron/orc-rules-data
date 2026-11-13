@@ -1,0 +1,136 @@
+{
+  "id": "creature.gravedigger",
+  "type": "creature",
+  "name": "creature.gravedigger.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 69,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "lore": "creature.gravedigger.lore.1",
+      "mod": 7
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.lantern-bulls-eye",
+      "note": "creature.gravedigger.items.0.note"
+    },
+    {
+      "item": "item.leather-armor",
+      "name": "creature.gravedigger.items.1.name"
+    },
+    {
+      "item": "item.religious-symbol"
+    },
+    {
+      "name": "creature.gravedigger.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 4,
+    "will": 7
+  },
+  "hp": {
+    "value": 20
+  },
+  "resistances": [
+    {
+      "type": "void",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gravedigger.strikes.shovel.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gravedigger.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "light-in-the-dark",
+      "section": "offense",
+      "name": "creature.gravedigger.abilities.light-in-the-dark.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "divine",
+        "manipulate",
+        "vitality"
+      ],
+      "requirements": "creature.gravedigger.abilities.light-in-the-dark.requirements",
+      "text": "creature.gravedigger.abilities.light-in-the-dark.text"
+    }
+  ],
+  "editNote": "The parenthesis is a note the book prints about the item, kept word for word (a value, a description, a count of oil flasks); where the page also cites another book after it, the citation is no part of the record. Playing cards have no record in the dataset and stay a printed name."
+}

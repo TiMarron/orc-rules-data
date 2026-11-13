@@ -1,0 +1,185 @@
+{
+  "id": "creature.rocketeer",
+  "type": "creature",
+  "name": "creature.rocketeer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 47,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13,
+      "note": "creature.rocketeer.skills.0.note"
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 14
+    },
+    {
+      "lore": "creature.rocketeer.lore.2",
+      "mod": 14
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": 2,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "note": "creature.rocketeer.items.0.note"
+    },
+    {
+      "item": "item.leather-armor",
+      "name": "creature.rocketeer.items.1.name"
+    },
+    {
+      "item": "item.mace",
+      "name": "creature.rocketeer.items.2.name"
+    },
+    {
+      "item": "item.alchemists-fire-moderate",
+      "count": 4
+    },
+    {
+      "item": "item.slide-pistol",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 16,
+    "will": 14
+  },
+  "hp": {
+    "value": 85
+  },
+  "speeds": {
+    "land": 25,
+    "fly": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.rocketeer.strikes.heavy-wrench.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.rocketeer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.rocketeer.strikes.slide-pistol.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 30,
+      "reload": 1,
+      "traits": [
+        "capacity",
+        "concussive",
+        "fatal"
+      ],
+      "traitValues": {
+        "capacity": "5",
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.slide-pistol"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fuel-tank-vulnerability",
+      "section": "defense",
+      "name": "creature.rocketeer.abilities.fuel-tank-vulnerability.name",
+      "text": "creature.rocketeer.abilities.fuel-tank-vulnerability.text"
+    },
+    {
+      "id": "explosive-liftoff",
+      "section": "offense",
+      "name": "creature.rocketeer.abilities.explosive-liftoff.name",
+      "actions": "2",
+      "frequency": "creature.rocketeer.abilities.explosive-liftoff.frequency",
+      "requirements": "creature.rocketeer.abilities.explosive-liftoff.requirements",
+      "text": "creature.rocketeer.abilities.explosive-liftoff.text"
+    },
+    {
+      "id": "mid-air-collision",
+      "section": "offense",
+      "name": "creature.rocketeer.abilities.mid-air-collision.name",
+      "actions": "2",
+      "text": "creature.rocketeer.abilities.mid-air-collision.text"
+    },
+    {
+      "id": "rocketing-strafe",
+      "section": "offense",
+      "name": "creature.rocketeer.abilities.rocketing-strafe.name",
+      "actions": "2",
+      "text": "creature.rocketeer.abilities.rocketing-strafe.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 47 prints \"Acrobatics +13 (+17 to Maneuver in Flight)\"; the source omits the parenthesis, and there is no errata for the book. Slide pistol corrected: the source links \"capacity 5\" to an unrelated trait page, so it read as a trait of its own; page 47 prints the capacity trait with 5 barrels."
+}

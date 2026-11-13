@@ -1,0 +1,176 @@
+{
+  "id": "creature.kobold-earth-diver",
+  "type": "creature",
+  "name": "creature.kobold-earth-diver.name",
+  "traits": [
+    "humanoid",
+    "kobold"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 199,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "small",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "ability": "ability.tremorsense",
+        "acuity": "imprecise",
+        "range": 10
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "petran",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "lore": "creature.kobold-earth-diver.lore.2",
+      "mod": 11
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 0,
+    "int": 1,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.map",
+      "note": "creature.kobold-earth-diver.items.1.note"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.pick"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 14,
+    "will": 11
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25,
+    "burrow": 10
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kobold-earth-diver.strikes.pick.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.pick"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kobold-earth-diver.strikes.claw.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kobold-earth-diver.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 13,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pick-smash",
+      "section": "offense",
+      "name": "creature.kobold-earth-diver.abilities.pick-smash.name",
+      "actions": "2",
+      "text": "creature.kobold-earth-diver.abilities.pick-smash.text"
+    },
+    {
+      "id": "sinkhole",
+      "section": "offense",
+      "name": "creature.kobold-earth-diver.abilities.sinkhole.name",
+      "actions": "2",
+      "requirements": "creature.kobold-earth-diver.abilities.sinkhole.requirements",
+      "text": "creature.kobold-earth-diver.abilities.sinkhole.text"
+    }
+  ],
+  "editNote": "Rarity corrected to the book: page 199 prints the trait line with uncommon; the source has common, and there is no errata for the book."
+}

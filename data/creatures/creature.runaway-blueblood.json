@@ -1,0 +1,163 @@
+{
+  "id": "creature.runaway-blueblood",
+  "type": "creature",
+  "name": "creature.runaway-blueblood.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 77,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 9
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "lore": "creature.runaway-blueblood.lore.2",
+      "mod": 9
+    },
+    {
+      "skill": "skill.society",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 0,
+    "int": 2,
+    "wis": 0,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dueling-pistol",
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.clothing-fine"
+    },
+    {
+      "name": "creature.runaway-blueblood.items.2.name"
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 9
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.runaway-blueblood.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.runaway-blueblood.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.runaway-blueblood.strikes.dueling-pistol.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "concealable",
+        "concussive",
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dueling-pistol"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "courageous-retreat",
+      "section": "offense",
+      "name": "creature.runaway-blueblood.abilities.courageous-retreat.name",
+      "actions": "1",
+      "requirements": "creature.runaway-blueblood.abilities.courageous-retreat.requirements",
+      "text": "creature.runaway-blueblood.abilities.courageous-retreat.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.runaway-blueblood.abilities.sneak-attack.name",
+      "text": "creature.runaway-blueblood.abilities.sneak-attack.text"
+    }
+  ]
+}

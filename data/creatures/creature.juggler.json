@@ -1,0 +1,213 @@
+{
+  "id": "creature.juggler",
+  "type": "creature",
+  "name": "creature.juggler.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 125,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "lore": "creature.juggler.lore.2",
+      "mod": 8
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 11,
+      "note": "creature.juggler.skills.3.note"
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.light-hammer",
+      "name": "creature.juggler.items.0.name",
+      "count": 3
+    },
+    {
+      "item": "item.dart",
+      "count": 10
+    },
+    {
+      "item": "item.torch",
+      "count": 3
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 11,
+    "will": 7
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.juggler.strikes.juggling-club.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.juggler.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.juggler.strikes.dart.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dart"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.juggler.strikes.juggling-club-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.juggler.strikes.torch.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1",
+          "type": "fire"
+        }
+      ],
+      "item": "item.torch"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "juggling-specialist",
+      "section": "top",
+      "name": "creature.juggler.abilities.juggling-specialist.name",
+      "text": "creature.juggler.abilities.juggling-specialist.text"
+    },
+    {
+      "id": "return-throw",
+      "section": "defense",
+      "name": "creature.juggler.abilities.return-throw.name",
+      "actions": "reaction",
+      "trigger": "creature.juggler.abilities.return-throw.trigger",
+      "text": "creature.juggler.abilities.return-throw.text"
+    },
+    {
+      "id": "juggle",
+      "section": "offense",
+      "name": "creature.juggler.abilities.juggle.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "creature.juggler.abilities.juggle.text"
+    },
+    {
+      "id": "juggling-bounce",
+      "section": "offense",
+      "name": "creature.juggler.abilities.juggling-bounce.name",
+      "actions": "1",
+      "text": "creature.juggler.abilities.juggling-bounce.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 125 prints \"Performance +11 (+13 when juggling)\"; the source omits the parenthesis, and there is no errata for the book. Items, page 125: \"juggling club (3, functions as a light hammer)\" is three light hammers under the printed name."
+}

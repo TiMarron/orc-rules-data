@@ -1,0 +1,184 @@
+{
+  "id": "creature.kobold-trapper",
+  "type": "creature",
+  "name": "creature.kobold-trapper.name",
+  "traits": [
+    "humanoid",
+    "kobold"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 198,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 7,
+    "note": "creature.kobold-trapper.perception.note",
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 1,
+    "int": 3,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.backpack"
+    },
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "name": "creature.kobold-trapper.items.2.name",
+      "note": "creature.kobold-trapper.items.2.note"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.light-hammer"
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "creature.kobold-trapper.ac.note"
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 11,
+    "will": 8
+  },
+  "hp": {
+    "value": 32
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kobold-trapper.strikes.light-hammer.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kobold-trapper.strikes.claw.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kobold-trapper.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kobold-trapper.strikes.light-hammer-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "booby-trapped",
+      "section": "top",
+      "name": "creature.kobold-trapper.abilities.booby-trapped.name",
+      "text": "creature.kobold-trapper.abilities.booby-trapped.text"
+    },
+    {
+      "id": "construct-trap",
+      "section": "offense",
+      "name": "creature.kobold-trapper.abilities.construct-trap.name",
+      "actions": "3",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.kobold-trapper.abilities.construct-trap.text"
+    }
+  ],
+  "editNote": "The parenthesis is a note the book prints about the item, kept word for word (a value, a description, a count of oil flasks); where the page also cites another book after it, the citation is no part of the record. Playing cards have no record in the dataset and stay a printed name."
+}

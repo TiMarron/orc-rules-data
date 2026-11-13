@@ -1,0 +1,206 @@
+{
+  "id": "creature.wealthy-vigilante",
+  "type": "creature",
+  "name": "creature.wealthy-vigilante.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 160,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 17
+    },
+    {
+      "skill": "skill.society",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 1,
+    "int": 3,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "name": "creature.wealthy-vigilante.items.0.name",
+      "note": "creature.wealthy-vigilante.items.0.note"
+    },
+    {
+      "item": "item.flintlock-musket",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.lifting-belt"
+    },
+    {
+      "item": "item.longsword",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.healing-potion-moderate"
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 17,
+    "will": 15
+  },
+  "hp": {
+    "value": 120
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.wealthy-vigilante.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.wealthy-vigilante.strikes.fist.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.wealthy-vigilante.strikes.flintlock-musket.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 70,
+      "reload": 1,
+      "traits": [
+        "concussive",
+        "fatal",
+        "magical"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.flintlock-musket"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "custom-gear",
+      "section": "top",
+      "name": "creature.wealthy-vigilante.abilities.custom-gear.name",
+      "text": "creature.wealthy-vigilante.abilities.custom-gear.text"
+    },
+    {
+      "id": "talisman-prepper",
+      "section": "top",
+      "name": "creature.wealthy-vigilante.abilities.talisman-prepper.name",
+      "text": "creature.wealthy-vigilante.abilities.talisman-prepper.text"
+    },
+    {
+      "id": "quick-replace",
+      "section": "defense",
+      "name": "creature.wealthy-vigilante.abilities.quick-replace.name",
+      "actions": "reaction",
+      "traits": [
+        "manipulate"
+      ],
+      "trigger": "creature.wealthy-vigilante.abilities.quick-replace.trigger",
+      "requirements": "creature.wealthy-vigilante.abilities.quick-replace.requirements",
+      "text": "creature.wealthy-vigilante.abilities.quick-replace.text"
+    },
+    {
+      "id": "calculated-strike",
+      "section": "offense",
+      "name": "creature.wealthy-vigilante.abilities.calculated-strike.name",
+      "actions": "2",
+      "text": "creature.wealthy-vigilante.abilities.calculated-strike.text"
+    }
+  ]
+}
