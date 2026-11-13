@@ -1,0 +1,33 @@
+{
+  "id": "item.oil-of-sympathy",
+  "type": "item",
+  "name": "item.oil-of-sympathy.name",
+  "traits": [
+    "consumable",
+    "healing",
+    "magical",
+    "oil"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 65,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.oil-of-sympathy.text",
+  "level": 1,
+  "bulk": "L",
+  "usage": "item.oil-of-sympathy.usage",
+  "activations": [
+    {
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ]
+    }
+  ],
+  "category": "consumable",
+  "editNote": "Reserved Material removed: the item is named for a person of the setting; it is Oil of Sympathy, its text says so, and the closing clause about the person is dropped."
+}

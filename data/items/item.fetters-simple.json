@@ -1,0 +1,19 @@
+{
+  "id": "item.fetters-simple",
+  "type": "item",
+  "name": "item.fetters-simple.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 123,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.fetters-simple.text",
+  "level": 2,
+  "priceCp": 500,
+  "bulk": "L",
+  "category": "gear"
+}

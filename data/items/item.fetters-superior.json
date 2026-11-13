@@ -1,0 +1,19 @@
+{
+  "id": "item.fetters-superior",
+  "type": "item",
+  "name": "item.fetters-superior.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 123,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.fetters-superior.text",
+  "level": 18,
+  "priceCp": 750000,
+  "bulk": "L",
+  "category": "gear"
+}

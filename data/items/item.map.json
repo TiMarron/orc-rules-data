@@ -1,0 +1,19 @@
+{
+  "id": "item.map",
+  "type": "item",
+  "name": "item.map.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 59,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.map.text",
+  "level": 0,
+  "bulk": "0",
+  "category": "gear",
+  "editNote": "The source's text is one sentence of its own that the book does not print. Page 59 gives the maps only as a table of types with a one-line description each; the text gathers those descriptions."
+}
