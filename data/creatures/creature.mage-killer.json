@@ -1,0 +1,246 @@
+{
+  "id": "creature.mage-killer",
+  "type": "creature",
+  "name": "creature.mage-killer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 84,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 16,
+      "note": "creature.mage-killer.skills.2.note"
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 5,
+    "con": 2,
+    "int": 1,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 4
+    },
+    {
+      "item": "item.rapier",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 17,
+    "will": 16
+  },
+  "hp": {
+    "value": 145
+  },
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mage-killer.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "2d6+10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "magical-static"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mage-killer.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "magical-static"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mage-killer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "magical-static"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.mage-killer.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "magical-static"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "spell-dodge",
+      "section": "defense",
+      "name": "creature.mage-killer.abilities.spell-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.mage-killer.abilities.spell-dodge.trigger",
+      "text": "creature.mage-killer.abilities.spell-dodge.text"
+    },
+    {
+      "id": "spell-interception",
+      "section": "defense",
+      "name": "creature.mage-killer.abilities.spell-interception.name",
+      "actions": "reaction",
+      "trigger": "creature.mage-killer.abilities.spell-interception.trigger",
+      "text": "creature.mage-killer.abilities.spell-interception.text"
+    },
+    {
+      "id": "magical-static",
+      "section": "offense",
+      "name": "creature.mage-killer.abilities.magical-static.name",
+      "traits": [
+        "arcane",
+        "mental"
+      ],
+      "text": "creature.mage-killer.abilities.magical-static.text"
+    },
+    {
+      "id": "shift-energy-runes",
+      "section": "offense",
+      "name": "creature.mage-killer.abilities.shift-energy-runes.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate"
+      ],
+      "frequency": "creature.mage-killer.abilities.shift-energy-runes.frequency",
+      "text": "creature.mage-killer.abilities.shift-energy-runes.text"
+    },
+    {
+      "id": "sudden-charge",
+      "section": "offense",
+      "name": "creature.mage-killer.abilities.sudden-charge.name",
+      "actions": "2",
+      "text": "creature.mage-killer.abilities.sudden-charge.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 84 prints \"Athletics +16 (+18 to disarm magic staves and wands)\"; the source omits the parenthesis, and there is no errata for the book."
+}

@@ -1,0 +1,186 @@
+{
+  "id": "creature.skin-shifter",
+  "type": "creature",
+  "name": "creature.skin-shifter.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 134,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16,
+    "note": "creature.skin-shifter.perception.note"
+  },
+  "languages": [
+    "common",
+    "wildsong"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12,
+      "note": "creature.skin-shifter.skills.0.note"
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 14,
+      "note": "creature.skin-shifter.skills.1.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11,
+      "note": "creature.skin-shifter.skills.3.note"
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 18
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12,
+      "note": "creature.skin-shifter.skills.5.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": 0,
+    "wis": 4,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.longbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.spiked-gauntlet"
+    }
+  ],
+  "ac": {
+    "value": 25,
+    "note": "creature.skin-shifter.ac.note"
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 14,
+    "will": 16
+  },
+  "hp": {
+    "value": 140
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.skin-shifter.strikes.spiked-gauntlet.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spiked-gauntlet"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.skin-shifter.strikes.longbow.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "2d8+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "animal-empathy",
+      "section": "top",
+      "name": "creature.skin-shifter.abilities.animal-empathy.name",
+      "text": "creature.skin-shifter.abilities.animal-empathy.text"
+    },
+    {
+      "id": "gift-of-the-wild-spirits",
+      "section": "offense",
+      "name": "creature.skin-shifter.abilities.gift-of-the-wild-spirits.name",
+      "actions": "1",
+      "traits": [
+        "primal"
+      ],
+      "frequency": "creature.skin-shifter.abilities.gift-of-the-wild-spirits.frequency",
+      "text": "creature.skin-shifter.abilities.gift-of-the-wild-spirits.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 26,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.gouging-claw"
+          },
+          {
+            "spell": "spell.know-the-way"
+          }
+        ]
+      }
+    }
+  ],
+  "editNote": "Skill qualifiers added from the book: page 134 prints \"Acrobatics +12 (+16 in animal form)\", \"Athletics +14 (+18 in animal form or –4 in pest form)\", \"Intimidation +11 (+15 in animal form)\", \"Stealth +12 (+16 in animal form)\"; the source omits the parentheses, and there is no errata for the book."
+}

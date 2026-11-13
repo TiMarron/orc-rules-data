@@ -1,0 +1,232 @@
+{
+  "id": "creature.hero-hunter",
+  "type": "creature",
+  "name": "creature.hero-hunter.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 162,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 13,
+  "size": "medium",
+  "perception": {
+    "mod": 25
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 26
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 24
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 19
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 21
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 27
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 25,
+      "note": "creature.hero-hunter.skills.6.note"
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 3,
+    "int": 3,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.greataxe",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.hand-crossbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.studded-leather-armor",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 22,
+    "reflex": 25,
+    "will": 21
+  },
+  "hp": {
+    "value": 230
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 10
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hero-hunter.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "2d12+13",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "hunters-precision"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.hero-hunter.strikes.fist.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "hunters-precision"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hero-hunter.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 26,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "hunters-precision"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "prepared-trapper",
+      "section": "top",
+      "name": "creature.hero-hunter.abilities.prepared-trapper.name",
+      "text": "creature.hero-hunter.abilities.prepared-trapper.text"
+    },
+    {
+      "id": "nimble-dodge",
+      "section": "defense",
+      "name": "creature.hero-hunter.abilities.nimble-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.hero-hunter.abilities.nimble-dodge.trigger",
+      "text": "creature.hero-hunter.abilities.nimble-dodge.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.hero-hunter.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "deadly-snares",
+      "section": "offense",
+      "name": "creature.hero-hunter.abilities.deadly-snares.name",
+      "actions": "3",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.hero-hunter.abilities.deadly-snares.text"
+    },
+    {
+      "id": "felling-shot",
+      "section": "offense",
+      "name": "creature.hero-hunter.abilities.felling-shot.name",
+      "actions": "1",
+      "text": "creature.hero-hunter.abilities.felling-shot.text"
+    },
+    {
+      "id": "hunters-precision",
+      "section": "offense",
+      "name": "creature.hero-hunter.abilities.hunters-precision.name",
+      "actions": "1",
+      "traits": [
+        "stance"
+      ],
+      "text": "creature.hero-hunter.abilities.hunters-precision.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 162 prints \"Survival +25 (+29 to Track)\"; the source omits the parenthesis, and there is no errata for the book."
+}

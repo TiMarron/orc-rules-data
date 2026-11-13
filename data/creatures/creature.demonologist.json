@@ -1,0 +1,240 @@
+{
+  "id": "creature.demonologist",
+  "type": "creature",
+  "name": "creature.demonologist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 100,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "chthonian",
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.demonologist.lore.0",
+      "mod": 14
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 16
+    },
+    {
+      "lore": "creature.demonologist.lore.2",
+      "mod": 18
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11,
+      "note": "creature.demonologist.skills.3.note"
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 1,
+    "con": 2,
+    "int": 4,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.longspear",
+      "potency": 1
+    },
+    {
+      "name": "creature.demonologist.items.1.name"
+    },
+    {
+      "name": "creature.demonologist.items.2.name",
+      "note": "creature.demonologist.items.2.note"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 12,
+    "will": 15
+  },
+  "hp": {
+    "value": 100
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.demonologist.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+9",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.demonologist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "demonic-temptation",
+      "section": "top",
+      "name": "creature.demonologist.abilities.demonic-temptation.name",
+      "traits": [
+        "divine",
+        "mental"
+      ],
+      "text": "creature.demonologist.abilities.demonic-temptation.text"
+    },
+    {
+      "id": "breach-the-demon-realm",
+      "section": "offense",
+      "name": "creature.demonologist.abilities.breach-the-demon-realm.name",
+      "actions": "free",
+      "requirements": "creature.demonologist.abilities.breach-the-demon-realm.requirements",
+      "text": "creature.demonologist.abilities.breach-the-demon-realm.text"
+    },
+    {
+      "id": "demon-summoning",
+      "section": "offense",
+      "name": "creature.demonologist.abilities.demon-summoning.name",
+      "text": "creature.demonologist.abilities.demon-summoning.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 25,
+      "attack": 17,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.caustic-blast"
+          },
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.fear",
+              "count": 2
+            },
+            {
+              "spell": "spell.fleet-step"
+            },
+            {
+              "spell": "spell.mending"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blur"
+            },
+            {
+              "spell": "spell.environmental-endurance"
+            },
+            {
+              "spell": "spell.laughing-fit"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.acid-grip"
+            },
+            {
+              "spell": "spell.fireball"
+            },
+            {
+              "spell": "spell.grease"
+            },
+            {
+              "spell": "spell.slow"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.clairvoyance"
+            },
+            {
+              "spell": "spell.dispelling-globe"
+            },
+            {
+              "spell": "spell.wall-of-fire"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: a plane of the setting is named in an ability; it is the realm of demons, and the ability is Breach the Demon Realm. Skill qualifier added from the book: page 100 prints \"Diplomacy +11 (+13 with demons)\"; the source omits the parenthesis, and there is no errata for the book."
+}

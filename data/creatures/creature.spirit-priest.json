@@ -1,0 +1,228 @@
+{
+  "id": "creature.spirit-priest",
+  "type": "creature",
+  "name": "creature.spirit-priest.name",
+  "traits": [
+    "dwarf",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 174,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "dwarven",
+    "empyrean",
+    "fey",
+    "petran",
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12,
+      "note": "creature.spirit-priest.skills.1.note"
+    },
+    {
+      "lore": "creature.spirit-priest.lore.2",
+      "mod": 10
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 10
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 0,
+    "con": 3,
+    "int": 0,
+    "wis": 5,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.clan-dagger"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 9,
+    "will": 14
+  },
+  "hp": {
+    "value": 78
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.spirit-priest.strikes.clan-dagger.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "parry",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "bludgeoning"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.clan-dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.spirit-priest.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "spirits-interference",
+      "section": "offense",
+      "name": "creature.spirit-priest.abilities.spirits-interference.name",
+      "actions": "2",
+      "text": "creature.spirit-priest.abilities.spirits-interference.text"
+    },
+    {
+      "id": "spiritual-edge",
+      "section": "offense",
+      "name": "creature.spirit-priest.abilities.spiritual-edge.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "spellshape",
+        "spirit"
+      ],
+      "text": "creature.spirit-priest.abilities.spiritual-edge.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "divine",
+      "dc": 22,
+      "attack": 14,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.divine-lance"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.stabilize"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bless"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.infuse-vitality"
+            },
+            {
+              "spell": "spell.spirit-link"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.augury"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.noise-blast"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.noise-blast"
+            },
+            {
+              "spell": "spell.safe-passage"
+            },
+            {
+              "spell": "spell.spiritual-armament"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 174 prints \"Diplomacy +12 (+14 with spirits and haunts)\"; the source omits the parenthesis, and there is no errata for the book."
+}

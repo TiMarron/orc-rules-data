@@ -1,0 +1,235 @@
+{
+  "id": "creature.mountaineer",
+  "type": "creature",
+  "name": "creature.mountaineer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 55,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "common",
+    "petran",
+    "pyric"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13,
+      "note": "creature.mountaineer.skills.0.note"
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "lore": "creature.mountaineer.lore.2",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 12
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": 0,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.chalk",
+      "count": 10
+    },
+    {
+      "item": "item.climbing-kit-extreme"
+    },
+    {
+      "item": "item.compass"
+    },
+    {
+      "item": "item.hatchet",
+      "count": 2
+    },
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.pick"
+    },
+    {
+      "item": "item.spyglass"
+    },
+    {
+      "item": "item.survey-map"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 12,
+    "will": 9
+  },
+  "hp": {
+    "value": 80
+  },
+  "speeds": {
+    "land": 25,
+    "note": "creature.mountaineer.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mountaineer.strikes.pick.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.pick"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mountaineer.strikes.hatchet.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mountaineer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.mountaineer.strikes.hatchet-2.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "experienced-steps",
+      "section": "top",
+      "name": "creature.mountaineer.abilities.experienced-steps.name",
+      "text": "creature.mountaineer.abilities.experienced-steps.text"
+    },
+    {
+      "id": "professional-climber",
+      "section": "top",
+      "name": "creature.mountaineer.abilities.professional-climber.name",
+      "text": "creature.mountaineer.abilities.professional-climber.text"
+    },
+    {
+      "id": "lost-my-footing",
+      "section": "defense",
+      "name": "creature.mountaineer.abilities.lost-my-footing.name",
+      "actions": "reaction",
+      "frequency": "creature.mountaineer.abilities.lost-my-footing.frequency",
+      "trigger": "creature.mountaineer.abilities.lost-my-footing.trigger",
+      "text": "creature.mountaineer.abilities.lost-my-footing.text"
+    },
+    {
+      "id": "tuck-and-roll",
+      "section": "defense",
+      "name": "creature.mountaineer.abilities.tuck-and-roll.name",
+      "text": "creature.mountaineer.abilities.tuck-and-roll.text"
+    },
+    {
+      "id": "arctic-passage",
+      "section": "offense",
+      "name": "creature.mountaineer.abilities.arctic-passage.name",
+      "text": "creature.mountaineer.abilities.arctic-passage.text"
+    },
+    {
+      "id": "team-awareness",
+      "section": "offense",
+      "name": "creature.mountaineer.abilities.team-awareness.name",
+      "actions": "1",
+      "requirements": "creature.mountaineer.abilities.team-awareness.requirements",
+      "text": "creature.mountaineer.abilities.team-awareness.text"
+    },
+    {
+      "id": "chasm-crossing",
+      "section": "offense",
+      "name": "creature.mountaineer.abilities.chasm-crossing.name",
+      "actions": "2",
+      "text": "creature.mountaineer.abilities.chasm-crossing.text"
+    },
+    {
+      "id": "quick-draw",
+      "section": "offense",
+      "name": "creature.mountaineer.abilities.quick-draw.name",
+      "actions": "1",
+      "text": "creature.mountaineer.abilities.quick-draw.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 55 prints \"Acrobatics +13 (+15 to Balance on slippery ice)\"; the source omits the parenthesis, and there is no errata for the book."
+}

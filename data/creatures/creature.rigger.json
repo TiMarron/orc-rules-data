@@ -1,0 +1,162 @@
+{
+  "id": "creature.rigger",
+  "type": "creature",
+  "name": "creature.rigger.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 146,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7,
+      "note": "creature.rigger.skills.1.note"
+    },
+    {
+      "lore": "creature.rigger.lore.2",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 2
+    },
+    {
+      "item": "item.rope",
+      "note": "creature.rigger.items.1.note"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 5
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.rigger.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.rigger.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.rigger.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "death-from-above",
+      "section": "offense",
+      "name": "creature.rigger.abilities.death-from-above.name",
+      "text": "creature.rigger.abilities.death-from-above.text"
+    },
+    {
+      "id": "practiced-climber",
+      "section": "offense",
+      "name": "creature.rigger.abilities.practiced-climber.name",
+      "text": "creature.rigger.abilities.practiced-climber.text"
+    },
+    {
+      "id": "rope-tension-spring",
+      "section": "offense",
+      "name": "creature.rigger.abilities.rope-tension-spring.name",
+      "actions": "2",
+      "traits": [
+        "manipulate",
+        "move"
+      ],
+      "requirements": "creature.rigger.abilities.rope-tension-spring.requirements",
+      "text": "creature.rigger.abilities.rope-tension-spring.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 146 prints \"Athletics +7 (+10 to Climb)\"; the source omits the parenthesis, and there is no errata for the book."
+}

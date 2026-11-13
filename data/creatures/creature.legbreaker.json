@@ -1,0 +1,142 @@
+{
+  "id": "creature.legbreaker",
+  "type": "creature",
+  "name": "creature.legbreaker.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 21,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 16,
+      "note": "creature.legbreaker.skills.0.note"
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": -1,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.maul",
+      "potency": 1
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 15,
+    "will": 12
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.legbreaker.strikes.maul.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.maul"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.legbreaker.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.legbreaker.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "break-legs",
+      "section": "offense",
+      "name": "creature.legbreaker.abilities.break-legs.name",
+      "actions": "2",
+      "text": "creature.legbreaker.abilities.break-legs.text"
+    },
+    {
+      "id": "rushing-strike",
+      "section": "offense",
+      "name": "creature.legbreaker.abilities.rushing-strike.name",
+      "actions": "2",
+      "text": "creature.legbreaker.abilities.rushing-strike.text"
+    },
+    {
+      "id": "stampeding-shove",
+      "section": "offense",
+      "name": "creature.legbreaker.abilities.stampeding-shove.name",
+      "actions": "1",
+      "text": "creature.legbreaker.abilities.stampeding-shove.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 21 prints \"Athletics +16 (+17 when Shoving with their maul)\"; the source omits the parenthesis, and there is no errata for the book."
+}

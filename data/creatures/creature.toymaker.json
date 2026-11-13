@@ -1,0 +1,155 @@
+{
+  "id": "creature.toymaker",
+  "type": "creature",
+  "name": "creature.toymaker.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 45,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 10,
+      "note": "creature.toymaker.skills.0.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 9
+    },
+    {
+      "skill": "skill.society",
+      "mod": 8
+    },
+    {
+      "lore": "creature.toymaker.lore.4",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 1,
+    "int": 3,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "note": "creature.toymaker.items.0.note"
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "name": "creature.toymaker.items.1.ammunition.name",
+        "count": 10
+      }
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 10,
+    "will": 10
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.toymaker.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.toymaker.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 12,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "punchout-bolts"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "punchout-bolts",
+      "section": "offense",
+      "name": "creature.toymaker.abilities.punchout-bolts.name",
+      "text": "creature.toymaker.abilities.punchout-bolts.text"
+    },
+    {
+      "id": "scatter-blocks",
+      "section": "offense",
+      "name": "creature.toymaker.abilities.scatter-blocks.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.toymaker.abilities.scatter-blocks.text"
+    },
+    {
+      "id": "wind-up-soldier",
+      "section": "offense",
+      "name": "creature.toymaker.abilities.wind-up-soldier.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.toymaker.abilities.wind-up-soldier.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 45 prints \"Crafting +10 (+12 for toys)\"; the source omits the parenthesis, and there is no errata for the book."
+}

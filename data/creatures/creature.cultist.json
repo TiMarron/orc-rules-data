@@ -1,0 +1,159 @@
+{
+  "id": "creature.cultist",
+  "type": "creature",
+  "name": "creature.cultist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 97,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 4
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.cultist.lore.0",
+      "mod": 8,
+      "note": "creature.cultist.skills.0.note"
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 3
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 3
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 4
+    },
+    {
+      "skill": "skill.society",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": 1,
+    "wis": -1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.leather-armor",
+      "name": "creature.cultist.items.0.name"
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "name": "creature.cultist.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 8,
+    "will": 4,
+    "note": "creature.cultist.saves.note"
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.cultist.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.cultist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.cultist.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fanatical-frenzy",
+      "section": "offense",
+      "name": "creature.cultist.abilities.fanatical-frenzy.name",
+      "actions": "1",
+      "requirements": "creature.cultist.abilities.fanatical-frenzy.requirements",
+      "text": "creature.cultist.abilities.fanatical-frenzy.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 97 prints \"Cult Lore (for the cultist's own cult) +8\"; the source omits the parenthesis and names the Lore plainly, and there is no errata for the book."
+}

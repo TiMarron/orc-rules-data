@@ -1,0 +1,203 @@
+{
+  "id": "creature.burglar",
+  "type": "creature",
+  "name": "creature.burglar.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 20,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "note": "creature.burglar.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 12,
+      "note": "creature.burglar.skills.5.note"
+    },
+    {
+      "lore": "creature.burglar.lore.6",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 1,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.climbing-kit"
+    },
+    {
+      "item": "item.composite-shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.darkvision-elixir-lesser"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortsword"
+    },
+    {
+      "item": "item.thieves-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "creature.burglar.ac.note"
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 12,
+    "will": 10,
+    "note": "creature.burglar.saves.note"
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.burglar.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.burglar.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.burglar.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deny-advantage",
+      "section": "defense",
+      "name": "creature.burglar.abilities.deny-advantage.name",
+      "text": "creature.burglar.abilities.deny-advantage.text"
+    },
+    {
+      "id": "nimble-dodge",
+      "section": "defense",
+      "name": "creature.burglar.abilities.nimble-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.burglar.abilities.nimble-dodge.trigger",
+      "text": "creature.burglar.abilities.nimble-dodge.text"
+    },
+    {
+      "id": "mobility",
+      "section": "offense",
+      "name": "creature.burglar.abilities.mobility.name",
+      "text": "creature.burglar.abilities.mobility.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.burglar.abilities.sneak-attack.name",
+      "text": "creature.burglar.abilities.sneak-attack.text"
+    },
+    {
+      "id": "surprise-attack",
+      "section": "offense",
+      "name": "creature.burglar.abilities.surprise-attack.name",
+      "text": "creature.burglar.abilities.surprise-attack.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 20 prints \"Thievery +12 (can Disable traps that require master proficiency)\"; the source omits the parenthesis, and there is no errata for the book."
+}
