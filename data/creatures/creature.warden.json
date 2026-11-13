@@ -1,0 +1,178 @@
+{
+  "id": "creature.warden",
+  "type": "creature",
+  "name": "creature.warden.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 117,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 17
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": 1,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.backpack"
+    },
+    {
+      "item": "item.bastard-sword"
+    },
+    {
+      "item": "item.bedroll"
+    },
+    {
+      "item": "item.compass"
+    },
+    {
+      "item": "item.composite-longbow",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.flint-and-steel"
+    },
+    {
+      "item": "item.map"
+    },
+    {
+      "item": "item.tent-pup"
+    },
+    {
+      "item": "item.scale-mail"
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 15,
+    "will": 11
+  },
+  "hp": {
+    "value": 100
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.warden.strikes.bastard-sword.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d12"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.bastard-sword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.warden.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.warden.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "warding-strike",
+      "section": "defense",
+      "name": "creature.warden.abilities.warding-strike.name",
+      "actions": "reaction",
+      "trigger": "creature.warden.abilities.warding-strike.trigger",
+      "text": "creature.warden.abilities.warding-strike.text"
+    },
+    {
+      "id": "wardens-protection",
+      "section": "offense",
+      "name": "creature.warden.abilities.wardens-protection.name",
+      "text": "creature.warden.abilities.wardens-protection.text"
+    }
+  ]
+}
