@@ -1,0 +1,276 @@
+{
+  "id": "creature.propagandist",
+  "type": "creature",
+  "name": "creature.propagandist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 154,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "note": "creature.propagandist.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "lore": "creature.propagandist.lore.1",
+      "mod": 8
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 10
+    },
+    {
+      "skill": "skill.society",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 2,
+    "con": 1,
+    "int": 1,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 3
+    },
+    {
+      "item": "item.musical-instrument-handheld",
+      "name": "creature.propagandist.items.1.name"
+    },
+    {
+      "item": "item.shortsword"
+    },
+    {
+      "item": "item.writing-set"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 9,
+    "will": 12
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.propagandist.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.propagandist.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.propagandist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.propagandist.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "nuanced-spin",
+      "section": "top",
+      "name": "creature.propagandist.abilities.nuanced-spin.name",
+      "text": "creature.propagandist.abilities.nuanced-spin.text"
+    },
+    {
+      "id": "no-hard-feelings",
+      "section": "offense",
+      "name": "creature.propagandist.abilities.no-hard-feelings.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.propagandist.abilities.no-hard-feelings.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 21,
+      "attack": 13,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.bullhorn"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.haunting-hymn"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.summon-instrument"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.concordant-choir"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.sanctuary"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blistering-invective"
+            },
+            {
+              "spell": "spell.paranoia"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.propagandist.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 21,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          },
+          {
+            "spell": "spell.rallying-anthem"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.hymn-of-healing"
+            },
+            {
+              "spell": "spell.lingering-composition"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Items, page 154: \"lute\" is item.musical-instrument-handheld under its printed name: the source links the musical instrument page, and a lute is a handheld instrument. No Hard Feelings corrected: page 155 prints \"emotional\" among its traits, the book's slip for the emotion trait, which the source's own link points to."
+}

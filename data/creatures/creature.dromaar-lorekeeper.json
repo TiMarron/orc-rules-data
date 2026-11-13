@@ -1,0 +1,254 @@
+{
+  "id": "creature.dromaar-lorekeeper",
+  "type": "creature",
+  "name": "creature.dromaar-lorekeeper.name",
+  "traits": [
+    "dromaar",
+    "human",
+    "humanoid",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 207,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "orcish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 11
+    },
+    {
+      "lore": "creature.dromaar-lorekeeper.lore.2",
+      "mod": 15
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 12
+    },
+    {
+      "skill": "skill.society",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 0,
+    "int": 2,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.musical-instrument-handheld",
+      "name": "creature.dromaar-lorekeeper.items.1.name",
+      "note": "creature.dromaar-lorekeeper.items.1.note"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 13
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dromaar-lorekeeper.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "sonic"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dromaar-lorekeeper.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "sonic"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dromaar-lorekeeper.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "sonic"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "spotlight-ready",
+      "section": "top",
+      "name": "creature.dromaar-lorekeeper.abilities.spotlight-ready.name",
+      "text": "creature.dromaar-lorekeeper.abilities.spotlight-ready.text"
+    },
+    {
+      "id": "final-tale",
+      "section": "defense",
+      "name": "creature.dromaar-lorekeeper.abilities.final-tale.name",
+      "traits": [
+        "auditory",
+        "mental",
+        "occult"
+      ],
+      "text": "creature.dromaar-lorekeeper.abilities.final-tale.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 22,
+      "attack": 14,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.summon-instrument"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bless"
+            },
+            {
+              "spell": "spell.phantasmal-minion"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.laughing-fit"
+            },
+            {
+              "spell": "spell.noise-blast"
+            },
+            {
+              "spell": "spell.translate"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.enthrall"
+            },
+            {
+              "spell": "spell.heroism"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    }
+  ],
+  "editNote": "Items, page 207: \"lute\" is item.musical-instrument-handheld under its printed name: the source links the musical instrument page, and a lute is a handheld instrument. The parenthesis \"(handheld musical instrument)\" the page prints after it is the entry's note."
+}

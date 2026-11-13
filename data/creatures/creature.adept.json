@@ -1,0 +1,154 @@
+{
+  "id": "creature.adept",
+  "type": "creature",
+  "name": "creature.adept.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 96,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 4
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 5
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 3
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 5
+    },
+    {
+      "lore": "creature.adept.lore.3",
+      "mod": 5
+    },
+    {
+      "skill": "skill.society",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 2,
+    "con": 0,
+    "int": 3,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.adept.items.0.name"
+    },
+    {
+      "name": "creature.adept.items.1.name"
+    },
+    {
+      "name": "creature.adept.items.2.name"
+    },
+    {
+      "item": "item.writing-set"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 4,
+    "will": 6
+  },
+  "hp": {
+    "value": 8
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.adept.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.adept.strikes.journal.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "nonlethal",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "focused-thinker",
+      "section": "offense",
+      "name": "creature.adept.abilities.focused-thinker.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.adept.abilities.focused-thinker.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 15,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      }
+    }
+  ],
+  "editNote": "Items, page 96: \"scroll case\" stays its printed name: the source links a page from before the Remaster, and the dataset has no record of it. Spells read from the book: page 96 prints \"Occult Spells Known DC 15; Cantrips (1st) daze, detect magic, telekinetic hand\"; spells known are a spontaneous caster's, so the block is occult spontaneous."
+}

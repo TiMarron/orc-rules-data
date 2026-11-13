@@ -1,0 +1,205 @@
+{
+  "id": "creature.druid-initiate",
+  "type": "creature",
+  "name": "creature.druid-initiate.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 132,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common",
+    "wildsong"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 3
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 7
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 4
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 2,
+    "int": 0,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.healers-toolkit"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.primal-symbol"
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 4,
+    "will": 9
+  },
+  "hp": {
+    "value": 18
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.druid-initiate.strikes.staff.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.druid-initiate.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.druid-initiate.strikes.sling.name",
+      "actions": "1",
+      "bonus": 6,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 17,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.know-the-way"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.thunderstrike"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.druid-initiate.spellcasting.0.name",
+      "focusPoints": 1,
+      "dc": 17,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.cornucopia"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Page corrected to the book: the stat block is on page 132; the source has 547. Spells read from the book: page 132 prints \"Spells Primal Spellcasting DC 17; 1st heal, thunderstrike; Cantrips (1st) detect magic, ignition, know the way, light, tangle vine\", a label the book garbled; the block is the druid's primal prepared spells, as the label of every other druid in the book has it."
+}

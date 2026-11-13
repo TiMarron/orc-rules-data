@@ -1,0 +1,144 @@
+{
+  "id": "creature.obsessive-researcher",
+  "type": "creature",
+  "name": "creature.obsessive-researcher.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 138,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 3
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.obsessive-researcher.language-note",
+  "skills": [
+    {
+      "lore": "creature.obsessive-researcher.lore.0",
+      "mod": 19
+    },
+    {
+      "lore": "creature.obsessive-researcher.lore.1",
+      "mod": 23
+    },
+    {
+      "lore": "creature.obsessive-researcher.lore.2",
+      "mod": 25
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 2,
+    "int": 5,
+    "wis": 0,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.writing-set"
+    },
+    {
+      "name": "creature.obsessive-researcher.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 3,
+    "reflex": 2,
+    "will": 7
+  },
+  "hp": {
+    "value": 7
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.obsessive-researcher.strikes.fist.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.obsessive-researcher.strikes.pen.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "monomania",
+      "section": "top",
+      "name": "creature.obsessive-researcher.abilities.monomania.name",
+      "text": "creature.obsessive-researcher.abilities.monomania.text"
+    },
+    {
+      "id": "world-class-authority",
+      "section": "top",
+      "name": "creature.obsessive-researcher.abilities.world-class-authority.name",
+      "text": "creature.obsessive-researcher.abilities.world-class-authority.text"
+    },
+    {
+      "id": "idee-fixe",
+      "section": "defense",
+      "name": "creature.obsessive-researcher.abilities.idee-fixe.name",
+      "text": "creature.obsessive-researcher.abilities.idee-fixe.text"
+    },
+    {
+      "id": "furious-harangue",
+      "section": "offense",
+      "name": "creature.obsessive-researcher.abilities.furious-harangue.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.obsessive-researcher.abilities.furious-harangue.text"
+    }
+  ]
+}
