@@ -1,0 +1,165 @@
+{
+  "id": "creature.abbot-of-commerce",
+  "type": "creature",
+  "name": "creature.abbot-of-commerce.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 28,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common",
+    "empyrean",
+    "utopian"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 6
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8,
+      "note": "creature.abbot-of-commerce.skills.1.note"
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 21
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 1,
+    "con": -2,
+    "int": 2,
+    "wis": 4,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.staff",
+      "name": "creature.abbot-of-commerce.items.1.name"
+    },
+    {
+      "item": "item.religious-symbol"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 3,
+    "reflex": 4,
+    "will": 11
+  },
+  "hp": {
+    "value": 15
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.abbot-of-commerce.strikes.griffon-cane.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.abbot-of-commerce.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.abbot-of-commerce.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 6,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "religious-specialist",
+      "section": "top",
+      "name": "creature.abbot-of-commerce.abilities.religious-specialist.name",
+      "text": "creature.abbot-of-commerce.abilities.religious-specialist.text"
+    },
+    {
+      "id": "true-faith",
+      "section": "top",
+      "name": "creature.abbot-of-commerce.abilities.true-faith.name",
+      "text": "creature.abbot-of-commerce.abilities.true-faith.text"
+    },
+    {
+      "id": "divine-protection",
+      "section": "offense",
+      "name": "creature.abbot-of-commerce.abilities.divine-protection.name",
+      "actions": "2",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "creature.abbot-of-commerce.abilities.divine-protection.frequency",
+      "text": "creature.abbot-of-commerce.abilities.divine-protection.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore. Skill qualifier added from the book: page 28 prints \"Diplomacy +8 (+10 with members of own faith)\"; the source omits the parenthesis, and there is no errata for the book. Strike corrected: page 28 prints the crossbow under \"Melee\", the book's slip; it has a range increment and reload, and is a ranged Strike."
+}

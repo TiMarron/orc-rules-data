@@ -1,0 +1,158 @@
+{
+  "id": "creature.dynamo",
+  "type": "creature",
+  "name": "creature.dynamo.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 48,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 17
+    },
+    {
+      "lore": "creature.dynamo.lore.3",
+      "mod": 17
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 16
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 2,
+    "int": 3,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "note": "creature.dynamo.items.0.note"
+    },
+    {
+      "item": "item.dragon-mouth-pistol",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.repair-toolkit"
+    },
+    {
+      "item": "item.half-plate",
+      "name": "creature.dynamo.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 17,
+    "will": 14
+  },
+  "hp": {
+    "value": 145
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dynamo.strikes.modular-prosthesis.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [],
+      "damage": [],
+      "effects": [
+        {
+          "text": "creature.dynamo.strikes.modular-prosthesis.effects.0"
+        },
+        {
+          "own": "modular-prostheses"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dynamo.strikes.dragon-mouth-pistol.name",
+      "actions": "1",
+      "bonus": 18,
+      "rangeIncrement": 20,
+      "reload": 1,
+      "traits": [
+        "concussive",
+        "scatter"
+      ],
+      "traitValues": {
+        "scatter": "5"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dragon-mouth-pistol"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "extend-arms",
+      "section": "offense",
+      "name": "creature.dynamo.abilities.extend-arms.name",
+      "actions": "1",
+      "text": "creature.dynamo.abilities.extend-arms.text"
+    },
+    {
+      "id": "extend-legs",
+      "section": "offense",
+      "name": "creature.dynamo.abilities.extend-legs.name",
+      "actions": "1",
+      "text": "creature.dynamo.abilities.extend-legs.text"
+    },
+    {
+      "id": "modular-prostheses",
+      "section": "offense",
+      "name": "creature.dynamo.abilities.modular-prostheses.name",
+      "actions": "1",
+      "text": "creature.dynamo.abilities.modular-prostheses.text"
+    }
+  ],
+  "editNote": "Damage the dataset has no field for stays the Strike's effect text, word for word: 1 precision damage (the schema has no precision type), 1 splash acid, and the damage type a modular prosthesis or an integrated weapon chooses, which its own ability describes."
+}

@@ -1,0 +1,166 @@
+{
+  "id": "creature.apothecary",
+  "type": "creature",
+  "name": "creature.apothecary.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 60,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 5
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 5,
+      "note": "creature.apothecary.skills.0.note"
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 10
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 1,
+    "int": 3,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.acid-flask-lesser",
+      "count": 2
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.elixir-of-life-minor",
+      "count": 2
+    },
+    {
+      "item": "item.healers-toolkit"
+    },
+    {
+      "item": "item.padded-armor",
+      "name": "creature.apothecary.items.4.name"
+    },
+    {
+      "name": "creature.apothecary.items.5.name"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 3,
+    "will": 5,
+    "note": "creature.apothecary.saves.note"
+  },
+  "hp": {
+    "value": 8
+  },
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.apothecary.strikes.stone-pestle.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.apothecary.strikes.fist.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.apothecary.strikes.acid-flask.name",
+      "actions": "1",
+      "bonus": 5,
+      "rangeIncrement": 20,
+      "traits": [
+        "splash"
+      ],
+      "damage": [
+        {
+          "dice": "1",
+          "type": "acid"
+        },
+        {
+          "dice": "1d6",
+          "type": "acid",
+          "persistent": true
+        }
+      ],
+      "effects": [
+        {
+          "text": "creature.apothecary.strikes.acid-flask.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "medical-specialist",
+      "section": "top",
+      "name": "creature.apothecary.abilities.medical-specialist.name",
+      "text": "creature.apothecary.abilities.medical-specialist.text"
+    },
+    {
+      "id": "medical-wisdom",
+      "section": "top",
+      "name": "creature.apothecary.abilities.medical-wisdom.name",
+      "text": "creature.apothecary.abilities.medical-wisdom.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 60 prints \"Crafting +5 (+8 for alchemy and medication)\"; the source omits the parenthesis, and there is no errata for the book."
+}

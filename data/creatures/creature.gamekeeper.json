@@ -1,0 +1,180 @@
+{
+  "id": "creature.gamekeeper",
+  "type": "creature",
+  "name": "creature.gamekeeper.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 56,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "lore": "creature.gamekeeper.lore.2",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.gamekeeper.items.0.name"
+    },
+    {
+      "item": "item.arbalest",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 40
+      }
+    },
+    {
+      "item": "item.club"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 13,
+    "will": 12
+  },
+  "hp": {
+    "value": 95
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gamekeeper.strikes.club.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gamekeeper.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gamekeeper.strikes.arbalest.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 110,
+      "reload": 1,
+      "traits": [
+        "backstabber",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.arbalest"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "move-it",
+      "section": "top",
+      "name": "creature.gamekeeper.abilities.move-it.name",
+      "text": "creature.gamekeeper.abilities.move-it.text"
+    },
+    {
+      "id": "sic-em",
+      "section": "defense",
+      "name": "creature.gamekeeper.abilities.sic-em.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "emotion",
+        "mental"
+      ],
+      "trigger": "creature.gamekeeper.abilities.sic-em.trigger",
+      "text": "creature.gamekeeper.abilities.sic-em.text"
+    },
+    {
+      "id": "keepers-revenge",
+      "section": "defense",
+      "name": "creature.gamekeeper.abilities.keepers-revenge.name",
+      "traits": [
+        "curse",
+        "primal"
+      ],
+      "text": "creature.gamekeeper.abilities.keepers-revenge.text"
+    },
+    {
+      "id": "leader-of-the-pack",
+      "section": "offense",
+      "name": "creature.gamekeeper.abilities.leader-of-the-pack.name",
+      "text": "creature.gamekeeper.abilities.leader-of-the-pack.text"
+    }
+  ],
+  "editNote": "Items, page 56: \"animal treats\" stays its printed name: the source links a page from before the Remaster, and the dataset has no record of it."
+}

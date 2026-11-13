@@ -1,0 +1,206 @@
+{
+  "id": "creature.sniper",
+  "type": "creature",
+  "name": "creature.sniper.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 90,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 1,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.arquebus",
+      "ammunition": {
+        "name": "creature.sniper.items.0.ammunition.name",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "name": "creature.sniper.items.2.name",
+      "count": 4
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 15,
+    "will": 11
+  },
+  "hp": {
+    "value": 65
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.sniper.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.sniper.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.sniper.strikes.arquebus.name",
+      "actions": "1",
+      "bonus": 15,
+      "range": 150,
+      "reload": 1,
+      "traits": [
+        "concussive",
+        "fatal",
+        "kickback"
+      ],
+      "traitValues": {
+        "fatal": "1d12"
+      },
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.arquebus"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.sniper.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "silencer",
+      "section": "top",
+      "name": "creature.sniper.abilities.silencer.name",
+      "text": "creature.sniper.abilities.silencer.text"
+    },
+    {
+      "id": "concussive-shot",
+      "section": "offense",
+      "name": "creature.sniper.abilities.concussive-shot.name",
+      "actions": "2",
+      "text": "creature.sniper.abilities.concussive-shot.text"
+    },
+    {
+      "id": "full-bore",
+      "section": "offense",
+      "name": "creature.sniper.abilities.full-bore.name",
+      "actions": "2",
+      "text": "creature.sniper.abilities.full-bore.text"
+    },
+    {
+      "id": "snipers-edge",
+      "section": "offense",
+      "name": "creature.sniper.abilities.snipers-edge.name",
+      "text": "creature.sniper.abilities.snipers-edge.text"
+    },
+    {
+      "id": "surprise-attack",
+      "section": "offense",
+      "name": "creature.sniper.abilities.surprise-attack.name",
+      "text": "creature.sniper.abilities.surprise-attack.text"
+    }
+  ],
+  "editNote": "Items, page 90: \"Silencer\" stays its printed name: the source links a firearm accessory from before the Remaster that no Remaster book in the dataset reprints."
+}

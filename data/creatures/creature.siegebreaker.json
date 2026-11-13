@@ -1,0 +1,227 @@
+{
+  "id": "creature.siegebreaker",
+  "type": "creature",
+  "name": "creature.siegebreaker.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 86,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 14,
+  "size": "medium",
+  "perception": {
+    "mod": 24
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 27,
+      "note": "creature.siegebreaker.skills.2.note"
+    },
+    {
+      "lore": "creature.siegebreaker.lore.3",
+      "mod": 29
+    },
+    {
+      "lore": "creature.siegebreaker.lore.4",
+      "mod": 29
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 25
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 23
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 5,
+    "con": 4,
+    "int": 5,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.alchemists-toolkit"
+    },
+    {
+      "name": "creature.siegebreaker.items.1.name"
+    },
+    {
+      "item": "item.light-mace",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.leather-armor",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 34
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 28,
+    "will": 23
+  },
+  "hp": {
+    "value": 300
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.siegebreaker.strikes.light-mace.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.siegebreaker.strikes.fist.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+18",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.siegebreaker.strikes.alchemical-grenade.name",
+      "actions": "1",
+      "bonus": 27,
+      "rangeIncrement": 60,
+      "traits": [
+        "splash"
+      ],
+      "damage": [
+        {
+          "dice": "3d6",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ]
+        },
+        {
+          "dice": "10",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ],
+          "persistent": true,
+          "note": "creature.siegebreaker.strikes.alchemical-grenade.damage.1.note"
+        },
+        {
+          "dice": "10",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ],
+          "splash": true,
+          "note": "creature.siegebreaker.strikes.alchemical-grenade.damage.2.note"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "alchemical-grenades",
+      "section": "top",
+      "name": "creature.siegebreaker.abilities.alchemical-grenades.name",
+      "text": "creature.siegebreaker.abilities.alchemical-grenades.text"
+    },
+    {
+      "id": "explosive-compounds",
+      "section": "defense",
+      "name": "creature.siegebreaker.abilities.explosive-compounds.name",
+      "text": "creature.siegebreaker.abilities.explosive-compounds.text"
+    },
+    {
+      "id": "expanded-splash",
+      "section": "offense",
+      "name": "creature.siegebreaker.abilities.expanded-splash.name",
+      "text": "creature.siegebreaker.abilities.expanded-splash.text"
+    },
+    {
+      "id": "quick-grenadier",
+      "section": "offense",
+      "name": "creature.siegebreaker.abilities.quick-grenadier.name",
+      "actions": "1",
+      "text": "creature.siegebreaker.abilities.quick-grenadier.text"
+    },
+    {
+      "id": "the-wall-must-fall",
+      "section": "offense",
+      "name": "creature.siegebreaker.abilities.the-wall-must-fall.name",
+      "traits": [
+        "exploration"
+      ],
+      "requirements": "creature.siegebreaker.abilities.the-wall-must-fall.requirements",
+      "text": "creature.siegebreaker.abilities.the-wall-must-fall.text"
+    }
+  ],
+  "resistances": [
+    {
+      "type": "alchemical-items",
+      "value": 10
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 86 prints \"Crafting +27 (+31 to Craft alchemical items)\"; the source omits the parenthesis, and there is no errata for the book. Resistances read from the book: page 86 prints \"Resistances alchemical items 10\"; the source puts the line in the AC row, where it read as a note on the AC."
+}

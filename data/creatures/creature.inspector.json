@@ -1,0 +1,161 @@
+{
+  "id": "creature.inspector",
+  "type": "creature",
+  "name": "creature.inspector.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 112,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "note": "creature.inspector.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.inspector.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "lore": "creature.inspector.lore.3",
+      "mod": 13
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 8,
+      "note": "creature.inspector.skills.4.note"
+    },
+    {
+      "skill": "skill.society",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 0,
+    "int": 4,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 10,
+    "will": 12
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.inspector.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "text": "creature.inspector.strikes.shortsword.effects.0"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.inspector.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "text": "creature.inspector.strikes.fist.effects.0"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "investigation-specialist",
+      "section": "top",
+      "name": "creature.inspector.abilities.investigation-specialist.name",
+      "text": "creature.inspector.abilities.investigation-specialist.text"
+    },
+    {
+      "id": "sense-demise",
+      "section": "top",
+      "name": "creature.inspector.abilities.sense-demise.name",
+      "text": "creature.inspector.abilities.sense-demise.text"
+    },
+    {
+      "id": "unavoidable-question",
+      "section": "offense",
+      "name": "creature.inspector.abilities.unavoidable-question.name",
+      "actions": "1",
+      "traits": [
+        "linguistic"
+      ],
+      "frequency": "creature.inspector.abilities.unavoidable-question.frequency",
+      "text": "creature.inspector.abilities.unavoidable-question.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 112 prints \"Medicine +8 (+13 to Recall Knowledge)\"; the source omits the parenthesis, and there is no errata for the book."
+}

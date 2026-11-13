@@ -1,0 +1,175 @@
+{
+  "id": "creature.juggernaut",
+  "type": "creature",
+  "name": "creature.juggernaut.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 49,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 13,
+  "size": "large",
+  "perception": {
+    "mod": 21,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 26
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 26
+    },
+    {
+      "lore": "creature.juggernaut.lore.3",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 8,
+    "dex": 3,
+    "con": 4,
+    "int": 2,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "note": "creature.juggernaut.items.0.note"
+    },
+    {
+      "name": "creature.juggernaut.items.1.name"
+    },
+    {
+      "item": "item.repair-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 25,
+    "reflex": 19,
+    "will": 21
+  },
+  "hp": {
+    "value": 250
+  },
+  "resistances": [
+    {
+      "own": "galvanized-plating"
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.juggernaut.strikes.integrated-weapon.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [],
+      "damage": [],
+      "effects": [
+        {
+          "text": "creature.juggernaut.strikes.integrated-weapon.effects.0"
+        },
+        {
+          "own": "integrated-weapon"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.juggernaut.strikes.plated-fist.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "3d4+14",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "integrated-weapon",
+      "section": "top",
+      "name": "creature.juggernaut.abilities.integrated-weapon.name",
+      "text": "creature.juggernaut.abilities.integrated-weapon.text"
+    },
+    {
+      "id": "power-source",
+      "section": "top",
+      "name": "creature.juggernaut.abilities.power-source.name",
+      "text": "creature.juggernaut.abilities.power-source.text"
+    },
+    {
+      "id": "galvanized-plating",
+      "section": "defense",
+      "name": "creature.juggernaut.abilities.galvanized-plating.name",
+      "text": "creature.juggernaut.abilities.galvanized-plating.text"
+    },
+    {
+      "id": "self-destruct",
+      "section": "defense",
+      "name": "creature.juggernaut.abilities.self-destruct.name",
+      "actions": "reaction",
+      "trigger": "creature.juggernaut.abilities.self-destruct.trigger",
+      "text": "creature.juggernaut.abilities.self-destruct.text"
+    },
+    {
+      "id": "energy-projector",
+      "section": "offense",
+      "name": "creature.juggernaut.abilities.energy-projector.name",
+      "actions": "2",
+      "traits": [
+        "alchemical"
+      ],
+      "text": "creature.juggernaut.abilities.energy-projector.text"
+    },
+    {
+      "id": "jump-jets",
+      "section": "offense",
+      "name": "creature.juggernaut.abilities.jump-jets.name",
+      "actions": "1",
+      "traits": [
+        "alchemical"
+      ],
+      "text": "creature.juggernaut.abilities.jump-jets.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.juggernaut.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.juggernaut.abilities.trample.text"
+    }
+  ],
+  "editNote": "Damage the dataset has no field for stays the Strike's effect text, word for word: 1 precision damage (the schema has no precision type), 1 splash acid, and the damage type a modular prosthesis or an integrated weapon chooses, which its own ability describes."
+}

@@ -1,0 +1,142 @@
+{
+  "id": "creature.fortune-reader",
+  "type": "creature",
+  "name": "creature.fortune-reader.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 96,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 10
+    },
+    {
+      "lore": "creature.fortune-reader.lore.1",
+      "mod": 11
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 5
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 5,
+      "note": "creature.fortune-reader.skills.3.note"
+    },
+    {
+      "skill": "skill.society",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 2,
+    "con": 1,
+    "int": 2,
+    "wis": 3,
+    "cha": 3
+  },
+  "items": [
+    {
+      "name": "creature.fortune-reader.items.0.name"
+    },
+    {
+      "item": "item.sickle"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 3,
+    "reflex": 6,
+    "will": 10
+  },
+  "hp": {
+    "value": 8
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.fortune-reader.strikes.sickle.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.sickle"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.fortune-reader.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "cold-reading-specialist",
+      "section": "top",
+      "name": "creature.fortune-reader.abilities.cold-reading-specialist.name",
+      "text": "creature.fortune-reader.abilities.cold-reading-specialist.text"
+    },
+    {
+      "id": "fated-doom",
+      "section": "offense",
+      "name": "creature.fortune-reader.abilities.fated-doom.name",
+      "text": "creature.fortune-reader.abilities.fated-doom.text"
+    },
+    {
+      "id": "read-the-cards",
+      "section": "offense",
+      "name": "creature.fortune-reader.abilities.read-the-cards.name",
+      "traits": [
+        "exploration",
+        "occult",
+        "prediction"
+      ],
+      "text": "creature.fortune-reader.abilities.read-the-cards.text"
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a fortune-telling deck of the setting; it is renamed for fortune-telling in general, the deck is a fortune-telling deck, and the ability that reads it is Read the Cards. Skill qualifier added from the book: page 96 prints \"Performance +5 (+11 when fortune-telling)\"; the source omits the parenthesis, and there is no errata for the book."
+}
