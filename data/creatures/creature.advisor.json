@@ -1,0 +1,279 @@
+{
+  "id": "creature.advisor",
+  "type": "creature",
+  "name": "creature.advisor.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 14,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 14
+    },
+    {
+      "lore": "creature.advisor.lore.2",
+      "mod": 12
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 10
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 12
+    },
+    {
+      "skill": "skill.society",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 2,
+    "con": -1,
+    "int": 3,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 2
+    },
+    {
+      "item": "item.clothing-fine",
+      "name": "creature.advisor.items.1.name"
+    },
+    {
+      "item": "item.healing-potion-minor"
+    },
+    {
+      "item": "item.musical-instrument-handheld",
+      "name": "creature.advisor.items.3.name",
+      "note": "creature.advisor.items.3.note"
+    },
+    {
+      "item": "item.whip"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 11,
+    "will": 14
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.advisor.strikes.whip.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "disarm",
+        "finesse",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.whip"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.advisor.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.advisor.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "placate",
+      "section": "top",
+      "name": "creature.advisor.abilities.placate.name",
+      "text": "creature.advisor.abilities.placate.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 22,
+      "attack": 14,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.protection"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.augury"
+            },
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.soothe"
+            },
+            {
+              "spell": "spell.stupefy"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.mind-reading"
+            },
+            {
+              "spell": "spell.soothe"
+            },
+            {
+              "spell": "spell.ring-of-truth"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.advisor.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 22,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.rallying-anthem"
+          },
+          {
+            "spell": "spell.courageous-anthem"
+          },
+          {
+            "spell": "spell.uplifting-overture"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.counter-performance"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Items, page 14: \"fine clothes\" is item.clothing-fine under its printed name: the source links the clothing page, and fine clothes are its fine variant; \"small harp\" is item.musical-instrument-handheld under its printed name: the source links the musical instrument page, and the page itself calls the harp a handheld musical instrument. The parenthesis \"(handheld musical instrument)\" the page prints after it is the entry's note."
+}

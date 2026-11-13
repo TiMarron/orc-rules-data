@@ -1,0 +1,187 @@
+{
+  "id": "creature.guildmaster",
+  "type": "creature",
+  "name": "creature.guildmaster.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 9,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.guildmaster.lore.0",
+      "mod": 25
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "lore": "creature.guildmaster.lore.2",
+      "mod": 19
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 25
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 24
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 22
+    },
+    {
+      "skill": "skill.society",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 1,
+    "con": 2,
+    "int": 4,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "name": "creature.guildmaster.items.0.name"
+    },
+    {
+      "name": "creature.guildmaster.items.1.name"
+    },
+    {
+      "item": "item.hide-armor",
+      "name": "creature.guildmaster.items.2.name"
+    },
+    {
+      "item": "item.light-hammer",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "name": "creature.guildmaster.items.4.name"
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 14,
+    "will": 17
+  },
+  "hp": {
+    "value": 135
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.guildmaster.strikes.light-hammer.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.guildmaster.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.guildmaster.strikes.light-hammer-2.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "craft-specialist",
+      "section": "top",
+      "name": "creature.guildmaster.abilities.craft-specialist.name",
+      "text": "creature.guildmaster.abilities.craft-specialist.text"
+    },
+    {
+      "id": "call-to-action",
+      "section": "offense",
+      "name": "creature.guildmaster.abilities.call-to-action.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.guildmaster.abilities.call-to-action.text"
+    },
+    {
+      "id": "sworn-duty",
+      "section": "offense",
+      "name": "creature.guildmaster.abilities.sworn-duty.name",
+      "text": "creature.guildmaster.abilities.sworn-duty.text"
+    }
+  ],
+  "editNote": "Items, page 9: \"Artisan's Tools\" is item.artisans-toolkit under its printed name: artisan's tools are the artisan's toolkit, the name it had before the Remaster; the source links the old page."
+}

@@ -1,0 +1,175 @@
+{
+  "id": "creature.astronomer",
+  "type": "creature",
+  "name": "creature.astronomer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 139,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 8
+    },
+    {
+      "lore": "creature.astronomer.lore.1",
+      "mod": 12
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 2,
+    "int": 4,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "name": "creature.astronomer.items.0.name"
+    },
+    {
+      "name": "creature.astronomer.items.1.name"
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 5,
+    "will": 9
+  },
+  "hp": {
+    "value": 23
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.astronomer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.astronomer.strikes.staff.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "living-sextant",
+      "section": "top",
+      "name": "creature.astronomer.abilities.living-sextant.name",
+      "text": "creature.astronomer.abilities.living-sextant.text"
+    },
+    {
+      "id": "reject-myth",
+      "section": "defense",
+      "name": "creature.astronomer.abilities.reject-myth.name",
+      "actions": "reaction",
+      "trigger": "creature.astronomer.abilities.reject-myth.trigger",
+      "text": "creature.astronomer.abilities.reject-myth.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 17,
+      "attack": 9,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.sigil"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.alarm"
+            },
+            {
+              "spell": "spell.gentle-landing"
+            },
+            {
+              "spell": "spell.phantasmal-minion"
+            },
+            {
+              "spell": "spell.sleep"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Items, page 139: \"Astrolabe\" stays its printed name: the source links a page from before the Remaster, and no Remaster book in the dataset has an astrolabe."
+}

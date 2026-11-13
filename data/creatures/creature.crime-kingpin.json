@@ -1,0 +1,253 @@
+{
+  "id": "creature.crime-kingpin",
+  "type": "creature",
+  "name": "creature.crime-kingpin.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 24,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "medium",
+  "perception": {
+    "mod": 22,
+    "note": "creature.crime-kingpin.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 24
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 22
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 28
+    },
+    {
+      "skill": "skill.society",
+      "mod": 24
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 23
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 24
+    },
+    {
+      "lore": "creature.crime-kingpin.lore.7",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 5,
+    "con": 3,
+    "int": 2,
+    "wis": 2,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.hand-crossbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.leather-armor",
+      "potency": 1
+    },
+    {
+      "item": "item.potion-of-flying"
+    },
+    {
+      "item": "item.healing-potion-moderate",
+      "count": 2
+    },
+    {
+      "item": "item.rapier",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 23,
+    "will": 22
+  },
+  "hp": {
+    "value": 250
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.crime-kingpin.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "2d6+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.crime-kingpin.strikes.fist.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.crime-kingpin.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 26,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "kingpins-presence",
+      "section": "defense",
+      "name": "creature.crime-kingpin.abilities.kingpins-presence.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental"
+      ],
+      "aura": 30,
+      "text": "creature.crime-kingpin.abilities.kingpins-presence.text"
+    },
+    {
+      "id": "deny-advantage",
+      "section": "defense",
+      "name": "creature.crime-kingpin.abilities.deny-advantage.name",
+      "text": "creature.crime-kingpin.abilities.deny-advantage.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.crime-kingpin.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "youll-pay-for-that",
+      "section": "defense",
+      "name": "creature.crime-kingpin.abilities.youll-pay-for-that.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "trigger": "creature.crime-kingpin.abilities.youll-pay-for-that.trigger",
+      "text": "creature.crime-kingpin.abilities.youll-pay-for-that.text"
+    },
+    {
+      "id": "fencing-brawl",
+      "section": "offense",
+      "name": "creature.crime-kingpin.abilities.fencing-brawl.name",
+      "actions": "2",
+      "text": "creature.crime-kingpin.abilities.fencing-brawl.text"
+    },
+    {
+      "id": "kick-away",
+      "section": "offense",
+      "name": "creature.crime-kingpin.abilities.kick-away.name",
+      "actions": "reaction",
+      "trigger": "creature.crime-kingpin.abilities.kick-away.trigger",
+      "text": "creature.crime-kingpin.abilities.kick-away.text"
+    },
+    {
+      "id": "kingpins-command",
+      "section": "offense",
+      "name": "creature.crime-kingpin.abilities.kingpins-command.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.crime-kingpin.abilities.kingpins-command.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.crime-kingpin.abilities.sneak-attack.name",
+      "text": "creature.crime-kingpin.abilities.sneak-attack.text"
+    }
+  ]
+}

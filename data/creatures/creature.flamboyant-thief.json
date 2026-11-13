@@ -1,0 +1,266 @@
+{
+  "id": "creature.flamboyant-thief",
+  "type": "creature",
+  "name": "creature.flamboyant-thief.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 25,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 15,
+  "size": "medium",
+  "perception": {
+    "mod": 27
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 29
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 26
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 28
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 26
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 28
+    },
+    {
+      "skill": "skill.society",
+      "mod": 24
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 31
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 31
+    },
+    {
+      "lore": "creature.flamboyant-thief.lore.8",
+      "mod": 28
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 6,
+    "con": 1,
+    "int": 3,
+    "wis": 4,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking"
+        },
+        {
+          "item": "item.returning"
+        }
+      ]
+    },
+    {
+      "item": "item.disguise-kit-elite"
+    },
+    {
+      "item": "item.clothing-fine",
+      "name": "creature.flamboyant-thief.items.2.name"
+    },
+    {
+      "item": "item.leather-armor",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    },
+    {
+      "item": "item.potion-of-flying"
+    },
+    {
+      "item": "item.smoke-ball-greater"
+    },
+    {
+      "item": "item.thieves-toolkit-infiltrator"
+    }
+  ],
+  "ac": {
+    "value": 37
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 30,
+    "will": 26
+  },
+  "hp": {
+    "value": 225
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.flamboyant-thief.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+11",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "spectacular-attack"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.flamboyant-thief.strikes.fist.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "spectacular-attack"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.flamboyant-thief.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "magical",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+11",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "spectacular-attack"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "flamboyant-performance",
+      "section": "top",
+      "name": "creature.flamboyant-thief.abilities.flamboyant-performance.name",
+      "text": "creature.flamboyant-thief.abilities.flamboyant-performance.text"
+    },
+    {
+      "id": "vanishing-act",
+      "section": "top",
+      "name": "creature.flamboyant-thief.abilities.vanishing-act.name",
+      "text": "creature.flamboyant-thief.abilities.vanishing-act.text"
+    },
+    {
+      "id": "dramatic-entrance",
+      "section": "defense",
+      "name": "creature.flamboyant-thief.abilities.dramatic-entrance.name",
+      "actions": "free",
+      "traits": [
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "trigger": "creature.flamboyant-thief.abilities.dramatic-entrance.trigger",
+      "text": "creature.flamboyant-thief.abilities.dramatic-entrance.text"
+    },
+    {
+      "id": "i-say-when-im-here",
+      "section": "defense",
+      "name": "creature.flamboyant-thief.abilities.i-say-when-im-here.name",
+      "text": "creature.flamboyant-thief.abilities.i-say-when-im-here.text"
+    },
+    {
+      "id": "nimble-dodge",
+      "section": "defense",
+      "name": "creature.flamboyant-thief.abilities.nimble-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.flamboyant-thief.abilities.nimble-dodge.trigger",
+      "text": "creature.flamboyant-thief.abilities.nimble-dodge.text"
+    },
+    {
+      "id": "dancing-dagger",
+      "section": "offense",
+      "name": "creature.flamboyant-thief.abilities.dancing-dagger.name",
+      "actions": "2",
+      "text": "creature.flamboyant-thief.abilities.dancing-dagger.text"
+    },
+    {
+      "id": "dramatic-exit",
+      "section": "offense",
+      "name": "creature.flamboyant-thief.abilities.dramatic-exit.name",
+      "actions": "3",
+      "text": "creature.flamboyant-thief.abilities.dramatic-exit.text"
+    },
+    {
+      "id": "spectacular-attack",
+      "section": "offense",
+      "name": "creature.flamboyant-thief.abilities.spectacular-attack.name",
+      "text": "creature.flamboyant-thief.abilities.spectacular-attack.text"
+    }
+  ],
+  "editNote": "Items, page 25: \"fine clothes\" is item.clothing-fine under its printed name: the source links the clothing page, and fine clothes are its fine variant."
+}

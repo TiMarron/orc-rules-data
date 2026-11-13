@@ -1,0 +1,132 @@
+{
+  "id": "creature.drunkard",
+  "type": "creature",
+  "name": "creature.drunkard.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 41,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.drunkard.lore.0",
+      "mod": 3
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 4,
+    "int": -1,
+    "wis": 0,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.padded-armor",
+      "name": "creature.drunkard.items.0.name"
+    },
+    {
+      "item": "item.mug",
+      "name": "creature.drunkard.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 8,
+    "will": 6
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.drunkard.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.drunkard.strikes.pewter-mug.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "drunken-flailing",
+      "section": "offense",
+      "name": "creature.drunkard.abilities.drunken-flailing.name",
+      "actions": "1",
+      "requirements": "creature.drunkard.abilities.drunken-flailing.requirements",
+      "text": "creature.drunkard.abilities.drunken-flailing.text"
+    },
+    {
+      "id": "drunken-rage",
+      "section": "offense",
+      "name": "creature.drunkard.abilities.drunken-rage.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "emotion",
+        "mental"
+      ],
+      "requirements": "creature.drunkard.abilities.drunken-rage.requirements",
+      "text": "creature.drunkard.abilities.drunken-rage.text"
+    }
+  ],
+  "editNote": "Items, page 41: \"pewter mug\" is item.mug under its printed name: the source links the mug; pewter is no precious material."
+}

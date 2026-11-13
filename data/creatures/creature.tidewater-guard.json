@@ -1,0 +1,168 @@
+{
+  "id": "creature.tidewater-guard",
+  "type": "creature",
+  "name": "creature.tidewater-guard.name",
+  "traits": [
+    "humanoid",
+    "lizardfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 204,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common",
+    "iruxi"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11,
+      "note": "creature.tidewater-guard.skills.3.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 1,
+    "int": -1,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.studded-leather-armor"
+    },
+    {
+      "item": "item.trident",
+      "name": "creature.tidewater-guard.items.1.name",
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 11,
+    "will": 10
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tidewater-guard.strikes.trident.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "tethered"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tidewater-guard.strikes.claw.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tidewater-guard.strikes.trident-2.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "tethered",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.tidewater-guard.abilities.deep-breath.name",
+      "text": "creature.tidewater-guard.abilities.deep-breath.text"
+    },
+    {
+      "id": "tethered-tridents",
+      "section": "top",
+      "name": "creature.tidewater-guard.abilities.tethered-tridents.name",
+      "text": "creature.tidewater-guard.abilities.tethered-tridents.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.tidewater-guard.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "reel-in",
+      "section": "offense",
+      "name": "creature.tidewater-guard.abilities.reel-in.name",
+      "actions": "2",
+      "text": "creature.tidewater-guard.abilities.reel-in.text"
+    },
+    {
+      "id": "terrain-advantage",
+      "section": "offense",
+      "name": "creature.tidewater-guard.abilities.terrain-advantage.name",
+      "text": "creature.tidewater-guard.abilities.terrain-advantage.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 204 prints \"Stealth +11 (+12 while underwater)\"; the source omits the parenthesis, and there is no errata for the book. Items, page 204: \"trident with 50 feet of line\" is item.trident under its printed name: the source links the trident."
+}

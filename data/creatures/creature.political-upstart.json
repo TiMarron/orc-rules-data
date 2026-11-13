@@ -1,0 +1,150 @@
+{
+  "id": "creature.political-upstart",
+  "type": "creature",
+  "name": "creature.political-upstart.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 76,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "note": "creature.political-upstart.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 8
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 10
+    },
+    {
+      "lore": "creature.political-upstart.lore.2",
+      "mod": 11
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 10
+    },
+    {
+      "skill": "skill.society",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 0,
+    "int": 2,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.leather-armor",
+      "name": "creature.political-upstart.items.0.name"
+    },
+    {
+      "name": "creature.political-upstart.items.1.name"
+    },
+    {
+      "name": "creature.political-upstart.items.2.name"
+    },
+    {
+      "item": "item.writing-set"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 4,
+    "reflex": 7,
+    "will": 10
+  },
+  "hp": {
+    "value": 15
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.political-upstart.strikes.fist.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "rhetoric-specialist",
+      "section": "top",
+      "name": "creature.political-upstart.abilities.rhetoric-specialist.name",
+      "text": "creature.political-upstart.abilities.rhetoric-specialist.text"
+    },
+    {
+      "id": "retort",
+      "section": "defense",
+      "name": "creature.political-upstart.abilities.retort.name",
+      "actions": "reaction",
+      "trigger": "creature.political-upstart.abilities.retort.trigger",
+      "text": "creature.political-upstart.abilities.retort.text"
+    },
+    {
+      "id": "fiery-rhetoric",
+      "section": "offense",
+      "name": "creature.political-upstart.abilities.fiery-rhetoric.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.political-upstart.abilities.fiery-rhetoric.text"
+    },
+    {
+      "id": "fascinating-speech",
+      "section": "offense",
+      "name": "creature.political-upstart.abilities.fascinating-speech.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.political-upstart.abilities.fascinating-speech.text"
+    }
+  ],
+  "editNote": "Items, page 76: \"soapbox\" stays its printed name: the source links a page from before the Remaster, and the dataset has no record of it."
+}
