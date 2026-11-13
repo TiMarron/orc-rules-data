@@ -1,0 +1,164 @@
+{
+  "id": "creature.bodyguard",
+  "type": "creature",
+  "name": "creature.bodyguard.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 82,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    },
+    {
+      "skill": "skill.society",
+      "mod": 2
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.greatclub"
+    },
+    {
+      "item": "item.sap"
+    },
+    {
+      "item": "item.sling"
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 7,
+    "will": 4
+  },
+  "hp": {
+    "value": 25
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bodyguard.strikes.greatclub.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "backswing",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.greatclub"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bodyguard.strikes.sap.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sap"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bodyguard.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bodyguard.strikes.sling.name",
+      "actions": "1",
+      "bonus": 5,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bodyguards-reprisal",
+      "section": "defense",
+      "name": "creature.bodyguard.abilities.bodyguards-reprisal.name",
+      "actions": "reaction",
+      "trigger": "creature.bodyguard.abilities.bodyguards-reprisal.trigger",
+      "text": "creature.bodyguard.abilities.bodyguards-reprisal.text"
+    },
+    {
+      "id": "bodyguards-defense",
+      "section": "offense",
+      "name": "creature.bodyguard.abilities.bodyguards-defense.name",
+      "actions": "1",
+      "text": "creature.bodyguard.abilities.bodyguards-defense.text"
+    }
+  ],
+  "editNote": "Strike corrected: page 82 prints the sling under \"Melee\", the book's slip; it has a range increment and reload, and is a ranged Strike."
+}

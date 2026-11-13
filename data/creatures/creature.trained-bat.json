@@ -1,0 +1,126 @@
+{
+  "id": "creature.trained-bat",
+  "type": "creature",
+  "name": "creature.trained-bat.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 218,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "text": "creature.trained-bat.senses.0",
+        "acuity": "precise",
+        "range": 20
+      },
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 3,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.barding-light-small-or-medium",
+      "name": "creature.trained-bat.items.0.name"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 12,
+    "will": 10
+  },
+  "hp": {
+    "value": 50
+  },
+  "speeds": {
+    "land": 15,
+    "fly": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.trained-bat.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+6",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.trained-bat.strikes.wing.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+6",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "wing-thrash",
+      "section": "offense",
+      "name": "creature.trained-bat.abilities.wing-thrash.name",
+      "actions": "2",
+      "text": "creature.trained-bat.abilities.wing-thrash.text"
+    }
+  ],
+  "editNote": "Items, page 218: \"light barding\" is item.barding-light-small-or-medium under its printed name: the source links the barding page, and the bat is Medium."
+}

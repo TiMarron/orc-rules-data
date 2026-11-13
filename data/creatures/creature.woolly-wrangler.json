@@ -1,0 +1,184 @@
+{
+  "id": "creature.woolly-wrangler",
+  "type": "creature",
+  "name": "creature.woolly-wrangler.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 57,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "lore": "creature.woolly-wrangler.lore.2",
+      "mod": 18
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 3,
+    "con": 4,
+    "int": 0,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "name": "creature.woolly-wrangler.items.0.name"
+    },
+    {
+      "item": "item.greatclub",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.whip"
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 12,
+    "will": 16
+  },
+  "hp": {
+    "value": 125
+  },
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.woolly-wrangler.strikes.greatclub.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "backswing",
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.greatclub"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.woolly-wrangler.strikes.whip.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "disarm",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+12",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.whip"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.woolly-wrangler.strikes.fist.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+12",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "in-balance",
+      "section": "top",
+      "name": "creature.woolly-wrangler.abilities.in-balance.name",
+      "text": "creature.woolly-wrangler.abilities.in-balance.text"
+    },
+    {
+      "id": "uneven-footing",
+      "section": "defense",
+      "name": "creature.woolly-wrangler.abilities.uneven-footing.name",
+      "traits": [
+        "aura"
+      ],
+      "aura": 10,
+      "text": "creature.woolly-wrangler.abilities.uneven-footing.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.woolly-wrangler.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "wrangling-whip",
+      "section": "offense",
+      "name": "creature.woolly-wrangler.abilities.wrangling-whip.name",
+      "actions": "2",
+      "text": "creature.woolly-wrangler.abilities.wrangling-whip.text"
+    }
+  ],
+  "editNote": "Items, page 57: \"animal treats\" stays its printed name: the source links a page from before the Remaster, and the dataset has no record of it. Name corrected to the book: page 57 prints \"Woolly Wrangler\"; the source spells it \"Wooly\"."
+}
