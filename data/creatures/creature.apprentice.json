@@ -1,0 +1,152 @@
+{
+  "id": "creature.apprentice",
+  "type": "creature",
+  "name": "creature.apprentice.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 8,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 2
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 3
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 5
+    },
+    {
+      "lore": "creature.apprentice.lore.2",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 2,
+    "con": 1,
+    "int": 3,
+    "wis": 0,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit"
+    },
+    {
+      "item": "item.map",
+      "name": "creature.apprentice.items.1.name"
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.padded-armor",
+      "name": "creature.apprentice.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 6,
+    "will": 2
+  },
+  "hp": {
+    "value": 8
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.apprentice.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.apprentice.strikes.fist.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.apprentice.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "apprentices-ambition",
+      "section": "offense",
+      "name": "creature.apprentice.abilities.apprentices-ambition.name",
+      "actions": "free",
+      "frequency": "creature.apprentice.abilities.apprentices-ambition.frequency",
+      "requirements": "creature.apprentice.abilities.apprentices-ambition.requirements",
+      "text": "creature.apprentice.abilities.apprentices-ambition.text"
+    }
+  ],
+  "editNote": "Items, page 8: \"assorted maps\" is item.map under its printed name: the source links the map."
+}
