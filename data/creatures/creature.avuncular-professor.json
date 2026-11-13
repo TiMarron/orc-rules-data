@@ -1,0 +1,232 @@
+{
+  "id": "creature.avuncular-professor",
+  "type": "creature",
+  "name": "creature.avuncular-professor.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 140,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.avuncular-professor.language-note",
+  "skills": [
+    {
+      "lore": "creature.avuncular-professor.lore.0",
+      "mod": 16
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 18
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 18
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 12
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 18
+    },
+    {
+      "skill": "skill.society",
+      "mod": 16
+    },
+    {
+      "lore": "creature.avuncular-professor.lore.6",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 0,
+    "con": 1,
+    "int": 4,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "name": "creature.avuncular-professor.items.0.name"
+    },
+    {
+      "item": "item.clothing-fine",
+      "name": "creature.avuncular-professor.items.1.name"
+    },
+    {
+      "item": "item.sword-cane"
+    },
+    {
+      "item": "item.writing-set",
+      "name": "creature.avuncular-professor.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 11,
+    "will": 15
+  },
+  "hp": {
+    "value": 75
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.avuncular-professor.strikes.sword-cane.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "concealable"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.sword-cane"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.avuncular-professor.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "academic-politics-specialist",
+      "section": "top",
+      "name": "creature.avuncular-professor.abilities.academic-politics-specialist.name",
+      "text": "creature.avuncular-professor.abilities.academic-politics-specialist.text"
+    },
+    {
+      "id": "duelist-of-wits",
+      "section": "top",
+      "name": "creature.avuncular-professor.abilities.duelist-of-wits.name",
+      "text": "creature.avuncular-professor.abilities.duelist-of-wits.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 22,
+      "attack": 14,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.sigil"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.calm"
+            },
+            {
+              "spell": "spell.laughing-fit"
+            },
+            {
+              "spell": "spell.translate"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.enthrall"
+            },
+            {
+              "spell": "spell.hypnotize"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.avuncular-professor.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 22,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.uplifting-overture"
+          }
+        ]
+      }
+    }
+  ],
+  "editNote": "Items, page 140: \"fine clothes\" is item.clothing-fine under its printed name: the source links the clothing page, and fine clothes are its fine variant; \"writing kit\" is item.writing-set under its printed name: the source links the writing set."
+}

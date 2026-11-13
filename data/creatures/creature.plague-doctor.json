@@ -1,0 +1,239 @@
+{
+  "id": "creature.plague-doctor",
+  "type": "creature",
+  "name": "creature.plague-doctor.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 62,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 13
+    },
+    {
+      "lore": "creature.plague-doctor.lore.2",
+      "mod": 13
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 4,
+    "int": 2,
+    "wis": 4,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.healers-toolkit"
+    },
+    {
+      "item": "item.healing-potion-minor",
+      "count": 4
+    },
+    {
+      "item": "item.staff"
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 8,
+    "will": 13,
+    "note": "creature.plague-doctor.saves.note"
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.plague-doctor.strikes.staff.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.plague-doctor.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.plague-doctor.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "healing-hands",
+      "section": "offense",
+      "name": "creature.plague-doctor.abilities.healing-hands.name",
+      "text": "creature.plague-doctor.abilities.healing-hands.text"
+    },
+    {
+      "id": "improved-communal-healing",
+      "section": "offense",
+      "name": "creature.plague-doctor.abilities.improved-communal-healing.name",
+      "text": "creature.plague-doctor.abilities.improved-communal-healing.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "divine",
+      "dc": 23,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.sigil"
+          },
+          {
+            "spell": "spell.stabilize"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.detect-poison"
+            },
+            {
+              "spell": "spell.cleanse-cuisine",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.clear-mind",
+              "count": 2
+            },
+            {
+              "spell": "spell.peaceful-rest"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction",
+              "count": 2
+            },
+            {
+              "spell": "spell.heal",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.plague-doctor.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 23,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.healers-blessing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "id": "creature.infantry-soldier",
+  "type": "creature",
+  "name": "creature.infantry-soldier.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 88,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "lore": "creature.infantry-soldier.lore.2",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 0,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.chain-mail",
+      "name": "creature.infantry-soldier.items.0.name"
+    },
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.shortsword"
+    },
+    {
+      "item": "item.wooden-shield",
+      "hardness": 3,
+      "hp": 12,
+      "bt": 6
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "creature.infantry-soldier.ac.note"
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 6,
+    "will": 6
+  },
+  "hp": {
+    "value": 28
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.infantry-soldier.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.infantry-soldier.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.infantry-soldier.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 6,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.infantry-soldier.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.infantry-soldier.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "guardian-shield",
+      "section": "offense",
+      "name": "creature.infantry-soldier.abilities.guardian-shield.name",
+      "actions": "1",
+      "text": "creature.infantry-soldier.abilities.guardian-shield.text"
+    }
+  ],
+  "editNote": "Items, page 88: \"chainmail\" is item.chain-mail under its printed name: chainmail is the chain mail armor; the source links the old page."
+}

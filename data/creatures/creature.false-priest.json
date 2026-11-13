@@ -1,0 +1,197 @@
+{
+  "id": "creature.false-priest",
+  "type": "creature",
+  "name": "creature.false-priest.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 98,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 12
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 12
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 8
+    },
+    {
+      "skill": "skill.society",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.alchemists-toolkit",
+      "name": "creature.false-priest.items.0.name",
+      "note": "creature.false-priest.items.0.note"
+    },
+    {
+      "item": "item.backpack"
+    },
+    {
+      "name": "creature.false-priest.items.2.name"
+    },
+    {
+      "name": "creature.false-priest.items.3.name"
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.rapier"
+    },
+    {
+      "item": "item.religious-symbol-wooden"
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 12,
+    "will": 10
+  },
+  "hp": {
+    "value": 50
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.false-priest.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.false-priest.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.false-priest.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 12,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deceivers-surprise",
+      "section": "offense",
+      "name": "creature.false-priest.abilities.deceivers-surprise.name",
+      "text": "creature.false-priest.abilities.deceivers-surprise.text"
+    },
+    {
+      "id": "fickle-prophecy",
+      "section": "offense",
+      "name": "creature.false-priest.abilities.fickle-prophecy.name",
+      "actions": "1",
+      "traits": [
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.false-priest.abilities.fickle-prophecy.text"
+    },
+    {
+      "id": "the-jig-is-up",
+      "section": "offense",
+      "name": "creature.false-priest.abilities.the-jig-is-up.name",
+      "actions": "reaction",
+      "frequency": "creature.false-priest.abilities.the-jig-is-up.frequency",
+      "trigger": "creature.false-priest.abilities.the-jig-is-up.trigger",
+      "text": "creature.false-priest.abilities.the-jig-is-up.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.false-priest.abilities.sneak-attack.name",
+      "text": "creature.false-priest.abilities.sneak-attack.text"
+    }
+  ],
+  "editNote": "Items, page 98: \"alchemical tools\" is item.alchemists-toolkit under its printed name: alchemical tools are the alchemist's toolkit, under an older name; the source links the old page."
+}

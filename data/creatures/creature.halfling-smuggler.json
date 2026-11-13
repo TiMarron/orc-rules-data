@@ -1,0 +1,240 @@
+{
+  "id": "creature.halfling-smuggler",
+  "type": "creature",
+  "name": "creature.halfling-smuggler.name",
+  "traits": [
+    "halfling",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 191,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "small",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "own": "keen-eyes"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "halfling"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "skill": "skill.society",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 16
+    },
+    {
+      "lore": "creature.halfling-smuggler.lore.7",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.arsenic"
+    },
+    {
+      "item": "item.disguise-kit"
+    },
+    {
+      "item": "item.elixir-of-life-lesser"
+    },
+    {
+      "item": "item.filchers-fork",
+      "potency": 1
+    },
+    {
+      "item": "item.clothing-fine",
+      "name": "creature.halfling-smuggler.items.4.name"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.sling"
+    },
+    {
+      "item": "item.smoke-ball-lesser"
+    },
+    {
+      "item": "item.thieves-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 16,
+    "will": 13
+  },
+  "hp": {
+    "value": 95
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.halfling-smuggler.strikes.filchers-fork.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "backstabber",
+        "deadly",
+        "finesse",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "d6"
+      },
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.filchers-fork"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.halfling-smuggler.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.halfling-smuggler.strikes.filchers-fork-2.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "backstabber",
+        "deadly",
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "deadly": "d6",
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.filchers-fork"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.halfling-smuggler.strikes.sling.name",
+      "actions": "1",
+      "bonus": 16,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "grease-some-palms",
+      "section": "top",
+      "name": "creature.halfling-smuggler.abilities.grease-some-palms.name",
+      "text": "creature.halfling-smuggler.abilities.grease-some-palms.text"
+    },
+    {
+      "id": "keen-eyes",
+      "section": "top",
+      "name": "creature.halfling-smuggler.abilities.keen-eyes.name",
+      "text": "creature.halfling-smuggler.abilities.keen-eyes.text"
+    },
+    {
+      "id": "distracting-escape",
+      "section": "offense",
+      "name": "creature.halfling-smuggler.abilities.distracting-escape.name",
+      "actions": "1",
+      "frequency": "creature.halfling-smuggler.abilities.distracting-escape.frequency",
+      "text": "creature.halfling-smuggler.abilities.distracting-escape.text"
+    },
+    {
+      "id": "hidden-pockets",
+      "section": "offense",
+      "name": "creature.halfling-smuggler.abilities.hidden-pockets.name",
+      "actions": "free",
+      "frequency": "creature.halfling-smuggler.abilities.hidden-pockets.frequency",
+      "text": "creature.halfling-smuggler.abilities.hidden-pockets.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.halfling-smuggler.abilities.sneak-attack.name",
+      "text": "creature.halfling-smuggler.abilities.sneak-attack.text"
+    }
+  ],
+  "editNote": "Items, page 191: \"fine clothes\" is item.clothing-fine under its printed name: the source links the clothing page, and fine clothes are its fine variant."
+}

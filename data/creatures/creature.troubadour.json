@@ -1,0 +1,237 @@
+{
+  "id": "creature.troubadour",
+  "type": "creature",
+  "name": "creature.troubadour.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 127,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 9
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 13,
+      "note": "creature.troubadour.skills.3.note"
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 7
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "lore": "creature.troubadour.lore.7",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 0,
+    "int": 2,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.musical-instrument-handheld",
+      "name": "creature.troubadour.items.1.name"
+    },
+    {
+      "name": "creature.troubadour.items.2.name"
+    },
+    {
+      "item": "item.rapier"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 11,
+    "will": 9
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.troubadour.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.troubadour.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse"
+      ],
+      "traitValues": {
+        "deadly": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.rapier"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bardic-lore",
+      "section": "top",
+      "name": "creature.troubadour.abilities.bardic-lore.name",
+      "text": "creature.troubadour.abilities.bardic-lore.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            },
+            {
+              "spell": "spell.soothe"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.calm"
+            },
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.embed-message"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.troubadour.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 20,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.counter-performance"
+            },
+            {
+              "spell": "spell.lingering-composition"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 127 prints \"Performance +13 (+14 when playing the lute)\"; the source omits the parenthesis, and there is no errata for the book. Items, page 127: \"lute\" is item.musical-instrument-handheld under its printed name: the source links the musical instrument page, and a lute is a handheld instrument."
+}

@@ -1,0 +1,143 @@
+{
+  "id": "creature.executioner",
+  "type": "creature",
+  "name": "creature.executioner.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 116,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.chain-mail",
+      "name": "creature.executioner.items.0.name"
+    },
+    {
+      "item": "item.greataxe",
+      "potency": 1
+    },
+    {
+      "name": "creature.executioner.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 12,
+    "will": 14
+  },
+  "hp": {
+    "value": 105
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.executioner.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d12+9",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.executioner.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "behead",
+      "section": "offense",
+      "name": "creature.executioner.abilities.behead.name",
+      "actions": "3",
+      "requirements": "creature.executioner.abilities.behead.requirements",
+      "text": "creature.executioner.abilities.behead.text"
+    },
+    {
+      "id": "intimidating-strike",
+      "section": "offense",
+      "name": "creature.executioner.abilities.intimidating-strike.name",
+      "actions": "2",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.executioner.abilities.intimidating-strike.text"
+    },
+    {
+      "id": "mark-for-death",
+      "section": "offense",
+      "name": "creature.executioner.abilities.mark-for-death.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.executioner.abilities.mark-for-death.text"
+    }
+  ],
+  "editNote": "Items, page 116: \"chainmail\" is item.chain-mail under its printed name: chainmail is the chain mail armor; the source links the old page."
+}

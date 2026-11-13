@@ -1,0 +1,163 @@
+{
+  "id": "creature.construction-worker",
+  "type": "creature",
+  "name": "creature.construction-worker.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 70,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 5
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.construction-worker.lore.0",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 13
+    },
+    {
+      "skill": "skill.society",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 0,
+    "con": 3,
+    "int": 2,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit"
+    },
+    {
+      "name": "creature.construction-worker.items.1.name",
+      "count": 4
+    },
+    {
+      "item": "item.chalk"
+    },
+    {
+      "item": "item.leather-armor",
+      "name": "creature.construction-worker.items.3.name"
+    },
+    {
+      "item": "item.maul",
+      "name": "creature.construction-worker.items.4.name"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 6,
+    "will": 7
+  },
+  "hp": {
+    "value": 35
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.construction-worker.strikes.maul.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d12+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.maul"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.construction-worker.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.construction-worker.strikes.brick.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "specialty-contractor",
+      "section": "top",
+      "name": "creature.construction-worker.abilities.specialty-contractor.name",
+      "text": "creature.construction-worker.abilities.specialty-contractor.text"
+    },
+    {
+      "id": "by-design",
+      "section": "offense",
+      "name": "creature.construction-worker.abilities.by-design.name",
+      "traits": [
+        "exploration"
+      ],
+      "text": "creature.construction-worker.abilities.by-design.text"
+    },
+    {
+      "id": "demolishing-swing",
+      "section": "offense",
+      "name": "creature.construction-worker.abilities.demolishing-swing.name",
+      "actions": "2",
+      "text": "creature.construction-worker.abilities.demolishing-swing.text"
+    }
+  ],
+  "editNote": "Items, page 70: \"bricks\" stays its printed name: the source links a page from before the Remaster, and the dataset has no record of it."
+}

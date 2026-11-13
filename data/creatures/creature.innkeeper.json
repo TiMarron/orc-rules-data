@@ -1,0 +1,175 @@
+{
+  "id": "creature.innkeeper",
+  "type": "creature",
+  "name": "creature.innkeeper.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 69,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.innkeeper.lore.0",
+      "mod": 5
+    },
+    {
+      "lore": "creature.innkeeper.lore.1",
+      "mod": 7
+    },
+    {
+      "lore": "creature.innkeeper.lore.2",
+      "mod": 5
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 6
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 6
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 0,
+    "con": 0,
+    "int": 2,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.staff",
+      "name": "creature.innkeeper.items.0.name"
+    },
+    {
+      "item": "item.leather-armor",
+      "name": "creature.innkeeper.items.1.name"
+    },
+    {
+      "name": "creature.innkeeper.items.2.name"
+    },
+    {
+      "item": "item.mug",
+      "name": "creature.innkeeper.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 3,
+    "will": 9
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.innkeeper.strikes.broom.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.innkeeper.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.innkeeper.strikes.pewter-mug.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "font-of-gossip",
+      "section": "top",
+      "name": "creature.innkeeper.abilities.font-of-gossip.name",
+      "text": "creature.innkeeper.abilities.font-of-gossip.text"
+    },
+    {
+      "id": "home-base-brawler",
+      "section": "offense",
+      "name": "creature.innkeeper.abilities.home-base-brawler.name",
+      "text": "creature.innkeeper.abilities.home-base-brawler.text"
+    },
+    {
+      "id": "innkeepers-advice",
+      "section": "offense",
+      "name": "creature.innkeeper.abilities.innkeepers-advice.name",
+      "actions": "3",
+      "traits": [
+        "auditory",
+        "fortune",
+        "linguistic",
+        "mental"
+      ],
+      "frequency": "creature.innkeeper.abilities.innkeepers-advice.frequency",
+      "text": "creature.innkeeper.abilities.innkeepers-advice.text"
+    }
+  ],
+  "editNote": "Items, page 69: \"pewter mug\" is item.mug under its printed name: the source links the mug; pewter is no precious material."
+}
