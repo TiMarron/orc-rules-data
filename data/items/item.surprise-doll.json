@@ -1,0 +1,20 @@
+{
+  "id": "item.surprise-doll",
+  "type": "item",
+  "name": "item.surprise-doll.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 26,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.surprise-doll.text",
+  "level": 1,
+  "priceCp": 100,
+  "bulk": "L",
+  "usage": "item.surprise-doll.usage",
+  "category": "gear"
+}

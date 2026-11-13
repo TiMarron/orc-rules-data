@@ -1,0 +1,18 @@
+{
+  "id": "item.fetters",
+  "type": "item",
+  "name": "item.fetters.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 123,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.fetters.text",
+  "level": 2,
+  "bulk": "L",
+  "category": "gear"
+}

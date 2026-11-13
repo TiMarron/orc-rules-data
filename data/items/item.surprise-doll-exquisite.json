@@ -1,0 +1,20 @@
+{
+  "id": "item.surprise-doll-exquisite",
+  "type": "item",
+  "name": "item.surprise-doll-exquisite.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 26,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.surprise-doll-exquisite.text",
+  "level": 2,
+  "priceCp": 1000,
+  "bulk": "L",
+  "usage": "item.surprise-doll-exquisite.usage",
+  "category": "gear"
+}

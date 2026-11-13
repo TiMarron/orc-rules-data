@@ -1,0 +1,20 @@
+{
+  "id": "item.map-nautical-chart",
+  "type": "item",
+  "name": "item.map-nautical-chart.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 59,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.map-nautical-chart.text",
+  "level": 0,
+  "priceCp": 2500,
+  "bulk": "0",
+  "category": "gear",
+  "editNote": "The opening sentence is the source's own and the book does not print it: page 59 gives the maps as a table of types, each with its one-line description and price. The text is that description."
+}
