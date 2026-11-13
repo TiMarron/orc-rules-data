@@ -1,0 +1,37 @@
+{
+  "id": "item.dragon-mouth-pistol",
+  "type": "item",
+  "name": "item.dragon-mouth-pistol.name",
+  "traits": [
+    "concussive",
+    "scatter"
+  ],
+  "traitValues": {
+    "scatter": "5"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dragon-mouth-pistol.text",
+  "level": 0,
+  "priceCp": 700,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "firearm",
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "range": 20,
+    "reload": "1",
+    "ammunition": "item.firearm-ammunition-10-rounds"
+  }
+}

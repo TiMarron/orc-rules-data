@@ -10,7 +10,7 @@ major for renamed or removed ids, new required fields and markup changes.
 
 - NPC Core (`npc-core`) as a source book. Its first records: 179 creatures,
   the firearm traits capacity, concussive, kickback and scatter, the troop trait
-  and the Troop Defenses and Troop Movement abilities, two spells and 25 items (among them the maps, fetters, surprise dolls and oils of sympathy with their variants).
+  and the Troop Defenses and Troop Movement abilities, two spells and 36 items (the firearms and their ammunition, the machete, frying pan and war razor;  the maps, fetters, surprise dolls and oils of sympathy with their variants).
   The NPCs the book names for a deity or an organization of the setting carry a
   generic name instead (Pilgrim of Self-Perfection, Order Knight Cavalry Brigade).
 

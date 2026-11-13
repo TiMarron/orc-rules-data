@@ -1,0 +1,38 @@
+{
+  "id": "item.arquebus",
+  "type": "item",
+  "name": "item.arquebus.name",
+  "traits": [
+    "concussive",
+    "fatal",
+    "kickback"
+  ],
+  "traitValues": {
+    "fatal": "1d12"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.arquebus.text",
+  "level": 0,
+  "priceCp": 800,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "2",
+    "group": "firearm",
+    "damage": {
+      "dice": "1d8",
+      "type": "piercing"
+    },
+    "range": 150,
+    "reload": "1",
+    "ammunition": "item.firearm-ammunition-10-rounds"
+  }
+}

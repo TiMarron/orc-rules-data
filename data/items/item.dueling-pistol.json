@@ -1,0 +1,38 @@
+{
+  "id": "item.dueling-pistol",
+  "type": "item",
+  "name": "item.dueling-pistol.name",
+  "traits": [
+    "concealable",
+    "concussive",
+    "fatal"
+  ],
+  "traitValues": {
+    "fatal": "1d10"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.dueling-pistol.text",
+  "level": 1,
+  "priceCp": 1200,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "firearm",
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "range": 60,
+    "reload": "1",
+    "ammunition": "item.firearm-ammunition-10-rounds"
+  }
+}

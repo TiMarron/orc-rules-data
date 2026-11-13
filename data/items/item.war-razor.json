@@ -1,0 +1,37 @@
+{
+  "id": "item.war-razor",
+  "type": "item",
+  "name": "item.war-razor.name",
+  "traits": [
+    "agile",
+    "backstabber",
+    "deadly",
+    "finesse"
+  ],
+  "traitValues": {
+    "deadly": "d8"
+  },
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 158,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.war-razor.text",
+  "level": 0,
+  "priceCp": 30,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "knife",
+    "damage": {
+      "dice": "1d4",
+      "type": "slashing"
+    }
+  },
+  "editNote": "Text replaced: the source's description comes from a book outside this dataset, which page 158 only points to. Page 158 prints the weapon in a sidebar, \"The interrogator carries a war razor, a common martial weapon in the knife group\", followed by its statistics, which the record carries; the text is that sentence."
+}

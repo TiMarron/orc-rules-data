@@ -1,0 +1,35 @@
+{
+  "id": "item.frying-pan",
+  "type": "item",
+  "name": "item.frying-pan.name",
+  "traits": [
+    "fatal",
+    "halfling"
+  ],
+  "traitValues": {
+    "fatal": "1d8"
+  },
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 190,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.frying-pan.text",
+  "level": 0,
+  "priceCp": 10,
+  "bulk": "L",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "club",
+    "damage": {
+      "dice": "1d4",
+      "type": "bludgeoning"
+    }
+  },
+  "editNote": "Text replaced: the source's description comes from a book outside this dataset, which page 190 only points to. Page 190 prints the weapon in a sidebar, \"The halfling head chef carries a frying pan, a common simple weapon in the club group\", followed by its statistics, which the record carries; the text is that sentence."
+}
