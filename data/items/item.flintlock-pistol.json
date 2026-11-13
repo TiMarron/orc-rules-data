@@ -1,0 +1,37 @@
+{
+  "id": "item.flintlock-pistol",
+  "type": "item",
+  "name": "item.flintlock-pistol.name",
+  "traits": [
+    "concussive",
+    "fatal"
+  ],
+  "traitValues": {
+    "fatal": "1d8"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.flintlock-pistol.text",
+  "level": 0,
+  "priceCp": 400,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "firearm",
+    "damage": {
+      "dice": "1d4",
+      "type": "piercing"
+    },
+    "range": 40,
+    "reload": "1",
+    "ammunition": "item.firearm-ammunition-10-rounds"
+  }
+}

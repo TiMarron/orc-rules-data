@@ -1,0 +1,40 @@
+{
+  "id": "item.hand-cannon",
+  "type": "item",
+  "name": "item.hand-cannon.name",
+  "traits": [
+    "modular"
+  ],
+  "traitValues": {
+    "modular": "bludgeoning, piercing, or slashing"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.hand-cannon.text",
+  "level": 0,
+  "priceCp": 300,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "1",
+    "group": "firearm",
+    "damage": {
+      "dice": "1d6",
+      "types": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    "range": 30,
+    "reload": "1",
+    "ammunition": "item.firearm-ammunition-10-rounds"
+  }
+}

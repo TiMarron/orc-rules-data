@@ -1,0 +1,37 @@
+{
+  "id": "item.flintlock-musket",
+  "type": "item",
+  "name": "item.flintlock-musket.name",
+  "traits": [
+    "concussive",
+    "fatal"
+  ],
+  "traitValues": {
+    "fatal": "1d10"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.flintlock-musket.text",
+  "level": 0,
+  "priceCp": 500,
+  "bulk": "1",
+  "category": "weapon",
+  "weapon": {
+    "category": "simple",
+    "hands": "2",
+    "group": "firearm",
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "range": 70,
+    "reload": "1",
+    "ammunition": "item.firearm-ammunition-10-rounds"
+  }
+}

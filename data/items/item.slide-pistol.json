@@ -1,0 +1,39 @@
+{
+  "id": "item.slide-pistol",
+  "type": "item",
+  "name": "item.slide-pistol.name",
+  "traits": [
+    "capacity",
+    "concussive",
+    "fatal"
+  ],
+  "traitValues": {
+    "capacity": "5",
+    "fatal": "1d10"
+  },
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "text": "item.slide-pistol.text",
+  "level": 1,
+  "priceCp": 1600,
+  "bulk": "2",
+  "category": "weapon",
+  "weapon": {
+    "category": "martial",
+    "hands": "1",
+    "group": "firearm",
+    "damage": {
+      "dice": "1d6",
+      "type": "piercing"
+    },
+    "range": 30,
+    "reload": "1",
+    "ammunition": "item.firearm-ammunition-10-rounds"
+  }
+}

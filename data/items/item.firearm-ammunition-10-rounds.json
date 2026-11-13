@@ -1,0 +1,20 @@
+{
+  "id": "item.firearm-ammunition-10-rounds",
+  "type": "item",
+  "name": "item.firearm-ammunition-10-rounds.name",
+  "traits": [],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.firearm-ammunition-10-rounds.text",
+  "level": 0,
+  "priceCp": 10,
+  "bulk": "L",
+  "category": "gear",
+  "editNote": "Text replaced: the source files the item under a book outside this dataset and gives that book's description. Page 50 prints it only as a row of the ranged firearms table, \"10 rounds\" at a Price of 1 sp beneath each firearm; the text says what the row is."
+}
