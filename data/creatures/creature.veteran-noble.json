@@ -1,0 +1,203 @@
+{
+  "id": "creature.veteran-noble",
+  "type": "creature",
+  "name": "creature.veteran-noble.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 15,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 12
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "lore": "creature.veteran-noble.lore.3",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "lore": "creature.veteran-noble.lore.5",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 0,
+    "int": 2,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.half-plate"
+    },
+    {
+      "item": "item.longsword",
+      "potency": 1
+    },
+    {
+      "name": "creature.veteran-noble.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 14,
+    "will": 16
+  },
+  "hp": {
+    "value": 85
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.veteran-noble.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+11",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.veteran-noble.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.veteran-noble.strikes.gauntlet.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.veteran-noble.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "battle-scarred",
+      "section": "defense",
+      "name": "creature.veteran-noble.abilities.battle-scarred.name",
+      "text": "creature.veteran-noble.abilities.battle-scarred.text"
+    },
+    {
+      "id": "noble-pride",
+      "section": "defense",
+      "name": "creature.veteran-noble.abilities.noble-pride.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "emotion",
+        "mental"
+      ],
+      "trigger": "creature.veteran-noble.abilities.noble-pride.trigger",
+      "text": "creature.veteran-noble.abilities.noble-pride.text"
+    },
+    {
+      "id": "tactical-command",
+      "section": "offense",
+      "name": "creature.veteran-noble.abilities.tactical-command.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "frequency": "creature.veteran-noble.abilities.tactical-command.frequency",
+      "text": "creature.veteran-noble.abilities.tactical-command.text"
+    }
+  ]
+}

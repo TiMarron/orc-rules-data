@@ -1,0 +1,168 @@
+{
+  "id": "creature.poacher",
+  "type": "creature",
+  "name": "creature.poacher.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 53,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 4
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 4
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.light-mace"
+    },
+    {
+      "item": "item.padded-armor"
+    },
+    {
+      "item": "item.artisans-toolkit",
+      "name": "creature.poacher.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 7
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.poacher.strikes.light-mace.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.poacher.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.poacher.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "expert-subsistence",
+      "section": "top",
+      "name": "creature.poacher.abilities.expert-subsistence.name",
+      "text": "creature.poacher.abilities.expert-subsistence.text"
+    },
+    {
+      "id": "snare-crafting",
+      "section": "top",
+      "name": "creature.poacher.abilities.snare-crafting.name",
+      "text": "creature.poacher.abilities.snare-crafting.text"
+    },
+    {
+      "id": "on-the-hunt",
+      "section": "offense",
+      "name": "creature.poacher.abilities.on-the-hunt.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.poacher.abilities.on-the-hunt.text"
+    }
+  ]
+}

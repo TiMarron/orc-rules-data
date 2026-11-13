@@ -1,0 +1,190 @@
+{
+  "id": "creature.court-jester",
+  "type": "creature",
+  "name": "creature.court-jester.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 129,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 21
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.court-jester.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 19
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 19
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 22
+    },
+    {
+      "skill": "skill.society",
+      "mod": 19
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 2,
+    "wis": 1,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "name": "creature.court-jester.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 19,
+    "will": 22
+  },
+  "hp": {
+    "value": 170
+  },
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.court-jester.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "4d4",
+          "type": "poison",
+          "persistent": true
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.court-jester.strikes.fist.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.court-jester.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "magical",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "4d4",
+          "type": "poison",
+          "persistent": true
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pointed-joke",
+      "section": "defense",
+      "name": "creature.court-jester.abilities.pointed-joke.name",
+      "text": "creature.court-jester.abilities.pointed-joke.text"
+    },
+    {
+      "id": "poisoned-blade",
+      "section": "offense",
+      "name": "creature.court-jester.abilities.poisoned-blade.name",
+      "text": "creature.court-jester.abilities.poisoned-blade.text"
+    },
+    {
+      "id": "no-peeking",
+      "section": "offense",
+      "name": "creature.court-jester.abilities.no-peeking.name",
+      "actions": "1",
+      "text": "creature.court-jester.abilities.no-peeking.text"
+    }
+  ]
+}

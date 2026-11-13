@@ -1,0 +1,194 @@
+{
+  "id": "creature.hunter",
+  "type": "creature",
+  "name": "creature.hunter.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 57,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 17
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.hunter.lore.0",
+      "mod": 13
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 2,
+    "int": 1,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "potency": 1
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 17,
+    "will": 15
+  },
+  "hp": {
+    "value": 115
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hunter.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.hunter.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.hunter.strikes.fist.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hunter.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 18,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "expert-subsistence",
+      "section": "top",
+      "name": "creature.hunter.abilities.expert-subsistence.name",
+      "text": "creature.hunter.abilities.expert-subsistence.text"
+    },
+    {
+      "id": "forest-walker",
+      "section": "top",
+      "name": "creature.hunter.abilities.forest-walker.name",
+      "text": "creature.hunter.abilities.forest-walker.text"
+    },
+    {
+      "id": "on-the-hunt",
+      "section": "offense",
+      "name": "creature.hunter.abilities.on-the-hunt.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.hunter.abilities.on-the-hunt.text"
+    }
+  ]
+}

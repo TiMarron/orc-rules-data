@@ -1,0 +1,113 @@
+{
+  "id": "creature.mixed-martial-artist",
+  "type": "creature",
+  "name": "creature.mixed-martial-artist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 73,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "lore": "creature.mixed-martial-artist.lore.2",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": 1,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.handwraps-of-mighty-blows",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 15,
+    "will": 12
+  },
+  "hp": {
+    "value": 130
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mixed-martial-artist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "magical",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "powerful-fists",
+      "section": "offense",
+      "name": "creature.mixed-martial-artist.abilities.powerful-fists.name",
+      "text": "creature.mixed-martial-artist.abilities.powerful-fists.text"
+    },
+    {
+      "id": "stance-shift",
+      "section": "offense",
+      "name": "creature.mixed-martial-artist.abilities.stance-shift.name",
+      "actions": "1",
+      "traits": [
+        "stance"
+      ],
+      "text": "creature.mixed-martial-artist.abilities.stance-shift.text"
+    },
+    {
+      "id": "takedown-fluidity",
+      "section": "offense",
+      "name": "creature.mixed-martial-artist.abilities.takedown-fluidity.name",
+      "actions": "reaction",
+      "trigger": "creature.mixed-martial-artist.abilities.takedown-fluidity.trigger",
+      "text": "creature.mixed-martial-artist.abilities.takedown-fluidity.text"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "creature.driver",
+  "type": "creature",
+  "name": "creature.driver.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 43,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "lore": "creature.driver.lore.3",
+      "mod": 8
+    },
+    {
+      "lore": "creature.driver.lore.4",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "lore": "creature.driver.lore.6",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 0,
+    "int": 2,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.pick",
+      "name": "creature.driver.items.0.name"
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "creature.driver.ac.note"
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 8,
+    "will": 6
+  },
+  "hp": {
+    "value": 28
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.driver.strikes.crowbar.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.pick"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.driver.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.driver.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "driving-specialist",
+      "section": "top",
+      "name": "creature.driver.abilities.driving-specialist.name",
+      "text": "creature.driver.abilities.driving-specialist.text"
+    },
+    {
+      "id": "express-driver",
+      "section": "top",
+      "name": "creature.driver.abilities.express-driver.name",
+      "text": "creature.driver.abilities.express-driver.text"
+    },
+    {
+      "id": "skilled-driver",
+      "section": "top",
+      "name": "creature.driver.abilities.skilled-driver.name",
+      "text": "creature.driver.abilities.skilled-driver.text"
+    },
+    {
+      "id": "vehicle-block",
+      "section": "defense",
+      "name": "creature.driver.abilities.vehicle-block.name",
+      "actions": "reaction",
+      "requirements": "creature.driver.abilities.vehicle-block.requirements",
+      "trigger": "creature.driver.abilities.vehicle-block.trigger",
+      "text": "creature.driver.abilities.vehicle-block.text"
+    },
+    {
+      "id": "sideswipe",
+      "section": "offense",
+      "name": "creature.driver.abilities.sideswipe.name",
+      "actions": "reaction",
+      "requirements": "creature.driver.abilities.sideswipe.requirements",
+      "text": "creature.driver.abilities.sideswipe.text"
+    }
+  ]
+}

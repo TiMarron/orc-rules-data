@@ -1,0 +1,30 @@
+{
+  "id": "item.pistol-wand",
+  "type": "item",
+  "name": "item.pistol-wand.name",
+  "traits": [
+    "magical",
+    "wand"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 81,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.pistol-wand.text",
+  "level": 4,
+  "priceCp": 10000,
+  "bulk": "1",
+  "usage": "item.pistol-wand.usage",
+  "activations": [
+    {
+      "castASpell": true,
+      "frequency": "item.pistol-wand.activations.0.frequency",
+      "text": "item.pistol-wand.activations.0.text"
+    }
+  ],
+  "category": "wand"
+}

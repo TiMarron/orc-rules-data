@@ -1,0 +1,152 @@
+{
+  "id": "creature.grave-robber",
+  "type": "creature",
+  "name": "creature.grave-robber.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 18,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 5
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 6
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 2
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 2
+    },
+    {
+      "skill": "skill.society",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    },
+    {
+      "lore": "creature.grave-robber.lore.5",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 2,
+    "con": 2,
+    "int": 3,
+    "wis": 2,
+    "cha": -1
+  },
+  "items": [
+    {
+      "name": "creature.grave-robber.items.0.name"
+    },
+    {
+      "item": "item.holy-water"
+    },
+    {
+      "name": "creature.grave-robber.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 7,
+    "will": 5
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.grave-robber.strikes.shovel.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.grave-robber.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.grave-robber.strikes.embalming-flask.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 20,
+      "traits": [
+        "alchemical",
+        "splash"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "acid"
+        },
+        {
+          "dice": "1",
+          "type": "acid",
+          "splash": true
+        }
+      ],
+      "effects": [
+        {
+          "own": "alchemical-embalming"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "alchemical-embalming",
+      "section": "offense",
+      "name": "creature.grave-robber.abilities.alchemical-embalming.name",
+      "text": "creature.grave-robber.abilities.alchemical-embalming.text"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "creature.tracker",
+  "type": "creature",
+  "name": "creature.tracker.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 54,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.tracker.lore.0",
+      "mod": 5
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 60
+      }
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 11,
+    "will": 9
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tracker.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tracker.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tracker.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tracker.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "1d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "expert-subsistence",
+      "section": "top",
+      "name": "creature.tracker.abilities.expert-subsistence.name",
+      "text": "creature.tracker.abilities.expert-subsistence.text"
+    },
+    {
+      "id": "master-tracker",
+      "section": "top",
+      "name": "creature.tracker.abilities.master-tracker.name",
+      "text": "creature.tracker.abilities.master-tracker.text"
+    },
+    {
+      "id": "on-the-hunt",
+      "section": "offense",
+      "name": "creature.tracker.abilities.on-the-hunt.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.tracker.abilities.on-the-hunt.text"
+    }
+  ]
+}

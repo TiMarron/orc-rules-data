@@ -1,0 +1,139 @@
+{
+  "id": "creature.miner",
+  "type": "creature",
+  "name": "creature.miner.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 68,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 3
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "lore": "creature.miner.lore.2",
+      "mod": 4
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.hammer"
+    },
+    {
+      "item": "item.lantern"
+    },
+    {
+      "item": "item.leather-armor",
+      "name": "creature.miner.items.2.name"
+    },
+    {
+      "item": "item.pick"
+    },
+    {
+      "item": "item.piton",
+      "count": 5
+    },
+    {
+      "item": "item.rope",
+      "note": "creature.miner.items.5.note"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 5,
+    "will": 4
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.miner.strikes.pick.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.pick"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.miner.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "piton-pin",
+      "section": "offense",
+      "name": "creature.miner.abilities.piton-pin.name",
+      "actions": "1",
+      "traits": [
+        "attack"
+      ],
+      "requirements": "creature.miner.abilities.piton-pin.requirements",
+      "text": "creature.miner.abilities.piton-pin.text"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "id": "creature.master-of-disguise",
+  "type": "creature",
+  "name": "creature.master-of-disguise.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 22,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 17,
+    "note": "creature.master-of-disguise.perception.note"
+  },
+  "languages": [
+    "common",
+    "dwarven",
+    "elven",
+    "gnomish",
+    "halfling"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 18
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 16
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 16
+    },
+    {
+      "skill": "skill.society",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 15
+    },
+    {
+      "lore": "creature.master-of-disguise.lore.6",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 0,
+    "int": 2,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 5
+    },
+    {
+      "item": "item.disguise-kit-elite"
+    },
+    {
+      "item": "item.masquerade-scarf"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 17,
+    "will": 16
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.master-of-disguise.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.master-of-disguise.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.master-of-disguise.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-cover",
+      "section": "top",
+      "name": "creature.master-of-disguise.abilities.deep-cover.name",
+      "text": "creature.master-of-disguise.abilities.deep-cover.text"
+    },
+    {
+      "id": "disguise-specialist",
+      "section": "top",
+      "name": "creature.master-of-disguise.abilities.disguise-specialist.name",
+      "text": "creature.master-of-disguise.abilities.disguise-specialist.text"
+    },
+    {
+      "id": "double-take",
+      "section": "offense",
+      "name": "creature.master-of-disguise.abilities.double-take.name",
+      "text": "creature.master-of-disguise.abilities.double-take.text"
+    },
+    {
+      "id": "impeccable-disguise",
+      "section": "offense",
+      "name": "creature.master-of-disguise.abilities.impeccable-disguise.name",
+      "actions": "3",
+      "text": "creature.master-of-disguise.abilities.impeccable-disguise.text"
+    },
+    {
+      "id": "shocking-reveal",
+      "section": "offense",
+      "name": "creature.master-of-disguise.abilities.shocking-reveal.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.master-of-disguise.abilities.shocking-reveal.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.master-of-disguise.abilities.sneak-attack.name",
+      "text": "creature.master-of-disguise.abilities.sneak-attack.text"
+    }
+  ]
+}

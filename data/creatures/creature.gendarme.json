@@ -1,0 +1,197 @@
+{
+  "id": "creature.gendarme",
+  "type": "creature",
+  "name": "creature.gendarme.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 117,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 19
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "lore": "creature.gendarme.lore.2",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 4,
+    "int": 0,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.flail",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.gauntlet",
+      "potency": 1
+    },
+    {
+      "item": "item.half-plate"
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 14,
+    "will": 17,
+    "note": "creature.gendarme.saves.note"
+  },
+  "hp": {
+    "value": 120
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gendarme.strikes.flail.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "disarm",
+        "magical",
+        "sweep",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.gendarme.strikes.flail.effects.0"
+        }
+      ],
+      "item": "item.flail"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gendarme.strikes.gauntlet.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "free-hand",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.improved-grab-improved-knockdown-or-improved-push",
+          "text": "creature.gendarme.strikes.gauntlet.effects.0"
+        }
+      ],
+      "item": "item.gauntlet"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gendarme.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 16,
+      "rangeIncrement": 100,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "nerves-of-steel",
+      "section": "defense",
+      "name": "creature.gendarme.abilities.nerves-of-steel.name",
+      "text": "creature.gendarme.abilities.nerves-of-steel.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.gendarme.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.gendarme.abilities.reactive-strike.text"
+    },
+    {
+      "id": "stop-in-the-name-of-the-law",
+      "section": "offense",
+      "name": "creature.gendarme.abilities.stop-in-the-name-of-the-law.name",
+      "actions": "2",
+      "traits": [
+        "incapacitation",
+        "linguistic"
+      ],
+      "text": "creature.gendarme.abilities.stop-in-the-name-of-the-law.text"
+    },
+    {
+      "id": "shoot-down",
+      "section": "offense",
+      "name": "creature.gendarme.abilities.shoot-down.name",
+      "actions": "2",
+      "text": "creature.gendarme.abilities.shoot-down.text"
+    }
+  ]
+}

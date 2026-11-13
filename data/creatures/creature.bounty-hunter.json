@@ -1,0 +1,157 @@
+{
+  "id": "creature.bounty-hunter",
+  "type": "creature",
+  "name": "creature.bounty-hunter.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 82,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 12
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.falchion"
+    },
+    {
+      "item": "item.manacles-simple"
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 11
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bounty-hunter.strikes.falchion.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+6",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.falchion"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bounty-hunter.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hunt-prey",
+      "section": "offense",
+      "name": "creature.bounty-hunter.abilities.hunt-prey.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.bounty-hunter.abilities.hunt-prey.text"
+    },
+    {
+      "id": "running-reload",
+      "section": "offense",
+      "name": "creature.bounty-hunter.abilities.running-reload.name",
+      "actions": "1",
+      "text": "creature.bounty-hunter.abilities.running-reload.text"
+    },
+    {
+      "id": "precision-edge",
+      "section": "offense",
+      "name": "creature.bounty-hunter.abilities.precision-edge.name",
+      "text": "creature.bounty-hunter.abilities.precision-edge.text"
+    },
+    {
+      "id": "posses-edge",
+      "section": "offense",
+      "name": "creature.bounty-hunter.abilities.posses-edge.name",
+      "text": "creature.bounty-hunter.abilities.posses-edge.text"
+    }
+  ]
+}

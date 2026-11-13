@@ -1,0 +1,215 @@
+{
+  "id": "creature.swarm-voice",
+  "type": "creature",
+  "name": "creature.swarm-voice.name",
+  "traits": [
+    "humanoid",
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 210,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "small",
+  "perception": {
+    "mod": 9,
+    "note": "creature.swarm-voice.perception.note",
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "ysoki"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "lore": "creature.swarm-voice.lore.4",
+      "mod": 16
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 15
+    },
+    {
+      "skill": "skill.society",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 0,
+    "int": 3,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.acid-flask-lesser",
+      "count": 4
+    },
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.longspear"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 8,
+    "will": 11
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25,
+    "note": "creature.swarm-voice.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.swarm-voice.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "reach"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.swarm-voice.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.swarm-voice.strikes.alchemical-bomb.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 20,
+      "traits": [
+        "splash"
+      ],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "acid",
+          "persistent": true
+        },
+        {
+          "dice": "1",
+          "type": "acid",
+          "splash": true
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.swarm-voice.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "voice-of-the-swarm",
+      "section": "top",
+      "name": "creature.swarm-voice.abilities.voice-of-the-swarm.name",
+      "text": "creature.swarm-voice.abilities.voice-of-the-swarm.text"
+    },
+    {
+      "id": "advise-swarm",
+      "section": "offense",
+      "name": "creature.swarm-voice.abilities.advise-swarm.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.swarm-voice.abilities.advise-swarm.text"
+    },
+    {
+      "id": "chittering-terror",
+      "section": "offense",
+      "name": "creature.swarm-voice.abilities.chittering-terror.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.swarm-voice.abilities.chittering-terror.text"
+    },
+    {
+      "id": "swarming",
+      "section": "offense",
+      "name": "creature.swarm-voice.abilities.swarming.name",
+      "text": "creature.swarm-voice.abilities.swarming.text"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "id": "creature.captain-of-the-guard",
+  "type": "creature",
+  "name": "creature.captain-of-the-guard.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 115,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "lore": "creature.captain-of-the-guard.lore.3",
+      "mod": 12
+    },
+    {
+      "skill": "skill.society",
+      "mod": 10
+    },
+    {
+      "lore": "creature.captain-of-the-guard.lore.5",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 0,
+    "con": 2,
+    "int": 0,
+    "wis": 3,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.full-plate"
+    },
+    {
+      "item": "item.longsword",
+      "potency": 1
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "creature.captain-of-the-guard.ac.note"
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 12,
+    "will": 15
+  },
+  "hp": {
+    "value": 95
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.captain-of-the-guard.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+11",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.captain-of-the-guard.strikes.fist.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.captain-of-the-guard.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 12,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "aura-of-command",
+      "section": "defense",
+      "name": "creature.captain-of-the-guard.abilities.aura-of-command.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental"
+      ],
+      "aura": 30,
+      "text": "creature.captain-of-the-guard.abilities.aura-of-command.text"
+    },
+    {
+      "id": "bravery",
+      "section": "defense",
+      "name": "creature.captain-of-the-guard.abilities.bravery.name",
+      "text": "creature.captain-of-the-guard.abilities.bravery.text"
+    },
+    {
+      "id": "shield-warden",
+      "section": "defense",
+      "name": "creature.captain-of-the-guard.abilities.shield-warden.name",
+      "text": "creature.captain-of-the-guard.abilities.shield-warden.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.captain-of-the-guard.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.captain-of-the-guard.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "shielded-advance",
+      "section": "offense",
+      "name": "creature.captain-of-the-guard.abilities.shielded-advance.name",
+      "actions": "1",
+      "requirements": "creature.captain-of-the-guard.abilities.shielded-advance.requirements",
+      "text": "creature.captain-of-the-guard.abilities.shielded-advance.text"
+    }
+  ]
+}

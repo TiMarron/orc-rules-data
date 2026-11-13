@@ -1,0 +1,172 @@
+{
+  "id": "creature.bosun",
+  "type": "creature",
+  "name": "creature.bosun.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 147,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "lore": "creature.bosun.lore.3",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.spear",
+      "name": "creature.bosun.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 11,
+    "will": 8
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bosun.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bosun.strikes.fist.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bosun.strikes.naval-pike.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bosun.strikes.naval-pike-2.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spear"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bosuns-command",
+      "section": "offense",
+      "name": "creature.bosun.abilities.bosuns-command.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "frequency": "creature.bosun.abilities.bosuns-command.frequency",
+      "text": "creature.bosun.abilities.bosuns-command.text"
+    },
+    {
+      "id": "pike-and-strike",
+      "section": "offense",
+      "name": "creature.bosun.abilities.pike-and-strike.name",
+      "actions": "2",
+      "text": "creature.bosun.abilities.pike-and-strike.text"
+    }
+  ]
+}

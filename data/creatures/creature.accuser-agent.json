@@ -1,0 +1,220 @@
+{
+  "id": "creature.accuser-agent",
+  "type": "creature",
+  "name": "creature.accuser-agent.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 118,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 19,
+    "note": "creature.accuser-agent.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.accuser-agent.language-note",
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 20
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 18
+    },
+    {
+      "lore": "creature.accuser-agent.lore.3",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    },
+    {
+      "skill": "skill.society",
+      "mod": 18
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 0,
+    "int": 3,
+    "wis": 4,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.scholarly-journal"
+    },
+    {
+      "item": "item.sword-cane",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.writing-set"
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 19,
+    "will": 19
+  },
+  "hp": {
+    "value": 115
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.accuser-agent.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "deadly",
+        "finesse",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d6",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.accuser-agent.strikes.sword-cane.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "concealable",
+        "finesse",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.sword-cane"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.accuser-agent.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.accuser-agent.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "deadly",
+        "finesse",
+        "magical",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d6",
+        "thrown": "20",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "insightful",
+      "section": "top",
+      "name": "creature.accuser-agent.abilities.insightful.name",
+      "text": "creature.accuser-agent.abilities.insightful.text"
+    },
+    {
+      "id": "objection",
+      "section": "defense",
+      "name": "creature.accuser-agent.abilities.objection.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "linguistic"
+      ],
+      "trigger": "creature.accuser-agent.abilities.objection.trigger",
+      "text": "creature.accuser-agent.abilities.objection.text"
+    },
+    {
+      "id": "debilitating-sneak-attack",
+      "section": "offense",
+      "name": "creature.accuser-agent.abilities.debilitating-sneak-attack.name",
+      "text": "creature.accuser-agent.abilities.debilitating-sneak-attack.text"
+    }
+  ]
+}

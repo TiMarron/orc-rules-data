@@ -1,0 +1,312 @@
+{
+  "id": "creature.world-ender",
+  "type": "creature",
+  "name": "creature.world-ender.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 163,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 16,
+  "size": "medium",
+  "perception": {
+    "mod": 25
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.intimidation",
+      "mod": 28
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 27
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 25
+    },
+    {
+      "skill": "skill.society",
+      "mod": 27
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 7,
+    "int": 7,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.staff-of-fire-major",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 36
+  },
+  "saves": {
+    "fortitude": 30,
+    "reflex": 26,
+    "will": 28
+  },
+  "hp": {
+    "value": 275
+  },
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.world-ender.strikes.staff-of-fire.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "magical",
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "2d4+10",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "3d6",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.world-ender.strikes.fist.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "3d6",
+          "type": "fire"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "unyielding-purpose",
+      "section": "defense",
+      "name": "creature.world-ender.abilities.unyielding-purpose.name",
+      "actions": "reaction",
+      "trigger": "creature.world-ender.abilities.unyielding-purpose.trigger",
+      "requirements": "creature.world-ender.abilities.unyielding-purpose.requirements",
+      "text": "creature.world-ender.abilities.unyielding-purpose.text"
+    },
+    {
+      "id": "monologue",
+      "section": "offense",
+      "name": "creature.world-ender.abilities.monologue.name",
+      "actions": "free",
+      "traits": [
+        "concentrate"
+      ],
+      "frequency": "creature.world-ender.abilities.monologue.frequency",
+      "text": "creature.world-ender.abilities.monologue.text"
+    },
+    {
+      "id": "overwhelming-energy",
+      "section": "offense",
+      "name": "creature.world-ender.abilities.overwhelming-energy.name",
+      "actions": "1",
+      "traits": [
+        "spellshape"
+      ],
+      "text": "creature.world-ender.abilities.overwhelming-energy.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 41,
+      "attack": 33,
+      "cantrips": {
+        "rank": 8,
+        "spells": [
+          {
+            "spell": "spell.caustic-blast"
+          },
+          {
+            "spell": "spell.electric-arc"
+          },
+          {
+            "spell": "spell.gouging-claw"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.light"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.air-bubble"
+            },
+            {
+              "spell": "spell.fleet-step"
+            },
+            {
+              "spell": "spell.gentle-landing"
+            },
+            {
+              "spell": "spell.gust-of-wind"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkvision"
+            },
+            {
+              "spell": "spell.enlarge"
+            },
+            {
+              "spell": "spell.revealing-light"
+            },
+            {
+              "spell": "spell.water-walk"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.earthbind",
+              "count": 2
+            },
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.slow"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.fly",
+              "count": 2
+            },
+            {
+              "spell": "spell.unfettered-movement",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.fireball",
+              "count": 2
+            },
+            {
+              "spell": "spell.magic-passage"
+            },
+            {
+              "spell": "spell.wall-of-stone"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.chain-lightning",
+              "count": 2
+            },
+            {
+              "spell": "spell.floating-flame"
+            },
+            {
+              "spell": "spell.wall-of-fire"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.blazing-bolt"
+            },
+            {
+              "spell": "spell.fiery-body"
+            },
+            {
+              "spell": "spell.volcanic-eruption",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.desiccate"
+            },
+            {
+              "spell": "spell.punishing-winds"
+            },
+            {
+              "spell": "spell.sunburst",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

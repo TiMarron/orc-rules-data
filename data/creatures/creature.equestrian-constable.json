@@ -1,0 +1,168 @@
+{
+  "id": "creature.equestrian-constable",
+  "type": "creature",
+  "name": "creature.equestrian-constable.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 113,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 11
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 10
+    },
+    {
+      "lore": "creature.equestrian-constable.lore.2",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.guisarme"
+    },
+    {
+      "item": "item.half-plate"
+    },
+    {
+      "item": "item.manacles-poor"
+    },
+    {
+      "item": "item.rope"
+    },
+    {
+      "item": "item.signal-whistle"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 8,
+    "will": 10
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.equestrian-constable.strikes.guisarme.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "reach",
+        "trip"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ],
+      "item": "item.guisarme"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.equestrian-constable.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.equestrian-constable.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "trained-animal",
+      "section": "top",
+      "name": "creature.equestrian-constable.abilities.trained-animal.name",
+      "text": "creature.equestrian-constable.abilities.trained-animal.text"
+    },
+    {
+      "id": "opportune-maneuver",
+      "section": "defense",
+      "name": "creature.equestrian-constable.abilities.opportune-maneuver.name",
+      "actions": "reaction",
+      "trigger": "creature.equestrian-constable.abilities.opportune-maneuver.trigger",
+      "text": "creature.equestrian-constable.abilities.opportune-maneuver.text"
+    },
+    {
+      "id": "vigilant-vantage",
+      "section": "offense",
+      "name": "creature.equestrian-constable.abilities.vigilant-vantage.name",
+      "actions": "1",
+      "text": "creature.equestrian-constable.abilities.vigilant-vantage.text"
+    }
+  ]
+}

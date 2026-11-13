@@ -1,0 +1,140 @@
+{
+  "id": "creature.conspiracist",
+  "type": "creature",
+  "name": "creature.conspiracist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 152,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.conspiracist.lore.0",
+      "mod": 11
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": -1
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 10
+    },
+    {
+      "skill": "skill.society",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 2,
+    "con": 0,
+    "int": 3,
+    "wis": 0,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.signal-whistle"
+    },
+    {
+      "item": "item.writing-set"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 4,
+    "reflex": 6,
+    "will": 10
+  },
+  "hp": {
+    "value": 15
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.conspiracist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "compulsive-liar",
+      "section": "top",
+      "name": "creature.conspiracist.abilities.compulsive-liar.name",
+      "text": "creature.conspiracist.abilities.compulsive-liar.text"
+    },
+    {
+      "id": "social-specialist",
+      "section": "top",
+      "name": "creature.conspiracist.abilities.social-specialist.name",
+      "text": "creature.conspiracist.abilities.social-specialist.text"
+    },
+    {
+      "id": "evoke-pity",
+      "section": "defense",
+      "name": "creature.conspiracist.abilities.evoke-pity.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "trigger": "creature.conspiracist.abilities.evoke-pity.trigger",
+      "text": "creature.conspiracist.abilities.evoke-pity.text"
+    },
+    {
+      "id": "sow-doubt",
+      "section": "offense",
+      "name": "creature.conspiracist.abilities.sow-doubt.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.conspiracist.abilities.sow-doubt.text"
+    }
+  ]
+}

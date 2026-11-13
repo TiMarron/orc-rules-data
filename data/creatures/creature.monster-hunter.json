@@ -1,0 +1,181 @@
+{
+  "id": "creature.monster-hunter",
+  "type": "creature",
+  "name": "creature.monster-hunter.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 83,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "lore": "creature.monster-hunter.lore.1",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 3,
+    "int": 1,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.greataxe",
+      "potency": 1
+    },
+    {
+      "item": "item.hide-armor"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 11,
+    "will": 13
+  },
+  "hp": {
+    "value": 105
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.monster-hunter.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d12+8",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "primal-fear"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.monster-hunter.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "primal-fear"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "favored-game",
+      "section": "top",
+      "name": "creature.monster-hunter.abilities.favored-game.name",
+      "text": "creature.monster-hunter.abilities.favored-game.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.monster-hunter.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "hunters-onslaught",
+      "section": "offense",
+      "name": "creature.monster-hunter.abilities.hunters-onslaught.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "emotion",
+        "mental"
+      ],
+      "frequency": "creature.monster-hunter.abilities.hunters-onslaught.frequency",
+      "requirements": "creature.monster-hunter.abilities.hunters-onslaught.requirements",
+      "text": "creature.monster-hunter.abilities.hunters-onslaught.text"
+    },
+    {
+      "id": "primal-fear",
+      "section": "offense",
+      "name": "creature.monster-hunter.abilities.primal-fear.name",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.monster-hunter.abilities.primal-fear.text"
+    },
+    {
+      "id": "sudden-charge",
+      "section": "offense",
+      "name": "creature.monster-hunter.abilities.sudden-charge.name",
+      "actions": "2",
+      "text": "creature.monster-hunter.abilities.sudden-charge.text"
+    }
+  ]
+}

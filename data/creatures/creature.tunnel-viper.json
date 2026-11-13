@@ -1,0 +1,182 @@
+{
+  "id": "creature.tunnel-viper",
+  "type": "creature",
+  "name": "creature.tunnel-viper.name",
+  "traits": [
+    "humanoid",
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 210,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "small",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "sakvroth",
+    "ysoki"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 5
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 0,
+    "int": 1,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.arbalest",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.caltrops",
+      "count": 3
+    },
+    {
+      "item": "item.ranseur"
+    },
+    {
+      "item": "item.scale-mail"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 9,
+    "will": 5
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25,
+    "note": "creature.tunnel-viper.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tunnel-viper.strikes.ranseur.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "disarm",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d10+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.ranseur"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tunnel-viper.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tunnel-viper.strikes.arbalest.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 110,
+      "reload": 1,
+      "traits": [
+        "backstabber"
+      ],
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.arbalest"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "running-reload",
+      "section": "offense",
+      "name": "creature.tunnel-viper.abilities.running-reload.name",
+      "actions": "1",
+      "text": "creature.tunnel-viper.abilities.running-reload.text"
+    },
+    {
+      "id": "swarming",
+      "section": "offense",
+      "name": "creature.tunnel-viper.abilities.swarming.name",
+      "text": "creature.tunnel-viper.abilities.swarming.text"
+    },
+    {
+      "id": "tunnel-fighter",
+      "section": "offense",
+      "name": "creature.tunnel-viper.abilities.tunnel-fighter.name",
+      "text": "creature.tunnel-viper.abilities.tunnel-fighter.text"
+    },
+    {
+      "id": "tunnel-travel",
+      "section": "offense",
+      "name": "creature.tunnel-viper.abilities.tunnel-travel.name",
+      "text": "creature.tunnel-viper.abilities.tunnel-travel.text"
+    }
+  ]
+}

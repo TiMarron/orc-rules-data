@@ -1,0 +1,147 @@
+{
+  "id": "creature.toady",
+  "type": "creature",
+  "name": "creature.toady.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 152,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 3,
+    "note": "creature.toady.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.toady.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 4
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 2
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 3,
+    "int": -1,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.sap"
+    },
+    {
+      "name": "creature.toady.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 6,
+    "will": 3
+  },
+  "hp": {
+    "value": 20
+  },
+  "weaknesses": [
+    {
+      "type": "mental",
+      "value": 2
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.toady.strikes.sap.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sap"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.toady.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "master-sends-their-regards",
+      "section": "top",
+      "name": "creature.toady.abilities.master-sends-their-regards.name",
+      "text": "creature.toady.abilities.master-sends-their-regards.text"
+    },
+    {
+      "id": "human-shield",
+      "section": "defense",
+      "name": "creature.toady.abilities.human-shield.name",
+      "actions": "reaction",
+      "trigger": "creature.toady.abilities.human-shield.trigger",
+      "text": "creature.toady.abilities.human-shield.text"
+    },
+    {
+      "id": "scurry",
+      "section": "offense",
+      "name": "creature.toady.abilities.scurry.name",
+      "actions": "1",
+      "text": "creature.toady.abilities.scurry.text"
+    },
+    {
+      "id": "throw-cargo",
+      "section": "offense",
+      "name": "creature.toady.abilities.throw-cargo.name",
+      "actions": "2",
+      "text": "creature.toady.abilities.throw-cargo.text"
+    }
+  ]
+}

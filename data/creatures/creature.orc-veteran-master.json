@@ -1,0 +1,207 @@
+{
+  "id": "creature.orc-veteran-master",
+  "type": "creature",
+  "name": "creature.orc-veteran-master.name",
+  "traits": [
+    "humanoid",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 208,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "orcish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 20
+    },
+    {
+      "lore": "creature.orc-veteran-master.lore.4",
+      "mod": 18
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.bo-staff",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.breastplate",
+      "potency": 1
+    },
+    {
+      "item": "item.composite-longbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 20,
+    "will": 18
+  },
+  "hp": {
+    "value": 175
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.orc-veteran-master.strikes.bo-staff.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "parry",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.bo-staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.orc-veteran-master.strikes.fist.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+13",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.orc-veteran-master.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 23,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fly-through-battle",
+      "section": "defense",
+      "name": "creature.orc-veteran-master.abilities.fly-through-battle.name",
+      "text": "creature.orc-veteran-master.abilities.fly-through-battle.text"
+    },
+    {
+      "id": "reactive-pursuit",
+      "section": "defense",
+      "name": "creature.orc-veteran-master.abilities.reactive-pursuit.name",
+      "actions": "reaction",
+      "trigger": "creature.orc-veteran-master.abilities.reactive-pursuit.trigger",
+      "text": "creature.orc-veteran-master.abilities.reactive-pursuit.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.orc-veteran-master.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "staff-swipe",
+      "section": "offense",
+      "name": "creature.orc-veteran-master.abilities.staff-swipe.name",
+      "actions": "2",
+      "text": "creature.orc-veteran-master.abilities.staff-swipe.text"
+    },
+    {
+      "id": "reshape-the-battle",
+      "section": "offense",
+      "name": "creature.orc-veteran-master.abilities.reshape-the-battle.name",
+      "actions": "1",
+      "text": "creature.orc-veteran-master.abilities.reshape-the-battle.text"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "creature.bone-scavenger",
+  "type": "creature",
+  "name": "creature.bone-scavenger.name",
+  "traits": [
+    "humanoid",
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 196,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "small",
+  "perception": {
+    "mod": 6,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "kholo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 2
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 1,
+    "int": -1,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 3,
+    "reflex": 6,
+    "will": 3
+  },
+  "hp": {
+    "value": 16
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bone-scavenger.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bone-scavenger.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bone-scavenger.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bone-armor",
+      "section": "defense",
+      "name": "creature.bone-scavenger.abilities.bone-armor.name",
+      "actions": "reaction",
+      "trigger": "creature.bone-scavenger.abilities.bone-armor.trigger",
+      "text": "creature.bone-scavenger.abilities.bone-armor.text"
+    },
+    {
+      "id": "rugged-travel",
+      "section": "offense",
+      "name": "creature.bone-scavenger.abilities.rugged-travel.name",
+      "text": "creature.bone-scavenger.abilities.rugged-travel.text"
+    }
+  ]
+}

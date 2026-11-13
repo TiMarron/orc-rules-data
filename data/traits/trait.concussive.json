@@ -1,0 +1,15 @@
+{
+  "id": "trait.concussive",
+  "type": "trait",
+  "name": "trait.concussive.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 50,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.concussive.text"
+}

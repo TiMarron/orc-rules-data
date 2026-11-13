@@ -1,0 +1,199 @@
+{
+  "id": "creature.kholo-outrider",
+  "type": "creature",
+  "name": "creature.kholo-outrider.name",
+  "traits": [
+    "humanoid",
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 197,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "kholo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": 1,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.hatchet",
+      "potency": 1,
+      "count": 2
+    },
+    {
+      "item": "item.hide-armor"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 18,
+    "will": 13
+  },
+  "hp": {
+    "value": 120
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kholo-outrider.strikes.hatchet.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kholo-outrider.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kholo-outrider.strikes.hatchet-2.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "magical",
+        "sweep",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kholo-outrider.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.kholo-outrider.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "bloody-flurry",
+      "section": "offense",
+      "name": "creature.kholo-outrider.abilities.bloody-flurry.name",
+      "actions": "2",
+      "text": "creature.kholo-outrider.abilities.bloody-flurry.text"
+    },
+    {
+      "id": "rugged-travel",
+      "section": "offense",
+      "name": "creature.kholo-outrider.abilities.rugged-travel.name",
+      "text": "creature.kholo-outrider.abilities.rugged-travel.text"
+    },
+    {
+      "id": "solo-hunter",
+      "section": "offense",
+      "name": "creature.kholo-outrider.abilities.solo-hunter.name",
+      "text": "creature.kholo-outrider.abilities.solo-hunter.text"
+    }
+  ]
+}

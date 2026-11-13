@@ -1,0 +1,122 @@
+{
+  "id": "creature.heavy-cavalry",
+  "type": "creature",
+  "name": "creature.heavy-cavalry.name",
+  "traits": [
+    "animal",
+    "human",
+    "humanoid",
+    "troop"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 92,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 12
+    },
+    {
+      "lore": "creature.heavy-cavalry.lore.4",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 2,
+    "con": 4,
+    "int": 0,
+    "wis": 1,
+    "cha": 2
+  },
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 13,
+    "will": 14
+  },
+  "hp": {
+    "value": 105,
+    "note": "creature.heavy-cavalry.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 8
+    },
+    {
+      "type": "splash-damage",
+      "value": 8
+    }
+  ],
+  "speeds": {
+    "land": 40,
+    "note": "creature.heavy-cavalry.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "mounted-troop",
+      "section": "defense",
+      "name": "creature.heavy-cavalry.abilities.mounted-troop.name",
+      "text": "creature.heavy-cavalry.abilities.mounted-troop.text"
+    },
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.heavy-cavalry.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "join-the-fray",
+      "section": "offense",
+      "name": "creature.heavy-cavalry.abilities.join-the-fray.name",
+      "actions": "1-3",
+      "frequency": "creature.heavy-cavalry.abilities.join-the-fray.frequency",
+      "text": "creature.heavy-cavalry.abilities.join-the-fray.text"
+    },
+    {
+      "id": "thunder-of-hooves",
+      "section": "offense",
+      "name": "creature.heavy-cavalry.abilities.thunder-of-hooves.name",
+      "actions": "1",
+      "frequency": "creature.heavy-cavalry.abilities.thunder-of-hooves.frequency",
+      "text": "creature.heavy-cavalry.abilities.thunder-of-hooves.text"
+    },
+    {
+      "id": "trample",
+      "section": "offense",
+      "name": "creature.heavy-cavalry.abilities.trample.name",
+      "ability": "ability.trample",
+      "actions": "3",
+      "text": "creature.heavy-cavalry.abilities.trample.text"
+    }
+  ]
+}

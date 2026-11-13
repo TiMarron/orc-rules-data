@@ -1,0 +1,173 @@
+{
+  "id": "creature.kholo-pragmatist",
+  "type": "creature",
+  "name": "creature.kholo-pragmatist.name",
+  "traits": [
+    "humanoid",
+    "kholo"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 196,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "kholo"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.society",
+      "mod": 4
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 1,
+    "int": 2,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.longspear"
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 4,
+    "reflex": 6,
+    "will": 8
+  },
+  "hp": {
+    "value": 22
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.kholo-pragmatist.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "reach"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.kholo-pragmatist.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.kholo-pragmatist.strikes.sling.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.kholo-pragmatist.abilities.pack-attack.name",
+      "text": "creature.kholo-pragmatist.abilities.pack-attack.text"
+    },
+    {
+      "id": "pragmatic-aid",
+      "section": "offense",
+      "name": "creature.kholo-pragmatist.abilities.pragmatic-aid.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "visual"
+      ],
+      "requirements": "creature.kholo-pragmatist.abilities.pragmatic-aid.requirements",
+      "text": "creature.kholo-pragmatist.abilities.pragmatic-aid.text"
+    },
+    {
+      "id": "rugged-travel",
+      "section": "offense",
+      "name": "creature.kholo-pragmatist.abilities.rugged-travel.name",
+      "text": "creature.kholo-pragmatist.abilities.rugged-travel.text"
+    },
+    {
+      "id": "spear-parry",
+      "section": "offense",
+      "name": "creature.kholo-pragmatist.abilities.spear-parry.name",
+      "actions": "1",
+      "requirements": "creature.kholo-pragmatist.abilities.spear-parry.requirements",
+      "text": "creature.kholo-pragmatist.abilities.spear-parry.text"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "id": "creature.grand-inquisitor",
+  "type": "creature",
+  "name": "creature.grand-inquisitor.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 121,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 15,
+  "size": "medium",
+  "perception": {
+    "mod": 28,
+    "note": "creature.grand-inquisitor.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 27
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 30
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 30
+    },
+    {
+      "skill": "skill.society",
+      "mod": 28
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 2,
+    "int": 3,
+    "wis": 5,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.full-plate",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    },
+    {
+      "item": "item.scimitar",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.starknife",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 38
+  },
+  "saves": {
+    "fortitude": 26,
+    "reflex": 20,
+    "will": 28,
+    "note": "creature.grand-inquisitor.saves.note"
+  },
+  "hp": {
+    "value": 215
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.grand-inquisitor.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "forceful",
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+15",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.grand-inquisitor.strikes.starknife.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "deadly",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d6",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+15",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.starknife"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.grand-inquisitor.strikes.fist.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+15",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.grand-inquisitor.strikes.starknife-2.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "deadly",
+        "magical",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d6",
+        "thrown": "20",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+15",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.starknife"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "searching-gaze",
+      "section": "defense",
+      "name": "creature.grand-inquisitor.abilities.searching-gaze.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental",
+        "visual"
+      ],
+      "aura": 30,
+      "text": "creature.grand-inquisitor.abilities.searching-gaze.text"
+    },
+    {
+      "id": "symbol-of-loyalty",
+      "section": "defense",
+      "name": "creature.grand-inquisitor.abilities.symbol-of-loyalty.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "aura": 60,
+      "text": "creature.grand-inquisitor.abilities.symbol-of-loyalty.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.grand-inquisitor.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.grand-inquisitor.abilities.reactive-strike.text"
+    },
+    {
+      "id": "condemn",
+      "section": "offense",
+      "name": "creature.grand-inquisitor.abilities.condemn.name",
+      "actions": "1",
+      "traits": [
+        "incapacitation",
+        "linguistic"
+      ],
+      "text": "creature.grand-inquisitor.abilities.condemn.text"
+    },
+    {
+      "id": "i-am-the-law",
+      "section": "offense",
+      "name": "creature.grand-inquisitor.abilities.i-am-the-law.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "linguistic"
+      ],
+      "text": "creature.grand-inquisitor.abilities.i-am-the-law.text"
+    },
+    {
+      "id": "twisting-fear",
+      "section": "offense",
+      "name": "creature.grand-inquisitor.abilities.twisting-fear.name",
+      "text": "creature.grand-inquisitor.abilities.twisting-fear.text"
+    }
+  ]
+}

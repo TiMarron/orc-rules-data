@@ -1,0 +1,246 @@
+{
+  "id": "creature.dwarf-general",
+  "type": "creature",
+  "name": "creature.dwarf-general.name",
+  "traits": [
+    "dwarf",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 176,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "dwarven"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 19
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 15
+    },
+    {
+      "skill": "skill.society",
+      "mod": 13
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    },
+    {
+      "lore": "creature.dwarf-general.lore.6",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 0,
+    "con": 4,
+    "int": 2,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.arbalest",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.clan-dagger"
+    },
+    {
+      "item": "item.full-plate"
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    },
+    {
+      "item": "item.warhammer",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 14,
+    "will": 16
+  },
+  "hp": {
+    "value": 150
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-general.strikes.warhammer.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.warhammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-general.strikes.clan-dagger.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "parry",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "bludgeoning"
+      },
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.clan-dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-general.strikes.fist.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dwarf-general.strikes.arbalest.name",
+      "actions": "1",
+      "bonus": 15,
+      "rangeIncrement": 110,
+      "reload": 1,
+      "traits": [
+        "backstabber"
+      ],
+      "damage": [
+        {
+          "dice": "1d10+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.arbalest"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "opening-orders",
+      "section": "top",
+      "name": "creature.dwarf-general.abilities.opening-orders.name",
+      "traits": [
+        "auditory",
+        "linguistic"
+      ],
+      "text": "creature.dwarf-general.abilities.opening-orders.text"
+    },
+    {
+      "id": "dwarven-doughtiness",
+      "section": "defense",
+      "name": "creature.dwarf-general.abilities.dwarven-doughtiness.name",
+      "text": "creature.dwarf-general.abilities.dwarven-doughtiness.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.dwarf-general.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction",
+      "text": "creature.dwarf-general.abilities.reactive-strike.text"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.dwarf-general.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "advancing-orders",
+      "section": "offense",
+      "name": "creature.dwarf-general.abilities.advancing-orders.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "linguistic"
+      ],
+      "text": "creature.dwarf-general.abilities.advancing-orders.text"
+    },
+    {
+      "id": "hammer-critical-specialization",
+      "section": "offense",
+      "name": "creature.dwarf-general.abilities.hammer-critical-specialization.name",
+      "text": "creature.dwarf-general.abilities.hammer-critical-specialization.text"
+    },
+    {
+      "id": "sudden-charge",
+      "section": "offense",
+      "name": "creature.dwarf-general.abilities.sudden-charge.name",
+      "actions": "2",
+      "frequency": "creature.dwarf-general.abilities.sudden-charge.frequency",
+      "text": "creature.dwarf-general.abilities.sudden-charge.text"
+    }
+  ]
+}

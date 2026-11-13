@@ -1,0 +1,193 @@
+{
+  "id": "creature.jailer",
+  "type": "creature",
+  "name": "creature.jailer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 112,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "note": "creature.jailer.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.club"
+    },
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "name": "creature.jailer.items.2.name"
+    },
+    {
+      "item": "item.manacles-simple"
+    },
+    {
+      "item": "item.signal-whistle"
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 10,
+    "will": 7
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.jailer.strikes.club.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.jailer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.jailer.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.jailer.strikes.club-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.jailer.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "efficient-capture",
+      "section": "offense",
+      "name": "creature.jailer.abilities.efficient-capture.name",
+      "actions": "3",
+      "traits": [
+        "attack",
+        "manipulate"
+      ],
+      "requirements": "creature.jailer.abilities.efficient-capture.requirements",
+      "text": "creature.jailer.abilities.efficient-capture.text"
+    },
+    {
+      "id": "intimidating-strike",
+      "section": "offense",
+      "name": "creature.jailer.abilities.intimidating-strike.name",
+      "actions": "2",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.jailer.abilities.intimidating-strike.text"
+    },
+    {
+      "id": "subdue-prisoners",
+      "section": "offense",
+      "name": "creature.jailer.abilities.subdue-prisoners.name",
+      "text": "creature.jailer.abilities.subdue-prisoners.text"
+    }
+  ]
+}

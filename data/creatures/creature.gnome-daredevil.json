@@ -1,0 +1,157 @@
+{
+  "id": "creature.gnome-daredevil",
+  "type": "creature",
+  "name": "creature.gnome-daredevil.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 183,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "gnomish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 8
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": 1,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.gnome-flickmace"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 12,
+    "will": 5
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gnome-daredevil.strikes.gnome-flickmace.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "reach",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ],
+      "item": "item.gnome-flickmace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gnome-daredevil.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gnome-daredevil.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "daredevil-strike",
+      "section": "offense",
+      "name": "creature.gnome-daredevil.abilities.daredevil-strike.name",
+      "actions": "2",
+      "frequency": "creature.gnome-daredevil.abilities.daredevil-strike.frequency",
+      "text": "creature.gnome-daredevil.abilities.daredevil-strike.text"
+    }
+  ]
+}

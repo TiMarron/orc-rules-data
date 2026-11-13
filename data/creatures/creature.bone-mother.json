@@ -1,0 +1,276 @@
+{
+  "id": "creature.bone-mother",
+  "type": "creature",
+  "name": "creature.bone-mother.name",
+  "traits": [
+    "humanoid",
+    "ratfolk"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 211,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "small",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "requian",
+    "sakvroth",
+    "ysoki"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "lore": "creature.bone-mother.lore.1",
+      "mod": 16
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 14
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 13
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 16
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 14
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 13
+    },
+    {
+      "skill": "skill.society",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 0,
+    "int": 2,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "name": "creature.bone-mother.items.0.name"
+    },
+    {
+      "item": "item.dagger",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 13,
+    "will": 15
+  },
+  "hp": {
+    "value": 80
+  },
+  "speeds": {
+    "land": 25,
+    "note": "creature.bone-mother.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bone-mother.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "spirit"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bone-mother.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "spirit"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bone-mother.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "spirit"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "rattling-bones",
+      "section": "defense",
+      "name": "creature.bone-mother.abilities.rattling-bones.name",
+      "actions": "reaction",
+      "traits": [
+        "occult",
+        "spirit"
+      ],
+      "trigger": "creature.bone-mother.abilities.rattling-bones.trigger",
+      "text": "creature.bone-mother.abilities.rattling-bones.text"
+    },
+    {
+      "id": "swarming",
+      "section": "offense",
+      "name": "creature.bone-mother.abilities.swarming.name",
+      "text": "creature.bone-mother.abilities.swarming.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 24,
+      "attack": 16,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bless"
+            },
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.mindlink"
+            },
+            {
+              "spell": "spell.sanctuary"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.augury"
+            },
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.translate"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.enthrall"
+            },
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.paralyze"
+            },
+            {
+              "spell": "spell.ring-of-truth"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    }
+  ]
+}

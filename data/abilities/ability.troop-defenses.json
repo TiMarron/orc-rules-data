@@ -1,0 +1,15 @@
+{
+  "id": "ability.troop-defenses",
+  "type": "ability",
+  "name": "ability.troop-defenses.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 231,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "ability.troop-defenses.text"
+}

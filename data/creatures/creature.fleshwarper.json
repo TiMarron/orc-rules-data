@@ -1,0 +1,206 @@
+{
+  "id": "creature.fleshwarper",
+  "type": "creature",
+  "name": "creature.fleshwarper.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 159,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "lore": "creature.fleshwarper.lore.0",
+      "mod": 15
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 17
+    },
+    {
+      "lore": "creature.fleshwarper.lore.2",
+      "mod": 17
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 16
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 2,
+    "int": 4,
+    "wis": 2,
+    "cha": -1
+  },
+  "items": [
+    {
+      "name": "creature.fleshwarper.items.0.name",
+      "count": 5
+    },
+    {
+      "item": "item.healers-toolkit"
+    },
+    {
+      "item": "item.dagger",
+      "name": "creature.fleshwarper.items.2.name",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 15,
+    "will": 15
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.fleshwarper.strikes.scalpel.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.fleshwarper.strikes.fist.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.fleshwarper.strikes.fleshwarping-concoction.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 20,
+      "traits": [
+        "alchemical",
+        "poison"
+      ],
+      "damage": [
+        {
+          "dice": "4d6",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        {
+          "own": "flesh-mutation"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.fleshwarper.strikes.scalpel-2.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "magical",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "conduct-the-experiment",
+      "section": "offense",
+      "name": "creature.fleshwarper.abilities.conduct-the-experiment.name",
+      "actions": "1",
+      "text": "creature.fleshwarper.abilities.conduct-the-experiment.text"
+    },
+    {
+      "id": "flesh-mutation",
+      "section": "offense",
+      "name": "creature.fleshwarper.abilities.flesh-mutation.name",
+      "traits": [
+        "alchemical",
+        "morph"
+      ],
+      "text": "creature.fleshwarper.abilities.flesh-mutation.text"
+    },
+    {
+      "id": "restore-my-masterpiece",
+      "section": "offense",
+      "name": "creature.fleshwarper.abilities.restore-my-masterpiece.name",
+      "actions": "1",
+      "traits": [
+        "healing",
+        "manipulate"
+      ],
+      "requirements": "creature.fleshwarper.abilities.restore-my-masterpiece.requirements",
+      "text": "creature.fleshwarper.abilities.restore-my-masterpiece.text"
+    }
+  ]
+}
