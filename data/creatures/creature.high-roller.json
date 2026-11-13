@@ -1,0 +1,203 @@
+{
+  "id": "creature.high-roller",
+  "type": "creature",
+  "name": "creature.high-roller.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 79,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 11,
+  "size": "medium",
+  "perception": {
+    "mod": 22,
+    "note": "creature.high-roller.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 24
+    },
+    {
+      "lore": "creature.high-roller.lore.1",
+      "mod": 26
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 22
+    },
+    {
+      "skill": "skill.society",
+      "mod": 21
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 5,
+    "con": 0,
+    "int": 2,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "name": "creature.high-roller.items.0.name",
+      "note": "creature.high-roller.items.0.note"
+    },
+    {
+      "item": "item.predictable-silver-piece"
+    },
+    {
+      "item": "item.rapier",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 24,
+    "will": 22
+  },
+  "hp": {
+    "value": 150
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.high-roller.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "2d6+11",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.high-roller.strikes.fist.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.high-roller.strikes.card.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d4+11",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.high-roller.strikes.card-2.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "2d4+11",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "gaming-arsenal",
+      "section": "top",
+      "name": "creature.high-roller.abilities.gaming-arsenal.name",
+      "text": "creature.high-roller.abilities.gaming-arsenal.text"
+    },
+    {
+      "id": "tip-the-scales",
+      "section": "defense",
+      "name": "creature.high-roller.abilities.tip-the-scales.name",
+      "actions": "reaction",
+      "traits": [
+        "divine",
+        "fortune"
+      ],
+      "trigger": "creature.high-roller.abilities.tip-the-scales.trigger",
+      "text": "creature.high-roller.abilities.tip-the-scales.text"
+    },
+    {
+      "id": "lucky-momentum",
+      "section": "offense",
+      "name": "creature.high-roller.abilities.lucky-momentum.name",
+      "actions": "1",
+      "requirements": "creature.high-roller.abilities.lucky-momentum.requirements",
+      "text": "creature.high-roller.abilities.lucky-momentum.text"
+    },
+    {
+      "id": "royal-flush-flurry",
+      "section": "offense",
+      "name": "creature.high-roller.abilities.royal-flush-flurry.name",
+      "actions": "2",
+      "frequency": "creature.high-roller.abilities.royal-flush-flurry.frequency",
+      "requirements": "creature.high-roller.abilities.royal-flush-flurry.requirements",
+      "text": "creature.high-roller.abilities.royal-flush-flurry.text"
+    }
+  ],
+  "editNote": "Items, page 79: \"Playing Cards\" stays its printed name: the source links a page from before the Remaster, and no Remaster book in the dataset has playing cards."
+}

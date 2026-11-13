@@ -8,7 +8,7 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Added
 
-- NPC Core (`npc-core`) as a source book. Its first records: 189 creatures,
+- NPC Core (`npc-core`) as a source book. Its first records: 207 creatures,
   the firearm traits capacity, concussive, kickback and scatter, the troop trait
   and the Troop Defenses and Troop Movement abilities, two spells and 36 items (the firearms and their ammunition, the machete, frying pan and war razor; the maps, fetters, surprise dolls and oils of sympathy with their variants).
   The NPCs the book names for a deity or an organization of the setting carry a

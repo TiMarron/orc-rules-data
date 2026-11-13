@@ -1,0 +1,169 @@
+{
+  "id": "creature.surgeon",
+  "type": "creature",
+  "name": "creature.surgeon.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 61,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 10
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 1,
+    "int": 2,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.temple-sword",
+      "name": "creature.surgeon.items.0.name"
+    },
+    {
+      "item": "item.healers-toolkit"
+    },
+    {
+      "item": "item.dagger",
+      "name": "creature.surgeon.items.2.name",
+      "count": 3
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 7,
+    "will": 10
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.surgeon.strikes.bonesaw.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+1",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.temple-sword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.surgeon.strikes.scalpel.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.surgeon.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.surgeon.strikes.scalpel-2.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "medical-specialist",
+      "section": "top",
+      "name": "creature.surgeon.abilities.medical-specialist.name",
+      "text": "creature.surgeon.abilities.medical-specialist.text"
+    },
+    {
+      "id": "medical-malpractice",
+      "section": "offense",
+      "name": "creature.surgeon.abilities.medical-malpractice.name",
+      "actions": "1",
+      "text": "creature.surgeon.abilities.medical-malpractice.text"
+    }
+  ],
+  "editNote": "Items, page 61: the book prints \"scalpel (3, functions as a dagger)\"; the source has a full stop after the count. The entry is three daggers under the printed name."
+}

@@ -1,0 +1,195 @@
+{
+  "id": "creature.peerless-duelist",
+  "type": "creature",
+  "name": "creature.peerless-duelist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 80,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 12,
+  "size": "medium",
+  "perception": {
+    "mod": 24,
+    "note": "creature.peerless-duelist.perception.note",
+    "senses": [
+      {
+        "ability": "ability.tremorsense",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 22
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 24
+    },
+    {
+      "lore": "creature.peerless-duelist.lore.4",
+      "mod": 25
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 26
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 5,
+    "con": 3,
+    "int": 0,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.obsidian-goggles"
+    },
+    {
+      "item": "item.dueling-pistol",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "count": 2,
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 40
+      }
+    }
+  ],
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 25,
+    "will": 21
+  },
+  "hp": {
+    "value": 200
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.peerless-duelist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.peerless-duelist.strikes.dueling-pistol.name",
+      "actions": "1",
+      "bonus": 26,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "concealable",
+        "concussive",
+        "fatal",
+        "magical"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "3d6+13",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dueling-pistol"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "i-see-you",
+      "section": "top",
+      "name": "creature.peerless-duelist.abilities.i-see-you.name",
+      "text": "creature.peerless-duelist.abilities.i-see-you.text"
+    },
+    {
+      "id": "threatening-aura",
+      "section": "defense",
+      "name": "creature.peerless-duelist.abilities.threatening-aura.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "aura": 60,
+      "text": "creature.peerless-duelist.abilities.threatening-aura.text"
+    },
+    {
+      "id": "shoot-first",
+      "section": "defense",
+      "name": "creature.peerless-duelist.abilities.shoot-first.name",
+      "actions": "reaction",
+      "trigger": "creature.peerless-duelist.abilities.shoot-first.trigger",
+      "requirements": "creature.peerless-duelist.abilities.shoot-first.requirements",
+      "text": "creature.peerless-duelist.abilities.shoot-first.text"
+    },
+    {
+      "id": "ace-shooter",
+      "section": "offense",
+      "name": "creature.peerless-duelist.abilities.ace-shooter.name",
+      "text": "creature.peerless-duelist.abilities.ace-shooter.text"
+    },
+    {
+      "id": "disarming-shot",
+      "section": "offense",
+      "name": "creature.peerless-duelist.abilities.disarming-shot.name",
+      "actions": "1",
+      "text": "creature.peerless-duelist.abilities.disarming-shot.text"
+    },
+    {
+      "id": "double-reload",
+      "section": "offense",
+      "name": "creature.peerless-duelist.abilities.double-reload.name",
+      "actions": "1",
+      "requirements": "creature.peerless-duelist.abilities.double-reload.requirements",
+      "text": "creature.peerless-duelist.abilities.double-reload.text"
+    }
+  ],
+  "editNote": "Rarity corrected to the book: page 80 prints the trait line with uncommon; the source has common, and there is no errata for the book."
+}

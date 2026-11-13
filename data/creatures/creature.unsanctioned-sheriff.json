@@ -1,0 +1,171 @@
+{
+  "id": "creature.unsanctioned-sheriff",
+  "type": "creature",
+  "name": "creature.unsanctioned-sheriff.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 78,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 13,
+    "note": "creature.unsanctioned-sheriff.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.society",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "name": "creature.unsanctioned-sheriff.items.0.name"
+    },
+    {
+      "item": "item.dueling-pistol",
+      "count": 2,
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.sap"
+    },
+    {
+      "item": "item.scale-mail"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 11,
+    "will": 13
+  },
+  "hp": {
+    "value": 75
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.unsanctioned-sheriff.strikes.sap.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sap"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.unsanctioned-sheriff.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.unsanctioned-sheriff.strikes.dueling-pistol.name",
+      "actions": "1",
+      "bonus": 13,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "concealable",
+        "concussive",
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dueling-pistol"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.unsanctioned-sheriff.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "lay-down-the-law",
+      "section": "offense",
+      "name": "creature.unsanctioned-sheriff.abilities.lay-down-the-law.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "requirements": "creature.unsanctioned-sheriff.abilities.lay-down-the-law.requirements",
+      "text": "creature.unsanctioned-sheriff.abilities.lay-down-the-law.text"
+    }
+  ]
+}

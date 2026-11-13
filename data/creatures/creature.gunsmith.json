@@ -1,0 +1,149 @@
+{
+  "id": "creature.gunsmith",
+  "type": "creature",
+  "name": "creature.gunsmith.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 42,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 4
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 13,
+      "note": "creature.gunsmith.skills.1.note"
+    },
+    {
+      "lore": "creature.gunsmith.lore.2",
+      "mod": 13
+    },
+    {
+      "skill": "skill.society",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 0,
+    "int": 2,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "note": "creature.gunsmith.items.0.note"
+    },
+    {
+      "item": "item.dueling-pistol",
+      "count": 2,
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 8,
+    "will": 6
+  },
+  "hp": {
+    "value": 16
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gunsmith.strikes.fist.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gunsmith.strikes.dueling-pistol.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "concealable",
+        "concussive",
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dueling-pistol"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "firearm-specialist",
+      "section": "top",
+      "name": "creature.gunsmith.abilities.firearm-specialist.name",
+      "text": "creature.gunsmith.abilities.firearm-specialist.text"
+    },
+    {
+      "id": "crafty-reload",
+      "section": "offense",
+      "name": "creature.gunsmith.abilities.crafty-reload.name",
+      "text": "creature.gunsmith.abilities.crafty-reload.text"
+    },
+    {
+      "id": "firearm-sabotage",
+      "section": "offense",
+      "name": "creature.gunsmith.abilities.firearm-sabotage.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "requirements": "creature.gunsmith.abilities.firearm-sabotage.requirements",
+      "text": "creature.gunsmith.abilities.firearm-sabotage.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 42 prints \"Crafting +13 (+15 for firearms)\"; the source omits the parenthesis, and there is no errata for the book."
+}

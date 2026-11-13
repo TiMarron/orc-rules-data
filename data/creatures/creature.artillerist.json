@@ -1,0 +1,200 @@
+{
+  "id": "creature.artillerist",
+  "type": "creature",
+  "name": "creature.artillerist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 44,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "note": "creature.artillerist.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 9,
+      "note": "creature.artillerist.skills.0.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "lore": "creature.artillerist.lore.2",
+      "mod": 11,
+      "note": "creature.artillerist.skills.2.note"
+    },
+    {
+      "lore": "creature.artillerist.lore.3",
+      "mod": 9,
+      "note": "creature.artillerist.skills.3.note"
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 1,
+    "int": 2,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "note": "creature.artillerist.items.0.note"
+    },
+    {
+      "item": "item.dueling-pistol",
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.light-hammer"
+    },
+    {
+      "item": "item.repair-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 12,
+    "will": 6
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.artillerist.strikes.light-hammer.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.artillerist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.artillerist.strikes.dueling-pistol.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "concealable",
+        "concussive",
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dueling-pistol"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.artillerist.strikes.light-hammer-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "siege-acumen",
+      "section": "top",
+      "name": "creature.artillerist.abilities.siege-acumen.name",
+      "text": "creature.artillerist.abilities.siege-acumen.text"
+    },
+    {
+      "id": "siege-shield",
+      "section": "defense",
+      "name": "creature.artillerist.abilities.siege-shield.name",
+      "text": "creature.artillerist.abilities.siege-shield.text"
+    },
+    {
+      "id": "bombard",
+      "section": "offense",
+      "name": "creature.artillerist.abilities.bombard.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.artillerist.abilities.bombard.text"
+    }
+  ],
+  "editNote": "Skill qualifiers added from the book: page 44 prints \"Crafting +9 (+11 for siege weapons)\", \"Engineering Lore +11 (+13 for siege weapons)\", \"Explosive Lore +9 (+11 for siege weapons)\"; the source omits the parentheses, and there is no errata for the book."
+}

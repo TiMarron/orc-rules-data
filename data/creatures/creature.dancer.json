@@ -1,0 +1,163 @@
+{
+  "id": "creature.dancer",
+  "type": "creature",
+  "name": "creature.dancer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 124,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 4
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 6
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 13,
+      "note": "creature.dancer.skills.3.note"
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 6
+    },
+    {
+      "lore": "creature.dancer.lore.5",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 0,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 3
+    },
+    {
+      "name": "creature.dancer.items.1.name",
+      "note": "creature.dancer.items.1.note"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 8,
+    "will": 3
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dancer.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dancer.strikes.foot.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dancer.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "dance-specialist",
+      "section": "top",
+      "name": "creature.dancer.abilities.dance-specialist.name",
+      "text": "creature.dancer.abilities.dance-specialist.text"
+    },
+    {
+      "id": "fascinating-dance",
+      "section": "offense",
+      "name": "creature.dancer.abilities.fascinating-dance.name",
+      "actions": "1",
+      "frequency": "creature.dancer.abilities.fascinating-dance.frequency",
+      "text": "creature.dancer.abilities.fascinating-dance.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 124 prints \"Performance +13 (+15 when dancing)\"; the source omits the parenthesis, and there is no errata for the book."
+}
