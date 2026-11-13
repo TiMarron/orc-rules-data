@@ -1,0 +1,21 @@
+{
+  "id": "item.sun-goggles",
+  "type": "item",
+  "name": "item.sun-goggles.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 59,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.sun-goggles.text",
+  "level": 3,
+  "priceCp": 2000,
+  "bulk": "0",
+  "usage": "item.sun-goggles.usage",
+  "category": "gear",
+  "editNote": "Reserved Material removed: a region of the setting is named; it is the far north."
+}
