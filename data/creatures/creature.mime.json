@@ -1,0 +1,144 @@
+{
+  "id": "creature.mime",
+  "type": "creature",
+  "name": "creature.mime.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 126,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 11
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.mime.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 10,
+      "note": "creature.mime.skills.3.note"
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 0,
+    "int": 1,
+    "wis": 2,
+    "cha": 4
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 9,
+    "will": 12
+  },
+  "hp": {
+    "value": 45
+  },
+  "resistances": [
+    {
+      "type": "sonic",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mime.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mimicry-specialist",
+      "section": "top",
+      "name": "creature.mime.abilities.mimicry-specialist.name",
+      "text": "creature.mime.abilities.mimicry-specialist.text"
+    },
+    {
+      "id": "skill-mimicry",
+      "section": "defense",
+      "name": "creature.mime.abilities.skill-mimicry.name",
+      "text": "creature.mime.abilities.skill-mimicry.text"
+    },
+    {
+      "id": "versatile-performance",
+      "section": "defense",
+      "name": "creature.mime.abilities.versatile-performance.name",
+      "text": "creature.mime.abilities.versatile-performance.text"
+    },
+    {
+      "id": "mimic-assault",
+      "section": "offense",
+      "name": "creature.mime.abilities.mimic-assault.name",
+      "actions": "2",
+      "traits": [
+        "attack",
+        "mental",
+        "visual"
+      ],
+      "frequency": "creature.mime.abilities.mimic-assault.frequency",
+      "requirements": "creature.mime.abilities.mimic-assault.requirements",
+      "text": "creature.mime.abilities.mimic-assault.text"
+    },
+    {
+      "id": "pantomime",
+      "section": "offense",
+      "name": "creature.mime.abilities.pantomime.name",
+      "actions": "2",
+      "traits": [
+        "illusion",
+        "mental",
+        "visual"
+      ],
+      "text": "creature.mime.abilities.pantomime.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 126 prints \"Performance +10 (+14 when acting or miming)\"; the source omits the parenthesis, and there is no errata for the book."
+}

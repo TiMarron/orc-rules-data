@@ -1,0 +1,176 @@
+{
+  "id": "creature.gambling-companion",
+  "type": "creature",
+  "name": "creature.gambling-companion.name",
+  "traits": [
+    "humanoid",
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 212,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "note": "creature.gambling-companion.perception.note",
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "tengu"
+  ],
+  "languageNote": "creature.gambling-companion.language-note",
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "lore": "creature.gambling-companion.lore.2",
+      "mod": 16
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 9,
+      "note": "creature.gambling-companion.skills.4.note"
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 0,
+    "int": 2,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "name": "creature.gambling-companion.items.0.name"
+    },
+    {
+      "item": "item.dagger",
+      "count": 3
+    },
+    {
+      "name": "creature.gambling-companion.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 12,
+    "will": 9
+  },
+  "hp": {
+    "value": 46
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gambling-companion.strikes.beak.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gambling-companion.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gambling-companion.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "social-specialist",
+      "section": "top",
+      "name": "creature.gambling-companion.abilities.social-specialist.name",
+      "text": "creature.gambling-companion.abilities.social-specialist.text"
+    },
+    {
+      "id": "gamers-guidance",
+      "section": "defense",
+      "name": "creature.gambling-companion.abilities.gamers-guidance.name",
+      "traits": [
+        "fortune"
+      ],
+      "text": "creature.gambling-companion.abilities.gamers-guidance.text"
+    },
+    {
+      "id": "distracting-trick",
+      "section": "offense",
+      "name": "creature.gambling-companion.abilities.distracting-trick.name",
+      "actions": "2",
+      "requirements": "creature.gambling-companion.abilities.distracting-trick.requirements",
+      "text": "creature.gambling-companion.abilities.distracting-trick.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 212 prints \"Thievery +9 (+11 for sleight of hand)\"; the source omits the parenthesis, and there is no errata for the book."
+}

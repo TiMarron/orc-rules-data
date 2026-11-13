@@ -1,0 +1,183 @@
+{
+  "id": "creature.tengu-bladesmith",
+  "type": "creature",
+  "name": "creature.tengu-bladesmith.name",
+  "traits": [
+    "humanoid",
+    "tengu"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 213,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "tengu"
+  ],
+  "languageNote": "creature.tengu-bladesmith.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 16,
+      "note": "creature.tengu-bladesmith.skills.2.note"
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "lore": "creature.tengu-bladesmith.lore.5",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": 1,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.wakizashi",
+      "material": "cold-iron"
+    },
+    {
+      "item": "item.katana",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 16,
+    "will": 11
+  },
+  "hp": {
+    "value": 100
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tengu-bladesmith.strikes.katana.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "deadly",
+        "magical",
+        "two-hand",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "two-hand": "1d10",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d4",
+          "type": "bleed",
+          "persistent": true
+        }
+      ],
+      "item": "item.katana"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tengu-bladesmith.strikes.cold-iron-wakizashi.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "deadly",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d8",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.wakizashi"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tengu-bladesmith.strikes.beak.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.tengu-bladesmith.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "feinting-failure",
+      "section": "offense",
+      "name": "creature.tengu-bladesmith.abilities.feinting-failure.name",
+      "actions": "1",
+      "frequency": "creature.tengu-bladesmith.abilities.feinting-failure.frequency",
+      "requirements": "creature.tengu-bladesmith.abilities.feinting-failure.requirements",
+      "text": "creature.tengu-bladesmith.abilities.feinting-failure.text"
+    },
+    {
+      "id": "swirling-blade",
+      "section": "offense",
+      "name": "creature.tengu-bladesmith.abilities.swirling-blade.name",
+      "actions": "1",
+      "text": "creature.tengu-bladesmith.abilities.swirling-blade.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 213 prints \"Crafting +16 (+18 for blacksmithing)\"; the source omits the parenthesis, and there is no errata for the book."
+}

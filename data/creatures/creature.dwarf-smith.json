@@ -1,0 +1,191 @@
+{
+  "id": "creature.dwarf-smith",
+  "type": "creature",
+  "name": "creature.dwarf-smith.name",
+  "traits": [
+    "dwarf",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 174,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "dwarven"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 12,
+      "note": "creature.dwarf-smith.skills.1.note"
+    },
+    {
+      "skill": "skill.society",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 2,
+    "int": 3,
+    "wis": 1,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "note": "creature.dwarf-smith.items.0.note"
+    },
+    {
+      "item": "item.clan-dagger"
+    },
+    {
+      "item": "item.padded-armor",
+      "name": "creature.dwarf-smith.items.2.name"
+    },
+    {
+      "item": "item.light-hammer"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 3,
+    "will": 5
+  },
+  "hp": {
+    "value": 12
+  },
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 1
+    }
+  ],
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-smith.strikes.light-hammer.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-smith.strikes.clan-dagger.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "parry",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "bludgeoning"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.clan-dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.dwarf-smith.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.dwarf-smith.strikes.light-hammer-2.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-hammer"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blacksmithing-specialist",
+      "section": "top",
+      "name": "creature.dwarf-smith.abilities.blacksmithing-specialist.name",
+      "text": "creature.dwarf-smith.abilities.blacksmithing-specialist.text"
+    },
+    {
+      "id": "temper-armament",
+      "section": "top",
+      "name": "creature.dwarf-smith.abilities.temper-armament.name",
+      "traits": [
+        "downtime"
+      ],
+      "text": "creature.dwarf-smith.abilities.temper-armament.text"
+    },
+    {
+      "id": "crack-the-shell",
+      "section": "offense",
+      "name": "creature.dwarf-smith.abilities.crack-the-shell.name",
+      "actions": "2",
+      "text": "creature.dwarf-smith.abilities.crack-the-shell.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 174 prints \"Crafting +12 (+13 blacksmithing)\"; the source omits the parenthesis, and there is no errata for the book."
+}

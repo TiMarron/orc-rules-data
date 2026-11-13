@@ -1,0 +1,203 @@
+{
+  "id": "creature.street-musician",
+  "type": "creature",
+  "name": "creature.street-musician.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 125,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 5
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 8
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 8,
+      "note": "creature.street-musician.skills.4.note"
+    },
+    {
+      "skill": "skill.society",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.musical-instrument",
+      "note": "creature.street-musician.items.1.note"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 8,
+    "will": 9
+  },
+  "hp": {
+    "value": 32
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.street-musician.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.street-musician.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.street-musician.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "distracting-drone",
+      "section": "offense",
+      "name": "creature.street-musician.abilities.distracting-drone.name",
+      "actions": "1",
+      "requirements": "creature.street-musician.abilities.distracting-drone.requirements",
+      "text": "creature.street-musician.abilities.distracting-drone.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.street-musician.abilities.sneak-attack.name",
+      "text": "creature.street-musician.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 18,
+      "attack": 10,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.summon-instrument"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 125 prints \"Performance +8 (+11 when playing an instrument)\"; the source omits the parenthesis, and there is no errata for the book."
+}

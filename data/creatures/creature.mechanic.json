@@ -1,0 +1,157 @@
+{
+  "id": "creature.mechanic",
+  "type": "creature",
+  "name": "creature.mechanic.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 42,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 5
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 16,
+      "note": "creature.mechanic.skills.1.note"
+    },
+    {
+      "lore": "creature.mechanic.lore.2",
+      "mod": 16
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 1,
+    "int": 3,
+    "wis": 0,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.arbalest",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "name": "creature.mechanic.items.1.name"
+    },
+    {
+      "item": "item.repair-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 6,
+    "will": 3
+  },
+  "hp": {
+    "value": 22
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mechanic.strikes.heavy-wrench.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mechanic.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.mechanic.strikes.arbalest.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 110,
+      "reload": 1,
+      "traits": [
+        "backstabber"
+      ],
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.arbalest"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mechanical-repair",
+      "section": "top",
+      "name": "creature.mechanic.abilities.mechanical-repair.name",
+      "text": "creature.mechanic.abilities.mechanical-repair.text"
+    },
+    {
+      "id": "mechanical-specialist",
+      "section": "top",
+      "name": "creature.mechanic.abilities.mechanical-specialist.name",
+      "text": "creature.mechanic.abilities.mechanical-specialist.text"
+    },
+    {
+      "id": "risky-upgrade",
+      "section": "offense",
+      "name": "creature.mechanic.abilities.risky-upgrade.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "creature.mechanic.abilities.risky-upgrade.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 42 prints \"Crafting +16 (+18 when repairing mechanical devices)\"; the source omits the parenthesis, and there is no errata for the book."
+}

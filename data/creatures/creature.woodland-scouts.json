@@ -1,0 +1,143 @@
+{
+  "id": "creature.woodland-scouts",
+  "type": "creature",
+  "name": "creature.woodland-scouts.name",
+  "traits": [
+    "elf",
+    "humanoid",
+    "troop"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 179,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "lore": "creature.woodland-scouts.lore.2",
+      "mod": 17
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 14
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18,
+      "note": "creature.woodland-scouts.skills.5.note"
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 0,
+    "int": 1,
+    "wis": 4,
+    "cha": 2
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 18,
+    "will": 16
+  },
+  "hp": {
+    "value": 120,
+    "note": "creature.woodland-scouts.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 8
+    },
+    {
+      "type": "splash-damage",
+      "value": 8
+    }
+  ],
+  "speeds": {
+    "land": 30,
+    "note": "creature.woodland-scouts.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.woodland-scouts.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "among-the-trees",
+      "section": "offense",
+      "name": "creature.woodland-scouts.abilities.among-the-trees.name",
+      "actions": "1",
+      "requirements": "creature.woodland-scouts.abilities.among-the-trees.requirements",
+      "text": "creature.woodland-scouts.abilities.among-the-trees.text"
+    },
+    {
+      "id": "forest-passage",
+      "section": "offense",
+      "name": "creature.woodland-scouts.abilities.forest-passage.name",
+      "text": "creature.woodland-scouts.abilities.forest-passage.text"
+    },
+    {
+      "id": "longbow-barrage",
+      "section": "offense",
+      "name": "creature.woodland-scouts.abilities.longbow-barrage.name",
+      "actions": "2",
+      "text": "creature.woodland-scouts.abilities.longbow-barrage.text"
+    },
+    {
+      "id": "thicket-of-blades",
+      "section": "offense",
+      "name": "creature.woodland-scouts.abilities.thicket-of-blades.name",
+      "actions": "1-3",
+      "frequency": "creature.woodland-scouts.abilities.thicket-of-blades.frequency",
+      "text": "creature.woodland-scouts.abilities.thicket-of-blades.text"
+    },
+    {
+      "id": "stealthy-formation",
+      "section": "offense",
+      "name": "creature.woodland-scouts.abilities.stealthy-formation.name",
+      "text": "creature.woodland-scouts.abilities.stealthy-formation.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 179 prints \"Stealth +18 (+19 in forests)\"; the source omits the parenthesis, and there is no errata for the book."
+}

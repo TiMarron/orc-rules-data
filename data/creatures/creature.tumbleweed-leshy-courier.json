@@ -1,0 +1,209 @@
+{
+  "id": "creature.tumbleweed-leshy-courier",
+  "type": "creature",
+  "name": "creature.tumbleweed-leshy-courier.name",
+  "traits": [
+    "leshy",
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 200,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 3,
+  "size": "small",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "languageNote": "creature.tumbleweed-leshy-courier.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 11,
+      "note": "creature.tumbleweed-leshy-courier.skills.0.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 10
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 1,
+    "int": 0,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.dagger"
+    }
+  ],
+  "ac": {
+    "value": 19
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 12,
+    "will": 9
+  },
+  "hp": {
+    "value": 35
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tumbleweed-leshy-courier.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tumbleweed-leshy-courier.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tumbleweed-leshy-courier.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 12,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "tumbling-traveler",
+      "section": "top",
+      "name": "creature.tumbleweed-leshy-courier.abilities.tumbling-traveler.name",
+      "text": "creature.tumbleweed-leshy-courier.abilities.tumbling-traveler.text"
+    },
+    {
+      "id": "spiny-burst",
+      "section": "defense",
+      "name": "creature.tumbleweed-leshy-courier.abilities.spiny-burst.name",
+      "traits": [
+        "healing",
+        "primal",
+        "vitality"
+      ],
+      "text": "creature.tumbleweed-leshy-courier.abilities.spiny-burst.text"
+    },
+    {
+      "id": "nimble-dodge",
+      "section": "defense",
+      "name": "creature.tumbleweed-leshy-courier.abilities.nimble-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.tumbleweed-leshy-courier.abilities.nimble-dodge.trigger",
+      "text": "creature.tumbleweed-leshy-courier.abilities.nimble-dodge.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.tumbleweed-leshy-courier.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "text": "creature.tumbleweed-leshy-courier.abilities.change-shape.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 17,
+      "constant": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.speak-with-plants",
+              "note": "creature.tumbleweed-leshy-courier.spellcasting.0.constant.3.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 200 prints \"Acrobatics +11 (+13 when Tumbling Through)\"; the source omits the parenthesis, and there is no errata for the book."
+}

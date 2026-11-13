@@ -1,0 +1,194 @@
+{
+  "id": "creature.saboteur",
+  "type": "creature",
+  "name": "creature.saboteur.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 153,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "note": "creature.saboteur.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 6,
+      "note": "creature.saboteur.skills.2.note"
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "lore": "creature.saboteur.lore.5",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 5
+    },
+    {
+      "skill": "skill.society",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 6
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 9
+    },
+    {
+      "lore": "creature.saboteur.lore.11",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 1,
+    "int": 2,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit",
+      "note": "creature.saboteur.items.0.note"
+    },
+    {
+      "item": "item.crowbar"
+    },
+    {
+      "item": "item.disguise-kit"
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.sap"
+    },
+    {
+      "item": "item.thieves-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 17,
+    "note": "creature.saboteur.ac.note"
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 9,
+    "will": 8,
+    "note": "creature.saboteur.saves.note"
+  },
+  "hp": {
+    "value": 28
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.saboteur.strikes.sap.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sap"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.saboteur.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.saboteur.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "snare-crafting",
+      "section": "top",
+      "name": "creature.saboteur.abilities.snare-crafting.name",
+      "text": "creature.saboteur.abilities.snare-crafting.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.saboteur.abilities.sneak-attack.name",
+      "text": "creature.saboteur.abilities.sneak-attack.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 153 prints \"Crafting +6 (+8 to Craft snares)\"; the source omits the parenthesis, and there is no errata for the book."
+}

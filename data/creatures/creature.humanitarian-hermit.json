@@ -1,0 +1,282 @@
+{
+  "id": "creature.humanitarian-hermit",
+  "type": "creature",
+  "name": "creature.humanitarian-hermit.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 63,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 17
+  },
+  "languages": [
+    "common",
+    "fey",
+    "wildsong"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 19,
+      "note": "creature.humanitarian-hermit.skills.0.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 14
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 21
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 19
+    },
+    {
+      "skill": "skill.society",
+      "mod": 14
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 17
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": 1,
+    "wis": 4,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.healers-toolkit-expanded"
+    },
+    {
+      "item": "item.primal-symbol"
+    },
+    {
+      "item": "item.staff-of-healing",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 16,
+    "will": 19
+  },
+  "hp": {
+    "value": 150
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.humanitarian-hermit.strikes.staff.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "parry",
+        "reach",
+        "trip",
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "2d4+10",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d8",
+          "type": "vitality"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.humanitarian-hermit.strikes.fist.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "plant-empathy",
+      "section": "top",
+      "name": "creature.humanitarian-hermit.abilities.plant-empathy.name",
+      "text": "creature.humanitarian-hermit.abilities.plant-empathy.text"
+    },
+    {
+      "id": "cleansing-earth",
+      "section": "offense",
+      "name": "creature.humanitarian-hermit.abilities.cleansing-earth.name",
+      "actions": "3",
+      "traits": [
+        "plant",
+        "primal"
+      ],
+      "frequency": "creature.humanitarian-hermit.abilities.cleansing-earth.frequency",
+      "text": "creature.humanitarian-hermit.abilities.cleansing-earth.text"
+    },
+    {
+      "id": "primal-staff",
+      "section": "offense",
+      "name": "creature.humanitarian-hermit.abilities.primal-staff.name",
+      "text": "creature.humanitarian-hermit.abilities.primal-staff.text"
+    },
+    {
+      "id": "steady-spellcasting",
+      "section": "offense",
+      "name": "creature.humanitarian-hermit.abilities.steady-spellcasting.name",
+      "text": "creature.humanitarian-hermit.abilities.steady-spellcasting.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 27,
+      "attack": 19,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.electric-arc"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.know-the-way"
+          },
+          {
+            "spell": "spell.stabilize"
+          },
+          {
+            "spell": "spell.vitality-lash"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.cleanse-cuisine"
+            },
+            {
+              "spell": "spell.create-water"
+            },
+            {
+              "spell": "spell.vanishing-tracks"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.create-food"
+            },
+            {
+              "spell": "spell.environmental-endurance"
+            },
+            {
+              "spell": "spell.peaceful-rest"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.earthbind"
+            },
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.safe-passage"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction",
+              "count": 2
+            },
+            {
+              "spell": "spell.mountain-resilience"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.heal",
+              "count": 4
+            },
+            {
+              "spell": "spell.vital-beacon"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 27,
+    "ranks": [
+      {
+        "rank": 3,
+        "rituals": [
+          {
+            "ritual": "ritual.reincarnate"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Skill qualifier added from the book: page 63 prints \"Athletics +19 (+20 using their staff)\"; the source omits the parenthesis, and there is no errata for the book."
+}

@@ -1,0 +1,173 @@
+{
+  "id": "creature.local-herbalist",
+  "type": "creature",
+  "name": "creature.local-herbalist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 60,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 6,
+      "note": "creature.local-herbalist.skills.0.note"
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 4
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 0,
+    "con": 1,
+    "int": 1,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "name": "creature.local-herbalist.items.0.name"
+    },
+    {
+      "item": "item.healers-toolkit",
+      "name": "creature.local-herbalist.items.1.name"
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 13
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 5,
+    "will": 9
+  },
+  "hp": {
+    "value": 24
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.local-herbalist.strikes.staff.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.local-herbalist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.local-herbalist.strikes.fungal-spores.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 10,
+      "traits": [
+        "fungus",
+        "poison"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "poison"
+        },
+        {
+          "dice": "1d4",
+          "type": "poison",
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "herbalism-specialist",
+      "section": "top",
+      "name": "creature.local-herbalist.abilities.herbalism-specialist.name",
+      "text": "creature.local-herbalist.abilities.herbalism-specialist.text"
+    },
+    {
+      "id": "natural-medicine",
+      "section": "top",
+      "name": "creature.local-herbalist.abilities.natural-medicine.name",
+      "text": "creature.local-herbalist.abilities.natural-medicine.text"
+    },
+    {
+      "id": "saving-touch",
+      "section": "defense",
+      "name": "creature.local-herbalist.abilities.saving-touch.name",
+      "actions": "reaction",
+      "frequency": "creature.local-herbalist.abilities.saving-touch.frequency",
+      "trigger": "creature.local-herbalist.abilities.saving-touch.trigger",
+      "text": "creature.local-herbalist.abilities.saving-touch.text"
+    },
+    {
+      "id": "prompt-poultice",
+      "section": "offense",
+      "name": "creature.local-herbalist.abilities.prompt-poultice.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "frequency": "creature.local-herbalist.abilities.prompt-poultice.frequency",
+      "text": "creature.local-herbalist.abilities.prompt-poultice.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 60 prints \"Crafting +6 (+7 for items with the healing trait)\"; the source omits the parenthesis, and there is no errata for the book."
+}

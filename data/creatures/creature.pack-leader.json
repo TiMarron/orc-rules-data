@@ -1,0 +1,245 @@
+{
+  "id": "creature.pack-leader",
+  "type": "creature",
+  "name": "creature.pack-leader.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 132,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common",
+    "wildsong"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 6
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9,
+      "note": "creature.pack-leader.skills.1.note"
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 4,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.sickle"
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 10
+      }
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 9,
+    "will": 12
+  },
+  "hp": {
+    "value": 55
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.pack-leader.strikes.sickle.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.sickle"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.pack-leader.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.pack-leader.strikes.sling.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "animal-empathy",
+      "section": "top",
+      "name": "creature.pack-leader.abilities.animal-empathy.name",
+      "text": "creature.pack-leader.abilities.animal-empathy.text"
+    },
+    {
+      "id": "stay-strong",
+      "section": "defense",
+      "name": "creature.pack-leader.abilities.stay-strong.name",
+      "actions": "reaction",
+      "trigger": "creature.pack-leader.abilities.stay-strong.trigger",
+      "text": "creature.pack-leader.abilities.stay-strong.text"
+    },
+    {
+      "id": "timely-trick",
+      "section": "offense",
+      "name": "creature.pack-leader.abilities.timely-trick.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "mental"
+      ],
+      "text": "creature.pack-leader.abilities.timely-trick.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.gouging-claw"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.stabilize"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.gentle-landing"
+            },
+            {
+              "spell": "spell.heal"
+            },
+            {
+              "spell": "spell.pet-cache"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.animal-messenger"
+            },
+            {
+              "spell": "spell.enlarge"
+            },
+            {
+              "spell": "spell.summon-animal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.pack-leader.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 20,
+      "ranks": [
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.heal-animal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 132 prints \"Diplomacy +9 (+12 against animals)\"; the source omits the parenthesis, and there is no errata for the book."
+}
