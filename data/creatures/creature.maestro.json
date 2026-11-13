@@ -1,0 +1,313 @@
+{
+  "id": "creature.maestro",
+  "type": "creature",
+  "name": "creature.maestro.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 130,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "medium",
+  "perception": {
+    "mod": 22
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 21
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 23
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 23
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 23
+    },
+    {
+      "lore": "creature.maestro.lore.4",
+      "mod": 21
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 19
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 30
+    },
+    {
+      "skill": "skill.society",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 2,
+    "wis": 3,
+    "cha": 5
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 30
+      }
+    },
+    {
+      "item": "item.leather-armor",
+      "potency": 1
+    },
+    {
+      "name": "creature.maestro.items.2.name",
+      "note": "creature.maestro.items.2.note"
+    },
+    {
+      "item": "item.rapier",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 30
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 24,
+    "will": 21,
+    "note": "creature.maestro.saves.note"
+  },
+  "hp": {
+    "value": 180
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.maestro.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "2d6+10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "resonating-weaponry"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.maestro.strikes.fist.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.maestro.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 24,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "resonating-weaponry"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bardic-lore",
+      "section": "top",
+      "name": "creature.maestro.abilities.bardic-lore.name",
+      "text": "creature.maestro.abilities.bardic-lore.text"
+    },
+    {
+      "id": "performing-specialist",
+      "section": "top",
+      "name": "creature.maestro.abilities.performing-specialist.name",
+      "text": "creature.maestro.abilities.performing-specialist.text"
+    },
+    {
+      "id": "resolve",
+      "section": "defense",
+      "name": "creature.maestro.abilities.resolve.name",
+      "text": "creature.maestro.abilities.resolve.text"
+    },
+    {
+      "id": "resonating-weaponry",
+      "section": "offense",
+      "name": "creature.maestro.abilities.resonating-weaponry.name",
+      "text": "creature.maestro.abilities.resonating-weaponry.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 30,
+      "attack": 22,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.summon-instrument"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.shatter"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.illusory-scene"
+            },
+            {
+              "spell": "spell.truespeech"
+            },
+            {
+              "spell": "spell.wave-of-despair"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.spirit-blast"
+            },
+            {
+              "spell": "spell.vibrant-pattern"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.maestro.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 30,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          },
+          {
+            "spell": "spell.dirge-of-doom"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.counter-performance"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

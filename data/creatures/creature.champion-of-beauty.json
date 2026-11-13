@@ -1,0 +1,219 @@
+{
+  "id": "creature.champion-of-beauty",
+  "type": "creature",
+  "name": "creature.champion-of-beauty.name",
+  "traits": [
+    "holy",
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 32,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 16
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 14
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 15
+    },
+    {
+      "skill": "skill.society",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 2,
+    "int": 1,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.half-plate"
+    },
+    {
+      "item": "item.glaive",
+      "potency": 1
+    },
+    {
+      "item": "item.religious-symbol"
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 12,
+    "will": 15
+  },
+  "hp": {
+    "value": 120
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.champion-of-beauty.strikes.glaive.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "deadly",
+        "forceful",
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d6",
+          "type": "vitality",
+          "persistent": true
+        }
+      ],
+      "item": "item.glaive"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.champion-of-beauty.strikes.fist.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.champion-of-beauty.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "champions-aura",
+      "section": "defense",
+      "name": "creature.champion-of-beauty.abilities.champions-aura.name",
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "aura": 15,
+      "text": "creature.champion-of-beauty.abilities.champions-aura.text"
+    },
+    {
+      "id": "champions-courage",
+      "section": "defense",
+      "name": "creature.champion-of-beauty.abilities.champions-courage.name",
+      "text": "creature.champion-of-beauty.abilities.champions-courage.text"
+    },
+    {
+      "id": "liberating-step",
+      "section": "defense",
+      "name": "creature.champion-of-beauty.abilities.liberating-step.name",
+      "actions": "reaction",
+      "traits": [
+        "divine"
+      ],
+      "trigger": "creature.champion-of-beauty.abilities.liberating-step.trigger",
+      "text": "creature.champion-of-beauty.abilities.liberating-step.text"
+    },
+    {
+      "id": "blessed-weapon",
+      "section": "offense",
+      "name": "creature.champion-of-beauty.abilities.blessed-weapon.name",
+      "text": "creature.champion-of-beauty.abilities.blessed-weapon.text"
+    },
+    {
+      "id": "smite",
+      "section": "offense",
+      "name": "creature.champion-of-beauty.abilities.smite.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.champion-of-beauty.abilities.smite.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "focus",
+      "name": "creature.champion-of-beauty.spellcasting.0.name",
+      "focusPoints": 2,
+      "dc": 22,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.lay-on-hands"
+            },
+            {
+              "spell": "spell.protectors-sacrifice"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore."
+}

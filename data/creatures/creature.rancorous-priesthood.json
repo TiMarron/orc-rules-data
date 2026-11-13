@@ -1,0 +1,172 @@
+{
+  "id": "creature.rancorous-priesthood",
+  "type": "creature",
+  "name": "creature.rancorous-priesthood.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "troop",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 35,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 11,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 21
+  },
+  "languages": [
+    "chthonian",
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 22
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 21
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 7,
+    "dex": 2,
+    "con": 6,
+    "int": 2,
+    "wis": 5,
+    "cha": 4
+  },
+  "ac": {
+    "value": 31
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 17,
+    "will": 22
+  },
+  "hp": {
+    "value": 195,
+    "note": "creature.rancorous-priesthood.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 10
+    },
+    {
+      "type": "splash-damage",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "note": "creature.rancorous-priesthood.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.rancorous-priesthood.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "troop-spellcasting",
+      "section": "offense",
+      "name": "creature.rancorous-priesthood.abilities.troop-spellcasting.name",
+      "text": "creature.rancorous-priesthood.abilities.troop-spellcasting.text"
+    },
+    {
+      "id": "wild-swing",
+      "section": "offense",
+      "name": "creature.rancorous-priesthood.abilities.wild-swing.name",
+      "actions": "1-3",
+      "frequency": "creature.rancorous-priesthood.abilities.wild-swing.frequency",
+      "text": "creature.rancorous-priesthood.abilities.wild-swing.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "divine",
+      "dc": 30,
+      "attack": 22,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.divine-lance"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.divine-immolation"
+            },
+            {
+              "spell": "spell.noise-blast"
+            },
+            {
+              "spell": "spell.shadow-blast"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.rancorous-priesthood.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 30,
+      "attack": 22,
+      "ranks": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.cry-of-destruction"
+            },
+            {
+              "spell": "spell.destructive-aura"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 30,
+    "ranks": [
+      {
+        "rank": 4,
+        "rituals": [
+          {
+            "ritual": "ritual.blight",
+            "note": "creature.rancorous-priesthood.rituals.ranks.0.rituals.0.note"
+          }
+        ]
+      }
+    ]
+  }
+}

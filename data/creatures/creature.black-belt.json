@@ -1,0 +1,183 @@
+{
+  "id": "creature.black-belt",
+  "type": "creature",
+  "name": "creature.black-belt.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 73,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 12,
+  "size": "medium",
+  "perception": {
+    "mod": 25
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "lore": "creature.black-belt.lore.2",
+      "mod": 22
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 3,
+    "int": 1,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.handwraps-of-mighty-blows",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.bo-staff",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.bands-of-force"
+    }
+  ],
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 23,
+    "will": 20
+  },
+  "hp": {
+    "value": 220
+  },
+  "speeds": {
+    "land": 40
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.black-belt.strikes.bo-staff.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "magical",
+        "parry",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.bo-staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.black-belt.strikes.fist.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "magical",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+9",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blocking-counterattack",
+      "section": "defense",
+      "name": "creature.black-belt.abilities.blocking-counterattack.name",
+      "actions": "reaction",
+      "trigger": "creature.black-belt.abilities.blocking-counterattack.trigger",
+      "text": "creature.black-belt.abilities.blocking-counterattack.text"
+    },
+    {
+      "id": "flurry-of-blows",
+      "section": "offense",
+      "name": "creature.black-belt.abilities.flurry-of-blows.name",
+      "actions": "1",
+      "frequency": "creature.black-belt.abilities.flurry-of-blows.frequency",
+      "text": "creature.black-belt.abilities.flurry-of-blows.text"
+    },
+    {
+      "id": "powerful-fists",
+      "section": "offense",
+      "name": "creature.black-belt.abilities.powerful-fists.name",
+      "text": "creature.black-belt.abilities.powerful-fists.text"
+    },
+    {
+      "id": "rapid-barrage",
+      "section": "offense",
+      "name": "creature.black-belt.abilities.rapid-barrage.name",
+      "actions": "2",
+      "traits": [
+        "incapacitation"
+      ],
+      "text": "creature.black-belt.abilities.rapid-barrage.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "focus",
+      "name": "creature.black-belt.spellcasting.0.name",
+      "focusPoints": 2,
+      "dc": 32,
+      "attack": 23,
+      "ranks": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.inner-upheaval"
+            },
+            {
+              "spell": "spell.qi-rush"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

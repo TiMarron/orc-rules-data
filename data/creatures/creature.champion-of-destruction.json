@@ -1,0 +1,192 @@
+{
+  "id": "creature.champion-of-destruction",
+  "type": "creature",
+  "name": "creature.champion-of-destruction.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "unholy"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 156,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 12
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": 0,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.greataxe"
+    },
+    {
+      "item": "item.half-plate"
+    },
+    {
+      "item": "item.javelin",
+      "count": 3
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 8,
+    "will": 10
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.champion-of-destruction.strikes.fearsome-greataxe.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d12+8",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.champion-of-destruction.strikes.gauntlet.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.champion-of-destruction.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "champions-aura",
+      "section": "defense",
+      "name": "creature.champion-of-destruction.abilities.champions-aura.name",
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "aura": 15,
+      "text": "creature.champion-of-destruction.abilities.champions-aura.text"
+    },
+    {
+      "id": "destructive-vengeance",
+      "section": "defense",
+      "name": "creature.champion-of-destruction.abilities.destructive-vengeance.name",
+      "actions": "reaction",
+      "traits": [
+        "divine"
+      ],
+      "trigger": "creature.champion-of-destruction.abilities.destructive-vengeance.trigger",
+      "text": "creature.champion-of-destruction.abilities.destructive-vengeance.text"
+    },
+    {
+      "id": "axe-swipe",
+      "section": "offense",
+      "name": "creature.champion-of-destruction.abilities.axe-swipe.name",
+      "actions": "2",
+      "text": "creature.champion-of-destruction.abilities.axe-swipe.text"
+    },
+    {
+      "id": "fearsome-armament",
+      "section": "offense",
+      "name": "creature.champion-of-destruction.abilities.fearsome-armament.name",
+      "text": "creature.champion-of-destruction.abilities.fearsome-armament.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "focus",
+      "name": "creature.champion-of-destruction.spellcasting.0.name",
+      "focusPoints": 1,
+      "dc": 20,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.touch-of-the-void"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore."
+}

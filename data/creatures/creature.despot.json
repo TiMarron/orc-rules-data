@@ -1,0 +1,230 @@
+{
+  "id": "creature.despot",
+  "type": "creature",
+  "name": "creature.despot.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 157,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 11
+  },
+  "languages": [
+    "common",
+    "diabolic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 13
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 11
+    },
+    {
+      "skill": "skill.society",
+      "mod": 13
+    },
+    {
+      "lore": "creature.despot.lore.7",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 0,
+    "int": 4,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.darkvision-elixir-lesser"
+    },
+    {
+      "item": "item.healing-potion-lesser",
+      "count": 2
+    },
+    {
+      "item": "item.spiked-gauntlet"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 9,
+    "will": 13
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.despot.strikes.spiked-gauntlet.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.spiked-gauntlet"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "persistent-lies",
+      "section": "top",
+      "name": "creature.despot.abilities.persistent-lies.name",
+      "text": "creature.despot.abilities.persistent-lies.text"
+    },
+    {
+      "id": "sorcerous-potency",
+      "section": "offense",
+      "name": "creature.despot.abilities.sorcerous-potency.name",
+      "text": "creature.despot.abilities.sorcerous-potency.text"
+    },
+    {
+      "id": "tongue-of-flame",
+      "section": "offense",
+      "name": "creature.despot.abilities.tongue-of-flame.name",
+      "text": "creature.despot.abilities.tongue-of-flame.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "divine",
+      "dc": 23,
+      "attack": 14,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bane"
+            },
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.sanctuary"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.blood-vendetta"
+            },
+            {
+              "spell": "spell.calm"
+            },
+            {
+              "spell": "spell.floating-flame"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.chilling-darkness"
+            },
+            {
+              "spell": "spell.enthrall"
+            },
+            {
+              "spell": "spell.harm"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.despot.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 23,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.diabolic-edict"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
