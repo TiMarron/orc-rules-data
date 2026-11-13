@@ -1,0 +1,234 @@
+{
+  "id": "creature.exiled-revolutionary",
+  "type": "creature",
+  "name": "creature.exiled-revolutionary.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 85,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 17,
+    "note": "creature.exiled-revolutionary.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 19
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 19
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 17
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 22,
+      "note": "creature.exiled-revolutionary.skills.5.note"
+    },
+    {
+      "skill": "skill.society",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 20
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 5,
+    "con": 0,
+    "int": 3,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.composite-longbow",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.longsword",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "name": "creature.exiled-revolutionary.items.3.name"
+    },
+    {
+      "item": "item.thieves-toolkit"
+    },
+    {
+      "item": "item.wyvern-poison",
+      "count": 2
+    }
+  ],
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 20,
+    "will": 17
+  },
+  "hp": {
+    "value": 140
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.exiled-revolutionary.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.exiled-revolutionary.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.exiled-revolutionary.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 21,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive",
+        "magical",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "former-courtier",
+      "section": "top",
+      "name": "creature.exiled-revolutionary.abilities.former-courtier.name",
+      "text": "creature.exiled-revolutionary.abilities.former-courtier.text"
+    },
+    {
+      "id": "follow-me",
+      "section": "defense",
+      "name": "creature.exiled-revolutionary.abilities.follow-me.name",
+      "traits": [
+        "aura",
+        "visual"
+      ],
+      "aura": 20,
+      "text": "creature.exiled-revolutionary.abilities.follow-me.text"
+    },
+    {
+      "id": "its-you",
+      "section": "defense",
+      "name": "creature.exiled-revolutionary.abilities.its-you.name",
+      "traits": [
+        "emotion",
+        "mental"
+      ],
+      "text": "creature.exiled-revolutionary.abilities.its-you.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.exiled-revolutionary.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "darting-feint",
+      "section": "offense",
+      "name": "creature.exiled-revolutionary.abilities.darting-feint.name",
+      "actions": "2",
+      "text": "creature.exiled-revolutionary.abilities.darting-feint.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.exiled-revolutionary.abilities.sneak-attack.name",
+      "text": "creature.exiled-revolutionary.abilities.sneak-attack.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 85 prints \"Lore (home region or settlement) +22\"; the source omits the parenthesis, and there is no errata for the book."
+}

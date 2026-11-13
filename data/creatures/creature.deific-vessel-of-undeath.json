@@ -1,0 +1,345 @@
+{
+  "id": "creature.deific-vessel-of-undeath",
+  "type": "creature",
+  "name": "creature.deific-vessel-of-undeath.name",
+  "traits": [
+    "divine",
+    "human",
+    "humanoid",
+    "unholy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 37,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 15,
+  "size": "medium",
+  "perception": {
+    "mod": 27,
+    "senses": [
+      {
+        "ability": "ability.lifesense",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "languageNote": "creature.deific-vessel-of-undeath.language-note",
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 26
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 27
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 29
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 31
+    },
+    {
+      "lore": "creature.deific-vessel-of-undeath.lore.4",
+      "mod": 33
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 4,
+    "con": 6,
+    "int": 2,
+    "wis": 4,
+    "cha": 6
+  },
+  "items": [
+    {
+      "item": "item.explorers-clothing",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    },
+    {
+      "item": "item.scythe"
+    }
+  ],
+  "ac": {
+    "value": 35
+  },
+  "saves": {
+    "fortitude": 28,
+    "reflex": 24,
+    "will": 26
+  },
+  "hp": {
+    "value": 300
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "unconscious"
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "resistances": [
+    {
+      "type": "void",
+      "value": 15
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "fly": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.deific-vessel-of-undeath.strikes.decaying-frost-scythe.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "deadly",
+        "death",
+        "magical",
+        "trip",
+        "unholy"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "3d10+11",
+          "type": "slashing"
+        },
+        {
+          "dice": "1d6",
+          "type": "cold"
+        },
+        {
+          "dice": "1d4",
+          "type": "void"
+        }
+      ],
+      "item": "item.scythe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.deific-vessel-of-undeath.strikes.decaying-frost-fist.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "death",
+        "magical",
+        "unarmed",
+        "unholy"
+      ],
+      "damage": [
+        {
+          "dice": "3d4+11",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "cold"
+        },
+        {
+          "dice": "1d4",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.deific-vessel-of-undeath.strikes.grave-pulse.name",
+      "actions": "1",
+      "bonus": 27,
+      "traits": [
+        "cold",
+        "death",
+        "unholy",
+        "void"
+      ],
+      "damage": [
+        {
+          "dice": "3d6",
+          "type": "cold"
+        },
+        {
+          "dice": "2d8",
+          "type": "void"
+        }
+      ],
+      "range": 120
+    }
+  ],
+  "abilities": [
+    {
+      "id": "mark-of-fate",
+      "section": "top",
+      "name": "creature.deific-vessel-of-undeath.abilities.mark-of-fate.name",
+      "traits": [
+        "curse",
+        "divine"
+      ],
+      "text": "creature.deific-vessel-of-undeath.abilities.mark-of-fate.text"
+    },
+    {
+      "id": "void-tendrils",
+      "section": "defense",
+      "name": "creature.deific-vessel-of-undeath.abilities.void-tendrils.name",
+      "traits": [
+        "aura",
+        "divine",
+        "void"
+      ],
+      "aura": 30,
+      "text": "creature.deific-vessel-of-undeath.abilities.void-tendrils.text"
+    },
+    {
+      "id": "limited-lifespan",
+      "section": "defense",
+      "name": "creature.deific-vessel-of-undeath.abilities.limited-lifespan.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.deific-vessel-of-undeath.abilities.limited-lifespan.text"
+    },
+    {
+      "id": "shattered-vessel",
+      "section": "defense",
+      "name": "creature.deific-vessel-of-undeath.abilities.shattered-vessel.name",
+      "traits": [
+        "divine",
+        "unholy"
+      ],
+      "text": "creature.deific-vessel-of-undeath.abilities.shattered-vessel.text"
+    },
+    {
+      "id": "borrow-time",
+      "section": "offense",
+      "name": "creature.deific-vessel-of-undeath.abilities.borrow-time.name",
+      "actions": "1",
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "text": "creature.deific-vessel-of-undeath.abilities.borrow-time.text"
+    },
+    {
+      "id": "grave-chill",
+      "section": "offense",
+      "name": "creature.deific-vessel-of-undeath.abilities.grave-chill.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.deific-vessel-of-undeath.abilities.grave-chill.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "divine",
+      "dc": 39,
+      "attack": 31,
+      "cantrips": {
+        "rank": 8,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.divine-lance"
+          },
+          {
+            "spell": "spell.message"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.harm",
+              "atWill": true
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.truesight"
+            },
+            {
+              "spell": "spell.vampiric-exsanguination"
+            },
+            {
+              "spell": "spell.zealous-conviction"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.divine-decree"
+            },
+            {
+              "spell": "spell.eclipse-burst"
+            },
+            {
+              "spell": "spell.execute"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.dominate"
+            },
+            {
+              "spell": "spell.harm",
+              "count": 4
+            },
+            {
+              "spell": "spell.mask-of-terror"
+            }
+          ]
+        }
+      ],
+      "constant": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.truespeech"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore. Grave pulse corrected: page 37 prints \"ranged 120 feet\" among its traits, the book's slip for \"range 120 feet\"; the Strike has a range of 120 feet and no such trait. Rarity corrected to the book: page 37 prints the trait line with rare; the source has common, and there is no errata for the book."
+}

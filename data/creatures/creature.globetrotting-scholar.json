@@ -1,0 +1,276 @@
+{
+  "id": "creature.globetrotting-scholar",
+  "type": "creature",
+  "name": "creature.globetrotting-scholar.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 142,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 13,
+  "size": "medium",
+  "perception": {
+    "mod": 26
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.globetrotting-scholar.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 27
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 22
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 27
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 24
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 27
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 3,
+    "int": 3,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.climbing-kit"
+    },
+    {
+      "item": "item.dagger",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        },
+        {
+          "item": "item.frost"
+        }
+      ]
+    },
+    {
+      "item": "item.flintlock-pistol",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.leather-armor",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    },
+    {
+      "name": "creature.globetrotting-scholar.items.4.name"
+    },
+    {
+      "item": "item.writing-set",
+      "name": "creature.globetrotting-scholar.items.5.name"
+    }
+  ],
+  "ac": {
+    "value": 33
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 26,
+    "will": 20
+  },
+  "hp": {
+    "value": 235
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.globetrotting-scholar.strikes.frost-dagger.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+11",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "cold"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.globetrotting-scholar.strikes.fist.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.globetrotting-scholar.strikes.flintlock-pistol.name",
+      "actions": "1",
+      "bonus": 25,
+      "rangeIncrement": 40,
+      "reload": 1,
+      "traits": [
+        "concussive",
+        "fatal",
+        "magical"
+      ],
+      "traitValues": {
+        "fatal": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "electricity"
+        }
+      ],
+      "item": "item.flintlock-pistol"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "following-spell",
+      "section": "offense",
+      "name": "creature.globetrotting-scholar.abilities.following-spell.name",
+      "actions": "1",
+      "traits": [
+        "arcane"
+      ],
+      "frequency": "creature.globetrotting-scholar.abilities.following-spell.frequency",
+      "requirements": "creature.globetrotting-scholar.abilities.following-spell.requirements",
+      "text": "creature.globetrotting-scholar.abilities.following-spell.text"
+    },
+    {
+      "id": "magnificent",
+      "section": "offense",
+      "name": "creature.globetrotting-scholar.abilities.magnificent.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "linguistic",
+        "visual"
+      ],
+      "text": "creature.globetrotting-scholar.abilities.magnificent.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 30,
+      "attack": 22,
+      "cantrips": {
+        "rank": 7,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.gouging-claw"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.sure-strike"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.mislead"
+            },
+            {
+              "spell": "spell.thunderstrike"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.disintegrate"
+            },
+            {
+              "spell": "spell.project-image"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Items, page 142: \"writing kit\" is item.writing-set under its printed name: the source links the writing set."
+}
