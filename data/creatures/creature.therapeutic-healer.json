@@ -1,0 +1,257 @@
+{
+  "id": "creature.therapeutic-healer",
+  "type": "creature",
+  "name": "creature.therapeutic-healer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 63,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 14,
+    "note": "creature.therapeutic-healer.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.therapeutic-healer.language-note",
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 17
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 17
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 16
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 15
+    },
+    {
+      "skill": "skill.society",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 0,
+    "int": 3,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.chain-shirt"
+    },
+    {
+      "item": "item.healers-toolkit-expanded"
+    },
+    {
+      "item": "item.staff"
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 12,
+    "will": 18
+  },
+  "hp": {
+    "value": 110
+  },
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.therapeutic-healer.strikes.staff.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.therapeutic-healer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "doctors-hand",
+      "section": "top",
+      "name": "creature.therapeutic-healer.abilities.doctors-hand.name",
+      "text": "creature.therapeutic-healer.abilities.doctors-hand.text"
+    },
+    {
+      "id": "emotionally-invested",
+      "section": "offense",
+      "name": "creature.therapeutic-healer.abilities.emotionally-invested.name",
+      "traits": [
+        "emotion",
+        "healing",
+        "mental"
+      ],
+      "text": "creature.therapeutic-healer.abilities.emotionally-invested.text"
+    },
+    {
+      "id": "therapeutic-care",
+      "section": "offense",
+      "name": "creature.therapeutic-healer.abilities.therapeutic-care.name",
+      "text": "creature.therapeutic-healer.abilities.therapeutic-care.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 25,
+      "attack": 17,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.protection"
+            },
+            {
+              "spell": "spell.sanctuary"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.soothe"
+            },
+            {
+              "spell": "spell.status"
+            },
+            {
+              "spell": "spell.translate"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.clear-mind"
+            },
+            {
+              "spell": "spell.soothe"
+            },
+            {
+              "spell": "spell.veil-of-privacy"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.cleanse-affliction"
+            },
+            {
+              "spell": "spell.clear-mind"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.therapeutic-healer.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 25,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.hymn-of-healing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

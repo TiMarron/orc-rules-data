@@ -1,0 +1,275 @@
+{
+  "id": "creature.mage-knight",
+  "type": "creature",
+  "name": "creature.mage-knight.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 94,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 17
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 22
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 21
+    },
+    {
+      "lore": "creature.mage-knight.lore.2",
+      "mod": 20
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 1,
+    "con": 2,
+    "int": 4,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.full-plate",
+      "potency": 1
+    },
+    {
+      "item": "item.mace",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "name": "creature.mage-knight.items.2.name"
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    }
+  ],
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 13,
+    "will": 21,
+    "note": "creature.mage-knight.saves.note"
+  },
+  "hp": {
+    "value": 140
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mage-knight.strikes.mace.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mage-knight.strikes.fist.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+11",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.mage-knight.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "bespell-strikes",
+      "section": "offense",
+      "name": "creature.mage-knight.abilities.bespell-strikes.name",
+      "actions": "free",
+      "frequency": "creature.mage-knight.abilities.bespell-strikes.frequency",
+      "requirements": "creature.mage-knight.abilities.bespell-strikes.requirements",
+      "text": "creature.mage-knight.abilities.bespell-strikes.text"
+    },
+    {
+      "id": "drain-bonded-item",
+      "section": "offense",
+      "name": "creature.mage-knight.abilities.drain-bonded-item.name",
+      "actions": "free",
+      "traits": [
+        "arcane"
+      ],
+      "frequency": "creature.mage-knight.abilities.drain-bonded-item.frequency",
+      "requirements": "creature.mage-knight.abilities.drain-bonded-item.requirements",
+      "text": "creature.mage-knight.abilities.drain-bonded-item.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 28,
+      "attack": 20,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.electric-arc"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.enfeeble"
+            },
+            {
+              "spell": "spell.fleet-step"
+            },
+            {
+              "spell": "spell.sure-strike"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility",
+              "count": 2
+            },
+            {
+              "spell": "spell.mist"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.earthbind"
+            },
+            {
+              "spell": "spell.vampiric-feast"
+            },
+            {
+              "spell": "spell.wall-of-thorns"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.fireball"
+            },
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.weapon-storm"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.impaling-spike"
+            },
+            {
+              "spell": "spell.toxic-cloud"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.mage-knight.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 28,
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.energy-absorption"
+            },
+            {
+              "spell": "spell.force-bolt"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

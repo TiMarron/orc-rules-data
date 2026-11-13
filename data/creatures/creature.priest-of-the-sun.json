@@ -1,0 +1,234 @@
+{
+  "id": "creature.priest-of-the-sun",
+  "type": "creature",
+  "name": "creature.priest-of-the-sun.name",
+  "traits": [
+    "holy",
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 32,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 14
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 14
+    },
+    {
+      "skill": "skill.society",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 1,
+    "int": 0,
+    "wis": 4,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.scimitar",
+      "potency": 1
+    },
+    {
+      "item": "item.religious-symbol"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 13,
+    "will": 16
+  },
+  "hp": {
+    "value": 80
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.priest-of-the-sun.strikes.scimitar.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "forceful",
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.scimitar"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.priest-of-the-sun.strikes.fist.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "healing-hands",
+      "section": "offense",
+      "name": "creature.priest-of-the-sun.abilities.healing-hands.name",
+      "text": "creature.priest-of-the-sun.abilities.healing-hands.text"
+    },
+    {
+      "id": "steady-spellcasting",
+      "section": "offense",
+      "name": "creature.priest-of-the-sun.abilities.steady-spellcasting.name",
+      "text": "creature.priest-of-the-sun.abilities.steady-spellcasting.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "divine",
+      "dc": 24,
+      "attack": 16,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.divine-lance"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.vitality-lash"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.infuse-vitality"
+            },
+            {
+              "spell": "spell.breathe-fire"
+            },
+            {
+              "spell": "spell.spirit-link"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.resist-energy"
+            },
+            {
+              "spell": "spell.revealing-light"
+            },
+            {
+              "spell": "spell.spiritual-armament"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.fireball"
+            },
+            {
+              "spell": "spell.heal",
+              "count": 5
+            },
+            {
+              "spell": "spell.holy-light",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.priest-of-the-sun.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 24,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dazzling-flash"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 24,
+    "ranks": [
+      {
+        "rank": 2,
+        "rituals": [
+          {
+            "ritual": "ritual.consecrate"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore."
+}

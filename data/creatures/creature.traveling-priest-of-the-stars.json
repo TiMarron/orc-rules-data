@@ -1,0 +1,312 @@
+{
+  "id": "creature.traveling-priest-of-the-stars",
+  "type": "creature",
+  "name": "creature.traveling-priest-of-the-stars.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 34,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 19
+  },
+  "languages": [
+    "common",
+    "elven",
+    "empyrean"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 17
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 21
+    },
+    {
+      "skill": "skill.society",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 19
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 1,
+    "int": 1,
+    "wis": 4,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.shining-symbol"
+    },
+    {
+      "item": "item.starknife",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 19,
+    "will": 19
+  },
+  "hp": {
+    "value": 140
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.traveling-priest-of-the-stars.strikes.starknife.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "deadly",
+        "magical",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d6",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.starknife"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.traveling-priest-of-the-stars.strikes.fist.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.traveling-priest-of-the-stars.strikes.starknife-2.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "deadly",
+        "magical",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "deadly": "d6",
+        "thrown": "20",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.starknife"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "path-of-the-faithful",
+      "section": "top",
+      "name": "creature.traveling-priest-of-the-stars.abilities.path-of-the-faithful.name",
+      "text": "creature.traveling-priest-of-the-stars.abilities.path-of-the-faithful.text"
+    },
+    {
+      "id": "travelers-lesson",
+      "section": "top",
+      "name": "creature.traveling-priest-of-the-stars.abilities.travelers-lesson.name",
+      "text": "creature.traveling-priest-of-the-stars.abilities.travelers-lesson.text"
+    },
+    {
+      "id": "messengers-amnesty",
+      "section": "defense",
+      "name": "creature.traveling-priest-of-the-stars.abilities.messengers-amnesty.name",
+      "traits": [
+        "divine"
+      ],
+      "text": "creature.traveling-priest-of-the-stars.abilities.messengers-amnesty.text"
+    },
+    {
+      "id": "blessing-of-travel",
+      "section": "offense",
+      "name": "creature.traveling-priest-of-the-stars.abilities.blessing-of-travel.name",
+      "text": "creature.traveling-priest-of-the-stars.abilities.blessing-of-travel.text"
+    },
+    {
+      "id": "zealous-rush",
+      "section": "offense",
+      "name": "creature.traveling-priest-of-the-stars.abilities.zealous-rush.name",
+      "actions": "reaction",
+      "trigger": "creature.traveling-priest-of-the-stars.abilities.zealous-rush.trigger",
+      "text": "creature.traveling-priest-of-the-stars.abilities.zealous-rush.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "divine",
+      "dc": 27,
+      "attack": 19,
+      "cantrips": {
+        "rank": 5,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.divine-lance"
+          },
+          {
+            "spell": "spell.know-the-way"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.alarm"
+            },
+            {
+              "spell": "spell.create-water"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.create-food"
+            },
+            {
+              "spell": "spell.environmental-endurance"
+            },
+            {
+              "spell": "spell.silence"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dream-message"
+            },
+            {
+              "spell": "spell.holy-light"
+            },
+            {
+              "spell": "spell.safe-passage"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.sleep"
+            },
+            {
+              "spell": "spell.spiritual-armament"
+            },
+            {
+              "spell": "spell.unfettered-movement"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.heal",
+              "count": 5
+            },
+            {
+              "spell": "spell.sending"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.traveling-priest-of-the-stars.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 27,
+      "ranks": [
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.agile-feet"
+            },
+            {
+              "spell": "spell.travelers-transit"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore."
+}

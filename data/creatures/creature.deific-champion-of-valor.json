@@ -1,0 +1,260 @@
+{
+  "id": "creature.deific-champion-of-valor",
+  "type": "creature",
+  "name": "creature.deific-champion-of-valor.name",
+  "traits": [
+    "holy",
+    "human",
+    "humanoid"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 36,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 12,
+  "size": "medium",
+  "perception": {
+    "mod": 19
+  },
+  "languages": [
+    "common",
+    "empyrean"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 25
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 22
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 26
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 23
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 2,
+    "int": 0,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.crossbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.full-plate",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    },
+    {
+      "item": "item.longsword",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.potion-of-flying"
+    },
+    {
+      "item": "item.religious-symbol"
+    },
+    {
+      "item": "item.steel-shield"
+    }
+  ],
+  "ac": {
+    "value": 33,
+    "note": "creature.deific-champion-of-valor.ac.note"
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 19,
+    "will": 22
+  },
+  "hp": {
+    "value": 220
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.deific-champion-of-valor.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 26,
+      "traits": [
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d8+13",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.deific-champion-of-valor.strikes.fist.name",
+      "actions": "1",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+13",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.deific-champion-of-valor.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 23,
+      "range": 120,
+      "reload": 1,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "blessed-shield",
+      "section": "top",
+      "name": "creature.deific-champion-of-valor.abilities.blessed-shield.name",
+      "text": "creature.deific-champion-of-valor.abilities.blessed-shield.text"
+    },
+    {
+      "id": "deific-reactions",
+      "section": "top",
+      "name": "creature.deific-champion-of-valor.abilities.deific-reactions.name",
+      "text": "creature.deific-champion-of-valor.abilities.deific-reactions.text"
+    },
+    {
+      "id": "champions-aura",
+      "section": "defense",
+      "name": "creature.deific-champion-of-valor.abilities.champions-aura.name",
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "aura": 15,
+      "text": "creature.deific-champion-of-valor.abilities.champions-aura.text"
+    },
+    {
+      "id": "champions-courage",
+      "section": "defense",
+      "name": "creature.deific-champion-of-valor.abilities.champions-courage.name",
+      "text": "creature.deific-champion-of-valor.abilities.champions-courage.text"
+    },
+    {
+      "id": "exalted-retributive-strike",
+      "section": "defense",
+      "name": "creature.deific-champion-of-valor.abilities.exalted-retributive-strike.name",
+      "actions": "reaction",
+      "traits": [
+        "divine"
+      ],
+      "trigger": "creature.deific-champion-of-valor.abilities.exalted-retributive-strike.trigger",
+      "text": "creature.deific-champion-of-valor.abilities.exalted-retributive-strike.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.deific-champion-of-valor.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.deific-champion-of-valor.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "will-not-fall",
+      "section": "defense",
+      "name": "creature.deific-champion-of-valor.abilities.will-not-fall.name",
+      "actions": "free",
+      "trigger": "creature.deific-champion-of-valor.abilities.will-not-fall.trigger",
+      "text": "creature.deific-champion-of-valor.abilities.will-not-fall.text"
+    },
+    {
+      "id": "will-not-falter",
+      "section": "offense",
+      "name": "creature.deific-champion-of-valor.abilities.will-not-falter.name",
+      "actions": "2",
+      "text": "creature.deific-champion-of-valor.abilities.will-not-falter.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "focus",
+      "name": "creature.deific-champion-of-valor.spellcasting.0.name",
+      "focusPoints": 2,
+      "dc": 30,
+      "ranks": [
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.champions-sacrifice"
+            },
+            {
+              "spell": "spell.lay-on-hands"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore."
+}

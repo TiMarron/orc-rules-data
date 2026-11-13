@@ -1,0 +1,340 @@
+{
+  "id": "creature.gourd-leshy-witch",
+  "type": "creature",
+  "name": "creature.gourd-leshy-witch.name",
+  "traits": [
+    "leshy",
+    "plant"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 202,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "small",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey"
+  ],
+  "languageNote": "creature.gourd-leshy-witch.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 14
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 2,
+    "con": 1,
+    "int": 4,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.staff",
+      "name": "creature.gourd-leshy-witch.items.0.name",
+      "potency": 1
+    },
+    {
+      "item": "item.dagger"
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 14,
+    "will": 14
+  },
+  "hp": {
+    "value": 80
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gourd-leshy-witch.strikes.broom.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "void"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gourd-leshy-witch.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "void"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gourd-leshy-witch.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gourd-leshy-witch.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "void"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "verdant-burst",
+      "section": "defense",
+      "name": "creature.gourd-leshy-witch.abilities.verdant-burst.name",
+      "traits": [
+        "healing",
+        "primal",
+        "vitality"
+      ],
+      "text": "creature.gourd-leshy-witch.abilities.verdant-burst.text"
+    },
+    {
+      "id": "change-shape",
+      "section": "offense",
+      "name": "creature.gourd-leshy-witch.abilities.change-shape.name",
+      "ability": "ability.change-shape",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "plant"
+      ],
+      "text": "creature.gourd-leshy-witch.abilities.change-shape.text"
+    },
+    {
+      "id": "short-flight",
+      "section": "offense",
+      "name": "creature.gourd-leshy-witch.abilities.short-flight.name",
+      "actions": "1-2",
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "frequency": "creature.gourd-leshy-witch.abilities.short-flight.frequency",
+      "requirements": "creature.gourd-leshy-witch.abilities.short-flight.requirements",
+      "text": "creature.gourd-leshy-witch.abilities.short-flight.text"
+    },
+    {
+      "id": "sweeping-spell",
+      "section": "offense",
+      "name": "creature.gourd-leshy-witch.abilities.sweeping-spell.name",
+      "actions": "1",
+      "traits": [
+        "manipulate",
+        "occult",
+        "spellshape"
+      ],
+      "requirements": "creature.gourd-leshy-witch.abilities.sweeping-spell.requirements",
+      "text": "creature.gourd-leshy-witch.abilities.sweeping-spell.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "occult",
+      "dc": 24,
+      "attack": 16,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.shield"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.fear",
+              "count": 2
+            },
+            {
+              "spell": "spell.ill-omen"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.grim-tendrils"
+            },
+            {
+              "spell": "spell.paranoia"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.slow"
+            },
+            {
+              "spell": "spell.vampiric-feast"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.gourd-leshy-witch.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 24,
+      "ranks": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.wilding-word"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "innate",
+      "tradition": "primal",
+      "dc": 24,
+      "constant": [
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.speak-with-plants",
+              "note": "creature.gourd-leshy-witch.spellcasting.2.constant.3.0.note"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

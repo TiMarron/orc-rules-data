@@ -1,0 +1,350 @@
+{
+  "id": "creature.tree-singer",
+  "type": "creature",
+  "name": "creature.tree-singer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 135,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 13,
+  "size": "medium",
+  "perception": {
+    "mod": 22
+  },
+  "languages": [
+    "common",
+    "wildsong"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 23
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 25
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 23
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 26
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 27
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 22
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 1,
+    "int": 2,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.leather-armor",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.resilient"
+        }
+      ]
+    },
+    {
+      "item": "item.longspear",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.composite-longbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 32
+  },
+  "saves": {
+    "fortitude": 23,
+    "reflex": 21,
+    "will": 25
+  },
+  "hp": {
+    "value": 220
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tree-singer.strikes.longspear.name",
+      "actions": "1",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "reach"
+      ],
+      "traitValues": {
+        "reach": "10"
+      },
+      "damage": [
+        {
+          "dice": "2d8+10",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d10",
+          "type": "sonic"
+        }
+      ],
+      "item": "item.longspear"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tree-singer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d10",
+          "type": "sonic"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tree-singer.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 23,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "2d8+8",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "sonic"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "bloodthirsty-plants",
+      "section": "defense",
+      "name": "creature.tree-singer.abilities.bloodthirsty-plants.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate"
+      ],
+      "trigger": "creature.tree-singer.abilities.bloodthirsty-plants.trigger",
+      "text": "creature.tree-singer.abilities.bloodthirsty-plants.text"
+    },
+    {
+      "id": "plant-empathy",
+      "section": "defense",
+      "name": "creature.tree-singer.abilities.plant-empathy.name",
+      "text": "creature.tree-singer.abilities.plant-empathy.text"
+    },
+    {
+      "id": "verdant-aria",
+      "section": "offense",
+      "name": "creature.tree-singer.abilities.verdant-aria.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "aura",
+        "concentrate",
+        "linguistic",
+        "plant",
+        "primal",
+        "wood"
+      ],
+      "text": "creature.tree-singer.abilities.verdant-aria.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 33,
+      "attack": 25,
+      "cantrips": {
+        "rank": 7,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.stabilize"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.gentle-landing",
+              "count": 2
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.entangling-flora"
+            },
+            {
+              "spell": "spell.one-with-plants",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.earthbind",
+              "count": 2
+            },
+            {
+              "spell": "spell.slow"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.oaken-resilience"
+            },
+            {
+              "spell": "spell.resist-energy"
+            },
+            {
+              "spell": "spell.vapor-form"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.elemental-form",
+              "note": "creature.tree-singer.spellcasting.0.ranks.5.0.note"
+            },
+            {
+              "spell": "spell.natures-pathway"
+            },
+            {
+              "spell": "spell.plant-form"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.plant-form"
+            },
+            {
+              "spell": "spell.tangling-creepers"
+            },
+            {
+              "spell": "spell.wall-of-thorns"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.regenerate"
+            },
+            {
+              "spell": "spell.tree-of-seasons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.tree-singer.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 33,
+      "ranks": [
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.cornucopia"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
