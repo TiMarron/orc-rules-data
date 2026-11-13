@@ -1,0 +1,239 @@
+{
+  "id": "creature.halfling-head-chef",
+  "type": "creature",
+  "name": "creature.halfling-head-chef.name",
+  "traits": [
+    "halfling",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 190,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 7,
+    "note": "creature.halfling-head-chef.perception.note",
+    "senses": [
+      {
+        "own": "keen-eyes"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "halfling"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 7
+    },
+    {
+      "lore": "creature.halfling-head-chef.lore.1",
+      "mod": 15
+    },
+    {
+      "lore": "creature.halfling-head-chef.lore.2",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "skill": "skill.society",
+      "mod": 6
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": 2,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.halfling-head-chef.items.0.name"
+    },
+    {
+      "item": "item.filchers-fork"
+    },
+    {
+      "item": "item.frying-pan",
+      "note": "creature.halfling-head-chef.items.2.note"
+    },
+    {
+      "name": "creature.halfling-head-chef.items.3.name",
+      "count": 3
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 7,
+    "will": 7
+  },
+  "hp": {
+    "value": 36
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.halfling-head-chef.strikes.hot-frying-pan.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d4",
+          "type": "fire"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.halfling-head-chef.strikes.filchers-fork.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "backstabber",
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d6"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.filchers-fork"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.halfling-head-chef.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.halfling-head-chef.strikes.filchers-fork-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "backstabber",
+        "deadly",
+        "thrown"
+      ],
+      "traitValues": {
+        "deadly": "d6",
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.filchers-fork"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "culinary-specialist",
+      "section": "top",
+      "name": "creature.halfling-head-chef.abilities.culinary-specialist.name",
+      "text": "creature.halfling-head-chef.abilities.culinary-specialist.text"
+    },
+    {
+      "id": "keen-eyes",
+      "section": "top",
+      "name": "creature.halfling-head-chef.abilities.keen-eyes.name",
+      "text": "creature.halfling-head-chef.abilities.keen-eyes.text"
+    },
+    {
+      "id": "dash-of-spice",
+      "section": "defense",
+      "name": "creature.halfling-head-chef.abilities.dash-of-spice.name",
+      "actions": "reaction",
+      "trigger": "creature.halfling-head-chef.abilities.dash-of-spice.trigger",
+      "text": "creature.halfling-head-chef.abilities.dash-of-spice.text"
+    },
+    {
+      "id": "angry-rant",
+      "section": "offense",
+      "name": "creature.halfling-head-chef.abilities.angry-rant.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "frequency": "creature.halfling-head-chef.abilities.angry-rant.frequency",
+      "text": "creature.halfling-head-chef.abilities.angry-rant.text"
+    },
+    {
+      "id": "ally",
+      "section": "offense",
+      "name": "creature.halfling-head-chef.abilities.ally.name",
+      "text": "creature.halfling-head-chef.abilities.ally.text"
+    },
+    {
+      "id": "enemy",
+      "section": "offense",
+      "name": "creature.halfling-head-chef.abilities.enemy.name",
+      "text": "creature.halfling-head-chef.abilities.enemy.text"
+    },
+    {
+      "id": "spice-mix",
+      "section": "offense",
+      "name": "creature.halfling-head-chef.abilities.spice-mix.name",
+      "actions": "1",
+      "text": "creature.halfling-head-chef.abilities.spice-mix.text"
+    }
+  ],
+  "editNote": "Item parentheses added from the book: page 190 prints \"(see sidebar)\" is the entry's note; \"(3)\" is the entry's count; the source omits them, and there is no errata for the book."
+}

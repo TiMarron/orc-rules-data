@@ -1,0 +1,164 @@
+{
+  "id": "creature.judge",
+  "type": "creature",
+  "name": "creature.judge.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 108,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "note": "creature.judge.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 8
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 12
+    },
+    {
+      "lore": "creature.judge.lore.3",
+      "mod": 16
+    },
+    {
+      "skill": "skill.society",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": -1,
+    "con": 1,
+    "int": 3,
+    "wis": 3,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.club",
+      "name": "creature.judge.items.0.name"
+    },
+    {
+      "name": "creature.judge.items.1.name"
+    },
+    {
+      "name": "creature.judge.items.2.name",
+      "note": "creature.judge.items.2.note"
+    }
+  ],
+  "ac": {
+    "value": 13
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 1,
+    "will": 12
+  },
+  "hp": {
+    "value": 5
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.judge.strikes.gavel.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.judge.strikes.fist.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.judge.strikes.gavel-2.name",
+      "actions": "1",
+      "bonus": 3,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "group-impression",
+      "section": "top",
+      "name": "creature.judge.abilities.group-impression.name",
+      "text": "creature.judge.abilities.group-impression.text"
+    },
+    {
+      "id": "legal-specialist",
+      "section": "top",
+      "name": "creature.judge.abilities.legal-specialist.name",
+      "text": "creature.judge.abilities.legal-specialist.text"
+    },
+    {
+      "id": "remember-youre-under-oath",
+      "section": "offense",
+      "name": "creature.judge.abilities.remember-youre-under-oath.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.judge.abilities.remember-youre-under-oath.text"
+    }
+  ],
+  "editNote": "Item parenthesis added from the book: page 108 prints \"(book worth 3 gp)\" is the entry's note; the source omits it, and there is no errata for the book."
+}

@@ -1,0 +1,291 @@
+{
+  "id": "creature.spirit-binder",
+  "type": "creature",
+  "name": "creature.spirit-binder.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 103,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 11,
+  "size": "medium",
+  "perception": {
+    "mod": 20,
+    "senses": [
+      {
+        "own": "spiritsense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "necril",
+    "shadowtongue"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 21,
+      "note": "creature.spirit-binder.skills.0.note"
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 21
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 22
+    },
+    {
+      "lore": "creature.spirit-binder.lore.3",
+      "mod": 24
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 3,
+    "int": 5,
+    "wis": 4,
+    "cha": 6
+  },
+  "ac": {
+    "value": 28
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 19,
+    "will": 24
+  },
+  "hp": {
+    "value": 175
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.spirit-binder.strikes.ghost-claw.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "finesse",
+        "magical",
+        "spirit",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+6",
+          "type": "slashing"
+        },
+        {
+          "dice": "2d6",
+          "type": "spirit"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.spirit-binder.strikes.spirit-pitch.name",
+      "actions": "2",
+      "bonus": 19,
+      "rangeIncrement": 60,
+      "traits": [
+        "magical",
+        "spirit"
+      ],
+      "damage": [
+        {
+          "dice": "3d6",
+          "type": "spirit"
+        },
+        {
+          "dice": "2d6",
+          "type": "spirit",
+          "persistent": true
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "spiritsense",
+      "section": "top",
+      "name": "creature.spirit-binder.abilities.spiritsense.name",
+      "traits": [
+        "detection",
+        "occult"
+      ],
+      "text": "creature.spirit-binder.abilities.spiritsense.text"
+    },
+    {
+      "id": "haunting-spirits",
+      "section": "defense",
+      "name": "creature.spirit-binder.abilities.haunting-spirits.name",
+      "traits": [
+        "aura",
+        "occult",
+        "spirit"
+      ],
+      "aura": 30,
+      "text": "creature.spirit-binder.abilities.haunting-spirits.text"
+    },
+    {
+      "id": "spirit-scrying",
+      "section": "offense",
+      "name": "creature.spirit-binder.abilities.spirit-scrying.name",
+      "text": "creature.spirit-binder.abilities.spirit-scrying.text"
+    },
+    {
+      "id": "succumb-to-the-void",
+      "section": "offense",
+      "name": "creature.spirit-binder.abilities.succumb-to-the-void.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult",
+        "void"
+      ],
+      "text": "creature.spirit-binder.abilities.succumb-to-the-void.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 31,
+      "attack": 23,
+      "cantrips": {
+        "rank": 6,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          },
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bane"
+            },
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.fear"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.darkness"
+            },
+            {
+              "spell": "spell.ghostly-carrier"
+            },
+            {
+              "spell": "spell.peaceful-rest"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.clairaudience"
+            },
+            {
+              "spell": "spell.ghostly-weapon"
+            },
+            {
+              "spell": "spell.levitate"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.clairvoyance"
+            },
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.talking-corpse"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.invoke-spirits"
+            },
+            {
+              "spell": "spell.spiritual-guardian"
+            },
+            {
+              "spell": "spell.wave-of-despair"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.dominate"
+            },
+            {
+              "spell": "spell.spirit-blast"
+            }
+          ],
+          "slots": 2
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.interplanar-teleport",
+              "note": "creature.spirit-binder.spellcasting.0.ranks.7.0.note"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    }
+  ],
+  "editNote": "Reserved Material removed: a plane of the setting is named in a spell's restriction; it is the ethereal realm, as elsewhere in the dataset. Skill qualifier added from the book: page 103 prints \"Diplomacy +21 (+25 with spirits)\"; the source omits the parenthesis, and there is no errata for the book. Slots corrected to the book: page 104 prints \"7th (3 slots) interplanar teleport\"; the source gives no slots for the rank."
+}

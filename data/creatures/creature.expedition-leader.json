@@ -1,0 +1,224 @@
+{
+  "id": "creature.expedition-leader",
+  "type": "creature",
+  "name": "creature.expedition-leader.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 58,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 21
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 20
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 18
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 19
+    },
+    {
+      "lore": "creature.expedition-leader.lore.4",
+      "mod": 21
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 4,
+    "int": 2,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.compass"
+    },
+    {
+      "item": "item.tent-four-person"
+    },
+    {
+      "item": "item.hide-armor",
+      "potency": 1
+    },
+    {
+      "item": "item.lantern-hooded"
+    },
+    {
+      "item": "item.machete",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "note": "creature.expedition-leader.items.4.note"
+    },
+    {
+      "item": "item.repair-toolkit"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.spyglass"
+    },
+    {
+      "item": "item.sun-goggles"
+    },
+    {
+      "item": "item.survey-map"
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 18,
+    "will": 15
+  },
+  "hp": {
+    "value": 160
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.expedition-leader.strikes.machete.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "deadly",
+        "magical",
+        "sweep"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "2d6+10",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.machete"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.expedition-leader.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.expedition-leader.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 19,
+      "rangeIncrement": 60,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "familiarity-with-the-land",
+      "section": "top",
+      "name": "creature.expedition-leader.abilities.familiarity-with-the-land.name",
+      "text": "creature.expedition-leader.abilities.familiarity-with-the-land.text"
+    },
+    {
+      "id": "on-guard",
+      "section": "top",
+      "name": "creature.expedition-leader.abilities.on-guard.name",
+      "text": "creature.expedition-leader.abilities.on-guard.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.expedition-leader.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "memories-of-expeditions-past",
+      "section": "defense",
+      "name": "creature.expedition-leader.abilities.memories-of-expeditions-past.name",
+      "actions": "reaction",
+      "frequency": "creature.expedition-leader.abilities.memories-of-expeditions-past.frequency",
+      "trigger": "creature.expedition-leader.abilities.memories-of-expeditions-past.trigger",
+      "text": "creature.expedition-leader.abilities.memories-of-expeditions-past.text"
+    },
+    {
+      "id": "quick-draw",
+      "section": "offense",
+      "name": "creature.expedition-leader.abilities.quick-draw.name",
+      "actions": "1",
+      "text": "creature.expedition-leader.abilities.quick-draw.text"
+    },
+    {
+      "id": "think-fast",
+      "section": "offense",
+      "name": "creature.expedition-leader.abilities.think-fast.name",
+      "actions": "1",
+      "requirements": "creature.expedition-leader.abilities.think-fast.requirements",
+      "text": "creature.expedition-leader.abilities.think-fast.text"
+    }
+  ],
+  "languageNote": "creature.expedition-leader.language-note",
+  "editNote": "Reserved Material removed: four languages of the setting's regions are named; the record keeps Common and notes four regional languages. Item parenthesis added from the book: page 58 prints \"(see sidebar)\" is the entry's note; the source omits it, and there is no errata for the book."
+}

@@ -1,0 +1,404 @@
+{
+  "id": "creature.high-priest-of-fate",
+  "type": "creature",
+  "name": "creature.high-priest-of-fate.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 33,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 20
+  },
+  "languages": [
+    "common",
+    "requian"
+  ],
+  "skills": [
+    {
+      "lore": "creature.high-priest-of-fate.lore.0",
+      "mod": 27
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 25
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 17
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 18
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 17
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 26
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 2,
+    "con": -1,
+    "int": 3,
+    "wis": 5,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.healers-toolkit"
+    },
+    {
+      "item": "item.holy-water",
+      "count": 4
+    },
+    {
+      "item": "item.religious-symbol"
+    },
+    {
+      "item": "item.religious-text"
+    },
+    {
+      "name": "creature.high-priest-of-fate.items.6.name",
+      "note": "creature.high-priest-of-fate.items.6.note"
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 17,
+    "will": 21
+  },
+  "hp": {
+    "value": 150
+  },
+  "resistances": [
+    {
+      "type": "void",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.high-priest-of-fate.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+7",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "spirit"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.high-priest-of-fate.strikes.fist.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d10",
+          "type": "spirit"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.high-priest-of-fate.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "spirit"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.high-priest-of-fate.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "magical",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+7",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d10",
+          "type": "spirit"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "religious-specialist",
+      "section": "top",
+      "name": "creature.high-priest-of-fate.abilities.religious-specialist.name",
+      "text": "creature.high-priest-of-fate.abilities.religious-specialist.text"
+    },
+    {
+      "id": "steward-of-the-faithful",
+      "section": "defense",
+      "name": "creature.high-priest-of-fate.abilities.steward-of-the-faithful.name",
+      "traits": [
+        "aura",
+        "divine",
+        "vitality"
+      ],
+      "aura": 30,
+      "text": "creature.high-priest-of-fate.abilities.steward-of-the-faithful.text"
+    },
+    {
+      "id": "unshakable-faith",
+      "section": "defense",
+      "name": "creature.high-priest-of-fate.abilities.unshakable-faith.name",
+      "text": "creature.high-priest-of-fate.abilities.unshakable-faith.text"
+    },
+    {
+      "id": "healing-hands",
+      "section": "offense",
+      "name": "creature.high-priest-of-fate.abilities.healing-hands.name",
+      "text": "creature.high-priest-of-fate.abilities.healing-hands.text"
+    },
+    {
+      "id": "restorative-channel",
+      "section": "offense",
+      "name": "creature.high-priest-of-fate.abilities.restorative-channel.name",
+      "text": "creature.high-priest-of-fate.abilities.restorative-channel.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "divine",
+      "dc": 28,
+      "attack": 20,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.vitality-lash"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.mindlink"
+            },
+            {
+              "spell": "spell.spirit-link"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.augury"
+            },
+            {
+              "spell": "spell.darkvision"
+            },
+            {
+              "spell": "spell.status"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.ghostly-weapon"
+            },
+            {
+              "spell": "spell.heroism"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.holy-light",
+              "count": 2
+            },
+            {
+              "spell": "spell.vital-beacon"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.breath-of-life"
+            },
+            {
+              "spell": "spell.heal",
+              "count": 5
+            },
+            {
+              "spell": "spell.vision-of-death"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.high-priest-of-fate.spellcasting.1.name",
+      "focusPoints": 2,
+      "dc": 28,
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.deaths-call"
+            },
+            {
+              "spell": "spell.eradicate-undeath"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 28,
+    "ranks": [
+      {
+        "rank": 2,
+        "rituals": [
+          {
+            "ritual": "ritual.consecrate"
+          },
+          {
+            "ritual": "ritual.heartbond"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rituals": [
+          {
+            "ritual": "ritual.atone"
+          },
+          {
+            "ritual": "ritual.rest-eternal"
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rituals": [
+          {
+            "ritual": "ritual.resurrect"
+          }
+        ]
+      }
+    ]
+  },
+  "editNote": "Reserved Material removed: the record is named for a deity of the setting; the name and every mention of the deity are replaced by a generic descriptor of its portfolio, and the deity's Lore by Deity Lore. A Lore named for a place of the setting is Afterlife Lore. Domain spells corrected to the book: page 34 prints \"Cleric Domain Spells 2 Focus Points, DC 28; 4th death's call, eradicate undeath\"; the source has them at 5th, and there is no errata for the book."
+}

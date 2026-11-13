@@ -1,0 +1,506 @@
+{
+  "id": "creature.enchanting-ritualist",
+  "type": "creature",
+  "name": "creature.enchanting-ritualist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 105,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 18,
+  "size": "medium",
+  "perception": {
+    "mod": 31
+  },
+  "languages": [
+    "common",
+    "diabolic",
+    "empyrean",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 34
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 31
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 35
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 34
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 36
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 34
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 1,
+    "int": 6,
+    "wis": 6,
+    "cha": 8
+  },
+  "items": [
+    {
+      "item": "item.club",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking-greater"
+        }
+      ]
+    },
+    {
+      "item": "item.bands-of-force-greater"
+    },
+    {
+      "name": "creature.enchanting-ritualist.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 40
+  },
+  "saves": {
+    "fortitude": 27,
+    "reflex": 28,
+    "will": 33
+  },
+  "hp": {
+    "value": 320
+  },
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 20
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.enchanting-ritualist.strikes.club.name",
+      "actions": "1",
+      "bonus": 30,
+      "traits": [
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "3d6+12",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        {
+          "own": "fools-feast"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.enchanting-ritualist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "magical",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+12",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        {
+          "own": "fools-feast"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.enchanting-ritualist.strikes.enchanting-wisps.name",
+      "actions": "1",
+      "bonus": 30,
+      "range": 100,
+      "traits": [
+        "magical",
+        "mental"
+      ],
+      "damage": [
+        {
+          "dice": "9d6",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        {
+          "own": "fools-feast"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.enchanting-ritualist.strikes.club-2.name",
+      "actions": "1",
+      "bonus": 28,
+      "traits": [
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "3d6+12",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "2d6",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        {
+          "own": "fools-feast"
+        }
+      ],
+      "item": "item.club"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "ritual-caster",
+      "section": "top",
+      "name": "creature.enchanting-ritualist.abilities.ritual-caster.name",
+      "text": "creature.enchanting-ritualist.abilities.ritual-caster.text"
+    },
+    {
+      "id": "aura-of-contentment",
+      "section": "defense",
+      "name": "creature.enchanting-ritualist.abilities.aura-of-contentment.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "incapacitation",
+        "mental",
+        "occult"
+      ],
+      "aura": 30,
+      "text": "creature.enchanting-ritualist.abilities.aura-of-contentment.text"
+    },
+    {
+      "id": "fools-feast",
+      "section": "offense",
+      "name": "creature.enchanting-ritualist.abilities.fools-feast.name",
+      "text": "creature.enchanting-ritualist.abilities.fools-feast.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 42,
+      "attack": 34,
+      "cantrips": {
+        "rank": 9,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.alarm"
+            },
+            {
+              "spell": "spell.fear"
+            },
+            {
+              "spell": "spell.ill-omen"
+            },
+            {
+              "spell": "spell.illusory-object"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.augury"
+            },
+            {
+              "spell": "spell.darkvision"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            },
+            {
+              "spell": "spell.status"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.dream-message"
+            },
+            {
+              "spell": "spell.hypnotize"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            },
+            {
+              "spell": "spell.levitate"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.confusion"
+            },
+            {
+              "spell": "spell.fly"
+            },
+            {
+              "spell": "spell.honeyed-words"
+            },
+            {
+              "spell": "spell.translocate"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 5,
+          "spells": [
+            {
+              "spell": "spell.dreaming-potential"
+            },
+            {
+              "spell": "spell.hallucination"
+            },
+            {
+              "spell": "spell.scouting-eye"
+            },
+            {
+              "spell": "spell.sending"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 6,
+          "spells": [
+            {
+              "spell": "spell.mislead"
+            },
+            {
+              "spell": "spell.repulsion"
+            },
+            {
+              "spell": "spell.truesight"
+            },
+            {
+              "spell": "spell.zealous-conviction"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 7,
+          "spells": [
+            {
+              "spell": "spell.mask-of-terror"
+            },
+            {
+              "spell": "spell.project-image"
+            },
+            {
+              "spell": "spell.truespeech"
+            },
+            {
+              "spell": "spell.wave-of-despair"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.canticle-of-everlasting-grief"
+            },
+            {
+              "spell": "spell.quandary"
+            },
+            {
+              "spell": "spell.spirit-song"
+            },
+            {
+              "spell": "spell.uncontrollable-dance"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 9,
+          "spells": [
+            {
+              "spell": "spell.foresight"
+            },
+            {
+              "spell": "spell.overwhelming-presence"
+            },
+            {
+              "spell": "spell.synesthesia"
+            },
+            {
+              "spell": "spell.telepathic-demand"
+            }
+          ],
+          "slots": 4
+        }
+      ]
+    }
+  ],
+  "rituals": {
+    "dc": 44,
+    "ranks": [
+      {
+        "rank": 2,
+        "rituals": [
+          {
+            "ritual": "ritual.heartbond"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rituals": [
+          {
+            "ritual": "ritual.geas"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rituals": [
+          {
+            "ritual": "ritual.atone"
+          },
+          {
+            "ritual": "ritual.rest-eternal"
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rituals": [
+          {
+            "ritual": "ritual.astral-projection"
+          },
+          {
+            "ritual": "ritual.fortifying-brew"
+          },
+          {
+            "ritual": "ritual.call-spirit"
+          },
+          {
+            "ritual": "ritual.planar-servitor"
+          },
+          {
+            "ritual": "ritual.resurrect"
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rituals": [
+          {
+            "ritual": "ritual.binding-circle"
+          },
+          {
+            "ritual": "ritual.commune"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rituals": [
+          {
+            "ritual": "ritual.collective-memories"
+          },
+          {
+            "ritual": "ritual.planar-displacement"
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rituals": [
+          {
+            "ritual": "ritual.fantastic-facade"
+          }
+        ]
+      }
+    ]
+  }
+}

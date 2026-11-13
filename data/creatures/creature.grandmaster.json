@@ -1,0 +1,247 @@
+{
+  "id": "creature.grandmaster",
+  "type": "creature",
+  "name": "creature.grandmaster.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 74,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 17,
+  "size": "medium",
+  "perception": {
+    "mod": 35,
+    "senses": [
+      {
+        "ability": "ability.lifesense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 33
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 25
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 25
+    },
+    {
+      "lore": "creature.grandmaster.lore.4",
+      "mod": 30
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 25
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 25
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 4,
+    "con": 3,
+    "int": 1,
+    "wis": 5,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.shuriken",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking-greater"
+        },
+        {
+          "item": "item.returning"
+        }
+      ]
+    },
+    {
+      "item": "item.handwraps-of-mighty-blows",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking-greater"
+        }
+      ]
+    },
+    {
+      "item": "item.temple-sword",
+      "potency": 2,
+      "runes": [
+        {
+          "item": "item.striking-greater"
+        }
+      ]
+    },
+    {
+      "item": "item.bands-of-force"
+    }
+  ],
+  "ac": {
+    "value": 40
+  },
+  "saves": {
+    "fortitude": 28,
+    "reflex": 32,
+    "will": 27
+  },
+  "hp": {
+    "value": 310
+  },
+  "speeds": {
+    "land": 50
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.grandmaster.strikes.temple-sword.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "3d8+14",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.temple-sword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.grandmaster.strikes.fist.name",
+      "actions": "1",
+      "bonus": 33,
+      "traits": [
+        "agile",
+        "magical",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "3d6+14",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.grandmaster.strikes.shuriken.name",
+      "actions": "1",
+      "bonus": 31,
+      "reload": 0,
+      "traits": [
+        "magical",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "3d4+14",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shuriken"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "disrupt-qi",
+      "section": "offense",
+      "name": "creature.grandmaster.abilities.disrupt-qi.name",
+      "actions": "2",
+      "traits": [
+        "void"
+      ],
+      "text": "creature.grandmaster.abilities.disrupt-qi.text"
+    },
+    {
+      "id": "flurry-of-blows",
+      "section": "offense",
+      "name": "creature.grandmaster.abilities.flurry-of-blows.name",
+      "actions": "1",
+      "frequency": "creature.grandmaster.abilities.flurry-of-blows.frequency",
+      "text": "creature.grandmaster.abilities.flurry-of-blows.text"
+    },
+    {
+      "id": "forbidden-palm",
+      "section": "offense",
+      "name": "creature.grandmaster.abilities.forbidden-palm.name",
+      "actions": "3",
+      "requirements": "creature.grandmaster.abilities.forbidden-palm.requirements",
+      "text": "creature.grandmaster.abilities.forbidden-palm.text"
+    },
+    {
+      "id": "one-millimeter-punch",
+      "section": "offense",
+      "name": "creature.grandmaster.abilities.one-millimeter-punch.name",
+      "actions": "2-3",
+      "text": "creature.grandmaster.abilities.one-millimeter-punch.text"
+    },
+    {
+      "id": "powerful-fists",
+      "section": "offense",
+      "name": "creature.grandmaster.abilities.powerful-fists.name",
+      "text": "creature.grandmaster.abilities.powerful-fists.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "focus",
+      "name": "creature.grandmaster.spellcasting.0.name",
+      "focusPoints": 3,
+      "dc": 38,
+      "attack": 34,
+      "ranks": [
+        {
+          "rank": 8,
+          "spells": [
+            {
+              "spell": "spell.harmonize-self"
+            },
+            {
+              "spell": "spell.qi-blast"
+            },
+            {
+              "spell": "spell.touch-of-death"
+            },
+            {
+              "spell": "spell.wind-jump"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Rarity corrected to the book: page 74 prints the trait line with uncommon; the source has common, and there is no errata for the book."
+}

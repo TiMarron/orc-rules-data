@@ -1,0 +1,192 @@
+{
+  "id": "creature.hobgoblin-spellbreaker",
+  "type": "creature",
+  "name": "creature.hobgoblin-spellbreaker.name",
+  "traits": [
+    "hobgoblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 194,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      },
+      {
+        "own": "arcane-magic-sense",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.arcana",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 1,
+    "con": 1,
+    "int": 3,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.breaching-pike"
+    },
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.scale-mail"
+    },
+    {
+      "item": "item.shortsword"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 6,
+    "will": 9
+  },
+  "hp": {
+    "value": 50
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hobgoblin-spellbreaker.strikes.breaching-pike.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "razing",
+        "reach"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.breaching-pike"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.hobgoblin-spellbreaker.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.hobgoblin-spellbreaker.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hobgoblin-spellbreaker.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "arcane-magic-sense",
+      "section": "top",
+      "name": "creature.hobgoblin-spellbreaker.abilities.arcane-magic-sense.name",
+      "text": "creature.hobgoblin-spellbreaker.abilities.arcane-magic-sense.text"
+    },
+    {
+      "id": "spellbreaking-reactive-strike",
+      "section": "defense",
+      "name": "creature.hobgoblin-spellbreaker.abilities.spellbreaking-reactive-strike.name",
+      "actions": "reaction",
+      "text": "creature.hobgoblin-spellbreaker.abilities.spellbreaking-reactive-strike.text"
+    },
+    {
+      "id": "shatter-spell",
+      "section": "offense",
+      "name": "creature.hobgoblin-spellbreaker.abilities.shatter-spell.name",
+      "actions": "2",
+      "text": "creature.hobgoblin-spellbreaker.abilities.shatter-spell.text"
+    }
+  ]
+}

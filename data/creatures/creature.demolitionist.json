@@ -1,0 +1,176 @@
+{
+  "id": "creature.demolitionist",
+  "type": "creature",
+  "name": "creature.demolitionist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 45,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 12
+    },
+    {
+      "lore": "creature.demolitionist.lore.2",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 10
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 3,
+    "int": 4,
+    "wis": 0,
+    "cha": 0
+  },
+  "items": [
+    {
+      "name": "creature.demolitionist.items.0.name",
+      "note": "creature.demolitionist.items.0.note"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.light-mace"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 13,
+    "will": 6
+  },
+  "hp": {
+    "value": 60
+  },
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.demolitionist.strikes.light-mace.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.demolitionist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "explosive-demise",
+      "section": "defense",
+      "name": "creature.demolitionist.abilities.explosive-demise.name",
+      "traits": [
+        "fire"
+      ],
+      "text": "creature.demolitionist.abilities.explosive-demise.text"
+    },
+    {
+      "id": "replenish-explosives",
+      "section": "defense",
+      "name": "creature.demolitionist.abilities.replenish-explosives.name",
+      "text": "creature.demolitionist.abilities.replenish-explosives.text"
+    },
+    {
+      "id": "plant-mine",
+      "section": "offense",
+      "name": "creature.demolitionist.abilities.plant-mine.name",
+      "actions": "1-2",
+      "traits": [
+        "fire",
+        "manipulate"
+      ],
+      "text": "creature.demolitionist.abilities.plant-mine.text"
+    },
+    {
+      "id": "toss-dynamite",
+      "section": "offense",
+      "name": "creature.demolitionist.abilities.toss-dynamite.name",
+      "actions": "2",
+      "traits": [
+        "fire",
+        "manipulate"
+      ],
+      "text": "creature.demolitionist.abilities.toss-dynamite.text"
+    },
+    {
+      "id": "wall-charge",
+      "section": "offense",
+      "name": "creature.demolitionist.abilities.wall-charge.name",
+      "actions": "3",
+      "traits": [
+        "fire",
+        "manipulate"
+      ],
+      "text": "creature.demolitionist.abilities.wall-charge.text"
+    }
+  ],
+  "editNote": "Item parenthesis added from the book: page 45 prints \"(10 dynamite, 5 mines, 1 wall charge)\" is the entry's note; the source omits it, and there is no errata for the book."
+}

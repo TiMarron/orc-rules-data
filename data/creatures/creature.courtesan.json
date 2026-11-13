@@ -1,0 +1,173 @@
+{
+  "id": "creature.courtesan",
+  "type": "creature",
+  "name": "creature.courtesan.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 13,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "note": "creature.courtesan.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.courtesan.language-note",
+  "skills": [
+    {
+      "lore": "creature.courtesan.lore.0",
+      "mod": 12
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 12
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 13
+    },
+    {
+      "skill": "skill.society",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 3,
+    "con": 0,
+    "int": 2,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.clothing-fine"
+    },
+    {
+      "item": "item.musical-instrument-handheld",
+      "name": "creature.courtesan.items.1.name",
+      "note": "creature.courtesan.items.1.note"
+    },
+    {
+      "name": "creature.courtesan.items.2.name",
+      "note": "creature.courtesan.items.2.note"
+    },
+    {
+      "item": "item.sword-cane"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 7,
+    "will": 11
+  },
+  "hp": {
+    "value": 25
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.courtesan.strikes.sword-cane.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "concealable",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.sword-cane"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.courtesan.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "group-impression",
+      "section": "top",
+      "name": "creature.courtesan.abilities.group-impression.name",
+      "text": "creature.courtesan.abilities.group-impression.text"
+    },
+    {
+      "id": "social-specialist",
+      "section": "top",
+      "name": "creature.courtesan.abilities.social-specialist.name",
+      "text": "creature.courtesan.abilities.social-specialist.text"
+    },
+    {
+      "id": "beguiling-presence",
+      "section": "defense",
+      "name": "creature.courtesan.abilities.beguiling-presence.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental"
+      ],
+      "aura": 10,
+      "text": "creature.courtesan.abilities.beguiling-presence.text"
+    },
+    {
+      "id": "cutting-remarks",
+      "section": "offense",
+      "name": "creature.courtesan.abilities.cutting-remarks.name",
+      "actions": "1",
+      "text": "creature.courtesan.abilities.cutting-remarks.text"
+    },
+    {
+      "id": "words-of-encouragement",
+      "section": "offense",
+      "name": "creature.courtesan.abilities.words-of-encouragement.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.courtesan.abilities.words-of-encouragement.text"
+    }
+  ],
+  "editNote": "Items, page 13: \"flute\" is item.musical-instrument-handheld under its printed name: the source links the musical instrument page, and a flute is a handheld instrument. The parenthesis \"(or other handheld musical instrument)\" the page prints after it is the entry's note. Item parenthesis added from the book: page 13 prints \"(worth 5 gp)\" is the entry's note; the source omits it, and there is no errata for the book."
+}

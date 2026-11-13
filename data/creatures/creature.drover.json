@@ -1,0 +1,167 @@
+{
+  "id": "creature.drover",
+  "type": "creature",
+  "name": "creature.drover.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 67,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 5
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 7
+    },
+    {
+      "lore": "creature.drover.lore.1",
+      "mod": 6
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 5
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "name": "creature.drover.items.0.name"
+    },
+    {
+      "item": "item.leather-armor",
+      "name": "creature.drover.items.1.name"
+    },
+    {
+      "item": "item.signal-whistle"
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.whip"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 6,
+    "will": 5
+  },
+  "hp": {
+    "value": 18
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.drover.strikes.whip.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "disarm",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.whip"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.drover.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.drover.strikes.sling.name",
+      "actions": "1",
+      "bonus": 6,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "whistling",
+      "section": "top",
+      "name": "creature.drover.abilities.whistling.name",
+      "text": "creature.drover.abilities.whistling.text"
+    },
+    {
+      "id": "hogtie",
+      "section": "offense",
+      "name": "creature.drover.abilities.hogtie.name",
+      "actions": "2",
+      "requirements": "creature.drover.abilities.hogtie.requirements",
+      "text": "creature.drover.abilities.hogtie.text"
+    },
+    {
+      "id": "lasso",
+      "section": "offense",
+      "name": "creature.drover.abilities.lasso.name",
+      "actions": "2",
+      "text": "creature.drover.abilities.lasso.text"
+    }
+  ],
+  "editNote": "Items, page 67: \"overalls (function as leather armor)\" is leather armor under its printed name."
+}

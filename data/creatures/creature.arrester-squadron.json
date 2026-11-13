@@ -1,0 +1,114 @@
+{
+  "id": "creature.arrester-squadron",
+  "type": "creature",
+  "name": "creature.arrester-squadron.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "troop"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 118,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": false,
+  "level": 8,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 17
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "lore": "creature.arrester-squadron.lore.2",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 1,
+    "con": 4,
+    "int": 0,
+    "wis": 3,
+    "cha": 2
+  },
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 18,
+    "reflex": 13,
+    "will": 17
+  },
+  "hp": {
+    "value": 135,
+    "note": "creature.arrester-squadron.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 10
+    },
+    {
+      "type": "splash-damage",
+      "value": 10
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "note": "creature.arrester-squadron.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.arrester-squadron.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "coordinated-step",
+      "section": "offense",
+      "name": "creature.arrester-squadron.abilities.coordinated-step.name",
+      "actions": "1",
+      "text": "creature.arrester-squadron.abilities.coordinated-step.text"
+    },
+    {
+      "id": "fire-longbows",
+      "section": "offense",
+      "name": "creature.arrester-squadron.abilities.fire-longbows.name",
+      "actions": "2",
+      "text": "creature.arrester-squadron.abilities.fire-longbows.text"
+    },
+    {
+      "id": "seize-them",
+      "section": "offense",
+      "name": "creature.arrester-squadron.abilities.seize-them.name",
+      "actions": "1-3",
+      "traits": [
+        "nonlethal"
+      ],
+      "text": "creature.arrester-squadron.abilities.seize-them.text"
+    },
+    {
+      "id": "sweep-the-area",
+      "section": "offense",
+      "name": "creature.arrester-squadron.abilities.sweep-the-area.name",
+      "actions": "1",
+      "text": "creature.arrester-squadron.abilities.sweep-the-area.text"
+    }
+  ]
+}

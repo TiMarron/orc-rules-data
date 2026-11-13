@@ -1,0 +1,192 @@
+{
+  "id": "creature.hobgoblin-vanguard",
+  "type": "creature",
+  "name": "creature.hobgoblin-vanguard.name",
+  "traits": [
+    "hobgoblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 195,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 3,
+    "int": 2,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "name": "creature.hobgoblin-vanguard.items.0.name",
+      "count": 4
+    },
+    {
+      "item": "item.alchemists-toolkit"
+    },
+    {
+      "item": "item.full-plate"
+    },
+    {
+      "item": "item.maul",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 19,
+    "reflex": 13,
+    "will": 16
+  },
+  "hp": {
+    "value": 150
+  },
+  "speeds": {
+    "land": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.hobgoblin-vanguard.strikes.maul.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "magical",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "2d12+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ],
+      "item": "item.maul"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.hobgoblin-vanguard.strikes.fist.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.hobgoblin-vanguard.strikes.alchemical-grenade.name",
+      "actions": "1",
+      "bonus": 16,
+      "rangeIncrement": 20,
+      "traits": [
+        "splash"
+      ],
+      "damage": [
+        {
+          "dice": "2d8",
+          "types": [
+            "acid",
+            "cold",
+            "electricity",
+            "fire"
+          ]
+        },
+        {
+          "dice": "2",
+          "types": [
+            "acid",
+            "cold",
+            "electricity",
+            "fire"
+          ],
+          "persistent": true,
+          "note": "creature.hobgoblin-vanguard.strikes.alchemical-grenade.damage.1.note"
+        },
+        {
+          "dice": "2",
+          "types": [
+            "acid",
+            "cold",
+            "electricity",
+            "fire"
+          ],
+          "splash": true,
+          "note": "creature.hobgoblin-vanguard.strikes.alchemical-grenade.damage.2.note"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "shock-and-awe",
+      "section": "offense",
+      "name": "creature.hobgoblin-vanguard.abilities.shock-and-awe.name",
+      "actions": "reaction",
+      "traits": [
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "trigger": "creature.hobgoblin-vanguard.abilities.shock-and-awe.trigger",
+      "text": "creature.hobgoblin-vanguard.abilities.shock-and-awe.text"
+    }
+  ],
+  "editNote": "Item parenthesis added from the book: page 195 prints \"(4)\" is the entry's count; the source omits it, and there is no errata for the book."
+}

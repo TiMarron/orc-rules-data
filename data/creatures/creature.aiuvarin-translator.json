@@ -1,0 +1,185 @@
+{
+  "id": "creature.aiuvarin-translator",
+  "type": "creature",
+  "name": "creature.aiuvarin-translator.name",
+  "traits": [
+    "aiuvarin",
+    "elf",
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 178,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 5,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven"
+  ],
+  "languageNote": "creature.aiuvarin-translator.language-note",
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 7
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 7
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 6
+    },
+    {
+      "skill": "skill.religion",
+      "mod": 5
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 2,
+    "con": 0,
+    "int": 3,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "name": "creature.aiuvarin-translator.items.0.name"
+    },
+    {
+      "item": "item.dart",
+      "name": "creature.aiuvarin-translator.items.1.name"
+    },
+    {
+      "item": "item.staff"
+    },
+    {
+      "item": "item.writing-set"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 6,
+    "will": 9
+  },
+  "hp": {
+    "value": 12
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.aiuvarin-translator.strikes.staff.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.aiuvarin-translator.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.aiuvarin-translator.strikes.quill-pen.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dart"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "linguistic-mastery",
+      "section": "top",
+      "name": "creature.aiuvarin-translator.abilities.linguistic-mastery.name",
+      "text": "creature.aiuvarin-translator.abilities.linguistic-mastery.text"
+    },
+    {
+      "id": "translation-specialist",
+      "section": "top",
+      "name": "creature.aiuvarin-translator.abilities.translation-specialist.name",
+      "text": "creature.aiuvarin-translator.abilities.translation-specialist.text"
+    },
+    {
+      "id": "crosstalk",
+      "section": "defense",
+      "name": "creature.aiuvarin-translator.abilities.crosstalk.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "trigger": "creature.aiuvarin-translator.abilities.crosstalk.trigger",
+      "text": "creature.aiuvarin-translator.abilities.crosstalk.text"
+    }
+  ],
+  "editNote": "Traits corrected to the book: page 178 prints \"MEDIUM AIUVARIN HUMAN ELF\", and the source lacks human. The book leaves out humanoid, which every human and elf of the book carries; it is kept."
+}

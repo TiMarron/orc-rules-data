@@ -1,0 +1,233 @@
+{
+  "id": "creature.watchmage",
+  "type": "creature",
+  "name": "creature.watchmage.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 115,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 15
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 13
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "lore": "creature.watchmage.lore.3",
+      "mod": 13
+    },
+    {
+      "skill": "skill.society",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 2,
+    "int": 4,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "name": "creature.watchmage.items.2.name",
+      "note": "creature.watchmage.items.2.note"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 14
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.watchmage.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.watchmage.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 15,
+      "rangeIncrement": 60,
+      "traits": [
+        "deadly",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "force"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "arcane-watch",
+      "section": "top",
+      "name": "creature.watchmage.abilities.arcane-watch.name",
+      "text": "creature.watchmage.abilities.arcane-watch.text"
+    },
+    {
+      "id": "counter-escape",
+      "section": "defense",
+      "name": "creature.watchmage.abilities.counter-escape.name",
+      "actions": "reaction",
+      "traits": [
+        "arcane"
+      ],
+      "trigger": "creature.watchmage.abilities.counter-escape.trigger",
+      "text": "creature.watchmage.abilities.counter-escape.text"
+    },
+    {
+      "id": "eldritch-arms",
+      "section": "offense",
+      "name": "creature.watchmage.abilities.eldritch-arms.name",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.watchmage.abilities.eldritch-arms.text"
+    },
+    {
+      "id": "spellbound-strike",
+      "section": "offense",
+      "name": "creature.watchmage.abilities.spellbound-strike.name",
+      "actions": "3",
+      "requirements": "creature.watchmage.abilities.spellbound-strike.requirements",
+      "text": "creature.watchmage.abilities.spellbound-strike.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "arcane",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.frostbite"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.command"
+            },
+            {
+              "spell": "spell.force-barrage"
+            },
+            {
+              "spell": "spell.sure-strike"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.dispel-magic"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.slow"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editNote": "Item note corrected to the book: page 115 prints \"spellbook (contains all prepared spells plus earthbind, revealing light, sleep, tailwind)\"; the source adds \"and\"."
+}
