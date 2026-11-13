@@ -1,0 +1,152 @@
+{
+  "id": "creature.vermin-catcher",
+  "type": "creature",
+  "name": "creature.vermin-catcher.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 71,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 6
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 6
+    },
+    {
+      "lore": "creature.vermin-catcher.lore.4",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 4,
+    "int": 1,
+    "wis": 0,
+    "cha": -2
+  },
+  "items": [
+    {
+      "item": "item.arsenic"
+    },
+    {
+      "item": "item.club"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "name": "creature.vermin-catcher.items.3.name",
+      "count": 4
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 8,
+    "will": 6
+  },
+  "hp": {
+    "value": 35
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.vermin-catcher.strikes.club.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.vermin-catcher.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.vermin-catcher.strikes.club-2.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "giant-rat-trap",
+      "section": "offense",
+      "name": "creature.vermin-catcher.abilities.giant-rat-trap.name",
+      "actions": "3",
+      "text": "creature.vermin-catcher.abilities.giant-rat-trap.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.vermin-catcher.abilities.sneak-attack.name",
+      "text": "creature.vermin-catcher.abilities.sneak-attack.text"
+    }
+  ]
+}

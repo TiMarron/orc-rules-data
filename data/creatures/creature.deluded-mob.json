@@ -1,0 +1,117 @@
+{
+  "id": "creature.deluded-mob",
+  "type": "creature",
+  "name": "creature.deluded-mob.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "troop"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 155,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "lore": "creature.deluded-mob.lore.1",
+      "mod": 6
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 1,
+    "con": 4,
+    "int": 0,
+    "wis": -1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 19,
+    "note": "creature.deluded-mob.ac.note"
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 9,
+    "will": 7
+  },
+  "hp": {
+    "value": 75,
+    "note": "creature.deluded-mob.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "note": "creature.deluded-mob.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "irrational",
+      "section": "top",
+      "name": "creature.deluded-mob.abilities.irrational.name",
+      "text": "creature.deluded-mob.abilities.irrational.text"
+    },
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.deluded-mob.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "victim-complex",
+      "section": "defense",
+      "name": "creature.deluded-mob.abilities.victim-complex.name",
+      "text": "creature.deluded-mob.abilities.victim-complex.text"
+    },
+    {
+      "id": "flail-desperately",
+      "section": "offense",
+      "name": "creature.deluded-mob.abilities.flail-desperately.name",
+      "actions": "1-3",
+      "frequency": "creature.deluded-mob.abilities.flail-desperately.frequency",
+      "text": "creature.deluded-mob.abilities.flail-desperately.text"
+    },
+    {
+      "id": "surrounded",
+      "section": "offense",
+      "name": "creature.deluded-mob.abilities.surrounded.name",
+      "text": "creature.deluded-mob.abilities.surrounded.text"
+    },
+    {
+      "id": "throw-detritus",
+      "section": "offense",
+      "name": "creature.deluded-mob.abilities.throw-detritus.name",
+      "actions": "2",
+      "text": "creature.deluded-mob.abilities.throw-detritus.text"
+    }
+  ]
+}

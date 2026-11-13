@@ -1,0 +1,35 @@
+{
+  "id": "spell.burglars-blind",
+  "type": "spell",
+  "name": "spell.burglars-blind.name",
+  "traits": [
+    "illusion",
+    "manipulate",
+    "subtle"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 26,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.burglars-blind.text",
+  "rank": 3,
+  "traditions": [
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.burglars-blind.range",
+  "targets": "spell.burglars-blind.targets",
+  "duration": "spell.burglars-blind.duration",
+  "heightened": [
+    {
+      "level": "5",
+      "text": "spell.burglars-blind.heightened.0"
+    }
+  ]
+}

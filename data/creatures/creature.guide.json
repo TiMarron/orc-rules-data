@@ -1,0 +1,158 @@
+{
+  "id": "creature.guide",
+  "type": "creature",
+  "name": "creature.guide.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 55,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 8
+    },
+    {
+      "lore": "creature.guide.lore.2",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 2,
+    "int": 1,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 40
+      }
+    },
+    {
+      "item": "item.greataxe"
+    },
+    {
+      "item": "item.scale-mail"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 8,
+    "will": 11
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.guide.strikes.greataxe.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d12+8",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.greataxe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.guide.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.guide.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "guides-warning",
+      "section": "defense",
+      "name": "creature.guide.abilities.guides-warning.name",
+      "actions": "reaction",
+      "trigger": "creature.guide.abilities.guides-warning.trigger",
+      "text": "creature.guide.abilities.guides-warning.text"
+    },
+    {
+      "id": "guiding-words",
+      "section": "offense",
+      "name": "creature.guide.abilities.guiding-words.name",
+      "actions": "1",
+      "text": "creature.guide.abilities.guiding-words.text"
+    }
+  ]
+}

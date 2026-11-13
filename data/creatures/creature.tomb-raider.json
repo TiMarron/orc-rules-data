@@ -1,0 +1,165 @@
+{
+  "id": "creature.tomb-raider",
+  "type": "creature",
+  "name": "creature.tomb-raider.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 56,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 13
+    },
+    {
+      "lore": "creature.tomb-raider.lore.1",
+      "mod": 11
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "lore": "creature.tomb-raider.lore.4",
+      "mod": 11
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 4,
+    "con": 1,
+    "int": 2,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.climbing-kit"
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.kukri"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 15,
+    "will": 11
+  },
+  "hp": {
+    "value": 75
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 15
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tomb-raider.strikes.kukri.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+9",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.kukri"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tomb-raider.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tomb-raider.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 15,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "hazard-spotter",
+      "section": "top",
+      "name": "creature.tomb-raider.abilities.hazard-spotter.name",
+      "text": "creature.tomb-raider.abilities.hazard-spotter.text"
+    },
+    {
+      "id": "trick-attack",
+      "section": "offense",
+      "name": "creature.tomb-raider.abilities.trick-attack.name",
+      "actions": "1",
+      "text": "creature.tomb-raider.abilities.trick-attack.text"
+    }
+  ]
+}

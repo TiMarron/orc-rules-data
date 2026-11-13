@@ -1,0 +1,104 @@
+{
+  "id": "creature.martial-student",
+  "type": "creature",
+  "name": "creature.martial-student.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 72,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "name": "creature.martial-student.items.0.name"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 10,
+    "will": 6
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.martial-student.strikes.fist.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fancy-footwork",
+      "section": "offense",
+      "name": "creature.martial-student.abilities.fancy-footwork.name",
+      "actions": "1",
+      "text": "creature.martial-student.abilities.fancy-footwork.text"
+    },
+    {
+      "id": "flurry-of-blows",
+      "section": "offense",
+      "name": "creature.martial-student.abilities.flurry-of-blows.name",
+      "actions": "1",
+      "frequency": "creature.martial-student.abilities.flurry-of-blows.frequency",
+      "text": "creature.martial-student.abilities.flurry-of-blows.text"
+    },
+    {
+      "id": "powerful-fists",
+      "section": "offense",
+      "name": "creature.martial-student.abilities.powerful-fists.name",
+      "text": "creature.martial-student.abilities.powerful-fists.text"
+    }
+  ]
+}

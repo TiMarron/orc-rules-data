@@ -1,0 +1,194 @@
+{
+  "id": "creature.tripkee-camoufleur",
+  "type": "creature",
+  "name": "creature.tripkee-camoufleur.name",
+  "traits": [
+    "humanoid",
+    "tripkee"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 214,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "tripkee"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 7
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 1,
+    "int": 1,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.dart",
+      "count": 5
+    },
+    {
+      "item": "item.disguise-kit"
+    },
+    {
+      "item": "item.hand-adze"
+    },
+    {
+      "item": "item.leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 11,
+    "will": 8
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 25,
+    "climb": 20,
+    "note": "creature.tripkee-camoufleur.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.tripkee-camoufleur.strikes.hand-adze.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hand-adze"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.tripkee-camoufleur.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tripkee-camoufleur.strikes.dart.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dart"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.tripkee-camoufleur.strikes.hand-adze-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hand-adze"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "camouflage-specialist",
+      "section": "top",
+      "name": "creature.tripkee-camoufleur.abilities.camouflage-specialist.name",
+      "text": "creature.tripkee-camoufleur.abilities.camouflage-specialist.text"
+    },
+    {
+      "id": "natural-disguise",
+      "section": "top",
+      "name": "creature.tripkee-camoufleur.abilities.natural-disguise.name",
+      "text": "creature.tripkee-camoufleur.abilities.natural-disguise.text"
+    },
+    {
+      "id": "forest-passage",
+      "section": "offense",
+      "name": "creature.tripkee-camoufleur.abilities.forest-passage.name",
+      "text": "creature.tripkee-camoufleur.abilities.forest-passage.text"
+    }
+  ]
+}

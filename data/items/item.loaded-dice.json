@@ -1,0 +1,20 @@
+{
+  "id": "item.loaded-dice",
+  "type": "item",
+  "name": "item.loaded-dice.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 26,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "item.loaded-dice.text",
+  "level": 1,
+  "priceCp": 500,
+  "bulk": "L",
+  "usage": "item.loaded-dice.usage",
+  "category": "gear"
+}

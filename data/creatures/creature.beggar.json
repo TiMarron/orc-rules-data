@@ -1,0 +1,115 @@
+{
+  "id": "creature.beggar",
+  "type": "creature",
+  "name": "creature.beggar.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 40,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 3
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 3
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 3
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 3
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    },
+    {
+      "lore": "creature.beggar.lore.4",
+      "mod": 2
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": 0,
+    "wis": 1,
+    "cha": 1
+  },
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 4,
+    "reflex": 7,
+    "will": 3
+  },
+  "hp": {
+    "value": 10
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.beggar.strikes.fist.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.beggar.strikes.rock.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "beat-a-retreat",
+      "section": "offense",
+      "name": "creature.beggar.abilities.beat-a-retreat.name",
+      "actions": "2",
+      "text": "creature.beggar.abilities.beat-a-retreat.text"
+    }
+  ]
+}

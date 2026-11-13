@@ -1,0 +1,278 @@
+{
+  "id": "creature.razzle-dazzler",
+  "type": "creature",
+  "name": "creature.razzle-dazzler.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 183,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "small",
+  "perception": {
+    "mod": 12,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "elven",
+    "fey",
+    "gnomish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 10
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 12
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 14
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 1,
+    "int": 2,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.dueling-cape"
+    },
+    {
+      "item": "item.hand-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 15
+  },
+  "hp": {
+    "value": 78
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.razzle-dazzler.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.razzle-dazzler.strikes.fist.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.razzle-dazzler.strikes.hand-crossbow.name",
+      "actions": "1",
+      "bonus": 13,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.hand-crossbow"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.razzle-dazzler.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "daunting-charisma",
+      "section": "defense",
+      "name": "creature.razzle-dazzler.abilities.daunting-charisma.name",
+      "actions": "free",
+      "trigger": "creature.razzle-dazzler.abilities.daunting-charisma.trigger",
+      "text": "creature.razzle-dazzler.abilities.daunting-charisma.text"
+    },
+    {
+      "id": "dazzling-duplicate",
+      "section": "offense",
+      "name": "creature.razzle-dazzler.abilities.dazzling-duplicate.name",
+      "actions": "1",
+      "traits": [
+        "arcane",
+        "concentrate",
+        "illusion",
+        "manipulate"
+      ],
+      "text": "creature.razzle-dazzler.abilities.dazzling-duplicate.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "arcane",
+      "dc": 22,
+      "attack": 15,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.dizzying-colors"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            },
+            {
+              "spell": "spell.illusory-object"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.illusory-creature"
+            },
+            {
+              "spell": "spell.illusory-object"
+            },
+            {
+              "spell": "spell.laughing-fit"
+            },
+            {
+              "spell": "spell.revealing-light"
+            }
+          ],
+          "slots": 4
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.enthrall"
+            },
+            {
+              "spell": "spell.hypnotize"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            }
+          ],
+          "slots": 3
+        }
+      ]
+    }
+  ]
+}

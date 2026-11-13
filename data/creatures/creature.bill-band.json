@@ -1,0 +1,130 @@
+{
+  "id": "creature.bill-band",
+  "type": "creature",
+  "name": "creature.bill-band.name",
+  "traits": [
+    "halfling",
+    "humanoid",
+    "troop"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 190,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 10,
+    "senses": [
+      {
+        "own": "keen-eyes"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "halfling"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 13
+    },
+    {
+      "lore": "creature.bill-band.lore.3",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 4,
+    "int": 0,
+    "wis": -1,
+    "cha": 2
+  },
+  "ac": {
+    "value": 20,
+    "note": "creature.bill-band.ac.note"
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 12,
+    "will": 8
+  },
+  "hp": {
+    "value": 90,
+    "note": "creature.bill-band.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "note": "creature.bill-band.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "keen-eyes",
+      "section": "top",
+      "name": "creature.bill-band.abilities.keen-eyes.name",
+      "text": "creature.bill-band.abilities.keen-eyes.text"
+    },
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.bill-band.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "down-to-our-level",
+      "section": "offense",
+      "name": "creature.bill-band.abilities.down-to-our-level.name",
+      "actions": "2",
+      "frequency": "creature.bill-band.abilities.down-to-our-level.frequency",
+      "text": "creature.bill-band.abilities.down-to-our-level.text"
+    },
+    {
+      "id": "firecracker-salvo",
+      "section": "offense",
+      "name": "creature.bill-band.abilities.firecracker-salvo.name",
+      "actions": "2",
+      "frequency": "creature.bill-band.abilities.firecracker-salvo.frequency",
+      "text": "creature.bill-band.abilities.firecracker-salvo.text"
+    },
+    {
+      "id": "overwhelming-scrum",
+      "section": "offense",
+      "name": "creature.bill-band.abilities.overwhelming-scrum.name",
+      "text": "creature.bill-band.abilities.overwhelming-scrum.text"
+    },
+    {
+      "id": "stick-it-to-em",
+      "section": "offense",
+      "name": "creature.bill-band.abilities.stick-it-to-em.name",
+      "actions": "1-3",
+      "frequency": "creature.bill-band.abilities.stick-it-to-em.frequency",
+      "text": "creature.bill-band.abilities.stick-it-to-em.text"
+    }
+  ]
+}

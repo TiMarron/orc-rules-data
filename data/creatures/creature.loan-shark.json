@@ -1,0 +1,160 @@
+{
+  "id": "creature.loan-shark",
+  "type": "creature",
+  "name": "creature.loan-shark.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 19,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.loan-shark.lore.0",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 8
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    },
+    {
+      "skill": "skill.society",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 0,
+    "con": 1,
+    "int": 2,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.breastplate"
+    },
+    {
+      "item": "item.staff",
+      "name": "creature.loan-shark.items.1.name"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 6,
+    "will": 10
+  },
+  "hp": {
+    "value": 25
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.loan-shark.strikes.dragon-headed-cane.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.loan-shark.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "business-savvy",
+      "section": "top",
+      "name": "creature.loan-shark.abilities.business-savvy.name",
+      "text": "creature.loan-shark.abilities.business-savvy.text"
+    },
+    {
+      "id": "loan-specialist",
+      "section": "top",
+      "name": "creature.loan-shark.abilities.loan-specialist.name",
+      "text": "creature.loan-shark.abilities.loan-specialist.text"
+    },
+    {
+      "id": "never-off-the-hook",
+      "section": "defense",
+      "name": "creature.loan-shark.abilities.never-off-the-hook.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental"
+      ],
+      "aura": 60,
+      "text": "creature.loan-shark.abilities.never-off-the-hook.text"
+    },
+    {
+      "id": "interest-is-due",
+      "section": "offense",
+      "name": "creature.loan-shark.abilities.interest-is-due.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "frequency": "creature.loan-shark.abilities.interest-is-due.frequency",
+      "text": "creature.loan-shark.abilities.interest-is-due.text"
+    }
+  ]
+}

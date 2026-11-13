@@ -1,0 +1,186 @@
+{
+  "id": "creature.castaway",
+  "type": "creature",
+  "name": "creature.castaway.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 148,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 12
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": 0,
+    "wis": 4,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.blowgun",
+      "ammunition": {
+        "item": "item.blowgun-darts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.hatchet"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 13,
+    "will": 11
+  },
+  "hp": {
+    "value": 80
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.castaway.strikes.hatchet.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.castaway.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.castaway.strikes.blowgun.name",
+      "actions": "1",
+      "bonus": 15,
+      "reload": 1,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1",
+          "type": "piercing"
+        },
+        {
+          "dice": "2d6",
+          "type": "poison"
+        },
+        {
+          "dice": "1d6",
+          "type": "poison",
+          "persistent": true
+        }
+      ],
+      "item": "item.blowgun"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "skittish",
+      "section": "defense",
+      "name": "creature.castaway.abilities.skittish.name",
+      "actions": "reaction",
+      "trigger": "creature.castaway.abilities.skittish.trigger",
+      "text": "creature.castaway.abilities.skittish.text"
+    },
+    {
+      "id": "cockamamie-rant",
+      "section": "offense",
+      "name": "creature.castaway.abilities.cockamamie-rant.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.castaway.abilities.cockamamie-rant.text"
+    },
+    {
+      "id": "snare-master",
+      "section": "offense",
+      "name": "creature.castaway.abilities.snare-master.name",
+      "actions": "3",
+      "traits": [
+        "manipulate",
+        "trap"
+      ],
+      "frequency": "creature.castaway.abilities.snare-master.frequency",
+      "text": "creature.castaway.abilities.snare-master.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.castaway.abilities.sneak-attack.name",
+      "text": "creature.castaway.abilities.sneak-attack.text"
+    }
+  ]
+}

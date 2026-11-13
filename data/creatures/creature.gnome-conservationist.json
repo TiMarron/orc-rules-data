@@ -1,0 +1,240 @@
+{
+  "id": "creature.gnome-conservationist",
+  "type": "creature",
+  "name": "creature.gnome-conservationist.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 184,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "small",
+  "perception": {
+    "mod": 17,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "gnomish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 11
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 1,
+    "int": 2,
+    "wis": 4,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.sling-bullets",
+      "name": "creature.gnome-conservationist.items.0.name"
+    },
+    {
+      "item": "item.sling",
+      "potency": 1
+    },
+    {
+      "item": "item.sickle",
+      "name": "creature.gnome-conservationist.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 11,
+    "will": 14
+  },
+  "hp": {
+    "value": 100
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gnome-conservationist.strikes.trowel.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.sickle"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gnome-conservationist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gnome-conservationist.strikes.sling.name",
+      "actions": "1",
+      "bonus": 16,
+      "rangeIncrement": 60,
+      "reload": 1,
+      "traits": [
+        "magical",
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "animal-elocutionist",
+      "section": "top",
+      "name": "creature.gnome-conservationist.abilities.animal-elocutionist.name",
+      "text": "creature.gnome-conservationist.abilities.animal-elocutionist.text"
+    },
+    {
+      "id": "wild-leadership",
+      "section": "offense",
+      "name": "creature.gnome-conservationist.abilities.wild-leadership.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "primal"
+      ],
+      "text": "creature.gnome-conservationist.abilities.wild-leadership.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 24,
+      "attack": 17,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.gouging-claw"
+          },
+          {
+            "spell": "spell.know-the-way"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.gentle-landing"
+            },
+            {
+              "spell": "spell.runic-body"
+            },
+            {
+              "spell": "spell.spider-sting"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.animal-messenger"
+            },
+            {
+              "spell": "spell.darkvision"
+            },
+            {
+              "spell": "spell.entangling-flora"
+            },
+            {
+              "spell": "spell.oaken-resilience"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.grease"
+            },
+            {
+              "spell": "spell.mad-monkeys"
+            },
+            {
+              "spell": "spell.safe-passage"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

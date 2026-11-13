@@ -1,0 +1,222 @@
+{
+  "id": "creature.warmonger",
+  "type": "creature",
+  "name": "creature.warmonger.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 161,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 10,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 24
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 20
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 19
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 14
+    },
+    {
+      "lore": "creature.warmonger.lore.4",
+      "mod": 21
+    }
+  ],
+  "attributes": {
+    "str": 6,
+    "dex": 4,
+    "con": 5,
+    "int": 1,
+    "wis": 0,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.battle-axe",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "count": 2
+    },
+    {
+      "item": "item.composite-longbow",
+      "potency": 1,
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.hide-armor",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 29
+  },
+  "saves": {
+    "fortitude": 21,
+    "reflex": 20,
+    "will": 16
+  },
+  "hp": {
+    "value": 200
+  },
+  "speeds": {
+    "land": 30,
+    "climb": 10,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.warmonger.strikes.battle-axe.name",
+      "actions": "1",
+      "bonus": 23,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "2d8+12",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.battle-axe"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.warmonger.strikes.fist.name",
+      "actions": "1",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+12",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.warmonger.strikes.composite-longbow.name",
+      "actions": "1",
+      "bonus": 21,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8+9",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-longbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "war-ready",
+      "section": "top",
+      "name": "creature.warmonger.abilities.war-ready.name",
+      "text": "creature.warmonger.abilities.war-ready.text"
+    },
+    {
+      "id": "pain-training",
+      "section": "defense",
+      "name": "creature.warmonger.abilities.pain-training.name",
+      "text": "creature.warmonger.abilities.pain-training.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.warmonger.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "patch-and-set",
+      "section": "offense",
+      "name": "creature.warmonger.abilities.patch-and-set.name",
+      "actions": "1",
+      "traits": [
+        "healing",
+        "manipulate"
+      ],
+      "frequency": "creature.warmonger.abilities.patch-and-set.frequency",
+      "requirements": "creature.warmonger.abilities.patch-and-set.requirements",
+      "text": "creature.warmonger.abilities.patch-and-set.text"
+    },
+    {
+      "id": "power-through",
+      "section": "offense",
+      "name": "creature.warmonger.abilities.power-through.name",
+      "actions": "2",
+      "requirements": "creature.warmonger.abilities.power-through.requirements",
+      "text": "creature.warmonger.abilities.power-through.text"
+    },
+    {
+      "id": "sight-prey",
+      "section": "offense",
+      "name": "creature.warmonger.abilities.sight-prey.name",
+      "actions": "1",
+      "traits": [
+        "concentrate"
+      ],
+      "text": "creature.warmonger.abilities.sight-prey.text"
+    },
+    {
+      "id": "war-cry",
+      "section": "offense",
+      "name": "creature.warmonger.abilities.war-cry.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "emotion",
+        "mental"
+      ],
+      "frequency": "creature.warmonger.abilities.war-cry.frequency",
+      "trigger": "creature.warmonger.abilities.war-cry.trigger",
+      "text": "creature.warmonger.abilities.war-cry.text"
+    }
+  ]
+}

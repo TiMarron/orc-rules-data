@@ -1,0 +1,261 @@
+{
+  "id": "creature.charlatan",
+  "type": "creature",
+  "name": "creature.charlatan.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 20,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 9
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 7
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 11
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 8
+    },
+    {
+      "lore": "creature.charlatan.lore.8",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 0,
+    "int": 2,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.disguise-kit"
+    },
+    {
+      "name": "creature.charlatan.items.1.name"
+    },
+    {
+      "item": "item.shortsword"
+    },
+    {
+      "item": "item.thieves-toolkit"
+    },
+    {
+      "item": "item.whip"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 8,
+    "will": 10
+  },
+  "hp": {
+    "value": 40
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.charlatan.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.charlatan.strikes.whip.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "disarm",
+        "finesse",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.whip"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.charlatan.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "versatile-performance",
+      "section": "top",
+      "name": "creature.charlatan.abilities.versatile-performance.name",
+      "text": "creature.charlatan.abilities.versatile-performance.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.charlatan.abilities.sneak-attack.name",
+      "text": "creature.charlatan.abilities.sneak-attack.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "spontaneous",
+      "tradition": "occult",
+      "dc": 20,
+      "attack": 12,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.figment"
+          },
+          {
+            "spell": "spell.message"
+          },
+          {
+            "spell": "spell.prestidigitation"
+          },
+          {
+            "spell": "spell.telekinetic-hand"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.disguise-magic"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            },
+            {
+              "spell": "spell.ventriloquism"
+            }
+          ],
+          "slots": 3
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.charm"
+            },
+            {
+              "spell": "spell.illusory-disguise"
+            },
+            {
+              "spell": "spell.invisibility"
+            }
+          ],
+          "slots": 2
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.charlatan.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 19,
+      "cantrips": {
+        "rank": 1,
+        "spells": [
+          {
+            "spell": "spell.courageous-anthem"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.counter-performance"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

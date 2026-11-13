@@ -1,0 +1,140 @@
+{
+  "id": "creature.mayor",
+  "type": "creature",
+  "name": "creature.mayor.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 109,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.mayor.language-note",
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 15
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 15
+    },
+    {
+      "lore": "creature.mayor.lore.2",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.society",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 2,
+    "con": 1,
+    "int": 1,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.shortsword",
+      "name": "creature.mayor.items.0.name"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 3,
+    "will": 14
+  },
+  "hp": {
+    "value": 16
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.mayor.strikes.decorative-sword-of-station.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.mayor.strikes.fist.name",
+      "actions": "1",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "political-specialist",
+      "section": "top",
+      "name": "creature.mayor.abilities.political-specialist.name",
+      "text": "creature.mayor.abilities.political-specialist.text"
+    },
+    {
+      "id": "pulse-of-the-electorate",
+      "section": "top",
+      "name": "creature.mayor.abilities.pulse-of-the-electorate.name",
+      "text": "creature.mayor.abilities.pulse-of-the-electorate.text"
+    },
+    {
+      "id": "but-will-it-lose-me-votes",
+      "section": "defense",
+      "name": "creature.mayor.abilities.but-will-it-lose-me-votes.name",
+      "actions": "reaction",
+      "frequency": "creature.mayor.abilities.but-will-it-lose-me-votes.frequency",
+      "trigger": "creature.mayor.abilities.but-will-it-lose-me-votes.trigger",
+      "text": "creature.mayor.abilities.but-will-it-lose-me-votes.text"
+    }
+  ]
+}

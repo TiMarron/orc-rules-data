@@ -1,0 +1,144 @@
+{
+  "id": "creature.urchin",
+  "type": "creature",
+  "name": "creature.urchin.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 40,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "small",
+  "perception": {
+    "mod": 3
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 4
+    },
+    {
+      "skill": "skill.society",
+      "mod": 3
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 3
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": -1,
+    "dex": 3,
+    "con": 0,
+    "int": 1,
+    "wis": 1,
+    "cha": 2
+  },
+  "items": [
+    {
+      "name": "creature.urchin.items.0.name"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 7,
+    "will": 3
+  },
+  "hp": {
+    "value": 8
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.urchin.strikes.shiv.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d4-1",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.urchin.strikes.fist.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4-1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.urchin.strikes.rock.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4-1",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "collaborative-thievery",
+      "section": "offense",
+      "name": "creature.urchin.abilities.collaborative-thievery.name",
+      "text": "creature.urchin.abilities.collaborative-thievery.text"
+    },
+    {
+      "id": "pickpocket",
+      "section": "offense",
+      "name": "creature.urchin.abilities.pickpocket.name",
+      "text": "creature.urchin.abilities.pickpocket.text"
+    }
+  ]
+}

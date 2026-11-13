@@ -1,0 +1,142 @@
+{
+  "id": "creature.teacher",
+  "type": "creature",
+  "name": "creature.teacher.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 139,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 4
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.teacher.language-note",
+  "skills": [
+    {
+      "lore": "creature.teacher.lore.0",
+      "mod": 14
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 5
+    },
+    {
+      "lore": "creature.teacher.lore.3",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 0,
+    "con": -1,
+    "int": 4,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.staff",
+      "name": "creature.teacher.items.0.name"
+    },
+    {
+      "name": "creature.teacher.items.1.name"
+    },
+    {
+      "item": "item.writing-set"
+    }
+  ],
+  "ac": {
+    "value": 12
+  },
+  "saves": {
+    "fortitude": 1,
+    "reflex": 2,
+    "will": 6
+  },
+  "hp": {
+    "value": 5
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.teacher.strikes.cane.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.teacher.strikes.fist.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "academic-specialist",
+      "section": "top",
+      "name": "creature.teacher.abilities.academic-specialist.name",
+      "text": "creature.teacher.abilities.academic-specialist.text"
+    },
+    {
+      "id": "font-of-knowledge",
+      "section": "top",
+      "name": "creature.teacher.abilities.font-of-knowledge.name",
+      "text": "creature.teacher.abilities.font-of-knowledge.text"
+    },
+    {
+      "id": "inspirational-presence",
+      "section": "top",
+      "name": "creature.teacher.abilities.inspirational-presence.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental"
+      ],
+      "aura": 50,
+      "text": "creature.teacher.abilities.inspirational-presence.text"
+    }
+  ]
+}

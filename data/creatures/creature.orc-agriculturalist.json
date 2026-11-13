@@ -1,0 +1,191 @@
+{
+  "id": "creature.orc-agriculturalist",
+  "type": "creature",
+  "name": "creature.orc-agriculturalist.name",
+  "traits": [
+    "humanoid",
+    "orc"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 206,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "orcish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 3
+    },
+    {
+      "lore": "creature.orc-agriculturalist.lore.2",
+      "mod": 13
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 7
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 2,
+    "int": 0,
+    "wis": 4,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.blowgun",
+      "ammunition": {
+        "item": "item.blowgun-darts",
+        "count": 20
+      }
+    },
+    {
+      "name": "creature.orc-agriculturalist.items.1.name",
+      "note": "creature.orc-agriculturalist.items.1.note"
+    },
+    {
+      "name": "creature.orc-agriculturalist.items.2.name",
+      "count": 5
+    },
+    {
+      "item": "item.sickle"
+    }
+  ],
+  "ac": {
+    "value": 14
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 6,
+    "will": 7
+  },
+  "hp": {
+    "value": 25
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.orc-agriculturalist.strikes.pitchfork.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "reach"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+2",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.orc-agriculturalist.strikes.sickle.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.sickle"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.orc-agriculturalist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.orc-agriculturalist.strikes.blowgun.name",
+      "actions": "1",
+      "bonus": 6,
+      "rangeIncrement": 20,
+      "reload": 1,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.blowgun"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "farming-specialist",
+      "section": "top",
+      "name": "creature.orc-agriculturalist.abilities.farming-specialist.name",
+      "text": "creature.orc-agriculturalist.abilities.farming-specialist.text"
+    },
+    {
+      "id": "herbal-poison",
+      "section": "offense",
+      "name": "creature.orc-agriculturalist.abilities.herbal-poison.name",
+      "actions": "1",
+      "traits": [
+        "manipulate",
+        "poison"
+      ],
+      "text": "creature.orc-agriculturalist.abilities.herbal-poison.text"
+    },
+    {
+      "id": "poison-detector",
+      "section": "offense",
+      "name": "creature.orc-agriculturalist.abilities.poison-detector.name",
+      "actions": "2",
+      "text": "creature.orc-agriculturalist.abilities.poison-detector.text"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "creature.messenger",
+  "type": "creature",
+  "name": "creature.messenger.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 70,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 5
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 6
+    },
+    {
+      "skill": "skill.society",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 4
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 4,
+    "int": 0,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "name": "creature.messenger.items.1.name"
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 10
+      }
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 7,
+    "reflex": 10,
+    "will": 4
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.messenger.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.messenger.strikes.fist.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.messenger.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.messenger.strikes.sling.name",
+      "actions": "1",
+      "bonus": 8,
+      "rangeIncrement": 50,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "dont-shoot-the-messenger",
+      "section": "top",
+      "name": "creature.messenger.abilities.dont-shoot-the-messenger.name",
+      "text": "creature.messenger.abilities.dont-shoot-the-messenger.text"
+    },
+    {
+      "id": "road-runner",
+      "section": "top",
+      "name": "creature.messenger.abilities.road-runner.name",
+      "text": "creature.messenger.abilities.road-runner.text"
+    },
+    {
+      "id": "express-messenger",
+      "section": "offense",
+      "name": "creature.messenger.abilities.express-messenger.name",
+      "text": "creature.messenger.abilities.express-messenger.text"
+    },
+    {
+      "id": "special-delivery",
+      "section": "offense",
+      "name": "creature.messenger.abilities.special-delivery.name",
+      "actions": "2",
+      "text": "creature.messenger.abilities.special-delivery.text"
+    }
+  ]
+}

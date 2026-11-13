@@ -1,0 +1,152 @@
+{
+  "id": "creature.diver",
+  "type": "creature",
+  "name": "creature.diver.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 148,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 9
+  },
+  "languages": [
+    "common",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 9
+    },
+    {
+      "lore": "creature.diver.lore.3",
+      "mod": 11
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 3,
+    "con": 2,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.trident"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 6
+  },
+  "hp": {
+    "value": 50
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.diver.strikes.trident.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.diver.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.diver.strikes.trident-2.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d8+5",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "underwater-fighter",
+      "section": "top",
+      "name": "creature.diver.abilities.underwater-fighter.name",
+      "text": "creature.diver.abilities.underwater-fighter.text"
+    },
+    {
+      "id": "underwater-awareness",
+      "section": "defense",
+      "name": "creature.diver.abilities.underwater-awareness.name",
+      "actions": "reaction",
+      "trigger": "creature.diver.abilities.underwater-awareness.trigger",
+      "text": "creature.diver.abilities.underwater-awareness.text"
+    },
+    {
+      "id": "dive",
+      "section": "offense",
+      "name": "creature.diver.abilities.dive.name",
+      "actions": "1",
+      "text": "creature.diver.abilities.dive.text"
+    }
+  ]
+}

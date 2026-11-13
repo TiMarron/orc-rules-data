@@ -1,0 +1,222 @@
+{
+  "id": "creature.gang-leader",
+  "type": "creature",
+  "name": "creature.gang-leader.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 160,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 14
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 17
+    },
+    {
+      "skill": "skill.society",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 17
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 15
+    },
+    {
+      "lore": "creature.gang-leader.lore.7",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 2,
+    "int": 2,
+    "wis": -1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.glue-bomb-moderate"
+    },
+    {
+      "item": "item.healing-potion-lesser"
+    },
+    {
+      "item": "item.shortsword",
+      "potency": 1
+    },
+    {
+      "item": "item.sling",
+      "ammunition": {
+        "item": "item.sling-bullets",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 13,
+    "reflex": 17,
+    "will": 12
+  },
+  "hp": {
+    "value": 110
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gang-leader.strikes.fist.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gang-leader.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gang-leader.strikes.sling.name",
+      "actions": "1",
+      "bonus": 17,
+      "rangeIncrement": 50,
+      "reload": 1,
+      "traits": [
+        "propulsive"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.sling"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deny-advantage",
+      "section": "defense",
+      "name": "creature.gang-leader.abilities.deny-advantage.name",
+      "text": "creature.gang-leader.abilities.deny-advantage.text"
+    },
+    {
+      "id": "evasive-reflexes",
+      "section": "defense",
+      "name": "creature.gang-leader.abilities.evasive-reflexes.name",
+      "text": "creature.gang-leader.abilities.evasive-reflexes.text"
+    },
+    {
+      "id": "nimble-dodge",
+      "section": "defense",
+      "name": "creature.gang-leader.abilities.nimble-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.gang-leader.abilities.nimble-dodge.trigger",
+      "text": "creature.gang-leader.abilities.nimble-dodge.text"
+    },
+    {
+      "id": "brutal-rally",
+      "section": "offense",
+      "name": "creature.gang-leader.abilities.brutal-rally.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "trigger": "creature.gang-leader.abilities.brutal-rally.trigger",
+      "text": "creature.gang-leader.abilities.brutal-rally.text"
+    },
+    {
+      "id": "gang-up",
+      "section": "offense",
+      "name": "creature.gang-leader.abilities.gang-up.name",
+      "text": "creature.gang-leader.abilities.gang-up.text"
+    },
+    {
+      "id": "quick-draw",
+      "section": "offense",
+      "name": "creature.gang-leader.abilities.quick-draw.name",
+      "actions": "1",
+      "text": "creature.gang-leader.abilities.quick-draw.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.gang-leader.abilities.sneak-attack.name",
+      "text": "creature.gang-leader.abilities.sneak-attack.text"
+    },
+    {
+      "id": "surprise-attacker",
+      "section": "offense",
+      "name": "creature.gang-leader.abilities.surprise-attacker.name",
+      "text": "creature.gang-leader.abilities.surprise-attacker.text"
+    }
+  ]
+}

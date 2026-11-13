@@ -1,0 +1,221 @@
+{
+  "id": "creature.beast-tamer",
+  "type": "creature",
+  "name": "creature.beast-tamer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 128,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common",
+    "wildsong"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "lore": "creature.beast-tamer.lore.1",
+      "mod": 6
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 12
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 8
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 1,
+    "con": 2,
+    "int": 0,
+    "wis": 4,
+    "cha": 2
+  },
+  "items": [
+    {
+      "name": "creature.beast-tamer.items.0.name",
+      "note": "creature.beast-tamer.items.0.note"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.rope",
+      "note": "creature.beast-tamer.items.2.note"
+    },
+    {
+      "item": "item.whip"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 7,
+    "will": 12
+  },
+  "hp": {
+    "value": 55
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.beast-tamer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.beast-tamer.strikes.whip.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "disarm",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.whip"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "wild-empathy",
+      "section": "top",
+      "name": "creature.beast-tamer.abilities.wild-empathy.name",
+      "text": "creature.beast-tamer.abilities.wild-empathy.text"
+    },
+    {
+      "id": "animal-trick",
+      "section": "offense",
+      "name": "creature.beast-tamer.abilities.animal-trick.name",
+      "actions": "1",
+      "text": "creature.beast-tamer.abilities.animal-trick.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "primal",
+      "dc": 22,
+      "attack": 13,
+      "cantrips": {
+        "rank": 2,
+        "spells": [
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.guidance"
+          },
+          {
+            "spell": "spell.ignition"
+          },
+          {
+            "spell": "spell.stabilize"
+          },
+          {
+            "spell": "spell.tangle-vine"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.grease"
+            },
+            {
+              "spell": "spell.jump"
+            },
+            {
+              "spell": "spell.runic-body"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.animal-form"
+            },
+            {
+              "spell": "spell.animal-messenger"
+            },
+            {
+              "spell": "spell.speak-with-animals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.beast-tamer.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 22,
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.heal-animal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

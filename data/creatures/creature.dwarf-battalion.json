@@ -1,0 +1,145 @@
+{
+  "id": "creature.dwarf-battalion",
+  "type": "creature",
+  "name": "creature.dwarf-battalion.name",
+  "traits": [
+    "dwarf",
+    "humanoid",
+    "troop"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 175,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "dwarven"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 13
+    },
+    {
+      "lore": "creature.dwarf-battalion.lore.2",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 1,
+    "con": 4,
+    "int": 0,
+    "wis": 3,
+    "cha": -1
+  },
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 11,
+    "will": 13
+  },
+  "hp": {
+    "value": 105,
+    "note": "creature.dwarf-battalion.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "note": "creature.dwarf-battalion.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "dwarven-doughtiness",
+      "section": "defense",
+      "name": "creature.dwarf-battalion.abilities.dwarven-doughtiness.name",
+      "text": "creature.dwarf-battalion.abilities.dwarven-doughtiness.text"
+    },
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.dwarf-battalion.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.dwarf-battalion.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.dwarf-battalion.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "bombing-barrage",
+      "section": "offense",
+      "name": "creature.dwarf-battalion.abilities.bombing-barrage.name",
+      "actions": "2",
+      "text": "creature.dwarf-battalion.abilities.bombing-barrage.text"
+    },
+    {
+      "id": "coordinated-pummel",
+      "section": "offense",
+      "name": "creature.dwarf-battalion.abilities.coordinated-pummel.name",
+      "actions": "1-3",
+      "frequency": "creature.dwarf-battalion.abilities.coordinated-pummel.frequency",
+      "text": "creature.dwarf-battalion.abilities.coordinated-pummel.text"
+    },
+    {
+      "id": "dwarven-war-song",
+      "section": "offense",
+      "name": "creature.dwarf-battalion.abilities.dwarven-war-song.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "text": "creature.dwarf-battalion.abilities.dwarven-war-song.text"
+    },
+    {
+      "id": "shields-up",
+      "section": "offense",
+      "name": "creature.dwarf-battalion.abilities.shields-up.name",
+      "actions": "reaction",
+      "text": "creature.dwarf-battalion.abilities.shields-up.text"
+    }
+  ]
+}

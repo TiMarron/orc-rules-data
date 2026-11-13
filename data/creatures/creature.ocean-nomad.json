@@ -1,0 +1,152 @@
+{
+  "id": "creature.ocean-nomad",
+  "type": "creature",
+  "name": "creature.ocean-nomad.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 150,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 10
+    },
+    {
+      "lore": "creature.ocean-nomad.lore.2",
+      "mod": 18
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 4,
+    "con": 2,
+    "int": 0,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.net"
+    },
+    {
+      "item": "item.trident",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 17,
+    "will": 11
+  },
+  "hp": {
+    "value": 100
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.ocean-nomad.strikes.trident.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.ocean-nomad.strikes.trident-2.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d8+10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.trident"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.ocean-nomad.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "tidal-pressure",
+      "section": "defense",
+      "name": "creature.ocean-nomad.abilities.tidal-pressure.name",
+      "actions": "reaction",
+      "traits": [
+        "water"
+      ],
+      "trigger": "creature.ocean-nomad.abilities.tidal-pressure.trigger",
+      "text": "creature.ocean-nomad.abilities.tidal-pressure.text"
+    },
+    {
+      "id": "stab-and-twist",
+      "section": "offense",
+      "name": "creature.ocean-nomad.abilities.stab-and-twist.name",
+      "actions": "1",
+      "requirements": "creature.ocean-nomad.abilities.stab-and-twist.requirements",
+      "text": "creature.ocean-nomad.abilities.stab-and-twist.text"
+    }
+  ]
+}

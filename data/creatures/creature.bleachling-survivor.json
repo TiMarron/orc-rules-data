@@ -1,0 +1,193 @@
+{
+  "id": "creature.bleachling-survivor",
+  "type": "creature",
+  "name": "creature.bleachling-survivor.name",
+  "traits": [
+    "gnome",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 182,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "small",
+  "perception": {
+    "mod": 8,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "fey",
+    "gnomish"
+  ],
+  "skills": [
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 8
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 7
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 1,
+    "con": 3,
+    "int": 1,
+    "wis": 3,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.longbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 5,
+    "reflex": 8,
+    "will": 12
+  },
+  "hp": {
+    "value": 34
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.bleachling-survivor.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.bleachling-survivor.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bleachling-survivor.strikes.longbow.name",
+      "actions": "1",
+      "bonus": 9,
+      "rangeIncrement": 100,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "volley"
+      ],
+      "traitValues": {
+        "deadly": "d10",
+        "volley": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.longbow"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.bleachling-survivor.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+1",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "unflappable",
+      "section": "top",
+      "name": "creature.bleachling-survivor.abilities.unflappable.name",
+      "text": "creature.bleachling-survivor.abilities.unflappable.text"
+    },
+    {
+      "id": "flinch-back",
+      "section": "defense",
+      "name": "creature.bleachling-survivor.abilities.flinch-back.name",
+      "actions": "reaction",
+      "trigger": "creature.bleachling-survivor.abilities.flinch-back.trigger",
+      "text": "creature.bleachling-survivor.abilities.flinch-back.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.bleachling-survivor.abilities.sneak-attack.name",
+      "text": "creature.bleachling-survivor.abilities.sneak-attack.text"
+    }
+  ]
+}

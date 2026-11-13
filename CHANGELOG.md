@@ -4,6 +4,14 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Added
+
+- NPC Core (`npc-core`) as a source book. Its first records: 109 creatures,
+  the firearm traits capacity, concussive, kickback and scatter, the troop trait
+  and the Troop Defenses and Troop Movement abilities, two spells and two items.
+
 ## 0.14.0 — 2026-11-10
 
 ### Added

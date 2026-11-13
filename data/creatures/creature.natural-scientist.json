@@ -1,0 +1,150 @@
+{
+  "id": "creature.natural-scientist",
+  "type": "creature",
+  "name": "creature.natural-scientist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 53,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 11
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 8
+    },
+    {
+      "lore": "creature.natural-scientist.lore.2",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 5
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 1,
+    "con": 2,
+    "int": 2,
+    "wis": 4,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.explorers-clothing"
+    },
+    {
+      "item": "item.staff"
+    },
+    {
+      "item": "item.writing-set"
+    }
+  ],
+  "ac": {
+    "value": 16
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 5,
+    "will": 11
+  },
+  "hp": {
+    "value": 25
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.natural-scientist.strikes.staff.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d8"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.staff"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.natural-scientist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.natural-scientist.strikes.rock.name",
+      "actions": "1",
+      "bonus": 7,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "never-lost",
+      "section": "top",
+      "name": "creature.natural-scientist.abilities.never-lost.name",
+      "text": "creature.natural-scientist.abilities.never-lost.text"
+    },
+    {
+      "id": "trained-observer",
+      "section": "top",
+      "name": "creature.natural-scientist.abilities.trained-observer.name",
+      "text": "creature.natural-scientist.abilities.trained-observer.text"
+    }
+  ]
+}

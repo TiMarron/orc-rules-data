@@ -1,0 +1,90 @@
+{
+  "id": "creature.conscript-squad",
+  "type": "creature",
+  "name": "creature.conscript-squad.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "troop"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 89,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 8
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 2,
+    "int": 0,
+    "wis": -1,
+    "cha": 0
+  },
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 9,
+    "will": 6,
+    "note": "creature.conscript-squad.saves.note"
+  },
+  "hp": {
+    "value": 54,
+    "note": "creature.conscript-squad.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25,
+    "note": "creature.conscript-squad.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "untrained-rabble",
+      "section": "top",
+      "name": "creature.conscript-squad.abilities.untrained-rabble.name",
+      "text": "creature.conscript-squad.abilities.untrained-rabble.text"
+    },
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.conscript-squad.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "indiscriminate-assault",
+      "section": "offense",
+      "name": "creature.conscript-squad.abilities.indiscriminate-assault.name",
+      "actions": "1-3",
+      "frequency": "creature.conscript-squad.abilities.indiscriminate-assault.frequency",
+      "text": "creature.conscript-squad.abilities.indiscriminate-assault.text"
+    }
+  ]
+}

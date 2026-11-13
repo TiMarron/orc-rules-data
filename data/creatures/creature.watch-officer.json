@@ -1,0 +1,191 @@
+{
+  "id": "creature.watch-officer",
+  "type": "creature",
+  "name": "creature.watch-officer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 113,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 8,
+    "note": "creature.watch-officer.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 11
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 6
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "lore": "creature.watch-officer.lore.3",
+      "mod": 7
+    },
+    {
+      "skill": "skill.society",
+      "mod": 5
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 1,
+    "con": 3,
+    "int": 0,
+    "wis": 1,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.breastplate"
+    },
+    {
+      "item": "item.crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.signal-whistle"
+    },
+    {
+      "item": "item.steel-shield",
+      "hardness": 5,
+      "hp": 20,
+      "bt": 10
+    },
+    {
+      "item": "item.warhammer"
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "creature.watch-officer.ac.note"
+  },
+  "saves": {
+    "fortitude": 10,
+    "reflex": 6,
+    "will": 8
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.watch-officer.strikes.warhammer.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.warhammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.watch-officer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.watch-officer.strikes.crossbow.name",
+      "actions": "1",
+      "bonus": 10,
+      "rangeIncrement": 120,
+      "reload": 1,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "air-of-authority",
+      "section": "defense",
+      "name": "creature.watch-officer.abilities.air-of-authority.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental"
+      ],
+      "aura": 10,
+      "text": "creature.watch-officer.abilities.air-of-authority.text"
+    },
+    {
+      "id": "bravery",
+      "section": "defense",
+      "name": "creature.watch-officer.abilities.bravery.name",
+      "text": "creature.watch-officer.abilities.bravery.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.watch-officer.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "shield-block",
+      "section": "defense",
+      "name": "creature.watch-officer.abilities.shield-block.name",
+      "ability": "ability.shield-block",
+      "actions": "reaction"
+    },
+    {
+      "id": "sudden-charge",
+      "section": "offense",
+      "name": "creature.watch-officer.abilities.sudden-charge.name",
+      "actions": "2",
+      "frequency": "creature.watch-officer.abilities.sudden-charge.frequency",
+      "text": "creature.watch-officer.abilities.sudden-charge.text"
+    }
+  ]
+}

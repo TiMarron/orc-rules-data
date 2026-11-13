@@ -1,0 +1,216 @@
+{
+  "id": "creature.enigmatic-conspiracist",
+  "type": "creature",
+  "name": "creature.enigmatic-conspiracist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 98,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 10,
+    "note": "creature.enigmatic-conspiracist.perception.note"
+  },
+  "languages": [
+    "aklo",
+    "common",
+    "elven",
+    "sakvroth"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 9
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 12
+    },
+    {
+      "lore": "creature.enigmatic-conspiracist.lore.4",
+      "mod": 14
+    },
+    {
+      "skill": "skill.society",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 0,
+    "int": 2,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.everlight-crystal"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.rapier"
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 12,
+    "will": 12
+  },
+  "hp": {
+    "value": 60
+  },
+  "resistances": [
+    {
+      "type": "mental",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.enigmatic-conspiracist.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "spill-secrets"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.enigmatic-conspiracist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.enigmatic-conspiracist.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "own": "spill-secrets"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "knowing-glance",
+      "section": "defense",
+      "name": "creature.enigmatic-conspiracist.abilities.knowing-glance.name",
+      "actions": "reaction",
+      "traits": [
+        "concentrate",
+        "emotion",
+        "fear",
+        "visual",
+        "mental"
+      ],
+      "trigger": "creature.enigmatic-conspiracist.abilities.knowing-glance.trigger",
+      "text": "creature.enigmatic-conspiracist.abilities.knowing-glance.text"
+    },
+    {
+      "id": "spill-secrets",
+      "section": "offense",
+      "name": "creature.enigmatic-conspiracist.abilities.spill-secrets.name",
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "text": "creature.enigmatic-conspiracist.abilities.spill-secrets.text"
+    },
+    {
+      "id": "unbelievable-connection",
+      "section": "offense",
+      "name": "creature.enigmatic-conspiracist.abilities.unbelievable-connection.name",
+      "actions": "2",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "occult"
+      ],
+      "text": "creature.enigmatic-conspiracist.abilities.unbelievable-connection.text"
+    }
+  ]
+}

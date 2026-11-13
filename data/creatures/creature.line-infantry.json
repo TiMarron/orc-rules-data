@@ -1,0 +1,108 @@
+{
+  "id": "creature.line-infantry",
+  "type": "creature",
+  "name": "creature.line-infantry.name",
+  "traits": [
+    "human",
+    "humanoid",
+    "troop"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 90,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "gargantuan",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "lore": "creature.line-infantry.lore.1",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 2,
+    "con": 3,
+    "int": 0,
+    "wis": 1,
+    "cha": 0
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 14,
+    "will": 13
+  },
+  "hp": {
+    "value": 96,
+    "note": "creature.line-infantry.hp.note"
+  },
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 5
+    },
+    {
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 20,
+    "note": "creature.line-infantry.speeds.note"
+  },
+  "strikes": [],
+  "abilities": [
+    {
+      "id": "no-retreat",
+      "section": "defense",
+      "name": "creature.line-infantry.abilities.no-retreat.name",
+      "text": "creature.line-infantry.abilities.no-retreat.text"
+    },
+    {
+      "id": "troop-defenses",
+      "section": "defense",
+      "name": "creature.line-infantry.abilities.troop-defenses.name",
+      "ability": "ability.troop-defenses"
+    },
+    {
+      "id": "bolt-salvo",
+      "section": "offense",
+      "name": "creature.line-infantry.abilities.bolt-salvo.name",
+      "actions": "3",
+      "text": "creature.line-infantry.abilities.bolt-salvo.text"
+    },
+    {
+      "id": "clash-of-steel",
+      "section": "offense",
+      "name": "creature.line-infantry.abilities.clash-of-steel.name",
+      "actions": "1-3",
+      "frequency": "creature.line-infantry.abilities.clash-of-steel.frequency",
+      "text": "creature.line-infantry.abilities.clash-of-steel.text"
+    },
+    {
+      "id": "drilled-in-formations",
+      "section": "offense",
+      "name": "creature.line-infantry.abilities.drilled-in-formations.name",
+      "actions": "1",
+      "frequency": "creature.line-infantry.abilities.drilled-in-formations.frequency",
+      "text": "creature.line-infantry.abilities.drilled-in-formations.text"
+    }
+  ]
+}

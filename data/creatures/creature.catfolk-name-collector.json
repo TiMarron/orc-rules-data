@@ -1,0 +1,214 @@
+{
+  "id": "creature.catfolk-name-collector",
+  "type": "creature",
+  "name": "creature.catfolk-name-collector.name",
+  "traits": [
+    "catfolk",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 172,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 13,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "own": "spiritsense",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "amurrun",
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.catfolk-name-collector.lore.0",
+      "mod": 15
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 12
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 14
+    },
+    {
+      "skill": "skill.society",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 1,
+    "int": 2,
+    "wis": 1,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.sickle",
+      "potency": 1
+    },
+    {
+      "name": "creature.catfolk-name-collector.items.2.name"
+    },
+    {
+      "name": "creature.catfolk-name-collector.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 14,
+    "will": 13
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.catfolk-name-collector.strikes.sickle.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.sickle"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.catfolk-name-collector.strikes.claw.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "slashing"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "spiritsense",
+      "section": "top",
+      "name": "creature.catfolk-name-collector.abilities.spiritsense.name",
+      "text": "creature.catfolk-name-collector.abilities.spiritsense.text"
+    },
+    {
+      "id": "name-the-worthy",
+      "section": "defense",
+      "name": "creature.catfolk-name-collector.abilities.name-the-worthy.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "linguistic",
+        "mental"
+      ],
+      "frequency": "creature.catfolk-name-collector.abilities.name-the-worthy.frequency",
+      "trigger": "creature.catfolk-name-collector.abilities.name-the-worthy.trigger",
+      "text": "creature.catfolk-name-collector.abilities.name-the-worthy.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "occult",
+      "dc": 24,
+      "attack": 16,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.read-aura"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.bless"
+            },
+            {
+              "spell": "spell.spirit-link"
+            },
+            {
+              "spell": "spell.sure-strike"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.laughing-fit"
+            },
+            {
+              "spell": "spell.see-the-unseen"
+            },
+            {
+              "spell": "spell.soothe"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.heroism"
+            },
+            {
+              "spell": "spell.illusory-creature"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

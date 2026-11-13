@@ -1,0 +1,35 @@
+{
+  "id": "spell.infiltrators-tunnel",
+  "type": "spell",
+  "name": "spell.infiltrators-tunnel.name",
+  "traits": [
+    "concentrate",
+    "manipulate",
+    "teleportation"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 26,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.infiltrators-tunnel.text",
+  "rank": 4,
+  "traditions": [
+    "arcane",
+    "occult"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.infiltrators-tunnel.range",
+  "duration": "spell.infiltrators-tunnel.duration",
+  "heightened": [
+    {
+      "level": "6",
+      "text": "spell.infiltrators-tunnel.heightened.0"
+    }
+  ]
+}

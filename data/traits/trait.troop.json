@@ -1,0 +1,15 @@
+{
+  "id": "trait.troop",
+  "type": "trait",
+  "name": "trait.troop.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 238,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "trait.troop.text"
+}

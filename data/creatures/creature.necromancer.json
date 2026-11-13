@@ -1,0 +1,174 @@
+{
+  "id": "creature.necromancer",
+  "type": "creature",
+  "name": "creature.necromancer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 99,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 10
+  },
+  "languages": [
+    "common",
+    "necril"
+  ],
+  "skills": [
+    {
+      "skill": "skill.arcana",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 3,
+    "con": 2,
+    "int": 4,
+    "wis": 2,
+    "cha": -1
+  },
+  "items": [
+    {
+      "name": "creature.necromancer.items.0.name"
+    },
+    {
+      "item": "item.light-mace"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 11,
+    "reflex": 12,
+    "will": 11
+  },
+  "hp": {
+    "value": 65
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.necromancer.strikes.light-mace.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "shove"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.light-mace"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.necromancer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "stench-of-decay",
+      "section": "top",
+      "name": "creature.necromancer.abilities.stench-of-decay.name",
+      "traits": [
+        "aura",
+        "occult",
+        "olfactory"
+      ],
+      "text": "creature.necromancer.abilities.stench-of-decay.text"
+    },
+    {
+      "id": "undead-arise",
+      "section": "offense",
+      "name": "creature.necromancer.abilities.undead-arise.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "manipulate",
+        "occult"
+      ],
+      "text": "creature.necromancer.abilities.undead-arise.text"
+    },
+    {
+      "id": "undead-attack",
+      "section": "offense",
+      "name": "creature.necromancer.abilities.undead-attack.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "requirements": "creature.necromancer.abilities.undead-attack.requirements",
+      "text": "creature.necromancer.abilities.undead-attack.text"
+    },
+    {
+      "id": "wave-of-death",
+      "section": "offense",
+      "name": "creature.necromancer.abilities.wave-of-death.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate",
+        "occult",
+        "void"
+      ],
+      "requirements": "creature.necromancer.abilities.wave-of-death.requirements",
+      "text": "creature.necromancer.abilities.wave-of-death.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "innate",
+      "tradition": "occult",
+      "dc": 23,
+      "cantrips": {
+        "rank": 3,
+        "spells": [
+          {
+            "spell": "spell.void-warp"
+          }
+        ]
+      }
+    }
+  ]
+}

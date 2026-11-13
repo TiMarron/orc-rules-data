@@ -1,0 +1,165 @@
+{
+  "id": "creature.combat-engineer",
+  "type": "creature",
+  "name": "creature.combat-engineer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 88,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 1,
+  "size": "medium",
+  "perception": {
+    "mod": 7
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 13
+    },
+    {
+      "lore": "creature.combat-engineer.lore.2",
+      "mod": 15
+    },
+    {
+      "lore": "creature.combat-engineer.lore.3",
+      "mod": 13
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 2,
+    "con": 1,
+    "int": 4,
+    "wis": 2,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.pick",
+      "name": "creature.combat-engineer.items.0.name"
+    },
+    {
+      "item": "item.heavy-crossbow",
+      "ammunition": {
+        "item": "item.bolts",
+        "count": 10
+      }
+    },
+    {
+      "item": "item.studded-leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 15
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 5,
+    "will": 7
+  },
+  "hp": {
+    "value": 20
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.combat-engineer.strikes.entrenching-tool.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.pick"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.combat-engineer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.combat-engineer.strikes.heavy-crossbow.name",
+      "actions": "1",
+      "bonus": 7,
+      "rangeIncrement": 120,
+      "reload": 2,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.heavy-crossbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "logistics-specialist",
+      "section": "top",
+      "name": "creature.combat-engineer.abilities.logistics-specialist.name",
+      "text": "creature.combat-engineer.abilities.logistics-specialist.text"
+    },
+    {
+      "id": "fortify",
+      "section": "offense",
+      "name": "creature.combat-engineer.abilities.fortify.name",
+      "traits": [
+        "concentrate",
+        "exploration",
+        "manipulate"
+      ],
+      "text": "creature.combat-engineer.abilities.fortify.text"
+    },
+    {
+      "id": "improvised-barricade",
+      "section": "offense",
+      "name": "creature.combat-engineer.abilities.improvised-barricade.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "requirements": "creature.combat-engineer.abilities.improvised-barricade.requirements",
+      "text": "creature.combat-engineer.abilities.improvised-barricade.text"
+    }
+  ]
+}

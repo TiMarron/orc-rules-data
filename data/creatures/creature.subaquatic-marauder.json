@@ -1,0 +1,143 @@
+{
+  "id": "creature.subaquatic-marauder",
+  "type": "creature",
+  "name": "creature.subaquatic-marauder.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 149,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 13
+    },
+    {
+      "lore": "creature.subaquatic-marauder.lore.2",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 4,
+    "int": 2,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.chain",
+      "note": "creature.subaquatic-marauder.items.0.note"
+    },
+    {
+      "item": "item.half-plate",
+      "name": "creature.subaquatic-marauder.items.1.name"
+    },
+    {
+      "item": "item.gauntlet"
+    },
+    {
+      "item": "item.javelin"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 7,
+    "will": 12
+  },
+  "hp": {
+    "value": 60
+  },
+  "immunitiesNote": "creature.subaquatic-marauder.immunities-note",
+  "speeds": {
+    "land": 20,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.subaquatic-marauder.strikes.gauntlet.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.gauntlet"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.subaquatic-marauder.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 15,
+      "range": 30,
+      "traits": [
+        "tethered"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+8",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sealed-diving-suit",
+      "section": "top",
+      "name": "creature.subaquatic-marauder.abilities.sealed-diving-suit.name",
+      "text": "creature.subaquatic-marauder.abilities.sealed-diving-suit.text"
+    },
+    {
+      "id": "depth-charge",
+      "section": "offense",
+      "name": "creature.subaquatic-marauder.abilities.depth-charge.name",
+      "actions": "2",
+      "traits": [
+        "air",
+        "manipulate",
+        "sonic"
+      ],
+      "text": "creature.subaquatic-marauder.abilities.depth-charge.text"
+    },
+    {
+      "id": "retract",
+      "section": "offense",
+      "name": "creature.subaquatic-marauder.abilities.retract.name",
+      "actions": "1",
+      "requirements": "creature.subaquatic-marauder.abilities.retract.requirements",
+      "text": "creature.subaquatic-marauder.abilities.retract.text"
+    }
+  ]
+}

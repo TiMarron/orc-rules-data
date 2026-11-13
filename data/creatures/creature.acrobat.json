@@ -1,0 +1,189 @@
+{
+  "id": "creature.acrobat",
+  "type": "creature",
+  "name": "creature.acrobat.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 124,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "lore": "creature.acrobat.lore.2",
+      "mod": 5
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 5
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 9
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 2,
+    "int": 1,
+    "wis": 0,
+    "cha": 1
+  },
+  "items": [
+    {
+      "item": "item.climbing-kit"
+    },
+    {
+      "item": "item.dagger",
+      "count": 5
+    },
+    {
+      "item": "item.rope",
+      "note": "creature.acrobat.items.2.note"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 11,
+    "will": 4
+  },
+  "hp": {
+    "value": 30
+  },
+  "speeds": {
+    "land": 30
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.acrobat.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.acrobat.strikes.foot.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.acrobat.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "acrobatic-specialist",
+      "section": "top",
+      "name": "creature.acrobat.abilities.acrobatic-specialist.name",
+      "text": "creature.acrobat.abilities.acrobatic-specialist.text"
+    },
+    {
+      "id": "steady-balance",
+      "section": "top",
+      "name": "creature.acrobat.abilities.steady-balance.name",
+      "text": "creature.acrobat.abilities.steady-balance.text"
+    },
+    {
+      "id": "cat-fall",
+      "section": "defense",
+      "name": "creature.acrobat.abilities.cat-fall.name",
+      "text": "creature.acrobat.abilities.cat-fall.text"
+    },
+    {
+      "id": "nimble-dodge",
+      "section": "defense",
+      "name": "creature.acrobat.abilities.nimble-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.acrobat.abilities.nimble-dodge.trigger",
+      "text": "creature.acrobat.abilities.nimble-dodge.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.acrobat.abilities.sneak-attack.name",
+      "text": "creature.acrobat.abilities.sneak-attack.text"
+    },
+    {
+      "id": "swinging-strike",
+      "section": "offense",
+      "name": "creature.acrobat.abilities.swinging-strike.name",
+      "actions": "2",
+      "text": "creature.acrobat.abilities.swinging-strike.text"
+    }
+  ]
+}

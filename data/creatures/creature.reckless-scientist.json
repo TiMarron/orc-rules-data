@@ -1,0 +1,208 @@
+{
+  "id": "creature.reckless-scientist",
+  "type": "creature",
+  "name": "creature.reckless-scientist.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 158,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "medium",
+  "perception": {
+    "mod": 12
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 12
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 16
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 9
+    },
+    {
+      "lore": "creature.reckless-scientist.lore.3",
+      "mod": 14
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 10
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 14
+    },
+    {
+      "lore": "creature.reckless-scientist.lore.6",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 4,
+    "con": 4,
+    "int": 4,
+    "wis": 2,
+    "cha": -1
+  },
+  "items": [
+    {
+      "item": "item.alchemists-toolkit"
+    },
+    {
+      "item": "item.sickle",
+      "potency": 1
+    },
+    {
+      "item": "item.leather-armor",
+      "name": "creature.reckless-scientist.items.2.name"
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 16,
+    "reflex": 14,
+    "will": 10,
+    "note": "creature.reckless-scientist.saves.note"
+  },
+  "hp": {
+    "value": 95
+  },
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.reckless-scientist.strikes.sickle.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.sickle"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.reckless-scientist.strikes.fist.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.reckless-scientist.strikes.alchemical-grenade.name",
+      "actions": "1",
+      "bonus": 16,
+      "rangeIncrement": 20,
+      "traits": [
+        "splash"
+      ],
+      "damage": [
+        {
+          "dice": "2d6",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ]
+        },
+        {
+          "dice": "2",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ],
+          "persistent": true,
+          "note": "creature.reckless-scientist.strikes.alchemical-grenade.damage.1.note"
+        },
+        {
+          "dice": "2",
+          "types": [
+            "acid",
+            "cold",
+            "fire"
+          ],
+          "splash": true,
+          "note": "creature.reckless-scientist.strikes.alchemical-grenade.damage.2.note"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "unstable-collection",
+      "section": "top",
+      "name": "creature.reckless-scientist.abilities.unstable-collection.name",
+      "text": "creature.reckless-scientist.abilities.unstable-collection.text"
+    },
+    {
+      "id": "unstable-explosion",
+      "section": "defense",
+      "name": "creature.reckless-scientist.abilities.unstable-explosion.name",
+      "text": "creature.reckless-scientist.abilities.unstable-explosion.text"
+    },
+    {
+      "id": "quick-grenadier",
+      "section": "offense",
+      "name": "creature.reckless-scientist.abilities.quick-grenadier.name",
+      "actions": "1",
+      "text": "creature.reckless-scientist.abilities.quick-grenadier.text"
+    },
+    {
+      "id": "reckless-alchemy",
+      "section": "offense",
+      "name": "creature.reckless-scientist.abilities.reckless-alchemy.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "manipulate"
+      ],
+      "text": "creature.reckless-scientist.abilities.reckless-alchemy.text"
+    }
+  ]
+}

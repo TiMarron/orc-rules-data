@@ -1,0 +1,163 @@
+{
+  "id": "creature.harbormaster",
+  "type": "creature",
+  "name": "creature.harbormaster.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 111,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.harbormaster.language-note",
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 9
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "lore": "creature.harbormaster.lore.3",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 5
+    },
+    {
+      "lore": "creature.harbormaster.lore.5",
+      "mod": 10
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 2,
+    "int": 2,
+    "wis": 1,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.fishing-tackle"
+    },
+    {
+      "item": "item.hatchet",
+      "count": 2
+    },
+    {
+      "name": "creature.harbormaster.items.2.name"
+    },
+    {
+      "item": "item.manacles"
+    },
+    {
+      "item": "item.spyglass"
+    }
+  ],
+  "ac": {
+    "value": 18
+  },
+  "saves": {
+    "fortitude": 8,
+    "reflex": 10,
+    "will": 8
+  },
+  "hp": {
+    "value": 45
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.harbormaster.strikes.hatchet.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.harbormaster.strikes.fist.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.harbormaster.strikes.hatchet-2.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.hatchet"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "steady-balance",
+      "section": "top",
+      "name": "creature.harbormaster.abilities.steady-balance.name",
+      "text": "creature.harbormaster.abilities.steady-balance.text"
+    },
+    {
+      "id": "experienced-hand",
+      "section": "offense",
+      "name": "creature.harbormaster.abilities.experienced-hand.name",
+      "text": "creature.harbormaster.abilities.experienced-hand.text"
+    }
+  ]
+}

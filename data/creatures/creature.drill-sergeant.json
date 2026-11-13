@@ -1,0 +1,194 @@
+{
+  "id": "creature.drill-sergeant",
+  "type": "creature",
+  "name": "creature.drill-sergeant.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 93,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 18
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 20
+    },
+    {
+      "lore": "creature.drill-sergeant.lore.2",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 3,
+    "con": 2,
+    "int": 2,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.chain-shirt"
+    },
+    {
+      "item": "item.javelin",
+      "count": 6
+    },
+    {
+      "item": "item.longsword",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ]
+    }
+  ],
+  "ac": {
+    "value": 25
+  },
+  "saves": {
+    "fortitude": 14,
+    "reflex": 15,
+    "will": 20
+  },
+  "hp": {
+    "value": 120
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.drill-sergeant.strikes.longsword.name",
+      "actions": "1",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d8+12",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.longsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.drill-sergeant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+12",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.drill-sergeant.strikes.javelin.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "30"
+      },
+      "damage": [
+        {
+          "dice": "1d6+12",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.javelin"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "commanding-aura",
+      "section": "defense",
+      "name": "creature.drill-sergeant.abilities.commanding-aura.name",
+      "traits": [
+        "aura",
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "aura": 60,
+      "text": "creature.drill-sergeant.abilities.commanding-aura.text"
+    },
+    {
+      "id": "you-dont-have-my-permission-to-die",
+      "section": "defense",
+      "name": "creature.drill-sergeant.abilities.you-dont-have-my-permission-to-die.name",
+      "actions": "reaction",
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "linguistic",
+        "mental"
+      ],
+      "trigger": "creature.drill-sergeant.abilities.you-dont-have-my-permission-to-die.trigger",
+      "text": "creature.drill-sergeant.abilities.you-dont-have-my-permission-to-die.text"
+    },
+    {
+      "id": "chastising-enforcement",
+      "section": "offense",
+      "name": "creature.drill-sergeant.abilities.chastising-enforcement.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.drill-sergeant.abilities.chastising-enforcement.text"
+    },
+    {
+      "id": "keep-up-with-me",
+      "section": "offense",
+      "name": "creature.drill-sergeant.abilities.keep-up-with-me.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "requirements": "creature.drill-sergeant.abilities.keep-up-with-me.requirements",
+      "text": "creature.drill-sergeant.abilities.keep-up-with-me.text"
+    }
+  ]
+}

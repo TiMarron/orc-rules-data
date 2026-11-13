@@ -1,0 +1,243 @@
+{
+  "id": "creature.assassin",
+  "type": "creature",
+  "name": "creature.assassin.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 23,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 16
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 12
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 10
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 10
+    },
+    {
+      "skill": "skill.medicine",
+      "mod": 14
+    },
+    {
+      "skill": "skill.society",
+      "mod": 12
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 19
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 15
+    },
+    {
+      "lore": "creature.assassin.lore.9",
+      "mod": 14
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 5,
+    "con": 2,
+    "int": 2,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.composite-shortbow",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.darkvision-elixir-lesser"
+    },
+    {
+      "item": "item.giant-centipede-venom",
+      "count": 4
+    },
+    {
+      "item": "item.invisibility-potion"
+    },
+    {
+      "item": "item.leather-armor"
+    },
+    {
+      "item": "item.lethargy-poison",
+      "count": 3
+    },
+    {
+      "item": "item.rapier",
+      "potency": 1
+    }
+  ],
+  "ac": {
+    "value": 26
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 19,
+    "will": 14
+  },
+  "hp": {
+    "value": 130
+  },
+  "speeds": {
+    "land": 25,
+    "note": "creature.assassin.speeds.note"
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.assassin.strikes.rapier.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "deadly",
+        "disarm",
+        "finesse",
+        "magical"
+      ],
+      "traitValues": {
+        "deadly": "d8"
+      },
+      "damage": [
+        {
+          "dice": "1d6+9",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.rapier"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.assassin.strikes.fist.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+9",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.assassin.strikes.composite-shortbow.name",
+      "actions": "1",
+      "bonus": 20,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly",
+        "magical",
+        "propulsive"
+      ],
+      "traitValues": {
+        "deadly": "2d10"
+      },
+      "damage": [
+        {
+          "dice": "2d6+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.composite-shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deny-advantage",
+      "section": "defense",
+      "name": "creature.assassin.abilities.deny-advantage.name",
+      "text": "creature.assassin.abilities.deny-advantage.text"
+    },
+    {
+      "id": "nimble-dodge",
+      "section": "defense",
+      "name": "creature.assassin.abilities.nimble-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.assassin.abilities.nimble-dodge.trigger",
+      "text": "creature.assassin.abilities.nimble-dodge.text"
+    },
+    {
+      "id": "assassins-poison",
+      "section": "offense",
+      "name": "creature.assassin.abilities.assassins-poison.name",
+      "actions": "1",
+      "traits": [
+        "manipulate"
+      ],
+      "requirements": "creature.assassin.abilities.assassins-poison.requirements",
+      "text": "creature.assassin.abilities.assassins-poison.text"
+    },
+    {
+      "id": "quick-draw",
+      "section": "offense",
+      "name": "creature.assassin.abilities.quick-draw.name",
+      "actions": "1",
+      "text": "creature.assassin.abilities.quick-draw.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.assassin.abilities.sneak-attack.name",
+      "text": "creature.assassin.abilities.sneak-attack.text"
+    },
+    {
+      "id": "surprise-attack",
+      "section": "offense",
+      "name": "creature.assassin.abilities.surprise-attack.name",
+      "text": "creature.assassin.abilities.surprise-attack.text"
+    },
+    {
+      "id": "swift-sneak",
+      "section": "offense",
+      "name": "creature.assassin.abilities.swift-sneak.name",
+      "text": "creature.assassin.abilities.swift-sneak.text"
+    }
+  ]
+}

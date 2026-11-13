@@ -1,0 +1,166 @@
+{
+  "id": "creature.envoy",
+  "type": "creature",
+  "name": "creature.envoy.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 12,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 0,
+  "size": "medium",
+  "perception": {
+    "mod": 7,
+    "note": "creature.envoy.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "languageNote": "creature.envoy.language-note",
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 7
+    },
+    {
+      "skill": "skill.society",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 1,
+    "con": 0,
+    "int": 4,
+    "wis": 3,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.dagger"
+    },
+    {
+      "item": "item.clothing-fine"
+    },
+    {
+      "name": "creature.envoy.items.2.name"
+    },
+    {
+      "name": "creature.envoy.items.3.name"
+    }
+  ],
+  "ac": {
+    "value": 13
+  },
+  "saves": {
+    "fortitude": 2,
+    "reflex": 3,
+    "will": 11
+  },
+  "hp": {
+    "value": 12
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.envoy.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.envoy.strikes.fist.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.envoy.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "diplomatic-specialist",
+      "section": "top",
+      "name": "creature.envoy.abilities.diplomatic-specialist.name",
+      "text": "creature.envoy.abilities.diplomatic-specialist.text"
+    },
+    {
+      "id": "diplomatic-immunity",
+      "section": "offense",
+      "name": "creature.envoy.abilities.diplomatic-immunity.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.envoy.abilities.diplomatic-immunity.text"
+    }
+  ]
+}

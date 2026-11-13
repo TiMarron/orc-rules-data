@@ -1,0 +1,160 @@
+{
+  "id": "creature.smith",
+  "type": "creature",
+  "name": "creature.smith.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 9,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 3,
+  "size": "medium",
+  "perception": {
+    "mod": 5
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 8
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 15
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 5
+    },
+    {
+      "lore": "creature.smith.lore.3",
+      "mod": 15
+    },
+    {
+      "skill": "skill.society",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 1,
+    "con": 2,
+    "int": 3,
+    "wis": 0,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.artisans-toolkit"
+    },
+    {
+      "item": "item.padded-armor",
+      "name": "creature.smith.items.1.name"
+    },
+    {
+      "item": "item.light-hammer"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 8,
+    "will": 5
+  },
+  "hp": {
+    "value": 50
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.smith.strikes.light-hammer.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "smiths-fury"
+        }
+      ],
+      "item": "item.light-hammer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.smith.strikes.fist.name",
+      "actions": "1",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.smith.strikes.light-hammer-2.name",
+      "actions": "1",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "20"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        {
+          "own": "smiths-fury"
+        }
+      ],
+      "item": "item.light-hammer"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "smithing-specialist",
+      "section": "top",
+      "name": "creature.smith.abilities.smithing-specialist.name",
+      "text": "creature.smith.abilities.smithing-specialist.text"
+    },
+    {
+      "id": "smiths-fury",
+      "section": "offense",
+      "name": "creature.smith.abilities.smiths-fury.name",
+      "text": "creature.smith.abilities.smiths-fury.text"
+    }
+  ]
+}

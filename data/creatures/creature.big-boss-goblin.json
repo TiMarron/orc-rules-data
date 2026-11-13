@@ -1,0 +1,186 @@
+{
+  "id": "creature.big-boss-goblin",
+  "type": "creature",
+  "name": "creature.big-boss-goblin.name",
+  "traits": [
+    "goblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 188,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 6,
+  "size": "small",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 13
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    }
+  ],
+  "attributes": {
+    "str": 3,
+    "dex": 1,
+    "con": 3,
+    "int": 1,
+    "wis": 1,
+    "cha": 3
+  },
+  "items": [
+    {
+      "name": "creature.big-boss-goblin.items.0.name",
+      "note": "creature.big-boss-goblin.items.0.note"
+    },
+    {
+      "item": "item.hide-armor"
+    },
+    {
+      "item": "item.horsechopper",
+      "potency": 1
+    },
+    {
+      "item": "item.shortbow",
+      "ammunition": {
+        "item": "item.arrows",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 22
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 11,
+    "will": 14
+  },
+  "hp": {
+    "value": 100
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.big-boss-goblin.strikes.horsechopper.name",
+      "actions": "1",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "reach",
+        "trip",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "10",
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "1d8+5",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.horsechopper"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.big-boss-goblin.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "finesse",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+5",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.big-boss-goblin.strikes.shortbow.name",
+      "actions": "1",
+      "bonus": 14,
+      "rangeIncrement": 60,
+      "reload": 0,
+      "traits": [
+        "deadly"
+      ],
+      "traitValues": {
+        "deadly": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortbow"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.big-boss-goblin.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "not-me",
+      "section": "defense",
+      "name": "creature.big-boss-goblin.abilities.not-me.name",
+      "actions": "reaction",
+      "traits": [
+        "manipulate"
+      ],
+      "trigger": "creature.big-boss-goblin.abilities.not-me.trigger",
+      "text": "creature.big-boss-goblin.abilities.not-me.text"
+    },
+    {
+      "id": "no-fight-fair",
+      "section": "offense",
+      "name": "creature.big-boss-goblin.abilities.no-fight-fair.name",
+      "text": "creature.big-boss-goblin.abilities.no-fight-fair.text"
+    },
+    {
+      "id": "stab-it-stab-it-stab-it",
+      "section": "offense",
+      "name": "creature.big-boss-goblin.abilities.stab-it-stab-it-stab-it.name",
+      "actions": "1",
+      "text": "creature.big-boss-goblin.abilities.stab-it-stab-it-stab-it.text"
+    }
+  ]
+}

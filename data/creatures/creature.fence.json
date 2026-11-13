@@ -1,0 +1,223 @@
+{
+  "id": "creature.fence",
+  "type": "creature",
+  "name": "creature.fence.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 21,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 5,
+  "size": "medium",
+  "perception": {
+    "mod": 11
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "lore": "creature.fence.lore.0",
+      "mod": 13
+    },
+    {
+      "skill": "skill.acrobatics",
+      "mod": 10
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 13
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 13
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 11
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 11
+    },
+    {
+      "skill": "skill.society",
+      "mod": 11
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 10
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 10
+    },
+    {
+      "lore": "creature.fence.lore.9",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 0,
+    "int": 4,
+    "wis": 2,
+    "cha": 4
+  },
+  "items": [
+    {
+      "item": "item.dagger",
+      "count": 10
+    },
+    {
+      "item": "item.darkvision-elixir-lesser"
+    },
+    {
+      "item": "item.disguise-kit"
+    },
+    {
+      "item": "item.shortsword"
+    },
+    {
+      "item": "item.smoke-ball-lesser",
+      "count": 2
+    },
+    {
+      "item": "item.thieves-toolkit"
+    }
+  ],
+  "ac": {
+    "value": 20
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 12,
+    "will": 15
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.fence.strikes.shortsword.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.shortsword"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.fence.strikes.dagger.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.fence.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.fence.strikes.dagger-2.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "thrown",
+        "versatile"
+      ],
+      "traitValues": {
+        "thrown": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.dagger"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fences-eye",
+      "section": "top",
+      "name": "creature.fence.abilities.fences-eye.name",
+      "text": "creature.fence.abilities.fences-eye.text"
+    },
+    {
+      "id": "fences-feint",
+      "section": "offense",
+      "name": "creature.fence.abilities.fences-feint.name",
+      "actions": "1",
+      "text": "creature.fence.abilities.fences-feint.text"
+    },
+    {
+      "id": "quick-rummage",
+      "section": "offense",
+      "name": "creature.fence.abilities.quick-rummage.name",
+      "actions": "1",
+      "text": "creature.fence.abilities.quick-rummage.text"
+    },
+    {
+      "id": "sneak-attack",
+      "section": "offense",
+      "name": "creature.fence.abilities.sneak-attack.name",
+      "text": "creature.fence.abilities.sneak-attack.text"
+    }
+  ]
+}

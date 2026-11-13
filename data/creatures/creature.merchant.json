@@ -1,0 +1,143 @@
+{
+  "id": "creature.merchant",
+  "type": "creature",
+  "name": "creature.merchant.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 8,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": -1,
+  "size": "medium",
+  "perception": {
+    "mod": 6
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.deception",
+      "mod": 10
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 12
+    },
+    {
+      "lore": "creature.merchant.lore.2",
+      "mod": 12
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 8
+    },
+    {
+      "skill": "skill.society",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 0,
+    "con": -1,
+    "int": 2,
+    "wis": 2,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.club"
+    },
+    {
+      "item": "item.padded-armor"
+    }
+  ],
+  "ac": {
+    "value": 13
+  },
+  "saves": {
+    "fortitude": 1,
+    "reflex": 2,
+    "will": 10
+  },
+  "hp": {
+    "value": 7
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.merchant.strikes.club.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.merchant.strikes.fist.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.merchant.strikes.club-2.name",
+      "actions": "1",
+      "bonus": 4,
+      "traits": [
+        "thrown"
+      ],
+      "traitValues": {
+        "thrown": "10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "item": "item.club"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "sales-specialist",
+      "section": "top",
+      "name": "creature.merchant.abilities.sales-specialist.name",
+      "text": "creature.merchant.abilities.sales-specialist.text"
+    },
+    {
+      "id": "appraising-eye",
+      "section": "top",
+      "name": "creature.merchant.abilities.appraising-eye.name",
+      "text": "creature.merchant.abilities.appraising-eye.text"
+    }
+  ]
+}

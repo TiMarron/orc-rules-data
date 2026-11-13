@@ -1,0 +1,114 @@
+{
+  "id": "creature.experienced-hound",
+  "type": "creature",
+  "name": "creature.experienced-hound.name",
+  "traits": [
+    "animal"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 219,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 16,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 60
+      }
+    ]
+  },
+  "languages": [],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 15
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 15
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 12
+    }
+  ],
+  "attributes": {
+    "str": 5,
+    "dex": 5,
+    "con": 4,
+    "int": -4,
+    "wis": 2,
+    "cha": 0
+  },
+  "ac": {
+    "value": 24
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 14,
+    "will": 12
+  },
+  "hp": {
+    "value": 115
+  },
+  "speeds": {
+    "land": 35
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.experienced-hound.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 16,
+      "traits": [],
+      "damage": [
+        {
+          "dice": "2d6+9",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        {
+          "ability": "ability.knockdown"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "drag",
+      "section": "offense",
+      "name": "creature.experienced-hound.abilities.drag.name",
+      "actions": "1",
+      "requirements": "creature.experienced-hound.abilities.drag.requirements",
+      "text": "creature.experienced-hound.abilities.drag.text"
+    },
+    {
+      "id": "humane-bite",
+      "section": "offense",
+      "name": "creature.experienced-hound.abilities.humane-bite.name",
+      "text": "creature.experienced-hound.abilities.humane-bite.text"
+    },
+    {
+      "id": "pack-attack",
+      "section": "offense",
+      "name": "creature.experienced-hound.abilities.pack-attack.name",
+      "text": "creature.experienced-hound.abilities.pack-attack.text"
+    }
+  ]
+}
