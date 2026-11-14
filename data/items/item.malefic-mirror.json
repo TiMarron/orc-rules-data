@@ -1,0 +1,45 @@
+{
+  "id": "item.malefic-mirror",
+  "type": "item",
+  "name": "item.malefic-mirror.name",
+  "traits": [
+    "invested",
+    "occult",
+    "scrying",
+    "unholy"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 107,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.malefic-mirror.text",
+  "level": 11,
+  "bulk": "2",
+  "activations": [
+    {
+      "name": "item.malefic-mirror.activations.0.name",
+      "time": "item.malefic-mirror.activations.0.time",
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "text": "item.malefic-mirror.activations.0.text"
+    },
+    {
+      "name": "item.malefic-mirror.activations.1.name",
+      "time": "item.malefic-mirror.activations.1.time",
+      "traits": [
+        "concentrate",
+        "manipulate",
+        "occult"
+      ],
+      "text": "item.malefic-mirror.activations.1.text"
+    }
+  ],
+  "category": "other",
+  "editNote": "Kept as category other: a full-sized scrying mirror kept in a sanctum has no item category of its own in the dataset. Level, Bulk and traits match page 107, which prints no Price."
+}

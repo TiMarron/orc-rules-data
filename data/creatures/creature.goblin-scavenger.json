@@ -1,0 +1,192 @@
+{
+  "id": "creature.goblin-scavenger",
+  "type": "creature",
+  "name": "creature.goblin-scavenger.name",
+  "traits": [
+    "goblin",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 186,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "small",
+  "perception": {
+    "mod": 14,
+    "senses": [
+      {
+        "ability": "ability.darkvision"
+      }
+    ]
+  },
+  "languages": [
+    "common",
+    "goblin"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 12
+    },
+    {
+      "skill": "skill.society",
+      "mod": 8
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 11
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 10
+    },
+    {
+      "skill": "skill.thievery",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 1,
+    "dex": 3,
+    "con": 2,
+    "int": 2,
+    "wis": 3,
+    "cha": 0
+  },
+  "items": [
+    {
+      "name": "creature.goblin-scavenger.items.0.name",
+      "ammunition": {
+        "name": "creature.goblin-scavenger.items.0.ammunition.name",
+        "count": 10
+      }
+    },
+    {
+      "name": "creature.goblin-scavenger.items.1.name",
+      "count": 2
+    },
+    {
+      "item": "item.dogslicer"
+    },
+    {
+      "item": "item.leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 9,
+    "reflex": 11,
+    "will": 13
+  },
+  "hp": {
+    "value": 70
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.goblin-scavenger.strikes.dogslicer.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "backstabber",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+3",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.dogslicer"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.goblin-scavenger.strikes.jaws.name",
+      "actions": "1",
+      "bonus": 12,
+      "traits": [
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d8+3",
+          "type": "piercing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.goblin-scavenger.strikes.big-boom-gun.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "fatal",
+        "modular"
+      ],
+      "damage": [
+        {
+          "choice": [
+            {
+              "dice": "2d6+2",
+              "type": "bludgeoning"
+            },
+            {
+              "dice": "2d6+2",
+              "type": "piercing"
+            },
+            {
+              "dice": "2d6+2",
+              "type": "slashing"
+            }
+          ]
+        }
+      ],
+      "traitValues": {
+        "fatal": "1d12",
+        "modular": "bludgeoning, piercing, or slashing"
+      },
+      "range": 20,
+      "reload": 1
+    }
+  ],
+  "abilities": [
+    {
+      "id": "finders-keepers",
+      "section": "defense",
+      "name": "creature.goblin-scavenger.abilities.finders-keepers.name",
+      "actions": "reaction",
+      "trigger": "creature.goblin-scavenger.abilities.finders-keepers.trigger",
+      "requirements": "creature.goblin-scavenger.abilities.finders-keepers.requirements",
+      "text": "creature.goblin-scavenger.abilities.finders-keepers.text"
+    },
+    {
+      "id": "fireworks-barrage",
+      "section": "offense",
+      "name": "creature.goblin-scavenger.abilities.fireworks-barrage.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "requirements": "creature.goblin-scavenger.abilities.fireworks-barrage.requirements",
+      "text": "creature.goblin-scavenger.abilities.fireworks-barrage.text"
+    },
+    {
+      "id": "one-persons-junk",
+      "section": "offense",
+      "name": "creature.goblin-scavenger.abilities.one-persons-junk.name",
+      "text": "creature.goblin-scavenger.abilities.one-persons-junk.text"
+    }
+  ],
+  "editNote": "Item parenthesis added from the book: page 186 prints \"(2)\" is the entry's count; the source omits it, and there is no errata for the book. Big boom gun read from the book: page 186 prints \"big boom gun +14 (cobbled; fatal d12; modular B, P, or S; range 20 feet; reload 1), Damage 2d6+2 modular\", and the source split the traits at the commas. The Strike is fatal d12 and modular between bludgeoning, piercing and slashing, with a range of 20 feet and reload 1. The cobbled trait is left off, for the dataset has no record of it; the book explains it only in the sidebar beside the stat block (a misfire on a failed attack unless a DC 5 flat check succeeds), which the record does not carry."
+}

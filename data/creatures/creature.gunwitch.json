@@ -1,0 +1,316 @@
+{
+  "id": "creature.gunwitch",
+  "type": "creature",
+  "name": "creature.gunwitch.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 78,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "level": 7,
+  "size": "medium",
+  "perception": {
+    "mod": 13
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.crafting",
+      "mod": 15
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 15
+    },
+    {
+      "skill": "skill.occultism",
+      "mod": 17
+    },
+    {
+      "lore": "creature.gunwitch.lore.4",
+      "mod": 15
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 4,
+    "con": 1,
+    "int": 4,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.musket-staff-of-force",
+      "ammunition": {
+        "name": "creature.gunwitch.items.0.ammunition.name",
+        "count": 20
+      }
+    }
+  ],
+  "ac": {
+    "value": 23
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 15,
+    "will": 15
+  },
+  "hp": {
+    "value": 90
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.gunwitch.strikes.musket-staff.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "finesse",
+        "magical",
+        "two-hand"
+      ],
+      "traitValues": {
+        "two-hand": "1d6"
+      },
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        },
+        {
+          "dice": "1d6",
+          "type": "force"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.gunwitch.strikes.fist.name",
+      "actions": "1",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.gunwitch.strikes.musket-staff-2.name",
+      "actions": "1",
+      "bonus": 18,
+      "rangeIncrement": 70,
+      "reload": 1,
+      "traits": [
+        "concussive",
+        "fatal",
+        "magical"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+6",
+          "type": "piercing"
+        },
+        {
+          "dice": "1d6",
+          "type": "force"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "firearm-familiar",
+      "section": "top",
+      "name": "creature.gunwitch.abilities.firearm-familiar.name",
+      "text": "creature.gunwitch.abilities.firearm-familiar.text"
+    },
+    {
+      "id": "acrobatic-dodge",
+      "section": "defense",
+      "name": "creature.gunwitch.abilities.acrobatic-dodge.name",
+      "actions": "reaction",
+      "trigger": "creature.gunwitch.abilities.acrobatic-dodge.trigger",
+      "text": "creature.gunwitch.abilities.acrobatic-dodge.text"
+    },
+    {
+      "id": "bewitched-shot",
+      "section": "offense",
+      "name": "creature.gunwitch.abilities.bewitched-shot.name",
+      "actions": "2",
+      "requirements": "creature.gunwitch.abilities.bewitched-shot.requirements",
+      "text": "creature.gunwitch.abilities.bewitched-shot.text"
+    },
+    {
+      "id": "bullet-storm",
+      "section": "offense",
+      "name": "creature.gunwitch.abilities.bullet-storm.name",
+      "actions": "2",
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "requirements": "creature.gunwitch.abilities.bullet-storm.requirements",
+      "text": "creature.gunwitch.abilities.bullet-storm.text"
+    },
+    {
+      "id": "hex-bullet",
+      "section": "offense",
+      "name": "creature.gunwitch.abilities.hex-bullet.name",
+      "actions": "1",
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "frequency": "creature.gunwitch.abilities.hex-bullet.frequency",
+      "text": "creature.gunwitch.abilities.hex-bullet.text"
+    },
+    {
+      "id": "recall-firearm",
+      "section": "offense",
+      "name": "creature.gunwitch.abilities.recall-firearm.name",
+      "actions": "3",
+      "traits": [
+        "concentrate",
+        "occult",
+        "teleportation"
+      ],
+      "frequency": "creature.gunwitch.abilities.recall-firearm.frequency",
+      "requirements": "creature.gunwitch.abilities.recall-firearm.requirements",
+      "text": "creature.gunwitch.abilities.recall-firearm.text"
+    }
+  ],
+  "spellcasting": [
+    {
+      "kind": "prepared",
+      "tradition": "occult",
+      "dc": 25,
+      "attack": 17,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.daze"
+          },
+          {
+            "spell": "spell.detect-magic"
+          },
+          {
+            "spell": "spell.light"
+          },
+          {
+            "spell": "spell.read-aura"
+          },
+          {
+            "spell": "spell.telekinetic-projectile"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "spells": [
+            {
+              "spell": "spell.enfeeble",
+              "count": 2
+            },
+            {
+              "spell": "spell.sure-strike"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "spells": [
+            {
+              "spell": "spell.invisibility"
+            },
+            {
+              "spell": "spell.telekinetic-maneuver",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "spells": [
+            {
+              "spell": "spell.haste"
+            },
+            {
+              "spell": "spell.paralyze"
+            },
+            {
+              "spell": "spell.slow"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.confusion"
+            },
+            {
+              "spell": "spell.flicker"
+            },
+            {
+              "spell": "spell.phantom-pain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "focus",
+      "name": "creature.gunwitch.spellcasting.1.name",
+      "focusPoints": 1,
+      "dc": 25,
+      "cantrips": {
+        "rank": 4,
+        "spells": [
+          {
+            "spell": "spell.nudge-fate"
+          }
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 4,
+          "spells": [
+            {
+              "spell": "spell.needle-of-vengeance"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

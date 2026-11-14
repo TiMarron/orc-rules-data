@@ -1,0 +1,140 @@
+{
+  "id": "creature.palace-guard",
+  "type": "creature",
+  "name": "creature.palace-guard.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 14,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 4,
+  "size": "medium",
+  "perception": {
+    "mod": 12,
+    "note": "creature.palace-guard.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 8
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 8
+    }
+  ],
+  "attributes": {
+    "str": 4,
+    "dex": 2,
+    "con": 3,
+    "int": 0,
+    "wis": 2,
+    "cha": 0
+  },
+  "items": [
+    {
+      "item": "item.chain-mail",
+      "name": "creature.palace-guard.items.0.name"
+    },
+    {
+      "item": "item.halberd"
+    },
+    {
+      "item": "item.manacles-simple"
+    }
+  ],
+  "ac": {
+    "value": 21
+  },
+  "saves": {
+    "fortitude": 12,
+    "reflex": 10,
+    "will": 10
+  },
+  "hp": {
+    "value": 60
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.palace-guard.strikes.halberd.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "reach",
+        "versatile"
+      ],
+      "traitValues": {
+        "reach": "10",
+        "versatile": "slashing"
+      },
+      "damage": [
+        {
+          "dice": "1d10+7",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.halberd"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.palace-guard.strikes.fist.name",
+      "actions": "1",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "guards-parry",
+      "section": "defense",
+      "name": "creature.palace-guard.abilities.guards-parry.name",
+      "actions": "reaction",
+      "trigger": "creature.palace-guard.abilities.guards-parry.trigger",
+      "text": "creature.palace-guard.abilities.guards-parry.text"
+    },
+    {
+      "id": "reactive-strike",
+      "section": "defense",
+      "name": "creature.palace-guard.abilities.reactive-strike.name",
+      "ability": "ability.reactive-strike",
+      "actions": "reaction"
+    },
+    {
+      "id": "crowd-control",
+      "section": "offense",
+      "name": "creature.palace-guard.abilities.crowd-control.name",
+      "actions": "1",
+      "requirements": "creature.palace-guard.abilities.crowd-control.requirements",
+      "text": "creature.palace-guard.abilities.crowd-control.text"
+    }
+  ],
+  "editNote": "Page 14 prints Reactive Strike as an ability of its own, after Guard's Parry, pointing to the glossary; the source ran its name into the end of Guard's Parry. \"Chain mail with palace insignia\" is the chain mail under its printed name."
+}

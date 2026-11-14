@@ -1,0 +1,216 @@
+{
+  "id": "creature.lucky-courser",
+  "type": "creature",
+  "name": "creature.lucky-courser.name",
+  "traits": [
+    "catfolk",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 173,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 8,
+  "size": "medium",
+  "perception": {
+    "mod": 18,
+    "senses": [
+      {
+        "ability": "ability.low-light-vision"
+      },
+      {
+        "ability": "ability.scent",
+        "acuity": "imprecise",
+        "range": 30
+      }
+    ]
+  },
+  "languages": [
+    "amurrun",
+    "common",
+    "fey"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 16
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 14
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 14
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 16
+    },
+    {
+      "skill": "skill.lore",
+      "mod": 16
+    },
+    {
+      "skill": "skill.stealth",
+      "mod": 18
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 16
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 3,
+    "int": 1,
+    "wis": 2,
+    "cha": 2
+  },
+  "items": [
+    {
+      "item": "item.arbalest",
+      "potency": 1,
+      "runes": [
+        {
+          "item": "item.striking"
+        }
+      ],
+      "note": "creature.lucky-courser.items.0.note"
+    },
+    {
+      "item": "item.whip",
+      "potency": 1
+    },
+    {
+      "item": "item.leather-armor"
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 17,
+    "reflex": 18,
+    "will": 14
+  },
+  "hp": {
+    "value": 140
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.lucky-courser.strikes.whip.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "disarm",
+        "finesse",
+        "nonlethal",
+        "reach",
+        "trip"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+12",
+          "type": "slashing"
+        }
+      ],
+      "item": "item.whip"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.lucky-courser.strikes.claw.name",
+      "actions": "1",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+12",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.lucky-courser.strikes.arbalest.name",
+      "actions": "1",
+      "bonus": 20,
+      "rangeIncrement": 110,
+      "reload": 1,
+      "traits": [
+        "backstabber",
+        "magical"
+      ],
+      "damage": [
+        {
+          "dice": "2d10+6",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.arbalest"
+    }
+  ],
+  "abilities": [
+    {
+      "id": "warning-ears",
+      "section": "top",
+      "name": "creature.lucky-courser.abilities.warning-ears.name",
+      "actions": "free",
+      "traits": [
+        "visual"
+      ],
+      "trigger": "creature.lucky-courser.abilities.warning-ears.trigger",
+      "text": "creature.lucky-courser.abilities.warning-ears.text"
+    },
+    {
+      "id": "guide-to-fortune",
+      "section": "defense",
+      "name": "creature.lucky-courser.abilities.guide-to-fortune.name",
+      "actions": "reaction",
+      "traits": [
+        "fortune"
+      ],
+      "frequency": "creature.lucky-courser.abilities.guide-to-fortune.frequency",
+      "trigger": "creature.lucky-courser.abilities.guide-to-fortune.trigger",
+      "text": "creature.lucky-courser.abilities.guide-to-fortune.text"
+    },
+    {
+      "id": "elusive-hunter",
+      "section": "offense",
+      "name": "creature.lucky-courser.abilities.elusive-hunter.name",
+      "text": "creature.lucky-courser.abilities.elusive-hunter.text"
+    },
+    {
+      "id": "feline-skirmish",
+      "section": "offense",
+      "name": "creature.lucky-courser.abilities.feline-skirmish.name",
+      "actions": "1",
+      "frequency": "creature.lucky-courser.abilities.feline-skirmish.frequency",
+      "text": "creature.lucky-courser.abilities.feline-skirmish.text"
+    },
+    {
+      "id": "head-shot",
+      "section": "offense",
+      "name": "creature.lucky-courser.abilities.head-shot.name",
+      "actions": "2",
+      "traits": [
+        "manipulate"
+      ],
+      "text": "creature.lucky-courser.abilities.head-shot.text"
+    }
+  ],
+  "editNote": "Page 173 prints \"claw +19 (agile, finesse, unarmed), Damage 1d4+12 slashing\"; the source runs the name into the bonus (\"claw+19\"), so the Strike went unread. \"+1 whip\" is the whip with a +1 potency; the source does not link it. The arbalest's two kinds of bolts stay the note the book prints."
+}

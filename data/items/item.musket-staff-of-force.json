@@ -1,0 +1,25 @@
+{
+  "id": "item.musket-staff-of-force",
+  "type": "item",
+  "name": "item.musket-staff-of-force.name",
+  "traits": [
+    "force",
+    "magical",
+    "staff"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 81,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "text": "item.musket-staff-of-force.text",
+  "level": 4,
+  "priceCp": 10000,
+  "bulk": "1",
+  "usage": "item.musket-staff-of-force.usage",
+  "category": "staff",
+  "editNote": "The source gives the staff's spells as an HTML list, which the converter turns into the dataset's list; the tags are reported for review and nothing is lost. The void staff's text is the book's, as the edit note says."
+}
