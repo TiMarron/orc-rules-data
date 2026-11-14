@@ -1,0 +1,44 @@
+{
+  "id": "spell.far-flung-fetch",
+  "type": "spell",
+  "name": "spell.far-flung-fetch.name",
+  "traits": [
+    "manipulate",
+    "subtle",
+    "teleportation"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 26,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.far-flung-fetch.text",
+  "rank": 2,
+  "traditions": [
+    "arcane",
+    "divine",
+    "occult"
+  ],
+  "cast": {
+    "actions": "1"
+  },
+  "range": "spell.far-flung-fetch.range",
+  "targets": "spell.far-flung-fetch.targets",
+  "heightened": [
+    {
+      "level": "3",
+      "text": "spell.far-flung-fetch.heightened.0"
+    },
+    {
+      "level": "5",
+      "text": "spell.far-flung-fetch.heightened.1"
+    },
+    {
+      "level": "7",
+      "text": "spell.far-flung-fetch.heightened.2"
+    }
+  ]
+}

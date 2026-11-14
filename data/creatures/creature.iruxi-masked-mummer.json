@@ -1,0 +1,190 @@
+{
+  "id": "creature.iruxi-masked-mummer",
+  "type": "creature",
+  "name": "creature.iruxi-masked-mummer.name",
+  "traits": [
+    "humanoid",
+    "lizardfolk"
+  ],
+  "rarity": "uncommon",
+  "source": {
+    "book": "npc-core",
+    "page": 205,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 9,
+  "size": "medium",
+  "perception": {
+    "mod": 18
+  },
+  "languages": [
+    "common",
+    "draconic",
+    "iruxi",
+    "thalassic"
+  ],
+  "skills": [
+    {
+      "skill": "skill.acrobatics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.athletics",
+      "mod": 17
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 19
+    },
+    {
+      "lore": "creature.iruxi-masked-mummer.lore.3",
+      "mod": 20
+    },
+    {
+      "skill": "skill.nature",
+      "mod": 18
+    },
+    {
+      "skill": "skill.performance",
+      "mod": 20
+    },
+    {
+      "skill": "skill.society",
+      "mod": 16
+    },
+    {
+      "skill": "skill.survival",
+      "mod": 18
+    }
+  ],
+  "attributes": {
+    "str": 2,
+    "dex": 4,
+    "con": 0,
+    "int": 1,
+    "wis": 3,
+    "cha": 4
+  },
+  "items": [
+    {
+      "name": "creature.iruxi-masked-mummer.items.0.name"
+    },
+    {
+      "item": "item.handwraps-of-mighty-blows-1-striking"
+    },
+    {
+      "name": "creature.iruxi-masked-mummer.items.2.name"
+    },
+    {
+      "item": "item.maestros-instrument-lesser",
+      "note": "creature.iruxi-masked-mummer.items.3.note"
+    }
+  ],
+  "ac": {
+    "value": 27
+  },
+  "saves": {
+    "fortitude": 15,
+    "reflex": 19,
+    "will": 18
+  },
+  "hp": {
+    "value": 155
+  },
+  "speeds": {
+    "land": 25,
+    "swim": 20
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.iruxi-masked-mummer.strikes.tail.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "finesse",
+        "sweep"
+      ],
+      "damage": [
+        {
+          "dice": "2d6+8",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "melee",
+      "name": "creature.iruxi-masked-mummer.strikes.claws.name",
+      "actions": "1",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile"
+      ],
+      "traitValues": {
+        "versatile": "piercing"
+      },
+      "damage": [
+        {
+          "dice": "2d4+8",
+          "type": "slashing"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.iruxi-masked-mummer.strikes.spectral-roar.name",
+      "actions": "2",
+      "bonus": 19,
+      "range": 30,
+      "traits": [
+        "primal",
+        "sonic"
+      ],
+      "damage": [
+        {
+          "dice": "3d10",
+          "type": "sonic"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "id": "deep-breath",
+      "section": "top",
+      "name": "creature.iruxi-masked-mummer.abilities.deep-breath.name",
+      "text": "creature.iruxi-masked-mummer.abilities.deep-breath.text"
+    },
+    {
+      "id": "don-mask",
+      "section": "offense",
+      "name": "creature.iruxi-masked-mummer.abilities.don-mask.name",
+      "actions": "3",
+      "traits": [
+        "primal"
+      ],
+      "frequency": "creature.iruxi-masked-mummer.abilities.don-mask.frequency",
+      "text": "creature.iruxi-masked-mummer.abilities.don-mask.text"
+    },
+    {
+      "id": "starry-presence",
+      "section": "offense",
+      "name": "creature.iruxi-masked-mummer.abilities.starry-presence.name",
+      "actions": "1",
+      "traits": [
+        "aura",
+        "illusion",
+        "light",
+        "mental",
+        "primal"
+      ],
+      "aura": 30,
+      "text": "creature.iruxi-masked-mummer.abilities.starry-presence.text"
+    }
+  ],
+  "editNote": "Items, page 205: \"ceremonial skull mask\" stays its printed name: the source links a page from before the Remaster, and the dataset has no record of it. Rarity corrected to the book: page 205 prints the trait line with uncommon; the source has common, and there is no errata for the book. Items, page 205: \"+1 striking handwraps of mighty blows\" is the +1 striking grade of the handwraps; the ceremonial skull mask has no record and stays its printed name."
+}

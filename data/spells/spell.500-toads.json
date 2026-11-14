@@ -1,0 +1,29 @@
+{
+  "id": "spell.500-toads",
+  "type": "spell",
+  "name": "spell.500-toads.name",
+  "traits": [
+    "concentrate",
+    "manipulate"
+  ],
+  "rarity": "rare",
+  "source": {
+    "book": "npc-core",
+    "page": 26,
+    "revision": "2025-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "text": "spell.500-toads.text",
+  "rank": 1,
+  "traditions": [
+    "arcane",
+    "primal"
+  ],
+  "cast": {
+    "actions": "2"
+  },
+  "range": "spell.500-toads.range",
+  "area": "spell.500-toads.area",
+  "duration": "spell.500-toads.duration"
+}

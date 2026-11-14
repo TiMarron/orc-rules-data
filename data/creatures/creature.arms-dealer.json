@@ -1,0 +1,219 @@
+{
+  "id": "creature.arms-dealer",
+  "type": "creature",
+  "name": "creature.arms-dealer.name",
+  "traits": [
+    "human",
+    "humanoid"
+  ],
+  "rarity": "common",
+  "source": {
+    "book": "npc-core",
+    "page": 76,
+    "revision": "2025-first"
+  },
+  "review": "assistant",
+  "edited": true,
+  "level": 2,
+  "size": "medium",
+  "perception": {
+    "mod": 9,
+    "note": "creature.arms-dealer.perception.note"
+  },
+  "languages": [
+    "common"
+  ],
+  "skills": [
+    {
+      "skill": "skill.crafting",
+      "mod": 7,
+      "note": "creature.arms-dealer.skills.0.note"
+    },
+    {
+      "skill": "skill.deception",
+      "mod": 7
+    },
+    {
+      "skill": "skill.diplomacy",
+      "mod": 7
+    },
+    {
+      "lore": "creature.arms-dealer.lore.3",
+      "mod": 14
+    },
+    {
+      "skill": "skill.intimidation",
+      "mod": 9
+    },
+    {
+      "skill": "skill.society",
+      "mod": 9
+    },
+    {
+      "lore": "creature.arms-dealer.lore.6",
+      "mod": 9
+    }
+  ],
+  "attributes": {
+    "str": 0,
+    "dex": 3,
+    "con": 0,
+    "int": 1,
+    "wis": 3,
+    "cha": 3
+  },
+  "items": [
+    {
+      "item": "item.flintlock-musket",
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.hand-cannon",
+      "ammunition": {
+        "item": "item.firearm-ammunition-10-rounds",
+        "count": 20
+      }
+    },
+    {
+      "item": "item.sword-cane"
+    }
+  ],
+  "ac": {
+    "value": 17
+  },
+  "saves": {
+    "fortitude": 6,
+    "reflex": 7,
+    "will": 9
+  },
+  "hp": {
+    "value": 28
+  },
+  "speeds": {
+    "land": 25
+  },
+  "strikes": [
+    {
+      "kind": "melee",
+      "name": "creature.arms-dealer.strikes.sword-cane.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "concealable",
+        "finesse"
+      ],
+      "damage": [
+        {
+          "dice": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.sword-cane"
+    },
+    {
+      "kind": "melee",
+      "name": "creature.arms-dealer.strikes.fist.name",
+      "actions": "1",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damage": [
+        {
+          "dice": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ]
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.arms-dealer.strikes.flintlock-musket.name",
+      "actions": "1",
+      "bonus": 11,
+      "rangeIncrement": 70,
+      "reload": 1,
+      "traits": [
+        "concussive",
+        "fatal"
+      ],
+      "traitValues": {
+        "fatal": "1d10"
+      },
+      "damage": [
+        {
+          "dice": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "item": "item.flintlock-musket"
+    },
+    {
+      "kind": "ranged",
+      "name": "creature.arms-dealer.strikes.hand-cannon.name",
+      "actions": "1",
+      "bonus": 11,
+      "traits": [
+        "modular"
+      ],
+      "damage": [
+        {
+          "choice": [
+            {
+              "dice": "1d6+3",
+              "type": "bludgeoning"
+            },
+            {
+              "dice": "1d6+3",
+              "type": "piercing"
+            },
+            {
+              "dice": "1d6+3",
+              "type": "slashing"
+            }
+          ]
+        }
+      ],
+      "item": "item.hand-cannon",
+      "traitValues": {
+        "modular": "bludgeoning, piercing, or slashing"
+      },
+      "rangeIncrement": 30,
+      "reload": 1
+    }
+  ],
+  "abilities": [
+    {
+      "id": "arms-dealing-specialist",
+      "section": "top",
+      "name": "creature.arms-dealer.abilities.arms-dealing-specialist.name",
+      "text": "creature.arms-dealer.abilities.arms-dealing-specialist.text"
+    },
+    {
+      "id": "you-call-that-a-gun",
+      "section": "defense",
+      "name": "creature.arms-dealer.abilities.you-call-that-a-gun.name",
+      "text": "creature.arms-dealer.abilities.you-call-that-a-gun.text"
+    },
+    {
+      "id": "take-stock",
+      "section": "offense",
+      "name": "creature.arms-dealer.abilities.take-stock.name",
+      "actions": "1",
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "text": "creature.arms-dealer.abilities.take-stock.text"
+    }
+  ],
+  "editNote": "Skill qualifier added from the book: page 76 prints \"Crafting +7 (+14 for firearms)\"; the source omits the parenthesis, and there is no errata for the book. Hand cannon corrected: page 77 prints its traits separated by semicolons, \"modular B, P, or S; range increment 30 feet; reload 1\", and the source split them at the commas. The Strike is modular between bludgeoning, piercing and slashing, with a range increment of 30 feet and reload 1. Its damage, which page 77 prints \"1d6+3 modular\", is 1d6+3 of the type the modular trait chooses: bludgeoning, piercing or slashing."
+}
