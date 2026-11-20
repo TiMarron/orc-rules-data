@@ -10,8 +10,9 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "trait.dragon.text",
+  "editNote": "The identifiedBy field read from the Creature Identification Skills table (AoN rules-2641); every row checked against the book p.55.",
   "identifiedBy": [
     "skill.arcana"
   ]
