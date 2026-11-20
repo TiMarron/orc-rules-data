@@ -1,0 +1,44 @@
+{
+  "id": "table.dc-adjustment",
+  "type": "table",
+  "name": "table.dc-adjustment.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 53,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "kind": "dc-adjustment",
+  "rows": [
+    {
+      "difficulty": "incredibly-easy",
+      "adjustment": -10
+    },
+    {
+      "difficulty": "very-easy",
+      "adjustment": -5
+    },
+    {
+      "difficulty": "easy",
+      "adjustment": -2
+    },
+    {
+      "difficulty": "hard",
+      "adjustment": 2,
+      "rarity": "uncommon"
+    },
+    {
+      "difficulty": "very-hard",
+      "adjustment": 5,
+      "rarity": "rare"
+    },
+    {
+      "difficulty": "incredibly-hard",
+      "adjustment": 10,
+      "rarity": "unique"
+    }
+  ]
+}

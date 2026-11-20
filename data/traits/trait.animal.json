@@ -9,7 +9,10 @@
     "page": 452,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
-  "text": "trait.animal.text"
+  "text": "trait.animal.text",
+  "identifiedBy": [
+    "skill.nature"
+  ]
 }

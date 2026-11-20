@@ -9,7 +9,10 @@
     "page": 461,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
-  "text": "trait.spirit.text"
+  "text": "trait.spirit.text",
+  "identifiedBy": [
+    "skill.occultism"
+  ]
 }

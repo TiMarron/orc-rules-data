@@ -9,7 +9,11 @@
     "page": 455,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
-  "text": "trait.elemental.text"
+  "text": "trait.elemental.text",
+  "identifiedBy": [
+    "skill.arcana",
+    "skill.nature"
+  ]
 }

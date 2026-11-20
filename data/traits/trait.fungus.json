@@ -12,5 +12,8 @@
   "review": "assistant",
   "edited": true,
   "text": "trait.fungus.text",
-  "editNote": "Sentences our copy carries and theirs does not were inspected and contain no Reserved Material."
+  "editNote": "Sentences our copy carries and theirs does not were inspected and contain no Reserved Material.",
+  "identifiedBy": [
+    "skill.nature"
+  ]
 }
