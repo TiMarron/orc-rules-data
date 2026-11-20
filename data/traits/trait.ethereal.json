@@ -12,5 +12,8 @@
   "review": "assistant",
   "edited": true,
   "text": "trait.ethereal.text",
-  "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor."
+  "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor.",
+  "identifiedBy": [
+    "skill.occultism"
+  ]
 }

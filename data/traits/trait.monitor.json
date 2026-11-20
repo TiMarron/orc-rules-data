@@ -12,5 +12,8 @@
   "review": "assistant",
   "edited": true,
   "text": "trait.monitor.text",
-  "editNote": "Reserved Material removed: the planes' proper names replaced with generic descriptors."
+  "editNote": "Reserved Material removed: the planes' proper names replaced with generic descriptors.",
+  "identifiedBy": [
+    "skill.religion"
+  ]
 }

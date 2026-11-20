@@ -9,7 +9,10 @@
     "page": 462,
     "revision": "2023-first"
   },
-  "review": "auto",
+  "review": "assistant",
   "edited": false,
-  "text": "trait.undead.text"
+  "text": "trait.undead.text",
+  "identifiedBy": [
+    "skill.religion"
+  ]
 }

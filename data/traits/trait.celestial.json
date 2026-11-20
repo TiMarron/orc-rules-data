@@ -12,5 +12,8 @@
   "review": "assistant",
   "edited": true,
   "text": "trait.celestial.text",
-  "editNote": "Reserved Material removed: the planar region's proper name replaced with a generic descriptor."
+  "editNote": "Reserved Material removed: the planar region's proper name replaced with a generic descriptor.",
+  "identifiedBy": [
+    "skill.religion"
+  ]
 }

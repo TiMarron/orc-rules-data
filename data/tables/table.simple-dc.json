@@ -1,0 +1,37 @@
+{
+  "id": "table.simple-dc",
+  "type": "table",
+  "name": "table.simple-dc.name",
+  "traits": [],
+  "rarity": "common",
+  "source": {
+    "book": "gm-core",
+    "page": 53,
+    "revision": "2023-first"
+  },
+  "review": "auto",
+  "edited": false,
+  "kind": "simple-dc",
+  "rows": [
+    {
+      "proficiency": "untrained",
+      "dc": 10
+    },
+    {
+      "proficiency": "trained",
+      "dc": 15
+    },
+    {
+      "proficiency": "expert",
+      "dc": 20
+    },
+    {
+      "proficiency": "master",
+      "dc": 30
+    },
+    {
+      "proficiency": "legendary",
+      "dc": 40
+    }
+  ]
+}

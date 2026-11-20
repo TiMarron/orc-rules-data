@@ -12,5 +12,9 @@
   "review": "assistant",
   "edited": true,
   "text": "trait.construct.text",
-  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content."
+  "editNote": "The wording is the book's; the shortfall is spread across the record and comes from the book's own line breaking, not from foreign content.",
+  "identifiedBy": [
+    "skill.arcana",
+    "skill.crafting"
+  ]
 }

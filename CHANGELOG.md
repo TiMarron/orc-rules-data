@@ -4,6 +4,17 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## Unreleased
+
+### Added
+
+- The `table` record type, for the tables a GM reads a number from, and three
+  of GM Core's: DCs by Level (with its Spell Rank column), DC Adjustments (with
+  the rarity each adjustment stands for) and Simple DCs.
+- `identifiedBy` on a trait record: the skills GM Core's Creature Identification
+  Skills table prints for a creature with the trait. The 21 traits the table
+  lists carry it.
+
 ## 0.15.0 — 2026-11-14
 
 ### Added

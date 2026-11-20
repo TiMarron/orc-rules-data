@@ -12,5 +12,8 @@
   "review": "assistant",
   "edited": true,
   "text": "trait.astral.text",
-  "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor, as the dataset already does for the ethereal trait."
+  "editNote": "Reserved Material removed: the plane's proper name replaced with a generic descriptor, as the dataset already does for the ethereal trait.",
+  "identifiedBy": [
+    "skill.occultism"
+  ]
 }
