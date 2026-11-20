@@ -8,7 +8,7 @@ under the ORC License. Engine-neutral: plain JSON plus JSON Schema, no runtime.
 - `data/<type>/<id>.json` — one record per file. Types: trait, condition, skill,
   action, feat, feature, ancestry, heritage, background, class, spell, item,
   subclass, package, archetype, ability, creature, ritual, material,
-  affliction, hazard, gift, vehicle.
+  affliction, hazard, gift, vehicle, table.
 - `i18n/en.json` — every human-readable string, keyed `<id>.<field>`.
 - `schema/` — JSON Schema (draft 2020-12) for every record type.
 - `books.json` — source books, page counts and known rules revisions.
@@ -398,6 +398,19 @@ cost tokens.
   `feet`; how it moves — wind, rowed, alchemical, magical, pulled, pedaled — and
   a `note` for a speed set by what pulls it), the `collision` damage and DC, and
   special `abilities` shaped as a hazard's.
+- A `table` is a rules table the book prints for the GM to read a number from,
+  with no creature, item or spell of its own; its `kind` fixes the shape of its
+  `rows`. `dc-by-level` (`table.dc-by-level`): the DC for a subject of a level
+  0…25 (`rows`: `level`, `dc`) and for a spell of a rank 1…10 (`ranks`: `rank`,
+  `dc`). `dc-adjustment` (`table.dc-adjustment`): the six difficulties a DC is
+  adjusted by (`difficulty` as a slug, `adjustment`), and on three of them the
+  `rarity` (uncommon, rare, unique) that takes that adjustment. `simple-dc`
+  (`table.simple-dc`): the DC by the `proficiency` rank a task calls for. Rows
+  stand in print order, each key once.
+- A creature trait the Creature Identification Skills table lists carries
+  `identifiedBy`: the skills that identify a creature with the trait, in print
+  order (`trait.beast` → Arcana, Nature). Twenty-one traits carry it; the field
+  is the table's and is checked against GM Core, not the trait's own book.
 
 ## Versioning
 

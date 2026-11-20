@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "table.schema.json",
+  "$comment": "A rules table the book prints for the GM to read a number from: no creature, item or spell of its own, only rows. `kind` names which table it is and fixes the shape of its rows. The validator checks what JSON Schema cannot: rows in print order without gaps, each key once.",
+  "$defs": {
+    "dc": { "type": "integer", "minimum": 1 },
+    "difficulty": {
+      "enum": ["incredibly-easy", "very-easy", "easy", "hard", "very-hard", "incredibly-hard"],
+      "$comment": "The six difficulties of the DC Adjustments table, as slugs; the label is the consumer's to localise."
+    },
+    "levelRow": {
+      "type": "object", "additionalProperties": false, "required": ["level", "dc"],
+      "properties": {
+        "level": { "type": "integer", "minimum": 0, "maximum": 25 },
+        "dc": { "$ref": "#/$defs/dc" }
+      }
+    },
+    "rankRow": {
+      "type": "object", "additionalProperties": false, "required": ["rank", "dc"],
+      "properties": {
+        "rank": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "dc": { "$ref": "#/$defs/dc" }
+      }
+    },
+    "adjustmentRow": {
+      "type": "object", "additionalProperties": false, "required": ["difficulty", "adjustment"],
+      "properties": {
+        "difficulty": { "$ref": "#/$defs/difficulty" },
+        "adjustment": { "type": "integer", "$comment": "What the difficulty adds to the DC: -10 … +10." },
+        "rarity": { "enum": ["uncommon", "rare", "unique"], "$comment": "The rarity the table prints on this difficulty's row: a subject of that rarity takes this adjustment. Absent where the book prints a dash." }
+      }
+    },
+    "simpleRow": {
+      "type": "object", "additionalProperties": false, "required": ["proficiency", "dc"],
+      "properties": {
+        "proficiency": { "$ref": "common.schema.json#/$defs/proficiencyRank" },
+        "dc": { "$ref": "#/$defs/dc" }
+      }
+    }
+  },
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["kind", "rows"],
+      "properties": {
+        "type": { "const": "table" },
+        "kind": {
+          "enum": ["dc-by-level", "dc-adjustment", "simple-dc"],
+          "$comment": "`dc-by-level`: the DC for a subject of a level, and for a spell of a rank (`ranks`). `dc-adjustment`: the difficulties a DC is adjusted by, and the rarity each stands for. `simple-dc`: the DC by the proficiency rank a task calls for."
+        },
+        "rows": { "type": "array", "minItems": 1 },
+        "ranks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/rankRow" }, "$comment": "Only `dc-by-level`: the Spell Rank column, by spell rank 1…10." }
+      }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "dc-by-level" } } },
+      "then": { "required": ["ranks"], "properties": { "rows": { "type": "array", "items": { "$ref": "#/$defs/levelRow" } } } },
+      "else": { "not": { "required": ["ranks"] } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "dc-adjustment" } } },
+      "then": { "properties": { "rows": { "type": "array", "items": { "$ref": "#/$defs/adjustmentRow" } } } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "simple-dc" } } },
+      "then": { "properties": { "rows": { "type": "array", "items": { "$ref": "#/$defs/simpleRow" } } } }
+    }
+  ],
+  "unevaluatedProperties": false
+}

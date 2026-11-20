@@ -124,6 +124,10 @@ const VALID: Record<string, Record<string, unknown>> = {
     ac: { value: 19 }, fortitude: 14, hardness: 10, hp: 100, bt: 50,
     speed: { mode: 'swim', feet: 30, propulsion: ['wind'] }, collision: { damage: '4d10', dc: 22 },
   }),
+  table: record('table', 'dc-by-level', {
+    text: undefined, kind: 'dc-by-level',
+    rows: [{ level: 0, dc: 14 }, { level: 1, dc: 15 }], ranks: [{ rank: 1, dc: 15 }],
+  }),
 };
 
 const WEAPON: Record<string, unknown> = record('item', 'longsword', {
@@ -1830,5 +1834,35 @@ describe('spell effect', () => {
   it('rejects a key the block does not have', () => {
     expect(messages({ whole: true, note: 'x' })).toContain('(note)');
     expect(messages({ whole: true, parts: [{ ...dmg, note: 'x' }] })).toContain('/effect/parts/0');
+  });
+});
+
+describe('rules tables and creature identification', () => {
+  const messages = (type: string, json: Record<string, unknown>) => issuesFor(type, json).join(String.fromCharCode(10));
+  const table = (over: Record<string, unknown>) => ({ ...VALID.table, ...over });
+
+  it('accepts a trait with the skills that identify its creatures', () => {
+    expect(issuesFor('trait', record('trait', 'beast', { identifiedBy: ['skill.arcana', 'skill.nature'] }))).toEqual([]);
+  });
+
+  it('rejects an empty identifiedBy, a repeated skill and a reference that is no skill', () => {
+    expect(messages('trait', record('trait', 'beast', { identifiedBy: [] }))).toContain('/identifiedBy');
+    expect(messages('trait', record('trait', 'beast', { identifiedBy: ['skill.nature', 'skill.nature'] }))).toContain('/identifiedBy');
+    expect(messages('trait', record('trait', 'beast', { identifiedBy: ['trait.nature'] }))).toContain('/identifiedBy/0');
+  });
+
+  it('accepts the adjustments table with and without a rarity, and the simple DCs', () => {
+    expect(issuesFor('table', table({ kind: 'dc-adjustment', ranks: undefined, rows: [{ difficulty: 'easy', adjustment: -2 }, { difficulty: 'hard', adjustment: 2, rarity: 'uncommon' }] }))).toEqual([]);
+    expect(issuesFor('table', table({ kind: 'simple-dc', ranks: undefined, rows: [{ proficiency: 'untrained', dc: 10 }] }))).toEqual([]);
+  });
+
+  it('rejects an unknown kind, rows of another kind, ranks outside the DCs by level, a level past 25 and an unknown key', () => {
+    expect(messages('table', table({ kind: 'dc-by-rank' }))).toContain('/kind');
+    expect(messages('table', table({ kind: 'simple-dc', ranks: undefined }))).toContain("required property 'proficiency'");
+    expect(messages('table', table({ kind: 'dc-adjustment', rows: [{ difficulty: 'easy', adjustment: -2 }] }))).toContain('must NOT be valid');
+    expect(messages('table', table({ ranks: undefined }))).toContain("required property 'ranks'");
+    expect(messages('table', table({ rows: [{ level: 26, dc: 52 }] }))).toContain('/rows/0/level');
+    expect(messages('table', table({ rows: [{ level: 0, dc: 14, note: 'x' }] }))).toContain('(note)');
+    expect(messages('table', table({ kind: 'dc-adjustment', ranks: undefined, rows: [{ difficulty: 'trivial', adjustment: -20 }] }))).toContain('/rows/0/difficulty');
   });
 });
