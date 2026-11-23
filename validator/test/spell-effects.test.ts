@@ -286,4 +286,82 @@ describe('spell effects check', () => {
       ]);
     });
   });
+
+  describe('the words of ranks 0-2', () => {
+    const poison = { kind: 'damage', dice: '1d8', type: 'poison', persistent: true };
+
+    it('accepts byDegree under a save (puff of poison), under an attack (live wire), restriction under a sustained block (laughing fit)', () => {
+      const puff = { whole: true, parts: [{ ...poison, byDegree: { failure: 'full', criticalFailure: 'double' } }] };
+      expect(messages(spell({ defense: { save: 'fortitude' }, effect: puff }))).toEqual([]);
+      const wire = { whole: true, parts: [{ ...dmg, byDegree: { criticalSuccess: 'double', success: 'full', failure: 'full' } }] };
+      expect(messages(spell({ defense: 'ac', effect: wire }))).toEqual([]);
+      const fit = { whole: true, duration: { sustained: {} }, parts: [{ kind: 'restriction', cannot: 'reactions', on: ['failure'] }] };
+      expect(messages(spell({ defense: { save: 'will' }, effect: fit }))).toEqual([]);
+    });
+
+    it('rejects byDegree together with on or doubleOnCritical', () => {
+      const effect = { whole: true, parts: [{ ...dmg, on: ['failure'], byDegree: { failure: 'full' } }, { ...dmg, doubleOnCritical: false, byDegree: { failure: 'full' } }] };
+      expect(messages(spell({ defense: { save: 'fortitude' }, effect }))).toEqual([
+        'effect.parts[0].byDegree: it names the degrees itself, so the part has neither on nor doubleOnCritical',
+        'effect.parts[1].byDegree: it names the degrees itself, so the part has neither on nor doubleOnCritical',
+      ]);
+    });
+
+    it('rejects byDegree without a defense', () => {
+      const effect = { whole: true, parts: [{ ...dmg, byDegree: { failure: 'full' } }] };
+      expect(messages(spell({ effect }))).toEqual([
+        'effect.parts[0].byDegree: the spell has no defense to roll, so there are no degrees to name',
+      ]);
+    });
+
+    it('still rejects failure on an attack outside byDegree', () => {
+      const effect = { whole: true, parts: [{ ...dmg, on: ['failure'] }] };
+      expect(messages(spell({ defense: 'ac', effect }))).toEqual([
+        "effect.parts[0].on: an attack spell's part acts on success or criticalSuccess, not failure",
+      ]);
+    });
+
+    it('rejects a restriction with no end of its own or the block\'s, and one under a defense without degrees', () => {
+      const effect = { whole: true, parts: [{ kind: 'restriction', cannot: 'actions', on: ['criticalFailure'] }, { kind: 'restriction', cannot: 'reactions', duration: { rounds: 1 } }] };
+      expect(messages(spell({ defense: { save: 'will' }, effect }))).toEqual([
+        'effect.parts[0].duration: a restriction has no ending of its own, so the part or the spell needs a duration',
+        'effect.parts[1].on: a restriction part of a spell with a defense must say on which degrees it applies',
+      ]);
+    });
+
+    it('rejects projectiles on a block or a variant with an area', () => {
+      const area = { shape: 'emanation', feet: 10 };
+      const block = { whole: true, area, projectiles: { perAction: 1 }, parts: [dmg] };
+      expect(messages(spell({ effect: block }))).toEqual(['effect.projectiles: projectiles go to targets, but the block has an area']);
+      const variants = { whole: true, variants: [{ actions: 1, area, projectiles: { perAction: 1 } }, { actions: 2 }] };
+      expect(messages(spell({ cast: { actions: '1-2' }, effect: variants }))).toEqual([
+        'effect.variants[0].projectiles: projectiles go to targets, but the variant has an area',
+      ]);
+      expect(messages(spell({ effect: { whole: true, projectiles: { perAction: 1 }, parts: [dmg] } }))).toEqual([]);
+    });
+
+    it('rejects damage to one kind of creature when the targets are only the other', () => {
+      const effect = { whole: true, targets: { min: 1, max: 1, only: 'undead' }, parts: [{ ...dmg, to: 'living' }, { ...dmg, to: 'undead' }] };
+      expect(messages(spell({ effect }))).toEqual(['effect.parts[0].to: the damage goes to living creatures, but the targets are only undead']);
+    });
+
+    it('lets fastHealing grow by a flat value only, and a restriction not at all', () => {
+      const effect = {
+        whole: true, duration: { rounds: 1 }, parts: [
+          { kind: 'fastHealing', value: 2, heighten: { every: 1, value: 2 } },
+          { kind: 'fastHealing', value: 2, heighten: { every: 1, dice: '1d4' } },
+          { kind: 'restriction', cannot: 'reactions', heighten: { every: 1, value: 1 } },
+        ],
+      };
+      expect(messages(spell({ effect }))).toEqual([
+        'effect.parts[1].heighten: a fastHealing part grows by a flat value, not by dice',
+        'effect.parts[2].heighten: a restriction part does not heighten',
+      ]);
+    });
+
+    it('holds a temporary immunity in hours whatever the result', () => {
+      const effect = { whole: true, parts: [{ kind: 'temporaryImmunity', hours: 1 }] };
+      expect(messages(spell({ defense: { save: 'will' }, effect }))).toEqual([]);
+    });
+  });
 });
