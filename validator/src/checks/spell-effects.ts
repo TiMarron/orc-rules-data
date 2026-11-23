@@ -45,7 +45,7 @@ const SELF_ENDING = new Set(
 );
 const VARIANT_RANGES: Record<string, [number, number]> = { '1-2': [1, 2], '1-3': [1, 3], '2-3': [2, 3] };
 const DICE_KINDS = new Set(['damage', 'heal', 'tempHp']);
-const VALUE_KINDS = new Set(['condition', 'modifier', 'weakness', 'resistance']);
+const VALUE_KINDS = new Set(['condition', 'modifier', 'weakness', 'resistance', 'fastHealing']);
 const TYPED_KINDS = new Set(['damage', 'weakness', 'resistance']);
 
 /**
@@ -55,11 +55,16 @@ const TYPED_KINDS = new Set(['damage', 'weakness', 'resistance']);
  *   success or critical success only; a part that rides a defense says on which degrees (`on`), except damage,
  *   which has a default scale, `temporaryImmunity`, which holds whatever the result, and `heal`, which never
  *   rides the save (the save of heal or harm is the damage's); `on` without any defense has no roll to read.
- * - A condition has an ending: its own (a short list) or a duration, the part's or the block's.
+ * - A condition has an ending: its own (a short list) or a duration, the part's or the block's; so has a restriction
+ *   (no list of its own; a block `duration: { sustained: {} }` counts as an end).
+ * - `byDegree` names the degrees of a roll, so it needs a defense and never comes with `on` or `doubleOnCritical`;
+ *   inside it an attack may name failure and criticalFailure (outside it an attack part acts on success only).
+ * - `to` on a damage part must not contradict the block's `targets.only` (living against undead).
+ * - `projectiles` go to targets: a block or variant with an `area` has none.
  * - A burst is aimed at a point within range, so it needs a `range` (a variant may bring its own).
  * - `targets`: `max` not below `min`, and a heightened maximum above the base maximum.
  * - `heighten` fits the part: dice for damage, heal and temporary Hit Points, a flat step for a condition, a
- *   modifier, a weakness and a resistance, nothing for a push or a temporary immunity.
+ *   modifier, a weakness and a resistance, nothing for a push, a restriction or a temporary immunity.
  * - A `heightened[i].effect` replaces the block from a named rank, so the entry's `level` is a rank, not a `+N` step.
  * - `variants` belong to a spell cast with a range of actions (`1-3`) and carry unique counts inside that range.
  * - A damage, weakness or resistance type is a damage type of the creature schema.
@@ -89,7 +94,7 @@ export const spellEffectsCheck: Check = (ds) => {
       if (area?.shape === 'burst' && range === undefined) error(`${at}: a burst is aimed at a point within range, so it needs a range`);
     };
 
-    const checkParts = (parts: unknown, at: string, defense: unknown, blockDuration: unknown): void => {
+    const checkParts = (parts: unknown, at: string, defense: unknown, blockDuration: unknown, only: unknown): void => {
       list(parts).forEach((part, i) => {
         const p = `${at}[${i}]`;
         const kind = String(part.kind);
@@ -99,11 +104,23 @@ export const spellEffectsCheck: Check = (ds) => {
           const bad = Array.isArray(part.on) ? part.on.filter((d) => d !== 'success' && d !== 'criticalSuccess') : [];
           if (bad.length > 0) error(`${p}.on: an attack spell's part acts on success or criticalSuccess, not ${bad.join(' or ')}`);
         }
+        if (part.byDegree !== undefined) {
+          if (part.on !== undefined || part.doubleOnCritical !== undefined) {
+            error(`${p}.byDegree: it names the degrees itself, so the part has neither on nor doubleOnCritical`);
+          }
+          if (defense === undefined) error(`${p}.byDegree: the spell has no defense to roll, so there are no degrees to name`);
+        }
+        if (kind === 'damage' && (part.to === 'living' || part.to === 'undead') && (only === 'living' || only === 'undead') && only !== part.to) {
+          error(`${p}.to: the damage goes to ${part.to} creatures, but the targets are only ${only}`);
+        }
         if (defense !== undefined && part.on === undefined && kind !== 'damage' && kind !== 'temporaryImmunity' && kind !== 'heal') {
           error(`${p}.on: a ${kind} part of a spell with a defense must say on which degrees it applies`);
         }
         if (kind === 'condition' && part.duration === undefined && blockDuration === undefined && !SELF_ENDING.has(String(part.id))) {
           error(`${p}.duration: ${String(part.id)} has no ending of its own, so the part or the spell needs a duration`);
+        }
+        if (kind === 'restriction' && part.duration === undefined && blockDuration === undefined) {
+          error(`${p}.duration: a restriction has no ending of its own, so the part or the spell needs a duration`);
         }
         const heighten = obj(part.heighten);
         if (heighten) {
@@ -127,7 +144,8 @@ export const spellEffectsCheck: Check = (ds) => {
       }
       checkTargets(obj(block.targets), `${at}.targets`);
       checkArea(obj(block.area), block.range, `${at}.area`);
-      checkParts(block.parts, `${at}.parts`, defense, block.duration);
+      if (block.projectiles !== undefined && block.area !== undefined) error(`${at}.projectiles: projectiles go to targets, but the block has an area`);
+      checkParts(block.parts, `${at}.parts`, defense, block.duration, obj(block.targets)?.only);
 
       if (block.variants === undefined) return;
       const span = typeof castActions === 'string' ? VARIANT_RANGES[castActions] : undefined;
@@ -146,7 +164,8 @@ export const spellEffectsCheck: Check = (ds) => {
         }
         checkTargets(obj(variant.targets), `${v}.targets`);
         checkArea(obj(variant.area), variant.range ?? block.range, `${v}.area`);
-        if (variant.parts !== undefined) checkParts(variant.parts, `${v}.parts`, defense, block.duration);
+        if (variant.projectiles !== undefined && variant.area !== undefined) error(`${v}.projectiles: projectiles go to targets, but the variant has an area`);
+        if (variant.parts !== undefined) checkParts(variant.parts, `${v}.parts`, defense, block.duration, obj(variant.targets ?? block.targets)?.only);
       });
     };
 
