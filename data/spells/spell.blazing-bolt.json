@@ -44,7 +44,67 @@
       {
         "kind": "damage",
         "dice": "2d6",
-        "type": "fire"
+        "type": "fire",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "actions": 1,
+        "targets": {
+          "min": 1,
+          "max": 1
+        },
+        "parts": [
+          {
+            "kind": "damage",
+            "dice": "2d6",
+            "type": "fire",
+            "heighten": {
+              "every": 1,
+              "dice": "1d6"
+            }
+          }
+        ]
+      },
+      {
+        "actions": 2,
+        "targets": {
+          "min": 1,
+          "max": 2
+        },
+        "parts": [
+          {
+            "kind": "damage",
+            "dice": "4d6",
+            "type": "fire",
+            "heighten": {
+              "every": 1,
+              "dice": "2d6"
+            }
+          }
+        ]
+      },
+      {
+        "actions": 3,
+        "targets": {
+          "min": 1,
+          "max": 3
+        },
+        "parts": [
+          {
+            "kind": "damage",
+            "dice": "4d6",
+            "type": "fire",
+            "heighten": {
+              "every": 1,
+              "dice": "2d6"
+            }
+          }
+        ]
       }
     ]
   }

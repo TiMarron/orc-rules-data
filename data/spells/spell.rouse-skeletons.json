@@ -12,8 +12,8 @@
     "page": 250,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.rouse-skeletons.text",
   "rank": 3,
   "traditions": [
@@ -28,12 +28,14 @@
   "area": "spell.rouse-skeletons.area",
   "duration": "spell.rouse-skeletons.duration",
   "defense": {
-    "save": "reflex"
+    "save": "reflex",
+    "basic": true
   },
   "heightened": [
     {
       "level": "+2",
       "text": "spell.rouse-skeletons.heightened.0"
     }
-  ]
+  ],
+  "editNote": "The book's stat block prints Defense Reflex without basic, but the spell's text says \"with a basic Reflex save\" twice; basic is what it means (reviewer-confirmed 2026-11-20)."
 }

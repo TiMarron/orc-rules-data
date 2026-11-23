@@ -37,7 +37,7 @@
   ],
   "editNote": "effect read from the book p.374",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "feet": 60
     },
@@ -54,6 +54,24 @@
           "every": 1,
           "dice": "1d6"
         }
+      },
+      {
+        "kind": "push",
+        "feet": 10,
+        "direction": "away",
+        "upTo": true,
+        "on": [
+          "criticalSuccess"
+        ]
+      },
+      {
+        "kind": "push",
+        "feet": 5,
+        "direction": "away",
+        "upTo": true,
+        "on": [
+          "success"
+        ]
       }
     ]
   }

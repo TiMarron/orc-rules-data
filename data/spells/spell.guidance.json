@@ -12,8 +12,8 @@
     "page": 334,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.guidance.text",
   "rank": 1,
   "traditions": [
@@ -26,5 +26,25 @@
   },
   "range": "spell.guidance.range",
   "targets": "spell.guidance.targets",
-  "duration": "spell.guidance.duration"
+  "duration": "spell.guidance.duration",
+  "editNote": "effect read from the book p.334",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "duration": {
+      "untilStartOfCasterNextTurn": true
+    },
+    "parts": [
+      {
+        "kind": "temporaryImmunity",
+        "hours": 1
+      }
+    ]
+  }
 }

@@ -14,8 +14,8 @@
     "page": 376,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.lucky-break.text",
   "rank": 4,
   "focus": true,
@@ -25,5 +25,15 @@
   "cast": {
     "actions": "reaction"
   },
-  "trigger": "spell.lucky-break.trigger"
+  "trigger": "spell.lucky-break.trigger",
+  "editNote": "effect read from the book p.376",
+  "effect": {
+    "whole": false,
+    "parts": [
+      {
+        "kind": "temporaryImmunity",
+        "minutes": 10
+      }
+    ]
+  }
 }

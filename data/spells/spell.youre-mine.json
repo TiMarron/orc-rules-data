@@ -17,8 +17,8 @@
     "page": 265,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.youre-mine.text",
   "rank": 5,
   "focus": true,
@@ -36,5 +36,39 @@
       "level": "7",
       "text": "spell.youre-mine.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.265",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "duration": {
+      "rounds": 1
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "value": 1,
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.controlled",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

@@ -16,8 +16,8 @@
     "page": 347,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.overwhelming-presence.text",
   "rank": 9,
   "traditions": [
@@ -32,5 +32,15 @@
   "duration": "spell.overwhelming-presence.duration",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.347",
+  "effect": {
+    "whole": false,
+    "parts": [
+      {
+        "kind": "temporaryImmunity",
+        "minutes": 1
+      }
+    ]
   }
 }

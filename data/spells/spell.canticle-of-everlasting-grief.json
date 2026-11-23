@@ -17,8 +17,8 @@
     "page": 319,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.canticle-of-everlasting-grief.text",
   "rank": 8,
   "traditions": [
@@ -33,5 +33,31 @@
   "duration": "spell.canticle-of-everlasting-grief.duration",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.319",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "10d6",
+        "type": "mental"
+      },
+      {
+        "kind": "condition",
+        "id": "condition.frightened",
+        "value": 4,
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
   }
 }

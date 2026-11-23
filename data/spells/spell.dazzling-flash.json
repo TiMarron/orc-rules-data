@@ -74,6 +74,26 @@
         "on": [
           "failure"
         ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.blinded",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.dazzled",
+        "duration": {
+          "hours": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
       }
     ]
   }

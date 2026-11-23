@@ -13,8 +13,8 @@
     "page": 248,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.lightning-storm.text",
   "rank": 5,
   "traditions": [
@@ -35,5 +35,32 @@
       "level": "+2",
       "text": "spell.lightning-storm.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.248",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 20
+    },
+    "duration": {
+      "sustained": {
+        "minutes": 1
+      }
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "4d12",
+        "type": "electricity",
+        "heighten": {
+          "every": 2,
+          "dice": "1d12"
+        }
+      }
+    ]
+  }
 }

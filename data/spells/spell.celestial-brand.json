@@ -14,8 +14,8 @@
     "page": 262,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.celestial-brand.text",
   "rank": 5,
   "focus": true,
@@ -30,5 +30,21 @@
       "level": "+1",
       "text": "spell.celestial-brand.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.262",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "duration": {
+      "rounds": 1
+    },
+    "parts": [
+      {
+        "kind": "temporaryImmunity",
+        "minutes": 1
+      }
+    ]
+  }
 }

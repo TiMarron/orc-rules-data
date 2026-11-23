@@ -36,7 +36,7 @@
   ],
   "editNote": "effect read from the book p.357",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "feet": 30
     },
@@ -56,6 +56,14 @@
           "every": 1,
           "dice": "1d10+4"
         }
+      },
+      {
+        "kind": "modifier",
+        "stat": "saves",
+        "type": "status",
+        "value": 2,
+        "who": "target",
+        "against": "trait.mental"
       }
     ]
   }

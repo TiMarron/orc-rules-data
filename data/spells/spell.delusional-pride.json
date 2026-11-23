@@ -16,8 +16,8 @@
     "page": 373,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.delusional-pride.text",
   "rank": 4,
   "focus": true,
@@ -32,5 +32,22 @@
   "duration": "spell.delusional-pride.duration",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.373",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "temporaryImmunity",
+        "hours": 24
+      }
+    ]
   }
 }

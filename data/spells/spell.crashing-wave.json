@@ -13,8 +13,8 @@
     "page": 243,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.crashing-wave.text",
   "rank": 3,
   "traditions": [
@@ -34,5 +34,24 @@
       "level": "+1",
       "text": "spell.crashing-wave.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.243",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "cone",
+      "feet": 30
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "6d6",
+        "type": "bludgeoning",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

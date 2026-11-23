@@ -13,7 +13,7 @@
     "revision": "2023-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.duplicate-foe.text",
   "rank": 7,
   "traditions": [
@@ -34,5 +34,6 @@
       "level": "+1",
       "text": "spell.duplicate-foe.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Re-reviewed: the only difference from the published record is links to records imported since (items, runes and materials the text names), with the item names italic as linked item names are; the words are unchanged. The record's other reasons are unchanged since its earlier review."
 }

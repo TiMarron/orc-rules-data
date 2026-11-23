@@ -13,8 +13,8 @@
     "page": 318,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.blindness.text",
   "rank": 3,
   "traditions": [
@@ -30,5 +30,52 @@
   "targets": "spell.blindness.targets",
   "defense": {
     "save": "fortitude"
+  },
+  "editNote": "effect read from the book p.318",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.blinded",
+        "duration": {
+          "untilStartOfTargetNextTurn": true
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.blinded",
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.blinded",
+        "duration": {
+          "permanent": true
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "temporaryImmunity",
+        "minutes": 1
+      }
+    ]
   }
 }

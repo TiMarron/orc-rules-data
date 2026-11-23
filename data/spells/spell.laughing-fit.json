@@ -33,7 +33,7 @@
   },
   "editNote": "effect read from the book p.340",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "feet": 30
     },
@@ -47,11 +47,37 @@
     },
     "parts": [
       {
+        "kind": "restriction",
+        "cannot": "reactions",
+        "on": [
+          "success",
+          "failure",
+          "criticalFailure"
+        ]
+      },
+      {
         "kind": "condition",
         "id": "condition.slowed",
         "value": 1,
         "on": [
           "failure",
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.prone",
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "restriction",
+        "cannot": "actions",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
           "criticalFailure"
         ]
       }

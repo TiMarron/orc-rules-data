@@ -16,8 +16,8 @@
     "page": 380,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.commanding-lash.text",
   "rank": 4,
   "focus": true,
@@ -33,5 +33,21 @@
   "defense": {
     "save": "will"
   },
-  "requirements": "spell.commanding-lash.requirements"
+  "requirements": "spell.commanding-lash.requirements",
+  "editNote": "effect read from the book p.380",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 100
+    },
+    "duration": {
+      "untilEndOfTargetNextTurn": true
+    },
+    "parts": [
+      {
+        "kind": "temporaryImmunity",
+        "hours": 1
+      }
+    ]
+  }
 }

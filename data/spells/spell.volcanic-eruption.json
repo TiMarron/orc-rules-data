@@ -13,8 +13,8 @@
     "page": 366,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.volcanic-eruption.text",
   "rank": 7,
   "traditions": [
@@ -33,5 +33,23 @@
       "level": "+1",
       "text": "spell.volcanic-eruption.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.366",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "14d6",
+        "type": "fire",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

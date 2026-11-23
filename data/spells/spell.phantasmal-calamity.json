@@ -14,8 +14,8 @@
     "page": 349,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.phantasmal-calamity.text",
   "rank": 6,
   "traditions": [
@@ -28,12 +28,35 @@
   "range": "spell.phantasmal-calamity.range",
   "area": "spell.phantasmal-calamity.area",
   "defense": {
-    "save": "will"
+    "save": "will",
+    "basic": true
   },
   "heightened": [
     {
       "level": "+1",
       "text": "spell.phantasmal-calamity.heightened.0"
     }
-  ]
+  ],
+  "editNote": "The book's stat block prints Defense Will without basic, but the spell's text says \"The vision deals 11d6 mental damage (basic Will save)\"; basic is what it means, as for rouse skeletons. Effect read from the book p.349.",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 500
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 30
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "11d6",
+        "type": "mental",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

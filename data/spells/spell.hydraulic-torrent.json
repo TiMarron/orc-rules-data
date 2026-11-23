@@ -13,8 +13,8 @@
     "page": 336,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.hydraulic-torrent.text",
   "rank": 4,
   "traditions": [
@@ -25,12 +25,32 @@
   },
   "area": "spell.hydraulic-torrent.area",
   "defense": {
-    "save": "fortitude"
+    "save": "fortitude",
+    "basic": true
   },
   "heightened": [
     {
       "level": "+1",
       "text": "spell.hydraulic-torrent.heightened.0"
     }
-  ]
+  ],
+  "editNote": "The book's stat block prints Defense Fortitude without basic, but the spell's text says \"Each creature in the area must attempt a basic Fortitude save\"; basic is what it means, as for rouse skeletons. Effect read from the book p.336.",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "line",
+      "feet": 60
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "8d6",
+        "type": "bludgeoning",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

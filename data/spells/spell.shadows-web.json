@@ -14,8 +14,8 @@
     "page": 258,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.shadows-web.text",
   "rank": 7,
   "focus": true,
@@ -32,5 +32,42 @@
       "text": "spell.shadows-web.heightened.0"
     }
   ],
-  "requirements": "spell.shadows-web.requirements"
+  "requirements": "spell.shadows-web.requirements",
+  "editNote": "effect read from the book p.258",
+  "effect": {
+    "whole": false,
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "14d4",
+        "type": "void",
+        "heighten": {
+          "every": 1,
+          "dice": "2d4"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.enfeebled",
+        "value": 1,
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.enfeebled",
+        "value": 2,
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "failure"
+        ]
+      }
+    ]
+  }
 }

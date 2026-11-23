@@ -16,7 +16,7 @@
     "revision": "2024-first"
   },
   "review": "assistant",
-  "edited": false,
+  "edited": true,
   "text": "spell.moonlight-bridge.text",
   "rank": 6,
   "focus": true,
@@ -33,5 +33,6 @@
       "level": "+1",
       "text": "spell.moonlight-bridge.heightened.0"
     }
-  ]
+  ],
+  "editNote": "Re-reviewed: the only difference from the published record is links to records imported since (items, runes and materials the text names), with the item names italic as linked item names are; the words are unchanged. The record's other reasons are unchanged since its earlier review."
 }

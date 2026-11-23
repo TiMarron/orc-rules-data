@@ -13,8 +13,8 @@
     "page": 259,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.armor-of-bones.text",
   "rank": 3,
   "focus": true,
@@ -30,5 +30,59 @@
       "level": "+1",
       "text": "spell.armor-of-bones.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.259",
+  "effect": {
+    "whole": true,
+    "duration": {
+      "minutes": 1
+    },
+    "parts": [
+      {
+        "kind": "resistance",
+        "type": "cold",
+        "value": 3,
+        "heighten": {
+          "every": 1,
+          "value": 1
+        }
+      },
+      {
+        "kind": "resistance",
+        "type": "electricity",
+        "value": 3,
+        "heighten": {
+          "every": 1,
+          "value": 1
+        }
+      },
+      {
+        "kind": "resistance",
+        "type": "fire",
+        "value": 3,
+        "heighten": {
+          "every": 1,
+          "value": 1
+        }
+      },
+      {
+        "kind": "resistance",
+        "type": "piercing",
+        "value": 3,
+        "heighten": {
+          "every": 1,
+          "value": 1
+        }
+      },
+      {
+        "kind": "resistance",
+        "type": "slashing",
+        "value": 3,
+        "heighten": {
+          "every": 1,
+          "value": 1
+        }
+      }
+    ]
+  }
 }

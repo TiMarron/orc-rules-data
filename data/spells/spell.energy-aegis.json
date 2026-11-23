@@ -12,8 +12,8 @@
     "page": 328,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.energy-aegis.text",
   "rank": 7,
   "traditions": [
@@ -31,7 +31,112 @@
   "heightened": [
     {
       "level": "9",
-      "text": "spell.energy-aegis.heightened.0"
+      "text": "spell.energy-aegis.heightened.0",
+      "effect": {
+        "whole": false,
+        "range": {
+          "touch": true
+        },
+        "targets": {
+          "min": 1,
+          "max": 1
+        },
+        "parts": [
+          {
+            "kind": "resistance",
+            "type": "acid",
+            "value": 10
+          },
+          {
+            "kind": "resistance",
+            "type": "cold",
+            "value": 10
+          },
+          {
+            "kind": "resistance",
+            "type": "electricity",
+            "value": 10
+          },
+          {
+            "kind": "resistance",
+            "type": "fire",
+            "value": 10
+          },
+          {
+            "kind": "resistance",
+            "type": "force",
+            "value": 10
+          },
+          {
+            "kind": "resistance",
+            "type": "sonic",
+            "value": 10
+          },
+          {
+            "kind": "resistance",
+            "type": "vitality",
+            "value": 10
+          },
+          {
+            "kind": "resistance",
+            "type": "void",
+            "value": 10
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.328",
+  "effect": {
+    "whole": false,
+    "range": {
+      "touch": true
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "resistance",
+        "type": "acid",
+        "value": 5
+      },
+      {
+        "kind": "resistance",
+        "type": "cold",
+        "value": 5
+      },
+      {
+        "kind": "resistance",
+        "type": "electricity",
+        "value": 5
+      },
+      {
+        "kind": "resistance",
+        "type": "fire",
+        "value": 5
+      },
+      {
+        "kind": "resistance",
+        "type": "force",
+        "value": 5
+      },
+      {
+        "kind": "resistance",
+        "type": "sonic",
+        "value": 5
+      },
+      {
+        "kind": "resistance",
+        "type": "vitality",
+        "value": 5
+      },
+      {
+        "kind": "resistance",
+        "type": "void",
+        "value": 5
+      }
+    ]
+  }
 }

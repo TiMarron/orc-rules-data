@@ -33,7 +33,7 @@
   },
   "editNote": "effect read from the book p.380",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "touch": true
     },
@@ -75,6 +75,17 @@
         "on": [
           "criticalFailure"
         ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.prone",
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "temporaryImmunity",
+        "hours": 1
       }
     ]
   }

@@ -14,8 +14,8 @@
     "page": 265,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.grasping-grave.text",
   "rank": 5,
   "focus": true,
@@ -32,5 +32,36 @@
       "level": "+1",
       "text": "spell.grasping-grave.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.265",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 60
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "6d6",
+        "type": "slashing",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      },
+      {
+        "kind": "modifier",
+        "stat": "speed",
+        "type": "circumstance",
+        "value": -10,
+        "who": "target",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "failure"
+        ]
+      }
+    ]
+  }
 }

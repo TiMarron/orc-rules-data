@@ -14,8 +14,8 @@
     "page": 342,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.massacre.text",
   "rank": 9,
   "traditions": [
@@ -35,5 +35,31 @@
       "level": "10",
       "text": "spell.massacre.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.342",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "line",
+      "feet": 60
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "9d6",
+        "type": "void",
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "damage",
+        "dice": "100",
+        "type": "void",
+        "on": [
+          "failure"
+        ]
+      }
+    ]
+  }
 }

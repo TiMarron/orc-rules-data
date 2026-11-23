@@ -16,8 +16,8 @@
     "page": 263,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.hellfire-plume.text",
   "rank": 5,
   "focus": true,
@@ -35,5 +35,32 @@
       "level": "+1",
       "text": "spell.hellfire-plume.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.263",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 60
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "4d6",
+        "type": "fire",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "4d6",
+        "type": "spirit",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      }
+    ]
+  }
 }
