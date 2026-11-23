@@ -27,11 +27,11 @@ major for renamed or removed ids, new required fields and markup changes.
 
 ### Data
 
-- Spell effect blocks now cover ranks 3–10 for the first time: 63 blocks (rank 3: 18, rank 4: 14, rank 5: 11,
-  rank 6: 5, rank 7: 5, rank 8: 5, rank 9: 4, rank 10: 1), 8 of them `whole: true`
-  (rank 3: 6, rank 4: 1, rank 6: 1). Ranks 0–2 hold 98 blocks (cantrips are in
-  rank 1), 46 of them `whole: true`.
-- 14 more rank 0–2 spells are `whole: true` than in 0.16.0 (46 against 32): 15
+- Spell effect blocks now cover ranks 3–10 for the first time: 63 blocks
+  (rank 3: 18, rank 4: 14, rank 5: 11, rank 6: 5, rank 7: 5, rank 8: 5, rank 9:
+  4, rank 10: 1), 8 of them `whole: true` (rank 3: 6, rank 4: 1, rank 6: 1).
+  Ranks 1–2 (cantrips included) hold 98 blocks, 46 of them `whole: true`.
+- 14 more rank 1–2 spells are `whole: true` than in 0.16.0 (46 against 32): 15
   gained the mark, one (protection) lost it.
 
 ## 0.16.0 — 2026-11-20

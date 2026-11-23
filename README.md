@@ -100,9 +100,9 @@ cost tokens.
   duration, on the target or on the caster), `push`, `heal`, `tempHp`,
   `modifier` (its `stat` `speed` is all of a creature's Speeds, `speed:land` the
   land Speed only), `weakness`, `resistance`, `temporaryImmunity`,
-  `restriction` (the target, or the caster with `who: self`, cannot use its
-  `reactions` or its `actions`, for a `duration`) and `fastHealing` (a
-  `value`, a `duration`, `heighten`). A `damage` part may carry
+  `restriction` (the target, or the caster with `who: self`, cannot use
+  what `cannot` names, `reactions` or `actions`, for a `duration`) and
+  `fastHealing` (a `value`, a `duration`, `heighten`). A `damage` part may carry
   `byDegree`: what the book prints for each degree of success as a share of the
   damage (`criticalSuccess`, `success`, `failure`, `criticalFailure`; a degree
   left out deals none), in place of the basic-save or attack scale; it never
@@ -138,9 +138,9 @@ cost tokens.
   A reader sees three states: `whole` and every part known, the spell is
   playable from data; `whole` with a part the reader does not know, it is
   playable in part and the unknown part is a gap; not `whole`, the text
-  carries a rule the structure does not and must be read. Every rank, 0 to 10, is
-  classified: each spell has a block, or a reason in the none-map that the
-  vocabulary has nothing to say about it; a spell without `effect` has nothing
+  carries a rule the structure does not and must be read. Every rank, 0 to 10,
+  is classified: a spell has a block, or the vocabulary has nothing to say
+  about it and the importer records why; a spell without `effect` has nothing
   the vocabulary can say.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens
