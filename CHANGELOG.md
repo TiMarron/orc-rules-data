@@ -4,6 +4,36 @@ Notable changes to the data and its schema. Versioning is described in the
 README: patch for text fixes, minor for new records and optional fields,
 major for renamed or removed ids, new required fields and markup changes.
 
+## 0.17.0 — 2026-11-23
+
+### Added
+
+- `byDegree` on a spell's damage part: what the book prints for each degree of
+  success, as a share of the damage, in place of the basic-save or attack scale.
+- `to` on a spell's damage part: only the living or only the undead take the
+  damage.
+- `asMaterial` on a spell's damage part: the damage counts as silver or cold
+  iron.
+- `against` on a spell's modifier part: the trait of the effects the modifier
+  applies against.
+- `who` on a spell's tempHp part: the caster gains the Hit Points.
+- `upTo` on a spell's push part: the book prints "up to" the distance.
+- `hours` in a spell's `duration`, and `hours` on a temporaryImmunity part.
+- The spell part kinds `restriction` (cannot use reactions or actions for a
+  time) and `fastHealing`.
+- `projectiles` on a spell's effect block and on its variants: the number of
+  projectiles for each action spent casting. Beside it `targets` is per
+  projectile.
+
+### Data
+
+- Spell effect blocks now cover ranks 3–10 for the first time: 63 blocks (rank 3: 18, rank 4: 14, rank 5: 11,
+  rank 6: 5, rank 7: 5, rank 8: 5, rank 9: 4, rank 10: 1), 8 of them `whole: true`
+  (rank 3: 6, rank 4: 1, rank 6: 1). Ranks 0–2 hold 98 blocks (cantrips are in
+  rank 1), 46 of them `whole: true`.
+- 14 more rank 0–2 spells are `whole: true` than in 0.16.0 (46 against 32): 15
+  gained the mark, one (protection) lost it.
+
 ## 0.16.0 — 2026-11-20
 
 ### Added

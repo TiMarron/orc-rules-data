@@ -95,11 +95,24 @@ cost tokens.
   repeats that feat's fields, because the grant itself is not modelled.
 - A spell may carry `effect`: what the spell does, as structured parts, in
   the words the vocabulary has and nothing else. `parts` lists them in print
-  order, each of one of nine kinds: `damage` (dice, type or a choice of
+  order, each of one of eleven kinds: `damage` (dice, type or a choice of
   `types`, `persistent`), `condition` (a condition record, its value and
   duration, on the target or on the caster), `push`, `heal`, `tempHp`,
   `modifier` (its `stat` `speed` is all of a creature's Speeds, `speed:land` the
-  land Speed only), `weakness`, `resistance` and `temporaryImmunity`. `on` names the
+  land Speed only), `weakness`, `resistance`, `temporaryImmunity`,
+  `restriction` (the target, or the caster with `who: self`, cannot use its
+  `reactions` or its `actions`, for a `duration`) and `fastHealing` (a
+  `value`, a `duration`, `heighten`). A `damage` part may carry
+  `byDegree`: what the book prints for each degree of success as a share of the
+  damage (`criticalSuccess`, `success`, `failure`, `criticalFailure`; a degree
+  left out deals none), in place of the basic-save or attack scale; it never
+  stands beside `on` or `doubleOnCritical`. A `damage` part may carry `to`
+  (`living` or `undead`), the one kind of creature that takes the damage, and
+  `asMaterial` (`silver` or `cold-iron`), the material the damage counts as
+  made of. A `modifier` part may carry `against`: the trait record id of the
+  effects it applies against (a bonus to saves against fear effects). A `tempHp` part carries `who` (`self` when the caster
+  gains them; the target when absent). A `push` part carries `upTo` when the
+  book prints "up to" the distance, so the caster may push less. `on` names the
   degrees of success a part applies on: the target's for a saving throw, the
   caster's for a spell attack. A `damage` part without `on` follows the scale
   the roll implies — the rule for basic saves (nothing, half, full, double) or,
@@ -107,7 +120,13 @@ cost tokens.
   `heighten` says how a part grows (`every` so many ranks, by `dice` or by a
   flat `value`). `range`, `area`, `targets` and `duration` repeat the printed
   strings as structure; a part without a `duration` of its own lasts as long
-  as the block's. A spell cast with one to three actions lists its
+  as the block's. `duration` and a `temporaryImmunity` part count hours as
+  structure (`{ "hours": n }`, `hours`); days and "until your next daily
+  preparations" stay in the text. A block or a variant carries `projectiles`
+  when the spell makes a number of them for each action spent casting it
+  (`perAction`, with `heighten` adding more); beside `projectiles`, `targets`
+  is per projectile: each projectile is aimed at a target, possibly the same
+  one, and damage to one target adds up before resistances and weaknesses. A spell cast with one to three actions lists its
   `variants`, one per action count, each overriding what differs; a variant's
   `parts`, when it has them, replace the block's parts. When the
   stat block prints no defense but the text names a saving throw, the block
@@ -119,8 +138,9 @@ cost tokens.
   A reader sees three states: `whole` and every part known, the spell is
   playable from data; `whole` with a part the reader does not know, it is
   playable in part and the unknown part is a gap; not `whole`, the text
-  carries a rule the structure does not and must be read. Only cantrips and
-  ranks 1–2 are classified so far; a spell without `effect` is not yet read, or has nothing
+  carries a rule the structure does not and must be read. Every rank, 0 to 10, is
+  classified: each spell has a block, or a reason in the none-map that the
+  vocabulary has nothing to say about it; a spell without `effect` has nothing
   the vocabulary can say.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens
