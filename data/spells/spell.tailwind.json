@@ -28,12 +28,30 @@
   "heightened": [
     {
       "level": "2",
-      "text": "spell.tailwind.heightened.0"
+      "text": "spell.tailwind.heightened.0",
+      "effect": {
+        "whole": true,
+        "duration": {
+          "hours": 8
+        },
+        "parts": [
+          {
+            "kind": "modifier",
+            "stat": "speed:land",
+            "type": "status",
+            "value": 10,
+            "who": "self"
+          }
+        ]
+      }
     }
   ],
   "editNote": "effect read from the book p.362",
   "effect": {
-    "whole": false,
+    "whole": true,
+    "duration": {
+      "hours": 1
+    },
     "parts": [
       {
         "kind": "modifier",
