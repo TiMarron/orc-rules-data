@@ -64,7 +64,7 @@ const TYPED_KINDS = new Set(['damage', 'weakness', 'resistance']);
  * - A burst is aimed at a point within range, so it needs a `range` (a variant may bring its own).
  * - `targets`: `max` not below `min`, and a heightened maximum above the base maximum.
  * - `heighten` fits the part: dice for damage, heal and temporary Hit Points, a flat step for a condition, a
- *   modifier, a weakness and a resistance, nothing for a push, a restriction or a temporary immunity.
+ *   modifier, a weakness, a resistance and fast healing, nothing for a push, a restriction or a temporary immunity.
  * - A `heightened[i].effect` replaces the block from a named rank, so the entry's `level` is a rank, not a `+N` step.
  * - `variants` belong to a spell cast with a range of actions (`1-3`) and carry unique counts inside that range.
  * - A damage, weakness or resistance type is a damage type of the creature schema.
