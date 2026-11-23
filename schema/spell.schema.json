@@ -34,6 +34,25 @@
         "targets": { "$ref": "#/$defs/targets" },
         "duration": { "$ref": "#/$defs/duration", "$comment": "The spell's duration; a single part may carry its own." },
         "parts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/part" }, "$comment": "What the spell does, in the order the book prints it." },
+        "projectiles": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["perAction"],
+          "$comment": "The spell makes this many projectiles for each action spent casting it, each dealing the parts' damage (force barrage: one missile for each action you spend Casting this Spell; heightened (+2), one more).",
+          "properties": {
+            "perAction": { "type": "integer", "minimum": 1, "maximum": 3, "$comment": "Projectiles per action spent." },
+            "heighten": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["every", "value"],
+              "$comment": "Projectiles added per action when the spell is heightened.",
+              "properties": {
+                "every": { "type": "integer", "minimum": 1, "maximum": 9, "$comment": "Each this many ranks above the spell's base rank." },
+                "value": { "type": "integer", "minimum": 1, "$comment": "Projectiles added at each step." }
+              }
+            }
+          }
+        },
         "variants": {
           "type": "array",
           "minItems": 1,
@@ -63,6 +82,25 @@
           "minItems": 1,
           "items": { "$ref": "#/$defs/part" },
           "$comment": "Replaces the block's parts for this version when present."
+        },
+        "projectiles": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["perAction"],
+          "$comment": "The spell makes this many projectiles for each action spent casting it, each dealing the parts' damage (force barrage: one missile for each action you spend Casting this Spell; heightened (+2), one more).",
+          "properties": {
+            "perAction": { "type": "integer", "minimum": 1, "maximum": 3, "$comment": "Projectiles per action spent." },
+            "heighten": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["every", "value"],
+              "$comment": "Projectiles added per action when the spell is heightened.",
+              "properties": {
+                "every": { "type": "integer", "minimum": 1, "maximum": 9, "$comment": "Each this many ranks above the spell's base rank." },
+                "value": { "type": "integer", "minimum": 1, "$comment": "Projectiles added at each step." }
+              }
+            }
+          }
         }
       }
     },
@@ -132,6 +170,12 @@
         {
           "type": "object",
           "additionalProperties": false,
+          "required": ["hours"],
+          "properties": { "hours": { "type": "integer", "minimum": 1, "$comment": "Lasts this many hours (false vitality: 8 hours)." } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
           "required": ["sustained"],
           "properties": {
             "sustained": {
@@ -179,7 +223,7 @@
           "properties": { "permanent": { "const": true, "$comment": "Never ends by itself (blinded permanently)." } }
         }
       ],
-      "$comment": "How long an effect lasts; days, hours and \"until your next daily preparations\" are not structure and stay in the text."
+      "$comment": "How long an effect lasts; days and \"until your next daily preparations\" are not structure and stay in the text; hours are structure."
     },
     "on": {
       "type": "array",
@@ -238,6 +282,20 @@
             },
             "persistent": { "const": true, "$comment": "Persistent damage of this type." },
             "doubleOnCritical": { "const": false, "$comment": "The book prints the full amount, not double, on a critical failure." },
+            "byDegree": {
+              "type": "object",
+              "additionalProperties": false,
+              "minProperties": 1,
+              "$comment": "The book prints how much of the damage each degree of success deals, instead of the basic save or the attack's full and double (puff of poison: on a failure the target takes the persistent damage, on a critical failure double). A degree left out deals none; not together with `on` or `doubleOnCritical` (the validator checks).",
+              "properties": {
+                "criticalSuccess": { "enum": ["none", "half", "full", "double"], "$comment": "The share of the damage dealt on a critical success." },
+                "success": { "enum": ["none", "half", "full", "double"], "$comment": "The share of the damage dealt on a success." },
+                "failure": { "enum": ["none", "half", "full", "double"], "$comment": "The share of the damage dealt on a failure." },
+                "criticalFailure": { "enum": ["none", "half", "full", "double"], "$comment": "The share of the damage dealt on a critical failure." }
+              }
+            },
+            "to": { "enum": ["living", "undead"], "$comment": "Only this kind of creature takes the damage (grim tendrils: void damage to each living creature)." },
+            "asMaterial": { "enum": ["silver", "cold-iron"], "$comment": "The damage counts as made of this material (moonbeam: the damage is treated as silver)." },
             "on": { "$ref": "#/$defs/on" },
             "heighten": { "$ref": "#/$defs/heighten" }
           },
@@ -267,6 +325,7 @@
             "kind": { "const": "push" },
             "feet": { "type": "integer", "minimum": 5, "multipleOf": 5, "$comment": "How far the target is pushed." },
             "direction": { "enum": ["away", "choice"], "$comment": "Directly away from the caster, or in a direction the caster names." },
+            "upTo": { "const": true, "$comment": "The book prints \"up to\" the distance (hurtling stone: pushed up to 10 feet), so the caster may push less." },
             "on": { "$ref": "#/$defs/on" },
             "heighten": { "$ref": "#/$defs/heighten" }
           }
@@ -292,6 +351,7 @@
           "properties": {
             "kind": { "const": "tempHp" },
             "dice": { "$ref": "creature.schema.json#/$defs/damagePart/properties/dice", "$comment": "The amount as printed (\"5\", \"2d4\")." },
+            "who": { "enum": ["target", "self"], "$comment": "Who gets the temporary Hit Points; the target when absent (glutton's jaws: you gain them)." },
             "duration": { "$ref": "#/$defs/duration", "$comment": "How long the temporary Hit Points last." },
             "on": { "$ref": "#/$defs/on" },
             "heighten": { "$ref": "#/$defs/heighten" }
@@ -316,6 +376,11 @@
             "who": {
               "enum": ["target", "self", "allies-in-area", "caster-and-allies-in-area", "all-in-area"],
               "$comment": "Whom it applies to; the target when absent."
+            },
+            "against": {
+              "type": "string",
+              "pattern": "^trait\\.[a-z0-9-]+$",
+              "$comment": "The modifier applies only against effects with this trait (courageous anthem: +1 status bonus to saves against fear effects); the trait's record id."
             },
             "duration": { "$ref": "#/$defs/duration", "$comment": "How long the modifier lasts." },
             "on": { "$ref": "#/$defs/on" },
@@ -353,11 +418,39 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["kind", "minutes"],
-          "$comment": "The target becomes immune to the same spell for a time.",
+          "required": ["kind"],
+          "$comment": "The target becomes immune to the same spell for a time; the time is in minutes or in hours, never both.",
           "properties": {
             "kind": { "const": "temporaryImmunity" },
             "minutes": { "type": "integer", "minimum": 1, "$comment": "How many minutes the immunity lasts." },
+            "hours": { "type": "integer", "minimum": 1, "$comment": "How many hours the immunity lasts (touch of obedience: immune for 1 hour)." },
+            "on": { "$ref": "#/$defs/on" },
+            "heighten": { "$ref": "#/$defs/heighten" }
+          },
+          "oneOf": [{ "properties": { "kind": true, "minutes": true }, "required": ["kind", "minutes"] }, { "properties": { "kind": true, "hours": true }, "required": ["kind", "hours"] }]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "cannot"],
+          "$comment": "The target cannot use reactions or actions for a time (laughing fit: on a critical failure the target can't act for 1 round); no `heighten`.",
+          "properties": {
+            "kind": { "const": "restriction" },
+            "cannot": { "enum": ["reactions", "actions"], "$comment": "What the creature cannot use: its reactions, or all its actions." },
+            "duration": { "$ref": "#/$defs/duration", "$comment": "How long the restriction lasts." },
+            "who": { "enum": ["target", "self"], "$comment": "Who is restricted; the target when absent." },
+            "on": { "$ref": "#/$defs/on" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "value"],
+          "$comment": "Fast healing the target gains (life boost: fast healing 2, heightened (+1) by 2).",
+          "properties": {
+            "kind": { "const": "fastHealing" },
+            "value": { "type": "integer", "minimum": 1, "$comment": "The fast healing value." },
+            "duration": { "$ref": "#/$defs/duration", "$comment": "How long the fast healing lasts." },
             "on": { "$ref": "#/$defs/on" },
             "heighten": { "$ref": "#/$defs/heighten" }
           }

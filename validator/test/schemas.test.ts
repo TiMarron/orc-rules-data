@@ -1866,3 +1866,56 @@ describe('rules tables and creature identification', () => {
     expect(messages('table', table({ kind: 'dc-adjustment', ranks: undefined, rows: [{ difficulty: 'trivial', adjustment: -20 }] }))).toContain('/rows/0/difficulty');
   });
 });
+
+describe('spell effect words for ranks 0-2', () => {
+  const withEffect = (effect: unknown) => ({ ...VALID.spell, effect });
+  const issues = (effect: unknown) => issuesFor('spell', withEffect(effect));
+  const block = (part: Record<string, unknown>, extra: Record<string, unknown> = {}) => ({ whole: false, parts: [part], ...extra });
+
+  const valid: Array<[string, unknown]> = [
+    ['puff of poison: persistent damage by degree', block({ kind: 'damage', dice: '1d4', type: 'poison', persistent: true, byDegree: { failure: 'full', criticalFailure: 'double' } })],
+    ['grim tendrils: damage to the living', block({ kind: 'damage', dice: '2d4', type: 'void', to: 'living' })],
+    ['moonbeam: damage as silver', block({ kind: 'damage', dice: '2d6', type: 'fire', asMaterial: 'silver' })],
+    ['cold iron damage', block({ kind: 'damage', dice: '2d6', type: 'fire', asMaterial: 'cold-iron' })],
+    ['courageous anthem: modifier against fear', block({ kind: 'modifier', stat: 'saves', type: 'status', value: 1, who: 'caster-and-allies-in-area', against: 'trait.fear' })],
+    ["glutton's jaws: temporary Hit Points on self", block({ kind: 'tempHp', dice: '1d4', who: 'self', duration: { untilStartOfCasterNextTurn: true } })],
+    ['hurtling stone: push up to', block({ kind: 'push', feet: 10, direction: 'away', upTo: true, on: ['criticalSuccess'] })],
+    ['false vitality: duration in hours', { whole: false, duration: { hours: 8 }, parts: [{ kind: 'tempHp', dice: '1d4' }] }],
+    ['touch of obedience: immunity in hours', block({ kind: 'temporaryImmunity', hours: 1 })],
+    ['immunity in minutes still valid', block({ kind: 'temporaryImmunity', minutes: 10 })],
+    ['laughing fit: restriction on actions', block({ kind: 'restriction', cannot: 'actions', duration: { rounds: 1 }, on: ['criticalFailure'] })],
+    ['restriction on reactions of the caster', block({ kind: 'restriction', cannot: 'reactions', who: 'self' })],
+    ['life boost: fast healing that heightens', block({ kind: 'fastHealing', value: 2, heighten: { every: 1, value: 2 } })],
+    ['force barrage: projectiles that heighten', { whole: false, parts: [{ kind: 'damage', dice: '1d4', type: 'force' }], projectiles: { perAction: 1, heighten: { every: 2, value: 1 } } }],
+    ['projectiles on a variant', { whole: false, parts: [{ kind: 'damage', dice: '1d4', type: 'force' }], variants: [{ actions: 1, projectiles: { perAction: 3 } }] }],
+  ];
+  for (const [name, effect] of valid) {
+    it(`accepts ${name}`, () => {
+      expect(issues(effect)).toEqual([]);
+    });
+  }
+
+  const invalid: Array<[string, unknown]> = [
+    ['empty byDegree', block({ kind: 'damage', dice: '1d4', type: 'poison', byDegree: {} })],
+    ['byDegree with an unknown outcome', block({ kind: 'damage', dice: '1d4', type: 'poison', byDegree: { failure: 'triple' } })],
+    ['byDegree with an unknown degree', block({ kind: 'damage', dice: '1d4', type: 'poison', byDegree: { botch: 'full' } })],
+    ['immunity with minutes and hours at once', block({ kind: 'temporaryImmunity', minutes: 10, hours: 1 })],
+    ['immunity with neither', block({ kind: 'temporaryImmunity' })],
+    ['restriction without cannot', block({ kind: 'restriction', duration: { rounds: 1 } })],
+    ['restriction that cannot move', block({ kind: 'restriction', cannot: 'moving' })],
+    ['restriction with heighten', block({ kind: 'restriction', cannot: 'actions', heighten: { every: 1, value: 1 } })],
+    ['fast healing without a value', block({ kind: 'fastHealing' })],
+    ['projectiles of four per action', { whole: false, parts: [{ kind: 'damage', dice: '1d4', type: 'force' }], projectiles: { perAction: 4 } }],
+    ['projectiles without perAction', { whole: false, parts: [{ kind: 'damage', dice: '1d4', type: 'force' }], projectiles: {} }],
+    ['against that is not an id', block({ kind: 'modifier', stat: 'saves', type: 'status', value: 1, against: 'fear' })],
+    ['push upTo false', block({ kind: 'push', feet: 10, direction: 'away', upTo: false })],
+    ['tempHp for someone else', block({ kind: 'tempHp', dice: '1d4', who: 'ally' })],
+    ['hours of zero', { whole: false, duration: { hours: 0 }, parts: [{ kind: 'tempHp', dice: '1d4' }] }],
+    ['damage as unknown material', block({ kind: 'damage', dice: '2d6', type: 'fire', asMaterial: 'adamantine' })],
+  ];
+  for (const [name, effect] of invalid) {
+    it(`rejects ${name}`, () => {
+      expect(issues(effect).length).toBeGreaterThan(0);
+    });
+  }
+});
