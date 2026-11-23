@@ -110,11 +110,11 @@ cost tokens.
   (`living` or `undead`), the one kind of creature that takes the damage, and
   `asMaterial` (`silver` or `cold-iron`), the material the damage counts as
   made of. A `modifier` part may carry `against`: the trait record id of the
-  effects it applies against (a bonus to saves against fear effects). A `tempHp` part carries `who` (`self` when the caster
+  effects it applies against (a bonus to saves against fear effects). A `tempHp` part may carry `who` (`self` when the caster
   gains them; the target when absent). A `push` part carries `upTo` when the
   book prints "up to" the distance, so the caster may push less. `on` names the
   degrees of success a part applies on: the target's for a saving throw, the
-  caster's for a spell attack. A `damage` part without `on` follows the scale
+  caster's for a spell attack. A `damage` part without `on` or `byDegree` follows the scale
   the roll implies — the rule for basic saves (nothing, half, full, double) or,
   for an attack, full and double — which is the reader's rule, not data.
   `heighten` says how a part grows (`every` so many ranks, by `dice` or by a
@@ -139,9 +139,10 @@ cost tokens.
   playable from data; `whole` with a part the reader does not know, it is
   playable in part and the unknown part is a gap; not `whole`, the text
   carries a rule the structure does not and must be read. Every rank, 0 to 10,
-  is classified: a spell has a block, or the vocabulary has nothing to say
-  about it and the importer records why; a spell without `effect` has nothing
-  the vocabulary can say.
+  of the spells from the source books read so far is classified: a spell has
+  a block, or the importer records why it has none; other books' spells are
+  not yet read. A classified spell without `effect` has nothing the
+  vocabulary can say, or a block would misstate its stat block.
 - Text markup: paragraphs are separated by a blank line, lists use `- ` at
   line start, emphasis uses `**bold**`; links `[[id|label]]`; action tokens
   `{1a} {2a} {3a} {r} {f}`.
