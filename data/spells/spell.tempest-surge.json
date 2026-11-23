@@ -41,7 +41,7 @@
   ],
   "editNote": "effect read from the book p.382",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "feet": 30
     },
@@ -58,6 +58,17 @@
           "every": 1,
           "dice": "1d12"
         }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.clumsy",
+        "value": 2,
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "failure"
+        ]
       }
     ]
   }

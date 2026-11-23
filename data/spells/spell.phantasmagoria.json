@@ -15,8 +15,8 @@
     "page": 349,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.phantasmagoria.text",
   "rank": 9,
   "traditions": [
@@ -30,5 +30,49 @@
   "targets": "spell.phantasmagoria.targets",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.349",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "16d6",
+        "type": "mental"
+      },
+      {
+        "kind": "restriction",
+        "cannot": "reactions",
+        "duration": {
+          "untilStartOfCasterNextTurn": true
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.confused",
+        "duration": {
+          "untilStartOfCasterNextTurn": true
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.confused",
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
   }
 }

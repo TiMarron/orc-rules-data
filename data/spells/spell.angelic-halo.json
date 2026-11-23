@@ -25,5 +25,5 @@
   },
   "area": "spell.angelic-halo.area",
   "duration": "spell.angelic-halo.duration",
-  "editNote": "Accepted: the text matches the book except one word: the structured source says 'the heal spell's rank' where the printing I compared with says 'level' (the later wording, as noted elsewhere). The dropped block is a clarification note the source adds; the book does not print it."
+  "editNote": "Accepted: the text is the book's with the spring 2026 errata applied (the bonus is twice the heal spell's rank). The dropped block is Paizo's clarification about how the two status bonuses to healing combine (errata, page 262), for which the dataset markup has no place."
 }

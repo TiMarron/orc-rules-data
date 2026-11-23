@@ -14,8 +14,8 @@
     "page": 348,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.paralyze.text",
   "rank": 3,
   "traditions": [
@@ -36,5 +36,50 @@
       "level": "7",
       "text": "spell.paralyze.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.348",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "heightenMax": {
+        "fromRank": 7,
+        "max": 10
+      }
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "value": 1,
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.paralyzed",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.paralyzed",
+        "duration": {
+          "rounds": 4
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

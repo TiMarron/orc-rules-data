@@ -15,8 +15,8 @@
     "page": 372,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.competitive-edge.text",
   "rank": 4,
   "focus": true,
@@ -32,5 +32,30 @@
       "level": "7",
       "text": "spell.competitive-edge.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.372",
+  "effect": {
+    "whole": false,
+    "duration": {
+      "sustained": {
+        "minutes": 1
+      }
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "attack",
+        "type": "status",
+        "value": 1,
+        "who": "self"
+      },
+      {
+        "kind": "modifier",
+        "stat": "skills",
+        "type": "status",
+        "value": 1,
+        "who": "self"
+      }
+    ]
+  }
 }

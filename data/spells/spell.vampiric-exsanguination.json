@@ -14,8 +14,8 @@
     "page": 365,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.vampiric-exsanguination.text",
   "rank": 6,
   "traditions": [
@@ -36,5 +36,25 @@
       "level": "+1",
       "text": "spell.vampiric-exsanguination.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.365",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "cone",
+      "feet": 30
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "12d6",
+        "type": "void",
+        "to": "living",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

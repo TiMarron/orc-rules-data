@@ -37,5 +37,26 @@
     }
   ],
   "cost": "spell.holy-cascade.cost",
-  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label."
+  "editNote": "Accepted: every sentence of the record was compared with the book and found. The converter's flags are informational: bullet lists kept as dash lines, and a link to an item page the dataset does not model kept as its label. Effect read from the book p.246.",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 500
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 20
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "3d6",
+        "type": "bludgeoning",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      }
+    ]
+  }
 }

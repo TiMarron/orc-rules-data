@@ -12,8 +12,8 @@
     "page": 242,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.chroma-leach.text",
   "rank": 4,
   "traditions": [
@@ -26,5 +26,49 @@
   "targets": "spell.chroma-leach.targets",
   "defense": {
     "save": "fortitude"
+  },
+  "editNote": "effect read from the book p.242",
+  "effect": {
+    "whole": false,
+    "range": {
+      "touch": true
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "only": "living"
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.enfeebled",
+        "value": 2,
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.enfeebled",
+        "value": 2,
+        "duration": {
+          "minutes": 1
+        },
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.drained",
+        "value": 1,
+        "on": [
+          "failure"
+        ]
+      }
+    ]
   }
 }

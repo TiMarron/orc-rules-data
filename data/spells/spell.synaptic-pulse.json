@@ -14,8 +14,8 @@
     "page": 362,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.synaptic-pulse.text",
   "rank": 5,
   "traditions": [
@@ -28,5 +28,44 @@
   "duration": "spell.synaptic-pulse.duration",
   "defense": {
     "save": "will"
+  },
+  "editNote": "effect read from the book p.362",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "emanation",
+      "feet": 30
+    },
+    "duration": {
+      "rounds": 1
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "value": 1,
+        "on": [
+          "success"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "value": 2,
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.stunned",
+        "duration": {
+          "rounds": 1
+        },
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
   }
 }

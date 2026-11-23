@@ -34,7 +34,7 @@
   ],
   "editNote": "effect read from the book p.263",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "feet": 30
     },
@@ -50,6 +50,22 @@
         "heighten": {
           "every": 1,
           "dice": "2d6"
+        }
+      },
+      {
+        "kind": "tempHp",
+        "dice": "1d4",
+        "who": "self",
+        "duration": {
+          "untilStartOfCasterNextTurn": true
+        },
+        "on": [
+          "success",
+          "criticalSuccess"
+        ],
+        "heighten": {
+          "every": 1,
+          "dice": "1d4"
         }
       }
     ]

@@ -13,8 +13,8 @@
     "page": 316,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.arctic-rift.text",
   "rank": 8,
   "traditions": [
@@ -33,5 +33,26 @@
       "level": "+1",
       "text": "spell.arctic-rift.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.316",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "line",
+      "feet": 120
+    },
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.slowed",
+        "value": 1,
+        "duration": {
+          "untilStartOfCasterNextTurn": true
+        },
+        "on": [
+          "failure"
+        ]
+      }
+    ]
+  }
 }

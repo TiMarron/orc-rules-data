@@ -33,5 +33,28 @@
       "text": "spell.life-boost.heightened.0"
     }
   ],
-  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change."
+  "editNote": "Links added where the text names records the dataset now holds (runes, universal abilities, creatures, rituals); no other change. Effect read from the book p.385.",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "duration": {
+      "rounds": 4
+    },
+    "parts": [
+      {
+        "kind": "fastHealing",
+        "value": 2,
+        "heighten": {
+          "every": 1,
+          "value": 2
+        }
+      }
+    ]
+  }
 }

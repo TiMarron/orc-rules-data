@@ -39,7 +39,7 @@
   ],
   "editNote": "effect read from the book p.377",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "feet": 120
     },
@@ -52,6 +52,7 @@
         "kind": "damage",
         "dice": "2d6",
         "type": "fire",
+        "asMaterial": "silver",
         "heighten": {
           "every": 1,
           "dice": "1d6"

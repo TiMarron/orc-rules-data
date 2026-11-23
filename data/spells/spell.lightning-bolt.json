@@ -13,8 +13,8 @@
     "page": 341,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.lightning-bolt.text",
   "rank": 3,
   "traditions": [
@@ -34,5 +34,24 @@
       "level": "+1",
       "text": "spell.lightning-bolt.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.341",
+  "effect": {
+    "whole": true,
+    "area": {
+      "shape": "line",
+      "feet": 120
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "4d12",
+        "type": "electricity",
+        "heighten": {
+          "every": 1,
+          "dice": "1d12"
+        }
+      }
+    ]
+  }
 }

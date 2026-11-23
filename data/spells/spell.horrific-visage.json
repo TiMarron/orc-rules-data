@@ -19,8 +19,8 @@
     "page": 264,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.horrific-visage.text",
   "rank": 3,
   "focus": true,
@@ -36,5 +36,27 @@
       "level": "5",
       "text": "spell.horrific-visage.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.264",
+  "effect": {
+    "whole": false,
+    "parts": [
+      {
+        "kind": "condition",
+        "id": "condition.frightened",
+        "value": 1,
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.frightened",
+        "value": 2,
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

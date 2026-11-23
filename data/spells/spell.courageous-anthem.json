@@ -30,7 +30,7 @@
   "duration": "spell.courageous-anthem.duration",
   "editNote": "effect read from the book p.370",
   "effect": {
-    "whole": false,
+    "whole": true,
     "area": {
       "shape": "emanation",
       "feet": 60
@@ -52,6 +52,14 @@
         "type": "status",
         "value": 1,
         "who": "caster-and-allies-in-area"
+      },
+      {
+        "kind": "modifier",
+        "stat": "saves",
+        "type": "status",
+        "value": 1,
+        "who": "caster-and-allies-in-area",
+        "against": "trait.fear"
       }
     ]
   }

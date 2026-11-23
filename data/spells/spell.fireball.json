@@ -13,8 +13,8 @@
     "page": 331,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.fireball.text",
   "rank": 3,
   "traditions": [
@@ -35,5 +35,27 @@
       "level": "+1",
       "text": "spell.fireball.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.331",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 500
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 20
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "6d6",
+        "type": "fire",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

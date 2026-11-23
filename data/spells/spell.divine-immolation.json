@@ -15,8 +15,8 @@
     "page": 325,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.divine-immolation.text",
   "rank": 5,
   "traditions": [
@@ -35,5 +35,41 @@
       "level": "+1",
       "text": "spell.divine-immolation.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.325",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 20
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "6d6",
+        "type": "fire",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "2d6",
+        "type": "fire",
+        "persistent": true,
+        "byDegree": {
+          "failure": "full",
+          "criticalFailure": "double"
+        },
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      }
+    ]
+  }
 }

@@ -15,8 +15,8 @@
     "page": 257,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.qi-blast.text",
   "rank": 3,
   "focus": true,
@@ -32,5 +32,76 @@
       "level": "+1",
       "text": "spell.qi-blast.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.257",
+  "effect": {
+    "whole": false,
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d6",
+        "type": "force",
+        "heighten": {
+          "every": 1,
+          "dice": "1d6"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "actions": 1,
+        "area": {
+          "shape": "cone",
+          "feet": 15
+        },
+        "parts": [
+          {
+            "kind": "damage",
+            "dice": "2d6",
+            "type": "force",
+            "heighten": {
+              "every": 1,
+              "dice": "1d6"
+            }
+          }
+        ]
+      },
+      {
+        "actions": 2,
+        "area": {
+          "shape": "cone",
+          "feet": 30
+        },
+        "parts": [
+          {
+            "kind": "damage",
+            "dice": "3d6",
+            "type": "force",
+            "heighten": {
+              "every": 1,
+              "dice": "2d6"
+            }
+          }
+        ]
+      },
+      {
+        "actions": 3,
+        "area": {
+          "shape": "cone",
+          "feet": 60
+        },
+        "parts": [
+          {
+            "kind": "damage",
+            "dice": "4d6",
+            "type": "force",
+            "heighten": {
+              "every": 1,
+              "dice": "2d6"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

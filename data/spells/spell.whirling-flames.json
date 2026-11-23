@@ -14,8 +14,8 @@
     "page": 260,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.whirling-flames.text",
   "rank": 3,
   "focus": true,
@@ -36,5 +36,23 @@
       "level": "+2",
       "text": "spell.whirling-flames.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.260",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "5d6",
+        "type": "fire",
+        "heighten": {
+          "every": 2,
+          "dice": "3d6"
+        }
+      }
+    ]
+  }
 }

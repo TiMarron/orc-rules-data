@@ -36,7 +36,7 @@
   ],
   "editNote": "effect read from the book p.334",
   "effect": {
-    "whole": false,
+    "whole": true,
     "area": {
       "shape": "line",
       "feet": 30
@@ -46,9 +46,25 @@
         "kind": "damage",
         "dice": "2d4",
         "type": "void",
+        "to": "living",
         "heighten": {
           "every": 1,
           "dice": "2d4"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "1",
+        "type": "bleed",
+        "persistent": true,
+        "to": "living",
+        "byDegree": {
+          "failure": "full",
+          "criticalFailure": "double"
+        },
+        "heighten": {
+          "every": 1,
+          "dice": "1"
         }
       }
     ]

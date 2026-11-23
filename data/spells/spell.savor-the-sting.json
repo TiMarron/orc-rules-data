@@ -56,6 +56,20 @@
           "every": 1,
           "dice": "1d4"
         }
+      },
+      {
+        "kind": "damage",
+        "dice": "1d4",
+        "type": "mental",
+        "persistent": true,
+        "byDegree": {
+          "failure": "full",
+          "criticalFailure": "double"
+        },
+        "heighten": {
+          "every": 1,
+          "dice": "1d4"
+        }
       }
     ]
   }

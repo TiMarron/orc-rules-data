@@ -14,8 +14,8 @@
     "page": 255,
     "revision": "2024-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.whispers-of-the-void.text",
   "rank": 4,
   "traditions": [
@@ -35,5 +35,81 @@
       "level": "+2",
       "text": "spell.whispers-of-the-void.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.255",
+  "effect": {
+    "whole": true,
+    "range": {
+      "feet": 60
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 10
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "2d8",
+        "type": "void",
+        "persistent": true,
+        "on": [
+          "success"
+        ],
+        "heighten": {
+          "every": 2,
+          "dice": "1d8"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "4d8",
+        "type": "void",
+        "persistent": true,
+        "on": [
+          "failure"
+        ],
+        "heighten": {
+          "every": 2,
+          "dice": "2d8"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.drained",
+        "value": 1,
+        "on": [
+          "failure"
+        ]
+      },
+      {
+        "kind": "damage",
+        "dice": "4d8",
+        "type": "void",
+        "persistent": true,
+        "on": [
+          "criticalFailure"
+        ],
+        "heighten": {
+          "every": 2,
+          "dice": "2d8"
+        }
+      },
+      {
+        "kind": "condition",
+        "id": "condition.drained",
+        "value": 2,
+        "on": [
+          "criticalFailure"
+        ]
+      },
+      {
+        "kind": "condition",
+        "id": "condition.doomed",
+        "value": 1,
+        "on": [
+          "criticalFailure"
+        ]
+      }
+    ]
+  }
 }

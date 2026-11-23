@@ -38,7 +38,7 @@
   ],
   "editNote": "effect read from the book p.248",
   "effect": {
-    "whole": false,
+    "whole": true,
     "range": {
       "feet": 30
     },
@@ -51,6 +51,20 @@
         "kind": "damage",
         "dice": "1d4",
         "type": "slashing",
+        "heighten": {
+          "every": 2,
+          "dice": "1d4"
+        }
+      },
+      {
+        "kind": "damage",
+        "dice": "1d4",
+        "type": "electricity",
+        "byDegree": {
+          "criticalSuccess": "double",
+          "success": "full",
+          "failure": "full"
+        },
         "heighten": {
           "every": 2,
           "dice": "1d4"

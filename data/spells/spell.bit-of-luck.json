@@ -15,8 +15,8 @@
     "page": 376,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.bit-of-luck.text",
   "rank": 1,
   "focus": true,
@@ -28,5 +28,26 @@
   },
   "range": "spell.bit-of-luck.range",
   "targets": "spell.bit-of-luck.targets",
-  "duration": "spell.bit-of-luck.duration"
+  "duration": "spell.bit-of-luck.duration",
+  "editNote": "effect read from the book p.376",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "willing": true
+    },
+    "duration": {
+      "minutes": 1
+    },
+    "parts": [
+      {
+        "kind": "temporaryImmunity",
+        "hours": 24
+      }
+    ]
+  }
 }

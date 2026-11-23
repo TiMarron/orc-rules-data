@@ -14,8 +14,8 @@
     "page": 365,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.vampiric-feast.text",
   "rank": 3,
   "traditions": [
@@ -37,5 +37,28 @@
       "level": "+1",
       "text": "spell.vampiric-feast.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.365",
+  "effect": {
+    "whole": false,
+    "range": {
+      "touch": true
+    },
+    "targets": {
+      "min": 1,
+      "max": 1,
+      "only": "living"
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "6d6",
+        "type": "void",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

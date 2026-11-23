@@ -12,8 +12,8 @@
     "page": 335,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.hidden-mind.text",
   "rank": 8,
   "traditions": [
@@ -25,5 +25,26 @@
   },
   "range": "spell.hidden-mind.range",
   "targets": "spell.hidden-mind.targets",
-  "duration": "spell.hidden-mind.duration"
+  "duration": "spell.hidden-mind.duration",
+  "editNote": "effect read from the book p.335",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 30
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "modifier",
+        "stat": "saves",
+        "type": "status",
+        "value": 4,
+        "who": "target",
+        "against": "trait.mental"
+      }
+    ]
+  }
 }

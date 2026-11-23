@@ -34,5 +34,23 @@
       "text": "spell.spirit-song.heightened.0"
     }
   ],
-  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged."
+  "editNote": "Accepted: the only difference from the published record is that mentions of traits that now exist as records (artifact, haunt, spirit and the like, imported since the record was published) are links; every other field and every word of the text is unchanged. Effect read from the book p.252.",
+  "effect": {
+    "whole": false,
+    "area": {
+      "shape": "cone",
+      "feet": 60
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "14d6",
+        "type": "spirit",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }

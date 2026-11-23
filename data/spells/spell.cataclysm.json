@@ -36,5 +36,37 @@
     "save": "reflex",
     "basic": true
   },
-  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent."
+  "editNote": "The dataset markup carries no tables or images, and the dropped blocks are the structured source's own additions or a trailing reference section; the omission is recorded rather than left silent. Effect read from the book p.319.",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 1000
+    },
+    "area": {
+      "shape": "burst",
+      "feet": 60
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "3d10",
+        "type": "acid"
+      },
+      {
+        "kind": "damage",
+        "dice": "3d10",
+        "type": "cold"
+      },
+      {
+        "kind": "damage",
+        "dice": "3d10",
+        "type": "electricity"
+      },
+      {
+        "kind": "damage",
+        "dice": "3d10",
+        "type": "fire"
+      }
+    ]
+  }
 }

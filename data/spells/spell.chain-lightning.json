@@ -13,8 +13,8 @@
     "page": 319,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.chain-lightning.text",
   "rank": 6,
   "traditions": [
@@ -35,5 +35,23 @@
       "level": "+1",
       "text": "spell.chain-lightning.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.319",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 500
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "8d12",
+        "type": "electricity",
+        "heighten": {
+          "every": 1,
+          "dice": "1d12"
+        }
+      }
+    ]
+  }
 }

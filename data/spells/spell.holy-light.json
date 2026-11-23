@@ -16,8 +16,8 @@
     "page": 335,
     "revision": "2023-first"
   },
-  "review": "auto",
-  "edited": false,
+  "review": "assistant",
+  "edited": true,
   "text": "spell.holy-light.text",
   "rank": 3,
   "traditions": [
@@ -35,5 +35,27 @@
       "level": "+1",
       "text": "spell.holy-light.heightened.0"
     }
-  ]
+  ],
+  "editNote": "effect read from the book p.335",
+  "effect": {
+    "whole": false,
+    "range": {
+      "feet": 120
+    },
+    "targets": {
+      "min": 1,
+      "max": 1
+    },
+    "parts": [
+      {
+        "kind": "damage",
+        "dice": "5d6",
+        "type": "fire",
+        "heighten": {
+          "every": 1,
+          "dice": "2d6"
+        }
+      }
+    ]
+  }
 }
